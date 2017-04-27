@@ -1,0 +1,1930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:_ns0="http://www.w3.org/2001/XMLSchema-instance">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="1.2.840.114350.1.72.1.51693"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="1.2.840.114350.1.13.333.2.7.8.688883.22459451" assigningAuthorityName="EPC"/>
+  <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of Episode Note"/>
+  <title>Clinical Summary</title>
+  <effectiveTime value="20170309184042-0800"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="Normal"/>
+  <languageCode code="en-US"/>
+  <setId root="1.2.840.114350.1.13.333.2.7.1.1" extension="353150393277032534840753096708233383" assigningAuthorityName="EPC"/>
+  <versionNumber value="2"/>
+  <recordTarget>
+    <patientRole>
+      <id root="1.2.840.114350.1.13.333.2.7.3.688884.100" extension="4858129835"/>
+      <addr use="HP"><streetAddressLine>PhwgU</streetAddressLine><city>cwhhy</city><state>eGwvX</state><postalCode>XOBDr</postalCode><country>kDOZr</country></addr>
+      <telecom value="ekjva" use="MC"/>
+      <patient>
+        <name use="L">DjYcV nXOMQ riZIH</name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGenderCode" displayName="Male"/>
+        <birthTime value="198401"/>
+        <maritalStatusCode code="Single" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode" displayName="Single"/>
+        <religiousAffiliationCode code="None" codeSystem="2.16.840.1.113883.5.1076" codeSystemName="ReligiousAffiliation"/>
+        <raceCode nullFlavor="UNK"/>
+        <ethnicGroupCode nullFlavor="UNK"/>
+        <languageCommunication>
+          <languageCode code="eng"/>
+          <modeCode code="RWR" codeSystem="2.16.840.1.113883.5.60" displayName="Received Written"/>
+          <preferenceInd value="true"/>
+        </languageCommunication>
+      </patient>
+      <providerOrganization>
+        <id root="1.2.840.114350.1.13.333.2.7.2.696570" extension="62483"/>
+        <name>ASANTE ROGUE REGIONAL MEDICAL CENTER</name>
+        <telecom value="kwAFE" use="WP"/>
+        <addr><streetAddressLine>ZCbmI</streetAddressLine><city>pGJVI</city><state>ZFVcR</state><postalCode>xzByo</postalCode><country>DAQTz</country></addr>
+      </providerOrganization>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20170309184042-0800"/>
+    <assignedAuthor>
+      <id root="1.2.840.114350.1.1" extension="997"/>
+      <addr nullFlavor="NA"/>
+      <telecom nullFlavor="NA"/>
+      <assignedAuthoringDevice>
+        <manufacturerModelName>Epic - Version 8.2</manufacturerModelName>
+        <softwareName>Epic - Version 8.2</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id root="1.2.840.114350.1.13.333.2.7.2.696570" extension="62483"/>
+        <name>ASANTE ROGUE REGIONAL MEDICAL CENTER</name>
+        <telecom value="fACNG" use="WP"/>
+        <addr><streetAddressLine>cZPMS</streetAddressLine><city>hqNxy</city><state>dqbBD</state><postalCode>XIriQ</postalCode><country>RNIvM</country></addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="1.2.840.114350.1.13.333.2.7.2.696570" extension="62483"/>
+        <name>ASANTE ROGUE REGIONAL MEDICAL CENTER</name>
+        <telecom value="gUXja" use="WP"/>
+        <addr><streetAddressLine>IZfva</streetAddressLine><city>nqfCp</city><state>WPuej</state><postalCode>hcMqe</postalCode><country>eYyje</country></addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf typeCode="DOC">
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="18670308"/>
+        <high value="20170309"/>
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction" displayName="Primary Care Provider">
+          <originalText>General</originalText>
+        </functionCode>
+        <time>
+          <low value="20151001"/>
+          <high nullFlavor="PINF"/>
+        </time>
+        <assignedEntity>
+          <id nullFlavor="UNK"/>
+          <code nullFlavor="UNK">
+            <originalText>Unknown</originalText>
+          </code>
+          <addr use="WP"><streetAddressLine>xMImI</streetAddressLine><city>FseWM</city><state>gSSZl</state><postalCode>VplsY</postalCode><country>UaSQM</country></addr>
+          <telecom nullFlavor="NA"/>
+          <assignedPerson>
+            <name><given>No</given><given>Family</given><family>Physician</family></name>
+          </assignedPerson>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <relatedDocument typeCode="RPLC">
+    <parentDocument>
+      <id root="1.2.840.114350.1.13.333.2.7.8.688883.22459450" assigningAuthorityName="EPC"/>
+    </parentDocument>
+  </relatedDocument>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.6"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.6" extension="2015-08-01"/>
+          <id root="F484ABB2-053A-11E7-BEAC-9B04C50E1579"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, Adverse Reactions, Alerts"/>
+          <title>Allergies</title>
+          <text><content ID="nof2">No Known Allergies</content></text>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
+              <id nullFlavor="NA"/>
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low nullFlavor="UNK"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
+                  <templateId root="2.16.840.1.113883.10.20.24.3.90"/>
+                  <templateId root="2.16.840.1.113883.10.20.24.3.90" extension="2014-06-09"/>
+                  <id nullFlavor="NA"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                  <text><reference value="#nof2"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low nullFlavor="UNK"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="420134006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Propensity to adverse reactions"/>
+                  <author>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                    <time value="20151013"/>
+                    <assignedAuthor>
+                      <id root="1.2.840.114350.1.13.333.2.7.2.697780" extension="5782"/>
+                      <addr nullFlavor="UNK"/>
+                      <telecom nullFlavor="UNK"/>
+                      <assignedPerson>
+                        <name><given>Gary</given><given>C.</given><family>Pierce</family><suffix qualifier="AC">RT</suffix></name>
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="1.2.840.114350.1.13.333.2.7.2.696570" extension="62483"/>
+                        <name>ASANTE ROGUE REGIONAL MEDICAL CENTER</name>
+                        <telecom value="kHVJu" use="WP"/>
+                        <addr><streetAddressLine>atHFJ</streetAddressLine><city>HetLw</city><state>XBSqn</state><postalCode>aAMhV</postalCode><country>iJziR</country></addr>
+                      </representedOrganization>
+                    </assignedAuthor>
+                  </author>
+                  <participant typeCode="CSM">
+                    <participantRole classCode="MANU">
+                      <playingEntity classCode="MMAT">
+                        <code nullFlavor="NA"/>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                      <templateId root="2.16.840.1.113883.10.20.22.4.8" extension="2014-06-09"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Severity"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" nullFlavor="UNK"/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1" extension="2014-06-09"/>
+          <id root="F48751DC-053A-11E7-BEAC-9B04C50E1579"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Usage"/>
+          <title>Current Medications</title>
+          <text><content ID="nof4">Not on file</content></text>
+        </section>
+      </component>
+      <component>
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.5"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.5" extension="2015-08-01"/>
+          <id root="F4876D7A-053A-11E7-BEAC-9B04C50E1579"/>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PROBLEM LIST"/>
+          <title>Active Problems</title>
+          <text><paragraph ID="nof6">Not on file</paragraph></text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2015-08-01"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF ENCOUNTERS"/>
+          <title>Encounters</title>
+          <text><table><colgroup><col width="10%"/><col width="15%"/><col width="25%"/><col width="25%"/><col width="25%"/></colgroup><thead><tr><th>Date</th><th>Type</th><th>Specialty</th><th>Care Team</th><th>Description</th></tr></thead><tbody><tr ID="encounter11" styleCode="normRow"><td>10/13/2015</td><td ID="encounter11type">Emergency</td><td ID="encounter11specialty">Emergency Medicine</td><td><paragraph>McCaskill, Michael, MD</paragraph></td><td ID="encounter11desc">Heroin abuse (Primary Dx)</td></tr></tbody></table><footnote ID="subTitle8" styleCode="xSectionSubTitle xHidden">after 03/08/1867</footnote></text>
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
+              <id root="1.2.840.114350.1.13.333.2.7.3.698084.8" extension="391921042034" assigningAuthorityName="EPIC"/>
+              <code code="EMER" codeSystem="2.16.840.1.113883.5.4" displayName="Emergency">
+                <originalText><reference value="#encounter11type"/></originalText>
+                <translation code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.698084.30" codeSystemName="Epic.EncounterType" displayName="Hospital Encounter"/>
+                <translation code="3" codeSystem="1.2.840.114350.1.72.1.30" displayName="Hospital Encounter"/>
+              </code>
+              <text><reference value="#encounter11"/></text>
+              <statusCode code="normal"/>
+              <effectiveTime>
+                <low value="20151013002751-0700"/>
+                <high value="20151013040500-0700"/>
+              </effectiveTime>
+              <performer typeCode="PRF">
+                <time>
+                  <low nullFlavor="UNK"/>
+                  <high nullFlavor="UNK"/>
+                </time>
+                <assignedEntity classCode="ASSIGNED">
+                  <id root="2.16.840.1.113883.4.6" extension="1785989095"/>
+                  <code nullFlavor="UNK">
+                    <originalText>Emergency Medicine</originalText>
+                  </code>
+                  <addr><streetAddressLine>vTpNQ</streetAddressLine><city>LEUMK</city><state>yGZNF</state><postalCode>XheUm</postalCode><country>KkSxa</country></addr>
+                  <telecom value="afHhx" use="WP"/>
+                  <assignedPerson>
+                    <name><given>Michael</given><family>McCaskill</family><suffix qualifier="AC">MD</suffix></name>
+                  </assignedPerson>
+                  <representedOrganization classCode="ORG">
+                    <name nullFlavor="UNK"/>
+                    <telecom nullFlavor="UNK"/>
+                    <addr nullFlavor="UNK"/>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.2.686980" extension="716281424"/>
+                  <code code="1108-0" codeSystem="2.16.840.1.113883.6.259" displayName="Emergency Department">
+                    <originalText><reference value="#encounter11specialty"/></originalText>
+                  </code>
+                  <playingEntity classCode="PLC">
+                    <name>RRMC Emergency Department</name>
+                    <desc>Emergency Medicine</desc>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <participant typeCode="ORG">
+                <participantRole>
+                  <id root="1.2.840.114350.1.13.333.2.7.2.688879" extension="16819"/>
+                  <playingEntity>
+                    <name>Asante Health Systems</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.2.696871" extension="2002832"/>
+                  <code code="282291009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Diagnosis"/>
+                  <text>Heroin abuse</text>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" code="191909007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Heroin abuse"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.64"/>
+                  <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <text><reference value="#encounter11desc"/></text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              <reference typeCode="REFR">
+                <externalObservation>
+                  <code code="7" codeSystem="1.2.840.114350.1.13.333.2.7.3.688882.8100" codeSystemName="Epic.Encounter.Contents"/>
+                </externalObservation>
+              </reference>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
+          <title>Social History</title>
+          <text><table><colgroup><col width="25%"/><col width="25%"/><col width="13%"/><col width="12%"/><col width="25%"/></colgroup><thead><tr><th>Tobacco Use</th><th>Types</th><th>Packs/Day</th><th>Years Used</th><th>Date</th></tr></thead><tbody><tr><td>Never Assessed</td><td/><td/><td/><td/></tr></tbody></table><table><colgroup><col width="25%"/><col width="75%"/></colgroup><thead><tr><th>Birth Sex</th><th>Date Recorded</th></tr></thead><tbody><tr ID="BirthSex17"><td ID="BirthSex17Value">Unknown</td><td/></tr></tbody></table></text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.78"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.78" extension="2014-06-09"/>
+              <id root="1.2.840.114350.1.13.333.2.7.1.1040.1" extension="7663190612782604819338"/>
+              <code code="72166-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tobacco smoking status NHIS"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20151013"/>
+              <value xsi:type="CD" code="266927001" codeSystem="2.16.840.1.113883.6.96" displayName="Unknown if ever smoked"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.200" extension="2016-06-01"/>
+              <code code="76689-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sex Assigned At Birth"/>
+              <text><reference value="#BirthSex17"/></text>
+              <statusCode code="completed"/>
+              <value xsi:type="CD" nullFlavor="UNK" codeSystem="2.16.840.1.113883.5.1">
+                <originalText><reference value="#BirthSex17Value"/></originalText>
+              </value>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4" extension="2015-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/>
+          <title>Last Filed Vital Signs</title>
+          <text><table><colgroup><col width="25%"/><col width="25%"/><col width="50%"/></colgroup><thead><tr><th>Vital Sign</th><th>Reading</th><th>Time Taken</th></tr></thead><tbody><tr><td styleCode="cellHeader">Blood Pressure</td><td><content ID="sysBP_5515641660">120</content>/<content ID="diaBP_5515641660">62</content></td><td>10/13/2015  3:41 AM PDT</td></tr><tr><td styleCode="cellHeader">Pulse</td><td ID="pulse_5515641660">68</td><td>10/13/2015  3:41 AM PDT</td></tr><tr><td styleCode="cellHeader">Temperature</td><td ID="temp_5515630200">37.6 Â°C (99.7 Â°F)</td><td>10/13/2015 12:30 AM PDT</td></tr><tr><td styleCode="cellHeader">Respiratory Rate</td><td ID="resp_5515641660">18</td><td>10/13/2015  3:41 AM PDT</td></tr><tr><td styleCode="cellHeader">Oxygen Saturation</td><td ID="SpO2_5515641660">98%</td><td>10/13/2015  3:41 AM PDT</td></tr><tr><td styleCode="cellHeader">Inhaled Oxygen Concentration</td><td ID="inhaled_">-</td><td>-</td></tr><tr><td styleCode="cellHeader">Weight</td><td ID="weight_5515630380">83 kg (183 lb)</td><td>10/13/2015 12:33 AM PDT</td></tr><tr><td styleCode="cellHeader">Height</td><td ID="height_5515630380">180.3 cm (5' 11&quot;)</td><td>10/13/2015 12:33 AM PDT</td></tr><tr><td styleCode="cellHeader">Body Mass Index</td><td ID="bmi_5515630380">25.52</td><td>10/13/2015 12:33 AM PDT</td></tr></tbody></table></text>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="1.2.840.114350.1.13.333.2.7.1.2109" extension="9598604351160713100"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs">
+                <translation code="74728-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1"/>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime value="20151013104100+0000"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.1.2109.1" extension="1126900279943788809570846"/>
+                  <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SYSTOLIC BLOOD PRESSURE"/>
+                  <text><reference value="#sysBP_5515641660"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013104100+0000"/>
+                  <value xsi:type="PQ" value="120" unit="mm[Hg]"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.1.2109.1" extension="0451453769845945641563931"/>
+                  <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DIASTOLIC BLOOD PRESSURE"/>
+                  <text><reference value="#diaBP_5515641660"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013104100+0000"/>
+                  <value xsi:type="PQ" value="62" unit="mm[Hg]"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.1.2109.1" extension="7856182197724101848336885"/>
+                  <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HEART RATE"/>
+                  <text><reference value="#pulse_5515641660"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013104100+0000"/>
+                  <value xsi:type="PQ" value="68" unit="/min"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.1.2109.1" extension="440873576121323339166457"/>
+                  <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RESPIRATORY RATE"/>
+                  <text><reference value="#resp_5515641660"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013104100+0000"/>
+                  <value xsi:type="PQ" value="18" unit="/min"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.1.2109.1" extension="815830780357809705147644"/>
+                  <code code="59408-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="OXYGEN SATURATION"/>
+                  <text><reference value="#SpO2_5515641660"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013104100+0000"/>
+                  <value xsi:type="PQ" value="98" unit="%"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="1.2.840.114350.1.13.333.2.7.1.2109" extension="0904160804486792613"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs">
+                <translation code="74728-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1"/>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime value="20151013073300+0000"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.1.2109.1" extension="48194256714522591887926560889"/>
+                  <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HEIGHT"/>
+                  <text><reference value="#height_5515630380"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013073300+0000"/>
+                  <value xsi:type="PQ" value="180.3" unit="cm"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.1.2109.1" extension="95288584663544159860135341478"/>
+                  <code code="29463-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WEIGHT"/>
+                  <text><reference value="#weight_5515630380"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013073300+0000"/>
+                  <value xsi:type="PQ" value="83.008" unit="kg"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.1.2109.1" extension="70304474444806925680863"/>
+                  <code code="39156-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BODY MASS INDEX"/>
+                  <text><reference value="#bmi_5515630380"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013073300+0000"/>
+                  <value xsi:type="PQ" value="25.52" unit="kg/m2"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="1.2.840.114350.1.13.333.2.7.1.2109" extension="2546281829578633431"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs">
+                <translation code="74728-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1"/>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime value="20151013073000+0000"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.1.2109.1" extension="460183902412236700616745775"/>
+                  <code code="8310-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BODY TEMPERATURE"/>
+                  <text><reference value="#temp_5515630200"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013073000+0000"/>
+                  <value xsi:type="PQ" value="37.61" unit="Cel"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <title>Plan of Treatment</title>
+          <text><paragraph>Not on file</paragraph></text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.3" extension="2015-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+          <id root="F498AFC2-053A-11E7-BEAC-9B04C50E1579"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="STUDIES SUMMARY"/>
+          <title>Results</title>
+          <text><list styleCode="TOC"><item ID="Result59435980"><caption>SCAN/TX EKG (10/13/2015  1:03 PM)</caption></item><item ID="Result59435976"><caption>X-ray chest PA or AP (10/13/2015  1:24 AM)</caption><table><colgroup><col width="25%"/><col width="75%"/></colgroup><thead><tr><th>Specimen</th><th>Performing Laboratory</th></tr></thead><tbody><tr><td/><td ID="Result59435976PerformingLab"><paragraph>ASANTE SPEECHQ</paragraph></td></tr></tbody></table><table><thead><tr><th>Impressions</th></tr></thead><tbody><tr><td ID="Result59435976Impression" styleCode="pre"><paragraph>IMPRESSION: Minimal linear atelectasis or scarring in the lower left lung.</paragraph></td></tr></tbody></table><table><thead><tr><th>Narrative</th></tr></thead><tbody><tr><td ID="Result59435976Narrative" styleCode="pre"><paragraph> </paragraph><paragraph> </paragraph><paragraph>XR CHEST PA OR APÂ Â  10/13/2015 01:09:29</paragraph><paragraph> </paragraph><paragraph>PROVIDED HISTORY: Heroin overdose</paragraph><paragraph> </paragraph><paragraph>ADDITIONAL HISTORY: None.</paragraph><paragraph> </paragraph><paragraph>COMPARISON: None.</paragraph><paragraph> </paragraph><paragraph>TECHNIQUE: Single frontal view of the chest.</paragraph><paragraph> </paragraph><paragraph>FINDINGS: Mild linear opacities in the lower left lung are suggestive of subsegmental atelectasis or scarring.Â Â The lungs are otherwise clear.Â Â The heart size is normal.Â Â Pulmonary vascularity is within normal limits.Â Â There is no evidence of </paragraph><paragraph>pneumothorax or pleural effusion.Â Â No acute osseous findings are seen.</paragraph><paragraph> </paragraph></td></tr></tbody></table><table><thead><tr><th>Procedure Note</th></tr></thead><tbody><tr><td ID="Result59435976ProcedureNote131141045" styleCode="noIndent"><paragraph styleCode="header">Interface, Rad Results In - 10/13/2015  7:36 AM PDT</paragraph><paragraph><br/><br/><content>XR CHEST PA OR AP   10/13/2015 01:09:29</content><br/><br/><content>PROVIDED HISTORY: Heroin overdose</content><br/><br/><content>ADDITIONAL HISTORY: None.</content><br/><br/><content>COMPARISON: None.</content><br/><br/><content>TECHNIQUE: Single frontal view of the chest.</content><br/><br/><content>FINDINGS: Mild linear opacities in the lower left lung are suggestive of </content><content>subsegmental atelectasis or scarring.  The lungs are otherwise clear.  The </content><content>heart size is normal.  Pulmonary vascularity is within normal limits.  </content><content>There is no evidence of </content><br/><content>pneumothorax or pleural effusion.  No acute osseous findings are seen.</content><br/><br/><content>IMPRESSION: Minimal linear atelectasis or scarring in the lower left </content><content>lung.</content></paragraph></td></tr></tbody></table></item><item ID="Result59435970"><caption>EKG - 12-Lead (10/13/2015 12:51 AM)</caption><table><colgroup><col width="25%"/><col width="75%"/></colgroup><thead><tr><th>Specimen</th><th>Performing Laboratory</th></tr></thead><tbody><tr><td/><td ID="Result59435970PerformingLab"><paragraph>ASANTE NOVIUS RIS</paragraph></td></tr></tbody></table></item><item ID="Result59435969"><caption>Alcohol Medical/Serum -STAT (10/13/2015 12:40 AM)</caption><table><colgroup><col width="25%"/><col width="50%"/><col width="25%"/></colgroup><thead><tr><th>Component</th><th>Value</th><th>Ref Range</th></tr></thead><tbody><tr ID="Result59435969Comp1"><td ID="Result59435969Comp1Name">Alcohol Scrn</td><td>&lt;10</td><td>0 - 10 mg/dL</td></tr></tbody></table><table><colgroup><col width="25%"/><col width="75%"/></colgroup><thead><tr><th>Specimen</th><th>Performing Laboratory</th></tr></thead><tbody><tr><td ID="Result59435969Specimen">Blood</td><td ID="Result59435969PerformingLab"><paragraph>RRMC LABORATORY</paragraph><paragraph>2825 East Barnett Road</paragraph><paragraph>MEDFORD, OR 97504</paragraph></td></tr></tbody></table></item><item ID="Result59435962"><caption>CBC with Auto Differential -STAT (10/13/2015 12:40 AM)</caption><table><colgroup><col width="25%"/><col width="50%"/><col width="25%"/></colgroup><thead><tr><th>Component</th><th>Value</th><th>Ref Range</th></tr></thead><tbody><tr ID="Result59435962Comp1"><td ID="Result59435962Comp1Name">WBC</td><td>7.7</td><td>4.8 - 10.8 K/microL</td></tr><tr ID="Result59435962Comp2"><td ID="Result59435962Comp2Name">RBC</td><td><content styleCode="flagData">4.19</content><content styleCode="flagData"> (L)</content></td><td>4.70 - 6.10 M/microL</td></tr><tr ID="Result59435962Comp3"><td ID="Result59435962Comp3Name">Hgb</td><td>13.0</td><td>12.0 - 18.0 gm/dL</td></tr><tr ID="Result59435962Comp4"><td ID="Result59435962Comp4Name">HCT</td><td><content styleCode="flagData">38.0</content><content styleCode="flagData"> (L)</content></td><td>42.0 - 54.0 %</td></tr><tr ID="Result59435962Comp5"><td ID="Result59435962Comp5Name">MCV</td><td>90.8</td><td>81 - 99 fL</td></tr><tr ID="Result59435962Comp6"><td ID="Result59435962Comp6Name">MCH</td><td>31.0</td><td>27 - 34 pg</td></tr><tr ID="Result59435962Comp7"><td ID="Result59435962Comp7Name">MCHC</td><td>34.1</td><td>32 - 36 gm/dL</td></tr><tr ID="Result59435962Comp8"><td ID="Result59435962Comp8Name">RDW</td><td>13.5</td><td>11.5 - 14.5 %</td></tr><tr ID="Result59435962Comp9"><td ID="Result59435962Comp9Name">Platelet Count</td><td>263</td><td>150 - 400 K/microL</td></tr><tr ID="Result59435962Comp10"><td ID="Result59435962Comp10Name">MPV</td><td>8.0</td><td>7.4 - 10.4 fL</td></tr><tr ID="Result59435962Comp11"><td ID="Result59435962Comp11Name">Differential Type</td><td>AUTO</td><td/></tr><tr ID="Result59435962Comp12"><td ID="Result59435962Comp12Name">Segs (Neutrophils)%</td><td>61</td><td>35 - 70 %</td></tr><tr ID="Result59435962Comp13"><td ID="Result59435962Comp13Name">Lymphocytes %</td><td>28</td><td>25 - 45 %</td></tr><tr ID="Result59435962Comp14"><td ID="Result59435962Comp14Name">Monocytes %</td><td>8</td><td>0 - 12 %</td></tr><tr ID="Result59435962Comp15"><td ID="Result59435962Comp15Name">Eosinophils %</td><td>2</td><td>0 - 7 %</td></tr><tr ID="Result59435962Comp16"><td ID="Result59435962Comp16Name">Basophils %</td><td>1</td><td>0 - 2 %</td></tr><tr ID="Result59435962Comp17"><td ID="Result59435962Comp17Name">Segs (Neutrophils), Absolute</td><td>4.7</td><td>1.6 - 7.3 K/microL</td></tr><tr ID="Result59435962Comp18"><td ID="Result59435962Comp18Name">Lymphocytes, Absolute</td><td>2.2</td><td>1.1 - 4.3 K/microL</td></tr><tr ID="Result59435962Comp19"><td ID="Result59435962Comp19Name">Monocytes, Absolute</td><td>0.6</td><td>0 - 1.2 K/microL</td></tr><tr ID="Result59435962Comp20"><td ID="Result59435962Comp20Name">Eosinophils, Absolute</td><td>0.2</td><td>0 - 0.7 K/microL</td></tr><tr ID="Result59435962Comp21"><td ID="Result59435962Comp21Name">Basophils, Absolute</td><td>0.1</td><td>0 - 0.2 K/microL</td></tr></tbody></table><table><colgroup><col width="25%"/><col width="75%"/></colgroup><thead><tr><th>Specimen</th><th>Performing Laboratory</th></tr></thead><tbody><tr><td ID="Result59435962Specimen">Blood</td><td ID="Result59435962PerformingLab"><paragraph>RRMC LABORATORY</paragraph><paragraph>2825 East Barnett Road</paragraph><paragraph>MEDFORD, OR 97504</paragraph></td></tr></tbody></table></item><item ID="Result59435967"><caption>Acetaminophen -STAT (10/13/2015 12:40 AM)</caption><table><colgroup><col width="25%"/><col width="50%"/><col width="25%"/></colgroup><thead><tr><th>Component</th><th>Value</th><th>Ref Range</th></tr></thead><tbody><tr ID="Result59435967Comp1"><td ID="Result59435967Comp1Name">Acetaminophen Level</td><td><content styleCode="flagData">&lt;10.0</content><content styleCode="flagData"> (L)</content><br/><content styleCode="allIndent"><content styleCode="cellHeader">Comment: </content><br/><content ID="Result59435967Comp1Comment" styleCode="pre">Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  <br/>Toxic acetaminophen levels have been reported as follows:<br/>4 hours post ingestion:Â Â >150 ug/mL<br/>8 hours post ingestion:Â Â >75 ug/mL<br/>12 hours post ingestion: >40 ug/mL<br/> <br/></content></content></td><td>10 - 30 microgm/mL</td></tr></tbody></table><table><colgroup><col width="25%"/><col width="75%"/></colgroup><thead><tr><th>Specimen</th><th>Performing Laboratory</th></tr></thead><tbody><tr><td ID="Result59435967Specimen">Blood</td><td ID="Result59435967PerformingLab"><paragraph>RRMC LABORATORY</paragraph><paragraph>2825 East Barnett Road</paragraph><paragraph>MEDFORD, OR 97504</paragraph></td></tr></tbody></table></item><item ID="Result59435966"><caption>Salicylates -STAT (10/13/2015 12:40 AM)</caption><table><colgroup><col width="25%"/><col width="50%"/><col width="25%"/></colgroup><thead><tr><th>Component</th><th>Value</th><th>Ref Range</th></tr></thead><tbody><tr ID="Result59435966Comp1"><td ID="Result59435966Comp1Name">Salicylate Level</td><td><content styleCode="flagData">&lt;2.5</content><content styleCode="flagData"> (L)</content></td><td>10.0 - 30.0 mg/dL</td></tr></tbody></table><table><colgroup><col width="25%"/><col width="75%"/></colgroup><thead><tr><th>Specimen</th><th>Performing Laboratory</th></tr></thead><tbody><tr><td ID="Result59435966Specimen">Blood</td><td ID="Result59435966PerformingLab"><paragraph>RRMC LABORATORY</paragraph><paragraph>2825 East Barnett Road</paragraph><paragraph>MEDFORD, OR 97504</paragraph></td></tr></tbody></table></item><item ID="Result59435963"><caption>Comprehensive Metabolic Panel -STAT (10/13/2015 12:40 AM)</caption><table><colgroup><col width="25%"/><col width="50%"/><col width="25%"/></colgroup><thead><tr><th>Component</th><th>Value</th><th>Ref Range</th></tr></thead><tbody><tr ID="Result59435963Comp1"><td ID="Result59435963Comp1Name">Sodium</td><td><content>140</content><content styleCode="allIndent"><content styleCode="cellHeader">Comment: </content><content ID="Result59435963Comp1Comment">NOTE:  METHOD CHANGE</content></content></td><td>135 - 143 mmol/L</td></tr><tr ID="Result59435963Comp2"><td ID="Result59435963Comp2Name">Potassium</td><td>3.9</td><td>3.5 - 5.1 mmol/L</td></tr><tr ID="Result59435963Comp3"><td ID="Result59435963Comp3Name">Chloride</td><td>107</td><td>98 - 111 mmol/L</td></tr><tr ID="Result59435963Comp4"><td ID="Result59435963Comp4Name">CO2 - Carbon Dioxide</td><td>27.9</td><td>21 - 31 mmol/L</td></tr><tr ID="Result59435963Comp5"><td ID="Result59435963Comp5Name">Glucose</td><td>86</td><td>80 - 99 mg/dL</td></tr><tr ID="Result59435963Comp6"><td ID="Result59435963Comp6Name">BUN</td><td>13</td><td>6.0 - 23.0 mg/dL</td></tr><tr ID="Result59435963Comp7"><td ID="Result59435963Comp7Name">Creatinine, Serum</td><td>1.04</td><td>0.65 - 1.30 mg/dL</td></tr><tr ID="Result59435963Comp8"><td ID="Result59435963Comp8Name">Calcium</td><td>9.3</td><td>8.6 - 10.0 mg/dL</td></tr><tr ID="Result59435963Comp9"><td ID="Result59435963Comp9Name">AST - Aspartate Aminotransferase</td><td>25</td><td>10 - 50 IU/L</td></tr><tr ID="Result59435963Comp10"><td ID="Result59435963Comp10Name">ALT - Alanine Amino transferase</td><td>40</td><td>7 - 52 IU/L</td></tr><tr ID="Result59435963Comp11"><td ID="Result59435963Comp11Name">Alkaline Phosphatase</td><td>56</td><td>34 - 104 IU/L</td></tr><tr ID="Result59435963Comp12"><td ID="Result59435963Comp12Name">Bilirubin, Total</td><td>0.4</td><td>0.3 - 1.2 mg/dL</td></tr><tr ID="Result59435963Comp13"><td ID="Result59435963Comp13Name">Protein, Total</td><td>6.9</td><td>6.0 - 8.0 gm/dL</td></tr><tr ID="Result59435963Comp14"><td ID="Result59435963Comp14Name">Albumin</td><td>3.9</td><td>3.5 - 5.0 gm/dL</td></tr><tr ID="Result59435963Comp15"><td ID="Result59435963Comp15Name">Globulin</td><td>3.0</td><td>2.2 - 3.7 gm/dL</td></tr><tr ID="Result59435963Comp16"><td ID="Result59435963Comp16Name">Albumin/Globulin Ratio</td><td>1.3</td><td>>0.9</td></tr><tr ID="Result59435963Comp17"><td ID="Result59435963Comp17Name">Anion Gap</td><td>5.1</td><td>3 - 11 mmol/L</td></tr><tr ID="Result59435963Comp18"><td ID="Result59435963Comp18Name">GFR Estimate</td><td>>60</td><td>>60 mL/min/1.73sq.m</td></tr><tr ID="Result59435963Comp19"><td ID="Result59435963Comp19Name">GFR Additional Info</td><td>For African Americans, multiply EGFR x 1.21.  See www.nkdep.nih.gov.</td><td/></tr></tbody></table><table><colgroup><col width="25%"/><col width="75%"/></colgroup><thead><tr><th>Specimen</th><th>Performing Laboratory</th></tr></thead><tbody><tr><td ID="Result59435963Specimen">Blood</td><td ID="Result59435963PerformingLab"><paragraph>RRMC LABORATORY</paragraph><paragraph>2825 East Barnett Road</paragraph><paragraph>MEDFORD, OR 97504</paragraph></td></tr></tbody></table></item></list><footnote ID="subTitle24" styleCode="xSectionSubTitle xHidden">after 03/08/1867</footnote></text>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+              <id root="1.2.840.114350.1.13.333.2.7.2.798268" extension="54616605"/>
+              <code code="509" codeSystem="1.2.840.114350.1.13.333.2.7.2.696580" codeSystemName="Epic.EAP.ID" displayName="EKG - 12-Lead"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20151013005128"/>
+                <high value="20151013005128"/>
+              </effectiveTime>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <time value="20151013005128"/>
+                <assignedAuthor>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="NA"/>
+                  <telecom nullFlavor="NA"/>
+                  <assignedPerson>
+                    <name nullFlavor="UNK"/>
+                  </assignedPerson>
+                  <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                    <name>ASANTE NOVIUS RIS</name>
+                    <addr nullFlavor="UNK"/>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.2.798268" extension="54616605"/>
+                  <code nullFlavor="UNK"/>
+                  <text><reference nullFlavor="UNK"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013005128"/>
+                  <value xsi:type="ST" nullFlavor="NA"/>
+                </observation>
+              </component>
+              <component typeCode="COMP">
+                <encounter classCode="ENC" moodCode="EVN">
+                  <id root="1.2.840.114350.1.13.333.2.7.3.698084.8" extension="391921042034"/>
+                  <code code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.698084.30" codeSystemName="Epic.EncounterType" displayName="Hospital Encounter"/>
+                  <effectiveTime>
+                    <low value="20151013002751-0700"/>
+                    <high value="20151013040500-0700"/>
+                  </effectiveTime>
+                </encounter>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+              <id root="1.2.840.114350.1.13.333.2.7.2.798268" extension="36792258"/>
+              <code code="24323-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Comprehensive Metabolic Panel -STAT"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20151013004000"/>
+                <high value="20151013004000"/>
+              </effectiveTime>
+              <specimen typeCode="SPC">
+                <specimenRole classCode="SPEC">
+                  <id root="1.2.840.114350.1.13.333.2.7.7.798268.300" extension="29066020"/>
+                  <specimenPlayingEntity>
+                    <code code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.798268.300" codeSystemName="Epic.Specimen" displayName="Blood"/>
+                  </specimenPlayingEntity>
+                </specimenRole>
+              </specimen>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <time value="20151013004000"/>
+                <assignedAuthor>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="NA"/>
+                  <telecom nullFlavor="NA"/>
+                  <assignedPerson>
+                    <name nullFlavor="UNK"/>
+                  </assignedPerson>
+                  <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                    <name>RRMC LABORATORY</name>
+                    <addr><streetAddressLine>SHtuS</streetAddressLine><county>CopCy</county><city>Gbvup</city><state>vjWrs</state><postalCode>JzPEb</postalCode><country>lTFoD</country></addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="3930837636"/>
+                  <code code="2951-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sodium">
+                    <originalText><reference value="#Result59435963Comp1Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp1"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="140" unit="mmol/L"/>
+                  <entryRelationship typeCode="COMP">
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.64"/>
+                      <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="comment"/>
+                      <text><reference value="#Result59435963Comp1Comment"/></text>
+                      <statusCode code="completed"/>
+                    </act>
+                  </entryRelationship>
+                  <referenceRange>
+                    <observationRange>
+                      <text>135 - 143</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="135" unit="mmol/L"/>
+                        <high value="143" unit="mmol/L"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="1866646696"/>
+                  <code code="2823-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Potassium">
+                    <originalText><reference value="#Result59435963Comp2Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp2"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="3.9" unit="mmol/L"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>3.5 - 5.1</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="3.5" unit="mmol/L"/>
+                        <high value="5.1" unit="mmol/L"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="0905042076"/>
+                  <code code="2075-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chloride">
+                    <originalText><reference value="#Result59435963Comp3Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp3"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="107" unit="mmol/L"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>98 - 111</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="98" unit="mmol/L"/>
+                        <high value="111" unit="mmol/L"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="2833055875"/>
+                  <code code="2028-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CO2 - Carbon Dioxide">
+                    <originalText><reference value="#Result59435963Comp4Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp4"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="27.9" unit="mmol/L"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>21 - 31</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="21" unit="mmol/L"/>
+                        <high value="31" unit="mmol/L"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="3606945848"/>
+                  <code code="2345-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glucose">
+                    <originalText><reference value="#Result59435963Comp5Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp5"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="86" unit="mg/dL"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>80 - 99</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="80" unit="mg/dL"/>
+                        <high value="99" unit="mg/dL"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="8786625095"/>
+                  <code code="3094-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BUN">
+                    <originalText><reference value="#Result59435963Comp6Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp6"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="13" unit="mg/dL"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>6.0 - 23.0</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="6" unit="mg/dL"/>
+                        <high value="23" unit="mg/dL"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="0583692669"/>
+                  <code code="2160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Creatinine, Serum">
+                    <originalText><reference value="#Result59435963Comp7Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp7"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="1.04" unit="mg/dL"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>0.65 - 1.30</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="0.65" unit="mg/dL"/>
+                        <high value="1.3" unit="mg/dL"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="5363051275"/>
+                  <code code="17861-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Calcium">
+                    <originalText><reference value="#Result59435963Comp8Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp8"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="9.3" unit="mg/dL"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>8.6 - 10.0</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="8.6" unit="mg/dL"/>
+                        <high value="10" unit="mg/dL"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="5616323353"/>
+                  <code code="1920-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="AST - Aspartate Aminotransferase">
+                    <originalText><reference value="#Result59435963Comp9Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp9"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">25 IU/L</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>10 - 50</text>
+                      <value xsi:type="ST">10 - 50</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="32336681389"/>
+                  <code code="1742-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ALT - Alanine Amino transferase">
+                    <originalText><reference value="#Result59435963Comp10Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp10"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">40 IU/L</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>7 - 52</text>
+                      <value xsi:type="ST">7 - 52</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="40295731434"/>
+                  <code code="6768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Alkaline Phosphatase">
+                    <originalText><reference value="#Result59435963Comp11Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp11"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">56 IU/L</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>34 - 104</text>
+                      <value xsi:type="ST">34 - 104</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="25875955864"/>
+                  <code code="1975-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bilirubin, Total">
+                    <originalText><reference value="#Result59435963Comp12Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp12"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="0.4" unit="mg/dL"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>0.3 - 1.2</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="0.3" unit="mg/dL"/>
+                        <high value="1.2" unit="mg/dL"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="75345519055"/>
+                  <code code="2885-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Protein, Total">
+                    <originalText><reference value="#Result59435963Comp13Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp13"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">6.9 gm/dL</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>6.0 - 8.0</text>
+                      <value xsi:type="ST">6.0 - 8.0</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="87402754405"/>
+                  <code code="1751-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Albumin">
+                    <originalText><reference value="#Result59435963Comp14Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp14"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">3.9 gm/dL</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>3.5 - 5.0</text>
+                      <value xsi:type="ST">3.5 - 5.0</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="64191086001"/>
+                  <code code="10834-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Globulin">
+                    <originalText><reference value="#Result59435963Comp15Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp15"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">3.0 gm/dL</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>2.2 - 3.7</text>
+                      <value xsi:type="ST">2.2 - 3.7</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="38707923625"/>
+                  <code code="1759-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Albumin/Globulin Ratio">
+                    <originalText><reference value="#Result59435963Comp16Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp16"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="1.3"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>>0.9</text>
+                      <value xsi:type="ST">>0.9</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="44137412774"/>
+                  <code code="33037-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Anion Gap">
+                    <originalText><reference value="#Result59435963Comp17Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp17"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="5.1" unit="mmol/L"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>3 - 11</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="3" unit="mmol/L"/>
+                        <high value="11" unit="mmol/L"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="61036079053"/>
+                  <code code="33914-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GFR Estimate">
+                    <originalText><reference value="#Result59435963Comp18Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp18"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">>60</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>>60 mL/min/1.73sq.m</text>
+                      <value xsi:type="ST">>60 mL/min/1.73sq.m</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="52169792522"/>
+                  <code code="8251-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GFR Additional Info">
+                    <originalText><reference value="#Result59435963Comp19Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435963Comp19"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">For African Americans, multiply EGFR x 1.21.  See www.nkdep.nih.gov.</value>
+                </observation>
+              </component>
+              <component typeCode="COMP">
+                <encounter classCode="ENC" moodCode="EVN">
+                  <id root="1.2.840.114350.1.13.333.2.7.3.698084.8" extension="391921042034"/>
+                  <code code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.698084.30" codeSystemName="Epic.EncounterType" displayName="Hospital Encounter"/>
+                  <effectiveTime>
+                    <low value="20151013002751-0700"/>
+                    <high value="20151013040500-0700"/>
+                  </effectiveTime>
+                </encounter>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+              <id root="1.2.840.114350.1.13.333.2.7.2.798268" extension="86299476"/>
+              <code code="4024-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Salicylates -STAT"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20151013004000"/>
+                <high value="20151013004000"/>
+              </effectiveTime>
+              <specimen typeCode="SPC">
+                <specimenRole classCode="SPEC">
+                  <id root="1.2.840.114350.1.13.333.2.7.7.798268.300" extension="68996101"/>
+                  <specimenPlayingEntity>
+                    <code code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.798268.300" codeSystemName="Epic.Specimen" displayName="Blood"/>
+                  </specimenPlayingEntity>
+                </specimenRole>
+              </specimen>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <time value="20151013004000"/>
+                <assignedAuthor>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="NA"/>
+                  <telecom nullFlavor="NA"/>
+                  <assignedPerson>
+                    <name nullFlavor="UNK"/>
+                  </assignedPerson>
+                  <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                    <name>RRMC LABORATORY</name>
+                    <addr><streetAddressLine>YKVXj</streetAddressLine><county>wQidY</county><city>jSGmy</city><state>XTuOI</state><postalCode>aREMp</postalCode><country>ZDTws</country></addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="8219744374"/>
+                  <code code="4024-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Salicylate Level">
+                    <originalText><reference value="#Result59435966Comp1Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435966Comp1"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">&lt;2.5</value>
+                  <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83" displayName="Low"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>10.0 - 30.0 mg/dL</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="10" unit="mg/dL"/>
+                        <high value="30" unit="mg/dL"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <templateId root="1.2.840.114350.1.72.3.3"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.2.798268" extension="86299476"/>
+                  <code code="56850-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Lab Interpretation"/>
+                  <text><reference nullFlavor="UNK"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">Abnormal</value>
+                </observation>
+              </component>
+              <component typeCode="COMP">
+                <encounter classCode="ENC" moodCode="EVN">
+                  <id root="1.2.840.114350.1.13.333.2.7.3.698084.8" extension="391921042034"/>
+                  <code code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.698084.30" codeSystemName="Epic.EncounterType" displayName="Hospital Encounter"/>
+                  <effectiveTime>
+                    <low value="20151013002751-0700"/>
+                    <high value="20151013040500-0700"/>
+                  </effectiveTime>
+                </encounter>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+              <id root="1.2.840.114350.1.13.333.2.7.2.798268" extension="68169054"/>
+              <code code="3298-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Acetaminophen -STAT"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20151013004000"/>
+                <high value="20151013004000"/>
+              </effectiveTime>
+              <specimen typeCode="SPC">
+                <specimenRole classCode="SPEC">
+                  <id root="1.2.840.114350.1.13.333.2.7.7.798268.300" extension="58722238"/>
+                  <specimenPlayingEntity>
+                    <code code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.798268.300" codeSystemName="Epic.Specimen" displayName="Blood"/>
+                  </specimenPlayingEntity>
+                </specimenRole>
+              </specimen>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <time value="20151013004000"/>
+                <assignedAuthor>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="NA"/>
+                  <telecom nullFlavor="NA"/>
+                  <assignedPerson>
+                    <name nullFlavor="UNK"/>
+                  </assignedPerson>
+                  <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                    <name>RRMC LABORATORY</name>
+                    <addr><streetAddressLine>nXqKZ</streetAddressLine><county>goHhY</county><city>focHS</city><state>UMnyV</state><postalCode>hfPpu</postalCode><country>YbeeJ</country></addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="4385240577"/>
+                  <code code="3298-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Acetaminophen Level">
+                    <originalText><reference value="#Result59435967Comp1Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435967Comp1"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">&lt;10.0</value>
+                  <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83" displayName="Low"/>
+                  <entryRelationship typeCode="COMP">
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.64"/>
+                      <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="comment"/>
+                      <text><reference value="#Result59435967Comp1Comment"/></text>
+                      <statusCode code="completed"/>
+                    </act>
+                  </entryRelationship>
+                  <referenceRange>
+                    <observationRange>
+                      <text>10 - 30 microgm/mL</text>
+                      <value xsi:type="ST">10 - 30 microgm/mL</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <templateId root="1.2.840.114350.1.72.3.3"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.2.798268" extension="68169054"/>
+                  <code code="56850-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Lab Interpretation"/>
+                  <text><reference nullFlavor="UNK"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">Abnormal</value>
+                </observation>
+              </component>
+              <component typeCode="COMP">
+                <encounter classCode="ENC" moodCode="EVN">
+                  <id root="1.2.840.114350.1.13.333.2.7.3.698084.8" extension="391921042034"/>
+                  <code code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.698084.30" codeSystemName="Epic.EncounterType" displayName="Hospital Encounter"/>
+                  <effectiveTime>
+                    <low value="20151013002751-0700"/>
+                    <high value="20151013040500-0700"/>
+                  </effectiveTime>
+                </encounter>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+              <id root="1.2.840.114350.1.13.333.2.7.2.798268" extension="80433090"/>
+              <code code="33476" codeSystem="1.2.840.114350.1.13.333.2.7.2.696580" codeSystemName="Epic.EAP.ID" displayName="X-ray chest PA or AP"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20151013012420"/>
+                <high value="20151013012420"/>
+              </effectiveTime>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <time value="20151013012420"/>
+                <assignedAuthor>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="NA"/>
+                  <telecom nullFlavor="NA"/>
+                  <assignedPerson>
+                    <name nullFlavor="UNK"/>
+                  </assignedPerson>
+                  <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                    <name>ASANTE SPEECHQ</name>
+                    <addr nullFlavor="UNK"/>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <templateId root="1.2.840.114350.1.72.3.1"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.7.798268.1010" extension="97784726"/>
+                  <code nullFlavor="UNK" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                    <translation code="IMP" codeSystemName="Epic.ResultText"/>
+                  </code>
+                  <text><reference value="#Result59435976Impression"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013012420"/>
+                  <value xsi:type="ED"><reference value="#Result59435976Impression"/></value>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <templateId root="1.2.840.114350.1.72.3.1"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.7.798268.1000" extension="04091017"/>
+                  <code nullFlavor="UNK" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                    <translation code="NAR" codeSystemName="Epic.ResultText"/>
+                  </code>
+                  <text><reference value="#Result59435976Narrative"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013012420"/>
+                  <value xsi:type="ED"><reference value="#Result59435976Narrative"/></value>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <templateId root="1.2.840.114350.1.72.3.1"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.2.727879" extension="981940571"/>
+                  <code nullFlavor="UNK" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                    <translation code="PXN" codeSystemName="Epic.ResultText"/>
+                  </code>
+                  <text><reference value="#Result59435976ProcedureNote131141045"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013012420"/>
+                  <value xsi:type="ED"><reference value="#Result59435976ProcedureNote131141045"/></value>
+                </observation>
+              </component>
+              <component typeCode="COMP">
+                <encounter classCode="ENC" moodCode="EVN">
+                  <id root="1.2.840.114350.1.13.333.2.7.3.698084.8" extension="391921042034"/>
+                  <code code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.698084.30" codeSystemName="Epic.EncounterType" displayName="Hospital Encounter"/>
+                  <effectiveTime>
+                    <low value="20151013002751-0700"/>
+                    <high value="20151013040500-0700"/>
+                  </effectiveTime>
+                </encounter>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+              <id root="1.2.840.114350.1.13.333.2.7.2.798268" extension="19466659"/>
+              <code code="57021-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CBC with Auto Differential -STAT"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20151013004000"/>
+                <high value="20151013004000"/>
+              </effectiveTime>
+              <specimen typeCode="SPC">
+                <specimenRole classCode="SPEC">
+                  <id root="1.2.840.114350.1.13.333.2.7.7.798268.300" extension="29514820"/>
+                  <specimenPlayingEntity>
+                    <code code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.798268.300" codeSystemName="Epic.Specimen" displayName="Blood"/>
+                  </specimenPlayingEntity>
+                </specimenRole>
+              </specimen>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <time value="20151013004000"/>
+                <assignedAuthor>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="NA"/>
+                  <telecom nullFlavor="NA"/>
+                  <assignedPerson>
+                    <name nullFlavor="UNK"/>
+                  </assignedPerson>
+                  <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                    <name>RRMC LABORATORY</name>
+                    <addr><streetAddressLine>pVTKm</streetAddressLine><county>yHdjX</county><city>zBMuT</city><state>Afque</state><postalCode>IJpuA</postalCode><country>qElZT</country></addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="0698983798"/>
+                  <code code="6690-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="WBC">
+                    <originalText><reference value="#Result59435962Comp1Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp1"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">7.7 K/microL</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>4.8 - 10.8</text>
+                      <value xsi:type="ST">4.8 - 10.8</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="1396521349"/>
+                  <code code="789-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RBC">
+                    <originalText><reference value="#Result59435962Comp2Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp2"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">4.19 M/microL</value>
+                  <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83" displayName="Low"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>4.70 - 6.10</text>
+                      <value xsi:type="ST">4.70 - 6.10</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="5831059584"/>
+                  <code code="718-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hgb">
+                    <originalText><reference value="#Result59435962Comp3Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp3"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">13.0 gm/dL</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>12.0 - 18.0</text>
+                      <value xsi:type="ST">12.0 - 18.0</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="4412840293"/>
+                  <code code="4544-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HCT">
+                    <originalText><reference value="#Result59435962Comp4Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp4"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="38.0" unit="%"/>
+                  <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83" displayName="Low"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>42.0 - 54.0</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="42" unit="%"/>
+                        <high value="54" unit="%"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="2199876994"/>
+                  <code code="787-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MCV">
+                    <originalText><reference value="#Result59435962Comp5Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp5"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="90.8" unit="fL"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>81 - 99</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="81" unit="fL"/>
+                        <high value="99" unit="fL"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="9687937588"/>
+                  <code code="785-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MCH">
+                    <originalText><reference value="#Result59435962Comp6Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp6"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="31.0" unit="pg"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>27 - 34</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="27" unit="pg"/>
+                        <high value="34" unit="pg"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="3882605953"/>
+                  <code code="786-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MCHC">
+                    <originalText><reference value="#Result59435962Comp7Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp7"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">34.1 gm/dL</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>32 - 36</text>
+                      <value xsi:type="ST">32 - 36</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="3125279243"/>
+                  <code code="21000-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RDW">
+                    <originalText><reference value="#Result59435962Comp8Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp8"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="13.5" unit="%"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>11.5 - 14.5</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="11.5" unit="%"/>
+                        <high value="14.5" unit="%"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="1968802657"/>
+                  <code code="777-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Platelet Count">
+                    <originalText><reference value="#Result59435962Comp9Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp9"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">263 K/microL</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>150 - 400</text>
+                      <value xsi:type="ST">150 - 400</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="23038161629"/>
+                  <code code="32207-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MPV">
+                    <originalText><reference value="#Result59435962Comp10Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp10"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="8.0" unit="fL"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>7.4 - 10.4</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="7.4" unit="fL"/>
+                        <high value="10.4" unit="fL"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="46455010939"/>
+                  <code code="49024-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Differential Type">
+                    <originalText><reference value="#Result59435962Comp11Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp11"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">AUTO</value>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="32086836585"/>
+                  <code code="770-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Segs (Neutrophils)%">
+                    <originalText><reference value="#Result59435962Comp12Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp12"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="61" unit="%"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>35 - 70</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="35" unit="%"/>
+                        <high value="70" unit="%"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="48840573786"/>
+                  <code code="736-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Lymphocytes %">
+                    <originalText><reference value="#Result59435962Comp13Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp13"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="28" unit="%"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>25 - 45</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="25" unit="%"/>
+                        <high value="45" unit="%"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="48036336952"/>
+                  <code code="5905-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Monocytes %">
+                    <originalText><reference value="#Result59435962Comp14Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp14"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="8" unit="%"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>0 - 12</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="0" unit="%"/>
+                        <high value="12" unit="%"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="84773869005"/>
+                  <code code="713-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Eosinophils %">
+                    <originalText><reference value="#Result59435962Comp15Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp15"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="2" unit="%"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>0 - 7</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="0" unit="%"/>
+                        <high value="7" unit="%"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="50406882861"/>
+                  <code code="706-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Basophils %">
+                    <originalText><reference value="#Result59435962Comp16Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp16"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="PQ" value="1" unit="%"/>
+                  <referenceRange>
+                    <observationRange>
+                      <text>0 - 2</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="0" unit="%"/>
+                        <high value="2" unit="%"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="58267868631"/>
+                  <code code="751-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Segs (Neutrophils), Absolute">
+                    <originalText><reference value="#Result59435962Comp17Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp17"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">4.7 K/microL</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>1.6 - 7.3</text>
+                      <value xsi:type="ST">1.6 - 7.3</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="22926363814"/>
+                  <code code="26474-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Lymphocytes, Absolute">
+                    <originalText><reference value="#Result59435962Comp18Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp18"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">2.2 K/microL</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>1.1 - 4.3</text>
+                      <value xsi:type="ST">1.1 - 4.3</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="01579771741"/>
+                  <code code="742-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Monocytes, Absolute">
+                    <originalText><reference value="#Result59435962Comp19Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp19"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">0.6 K/microL</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>0 - 1.2</text>
+                      <value xsi:type="ST">0 - 1.2</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="98758815054"/>
+                  <code code="712-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Eosinophils, Absolute">
+                    <originalText><reference value="#Result59435962Comp20Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp20"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">0.2 K/microL</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>0 - 0.7</text>
+                      <value xsi:type="ST">0 - 0.7</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="46390904743"/>
+                  <code code="704-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Basophils, Absolute">
+                    <originalText><reference value="#Result59435962Comp21Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435962Comp21"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">0.1 K/microL</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>0 - 0.2</text>
+                      <value xsi:type="ST">0 - 0.2</value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <templateId root="1.2.840.114350.1.72.3.3"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.2.798268" extension="19466659"/>
+                  <code code="56850-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Lab Interpretation"/>
+                  <text><reference nullFlavor="UNK"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">Abnormal</value>
+                </observation>
+              </component>
+              <component typeCode="COMP">
+                <encounter classCode="ENC" moodCode="EVN">
+                  <id root="1.2.840.114350.1.13.333.2.7.3.698084.8" extension="391921042034"/>
+                  <code code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.698084.30" codeSystemName="Epic.EncounterType" displayName="Hospital Encounter"/>
+                  <effectiveTime>
+                    <low value="20151013002751-0700"/>
+                    <high value="20151013040500-0700"/>
+                  </effectiveTime>
+                </encounter>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+              <id root="1.2.840.114350.1.13.333.2.7.2.798268" extension="41998929"/>
+              <code code="5640-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Alcohol Medical/Serum -STAT"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20151013004000"/>
+                <high value="20151013004000"/>
+              </effectiveTime>
+              <specimen typeCode="SPC">
+                <specimenRole classCode="SPEC">
+                  <id root="1.2.840.114350.1.13.333.2.7.7.798268.300" extension="44013791"/>
+                  <specimenPlayingEntity>
+                    <code code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.798268.300" codeSystemName="Epic.Specimen" displayName="Blood"/>
+                  </specimenPlayingEntity>
+                </specimenRole>
+              </specimen>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <time value="20151013004000"/>
+                <assignedAuthor>
+                  <id nullFlavor="UNK"/>
+                  <addr nullFlavor="NA"/>
+                  <telecom nullFlavor="NA"/>
+                  <assignedPerson>
+                    <name nullFlavor="UNK"/>
+                  </assignedPerson>
+                  <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                    <name>RRMC LABORATORY</name>
+                    <addr><streetAddressLine>ufgJr</streetAddressLine><county>yrmGR</county><city>FXLVh</city><state>bbbvs</state><postalCode>TulyE</postalCode><country>oPIMT</country></addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.6.798268.2000" extension="4721016087"/>
+                  <code code="5643-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Alcohol Scrn">
+                    <originalText><reference value="#Result59435969Comp1Name"/></originalText>
+                  </code>
+                  <text><reference value="#Result59435969Comp1"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013004000"/>
+                  <value xsi:type="ST">&lt;10</value>
+                  <referenceRange>
+                    <observationRange>
+                      <text>0 - 10 mg/dL</text>
+                      <value xsi:type="IVL_PQ">
+                        <low value="0" unit="mg/dL"/>
+                        <high value="10" unit="mg/dL"/>
+                      </value>
+                      <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component typeCode="COMP">
+                <encounter classCode="ENC" moodCode="EVN">
+                  <id root="1.2.840.114350.1.13.333.2.7.3.698084.8" extension="391921042034"/>
+                  <code code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.698084.30" codeSystemName="Epic.EncounterType" displayName="Hospital Encounter"/>
+                  <effectiveTime>
+                    <low value="20151013002751-0700"/>
+                    <high value="20151013040500-0700"/>
+                  </effectiveTime>
+                </encounter>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+              <id root="1.2.840.114350.1.13.333.2.7.2.798268" extension="37600292"/>
+              <code code="130952" codeSystem="1.2.840.114350.1.13.333.2.7.2.696580" codeSystemName="Epic.EAP.ID" displayName="SCAN/TX EKG"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20151013130313"/>
+                <high value="20151013130313"/>
+              </effectiveTime>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="1.2.840.114350.1.13.333.2.7.2.798268" extension="37600292"/>
+                  <code nullFlavor="UNK"/>
+                  <text><reference nullFlavor="UNK"/></text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20151013130313"/>
+                  <value xsi:type="ST" nullFlavor="NA"/>
+                </observation>
+              </component>
+              <component typeCode="COMP">
+                <encounter classCode="ENC" moodCode="EVN">
+                  <id root="1.2.840.114350.1.13.333.2.7.3.698084.8" extension="391921042034"/>
+                  <code code="3" codeSystem="1.2.840.114350.1.13.333.2.7.4.698084.30" codeSystemName="Epic.EncounterType" displayName="Hospital Encounter"/>
+                  <effectiveTime>
+                    <low value="20151013002751-0700"/>
+                    <high value="20151013040500-0700"/>
+                  </effectiveTime>
+                </encounter>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

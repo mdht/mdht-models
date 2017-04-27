@@ -17,20 +17,18 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.EncounterImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.EncountersActivityOperations;
-import org.openhealthtools.mdht.uml.cda.impl.EncounterImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounters Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -68,7 +66,8 @@ public class EncountersActivityImpl extends EncounterImpl implements EncountersA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersActivityHasPractitioners(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncountersActivityHasPractitioners(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EncountersActivityOperations.validateEncountersActivityHasPractitioners(this, diagnostics, context);
 	}
 
@@ -77,7 +76,8 @@ public class EncountersActivityImpl extends EncounterImpl implements EncountersA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersActivityPractitionerRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncountersActivityPractitionerRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EncountersActivityOperations.validateEncountersActivityPractitionerRole(this, diagnostics, context);
 	}
 
@@ -131,7 +131,8 @@ public class EncountersActivityImpl extends EncounterImpl implements EncountersA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersActivityPatientInstruction(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncountersActivityPatientInstruction(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EncountersActivityOperations.validateEncountersActivityPatientInstruction(this, diagnostics, context);
 	}
 
@@ -149,7 +150,8 @@ public class EncountersActivityImpl extends EncounterImpl implements EncountersA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersActivityEncounterLocation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncountersActivityEncounterLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EncountersActivityOperations.validateEncountersActivityEncounterLocation(this, diagnostics, context);
 	}
 

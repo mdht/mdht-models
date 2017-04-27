@@ -42,8 +42,15 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
  *
  * @generated
  */
-public class ChiefComplaintSectionOperations extends
-		org.openhealthtools.mdht.uml.cda.ihe.operations.ChiefComplaintSectionOperations {
+public class ChiefComplaintSectionOperations
+		extends org.openhealthtools.mdht.uml.cda.ihe.operations.ChiefComplaintSectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72,7 +79,7 @@ public class ChiefComplaintSectionOperations extends
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,23 +95,29 @@ public class ChiefComplaintSectionOperations extends
 	public static boolean validateHITSPChiefComplaintSectionTemplateId(ChiefComplaintSection chiefComplaintSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CHIEF_COMPLAINT_SECTION);
 			try {
-				VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chiefComplaintSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				chiefComplaintSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.CHIEF_COMPLAINT_SECTION__HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HITSPChiefComplaintSectionTemplateId"),
-					new Object[] { chiefComplaintSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.CHIEF_COMPLAINT_SECTION__HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID,
+						HITSPPlugin.INSTANCE.getString("ChiefComplaintSectionHITSPChiefComplaintSectionTemplateId"),
+						new Object[] { chiefComplaintSection }));
 			}
 
 			return false;
@@ -131,7 +144,7 @@ public class ChiefComplaintSectionOperations extends
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,23 +160,29 @@ public class ChiefComplaintSectionOperations extends
 	public static boolean validateHITSPChiefComplaintSectionCondition(ChiefComplaintSection chiefComplaintSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CHIEF_COMPLAINT_SECTION);
 			try {
-				VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chiefComplaintSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				chiefComplaintSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.CHIEF_COMPLAINT_SECTION__HITSP_CHIEF_COMPLAINT_SECTION_CONDITION,
-					HITSPPlugin.INSTANCE.getString("HITSPChiefComplaintSectionCondition"),
-					new Object[] { chiefComplaintSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.CHIEF_COMPLAINT_SECTION__HITSP_CHIEF_COMPLAINT_SECTION_CONDITION,
+						HITSPPlugin.INSTANCE.getString("ChiefComplaintSectionHITSPChiefComplaintSectionCondition"),
+						new Object[] { chiefComplaintSection }));
 			}
 
 			return false;
@@ -197,8 +216,10 @@ public class ChiefComplaintSectionOperations extends
 	 * @generated
 	 */
 	public static Condition getCondition(ChiefComplaintSection chiefComplaintSection) {
+
 		if (GET_CONDITION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.CHIEF_COMPLAINT_SECTION,
 				HITSPPackage.Literals.CHIEF_COMPLAINT_SECTION.getEAllOperations().get(61));
@@ -208,7 +229,8 @@ public class ChiefComplaintSectionOperations extends
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONDITION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONDITION__EOCL_QRY);
 		return (Condition) query.evaluate(chiefComplaintSection);
 	}
 

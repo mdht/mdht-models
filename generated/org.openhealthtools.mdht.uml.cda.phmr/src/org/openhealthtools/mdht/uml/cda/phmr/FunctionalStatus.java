@@ -22,9 +22,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr;
 
-import java.lang.Iterable;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.FunctionalStatusSection;
 
 /**
@@ -39,10 +37,10 @@ import org.openhealthtools.mdht.uml.cda.ccd.FunctionalStatusSection;
  */
 public interface FunctionalStatus extends FunctionalStatusSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public FunctionalStatus init();
 
@@ -52,5 +50,5 @@ public interface FunctionalStatus extends FunctionalStatusSection {
      * @generated
      */
     @Override
-	public FunctionalStatus init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public FunctionalStatus init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // FunctionalStatus

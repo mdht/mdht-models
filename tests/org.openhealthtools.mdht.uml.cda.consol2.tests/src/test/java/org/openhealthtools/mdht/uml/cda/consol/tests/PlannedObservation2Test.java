@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -16,18 +16,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedObservation2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,6 +37,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Status Code P</em>}</li>
@@ -47,17 +48,16 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2TargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2Performer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2PatientPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Patient Priority Preference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2ProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Provider Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2PriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2Indication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Indication2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2Instruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2PlannedCoverage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Planned Coverage</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getPatientPriorityPreferences() <em>Get Patient Priority Preferences</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getPriorityPreferences() <em>Get Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getIndication2s() <em>Get Indication2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getInstruction2s() <em>Get Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getPlannedCoverages() <em>Get Planned Coverages</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlanOfCareActivityObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Observation Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlanOfCareActivityObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Observation Mood Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -65,6 +65,40 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  */
 
 public class PlannedObservation2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedObservation2CodeP() {
+		OperationsTestCase<PlannedObservation2> validatePlannedObservation2CodePTestCase = new OperationsTestCase<PlannedObservation2>(
+			"validatePlannedObservation2CodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedObservation2 target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedObservation2Operations.validatePlannedObservation2CodeP(
+					(PlannedObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedObservation2CodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -80,11 +114,13 @@ public class PlannedObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToFail(PlannedObservation2 target) {
 				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD());
 			}
 
 			@Override
 			protected void updateToPass(PlannedObservation2 target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+				CD code = target.getCode();
+				code.setCodeSystem(LOINC_ID);
 			}
 
 			@Override
@@ -174,8 +210,8 @@ public class PlannedObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedObservation2EffectiveTime() {
 		OperationsTestCase<PlannedObservation2> validatePlannedObservation2EffectiveTimeTestCase = new OperationsTestCase<PlannedObservation2>(
-			"validatePlannedObservation2EffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedObservation2EffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -281,8 +317,8 @@ public class PlannedObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedObservation2TargetSiteCodeP() {
 		OperationsTestCase<PlannedObservation2> validatePlannedObservation2TargetSiteCodePTestCase = new OperationsTestCase<PlannedObservation2>(
-			"validatePlannedObservation2TargetSiteCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedObservation2TargetSiteCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -315,8 +351,8 @@ public class PlannedObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedObservation2TargetSiteCode() {
 		OperationsTestCase<PlannedObservation2> validatePlannedObservation2TargetSiteCodeTestCase = new OperationsTestCase<PlannedObservation2>(
-			"validatePlannedObservation2TargetSiteCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedObservation2TargetSiteCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -389,8 +425,8 @@ public class PlannedObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedObservation2AuthorParticipation() {
 		OperationsTestCase<PlannedObservation2> validatePlannedObservation2AuthorParticipationTestCase = new OperationsTestCase<PlannedObservation2>(
-			"validatePlannedObservation2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedObservation2AuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -420,10 +456,10 @@ public class PlannedObservation2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidatePlannedObservation2PatientPriorityPreference() {
-		OperationsTestCase<PlannedObservation2> validatePlannedObservation2PatientPriorityPreferenceTestCase = new OperationsTestCase<PlannedObservation2>(
-			"validatePlannedObservation2PatientPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_OBSERVATION2_PATIENT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidatePlannedObservation2PriorityPreference() {
+		OperationsTestCase<PlannedObservation2> validatePlannedObservation2PriorityPreferenceTestCase = new OperationsTestCase<PlannedObservation2>(
+			"validatePlannedObservation2PriorityPreference", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -435,56 +471,20 @@ public class PlannedObservation2Test extends CDAValidationTest {
 			protected void updateToPass(PlannedObservation2 target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createPatientPriorityPreference().init());
+				er.setObservation(ConsolFactory.eINSTANCE.createPriorityPreference().init());
 				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PlannedObservation2Operations.validatePlannedObservation2PatientPriorityPreference(
+				return PlannedObservation2Operations.validatePlannedObservation2PriorityPreference(
 					(PlannedObservation2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePlannedObservation2PatientPriorityPreferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedObservation2ProviderPriorityPreference() {
-		OperationsTestCase<PlannedObservation2> validatePlannedObservation2ProviderPriorityPreferenceTestCase = new OperationsTestCase<PlannedObservation2>(
-			"validatePlannedObservation2ProviderPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_OBSERVATION2_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedObservation2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedObservation2 target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createProviderPriorityPreference().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedObservation2Operations.validatePlannedObservation2ProviderPriorityPreference(
-					(PlannedObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedObservation2ProviderPriorityPreferenceTestCase.doValidationTest();
+		validatePlannedObservation2PriorityPreferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -566,8 +566,8 @@ public class PlannedObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedObservation2PlannedCoverage() {
 		OperationsTestCase<PlannedObservation2> validatePlannedObservation2PlannedCoverageTestCase = new OperationsTestCase<PlannedObservation2>(
-			"validatePlannedObservation2PlannedCoverage",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_OBSERVATION2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedObservation2PlannedCoverage", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_OBSERVATION2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -600,22 +600,10 @@ public class PlannedObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPatientPriorityPreferences() {
+	public void testGetPriorityPreferences() {
 
 		PlannedObservation2 target = objectFactory.create();
-		target.getPatientPriorityPreferences();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetProviderPriorityPreferences() {
-
-		PlannedObservation2 target = objectFactory.create();
-		target.getProviderPriorityPreferences();
+		target.getPriorityPreferences();
 
 	}
 
@@ -663,7 +651,8 @@ public class PlannedObservation2Test extends CDAValidationTest {
 	public void testValidatePlanOfCareActivityObservationTemplateId() {
 		OperationsTestCase<PlannedObservation2> validatePlanOfCareActivityObservationTemplateIdTestCase = new OperationsTestCase<PlannedObservation2>(
 			"validatePlanOfCareActivityObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -687,6 +676,41 @@ public class PlannedObservation2Test extends CDAValidationTest {
 		};
 
 		validatePlanOfCareActivityObservationTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlanOfCareActivityObservationMoodCode() {
+		OperationsTestCase<PlannedObservation2> validatePlanOfCareActivityObservationMoodCodeTestCase = new OperationsTestCase<PlannedObservation2>(
+			"validatePlanOfCareActivityObservationMoodCode",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedObservation2 target) {
+				target.init();
+				target.setMoodCode(x_ActMoodDocumentObservation.INT);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedObservation2Operations.validatePlanOfCareActivityObservationMoodCode(
+					(PlannedObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfCareActivityObservationMoodCodeTestCase.doValidationTest();
 	}
 
 	/**

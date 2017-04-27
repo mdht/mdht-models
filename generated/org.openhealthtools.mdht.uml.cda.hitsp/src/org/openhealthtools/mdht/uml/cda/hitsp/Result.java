@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.SimpleObservation;
 
@@ -90,5 +88,6 @@ public interface Result extends ResultObservation, SimpleObservation {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Result init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public Result init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // Result

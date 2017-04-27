@@ -3,33 +3,20 @@
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
 import java.io.IOException;
-
 import java.net.URL;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.common.util.WrappedException;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EValidator;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
 import org.eclipse.emf.ecore.resource.Resource;
-
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmFactory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
-
-import org.openhealthtools.mdht.uml.cda.util.AnnotationBasedInitializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -734,7 +721,7 @@ public class SdtmPackageImpl extends EPackageImpl implements SdtmPackage {
         isInited = true;
 
         // Initialize simple dependencies
-        CDAPackage.eINSTANCE.eClass();
+        org.eclipse.mdht.uml.cda.CDAPackage.eINSTANCE.eClass();
 
         // Load packages
         theSdtmPackage.loadPackage();
@@ -746,8 +733,7 @@ public class SdtmPackageImpl extends EPackageImpl implements SdtmPackage {
         EValidator.Registry.INSTANCE.put
             (theSdtmPackage, 
              new EValidator.Descriptor() {
-                 @Override
-				public EValidator getEValidator() {
+                 public EValidator getEValidator() {
                      return SdtmValidator.INSTANCE;
                  }
              });
@@ -757,8 +743,8 @@ public class SdtmPackageImpl extends EPackageImpl implements SdtmPackage {
 
   
         // publish my initializers in the registry
-        Initializer.Registry.INSTANCE.registerFactory("org.openhealthtools.mdht.uml.cda.sdtm", AnnotationBasedInitializer.FACTORY);
-        Initializer.Registry.INSTANCE.initializeEPackage(theSdtmPackage);
+        org.eclipse.mdht.emf.runtime.util.Initializer.Registry.INSTANCE.registerFactory("org.openhealthtools.mdht.uml.cda.sdtm", org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer.FACTORY);
+        org.eclipse.mdht.emf.runtime.util.Initializer.Registry.INSTANCE.initializeEPackage(theSdtmPackage);
                 
         // Update the registry and return the package
         EPackage.Registry.INSTANCE.put(SdtmPackage.eNS_URI, theSdtmPackage);

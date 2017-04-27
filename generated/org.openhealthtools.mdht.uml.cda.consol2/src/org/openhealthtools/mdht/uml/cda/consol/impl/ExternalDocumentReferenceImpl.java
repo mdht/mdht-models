@@ -7,33 +7,25 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ExternalDocumentImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ExternalDocumentReferenceOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>External Document Reference</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDocumentReference {
+public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implements ExternalDocumentReference {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,7 +51,8 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * @generated
 	 */
 	@Override
-	public boolean validateExternalDocumentReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExternalDocumentReferenceTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceTemplateId(
 			this, diagnostics, context);
 	}
@@ -70,7 +63,8 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * @generated
 	 */
 	@Override
-	public boolean validateExternalDocumentReferenceClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateExternalDocumentReferenceClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceClassCode(
 			this, diagnostics, context);
 	}
@@ -82,7 +76,8 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 */
 	@Override
 	public boolean validateExternalDocumentReferenceMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceMoodCode(this, diagnostics, context);
+		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -90,9 +85,8 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateExternalDocumentReferenceCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceCodeP(this, diagnostics, context);
+	public boolean validateExternalDocumentReferenceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceId(this, diagnostics, context);
 	}
 
 	/**
@@ -110,10 +104,8 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateExternalDocumentReferenceReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReference(
-			this, diagnostics, context);
+	public boolean validateExternalDocumentReferenceSetId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceSetId(this, diagnostics, context);
 	}
 
 	/**
@@ -121,94 +113,9 @@ public class ExternalDocumentReferenceImpl extends ActImpl implements ExternalDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateExternalDocumentReferenceReferenceExternalDocumentClassCode(DiagnosticChain diagnostics,
+	public boolean validateExternalDocumentReferenceVersionNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocumentClassCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateExternalDocumentReferenceReferenceExternalDocumentMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocumentMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateExternalDocumentReferenceReferenceExternalDocumentId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocumentId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateExternalDocumentReferenceReferenceExternalDocumentCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocumentCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateExternalDocumentReferenceReferenceExternalDocumentSetId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocumentSetId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateExternalDocumentReferenceReferenceExternalDocumentVersionNumber(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocumentVersionNumber(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateExternalDocumentReferenceReferenceTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceTypeCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateExternalDocumentReferenceReferenceExternalDocument(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceReferenceExternalDocument(
+		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceVersionNumber(
 			this, diagnostics, context);
 	}
 

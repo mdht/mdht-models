@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -15,7 +11,7 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,7 +20,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationsSectionEntriesOptional2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionEntriesOptionalTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.1' templateId.extension='2014-06-09' code.code='10160-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of medication use' constraints.validation.dependOn.MedicationsSectionEntriesOptionalCode='MedicationsSectionEntriesOptionalCodeP' constraints.validation.warning='MedicationsSectionEntriesOptionalMedicationActivity2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionEntriesOptionalTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.1' templateId.extension='2014-06-09' constraints.validation.info='MedicationsSectionEntriesOptionalAbsenceOfMedications' code.code='10160-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of medication use' constraints.validation.dependOn.MedicationsSectionEntriesOptionalCode='MedicationsSectionEntriesOptionalCodeP' constraints.validation.warning='MedicationsSectionEntriesOptionalMedicationActivity'"
  * @generated
  */
 public interface MedicationsSectionEntriesOptional2 extends MedicationsSectionEntriesOptional {
@@ -38,7 +34,7 @@ public interface MedicationsSectionEntriesOptional2 extends MedicationsSectionEn
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
 	 * @generated
 	 */
-	boolean validateMedicationsSectionEntriesOptional2AbsenceOfMedications(DiagnosticChain diagnostics,
+	boolean validateMedicationsSectionEntriesOptionalAbsenceOfMedications(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
@@ -56,19 +52,6 @@ public interface MedicationsSectionEntriesOptional2 extends MedicationsSectionEn
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(consol::MedicationActivity2))'"
-	 * @generated
-	 */
-	boolean validateMedicationsSectionEntriesOptionalMedicationActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity2)).oclAsType(consol::MedicationActivity2)'"
 	 * @generated
@@ -80,7 +63,6 @@ public interface MedicationsSectionEntriesOptional2 extends MedicationsSectionEn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationsSectionEntriesOptional2 init();
 
 	/**
@@ -88,6 +70,5 @@ public interface MedicationsSectionEntriesOptional2 extends MedicationsSectionEn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationsSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationsSectionEntriesOptional2

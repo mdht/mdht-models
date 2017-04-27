@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,11 +25,11 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * <p>
  *     The Assessment and Plan Section contains information about the assessment of the patient's condition and
  *     expectations for care including proposals, goals, and order requests for monitoring, tracking, or improving the
- *     condition of the patient. 
+ *     condition of the patient.
  * </p>
  * <p>
  *     An assessment and plan section varies from the plan of care section defined later in that it includes a
- *     physician assessment of the patient condition. 
+ *     physician assessment of the patient condition.
  * </p>
  * <p>
  *     <b>NOTE </b>:
@@ -39,7 +37,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *     include assessments of functional status, or other assessments typically used in nursing. In Implementation Guides
  *     currently selected, when both the assessment and plan are documented, they are included together in a single section
  *     documenting both. When the physician assessment is not present, only the plan of care section appears. There are no
- *     cases where a physician assessment is provided without a plan.   
+ *     cases where a physician assessment is provided without a plan.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -96,7 +94,8 @@ public interface AssessmentAndPlanSection extends org.openhealthtools.mdht.uml.c
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(hitsp::Encounter))'"
 	 * @generated
 	 */
-	boolean validateHITSPAssessmentAndPlanSectionEncounterEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHITSPAssessmentAndPlanSectionEncounterEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -108,7 +107,8 @@ public interface AssessmentAndPlanSection extends org.openhealthtools.mdht.uml.c
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hitsp::Procedure))'"
 	 * @generated
 	 */
-	boolean validateHITSPAssessmentAndPlanSectionProcedureEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHITSPAssessmentAndPlanSectionProcedureEntry(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -158,5 +158,6 @@ public interface AssessmentAndPlanSection extends org.openhealthtools.mdht.uml.c
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssessmentAndPlanSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public AssessmentAndPlanSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // AssessmentAndPlanSection

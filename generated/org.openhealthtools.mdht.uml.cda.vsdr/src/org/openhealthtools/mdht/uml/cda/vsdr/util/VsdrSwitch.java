@@ -4,19 +4,32 @@ package org.openhealthtools.mdht.uml.cda.vsdr.util;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.Switch;
-
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
-import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.Organizer;
-import org.openhealthtools.mdht.uml.cda.Section;
-
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.ClinicalStatement;
+import org.eclipse.mdht.uml.cda.Observation;
+import org.eclipse.mdht.uml.cda.Organizer;
+import org.eclipse.mdht.uml.cda.Section;
+import org.eclipse.mdht.uml.hl7.rim.Act;
+import org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot;
 import org.openhealthtools.mdht.uml.cda.vsdr.*;
-
-import org.openhealthtools.mdht.uml.hl7.rim.Act;
-import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
+import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyPerformance;
+import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults;
+import org.openhealthtools.mdht.uml.cda.vsdr.CertifyingDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer;
+import org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral;
+import org.openhealthtools.mdht.uml.cda.vsdr.DateandTimeofDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation;
+import org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType;
+import org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody;
+import org.openhealthtools.mdht.uml.cda.vsdr.Injury;
+import org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.MannerofDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus;
+import org.openhealthtools.mdht.uml.cda.vsdr.PronouncingDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords;
+import org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse;
+import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -56,7 +69,7 @@ public class VsdrSwitch<T> extends Switch<T> {
 	 * Checks whether this is a switch for the given package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @parameter ePackage the package in question.
+	 * @param ePackage the package in question.
 	 * @return whether this is a switch for the given package.
 	 * @generated
 	 */

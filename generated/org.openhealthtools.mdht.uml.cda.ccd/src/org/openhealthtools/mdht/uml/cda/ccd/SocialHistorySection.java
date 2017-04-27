@@ -16,8 +16,8 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Section;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.Section;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +31,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *     and religious affiliation. Social history can have significant influence on a patient's physical, psychological and
  *     emotional health and wellbeing so should be considered in the development of a complete record.
  * </p>
- * 
+ *
  * <p>
  * The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnicity, nationality, and religious preferences' in the Social History section. CDA R2 differentiates between administrative data and clinical observations, supporting the former in the CDA Header and the latter in the CDA Body. As a result, it is necessary at times to populate attributes in the CDA Header, and to provide richer clinical details in the CDA Body.
  * </p>

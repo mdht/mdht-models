@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -15,17 +15,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedAuthor;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Organization;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Organization;
-import org.openhealthtools.mdht.uml.cda.Person;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AuthorParticipationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.EntityClassOrganization;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,13 +38,12 @@ import org.openhealthtools.mdht.uml.hl7.vocab.EntityClassOrganization;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorAssignedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Assigned Person Name</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Telecom</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganizationAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Addr</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorCodeTerminology(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Code Terminology</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorAssignedPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Assigned Person</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization</em>}</li>
@@ -131,8 +129,8 @@ public class AuthorParticipationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAuthorParticipationAssignedAuthor() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorTestCase = new OperationsTestCase<AuthorParticipation>(
-			"validateAuthorParticipationAssignedAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAuthorParticipationAssignedAuthor", operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -166,7 +164,8 @@ public class AuthorParticipationTest extends CDAValidationTest {
 	public void testValidateAuthorParticipationAssignedAuthorAssignedPersonName() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorAssignedPersonNameTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorAssignedPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -200,47 +199,11 @@ public class AuthorParticipationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode() {
-		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCodeTestCase = new OperationsTestCase<AuthorParticipation>(
-			"validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
-				Organization repOrg = CDAFactory.eINSTANCE.createOrganization();
-				aa.setRepresentedOrganization(repOrg);
-			}
-
-			@Override
-			protected void updateToPass(AuthorParticipation target) {
-				target.getAssignedAuthor().getRepresentedOrganization().setClassCode(EntityClassOrganization.ORG);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(
-					(AuthorParticipation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
 	public void testValidateAuthorParticipationAssignedAuthorRepresentedOrganizationId() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorRepresentedOrganizationIdTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorRepresentedOrganizationId",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -278,7 +241,8 @@ public class AuthorParticipationTest extends CDAValidationTest {
 	public void testValidateAuthorParticipationAssignedAuthorRepresentedOrganizationName() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorRepresentedOrganizationNameTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorRepresentedOrganizationName",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -316,7 +280,8 @@ public class AuthorParticipationTest extends CDAValidationTest {
 	public void testValidateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecomTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -354,7 +319,8 @@ public class AuthorParticipationTest extends CDAValidationTest {
 	public void testValidateAuthorParticipationAssignedAuthorRepresentedOrganizationAddr() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorRepresentedOrganizationAddrTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorRepresentedOrganizationAddr",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -389,10 +355,48 @@ public class AuthorParticipationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidateAuthorParticipationAssignedAuthorCodeTerminology() {
+		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorCodeTerminologyTestCase = new OperationsTestCase<AuthorParticipation>(
+			"validateAuthorParticipationAssignedAuthorCodeTerminology",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_CODE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AuthorParticipation target) {
+				target.init();
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				target.setAssignedAuthor(aa);
+				aa.setCode(DatatypesFactory.eINSTANCE.createCE("notCurrentlyChecked", BAD_CODESYSTEM_ID));
+			}
+
+			@Override
+			protected void updateToPass(AuthorParticipation target) {
+				target.getAssignedAuthor().setCode(
+					DatatypesFactory.eINSTANCE.createCE("notCurrentlyChecked", "2.16.840.1.113883.6.101"));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorCodeTerminology(
+					(AuthorParticipation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAuthorParticipationAssignedAuthorCodeTerminologyTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidateAuthorParticipationAssignedAuthorId() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorIdTestCase = new OperationsTestCase<AuthorParticipation>(
-			"validateAuthorParticipationAssignedAuthorId",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAuthorParticipationAssignedAuthorId", operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -424,10 +428,10 @@ public class AuthorParticipationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateAuthorParticipationAssignedAuthorCodeP() {
-		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorCodePTestCase = new OperationsTestCase<AuthorParticipation>(
-			"validateAuthorParticipationAssignedAuthorCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAuthorParticipationAssignedAuthorCode() {
+		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorCodeTestCase = new OperationsTestCase<AuthorParticipation>(
+			"validateAuthorParticipationAssignedAuthorCode", operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -440,42 +444,6 @@ public class AuthorParticipationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
 				target.getAssignedAuthor().setCode(DatatypesFactory.eINSTANCE.createCE());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorCodeP(
-					(AuthorParticipation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAuthorParticipationAssignedAuthorCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAuthorParticipationAssignedAuthorCode() {
-		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorCodeTestCase = new OperationsTestCase<AuthorParticipation>(
-			"validateAuthorParticipationAssignedAuthorCode",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
-			}
-
-			@Override
-			protected void updateToPass(AuthorParticipation target) {
-				target.getAssignedAuthor().setCode(
-					DatatypesFactory.eINSTANCE.createCE("notCurrentlyChecked", "2.16.840.1.113883.6.101"));
 			}
 
 			@Override
@@ -498,7 +466,8 @@ public class AuthorParticipationTest extends CDAValidationTest {
 	public void testValidateAuthorParticipationAssignedAuthorAssignedPerson() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorAssignedPersonTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorAssignedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -534,7 +503,8 @@ public class AuthorParticipationTest extends CDAValidationTest {
 	public void testValidateAuthorParticipationAssignedAuthorRepresentedOrganization() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorRepresentedOrganizationTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorRepresentedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

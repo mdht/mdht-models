@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.VitalSign;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.VitalSignOperations;
@@ -26,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.VitalSignObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Vital Sign</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -76,7 +72,7 @@ public class VitalSignImpl extends VitalSignObservationImpl implements VitalSign
 	 */
 	@Override
 	public VitalSign init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -85,8 +81,9 @@ public class VitalSignImpl extends VitalSignObservationImpl implements VitalSign
 	 * @generated
 	 */
 	@Override
-	public VitalSign init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public VitalSign init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // VitalSignImpl

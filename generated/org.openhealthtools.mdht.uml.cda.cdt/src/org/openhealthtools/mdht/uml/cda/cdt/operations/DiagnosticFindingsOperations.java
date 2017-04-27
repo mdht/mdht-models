@@ -39,6 +39,13 @@ import org.openhealthtools.mdht.uml.cda.cdt.util.CDTValidator;
  * @generated
  */
 public class DiagnosticFindingsOperations extends ResultsSectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -67,7 +74,7 @@ public class DiagnosticFindingsOperations extends ResultsSectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,22 +90,27 @@ public class DiagnosticFindingsOperations extends ResultsSectionOperations {
 	public static boolean validateResultsSectionTitle(DiagnosticFindings diagnosticFindings,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.DIAGNOSTIC_FINDINGS);
 			try {
-				VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			diagnosticFindings)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.DIAGNOSTIC_FINDINGS__RESULTS_SECTION_TITLE,
-					CDTPlugin.INSTANCE.getString("ResultsSectionTitle"), new Object[] { diagnosticFindings }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.DIAGNOSTIC_FINDINGS__RESULTS_SECTION_TITLE,
+						CDTPlugin.INSTANCE.getString("DiagnosticFindingsResultsSectionTitle"),
+						new Object[] { diagnosticFindings }));
 			}
 
 			return false;

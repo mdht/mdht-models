@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Package xmi:id="_2B97VRSVEeGGzu7fmW9pXw" name="consol-vocab">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2FcGEBSVEeGGzu7fmW9pXw" name="HITSP Problem Status">
       <ownedLiteral xmi:id="_2FcGERSVEeGGzu7fmW9pXw" name="55561003"/>
@@ -501,6 +501,8 @@
       <ownedLiteral xmi:id="_m61JkRMsEeK4go_VqYg1Bw" name="37"/>
       <ownedLiteral xmi:id="_m61JkxMsEeK4go_VqYg1Bw" name="121"/>
       <ownedLiteral xmi:id="_rF7WEMmlEeORzvZavFqkkg" name="155"/>
+      <ownedLiteral xmi:id="_yTSB8LY9EeWyGNoqJ3PYyg" name="150"/>
+      <ownedLiteral xmi:id="_0sZOYLY9EeWyGNoqJ3PYyg" name="163"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2O3u6RSVEeGGzu7fmW9pXw" name="HITSP Vital Sign Result Type">
       <ownedLiteral xmi:id="_2O3u8hSVEeGGzu7fmW9pXw" name="9279-1"/>
@@ -1275,6 +1277,20 @@ Value Set: Medication Drug Class (2.16.840.1.113883.3.88.12.80.18) (NDFRT drug c
 Valueset Source: https://vsac.nlm.nih.gov/</body>
       </ownedComment>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_4hSRkObrEeWB4ufB0cOMzQ" name="Current Smoking Status">
+      <ownedComment xmi:id="_4hSRkebrEeWB4ufB0cOMzQ">
+        <body>This value set indicates the current smoking status of a patient. Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_4hSRkubrEeWB4ufB0cOMzQ" name="449868002"/>
+      <ownedLiteral xmi:id="_4hSRk-brEeWB4ufB0cOMzQ" name="428041000124106"/>
+      <ownedLiteral xmi:id="_4hSRlObrEeWB4ufB0cOMzQ" name="8517006"/>
+      <ownedLiteral xmi:id="_4hSRlebrEeWB4ufB0cOMzQ" name="266919005"/>
+      <ownedLiteral xmi:id="_4hSRlubrEeWB4ufB0cOMzQ" name="77176002"/>
+      <ownedLiteral xmi:id="_4hSRl-brEeWB4ufB0cOMzQ" name="266927001"/>
+      <ownedLiteral xmi:id="_4hSRmObrEeWB4ufB0cOMzQ" name="428071000124103"/>
+      <ownedLiteral xmi:id="_4hSRmebrEeWB4ufB0cOMzQ" name="428061000124105"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -1283,7 +1299,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
     </profileApplication>
   </uml:Package>
   <term:ValueSetVersion xmi:id="_2E7IuRSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2E8W0BSVEeGGzu7fmW9pXw" conceptName="Alive and well"/>
   <term:ValueSetCode xmi:id="_2E8W0RSVEeGGzu7fmW9pXw" conceptName="In remission"/>
@@ -1294,7 +1310,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_2E-MABSVEeGGzu7fmW9pXw" conceptName="Severely disabled"/>
   <term:ValueSetCode xmi:id="_2E-MARSVEeGGzu7fmW9pXw" conceptName="Deceased"/>
   <term:ValueSetVersion xmi:id="_2FctIBSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.68" base_Enumeration="_2FcGEBSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2FdUMBSVEeGGzu7fmW9pXw" conceptName="Active" base_EnumerationLiteral="_2FcGERSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2Fd7QBSVEeGGzu7fmW9pXw" conceptName="Inactive" base_EnumerationLiteral="_2FcGEhSVEeGGzu7fmW9pXw"/>
@@ -1305,7 +1321,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_2FfJYRSVEeGGzu7fmW9pXw" conceptName="Ruled out"/>
   <term:ValueSetCode xmi:id="_2FfwcBSVEeGGzu7fmW9pXw" conceptName="Resolved" base_EnumerationLiteral="_2FcGGBSVEeGGzu7fmW9pXw"/>
   <term:ValueSetVersion xmi:id="_2Fw2OBSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.7.2" version="2008-12-18" revisionDate="07/23/2009" base_Enumeration="_2Fw2MBSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2FyEUBSVEeGGzu7fmW9pXw" conceptName="Finding" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2MRSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2FyrYBSVEeGGzu7fmW9pXw" conceptName="Complaint" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2MhSVEeGGzu7fmW9pXw"/>
@@ -1315,28 +1331,28 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_2Fz5gRSVEeGGzu7fmW9pXw" conceptName="Symptom" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2NhSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2F0gkBSVEeGGzu7fmW9pXw" conceptName="Problem" usageNote="SNOMED-CT" base_EnumerationLiteral="_2Fw2NxSVEeGGzu7fmW9pXw"/>
   <term:ValueSetVersion xmi:id="_2GDxJhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.11.20.9.19" version="2011-09-09" base_Enumeration="_2GDxIBSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2GEYMBSVEeGGzu7fmW9pXw" conceptName="active" usageNote="A concern that is still being tracked." base_EnumerationLiteral="_2GDxIhSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2GE_QBSVEeGGzu7fmW9pXw" conceptName="suspended" usageNote="A concern that is active, but which may be set aside. For example, this value might be used to suspend concern about a patient problem after some period of remission, but before assumption that the concern has been resolved." base_EnumerationLiteral="_2GDxIxSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2GE_QRSVEeGGzu7fmW9pXw" conceptName="aborted" usageNote="A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved. This value might be used to mark a concern as being aborted after a patient leaves care against medical advice." base_EnumerationLiteral="_2GDxJBSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2GFmUBSVEeGGzu7fmW9pXw" conceptName="completed" usageNote="The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for historical purposes." base_EnumerationLiteral="_2GDxJRSVEeGGzu7fmW9pXw"/>
   <term:ValueSetVersion xmi:id="_2Hn3YBSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.64" version="1" fullName="Medication Fill Status Value Set" definition="The HL7 ActStatus has been limited by HITSP. This identifies whether the medication has been fulfilled, such as completed and aborted" revisionDate="07/23/2009" base_Enumeration="_2HnQUxSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2HoecBSVEeGGzu7fmW9pXw" conceptName="Aborted" usageNote="ActStatus" base_EnumerationLiteral="_2HnQVBSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2HpFgBSVEeGGzu7fmW9pXw" conceptName="Completed" usageNote="ActStatus" base_EnumerationLiteral="_2HnQVRSVEeGGzu7fmW9pXw"/>
   <term:ValueSetVersion xmi:id="_2H150RSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.7" version="1" fullName="Medication Route FDA Value Set" definition="Route of Administration value set is based upon FDA Drug Registration and Listing Database (FDA Orange Book) which are used in FDA structured product and labelling (SPL)." revisionDate="07/07/2009" base_Enumeration="_2H150BSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2H3vABSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.9" version="2" fullName="Body Site Value Set" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." revisionDate="07/07/2009" base_Enumeration="_2H3H8RSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2H49IRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.11" version="1" fullName="Medication Product Form Value Set" definition="This is the physical form of the product as presented to the individual. For example: tablet, capsule, liquid or ointment. NCI concept code for pharmaceutical dosage form: C42636" revisionDate="07/23/2009" base_Enumeration="_2H49IBSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  <term:ValueSetVersion xmi:id="_2H49IRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.8.11" fullName="Medication Product Form Value Set" definition="This is the physical form of the product as presented to the individual. For example: tablet, capsule, liquid or ointment. NCI concept code for pharmaceutical dosage form: C42636" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_2H49IBSVEeGGzu7fmW9pXw">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2JjKCRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.60" version="1" fullName="Social History Type Value Set" definition="This indicates the type of social history observation" revisionDate="07/23/2009" base_Enumeration="_2JjKABSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2JkYIBSVEeGGzu7fmW9pXw" conceptName="Alcohol intake" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKARSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2Jk_MBSVEeGGzu7fmW9pXw" conceptName="Details of drug misuse behavior" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKAhSVEeGGzu7fmW9pXw"/>
@@ -1347,7 +1363,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_2Jm0YBSVEeGGzu7fmW9pXw" conceptName="Tobacco use and exposure" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKBxSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2JnbcBSVEeGGzu7fmW9pXw" conceptName="Toxic exposure status" usageNote="SNOMED-CT" base_EnumerationLiteral="_2JjKCBSVEeGGzu7fmW9pXw"/>
   <term:ValueSetVersion xmi:id="_2LHQRxSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.20.2" version="1" fullName="Advance Directive Type Value Set" definition="This identifies the type of the Advance Directive. Uses the AdvanceDirectiveTypeCode vocabulary defined by CCD." revisionDate="07/23/2009" base_Enumeration="_2LHQQBSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2LIeYBSVEeGGzu7fmW9pXw" conceptName="Antibiotics" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQQRSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2LIeYRSVEeGGzu7fmW9pXw" conceptName="CPR" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQQhSVEeGGzu7fmW9pXw"/>
@@ -1356,16 +1372,16 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_2LJsgBSVEeGGzu7fmW9pXw" conceptName="Life Support" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQRRSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2LKTkBSVEeGGzu7fmW9pXw" conceptName="Resuscitation" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQRhSVEeGGzu7fmW9pXw"/>
   <term:ValueSetVersion xmi:id="_2L3eMhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.32" version="20081218" fullName="Encounter Type" source="HITSP" definition="This value set includes only the codes of the Current Procedure and Terminology designated for Evaluation and Management (99200 - 99299)." effectiveDate="20081218" type="Intensional" binding="Dynamic" base_Enumeration="_2L3eMBSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KsN1ICF_Ed-M3adQxwHq4g"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_KsN1ICF_Ed-M3adQxwHq4g"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2L5TYhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.33" fullName="Admission Type" source="National Uniform Billing Committee (NUBC)" url="www.nubc.org" definition="See (UB-04/NUBC CURRENT UB DATA SPECIFICATIONS MANUAL) UB-04 FL14." binding="Dynamic" base_Enumeration="_2L5TYBSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_vbHVcEgcEeSfpbeq3Ftc1g"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_vbHVcEgcEeSfpbeq3Ftc1g"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2MRG0BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.22" version="7" fullName="Vaccine Administered Value Set" definition="Vaccine Name Keyword: Clinical Vaccines, Vaccine Names" revisionDate="10/22/2008" binding="Dynamic" base_Enumeration="_2MQfxBSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2O3u9BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.62" version="1" fullName="Vital Sign Result Value Set" source="HITSP" definition="This identifies the vital sign result type" effectiveDate="20081218" releaseDate="20081218" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_2O3u6RSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2O3u9RSVEeGGzu7fmW9pXw" conceptName="Body temperature" usageNote="LOINC" base_EnumerationLiteral="_2O3u6hSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2O3u9hSVEeGGzu7fmW9pXw" conceptName="BP Diastolic" usageNote="LOINC" base_EnumerationLiteral="_2O3u6xSVEeGGzu7fmW9pXw"/>
@@ -1378,13 +1394,13 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_2O91gBSVEeGGzu7fmW9pXw" conceptName="Respiratory Rate" usageNote="LOINC" base_EnumerationLiteral="_2O3u8hSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2O91gRSVEeGGzu7fmW9pXw" conceptName="Weight Measured" usageNote="LOINC" base_EnumerationLiteral="_2O3u8xSVEeGGzu7fmW9pXw"/>
   <term:ValueSetVersion xmi:id="_2SVSkRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.7.4" version="DYNAMIC" source="http://phinvads.cdc.gov/vads/ViewValueSet.action?id=70FDBFB5-A277-DE11-9B52-0015173D1785" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_2SVSkBSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2SbZNRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.11526" version="200609" fullName="Language" source="The Internet Society" url="http://www.ietf.org/rfc/rfc4646.txt" definition="The value set is defined by Internet RFC 4646 (replacing RFC 3066). Please see ISO 639 language code set maintained by Library of Congress for enumeration of language codes and Frequently Asked Questions." effectiveDate="20081218" type="Intensional" binding="Dynamic" base_Enumeration="_2SbZNBSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2SbZPhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.12249" version="1" fullName="LanguageAbilityMode Value Set" definition="This identifies the language ability of the individual. A value representing the method of expression of the language." revisionDate="07/23/2009" base_Enumeration="_2SbZNxSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dLvLYaDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dLvLYaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2SbZPxSVEeGGzu7fmW9pXw" conceptName="Expressed signed" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_2SbZOBSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2SbZQBSVEeGGzu7fmW9pXw" conceptName="Expressed spoken" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_2SbZORSVEeGGzu7fmW9pXw"/>
@@ -1393,23 +1409,23 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_2Shf0BSVEeGGzu7fmW9pXw" conceptName="Received spoken" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_2SbZPBSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2Shf0RSVEeGGzu7fmW9pXw" conceptName="Received written" usageNote="LanguageAbilityMode" base_EnumerationLiteral="_2SbZPRSVEeGGzu7fmW9pXw"/>
   <term:ValueSetVersion xmi:id="_S8sGQBrNEeGxIZCGAXKxsQ" identifier="2.16.840.1.113883.11.20.9.18" version="2011-04-03" definition="Subset of HL7 ActMood codes, constrained to represent event (EVN) and intent (INT) moodes" base_Enumeration="_S8q4IBrNEeGxIZCGAXKxsQ">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_tnQrcRrNEeGxIZCGAXKxsQ" conceptName="Event" base_EnumerationLiteral="_tnQrcBrNEeGxIZCGAXKxsQ"/>
   <term:ValueSetCode xmi:id="_u1sNcBrNEeGxIZCGAXKxsQ" conceptName="Intent" base_EnumerationLiteral="_u1rmYBrNEeGxIZCGAXKxsQ"/>
   <term:ValueSetCode xmi:id="_wq0jERrNEeGxIZCGAXKxsQ"/>
   <term:ValueSetVersion xmi:id="_-hMgMRrREeGxIZCGAXKxsQ" identifier="2.16.840.1.113883.11.20.9.22" definition="A ValueSet of HL7 actStatus codes for use with a procedure activity" binding="Dynamic" base_Enumeration="_-hMgMBrREeGxIZCGAXKxsQ">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_Ic5UUBrSEeGxIZCGAXKxsQ" conceptName="Completed" base_EnumerationLiteral="_IcwKYBrSEeGxIZCGAXKxsQ"/>
   <term:ValueSetCode xmi:id="_J7q_cRrSEeGxIZCGAXKxsQ" conceptName="Active" base_EnumerationLiteral="_J7q_cBrSEeGxIZCGAXKxsQ"/>
   <term:ValueSetCode xmi:id="_LxDMsRrSEeGxIZCGAXKxsQ" conceptName="Aborted" base_EnumerationLiteral="_LxDMsBrSEeGxIZCGAXKxsQ"/>
   <term:ValueSetCode xmi:id="_M-QmsRrSEeGxIZCGAXKxsQ" conceptName="Cancelled" base_EnumerationLiteral="_M-QmsBrSEeGxIZCGAXKxsQ"/>
   <term:ValueSetVersion xmi:id="_DhjiABueEeGnMahsPjlwOw" identifier="2.16.840.1.113883.11.20.9.34" binding="Dynamic" base_Enumeration="_Dhi68BueEeGnMahsPjlwOw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_Aq2j0CBCEeG938evaWkvcA" identifier="2.16.840.1.113883.11.20.9.21" binding="Dynamic" base_Enumeration="_Aqy5cCBCEeG938evaWkvcA">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dkiF4KDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dkiF4KDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_XcRGISBCEeG938evaWkvcA" conceptName="Minute" base_EnumerationLiteral="_XcRGICBCEeG938evaWkvcA"/>
   <term:ValueSetCode xmi:id="_aQUiICBCEeG938evaWkvcA" conceptName="Hour" base_EnumerationLiteral="_aQT7ECBCEeG938evaWkvcA"/>
@@ -1418,13 +1434,13 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_eGosYSBCEeG938evaWkvcA" conceptName="Month" base_EnumerationLiteral="_eGosYCBCEeG938evaWkvcA"/>
   <term:ValueSetCode xmi:id="_fZxIMCBCEeG938evaWkvcA" conceptName="Year" base_EnumerationLiteral="_fZwhICBCEeG938evaWkvcA"/>
   <term:ValueSetVersion xmi:id="_IzJFYR-ZEeGtfPlBCjHWkw" identifier="2.16.840.1.113883.1.11.20275" definition="A comprehensive classification of locations and settings where healthcare services are provided. This value set is based on the National Healthcare Safety Network (NHSN) location code system that has been developed over a number of years through CDC's interaction with a variety of healthcare facilities and is intended to serve a variety of reporting needs where coding of healthcare service locations is required." binding="Dynamic" base_Enumeration="_IzJFYB-ZEeGtfPlBCjHWkw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Bro-kWPyEeGskvPNzg7rUw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_Bro-kWPyEeGskvPNzg7rUw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_xQv28CXLEeGnSfJ2zNllag" identifier="2.16.840.1.113883.1.11.78" version="1" fullName="Observation Interpretation (HL7)" definition="Observation interpretation concepts that are based upon HL7 V3 vocabulary." revisionDate="07/07/2009" base_Enumeration="_xQszoCXLEeGnSfJ2zNllag">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1o75oaFkEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_1o75oaFkEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_cOR30CXNEeGnSfJ2zNllag" identifier="2.16.840.1.113883.3.88.12.3221.6.8" binding="Dynamic" base_Enumeration="_Zpfm4CXNEeGnSfJ2zNllag">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_pkqqICXNEeGnSfJ2zNllag" conceptName="Fatal" base_EnumerationLiteral="_Zpfm4SXNEeGnSfJ2zNllag"/>
   <term:ValueSetCode xmi:id="_qtXXkCXNEeGnSfJ2zNllag" conceptName="Mild" base_EnumerationLiteral="_Zpfm4iXNEeGnSfJ2zNllag"/>
@@ -1433,7 +1449,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_ubGNkCXNEeGnSfJ2zNllag" conceptName="Moderate to severe" base_EnumerationLiteral="_Zpfm5SXNEeGnSfJ2zNllag"/>
   <term:ValueSetCode xmi:id="_vc3MkCXNEeGnSfJ2zNllag" conceptName="Severe" base_EnumerationLiteral="_Zpfm5iXNEeGnSfJ2zNllag"/>
   <term:ValueSetVersion xmi:id="_i0QFQCXYEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.3221.6.2" binding="Dynamic" base_Enumeration="_c2vy0KDqEd-dVeaMP0XXQw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_kKh7sCXYEeGD8_EQPvfzIQ" conceptName="Allergy to substance" base_EnumerationLiteral="_c2xoAKDqEd-dVeaMP0XXQw"/>
   <term:ValueSetCode xmi:id="_lXbzsCXYEeGD8_EQPvfzIQ" conceptName="Drug allergy" base_EnumerationLiteral="_c2xoAqDqEd-dVeaMP0XXQw"/>
@@ -1445,37 +1461,37 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_r7dhYCXYEeGD8_EQPvfzIQ" conceptName="Propensity to adverse reactions to food" base_EnumerationLiteral="_c2y2JqDqEd-dVeaMP0XXQw"/>
   <term:ValueSetCode xmi:id="_s-qDwCXYEeGD8_EQPvfzIQ" conceptName="Propensity to adverse reactions to substance" base_EnumerationLiteral="_c2zdMaDqEd-dVeaMP0XXQw"/>
   <term:ValueSetVersion xmi:id="_tBOaICXZEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.80.16" binding="Dynamic" base_Enumeration="_dRWEIKDqEd-dVeaMP0XXQw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_uPu0oCXZEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.80.17" binding="Dynamic" base_Enumeration="_dSQDEKDqEd-dVeaMP0XXQw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_vin_4CXZEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.80.18" binding="Dynamic" base_Enumeration="_dU_1EKDqEd-dVeaMP0XXQw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dV4l4aDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dV4l4aDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_e1-m8SXaEeGD8_EQPvfzIQ" identifier="2.16.840.1.113883.3.88.12.80.20" base_Enumeration="_e1-m8CXaEeGD8_EQPvfzIQ">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_c6o0UaDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_c6o0UaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_GT_LgSjSEeGpe-vtKtXilA"/>
   <term:ValueSetVersion xmi:id="_8K870TVPEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.16926" fullName="Basic Confidentiality Kind Value Set" source="HL7" effectiveDate="2010-04-21" base_Enumeration="_8K870DVPEeGIw7CntkyPQw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_-5gOQGdLEeGkeaezs0FtvA"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_-5gOQGdLEeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_LGTEUDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.1" binding="Dynamic" base_Enumeration="_DMi50DVREeGIw7CntkyPQw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
+  <term:ValueSetVersion xmi:id="_LGTEUDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.1" releaseDate="20150424" binding="Dynamic" base_Enumeration="_DMi50DVREeGIw7CntkyPQw">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_SLh6QTVUEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.12199" fullName="Language Ability Proficiency" base_Enumeration="_SLh6QDVUEeGIw7CntkyPQw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_PaapkGdREeGkeaezs0FtvA"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_PaapkGdREeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_F4z3QDrtEeG-aJb2h_4S8w" identifier="2.16.840.1.113883.3.88.12.3221.5.2" version="20081218" fullName="Health Insurance Type Value Set" source="HITSP" definition="This value set uses the ACS X12 vocabulary for Insurance Type Code (ASC X12 Data Element 1336) and has been limited by HITSP to the value set reproduced below in Table 2-52 Health Insurance Type Value Set Definition&#xD;&#xA;The type of health plan covering the individual, e.g., an HMO, PPO, POS, etc." effectiveDate="20081218" releaseDate="20081218" binding="Dynamic" base_Enumeration="_F4ypIDrtEeG-aJb2h_4S8w">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_yJCGQBJOEeKjxqZmTX2rRQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_yJCGQBJOEeKjxqZmTX2rRQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_oBcwgDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary Working Aged Beneficiary or Spouse with Employer Group Health Plan" base_EnumerationLiteral="_oBbiYDrtEeG-aJb2h_4S8w"/>
-  <term:ValueSetCode xmi:id="_ru4rkDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary End-Stage Renal Disease Beneficiary in the 12 month coordination period with an employer’s group health plan" base_EnumerationLiteral="_ru4EgDrtEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_ru4rkDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary End-Stage Renal Disease Beneficiary in the 12 month coordination period with an employer???s group health plan" base_EnumerationLiteral="_ru4EgDrtEeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_wqQZYDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary, No-fault Insurance including Auto is Primary" base_EnumerationLiteral="_wqPyUDrtEeG-aJb2h_4S8w"/>
-  <term:ValueSetCode xmi:id="_1Mw7QTrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary Worker’s Compensation" base_EnumerationLiteral="_1Mw7QDrtEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_1Mw7QTrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary Worker???s Compensation" base_EnumerationLiteral="_1Mw7QDrtEeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_3WnjsDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary Public Health Service (PHS)or Other Federal Agency" base_EnumerationLiteral="_3Wm8oDrtEeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_66RQoDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary Black Lung" base_EnumerationLiteral="_66QpkDrtEeG-aJb2h_4S8w"/>
-  <term:ValueSetCode xmi:id="_AEEcADruEeG-aJb2h_4S8w" conceptName="Medicare Secondary Veteran’s Administration" base_EnumerationLiteral="_AED08DruEeG-aJb2h_4S8w"/>
+  <term:ValueSetCode xmi:id="_AEEcADruEeG-aJb2h_4S8w" conceptName="Medicare Secondary Veteran???s Administration" base_EnumerationLiteral="_AED08DruEeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_D-mX4DruEeG-aJb2h_4S8w" conceptName="Medicare Secondary Disabled Beneficiary Under Age 65 with Large Group Health Plan (LGHP)" base_EnumerationLiteral="_D-lw0DruEeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_HgHW0DruEeG-aJb2h_4S8w" conceptName="Medicare Secondary, Other Liability Insurance is Primary" base_EnumerationLiteral="_HgGvwDruEeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_K7rewDruEeG-aJb2h_4S8w" conceptName="Auto Insurance Policy" base_EnumerationLiteral="_K7q3sDruEeG-aJb2h_4S8w"/>
@@ -1515,56 +1531,56 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_kUB4ADr3EeG-aJb2h_4S8w" conceptName="Workers Compensation" base_EnumerationLiteral="_kUBQ8Dr3EeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_mP2rgDr3EeG-aJb2h_4S8w" conceptName="Wrap Up Policy" base_EnumerationLiteral="_mP2EcDr3EeG-aJb2h_4S8w"/>
   <term:ValueSetVersion xmi:id="_Z8iQMTstEeGvzMYhXuqAEA" identifier="2.16.840.1.113883.11.20.9.31" fullName="Consultation Note LOINC Document Codes" binding="Dynamic" base_Enumeration="_Z8iQMDstEeGvzMYhXuqAEA">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_R_D60TzDEeGMk58Mp9-wVA" identifier="2.16.840.1.113883.11.20.4.1" fullName="Discharge Summary LOINC Document Codes" binding="Dynamic" base_Enumeration="_R_D60DzDEeGMk58Mp9-wVA">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_MBvVoD1kEeG3tde5scYNWA" identifier="3. 2.16.840.1.113883.1.11.20.22" fullName="H and P LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_MBuukD1kEeG3tde5scYNWA">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_IuPWwT4jEeGhnL_c4sBHGg" identifier="2.16.840.1.113883.11.20.1.1" fullName="Surgical Operation Note LOINC Document Codes" binding="Dynamic" base_Enumeration="_IuPWwD4jEeGhnL_c4sBHGg">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_UcLAsD4nEeGtCLm-c2g23Q" identifier="2.16.840.1.113883.3.88.12.3221.4" binding="Dynamic" base_Enumeration="_UcKZoD4nEeGtCLm-c2g23Q">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_7Du1gHHeEeGeeZysMrDRUg"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_7Du1gHHeEeGeeZysMrDRUg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_oDanoD7YEeGvOdejHZ7dYg" identifier="2.16.840.1.113883.11.20.6.1" fullName="Procedure Note LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_oDaAkD7YEeGvOdejHZ7dYg">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_-bWMgT-UEeGvOdejHZ7dYg" identifier="2.16.840.1.114222.4.11.1066" fullName="NUCC - HIPAA Health Care Provider Taxonomy" binding="Dynamic" base_Enumeration="_-bWMgD-UEeGvOdejHZ7dYg">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_7Du1gHHeEeGeeZysMrDRUg"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_7Du1gHHeEeGeeZysMrDRUg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_6yjb4T_LEeGXieeKs7NJjA" identifier="2.16.840.1.113883.11.20.8.1" binding="Dynamic" base_Enumeration="_6yjb4D_LEeGXieeKs7NJjA">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_0Uo48EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.14914" version="1" fullName="Race Value Set" definition="A Value Set of codes for Classifying data based upon race.&#xD;&#xA;Race is always reported at the discretion of the person for whom this attribute is reported, and reporting must be completed according to Federal guidelines for race reporting. Any code descending from the Race concept (1000-9) in that terminology may be used in the exchange." binding="Dynamic" base_Enumeration="_dfTnoKDqEd-dVeaMP0XXQw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2aTk8EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.19185" version="1" fullName="Religious Affiliation Value Set" definition="This reflects the spiritual faith affiliation" base_Enumeration="_dfhqEKDqEd-dVeaMP0XXQw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfoXwaDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfoXwaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_4m1G4EFaEeGFqszUdHc61Q" identifier="2.16.840.1.113883.11.20.9.33" base_Enumeration="_ywcy0Gg7Ed-ilOLYnIx0jA">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_9lb5cEFbEeGFqszUdHc61Q" identifier="2.16.840.1.113883.1.11.12212" version="1" fullName="Marital Status Value Set" definition="Marital Status is the domestic partnership status of a person." base_Enumeration="_dRMTIKDqEd-dVeaMP0XXQw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dRQkkaDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dRQkkaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_hJA70UUvEeGdQ4KWAmnbhw" identifier="2.16.840.1.113883.11.20.9.32" fullName="DIR LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_hJA70EUvEeGdQ4KWAmnbhw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_jyBH4UrhEeGJpZWiuxRVIw" identifier="2.16.840.1.113883.11.20.9.28" fullName="DICOMPurposeOfReference" binding="Dynamic" base_Enumeration="_jyBH4ErhEeGJpZWiuxRVIw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_gzUsQVoCEeGKdMKWzrgL_Q" conceptName="Excellent" base_EnumerationLiteral="_gzUsQFoCEeGKdMKWzrgL_Q"/>
   <term:ValueSetCode xmi:id="_mLUEoVoCEeGKdMKWzrgL_Q" conceptName="Fair" base_EnumerationLiteral="_mLUEoFoCEeGKdMKWzrgL_Q"/>
   <term:ValueSetCode xmi:id="_qlnFsVoCEeGKdMKWzrgL_Q" conceptName="Good" base_EnumerationLiteral="_qlnFsFoCEeGKdMKWzrgL_Q"/>
   <term:ValueSetCode xmi:id="_vRMEAVoCEeGKdMKWzrgL_Q" conceptName="Poor" base_EnumerationLiteral="_vRMEAFoCEeGKdMKWzrgL_Q"/>
   <term:ValueSetVersion xmi:id="_tP6g0V0YEeGt2doqSDULjA" identifier="2.16.840.1.113883.1.11.10416" version="1" fullName="Financially Responsible Party Type Value Set" definition="A relationship between two entities that is formally recognized, frequently by a contract or similar agreement. This identifies the party that has responsibility for all or a portion of the patient s healthcare." revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_tP6g0F0YEeGt2doqSDULjA">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_pWlaAF_lEeGt2doqSDULjA" identifier="2.16.840.1.113883.1.11.18877" version="1.0" fullName="Coverage Type Value Set" binding="Dynamic" base_Enumeration="_pWcQEF_lEeGt2doqSDULjA">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_KSQw4V_mEeGt2doqSDULjA" conceptName="Family dependent" base_EnumerationLiteral="_KSQw4F_mEeGt2doqSDULjA"/>
   <term:ValueSetCode xmi:id="_SFsQ8V_mEeGt2doqSDULjA" conceptName="Full-time student" base_EnumerationLiteral="_SFsQ8F_mEeGt2doqSDULjA"/>
@@ -1575,7 +1591,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_mQAOIV_mEeGt2doqSDULjA" conceptName="Sponsored dependent" base_EnumerationLiteral="_mQAOIF_mEeGt2doqSDULjA"/>
   <term:ValueSetCode xmi:id="_remZ8V_mEeGt2doqSDULjA" conceptName="Student" base_EnumerationLiteral="_remZ8F_mEeGt2doqSDULjA"/>
   <term:ValueSetVersion xmi:id="_X7aBcGiJEeGjoNbQEEZQtw" identifier="2.16.840.1.113883.1.11.19563" version="1" fullName="Personal Relationship Role Type Value Set" definition="A Personal Relationship records the role of a person in relation to another person. This value set is to be used when recording the relationships between different people who are not necessarily related by family ties, but also includes family relationships" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_MrdXMGiJEeGjoNbQEEZQtw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_K7fHAGiMEeGjoNbQEEZQtw" conceptName="adopted child" base_EnumerationLiteral="_MrdXMWiJEeGjoNbQEEZQtw"/>
   <term:ValueSetCode xmi:id="_UIELUGiMEeGjoNbQEEZQtw" conceptName="aunt" usageNote="RoleCode" base_EnumerationLiteral="_MrdXMmiJEeGjoNbQEEZQtw"/>
@@ -1618,7 +1634,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_0q-VgGiPEeGYO5jeo5rr2w" conceptName="uncle" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-YmiJEeGjoNbQEEZQtw"/>
   <term:ValueSetCode xmi:id="_1u9iEGiPEeGYO5jeo5rr2w" conceptName="unrelated friend" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-Y2iJEeGjoNbQEEZQtw"/>
   <term:ValueSetVersion xmi:id="_7bYRUGiaEeGYO5jeo5rr2w" identifier="2.16.840.1.113883.1.11.19717" version="1" fullName="No Immunization Reason Value Set" source="" definition="This identifies the reason why the immunization did not occur" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_4WPsYGiaEeGYO5jeo5rr2w">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWuTYaDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dWuTYaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_94NgIGiaEeGYO5jeo5rr2w" conceptName="Immunity" base_EnumerationLiteral="_4WPsYWiaEeGYO5jeo5rr2w"/>
   <term:ValueSetCode xmi:id="__1dP8GiaEeGYO5jeo5rr2w" conceptName="medical precaution" base_EnumerationLiteral="_4WPsYmiaEeGYO5jeo5rr2w"/>
@@ -1629,54 +1645,54 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_IYx74GibEeGYO5jeo5rr2w" conceptName="vaccine efficacy concerns" base_EnumerationLiteral="_4WPsZ2iaEeGYO5jeo5rr2w"/>
   <term:ValueSetCode xmi:id="_JOteUGibEeGYO5jeo5rr2w" conceptName="vaccine safety concerns" base_EnumerationLiteral="_4WPsaGiaEeGYO5jeo5rr2w"/>
   <term:ValueSetVersion xmi:id="_I5UjIG07EeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.16866" base_Enumeration="_I3CEIG07EeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_FTjLUGPwEeGskvPNzg7rUw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_FTjLUGPwEeGskvPNzg7rUw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2dlRgG1DEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.63" base_Enumeration="_2dkqcG1DEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1ZiywKFkEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_1ZiywKFkEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_9yUqcW1DEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.30" base_Enumeration="_9yUqcG1DEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_DCx3cG1EEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.29" base_Enumeration="_DCxQYG1EEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_RSgFgW1EEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.15913" base_Enumeration="_RSgFgG1EEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_jpGvEGShEeGWUMIQLWW7Kg"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_jpGvEGShEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_WCFaEG1EEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.26" base_Enumeration="_WCEzAG1EEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_u8E4IWShEeGWUMIQLWW7Kg"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_u8E4IWShEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_bkwYcW1EEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.19579" version="1" definition="Family Relationships record the familial relationship of a person to another person. This value set is to be used when it is necessary to record family relationships (e.g., next of kin, or blood relations). This is a subset of the value set used for personal relationships" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_bkwYcG1EEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_fgCQUG1GEeGCevFpokwODw" identifier="2.16.840.1.114222.4.11.837" binding="Dynamic" base_Enumeration="_fgBpQG1GEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_mYW9kG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.23" base_Enumeration="_mYWWgG1HEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_rCM2gG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.25" base_Enumeration="_rCMPcG1HEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_u3o3AG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.24" base_Enumeration="_u3oP8G1HEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_5PSHUE6REeC5ttwajeXVXg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_x6zGAG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.10637" base_Enumeration="_x6ye8G1HEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_lC2TwGSiEeGWUMIQLWW7Kg"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_lC2TwGSiEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2QgiAG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.2" binding="Dynamic" base_Enumeration="_2Qf68G1HEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_WdSYkGSiEeGWUMIQLWW7Kg"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_WdSYkGSiEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_9dAk8G1HEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.1" base_Enumeration="_9c_94G1HEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dkSOQaDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dkSOQaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_EkpWAG1IEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.7.1" base_Enumeration="_Ekou8G1IEeGCevFpokwODw"/>
   <term:ValueSetVersion xmi:id="_Z99c8G1IEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.20" base_Enumeration="_Z9814G1IEeGCevFpokwODw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_lC2TwGSiEeGWUMIQLWW7Kg"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_lC2TwGSiEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_d-UUAG1IEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.12839" base_Enumeration="_d-Ts8G1IEeGCevFpokwODw"/>
   <term:ValueSetVersion xmi:id="_NOFzsOJaEeG3cO7ebC3QuA" identifier="2.16.840.1.113883.11.20.9.39" version="2012-04-27" definition="This value set indicates the status of the results observation or organizer" base_Enumeration="_NOFMoOJaEeG3cO7ebC3QuA">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_bTHNoOJaEeG3cO7ebC3QuA" conceptName="aborted" base_EnumerationLiteral="_bTGmkOJaEeG3cO7ebC3QuA"/>
   <term:ValueSetCode xmi:id="_eGq6YeJaEeG3cO7ebC3QuA" conceptName="active" base_EnumerationLiteral="_eGq6YOJaEeG3cO7ebC3QuA"/>
@@ -1685,7 +1701,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_kvdMQeJaEeG3cO7ebC3QuA" conceptName="held" base_EnumerationLiteral="_kvdMQOJaEeG3cO7ebC3QuA"/>
   <term:ValueSetCode xmi:id="_mBZ8UeJaEeG3cO7ebC3QuA" conceptName="suspended" base_EnumerationLiteral="_mBZ8UOJaEeG3cO7ebC3QuA"/>
   <term:ValueSetVersion xmi:id="_MTK-YeJsEeG3cO7ebC3QuA" identifier="2.16.840.1.113883.1.11.20.12" definition="Represents the general health status of the patient." binding="Dynamic" base_Enumeration="_MTK-YOJsEeG3cO7ebC3QuA">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_TMveQeJsEeG3cO7ebC3QuA" conceptName="Alive and well" base_EnumerationLiteral="_TMveQOJsEeG3cO7ebC3QuA"/>
   <term:ValueSetCode xmi:id="_U4AtQeJsEeG3cO7ebC3QuA" conceptName="In remission" base_EnumerationLiteral="_U4AtQOJsEeG3cO7ebC3QuA"/>
@@ -1694,11 +1710,11 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_bwOiQeJsEeG3cO7ebC3QuA" conceptName="Severely ill" base_EnumerationLiteral="_bwOiQOJsEeG3cO7ebC3QuA"/>
   <term:ValueSetCode xmi:id="_eIRXseJsEeG3cO7ebC3QuA" conceptName="Disabled" base_EnumerationLiteral="_eIRXsOJsEeG3cO7ebC3QuA"/>
   <term:ValueSetCode xmi:id="_gxSBUeJsEeG3cO7ebC3QuA" conceptName="Severely disabled" base_EnumerationLiteral="_gxSBUOJsEeG3cO7ebC3QuA"/>
-  <term:ValueSetVersion xmi:id="_EA1dEeWTEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.41" definition="Contains all values descending from the SNOMED CT® 365980008 tobacco use and exposure - finding hierarchy&#xD;&#xA;http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" binding="Dynamic" base_Enumeration="_EA1dEOWTEeGKmvzED_He2w">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  <term:ValueSetVersion xmi:id="_EA1dEeWTEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.41" definition="Contains all values descending from the SNOMED CT?? 365980008 tobacco use and exposure - finding hierarchy&#xD;&#xA;http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" binding="Dynamic" base_Enumeration="_EA1dEOWTEeGKmvzED_He2w">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_bgrWMOWUEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.38" version="2012-07-01" definition="This value set indicates the current smoking status of a patient" base_Enumeration="_bgiMQOWUEeGKmvzED_He2w">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_kObwgeWUEeGKmvzED_He2w" conceptName="Current every day smoker" base_EnumerationLiteral="_kObwgOWUEeGKmvzED_He2w"/>
   <term:ValueSetCode xmi:id="_mSsHQeWUEeGKmvzED_He2w" conceptName="Current some day smoker" base_EnumerationLiteral="_mSsHQOWUEeGKmvzED_He2w"/>
@@ -1707,7 +1723,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_shQiUeWUEeGKmvzED_He2w" conceptName="Smoker, current status unknown" base_EnumerationLiteral="_shQiUOWUEeGKmvzED_He2w"/>
   <term:ValueSetCode xmi:id="_uoyPgeWUEeGKmvzED_He2w" conceptName="Unknown if ever smoked" base_EnumerationLiteral="_uoyPgOWUEeGKmvzED_He2w"/>
   <term:ValueSetVersion xmi:id="_3NE1YOcAEeGINOJ_SD9_dA" identifier="2.16.840.1.113883.11.20.9.35" definition="This value set enumerates the type of a pressure ulcer" binding="Dynamic" base_Enumeration="_3NDnQOcAEeGINOJ_SD9_dA">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_9AVNcOcAEeGINOJ_SD9_dA" conceptName="Pressure Ulcer Stage 1" base_EnumerationLiteral="_9AUmYOcAEeGINOJ_SD9_dA"/>
   <term:ValueSetCode xmi:id="_-tWI4ecAEeGINOJ_SD9_dA" conceptName="Pressure Ulcer Stage 2" base_EnumerationLiteral="_-tWI4OcAEeGINOJ_SD9_dA"/>
@@ -1715,10 +1731,10 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_ADIQEOcBEeGINOJ_SD9_dA" conceptName="Pressure Ulcer Stage 4" base_EnumerationLiteral="_ADHpAOcBEeGINOJ_SD9_dA"/>
   <term:ValueSetCode xmi:id="_A67awecBEeGINOJ_SD9_dA" conceptName="Nonstageable pressure ulcer" base_EnumerationLiteral="_A67awOcBEeGINOJ_SD9_dA"/>
   <term:ValueSetVersion xmi:id="_VwxrcecFEeGINOJ_SD9_dA" identifier="2.16.840.1.113883.11.20.9.36" definition="This value set represents points on the body that are susceptible to pressure ulcer development" binding="Dynamic" base_Enumeration="_VwxrcOcFEeGINOJ_SD9_dA">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_tCvWEecFEeGINOJ_SD9_dA" identifier="2.16.840.1.113883.11.20.9.37" binding="Dynamic" base_Enumeration="_tCvWEOcFEeGINOJ_SD9_dA">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_t0l80PtpEeG3vphfH83rmA" conceptName="ASAP" base_EnumerationLiteral="_t0gdQPtpEeG3vphfH83rmA"/>
   <term:ValueSetCode xmi:id="_yTJLwPtpEeG3vphfH83rmA" conceptName="Callback results" base_EnumerationLiteral="_yTIksPtpEeG3vphfH83rmA"/>
@@ -1926,7 +1942,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_SIQ9cfweEeGXDIdcQJhgtg" conceptName="Domestic partner" base_EnumerationLiteral="_SIQ9cPweEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_TjXpgfweEeGXDIdcQJhgtg" conceptName="Widowed" base_EnumerationLiteral="_TjXpgPweEeGXDIdcQJhgtg"/>
   <term:ValueSetVersion xmi:id="_sEhi8BJKEeKjxqZmTX2rRQ" identifier="2.16.840.1.113883.3.88.12.80.28" base_Enumeration="_r9OoIBJKEeKjxqZmTX2rRQ">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_p-z-MRJLEeKjxqZmTX2rRQ" conceptName="Tube Feedings" base_EnumerationLiteral="_p-z-MBJLEeKjxqZmTX2rRQ"/>
   <term:ValueSetCode xmi:id="_vnlkkRJLEeKjxqZmTX2rRQ" conceptName="Other Directive" base_EnumerationLiteral="_vnlkkBJLEeKjxqZmTX2rRQ"/>
@@ -2507,7 +2523,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_Rpd8ARfSEeKlBPC3X0poXg" base_EnumerationLiteral="_Rpd8ABfSEeKlBPC3X0poXg"/>
   <term:ValueSetCode xmi:id="_SYe-IRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_SYe-IBfSEeKlBPC3X0poXg"/>
   <term:ValueSetVersion xmi:id="_sxoEADp4EeOpivxgTh7oFg" identifier="2.16.840.1.113883.1.11.19830" fullName="ValueSet Responsible Party" binding="Dynamic" base_Enumeration="_sxm14Dp4EeOpivxgTh7oFg">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_t9ousDp5EeOpivxgTh7oFg" conceptName="responsible party" usageNote="RoleCode" base_EnumerationLiteral="_t9oHoDp5EeOpivxgTh7oFg"/>
   <term:ValueSetCode xmi:id="_z_-EkDp5EeOpivxgTh7oFg" conceptName="executor of estate" usageNote="RoleCode" base_EnumerationLiteral="_z_9dgDp5EeOpivxgTh7oFg"/>
@@ -2518,7 +2534,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_13RkcTp5EeOpivxgTh7oFg" conceptName="healthcare power of attorney" usageNote="RoleCode" base_EnumerationLiteral="_13RkcDp5EeOpivxgTh7oFg"/>
   <term:ValueSetCode xmi:id="_2LBm4Tp5EeOpivxgTh7oFg" conceptName="special power of attorney" usageNote="RoleCode" base_EnumerationLiteral="_2LBm4Dp5EeOpivxgTh7oFg"/>
   <term:ValueSetVersion xmi:id="_jVJukGKxEeOD5bEp3nNX5w" identifier="2.16.840.1.113883.1.11.10267" fullName="ParticipationFunction" base_Enumeration="_jU_WgGKxEeOD5bEp3nNX5w">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_vDghMGKzEeOD5bEp3nNX5w" conceptName="admitting physician" base_EnumerationLiteral="_vDf6IGKzEeOD5bEp3nNX5w"/>
   <term:ValueSetCode xmi:id="_4qqMMWK0EeOD5bEp3nNX5w" conceptName="anesthesist" base_EnumerationLiteral="_4qqMMGK0EeOD5bEp3nNX5w"/>
@@ -2538,4 +2554,17 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_FSrT4GBhEeSANuG0qM3tjw" conceptName="Dander (animal) allergy" base_EnumerationLiteral="_FSqs0GBhEeSANuG0qM3tjw"/>
   <term:ValueSetCode xmi:id="_HncL0GBhEeSANuG0qM3tjw" conceptName="Environmental allergy" base_EnumerationLiteral="_HnbkwGBhEeSANuG0qM3tjw"/>
   <term:ValueSetVersion xmi:id="_oX3U8GBhEeSANuG0qM3tjw" identifier="2.16.840.1.113762.1.4.1010.1" binding="Dynamic" base_Enumeration="_oX2t4GBhEeSANuG0qM3tjw"/>
+  <term:ValueSetCode xmi:id="_yTSpALY9EeWyGNoqJ3PYyg" conceptName="influenza, injectable, quadrivalent, preservative free" base_EnumerationLiteral="_yTSB8LY9EeWyGNoqJ3PYyg"/>
+  <term:ValueSetCode xmi:id="_0sZ1cLY9EeWyGNoqJ3PYyg" conceptName="meningococcal B, OMV" base_EnumerationLiteral="_0sZOYLY9EeWyGNoqJ3PYyg"/>
+  <term:ValueSetVersion xmi:id="_4hS4oObrEeWB4ufB0cOMzQ" identifier="2.16.840.1.113883.11.20.9.38" version="2014-09-01" fullName="Current Smoking Status" base_Enumeration="_4hSRkObrEeWB4ufB0cOMzQ">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_4hS4oebrEeWB4ufB0cOMzQ" conceptName="Current every day smoker" base_EnumerationLiteral="_4hSRkubrEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4oubrEeWB4ufB0cOMzQ" conceptName="Current some day smoker" base_EnumerationLiteral="_4hSRk-brEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4o-brEeWB4ufB0cOMzQ" conceptName="Former smoker" base_EnumerationLiteral="_4hSRlObrEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4pObrEeWB4ufB0cOMzQ" conceptName="Never smoker (Never Smoked)" base_EnumerationLiteral="_4hSRlebrEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4pebrEeWB4ufB0cOMzQ" conceptName="Smoker, current status unknown" base_EnumerationLiteral="_4hSRlubrEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4pubrEeWB4ufB0cOMzQ" conceptName="Unknown if ever smoked" base_EnumerationLiteral="_4hSRl-brEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4p-brEeWB4ufB0cOMzQ" conceptName="Heavy tobacco smoker" base_EnumerationLiteral="_4hSRmObrEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4qObrEeWB4ufB0cOMzQ" conceptName="Light tobacco smoker" base_EnumerationLiteral="_4hSRmebrEeWB4ufB0cOMzQ"/>
 </xmi:XMI>

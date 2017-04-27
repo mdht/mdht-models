@@ -6,34 +6,24 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignObservationImpl;
-
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.HeartRate;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.HeartRateOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Heart Rate</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class HeartRateImpl extends VitalSignObservationImpl implements HeartRate {
+public class HeartRateImpl extends EObjectImpl implements HeartRate {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -115,17 +105,17 @@ public class HeartRateImpl extends VitalSignObservationImpl implements HeartRate
 	 */
 	@Override
 	public HeartRate init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
-	public HeartRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+	public HeartRate init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HeartRateImpl

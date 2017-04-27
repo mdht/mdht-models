@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.NonPerformanceReason;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -40,7 +34,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class NonPerformanceReasonOperations extends ClinicalStatementOperations {
+public class NonPerformanceReasonOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +71,7 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NON_PERFORMANCE_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_PERFORMANCE_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -84,25 +86,35 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 */
 	
 	public static  boolean validateNonPerformanceReasonTemplateId(NonPerformanceReason nonPerformanceReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NON_PERFORMANCE_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_PERFORMANCE_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NON_PERFORMANCE_REASON);
 			try {
-				VALIDATE_NON_PERFORMANCE_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_PERFORMANCE_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_PERFORMANCE_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonPerformanceReason)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_PERFORMANCE_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonPerformanceReason)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NON_PERFORMANCE_REASON__NON_PERFORMANCE_REASON_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonNonPerformanceReasonTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
 						 new Object [] { nonPerformanceReason }));
 			}
 			 
@@ -130,7 +142,7 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NON_PERFORMANCE_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_PERFORMANCE_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -145,25 +157,35 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 */
 	
 	public static  boolean validateNonPerformanceReasonClassCode(NonPerformanceReason nonPerformanceReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NON_PERFORMANCE_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_PERFORMANCE_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NON_PERFORMANCE_REASON);
 			try {
-				VALIDATE_NON_PERFORMANCE_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_PERFORMANCE_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_PERFORMANCE_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonPerformanceReason)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_PERFORMANCE_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonPerformanceReason)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NON_PERFORMANCE_REASON__NON_PERFORMANCE_REASON_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonNonPerformanceReasonClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
 						 new Object [] { nonPerformanceReason }));
 			}
 			 
@@ -191,7 +213,7 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NON_PERFORMANCE_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_PERFORMANCE_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -206,25 +228,35 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 */
 	
 	public static  boolean validateNonPerformanceReasonCodeP(NonPerformanceReason nonPerformanceReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NON_PERFORMANCE_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_PERFORMANCE_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NON_PERFORMANCE_REASON);
 			try {
-				VALIDATE_NON_PERFORMANCE_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_PERFORMANCE_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_PERFORMANCE_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonPerformanceReason)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_PERFORMANCE_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonPerformanceReason)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NON_PERFORMANCE_REASON__NON_PERFORMANCE_REASON_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonNonPerformanceReasonCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
 						 new Object [] { nonPerformanceReason }));
 			}
 			 
@@ -254,7 +286,7 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NON_PERFORMANCE_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_PERFORMANCE_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -269,25 +301,35 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 */
 	
 	public static  boolean validateNonPerformanceReasonCode(NonPerformanceReason nonPerformanceReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NON_PERFORMANCE_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_PERFORMANCE_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NON_PERFORMANCE_REASON);
 			try {
-				VALIDATE_NON_PERFORMANCE_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_PERFORMANCE_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_PERFORMANCE_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonPerformanceReason)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_PERFORMANCE_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonPerformanceReason)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NON_PERFORMANCE_REASON__NON_PERFORMANCE_REASON_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonNonPerformanceReasonCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
 						 new Object [] { nonPerformanceReason }));
 			}
 			 
@@ -315,7 +357,7 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NON_PERFORMANCE_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_PERFORMANCE_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -330,25 +372,35 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 */
 	
 	public static  boolean validateNonPerformanceReasonMoodCode(NonPerformanceReason nonPerformanceReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NON_PERFORMANCE_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_PERFORMANCE_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NON_PERFORMANCE_REASON);
 			try {
-				VALIDATE_NON_PERFORMANCE_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_PERFORMANCE_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_PERFORMANCE_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonPerformanceReason)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_PERFORMANCE_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonPerformanceReason)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NON_PERFORMANCE_REASON__NON_PERFORMANCE_REASON_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonNonPerformanceReasonMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
 						 new Object [] { nonPerformanceReason }));
 			}
 			 
@@ -378,7 +430,7 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NON_PERFORMANCE_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_PERFORMANCE_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -393,25 +445,35 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 */
 	
 	public static  boolean validateNonPerformanceReasonValue(NonPerformanceReason nonPerformanceReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NON_PERFORMANCE_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_PERFORMANCE_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NON_PERFORMANCE_REASON);
 			try {
-				VALIDATE_NON_PERFORMANCE_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_PERFORMANCE_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_PERFORMANCE_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonPerformanceReason)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_PERFORMANCE_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonPerformanceReason)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NON_PERFORMANCE_REASON__NON_PERFORMANCE_REASON_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonNonPerformanceReasonValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
 						 new Object [] { nonPerformanceReason }));
 			}
 			 
@@ -439,7 +501,7 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NON_PERFORMANCE_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_PERFORMANCE_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -454,25 +516,35 @@ public class NonPerformanceReasonOperations extends ClinicalStatementOperations 
 	 */
 	
 	public static  boolean validateNonPerformanceReasonValueP(NonPerformanceReason nonPerformanceReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NON_PERFORMANCE_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_PERFORMANCE_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NON_PERFORMANCE_REASON);
 			try {
-				VALIDATE_NON_PERFORMANCE_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_PERFORMANCE_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_PERFORMANCE_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_PERFORMANCE_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonPerformanceReason)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_PERFORMANCE_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonPerformanceReason)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NON_PERFORMANCE_REASON__NON_PERFORMANCE_REASON_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonPerformanceReasonNonPerformanceReasonValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonPerformanceReason, context) }),
 						 new Object [] { nonPerformanceReason }));
 			}
 			 

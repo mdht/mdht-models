@@ -27,23 +27,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.ccd.operations.VitalSignsSectionOperations;
-
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPlugin;
 import org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.phmr.VitalSigns;
-
 import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
 
 /**
@@ -63,183 +56,205 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  * @generated
  */
 public class VitalSignsOperations extends VitalSignsSectionOperations {
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	protected VitalSignsOperations() {
-    super();
-  }
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
 
 	/**
-   * The cached OCL expression body for the '{@link #validateVitalSignsOrganizer(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected VitalSignsOperations() {
+		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateVitalSignsOrganizer(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateVitalSignsOrganizer(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateVitalSignsOrganizer(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
   protected static final String VALIDATE_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(phmr::ResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
   /**
-   * The cached OCL invariant for the '{@link #validateVitalSignsOrganizer(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateVitalSignsOrganizer(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateVitalSignsOrganizer(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateVitalSignsOrganizer(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
   
-  protected static Constraint VALIDATE_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param vitalSigns The receiving '<em><b>Vital Signs</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param vitalSigns The receiving '<em><b>Vital Signs</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
   
   public static  boolean validateVitalSignsOrganizer(VitalSigns vitalSigns, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+	
+	
+	
   	  
-    if (VALIDATE_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.VITAL_SIGNS);
-      try
-      {
-        VALIDATE_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSigns))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.WARNING,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.VITAL_SIGNS__VITAL_SIGNS_ORGANIZER,
-             PhmrPlugin.INSTANCE.getString("VitalSignsOrganizer"),
-             new Object [] { vitalSigns }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.VITAL_SIGNS);
+			try {
+				VALIDATE_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSigns)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.VITAL_SIGNS__VITAL_SIGNS_ORGANIZER,
+						 PhmrPlugin.INSTANCE.getString("VitalSignsVitalSignsOrganizer"),
+						 new Object [] { vitalSigns }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
   /**
-   * The cached OCL expression body for the '{@link #getPhmrVitalSignsOrganizer(VitalSigns) <em>Get Phmr Vital Signs Organizer</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getPhmrVitalSignsOrganizer(VitalSigns) <em>Get Phmr Vital Signs Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getPhmrVitalSignsOrganizer(VitalSigns)
-   * @generated
-   * @ordered
-   */
+	 * @see #getPhmrVitalSignsOrganizer(VitalSigns)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_PHMR_VITAL_SIGNS_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(phmr::ResultOrganizer))->asSequence()->any(true).oclAsType(phmr::ResultOrganizer)";
 
 	/**
-   * The cached OCL query for the '{@link #getPhmrVitalSignsOrganizer(VitalSigns) <em>Get Phmr Vital Signs Organizer</em>}' query operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getPhmrVitalSignsOrganizer(VitalSigns) <em>Get Phmr Vital Signs Organizer</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getPhmrVitalSignsOrganizer(VitalSigns)
-   * @generated
-   * @ordered
-   */
+	 * @see #getPhmrVitalSignsOrganizer(VitalSigns)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_PHMR_VITAL_SIGNS_ORGANIZER__EOCL_QRY;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static  ResultOrganizer getPhmrVitalSignsOrganizer(VitalSigns vitalSigns) {
-    if (GET_PHMR_VITAL_SIGNS_ORGANIZER__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(PhmrPackage.Literals.VITAL_SIGNS, PhmrPackage.Literals.VITAL_SIGNS.getEAllOperations().get(62));
-      try
-      {
-        GET_PHMR_VITAL_SIGNS_ORGANIZER__EOCL_QRY = helper.createQuery(GET_PHMR_VITAL_SIGNS_ORGANIZER__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_PHMR_VITAL_SIGNS_ORGANIZER__EOCL_QRY);
-    return (ResultOrganizer) query.evaluate(vitalSigns);
-  }
+	
+	
+	
+		if (GET_PHMR_VITAL_SIGNS_ORGANIZER__EOCL_QRY == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(PhmrPackage.Literals.VITAL_SIGNS, PhmrPackage.Literals.VITAL_SIGNS.getEAllOperations().get(62));
+			try {
+				GET_PHMR_VITAL_SIGNS_ORGANIZER__EOCL_QRY = helper.createQuery(GET_PHMR_VITAL_SIGNS_ORGANIZER__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PHMR_VITAL_SIGNS_ORGANIZER__EOCL_QRY);
+		return (ResultOrganizer) query.evaluate(vitalSigns);
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateVitalSignsSectionTemplateId(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Template Id</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateVitalSignsSectionTemplateId(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateVitalSignsSectionTemplateId(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateVitalSignsSectionTemplateId(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.9.2')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateVitalSignsSectionTemplateId(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateVitalSignsSectionTemplateId(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateVitalSignsSectionTemplateId(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateVitalSignsSectionTemplateId(VitalSigns, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param vitalSigns The receiving '<em><b>Vital Signs</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param vitalSigns The receiving '<em><b>Vital Signs</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateVitalSignsSectionTemplateId(VitalSigns vitalSigns, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.VITAL_SIGNS);
-      try
-      {
-        VALIDATE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSigns))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.VITAL_SIGNS__VITAL_SIGNS_SECTION_TEMPLATE_ID,
-             PhmrPlugin.INSTANCE.getString("VitalSignsSectionTemplateId"),
-             new Object [] { vitalSigns }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.VITAL_SIGNS);
+			try {
+				VALIDATE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSigns)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.VITAL_SIGNS__VITAL_SIGNS_SECTION_TEMPLATE_ID,
+						 PhmrPlugin.INSTANCE.getString("VitalSignsVitalSignsSectionTemplateId"),
+						 new Object [] { vitalSigns }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 } // VitalSignsOperations

@@ -15,18 +15,24 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.AssociatedEntity;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Component1;
+import org.eclipse.mdht.uml.cda.DocumentationOf;
+import org.eclipse.mdht.uml.cda.EncompassingEncounter;
+import org.eclipse.mdht.uml.cda.Participant1;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.ResponsibleParty;
+import org.eclipse.mdht.uml.cda.Section;
+import org.eclipse.mdht.uml.cda.ServiceEvent;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
+import org.eclipse.mdht.uml.hl7.vocab.ActClassRoot;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component1;
-import org.openhealthtools.mdht.uml.cda.DocumentationOf;
-import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
-import org.openhealthtools.mdht.uml.cda.Participant1;
-import org.openhealthtools.mdht.uml.cda.Person;
-import org.openhealthtools.mdht.uml.cda.ResponsibleParty;
-import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport;
@@ -35,12 +41,6 @@ import org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DiagnosticImagingReportOperations;
 import org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraintsOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
 
 /**
  * <!-- begin-user-doc -->
@@ -103,7 +103,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportUseDiagnosticImagingCode() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportUseDiagnosticImagingCodeTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportUseDiagnosticImagingCode",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_USE_DIAGNOSTIC_IMAGING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_USE_DIAGNOSTIC_IMAGING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -140,7 +141,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportAllSectionsHaveTitle() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportAllSectionsHaveTitleTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportAllSectionsHaveTitle",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_ALL_SECTIONS_HAVE_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_ALL_SECTIONS_HAVE_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -179,7 +181,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportSectionsHaveText() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportSectionsHaveTextTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportSectionsHaveText",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_SECTIONS_HAVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_SECTIONS_HAVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -250,8 +253,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	@Test
 	public void testValidateDiagnosticImagingReportInformant() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportInformantTestCase = new OperationsTestCase<DiagnosticImagingReport>(
-			"validateDiagnosticImagingReportInformant",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDiagnosticImagingReportInformant", operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -287,7 +290,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportInformationRecipient() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportInformationRecipientTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportInformationRecipient",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -320,8 +324,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	@Test
 	public void testValidateDiagnosticImagingReportParticipant1() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportParticipant1TestCase = new OperationsTestCase<DiagnosticImagingReport>(
-			"validateDiagnosticImagingReportParticipant1",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDiagnosticImagingReportParticipant1", operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -355,7 +359,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportInFulfillmentOf() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportInFulfillmentOfTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportInFulfillmentOf",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -388,8 +393,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	@Test
 	public void testValidateDiagnosticImagingReportDocumentationOf() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportDocumentationOfTestCase = new OperationsTestCase<DiagnosticImagingReport>(
-			"validateDiagnosticImagingReportDocumentationOf",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDiagnosticImagingReportDocumentationOf", operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -422,8 +427,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	@Test
 	public void testValidateDiagnosticImagingReportRelatedDocument() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportRelatedDocumentTestCase = new OperationsTestCase<DiagnosticImagingReport>(
-			"validateDiagnosticImagingReportRelatedDocument",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDiagnosticImagingReportRelatedDocument", operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -456,8 +461,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	@Test
 	public void testValidateDiagnosticImagingReportComponentOf() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportComponentOfTestCase = new OperationsTestCase<DiagnosticImagingReport>(
-			"validateDiagnosticImagingReportComponentOf",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDiagnosticImagingReportComponentOf", operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -490,8 +495,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	@Test
 	public void testValidateDiagnosticImagingReportFindingsSection() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportFindingsSectionTestCase = new OperationsTestCase<DiagnosticImagingReport>(
-			"validateDiagnosticImagingReportFindingsSection",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDiagnosticImagingReportFindingsSection", operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -532,7 +537,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportDICOMObjectCatalogSection() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportDICOMObjectCatalogSectionTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportDICOMObjectCatalogSection",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DICOM_OBJECT_CATALOG_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DICOM_OBJECT_CATALOG_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -573,7 +579,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportParticipantAssociatedEntityPersonName() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportParticipantAssociatedEntityPersonNameTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportParticipantAssociatedEntityPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -622,7 +629,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportParticipantAssociatedEntityAssociatedPersonTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -666,7 +674,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportParticipantAssociatedEntity() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportParticipantAssociatedEntityTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportParticipantAssociatedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -705,7 +714,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportDocumentationOfServiceEvent4ClassCode() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportDocumentationOfServiceEvent4ClassCodeTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportDocumentationOfServiceEvent4ClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -748,7 +758,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportDocumentationOfServiceEvent4Code() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportDocumentationOfServiceEvent4CodeTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportDocumentationOfServiceEvent4Code",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -791,7 +802,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportDocumentationOfServiceEvent4Id() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportDocumentationOfServiceEvent4IdTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportDocumentationOfServiceEvent4Id",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -834,7 +846,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformer() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformerTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformer",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_PHYSICIAN_READING_STUDY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_PHYSICIAN_READING_STUDY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -878,7 +891,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportDocumentationOfServiceEvent3() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportDocumentationOfServiceEvent3TestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportDocumentationOfServiceEvent3",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -917,7 +931,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganizationTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -969,7 +984,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1018,7 +1034,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDayTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1059,7 +1076,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinuteTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1100,7 +1118,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecondTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1141,7 +1160,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffsetTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1182,7 +1202,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTimeTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1226,7 +1247,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportComponentOfEncompassingEncounter7Id() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportComponentOfEncompassingEncounter7IdTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportComponentOfEncompassingEncounter7Id",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1270,7 +1292,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipantTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PHYSICIANOF_RECORD_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PHYSICIANOF_RECORD_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1315,7 +1338,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1360,7 +1384,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	public void testValidateDiagnosticImagingReportComponentOfEncompassingEncounter() {
 		OperationsTestCase<DiagnosticImagingReport> validateDiagnosticImagingReportComponentOfEncompassingEncounterTestCase = new OperationsTestCase<DiagnosticImagingReport>(
 			"validateDiagnosticImagingReportComponentOfEncompassingEncounter",
-			operationsForOCL.getOCLValue("VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1422,8 +1447,8 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<DiagnosticImagingReport> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<DiagnosticImagingReport>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

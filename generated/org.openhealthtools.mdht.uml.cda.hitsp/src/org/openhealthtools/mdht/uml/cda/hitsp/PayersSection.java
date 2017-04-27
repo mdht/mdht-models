@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +26,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *     The Payers Section contains data on the patient's payers, whether a 'third party' insurance, self-pay,
  *     other payer or guarantor, or some combination. At a minimum, the patient's pertinent current payment sources should be
  *     listed. If no payment sources are supplied, the reason shall be supplied as free text in the narrative block (e.g., Not
- *     Insured, Payer Unknown, Medicare Pending, et cetera). 
+ *     Insured, Payer Unknown, Medicare Pending, et cetera).
  * </p>
  * <!-- end-model-doc -->
  *
@@ -83,5 +81,6 @@ public interface PayersSection extends org.openhealthtools.mdht.uml.cda.ihe.Paye
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PayersSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public PayersSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // PayersSection

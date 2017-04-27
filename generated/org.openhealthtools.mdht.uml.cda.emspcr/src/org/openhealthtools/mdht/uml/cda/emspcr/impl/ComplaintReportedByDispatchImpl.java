@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.ComplaintReportedByDispatch;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ComplaintReportedByDispatchOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Complaint Reported By Dispatch</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ComplaintReportedByDispatchImpl extends ObservationImpl implements ComplaintReportedByDispatch {
+public class ComplaintReportedByDispatchImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements ComplaintReportedByDispatch {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class ComplaintReportedByDispatchImpl extends ObservationImpl implements 
 	 */
 	public boolean validateComplaintReportedByDispatchTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchTemplateId(
-			this, diagnostics, context);
+		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +58,7 @@ public class ComplaintReportedByDispatchImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateComplaintReportedByDispatchMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchMoodCode(
-			this, diagnostics, context);
+		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +67,7 @@ public class ComplaintReportedByDispatchImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateComplaintReportedByDispatchCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchCodeP(
-			this, diagnostics, context);
+		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +85,7 @@ public class ComplaintReportedByDispatchImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateComplaintReportedByDispatchValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchValue(
-			this, diagnostics, context);
+		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchValue(this, diagnostics, context);
 	}
 
 	/**
@@ -109,8 +94,7 @@ public class ComplaintReportedByDispatchImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateComplaintReportedByDispatchValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchValueP(
-			this, diagnostics, context);
+		return ComplaintReportedByDispatchOperations.validateComplaintReportedByDispatchValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -119,16 +103,16 @@ public class ComplaintReportedByDispatchImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public ComplaintReportedByDispatch init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ComplaintReportedByDispatch init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public ComplaintReportedByDispatch init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ComplaintReportedByDispatchImpl

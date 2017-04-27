@@ -7,28 +7,21 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.NutritionAssessmentOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Nutrition Assessment</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -50,6 +43,17 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.NUTRITION_ASSESSMENT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNutritionAssessmentValueOfTypeCDIsFromSnomed(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NutritionAssessmentOperations.validateNutritionAssessmentValueOfTypeCDIsFromSnomed(
+			this, diagnostics, context);
 	}
 
 	/**

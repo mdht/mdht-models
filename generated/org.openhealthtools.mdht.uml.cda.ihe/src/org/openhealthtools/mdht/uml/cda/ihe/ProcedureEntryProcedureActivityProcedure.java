@@ -12,7 +12,7 @@ package org.openhealthtools.mdht.uml.cda.ihe;
 
 import java.lang.Iterable;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityProcedure;
 
 /**
@@ -27,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityProcedure;
  */
 public interface ProcedureEntryProcedureActivityProcedure extends ProcedureActivityProcedure, ProcedureEntry {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProcedureEntryProcedureActivityProcedure init();
 
 	/**
@@ -38,5 +38,6 @@ public interface ProcedureEntryProcedureActivityProcedure extends ProcedureActiv
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedureEntryProcedureActivityProcedure init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ProcedureEntryProcedureActivityProcedure init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureEntryProcedureActivityProcedure

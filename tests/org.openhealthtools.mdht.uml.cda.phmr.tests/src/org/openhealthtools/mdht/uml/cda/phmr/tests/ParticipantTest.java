@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.Participant;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ParticipantOperations;
@@ -64,66 +64,69 @@ public class ParticipantTest extends  CDAValidationTest {
  
 									
 public void testValidateParticipantTemplateId() {
-      OperationsTestCase<Participant> validateParticipantTemplateIdTestCase = new OperationsTestCase<Participant>(
-      "validateParticipantTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<Participant> validateParticipantTemplateIdTestCase = new OperationsTestCase<Participant>(
+			"validateParticipantTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(Participant target) {
+			@Override
+			protected void updateToFail(Participant target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(Participant target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(Participant target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ParticipantOperations.validateParticipantTemplateId(
-          (Participant) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ParticipantOperations.validateParticipantTemplateId(
+					(Participant) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateParticipantTemplateIdTestCase.doValidationTest();
+		validateParticipantTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -138,66 +141,69 @@ public void testValidateParticipantTemplateId() {
  
 									
 public void testValidateParticipantPHMRProductInstance() {
-      OperationsTestCase<Participant> validateParticipantPHMRProductInstanceTestCase = new OperationsTestCase<Participant>(
-      "validateParticipantPHMRProductInstance",
-      operationsForOCL.getOCLValue("VALIDATE_PARTICIPANT_PHMR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<Participant> validateParticipantPHMRProductInstanceTestCase = new OperationsTestCase<Participant>(
+			"validateParticipantPHMRProductInstance",
+			operationsForOCL.getOCLValue("VALIDATE_PARTICIPANT_PHMR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(Participant target) {
+			@Override
+			protected void updateToFail(Participant target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(Participant target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(Participant target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ParticipantOperations.validateParticipantPHMRProductInstance(
-          (Participant) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ParticipantOperations.validateParticipantPHMRProductInstance(
+					(Participant) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateParticipantPHMRProductInstanceTestCase.doValidationTest();
+		validateParticipantPHMRProductInstanceTestCase.doValidationTest();
 }		
 
 
@@ -226,6 +232,7 @@ public void testValidateParticipantPHMRProductInstance() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<Participant> {
+		@Override
 		public Participant create() {		
 			return PhmrFactory.eINSTANCE.createParticipant();
 		}
@@ -257,9 +264,9 @@ public void testValidateParticipantPHMRProductInstance() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -269,8 +276,8 @@ public void testValidateParticipantPHMRProductInstance() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.InfectionPresentFetalDeath;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.InfectionPresentFetalDea
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Infection Present Fetal Death</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class InfectionPresentFetalDeathImpl extends ObservationImpl implements InfectionPresentFetalDeath {
+public class InfectionPresentFetalDeathImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl
+		implements InfectionPresentFetalDeath {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -54,7 +49,8 @@ public class InfectionPresentFetalDeathImpl extends ObservationImpl implements I
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInfectionPresentFetalDeathTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInfectionPresentFetalDeathTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathTemplateId(
 			this, diagnostics, context);
 	}
@@ -64,7 +60,8 @@ public class InfectionPresentFetalDeathImpl extends ObservationImpl implements I
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInfectionPresentFetalDeathClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInfectionPresentFetalDeathClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathClassCode(
 			this, diagnostics, context);
 	}
@@ -74,7 +71,8 @@ public class InfectionPresentFetalDeathImpl extends ObservationImpl implements I
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInfectionPresentFetalDeathMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInfectionPresentFetalDeathMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathMoodCode(
 			this, diagnostics, context);
 	}
@@ -103,7 +101,8 @@ public class InfectionPresentFetalDeathImpl extends ObservationImpl implements I
 	 * @generated
 	 */
 	public boolean validateInfectionPresentFetalDeathCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathCodeVS(this, diagnostics, context);
+		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathCodeVS(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -121,7 +120,8 @@ public class InfectionPresentFetalDeathImpl extends ObservationImpl implements I
 	 * @generated
 	 */
 	public boolean validateInfectionPresentFetalDeathValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathValueP(this, diagnostics, context);
+		return InfectionPresentFetalDeathOperations.validateInfectionPresentFetalDeathValueP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -130,7 +130,7 @@ public class InfectionPresentFetalDeathImpl extends ObservationImpl implements I
 	 * @generated
 	 */
 	public InfectionPresentFetalDeath init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -138,8 +138,9 @@ public class InfectionPresentFetalDeathImpl extends ObservationImpl implements I
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public InfectionPresentFetalDeath init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public InfectionPresentFetalDeath init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // InfectionPresentFetalDeathImpl

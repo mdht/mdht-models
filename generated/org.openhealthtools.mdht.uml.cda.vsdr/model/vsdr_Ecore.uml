@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Package xmi:id="_W7svwEj_EeGtBMy1ENLCpQ" name="vsdr">
-    <packageImport xmi:id="_W_H3MEj_EeGtBMy1ENLCpQ">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+     <packageImport xmi:id="_PKZrwE3jEeGVaJScxwOy7g">
+      <importedPackage href="pathmap://CDA_MODEL/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
     </packageImport>
-    <packageImport xmi:id="_W_H3MUj_EeGtBMy1ENLCpQ">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    <packageImport xmi:id="_hPUsgNcZEeGfQ6frO0B-Jg">
+      <importedPackage href="pathmap://DATATYPES_MODEL/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_q3SeUD49EeKUq_Bmx5Topg">
+      <importedPackage href="pathmap://VOCAB_MODEL/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_W9yacUj_EeGtBMy1ENLCpQ" name="Reporting Death Information from a Clinical Setting to Vital Records">
       <ownedRule xmi:id="_Kf904BpUEeSd5OoVIuDNwg" name="Reporting Death Information from a Clinical Setting to Vital RecordsTemplateId" constrainedElement="_W9yacUj_EeGtBMy1ENLCpQ">
@@ -135,7 +138,7 @@ value.code = 'US')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_do13EFlvEeGYU_6eTM1M0g">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_LlvxMBpUEeSd5OoVIuDNwg" name="getDeathReportDocumentBody" bodyCondition="_LlvxMxpUEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_LlvxMxpUEeSd5OoVIuDNwg" name="body" constrainedElement="_LlvxMBpUEeSd5OoVIuDNwg">
@@ -198,7 +201,7 @@ value.code = '31211-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_TwEEwUkAEeGtBMy1ENLCpQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_2l1UUEkBEeGtBMy1ENLCpQ" name="Death Report Document Body">
@@ -313,7 +316,7 @@ value.code = '69409-1' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_2l1UUUkBEeGtBMy1ENLCpQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_KuJa0BpUEeSd5OoVIuDNwg" name="getTime of Death" bodyCondition="_KuKB4BpUEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_KuKB4BpUEeSd5OoVIuDNwg" name="body" constrainedElement="_KuJa0BpUEeSd5OoVIuDNwg">
@@ -519,7 +522,7 @@ value.code = '58332-8' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_GBayYUkfEeGqCpGMXULTvg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_sLKXUEkkEeGZuYViNfIskw" name="Certifying Death">
@@ -567,7 +570,7 @@ value.code = '69437-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_sLUIUEkkEeGZuYViNfIskw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ZzKdMEtREeGCUrfdtxCbHg" name="Manner of Death">
@@ -621,7 +624,7 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '7878000' or value
         </specification>
       </ownedRule>
       <generalization xmi:id="_Z0HfcEtREeGCUrfdtxCbHg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_LHUeYEtSEeGCUrfdtxCbHg" name="Pregnancy Status">
@@ -675,7 +678,7 @@ value.codeSystem = '2.16.840.1.114222.4.5.274' and (value.code = 'PS1' or value.
         </specification>
       </ownedRule>
       <generalization xmi:id="_LHVFcEtSEeGCUrfdtxCbHg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_nmWDwEtSEeGCUrfdtxCbHg" name="Tobacco Use">
@@ -715,7 +718,7 @@ value.code = '69443-0' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_nmWq0EtSEeGCUrfdtxCbHg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_K6HN4FGqEeGSqNO1bVTZyw" name="Death Causal Information">
@@ -913,7 +916,7 @@ value.code = '69441-4' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_K6HN4VGqEeGSqNO1bVTZyw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_zXPkAFGqEeGSqNO1bVTZyw" name="Injury">
@@ -1233,7 +1236,7 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '303980003' or val
         </specification>
       </ownedRule>
       <generalization xmi:id="_zXQLEFGqEeGSqNO1bVTZyw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_YpKeMFGyEeGSqNO1bVTZyw" name="Autopsy Performance">
@@ -1333,7 +1336,7 @@ value.code = '21986-5' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_YpLFQFGyEeGSqNO1bVTZyw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_V-OFcFGzEeGSqNO1bVTZyw" name="Autopsy Results">
@@ -1385,7 +1388,7 @@ value.code = '69436-4' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_V-OFcVGzEeGSqNO1bVTZyw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_v3dWgFHCEeGSqNO1bVTZyw" name="Coroner Referral">
@@ -1431,7 +1434,7 @@ value.code = '69438-0' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_v3dWgVHCEeGSqNO1bVTZyw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Zf8sgFHDEeGSqNO1bVTZyw" name="Coroner Case Transfer">
@@ -1483,7 +1486,7 @@ value.code = 'LOINC TBD' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_Zf8sgVHDEeGSqNO1bVTZyw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_-IassG-oEeGducFY2S5l3A" name="Death LocationType">
@@ -1537,7 +1540,7 @@ value.codeSystem = '2.16.840.1.114222.4.5.274' and (value.code = 'H-IN' or value
         </specification>
       </ownedRule>
       <generalization xmi:id="_-IassW-oEeGducFY2S5l3A">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Artifact" xmi:id="_15ZWcHIREeGL-K1S1E9LrQ" name="Reporting death information from a clinical setting to vital recordsSample" fileName="Reporting death information from a clinical setting to vital recordsSample.xml"/>
@@ -1635,7 +1638,7 @@ value.code = 'LOINC TBD' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_TLji0l6VEeO_5svOqPnaJg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <profileApplication xmi:id="_W7svy0j_EeGtBMy1ENLCpQ">

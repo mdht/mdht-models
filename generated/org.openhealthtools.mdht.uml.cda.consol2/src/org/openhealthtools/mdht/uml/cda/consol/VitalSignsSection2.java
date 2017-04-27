@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +19,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignsSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionEntriesOptionalCodeP VitalSignsSection2Title VitalSignsSection2Text VitalSignsSectionEntriesOptionalVitalSignsOrganizer2' templateId.root='2.16.840.1.113883.10.20.22.2.4.1' templateId.extension='2014-06-09' nullFlavor='NI' constraints.validation.info='VitalSignsSection2NullFlavor' code.code='8716-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Vital Signs' constraints.validation.dependOn.VitalSignsSectionEntriesOptionalCode='VitalSignsSectionEntriesOptionalCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionEntriesOptionalCodeP VitalSignsSection2Title VitalSignsSection2Text VitalSignsSectionEntriesOptionalVitalSignsOrganizer' templateId.root='2.16.840.1.113883.10.20.22.2.4.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='VitalSignsSection2NullFlavor' code.code='8716-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Vital Signs' constraints.validation.dependOn.VitalSignsSectionEntriesOptionalCode='VitalSignsSectionEntriesOptionalCodeP'"
  * @generated
  */
 public interface VitalSignsSection2 extends VitalSignsSectionEntriesOptional2 {
@@ -68,7 +64,6 @@ public interface VitalSignsSection2 extends VitalSignsSectionEntriesOptional2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public VitalSignsSection2 init();
 
 	/**
@@ -76,6 +71,5 @@ public interface VitalSignsSection2 extends VitalSignsSectionEntriesOptional2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public VitalSignsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VitalSignsSection2

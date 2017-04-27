@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.CardiacArrestWithTiming;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.CardiacArrestWithTimingOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Cardiac Arrest With Timing</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class CardiacArrestWithTimingImpl extends ObservationImpl implements CardiacArrestWithTiming {
+public class CardiacArrestWithTimingImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements CardiacArrestWithTiming {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -95,16 +84,16 @@ public class CardiacArrestWithTimingImpl extends ObservationImpl implements Card
 	 * @generated
 	 */
 	public CardiacArrestWithTiming init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CardiacArrestWithTiming init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public CardiacArrestWithTiming init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CardiacArrestWithTimingImpl

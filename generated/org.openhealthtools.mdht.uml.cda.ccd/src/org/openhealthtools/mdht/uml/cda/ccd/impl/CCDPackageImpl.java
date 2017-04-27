@@ -22,12 +22,12 @@ import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.CDAPackage;
+import org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDFactory;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.cda.util.AnnotationBasedInitializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -617,9 +617,10 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 		}
 
 		// Obtain or create and register package
-		CCDPackageImpl theCCDPackage = (CCDPackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof CCDPackageImpl
-				? EPackage.Registry.INSTANCE.get(eNS_URI)
-				: new CCDPackageImpl());
+		CCDPackageImpl theCCDPackage = (CCDPackageImpl) (EPackage.Registry.INSTANCE.get(
+			eNS_URI) instanceof CCDPackageImpl
+					? EPackage.Registry.INSTANCE.get(eNS_URI)
+					: new CCDPackageImpl());
 
 		isInited = true;
 
@@ -659,8 +660,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getMedicationsSection() {
 		if (medicationsSectionEClass == null) {
-			medicationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				0);
+			medicationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(0);
 		}
 		return medicationsSectionEClass;
 	}
@@ -672,8 +673,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getContinuityOfCareDocument() {
 		if (continuityOfCareDocumentEClass == null) {
-			continuityOfCareDocumentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				11);
+			continuityOfCareDocumentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(11);
 		}
 		return continuityOfCareDocumentEClass;
 	}
@@ -685,8 +686,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getProblemAct() {
 		if (problemActEClass == null) {
-			problemActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				13);
+			problemActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(13);
 		}
 		return problemActEClass;
 	}
@@ -698,8 +699,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getProblemObservation() {
 		if (problemObservationEClass == null) {
-			problemObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				51);
+			problemObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(51);
 		}
 		return problemObservationEClass;
 	}
@@ -711,8 +712,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getProblemSection() {
 		if (problemSectionEClass == null) {
-			problemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				12);
+			problemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(12);
 		}
 		return problemSectionEClass;
 	}
@@ -724,8 +725,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getProblemStatusObservation() {
 		if (problemStatusObservationEClass == null) {
-			problemStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				19);
+			problemStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(19);
 		}
 		return problemStatusObservationEClass;
 	}
@@ -737,8 +738,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getEpisodeObservation() {
 		if (episodeObservationEClass == null) {
-			episodeObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				14);
+			episodeObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(14);
 		}
 		return episodeObservationEClass;
 	}
@@ -750,8 +751,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPatientAwareness() {
 		if (patientAwarenessEClass == null) {
-			patientAwarenessEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				53);
+			patientAwarenessEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(53);
 		}
 		return patientAwarenessEClass;
 	}
@@ -763,8 +764,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getFamilyHistorySection() {
 		if (familyHistorySectionEClass == null) {
-			familyHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				15);
+			familyHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(15);
 		}
 		return familyHistorySectionEClass;
 	}
@@ -776,8 +777,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getFamilyHistoryObservation() {
 		if (familyHistoryObservationEClass == null) {
-			familyHistoryObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				17);
+			familyHistoryObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(17);
 		}
 		return familyHistoryObservationEClass;
 	}
@@ -789,8 +790,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getFamilyHistoryOrganizer() {
 		if (familyHistoryOrganizerEClass == null) {
-			familyHistoryOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				16);
+			familyHistoryOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(16);
 		}
 		return familyHistoryOrganizerEClass;
 	}
@@ -802,8 +803,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getResultOrganizer() {
 		if (resultOrganizerEClass == null) {
-			resultOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				25);
+			resultOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(25);
 		}
 		return resultOrganizerEClass;
 	}
@@ -815,8 +816,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getResultObservation() {
 		if (resultObservationEClass == null) {
-			resultObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				26);
+			resultObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(26);
 		}
 		return resultObservationEClass;
 	}
@@ -828,8 +829,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getSocialHistorySection() {
 		if (socialHistorySectionEClass == null) {
-			socialHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				20);
+			socialHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(20);
 		}
 		return socialHistorySectionEClass;
 	}
@@ -841,8 +842,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getSocialHistoryObservation() {
 		if (socialHistoryObservationEClass == null) {
-			socialHistoryObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				21);
+			socialHistoryObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(21);
 		}
 		return socialHistoryObservationEClass;
 	}
@@ -854,8 +855,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getSocialHistoryStatusObservation() {
 		if (socialHistoryStatusObservationEClass == null) {
-			socialHistoryStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				22);
+			socialHistoryStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(22);
 		}
 		return socialHistoryStatusObservationEClass;
 	}
@@ -867,8 +868,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getEncountersSection() {
 		if (encountersSectionEClass == null) {
-			encountersSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				28);
+			encountersSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(28);
 		}
 		return encountersSectionEClass;
 	}
@@ -880,8 +881,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getImmunizationsSection() {
 		if (immunizationsSectionEClass == null) {
-			immunizationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				38);
+			immunizationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(38);
 		}
 		return immunizationsSectionEClass;
 	}
@@ -893,8 +894,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getEncountersActivity() {
 		if (encountersActivityEClass == null) {
-			encountersActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				29);
+			encountersActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(29);
 		}
 		return encountersActivityEClass;
 	}
@@ -906,8 +907,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getMedicationActivity() {
 		if (medicationActivityEClass == null) {
-			medicationActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				1);
+			medicationActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(1);
 		}
 		return medicationActivityEClass;
 	}
@@ -919,8 +920,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getSupplyActivity() {
 		if (supplyActivityEClass == null) {
-			supplyActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				9);
+			supplyActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(9);
 		}
 		return supplyActivityEClass;
 	}
@@ -932,8 +933,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getAlertsSection() {
 		if (alertsSectionEClass == null) {
-			alertsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				23);
+			alertsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(23);
 		}
 		return alertsSectionEClass;
 	}
@@ -945,8 +946,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getAlertObservation() {
 		if (alertObservationEClass == null) {
-			alertObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				54);
+			alertObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(54);
 		}
 		return alertObservationEClass;
 	}
@@ -958,8 +959,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getReactionObservation() {
 		if (reactionObservationEClass == null) {
-			reactionObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				6);
+			reactionObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(6);
 		}
 		return reactionObservationEClass;
 	}
@@ -971,8 +972,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getSeverityObservation() {
 		if (severityObservationEClass == null) {
-			severityObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				7);
+			severityObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(7);
 		}
 		return severityObservationEClass;
 	}
@@ -984,8 +985,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getAlertStatusObservation() {
 		if (alertStatusObservationEClass == null) {
-			alertStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				55);
+			alertStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(55);
 		}
 		return alertStatusObservationEClass;
 	}
@@ -997,8 +998,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getResultsSection() {
 		if (resultsSectionEClass == null) {
-			resultsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				24);
+			resultsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(24);
 		}
 		return resultsSectionEClass;
 	}
@@ -1023,8 +1024,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getMedicationStatusObservation() {
 		if (medicationStatusObservationEClass == null) {
-			medicationStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				3);
+			medicationStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(3);
 		}
 		return medicationStatusObservationEClass;
 	}
@@ -1036,8 +1037,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getEncounterLocation() {
 		if (encounterLocationEClass == null) {
-			encounterLocationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				56);
+			encounterLocationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(56);
 		}
 		return encounterLocationEClass;
 	}
@@ -1062,8 +1063,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getProceduresSection() {
 		if (proceduresSectionEClass == null) {
-			proceduresSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				27);
+			proceduresSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(27);
 		}
 		return proceduresSectionEClass;
 	}
@@ -1075,8 +1076,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPlanOfCareSection() {
 		if (planOfCareSectionEClass == null) {
-			planOfCareSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				30);
+			planOfCareSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(30);
 		}
 		return planOfCareSectionEClass;
 	}
@@ -1088,8 +1089,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPlanOfCareActivity() {
 		if (planOfCareActivityEClass == null) {
-			planOfCareActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				31);
+			planOfCareActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(31);
 		}
 		return planOfCareActivityEClass;
 	}
@@ -1101,8 +1102,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getVitalSignsSection() {
 		if (vitalSignsSectionEClass == null) {
-			vitalSignsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				39);
+			vitalSignsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(39);
 		}
 		return vitalSignsSectionEClass;
 	}
@@ -1114,8 +1115,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getMedicalEquipmentSection() {
 		if (medicalEquipmentSectionEClass == null) {
-			medicalEquipmentSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				41);
+			medicalEquipmentSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(41);
 		}
 		return medicalEquipmentSectionEClass;
 	}
@@ -1127,8 +1128,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getFunctionalStatusSection() {
 		if (functionalStatusSectionEClass == null) {
-			functionalStatusSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				42);
+			functionalStatusSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(42);
 		}
 		return functionalStatusSectionEClass;
 	}
@@ -1140,8 +1141,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getAdvanceDirectivesSection() {
 		if (advanceDirectivesSectionEClass == null) {
-			advanceDirectivesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				43);
+			advanceDirectivesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(43);
 		}
 		return advanceDirectivesSectionEClass;
 	}
@@ -1153,8 +1154,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPayersSection() {
 		if (payersSectionEClass == null) {
-			payersSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				46);
+			payersSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(46);
 		}
 		return payersSectionEClass;
 	}
@@ -1166,8 +1167,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPurposeSection() {
 		if (purposeSectionEClass == null) {
-			purposeSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				49);
+			purposeSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(49);
 		}
 		return purposeSectionEClass;
 	}
@@ -1179,8 +1180,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPurposeActivity() {
 		if (purposeActivityEClass == null) {
-			purposeActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				50);
+			purposeActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(50);
 		}
 		return purposeActivityEClass;
 	}
@@ -1192,8 +1193,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getVitalSignsOrganizer() {
 		if (vitalSignsOrganizerEClass == null) {
-			vitalSignsOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				40);
+			vitalSignsOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(40);
 		}
 		return vitalSignsOrganizerEClass;
 	}
@@ -1205,8 +1206,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getAdvanceDirectiveObservation() {
 		if (advanceDirectiveObservationEClass == null) {
-			advanceDirectiveObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				44);
+			advanceDirectiveObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(44);
 		}
 		return advanceDirectiveObservationEClass;
 	}
@@ -1231,8 +1232,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getAdvanceDirectiveVerification() {
 		if (advanceDirectiveVerificationEClass == null) {
-			advanceDirectiveVerificationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				58);
+			advanceDirectiveVerificationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(58);
 		}
 		return advanceDirectiveVerificationEClass;
 	}
@@ -1244,8 +1245,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getCoverageActivity() {
 		if (coverageActivityEClass == null) {
-			coverageActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				47);
+			coverageActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(47);
 		}
 		return coverageActivityEClass;
 	}
@@ -1257,8 +1258,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPolicyActivity() {
 		if (policyActivityEClass == null) {
-			policyActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				48);
+			policyActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(48);
 		}
 		return policyActivityEClass;
 	}
@@ -1270,8 +1271,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPayerEntity() {
 		if (payerEntityEClass == null) {
-			payerEntityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				65);
+			payerEntityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(65);
 		}
 		return payerEntityEClass;
 	}
@@ -1283,8 +1284,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getCoveredParty() {
 		if (coveredPartyEClass == null) {
-			coveredPartyEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				66);
+			coveredPartyEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(66);
 		}
 		return coveredPartyEClass;
 	}
@@ -1296,8 +1297,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPolicySubscriber() {
 		if (policySubscriberEClass == null) {
-			policySubscriberEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				67);
+			policySubscriberEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(67);
 		}
 		return policySubscriberEClass;
 	}
@@ -1309,8 +1310,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getAuthorizationActivity() {
 		if (authorizationActivityEClass == null) {
-			authorizationActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				59);
+			authorizationActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(59);
 		}
 		return authorizationActivityEClass;
 	}
@@ -1322,8 +1323,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPlanOfCareActivityAct() {
 		if (planOfCareActivityActEClass == null) {
-			planOfCareActivityActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				32);
+			planOfCareActivityActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(32);
 		}
 		return planOfCareActivityActEClass;
 	}
@@ -1335,8 +1336,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getProcedureActivity() {
 		if (procedureActivityEClass == null) {
-			procedureActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				60);
+			procedureActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(60);
 		}
 		return procedureActivityEClass;
 	}
@@ -1348,8 +1349,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPatientInstruction() {
 		if (patientInstructionEClass == null) {
-			patientInstructionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				5);
+			patientInstructionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(5);
 		}
 		return patientInstructionEClass;
 	}
@@ -1361,8 +1362,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getFulfillmentInstruction() {
 		if (fulfillmentInstructionEClass == null) {
-			fulfillmentInstructionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				10);
+			fulfillmentInstructionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(10);
 		}
 		return fulfillmentInstructionEClass;
 	}
@@ -1374,8 +1375,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getFunctionalStatusObservation() {
 		if (functionalStatusObservationEClass == null) {
-			functionalStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				61);
+			functionalStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(61);
 		}
 		return functionalStatusObservationEClass;
 	}
@@ -1387,8 +1388,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getProductInstance() {
 		if (productInstanceEClass == null) {
-			productInstanceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				8);
+			productInstanceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(8);
 		}
 		return productInstanceEClass;
 	}
@@ -1400,8 +1401,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getAgeObservation() {
 		if (ageObservationEClass == null) {
-			ageObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				18);
+			ageObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(18);
 		}
 		return ageObservationEClass;
 	}
@@ -1413,8 +1414,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPlanOfCareActivityObservation() {
 		if (planOfCareActivityObservationEClass == null) {
-			planOfCareActivityObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				34);
+			planOfCareActivityObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(34);
 		}
 		return planOfCareActivityObservationEClass;
 	}
@@ -1426,8 +1427,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPlanOfCareActivityEncounter() {
 		if (planOfCareActivityEncounterEClass == null) {
-			planOfCareActivityEncounterEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				33);
+			planOfCareActivityEncounterEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(33);
 		}
 		return planOfCareActivityEncounterEClass;
 	}
@@ -1439,8 +1440,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPlanOfCareActivityProcedure() {
 		if (planOfCareActivityProcedureEClass == null) {
-			planOfCareActivityProcedureEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				35);
+			planOfCareActivityProcedureEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(35);
 		}
 		return planOfCareActivityProcedureEClass;
 	}
@@ -1465,8 +1466,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getPlanOfCareActivitySupply() {
 		if (planOfCareActivitySupplyEClass == null) {
-			planOfCareActivitySupplyEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				37);
+			planOfCareActivitySupplyEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(37);
 		}
 		return planOfCareActivitySupplyEClass;
 	}
@@ -1478,8 +1479,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getProcedureActivityAct() {
 		if (procedureActivityActEClass == null) {
-			procedureActivityActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				62);
+			procedureActivityActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(62);
 		}
 		return procedureActivityActEClass;
 	}
@@ -1491,8 +1492,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getProcedureActivityObservation() {
 		if (procedureActivityObservationEClass == null) {
-			procedureActivityObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				63);
+			procedureActivityObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(63);
 		}
 		return procedureActivityObservationEClass;
 	}
@@ -1504,8 +1505,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getProcedureActivityProcedure() {
 		if (procedureActivityProcedureEClass == null) {
-			procedureActivityProcedureEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				64);
+			procedureActivityProcedureEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(64);
 		}
 		return procedureActivityProcedureEClass;
 	}
@@ -1517,8 +1518,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getCoveragePlanDescription() {
 		if (coveragePlanDescriptionEClass == null) {
-			coveragePlanDescriptionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				68);
+			coveragePlanDescriptionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(68);
 		}
 		return coveragePlanDescriptionEClass;
 	}
@@ -1530,8 +1531,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getSupportParticipant() {
 		if (supportParticipantEClass == null) {
-			supportParticipantEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				69);
+			supportParticipantEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(69);
 		}
 		return supportParticipantEClass;
 	}
@@ -1556,8 +1557,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getSupportGuardian() {
 		if (supportGuardianEClass == null) {
-			supportGuardianEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				71);
+			supportGuardianEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(71);
 		}
 		return supportGuardianEClass;
 	}
@@ -1582,8 +1583,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getAdvanceDirectiveReference() {
 		if (advanceDirectiveReferenceEClass == null) {
-			advanceDirectiveReferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				73);
+			advanceDirectiveReferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(73);
 		}
 		return advanceDirectiveReferenceEClass;
 	}
@@ -1608,8 +1609,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getCCDRegistryDelegate() {
 		if (ccdRegistryDelegateEClass == null) {
-			ccdRegistryDelegateEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				75);
+			ccdRegistryDelegateEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(75);
 		}
 		return ccdRegistryDelegateEClass;
 	}
@@ -1621,8 +1622,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getStatusObservation() {
 		if (statusObservationEClass == null) {
-			statusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				4);
+			statusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(4);
 		}
 		return statusObservationEClass;
 	}
@@ -1634,8 +1635,8 @@ public class CCDPackageImpl extends EPackageImpl implements CCDPackage {
 	 */
 	public EClass getProblemHealthStatusObservation() {
 		if (problemHealthStatusObservationEClass == null) {
-			problemHealthStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI).getEClassifiers().get(
-				52);
+			problemHealthStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				CCDPackage.eNS_URI).getEClassifiers().get(52);
 		}
 		return problemHealthStatusObservationEClass;
 	}

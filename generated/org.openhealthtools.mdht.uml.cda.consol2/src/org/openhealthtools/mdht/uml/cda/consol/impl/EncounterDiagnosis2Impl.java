@@ -7,20 +7,15 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2;
-
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterDiagnosis2Operations;
 
@@ -28,8 +23,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterDiagnosis2Ope
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounter Diagnosis2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -51,17 +44,6 @@ public class EncounterDiagnosis2Impl extends EncounterDiagnosisImpl implements E
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ENCOUNTER_DIAGNOSIS2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateEncounterDiagnosisProblemObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EncounterDiagnosis2Operations.validateEncounterDiagnosisProblemObservation2(this, diagnostics, context);
 	}
 
 	/**
@@ -102,6 +84,17 @@ public class EncounterDiagnosis2Impl extends EncounterDiagnosisImpl implements E
 	@Override
 	public boolean validateEncounterDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterDiagnosis2Operations.validateEncounterDiagnosisCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateEncounterDiagnosisProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EncounterDiagnosis2Operations.validateEncounterDiagnosisProblemObservation(this, diagnostics, context);
 	}
 
 	/**

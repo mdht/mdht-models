@@ -22,113 +22,106 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phmr.NumericObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 import org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.phmr.WaveformSeriesObservation;
-
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ResultOrganizerOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.ResultOrganizerImpl implements ResultOrganizer {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected ResultOrganizerImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhmrPackage.Literals.RESULT_ORGANIZER;
-  }
+		return PhmrPackage.Literals.RESULT_ORGANIZER;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
 public boolean validatePHMRResultOrganizerNumericObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return ResultOrganizerOperations.validatePHMRResultOrganizerNumericObservation(this, diagnostics, context);
-  }
+		return ResultOrganizerOperations.validatePHMRResultOrganizerNumericObservation(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
 public boolean validatePHMRResultOrganizerWaveformSeriesObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return ResultOrganizerOperations.validatePHMRResultOrganizerWaveformSeriesObservation(this, diagnostics, context);
-  }
+		return ResultOrganizerOperations.validatePHMRResultOrganizerWaveformSeriesObservation(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public EList<NumericObservation> getNumericObservations() {
-    return ResultOrganizerOperations.getNumericObservations(this);
-  }
+		return ResultOrganizerOperations.getNumericObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public EList<WaveformSeriesObservation> getWaveformSeriesObservations() {
-    return ResultOrganizerOperations.getWaveformSeriesObservations(this);
-  }
+		return ResultOrganizerOperations.getWaveformSeriesObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
-  }
+		return ResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public ResultOrganizer init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -136,8 +129,8 @@ public boolean validatePHMRResultOrganizerWaveformSeriesObservation(DiagnosticCh
      * @generated
      */
     @Override
-	public ResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public ResultOrganizer init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //ResultOrganizerImpl

@@ -10,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,13 +19,13 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getUnstructuredDocument2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId UnstructuredDocument2RecordTarget UnstructuredDocument2Custodian UnstructuredDocument2Component UnstructuredDocument2RecordTargetPatientRoleId UnstructuredDocument2RecordTargetPatientRole UnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization UnstructuredDocument2CustodianAssignedCustodian UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats UnstructuredDocument2ComponentNonXMLBodyText UnstructuredDocument2ComponentNonXMLBody' templateId.root='2.16.840.1.113883.10.20.22.1.10' templateId.extension='2014-06-09' constraints.validation.query='UnstructuredDocument2RecordTargetPatientRoleId UnstructuredDocument2RecordTargetPatientRole UnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization UnstructuredDocument2CustodianAssignedCustodian UnstructuredDocument2ComponentNonXMLBodyEDMediaType UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats UnstructuredDocument2ComponentNonXMLBodyText UnstructuredDocument2ComponentNonXMLBody' constraints.validation.info='UnstructuredDocument2ComponentNonXMLBodyEDMediaType'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId UnstructuredDocument2RecordTarget UnstructuredDocument2Custodian UnstructuredDocument2Component UnstructuredDocument2RecordTargetPatientRoleId UnstructuredDocument2RecordTargetPatientRole UnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization UnstructuredDocument2CustodianAssignedCustodian UnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats UnstructuredDocument2ComponentNonXMLBodyText UnstructuredDocument2ComponentNonXMLBody' templateId.root='2.16.840.1.113883.10.20.22.1.10' templateId.extension='2015-08-01' constraints.validation.query='UnstructuredDocument2RecordTargetPatientRoleId UnstructuredDocument2RecordTargetPatientRole UnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization UnstructuredDocument2CustodianAssignedCustodian UnstructuredDocument2ComponentNonXMLBodyEDMediaType UnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats UnstructuredDocument2ComponentNonXMLBodyText UnstructuredDocument2ComponentNonXMLBody' constraints.validation.info='UnstructuredDocument2ComponentNonXMLBodyEDMediaType'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocument2RecordTarget constraints.validation.error='UnstructuredDocument2RecordTargetPatientRole'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocument2RecordTargetPatientRole constraints.validation.error='UnstructuredDocument2RecordTargetPatientRoleId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocument2Custodian constraints.validation.error='UnstructuredDocument2CustodianAssignedCustodian'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocument2CustodianAssignedCustodian constraints.validation.error='UnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocument2Component constraints.validation.error='UnstructuredDocument2ComponentNonXMLBody'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocument2ComponentNonXMLBody constraints.validation.error='UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats UnstructuredDocument2ComponentNonXMLBodyText' constraints.validation.info='UnstructuredDocument2ComponentNonXMLBodyEDMediaType' constraints.validation.query='UnstructuredDocument2ComponentNonXMLBodyEDMediaType'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocument2ComponentNonXMLBody constraints.validation.error='UnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats UnstructuredDocument2ComponentNonXMLBodyText' constraints.validation.info='UnstructuredDocument2ComponentNonXMLBodyEDMediaType' constraints.validation.query='UnstructuredDocument2ComponentNonXMLBodyEDMediaType'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocument2ComponentNonXMLBodyED mediaType='text/plain' constraints.validation.info='UnstructuredDocument2ComponentNonXMLBodyEDMediaType'"
  * @generated
  */
@@ -129,6 +129,19 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2ComponentNonXMLBodyEDMediaType(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).nonXMLBody->excluding(null)->reject(not text.reference.value.oclIsUndefined() xor ( text.isDefined(\'representation\') and text.representation = datatypes::BinaryDataEncoding::B64 and (not text.mediaType.oclIsUndefined()) ))'"
+	 * @generated
+	 */
+	boolean validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**

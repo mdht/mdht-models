@@ -16,7 +16,8 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DrugVehicle;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity;
@@ -27,14 +28,11 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationActivityOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunization Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -74,7 +72,8 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateImmunizationActivityReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunizationActivityReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ImmunizationActivityOperations.validateImmunizationActivityReferenceValue(this, diagnostics, context);
 	}
 
@@ -86,7 +85,8 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	@Override
 	public boolean validateImmunizationActivityTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityTextReferenceValue(this, diagnostics, context);
+		return ImmunizationActivityOperations.validateImmunizationActivityTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +95,8 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateImmunizationActivityDoseQuantityUnit(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunizationActivityDoseQuantityUnit(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ImmunizationActivityOperations.validateImmunizationActivityDoseQuantityUnit(this, diagnostics, context);
 	}
 
@@ -242,7 +243,8 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateImmunizationActivityApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunizationActivityApproachSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ImmunizationActivityOperations.validateImmunizationActivityApproachSiteCode(this, diagnostics, context);
 	}
 
@@ -359,7 +361,8 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	@Override
 	public boolean validateImmunizationActivityMedicationDispense(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityMedicationDispense(this, diagnostics, context);
+		return ImmunizationActivityOperations.validateImmunizationActivityMedicationDispense(
+			this, diagnostics, context);
 	}
 
 	/**

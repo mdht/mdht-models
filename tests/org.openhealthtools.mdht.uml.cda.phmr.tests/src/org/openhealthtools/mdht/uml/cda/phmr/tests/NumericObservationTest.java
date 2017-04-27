@@ -28,13 +28,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.NumericObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.NumericObservationOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 
 /**
@@ -46,11 +46,11 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.NumericObservation#validateNumericObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numeric Observation Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.NumericObservation#validateNumericObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numeric Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.NumericObservation#validateNumericObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numeric Observation Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.NumericObservation#validateNumericObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numeric Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.NumericObservation#validateNumericObservationPHMRProductInstanceReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numeric Observation PHMR Product Instance Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.NumericObservation#validateResultObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.NumericObservation#validateResultObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.NumericObservation#validateResultObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.NumericObservation#validateResultObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -70,294 +70,69 @@ public class NumericObservationTest extends  CDAValidationTest {
  
 									
 public void testValidateNumericObservationClassCode() {
-      OperationsTestCase<NumericObservation> validateNumericObservationClassCodeTestCase = new OperationsTestCase<NumericObservation>(
-      "validateNumericObservationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_NUMERIC_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<NumericObservation> validateNumericObservationClassCodeTestCase = new OperationsTestCase<NumericObservation>(
+			"validateNumericObservationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_NUMERIC_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(NumericObservation target) {
+			@Override
+			protected void updateToFail(NumericObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(NumericObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(NumericObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return NumericObservationOperations.validateNumericObservationClassCode(
-          (NumericObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return NumericObservationOperations.validateNumericObservationClassCode(
+					(NumericObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateNumericObservationClassCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateNumericObservationCode() {
-      OperationsTestCase<NumericObservation> validateNumericObservationCodeTestCase = new OperationsTestCase<NumericObservation>(
-      "validateNumericObservationCode",
-      operationsForOCL.getOCLValue("VALIDATE_NUMERIC_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
-
-      @Override
-      protected void updateToFail(NumericObservation target) {
-
-      }
-
-      @Override
-      protected void updateToPass(NumericObservation target) {
-        target.init();
-        
-        
-        
-        
-        
-
-        
-        
-
-  
-      
-
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-      
-        CD cd  = DatatypesFactory.eINSTANCE.createCD();
-        target.setCode(cd);
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
-
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return NumericObservationOperations.validateNumericObservationCode(
-          (NumericObservation) objectToTest, diagnostician, map);
-      }
-
-    };
-
-    validateNumericObservationCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateNumericObservationMoodCode() {
-      OperationsTestCase<NumericObservation> validateNumericObservationMoodCodeTestCase = new OperationsTestCase<NumericObservation>(
-      "validateNumericObservationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_NUMERIC_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
-
-      @Override
-      protected void updateToFail(NumericObservation target) {
-
-      }
-
-      @Override
-      protected void updateToPass(NumericObservation target) {
-        target.init();
-        
-        
-        
-        
-        
-
-        
-        
-
-  
-      
-
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
-
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return NumericObservationOperations.validateNumericObservationMoodCode(
-          (NumericObservation) objectToTest, diagnostician, map);
-      }
-
-    };
-
-    validateNumericObservationMoodCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateNumericObservationValue() {
-      OperationsTestCase<NumericObservation> validateNumericObservationValueTestCase = new OperationsTestCase<NumericObservation>(
-      "validateNumericObservationValue",
-      operationsForOCL.getOCLValue("VALIDATE_NUMERIC_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
-
-      @Override
-      protected void updateToFail(NumericObservation target) {
-
-      }
-
-      @Override
-      protected void updateToPass(NumericObservation target) {
-        target.init();
-        
-        
-        
-        
-        
-
-        
-      
-        CD value = DatatypesFactory.eINSTANCE.createCD();
-        target.getValues().add(value);
-        
-
-  
-      
-
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
-
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return NumericObservationOperations.validateNumericObservationValue(
-          (NumericObservation) objectToTest, diagnostician, map);
-      }
-
-    };
-
-    validateNumericObservationValueTestCase.doValidationTest();
+		validateNumericObservationClassCodeTestCase.doValidationTest();
 }		
 
 
@@ -372,66 +147,69 @@ public void testValidateNumericObservationValue() {
  
 									
 public void testValidateNumericObservationPHMRProductInstanceReference() {
-      OperationsTestCase<NumericObservation> validateNumericObservationPHMRProductInstanceReferenceTestCase = new OperationsTestCase<NumericObservation>(
-      "validateNumericObservationPHMRProductInstanceReference",
-      operationsForOCL.getOCLValue("VALIDATE_NUMERIC_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<NumericObservation> validateNumericObservationPHMRProductInstanceReferenceTestCase = new OperationsTestCase<NumericObservation>(
+			"validateNumericObservationPHMRProductInstanceReference",
+			operationsForOCL.getOCLValue("VALIDATE_NUMERIC_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(NumericObservation target) {
+			@Override
+			protected void updateToFail(NumericObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(NumericObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(NumericObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return NumericObservationOperations.validateNumericObservationPHMRProductInstanceReference(
-          (NumericObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return NumericObservationOperations.validateNumericObservationPHMRProductInstanceReference(
+					(NumericObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateNumericObservationPHMRProductInstanceReferenceTestCase.doValidationTest();
+		validateNumericObservationPHMRProductInstanceReferenceTestCase.doValidationTest();
 }		
 
 
@@ -446,67 +224,307 @@ public void testValidateNumericObservationPHMRProductInstanceReference() {
  
 									
 public void testValidateResultObservationTemplateId() {
-      OperationsTestCase<NumericObservation> validateResultObservationTemplateIdTestCase = new OperationsTestCase<NumericObservation>(
-      "validateResultObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<NumericObservation> validateResultObservationTemplateIdTestCase = new OperationsTestCase<NumericObservation>(
+			"validateResultObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(NumericObservation target) {
+			@Override
+			protected void updateToFail(NumericObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(NumericObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(NumericObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return NumericObservationOperations.validateResultObservationTemplateId(
-          (NumericObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return NumericObservationOperations.validateResultObservationTemplateId(
+					(NumericObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateResultObservationTemplateIdTestCase.doValidationTest();
+		validateResultObservationTemplateIdTestCase.doValidationTest();
 }		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateResultObservationCode() {
+			OperationsTestCase<NumericObservation> validateResultObservationCodeTestCase = new OperationsTestCase<NumericObservation>(
+			"validateResultObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(NumericObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NumericObservation target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+			
+				CD cd  = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return NumericObservationOperations.validateResultObservationCode(
+					(NumericObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationCodeTestCase.doValidationTest();
+}
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateResultObservationMoodCode() {
+			OperationsTestCase<NumericObservation> validateResultObservationMoodCodeTestCase = new OperationsTestCase<NumericObservation>(
+			"validateResultObservationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(NumericObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NumericObservation target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return NumericObservationOperations.validateResultObservationMoodCode(
+					(NumericObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationMoodCodeTestCase.doValidationTest();
+}
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateResultObservationValue() {
+			OperationsTestCase<NumericObservation> validateResultObservationValueTestCase = new OperationsTestCase<NumericObservation>(
+			"validateResultObservationValue",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(NumericObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NumericObservation target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+			
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return NumericObservationOperations.validateResultObservationValue(
+					(NumericObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationValueTestCase.doValidationTest();
+}
 
 
 
@@ -534,6 +552,7 @@ public void testValidateResultObservationTemplateId() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<NumericObservation> {
+		@Override
 		public NumericObservation create() {		
 			return PhmrFactory.eINSTANCE.createNumericObservation();
 		}
@@ -565,9 +584,9 @@ public void testValidateResultObservationTemplateId() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -577,8 +596,8 @@ public void testValidateResultObservationTemplateId() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

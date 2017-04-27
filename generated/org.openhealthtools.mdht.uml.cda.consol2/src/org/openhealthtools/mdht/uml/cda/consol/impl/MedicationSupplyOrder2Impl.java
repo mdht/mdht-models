@@ -7,28 +7,21 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationSupplyOrder2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Supply Order2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -70,8 +63,8 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationSupplyOrder2ContainsImmunizationMedicationInformation2(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationSupplyOrder2ContainsImmunizationMedicationInformation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2ContainsImmunizationMedicationInformation2(
 			this, diagnostics, context);
 	}
@@ -81,33 +74,8 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicationSupplyOrder2ContainsMedicationOrImmunization(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2ContainsMedicationOrImmunization(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationSupplyOrder2InstructionInversionInd(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2InstructionInversionInd(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationSupplyOrderInstruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderInstruction2(this, diagnostics, context);
+	public boolean validateMedicationSupplyOrderStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -126,8 +94,62 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	 * @generated
 	 */
 	@Override
+	public boolean validateMedicationSupplyOrderContainsMedicationOrImmunization(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderContainsMedicationOrImmunization(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationSupplyOrderInstructionInversionInd(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderInstructionInversionInd(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateMedicationSupplyOrderTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationSupplyOrderStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationSupplyOrderRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderRepeatNumber(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationSupplyOrderInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderInstructions(this, diagnostics, context);
 	}
 
 	/**

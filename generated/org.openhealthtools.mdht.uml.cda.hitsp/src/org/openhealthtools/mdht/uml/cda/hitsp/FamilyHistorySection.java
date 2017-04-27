@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.FamilyMedicalHistorySection;
 
 /**
@@ -27,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.FamilyMedicalHistorySection;
  * <!-- begin-model-doc -->
  * <p>
  *     The Family History Section contains information about the genetic family members, to the extent that
- *     they are known, the diseases they suffered from, their ages at death, and other relevant genetic information. 
+ *     they are known, the diseases they suffered from, their ages at death, and other relevant genetic information.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -82,5 +80,6 @@ public interface FamilyHistorySection extends FamilyMedicalHistorySection {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FamilyHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public FamilyHistorySection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // FamilyHistorySection

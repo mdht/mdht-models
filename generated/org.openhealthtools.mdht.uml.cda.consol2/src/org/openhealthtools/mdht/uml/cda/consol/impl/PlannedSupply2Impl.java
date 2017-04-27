@@ -7,34 +7,26 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
-import org.openhealthtools.mdht.uml.cda.consol.PatientPriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2;
+import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
-import org.openhealthtools.mdht.uml.cda.consol.ProviderPriorityPreference;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedSupply2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Supply2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -56,6 +48,17 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PLANNED_SUPPLY2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedSupply2MedInfoXorImmunXorProductInstance(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2MedInfoXorImmunXorProductInstance(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -153,21 +156,8 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlannedSupply2PatientPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedSupply2Operations.validatePlannedSupply2PatientPriorityPreference(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlannedSupply2ProviderPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedSupply2Operations.validatePlannedSupply2ProviderPriorityPreference(this, diagnostics, context);
+	public boolean validatePlannedSupply2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2PriorityPreference(this, diagnostics, context);
 	}
 
 	/**
@@ -205,6 +195,36 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedSupply2ProductRecommended(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2ProductRecommended(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedSupply2ProductManufacturedProduct(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2ProductManufacturedProduct(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public ProductInstance getProductInstance() {
 		return PlannedSupply2Operations.getProductInstance(this);
@@ -215,19 +235,8 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PatientPriorityPreference> getPatientPriorityPreferences() {
-		return PlannedSupply2Operations.getPatientPriorityPreferences(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ProviderPriorityPreference> getProviderPriorityPreferences() {
-		return PlannedSupply2Operations.getProviderPriorityPreferences(this);
+	public EList<PriorityPreference> getPriorityPreferences() {
+		return PlannedSupply2Operations.getPriorityPreferences(this);
 	}
 
 	/**
@@ -266,8 +275,19 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlanOfCareActivitySupplyTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlanOfCareActivitySupplyTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlanOfCareActivitySupplyTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePlanOfCareActivitySupplyMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlanOfCareActivitySupplyMoodCode(this, diagnostics, context);
 	}
 
 	/**

@@ -27,14 +27,8 @@ import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EValidator;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
-
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
-
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceAccuracyObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceDefinitionOrganizer;
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceMeasurementRangeObservation;
@@ -65,9 +59,7 @@ import org.openhealthtools.mdht.uml.cda.phmr.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.phmr.WaveformObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.WaveformSamplePeriodObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.WaveformSeriesObservation;
-
 import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
-import org.openhealthtools.mdht.uml.cda.util.AnnotationBasedInitializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -330,11 +322,8 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         // Register package validator
         EValidator.Registry.INSTANCE.put
             (thePhmrPackage, 
-             new EValidator.Descriptor()
-             {
-                 @Override
-				public EValidator getEValidator()
-                 {
+             new EValidator.Descriptor() {
+                 public EValidator getEValidator() {
                      return PhmrValidator.INSTANCE;
                  }
              });
@@ -344,8 +333,8 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
 
   
         // publish my initializers in the registry
-        Initializer.Registry.INSTANCE.registerFactory("org.openhealthtools.mdht.uml.cda.phmr", AnnotationBasedInitializer.FACTORY);
-        Initializer.Registry.INSTANCE.initializeEPackage(thePhmrPackage);
+        org.eclipse.mdht.emf.runtime.util.Initializer.Registry.INSTANCE.registerFactory("org.openhealthtools.mdht.uml.cda.phmr", org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer.FACTORY);
+        org.eclipse.mdht.emf.runtime.util.Initializer.Registry.INSTANCE.initializeEPackage(thePhmrPackage);
                 
         // Update the registry and return the package
         EPackage.Registry.INSTANCE.put(PhmrPackage.eNS_URI, thePhmrPackage);
@@ -742,7 +731,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         setNsURI(eNS_URI);
 
         // Obtain other dependent packages
-        CDAPackage theCDAPackage = (CDAPackage)EPackage.Registry.INSTANCE.getEPackage(CDAPackage.eNS_URI);
+        org.eclipse.mdht.uml.cda.CDAPackage theCDAPackage = (org.eclipse.mdht.uml.cda.CDAPackage)EPackage.Registry.INSTANCE.getEPackage(org.eclipse.mdht.uml.cda.CDAPackage.eNS_URI);
         CCDPackage theCCDPackage = (CCDPackage)EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI);
 
         // Create type parameters
@@ -1996,8 +1985,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (this, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.phmr"
            });                                                                                                                                                                                                                                                                                                                                                                                                                                      
     }
@@ -2013,8 +2001,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (deviceAccuracyObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "DeviceAccuracyObservationTemplateId DeviceAccuracyObservationClassCode DeviceAccuracyObservationCode DeviceAccuracyObservationCodeP DeviceAccuracyObservationMoodCode DeviceAccuracyObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.9.3",
              "classCode", "OBS",
@@ -2027,8 +2014,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (deviceDefinitionOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "DeviceDefinitionOrganizerTemplateId DeviceDefinitionOrganizerClassCode DeviceDefinitionOrganizerMoodCode DeviceDefinitionOrganizerParticipant",
              "templateId.root", "2.16.840.1.113883.10.20.9.4",
              "classCode", "CLUSTER",
@@ -2039,8 +2025,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (samplingFrequencyObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "SamplingFrequencyObservationTemplateId SamplingFrequencyObservationCode SamplingFrequencyObservationCodeP SamplingFrequencyObservationMoodCode SamplingFrequencyObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.9.10",
              "classCode", "OBS",
@@ -2053,8 +2038,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (deviceMeasurementRangeObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "DeviceMeasurementRangeObservationTemplateId DeviceMeasurementRangeObservationClassCode DeviceMeasurementRangeObservationCode DeviceMeasurementRangeObservationCodeP DeviceMeasurementRangeObservationMoodCode",
              "templateId.root", "2.16.840.1.113883.10.20.9.5",
              "classCode", "OBS",
@@ -2067,8 +2051,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (deviceResolutionObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "DeviceResolutionObservationTemplateId DeviceResolutionObservationClassCode DeviceResolutionObservationCode DeviceResolutionObservationMoodCode DeviceResolutionObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.9.6",
              "classCode", "OBS",
@@ -2080,8 +2063,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (eventObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "EventObservationTemplateId EventObservationClassCode EventObservationCode EventObservationMoodCode EventObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.9.7",
              "classCode", "OBS",
@@ -2093,8 +2075,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (medicalEquipmentEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "MedicalEquipmentSectionTemplateId MedicalEquipmentText",
              "templateId.root", "2.16.840.1.113883.10.20.9.1",
              "constraints.validation.warning", "MedicalEquipmentDeviceDefinitionOrganizer"
@@ -2102,8 +2083,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (numericObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ResultObservationTemplateId NumericObservationClassCode ResultObservationCode ResultObservationMoodCode ResultObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.9.8",
              "classCode", "OBS",
@@ -2113,8 +2093,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (observationMediaJPGEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ObservationMediaJPGTemplateId ObservationMediaJPGClassCode ObservationMediaJPGMoodCode ObservationMediaJPGValue",
              "templateId.root", "null",
              "classCode", "OBS",
@@ -2123,8 +2102,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (observationNullFlavorEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ObservationNullFlavorTemplateId ObservationNullFlavorClassCode ObservationNullFlavorMoodCode ObservationNullFlavorWaveformObservation ObservationNullFlavorWaveformSamplePeriodObservation",
              "templateId.root", "null",
              "classCode", "OBSCOR",
@@ -2133,8 +2111,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (waveformObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "WaveformObservationTemplateId WaveformObservationClassCode WaveformObservationCode WaveformObservationMoodCode",
              "templateId.root", "2.16.840.1.113883.10.20.9.11",
              "classCode", "OBS",
@@ -2146,8 +2123,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (waveformSamplePeriodObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "WaveformSamplePeriodObservationTemplateId WaveformSamplePeriodObservationClassCode WaveformSamplePeriodObservationCode WaveformSamplePeriodObservationMoodCode WaveformSamplePeriodObservationValue",
              "templateId.root", "2.16.840.1.113883.10.20.9.13",
              "classCode", "OBS",
@@ -2159,16 +2135,14 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (participantEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ParticipantTemplateId ParticipantPHMRProductInstance",
              "templateId.root", "null"
            });           
         addAnnotation
           (personalHealthcareMonitoringReportEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PersonalHealthcareMonitoringReportTemplateId PersonalHealthcareMonitoringReportVitalSigns PersonalHealthcareMonitoringReportResults PersonalHealthcareMonitoringReportMedicalEquipment",
              "templateId.root", "2.16.840.1.113883.10.20.9",
              "constraints.validation.info", "PersonalHealthcareMonitoringReportFunctionalStatus PersonalHealthcareMonitoringReportMedication PersonalHealthcareMonitoringReportPurpose"
@@ -2176,8 +2150,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsTypeIdExtension GeneralHeaderConstraintsSetIdAndVersionNumber GeneralHeaderConstraintsSetIdAndIdAreUnique GeneralHeaderConstraintsCopyTimeNotPresent GeneralHeaderConstraintsHasRecordTargetPatientRole GeneralHeaderConstraintsHasPatientBirthTime GeneralHeaderConstraintsHasAdministrativeGenderCode GeneralHeaderConstraintsHasAuthorTime GeneralHeaderConstraintsHasAssignedAuthorId GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice GeneralHeaderConstraintsHasDataEntererAssignedPerson GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson GeneralHeaderConstraintsAuthenticatorHasAssignedPerson GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP GeneralHeaderConstraintsConfidentialityCode GeneralHeaderConstraintsEffectiveTime GeneralHeaderConstraintsId GeneralHeaderConstraintsLanguageCode GeneralHeaderConstraintsTitle GeneralHeaderConstraintsTypeId",
              "templateId.root", "null",
              "constraints.validation.info", "GeneralHeaderConstraintsHasProviderOrganization GeneralHeaderConstraintsHasDataEntererTime GeneralHeaderConstraintsHasInformant",
@@ -2190,8 +2163,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (vitalSignsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "VitalSignsSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.9.2",
              "constraints.validation.warning", "VitalSignsOrganizer"
@@ -2199,8 +2171,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (resultOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ResultOrganizerTemplateId",
              "templateId.root", "null",
              "constraints.validation.warning", "PHMRResultOrganizerNumericObservation",
@@ -2209,8 +2180,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (waveformSeriesObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "WaveformSeriesObservationTemplateId WaveformSeriesObservationClassCode WaveformSeriesObservationCode WaveformSeriesObservationCodeP WaveformSeriesObservationEffectiveTime WaveformSeriesObservationMoodCode",
              "templateId.root", "2.16.840.1.113883.10.20.9.12",
              "classCode", "OBSSER",
@@ -2223,8 +2193,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (resultsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ResultsSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.9.14",
              "constraints.validation.warning", "ResultsResultOrganizer"
@@ -2232,16 +2201,14 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (participantRoleEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PHMRParticipantRoleTemplateId PHMRParticipantRoleId",
              "templateId.root", "null"
            });           
         addAnnotation
           (phmrProductInstanceEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ProductInstanceTemplateId PHMRProductInstanceId PHMRProductInstancePlayingDevice",
              "templateId.root", "2.16.840.1.113883.10.20.9.9",
              "constraints.validation.info", "PHMRProductInstanceCode",
@@ -2250,8 +2217,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (phmrProductInstanceReferenceEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PHMRProductInstanceReferenceTemplateId PHMRProductInstanceReferenceTypeCode PHMRProductInstanceReferenceParticipantRole",
              "templateId.root", "null",
              "typeCode", "SBJ"
@@ -2259,8 +2225,7 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (playingDeviceEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PlayingDeviceTemplateId PlayingDeviceCode PlayingDeviceManufacturerModelName",
              "templateId.root", "null",
              "code.codeSystem", "2.16.840.1.113883.6.24",
@@ -2269,40 +2234,35 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (scopingEntityEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ScopingEntityTemplateId ScopingEntityDesc",
              "templateId.root", "null"
            });           
         addAnnotation
           (vitalSignsOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "VitalSignsOrganizerTemplateId",
              "templateId.root", "null"
            });        
         addAnnotation
           (purposeEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PurposeSectionTemplateId",
              "templateId.root", "null"
            });      
         addAnnotation
           (medicationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "MedicationsSectionTemplateId",
              "templateId.root", "null"
            });      
         addAnnotation
           (functionalStatusEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "FunctionalStatusSectionTemplateId",
              "templateId.root", "null"
            }); 
@@ -2319,56 +2279,47 @@ public class PhmrPackageImpl extends EPackageImpl implements PhmrPackage {
         addAnnotation
           (medicalEquipmentEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });             
         addAnnotation
           (numericObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });                                                                                                                                                                                             
         addAnnotation
           (vitalSignsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });          
         addAnnotation
           (resultOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });                                            
         addAnnotation
           (resultsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });                 
         addAnnotation
           (phmrProductInstanceEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });                                                 
         addAnnotation
           (purposeEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });      
         addAnnotation
           (medicationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });      
         addAnnotation
           (functionalStatusEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });
     }
 

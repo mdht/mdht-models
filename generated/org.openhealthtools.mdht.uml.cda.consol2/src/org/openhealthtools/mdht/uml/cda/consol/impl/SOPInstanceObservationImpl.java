@@ -17,20 +17,18 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PurposeofReferenceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SOPInstanceObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>SOP Instance Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -96,7 +94,8 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * @generated
 	 */
 	@Override
-	public boolean validateSOPInstanceObservationTextMediaType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSOPInstanceObservationTextMediaType(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationTextMediaType(this, diagnostics, context);
 	}
 
@@ -106,7 +105,8 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * @generated
 	 */
 	@Override
-	public boolean validateSOPInstanceObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSOPInstanceObservationTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationTextReference(this, diagnostics, context);
 	}
 
@@ -148,7 +148,8 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * @generated
 	 */
 	@Override
-	public boolean validateSOPInstanceObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSOPInstanceObservationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationEffectiveTime(this, diagnostics, context);
 	}
 
@@ -204,12 +205,13 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateSOPInstanceObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SOPInstanceObservationOperations.validateSOPInstanceObservation(this, diagnostics, context);
+	public boolean validateSOPInstanceObservationSOPInstanceObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationSOPInstanceObservation(
+			this, diagnostics, context);
 	}
 
 	/**

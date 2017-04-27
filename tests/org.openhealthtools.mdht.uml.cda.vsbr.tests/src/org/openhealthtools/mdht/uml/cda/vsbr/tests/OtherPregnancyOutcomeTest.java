@@ -1,23 +1,26 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.OtherPregnancyOutcomeOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,8 +35,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome#validateOtherPregnancyOutcomeMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Pregnancy Outcome Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome#validateOtherPregnancyOutcomeCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Pregnancy Outcome Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome#validateOtherPregnancyOutcomeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Pregnancy Outcome Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome#validateOtherPregnancyOutcomeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Pregnancy Outcome Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome#validateOtherPregnancyOutcomeEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Pregnancy Outcome Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome#validateOtherPregnancyOutcomeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Pregnancy Outcome Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -47,10 +50,11 @@ public class OtherPregnancyOutcomeTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateOtherPregnancyOutcomeTemplateId() {
 		OperationsTestCase<OtherPregnancyOutcome> validateOtherPregnancyOutcomeTemplateIdTestCase = new OperationsTestCase<OtherPregnancyOutcome>(
-			"validateOtherPregnancyOutcomeTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOtherPregnancyOutcomeTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -81,6 +85,7 @@ public class OtherPregnancyOutcomeTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateOtherPregnancyOutcomeClassCode() {
 		OperationsTestCase<OtherPregnancyOutcome> validateOtherPregnancyOutcomeClassCodeTestCase = new OperationsTestCase<OtherPregnancyOutcome>(
 			"validateOtherPregnancyOutcomeClassCode",
@@ -115,6 +120,7 @@ public class OtherPregnancyOutcomeTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateOtherPregnancyOutcomeMoodCode() {
 		OperationsTestCase<OtherPregnancyOutcome> validateOtherPregnancyOutcomeMoodCodeTestCase = new OperationsTestCase<OtherPregnancyOutcome>(
 			"validateOtherPregnancyOutcomeMoodCode",
@@ -149,6 +155,7 @@ public class OtherPregnancyOutcomeTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateOtherPregnancyOutcomeCodeP() {
 		OperationsTestCase<OtherPregnancyOutcome> validateOtherPregnancyOutcomeCodePTestCase = new OperationsTestCase<OtherPregnancyOutcome>(
 			"validateOtherPregnancyOutcomeCodeP",
@@ -183,6 +190,7 @@ public class OtherPregnancyOutcomeTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateOtherPregnancyOutcomeCode() {
 		OperationsTestCase<OtherPregnancyOutcome> validateOtherPregnancyOutcomeCodeTestCase = new OperationsTestCase<OtherPregnancyOutcome>(
 			"validateOtherPregnancyOutcomeCode",
@@ -217,6 +225,45 @@ public class OtherPregnancyOutcomeTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
+	public void testValidateOtherPregnancyOutcomeEffectiveTime() {
+		OperationsTestCase<OtherPregnancyOutcome> validateOtherPregnancyOutcomeEffectiveTimeTestCase = new OperationsTestCase<OtherPregnancyOutcome>(
+			"validateOtherPregnancyOutcomeEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(OtherPregnancyOutcome target) {
+
+			}
+
+			@Override
+			protected void updateToPass(OtherPregnancyOutcome target) {
+				target.init();
+
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeEffectiveTime(
+					(OtherPregnancyOutcome) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateOtherPregnancyOutcomeEffectiveTimeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
 	public void testValidateOtherPregnancyOutcomeValue() {
 		OperationsTestCase<OtherPregnancyOutcome> validateOtherPregnancyOutcomeValueTestCase = new OperationsTestCase<OtherPregnancyOutcome>(
 			"validateOtherPregnancyOutcomeValue",
@@ -247,43 +294,6 @@ public class OtherPregnancyOutcomeTest extends CDAValidationTest {
 		};
 
 		validateOtherPregnancyOutcomeValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateOtherPregnancyOutcomeEffectiveTime() {
-		OperationsTestCase<OtherPregnancyOutcome> validateOtherPregnancyOutcomeEffectiveTimeTestCase = new OperationsTestCase<OtherPregnancyOutcome>(
-			"validateOtherPregnancyOutcomeEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(OtherPregnancyOutcome target) {
-
-			}
-
-			@Override
-			protected void updateToPass(OtherPregnancyOutcome target) {
-				target.init();
-
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				target.setEffectiveTime(ts);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeEffectiveTime(
-					(OtherPregnancyOutcome) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateOtherPregnancyOutcomeEffectiveTimeTestCase.doValidationTest();
 	}
 
 	/**
@@ -339,8 +349,7 @@ public class OtherPregnancyOutcomeTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

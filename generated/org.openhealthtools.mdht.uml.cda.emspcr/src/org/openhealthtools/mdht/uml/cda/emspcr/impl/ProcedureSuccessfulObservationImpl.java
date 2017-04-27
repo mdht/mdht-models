@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ProcedureSuccessfulObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ProcedureSuccessfulObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Successful Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ProcedureSuccessfulObservationImpl extends ObservationImpl implements ProcedureSuccessfulObservation {
+public class ProcedureSuccessfulObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements ProcedureSuccessfulObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class ProcedureSuccessfulObservationImpl extends ObservationImpl implemen
 	 */
 	public boolean validateProcedureSuccessfulObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationTemplateId(
-			this, diagnostics, context);
+		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +59,7 @@ public class ProcedureSuccessfulObservationImpl extends ObservationImpl implemen
 	 */
 	public boolean validateProcedureSuccessfulObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationMoodCode(
-			this, diagnostics, context);
+		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +68,7 @@ public class ProcedureSuccessfulObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateProcedureSuccessfulObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationCodeP(
-			this, diagnostics, context);
+		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +77,7 @@ public class ProcedureSuccessfulObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateProcedureSuccessfulObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationCode(
-			this, diagnostics, context);
+		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +86,7 @@ public class ProcedureSuccessfulObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateProcedureSuccessfulObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationValue(
-			this, diagnostics, context);
+		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -111,16 +95,16 @@ public class ProcedureSuccessfulObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public ProcedureSuccessfulObservation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureSuccessfulObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public ProcedureSuccessfulObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureSuccessfulObservationImpl

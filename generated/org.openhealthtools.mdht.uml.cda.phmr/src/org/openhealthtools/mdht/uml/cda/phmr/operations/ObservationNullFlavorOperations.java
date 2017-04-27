@@ -27,24 +27,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.phmr.ObservationNullFlavor;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPlugin;
 import org.openhealthtools.mdht.uml.cda.phmr.WaveformObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.WaveformSamplePeriodObservation;
-
 import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
 
 /**
@@ -67,410 +59,453 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  *
  * @generated
  */
-public class ObservationNullFlavorOperations extends ClinicalStatementOperations {
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	protected ObservationNullFlavorOperations() {
-    super();
-  }
+public class ObservationNullFlavorOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
 
 	/**
-   * The cached OCL expression body for the '{@link #validateObservationNullFlavorTemplateId(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Template Id</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateObservationNullFlavorTemplateId(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 */
+	protected ObservationNullFlavorOperations() {
+		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateObservationNullFlavorTemplateId(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateObservationNullFlavorTemplateId(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OBSERVATION_NULL_FLAVOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = 'null')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateObservationNullFlavorTemplateId(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateObservationNullFlavorTemplateId(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateObservationNullFlavorTemplateId(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_OBSERVATION_NULL_FLAVOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateObservationNullFlavorTemplateId(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_OBSERVATION_NULL_FLAVOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param observationNullFlavor The receiving '<em><b>Observation Null Flavor</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param observationNullFlavor The receiving '<em><b>Observation Null Flavor</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateObservationNullFlavorTemplateId(ObservationNullFlavor observationNullFlavor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_OBSERVATION_NULL_FLAVOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR);
-      try
-      {
-        VALIDATE_OBSERVATION_NULL_FLAVOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OBSERVATION_NULL_FLAVOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_OBSERVATION_NULL_FLAVOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(observationNullFlavor))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.OBSERVATION_NULL_FLAVOR__OBSERVATION_NULL_FLAVOR_TEMPLATE_ID,
-             PhmrPlugin.INSTANCE.getString("ObservationNullFlavorTemplateId"),
-             new Object [] { observationNullFlavor }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OBSERVATION_NULL_FLAVOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR);
+			try {
+				VALIDATE_OBSERVATION_NULL_FLAVOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OBSERVATION_NULL_FLAVOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OBSERVATION_NULL_FLAVOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(observationNullFlavor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.OBSERVATION_NULL_FLAVOR__OBSERVATION_NULL_FLAVOR_TEMPLATE_ID,
+						 PhmrPlugin.INSTANCE.getString("ObservationNullFlavorObservationNullFlavorTemplateId"),
+						 new Object [] { observationNullFlavor }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateObservationNullFlavorClassCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Class Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateObservationNullFlavorClassCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateObservationNullFlavorClassCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateObservationNullFlavorClassCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OBSERVATION_NULL_FLAVOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBSCOR";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateObservationNullFlavorClassCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Class Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateObservationNullFlavorClassCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateObservationNullFlavorClassCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_OBSERVATION_NULL_FLAVOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateObservationNullFlavorClassCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_OBSERVATION_NULL_FLAVOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param observationNullFlavor The receiving '<em><b>Observation Null Flavor</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param observationNullFlavor The receiving '<em><b>Observation Null Flavor</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateObservationNullFlavorClassCode(ObservationNullFlavor observationNullFlavor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_OBSERVATION_NULL_FLAVOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR);
-      try
-      {
-        VALIDATE_OBSERVATION_NULL_FLAVOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OBSERVATION_NULL_FLAVOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_OBSERVATION_NULL_FLAVOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(observationNullFlavor))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.OBSERVATION_NULL_FLAVOR__OBSERVATION_NULL_FLAVOR_CLASS_CODE,
-             PhmrPlugin.INSTANCE.getString("ObservationNullFlavorClassCode"),
-             new Object [] { observationNullFlavor }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OBSERVATION_NULL_FLAVOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR);
+			try {
+				VALIDATE_OBSERVATION_NULL_FLAVOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OBSERVATION_NULL_FLAVOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OBSERVATION_NULL_FLAVOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(observationNullFlavor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.OBSERVATION_NULL_FLAVOR__OBSERVATION_NULL_FLAVOR_CLASS_CODE,
+						 PhmrPlugin.INSTANCE.getString("ObservationNullFlavorObservationNullFlavorClassCode"),
+						 new Object [] { observationNullFlavor }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateObservationNullFlavorMoodCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Mood Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateObservationNullFlavorMoodCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateObservationNullFlavorMoodCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateObservationNullFlavorMoodCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OBSERVATION_NULL_FLAVOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode') and self.moodCode=vocab::x_ActMoodDocumentObservation::EVN";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateObservationNullFlavorMoodCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Mood Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateObservationNullFlavorMoodCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateObservationNullFlavorMoodCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_OBSERVATION_NULL_FLAVOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateObservationNullFlavorMoodCode(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_OBSERVATION_NULL_FLAVOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param observationNullFlavor The receiving '<em><b>Observation Null Flavor</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param observationNullFlavor The receiving '<em><b>Observation Null Flavor</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateObservationNullFlavorMoodCode(ObservationNullFlavor observationNullFlavor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_OBSERVATION_NULL_FLAVOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR);
-      try
-      {
-        VALIDATE_OBSERVATION_NULL_FLAVOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OBSERVATION_NULL_FLAVOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_OBSERVATION_NULL_FLAVOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(observationNullFlavor))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.OBSERVATION_NULL_FLAVOR__OBSERVATION_NULL_FLAVOR_MOOD_CODE,
-             PhmrPlugin.INSTANCE.getString("ObservationNullFlavorMoodCode"),
-             new Object [] { observationNullFlavor }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OBSERVATION_NULL_FLAVOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR);
+			try {
+				VALIDATE_OBSERVATION_NULL_FLAVOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OBSERVATION_NULL_FLAVOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OBSERVATION_NULL_FLAVOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(observationNullFlavor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.OBSERVATION_NULL_FLAVOR__OBSERVATION_NULL_FLAVOR_MOOD_CODE,
+						 PhmrPlugin.INSTANCE.getString("ObservationNullFlavorObservationNullFlavorMoodCode"),
+						 new Object [] { observationNullFlavor }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateObservationNullFlavorWaveformObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Waveform Observation</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateObservationNullFlavorWaveformObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Waveform Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateObservationNullFlavorWaveformObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateObservationNullFlavorWaveformObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(phmr::WaveformObservation))";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateObservationNullFlavorWaveformObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Waveform Observation</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateObservationNullFlavorWaveformObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Waveform Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateObservationNullFlavorWaveformObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateObservationNullFlavorWaveformObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param observationNullFlavor The receiving '<em><b>Observation Null Flavor</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param observationNullFlavor The receiving '<em><b>Observation Null Flavor</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateObservationNullFlavorWaveformObservation(ObservationNullFlavor observationNullFlavor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR);
-      try
-      {
-        VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(observationNullFlavor))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.OBSERVATION_NULL_FLAVOR__OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION,
-             PhmrPlugin.INSTANCE.getString("ObservationNullFlavorWaveformObservation"),
-             new Object [] { observationNullFlavor }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR);
+			try {
+				VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(observationNullFlavor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.OBSERVATION_NULL_FLAVOR__OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION,
+						 PhmrPlugin.INSTANCE.getString("ObservationNullFlavorObservationNullFlavorWaveformObservation"),
+						 new Object [] { observationNullFlavor }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateObservationNullFlavorWaveformSamplePeriodObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Waveform Sample Period Observation</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateObservationNullFlavorWaveformSamplePeriodObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Waveform Sample Period Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateObservationNullFlavorWaveformSamplePeriodObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateObservationNullFlavorWaveformSamplePeriodObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(phmr::WaveformSamplePeriodObservation))";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateObservationNullFlavorWaveformSamplePeriodObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Waveform Sample Period Observation</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateObservationNullFlavorWaveformSamplePeriodObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Observation Null Flavor Waveform Sample Period Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateObservationNullFlavorWaveformSamplePeriodObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateObservationNullFlavorWaveformSamplePeriodObservation(ObservationNullFlavor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param observationNullFlavor The receiving '<em><b>Observation Null Flavor</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param observationNullFlavor The receiving '<em><b>Observation Null Flavor</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateObservationNullFlavorWaveformSamplePeriodObservation(ObservationNullFlavor observationNullFlavor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR);
-      try
-      {
-        VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(observationNullFlavor))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.OBSERVATION_NULL_FLAVOR__OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION,
-             PhmrPlugin.INSTANCE.getString("ObservationNullFlavorWaveformSamplePeriodObservation"),
-             new Object [] { observationNullFlavor }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR);
+			try {
+				VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(observationNullFlavor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.OBSERVATION_NULL_FLAVOR__OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION,
+						 PhmrPlugin.INSTANCE.getString("ObservationNullFlavorObservationNullFlavorWaveformSamplePeriodObservation"),
+						 new Object [] { observationNullFlavor }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #getWaveformObservation(ObservationNullFlavor) <em>Get Waveform Observation</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getWaveformObservation(ObservationNullFlavor) <em>Get Waveform Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getWaveformObservation(ObservationNullFlavor)
-   * @generated
-   * @ordered
-   */
+	 * @see #getWaveformObservation(ObservationNullFlavor)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_WAVEFORM_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phmr::WaveformObservation))->asSequence()->any(true).oclAsType(phmr::WaveformObservation)";
 
 	/**
-   * The cached OCL query for the '{@link #getWaveformObservation(ObservationNullFlavor) <em>Get Waveform Observation</em>}' query operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getWaveformObservation(ObservationNullFlavor) <em>Get Waveform Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getWaveformObservation(ObservationNullFlavor)
-   * @generated
-   * @ordered
-   */
+	 * @see #getWaveformObservation(ObservationNullFlavor)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_WAVEFORM_OBSERVATION__EOCL_QRY;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static  WaveformObservation getWaveformObservation(ObservationNullFlavor observationNullFlavor) {
-    if (GET_WAVEFORM_OBSERVATION__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR, PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR.getEAllOperations().get(56));
-      try
-      {
-        GET_WAVEFORM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_WAVEFORM_OBSERVATION__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_WAVEFORM_OBSERVATION__EOCL_QRY);
-    return (WaveformObservation) query.evaluate(observationNullFlavor);
-  }
+	
+	
+	
+		if (GET_WAVEFORM_OBSERVATION__EOCL_QRY == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR, PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR.getEAllOperations().get(56));
+			try {
+				GET_WAVEFORM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_WAVEFORM_OBSERVATION__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_WAVEFORM_OBSERVATION__EOCL_QRY);
+		return (WaveformObservation) query.evaluate(observationNullFlavor);
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #getWaveformSamplePeriodObservation(ObservationNullFlavor) <em>Get Waveform Sample Period Observation</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getWaveformSamplePeriodObservation(ObservationNullFlavor) <em>Get Waveform Sample Period Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getWaveformSamplePeriodObservation(ObservationNullFlavor)
-   * @generated
-   * @ordered
-   */
+	 * @see #getWaveformSamplePeriodObservation(ObservationNullFlavor)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phmr::WaveformSamplePeriodObservation))->asSequence()->any(true).oclAsType(phmr::WaveformSamplePeriodObservation)";
 
 	/**
-   * The cached OCL query for the '{@link #getWaveformSamplePeriodObservation(ObservationNullFlavor) <em>Get Waveform Sample Period Observation</em>}' query operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getWaveformSamplePeriodObservation(ObservationNullFlavor) <em>Get Waveform Sample Period Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getWaveformSamplePeriodObservation(ObservationNullFlavor)
-   * @generated
-   * @ordered
-   */
+	 * @see #getWaveformSamplePeriodObservation(ObservationNullFlavor)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__EOCL_QRY;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static  WaveformSamplePeriodObservation getWaveformSamplePeriodObservation(ObservationNullFlavor observationNullFlavor) {
-    if (GET_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR, PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR.getEAllOperations().get(57));
-      try
-      {
-        GET_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__EOCL_QRY = helper.createQuery(GET_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__EOCL_QRY);
-    return (WaveformSamplePeriodObservation) query.evaluate(observationNullFlavor);
-  }
+	
+	
+	
+		if (GET_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__EOCL_QRY == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR, PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR.getEAllOperations().get(57));
+			try {
+				GET_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__EOCL_QRY = helper.createQuery(GET_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__EOCL_QRY);
+		return (WaveformSamplePeriodObservation) query.evaluate(observationNullFlavor);
+	}
 
 } // ObservationNullFlavorOperations

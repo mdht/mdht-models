@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directive Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -93,7 +91,8 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveObservationClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationClassCode(
 			this, diagnostics, context);
 	}
@@ -104,7 +103,8 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationMoodCode(
 			this, diagnostics, context);
 	}
@@ -137,7 +137,8 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	@Override
 	public boolean validateAdvanceDirectiveObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCode(this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -170,7 +171,8 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveObservationVerifier(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveObservationVerifier(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationVerifier(
 			this, diagnostics, context);
 	}
@@ -181,7 +183,8 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveObservationCustodian(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveObservationCustodian(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodian(
 			this, diagnostics, context);
 	}
@@ -192,7 +195,8 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveObservationReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveObservationReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReference(
 			this, diagnostics, context);
 	}
@@ -307,13 +311,12 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAdvanceDirectiveObservationCustodianRole(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianRole(
+	public boolean validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole(
 			this, diagnostics, context);
 	}
 

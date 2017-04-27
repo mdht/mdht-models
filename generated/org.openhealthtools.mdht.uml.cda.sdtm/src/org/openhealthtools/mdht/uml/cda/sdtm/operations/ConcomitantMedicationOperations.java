@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.SubstanceAdministrationOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication;
@@ -42,7 +35,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.StudyDayPeriod;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.TimingReference;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -118,7 +110,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class ConcomitantMedicationOperations extends SubstanceAdministrationOperations {
+public class ConcomitantMedicationOperations extends org.eclipse.mdht.uml.cda.operations.SubstanceAdministrationOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -147,7 +147,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -162,25 +162,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationTemplateId(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -208,7 +218,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -223,25 +233,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationClassCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -269,7 +289,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -284,25 +304,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationMoodCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -330,7 +360,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -345,25 +375,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationId(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -391,7 +431,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -406,25 +446,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationStatusCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -452,7 +502,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -467,25 +517,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationText(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_TEXT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -513,7 +573,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -528,25 +588,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationEffectiveTime(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -574,7 +644,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -589,25 +659,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationDoseQuantity(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_DOSE_QUANTITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -635,7 +715,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -650,25 +730,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationMaxDoseQuantity(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_MAX_DOSE_QUANTITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationMaxDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationMaxDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -696,7 +786,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -711,25 +801,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationRouteCodeP(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_ROUTE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationRouteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationRouteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -759,7 +859,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -774,25 +874,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationRouteCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_ROUTE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationRouteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationRouteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -820,7 +930,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -835,25 +945,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationGroupIdentifier(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -881,7 +1001,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -896,25 +1016,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationNonPerformanceReason(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -942,7 +1072,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -957,25 +1087,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationConsumableMaterial(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_CONSUMABLE_MATERIAL,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConsumableMaterial", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationConsumableMaterial", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1003,7 +1143,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1018,25 +1158,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationPreSpecifiedEvent(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_PRE_SPECIFIED_EVENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationPreSpecifiedEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationPreSpecifiedEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1064,7 +1214,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1079,25 +1229,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationDataCollection(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_DATA_COLLECTION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1125,7 +1285,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1140,25 +1300,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationStudyDayPeriod(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_STUDY_DAY_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1186,7 +1356,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1201,25 +1371,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationTimingReference(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_TIMING_REFERENCE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1247,7 +1427,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1262,25 +1442,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationComment(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1308,7 +1498,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1323,25 +1513,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationDomainAssignment(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1369,7 +1569,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1384,25 +1584,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationRelatedRecord(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1430,7 +1640,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1445,25 +1655,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationSupplementalValue(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1491,7 +1711,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1506,25 +1726,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationStartRelativetoReferencePeriod(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_START_RELATIVETO_REFERENCE_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationStartRelativetoReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationStartRelativetoReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1552,7 +1782,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1567,25 +1797,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationStopRelativetoReferencePeriod(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_STOP_RELATIVETO_REFERENCE_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationStopRelativetoReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationStopRelativetoReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1613,7 +1853,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1628,25 +1868,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationIndication(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_INDICATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIndication", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationIndication", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1674,7 +1924,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1689,25 +1939,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationIntendedRegimen(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_INTENDED_REGIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_INTENDED_REGIMEN,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationIntendedRegimen", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationIntendedRegimen", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1735,7 +1995,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1750,25 +2010,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationCategory(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1796,7 +2066,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1811,25 +2081,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationSubCategory(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1857,7 +2137,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1872,25 +2152,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationFindingAbout(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1918,7 +2208,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1933,25 +2223,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationEventDuration(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_EVENT_DURATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationEventDuration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationEventDuration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -1979,7 +2279,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1994,25 +2294,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeClassCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsAgeAssociationSubjectAgeClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -2040,7 +2350,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2055,25 +2365,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeMoodCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsAgeAssociationSubjectAgeMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -2101,7 +2421,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2116,25 +2436,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCodeP(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -2164,7 +2494,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2179,25 +2509,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -2225,7 +2565,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2240,25 +2580,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeValue(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsAgeAssociationSubjectAgeValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -2286,7 +2636,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2301,25 +2651,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationTypeCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -2347,7 +2707,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2362,25 +2722,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAge(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAge", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAge", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -2408,7 +2778,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2423,25 +2793,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeClassCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -2469,7 +2849,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2484,25 +2864,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeMoodCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -2530,7 +2920,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2545,25 +2935,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCodeP(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -2593,7 +2993,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2608,25 +3008,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCode(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -2654,7 +3064,7 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2669,25 +3079,35 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  boolean validateConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeValue(ConcomitantMedication concomitantMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION);
 			try {
-				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(concomitantMedication)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(concomitantMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONCOMITANT_MEDICATION__CONCOMITANT_MEDICATION_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConcomitantMedicationConcomitantMedicationHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(concomitantMedication, context) }),
 						 new Object [] { concomitantMedication }));
 			}
 			 
@@ -2723,8 +3143,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(94));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -2732,8 +3157,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(concomitantMedication);
 	}
 
@@ -2764,8 +3190,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(95));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -2773,8 +3204,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(concomitantMedication);
 	}
 
@@ -2805,8 +3237,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  PreSpecifiedEvent getPreSpecifiedEvent(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_PRE_SPECIFIED_EVENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(96));
 			try {
 				GET_PRE_SPECIFIED_EVENT__EOCL_QRY = helper.createQuery(GET_PRE_SPECIFIED_EVENT__EOCL_EXP);
@@ -2814,8 +3251,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PRE_SPECIFIED_EVENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PRE_SPECIFIED_EVENT__EOCL_QRY);
 		return (PreSpecifiedEvent) query.evaluate(concomitantMedication);
 	}
 
@@ -2846,8 +3284,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  DataCollection getDataCollection(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_DATA_COLLECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(97));
 			try {
 				GET_DATA_COLLECTION__EOCL_QRY = helper.createQuery(GET_DATA_COLLECTION__EOCL_EXP);
@@ -2855,8 +3298,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DATA_COLLECTION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DATA_COLLECTION__EOCL_QRY);
 		return (DataCollection) query.evaluate(concomitantMedication);
 	}
 
@@ -2887,8 +3331,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  StudyDayPeriod getStudyDayPeriod(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(98));
 			try {
 				GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);
@@ -2896,8 +3345,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
 		return (StudyDayPeriod) query.evaluate(concomitantMedication);
 	}
 
@@ -2928,8 +3378,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  TimingReference getTimingReference(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_TIMING_REFERENCE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(99));
 			try {
 				GET_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_TIMING_REFERENCE__EOCL_EXP);
@@ -2937,8 +3392,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
 		return (TimingReference) query.evaluate(concomitantMedication);
 	}
 
@@ -2969,8 +3425,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  EList<Comment> getComments(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(100));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -2978,8 +3439,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(concomitantMedication);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -3012,8 +3474,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(101));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -3021,8 +3488,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(concomitantMedication);
 	}
 
@@ -3053,8 +3521,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(102));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -3062,8 +3535,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(concomitantMedication);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -3096,8 +3570,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(103));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -3105,8 +3584,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(concomitantMedication);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -3139,8 +3619,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  StartRelativetoReferencePeriod getStartRelativetoReferencePeriod(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(104));
 			try {
 				GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY = helper.createQuery(GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_EXP);
@@ -3148,8 +3633,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY);
 		return (StartRelativetoReferencePeriod) query.evaluate(concomitantMedication);
 	}
 
@@ -3180,8 +3666,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  StopRelativetoReferencePeriod getStopRelativetoReferencePeriod(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(105));
 			try {
 				GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY = helper.createQuery(GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_EXP);
@@ -3189,8 +3680,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY);
 		return (StopRelativetoReferencePeriod) query.evaluate(concomitantMedication);
 	}
 
@@ -3221,8 +3713,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  Indication getIndication(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_INDICATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(106));
 			try {
 				GET_INDICATION__EOCL_QRY = helper.createQuery(GET_INDICATION__EOCL_EXP);
@@ -3230,8 +3727,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_INDICATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_INDICATION__EOCL_QRY);
 		return (Indication) query.evaluate(concomitantMedication);
 	}
 
@@ -3262,8 +3760,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  IntendedRegimen getIntendedRegimen(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_INTENDED_REGIMEN__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(107));
 			try {
 				GET_INTENDED_REGIMEN__EOCL_QRY = helper.createQuery(GET_INTENDED_REGIMEN__EOCL_EXP);
@@ -3271,8 +3774,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_INTENDED_REGIMEN__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_INTENDED_REGIMEN__EOCL_QRY);
 		return (IntendedRegimen) query.evaluate(concomitantMedication);
 	}
 
@@ -3303,8 +3807,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  Category getCategory(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(108));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -3312,8 +3821,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(concomitantMedication);
 	}
 
@@ -3344,8 +3854,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  SubCategory getSubCategory(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(109));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -3353,8 +3868,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(concomitantMedication);
 	}
 
@@ -3385,8 +3901,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(110));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -3394,8 +3915,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(concomitantMedication);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());
@@ -3428,8 +3950,13 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 	 */
 	
 	public static  EventDuration getEventDuration(ConcomitantMedication concomitantMedication) {
+	
+	
+	
 		if (GET_EVENT_DURATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.CONCOMITANT_MEDICATION, SdtmPackage.Literals.CONCOMITANT_MEDICATION.getEAllOperations().get(111));
 			try {
 				GET_EVENT_DURATION__EOCL_QRY = helper.createQuery(GET_EVENT_DURATION__EOCL_EXP);
@@ -3437,8 +3964,9 @@ public class ConcomitantMedicationOperations extends SubstanceAdministrationOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EVENT_DURATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EVENT_DURATION__EOCL_QRY);
 		return (EventDuration) query.evaluate(concomitantMedication);
 	}
 

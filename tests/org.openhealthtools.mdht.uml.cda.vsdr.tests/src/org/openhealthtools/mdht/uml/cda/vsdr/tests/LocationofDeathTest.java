@@ -1,9 +1,5 @@
 
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 
@@ -11,15 +7,21 @@ package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.operations.LocationofDeathOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 
 /**
@@ -32,9 +34,9 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath#validateLocationofDeathValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Locationof Death Value</em>}</li>
  * </ul>
@@ -103,6 +105,9 @@ public void testValidateLocationofDeathTemplateId() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -177,6 +182,9 @@ public void testValidateLocationofDeathClassCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -190,6 +198,83 @@ public void testValidateLocationofDeathClassCode() {
 		};
 
 		validateLocationofDeathClassCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateLocationofDeathMoodCode() {
+			OperationsTestCase<LocationofDeath> validateLocationofDeathMoodCodeTestCase = new OperationsTestCase<LocationofDeath>(
+			"validateLocationofDeathMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_LOCATIONOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(LocationofDeath target) {
+
+			}
+
+			@Override
+			protected void updateToPass(LocationofDeath target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return LocationofDeathOperations.validateLocationofDeathMoodCode(
+					(LocationofDeath) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateLocationofDeathMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -251,6 +336,9 @@ public void testValidateLocationofDeathCodeP() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -325,6 +413,9 @@ public void testValidateLocationofDeathCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -338,80 +429,6 @@ public void testValidateLocationofDeathCode() {
 		};
 
 		validateLocationofDeathCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateLocationofDeathMoodCode() {
-			OperationsTestCase<LocationofDeath> validateLocationofDeathMoodCodeTestCase = new OperationsTestCase<LocationofDeath>(
-			"validateLocationofDeathMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_LOCATIONOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(LocationofDeath target) {
-
-			}
-
-			@Override
-			protected void updateToPass(LocationofDeath target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return LocationofDeathOperations.validateLocationofDeathMoodCode(
-					(LocationofDeath) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateLocationofDeathMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -475,6 +492,9 @@ public void testValidateLocationofDeathText() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -552,6 +572,9 @@ public void testValidateLocationofDeathValue() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -593,6 +616,7 @@ public void testValidateLocationofDeathValue() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<LocationofDeath> {
+		@Override
 		public LocationofDeath create() {		
 			return VsdrFactory.eINSTANCE.createLocationofDeath();
 		}

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.toc/src" modelPluginID="org.openhealthtools.mdht.uml.cda.toc"
-    templateDirectory="/org.openhealthtools.mdht.uml.cda/templates" dynamicTemplates="true"
+    templateDirectory="/org.eclipse.mdht.uml.cda/templates" dynamicTemplates="true"
     modelName="toc_Ecore" modelPluginClass="ToCPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
-    complianceLevel="7.0" copyrightFields="false" runtimeVersion="2.9" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes ../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda ../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd.genmodel#//ccd ../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.genmodel#//ihe ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.genmodel#//hitsp ../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.genmodel#//cdt platform:/plugin/org.eclipse.uml2.types/model/Types.genmodel#//types"
+    complianceLevel="7.0" copyrightFields="false" runtimeVersion="2.9" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd.genmodel#//ccd ../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.genmodel#//ihe ../../org.openhealthtools.mdht.uml.cda.hitsp/model/hitsp.genmodel#//hitsp ../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.genmodel#//cdt platform:/plugin/org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.eclipse.mdht.uml.cda/model/cda.genmodel#//cda ../../org.eclipse.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes ../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
     pluralizedGetters="true" invariantPrefix="validate">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
@@ -22,6 +22,12 @@
     <details key="OPERATION_BODIES" value="PROCESS"/>
     <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
     <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
   </genAnnotations>
   <foreignModel>toc_Ecore.uml</foreignModel>
   <genPackages xsi:type="genmodel:GenPackage" prefix="ToC" basePackage="org.openhealthtools.mdht.uml.cda"

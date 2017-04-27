@@ -17,7 +17,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
@@ -26,14 +27,11 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProblemAct;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProcedureActivityAct;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.ProcedureActivityActOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Activity Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -137,7 +135,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 */
 	public boolean validateProcedureActivityActProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProblemObservation(this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -145,7 +144,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityActAgeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityActAgeObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityActOperations.validateProcedureActivityActAgeObservation(this, diagnostics, context);
 	}
 
@@ -156,7 +156,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 */
 	public boolean validateProcedureActivityActMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActMedicationActivity(this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActMedicationActivity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -166,7 +167,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 */
 	public boolean validateProcedureActivityActPatientInstruction(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActPatientInstruction(this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActPatientInstruction(
+			this, diagnostics, context);
 	}
 
 	/**

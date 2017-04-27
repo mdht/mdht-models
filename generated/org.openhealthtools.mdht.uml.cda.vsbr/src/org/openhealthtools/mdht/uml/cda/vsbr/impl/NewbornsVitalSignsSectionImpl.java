@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.NewbornsVitalSignsObservation;
 import org.openhealthtools.mdht.uml.cda.vsbr.NewbornsVitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
@@ -25,12 +21,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.NewbornsVitalSignsSectio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Newborns Vital Signs Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class NewbornsVitalSignsSectionImpl extends SectionImpl implements NewbornsVitalSignsSection {
+public class NewbornsVitalSignsSectionImpl extends org.eclipse.mdht.uml.cda.impl.SectionImpl
+		implements NewbornsVitalSignsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -55,7 +50,8 @@ public class NewbornsVitalSignsSectionImpl extends SectionImpl implements Newbor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNewbornsVitalSignsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNewbornsVitalSignsSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionTemplateId(
 			this, diagnostics, context);
 	}
@@ -65,7 +61,8 @@ public class NewbornsVitalSignsSectionImpl extends SectionImpl implements Newbor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNewbornsVitalSignsSectionClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNewbornsVitalSignsSectionClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionClassCode(
 			this, diagnostics, context);
 	}
@@ -76,7 +73,8 @@ public class NewbornsVitalSignsSectionImpl extends SectionImpl implements Newbor
 	 * @generated
 	 */
 	public boolean validateNewbornsVitalSignsSectionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionMoodCode(this, diagnostics, context);
+		return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -132,7 +130,7 @@ public class NewbornsVitalSignsSectionImpl extends SectionImpl implements Newbor
 	 * @generated
 	 */
 	public NewbornsVitalSignsSection init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -140,8 +138,9 @@ public class NewbornsVitalSignsSectionImpl extends SectionImpl implements Newbor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NewbornsVitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public NewbornsVitalSignsSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // NewbornsVitalSignsSectionImpl

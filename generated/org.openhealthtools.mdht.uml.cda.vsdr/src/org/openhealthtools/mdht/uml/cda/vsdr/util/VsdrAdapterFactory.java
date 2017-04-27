@@ -4,21 +4,33 @@ package org.openhealthtools.mdht.uml.cda.vsdr.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
-
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
-import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.Organizer;
-import org.openhealthtools.mdht.uml.cda.Section;
-
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.ClinicalStatement;
+import org.eclipse.mdht.uml.cda.Observation;
+import org.eclipse.mdht.uml.cda.Organizer;
+import org.eclipse.mdht.uml.cda.Section;
+import org.eclipse.mdht.uml.hl7.rim.Act;
+import org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot;
 import org.openhealthtools.mdht.uml.cda.vsdr.*;
-
-import org.openhealthtools.mdht.uml.hl7.rim.Act;
-import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
+import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyPerformance;
+import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults;
+import org.openhealthtools.mdht.uml.cda.vsdr.CertifyingDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer;
+import org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral;
+import org.openhealthtools.mdht.uml.cda.vsdr.DateandTimeofDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation;
+import org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType;
+import org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody;
+import org.openhealthtools.mdht.uml.cda.vsdr.Injury;
+import org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.MannerofDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus;
+import org.openhealthtools.mdht.uml.cda.vsdr.PronouncingDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords;
+import org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse;
+import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -413,13 +425,13 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot <em>Infrastructure Root</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot <em>Infrastructure Root</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot
+	 * @see org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot
 	 * @generated
 	 */
 	public Adapter createInfrastructureRootAdapter() {
@@ -427,13 +439,13 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.Act <em>Act</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.hl7.rim.Act <em>Act</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.Act
+	 * @see org.eclipse.mdht.uml.hl7.rim.Act
 	 * @generated
 	 */
 	public Adapter createActAdapter() {
@@ -441,13 +453,13 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ClinicalDocument <em>Clinical Document</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.ClinicalDocument <em>Clinical Document</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ClinicalDocument
+	 * @see org.eclipse.mdht.uml.cda.ClinicalDocument
 	 * @generated
 	 */
 	public Adapter createClinicalDocumentAdapter() {
@@ -455,13 +467,13 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Section <em>Section</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Section <em>Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Section
+	 * @see org.eclipse.mdht.uml.cda.Section
 	 * @generated
 	 */
 	public Adapter createSectionAdapter() {
@@ -469,13 +481,13 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ClinicalStatement <em>Clinical Statement</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.ClinicalStatement <em>Clinical Statement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ClinicalStatement
+	 * @see org.eclipse.mdht.uml.cda.ClinicalStatement
 	 * @generated
 	 */
 	public Adapter createClinicalStatementAdapter() {
@@ -483,13 +495,13 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Observation <em>Observation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Observation <em>Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Observation
+	 * @see org.eclipse.mdht.uml.cda.Observation
 	 * @generated
 	 */
 	public Adapter createObservationAdapter() {
@@ -497,13 +509,13 @@ public class VsdrAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Organizer <em>Organizer</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Organizer <em>Organizer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Organizer
+	 * @see org.eclipse.mdht.uml.cda.Organizer
 	 * @generated
 	 */
 	public Adapter createOrganizerAdapter() {

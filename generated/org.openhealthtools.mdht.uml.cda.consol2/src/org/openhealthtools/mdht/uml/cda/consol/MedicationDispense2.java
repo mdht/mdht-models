@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +19,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationDispense2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationDispenseTemplateId MedicationDispense2ContainsMedicationOrImmunization' templateId.root='2.16.840.1.113883.10.20.22.4.18' templateId.extension='2014-06-09' constraints.validation.info='MedicationDispense2ContainsMedicationInformation2 MedicationDispense2ContainsImmunizationMedicationInformation2 MedicationDispenseMedicationSupplyOrder2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationDispenseTemplateId MedicationDispenseContainsMedicationOrImmunization MedicationDispenseStatusCode MedicationDispenseStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.18' templateId.extension='2014-06-09' constraints.validation.info='MedicationDispense2ContainsMedicationInformation2 MedicationDispense2ContainsImmunizationMedicationInformation2 MedicationDispenseMedicationSupplyOrder' constraints.validation.dependOn.MedicationDispenseStatusCode='MedicationDispenseStatusCodeP' constraints.validation.warning='MedicationDispenseRepeatNumber'"
  * @generated
  */
 public interface MedicationDispense2 extends MedicationDispense {
@@ -60,23 +56,10 @@ public interface MedicationDispense2 extends MedicationDispense {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2) xor self.product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationDispense2ContainsMedicationOrImmunization(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.supply.oclIsUndefined() and entryRelationship.supply.oclIsKindOf(consol::MedicationSupplyOrder2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
-	 * @generated
-	 */
-	boolean validateMedicationDispenseMedicationSupplyOrder2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationDispenseStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,7 +75,6 @@ public interface MedicationDispense2 extends MedicationDispense {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationDispense2 init();
 
 	/**
@@ -100,6 +82,5 @@ public interface MedicationDispense2 extends MedicationDispense {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationDispense2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationDispense2

@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ResponseOdometerReadingOrganizer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ResponseOdometerReadingOrganizerOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Response Odometer Reading Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ResponseOdometerReadingOrganizerImpl extends OrganizerImpl implements ResponseOdometerReadingOrganizer {
+public class ResponseOdometerReadingOrganizerImpl extends org.eclipse.mdht.uml.cda.impl.OrganizerImpl implements ResponseOdometerReadingOrganizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class ResponseOdometerReadingOrganizerImpl extends OrganizerImpl implemen
 	 */
 	public boolean validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(
-			this, diagnostics, context);
+		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +59,7 @@ public class ResponseOdometerReadingOrganizerImpl extends OrganizerImpl implemen
 	 */
 	public boolean validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(
-			this, diagnostics, context);
+		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +69,7 @@ public class ResponseOdometerReadingOrganizerImpl extends OrganizerImpl implemen
 	 */
 	public boolean validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(
-			this, diagnostics, context);
+		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +79,7 @@ public class ResponseOdometerReadingOrganizerImpl extends OrganizerImpl implemen
 	 */
 	public boolean validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(
-			this, diagnostics, context);
+		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +89,7 @@ public class ResponseOdometerReadingOrganizerImpl extends OrganizerImpl implemen
 	 */
 	public boolean validateResponseOdometerReadingOrganizerTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerTemplateId(
-			this, diagnostics, context);
+		return ResponseOdometerReadingOrganizerOperations.validateResponseOdometerReadingOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -114,16 +98,16 @@ public class ResponseOdometerReadingOrganizerImpl extends OrganizerImpl implemen
 	 * @generated
 	 */
 	public ResponseOdometerReadingOrganizer init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ResponseOdometerReadingOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public ResponseOdometerReadingOrganizer init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ResponseOdometerReadingOrganizerImpl

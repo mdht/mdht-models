@@ -6,15 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,7 +34,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrProcedureAirwayDeviceParticipantAirwayDeviceParticipantRoleAirwayDeviceParticipantType code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.error='ProcedureAirwayDeviceParticipantAirwayDeviceParticipantRoleAirwayDeviceParticipantTypeCode'"
  * @generated
  */
-public interface Procedure extends org.openhealthtools.mdht.uml.cda.Procedure {
+public interface Procedure extends org.eclipse.mdht.uml.cda.Procedure {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -259,9 +254,9 @@ public interface Procedure extends org.openhealthtools.mdht.uml.cda.Procedure {
 	public Procedure init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Procedure init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public Procedure init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // Procedure

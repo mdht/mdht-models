@@ -11,8 +11,16 @@
  -->
 <project name="CDA Model Transformation" basedir="." default="all">
 
-	<property name="cdaPluginPath" location="${basedir}/../org.openhealthtools.mdht.uml.cda" />
+	
 	<property name="modelName" value="consol" />
+	
+	<eclipse.convertPath resourcePath="org.eclipse.mdht.uml.cda" property="cdaPluginPath"/>
+	
+	<eclipse.convertPath resourcePath="org.openhealthtools.mdht.uml.cda.consol2.model/model/${modelName}.uml" property="modelPath.uml"/>
+
+<!--	<property name="modelPath.uml" location="${basedir}.model/model/${modelName}.uml"/> -->
+
+
 	<property name="validation.failOnError" value="false" />
 	<property name="runPostProcessing" value="true" />
 
@@ -75,14 +83,94 @@
 	</macrodef>
 
 
-
-
-
 	<property name="oldTemplateName" value="General Header Constraints" />
 	<property name="newTemplateName" value="US Realm Header" />
 
 	<target name="postProcess">
+		<!-- update C-CDA R1.x template names in plugin.properties -->
 		<replaceTemplateNames oldTemplateName="${oldTemplateName}" newTemplateName="${newTemplateName}" />
+		<!-- update C-CDA R2.x+ template names in plugin.properties -->
+		<!-- versioning - update as necessary -->
+		<!-- documents -->
+		<replaceTemplateNames oldTemplateName="US Realm Header2" newTemplateName="US Realm Header (V3)" />
+		<replaceTemplateNames oldTemplateName="Consol Care Plan" newTemplateName="Consol Care Plan (V2)" />
+		<replaceTemplateNames oldTemplateName="Consultation Note2" newTemplateName="Consultation Note (V3)" />
+		<replaceTemplateNames oldTemplateName="Continuity Of Care Document2" newTemplateName="Continuity of Care Document (CCD) (V3)" />
+		<replaceTemplateNames oldTemplateName="Diagnostic Imaging Report2" newTemplateName="Diagnostic Imaging Report (V3)" />
+		<replaceTemplateNames oldTemplateName="Discharge Summary2" newTemplateName="Discharge Summary (V3)" />
+		<replaceTemplateNames oldTemplateName="History And Physical Note2" newTemplateName="History and Physical (V3)" />
+		<replaceTemplateNames oldTemplateName="Operative Note2" newTemplateName="Operative Note (V3)" />
+		<replaceTemplateNames oldTemplateName="Procedure Note2" newTemplateName="Procedure Note (V3)" />
+		<replaceTemplateNames oldTemplateName="Progress Note2" newTemplateName="Progress Note (V3)" />
+		<replaceTemplateNames oldTemplateName="Referral Note" newTemplateName="Referral Note (V2)" />
+		<replaceTemplateNames oldTemplateName="Consol Transfer Summary" newTemplateName="Consol Transfer Summary (V2)" />
+		<replaceTemplateNames oldTemplateName="Unstructured Document2" newTemplateName="Unstructured Document (V3)" />		
+		<!-- sections -->
+		<replaceTemplateNames oldTemplateName="Admission Diagnosis Section2" newTemplateName="Admission Diagnosis Section (V3)" />
+		<replaceTemplateNames oldTemplateName="Admission Medications Section Entries Optional2" newTemplateName="Admission Medications Section (entries optional) (V3)" />
+		<replaceTemplateNames oldTemplateName="Advance Directives Section Entries Optional2" newTemplateName="Advance Directives Section (entries optional) (V3)" />
+		<replaceTemplateNames oldTemplateName="Advance Directives Section2" newTemplateName="Advance Directives Section (entries required) (V3)" />
+		<replaceTemplateNames oldTemplateName="Allergies Section Entries Optional2" newTemplateName="Allergies and Intolerances Section (entries optional) (V3)" />
+		<replaceTemplateNames oldTemplateName="Allergies Section2" newTemplateName="Allergies and Intolerances Section (entries required) (V3)" />
+		<replaceTemplateNames oldTemplateName="Complications Section2" newTemplateName="Complications Section (V3)" />
+		<replaceTemplateNames oldTemplateName="Discharge Diagnosis Section2" newTemplateName="Discharge Diagnosis (V3)" />
+		<replaceTemplateNames oldTemplateName="Discharge Medications Section Entries Optional2" newTemplateName="Discharge Medications Section (entries optional) (V3)" />
+		<replaceTemplateNames oldTemplateName="Discharge Medications Section2" newTemplateName="Discharge Medications Section (entries required) (V3)" />
+		<replaceTemplateNames oldTemplateName="Encounters Section Entries Optional2" newTemplateName="Encounters Section (entries optional) (V3)" />
+		<replaceTemplateNames oldTemplateName="Encounters Section2" newTemplateName="Encounters Section (entries required) (V3)" />		
+		<replaceTemplateNames oldTemplateName="Family History Section2" newTemplateName="Family History Section (V3)" />
+		<replaceTemplateNames oldTemplateName="Health Concerns Section" newTemplateName="Health Concerns Section (V2)" />
+		<replaceTemplateNames oldTemplateName="History Of Past Illness Section2" newTemplateName="History of Past Illness Section (V3)" />
+		<replaceTemplateNames oldTemplateName="Immunizations Section2" newTemplateName="Immunizations Section (entries required) (V3)" />
+		<replaceTemplateNames oldTemplateName="Immunizations Section Entries Optional2" newTemplateName="Immunizations Section (entries optional) (V3)" />
+		<replaceTemplateNames oldTemplateName="Interventions Section2" newTemplateName="Interventions Section (V3)" />
+		<replaceTemplateNames oldTemplateName="Mental Status Section" newTemplateName="Mental Status Section (V2)" />
+		<replaceTemplateNames oldTemplateName="Payers Section2" newTemplateName="Payers Section (V3)" />
+		<replaceTemplateNames oldTemplateName="Physical Exam Section2" newTemplateName="Physical Exam Section (V3)" />
+		<replaceTemplateNames oldTemplateName="Postprocedure Diagnosis Section2" newTemplateName="Postprocedure Diagnosis Section (V3)" />
+		<replaceTemplateNames oldTemplateName="Preoperative Diagnosis Section2" newTemplateName="Preoperative Diagnosis Section (V3)" />
+		<replaceTemplateNames oldTemplateName="Problem Section Entries Optional2" newTemplateName="Problem Section (V3) (entries optional)" />
+		<replaceTemplateNames oldTemplateName="Problem Section2" newTemplateName="Problem Section (V3) (entries required)" />
+		<replaceTemplateNames oldTemplateName="Procedure Findings Section2" newTemplateName="Procedure Findings Section (V3)" />
+		<replaceTemplateNames oldTemplateName="Results Section Entries Optional2" newTemplateName="Results Section (entries optional) (V3)" />
+		<replaceTemplateNames oldTemplateName="Results Section2" newTemplateName="Results Section (entries required) (V3)" />
+		<replaceTemplateNames oldTemplateName="Social History Section2" newTemplateName="Social History Section (V3)" />
+		<replaceTemplateNames oldTemplateName="Vital Signs Section Entries Optional2" newTemplateName="Vital Signs Section (entries optional) (V3)" />
+		<replaceTemplateNames oldTemplateName="Vital Signs Section2" newTemplateName="Vital Signs Section (entries required) (V3)" />
+		<!-- entries -->
+		<replaceTemplateNames oldTemplateName="Advance Directive Observation2" newTemplateName="Advance Directive Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Allergy Concern Act2" newTemplateName="Allergy Concern Act (V3)" />
+		<replaceTemplateNames oldTemplateName="Family History Observation2" newTemplateName="Family History Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Immunization Activity2" newTemplateName="Immunization Activity (V3)" />
+		<replaceTemplateNames oldTemplateName="Mental Status Observation2" newTemplateName="Mental Status Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Mental Status Organizer2" newTemplateName="Mental Status Organizer (V3)" />
+		<replaceTemplateNames oldTemplateName="Number Of Pressure Ulcers Observation2" newTemplateName="Number of Pressure Ulcers Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Policy Activity2" newTemplateName="Policy Activity (V3)" />
+		<replaceTemplateNames oldTemplateName="Problem Observation2" newTemplateName="Problem Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Result Observation2" newTemplateName="Result Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Social History Observation2" newTemplateName="Social History Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Vital Signs Organizer2" newTemplateName="Vital Signs Organizer (V3)" />
+		<replaceTemplateNames oldTemplateName="Encounter Activity2" newTemplateName="Encounter Activity (V3)" />
+		<replaceTemplateNames oldTemplateName="Problem Concern Act2" newTemplateName="Problem Concern Act (V3)" />
+		<replaceTemplateNames oldTemplateName="Result Organizer2" newTemplateName="Result Organizer (V3)" />
+ 
+		<replaceTemplateNames oldTemplateName="Consol Advance Directive Organizer" newTemplateName="Advance Directive Organizer (V2)" />
+		<replaceTemplateNames oldTemplateName="Coverage Activity2" newTemplateName="Coverage Activity (V3)" />
+		<replaceTemplateNames oldTemplateName="Deceased Observation2" newTemplateName="Deceased Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Encounter Diagnosis2" newTemplateName="Encounter Diagnosis (V3)" />
+		<replaceTemplateNames oldTemplateName="Family History Organizer2" newTemplateName="Family History Organizer (V3)" />
+		<replaceTemplateNames oldTemplateName="Consol Health Concern Act" newTemplateName="Consol Health Concern Act (V2)" />
+		<replaceTemplateNames oldTemplateName="Hospital Admission Diagnosis2" newTemplateName="Hospital Admission Diagnosis (V3)" />
+		<replaceTemplateNames oldTemplateName="Hospital Discharge Diagnosis2" newTemplateName="Hospital Discharge Diagnosis (V3)" />
+		<replaceTemplateNames oldTemplateName="Consol Intervention Act" newTemplateName="Consol Intervention Act (V2)" />
+		<replaceTemplateNames oldTemplateName="Consol Longitudinal Care Wound Observation" newTemplateName="Consol Longitudinal Care Wound Observation (V2)" />
+		<replaceTemplateNames oldTemplateName="Consol Planned Intervention Act" newTemplateName="Consol Planned Intervention Act (V2)" />
+		<replaceTemplateNames oldTemplateName="Postprocedure Diagnosis2" newTemplateName="Postprocedure Diagnosis (V3)" />
+		<replaceTemplateNames oldTemplateName="Preoperative Diagnosis2" newTemplateName="Preoperative Diagnosis (V3)" />
+		<replaceTemplateNames oldTemplateName="Consol Risk Concern Act" newTemplateName="Consol Risk Concern Act (V2)" />
+		<replaceTemplateNames oldTemplateName="Discharge Medication2" newTemplateName="Discharge Medication (V3)" />
+		<!-- other -->
+		<replaceTemplateNames oldTemplateName="US Realm Header Patient Generated Document" newTemplateName="US Realm Header - Patient Generated Document (V2)" />
 	</target>
 
 

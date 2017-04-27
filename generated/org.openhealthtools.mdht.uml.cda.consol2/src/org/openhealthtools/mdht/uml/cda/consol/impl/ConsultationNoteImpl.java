@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
@@ -46,8 +46,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ConsultationNoteOperat
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Consultation Note</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -193,8 +191,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(
 			this, diagnostics, context);
 	}
@@ -312,7 +310,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsultationNoteInFulfillmentOfOrder(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNoteInFulfillmentOfOrder(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteInFulfillmentOfOrder(this, diagnostics, context);
 	}
 
@@ -374,7 +373,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsultationNotePhysicalExamSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNotePhysicalExamSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNotePhysicalExamSection(this, diagnostics, context);
 	}
 
@@ -439,7 +439,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsultationNoteFamilyHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNoteFamilyHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteFamilyHistorySection(this, diagnostics, context);
 	}
 
@@ -449,7 +450,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsultationNoteGeneralStatusSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNoteGeneralStatusSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteGeneralStatusSection(this, diagnostics, context);
 	}
 
@@ -471,7 +473,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsultationNoteImmunizationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNoteImmunizationsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteImmunizationsSection(this, diagnostics, context);
 	}
 
@@ -540,7 +543,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsultationNoteSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNoteSocialHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteSocialHistorySection(this, diagnostics, context);
 	}
 
@@ -772,7 +776,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 

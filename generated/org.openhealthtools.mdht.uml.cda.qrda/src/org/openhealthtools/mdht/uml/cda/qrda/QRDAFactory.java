@@ -18,38 +18,38 @@ import org.eclipse.emf.ecore.EFactory;
  */
 public interface QRDAFactory extends EFactory {
 	/**
-   * The singleton instance of the factory.
-   * <!-- begin-user-doc -->
+	 * The singleton instance of the factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	QRDAFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.qrda.impl.QRDAFactoryImpl.init();
 
 	/**
-   * Returns a new object of class '<em>Quality Reporting Document Architecture Document</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Quality Reporting Document Architecture Document</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Quality Reporting Document Architecture Document</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Quality Reporting Document Architecture Document</em>'.
+	 * @generated
+	 */
 	QualityReportingDocumentArchitectureDocument createQualityReportingDocumentArchitectureDocument();
 
 	/**
-   * Returns a new object of class '<em>Measure Section</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Measure Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Measure Section</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Measure Section</em>'.
+	 * @generated
+	 */
 	MeasureSection createMeasureSection();
 
 	/**
-   * Returns the package supported by this factory.
-   * <!-- begin-user-doc -->
+	 * Returns the package supported by this factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return the package supported by this factory.
-   * @generated
-   */
+	 * @return the package supported by this factory.
+	 * @generated
+	 */
 	QRDAPackage getQRDAPackage();
 
 } //QRDAFactory

@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Version: 0.1.0.qualifier
+Bundle-Version: 3.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.toc;singleton:=true
@@ -9,19 +9,20 @@ Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
+ org.openhealthtools.mdht.uml.cda.ccd;visibility:=reexport,
+ org.openhealthtools.mdht.uml.cda.ihe;visibility:=reexport,
+ org.openhealthtools.mdht.uml.cda.hitsp;visibility:=reexport,
+ org.openhealthtools.mdht.uml.cda.cdt;visibility:=reexport,
+ org.eclipse.uml2.types;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.eclipse.ocl.ecore;visibility:=reexport,
- org.openhealthtools.mdht.uml.hl7.datatypes;visibility:=reexport,
- org.openhealthtools.mdht.uml.hl7.vocab;visibility:=reexport,
- org.openhealthtools.mdht.uml.hl7.rim;visibility:=reexport,
- org.openhealthtools.mdht.uml.cda;visibility:=reexport,
+ org.eclipse.mdht.uml.hl7.datatypes;visibility:=reexport,
+ org.eclipse.mdht.uml.hl7.vocab;visibility:=reexport,
+ org.eclipse.mdht.uml.hl7.rim;visibility:=reexport,
+ org.eclipse.mdht.uml.cda;visibility:=reexport,
  org.openhealthtools.mdht.uml.cda.ccd;visibility:=reexport,
  org.openhealthtools.mdht.uml.cda.cdt;visibility:=reexport,
  org.openhealthtools.mdht.uml.cda.ihe;visibility:=reexport,
  org.openhealthtools.mdht.uml.cda.hitsp;visibility:=reexport
-Export-Package: org.openhealthtools.mdht.uml.cda.toc,
- org.openhealthtools.mdht.uml.cda.toc.impl,
- org.openhealthtools.mdht.uml.cda.toc.operations,
- org.openhealthtools.mdht.uml.cda.toc.util
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: org.openhealthtools.mdht.uml.cda.toc.ToCPlugin$Implementation

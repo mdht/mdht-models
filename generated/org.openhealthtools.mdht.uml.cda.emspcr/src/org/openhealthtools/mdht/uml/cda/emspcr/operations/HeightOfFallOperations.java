@@ -11,19 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.HeightOfFall;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +36,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class HeightOfFallOperations extends ClinicalStatementOperations {
+public class HeightOfFallOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,7 +72,7 @@ public class HeightOfFallOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HEIGHT_OF_FALL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HEIGHT_OF_FALL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,25 +87,38 @@ public class HeightOfFallOperations extends ClinicalStatementOperations {
 
 	public static boolean validateHeightOfFallTemplateId(HeightOfFall heightOfFall, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_HEIGHT_OF_FALL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HEIGHT_OF_FALL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEIGHT_OF_FALL);
 			try {
-				VALIDATE_HEIGHT_OF_FALL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEIGHT_OF_FALL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_HEIGHT_OF_FALL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HEIGHT_OF_FALL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEIGHT_OF_FALL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			heightOfFall)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.HEIGHT_OF_FALL__HEIGHT_OF_FALL_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("HeightOfFallTemplateId"), new Object[] { heightOfFall }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HEIGHT_OF_FALL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(heightOfFall)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.HEIGHT_OF_FALL__HEIGHT_OF_FALL_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("HeightOfFallHeightOfFallTemplateId"),
+						 new Object [] { heightOfFall }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -129,7 +143,7 @@ public class HeightOfFallOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HEIGHT_OF_FALL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HEIGHT_OF_FALL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,24 +158,38 @@ public class HeightOfFallOperations extends ClinicalStatementOperations {
 
 	public static boolean validateHeightOfFallMoodCode(HeightOfFall heightOfFall, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_HEIGHT_OF_FALL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HEIGHT_OF_FALL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEIGHT_OF_FALL);
 			try {
-				VALIDATE_HEIGHT_OF_FALL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEIGHT_OF_FALL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_HEIGHT_OF_FALL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HEIGHT_OF_FALL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEIGHT_OF_FALL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heightOfFall)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.HEIGHT_OF_FALL__HEIGHT_OF_FALL_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("HeightOfFallMoodCode"), new Object[] { heightOfFall }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HEIGHT_OF_FALL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(heightOfFall)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.HEIGHT_OF_FALL__HEIGHT_OF_FALL_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("HeightOfFallHeightOfFallMoodCode"),
+						 new Object [] { heightOfFall }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -175,9 +203,9 @@ public class HeightOfFallOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEIGHT_OF_FALL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67501-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HEIGHT_OF_FALL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67501-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHeightOfFallCode(HeightOfFall, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Height Of Fall Code</em>}' invariant operation.
@@ -188,7 +216,7 @@ public class HeightOfFallOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HEIGHT_OF_FALL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HEIGHT_OF_FALL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,24 +231,38 @@ public class HeightOfFallOperations extends ClinicalStatementOperations {
 
 	public static boolean validateHeightOfFallCode(HeightOfFall heightOfFall, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_HEIGHT_OF_FALL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HEIGHT_OF_FALL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEIGHT_OF_FALL);
 			try {
-				VALIDATE_HEIGHT_OF_FALL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEIGHT_OF_FALL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_HEIGHT_OF_FALL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HEIGHT_OF_FALL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEIGHT_OF_FALL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heightOfFall)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.HEIGHT_OF_FALL__HEIGHT_OF_FALL_CODE,
-					EmspcrPlugin.INSTANCE.getString("HeightOfFallCode"), new Object[] { heightOfFall }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HEIGHT_OF_FALL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(heightOfFall)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.HEIGHT_OF_FALL__HEIGHT_OF_FALL_CODE,
+						 EmspcrPlugin.INSTANCE.getString("HeightOfFallHeightOfFallCode"),
+						 new Object [] { heightOfFall }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -245,7 +287,7 @@ public class HeightOfFallOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HEIGHT_OF_FALL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HEIGHT_OF_FALL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -260,24 +302,38 @@ public class HeightOfFallOperations extends ClinicalStatementOperations {
 
 	public static boolean validateHeightOfFallValue(HeightOfFall heightOfFall, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_HEIGHT_OF_FALL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HEIGHT_OF_FALL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.HEIGHT_OF_FALL);
 			try {
-				VALIDATE_HEIGHT_OF_FALL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEIGHT_OF_FALL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_HEIGHT_OF_FALL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HEIGHT_OF_FALL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEIGHT_OF_FALL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(heightOfFall)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.HEIGHT_OF_FALL__HEIGHT_OF_FALL_VALUE,
-					EmspcrPlugin.INSTANCE.getString("HeightOfFallValue"), new Object[] { heightOfFall }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HEIGHT_OF_FALL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(heightOfFall)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.HEIGHT_OF_FALL__HEIGHT_OF_FALL_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("HeightOfFallHeightOfFallValue"),
+						 new Object [] { heightOfFall }));
+			}
+			 
 			return false;
 		}
 		return true;

@@ -14,14 +14,14 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentEncounterMood;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityEncounter;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfCareActivityEncounterOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentEncounterMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -51,7 +51,8 @@ public class PlanOfCareActivityEncounterTest extends CDAValidationTest {
 	public void testValidatePlanOfCareActivityEncounterTemplateId() {
 		OperationsTestCase<PlanOfCareActivityEncounter> validatePlanOfCareActivityEncounterTemplateIdTestCase = new OperationsTestCase<PlanOfCareActivityEncounter>(
 			"validatePlanOfCareActivityEncounterTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -84,8 +85,8 @@ public class PlanOfCareActivityEncounterTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlanOfCareActivityEncounterClassCode() {
 		OperationsTestCase<PlanOfCareActivityEncounter> validatePlanOfCareActivityEncounterClassCodeTestCase = new OperationsTestCase<PlanOfCareActivityEncounter>(
-			"validatePlanOfCareActivityEncounterClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivityEncounterClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -124,8 +125,8 @@ public class PlanOfCareActivityEncounterTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlanOfCareActivityEncounterMoodCode() {
 		OperationsTestCase<PlanOfCareActivityEncounter> validatePlanOfCareActivityEncounterMoodCodeTestCase = new OperationsTestCase<PlanOfCareActivityEncounter>(
-			"validatePlanOfCareActivityEncounterMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivityEncounterMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{

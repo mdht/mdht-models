@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Device;
+import org.eclipse.mdht.uml.cda.Entity;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Device;
-import org.openhealthtools.mdht.uml.cda.Entity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProductInstanceOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -123,7 +123,8 @@ public class ProductInstanceTest extends CDAValidationTest {
 	public void testValidateProductInstanceId() {
 		OperationsTestCase<ProductInstance> validateProductInstanceIdTestCase = new OperationsTestCase<ProductInstance>(
 			"validateProductInstanceId",
-			operationsForOCL.getOCLValue("VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProductInstance target) {
@@ -261,8 +262,8 @@ public class ProductInstanceTest extends CDAValidationTest {
 	@Test
 	public void testValidateProductInstancePlayingDeviceCode() {
 		OperationsTestCase<ProductInstance> validateProductInstancePlayingDeviceCodeTestCase = new OperationsTestCase<ProductInstance>(
-			"validateProductInstancePlayingDeviceCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProductInstancePlayingDeviceCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

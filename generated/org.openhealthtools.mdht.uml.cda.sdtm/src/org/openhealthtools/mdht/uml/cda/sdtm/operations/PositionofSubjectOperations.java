@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.PositionofSubject;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -40,7 +34,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class PositionofSubjectOperations extends ClinicalStatementOperations {
+public class PositionofSubjectOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +71,7 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_POSITIONOF_SUBJECT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_POSITIONOF_SUBJECT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -84,25 +86,35 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePositionofSubjectTemplateId(PositionofSubject positionofSubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_POSITIONOF_SUBJECT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_POSITIONOF_SUBJECT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.POSITIONOF_SUBJECT);
 			try {
-				VALIDATE_POSITIONOF_SUBJECT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POSITIONOF_SUBJECT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POSITIONOF_SUBJECT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(positionofSubject)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_POSITIONOF_SUBJECT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(positionofSubject)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.POSITIONOF_SUBJECT__POSITIONOF_SUBJECT_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectPositionofSubjectTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
 						 new Object [] { positionofSubject }));
 			}
 			 
@@ -130,7 +142,7 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_POSITIONOF_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_POSITIONOF_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -145,25 +157,35 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePositionofSubjectClassCode(PositionofSubject positionofSubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_POSITIONOF_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_POSITIONOF_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.POSITIONOF_SUBJECT);
 			try {
-				VALIDATE_POSITIONOF_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POSITIONOF_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POSITIONOF_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(positionofSubject)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_POSITIONOF_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(positionofSubject)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.POSITIONOF_SUBJECT__POSITIONOF_SUBJECT_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectPositionofSubjectClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
 						 new Object [] { positionofSubject }));
 			}
 			 
@@ -191,7 +213,7 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_POSITIONOF_SUBJECT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_POSITIONOF_SUBJECT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -206,25 +228,35 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePositionofSubjectMoodCode(PositionofSubject positionofSubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_POSITIONOF_SUBJECT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_POSITIONOF_SUBJECT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.POSITIONOF_SUBJECT);
 			try {
-				VALIDATE_POSITIONOF_SUBJECT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POSITIONOF_SUBJECT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POSITIONOF_SUBJECT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(positionofSubject)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_POSITIONOF_SUBJECT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(positionofSubject)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.POSITIONOF_SUBJECT__POSITIONOF_SUBJECT_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectPositionofSubjectMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
 						 new Object [] { positionofSubject }));
 			}
 			 
@@ -252,7 +284,7 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_POSITIONOF_SUBJECT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_POSITIONOF_SUBJECT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -267,25 +299,35 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePositionofSubjectCodeP(PositionofSubject positionofSubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_POSITIONOF_SUBJECT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_POSITIONOF_SUBJECT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.POSITIONOF_SUBJECT);
 			try {
-				VALIDATE_POSITIONOF_SUBJECT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POSITIONOF_SUBJECT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POSITIONOF_SUBJECT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(positionofSubject)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_POSITIONOF_SUBJECT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(positionofSubject)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.POSITIONOF_SUBJECT__POSITIONOF_SUBJECT_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectPositionofSubjectCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
 						 new Object [] { positionofSubject }));
 			}
 			 
@@ -315,7 +357,7 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_POSITIONOF_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_POSITIONOF_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -330,25 +372,35 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePositionofSubjectCode(PositionofSubject positionofSubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_POSITIONOF_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_POSITIONOF_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.POSITIONOF_SUBJECT);
 			try {
-				VALIDATE_POSITIONOF_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POSITIONOF_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POSITIONOF_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(positionofSubject)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_POSITIONOF_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(positionofSubject)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.POSITIONOF_SUBJECT__POSITIONOF_SUBJECT_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectPositionofSubjectCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
 						 new Object [] { positionofSubject }));
 			}
 			 
@@ -378,7 +430,7 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_POSITIONOF_SUBJECT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_POSITIONOF_SUBJECT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -393,25 +445,35 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePositionofSubjectValue(PositionofSubject positionofSubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_POSITIONOF_SUBJECT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_POSITIONOF_SUBJECT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.POSITIONOF_SUBJECT);
 			try {
-				VALIDATE_POSITIONOF_SUBJECT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POSITIONOF_SUBJECT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POSITIONOF_SUBJECT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(positionofSubject)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_POSITIONOF_SUBJECT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(positionofSubject)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.POSITIONOF_SUBJECT__POSITIONOF_SUBJECT_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectPositionofSubjectValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
 						 new Object [] { positionofSubject }));
 			}
 			 
@@ -439,7 +501,7 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_POSITIONOF_SUBJECT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_POSITIONOF_SUBJECT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -454,25 +516,35 @@ public class PositionofSubjectOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePositionofSubjectValueP(PositionofSubject positionofSubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_POSITIONOF_SUBJECT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_POSITIONOF_SUBJECT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.POSITIONOF_SUBJECT);
 			try {
-				VALIDATE_POSITIONOF_SUBJECT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POSITIONOF_SUBJECT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_POSITIONOF_SUBJECT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POSITIONOF_SUBJECT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(positionofSubject)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_POSITIONOF_SUBJECT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(positionofSubject)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.POSITIONOF_SUBJECT__POSITIONOF_SUBJECT_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PositionofSubjectPositionofSubjectValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(positionofSubject, context) }),
 						 new Object [] { positionofSubject }));
 			}
 			 

@@ -10,13 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationTypeTemplateId MedicationTypeCode' templateId.root='2.16.840.1.113883.3.88.11.83.8.1' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT'"
  * @generated
  */
-public interface MedicationType extends Observation {
+public interface MedicationType extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -65,5 +62,6 @@ public interface MedicationType extends Observation {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationType init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public MedicationType init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // MedicationType

@@ -27,24 +27,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer;
-
 import org.openhealthtools.mdht.uml.cda.ccd.operations.ResultsSectionOperations;
-
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPlugin;
 import org.openhealthtools.mdht.uml.cda.phmr.Results;
-
 import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
 
 /**
@@ -64,180 +56,202 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  * @generated
  */
 public class ResultsOperations extends ResultsSectionOperations {
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	protected ResultsOperations() {
-    super();
-  }
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
 
 	/**
-   * The cached OCL expression body for the '{@link #validateResultsResultOrganizer(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Result Organizer</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateResultsResultOrganizer(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 */
+	protected ResultsOperations() {
+		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateResultsResultOrganizer(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Result Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateResultsResultOrganizer(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(ccd::ResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateResultsResultOrganizer(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Result Organizer</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateResultsResultOrganizer(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Result Organizer</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateResultsResultOrganizer(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateResultsResultOrganizer(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param results The receiving '<em><b>Results</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param results The receiving '<em><b>Results</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateResultsResultOrganizer(Results results, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.RESULTS);
-      try
-      {
-        VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(results))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.WARNING,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.RESULTS__RESULTS_RESULT_ORGANIZER,
-             PhmrPlugin.INSTANCE.getString("ResultsResultOrganizer"),
-             new Object [] { results }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.RESULTS);
+			try {
+				VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(results)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.RESULTS__RESULTS_RESULT_ORGANIZER,
+						 PhmrPlugin.INSTANCE.getString("ResultsResultsResultOrganizer"),
+						 new Object [] { results }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #getPhmrResultOrganizer(Results) <em>Get Phmr Result Organizer</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getPhmrResultOrganizer(Results) <em>Get Phmr Result Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getPhmrResultOrganizer(Results)
-   * @generated
-   * @ordered
-   */
+	 * @see #getPhmrResultOrganizer(Results)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_PHMR_RESULT_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(ccd::ResultOrganizer))->asSequence()->any(true).oclAsType(ccd::ResultOrganizer)";
 
 	/**
-   * The cached OCL query for the '{@link #getPhmrResultOrganizer(Results) <em>Get Phmr Result Organizer</em>}' query operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getPhmrResultOrganizer(Results) <em>Get Phmr Result Organizer</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getPhmrResultOrganizer(Results)
-   * @generated
-   * @ordered
-   */
+	 * @see #getPhmrResultOrganizer(Results)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_PHMR_RESULT_ORGANIZER__EOCL_QRY;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static  ResultOrganizer getPhmrResultOrganizer(Results results) {
-    if (GET_PHMR_RESULT_ORGANIZER__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(PhmrPackage.Literals.RESULTS, PhmrPackage.Literals.RESULTS.getEAllOperations().get(62));
-      try
-      {
-        GET_PHMR_RESULT_ORGANIZER__EOCL_QRY = helper.createQuery(GET_PHMR_RESULT_ORGANIZER__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_PHMR_RESULT_ORGANIZER__EOCL_QRY);
-    return (ResultOrganizer) query.evaluate(results);
-  }
+	
+	
+	
+		if (GET_PHMR_RESULT_ORGANIZER__EOCL_QRY == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(PhmrPackage.Literals.RESULTS, PhmrPackage.Literals.RESULTS.getEAllOperations().get(62));
+			try {
+				GET_PHMR_RESULT_ORGANIZER__EOCL_QRY = helper.createQuery(GET_PHMR_RESULT_ORGANIZER__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PHMR_RESULT_ORGANIZER__EOCL_QRY);
+		return (ResultOrganizer) query.evaluate(results);
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateResultsSectionTemplateId(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Template Id</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateResultsSectionTemplateId(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateResultsSectionTemplateId(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateResultsSectionTemplateId(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.9.14')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateResultsSectionTemplateId(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateResultsSectionTemplateId(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateResultsSectionTemplateId(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateResultsSectionTemplateId(Results, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param results The receiving '<em><b>Results</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param results The receiving '<em><b>Results</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateResultsSectionTemplateId(Results results, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.RESULTS);
-      try
-      {
-        VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(results))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.RESULTS__RESULTS_SECTION_TEMPLATE_ID,
-             PhmrPlugin.INSTANCE.getString("ResultsSectionTemplateId"),
-             new Object [] { results }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.RESULTS);
+			try {
+				VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(results)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.RESULTS__RESULTS_SECTION_TEMPLATE_ID,
+						 PhmrPlugin.INSTANCE.getString("ResultsResultsSectionTemplateId"),
+						 new Object [] { results }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 } // ResultsOperations

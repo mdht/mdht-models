@@ -10,23 +10,36 @@
  *     Dan Brown (Audacious Inquiry) - additional testing code
  *                                   - added multiple new tests as per artf3817 : SITE435 Implement Errata 423
  *                                   - additional code as per Errata 506
+ *                                   - additional code as per SITE-1373
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
-
-import static org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood.EVN;
-import static org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood.INT;
 
 import java.util.Arrays;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Consumable;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Participant2;
+import org.eclipse.mdht.uml.cda.Precondition;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.EIVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_PQ;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.SXCM_TS;
+import org.eclipse.mdht.uml.hl7.vocab.ActClass;
+import org.eclipse.mdht.uml.hl7.vocab.ActRelationshipType;
+import org.eclipse.mdht.uml.hl7.vocab.NullFlavor;
+import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
+import org.eclipse.mdht.uml.hl7.vocab.SetOperator;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Consumable;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Participant2;
-import org.openhealthtools.mdht.uml.cda.Precondition;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
@@ -36,21 +49,6 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense;
 import org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationActivityOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.EIVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_PQ;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.SXCM_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClass;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActRelationshipType;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.SetOperator;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -82,11 +80,12 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityRouteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Route Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityRouteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Route Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityApproachSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Approach Site Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityApproachSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Approach Site Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityApproachSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Approach Site Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityDoseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Dose Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityRateQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Rate Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityMaxDoseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Max Dose Quantity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityAdministrationUnitCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Administration Unit Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityAdministrationUnitCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Administration Unit Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity#validateMedicationActivityRepeatNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Repeat Number</em>}</li>
@@ -124,7 +123,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	public void testValidateMedicationActivityDoseQuantityorrateQuantity() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityDoseQuantityorrateQuantityTestCase = new OperationsTestCase<MedicationActivity>(
 			"validateMedicationActivityDoseQuantityorrateQuantity",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITYORRATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITYORRATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -236,8 +236,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationActivityReferenceValue() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityReferenceValueTestCase = new OperationsTestCase<MedicationActivity>(
-			"validateMedicationActivityReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationActivityReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -275,8 +275,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationActivityTextReferenceValue() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityTextReferenceValueTestCase = new NarrativeReferenceTestCase<MedicationActivity>(
-			"validateMedicationActivityTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationActivityTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -325,7 +325,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	public void testValidateMedicationActivityEffectiveTimeIVLTSorTS() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityEffectiveTimeIVLTSorTSTestCase = new OperationsTestCase<MedicationActivity>(
 			"validateMedicationActivityEffectiveTimeIVLTSorTS",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLT_SOR_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLT_SOR_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -372,7 +373,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 						target.init();
 						target.getEffectiveTimes().add(
 							DatatypesFactory.eINSTANCE.createIVL_TS(
-								CDAValidationTest.PRECISE_TO_MINUTE, CDAValidationTest.PRECISE_TO_SECOND_WITH_TIMEZONE));
+								CDAValidationTest.PRECISE_TO_MINUTE,
+								CDAValidationTest.PRECISE_TO_SECOND_WITH_TIMEZONE));
 					}
 				});
 			}
@@ -397,7 +399,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	public void testValidateMedicationActivityEffectiveTimeIVLTSLow() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityEffectiveTimeIVLTSLowTestCase = new OperationsTestCase<MedicationActivity>(
 			"validateMedicationActivityEffectiveTimeIVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -434,7 +437,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	public void testValidateMedicationActivityEffectiveTimeIVLTSHigh() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityEffectiveTimeIVLTSHighTestCase = new OperationsTestCase<MedicationActivity>(
 			"validateMedicationActivityEffectiveTimeIVLTSHigh",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -471,7 +475,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	public void testValidateMedicationActivityEffectiveTimeTSValue() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityEffectiveTimeTSValueTestCase = new OperationsTestCase<MedicationActivity>(
 			"validateMedicationActivityEffectiveTimeTSValue",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -529,8 +534,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationActivityEffectiveTimePIVLTS() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityEffectiveTimePIVLTSTestCase = new OperationsTestCase<MedicationActivity>(
-			"validateMedicationActivityEffectiveTimePIVLTS",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_PIVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationActivityEffectiveTimePIVLTS", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_PIVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -564,7 +569,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	public void testValidateMedicationActivityEffectiveTimeOperator() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityEffectiveTimeOperatorTestCase = new OperationsTestCase<MedicationActivity>(
 			"validateMedicationActivityEffectiveTimeOperator",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_OPERATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_OPERATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -601,8 +607,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationActivityDoseQuantityUnit() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityDoseQuantityUnitTestCase = new OperationsTestCase<MedicationActivity>(
-			"validateMedicationActivityDoseQuantityUnit",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITY_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationActivityDoseQuantityUnit", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITY_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -640,8 +646,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationActivityDrugVehicleTypeCode() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityDrugVehicleTypeCodeTestCase = new OperationsTestCase<MedicationActivity>(
-			"validateMedicationActivityDrugVehicleTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_DRUG_VEHICLE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationActivityDrugVehicleTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_DRUG_VEHICLE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -682,7 +688,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	public void testValidateMedicationActivityInstructionsInversionInd() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityInstructionsInversionIndTestCase = new OperationsTestCase<MedicationActivity>(
 			"validateMedicationActivityInstructionsInversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_INSTRUCTIONS_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_INSTRUCTIONS_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -743,8 +750,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationActivityRateQuantityUnit() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityRateQuantityUnitTestCase = new OperationsTestCase<MedicationActivity>(
-			"validateMedicationActivityRateQuantityUnit",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationActivityRateQuantityUnit", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -868,7 +875,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 
 			@Override
 			public void addPassTests() {
-				for (final x_DocumentSubstanceMood mood : Arrays.asList(EVN, INT)) {
+				for (final x_DocumentSubstanceMood mood : Arrays.asList(
+					x_DocumentSubstanceMood.EVN, x_DocumentSubstanceMood.INT)) {
 					addPassTest(new PassTest() {
 						@Override
 						public void updateToPass(MedicationActivity target) {
@@ -1075,8 +1083,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationActivityApproachSiteCode() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityApproachSiteCodeTestCase = new OperationsTestCase<MedicationActivity>(
-			"validateMedicationActivityApproachSiteCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationActivityApproachSiteCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1115,8 +1123,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationActivityApproachSiteCodeP() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityApproachSiteCodePTestCase = new OperationsTestCase<MedicationActivity>(
-			"validateMedicationActivityApproachSiteCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationActivityApproachSiteCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1224,8 +1232,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationActivityMaxDoseQuantity() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityMaxDoseQuantityTestCase = new OperationsTestCase<MedicationActivity>(
-			"validateMedicationActivityMaxDoseQuantity",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationActivityMaxDoseQuantity", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1255,13 +1263,14 @@ public class MedicationActivityTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateMedicationActivityAdministrationUnitCode() {
-		OperationsTestCase<MedicationActivity> validateMedicationActivityAdministrationUnitCodeTestCase = new OperationsTestCase<MedicationActivity>(
-			"validateMedicationActivityAdministrationUnitCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateMedicationActivityAdministrationUnitCodeP() {
+		OperationsTestCase<MedicationActivity> validateMedicationActivityAdministrationUnitCodePTestCase = new OperationsTestCase<MedicationActivity>(
+			"validateMedicationActivityAdministrationUnitCodeP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1272,8 +1281,93 @@ public class MedicationActivityTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MedicationActivity target) {
 				target.init();
-				target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE(
-					"code", "2.16.840.1.113883.3.26.1.1"));
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationActivityOperations.validateMedicationActivityAdministrationUnitCodeP(
+					(MedicationActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationActivityAdministrationUnitCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateMedicationActivityAdministrationUnitCode() {
+		OperationsTestCase<MedicationActivity> validateMedicationActivityAdministrationUnitCodeTestCase = new OperationsTestCase<MedicationActivity>(
+			"validateMedicationActivityAdministrationUnitCode",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(
+							DatatypesFactory.eINSTANCE.createCE(BAD_CODE_VALUE, "2.16.840.1.113883.3.26.1.1"));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(
+							DatatypesFactory.eINSTANCE.createCE("C42887", BAD_CODESYSTEM_ID));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE("code", "sadadsa"));
+
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE());
+						target.getAdministrationUnitCode().setCodeSystem("");
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+						target.init();
+						target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE());
+						target.getAdministrationUnitCode().setCode("");
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(MedicationActivity target) {
+
+					}
+				});
+			}
+
+			@Override
+			protected void updateToPass(MedicationActivity target) {
+				target.init();
+				target.setAdministrationUnitCode(
+					DatatypesFactory.eINSTANCE.createCE("C42887", "2.16.840.1.113883.3.26.1.1"));
 
 			}
 
@@ -1370,7 +1464,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	public void testValidateMedicationActivityMedicationSupplyOrder() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityMedicationSupplyOrderTestCase = new OperationsTestCase<MedicationActivity>(
 			"validateMedicationActivityMedicationSupplyOrder",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1408,8 +1503,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationActivityReactionObservation() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityReactionObservationTestCase = new OperationsTestCase<MedicationActivity>(
-			"validateMedicationActivityReactionObservation",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationActivityReactionObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1483,7 +1578,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	public void testValidateMedicationActivityConsumableMedicationInformation() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityConsumableMedicationInformationTestCase = new OperationsTestCase<MedicationActivity>(
 			"validateMedicationActivityConsumableMedicationInformation",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1519,8 +1615,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationActivityPreconditionTypeCode() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityPreconditionTypeCodeTestCase = new OperationsTestCase<MedicationActivity>(
-			"validateMedicationActivityPreconditionTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationActivityPreconditionTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1557,7 +1653,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	public void testValidateMedicationActivityPreconditionPreconditionForSubstanceAdministration() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityPreconditionPreconditionForSubstanceAdministrationTestCase = new OperationsTestCase<MedicationActivity>(
 			"validateMedicationActivityPreconditionPreconditionForSubstanceAdministration",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1721,8 +1818,8 @@ public class MedicationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationActivityMedicationDispense() {
 		OperationsTestCase<MedicationActivity> validateMedicationActivityMedicationDispenseTestCase = new OperationsTestCase<MedicationActivity>(
-			"validateMedicationActivityMedicationDispense",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_MEDICATION_DISPENSE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationActivityMedicationDispense", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY_MEDICATION_DISPENSE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1804,7 +1901,7 @@ public class MedicationActivityTest extends CDAValidationTest {
 			@Override
 			protected void updateToFail(MedicationActivity target) {
 				target.init();
-				target.getParticipants().add(org.openhealthtools.mdht.uml.cda.CDAFactory.eINSTANCE.createParticipant2());
+				target.getParticipants().add(org.eclipse.mdht.uml.cda.CDAFactory.eINSTANCE.createParticipant2());
 
 			}
 

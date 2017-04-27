@@ -2,34 +2,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.GroupIdentifier;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.GroupIdentifierOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Group Identifier</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class GroupIdentifierImpl extends ActImpl implements GroupIdentifier {
+public class GroupIdentifierImpl extends org.eclipse.mdht.uml.cda.impl.ActImpl implements GroupIdentifier {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -116,7 +105,7 @@ public class GroupIdentifierImpl extends ActImpl implements GroupIdentifier {
 	 */
 	@Override
 	public GroupIdentifier init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -124,8 +113,8 @@ public class GroupIdentifierImpl extends ActImpl implements GroupIdentifier {
      * @generated
      */
     @Override
-	public GroupIdentifier init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public GroupIdentifier init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //GroupIdentifierImpl

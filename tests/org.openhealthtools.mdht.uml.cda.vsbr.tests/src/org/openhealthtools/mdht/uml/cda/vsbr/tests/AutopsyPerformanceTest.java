@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.AutopsyPerformance;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.AutopsyPerformanceOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +35,9 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.AutopsyPerformance#validateAutopsyPerformanceCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Performance Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.AutopsyPerformance#validateAutopsyPerformanceCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Performance Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.AutopsyPerformance#validateAutopsyPerformanceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Performance Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.AutopsyPerformance#validateAutopsyPerformanceValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Performance Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.AutopsyPerformance#validateAutopsyPerformanceUseAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Performance Use Association</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.AutopsyPerformance#validateAutopsyPerformanceHistologicalExamAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Performance Histological Exam Association</em>}</li>
  * </ul>
  * </p>
  *
@@ -46,6 +51,7 @@ public class AutopsyPerformanceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAutopsyPerformanceTemplateId() {
 		OperationsTestCase<AutopsyPerformance> validateAutopsyPerformanceTemplateIdTestCase = new OperationsTestCase<AutopsyPerformance>(
 			"validateAutopsyPerformanceTemplateId",
@@ -80,6 +86,7 @@ public class AutopsyPerformanceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAutopsyPerformanceClassCode() {
 		OperationsTestCase<AutopsyPerformance> validateAutopsyPerformanceClassCodeTestCase = new OperationsTestCase<AutopsyPerformance>(
 			"validateAutopsyPerformanceClassCode",
@@ -114,6 +121,7 @@ public class AutopsyPerformanceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAutopsyPerformanceMoodCode() {
 		OperationsTestCase<AutopsyPerformance> validateAutopsyPerformanceMoodCodeTestCase = new OperationsTestCase<AutopsyPerformance>(
 			"validateAutopsyPerformanceMoodCode",
@@ -148,6 +156,7 @@ public class AutopsyPerformanceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAutopsyPerformanceCodeP() {
 		OperationsTestCase<AutopsyPerformance> validateAutopsyPerformanceCodePTestCase = new OperationsTestCase<AutopsyPerformance>(
 			"validateAutopsyPerformanceCodeP",
@@ -182,6 +191,7 @@ public class AutopsyPerformanceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAutopsyPerformanceCode() {
 		OperationsTestCase<AutopsyPerformance> validateAutopsyPerformanceCodeTestCase = new OperationsTestCase<AutopsyPerformance>(
 			"validateAutopsyPerformanceCode",
@@ -216,6 +226,7 @@ public class AutopsyPerformanceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAutopsyPerformanceValue() {
 		OperationsTestCase<AutopsyPerformance> validateAutopsyPerformanceValueTestCase = new OperationsTestCase<AutopsyPerformance>(
 			"validateAutopsyPerformanceValue",
@@ -253,10 +264,46 @@ public class AutopsyPerformanceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
+	public void testValidateAutopsyPerformanceValueP() {
+		OperationsTestCase<AutopsyPerformance> validateAutopsyPerformanceValuePTestCase = new OperationsTestCase<AutopsyPerformance>(
+			"validateAutopsyPerformanceValueP",
+			operationsForOCL.getOCLValue("VALIDATE_AUTOPSY_PERFORMANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AutopsyPerformance target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AutopsyPerformance target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AutopsyPerformanceOperations.validateAutopsyPerformanceValueP(
+					(AutopsyPerformance) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAutopsyPerformanceValuePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
 	public void testValidateAutopsyPerformanceUseAssociation() {
 		OperationsTestCase<AutopsyPerformance> validateAutopsyPerformanceUseAssociationTestCase = new OperationsTestCase<AutopsyPerformance>(
-			"validateAutopsyPerformanceUseAssociation",
-			operationsForOCL.getOCLValue("VALIDATE_AUTOPSY_PERFORMANCE_USE_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAutopsyPerformanceUseAssociation", operationsForOCL.getOCLValue(
+				"VALIDATE_AUTOPSY_PERFORMANCE_USE_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -280,6 +327,42 @@ public class AutopsyPerformanceTest extends CDAValidationTest {
 		};
 
 		validateAutopsyPerformanceUseAssociationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAutopsyPerformanceHistologicalExamAssociation() {
+		OperationsTestCase<AutopsyPerformance> validateAutopsyPerformanceHistologicalExamAssociationTestCase = new OperationsTestCase<AutopsyPerformance>(
+			"validateAutopsyPerformanceHistologicalExamAssociation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AutopsyPerformance target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AutopsyPerformance target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AutopsyPerformanceOperations.validateAutopsyPerformanceHistologicalExamAssociation(
+					(AutopsyPerformance) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAutopsyPerformanceHistologicalExamAssociationTestCase.doValidationTest();
 	}
 
 	/**
@@ -335,8 +418,7 @@ public class AutopsyPerformanceTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.FetalDeathOccurrance;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.FetalDeathOccurranceOper
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Fetal Death Occurrance</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class FetalDeathOccurranceImpl extends ObservationImpl implements FetalDeathOccurrance {
+public class FetalDeathOccurranceImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl
+		implements FetalDeathOccurrance {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -118,7 +113,7 @@ public class FetalDeathOccurranceImpl extends ObservationImpl implements FetalDe
 	 * @generated
 	 */
 	public FetalDeathOccurrance init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -126,8 +121,9 @@ public class FetalDeathOccurranceImpl extends ObservationImpl implements FetalDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FetalDeathOccurrance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public FetalDeathOccurrance init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // FetalDeathOccurranceImpl

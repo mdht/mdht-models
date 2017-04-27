@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,9 +10,9 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.Act;
+import org.eclipse.mdht.uml.cda.Act;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedCoverage()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedCoverageTemplateId PlannedCoverageClassCode PlannedCoverageMoodCode PlannedCoverageId PlannedCoverageCode PlannedCoverageCodeP PlannedCoverageStatusCode PlannedCoverageStatusCodeP PlannedCoverageEntryRelationship PlannedCoverageEntryRelationshipActClassCode PlannedCoverageEntryRelationshipActMoodCode PlannedCoverageEntryRelationshipActId PlannedCoverageEntryRelationshipActCodeP PlannedCoverageEntryRelationshipActCode PlannedCoverageEntryRelationshipActStatusCode PlannedCoverageEntryRelationshipActStatusCodeP PlannedCoverageEntryRelationshipTypeCode PlannedCoverageEntryRelationshipAct' templateId.root='2.16.840.1.113883.10.20.22.4.129' classCode='ACT' moodCode='INT' code.code='48768-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Payment Sources' constraints.validation.dependOn.PlannedCoverageCode='PlannedCoverageCodeP' statusCode.code='active' constraints.validation.query='PlannedCoverageEntryRelationshipActClassCode PlannedCoverageEntryRelationshipActMoodCode PlannedCoverageEntryRelationshipActId PlannedCoverageEntryRelationshipActCodeP PlannedCoverageEntryRelationshipActCode PlannedCoverageEntryRelationshipActStatusCode PlannedCoverageEntryRelationshipActStatusCodeP PlannedCoverageEntryRelationshipTypeCode PlannedCoverageEntryRelationshipAct' constraints.validation.dependOn.PlannedCoverageEntryRelationshipActCode='PlannedCoverageEntryRelationshipActCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedCoverageTemplateId PlannedCoverageClassCode PlannedCoverageMoodCode PlannedCoverageId PlannedCoverageCode PlannedCoverageCodeP PlannedCoverageStatusCode PlannedCoverageStatusCodeP PlannedCoverageEntryRelationship PlannedCoverageEntryRelationshipActClassCode PlannedCoverageEntryRelationshipActMoodCode PlannedCoverageEntryRelationshipActId PlannedCoverageEntryRelationshipActCodeP PlannedCoverageEntryRelationshipActCode PlannedCoverageEntryRelationshipActStatusCode PlannedCoverageEntryRelationshipActStatusCodeP PlannedCoverageEntryRelationshipTypeCode PlannedCoverageEntryRelationshipAct' templateId.root='2.16.840.1.113883.10.20.22.4.129' classCode='ACT' moodCode='INT' code.code='48768-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Payment Sources' constraints.validation.dependOn.PlannedCoverageCode='PlannedCoverageCodeP' statusCode.code='active' constraints.validation.info='PlannedCoverageAuthorParticipation' constraints.validation.query='PlannedCoverageEntryRelationshipActClassCode PlannedCoverageEntryRelationshipActMoodCode PlannedCoverageEntryRelationshipActId PlannedCoverageEntryRelationshipActCodeP PlannedCoverageEntryRelationshipActCode PlannedCoverageEntryRelationshipActStatusCode PlannedCoverageEntryRelationshipActStatusCodeP PlannedCoverageEntryRelationshipTypeCode PlannedCoverageEntryRelationshipAct' constraints.validation.dependOn.PlannedCoverageEntryRelationshipActCode='PlannedCoverageEntryRelationshipActCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedCoverageEntryRelationship typeCode='COMP' constraints.validation.error='PlannedCoverageEntryRelationshipTypeCode PlannedCoverageEntryRelationshipAct'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedCoverageEntryRelationshipAct classCode='ACT' constraints.validation.error='PlannedCoverageEntryRelationshipActClassCode PlannedCoverageEntryRelationshipActMoodCode PlannedCoverageEntryRelationshipActId PlannedCoverageEntryRelationshipActCode PlannedCoverageEntryRelationshipActCodeP PlannedCoverageEntryRelationshipActStatusCode PlannedCoverageEntryRelationshipActStatusCodeP' moodCode='INT' code.codeSystem='2.16.840.1.113883.3.221.5' code.codeSystemName='Source of Payment Typology (PHDSC)' constraints.validation.dependOn.PlannedCoverageEntryRelationshipActCode='PlannedCoverageEntryRelationshipActCodeP' statusCode.code='active'"
  * @generated
@@ -74,7 +70,7 @@ public interface PlannedCoverage extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validatePlannedCoverageId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -146,6 +142,18 @@ public interface PlannedCoverage extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
+	 * @generated
+	 */
+	boolean validatePlannedCoverageAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).act->excluding(null)->reject(classCode=vocab::x_ActClassDocumentEntryAct::ACT)'"
 	 * @generated
 	 */
@@ -162,7 +170,8 @@ public interface PlannedCoverage extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).act->excluding(null)->reject(moodCode=vocab::x_DocumentActMood::INT)'"
 	 * @generated
 	 */
-	boolean validatePlannedCoverageEntryRelationshipActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlannedCoverageEntryRelationshipActMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,14 +180,14 @@ public interface PlannedCoverage extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).act->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).act->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (( not id->isEmpty()) ))'"
 	 * @generated
 	 */
 	boolean validatePlannedCoverageEntryRelationshipActId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

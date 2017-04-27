@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -32,7 +25,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.StudyEpoch;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -72,7 +64,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class ProtocolDeviationOperations extends ClinicalStatementOperations {
+public class ProtocolDeviationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -101,7 +101,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -116,25 +116,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationTemplateId(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -162,7 +172,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -177,25 +187,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationClassCode(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -223,7 +243,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -238,25 +258,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationMoodCode(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -284,7 +314,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -299,25 +329,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationId(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -345,7 +385,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -360,25 +400,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationCodeP(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -408,7 +458,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -423,25 +473,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationCode(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -469,7 +529,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -484,25 +544,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationEffectiveTime(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -530,7 +600,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -545,25 +615,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationValue(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -591,7 +671,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_STUDY_EPOCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_STUDY_EPOCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -606,25 +686,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationStudyEpoch(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_STUDY_EPOCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_STUDY_EPOCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_STUDY_EPOCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_STUDY_EPOCH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_STUDY_EPOCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_STUDY_EPOCH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_STUDY_EPOCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_STUDY_EPOCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_STUDY_EPOCH,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationStudyEpoch", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationStudyEpoch", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -652,7 +742,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -667,25 +757,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationComment(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -713,7 +813,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -728,25 +828,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationDomainAssignment(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -774,7 +884,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -789,25 +899,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationRelatedRecord(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -835,7 +955,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -850,25 +970,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationSupplementalValue(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -896,7 +1026,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -911,25 +1041,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationCategory(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -957,7 +1097,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -972,25 +1112,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationSubCategory(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -1018,7 +1168,7 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROTOCOL_DEVIATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTOCOL_DEVIATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1033,25 +1183,35 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateProtocolDeviationFindingAbout(ProtocolDeviation protocolDeviation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTOCOL_DEVIATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTOCOL_DEVIATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PROTOCOL_DEVIATION);
 			try {
-				VALIDATE_PROTOCOL_DEVIATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTOCOL_DEVIATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTOCOL_DEVIATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTOCOL_DEVIATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protocolDeviation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTOCOL_DEVIATION_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protocolDeviation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PROTOCOL_DEVIATION__PROTOCOL_DEVIATION_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProtocolDeviationProtocolDeviationFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(protocolDeviation, context) }),
 						 new Object [] { protocolDeviation }));
 			}
 			 
@@ -1087,8 +1247,13 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  StudyEpoch getStudyEpoch(ProtocolDeviation protocolDeviation) {
+	
+	
+	
 		if (GET_STUDY_EPOCH__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PROTOCOL_DEVIATION, SdtmPackage.Literals.PROTOCOL_DEVIATION.getEAllOperations().get(67));
 			try {
 				GET_STUDY_EPOCH__EOCL_QRY = helper.createQuery(GET_STUDY_EPOCH__EOCL_EXP);
@@ -1096,8 +1261,9 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_EPOCH__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_EPOCH__EOCL_QRY);
 		return (StudyEpoch) query.evaluate(protocolDeviation);
 	}
 
@@ -1128,8 +1294,13 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<Comment> getComments(ProtocolDeviation protocolDeviation) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PROTOCOL_DEVIATION, SdtmPackage.Literals.PROTOCOL_DEVIATION.getEAllOperations().get(68));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1137,8 +1308,9 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(protocolDeviation);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -1171,8 +1343,13 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(ProtocolDeviation protocolDeviation) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PROTOCOL_DEVIATION, SdtmPackage.Literals.PROTOCOL_DEVIATION.getEAllOperations().get(69));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1180,8 +1357,9 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(protocolDeviation);
 	}
 
@@ -1212,8 +1390,13 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(ProtocolDeviation protocolDeviation) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PROTOCOL_DEVIATION, SdtmPackage.Literals.PROTOCOL_DEVIATION.getEAllOperations().get(70));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1221,8 +1404,9 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(protocolDeviation);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -1255,8 +1439,13 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(ProtocolDeviation protocolDeviation) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PROTOCOL_DEVIATION, SdtmPackage.Literals.PROTOCOL_DEVIATION.getEAllOperations().get(71));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -1264,8 +1453,9 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(protocolDeviation);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -1298,8 +1488,13 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  Category getCategory(ProtocolDeviation protocolDeviation) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PROTOCOL_DEVIATION, SdtmPackage.Literals.PROTOCOL_DEVIATION.getEAllOperations().get(72));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -1307,8 +1502,9 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(protocolDeviation);
 	}
 
@@ -1339,8 +1535,13 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  SubCategory getSubCategory(ProtocolDeviation protocolDeviation) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PROTOCOL_DEVIATION, SdtmPackage.Literals.PROTOCOL_DEVIATION.getEAllOperations().get(73));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -1348,8 +1549,9 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(protocolDeviation);
 	}
 
@@ -1380,8 +1582,13 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(ProtocolDeviation protocolDeviation) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PROTOCOL_DEVIATION, SdtmPackage.Literals.PROTOCOL_DEVIATION.getEAllOperations().get(74));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -1389,8 +1596,9 @@ public class ProtocolDeviationOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(protocolDeviation);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());

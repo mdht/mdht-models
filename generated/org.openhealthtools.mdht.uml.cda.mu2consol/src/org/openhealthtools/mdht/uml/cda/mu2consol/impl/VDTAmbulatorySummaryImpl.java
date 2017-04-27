@@ -16,25 +16,22 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatorySummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTAmbulatorySummaryOperations;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>VDT Ambulatory Summary</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ * <!-- begin-user-doc --> An implementation of the model object ' <em><b>VDT
+ * Ambulatory Summary</b></em>'. <!-- end-user-doc -->
+ *
  * @generated
  */
-public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
-		implements VDTAmbulatorySummary {
+public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl implements VDTAmbulatorySummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected VDTAmbulatorySummaryImpl() {
@@ -43,7 +40,7 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -53,33 +50,31 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTAmbulatorySummaryProviderNameAndContactInfo(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTAmbulatorySummaryOperations
-				.validateVDTAmbulatorySummaryProviderNameAndContactInfo(this,
-						diagnostics, context);
+	public boolean validateVDTAmbulatorySummaryProviderNameAndContactInfo(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VDTAmbulatorySummaryOperations.validateVDTAmbulatorySummaryProviderNameAndContactInfo(this, diagnostics,
+				context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTAmbulatorySummaryMedicationsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTAmbulatorySummaryOperations
-				.validateVDTAmbulatorySummaryMedicationsSection(this,
-						diagnostics, context);
+	public boolean validateVDTAmbulatorySummaryMedicationsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VDTAmbulatorySummaryOperations.validateVDTAmbulatorySummaryMedicationsSection(this, diagnostics,
+				context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -89,7 +84,7 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -99,12 +94,11 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public VDTAmbulatorySummary init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public VDTAmbulatorySummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
 	}

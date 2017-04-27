@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.PersonalHealthcareMonitoringReport;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.PersonalHealthcareMonitoringReportOperations;
@@ -75,66 +75,69 @@ public class PersonalHealthcareMonitoringReportTest extends  CDAValidationTest {
  
 									
 public void testValidatePersonalHealthcareMonitoringReportTemplateId() {
-      OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportTemplateIdTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
-      "validatePersonalHealthcareMonitoringReportTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportTemplateIdTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
+			"validatePersonalHealthcareMonitoringReportTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(PersonalHealthcareMonitoringReport target) {
+			@Override
+			protected void updateToFail(PersonalHealthcareMonitoringReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PersonalHealthcareMonitoringReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PersonalHealthcareMonitoringReport target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportTemplateId(
-          (PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportTemplateId(
+					(PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePersonalHealthcareMonitoringReportTemplateIdTestCase.doValidationTest();
+		validatePersonalHealthcareMonitoringReportTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -149,66 +152,69 @@ public void testValidatePersonalHealthcareMonitoringReportTemplateId() {
  
 									
 public void testValidatePersonalHealthcareMonitoringReportVitalSigns() {
-      OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportVitalSignsTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
-      "validatePersonalHealthcareMonitoringReportVitalSigns",
-      operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportVitalSignsTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
+			"validatePersonalHealthcareMonitoringReportVitalSigns",
+			operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(PersonalHealthcareMonitoringReport target) {
+			@Override
+			protected void updateToFail(PersonalHealthcareMonitoringReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PersonalHealthcareMonitoringReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PersonalHealthcareMonitoringReport target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportVitalSigns(
-          (PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportVitalSigns(
+					(PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePersonalHealthcareMonitoringReportVitalSignsTestCase.doValidationTest();
+		validatePersonalHealthcareMonitoringReportVitalSignsTestCase.doValidationTest();
 }		
 
 
@@ -223,66 +229,69 @@ public void testValidatePersonalHealthcareMonitoringReportVitalSigns() {
  
 									
 public void testValidatePersonalHealthcareMonitoringReportResults() {
-      OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportResultsTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
-      "validatePersonalHealthcareMonitoringReportResults",
-      operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportResultsTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
+			"validatePersonalHealthcareMonitoringReportResults",
+			operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(PersonalHealthcareMonitoringReport target) {
+			@Override
+			protected void updateToFail(PersonalHealthcareMonitoringReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PersonalHealthcareMonitoringReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PersonalHealthcareMonitoringReport target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportResults(
-          (PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportResults(
+					(PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePersonalHealthcareMonitoringReportResultsTestCase.doValidationTest();
+		validatePersonalHealthcareMonitoringReportResultsTestCase.doValidationTest();
 }		
 
 
@@ -297,66 +306,69 @@ public void testValidatePersonalHealthcareMonitoringReportResults() {
  
 									
 public void testValidatePersonalHealthcareMonitoringReportMedicalEquipment() {
-      OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportMedicalEquipmentTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
-      "validatePersonalHealthcareMonitoringReportMedicalEquipment",
-      operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportMedicalEquipmentTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
+			"validatePersonalHealthcareMonitoringReportMedicalEquipment",
+			operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICAL_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(PersonalHealthcareMonitoringReport target) {
+			@Override
+			protected void updateToFail(PersonalHealthcareMonitoringReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PersonalHealthcareMonitoringReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PersonalHealthcareMonitoringReport target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportMedicalEquipment(
-          (PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportMedicalEquipment(
+					(PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePersonalHealthcareMonitoringReportMedicalEquipmentTestCase.doValidationTest();
+		validatePersonalHealthcareMonitoringReportMedicalEquipmentTestCase.doValidationTest();
 }		
 
 
@@ -371,66 +383,69 @@ public void testValidatePersonalHealthcareMonitoringReportMedicalEquipment() {
  
 									
 public void testValidatePersonalHealthcareMonitoringReportFunctionalStatus() {
-      OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportFunctionalStatusTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
-      "validatePersonalHealthcareMonitoringReportFunctionalStatus",
-      operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportFunctionalStatusTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
+			"validatePersonalHealthcareMonitoringReportFunctionalStatus",
+			operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_FUNCTIONAL_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(PersonalHealthcareMonitoringReport target) {
+			@Override
+			protected void updateToFail(PersonalHealthcareMonitoringReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PersonalHealthcareMonitoringReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PersonalHealthcareMonitoringReport target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportFunctionalStatus(
-          (PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportFunctionalStatus(
+					(PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePersonalHealthcareMonitoringReportFunctionalStatusTestCase.doValidationTest();
+		validatePersonalHealthcareMonitoringReportFunctionalStatusTestCase.doValidationTest();
 }		
 
 
@@ -445,66 +460,69 @@ public void testValidatePersonalHealthcareMonitoringReportFunctionalStatus() {
  
 									
 public void testValidatePersonalHealthcareMonitoringReportMedication() {
-      OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportMedicationTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
-      "validatePersonalHealthcareMonitoringReportMedication",
-      operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportMedicationTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
+			"validatePersonalHealthcareMonitoringReportMedication",
+			operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(PersonalHealthcareMonitoringReport target) {
+			@Override
+			protected void updateToFail(PersonalHealthcareMonitoringReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PersonalHealthcareMonitoringReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PersonalHealthcareMonitoringReport target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportMedication(
-          (PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportMedication(
+					(PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePersonalHealthcareMonitoringReportMedicationTestCase.doValidationTest();
+		validatePersonalHealthcareMonitoringReportMedicationTestCase.doValidationTest();
 }		
 
 
@@ -519,66 +537,69 @@ public void testValidatePersonalHealthcareMonitoringReportMedication() {
  
 									
 public void testValidatePersonalHealthcareMonitoringReportPurpose() {
-      OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportPurposeTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
-      "validatePersonalHealthcareMonitoringReportPurpose",
-      operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<PersonalHealthcareMonitoringReport> validatePersonalHealthcareMonitoringReportPurposeTestCase = new OperationsTestCase<PersonalHealthcareMonitoringReport>(
+			"validatePersonalHealthcareMonitoringReportPurpose",
+			operationsForOCL.getOCLValue("VALIDATE_PERSONAL_HEALTHCARE_MONITORING_REPORT_PURPOSE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(PersonalHealthcareMonitoringReport target) {
+			@Override
+			protected void updateToFail(PersonalHealthcareMonitoringReport target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PersonalHealthcareMonitoringReport target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PersonalHealthcareMonitoringReport target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportPurpose(
-          (PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportPurpose(
+					(PersonalHealthcareMonitoringReport) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePersonalHealthcareMonitoringReportPurposeTestCase.doValidationTest();
+		validatePersonalHealthcareMonitoringReportPurposeTestCase.doValidationTest();
 }		
 
 
@@ -745,6 +766,7 @@ target.getPurpose();
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<PersonalHealthcareMonitoringReport> {
+		@Override
 		public PersonalHealthcareMonitoringReport create() {		
 			return PhmrFactory.eINSTANCE.createPersonalHealthcareMonitoringReport();
 		}
@@ -776,9 +798,9 @@ target.getPurpose();
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -788,8 +810,8 @@ target.getPurpose();
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

@@ -15,11 +15,11 @@ import java.io.FileInputStream;
 
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.ecore.EClass;
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.util.CDADiagnostic;
+import org.eclipse.mdht.uml.cda.util.CDAUtil;
+import org.eclipse.mdht.uml.cda.util.ValidationResult;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
-import org.openhealthtools.mdht.uml.cda.util.CDADiagnostic;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-import org.openhealthtools.mdht.uml.cda.util.ValidationResult;
 
 public class Test {
 
@@ -56,8 +56,7 @@ public class Test {
 		// "VDTAmbulatorySummary");
 		// validateDocument("socr_sample_withDSTemplateId",
 		// "VDTInpatientSummary");
-		validateDocument("socr_sample_withDSTemplateId",
-				"TransitionsOfCareInpatientSummary");
+		validateDocument("socr_sample_withDSTemplateId", "TransitionsOfCareInpatientSummary");
 		// validateDocument("cdabook.pdf",
 		// "TransitionsOfCareAmbulatorySummary");
 		// validateDocument("socr_sample","ClinicalOfficeVisitSummary");
@@ -72,8 +71,7 @@ public class Test {
 		Mu2consolPackage.eINSTANCE.eClass();
 		ValidationResult result = new ValidationResult();
 		try {
-			ClinicalDocument clinicalDocument = CDAUtil.load(
-					(new FileInputStream(path + fileName + ".xml")), result);
+			ClinicalDocument clinicalDocument = CDAUtil.load((new FileInputStream(path + fileName + ".xml")), result);
 			System.out.println(clinicalDocument);
 			System.out.println(clinicalDocument.getAllSections().size());
 			for (Object j : clinicalDocument.getAllSections()) {
@@ -91,8 +89,7 @@ public class Test {
 		Mu2consolPackage.eINSTANCE.eClass();
 		ValidationResult result = new ValidationResult();
 		try {
-			ClinicalDocument cDoc = CDAUtil.loadAs(new FileInputStream(path
-					+ fileName + ".xml"),
+			ClinicalDocument cDoc = CDAUtil.loadAs(new FileInputStream(path + fileName + ".xml"),
 					Mu2consolPackage.eINSTANCE.getSummaryOfCareRecord(),
 					// Mu2consolPackage.eINSTANCE.getClinicalOfficeVisitSummary(),
 					result);
@@ -110,7 +107,7 @@ public class Test {
 
 	/**
 	 * Validate a document as a specific type.
-	 * 
+	 *
 	 * @param fileName
 	 * @param asDocumentType
 	 */
@@ -124,18 +121,12 @@ public class Test {
 
 		if (asDocumentType.equalsIgnoreCase("SummaryOfCareRecord")) {
 			docType = Mu2consolPackage.eINSTANCE.getSummaryOfCareRecord();
-		} else if (asDocumentType
-				.equalsIgnoreCase("ClinicalOfficeVisitSummary")) {
-			docType = Mu2consolPackage.eINSTANCE
-					.getClinicalOfficeVisitSummary();
-		} else if (asDocumentType
-				.equalsIgnoreCase("TransitionsOfCareAmbulatorySummary")) {
-			docType = Mu2consolPackage.eINSTANCE
-					.getTransitionOfCareAmbulatorySummary();
-		} else if (asDocumentType
-				.equalsIgnoreCase("TransitionsOfCareInpatientSummary")) {
-			docType = Mu2consolPackage.eINSTANCE
-					.getTransitionOfCareInpatientSummary();
+		} else if (asDocumentType.equalsIgnoreCase("ClinicalOfficeVisitSummary")) {
+			docType = Mu2consolPackage.eINSTANCE.getClinicalOfficeVisitSummary();
+		} else if (asDocumentType.equalsIgnoreCase("TransitionsOfCareAmbulatorySummary")) {
+			docType = Mu2consolPackage.eINSTANCE.getTransitionOfCareAmbulatorySummary();
+		} else if (asDocumentType.equalsIgnoreCase("TransitionsOfCareInpatientSummary")) {
+			docType = Mu2consolPackage.eINSTANCE.getTransitionOfCareInpatientSummary();
 		} else if (asDocumentType.equalsIgnoreCase("VDTAmbulatorySummary")) {
 			docType = Mu2consolPackage.eINSTANCE.getVDTAmbulatorySummary();
 		} else if (asDocumentType.equalsIgnoreCase("VDTInpatientSummary")) {
@@ -143,14 +134,11 @@ public class Test {
 		}
 
 		try {
-			CDAUtil.loadAs((new FileInputStream(path + fileName + ".xml")),
-					docType, result);
+			CDAUtil.loadAs((new FileInputStream(path + fileName + ".xml")), docType, result);
 			for (Diagnostic dq : result.getErrorDiagnostics()) {
 				CDADiagnostic cdaDiagnosticq = new CDADiagnostic(dq);
-				sb.append("ERROR|" + cdaDiagnosticq.getMessage() + "|"
-						+ cdaDiagnosticq.getPath() + "|"
-						+ cdaDiagnosticq.getCode() + "|"
-						+ cdaDiagnosticq.getSource());
+				sb.append("ERROR|" + cdaDiagnosticq.getMessage() + "|" + cdaDiagnosticq.getPath() + "|"
+						+ cdaDiagnosticq.getCode() + "|" + cdaDiagnosticq.getSource());
 				sb.append("\n");
 			}
 		} catch (Exception e) {
@@ -165,14 +153,11 @@ public class Test {
 		Mu2consolPackage.eINSTANCE.eClass();
 		ValidationResult result = new ValidationResult();
 		try {
-			CDAUtil.load((new FileInputStream(path + fileName + ".xml")),
-					result);
+			CDAUtil.load((new FileInputStream(path + fileName + ".xml")), result);
 			for (Diagnostic dq : result.getErrorDiagnostics()) {
 				CDADiagnostic cdaDiagnosticq = new CDADiagnostic(dq);
-				sb.append("ERROR|" + cdaDiagnosticq.getMessage() + "|"
-						+ cdaDiagnosticq.getPath() + "|"
-						+ cdaDiagnosticq.getCode() + "|"
-						+ cdaDiagnosticq.getSource());
+				sb.append("ERROR|" + cdaDiagnosticq.getMessage() + "|" + cdaDiagnosticq.getPath() + "|"
+						+ cdaDiagnosticq.getCode() + "|" + cdaDiagnosticq.getSource());
 				sb.append("\n");
 			}
 		} catch (Exception e) {

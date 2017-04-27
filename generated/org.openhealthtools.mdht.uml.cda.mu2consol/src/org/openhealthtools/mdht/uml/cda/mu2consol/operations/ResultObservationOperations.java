@@ -27,24 +27,29 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>Result Observation</b></em>' model objects. <!--
  * end-user-doc -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.ResultObservation#validateResultObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+ * <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.ResultObservation#validateResultObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
  * <em>Validate Result Observation Template Id</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
 public class ResultObservationOperations
-		extends
-		org.openhealthtools.mdht.uml.cda.consol.operations.ResultObservationOperations {
+		extends org.openhealthtools.mdht.uml.cda.consol.operations.ResultObservationOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected ResultObservationOperations() {
@@ -56,7 +61,7 @@ public class ResultObservationOperations
 	 * {@link #validateResultObservationTemplateId(ResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * <em>Validate Result Observation Template Id</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #validateResultObservationTemplateId(ResultObservation,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
@@ -65,24 +70,24 @@ public class ResultObservationOperations
 	protected static final String VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.2')";
 
 	/**
-	 * The cached OCL invariant for the '
-	 * {@link #validateResultObservationTemplateId(ResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL invariant for the
+	 * '{@link #validateResultObservationTemplateId(ResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * <em>Validate Result Observation Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #validateResultObservationTemplateId(ResultObservation,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.templateId->exists(id : datatypes::II | id.root =
 	 * '2.16.840.1.113883.10.20.22.4.2')
-	 * 
+	 *
 	 * @param resultObservation
 	 *            The receiving '<em><b>Result Observation</b></em>' model
 	 *            object.
@@ -94,34 +99,28 @@ public class ResultObservationOperations
 	 * @generated
 	 */
 
-	public static boolean validateResultObservationTemplateId(
-			ResultObservation resultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static boolean validateResultObservationTemplateId(ResultObservation resultObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.RESULT_OBSERVATION);
 			try {
-				VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper
+						.createInvariant(VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get())
 				.check(resultObservation)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
-								Mu2consolPlugin.INSTANCE
-										.getString("ResultObservationTemplateId"),
-								new Object[] { resultObservation }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
+						Mu2consolPlugin.INSTANCE.getString("ResultObservationResultObservationTemplateId"),
+						new Object[] { resultObservation }));
 			}
 
 			return false;

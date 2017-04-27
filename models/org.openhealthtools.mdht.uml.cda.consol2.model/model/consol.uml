@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Package xmi:id="_2B30sBSVEeGGzu7fmW9pXw" name="consol">
     <packageImport xmi:id="_PKZrwE3jEeGVaJScxwOy7g">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+      <importedPackage href="pathmap://CDA_MODEL/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
     </packageImport>
     <packageImport xmi:id="_hPUsgNcZEeGfQ6frO0B-Jg">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+      <importedPackage href="pathmap://DATATYPES_MODEL/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
     </packageImport>
     <packageImport xmi:id="_q3SeUD49EeKUq_Bmx5Topg">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+      <importedPackage href="pathmap://VOCAB_MODEL/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
     </packageImport>
     <packageImport xmi:id="_FEFdMD5QEeKUq_Bmx5Topg">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#_0"/>
@@ -33,7 +33,6 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_2FRG8RSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-allergies.uml#_2FRuAhSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_2FhloBSVEeGGzu7fmW9pXw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_2FizwRSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_2F6nMBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_2GjgYxSVEeGGzu7fmW9pXw"/>
@@ -547,13 +546,6 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-encounters.uml#_62epcG65EeGeVrQbtyMiPg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-encounters.uml#_-WDHoG65EeGeVrQbtyMiPg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_FewvQHK2EeGig5KF4CgPyw"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_OOYRI3egEeGLwesdFe7o6w">
-      <memberEnd href=".controlled/consol-other.uml#_OOYRIHegEeGLwesdFe7o6w"/>
-      <memberEnd href="#_OOYRJHegEeGLwesdFe7o6w"/>
-      <ownedEnd xmi:id="_OOYRJHegEeGLwesdFe7o6w" association="_OOYRI3egEeGLwesdFe7o6w">
-        <type xmi:type="uml:Class" href=".controlled/consol-other.uml#_HgbLYHegEeGLwesdFe7o6w"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_rPIpgHhvEeGJtvg2iiStYg">
       <memberEnd href=".controlled/consol-payers.uml#_rPHbYHhvEeGJtvg2iiStYg"/>
       <memberEnd href="#_rPJQkHhvEeGJtvg2iiStYg"/>
@@ -662,51 +654,51 @@ This template indicates that the subject is not known to be on any medications.<
         </specification>
       </ownedRule>
       <generalization xmi:id="_6kIXMeZEEeGINOJ_SD9_dA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_-7rmQOZEEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_GvaBQOZFEeGINOJ_SD9_dA" value="OBS"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-7rmSOZEEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_IENRAOZFEeGINOJ_SD9_dA" value="EVN"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-7rmReZEEeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OhgEkOZFEeGINOJ_SD9_dA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OhW6oOZFEeGINOJ_SD9_dA" value="*"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-7rmQeZEEeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-7rmQuZEEeGINOJ_SD9_dA" name="effectiveTime" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-7rmROZEEeGINOJ_SD9_dA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-7rmQ-ZEEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-7rmSeZEEeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_weMMgeZFEeGINOJ_SD9_dA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_weMMgOZFEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-7rmTOZEEeGINOJ_SD9_dA" name="text" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-7rmTuZEEeGINOJ_SD9_dA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-7rmTeZEEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-7rmT-ZEEeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QC2YeZFEeGINOJ_SD9_dA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QC2YOZFEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_agwuEOZUEeGINOJ_SD9_dA"/>
@@ -715,64 +707,7 @@ This template indicates that the subject is not known to be on any medications.<
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-cognitive.uml#_dXKPQOZbEeGINOJ_SD9_dA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-cognitive.uml#_gkBM0OZbEeGINOJ_SD9_dA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-cognitive.uml#_jfoCUOZbEeGINOJ_SD9_dA"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_lm3boOZbEeGINOJ_SD9_dA" name="DeceasedObservation">
-      <ownedComment xmi:id="_ZtiHEOZkEeGINOJ_SD9_dA">
-        <body>This clinical statement represents the observation that a patient has expired. It also represents the cause of death, indicated by an entryRelationship type of &quot;CAUS&quot;.</body>
-      </ownedComment>
-      <ownedRule xmi:id="_Dk8p4OZlEeGINOJ_SD9_dA" name="effectiveTimeLow" constrainedElement="_lm3boOZbEeGINOJ_SD9_dA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_E9UyEOZlEeGINOJ_SD9_dA">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>effectiveTime SHALL contain exactly one [1..1] low</body>
-          <body>not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.low->size() = 1</body>
-        </specification>
-      </ownedRule>
-      <generalization xmi:id="_lm3boeZbEeGINOJ_SD9_dA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-      </generalization>
-      <ownedAttribute xmi:id="_f4E9wOZkEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_hrO9cOZkEeGINOJ_SD9_dA" value="OBS"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_f4E9yOZkEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_o6qYkOZkEeGINOJ_SD9_dA" value="EVN"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_f4E9xeZkEeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zsFTweZkEeGINOJ_SD9_dA" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zsFTwOZkEeGINOJ_SD9_dA" value="*"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_f4E9weZkEeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_f4E9yeZkEeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AD3IweZlEeGINOJ_SD9_dA" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AD3IwOZlEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_f4E9wuZkEeGINOJ_SD9_dA" name="effectiveTime" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AcaLoeZlEeGINOJ_SD9_dA" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AcaLoOZlEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_f4OuwOZkEeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X0Wtkeu3EeGU4e2Grhba1w" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X0WtkOu3EeGU4e2Grhba1w" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_U5AysOZlEeGINOJ_SD9_dA" name="problemObservation" association="_U5AysuZlEeGINOJ_SD9_dA">
-        <type xmi:type="uml:Class" href=".controlled/consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U5AyseZlEeGINOJ_SD9_dA"/>
-      </ownedAttribute>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-vitalsigns.uml#_lm3boOZbEeGINOJ_SD9_dA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_rVl5AOZbEeGINOJ_SD9_dA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_viRU0OZbEeGINOJ_SD9_dA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_zBlUUOZbEeGINOJ_SD9_dA"/>
@@ -871,17 +806,17 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         </specification>
       </ownedRule>
       <generalization xmi:id="_9raZwOZbEeGINOJ_SD9_dA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_z63WYOcDEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_8YGocOcDEeGINOJ_SD9_dA" value="OBS"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_z63WaOcDEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="__SYBMOcDEeGINOJ_SD9_dA" value="EVN"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_z63WaecDEeGINOJ_SD9_dA" name="negationInd" visibility="private">
         <ownedComment xmi:id="_DAtUIOcEEeGINOJ_SD9_dA">
@@ -890,47 +825,47 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EXlngOcEEeGINOJ_SD9_dA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EXcdkOcEEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_LYVyAExtEd6h-an5IXo-DA"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_LYVyAExtEd6h-an5IXo-DA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_z63WZecDEeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J4WhYecEEeGINOJ_SD9_dA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J4WhYOcEEeGINOJ_SD9_dA" value="*"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_z63WYecDEeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_z63WcucDEeGINOJ_SD9_dA" name="text" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z63WdOcDEeGINOJ_SD9_dA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z63Wc-cDEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_z63WbOcDEeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z63WbucDEeGINOJ_SD9_dA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z63WbecDEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zFxUsRtDEeWf0pnHQlBeQg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zFxUsBtDEeWf0pnHQlBeQg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_z63WYucDEeGINOJ_SD9_dA" name="effectiveTime" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z63WZOcDEeGINOJ_SD9_dA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z63WY-cDEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OVS84RtLEeWf0pnHQlBeQg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OVS84BtLEeWf0pnHQlBeQg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_z7BHYOcDEeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IHBRMOcFEeGINOJ_SD9_dA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IG3gMOcFEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_z63Wb-cDEeGINOJ_SD9_dA" name="targetSiteCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a4PFces4EeKDusM4GJHmkQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a4PFcOs4EeKDusM4GJHmkQ" value="*"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MUHDEOcNEeGINOJ_SD9_dA" name="entryRelationship" type="_RNbicOcNEeGINOJ_SD9_dA" association="_MUQ0EecNEeGINOJ_SD9_dA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MUQ0EOcNEeGINOJ_SD9_dA"/>
@@ -946,12 +881,12 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
           <body>INLINE&amp;typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401238003'</body>
         </ownedComment>
         <generalization xmi:id="_RNksYOcNEeGINOJ_SD9_dA">
-          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_SKuRIOcNEeGINOJ_SD9_dA" name="typeCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_FRSrIOcOEeGINOJ_SD9_dA" value="COMP"/>
-          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_IBlogOcOEeGINOJ_SD9_dA" name="observation1" type="_g74YUOcNEeGINOJ_SD9_dA" association="_IBvZgecOEeGINOJ_SD9_dA">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MaUjUecOEeGINOJ_SD9_dA" value="1"/>
@@ -959,27 +894,27 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_g74YUOcNEeGINOJ_SD9_dA" name="Observation1">
           <generalization xmi:id="_iBNosOcNEeGINOJ_SD9_dA">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
           <ownedAttribute xmi:id="_kREygOcNEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+            <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_O8ovEOcOEeGINOJ_SD9_dA" value="OBS"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_kREygucNEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+            <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_QgBNYOcOEeGINOJ_SD9_dA" value="EVN"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_kREygecNEeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_kREyg-cNEeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a0RrcOcOEeGINOJ_SD9_dA" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a0H6cOcOEeGINOJ_SD9_dA" value="1"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
@@ -988,12 +923,12 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
           <body>INLINE&amp;typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401239006'</body>
         </ownedComment>
         <generalization xmi:id="_T1_gIOcNEeGINOJ_SD9_dA">
-          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_W0t7EOcNEeGINOJ_SD9_dA" name="typeCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_r9LtIOcOEeGINOJ_SD9_dA" value="COMP"/>
-          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_pjpC4OcOEeGINOJ_SD9_dA" name="observation2" type="_mEOLIOcNEeGINOJ_SD9_dA" association="_pjpC4ucOEeGINOJ_SD9_dA">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyDs8OcOEeGINOJ_SD9_dA" value="1"/>
@@ -1001,27 +936,27 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_mEOLIOcNEeGINOJ_SD9_dA" name="Observation2">
           <generalization xmi:id="_nABsEOcNEeGINOJ_SD9_dA">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
           <ownedAttribute xmi:id="_n710EOcNEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+            <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_0nhAAOcOEeGINOJ_SD9_dA" value="OBS"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_n710EucNEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+            <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_2ACSIOcOEeGINOJ_SD9_dA" value="EVN"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_n710EecNEeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_n710E-cNEeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8juooOcOEeGINOJ_SD9_dA" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8jk3oOcOEeGINOJ_SD9_dA" value="1"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
@@ -1030,12 +965,12 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
           <body>INLINE&amp;typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='425094009'</body>
         </ownedComment>
         <generalization xmi:id="_VAhZkOcNEeGINOJ_SD9_dA">
-          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_YvdJcOcNEeGINOJ_SD9_dA" name="typeCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_NNi6kOcPEeGINOJ_SD9_dA" value="COMP"/>
-          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_AOylIOcPEeGINOJ_SD9_dA" name="observation3" type="_rrNo0OcNEeGINOJ_SD9_dA" association="_AOylIucPEeGINOJ_SD9_dA">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K7JaIecPEeGINOJ_SD9_dA" value="1"/>
@@ -1043,27 +978,27 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_rrNo0OcNEeGINOJ_SD9_dA" name="Observation3">
           <generalization xmi:id="_smRi4OcNEeGINOJ_SD9_dA">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
           <ownedAttribute xmi:id="_tYaKcOcNEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+            <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_TYrnIOcPEeGINOJ_SD9_dA" value="OBS"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_tYaKcucNEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+            <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_VCT3YOcPEeGINOJ_SD9_dA" value="EVN"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_tYaKcecNEeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_tYaKc-cNEeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aS_G0OcPEeGINOJ_SD9_dA" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aS184OcPEeGINOJ_SD9_dA" value="1"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
@@ -1084,9 +1019,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_0aKXMuZjEeGINOJ_SD9_dA"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_U5AysuZlEeGINOJ_SD9_dA" memberEnd="_U5AysOZlEeGINOJ_SD9_dA _U5Ays-ZlEeGINOJ_SD9_dA">
-      <ownedEnd xmi:id="_U5Ays-ZlEeGINOJ_SD9_dA" type="_lm3boOZbEeGINOJ_SD9_dA" association="_U5AysuZlEeGINOJ_SD9_dA"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-vitalsigns.uml#_U5AysuZlEeGINOJ_SD9_dA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_f2rYsubqEeGINOJ_SD9_dA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_hM92MubqEeGINOJ_SD9_dA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_iXWlsubqEeGINOJ_SD9_dA"/>
@@ -1236,28 +1169,28 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <body>For reports on mothers and their fetus(es), information on a mother is mapped to recordTarget, PatientRole, and Patient. Information on the fetus is mapped to subject, relatedSubject, and SubjectPerson at the CDA section level. Both context information on the mother and fetus must be included in the document if observations on fetus(es) are contained in the document.</body>
       </ownedComment>
       <generalization xmi:id="_TkyvwfKwEeGFUPBL8qS7yQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_grTqsEcaEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_grTqsEcaEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_XONtgPKwEeGFUPBL8qS7yQ" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hr3YIPKwEeGFUPBL8qS7yQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hruOMPKwEeGFUPBL8qS7yQ" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_aKlpAErmEd6FXKclYGEDCw"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_aKlpAErmEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_XONtg_KwEeGFUPBL8qS7yQ" name="subject" visibility="private" type="_jKMXUPKwEeGFUPBL8qS7yQ" aggregation="composite" association="_XOXegPKwEeGFUPBL8qS7yQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hI51AfKwEeGFUPBL8qS7yQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hI51APKwEeGFUPBL8qS7yQ" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Tn_qUUoYEd6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Tn_qUUoYEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_jKMXUPKwEeGFUPBL8qS7yQ" name="SubjectPerson">
         <generalization xmi:id="_jKMXUfKwEeGFUPBL8qS7yQ">
-          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_r19lQEcaEd6besF9iFIJkQ"/>
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r19lQEcaEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_jkhi4PKwEeGFUPBL8qS7yQ" name="name" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kUJB8fKwEeGFUPBL8qS7yQ" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kUJB8PKwEeGFUPBL8qS7yQ" value="1"/>
-          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_DUdpAErqEd6FXKclYGEDCw"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_DUdpAErqEd6FXKclYGEDCw"/>
         </ownedAttribute>
       </nestedClassifier>
     </packagedElement>
@@ -1373,9 +1306,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-discharge.uml#_ihaWkI55EeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_Qjxz4I6bEeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_0Vb5YI6bEeOB0eBUISUB4Q"/>
-    <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_UqXAAI6hEeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_50a2UI62EeOB0eBUISUB4Q"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_LhOgMI7AEeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_R13cII7CEeOB0eBUISUB4Q">
       <memberEnd href=".controlled/consol-planofcare.uml#_R12OAI7CEeOB0eBUISUB4Q"/>
       <memberEnd href="#_R14DMI7CEeOB0eBUISUB4Q"/>
@@ -1406,49 +1337,33 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_-miMII9TEeOB0eBUISUB4Q"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_nM-u8I9XEeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_JvoKAY9gEeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_oqvXUI9gEeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_An8P8I9kEeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_9mHRII94EeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_bp08YY95EeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_xo9GII95EeOB0eBUISUB4Q"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_FVBBEI96EeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Iu3cUI97EeOB0eBUISUB4Q"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_aJDbQI97EeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_b--wMI99EeOB0eBUISUB4Q"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_PrZpQI9-EeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_euo-8I9-EeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_JtOlMI9_EeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_V0cOoI9_EeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Ii0yII-AEeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_aqT78I-AEeOB0eBUISUB4Q"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_uy4MsI-AEeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Fjh6AI-BEeOB0eBUISUB4Q"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_XD5vgJA8EeOZX935IVJfOg"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_kZW7cJBBEeOZX935IVJfOg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_E8w8QJBCEeOZX935IVJfOg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_m3EekJBCEeOZX935IVJfOg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_5MSiYZBCEeOZX935IVJfOg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_HBNq0JBDEeOZX935IVJfOg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_QcUL8JBGEeOZX935IVJfOg"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_Z8eBoJBIEeOZX935IVJfOg"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_56LUYJBIEeOZX935IVJfOg">
-      <memberEnd href=".controlled/consol-other.uml#_56KtU5BIEeOZX935IVJfOg"/>
-      <memberEnd href="#_56LUYZBIEeOZX935IVJfOg"/>
-      <ownedEnd xmi:id="_56LUYZBIEeOZX935IVJfOg" association="_56LUYJBIEeOZX935IVJfOg">
-        <type xmi:type="uml:Class" href=".controlled/consol-other.uml#_zWyf4JBIEeOZX935IVJfOg"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-immunizations.uml#_KRcPwJXFEeOgXcDbh8Igkw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_n2J7wJXOEeOgXcDbh8Igkw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_o-_9sJXPEeOgXcDbh8Igkw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_GXlxYJmLEeOeSLwbllPCyw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_0NewYJmVEeOLJeQez13EkQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_ncafYJmaEeOLJeQez13EkQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_nC0xUJmzEeOLJeQez13EkQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-cognitive.uml#_kyeGAJm4EeOLJeQez13EkQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_rAl4UJm8EeOLJeQez13EkQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_6SDawJm9EeOLJeQez13EkQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_KTrEAJpdEeOK6dzbL4VoTA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_D6Lm0JpnEeOK6dzbL4VoTA"/>
@@ -1464,10 +1379,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-discharge.uml#_EHgh0J2AEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_UCEroJ2BEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-cognitive.uml#_4tfOMJ2CEeORR8_YW0n_jQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_yrYFUJ2DEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_A4xYIJ2EEeORR8_YW0n_jQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_K9QU0J2EEeORR8_YW0n_jQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_VjU7oJ2EEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_MlM4IJ2GEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-socialhistory.uml#_Ej1NQJ2HEeORR8_YW0n_jQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-exams.uml#_CDn9gJ2LEeORR8_YW0n_jQ"/>
@@ -1496,7 +1408,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-documents.uml#_itRPkKAEEeOQs7VC4HptuQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_kalloKAHEeOQs7VC4HptuQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_--ds8KAHEeOQs7VC4HptuQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_E4vysKALEeOQs7VC4HptuQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_YWz4cKAMEeOQs7VC4HptuQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_XdPhQKAOEeOQs7VC4HptuQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_A7R6wKAPEeOQs7VC4HptuQ"/>
@@ -1504,8 +1415,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_1d4_gKAQEeOQs7VC4HptuQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_dqjbQKASEeOQs7VC4HptuQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2fSgMKASEeOQs7VC4HptuQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_6MjmsKATEeOQs7VC4HptuQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_qwPNMKAUEeOQs7VC4HptuQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-documents.uml#_mgnrsKDQEeOPqKnBFQcY_A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_zqJb0KDSEeOPqKnBFQcY_A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_nNzacKDTEeOPqKnBFQcY_A"/>
@@ -1517,7 +1426,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_EePHEKWUEeOPqKnBFQcY_A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_AfpVIKWVEeOPqKnBFQcY_A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_xxIc0KWVEeOPqKnBFQcY_A"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_eyDHMKWWEeOPqKnBFQcY_A"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-documents.uml#_OA1xkKi8EeOTwZftO6CV5g"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_JSJwQKk9EeOTwZftO6CV5g"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_rO_pMKk9EeOTwZftO6CV5g"/>
@@ -1557,23 +1465,17 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_xWMO8KvEEeOEkquDecUlEw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_ULjrUKvFEeOEkquDecUlEw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_pYqFwKvGEeOEkquDecUlEw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Xn1TAKvHEeOEkquDecUlEw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_xFWy4K4PEeORf5eJaKt1KQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Goqt4K4REeORf5eJaKt1KQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_1uPXoK4REeORf5eJaKt1KQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_0mgeEK4SEeORf5eJaKt1KQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_SMRCAK4TEeORf5eJaKt1KQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_DKpngK4UEeORf5eJaKt1KQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_oN0YMK4UEeORf5eJaKt1KQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_QTRRUK4ZEeORf5eJaKt1KQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_uja2EK4ZEeORf5eJaKt1KQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_6pOQoK4hEeORf5eJaKt1KQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-socialhistory.uml#_cg0dMK4iEeORf5eJaKt1KQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_Bpk7sK4nEeORf5eJaKt1KQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_rnHUoK4nEeORf5eJaKt1KQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_8Hgk0K4nEeORf5eJaKt1KQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_rwNJwK4oEeORf5eJaKt1KQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_8pVqEK4oEeORf5eJaKt1KQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_zQLTkK4uEeORf5eJaKt1KQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_F4Z9cK70EeORf5eJaKt1KQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_civnYK70EeORf5eJaKt1KQ"/>
@@ -1691,7 +1593,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-discharge.uml#_Trd1cOEMEeOmBMTtnrPqww"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-immunizations.uml#_zI6vcOE7EeOTq9XEMvvkWw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_OFgNEOG9EeO04sHNODkHmQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_-yJiUOG9EeO04sHNODkHmQ"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_xbTX0OHPEeO04sHNODkHmQ">
       <memberEnd href=".controlled/consol-immunizations.uml#_xbRioOHPEeO04sHNODkHmQ"/>
       <memberEnd href="#_xbTX0eHPEeO04sHNODkHmQ"/>
@@ -1756,8 +1657,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_lLnRMOaYEeOmzetP5oaH3A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_LC9bYOaaEeOmzetP5oaH3A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_cU5AwOabEeOmzetP5oaH3A"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_9uMu0OabEeOmzetP5oaH3A"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_TJCfwOacEeOmzetP5oaH3A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_rbglIOacEeOmzetP5oaH3A"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_9X_RcOafEeOmzetP5oaH3A"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_bDPFMOdXEeOqBOMhgDlycQ"/>
@@ -1769,15 +1668,12 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <type xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_t6A5wOdeEeOqBOMhgDlycQ"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Sd8wwOdfEeOqBOMhgDlycQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_2543cOdhEeOqBOMhgDlycQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Di53UOdrEeOqBOMhgDlycQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_5VekkOdrEeOqBOMhgDlycQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_beIr8OdsEeOqBOMhgDlycQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_jKZssOdvEeOqBOMhgDlycQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_g6VmMOd9EeOqBOMhgDlycQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_D6J_EOd-EeOqBOMhgDlycQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_VkvxgOd-EeOqBOMhgDlycQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_vwwycOd-EeOqBOMhgDlycQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Cc4TUOd_EeOqBOMhgDlycQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_YwkX0Od_EeOqBOMhgDlycQ"/>
@@ -1785,7 +1681,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_cs0YsOeEEeOqBOMhgDlycQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_eviAcOgKEeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_03TI0OgKEeO-iJTuAv7BKQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_zVoFQOgLEeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_I-ENUOgMEeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_erkbkOgMEeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_yF3REOgMEeO-iJTuAv7BKQ"/>
@@ -1793,7 +1688,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_Yj45YOgREeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_-fUQUOgoEeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_av_3sOgpEeO-iJTuAv7BKQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_--d1AOgpEeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_ZKk8kOgqEeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_xKOzoOgqEeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_QsQ3AOgrEeO-iJTuAv7BKQ"/>
@@ -1804,7 +1698,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_CCr8gOhBEeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_hBZ3cOhBEeO-iJTuAv7BKQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_LPMA8OhEEeO-iJTuAv7BKQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_hApZYOp5EeOfFtFITOHUWA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_RJsSUOp6EeOfFtFITOHUWA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_w-_3AOp6EeOfFtFITOHUWA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Opg_IOp7EeOfFtFITOHUWA"/>
@@ -1880,17 +1773,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_40SJMPDFEeOKPKE9au0oug"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#__YbWMPDGEeOKPKE9au0oug"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_5Y9xUPDKEeOKPKE9au0oug"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_UxJqcPDLEeOKPKE9au0oug"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_p3bOsPDNEeOKPKE9au0oug">
-      <memberEnd href=".controlled/consol-problems.uml#_p3ZZgPDNEeOKPKE9au0oug"/>
-      <memberEnd href="#_p3bOsfDNEeOKPKE9au0oug"/>
-      <ownedEnd xmi:id="_p3bOsfDNEeOKPKE9au0oug" association="_p3bOsPDNEeOKPKE9au0oug">
-        <type xmi:type="uml:Class" href=".controlled/consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_OWS_gPDOEeOKPKE9au0oug">
       <memberEnd href=".controlled/consol-problems.uml#_OWRKUPDOEeOKPKE9au0oug"/>
       <memberEnd href="#_OWS_gfDOEeOKPKE9au0oug"/>
@@ -2432,14 +2317,8 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_U-R84DhbEeS1WeMhbm6GZw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_DEKEMDhcEeS1WeMhbm6GZw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_VuMGwDqTEeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Dwc5YDqUEeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_X81TIDqUEeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_rPCjoDqUEeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_9PTEEDqUEeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_YOlVADqVEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_IFUEADqYEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_nL0B8DqYEeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_57XRUDqYEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_MZARUDqZEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_HbmGsDqaEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_XvfzADqaEeSyGa6KC25kiw"/>
@@ -2465,12 +2344,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_POoqkDqtEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_cMg2QDqtEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_pt8a8DqtEeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_9zJ1sDqtEeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#__xB3oDqtEeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_BaB1wDquEeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_DQUpADquEeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_E7yFQDquEeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_G67SgDquEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_35vOcDqxEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_UXqnoDqyEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_AxfnYDq0EeSyGa6KC25kiw"/>
@@ -2478,14 +2351,10 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_tmjVIDq2EeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_KzGu4Dq3EeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_AVyzwDq9EeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_H596YDq-EeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_PLsbkDq-EeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_TfTl0Dq-EeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_qlWsoDrEEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_DKCIsDz8EeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_h10gkDz8EeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_0lbaUDz8EeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_-tSbIDz8EeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_gp8G0Dz9EeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_tLEsIDz9EeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_91pzEDz9EeSyGa6KC25kiw"/>
@@ -2512,7 +2381,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_Rv4dID0PEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_dvaKMD0PEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_s1lfID0PEeSyGa6KC25kiw"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_84uyoD0PEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_RlTvYD0QEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_ZH9ogD0QEeSyGa6KC25kiw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_gxflsD0QEeSyGa6KC25kiw"/>
@@ -2618,6 +2486,195 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <type xmi:type="uml:Class" href=".controlled/consol-encounters.uml#_9es5kK11EeS-n_bBhdNjYg"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_X5kN8MHyEeST26B_nQ4gxA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_yQQYYMHzEeST26B_nQ4gxA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_YauMIMQUEeSt_63yiINGSw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Dd1tQMQ6EeSt_63yiINGSw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_vaxzIMagEeSY-qHOFt9wVQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_2nYMYMdTEeShCO0Pdt1H3g"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QxdF4MnAEeSr1c1X9ACWbg">
+      <memberEnd href=".controlled/consol-problems.uml#_Qxb3wMnAEeSr1c1X9ACWbg"/>
+      <memberEnd href="#_Qxds8MnAEeSr1c1X9ACWbg"/>
+      <ownedEnd xmi:id="_Qxds8MnAEeSr1c1X9ACWbg" association="_QxdF4MnAEeSr1c1X9ACWbg">
+        <type xmi:type="uml:Class" href=".controlled/consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_O-xbwMnKEeSr1c1X9ACWbg">
+      <memberEnd href=".controlled/consol-procedures.uml#_O-u_gMnKEeSr1c1X9ACWbg"/>
+      <memberEnd href="#_O-yC0MnKEeSr1c1X9ACWbg"/>
+      <ownedEnd xmi:id="_O-yC0MnKEeSr1c1X9ACWbg" association="_O-xbwMnKEeSr1c1X9ACWbg">
+        <type xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_CFMuYPDbEeOKPKE9au0oug"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qbOJ0MnKEeSr1c1X9ACWbg">
+      <memberEnd href=".controlled/consol-procedures.uml#_qbM7sMnKEeSr1c1X9ACWbg"/>
+      <memberEnd href="#_qbOJ0cnKEeSr1c1X9ACWbg"/>
+      <ownedEnd xmi:id="_qbOJ0cnKEeSr1c1X9ACWbg" association="_qbOJ0MnKEeSr1c1X9ACWbg">
+        <type xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_chMe8MnKEeSr1c1X9ACWbg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NHX_0MnLEeSr1c1X9ACWbg">
+      <memberEnd href=".controlled/consol-procedures.uml#_NHWxsMnLEeSr1c1X9ACWbg"/>
+      <memberEnd href="#_NHX_0cnLEeSr1c1X9ACWbg"/>
+      <ownedEnd xmi:id="_NHX_0cnLEeSr1c1X9ACWbg" association="_NHX_0MnLEeSr1c1X9ACWbg">
+        <type xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_61p78MnKEeSr1c1X9ACWbg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_56Cy0MnLEeSr1c1X9ACWbg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qjgbwMw-EeS1kaU6ESW4Lg">
+      <memberEnd href=".controlled/consol-procedures.uml#_qjemkMw-EeS1kaU6ESW4Lg"/>
+      <memberEnd href="#_qjhC0Mw-EeS1kaU6ESW4Lg"/>
+      <ownedEnd xmi:id="_qjhC0Mw-EeS1kaU6ESW4Lg" association="_qjgbwMw-EeS1kaU6ESW4Lg">
+        <type xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_QoLWAPDjEeOKPKE9au0oug"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Xct7oMw_EeS1kaU6ESW4Lg">
+      <memberEnd href=".controlled/consol-procedures.uml#_XcstgMw_EeS1kaU6ESW4Lg"/>
+      <memberEnd href="#_Xct7ocw_EeS1kaU6ESW4Lg"/>
+      <ownedEnd xmi:id="_Xct7ocw_EeS1kaU6ESW4Lg" association="_Xct7oMw_EeS1kaU6ESW4Lg">
+        <type xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_NgSuwMw_EeS1kaU6ESW4Lg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_w_ANoMxAEeS1kaU6ESW4Lg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_-wdgcMxCEeS1kaU6ESW4Lg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_i5TgAMzJEeSLqosJ4F90vA">
+      <memberEnd href=".controlled/consol-procedures.uml#_i5QcsMzJEeSLqosJ4F90vA"/>
+      <memberEnd href="#_i5UuIMzJEeSLqosJ4F90vA"/>
+      <ownedEnd xmi:id="_i5UuIMzJEeSLqosJ4F90vA" association="_i5TgAMzJEeSLqosJ4F90vA">
+        <type xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_fCVOQPDqEeOKPKE9au0oug"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_sKjzgMzKEeSLqosJ4F90vA">
+      <memberEnd href=".controlled/consol-procedures.uml#_sKilYMzKEeSLqosJ4F90vA"/>
+      <memberEnd href="#_sKkakMzKEeSLqosJ4F90vA"/>
+      <ownedEnd xmi:id="_sKkakMzKEeSLqosJ4F90vA" association="_sKjzgMzKEeSLqosJ4F90vA">
+        <type xmi:type="uml:Class" href=".controlled/consol-procedures.uml#_nsWi0MzKEeSLqosJ4F90vA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_mdU5AMzMEeSLqosJ4F90vA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-procedures.uml#_FfMjsMzPEeSLqosJ4F90vA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-results.uml#_YnbSYM2LEeSEZ8MJJ3ZzLg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-results.uml#_p-V64M2LEeSEZ8MJJ3ZzLg"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_dGARYOLSEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_teHrIOLZEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_3IyZoOLZEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_UU7jsOLaEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Y1zG0OLaEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_coJXEOLaEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_3oyS4OLaEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_PWyZQOLbEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_TepmgOLbEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_WyhyEOLbEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_ZmV9gOLbEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_6gMIYOLbEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#__iT-cOLbEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_CQSnoOLcEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_FaHfUOLcEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_IUwEcOLcEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_onmHcOLhEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_wLYpAOLhEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_88_TQOLhEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_09LuoOLiEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_kMGhoOLjEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_pTSL8OLlEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Pd67AOLmEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_N2lUUOLnEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_8vCvIOLnEeS505YV9ux2XA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_mMk3QON1EeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_znyiYON5EeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_-2P-4ON5EeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_BycqQON6EeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_V_ZrwON6EeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_nuEF4ON6EeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_2o9TsOOBEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_6jCjoOOBEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_9Dmb4OOBEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_ALI0kOOCEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_EGP_QOOCEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_voBhYOOeEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_UW7SQOOfEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_ZlBHwOOfEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_jPuSgOOfEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_nOX5YOOfEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_zksV0OOfEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_2A8V0OOfEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_RGaR0OOhEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_aeWRkOOhEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_23gqEOOiEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_BIHXMOOjEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_IzWkkOOjEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_YOD_EOOjEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_3nmNwOOjEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_sfkT8OOkEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_6lhiAOOkEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_M8ui0OOlEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_g48ZoOOlEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_83vxYOOmEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_ZFEiwOOnEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_l0HBMOOnEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_zmFjUOOnEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_8nnOMOOnEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_HXQnwOOoEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_y9YvIOOoEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Xf_wcOOpEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_9zwmUOOpEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_TeyvYOOqEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_JbYUQOOrEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_6SLrEOOrEeS_XOr-dz_KWA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_9Qy_sOUIEeS-cp9IWljmeQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_P4Q_Mu7PEeSlj6niJbPAAA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_x4soIO9SEeSE7JpIy9Dpjg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_vfvaYPAbEeSw2PsYr-oqaQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_DQ-JMPAcEeSw2PsYr-oqaQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_K-Ov0PAcEeSw2PsYr-oqaQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_WAC3cPAcEeSw2PsYr-oqaQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-problems.uml#_nlSbIPgEEeSx6PQhw3nAUw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_AEixwPglEeSx6PQhw3nAUw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_YkFp0PglEeSx6PQhw3nAUw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-advancedirectives.uml#_qtzP0_mnEeSGHoih4Jm09A"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_1QL2I_p7EeS-CfvNxekztA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_UbpMk_p8EeS-CfvNxekztA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_193TEPtNEeSoPO_Q5cglLA">
+      <memberEnd href=".controlled/consol-discharge.uml#_19xMcPtNEeSoPO_Q5cglLA"/>
+      <memberEnd href="#_193TEftNEeSoPO_Q5cglLA"/>
+      <ownedEnd xmi:id="_193TEftNEeSoPO_Q5cglLA" association="_193TEPtNEeSoPO_Q5cglLA">
+        <type xmi:type="uml:Class" href=".controlled/consol-discharge.uml#_-hFd4I0CEeOoMZgUoTghIg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_uMvNAP2mEeS3qvpPe63SpA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_M1p3EP2nEeS3qvpPe63SpA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_yD6KQ_5TEeSoDZvueq4eYw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_GaoLw_5UEeSoDZvueq4eYw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_aBQ0I_5UEeSoDZvueq4eYw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_-AHoI_5UEeSoDZvueq4eYw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_t1UvQP8qEeS4jrgU1p4iug"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_5WZlwP8qEeS4jrgU1p4iug"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_GDh_sP8rEeS4jrgU1p4iug"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_Iels4P8rEeS4jrgU1p4iug"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_KczGAP8rEeS4jrgU1p4iug"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_NY0yQP8rEeS4jrgU1p4iug"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_zW4OIP88EeS4jrgU1p4iug"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_aH0IMP89EeS4jrgU1p4iug"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-discharge.uml#_BDTscP8-EeS4jrgU1p4iug"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_QCnYwAAMEeWla-1cYCOuzQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_eopHYACjEeWNGdLwd_3YGQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-planofcare.uml#_IJDfcACkEeWNGdLwd_3YGQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-payers.uml#_ReWBkACpEeWNGdLwd_3YGQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_BjsMkAPnEeWlspDC_8d7eg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_XSykAAPsEeWlspDC_8d7eg"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_iX9zgDWCEeWSirBmKjo0Zw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_eVbDwDWFEeWSirBmKjo0Zw"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_kowjcDr-EeWD4MX6K2c_gA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_Wud1wDuhEeWD4MX6K2c_gA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_l4fv8DuhEeWD4MX6K2c_gA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_XLTGQDuiEeWD4MX6K2c_gA"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_22Wl8DumEeWD4MX6K2c_gA"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_8fGTcD-qEeaJttsCYk-pKw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-socialhistory.uml#_GxM7gELDEeaf56PK5wLLJw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_lZQUEFgmEeaw99gz9T1FvQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-allergies.uml#_LspMELDzEeafNo3UpQoAYw"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_1EWToLsxEead0dyhUBLajQ"/>
+    <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_zyeCwLs2Eead0dyhUBLajQ"/>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
@@ -2760,7 +2817,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:AssociationValidation xmi:id="_sGVWMBUlEeGvPruliC3crg" severity="WARNING"/>
   <CDA:PropertyValidation xmi:id="_vAJFABVeEeGQCvUGzi1kDQ" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_FBOT8BqsEeGo461UQq-B1g" severity="WARNING">
-    <ruleId>CONF:8849</ruleId>
+    <ruleId>CONF:8849, R2.1=CONF:1198-8849</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_CtfWwRqsEeGo461UQq-B1g"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_ChoggBq2EeGo461UQq-B1g">
@@ -2783,13 +2840,12 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-immunizations.uml#_nTmMohrbEeGo461UQq-B1g"/>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_qYdhABt5EeGnMahsPjlwOw" severity="INFO" typeCode="REFR">
-    <ruleId>CONF:8860</ruleId>
-    <ruleId>CONF:8861</ruleId>
-    <ruleId>CONF:15539</ruleId>
+    <ruleId>CONF:8860, CONF:8861, CONF:15539</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_nYYbMBt5EeGnMahsPjlwOw"/>
   </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_1ZGHcBt6EeGnMahsPjlwOw" severity="WARNING">
     <ruleId>CONF:9012</ruleId>
+    <ruleId>R2.0=CONF:1098-9012</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_0bKfkRt6EeGnMahsPjlwOw"/>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_qzhEUBuEEeGnMahsPjlwOw" templateId="11111"/>
@@ -2804,8 +2860,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-socialhistory.uml#_5LuUQBtpEeGT89b80j3MTg"/>
   </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_2dO_4BrIEeGZ46SdiDZtPQ" severity="WARNING">
-    <ruleId>CONF:7119</ruleId>
-    <ruleId>CONF:7120</ruleId>
+    <ruleId>CONF:7119, CONF:7120</ruleId>
     <base_Association href=".controlled/consol-results.uml#_GXXWwBrIEeGZ46SdiDZtPQ"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_xyLJgBrJEeGZ46SdiDZtPQ">
@@ -2830,14 +2885,14 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-procedures.uml#_VDZHUBq9EeGYcL3NfEQErA"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_gfRaABxYEeG8X6LmnKJ43Q" severity="WARNING">
-    <ruleId>CONF:7271</ruleId>
-    <ruleId>CONF:7272</ruleId>
+    <ruleId>CONF:7271, CONF:7272</ruleId>
     <base_Association href=".controlled/consol-vitalsigns.uml#_XgAY8BxYEeG8X6LmnKJ43Q"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_IVoLYBxWEeGXP8PxDYviDg" message="" severity="INFO">
     <ruleId>CONF:7751</ruleId>
-    <ruleId>CONF:7752</ruleId>
     <ruleId>CONF:15911</ruleId>
+    <ruleId>R2.0=CONF:1098-7751</ruleId>
+    <ruleId>R2.0=CONF:1098-15911</ruleId>
     <base_Association href=".controlled/consol-procedures.uml#_F1DsEBxWEeGXP8PxDYviDg"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_v3oJcBxrEeGXP8PxDYviDg" severity="WARNING">
@@ -2846,8 +2901,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_RusKgBxsEeGXP8PxDYviDg" severity="INFO">
     <ruleId>CONF:8311</ruleId>
-    <ruleId>CONF:8312</ruleId>
     <ruleId>CONF:15599</ruleId>
+    <ruleId>R2.0=CONF:1098-8311</ruleId>
+    <ruleId>R2.0=CONF:1098-15599</ruleId>
     <base_Association href=".controlled/consol-procedures.uml#_OymM0BxsEeGXP8PxDYviDg"/>
   </CDA:AssociationValidation>
   <CDA:EntryRelationship xmi:id="_GmgfsBxtEeGXP8PxDYviDg" severity="INFO" typeCode="SUBJ">
@@ -2874,8 +2930,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_8UIUIBxwEeGXP8PxDYviDg" severity="INFO">
     <ruleId>CONF:8261</ruleId>
-    <ruleId>CONF:8262</ruleId>
     <ruleId>CONF:15904</ruleId>
+    <ruleId>R2.0=CONF:1098-8261</ruleId>
+    <ruleId>R2.0=CONF:1098-15904</ruleId>
     <base_Association href=".controlled/consol-procedures.uml#_5Pv9IBxwEeGXP8PxDYviDg"/>
   </CDA:AssociationValidation>
   <CDA:EntryRelationship xmi:id="_Y3tpYBxxEeGXP8PxDYviDg" severity="INFO" typeCode="SUBJ">
@@ -2911,6 +2968,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_lGDlICAMEeGKirKJsFylGA" severity="INFO">
     <ruleId>CONF:7416</ruleId>
+    <ruleId>R2.0=CONF:1098-7416</ruleId>
     <base_Association href=".controlled/consol-medications.uml#_f6p3QiAMEeGKirKJsFylGA"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_AFd2wB7tEeGaOZtrEokzNQ" severity="INFO">
@@ -2920,23 +2978,21 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF-7150</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_xsgVECQ6EeG4DdjGPr5_Vg" severity="WARNING">
-    <ruleId>CONF:7969</ruleId>
-    <ruleId>CONF:7970</ruleId>
+    <ruleId>CONF:7969, CONF:7970</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_qfAzoiQ6EeG4DdjGPr5_Vg"/>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="__6IX4CUrEeG_gJw2x8CkdQ"/>
   <CDA:CDATemplate xmi:id="_yJUwEBkaEeGs5a462vYX5Q" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.33"/>
   <CDA:CodeSystemConstraint xmi:id="_2U6FcBSVEeGGzu7fmW9pXw" code="42344-2" displayName="Discharge Diet">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_41cG4BnXEeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.22.2.24"/>
   <CDA:CodeSystemConstraint xmi:id="_2Poj4RSVEeGGzu7fmW9pXw" code="11535-2" displayName="HOSPITAL DISCHARGE DX">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2PidWxSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_v7r-gCsbEeGQ5rkpDKAt8A" severity="INFO">
-    <ruleId>CONF:7957</ruleId>
-    <ruleId>CONF:8800</ruleId>
+    <ruleId>CONF:7957, CONF:8800</ruleId>
     <base_Association href=".controlled/consol-advancedirectives.uml#_m-faACsbEeGQ5rkpDKAt8A"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_T0tv8CsfEeGQ5rkpDKAt8A" severity="WARNING">
@@ -3008,8 +3064,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-other.uml#_U6kJgCznEeGanY0p4MnU2w"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_0qoakDFVEeGbx9xBxK_Upg" severity="WARNING">
-    <ruleId>CONF:7951</ruleId>
-    <ruleId>CONF:8802</ruleId>
+    <ruleId>CONF:7951, CONF:8802</ruleId>
     <base_Association href=".controlled/consol-encounters.uml#_tEK_gDFVEeGbx9xBxK_Upg"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_AhNnADFWEeGbx9xBxK_Upg">
@@ -3022,36 +3077,27 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Constraint href=".controlled/consol-advancedirectives.uml#_mZCKQCsgEeGQ5rkpDKAt8A"/>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_xQtecCsgEeGQ5rkpDKAt8A" severity="INFO">
-    <ruleId>CONF:8697</ruleId>
-    <ruleId>R2.0=CONF:1098-8697</ruleId>
-    <ruleId>CONF:8698</ruleId>
-    <ruleId>R2.0=CONF:1098-8698</ruleId>
-    <ruleId>CONF:8699</ruleId>
-    <ruleId>R2.0=CONF:1098-8699</ruleId>
+    <ruleId>CONF:8697, R2.1=CONF:1198-8697, CONF:8698, R2.1=CONF:1198-8698, CONF:8699, R2.1=CONF:1198-8699</ruleId>
     <base_Constraint href=".controlled/consol-advancedirectives.uml#_ujQZsCsgEeGQ5rkpDKAt8A"/>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_hpVg8CsgEeGQ5rkpDKAt8A">
-    <ruleId>CONF:8695</ruleId>
-    <ruleId>R2.0=CONF:1098-8695</ruleId>
+    <ruleId>CONF:8695, R2.1=CONF:1198-8695</ruleId>
     <base_Property href=".controlled/consol-advancedirectives.uml#_WJKCUCsgEeGQ5rkpDKAt8A"/>
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_jhbD8CsgEeGQ5rkpDKAt8A" severity="INFO">
     <base_Property href=".controlled/consol-advancedirectives.uml#_WJKpYCsgEeGQ5rkpDKAt8A"/>
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_hhq9QCshEeGQ5rkpDKAt8A" code="REFR">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_f6DvAE6SEeC5ttwajeXVXg"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_f6DvAE6SEeC5ttwajeXVXg"/>
     <base_Property href=".controlled/consol-advancedirectives.uml#_PfjRECsgEeGQ5rkpDKAt8A"/>
-    <ruleId>CONF:8694</ruleId>
-    <ruleId>R2.0=CONF:1098-8694</ruleId>
+    <ruleId>CONF:8694, R2.1=CONF:1198-8694</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_Tcl48CshEeGQ5rkpDKAt8A">
-    <ruleId>CONF:8693</ruleId>
-    <ruleId>R2.0=CONF:1098-8693</ruleId>
+    <ruleId>CONF:8693, R2.1=CONF:1198-8693</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_SYpvsSshEeGQ5rkpDKAt8A"/>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_mHNP4CsfEeGQ5rkpDKAt8A">
-    <ruleId>CONF:8668</ruleId>
-    <ruleId>R2.0=CONF:1098-8668</ruleId>
+    <ruleId>CONF:8668, R2.1=CONF:1198-8668</ruleId>
     <base_Property href=".controlled/consol-advancedirectives.uml#_yVu3sCseEeGQ5rkpDKAt8A"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_t2-X8CsfEeGQ5rkpDKAt8A">
@@ -3071,8 +3117,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Property href=".controlled/consol-advancedirectives.uml#_7kDBYCseEeGQ5rkpDKAt8A"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_3a164CsfEeGQ5rkpDKAt8A">
-    <ruleId>CONF:8670</ruleId>
-    <ruleId>R2.0=CONF:1098-8670</ruleId>
+    <ruleId>CONF:8670, R2.1=CONF:1198-8670</ruleId>
     <base_Property href=".controlled/consol-advancedirectives.uml#_7kDocCseEeGQ5rkpDKAt8A"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_606OACsfEeGQ5rkpDKAt8A" severity="WARNING">
@@ -3088,8 +3133,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Property href=".controlled/consol-advancedirectives.uml#_EudX8CseEeGQ5rkpDKAt8A"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_UQVxcCseEeGQ5rkpDKAt8A">
-    <ruleId>CONF:8663</ruleId>
-    <ruleId>R2.0=CONF:1098-8663</ruleId>
+    <ruleId>CONF:8663, R2.1=CONF:1198-8663</ruleId>
     <base_Property href=".controlled/consol-advancedirectives.uml#_EuemECseEeGQ5rkpDKAt8A"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_fHrHYCseEeGQ5rkpDKAt8A">
@@ -3109,60 +3153,50 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-documents.uml#_4VNWoCy6EeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_ZaNH8CzDEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5520</ruleId>
-    <ruleId>R2.0=CONF:1098-5520</ruleId>
+    <ruleId>CONF:5520, R2.1=CONF:1198-5520</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_XnGLkizDEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_OSrvACzFEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5580</ruleId>
-    <ruleId>R2.0=CONF:1098-5580</ruleId>
+    <ruleId>CONF:5580, R2.1=CONF:1198-5580</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_Zc4cwCyoEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_WS6U8CzFEeGMXrZ0DiQwGg" code="S">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_xwG2cGdIEeGkeaezs0FtvA"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_xwG2cGdIEeGkeaezs0FtvA"/>
     <base_Property href=".controlled/consol-documents.uml#_S_jt0CzFEeGMXrZ0DiQwGg"/>
-    <ruleId>CONF:5584</ruleId>
-    <ruleId>R2.0=CONF:1098-5584</ruleId>
+    <ruleId>CONF:5584, R2.1=CONF:1198-5584</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_mRLTACzGEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5608</ruleId>
-    <ruleId>R2.0=CONF:1098-5608</ruleId>
+    <ruleId>CONF:5608, R2.1=CONF:1198-5608</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_eA2-QCyoEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_iW7OgCzHEeGMXrZ0DiQwGg" severity="INFO">
-    <ruleId>CONF:10004</ruleId>
-    <ruleId>R2.0=CONF:1098-10004</ruleId>
+    <ruleId>CONF:10004, R2.1=CONF:1198-10004</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_fvjjoCzHEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_GFJlgCzIEeGMXrZ0DiQwGg">
-    <ruleId>CONF:9953</ruleId>
-    <ruleId>R2.0=CONF:1098-9953</ruleId>
+    <ruleId>CONF:9953, R2.1=CONF:1198-9953</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_DYaScSzIEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_56zEICypEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5271</ruleId>
-    <ruleId>R2.0=CONF:1098-5271</ruleId>
+    <ruleId>CONF:5271, R2.1=CONF:1198-5271</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_tsTDwCylEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_4OO0oCypEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5268</ruleId>
-    <ruleId>R2.0=CONF:1098-5268</ruleId>
+    <ruleId>CONF:5268, R2.1=CONF:1198-5268</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_tsUR4CylEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_8TO7ICypEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5280</ruleId>
-    <ruleId>R2.0=CONF:1098-5280</ruleId>
+    <ruleId>CONF:5280, R2.1=CONF:1198-5280</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_tsU48CylEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_COkRICyqEeGMXrZ0DiQwGg">
-    <ruleId>CONF:1098-5283</ruleId>
+    <ruleId>CONF:1198-5283</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_A7_O8CyqEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_ohHwoCyrEeGMXrZ0DiQwGg">
+    <ruleId>CONF:6394, R2.1=CONF:1198-6394</ruleId>
     <reference href="consol-vocab.uml#_LGTEUDVREeGIw7CntkyPQw"/>
     <base_Property href=".controlled/consol-documents.uml#_7OrqsCylEeGMXrZ0DiQwGg"/>
-    <ruleId>CONF:6394</ruleId>
-    <ruleId>R2.0=CONF:1098-6394</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_iCncICyrEeGMXrZ0DiQwGg">
     <ruleId>CONF:5298</ruleId>
@@ -3174,7 +3208,8 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_J8keoCyqEeGMXrZ0DiQwGg">
     <ruleId>CONF:5284</ruleId>
     <ruleId>CONF:10411</ruleId>
-    <ruleId>R2.0=CONF:1098-5284</ruleId>
+    <ruleId>R2.1=CONF:1198-5284</ruleId>
+    <ruleId>DSTU:808</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_7OuG8SylEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_6HJMICyrEeGMXrZ0DiQwGg" severity="INFO">
@@ -3183,7 +3218,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_z25goCysEeGMXrZ0DiQwGg" severity="INFO">
     <ruleId>CONF:5395</ruleId>
-    <ruleId>CONF:1098-5395</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_ypItASysEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_IjIfICytEeGMXrZ0DiQwGg" severity="WARNING">
@@ -3191,29 +3225,23 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-documents.uml#_GmNfcCytEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_eoHGUCy6EeGMXrZ0DiQwGg">
-    <ruleId>CONF:5422</ruleId>
-    <ruleId>R2.0=CONF:1098-5422</ruleId>
+    <ruleId>CONF:5422, R2.1=CONF:1198-5422</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_-Z0QUCytEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_TueqUCy6EeGMXrZ0DiQwGg">
-    <ruleId>CONF:5417</ruleId>
-    <ruleId>R2.0=CONF:1098-5417</ruleId>
+    <ruleId>CONF:5417, R2.1=CONF:1198-5417</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_-Z03YCytEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_ZUEZ0Cy6EeGMXrZ0DiQwGg">
-    <ruleId>CONF:5419</ruleId>
-    <ruleId>R2.0=CONF:1098-5419</ruleId>
+    <ruleId>CONF:5419, R2.1=CONF:1198-5419</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_-Z1ecCytEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_bz-x0Cy6EeGMXrZ0DiQwGg">
-    <ruleId>CONF:5420</ruleId>
-    <ruleId>R2.0=CONF:1098-5420</ruleId>
+    <ruleId>CONF:5420, R2.1=CONF:1198-5420</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_-Z1edCytEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_FFbeoCysEeGMXrZ0DiQwGg" severity="WARNING">
-    <ruleId>CONF:5359</ruleId>
-    <ruleId>CONF:10413</ruleId>
-    <ruleId>R2.0=CONF:1098-5359</ruleId>
+    <ruleId>CONF:5359, CONF:10413, R2.1=CONF:1198-5359</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_Cmzu0CymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_AhJbICysEeGMXrZ0DiQwGg" severity="WARNING">
@@ -3225,53 +3253,45 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_58iCICysEeGMXrZ0DiQwGg">
     <ruleId>CONF:5396</ruleId>
-    <ruleId>R2.0=CONF:1098-5396</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_5K0RUSysEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_S5cLoCytEeGMXrZ0DiQwGg">
+    <ruleId>CONF:5407</ruleId>
     <reference href="consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
     <base_Property href=".controlled/consol-documents.uml#_nLJOcCymEeGMXrZ0DiQwGg"/>
-    <ruleId>CONF:5407</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_pkK3ICytEeGMXrZ0DiQwGg" severity="INFO">
     <ruleId>CONF:5414</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_nLJ1gCymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_jpN7oCytEeGMXrZ0DiQwGg">
+    <ruleId>CONF:9965, R2.1=CONF:1198-9965</ruleId>
     <reference href="consol-vocab.uml#_SLh6QTVUEeGIw7CntkyPQw"/>
     <base_Property href=".controlled/consol-documents.uml#_nLKckSymEeGMXrZ0DiQwGg"/>
-    <ruleId>CONF:9965</ruleId>
-    <ruleId>R2.0=CONF:1098-9965</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_aVvlICytEeGMXrZ0DiQwGg">
+    <ruleId>CONF:5409, R2.1=CONF:1198-5409</ruleId>
     <reference href="consol-vocab.uml#_2SbZPhSVEeGGzu7fmW9pXw"/>
     <base_Property href=".controlled/consol-documents.uml#_ZGMo0CytEeGMXrZ0DiQwGg"/>
-    <ruleId>CONF:5409</ruleId>
-    <ruleId>R2.0=CONF:1098-5409</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_-GzDICysEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5397</ruleId>
-    <ruleId>R2.0=CONF:1098-5397</ruleId>
+    <ruleId>CONF:5397, R2.1=CONF:1198-5397</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_bs30UCymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_kFArgCzIEeGMXrZ0DiQwGg">
-    <ruleId>CONF:9958</ruleId>
-    <ruleId>R2.0=CONF:1098-9958</ruleId>
+    <ruleId>CONF:9958, R2.1=CONF:1198-9958</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_UiXOECypEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_k__GACzIEeGMXrZ0DiQwGg">
-    <ruleId>CONF:9959</ruleId>
-    <ruleId>R2.0=CONF:1098-9959</ruleId>
+    <ruleId>CONF:9959, R2.1=CONF:1198-9959</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_UiX1ICypEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_Lqn54CzAEeGMXrZ0DiQwGg">
-    <ruleId>CONF:16790</ruleId>
-    <ruleId>R2.0=CONF:1098-16790</ruleId>
+    <ruleId>CONF:16790, R2.1=CONF:1198-16790</ruleId>
     <base_Constraint href=".controlled/consol-documents.uml#_LKdzICzAEeGMXrZ0DiQwGg"/>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_F-MU0Cy7EeGMXrZ0DiQwGg">
-    <ruleId>CONF:5452</ruleId>
-    <ruleId>R2.0=CONF:1098-5452</ruleId>
+    <ruleId>CONF:5452, R2.1=CONF:1198-5452</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_93gRoCymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_CLll4Cy7EeGMXrZ0DiQwGg" severity="WARNING">
@@ -3279,66 +3299,54 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Property href=".controlled/consol-documents.uml#_93hfwCymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_AZNpUCy7EeGMXrZ0DiQwGg">
-    <ruleId>CONF:5449</ruleId>
-    <ruleId>R2.0=CONF:1098-5449</ruleId>
+    <ruleId>CONF:5449, R2.1=CONF:1198-5449</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_93hfxCymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_KFVJUCy7EeGMXrZ0DiQwGg">
-    <ruleId>CONF:5428</ruleId>
-    <ruleId>R2.0=CONF:1098-5428</ruleId>
+    <ruleId>CONF:5428, R2.1=CONF:1198-5428</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_93iG0SymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_8qPq8Cy_EeGMXrZ0DiQwGg">
-    <ruleId>CONF:16784</ruleId>
-    <ruleId>R2.0=CONF:1098-16784</ruleId>
+    <ruleId>CONF:16784, R2.1=CONF:1198-16784</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_4AeqgCy_EeGMXrZ0DiQwGg"/>
   </CDA:TextValue>
   <CDA:TextValue xmi:id="_-vTS8Cy_EeGMXrZ0DiQwGg">
-    <ruleId>CONF:16785</ruleId>
-    <ruleId>R2.0=CONF:1098-16785</ruleId>
+    <ruleId>CONF:16785, R2.1=CONF:1198-16785</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_4AfRkCy_EeGMXrZ0DiQwGg"/>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_pu6z8CzAEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5460</ruleId>
-    <ruleId>R2.0=CONF:1098-5460</ruleId>
+    <ruleId>CONF:5460, R2.1=CONF:1198-5460</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_NItK0CynEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_nZYf8CzAEeGMXrZ0DiQwGg" severity="INFO">
     <base_Property href=".controlled/consol-documents.uml#_NIuY8CynEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_kxsE8CzAEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5443</ruleId>
-    <ruleId>R2.0=CONF:1098-5443</ruleId>
+    <ruleId>CONF:5443, R2.1=CONF:1198-5443</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_NIvAACynEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_sHWq8CzAEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5466</ruleId>
-    <ruleId>R2.0=CONF:1098-5466</ruleId>
+    <ruleId>CONF:5466, R2.1=CONF:1198-5466</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_NIvABCynEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_0OlwcCzDEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5521</ruleId>
-    <ruleId>R2.0=CONF:1098-5521</ruleId>
+    <ruleId>CONF:5521, R2.1=CONF:1198-5521</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_yffxYSzDEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_KeYhgCzGEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5616</ruleId>
-    <ruleId>R2.0=CONF:1098-5616</ruleId>
+    <ruleId>CONF:5616, R2.1=CONF:1198-5616</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_IMjo0CzGEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_M4RKACzGEeGMXrZ0DiQwGg" severity="INFO">
-    <ruleId>CONF:16825</ruleId>
-    <ruleId>R2.0=CONF:1098-16825</ruleId>
+    <ruleId>CONF:16825, R2.1=CONF:1198-16825</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_IMkP4CzGEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_PjUbACzGEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5613</ruleId>
-    <ruleId>R2.0=CONF:1098-5613</ruleId>
+    <ruleId>CONF:5613, R2.1=CONF:1198-5613</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_IMk28CzGEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_SgORACzGEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5622</ruleId>
-    <ruleId>R2.0=CONF:1098-5622</ruleId>
+    <ruleId>CONF:5622, R2.1=CONF:1198-5622</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_IMleACzGEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:ClassValidation xmi:id="_H03o8CzDEeGMXrZ0DiQwGg">
@@ -3353,48 +3361,39 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Property href=".controlled/consol-documents.uml#_NmVGtSzCEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_XiM58CzCEeGMXrZ0DiQwGg">
-    <ruleId>CONF:9945</ruleId>
-    <ruleId>R2.0=CONF:1098-9945</ruleId>
+    <ruleId>CONF:9945, R2.1=CONF:1198-9945</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_NmVGuCzCEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_JRe7cCzEEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5559</ruleId>
-    <ruleId>R2.0=CONF:1098-5559</ruleId>
+    <ruleId>CONF:5559, R2.1=CONF:1198-5559</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_2zRkcCynEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_5iGRcCzDEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5522</ruleId>
-    <ruleId>R2.0=CONF:1098-5522</ruleId>
+    <ruleId>CONF:5522, R2.1=CONF:1198-5522</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_2zSLgCynEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_F9_xcCzEEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5524</ruleId>
-    <ruleId>R2.0=CONF:1098-5524</ruleId>
+    <ruleId>CONF:5524, R2.1=CONF:1198-5524</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_2zSykCynEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_HcmdcCzEEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5525</ruleId>
-    <ruleId>R2.0=CONF:1098-5525</ruleId>
+    <ruleId>CONF:5525, R2.1=CONF:1198-5525</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_2zSylCynEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_5hkQgCzEEeGMXrZ0DiQwGg" severity="INFO">
-    <ruleId>CONF:5568</ruleId>
-    <ruleId>R2.0=CONF:1098-5567</ruleId>
+    <ruleId>CONF:5568, R2.1=CONF:1198-5567</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_gTqdoizEEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_7MTUACzEEeGMXrZ0DiQwGg" severity="INFO">
-    <ruleId>CONF:5577</ruleId>
-    <ruleId>R2.0=CONF:1098-5577</ruleId>
+    <ruleId>CONF:5577, R2.1=CONF:1198-5577</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_26kZEizEEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_u2DwECzEEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5578</ruleId>
-    <ruleId>R2.0=CONF:1098-5578</ruleId>
+    <ruleId>CONF:5578, R2.1=CONF:1198-5578</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_tXLXQCzEEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_I0KwgCzIEeGMXrZ0DiQwGg">
-    <ruleId>CONF:9954</ruleId>
-    <ruleId>R2.0=CONF:1098-9954</ruleId>
+    <ruleId>CONF:9954, R2.1=CONF:1198-9954</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_44iLUCyoEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_NOhtYDVXEeGIw7CntkyPQw">
@@ -3406,8 +3405,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-documents.uml#_anIYoizEEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_S6LWsDVZEeGIw7CntkyPQw">
-    <ruleId>CONF:5612</ruleId>
-    <ruleId>R2.0=CONF:1098-5612</ruleId>
+    <ruleId>CONF:5612, R2.1=CONF:1198-5612</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_lwJK0jTPEeGuZq9ndAdRXA"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_UshhoDWnEeG32vxjh5_fjg" severity="INFO">
@@ -3667,13 +3665,11 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-procedures.uml#_HSV9EkEvEeGdmoWy_aLP0Q"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_gNPe8EEwEeGdmoWy_aLP0Q" severity="WARNING">
-    <ruleId>CONF:8762</ruleId>
-    <ruleId>CONF:8764</ruleId>
+    <ruleId>CONF:8762, CONF:8764</ruleId>
     <base_Association href=".controlled/consol-procedures.uml#_eZUDMkEwEeGdmoWy_aLP0Q"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_qN6AsEEyEeGdmoWy_aLP0Q" severity="INFO">
-    <ruleId>CONF:8090</ruleId>
-    <ruleId>CONF:8091</ruleId>
+    <ruleId>CONF:8090, CONF:8091</ruleId>
     <base_Association href=".controlled/consol-procedures.uml#_oVNZsEEyEeGdmoWy_aLP0Q"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_m-9jAEEzEeGdmoWy_aLP0Q" severity="INFO">
@@ -3830,23 +3826,17 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:9281</ruleId>
     <base_Association href=".controlled/consol-dicom.uml#_herW0EriEeGJpZWiuxRVIw"/>
   </CDA:EntryRelationship>
-  <CDA:AssociationValidation xmi:id="_hC_msHegEeGLwesdFe7o6w" base_Association="_OOYRI3egEeGLwesdFe7o6w">
-    <ruleId>CONF:9435</ruleId>
-  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_1ZfksHhvEeGJtvg2iiStYg" base_Association="_rPIpgHhvEeGJtvg2iiStYg">
     <ruleId>CONF:8948</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_UdK3kNc4EeGfQ6frO0B-Jg" base_Association="_R9fwINc4EeGfQ6frO0B-Jg">
-    <ruleId>CONF:8609</ruleId>
-    <ruleId>R2.0=CONF:1098-8609</ruleId>
+    <ruleId>CONF:8609, R2.1=CONF:1198-8609</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_eDnNYNc4EeGfQ6frO0B-Jg" base_Association="_c9XXANc4EeGfQ6frO0B-Jg">
-    <ruleId>CONF:15244</ruleId>
-    <ruleId>R2.0=CONF:1098-15244</ruleId>
+    <ruleId>CONF:15244, R2.1=CONF:1198-15244</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_GAwb4Nc5EeGfQ6frO0B-Jg" severity="WARNING" base_Association="_6_PPMNc4EeGfQ6frO0B-Jg">
-    <ruleId>CONF:15248</ruleId>
-    <ruleId>R2.0=CONF:1098-15248</ruleId>
+    <ruleId>CONF:15248, R2.1=CONF:1198-15248</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_J_3-sOJvEeG3cO7ebC3QuA" severity="INFO" base_Association="_JNJhQ-JvEeG3cO7ebC3QuA">
     <ruleId>CONF:7310</ruleId>
@@ -3871,7 +3861,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:7560</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_dpILAOZFEeGINOJ_SD9_dA" code="ASSERTION" displayName="Assertion" base_Property="_-7rmQeZEEeGINOJ_SD9_dA">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_j2fsMOZFEeGINOJ_SD9_dA" base_Property="_-7rmQeZEEeGINOJ_SD9_dA">
     <ruleId>CONF:7561</ruleId>
@@ -3886,10 +3876,10 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:7562</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_w659sOZFEeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_-7rmSeZEEeGINOJ_SD9_dA">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_7Iw40OZFEeGINOJ_SD9_dA" code="182904002" displayName="Drug treatment unknown" base_Property="_-7rmT-ZEEeGINOJ_SD9_dA">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:Pending</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_K8t5wOZGEeGINOJ_SD9_dA" severity="WARNING" base_Constraint="_Fu374OZGEeGINOJ_SD9_dA">
@@ -3904,58 +3894,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:AssociationValidation xmi:id="_YlADoOZiEeGINOJ_SD9_dA" base_Association="_SioRgOZiEeGINOJ_SD9_dA">
     <ruleId>CONF:14268</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_kbOY0OZkEeGINOJ_SD9_dA" base_Property="_f4E9wOZkEeGINOJ_SD9_dA">
-    <ruleId>CONF:14851</ruleId>
-    <ruleId>R2.0=CONF:14851</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_oT1CEOZkEeGINOJ_SD9_dA" base_Property="_f4E9yOZkEeGINOJ_SD9_dA">
-    <ruleId>CONF:14852</ruleId>
-    <ruleId>R2.0=CONF:14852</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_qga1cOZkEeGINOJ_SD9_dA" base_Class="_lm3boOZbEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.79">
-    <ruleId>CONF:14871</ruleId>
-    <ruleId>CONF:14872</ruleId>
-  </CDA:CDATemplate>
-  <CDA:PropertyValidation xmi:id="_yfngoOZkEeGINOJ_SD9_dA" base_Property="_f4E9xeZkEeGINOJ_SD9_dA">
-    <ruleId>CONF:14873</ruleId>
-    <ruleId>R2.0=CONF:1098-14873</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_2IcogOZkEeGINOJ_SD9_dA" code="ASSERTION" displayName="Assertion" base_Property="_f4E9weZkEeGINOJ_SD9_dA">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_5k7WcOZkEeGINOJ_SD9_dA" base_Property="_f4E9weZkEeGINOJ_SD9_dA">
-    <ruleId>CONF:14853</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_72ko8OZkEeGINOJ_SD9_dA" base_Property="_f4E9yeZkEeGINOJ_SD9_dA">
-    <ruleId>CONF:14854</ruleId>
-    <ruleId>R2.0=CONF:1098-14854</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_8jgncOZkEeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_f4E9yeZkEeGINOJ_SD9_dA">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>R2.0=CONF:1098-19095</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_BxzRQOZlEeGINOJ_SD9_dA" base_Property="_f4E9wuZkEeGINOJ_SD9_dA">
-    <ruleId>CONF:14855</ruleId>
-    <ruleId>R2.0=CONF:1098-14855</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_JtkN8OZlEeGINOJ_SD9_dA" base_Constraint="_Dk8p4OZlEeGINOJ_SD9_dA">
-    <ruleId>CONF:14874</ruleId>
-    <ruleId>R2.0=CONF:1098-14874</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="_NtmU4OZlEeGINOJ_SD9_dA" base_Property="_f4OuwOZkEeGINOJ_SD9_dA">
-    <ruleId>CONF:14857</ruleId>
-    <ruleId>R2.0=CONF:1098-14857</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_OrybcOZlEeGINOJ_SD9_dA" code="419099009" displayName="Dead" base_Property="_f4OuwOZkEeGINOJ_SD9_dA">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15142</ruleId>
-    <ruleId>R2.0=CONF:1098-15142</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:EntryRelationship xmi:id="_WoJ1EOZlEeGINOJ_SD9_dA" severity="WARNING" base_Association="_U5AysuZlEeGINOJ_SD9_dA">
-    <ruleId>CONF:14868</ruleId>
-    <ruleId>CONF:14875</ruleId>
-    <ruleId>CONF:14870</ruleId>
-  </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_q19aoObzEeGINOJ_SD9_dA" base_Association="_m656UObzEeGINOJ_SD9_dA">
     <ruleId>CONF:13938</ruleId>
   </CDA:AssociationValidation>
@@ -3982,7 +3920,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:14759</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_Lu7BcOcEEeGINOJ_SD9_dA" code="ASSERTION" displayName="Assertion" base_Property="_z63WYecDEeGINOJ_SD9_dA" severity="WARNING">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:14760</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_S4sggOcEEeGINOJ_SD9_dA" severity="WARNING" base_Property="_z63WcucDEeGINOJ_SD9_dA">
@@ -4003,7 +3941,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:ConstraintValidation xmi:id="_CZoQk-cFEeGINOJ_SD9_dA" severity="WARNING" base_Constraint="_CZoQkOcFEeGINOJ_SD9_dA">
     <ruleId>CONF:14398</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ValueSetConstraint xmi:id="_JaoOIOcFEeGINOJ_SD9_dA" base_Property="_z7BHYOcDEeGINOJ_SD9_dA" severity="WARNING">
+  <CDA:ValueSetConstraint xmi:id="_JaoOIOcFEeGINOJ_SD9_dA" severity="WARNING" base_Property="_z7BHYOcDEeGINOJ_SD9_dA">
     <reference href="consol-vocab.uml#_3NE1YOcAEeGINOJ_SD9_dA"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_KsmMUOcFEeGINOJ_SD9_dA" base_Property="_z7BHYOcDEeGINOJ_SD9_dA">
@@ -4012,9 +3950,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_OJ-5MOcFEeGINOJ_SD9_dA" severity="WARNING" base_Property="_z63Wb-cDEeGINOJ_SD9_dA">
     <ruleId>CONF:14797</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_RVNfEOcFEeGINOJ_SD9_dA" base_Property="_z63Wb-cDEeGINOJ_SD9_dA" severity="WARNING">
-    <reference href="consol-vocab.uml#_VwxrcecFEeGINOJ_SD9_dA"/>
+  <CDA:ValueSetConstraint xmi:id="_RVNfEOcFEeGINOJ_SD9_dA" severity="WARNING" base_Property="_z63Wb-cDEeGINOJ_SD9_dA">
     <ruleId>CONF:14798</ruleId>
+    <reference href="consol-vocab.uml#_VwxrcecFEeGINOJ_SD9_dA"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_Bn1KwOcGEeGINOJ_SD9_dA" severity="WARNING" base_Constraint="_1uHKwOcFEeGINOJ_SD9_dA">
     <ruleId>CONF:14799</ruleId>
@@ -4047,7 +3985,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:14686</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_ThRX4OcOEeGINOJ_SD9_dA" code="401238003" displayName="Length of Wound" base_Property="_kREygecNEeGINOJ_SD9_dA">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:14621</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_UKVjAOcOEeGINOJ_SD9_dA" base_Property="_kREygecNEeGINOJ_SD9_dA">
@@ -4075,7 +4013,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:14688</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_39v8AOcOEeGINOJ_SD9_dA" code="401239006" displayName="Width of Wound" base_Property="_n710EecNEeGINOJ_SD9_dA">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:14625</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_7IO7AOcOEeGINOJ_SD9_dA" base_Property="_n710EecNEeGINOJ_SD9_dA">
@@ -4100,15 +4038,14 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:14628</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_XBN0EOcPEeGINOJ_SD9_dA" code="425094009" displayName="Depth of Wound" base_Property="_tYaKcecNEeGINOJ_SD9_dA">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:14629</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_bdOsYOcPEeGINOJ_SD9_dA" base_Property="_tYaKc-cNEeGINOJ_SD9_dA">
     <ruleId>CONF:14630</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_X1vPkOxlEeG7k4bbVdXbXw" base_Association="_PFfh8OxlEeG7k4bbVdXbXw">
-    <ruleId>CONF:5385</ruleId>
-    <ruleId>R2.0=CONF:1098-5385</ruleId>
+    <ruleId>CONF:5385, R2.1=CONF:1198-5385</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_ytxA8OxwEeG7k4bbVdXbXw" severity="INFO" base_Association="_wZOygOxwEeG7k4bbVdXbXw">
     <ruleId>CONF:14835</ruleId>
@@ -4117,20 +4054,16 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:14836</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_DICLMPIoEeGu1M-cCXg0Dg" base_Association="_XaJ7QOxvEeG7k4bbVdXbXw">
-    <ruleId>CONF:5469</ruleId>
-    <ruleId>R2.0=CONF:1098-5469</ruleId>
+    <ruleId>CONF:5469, R2.1=CONF:1198-5469</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_ugPyYPIoEeGu1M-cCXg0Dg" base_Association="_f4rmwOxvEeG7k4bbVdXbXw">
-    <ruleId>CONF:8221</ruleId>
-    <ruleId>R2.0=CONF:1098-8221</ruleId>
+    <ruleId>CONF:8221, R2.1=CONF:1198-8221</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_ORzwcPIyEeGu1M-cCXg0Dg" base_Association="_6IwoUOxvEeG7k4bbVdXbXw">
-    <ruleId>CONF:5597</ruleId>
-    <ruleId>R2.0=CONF:1098-5597</ruleId>
+    <ruleId>CONF:5597, R2.1=CONF:1198-5597</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_d3dPoPIyEeGu1M-cCXg0Dg" base_Association="_C7bX0OxwEeG7k4bbVdXbXw">
-    <ruleId>CONF:5624</ruleId>
-    <ruleId>R2.0=CONF:1098-5624</ruleId>
+    <ruleId>CONF:5624, R2.1=CONF:1198-5624</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_60E6gPIzEeGu1M-cCXg0Dg" severity="WARNING" base_Association="_IT_igOxxEeG7k4bbVdXbXw">
     <ruleId>CONF:14839</ruleId>
@@ -4139,8 +4072,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:14841</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_As7u0PI1EeGu1M-cCXg0Dg" base_Association="__ZAo0PI0EeGu1M-cCXg0Dg">
-    <ruleId>CONF:16793</ruleId>
-    <ruleId>R2.0=CONF:1098-16793</ruleId>
+    <ruleId>CONF:16793, R2.1=CONF:1198-16793</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_BWuHsPKuEeGFUPBL8qS7yQ" base_Association="_9_jXk_KtEeGFUPBL8qS7yQ">
     <ruleId>CONF:8385</ruleId>
@@ -4150,7 +4082,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:10535</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_dfVGQPKwEeGFUPBL8qS7yQ" code="121026" base_Property="_XONtgPKwEeGFUPBL8qS7yQ">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
     <ruleId>CONF:9190</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_gep-IPKwEeGFUPBL8qS7yQ" base_Association="_XOXegPKwEeGFUPBL8qS7yQ">
@@ -4170,113 +4102,111 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_4xV8gKg3EeK7Iv2PyOPSaQ" severity="WARNING" base_Association="_mxMw0Kg3EeK7Iv2PyOPSaQ">
     <ruleId>CONF:8256</ruleId>
+    <ruleId>R2.0=CONF:1098-8256</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_JsZAAMMhEeKhp9meU6hZdQ" base_Association="_-9nwMMMgEeKhp9meU6hZdQ">
     <ruleId>CONF:7720</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_qpSiEMMlEeKhp9meU6hZdQ" severity="WARNING" base_Association="_F6-ucMMiEeKhp9meU6hZdQ">
     <ruleId>CONF:7733</ruleId>
+    <ruleId>R2.0=CONF:1098-7733</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_EmvXAGRSEeOD5bEp3nNX5w" base_Property="_-7rmT-ZEEeGINOJ_SD9_dA">
     <ruleId>CONF:7564</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_RzokcIrFEeOoMZgUoTghIg" base_Association="_QSkaUIrFEeOoMZgUoTghIg">
-    <ruleId>CONF:28661</ruleId>
+    <ruleId>CONF:1098-28661</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_kfYUsIzwEeOoMZgUoTghIg" base_Association="_8eYg84zvEeOoMZgUoTghIg">
-    <ruleId>CONF:28662</ruleId>
+    <ruleId>CONF:1098-28662</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_MoU4oIzzEeOoMZgUoTghIg" base_Association="_ugGg0IzyEeOoMZgUoTghIg">
-    <ruleId>CONF:28667</ruleId>
+    <ruleId>CONF:1098-28667</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_JhUN8Iz_EeOoMZgUoTghIg" base_Association="_Af0_UIz_EeOoMZgUoTghIg">
-    <ruleId>CONF:31673</ruleId>
+    <ruleId>CONF:1098-31673</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_065HEIz_EeOoMZgUoTghIg" base_Association="_b6rK4Iz_EeOoMZgUoTghIg">
-    <ruleId>CONF:31675</ruleId>
+    <ruleId>CONF:1098-31675</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_sV2h8I7CEeOB0eBUISUB4Q" severity="INFO" base_Association="_R13cII7CEeOB0eBUISUB4Q">
-    <ruleId>CONF:31604</ruleId>
+    <ruleId>CONF:1098-31604</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_C8mP4I7EEeOB0eBUISUB4Q" base_Association="_jmOp8I7DEeOB0eBUISUB4Q">
-    <ruleId>CONF:31605</ruleId>
+    <ruleId>CONF:1098-31605</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_uzXkcI9KEeOB0eBUISUB4Q" base_Association="_nyp6wI9KEeOB0eBUISUB4Q">
-    <ruleId>CONF:31967</ruleId>
+    <ruleId>CONF:1098-31967</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_5QR9UI9MEeOB0eBUISUB4Q" base_Association="_QXliAI9LEeOB0eBUISUB4Q">
-    <ruleId>CONF:31969</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_YEf98JBJEeOZX935IVJfOg" base_Association="_56LUYJBIEeOZX935IVJfOg">
-    <ruleId>CONF:31938</ruleId>
+    <ruleId>CONF:1098-31969</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_uDUBILEjEeOtlapy2HWYww" severity="WARNING" base_Association="_uDTaELEjEeOtlapy2HWYww">
-    <ruleId>CONF:1098-8662</ruleId>
+    <ruleId>CONF:1198-8662</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_e8g0kbE4EeOtlapy2HWYww" severity="WARNING" base_Association="_e8gNgLE4EeOtlapy2HWYww">
-    <ruleId>CONF:1098-8667</ruleId>
+    <ruleId>CONF:1198-8667</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_qh6YIbE9EeOtlapy2HWYww" base_Association="_qh5xELE9EeOtlapy2HWYww">
-    <ruleId>CONF:1098-8669</ruleId>
+    <ruleId>CONF:1198-8669</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_TOPA0rE-EeOtlapy2HWYww" severity="WARNING" base_Association="_TOPA0LE-EeOtlapy2HWYww">
-    <ruleId>CONF:1098-8692</ruleId>
+    <ruleId>CONF:1198-8692</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_zD14wLFEEeOtlapy2HWYww" base_Association="_zD1RsLFEEeOtlapy2HWYww">
-    <ruleId>CONF:1098-8825</ruleId>
+    <ruleId>CONF:1198-8825</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_M_AaQLFFEeOtlapy2HWYww" severity="INFO" base_Association="_LX5SgLFFEeOtlapy2HWYww">
-    <ruleId>CONF:1098-28428</ruleId>
+    <ruleId>CONF:1198-28428</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_KcZ80rFUEeOtlapy2HWYww" base_Association="_KcZ80LFUEeOtlapy2HWYww">
-    <ruleId>CONF:1098-8824</ruleId>
+    <ruleId>CONF:1198-8824</ruleId>
   </CDA:AssociationValidation>
   <CDA:ActRelationship xmi:id="_FNvRYLkcEeODDJAC5t5vpw" base_Association="_FNuDQLkcEeODDJAC5t5vpw"/>
   <CDA:AssociationValidation xmi:id="_Vxux4czVEeO93sHu8pHB2g" severity="INFO" base_Association="_VxuK0MzVEeO93sHu8pHB2g">
     <ruleId>CONF:1098-13937</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_xbTX0uHPEeO04sHNODkHmQ" severity="INFO" base_Association="_xbTX0OHPEeO04sHNODkHmQ">
-    <ruleId>CONF:8850</ruleId>
-    <ruleId>CONF:15547</ruleId>
+    <ruleId>CONF:1198-8850, CONF:1198-15547</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_b88xIeHVEeO04sHNODkHmQ" base_Association="_b88KEOHVEeO04sHNODkHmQ">
-    <ruleId>CONF:9006</ruleId>
+    <ruleId>CONF:1098-9006</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_h3qVweXrEeOkFcFJ9uzEEw" base_Association="_h3pusOXrEeOkFcFJ9uzEEw">
-    <ruleId>CONF:7411</ruleId>
+    <ruleId>CONF:1098-7411</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_vp9jkeaREeOmzetP5oaH3A" base_Association="_vp88gOaREeOmzetP5oaH3A">
-    <ruleId>CONF:8886</ruleId>
+    <ruleId>CONF:1098-8886</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_1DraQOaREeOmzetP5oaH3A" severity="WARNING" base_Association="_1DqzMOaREeOmzetP5oaH3A">
-    <ruleId>CONF:30928</ruleId>
+    <ruleId>CONF:1098-30928</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_K7MjUOaWEeOmzetP5oaH3A" severity="INFO" base_Association="_GNjvgOaWEeOmzetP5oaH3A">
-    <ruleId>CONF:16074</ruleId>
+    <ruleId>CONF:1098-16074</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_zVkjgOdeEeOqBOMhgDlycQ" base_Association="_vu1GUOdeEeOqBOMhgDlycQ">
-    <ruleId>CONF:31874</ruleId>
+    <ruleId>CONF:1098-31874</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_qxJ0wOwnEeOqa975IP2wug" base_Association="_qxJNsOwnEeOqa975IP2wug">
-    <ruleId>CONF:8906</ruleId>
+    <ruleId>CONF:1198-8906</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_0IYp4uwnEeOqa975IP2wug" base_Association="_0IYp4OwnEeOqa975IP2wug">
-    <ruleId>CONF:8908</ruleId>
+    <ruleId>CONF:1198-8908</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_HDFj4uwpEeOqa975IP2wug" severity="WARNING" base_Association="_HDFj4OwpEeOqa975IP2wug">
-    <ruleId>CONF:8961</ruleId>
+    <ruleId>CONF:1198-8961</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_JVtGwewpEeOqa975IP2wug" base_Association="_JVsfsOwpEeOqa975IP2wug">
-    <ruleId>CONF:8962</ruleId>
+    <ruleId>CONF:1198-8962</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_xCGuEewqEeOqa975IP2wug" base_Association="_xCGHAOwqEeOqa975IP2wug">
-    <ruleId>CONF:8916</ruleId>
+    <ruleId>CONF:1198-8916</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_y8zgMewqEeOqa975IP2wug" base_Association="_y8y5IOwqEeOqa975IP2wug">
-    <ruleId>CONF:8921</ruleId>
+    <ruleId>CONF:1198-8921</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_34SiwOwqEeOqa975IP2wug" severity="WARNING" base_Association="_34R7sOwqEeOqa975IP2wug">
-    <ruleId>CONF:8932</ruleId>
+    <ruleId>CONF:1198-8932</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_FORDEO2kEeOchpob7ipcww" base_Association="_CEzXwO2kEeOchpob7ipcww">
     <ruleId>CONF:8302</ruleId>
@@ -4285,21 +4215,55 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:8306</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_N5hWYvDuEeOKPKE9au0oug" severity="INFO" base_Association="_N5hWYPDuEeOKPKE9au0oug">
-    <ruleId>CONF:7697</ruleId>
+    <ruleId>CONF:1098-7697</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_42Bq4fMQEeOrR8IF-aqVyQ" base_Association="_42BD0PMQEeOrR8IF-aqVyQ">
-    <ruleId>CONF:16322</ruleId>
+    <ruleId>CONF:1098-16322</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_RlcK8PMREeOrR8IF-aqVyQ" base_Association="_mXONQPMQEeOrR8IF-aqVyQ">
-    <ruleId>CONF:16320</ruleId>
+    <ruleId>CONF:1098-16320</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_JI1TsKZKEeSy2PrVxD6riw" base_Association="_FSEdgKZKEeSy2PrVxD6riw">
-    <ruleId>CONF:1098-32435</ruleId>
+    <ruleId>CONF:1198-32435</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_kKGBwK11EeS-n_bBhdNjYg" severity="INFO" base_Association="_kKEzoK11EeS-n_bBhdNjYg">
-    <ruleId>CONF:1098-8725</ruleId>
+    <ruleId>CONF:1198-8725</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_AThxoK12EeS-n_bBhdNjYg" base_Association="_AThKkK12EeS-n_bBhdNjYg">
-    <ruleId>CONF:1098-8726</ruleId>
+    <ruleId>CONF:1198-8726</ruleId>
   </CDA:AssociationValidation>
+  <CDA:EntryRelationship xmi:id="_Qxds8cnAEeSr1c1X9ACWbg" severity="INFO" base_Association="_QxdF4MnAEeSr1c1X9ACWbg" typeCode="REFR">
+    <ruleId>CONF:1198-9063, CONF:1198-9068, CONF:1198-15591</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:AssociationValidation xmi:id="_O-yC0cnKEeSr1c1X9ACWbg" severity="WARNING" base_Association="_O-xbwMnKEeSr1c1X9ACWbg">
+    <ruleId>CONF:1098-8301</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_qbOJ0snKEeSr1c1X9ACWbg" base_Association="_qbOJ0MnKEeSr1c1X9ACWbg">
+    <ruleId>CONF:1098-8302</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_NHYm4MnLEeSr1c1X9ACWbg" severity="WARNING" base_Association="_NHX_0MnLEeSr1c1X9ACWbg">
+    <ruleId>CONF:1098-8306</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_qjhp4Mw-EeS1kaU6ESW4Lg" severity="WARNING" base_Association="_qjgbwMw-EeS1kaU6ESW4Lg">
+    <ruleId>CONF:1098-8251</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_Xct7osw_EeS1kaU6ESW4Lg" base_Association="_Xct7oMw_EeS1kaU6ESW4Lg">
+    <ruleId>CONF:1098-8252</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_i5VVMMzJEeSLqosJ4F90vA" severity="WARNING" base_Association="_i5TgAMzJEeSLqosJ4F90vA">
+    <ruleId>CONF:1098-7718</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_sKnd4MzKEeSLqosJ4F90vA" base_Association="_sKjzgMzKEeSLqosJ4F90vA">
+    <ruleId>CONF:1098-7720</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_2l15EPtNEeSoPO_Q5cglLA" severity="INFO" base_Association="_193TEPtNEeSoPO_Q5cglLA">
+    <ruleId>CONF:1098-32393</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CodeSystemConstraint xmi:id="__41XgBtDEeWf0pnHQlBeQg" code="completed" base_Property="_z63WbOcDEeGINOJ_SD9_dA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:14394</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_NzEZkBtLEeWf0pnHQlBeQg" base_Property="_z63WYucDEeGINOJ_SD9_dA">
+    <ruleId>CONF:14395</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

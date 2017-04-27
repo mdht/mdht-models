@@ -2,20 +2,12 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
@@ -36,19 +28,16 @@ import org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectIntervention;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.TimingReference;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.StudySubjectInterventionOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Study Subject Intervention</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class StudySubjectInterventionImpl extends SubstanceAdministrationImpl implements StudySubjectIntervention {
+public class StudySubjectInterventionImpl extends org.eclipse.mdht.uml.cda.impl.SubstanceAdministrationImpl implements StudySubjectIntervention {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -655,7 +644,7 @@ public class StudySubjectInterventionImpl extends SubstanceAdministrationImpl im
 	 */
 	@Override
 	public StudySubjectIntervention init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -663,8 +652,8 @@ public class StudySubjectInterventionImpl extends SubstanceAdministrationImpl im
      * @generated
      */
     @Override
-	public StudySubjectIntervention init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public StudySubjectIntervention init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //StudySubjectInterventionImpl

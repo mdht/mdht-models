@@ -16,8 +16,9 @@ import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.CDAPackage;
+import org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSectionProcNote;
@@ -54,7 +55,6 @@ import org.openhealthtools.mdht.uml.cda.cdt.SubjectiveSection;
 import org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument;
 import org.openhealthtools.mdht.uml.cda.cdt.VitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.cdt.util.CDTValidator;
-import org.openhealthtools.mdht.uml.cda.util.AnnotationBasedInitializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -331,9 +331,10 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		}
 
 		// Obtain or create and register package
-		CDTPackageImpl theCDTPackage = (CDTPackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof CDTPackageImpl
-				? EPackage.Registry.INSTANCE.get(eNS_URI)
-				: new CDTPackageImpl());
+		CDTPackageImpl theCDTPackage = (CDTPackageImpl) (EPackage.Registry.INSTANCE.get(
+			eNS_URI) instanceof CDTPackageImpl
+					? EPackage.Registry.INSTANCE.get(eNS_URI)
+					: new CDTPackageImpl());
 
 		isInited = true;
 
@@ -822,8 +823,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		EOperation op = addEOperation(
-			generalHeaderConstraintsEClass, ecorePackage.getEBoolean(),
-			"validateGeneralHeaderConstraintsPersonHasName", 0, 1, IS_UNIQUE, IS_ORDERED);
+			generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsPersonHasName",
+			0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1042,8 +1043,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			generalHeaderConstraintsEClass, ecorePackage.getEBoolean(),
-			"validateGeneralHeaderConstraintsHasAuthorTime", 0, 1, IS_UNIQUE, IS_ORDERED);
+			generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsHasAuthorTime",
+			0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1163,8 +1164,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsTemplateId",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsTemplateId", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1185,8 +1186,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			generalHeaderConstraintsEClass, ecorePackage.getEBoolean(),
-			"validateGeneralHeaderConstraintsEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
+			generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsEffectiveTime",
+			0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1321,8 +1322,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			historyAndPhysicalEClass, ecorePackage.getEBoolean(),
-			"validateHistoryAndPhysicalPastMedicalHistorySection", 0, 1, IS_UNIQUE, IS_ORDERED);
+			historyAndPhysicalEClass, ecorePackage.getEBoolean(), "validateHistoryAndPhysicalPastMedicalHistorySection",
+			0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1376,8 +1377,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			historyAndPhysicalEClass, ecorePackage.getEBoolean(), "validateHistoryAndPhysicalReviewOfSystemsSection",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			historyAndPhysicalEClass, ecorePackage.getEBoolean(), "validateHistoryAndPhysicalReviewOfSystemsSection", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1488,15 +1489,16 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
-			historyAndPhysicalEClass, this.getReviewOfSystemsSectionIHE(), "getReviewOfSystemsSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+			historyAndPhysicalEClass, this.getReviewOfSystemsSectionIHE(), "getReviewOfSystemsSection", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
 
 		addEOperation(
 			historyAndPhysicalEClass, this.getPhysicalExaminationSection(), "getPhysicalExaminationSection", 1, 1,
 			IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
-			historyAndPhysicalEClass, this.getVitalSignsSection(), "getVitalSignsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+			historyAndPhysicalEClass, this.getVitalSignsSection(), "getVitalSignsSection", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
 
 		addEOperation(
 			historyAndPhysicalEClass, this.getGeneralStatusSection(), "getGeneralStatusSection", 1, 1, IS_UNIQUE,
@@ -1545,8 +1547,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
-			pastMedicalHistorySectionEClass, PastMedicalHistorySection.class, "PastMedicalHistorySection",
-			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+			pastMedicalHistorySectionEClass, PastMedicalHistorySection.class, "PastMedicalHistorySection", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			pastMedicalHistorySectionEClass, ecorePackage.getEBoolean(),
@@ -1593,8 +1595,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
-			reviewOfSystemsSectionIHEEClass, ReviewOfSystemsSectionIHE.class, "ReviewOfSystemsSectionIHE",
-			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+			reviewOfSystemsSectionIHEEClass, ReviewOfSystemsSectionIHE.class, "ReviewOfSystemsSectionIHE", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			reviewOfSystemsSectionIHEEClass, ecorePackage.getEBoolean(), "validateReviewOfSystemsSectionIHETemplateId",
@@ -1660,8 +1662,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			vitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateVitalSignsSectionTemplateId", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			vitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateVitalSignsSectionTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1708,8 +1710,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			!IS_ORDERED);
 
 		initEClass(
-			generalStatusSectionEClass, GeneralStatusSection.class, "GeneralStatusSection", !IS_ABSTRACT,
-			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+			generalStatusSectionEClass, GeneralStatusSection.class, "GeneralStatusSection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			generalStatusSectionEClass, ecorePackage.getEBoolean(), "validateGeneralStatusSectionTemplateId", 0, 1,
@@ -1723,8 +1725,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			generalStatusSectionEClass, ecorePackage.getEBoolean(), "validateGeneralStatusSectionCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			generalStatusSectionEClass, ecorePackage.getEBoolean(), "validateGeneralStatusSectionCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1764,8 +1766,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			consultationNoteEClass, ecorePackage.getEBoolean(), "validateConsultationNoteHistoryOfPresentIllness", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			consultationNoteEClass, ecorePackage.getEBoolean(), "validateConsultationNoteHistoryOfPresentIllness", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1938,8 +1940,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
-			consultationNoteEClass, theCCDPackage.getImmunizationsSection(), "getImmunizationsSection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+			consultationNoteEClass, theCCDPackage.getImmunizationsSection(), "getImmunizationsSection", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
 
 		addEOperation(
 			consultationNoteEClass, theCCDPackage.getMedicationsSection(), "getMedicationsSection", 1, 1, IS_UNIQUE,
@@ -1949,12 +1951,12 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			consultationNoteEClass, theCCDPackage.getAlertsSection(), "getAlertsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
-			consultationNoteEClass, theCCDPackage.getSocialHistorySection(), "getSocialHistorySection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+			consultationNoteEClass, theCCDPackage.getSocialHistorySection(), "getSocialHistorySection", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
 
 		addEOperation(
-			consultationNoteEClass, theCCDPackage.getFamilyHistorySection(), "getFamilyHistorySection", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
+			consultationNoteEClass, theCCDPackage.getFamilyHistorySection(), "getFamilyHistorySection", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
 
 		addEOperation(
 			consultationNoteEClass, this.getReviewOfSystemsSection(), "getReviewOfSystemsSection", 1, 1, IS_UNIQUE,
@@ -1969,7 +1971,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			!IS_ORDERED);
 
 		addEOperation(
-			consultationNoteEClass, this.getDiagnosticFindings(), "getDiagnosticFindings", 1, 1, IS_UNIQUE, !IS_ORDERED);
+			consultationNoteEClass, this.getDiagnosticFindings(), "getDiagnosticFindings", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
 
 		initEClass(
 			pastMedicalHistorySectionConsultEClass, PastMedicalHistorySectionConsult.class,
@@ -2039,8 +2042,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			reasonForReferralSectionEClass, ecorePackage.getEBoolean(), "validateReasonForReferralSectionTemplateId",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			reasonForReferralSectionEClass, ecorePackage.getEBoolean(), "validateReasonForReferralSectionTemplateId", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2114,8 +2117,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			assessmentSectionEClass, ecorePackage.getEBoolean(), "validateAssessmentSectionTemplateId", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			assessmentSectionEClass, ecorePackage.getEBoolean(), "validateAssessmentSectionTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2140,7 +2143,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			planSectionEClass, ecorePackage.getEBoolean(), "validatePlanSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+			planSectionEClass, ecorePackage.getEBoolean(), "validatePlanSectionTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2164,8 +2168,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			assessmentAndPlanSectionEClass, ecorePackage.getEBoolean(), "validateAssessmentAndPlanSectionTemplateId",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			assessmentAndPlanSectionEClass, ecorePackage.getEBoolean(), "validateAssessmentAndPlanSectionTemplateId", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2345,8 +2349,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			progressNoteEClass, ecorePackage.getEBoolean(),
-			"validateProgressNoteHasEncompassingEncounterEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
+			progressNoteEClass, ecorePackage.getEBoolean(), "validateProgressNoteHasEncompassingEncounterEffectiveTime",
+			0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2367,8 +2371,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			progressNoteEClass, ecorePackage.getEBoolean(), "validateProgressNoteHasEncompassingEncounterFacilityId",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			progressNoteEClass, ecorePackage.getEBoolean(), "validateProgressNoteHasEncompassingEncounterFacilityId", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2569,8 +2573,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
-			assessmentSectionProcNoteEClass, AssessmentSectionProcNote.class, "AssessmentSectionProcNote",
-			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+			assessmentSectionProcNoteEClass, AssessmentSectionProcNote.class, "AssessmentSectionProcNote", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			assessmentSectionProcNoteEClass, ecorePackage.getEBoolean(), "validateAssessmentSectionProcNoteTemplateId",
@@ -2684,8 +2688,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			subjectiveSectionEClass, ecorePackage.getEBoolean(), "validateSubjectiveSectionHasClinicalStatements", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			subjectiveSectionEClass, ecorePackage.getEBoolean(), "validateSubjectiveSectionHasClinicalStatements", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2695,8 +2699,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			subjectiveSectionEClass, ecorePackage.getEBoolean(), "validateSubjectiveSectionTemplateId", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			subjectiveSectionEClass, ecorePackage.getEBoolean(), "validateSubjectiveSectionTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2739,8 +2743,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
-			unstructuredDocumentEClass, UnstructuredDocument.class, "UnstructuredDocument", !IS_ABSTRACT,
-			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+			unstructuredDocumentEClass, UnstructuredDocument.class, "UnstructuredDocument", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			unstructuredDocumentEClass, ecorePackage.getEBoolean(), "validateUnstructuredDocumentPatientRoleHasId", 0,
@@ -2754,8 +2758,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			unstructuredDocumentEClass, ecorePackage.getEBoolean(),
-			"validateUnstructuredDocumentAssignedAuthorHasAddr", 0, 1, IS_UNIQUE, IS_ORDERED);
+			unstructuredDocumentEClass, ecorePackage.getEBoolean(), "validateUnstructuredDocumentAssignedAuthorHasAddr",
+			0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2948,14 +2952,11 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation";
 		addAnnotation(this, source, new String[] { "registryDelegate", "CDTRegistryDelegate" });
 		addAnnotation(
-			generalHeaderConstraintsEClass,
-			source,
+			generalHeaderConstraintsEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsPersonHasName GeneralHeaderConstraintsRolesShallHaveAddrAndTelecom GeneralHeaderConstraintsOrganizationsHaveContactInfo GeneralHeaderConstraintsTimePreciseToDay GeneralHeaderConstraintsTimePreciseToYear GeneralHeaderConstraintsTelephoneMatchesRegex GeneralHeaderConstraintsHasTelephoneDialingDigits GeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor GeneralHeaderConstraintsTypeIdExtension GeneralHeaderConstraintsIdRootFormat GeneralHeaderConstraintsOidLength GeneralHeaderConstraintsLanguageCodeForm GeneralHeaderConstraintsSetIdAndVersionNumber GeneralHeaderConstraintsSetIdAndIdAreUnique GeneralHeaderConstraintsCopyTimeNotPresent GeneralHeaderConstraintsHasRecordTargetPatientRole GeneralHeaderConstraintsHasPatientBirthTime GeneralHeaderConstraintsHasAdministrativeGenderCode GeneralHeaderConstraintsHasAuthorTime GeneralHeaderConstraintsHasAssignedAuthorId GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice GeneralHeaderConstraintsHasDataEntererAssignedPerson GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson GeneralHeaderConstraintsAuthenticatorHasAssignedPerson GeneralHeaderConstraintsCode GeneralHeaderConstraintsEffectiveTime GeneralHeaderConstraintsId GeneralHeaderConstraintsLanguageCode GeneralHeaderConstraintsRealmCode GeneralHeaderConstraintsTitle GeneralHeaderConstraintsTypeId",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.3",
-					"constraints.validation.warning",
+					"templateId.root", "2.16.840.1.113883.10.20.3", "constraints.validation.warning",
 					"GeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom GeneralHeaderConstraintsTimePreciseToSecond GeneralHeaderConstraintsTimePreciseToYearAndDay",
 					"constraints.validation.query",
 					"GeneralHeaderConstraintsTimePreciseToYear GeneralHeaderConstraintsOidLength GeneralHeaderConstraintsTimePreciseToYearAndDay",
@@ -2963,176 +2964,210 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 					"GeneralHeaderConstraintsHasProviderOrganization GeneralHeaderConstraintsHasDataEntererTime GeneralHeaderConstraintsHasInformant",
 					"realmCode.code", "US" });
 		addAnnotation(
-			historyAndPhysicalEClass,
-			source,
+			historyAndPhysicalEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"GeneralHeaderConstraintsTemplateId HistoryAndPhysicalAssessmentAndPlan HistoryAndPhysicalBothAssessmentAndPlan HistoryAndPhysicalReasonForVisitAndChiefComplaint HistoryAndPhysicalBothReasonForVisitAndChiefComplaint HistoryAndPhysicalCode HistoryAndPhysicalHistoryOfPresentIllness HistoryAndPhysicalPastMedicalHistorySection HistoryAndPhysicalMedicationsSection HistoryAndPhysicalAlertsSection HistoryAndPhysicalSocialHistorySection HistoryAndPhysicalFamilyHistorySection HistoryAndPhysicalReviewOfSystemsSection HistoryAndPhysicalPhysicalExaminationSection HistoryAndPhysicalVitalSignsSection HistoryAndPhysicalGeneralStatusSection HistoryAndPhysicalDiagnosticFindings",
 					"templateId.root", "2.16.840.1.113883.10.20.2", "code.codeSystem", "2.16.840.1.113883.6.1",
 					"code.codeSystemName", "LOINC", "constraints.validation.info",
 					"HistoryAndPhysicalProblemSection HistoryAndPhysicalProceduresSection HistoryAndPhysicalImmunizationsSection" });
-		addAnnotation(historyOfPresentIllnessEClass, source, new String[] {
-				"constraints.validation.error", "HistoryOfPresentIllnessTemplateId HistoryOfPresentIllnessCode",
-				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.4", "code.code", "10164-2", "code.codeSystem",
-				"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
-				"HISTORY OF PRESENT ILLNESS" });
 		addAnnotation(
-			pastMedicalHistorySectionEClass, source, new String[] {
+			historyOfPresentIllnessEClass, source,
+			new String[] {
+					"constraints.validation.error", "HistoryOfPresentIllnessTemplateId HistoryOfPresentIllnessCode",
+					"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.4", "code.code", "10164-2", "code.codeSystem",
+					"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
+					"HISTORY OF PRESENT ILLNESS" });
+		addAnnotation(
+			pastMedicalHistorySectionEClass, source,
+			new String[] {
 					"constraints.validation.error",
 					"PastMedicalHistorySectionTemplateId PastMedicalHistorySectionCode PastMedicalHistorySectionText",
 					"templateId.root", "2.16.840.1.113883.10.20.2.9", "constraints.validation.warning",
 					"PastMedicalHistorySectionHasClinicalStatements", "code.code", "11348-0", "code.codeSystem",
 					"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
 					"HISTORY OF PAST ILLNESS" });
-		addAnnotation(reviewOfSystemsSectionIHEEClass, source, new String[] {
-				"constraints.validation.error", "ReviewOfSystemsSectionIHETemplateId ReviewOfSystemsSectionIHECode",
-				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.18", "code.code", "10187-3", "code.codeSystem",
-				"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "REVIEW OF SYSTEMS" });
-		addAnnotation(physicalExaminationSectionEClass, source, new String[] {
-				"constraints.validation.error", "PhysicalExaminationSectionTemplateId PhysicalExaminationSectionCode",
-				"templateId.root", "2.16.840.1.113883.10.20.2.10", "code.code", "29545-1", "code.codeSystem",
-				"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "PHYSICAL FINDINGS" });
-		addAnnotation(vitalSignsSectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"VitalSignsSectionTemplateId VitalSignsSectionCode VitalSignsSectionText", "templateId.root",
-				"2.16.840.1.113883.10.20.2.4", "constraints.validation.warning",
-				"VitalSignsSectionClinicalStatements VitalSignsSectionVitalSignsOrganizer", "code.code", "8716-3",
-				"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
-				"VITAL SIGNS" });
-		addAnnotation(generalStatusSectionEClass, source, new String[] {
-				"constraints.validation.error", "GeneralStatusSectionTemplateId GeneralStatusSectionCode",
-				"templateId.root", "2.16.840.1.113883.10.20.2.5", "code.code", "10210-3", "code.codeSystem",
-				"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
-				"GENERAL STATUS, PHYSICAL FINDINGS" });
-		addAnnotation(diagnosticFindingsEClass, source, new String[] {
-				"constraints.validation.error", "ResultsSectionTitle" });
 		addAnnotation(
-			consultationNoteEClass,
-			source,
+			reviewOfSystemsSectionIHEEClass, source,
+			new String[] {
+					"constraints.validation.error", "ReviewOfSystemsSectionIHETemplateId ReviewOfSystemsSectionIHECode",
+					"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.18", "code.code", "10187-3", "code.codeSystem",
+					"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "REVIEW OF SYSTEMS" });
+		addAnnotation(
+			physicalExaminationSectionEClass, source,
+			new String[] {
+					"constraints.validation.error",
+					"PhysicalExaminationSectionTemplateId PhysicalExaminationSectionCode", "templateId.root",
+					"2.16.840.1.113883.10.20.2.10", "code.code", "29545-1", "code.codeSystem", "2.16.840.1.113883.6.1",
+					"code.codeSystemName", "LOINC", "code.displayName", "PHYSICAL FINDINGS" });
+		addAnnotation(
+			vitalSignsSectionEClass, source,
+			new String[] {
+					"constraints.validation.error",
+					"VitalSignsSectionTemplateId VitalSignsSectionCode VitalSignsSectionText", "templateId.root",
+					"2.16.840.1.113883.10.20.2.4", "constraints.validation.warning",
+					"VitalSignsSectionClinicalStatements VitalSignsSectionVitalSignsOrganizer", "code.code", "8716-3",
+					"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
+					"VITAL SIGNS" });
+		addAnnotation(
+			generalStatusSectionEClass, source,
+			new String[] {
+					"constraints.validation.error", "GeneralStatusSectionTemplateId GeneralStatusSectionCode",
+					"templateId.root", "2.16.840.1.113883.10.20.2.5", "code.code", "10210-3", "code.codeSystem",
+					"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
+					"GENERAL STATUS, PHYSICAL FINDINGS" });
+		addAnnotation(
+			diagnosticFindingsEClass, source, new String[] { "constraints.validation.error", "ResultsSectionTitle" });
+		addAnnotation(
+			consultationNoteEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"GeneralHeaderConstraintsTemplateId ConsultationNoteReferralOrVisit ConsultationNoteCode ConsultationNoteHistoryOfPresentIllness ConsultationNotePhysicalExamination",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.4",
-					"code.codeSystem",
-					"2.16.840.1.113883.6.1",
-					"code.codeSystemName",
-					"LOINC",
-					"constraints.validation.info",
+					"templateId.root", "2.16.840.1.113883.10.20.4", "code.codeSystem", "2.16.840.1.113883.6.1",
+					"code.codeSystemName", "LOINC", "constraints.validation.info",
 					"ConsultationNoteProblemSection ConsultationNoteProceduresSection ConsultationNotePastMedicalHistorySection ConsultationNoteImmunizationsSection ConsultationNoteMedicationsSection ConsultationNoteAlertsSection ConsultationNoteSocialHistorySection ConsultationNoteFamilyHistorySection ConsultationNoteReviewOfSystemsSection ConsultationNoteVitalSignsSection ConsultationNoteGeneralStatusSection ConsultationNoteDiagnosticFindings" });
 		addAnnotation(
-			pastMedicalHistorySectionConsultEClass,
-			source,
+			pastMedicalHistorySectionConsultEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"PastMedicalHistorySectionConsultTemplateId PastMedicalHistorySectionConsultCode PastMedicalHistorySectionConsultText",
 					"templateId.root", "2.16.840.1.113883.10.20.4.9", "code.code", "11348-0", "code.codeSystem",
 					"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
 					"HISTORY OF PAST ILLNESS" });
-		addAnnotation(reviewOfSystemsSectionEClass, source, new String[] {
-				"constraints.validation.error", "ReviewOfSystemsSectionTemplateId ReviewOfSystemsSectionCode",
-				"templateId.root", "2.16.840.1.113883.10.20.4.10", "code.code", "10187-3", "code.codeSystem",
-				"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "REVIEW OF SYSTEMS" });
-		addAnnotation(reasonForReferralSectionEClass, source, new String[] {
-				"constraints.validation.error", "ReasonForReferralSectionTemplateId ReasonForReferralSectionCode",
-				"templateId.root", "2.16.840.1.113883.10.20.4.8", "contextDependent", "true", "code.code", "42349-1",
-				"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
-				"REASON FOR REFERRAL" });
-		addAnnotation(reasonForVisitSectionConsultEClass, source, new String[] {
-				"constraints.validation.error",
-				"ReasonForVisitSectionConsultTemplateId ReasonForVisitSectionConsultCode", "templateId.root",
-				"2.16.840.1.113883.10.20.4.8", "contextDependent", "true", "code.code", "29299-5", "code.codeSystem",
-				"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "REASON FOR VISIT" });
-		addAnnotation(levelOneConformanceEClass, source, new String[] {
-				"constraints.validation.error", "LevelOneConformanceTemplateId", "templateId.root",
-				"2.16.840.1.113883.10.20.10" });
-		addAnnotation(levelTwoConformanceEClass, source, new String[] {
-				"constraints.validation.error", "LevelOneConformanceTemplateId", "templateId.root",
-				"2.16.840.1.113883.10.20.20" });
-		addAnnotation(levelThreeConformanceEClass, source, new String[] {
-				"constraints.validation.error", "LevelOneConformanceTemplateId", "templateId.root",
-				"2.16.840.1.113883.10.20.30" });
-		addAnnotation(assessmentSectionEClass, source, new String[] {
-				"constraints.validation.error", "AssessmentSectionTemplateId AssessmentSectionCode", "templateId.root",
-				"2.16.840.1.113883.10.20.2.7", "contextDependent", "true", "code.code", "51848-0", "code.codeSystem",
-				"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "Assessment" });
-		addAnnotation(planSectionEClass, source, new String[] {
-				"constraints.validation.error", "PlanSectionTemplateId PlanSectionCode", "templateId.root",
-				"2.16.840.1.113883.10.20.2.7", "contextDependent", "true", "code.code", "18776-5", "code.codeSystem",
-				"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "Plan" });
-		addAnnotation(assessmentAndPlanSectionEClass, source, new String[] {
-				"constraints.validation.error", "AssessmentAndPlanSectionTemplateId AssessmentAndPlanSectionCode",
-				"templateId.root", "2.16.840.1.113883.10.20.2.7", "contextDependent", "true", "code.code", "51847-2",
-				"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
-				"Assessment + Plan" });
-		addAnnotation(reasonForVisitSectionEClass, source, new String[] {
-				"constraints.validation.error", "ReasonForVisitSectionTemplateId ReasonForVisitSectionCode",
-				"templateId.root", "2.16.840.1.113883.10.20.2.8", "contextDependent", "true", "code.code", "29299-5",
-				"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
-				"Reason for visit" });
-		addAnnotation(chiefComplaintSectionEClass, source, new String[] {
-				"constraints.validation.error", "ChiefComplaintSectionTemplateId ChiefComplaintSectionCode",
-				"templateId.root", "2.16.840.1.113883.10.20.2.8", "contextDependent", "true", "code.code", "10154-3",
-				"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
-				"Chief complaint" });
-		addAnnotation(reasonForVisitAndChiefComplaintSectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"ReasonForVisitAndChiefComplaintSectionTemplateId ReasonForVisitAndChiefComplaintSectionCode",
-				"templateId.root", "2.16.840.1.113883.10.20.2.8", "contextDependent", "true", "code.code", "46239-0",
-				"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
-				"Reason for visit + Chief complaint" });
 		addAnnotation(
-			progressNoteEClass,
-			source,
+			reviewOfSystemsSectionEClass, source,
+			new String[] {
+					"constraints.validation.error", "ReviewOfSystemsSectionTemplateId ReviewOfSystemsSectionCode",
+					"templateId.root", "2.16.840.1.113883.10.20.4.10", "code.code", "10187-3", "code.codeSystem",
+					"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "REVIEW OF SYSTEMS" });
+		addAnnotation(
+			reasonForReferralSectionEClass, source,
+			new String[] {
+					"constraints.validation.error", "ReasonForReferralSectionTemplateId ReasonForReferralSectionCode",
+					"templateId.root", "2.16.840.1.113883.10.20.4.8", "contextDependent", "true", "code.code",
+					"42349-1", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
+					"code.displayName", "REASON FOR REFERRAL" });
+		addAnnotation(
+			reasonForVisitSectionConsultEClass, source,
+			new String[] {
+					"constraints.validation.error",
+					"ReasonForVisitSectionConsultTemplateId ReasonForVisitSectionConsultCode", "templateId.root",
+					"2.16.840.1.113883.10.20.4.8", "contextDependent", "true", "code.code", "29299-5",
+					"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
+					"REASON FOR VISIT" });
+		addAnnotation(
+			levelOneConformanceEClass, source,
+			new String[] {
+					"constraints.validation.error", "LevelOneConformanceTemplateId", "templateId.root",
+					"2.16.840.1.113883.10.20.10" });
+		addAnnotation(
+			levelTwoConformanceEClass, source,
+			new String[] {
+					"constraints.validation.error", "LevelOneConformanceTemplateId", "templateId.root",
+					"2.16.840.1.113883.10.20.20" });
+		addAnnotation(
+			levelThreeConformanceEClass, source,
+			new String[] {
+					"constraints.validation.error", "LevelOneConformanceTemplateId", "templateId.root",
+					"2.16.840.1.113883.10.20.30" });
+		addAnnotation(
+			assessmentSectionEClass, source,
+			new String[] {
+					"constraints.validation.error", "AssessmentSectionTemplateId AssessmentSectionCode",
+					"templateId.root", "2.16.840.1.113883.10.20.2.7", "contextDependent", "true", "code.code",
+					"51848-0", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
+					"code.displayName", "Assessment" });
+		addAnnotation(
+			planSectionEClass, source,
+			new String[] {
+					"constraints.validation.error", "PlanSectionTemplateId PlanSectionCode", "templateId.root",
+					"2.16.840.1.113883.10.20.2.7", "contextDependent", "true", "code.code", "18776-5",
+					"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
+					"Plan" });
+		addAnnotation(
+			assessmentAndPlanSectionEClass, source,
+			new String[] {
+					"constraints.validation.error", "AssessmentAndPlanSectionTemplateId AssessmentAndPlanSectionCode",
+					"templateId.root", "2.16.840.1.113883.10.20.2.7", "contextDependent", "true", "code.code",
+					"51847-2", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
+					"code.displayName", "Assessment + Plan" });
+		addAnnotation(
+			reasonForVisitSectionEClass, source,
+			new String[] {
+					"constraints.validation.error", "ReasonForVisitSectionTemplateId ReasonForVisitSectionCode",
+					"templateId.root", "2.16.840.1.113883.10.20.2.8", "contextDependent", "true", "code.code",
+					"29299-5", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
+					"code.displayName", "Reason for visit" });
+		addAnnotation(
+			chiefComplaintSectionEClass, source,
+			new String[] {
+					"constraints.validation.error", "ChiefComplaintSectionTemplateId ChiefComplaintSectionCode",
+					"templateId.root", "2.16.840.1.113883.10.20.2.8", "contextDependent", "true", "code.code",
+					"10154-3", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
+					"code.displayName", "Chief complaint" });
+		addAnnotation(
+			reasonForVisitAndChiefComplaintSectionEClass, source,
+			new String[] {
+					"constraints.validation.error",
+					"ReasonForVisitAndChiefComplaintSectionTemplateId ReasonForVisitAndChiefComplaintSectionCode",
+					"templateId.root", "2.16.840.1.113883.10.20.2.8", "contextDependent", "true", "code.code",
+					"46239-0", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
+					"code.displayName", "Reason for visit + Chief complaint" });
+		addAnnotation(
+			progressNoteEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"GeneralHeaderConstraintsTemplateId ProgressNoteAssessmentAndPlan ProgressNoteBothAssessmentAndPlan ProgressNoteHasServiceEventCode ProgressNoteHasComponentOfElement ProgressNoteHasEncompassingEncounterId ProgressNoteHasEncompassingEncounterEffectiveTime ProgressNoteHasEncompassingEncounterEffectiveTimeLow ProgressNoteCode",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.21.1",
-					"constraints.validation.warning",
+					"templateId.root", "2.16.840.1.113883.10.20.21.1", "constraints.validation.warning",
 					"ProgressNoteHasServiceEvent ProgressNoteHasServiceEventEffectiveTime ProgressNoteHasEncompassingEncounterFacilityId",
-					"code.codeSystem",
-					"2.16.840.1.113883.6.1",
-					"code.codeSystemName",
-					"LOINC",
+					"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"constraints.validation.info",
 					"ProgressNoteAlertsSection ProgressNoteChiefComplaintSection ProgressNoteMedicationsSection ProgressNoteObjectiveSection ProgressNotePhysicalExaminationSection ProgressNoteProblemSection ProgressNoteResultsSection ProgressNoteVitalSignsSection ProgressNoteReviewOfSystemsSection ProgressNoteSubjectiveSection" });
-		addAnnotation(assessmentAndPlanSectionProcNoteEClass, source, new String[] {
-				"constraints.validation.error",
-				"AssessmentAndPlanSectionProcNoteTemplateId AssessmentAndPlanSectionProcNoteCode", "templateId.root",
-				"2.16.840.1.113883.10.20.18.2.14", "code.code", "51847-2", "code.codeSystem", "2.16.840.1.113883.6.1",
-				"code.codeSystemName", "LOINC", "code.displayName", "ASSESSMENT AND PLAN" });
-		addAnnotation(assessmentSectionProcNoteEClass, source, new String[] {
-				"constraints.validation.error", "AssessmentSectionProcNoteTemplateId AssessmentSectionProcNoteCode",
-				"templateId.root", "2.16.840.1.113883.10.20.18.2.13", "code.code", "51848-0", "code.codeSystem",
-				"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "ASSESSMENT" });
-		addAnnotation(chiefComplaintSectionProcNoteEClass, source, new String[] {
-				"constraints.validation.error",
-				"ChiefComplaintSectionProcNoteTemplateId ChiefComplaintSectionProcNoteCode", "templateId.root",
-				"2.16.840.1.113883.10.20.18.2.16", "code.code", "10154-3", "code.codeSystem", "2.16.840.1.113883.6.1",
-				"code.codeSystemName", "LOINC", "code.displayName", "CHIEF COMPLAINT" });
-		addAnnotation(objectiveSectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"ObjectiveSectionTemplateId ObjectiveSectionCode ObjectiveSectionText ObjectiveSectionTitle",
-				"templateId.root", "2.16.840.1.113883.10.20.21.2.1", "constraints.validation.warning",
-				"ObjectiveSectionHasClinicalStatements", "code.code", "OBJEC-X", "code.codeSystem",
-				"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "OBJECTIVE DATA" });
-		addAnnotation(subjectiveSectionEClass, source, new String[] {
-				"constraints.validation.error",
-				"SubjectiveSectionTemplateId SubjectiveSectionCode SubjectiveSectionText SubjectiveSectionTitle",
-				"templateId.root", "2.16.840.1.113883.10.20.21.2.2", "constraints.validation.warning",
-				"SubjectiveSectionHasClinicalStatements", "code.code", "SUBJ-X", "code.codeSystem",
-				"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "SUBJECTIVE DATA" });
 		addAnnotation(
-			unstructuredDocumentEClass,
-			source,
+			assessmentAndPlanSectionProcNoteEClass, source,
+			new String[] {
+					"constraints.validation.error",
+					"AssessmentAndPlanSectionProcNoteTemplateId AssessmentAndPlanSectionProcNoteCode",
+					"templateId.root", "2.16.840.1.113883.10.20.18.2.14", "code.code", "51847-2", "code.codeSystem",
+					"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
+					"ASSESSMENT AND PLAN" });
+		addAnnotation(
+			assessmentSectionProcNoteEClass, source,
+			new String[] {
+					"constraints.validation.error", "AssessmentSectionProcNoteTemplateId AssessmentSectionProcNoteCode",
+					"templateId.root", "2.16.840.1.113883.10.20.18.2.13", "code.code", "51848-0", "code.codeSystem",
+					"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "ASSESSMENT" });
+		addAnnotation(
+			chiefComplaintSectionProcNoteEClass, source,
+			new String[] {
+					"constraints.validation.error",
+					"ChiefComplaintSectionProcNoteTemplateId ChiefComplaintSectionProcNoteCode", "templateId.root",
+					"2.16.840.1.113883.10.20.18.2.16", "code.code", "10154-3", "code.codeSystem",
+					"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "CHIEF COMPLAINT" });
+		addAnnotation(
+			objectiveSectionEClass, source,
+			new String[] {
+					"constraints.validation.error",
+					"ObjectiveSectionTemplateId ObjectiveSectionCode ObjectiveSectionText ObjectiveSectionTitle",
+					"templateId.root", "2.16.840.1.113883.10.20.21.2.1", "constraints.validation.warning",
+					"ObjectiveSectionHasClinicalStatements", "code.code", "OBJEC-X", "code.codeSystem",
+					"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "OBJECTIVE DATA" });
+		addAnnotation(
+			subjectiveSectionEClass, source,
+			new String[] {
+					"constraints.validation.error",
+					"SubjectiveSectionTemplateId SubjectiveSectionCode SubjectiveSectionText SubjectiveSectionTitle",
+					"templateId.root", "2.16.840.1.113883.10.20.21.2.2", "constraints.validation.warning",
+					"SubjectiveSectionHasClinicalStatements", "code.code", "SUBJ-X", "code.codeSystem",
+					"2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName", "SUBJECTIVE DATA" });
+		addAnnotation(
+			unstructuredDocumentEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"GeneralHeaderConstraintsTemplateId UnstructuredDocumentPatientRoleHasId UnstructuredDocumentAssignedAuthorHasAddr UnstructuredDocumentAssignedAuthorHasTelecom UnstructuredDocumentHasRepresentedCustodianOrganization UnstructuredDocumentHasRepresentedCustodianOrganizationId UnstructuredDocumentHasRepresentedCustodianOrganizationName UnstructuredDocumentHasRepresentedCustodianOrganizationTelecom UnstructuredDocumentHasRepresentedCustodianOrganizationAddr UnstructuredDocumentHasNonXMLBodyText UnstructuredDocumentHasTextReferenceOrRepresentation UnstructuredDocumentHasTextMediaTypeValueSet GeneralHeaderConstraintsEffectiveTime GeneralHeaderConstraintsCustodian",
 					"templateId.root", "2.16.840.1.113883.10.20.19.1" });
 		addAnnotation(
-			hospitalDischargeStudiesSummarySectionEClass,
-			source,
+			hospitalDischargeStudiesSummarySectionEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"HospitalDischargeStudiesSummarySectionTemplateId HospitalDischargeStudiesSummarySectionCode HospitalDischargeStudiesSummarySectionTitle",

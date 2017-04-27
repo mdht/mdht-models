@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.hl7.security.ds4p.contentprofile/src" modelPluginID="org.hl7.security.ds4p.contentprofile"
+    templateDirectory="/org.eclipse.mdht.uml.cda/templates" dynamicTemplates="true"
+    modelName="contentprofile_Ecore" modelPluginClass="CONTENTPROFILEPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
+    complianceLevel="7.0" copyrightFields="false" runtimeVersion="2.9" pluralizedGetters="true"
+    invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+  </genAnnotations>
+  <foreignModel>contentprofile_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="CONTENTPROFILE" basePackage="org.hl7.security.ds4p"
+      disposableProviderFactory="true" ecorePackage="contentprofile.ecore#/" operationsPackage="org.hl7.security.ds4p.contentprofile.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//PrivacySegmentedDocument">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacySegmentedDocument/PrivacySegmentedDocumentTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedDocument/PrivacySegmentedDocumentTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedDocument/PrivacySegmentedDocumentTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacySegmentedDocument/PrivacySegmentedDocumentAuthor1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedDocument/PrivacySegmentedDocumentAuthor1/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedDocument/PrivacySegmentedDocumentAuthor1/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacySegmentedDocument/PrivacySegmentedDocumentSegmentedSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedDocument/PrivacySegmentedDocumentSegmentedSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedDocument/PrivacySegmentedDocumentSegmentedSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacySegmentedDocument/PrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedDocument/PrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedDocument/PrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacySegmentedDocument/getSegmentedSections"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacySegmentedDocument/getPrivacyAndSecurityMarkingsSections"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//PrivacySegmentedSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacySegmentedSection/PrivacySegmentedSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedSection/PrivacySegmentedSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedSection/PrivacySegmentedSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacySegmentedSection/PrivacySegmentedSectionConfidentialityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedSection/PrivacySegmentedSectionConfidentialityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedSection/PrivacySegmentedSectionConfidentialityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacySegmentedSection/PrivacySegmentedSectionConfidentialityCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedSection/PrivacySegmentedSectionConfidentialityCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedSection/PrivacySegmentedSectionConfidentialityCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacySegmentedSection/PrivacySegmentedSectionAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedSection/PrivacySegmentedSectionAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacySegmentedSection/PrivacySegmentedSectionAuthor/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//PrivacyMarkingsSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionEntry1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionEntry1/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsSection/PrivacyMarkingsSectionEntry1/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//ObligationPolicySecurityObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//ObligationPolicySecurityObservation/ObligationPolicySecurityObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ObligationPolicySecurityObservation/ObligationPolicySecurityObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ObligationPolicySecurityObservation/ObligationPolicySecurityObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//ObligationPolicySecurityObservation/ObligationPolicySecurityObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ObligationPolicySecurityObservation/ObligationPolicySecurityObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ObligationPolicySecurityObservation/ObligationPolicySecurityObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="contentprofile.ecore#//SecurityObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//SecurityObservation/SecurityObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//SecurityObservation/SecurityObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//SecurityObservation/SecurityObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//SecurityObservation/SecurityObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//SecurityObservation/SecurityObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//SecurityObservation/SecurityObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//SecurityObservation/SecurityObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//SecurityObservation/SecurityObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//SecurityObservation/SecurityObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//SecurityObservation/SecurityObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//SecurityObservation/SecurityObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//SecurityObservation/SecurityObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//SecurityObservation/SecurityObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//SecurityObservation/SecurityObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//SecurityObservation/SecurityObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//SecurityObservation/SecurityObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//SecurityObservation/SecurityObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//SecurityObservation/SecurityObservationMoodCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//MandatoryDocumentProvenance">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryDocumentProvenance/MandatoryDocumentProvenanceTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentProvenance/MandatoryDocumentProvenanceTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentProvenance/MandatoryDocumentProvenanceTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryDocumentProvenance/MandatoryDocumentProvenanceTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentProvenance/MandatoryDocumentProvenanceTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentProvenance/MandatoryDocumentProvenanceTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryDocumentProvenance/MandatoryDocumentProvenanceAssignedAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentProvenance/MandatoryDocumentProvenanceAssignedAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentProvenance/MandatoryDocumentProvenanceAssignedAuthor/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//MandatoryDocumentAssignedAuthor">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorTelecomEmail">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorTelecomEmail/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorTelecomEmail/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorAssignedAuthoringDevice">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorAssignedAuthoringDevice/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorAssignedAuthoringDevice/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorAssignedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorAssignedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorAssignedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorRepresentedOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorRepresentedOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryDocumentAssignedAuthor/MandatoryDocumentAssignedAuthorRepresentedOrganization/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//PrivacyAnnotation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationObligationPolicySecurityObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationObligationPolicySecurityObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationObligationPolicySecurityObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationRefrainPolicySecurityObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationRefrainPolicySecurityObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationRefrainPolicySecurityObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationPurposeOfUseSecurityObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationPurposeOfUseSecurityObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationPurposeOfUseSecurityObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationConfidentialityCodeSecurityObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationConfidentialityCodeSecurityObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotation/PrivacyAnnotationConfidentialityCodeSecurityObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/getObligationPolicySecurityObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/getRefrainPolicySecurityObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/getPurposeOfUseSecurityObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/getConfidentialityCodeSecurityObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//RefrainPolicySecurityObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//PurposeOfUseSecurityObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//ConfidentialitySecurityObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//ConfidentialitySecurityObservation/ConfidentialitySecurityObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ConfidentialitySecurityObservation/ConfidentialitySecurityObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ConfidentialitySecurityObservation/ConfidentialitySecurityObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//ConfidentialitySecurityObservation/ConfidentialitySecurityObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ConfidentialitySecurityObservation/ConfidentialitySecurityObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ConfidentialitySecurityObservation/ConfidentialitySecurityObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//ProtectedProblem">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//ProtectedProblem/ProblemObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ProtectedProblem/ProblemObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ProtectedProblem/ProblemObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//ProtectedProblem/ProtectedProblemProblemProvenance">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ProtectedProblem/ProtectedProblemProblemProvenance/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ProtectedProblem/ProtectedProblemProblemProvenance/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//ProtectedProblem/ProtectedProblemPrivacyAnnotations">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ProtectedProblem/ProtectedProblemPrivacyAnnotations/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//ProtectedProblem/ProtectedProblemPrivacyAnnotations/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//MandatoryEntryProvenance">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryEntryProvenance/MandatoryEntryProvenanceTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryProvenance/MandatoryEntryProvenanceTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryProvenance/MandatoryEntryProvenanceTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryEntryProvenance/MandatoryEntryProvenanceTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryProvenance/MandatoryEntryProvenanceTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryProvenance/MandatoryEntryProvenanceTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryEntryProvenance/MandatoryEntryProvenanceAssignedAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryProvenance/MandatoryEntryProvenanceAssignedAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryProvenance/MandatoryEntryProvenanceAssignedAuthor/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//MandatoryEntryAssignedAuthor">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryEntryAssignedAuthor/MandatoryEntryAssignedAuthorTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryAssignedAuthor/MandatoryEntryAssignedAuthorTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryAssignedAuthor/MandatoryEntryAssignedAuthorTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryEntryAssignedAuthor/MandatoryEntryAssignedAuthorAssignedAuthoringDevice">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryAssignedAuthor/MandatoryEntryAssignedAuthorAssignedAuthoringDevice/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryAssignedAuthor/MandatoryEntryAssignedAuthorAssignedAuthoringDevice/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryEntryAssignedAuthor/MandatoryEntryAssignedAuthorAssignedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryAssignedAuthor/MandatoryEntryAssignedAuthorAssignedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryAssignedAuthor/MandatoryEntryAssignedAuthorAssignedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//MandatoryEntryAssignedAuthor/MandatoryEntryAssignedAuthorRepresentedOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryAssignedAuthor/MandatoryEntryAssignedAuthorRepresentedOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//MandatoryEntryAssignedAuthor/MandatoryEntryAssignedAuthorRepresentedOrganization/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//PrivacyAnnotationEntryRelationship">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotationEntryRelationship/PrivacyAnnotationEntryRelationshipTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotationEntryRelationship/PrivacyAnnotationEntryRelationshipTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotationEntryRelationship/PrivacyAnnotationEntryRelationshipTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotationEntryRelationship/PrivacyAnnotationEntryRelationshipOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotationEntryRelationship/PrivacyAnnotationEntryRelationshipOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyAnnotationEntryRelationship/PrivacyAnnotationEntryRelationshipOrganizer/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//PrivacyMarkingsEntry">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyMarkingsEntry/PrivacyMarkingsEntryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsEntry/PrivacyMarkingsEntryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsEntry/PrivacyMarkingsEntryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyMarkingsEntry/PrivacyMarkingsEntryOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsEntry/PrivacyMarkingsEntryOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PrivacyMarkingsEntry/PrivacyMarkingsEntryOrganizer/context"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

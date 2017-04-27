@@ -2,20 +2,12 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -33,19 +25,16 @@ import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.TimingReference;
 import org.openhealthtools.mdht.uml.cda.sdtm.Toxicity;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.NonhumanLaboratoryTestResultOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Nonhuman Laboratory Test Result</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class NonhumanLaboratoryTestResultImpl extends ObservationImpl implements NonhumanLaboratoryTestResult {
+public class NonhumanLaboratoryTestResultImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements NonhumanLaboratoryTestResult {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -502,7 +491,7 @@ public class NonhumanLaboratoryTestResultImpl extends ObservationImpl implements
 	 */
 	@Override
 	public NonhumanLaboratoryTestResult init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -510,8 +499,8 @@ public class NonhumanLaboratoryTestResultImpl extends ObservationImpl implements
      * @generated
      */
     @Override
-	public NonhumanLaboratoryTestResult init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public NonhumanLaboratoryTestResult init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //NonhumanLaboratoryTestResultImpl

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.emspcr/src" modelPluginID="org.openhealthtools.mdht.uml.cda.emspcr"
-    templateDirectory="/org.openhealthtools.mdht.uml.cda/templates" dynamicTemplates="true"
+    templateDirectory="/org.eclipse.mdht.uml.cda/templates" dynamicTemplates="true"
     modelName="emspcr_Ecore" modelPluginClass="EmspcrPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
-    complianceLevel="7.0" copyrightFields="false" runtimeVersion="2.9" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab ../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.genmodel#//consol platform:/plugin/org.eclipse.uml2.types/model/Types.genmodel#//types"
+    complianceLevel="7.0" copyrightFields="false" runtimeVersion="2.9" usedGenPackages="../../org.eclipse.mdht.uml.cda/model/cda.genmodel#//cda ../../org.eclipse.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
     pluralizedGetters="true" invariantPrefix="validate">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
@@ -24,12 +24,20 @@
     <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
     <details key="VALIDATION_DELEGATES" value="IGNORE"/>
     <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
   </genAnnotations>
   <foreignModel>emspcr_Ecore.uml</foreignModel>
   <genPackages xsi:type="genmodel:GenPackage" prefix="Emspcr" basePackage="org.openhealthtools.mdht.uml.cda"
       disposableProviderFactory="true" loadInitialization="true" ecorePackage="emspcr.ecore#/"
       operationsPackage="org.openhealthtools.mdht.uml.cda.emspcr.operations">
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//PatientCareReport">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/PatientCareReportClassCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportClassCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportClassCode/context"/>
@@ -37,6 +45,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/PatientCareReportMoodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportMoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsId/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/PatientCareReportCodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportCodeP/diagnostics"/>
@@ -46,9 +58,17 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsTitle/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/PatientCareReportConfidentialityCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportConfidentialityCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportConfidentialityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsVersionNumber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsVersionNumber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsVersionNumber/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/PatientCareReportRecordTarget">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportRecordTarget/diagnostics"/>
@@ -98,6 +118,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportSceneSection/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportSceneSection/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsComponentOf">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsComponentOf/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsComponentOf/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/PatientCareReportDispatchSection">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportDispatchSection/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportDispatchSection/context"/>
@@ -133,6 +157,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/PatientCareReportAuthorParticipation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportAuthorParticipation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportAuthorParticipation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/GeneralHeaderConstraintsCustodian/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PatientCareReport/PatientCareReportDocumentationOf">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PatientCareReport/PatientCareReportDocumentationOf/diagnostics"/>
@@ -2427,6 +2455,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerOxygenSaturationComponent/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerOxygenSaturationComponent/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/VitalSignsOrganizerTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/VitalSignsOrganizerTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/VitalSignsOrganizerTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerEffectiveTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerEffectiveTime/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerEffectiveTime/context"/>
@@ -4105,6 +4137,10 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//SystolicBloodPressure">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//SystolicBloodPressure/VitalSignObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//SystolicBloodPressure/VitalSignObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//SystolicBloodPressure/VitalSignObservationTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//SystolicBloodPressure/SystolicBloodPressureMoodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//SystolicBloodPressure/SystolicBloodPressureMoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//SystolicBloodPressure/SystolicBloodPressureMoodCode/context"/>
@@ -4113,12 +4149,20 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//SystolicBloodPressure/SystolicBloodPressureCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//SystolicBloodPressure/SystolicBloodPressureCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//SystolicBloodPressure/VitalSignObservationEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//SystolicBloodPressure/VitalSignObservationEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//SystolicBloodPressure/VitalSignObservationEffectiveTime/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//SystolicBloodPressure/SystolicBloodPressureValue">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//SystolicBloodPressure/SystolicBloodPressureValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//SystolicBloodPressure/SystolicBloodPressureValue/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//DiastolicBloodPressure">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//DiastolicBloodPressure/VitalSignObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DiastolicBloodPressure/VitalSignObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DiastolicBloodPressure/VitalSignObservationTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//DiastolicBloodPressure/DiastolicBloodPressureMoodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DiastolicBloodPressure/DiastolicBloodPressureMoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DiastolicBloodPressure/DiastolicBloodPressureMoodCode/context"/>
@@ -4137,6 +4181,10 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//HeartRate">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//HeartRate/VitalSignObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HeartRate/VitalSignObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HeartRate/VitalSignObservationTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//HeartRate/HeartRateMoodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HeartRate/HeartRateMoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HeartRate/HeartRateMoodCode/context"/>
@@ -4159,6 +4207,10 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//RespiratoryRate">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//RespiratoryRate/VitalSignObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//RespiratoryRate/VitalSignObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//RespiratoryRate/VitalSignObservationTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//RespiratoryRate/RespiratoryRateMoodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//RespiratoryRate/RespiratoryRateMoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//RespiratoryRate/RespiratoryRateMoodCode/context"/>
@@ -4177,6 +4229,10 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//BodyTemperature">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//BodyTemperature/VitalSignObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//BodyTemperature/VitalSignObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//BodyTemperature/VitalSignObservationTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//BodyTemperature/BodyTemperatureMoodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//BodyTemperature/BodyTemperatureMoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//BodyTemperature/BodyTemperatureMoodCode/context"/>

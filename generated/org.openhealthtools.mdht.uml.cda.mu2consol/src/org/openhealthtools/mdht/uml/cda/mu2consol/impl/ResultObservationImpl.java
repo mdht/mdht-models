@@ -16,25 +16,22 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultObservationOperations;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>Result Observation</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ * <!-- begin-user-doc --> An implementation of the model object ' <em><b>Result
+ * Observation</b></em>'. <!-- end-user-doc -->
+ *
  * @generated
  */
-public class ResultObservationImpl extends
-		org.openhealthtools.mdht.uml.cda.consol.impl.ResultObservationImpl
+public class ResultObservationImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.ResultObservationImpl
 		implements ResultObservation {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected ResultObservationImpl() {
@@ -43,7 +40,7 @@ public class ResultObservationImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -53,19 +50,17 @@ public class ResultObservationImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultObservationTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationOperations.validateResultObservationTemplateId(
-				this, diagnostics, context);
+	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -75,12 +70,11 @@ public class ResultObservationImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public ResultObservation init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
 	}

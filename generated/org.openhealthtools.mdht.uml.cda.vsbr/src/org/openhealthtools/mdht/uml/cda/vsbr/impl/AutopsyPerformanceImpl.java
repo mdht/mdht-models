@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.AutopsyPerformance;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.AutopsyPerformanceOperat
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Autopsy Performance</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class AutopsyPerformanceImpl extends ObservationImpl implements AutopsyPerformance {
+public class AutopsyPerformanceImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl
+		implements AutopsyPerformance {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -138,7 +133,7 @@ public class AutopsyPerformanceImpl extends ObservationImpl implements AutopsyPe
 	 * @generated
 	 */
 	public AutopsyPerformance init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -146,8 +141,9 @@ public class AutopsyPerformanceImpl extends ObservationImpl implements AutopsyPe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AutopsyPerformance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public AutopsyPerformance init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // AutopsyPerformanceImpl

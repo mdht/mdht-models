@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PossibleInjuryTemplateId PossibleInjuryMoodCode PossibleInjuryCode PossibleInjuryCodeP PossibleInjuryValue' templateId.root='2.16.840.1.1133883.17.3.10.1.64' moodCode='EVN' code.code='69467-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Possible injury NEMSIS' constraints.validation.dependOn.PossibleInjuryCode='PossibleInjuryCodeP'"
  * @generated
  */
-public interface PossibleInjury extends Observation {
+public interface PossibleInjury extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -97,9 +90,9 @@ public interface PossibleInjury extends Observation {
 	public PossibleInjury init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PossibleInjury init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public PossibleInjury init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // PossibleInjury

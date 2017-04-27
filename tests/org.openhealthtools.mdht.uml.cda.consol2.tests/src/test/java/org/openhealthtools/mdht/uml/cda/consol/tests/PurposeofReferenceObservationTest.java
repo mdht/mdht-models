@@ -14,13 +14,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PurposeofReferenceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PurposeofReferenceObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,7 +52,8 @@ public class PurposeofReferenceObservationTest extends CDAValidationTest {
 	public void testValidatePurposeofReferenceObservationCodeCodeSystem() {
 		OperationsTestCase<PurposeofReferenceObservation> validatePurposeofReferenceObservationCodeCodeSystemTestCase = new OperationsTestCase<PurposeofReferenceObservation>(
 			"validatePurposeofReferenceObservationCodeCodeSystem",
-			operationsForOCL.getOCLValue("VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -89,7 +90,8 @@ public class PurposeofReferenceObservationTest extends CDAValidationTest {
 	public void testValidatePurposeofReferenceObservationTemplateId() {
 		OperationsTestCase<PurposeofReferenceObservation> validatePurposeofReferenceObservationTemplateIdTestCase = new OperationsTestCase<PurposeofReferenceObservation>(
 			"validatePurposeofReferenceObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -122,8 +124,8 @@ public class PurposeofReferenceObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePurposeofReferenceObservationClassCode() {
 		OperationsTestCase<PurposeofReferenceObservation> validatePurposeofReferenceObservationClassCodeTestCase = new OperationsTestCase<PurposeofReferenceObservation>(
-			"validatePurposeofReferenceObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePurposeofReferenceObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -156,8 +158,8 @@ public class PurposeofReferenceObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePurposeofReferenceObservationCode() {
 		OperationsTestCase<PurposeofReferenceObservation> validatePurposeofReferenceObservationCodeTestCase = new OperationsTestCase<PurposeofReferenceObservation>(
-			"validatePurposeofReferenceObservationCode",
-			operationsForOCL.getOCLValue("VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePurposeofReferenceObservationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -193,8 +195,8 @@ public class PurposeofReferenceObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePurposeofReferenceObservationMoodCode() {
 		OperationsTestCase<PurposeofReferenceObservation> validatePurposeofReferenceObservationMoodCodeTestCase = new OperationsTestCase<PurposeofReferenceObservation>(
-			"validatePurposeofReferenceObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePurposeofReferenceObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -227,8 +229,8 @@ public class PurposeofReferenceObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePurposeofReferenceObservationValue() {
 		OperationsTestCase<PurposeofReferenceObservation> validatePurposeofReferenceObservationValueTestCase = new OperationsTestCase<PurposeofReferenceObservation>(
-			"validatePurposeofReferenceObservationValue",
-			operationsForOCL.getOCLValue("VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePurposeofReferenceObservationValue", operationsForOCL.getOCLValue(
+				"VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{

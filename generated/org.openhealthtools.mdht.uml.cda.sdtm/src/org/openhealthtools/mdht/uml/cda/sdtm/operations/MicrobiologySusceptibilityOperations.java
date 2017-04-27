@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -36,7 +29,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.TimingReference;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -90,7 +82,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class MicrobiologySusceptibilityOperations extends ClinicalStatementOperations {
+public class MicrobiologySusceptibilityOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -119,7 +119,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -134,25 +134,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityTemplateId(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -180,7 +190,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -195,25 +205,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityClassCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -241,7 +261,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -256,25 +276,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityMoodCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -302,7 +332,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -317,25 +347,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityId(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -363,7 +403,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -378,25 +418,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityCodeP(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -426,7 +476,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -441,25 +491,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -487,7 +547,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -502,25 +562,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityStatusCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -548,7 +618,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -563,25 +633,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityEffectiveTime(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -609,7 +689,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -624,25 +704,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityValue(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -670,7 +760,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -685,25 +775,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityMethodCodeP(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -733,7 +833,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -748,25 +848,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityMethodCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_METHOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -794,7 +904,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -809,25 +919,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityInterpretationCodeP(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -857,7 +977,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -872,25 +992,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityInterpretationCode(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_INTERPRETATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -918,7 +1048,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -933,25 +1063,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityEventStudyDay(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_EVENT_STUDY_DAY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityEventStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityEventStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -979,7 +1119,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -994,25 +1134,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityTimingReference(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_TIMING_REFERENCE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -1040,7 +1190,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1055,25 +1205,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityGroupIdentifier(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -1101,7 +1261,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1116,25 +1276,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityStudyTestPerformer(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_STUDY_TEST_PERFORMER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityStudyTestPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityStudyTestPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -1162,7 +1332,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1177,25 +1347,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityNonPerformanceReason(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -1223,7 +1403,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1238,25 +1418,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityComment(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -1284,7 +1474,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1299,25 +1489,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityDomainAssignment(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -1345,7 +1545,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1360,25 +1560,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityRelatedRecord(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -1406,7 +1616,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1421,25 +1631,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilitySupplementalValue(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitySupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilitySupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -1467,7 +1687,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1482,25 +1702,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityCategory(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -1528,7 +1758,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1543,25 +1773,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilitySubCategory(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilitySubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilitySubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -1589,7 +1829,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1604,25 +1844,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityResultCategory(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_RESULT_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityResultCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityResultCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -1650,7 +1900,7 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1665,25 +1915,35 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  boolean validateMicrobiologySusceptibilityFindingAbout(MicrobiologySusceptibility microbiologySusceptibility, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY);
 			try {
-				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySusceptibility)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SUSCEPTIBILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySusceptibility)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SUSCEPTIBILITY__MICROBIOLOGY_SUSCEPTIBILITY_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySusceptibilityMicrobiologySusceptibilityFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySusceptibility, context) }),
 						 new Object [] { microbiologySusceptibility }));
 			}
 			 
@@ -1719,8 +1979,13 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  EventStudyDay getEventStudyDay(MicrobiologySusceptibility microbiologySusceptibility) {
+	
+	
+	
 		if (GET_EVENT_STUDY_DAY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(77));
 			try {
 				GET_EVENT_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_EVENT_STUDY_DAY__EOCL_EXP);
@@ -1728,8 +1993,9 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EVENT_STUDY_DAY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EVENT_STUDY_DAY__EOCL_QRY);
 		return (EventStudyDay) query.evaluate(microbiologySusceptibility);
 	}
 
@@ -1760,8 +2026,13 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  TimingReference getTimingReference(MicrobiologySusceptibility microbiologySusceptibility) {
+	
+	
+	
 		if (GET_TIMING_REFERENCE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(78));
 			try {
 				GET_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_TIMING_REFERENCE__EOCL_EXP);
@@ -1769,8 +2040,9 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
 		return (TimingReference) query.evaluate(microbiologySusceptibility);
 	}
 
@@ -1801,8 +2073,13 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(MicrobiologySusceptibility microbiologySusceptibility) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(79));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1810,8 +2087,9 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(microbiologySusceptibility);
 	}
 
@@ -1842,8 +2120,13 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(MicrobiologySusceptibility microbiologySusceptibility) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(80));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1851,8 +2134,9 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(microbiologySusceptibility);
 	}
 
@@ -1883,8 +2167,13 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  EList<Comment> getComments(MicrobiologySusceptibility microbiologySusceptibility) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(81));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1892,8 +2181,9 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(microbiologySusceptibility);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -1926,8 +2216,13 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(MicrobiologySusceptibility microbiologySusceptibility) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(82));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1935,8 +2230,9 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(microbiologySusceptibility);
 	}
 
@@ -1967,8 +2263,13 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(MicrobiologySusceptibility microbiologySusceptibility) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(83));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1976,8 +2277,9 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(microbiologySusceptibility);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -2010,8 +2312,13 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(MicrobiologySusceptibility microbiologySusceptibility) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(84));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -2019,8 +2326,9 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(microbiologySusceptibility);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -2053,8 +2361,13 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  Category getCategory(MicrobiologySusceptibility microbiologySusceptibility) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(85));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -2062,8 +2375,9 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(microbiologySusceptibility);
 	}
 
@@ -2094,8 +2408,13 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  SubCategory getSubCategory(MicrobiologySusceptibility microbiologySusceptibility) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(86));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -2103,8 +2422,9 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(microbiologySusceptibility);
 	}
 
@@ -2135,8 +2455,13 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  ResultCategory getResultCategory(MicrobiologySusceptibility microbiologySusceptibility) {
+	
+	
+	
 		if (GET_RESULT_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(87));
 			try {
 				GET_RESULT_CATEGORY__EOCL_QRY = helper.createQuery(GET_RESULT_CATEGORY__EOCL_EXP);
@@ -2144,8 +2469,9 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RESULT_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RESULT_CATEGORY__EOCL_QRY);
 		return (ResultCategory) query.evaluate(microbiologySusceptibility);
 	}
 
@@ -2176,8 +2502,13 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(MicrobiologySusceptibility microbiologySusceptibility) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY, SdtmPackage.Literals.MICROBIOLOGY_SUSCEPTIBILITY.getEAllOperations().get(88));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -2185,8 +2516,9 @@ public class MicrobiologySusceptibilityOperations extends ClinicalStatementOpera
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(microbiologySusceptibility);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());

@@ -12,19 +12,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.TransportMethodObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,7 +39,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class TransportMethodObservationOperations extends ClinicalStatementOperations {
+public class TransportMethodObservationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,7 +75,7 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_TRANSPORT_METHOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_METHOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -90,26 +91,38 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 	public static boolean validateTransportMethodObservationTemplateId(
 			TransportMethodObservation transportMethodObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSPORT_METHOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TRANSPORT_METHOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRANSPORT_METHOD_OBSERVATION);
 			try {
-				VALIDATE_TRANSPORT_METHOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSPORT_METHOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_TRANSPORT_METHOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TRANSPORT_METHOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_METHOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transportMethodObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.TRANSPORT_METHOD_OBSERVATION__TRANSPORT_METHOD_OBSERVATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("TransportMethodObservationTemplateId"),
-					new Object[] { transportMethodObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TRANSPORT_METHOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(transportMethodObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.TRANSPORT_METHOD_OBSERVATION__TRANSPORT_METHOD_OBSERVATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("TransportMethodObservationTransportMethodObservationTemplateId"),
+						 new Object [] { transportMethodObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -134,7 +147,7 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_TRANSPORT_METHOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_METHOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,26 +163,38 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 	public static boolean validateTransportMethodObservationMoodCode(
 			TransportMethodObservation transportMethodObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSPORT_METHOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TRANSPORT_METHOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRANSPORT_METHOD_OBSERVATION);
 			try {
-				VALIDATE_TRANSPORT_METHOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSPORT_METHOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_TRANSPORT_METHOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TRANSPORT_METHOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_METHOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transportMethodObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.TRANSPORT_METHOD_OBSERVATION__TRANSPORT_METHOD_OBSERVATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("TransportMethodObservationMoodCode"),
-					new Object[] { transportMethodObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TRANSPORT_METHOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(transportMethodObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.TRANSPORT_METHOD_OBSERVATION__TRANSPORT_METHOD_OBSERVATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("TransportMethodObservationTransportMethodObservationMoodCode"),
+						 new Object [] { transportMethodObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -194,7 +219,7 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,26 +235,38 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 	public static boolean validateTransportMethodObservationCodeP(
 			TransportMethodObservation transportMethodObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRANSPORT_METHOD_OBSERVATION);
 			try {
-				VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transportMethodObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.TRANSPORT_METHOD_OBSERVATION__TRANSPORT_METHOD_OBSERVATION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("TransportMethodObservationCodeP"),
-					new Object[] { transportMethodObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(transportMethodObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.TRANSPORT_METHOD_OBSERVATION__TRANSPORT_METHOD_OBSERVATION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("TransportMethodObservationTransportMethodObservationCodeP"),
+						 new Object [] { transportMethodObservation }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -241,7 +278,7 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 				}
 				passToken.add(transportMethodObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -255,9 +292,9 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67549-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67549-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransportMethodObservationCode(TransportMethodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Method Observation Code</em>}' invariant operation.
@@ -268,7 +305,7 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,34 +320,44 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 
 	public static boolean validateTransportMethodObservationCode(TransportMethodObservation transportMethodObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.TransportMethodObservationCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.TransportMethodObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(transportMethodObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		if (VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRANSPORT_METHOD_OBSERVATION);
 			try {
-				VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transportMethodObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.TRANSPORT_METHOD_OBSERVATION__TRANSPORT_METHOD_OBSERVATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("TransportMethodObservationCode"),
-					new Object[] { transportMethodObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TRANSPORT_METHOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(transportMethodObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.TRANSPORT_METHOD_OBSERVATION__TRANSPORT_METHOD_OBSERVATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("TransportMethodObservationTransportMethodObservationCode"),
+						 new Object [] { transportMethodObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -324,9 +371,9 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17168-8' or value.code = 'LA17169-6' or value.code = 'LA17170-4' or value.code = 'LA17171-2' or value.code = 'LA17172-0' or value.code = 'LA17173-8' or value.code = 'LA17174-6' or value.code = 'LA17175-3' or value.code = 'LA17176-1')))";
+	protected static final String VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17168-8' or value.code = 'LA17169-6' or value.code = 'LA17170-4' or value.code = 'LA17171-2' or value.code = 'LA17172-0' or value.code = 'LA17173-8' or value.code = 'LA17174-6' or value.code = 'LA17175-3' or value.code = 'LA17176-1')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransportMethodObservationValue(TransportMethodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Method Observation Value</em>}' invariant operation.
@@ -337,7 +384,7 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -353,26 +400,38 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 	public static boolean validateTransportMethodObservationValue(
 			TransportMethodObservation transportMethodObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRANSPORT_METHOD_OBSERVATION);
 			try {
-				VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transportMethodObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.TRANSPORT_METHOD_OBSERVATION__TRANSPORT_METHOD_OBSERVATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("TransportMethodObservationValue"),
-					new Object[] { transportMethodObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(transportMethodObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.TRANSPORT_METHOD_OBSERVATION__TRANSPORT_METHOD_OBSERVATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("TransportMethodObservationTransportMethodObservationValue"),
+						 new Object [] { transportMethodObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -397,7 +456,7 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -413,26 +472,38 @@ public class TransportMethodObservationOperations extends ClinicalStatementOpera
 	public static boolean validateTransportMethodObservationValueP(
 			TransportMethodObservation transportMethodObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.TRANSPORT_METHOD_OBSERVATION);
 			try {
-				VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transportMethodObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.TRANSPORT_METHOD_OBSERVATION__TRANSPORT_METHOD_OBSERVATION_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("TransportMethodObservationValueP"),
-					new Object[] { transportMethodObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TRANSPORT_METHOD_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(transportMethodObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.TRANSPORT_METHOD_OBSERVATION__TRANSPORT_METHOD_OBSERVATION_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("TransportMethodObservationTransportMethodObservationValueP"),
+						 new Object [] { transportMethodObservation }));
+			}
+			 
 			return false;
 		}
 		return true;

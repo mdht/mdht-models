@@ -7,29 +7,22 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureFindingsSection2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Findings Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,18 +52,6 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureFindingsSectionProblemObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionProblemObservation2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return ProcedureFindingsSection2Operations.getConsolProblemObservation2s(this);
 	}
@@ -81,7 +62,8 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureFindingsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureFindingsSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionTemplateId(
 			this, diagnostics, context);
 	}
@@ -104,6 +86,18 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	@Override
 	public boolean validateProcedureFindingsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureFindingsSectionProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**

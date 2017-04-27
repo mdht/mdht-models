@@ -2,34 +2,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.StudyArm;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.StudyArmOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Study Arm</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class StudyArmImpl extends ActImpl implements StudyArm {
+public class StudyArmImpl extends org.eclipse.mdht.uml.cda.impl.ActImpl implements StudyArm {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -126,7 +115,7 @@ public class StudyArmImpl extends ActImpl implements StudyArm {
 	 */
 	@Override
 	public StudyArm init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -134,8 +123,8 @@ public class StudyArmImpl extends ActImpl implements StudyArm {
      * @generated
      */
     @Override
-	public StudyArm init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public StudyArm init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //StudyArmImpl

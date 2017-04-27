@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirective;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.AdvanceDirectiveOperations;
@@ -26,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.AdvanceDirectiveObservationImpl
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directive</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -83,7 +79,8 @@ public class AdvanceDirectiveImpl extends AdvanceDirectiveObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveParticipantTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveParticipantTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveOperations.validateAdvanceDirectiveParticipantTypeCode(this, diagnostics, context);
 	}
 
@@ -159,7 +156,7 @@ public class AdvanceDirectiveImpl extends AdvanceDirectiveObservationImpl implem
 	 */
 	@Override
 	public AdvanceDirective init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -168,8 +165,9 @@ public class AdvanceDirectiveImpl extends AdvanceDirectiveObservationImpl implem
 	 * @generated
 	 */
 	@Override
-	public AdvanceDirective init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public AdvanceDirective init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // AdvanceDirectiveImpl

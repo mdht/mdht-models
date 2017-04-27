@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.AbnormalConditionoftheNewborn;
 import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.BirthOrder;
@@ -35,12 +31,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.NewbornDeliverySectionOp
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Newborn Delivery Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class NewbornDeliverySectionImpl extends SectionImpl implements NewbornDeliverySection {
+public class NewbornDeliverySectionImpl extends org.eclipse.mdht.uml.cda.impl.SectionImpl
+		implements NewbornDeliverySection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -172,7 +167,8 @@ public class NewbornDeliverySectionImpl extends SectionImpl implements NewbornDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNewbornDeliverySectionInfantLiving(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNewbornDeliverySectionInfantLiving(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NewbornDeliverySectionOperations.validateNewbornDeliverySectionInfantLiving(this, diagnostics, context);
 	}
 
@@ -192,8 +188,10 @@ public class NewbornDeliverySectionImpl extends SectionImpl implements NewbornDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNewbornDeliverySectionInfantTransfer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NewbornDeliverySectionOperations.validateNewbornDeliverySectionInfantTransfer(this, diagnostics, context);
+	public boolean validateNewbornDeliverySectionInfantTransfer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NewbornDeliverySectionOperations.validateNewbornDeliverySectionInfantTransfer(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -444,7 +442,7 @@ public class NewbornDeliverySectionImpl extends SectionImpl implements NewbornDe
 	 * @generated
 	 */
 	public NewbornDeliverySection init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -452,8 +450,9 @@ public class NewbornDeliverySectionImpl extends SectionImpl implements NewbornDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NewbornDeliverySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public NewbornDeliverySection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // NewbornDeliverySectionImpl

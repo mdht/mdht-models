@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureEstimatedBloodLossSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureEstimatedBloodLossSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +53,8 @@ public class ProcedureEstimatedBloodLossSectionTest extends CDAValidationTest {
 	public void testValidateProcedureEstimatedBloodLossSectionTemplateId() {
 		OperationsTestCase<ProcedureEstimatedBloodLossSection> validateProcedureEstimatedBloodLossSectionTemplateIdTestCase = new OperationsTestCase<ProcedureEstimatedBloodLossSection>(
 			"validateProcedureEstimatedBloodLossSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -87,7 +88,8 @@ public class ProcedureEstimatedBloodLossSectionTest extends CDAValidationTest {
 	public void testValidateProcedureEstimatedBloodLossSectionCode() {
 		OperationsTestCase<ProcedureEstimatedBloodLossSection> validateProcedureEstimatedBloodLossSectionCodeTestCase = new OperationsTestCase<ProcedureEstimatedBloodLossSection>(
 			"validateProcedureEstimatedBloodLossSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -121,7 +123,8 @@ public class ProcedureEstimatedBloodLossSectionTest extends CDAValidationTest {
 	public void testValidateProcedureEstimatedBloodLossSectionCodeP() {
 		OperationsTestCase<ProcedureEstimatedBloodLossSection> validateProcedureEstimatedBloodLossSectionCodePTestCase = new OperationsTestCase<ProcedureEstimatedBloodLossSection>(
 			"validateProcedureEstimatedBloodLossSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -155,7 +158,8 @@ public class ProcedureEstimatedBloodLossSectionTest extends CDAValidationTest {
 	public void testValidateProcedureEstimatedBloodLossSectionText() {
 		OperationsTestCase<ProcedureEstimatedBloodLossSection> validateProcedureEstimatedBloodLossSectionTextTestCase = new OperationsTestCase<ProcedureEstimatedBloodLossSection>(
 			"validateProcedureEstimatedBloodLossSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -192,7 +196,8 @@ public class ProcedureEstimatedBloodLossSectionTest extends CDAValidationTest {
 	public void testValidateProcedureEstimatedBloodLossSectionTitle() {
 		OperationsTestCase<ProcedureEstimatedBloodLossSection> validateProcedureEstimatedBloodLossSectionTitleTestCase = new OperationsTestCase<ProcedureEstimatedBloodLossSection>(
 			"validateProcedureEstimatedBloodLossSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

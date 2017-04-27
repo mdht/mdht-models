@@ -7,28 +7,21 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.DrugMonitoringActOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Drug Monitoring Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -127,6 +120,15 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDrugMonitoringActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DrugMonitoringActOperations.validateDrugMonitoringActStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateDrugMonitoringActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActEffectiveTime(this, diagnostics, context);
@@ -208,7 +210,8 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * @generated
 	 */
 	@Override
-	public boolean validateDrugMonitoringActParticipantTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDrugMonitoringActParticipantTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantTypeCode(this, diagnostics, context);
 	}
 

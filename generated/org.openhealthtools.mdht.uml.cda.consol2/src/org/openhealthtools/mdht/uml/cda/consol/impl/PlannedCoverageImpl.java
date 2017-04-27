@@ -7,28 +7,21 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedCoverageOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Coverage</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -147,6 +140,16 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedCoverageAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedCoverageOperations.validatePlannedCoverageAuthorParticipation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlannedCoverageEntryRelationshipActClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -162,7 +165,8 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	@Override
 	public boolean validatePlannedCoverageEntryRelationshipActMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActMoodCode(this, diagnostics, context);
+		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -239,7 +243,8 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedCoverageEntryRelationshipAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedCoverageEntryRelationshipAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipAct(this, diagnostics, context);
 	}
 

@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntoleranceConcern;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
@@ -27,46 +27,45 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.AllergyIntoleranceConcern
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Allergy Intolerance Concern</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class AllergyIntoleranceConcernImpl extends ConcernEntryImpl implements AllergyIntoleranceConcern {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AllergyIntoleranceConcernImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.ALLERGY_INTOLERANCE_CONCERN;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAllergyIntoleranceConcernTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	 * @generated
+	 */
+	public boolean validateAllergyIntoleranceConcernTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyIntoleranceConcernAllergyIntolerance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernAllergyIntolerance(
@@ -74,19 +73,19 @@ public class AllergyIntoleranceConcernImpl extends ConcernEntryImpl implements A
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<AllergyIntolerance> getAllergyIntolerances() {
 		return AllergyIntoleranceConcernOperations.getAllergyIntolerances(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public AllergyIntoleranceConcern init() {
 		return Initializer.Util.init(this);

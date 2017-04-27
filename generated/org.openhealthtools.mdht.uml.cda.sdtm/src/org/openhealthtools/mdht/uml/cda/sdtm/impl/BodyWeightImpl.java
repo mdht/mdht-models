@@ -2,20 +2,12 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.BodyWeight;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
@@ -26,19 +18,16 @@ import org.openhealthtools.mdht.uml.cda.sdtm.NonPerformanceReason;
 import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.BodyWeightOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Body Weight</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class BodyWeightImpl extends ObservationImpl implements BodyWeight {
+public class BodyWeightImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements BodyWeight {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -325,7 +314,7 @@ public class BodyWeightImpl extends ObservationImpl implements BodyWeight {
 	 */
 	@Override
 	public BodyWeight init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -333,8 +322,8 @@ public class BodyWeightImpl extends ObservationImpl implements BodyWeight {
      * @generated
      */
     @Override
-	public BodyWeight init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public BodyWeight init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //BodyWeightImpl

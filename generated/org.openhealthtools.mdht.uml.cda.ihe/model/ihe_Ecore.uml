@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="ihe">
-    <packageImport xmi:id="_-xRsgDxVEd6JwqSGecoePg">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
-    </packageImport>
+     
     <packageImport xmi:id="_8zZJ4GD8Ed6bFO5yxRh3Nw">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
     </packageImport>
-    <packageImport xmi:id="_ETmFQHrCEd68l9lQ-TLEBQ">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
-    </packageImport>
+    
     <packageImport xmi:id="_48nVECN0EeKZiI94kDVqXw">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
     </packageImport>
-    <packageImport xmi:id="_7sv6YCN0EeKZiI94kDVqXw">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+     <packageImport xmi:id="_PKZrwE3jEeGVaJScxwOy7g">
+      <importedPackage href="pathmap://CDA_MODEL/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_hPUsgNcZEeGfQ6frO0B-Jg">
+      <importedPackage href="pathmap://DATATYPES_MODEL/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_q3SeUD49EeKUq_Bmx5Topg">
+      <importedPackage href="pathmap://VOCAB_MODEL/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_ZEjk4Mf0Ed6VjLXh4DcWSg" name="ImmunizationsSection">
       <ownedComment xmi:id="_pH00MMf0Ed6VjLXh4DcWSg" annotatedElement="_ZEjk4Mf0Ed6VjLXh4DcWSg">
@@ -69,7 +71,7 @@ value.code = '18610-6' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_sg7v8MfyEd6VjLXh4DcWSg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_GgvgUDxbEd6JwqSGecoePg" name="ConcernEntry">
@@ -1034,7 +1036,7 @@ value.code = 'completed')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_naMM0K4NEd6_ioDelDcPPg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_hVMdIK4QEd6_ioDelDcPPg" name="VitalSignsOrganizer">
@@ -1168,7 +1170,7 @@ value.code = '11348-0' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_W5e90MfbEd6VjLXh4DcWSg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_iVB-oMfcEd6VjLXh4DcWSg" name="ChiefComplaintSection">
@@ -1190,7 +1192,7 @@ value.code = '10154-3' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_rPXcYMfcEd6VjLXh4DcWSg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_XicJUMfdEd6VjLXh4DcWSg" name="ReasonForReferralSection">
@@ -1212,7 +1214,7 @@ value.code = '42349-1' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_f1I_UMfdEd6VjLXh4DcWSg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_jWj60MfhEd6VjLXh4DcWSg" name="HistoryOfPresentIllness">
@@ -1235,7 +1237,7 @@ value.code = '10164-2' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_nDBlgMfhEd6VjLXh4DcWSg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_jgutAMftEd6VjLXh4DcWSg" name="SurgeriesSection">
@@ -1326,7 +1328,7 @@ value.code = '46241-6' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_U6294MfvEd6VjLXh4DcWSg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tPMGoBpMEeSd5OoVIuDNwg" name="getProblemConcernEntry" bodyCondition="_tPMGoxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tPMGoxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tPMGoBpMEeSd5OoVIuDNwg">
@@ -1367,7 +1369,7 @@ value.code = '11535-2' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_7mCOMMfvEd6VjLXh4DcWSg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tPKRcBpMEeSd5OoVIuDNwg" name="getProblemConcernEntry" bodyCondition="_tPKRcxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tPKRcxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tPKRcBpMEeSd5OoVIuDNwg">
@@ -1402,7 +1404,7 @@ value.code = '42346-7' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_7iCCgMfwEd6VjLXh4DcWSg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_JAhygMfyEd6VjLXh4DcWSg" name="HospitalDischargeMedicationsSection">
@@ -1432,7 +1434,7 @@ value.code = '10183-2' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_S1iv0MfyEd6VjLXh4DcWSg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tPJDUBpMEeSd5OoVIuDNwg" name="getMedication" bodyCondition="_tPJDUxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tPJDUxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tPJDUBpMEeSd5OoVIuDNwg">
@@ -1506,7 +1508,7 @@ value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_QAS5oMf1Ed6VjLXh4DcWSg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_LGf5IMf1Ed6VjLXh4DcWSg" name="PhysicalExamSection">
@@ -1966,7 +1968,7 @@ value.code = '10187-3' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_At0tgMiXEd6mWrHPmrIIfQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_DO0b4MidEd6mWrHPmrIIfQ" name="HospitalCourseSection">
@@ -1989,7 +1991,7 @@ value.code = '8648-8' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_g4z_kMidEd6mWrHPmrIIfQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_-OeSAMidEd6mWrHPmrIIfQ" name="CodedResultsSection">
@@ -2031,7 +2033,7 @@ value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_EU3BcMieEd6mWrHPmrIIfQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tOIWsBpMEeSd5OoVIuDNwg" name="getProcedureEntries" bodyCondition="_tOIWsxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tOIWsxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tOIWsBpMEeSd5OoVIuDNwg">
@@ -2088,7 +2090,7 @@ value.code = '51847-2' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_YipT8MifEd6mWrHPmrIIfQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_BEcusMigEd6mWrHPmrIIfQ" name="CarePlanSection">
@@ -2191,7 +2193,7 @@ life, hobbies, and risky habits.</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_-uU7kTOtEd-5f4Yngl7nkw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cHD44EcZEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_cHD44EcZEd6besF9iFIJkQ"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_fp-n0DOvEd-5f4Yngl7nkw" name="MedicalSummary">
@@ -2299,7 +2301,7 @@ value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_4hu_kTuGEd-B8KE6Jx0UNQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_aFDTUDuJEd-B8KE6Jx0UNQ" name="Immunization">
@@ -2449,7 +2451,7 @@ relevant.&#xD;
         </specification>
       </ownedRule>
       <generalization xmi:id="_K9s2QMLEEeCH35Uk0QXD4A">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_-jiisEbuEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_-jiisEbuEd6besF9iFIJkQ"/>
       </generalization>
       <ownedOperation xmi:id="_tRjeIBpMEeSd5OoVIuDNwg" name="getInternalReference" bodyCondition="_tRjeIxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tRjeIxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tRjeIBpMEeSd5OoVIuDNwg">
@@ -2653,7 +2655,7 @@ value.codeSystem = '2.16.840.1.113883.5.4')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_JWwpwKsWEd-yFfcbpgNFIA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AAXtEEbvEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_AAXtEEbvEd6besF9iFIJkQ"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_5GSkEMwTEd-iJaPtkyVyKg" name="IntakeOutputSection">
@@ -2664,7 +2666,7 @@ value.codeSystem = '2.16.840.1.113883.5.4')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_5GSkEcwTEd-iJaPtkyVyKg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_e2pkwOw7Ed-HcKrkbxroPA" name="SupplyEntry">
@@ -2807,7 +2809,7 @@ value.code = '10162-6' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_oihScO0SEd-dJvThfIiQuA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tNe2cBpMEeSd5OoVIuDNwg" name="getPregnancyObservations" bodyCondition="_tNe2cxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tNe2cxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tNe2cBpMEeSd5OoVIuDNwg">
@@ -3155,7 +3157,7 @@ value.codeSystem = '2.16.840.1.113883.5.111')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_g76sEfG1Ed-FxO0PukiqhA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_DVyVoPdQEd-aZohBEt6atA" name="ScanOriginalAuthor">
@@ -3183,7 +3185,7 @@ value.codeSystem = '2.16.840.1.113883.5.111')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_DVy8sPdQEd-aZohBEt6atA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_QUckcPdQEd-aZohBEt6atA" name="ScanningDevice">
@@ -3241,7 +3243,7 @@ value.codeSystem = '2.16.840.1.113883.5.111')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_QUdLgPdQEd-aZohBEt6atA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_f-SDcPd5Ed-I-P0qO6j1fA" name="ScanDataEnterer">
@@ -3273,7 +3275,7 @@ value.codeSystem = '2.16.840.1.113883.5.111')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_f-dpoPd5Ed-I-P0qO6j1fA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_twqZYEcEEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_twqZYEcEEd6besF9iFIJkQ"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_hBLMcBj6EeCf9aMNaCAtDQ" name="ExternalReference">
@@ -3348,7 +3350,7 @@ CDA Narrative in a &amp;lt;linkHTML> element.</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_hBLMcRj6EeCf9aMNaCAtDQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_MIoHYCQKEeCxCon8a79rfA" name="Severity">
@@ -3532,7 +3534,7 @@ element type of the act it refers to.&#xD;
         </specification>
       </ownedRule>
       <generalization xmi:id="_iQCK8Es8EeCAK_Z5vqvtzg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_MD_HEEteEeCAK_Z5vqvtzg" name="MedicationFullfillmentInstructions">
@@ -3597,7 +3599,7 @@ value.code = '42344-2' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_nwsagL4kEeCPGaGuS9U6tg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_dw0bkL4lEeCPGaGuS9U6tg" name="HospitalDischargePhysical">
@@ -3619,7 +3621,7 @@ value.code = '10184-0' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_dw0bkb4lEeCPGaGuS9U6tg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_cSezgMgkEeCHk-lvWGDTdA" name="CodedFamilyMedicalHistorySection">
@@ -3889,7 +3891,7 @@ value.code = '10210-3' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_NwEIMc9REeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tPu5MBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tPu5MxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tPu5MxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tPu5MBpMEeSd5OoVIuDNwg">
@@ -3930,7 +3932,7 @@ value.code = 'XX-VisibleImplantedDevices' and value.codeSystem = '2.16.840.1.113
         </specification>
       </ownedRule>
       <generalization xmi:id="_j2dXkM9REeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tPzKoBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tPzKoxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tPzKoxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tPzKoBpMEeSd5OoVIuDNwg">
@@ -3970,7 +3972,7 @@ value.code = '29302-7' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_KhAVwc9SEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tP21ABpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tP21AxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tP21AxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tP21ABpMEeSd5OoVIuDNwg">
@@ -4009,7 +4011,7 @@ value.code = '10199-8' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_tvofUc9VEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tP7GcBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tP7GcxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tP7GcxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tP7GcBpMEeSd5OoVIuDNwg">
@@ -4045,7 +4047,7 @@ value.code = '10197-2' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_AindMM9WEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tP-w0BpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tP-w0xpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tP-w0xpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tP-w0BpMEeSd5OoVIuDNwg">
@@ -4085,7 +4087,7 @@ value.code = '11393-6' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_X4APQc9WEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQDCQBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQDCQxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQDCQxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQDCQBpMEeSd5OoVIuDNwg">
@@ -4124,7 +4126,7 @@ value.code = '10195-6' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_stnMMc9WEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQHTsBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQHTsxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQHTsxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQHTsBpMEeSd5OoVIuDNwg">
@@ -4163,7 +4165,7 @@ value.code = '10203-8' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_9L0rEc9WEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQK-EBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQK-ExpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQK-ExpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQK-EBpMEeSd5OoVIuDNwg">
@@ -4203,7 +4205,7 @@ value.code = '10201-2' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_UwOwkc9XEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQPPgBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQPPgxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQPPgxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQPPgBpMEeSd5OoVIuDNwg">
@@ -4242,7 +4244,7 @@ value.code = '11411-6' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_mMLqEc9XEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQS54RpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQS55BpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQS55BpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQS54RpMEeSd5OoVIuDNwg">
@@ -4282,7 +4284,7 @@ value.code = '29307-6' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_zCJ28c9XEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQXLUhpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQXyYhpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQXyYhpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQXLUhpMEeSd5OoVIuDNwg">
@@ -4322,7 +4324,7 @@ value.code = '10207-9' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_DAYOMc9YEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQbcwBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQbcwxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQbcwxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQbcwBpMEeSd5OoVIuDNwg">
@@ -4361,7 +4363,7 @@ value.code = '11392-8' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_IXiqsc9ZEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQfHIBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQfuMBpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQfuMBpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQfHIBpMEeSd5OoVIuDNwg">
@@ -4394,7 +4396,7 @@ value.code = '10193-1' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_U4Y8Ic9ZEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_deZvsM9ZEeCBIMy4xFlonQ" name="HeartSection">
@@ -4422,7 +4424,7 @@ value.code = '10200-4' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_deZvsc9ZEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQmb4BpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQmb4xpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQmb4xpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQmb4BpMEeSd5OoVIuDNwg">
@@ -4462,7 +4464,7 @@ value.code = '11412-4' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_C17m0c9aEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQqGQBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQqGQxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQqGQxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQqGQBpMEeSd5OoVIuDNwg">
@@ -4501,7 +4503,7 @@ value.code = '10191-5' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_VnlH8c9aEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQuXsBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQuXsxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQuXsxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQuXsBpMEeSd5OoVIuDNwg">
@@ -4540,7 +4542,7 @@ value.code = '11447-0' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_CbVgEc9bEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQyCEBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQyCExpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQyCExpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQyCEBpMEeSd5OoVIuDNwg">
@@ -4579,7 +4581,7 @@ value.code = '10208-7' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_Rb0csc9bEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQ2TgBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQ26kRpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQ26kRpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQ2TgBpMEeSd5OoVIuDNwg">
@@ -4619,7 +4621,7 @@ value.code = '11410-8' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_fkNTsc9bEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQ7MABpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQ7MAxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQ7MAxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQ7MABpMEeSd5OoVIuDNwg">
@@ -4659,7 +4661,7 @@ value.code = '10202-0' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_WMKJwc9cEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tQ-2YBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tQ-2YxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tQ-2YxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tQ-2YBpMEeSd5OoVIuDNwg">
@@ -4698,7 +4700,7 @@ value.code = '11400-9' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_iIjqUc9cEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tRDH0BpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tRDH0xpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tRDH0xpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tRDH0BpMEeSd5OoVIuDNwg">
@@ -4737,7 +4739,7 @@ value.code = '10205-3' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_ttJH0c9cEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tRHZQBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tRHZQxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tRHZQxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tRHZQBpMEeSd5OoVIuDNwg">
@@ -4777,7 +4779,7 @@ value.code = '10196-4' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_53FVIc9cEeCBIMy4xFlonQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tRLqsBpMEeSd5OoVIuDNwg" name="getProblemEntry" bodyCondition="_tRLqsxpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tRLqsxpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tRLqsBpMEeSd5OoVIuDNwg">
@@ -4847,7 +4849,7 @@ value.code = '29544-3' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_QExgQSNxEeKZiI94kDVqXw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_tRrZ8BpMEeSd5OoVIuDNwg" name="getProcedureEntry" bodyCondition="_tRrZ8xpMEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_tRrZ8xpMEeSd5OoVIuDNwg" name="body" constrainedElement="_tRrZ8BpMEeSd5OoVIuDNwg">
@@ -4863,8 +4865,8 @@ value.code = '29544-3' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_tMpwARpMEeSd5OoVIuDNwg" clientDependency="_tMpwAhpMEeSd5OoVIuDNwg" name="IHERegistryDelegate">
       <interfaceRealization xmi:id="_tMpwAhpMEeSd5OoVIuDNwg" client="_tMpwARpMEeSd5OoVIuDNwg">
-        <supplier xmi:type="uml:Interface" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_M9TsYBgbEd-f6JfqlBX7nQ"/>
-        <contract href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_M9TsYBgbEd-f6JfqlBX7nQ"/>
+        <supplier xmi:type="uml:Interface" href="pathmap://CDA_MODEL/cda.uml#_M9TsYBgbEd-f6JfqlBX7nQ"/>
+        <contract href="pathmap://CDA_MODEL/cda.uml#_M9TsYBgbEd-f6JfqlBX7nQ"/>
       </interfaceRealization>
     </packagedElement>
     <profileApplication xmi:id="__XON4IwEEd6B6JSUB00H7g">

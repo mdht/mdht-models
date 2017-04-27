@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.MothersVitalSignsObservation;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.MothersVitalSignsObserva
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Mothers Vital Signs Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class MothersVitalSignsObservationImpl extends ObservationImpl implements MothersVitalSignsObservation {
+public class MothersVitalSignsObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl
+		implements MothersVitalSignsObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -76,7 +71,8 @@ public class MothersVitalSignsObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMothersVitalSignsObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMothersVitalSignsObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MothersVitalSignsObservationOperations.validateMothersVitalSignsObservationMoodCode(
 			this, diagnostics, context);
 	}
@@ -117,7 +113,7 @@ public class MothersVitalSignsObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public MothersVitalSignsObservation init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -125,8 +121,9 @@ public class MothersVitalSignsObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MothersVitalSignsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public MothersVitalSignsObservation init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // MothersVitalSignsObservationImpl

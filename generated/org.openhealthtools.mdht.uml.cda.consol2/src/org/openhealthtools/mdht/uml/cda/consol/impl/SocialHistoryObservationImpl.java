@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistoryObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Social History Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -57,7 +55,8 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * @generated
 	 */
 	@Override
-	public boolean validateSocialHistoryObservationOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSocialHistoryObservationOriginalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SocialHistoryObservationOperations.validateSocialHistoryObservationOriginalText(
 			this, diagnostics, context);
 	}
@@ -90,8 +89,10 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * @generated
 	 */
 	@Override
-	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
+	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -150,8 +151,10 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * @generated
 	 */
 	@Override
-	public boolean validateSocialHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationStatusCode(this, diagnostics, context);
+	public boolean validateSocialHistoryObservationStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**

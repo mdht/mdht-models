@@ -17,7 +17,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
@@ -25,14 +26,11 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct;
 import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityActOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Activity Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -62,7 +60,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityActCodeCodeSystems(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityActCodeCodeSystems(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityActOperations.validateProcedureActivityActCodeCodeSystems(this, diagnostics, context);
 	}
 
@@ -72,7 +71,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityActCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityActCodeOriginalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityActOperations.validateProcedureActivityActCodeOriginalText(this, diagnostics, context);
 	}
 
@@ -106,7 +106,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityActReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityActReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityActOperations.validateProcedureActivityActReferenceValue(this, diagnostics, context);
 	}
 
@@ -118,7 +119,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActEncounterInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActEncounterInversion(this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActEncounterInversion(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -285,7 +287,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActMedicationActivity(this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActMedicationActivity(
+			this, diagnostics, context);
 	}
 
 	/**

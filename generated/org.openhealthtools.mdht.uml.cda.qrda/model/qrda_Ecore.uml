@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Package xmi:id="_Xo_VANEyEeGkR_Op8LWYpA" name="qrda">
-    <packageImport xmi:id="_Xvry4NEyEeGkR_Op8LWYpA">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    <packageImport xmi:id="_PKZrwE3jEeGVaJScxwOy7g">
+      <importedPackage href="pathmap://CDA_MODEL/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
     </packageImport>
-    <packageImport xmi:id="_Xvry4dEyEeGkR_Op8LWYpA">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    <packageImport xmi:id="_hPUsgNcZEeGfQ6frO0B-Jg">
+      <importedPackage href="pathmap://DATATYPES_MODEL/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_q3SeUD49EeKUq_Bmx5Topg">
+      <importedPackage href="pathmap://VOCAB_MODEL/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
     </packageImport>
     <packageImport xmi:id="_Xvry4tEyEeGkR_Op8LWYpA">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda.qrda.model/model/qrda-vocab.uml#_Xpr4kNEyEeGkR_Op8LWYpA"/>
@@ -62,7 +65,7 @@ value.code = '55182-0' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_GgMOUNGxEeGsGLQu4bZykQ">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
       </generalization>
       <ownedOperation xmi:id="_DSBrsBpNEeSd5OoVIuDNwg" name="getMeasureSection" bodyCondition="_DSBrsxpNEeSd5OoVIuDNwg" isQuery="true">
         <ownedRule xmi:id="_DSBrsxpNEeSd5OoVIuDNwg" name="body" constrainedElement="_DSBrsBpNEeSd5OoVIuDNwg">
@@ -104,7 +107,7 @@ value.code = '55186-1' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_fMU0ENG1EeGJgdW5wprk5g">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <profileApplication xmi:id="_Xo_8EtEyEeGkR_Op8LWYpA">

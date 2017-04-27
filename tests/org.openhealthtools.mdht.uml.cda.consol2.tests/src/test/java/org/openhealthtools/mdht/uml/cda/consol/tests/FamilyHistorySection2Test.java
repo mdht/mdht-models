@@ -15,11 +15,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistorySection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,9 +29,9 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection2#validateFamilyHistorySectionFamilyHistoryOrganizer2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Section Family History Organizer2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection2#getConsolFamilyHistoryOrganizer2s() <em>Get Consol Family History Organizer2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection2#validateFamilyHistorySectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Section Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection2#validateFamilyHistorySectionFamilyHistory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Section Family History</em>}</li>
  * </ul>
  * </p>
  *
@@ -39,40 +39,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  */
 
 public class FamilyHistorySection2Test extends CDAValidationTest {
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateFamilyHistorySectionFamilyHistoryOrganizer2() {
-		OperationsTestCase<FamilyHistorySection2> validateFamilyHistorySectionFamilyHistoryOrganizer2TestCase = new OperationsTestCase<FamilyHistorySection2>(
-			"validateFamilyHistorySectionFamilyHistoryOrganizer2",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FamilyHistorySection2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(FamilyHistorySection2 target) {
-				target.init();
-				target.addOrganizer(ConsolFactory.eINSTANCE.createFamilyHistoryOrganizer2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FamilyHistorySection2Operations.validateFamilyHistorySectionFamilyHistoryOrganizer2(
-					(FamilyHistorySection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFamilyHistorySectionFamilyHistoryOrganizer2TestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -118,6 +84,40 @@ public class FamilyHistorySection2Test extends CDAValidationTest {
 		};
 
 		validateFamilyHistorySectionTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateFamilyHistorySectionFamilyHistory() {
+		OperationsTestCase<FamilyHistorySection2> validateFamilyHistorySectionFamilyHistoryTestCase = new OperationsTestCase<FamilyHistorySection2>(
+			"validateFamilyHistorySectionFamilyHistory", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FamilyHistorySection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FamilyHistorySection2 target) {
+				target.init();
+				target.addOrganizer(ConsolFactory.eINSTANCE.createFamilyHistoryOrganizer2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FamilyHistorySection2Operations.validateFamilyHistorySectionFamilyHistory(
+					(FamilyHistorySection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFamilyHistorySectionFamilyHistoryTestCase.doValidationTest();
 	}
 
 	/**

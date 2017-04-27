@@ -3,16 +3,12 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
@@ -36,15 +32,12 @@ import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.HistoryAndPhysicalNote2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>History And Physical Note2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -146,7 +139,8 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalNote2Participant(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryAndPhysicalNote2Participant(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2Participant(this, diagnostics, context);
 	}
 
@@ -166,7 +160,8 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalNote2ComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryAndPhysicalNote2ComponentOf(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOf(this, diagnostics, context);
 	}
 
@@ -409,6 +404,17 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	public boolean validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(
 			this, diagnostics, context);
 	}
 
@@ -761,7 +767,8 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalNote2Operations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 

@@ -15,14 +15,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Component1;
+import org.eclipse.mdht.uml.cda.EncompassingEncounter;
+import org.eclipse.mdht.uml.cda.EncounterParticipant;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.ResponsibleParty;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component1;
-import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
-import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
-import org.openhealthtools.mdht.uml.cda.Person;
-import org.openhealthtools.mdht.uml.cda.ResponsibleParty;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
@@ -48,9 +51,6 @@ import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraintsOperations;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HistoryAndPhysicalNoteOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -141,7 +141,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSectionsTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -181,7 +182,7 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
+			 *
 			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
@@ -226,7 +227,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresentTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -235,7 +237,7 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
+			 *
 			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addFailTests()
 			 */
 			@Override
@@ -316,7 +318,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteHasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteHasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisitTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteHasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_HAS_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_CHIEF_COMPLAINT_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_HAS_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_CHIEF_COMPLAINT_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -356,7 +359,7 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
+			 *
 			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
@@ -365,7 +368,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 					@Override
 					public void updateToPass(HistoryAndPhysicalNote target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 
 					}
 				});
@@ -401,7 +405,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -410,7 +415,7 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
+			 *
 			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addFailTests()
 			 */
 			@Override
@@ -420,7 +425,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 					@Override
 					public void updateToFail(HistoryAndPhysicalNote target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
 					}
 
@@ -430,7 +436,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 					@Override
 					public void updateToFail(HistoryAndPhysicalNote target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
 					}
 
@@ -440,7 +447,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 					@Override
 					public void updateToFail(HistoryAndPhysicalNote target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
 						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
 					}
@@ -455,7 +463,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 					@Override
 					public void updateToPass(HistoryAndPhysicalNote target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 
 					}
 				});
@@ -490,8 +499,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateHistoryAndPhysicalNoteTemplateId() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteTemplateIdTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
-			"validateHistoryAndPhysicalNoteTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHistoryAndPhysicalNoteTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -559,7 +568,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteInFulfillmentOf() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteInFulfillmentOfTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteInFulfillmentOf",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -592,8 +602,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateHistoryAndPhysicalNoteComponentOf() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
-			"validateHistoryAndPhysicalNoteComponentOf",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHistoryAndPhysicalNoteComponentOf", operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -627,7 +637,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteAllergiesSectionEntriesOptional() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteAllergiesSectionEntriesOptionalTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteAllergiesSectionEntriesOptional",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -668,7 +679,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteAssessmentSection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteAssessmentSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteAssessmentSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -709,7 +721,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNotePlanOfCareSection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNotePlanOfCareSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNotePlanOfCareSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -750,7 +763,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteAssessmentAndPlanSection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteAssessmentAndPlanSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteAssessmentAndPlanSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -791,7 +805,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteChiefComplaintSection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteChiefComplaintSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteChiefComplaintSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -832,7 +847,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -873,7 +889,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteFamilyHistorySection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteFamilyHistorySectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteFamilyHistorySection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -914,7 +931,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteGeneralStatusSection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteGeneralStatusSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteGeneralStatusSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -955,7 +973,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteHistoryOfPastIllnessSection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteHistoryOfPastIllnessSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteHistoryOfPastIllnessSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -996,7 +1015,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteMedicationsSectionEntriesOptional() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteMedicationsSectionEntriesOptionalTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteMedicationsSectionEntriesOptional",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1037,7 +1057,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNotePhysicalExamSection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNotePhysicalExamSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNotePhysicalExamSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1078,7 +1099,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteReasonForVisitSection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteReasonForVisitSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteReasonForVisitSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1119,7 +1141,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteResultsSectionEntriesOptional() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteResultsSectionEntriesOptionalTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteResultsSectionEntriesOptional",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1160,7 +1183,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteReviewOfSystemsSection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteReviewOfSystemsSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteReviewOfSystemsSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1201,7 +1225,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteSocialHistorySection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteSocialHistorySectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteSocialHistorySection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1242,7 +1267,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteHistoryOfPresentIllnessSection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteHistoryOfPresentIllnessSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteHistoryOfPresentIllnessSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1283,7 +1309,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteImmunizationsSectionEntriesOptional() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteImmunizationsSectionEntriesOptionalTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteImmunizationsSectionEntriesOptional",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1324,7 +1351,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteProblemSectionEntriesOptional() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteProblemSectionEntriesOptionalTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteProblemSectionEntriesOptional",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1365,7 +1393,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteProceduresSectionEntriesOptional() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteProceduresSectionEntriesOptionalTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteProceduresSectionEntriesOptional",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1406,7 +1435,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteVitalSignsSectionEntriesOptional() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteVitalSignsSectionEntriesOptionalTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteVitalSignsSectionEntriesOptional",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1447,7 +1477,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteInstructionsSection() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteInstructionsSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteInstructionsSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1486,7 +1517,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganizationTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1539,7 +1571,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1586,7 +1619,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganizationTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1644,7 +1678,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1696,7 +1731,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheDay() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheDayTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheDay",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1737,7 +1773,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheMinute() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheMinuteTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheMinute",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1778,7 +1815,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheSecond() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheSecondTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheSecond",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1819,7 +1857,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4IfMorePreciseThanDayIncludeTimeZoneOffset() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4IfMorePreciseThanDayIncludeTimeZoneOffsetTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4IfMorePreciseThanDayIncludeTimeZoneOffset",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1861,7 +1900,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTimeTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1903,7 +1943,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4IdTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1944,7 +1985,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4LocationTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1985,7 +2027,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2027,7 +2070,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2070,7 +2114,8 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	public void testValidateHistoryAndPhysicalNoteComponentOfEncompassingEncounter() {
 		OperationsTestCase<HistoryAndPhysicalNote> validateHistoryAndPhysicalNoteComponentOfEncompassingEncounterTestCase = new OperationsTestCase<HistoryAndPhysicalNote>(
 			"validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

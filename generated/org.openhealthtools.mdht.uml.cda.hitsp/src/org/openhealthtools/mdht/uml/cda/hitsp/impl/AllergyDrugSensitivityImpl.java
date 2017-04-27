@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.AllergyDrugSensitivity;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.AllergyDrugSensitivityOperations;
@@ -26,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.AllergyIntoleranceConcernImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Allergy Drug Sensitivity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -89,8 +85,10 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityAllergyProduct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAllergyProduct(this, diagnostics, context);
+	public boolean validateAllergyDrugSensitivityAllergyProduct(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityAllergyProduct(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -206,7 +204,8 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityReactionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergyDrugSensitivityReactionText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityReactionText(this, diagnostics, context);
 	}
 
@@ -215,7 +214,8 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivityReactionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergyDrugSensitivityReactionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivityReactionCode(this, diagnostics, context);
 	}
 
@@ -235,7 +235,8 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivitySeverityText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergyDrugSensitivitySeverityText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivitySeverityText(this, diagnostics, context);
 	}
 
@@ -244,7 +245,8 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyDrugSensitivitySeverityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergyDrugSensitivitySeverityCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergyDrugSensitivityOperations.validateAllergyDrugSensitivitySeverityCode(this, diagnostics, context);
 	}
 
@@ -275,7 +277,7 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 */
 	@Override
 	public AllergyDrugSensitivity init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -284,8 +286,9 @@ public class AllergyDrugSensitivityImpl extends AllergyIntoleranceConcernImpl im
 	 * @generated
 	 */
 	@Override
-	public AllergyDrugSensitivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public AllergyDrugSensitivity init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // AllergyDrugSensitivityImpl

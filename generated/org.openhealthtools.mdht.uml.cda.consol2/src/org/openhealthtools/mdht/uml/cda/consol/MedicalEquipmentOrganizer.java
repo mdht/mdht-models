@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -15,9 +11,9 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.Organizer;
+import org.eclipse.mdht.uml.cda.Organizer;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,10 +22,24 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicalEquipmentOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalEquipmentOrganizerTemplateId MedicalEquipmentOrganizerClassCode MedicalEquipmentOrganizerMoodCode MedicalEquipmentOrganizerId MedicalEquipmentOrganizerStatusCode MedicalEquipmentOrganizerStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.135' classCode='CLUSTER' moodCode='EVN' constraints.validation.info='MedicalEquipmentOrganizerCode MedicalEquipmentOrganizerNonMedicinalSupplyActivity2 MedicalEquipmentOrganizerProcedureActivityProcedure2' constraints.validation.dependOn.MedicalEquipmentOrganizerStatusCode='MedicalEquipmentOrganizerStatusCodeP' constraints.validation.warning='MedicalEquipmentOrganizerEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalEquipmentOrganizerTemplateId MedicalEquipmentOrganizerHasNonMedSupActOrProcActProc MedicalEquipmentOrganizerClassCode MedicalEquipmentOrganizerMoodCode MedicalEquipmentOrganizerId MedicalEquipmentOrganizerStatusCode MedicalEquipmentOrganizerStatusCodeP MedicalEquipmentOrganizerEffectiveTime MedicalEquipmentOrganizerIVLTSLow MedicalEquipmentOrganizerIVLTSHigh' templateId.root='2.16.840.1.113883.10.20.22.4.135' classCode='CLUSTER' moodCode='EVN' constraints.validation.info='MedicalEquipmentOrganizerCode MedicalEquipmentOrganizerNonMedicinalSupplyActivity2 MedicalEquipmentOrganizerProcedureActivityProcedure2' constraints.validation.dependOn.MedicalEquipmentOrganizerStatusCode='MedicalEquipmentOrganizerStatusCodeP' constraints.validation.query='MedicalEquipmentOrganizerIVLTSLow MedicalEquipmentOrganizerIVLTSHigh'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicalEquipmentOrganizerIVLTS constraints.validation.error='MedicalEquipmentOrganizerIVLTSLow MedicalEquipmentOrganizerIVLTSHigh'"
  * @generated
  */
 public interface MedicalEquipmentOrganizer extends Organizer {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.supply.oclIsUndefined() and component.supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2)) or self.component->exists(component : cda::Component4 | not component.procedure.oclIsUndefined() and component.procedure.oclIsKindOf(consol::ProcedureActivityProcedure2))'"
+	 * @generated
+	 */
+	boolean validateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -73,7 +83,7 @@ public interface MedicalEquipmentOrganizer extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validateMedicalEquipmentOrganizerId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -151,6 +161,30 @@ public interface MedicalEquipmentOrganizer extends Organizer {
 	 */
 	boolean validateMedicalEquipmentOrganizerProcedureActivityProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))'"
+	 * @generated
+	 */
+	boolean validateMedicalEquipmentOrganizerIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((high.oclIsUndefined() or high.isNullFlavorUndefined()) implies (not high.oclIsUndefined()) )))'"
+	 * @generated
+	 */
+	boolean validateMedicalEquipmentOrganizerIVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

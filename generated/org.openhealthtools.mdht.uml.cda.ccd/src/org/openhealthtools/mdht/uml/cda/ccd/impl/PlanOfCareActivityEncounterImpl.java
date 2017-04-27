@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.EncounterImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityEncounter;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.PlanOfCareActivityEncounterOperations;
-import org.openhealthtools.mdht.uml.cda.impl.EncounterImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Plan Of Care Activity Encounter</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -87,7 +85,8 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareActivityEncounterMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlanOfCareActivityEncounterMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCode(
 			this, diagnostics, context);
 	}

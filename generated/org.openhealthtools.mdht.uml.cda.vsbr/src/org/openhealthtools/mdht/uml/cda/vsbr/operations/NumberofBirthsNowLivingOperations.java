@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofBirthsNowLiving;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -39,7 +37,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperations {
+public class NumberofBirthsNowLivingOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +73,7 @@ public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,27 +89,34 @@ public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperatio
 	public static boolean validateNumberofBirthsNowLivingTemplateId(NumberofBirthsNowLiving numberofBirthsNowLiving,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NUMBEROF_BIRTHS_NOW_LIVING);
 			try {
-				VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberofBirthsNowLiving)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				numberofBirthsNowLiving)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NUMBEROF_BIRTHS_NOW_LIVING__NUMBEROF_BIRTHS_NOW_LIVING_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NumberofBirthsNowLivingTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									numberofBirthsNowLiving, context) }), new Object[] { numberofBirthsNowLiving }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NUMBEROF_BIRTHS_NOW_LIVING__NUMBEROF_BIRTHS_NOW_LIVING_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NumberofBirthsNowLivingNumberofBirthsNowLivingTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										numberofBirthsNowLiving, context) }),
+						new Object[] { numberofBirthsNowLiving }));
 			}
 
 			return false;
@@ -131,7 +143,7 @@ public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,27 +159,34 @@ public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperatio
 	public static boolean validateNumberofBirthsNowLivingClassCode(NumberofBirthsNowLiving numberofBirthsNowLiving,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NUMBEROF_BIRTHS_NOW_LIVING);
 			try {
-				VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberofBirthsNowLiving)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				numberofBirthsNowLiving)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NUMBEROF_BIRTHS_NOW_LIVING__NUMBEROF_BIRTHS_NOW_LIVING_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NumberofBirthsNowLivingClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									numberofBirthsNowLiving, context) }), new Object[] { numberofBirthsNowLiving }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NUMBEROF_BIRTHS_NOW_LIVING__NUMBEROF_BIRTHS_NOW_LIVING_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NumberofBirthsNowLivingNumberofBirthsNowLivingClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										numberofBirthsNowLiving, context) }),
+						new Object[] { numberofBirthsNowLiving }));
 			}
 
 			return false;
@@ -194,7 +213,7 @@ public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,27 +229,34 @@ public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperatio
 	public static boolean validateNumberofBirthsNowLivingMoodCode(NumberofBirthsNowLiving numberofBirthsNowLiving,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NUMBEROF_BIRTHS_NOW_LIVING);
 			try {
-				VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberofBirthsNowLiving)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				numberofBirthsNowLiving)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NUMBEROF_BIRTHS_NOW_LIVING__NUMBEROF_BIRTHS_NOW_LIVING_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NumberofBirthsNowLivingMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									numberofBirthsNowLiving, context) }), new Object[] { numberofBirthsNowLiving }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NUMBEROF_BIRTHS_NOW_LIVING__NUMBEROF_BIRTHS_NOW_LIVING_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NumberofBirthsNowLivingNumberofBirthsNowLivingMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										numberofBirthsNowLiving, context) }),
+						new Object[] { numberofBirthsNowLiving }));
 			}
 
 			return false;
@@ -257,7 +283,7 @@ public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,27 +299,33 @@ public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperatio
 	public static boolean validateNumberofBirthsNowLivingCodeP(NumberofBirthsNowLiving numberofBirthsNowLiving,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NUMBEROF_BIRTHS_NOW_LIVING);
 			try {
-				VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberofBirthsNowLiving)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				numberofBirthsNowLiving)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NUMBEROF_BIRTHS_NOW_LIVING__NUMBEROF_BIRTHS_NOW_LIVING_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NumberofBirthsNowLivingCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									numberofBirthsNowLiving, context) }), new Object[] { numberofBirthsNowLiving }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NUMBEROF_BIRTHS_NOW_LIVING__NUMBEROF_BIRTHS_NOW_LIVING_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NumberofBirthsNowLivingNumberofBirthsNowLivingCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										numberofBirthsNowLiving, context) }),
+						new Object[] { numberofBirthsNowLiving }));
 			}
 
 			return false;
@@ -309,9 +341,9 @@ public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '11638-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '11638-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNumberofBirthsNowLivingCode(NumberofBirthsNowLiving, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Births Now Living Code</em>}' invariant operation.
@@ -322,7 +354,7 @@ public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -338,27 +370,33 @@ public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperatio
 	public static boolean validateNumberofBirthsNowLivingCode(NumberofBirthsNowLiving numberofBirthsNowLiving,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NUMBEROF_BIRTHS_NOW_LIVING);
 			try {
-				VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberofBirthsNowLiving)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				numberofBirthsNowLiving)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NUMBEROF_BIRTHS_NOW_LIVING__NUMBEROF_BIRTHS_NOW_LIVING_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NumberofBirthsNowLivingCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									numberofBirthsNowLiving, context) }), new Object[] { numberofBirthsNowLiving }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NUMBEROF_BIRTHS_NOW_LIVING__NUMBEROF_BIRTHS_NOW_LIVING_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NumberofBirthsNowLivingNumberofBirthsNowLivingCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										numberofBirthsNowLiving, context) }),
+						new Object[] { numberofBirthsNowLiving }));
 			}
 
 			return false;
@@ -385,7 +423,7 @@ public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -401,27 +439,33 @@ public class NumberofBirthsNowLivingOperations extends ClinicalStatementOperatio
 	public static boolean validateNumberofBirthsNowLivingValue(NumberofBirthsNowLiving numberofBirthsNowLiving,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NUMBEROF_BIRTHS_NOW_LIVING);
 			try {
-				VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberofBirthsNowLiving)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NUMBEROF_BIRTHS_NOW_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				numberofBirthsNowLiving)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NUMBEROF_BIRTHS_NOW_LIVING__NUMBEROF_BIRTHS_NOW_LIVING_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NumberofBirthsNowLivingValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									numberofBirthsNowLiving, context) }), new Object[] { numberofBirthsNowLiving }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NUMBEROF_BIRTHS_NOW_LIVING__NUMBEROF_BIRTHS_NOW_LIVING_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NumberofBirthsNowLivingNumberofBirthsNowLivingValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										numberofBirthsNowLiving, context) }),
+						new Object[] { numberofBirthsNowLiving }));
 			}
 
 			return false;

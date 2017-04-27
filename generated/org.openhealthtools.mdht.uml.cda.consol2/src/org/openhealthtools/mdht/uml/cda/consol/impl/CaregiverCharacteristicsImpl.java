@@ -12,18 +12,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CaregiverCharacteristicsOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Caregiver Characteristics</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -65,8 +63,10 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * @generated
 	 */
 	@Override
-	public boolean validateCaregiverCharacteristicsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsTemplateId(this, diagnostics, context);
+	public boolean validateCaregiverCharacteristicsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +115,10 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * @generated
 	 */
 	@Override
-	public boolean validateCaregiverCharacteristicsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsStatusCode(this, diagnostics, context);
+	public boolean validateCaregiverCharacteristicsStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -125,7 +127,8 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * @generated
 	 */
 	@Override
-	public boolean validateCaregiverCharacteristicsStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCaregiverCharacteristicsStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsStatusCodeP(
 			this, diagnostics, context);
 	}
@@ -146,7 +149,8 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * @generated
 	 */
 	@Override
-	public boolean validateCaregiverCharacteristicsParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCaregiverCharacteristicsParticipant(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipant(
 			this, diagnostics, context);
 	}

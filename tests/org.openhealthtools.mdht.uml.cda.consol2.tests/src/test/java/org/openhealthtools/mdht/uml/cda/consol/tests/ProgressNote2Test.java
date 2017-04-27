@@ -16,13 +16,19 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Component1;
+import org.eclipse.mdht.uml.cda.DocumentationOf;
+import org.eclipse.mdht.uml.cda.EncompassingEncounter;
+import org.eclipse.mdht.uml.cda.Location;
+import org.eclipse.mdht.uml.cda.ServiceEvent;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.IVXB_TS;
+import org.eclipse.mdht.uml.hl7.vocab.ActClassRoot;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component1;
-import org.openhealthtools.mdht.uml.cda.DocumentationOf;
-import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
-import org.openhealthtools.mdht.uml.cda.Location;
-import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
@@ -32,12 +38,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ProgressNote2;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SubjectiveSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProgressNote2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,7 +115,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2TestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -155,7 +156,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
+			 *
 			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
@@ -200,7 +201,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresentTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_OR_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_OR_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -209,7 +211,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
+			 *
 			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addFailTests()
 			 */
 			@Override
@@ -324,7 +326,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2Code() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2CodeTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2Code",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
@@ -475,8 +478,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProgressNote2PlanOfTreatmentSection2() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2PlanOfTreatmentSection2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2PlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressNote2PlanOfTreatmentSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -510,7 +513,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2AssessmentAndPlanSection2() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2AssessmentAndPlanSection2TestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2AssessmentAndPlanSection2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -544,7 +548,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2AllergiesSectionEntriesOptional2() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2AllergiesSectionEntriesOptional2TestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2AllergiesSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -577,8 +582,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProgressNote2ChiefComplaintSection() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ChiefComplaintSectionTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2ChiefComplaintSection",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressNote2ChiefComplaintSection", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -618,8 +623,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProgressNote2InterventionsSection2() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2InterventionsSection2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2InterventionsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_INTERVENTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressNote2InterventionsSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_INTERVENTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -652,8 +657,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProgressNote2InstructionsSection2() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2InstructionsSection2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2InstructionsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_INSTRUCTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressNote2InstructionsSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_INSTRUCTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -687,7 +692,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2MedicationsSectionEntriesOptional2() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2MedicationsSectionEntriesOptional2TestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2MedicationsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -761,8 +767,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProgressNote2PhysicalExamSection2() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2PhysicalExamSection2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2PhysicalExamSection2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressNote2PhysicalExamSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -796,7 +802,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2ProblemSectionEntriesOptional2() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ProblemSectionEntriesOptional2TestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ProblemSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -830,7 +837,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2ResultsSectionEntriesOptional2() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ResultsSectionEntriesOptional2TestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ResultsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_RESULTS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_RESULTS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -863,8 +871,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProgressNote2ReviewOfSystemsSection() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ReviewOfSystemsSectionTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2ReviewOfSystemsSection",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressNote2ReviewOfSystemsSection", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -946,7 +954,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2VitalSignsSectionEntriesOptional2() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2VitalSignsSectionEntriesOptional2TestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2VitalSignsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1021,7 +1030,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLowTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1072,7 +1082,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidthTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1300,7 +1311,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2DocumentationOfServiceEventTemplateId() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventTemplateIdTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DocumentationOfServiceEventTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1340,7 +1352,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2DocumentationOfServiceEventClassCode() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventClassCodeTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DocumentationOfServiceEventClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1383,7 +1396,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2DocumentationOfServiceEventEffectiveTime() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventEffectiveTimeTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DocumentationOfServiceEventEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1426,7 +1440,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2DocumentationOfServiceEvent() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DocumentationOfServiceEvent",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1467,7 +1482,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLowTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1508,7 +1524,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityIdTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1549,7 +1566,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1763,7 +1781,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2ComponentOfEncompassingEncounterId() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterIdTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounterId",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1801,7 +1820,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2ComponentOfEncompassingEncounterEffectiveTime() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterEffectiveTimeTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounterEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1840,7 +1860,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2ComponentOfEncompassingEncounterLocation() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterLocationTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounterLocation",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1878,7 +1899,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	public void testValidateProgressNote2ComponentOfEncompassingEncounter() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounter",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2104,8 +2126,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<ProgressNote2> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

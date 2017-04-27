@@ -10,14 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityAct;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivityEncounter;
@@ -39,8 +37,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.CarePlanSectionOperations
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Plan Of Care Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -161,7 +157,8 @@ public class PlanOfCareSectionImpl extends AssessmentAndPlanSectionImpl implemen
 	 */
 	public boolean validatePlanOfCareSectionPlanOfCareActivitySupply(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySupply(this, diagnostics, context);
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySupply(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -261,7 +258,8 @@ public class PlanOfCareSectionImpl extends AssessmentAndPlanSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPPlanOfCareSectionImmunization(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPPlanOfCareSectionImmunization(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return org.openhealthtools.mdht.uml.cda.hitsp.operations.PlanOfCareSectionOperations.validateHITSPPlanOfCareSectionImmunization(
 			this, diagnostics, context);
 	}
@@ -329,7 +327,7 @@ public class PlanOfCareSectionImpl extends AssessmentAndPlanSectionImpl implemen
 	 */
 	@Override
 	public PlanOfCareSection init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -338,8 +336,9 @@ public class PlanOfCareSectionImpl extends AssessmentAndPlanSectionImpl implemen
 	 * @generated
 	 */
 	@Override
-	public PlanOfCareSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public PlanOfCareSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // PlanOfCareSectionImpl

@@ -12,18 +12,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.consol.operations.TobaccoUseOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Tobacco Use</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -93,16 +91,6 @@ public class TobaccoUseImpl extends ObservationImpl implements TobaccoUse {
 	 * @generated
 	 */
 	@Override
-	public boolean validateTobaccoUseCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TobaccoUseOperations.validateTobaccoUseCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateTobaccoUseCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUseOperations.validateTobaccoUseCode(this, diagnostics, context);
 	}
@@ -155,6 +143,34 @@ public class TobaccoUseImpl extends ObservationImpl implements TobaccoUse {
 	@Override
 	public boolean validateTobaccoUseValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUseOperations.validateTobaccoUseValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTobaccoUseCDCodeTermAssertionOrLoinc(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return TobaccoUseOperations.validateTobaccoUseCDCodeTermAssertionOrLoinc(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTobaccoUseCDCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TobaccoUseOperations.validateTobaccoUseCDCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTobaccoUseCDCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TobaccoUseOperations.validateTobaccoUseCDCodeSystem(this, diagnostics, context);
 	}
 
 	/**

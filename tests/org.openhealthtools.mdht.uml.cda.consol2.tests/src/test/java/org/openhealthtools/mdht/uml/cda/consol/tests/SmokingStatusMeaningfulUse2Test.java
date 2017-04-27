@@ -16,14 +16,14 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusMeaningfulUse2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,15 +33,19 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusMeaningfulUse2EffectiveTimeLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 Effective Time Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusMeaningfulUse2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusMeaningfulUse2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateTobaccoUseTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusMeaningfulUse2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 CD Code Term Assertion Or Loinc</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationIVLTSCenter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS Center</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS High</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS Low</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationIVLTSWidth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS Width</em>}</li>
  * </ul>
  * </p>
  *
@@ -49,42 +53,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  */
 
 public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateSmokingStatusMeaningfulUse2EffectiveTimeLow() {
-		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusMeaningfulUse2EffectiveTimeLowTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
-			"validateSmokingStatusMeaningfulUse2EffectiveTimeLow",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2EffectiveTimeLow(
-					(SmokingStatusMeaningfulUse2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateSmokingStatusMeaningfulUse2EffectiveTimeLowTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -128,7 +96,8 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 	public void testValidateSmokingStatusMeaningfulUse2AuthorParticipation() {
 		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusMeaningfulUse2AuthorParticipationTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
 			"validateSmokingStatusMeaningfulUse2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -156,13 +125,19 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
+	* This constraint is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	* In this case, as per errata 596:
+	* For backwards compatibility, R1.1 was allowed to use its original code or the R2.0/R2.1 code
+	* where as R2.1 can only use the new code - so we are removing the either or option
 	*/
-	@Test
-	public void testValidateTobaccoUseTemplateId() {
-		OperationsTestCase<SmokingStatusMeaningfulUse2> validateTobaccoUseTemplateIdTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
-			"validateTobaccoUseTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	@Ignore
+	public void testValidateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc() {
+		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoincTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
+			"validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -179,13 +154,47 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return SmokingStatusMeaningfulUse2Operations.validateTobaccoUseTemplateId(
+				return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc(
 					(SmokingStatusMeaningfulUse2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateTobaccoUseTemplateIdTestCase.doValidationTest();
+		validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoincTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateSmokingStatusObservationTemplateId() {
+		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationTemplateIdTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
+			"validateSmokingStatusObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationTemplateId(
+					(SmokingStatusMeaningfulUse2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusObservationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**
@@ -234,15 +243,67 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 			objectFactory) {
 
 			@Override
-			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SmokingStatusMeaningfulUse2 target) {
+						// code with no @code or @codeSystem
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD());
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SmokingStatusMeaningfulUse2 target) {
+						// invalid @code
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, "2.16.840.1.113883.5.4"));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SmokingStatusMeaningfulUse2 target) {
+						// invalid @codeSystem
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("ASSERTION", BAD_CODESYSTEM_ID));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SmokingStatusMeaningfulUse2 target) {
+						// invalid @code and invalid @codeSystem
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, BAD_CODESYSTEM_ID));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SmokingStatusMeaningfulUse2 target) {
+						// old R1.1 way
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("ASSERTION", "2.16.840.1.113883.5.4"));
+					}
+				});
+
 			}
 
 			@Override
-			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
-				target.getCode().setCode("72166-2");
-				target.getCode().setCodeSystem(LOINC_ID);
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SmokingStatusMeaningfulUse2 target) {
+						// new R2.1 code
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("72166-2", LOINC_ID));
+					}
+				});
+
 			}
 
 			@Override
@@ -262,43 +323,6 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 		};
 
 		validateSmokingStatusObservationCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateSmokingStatusObservationEffectiveTime() {
-		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationEffectiveTimeTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
-			"validateSmokingStatusObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
-				target.init();
-
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				target.setEffectiveTime(ts);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationEffectiveTime(
-					(SmokingStatusMeaningfulUse2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateSmokingStatusObservationEffectiveTimeTestCase.doValidationTest();
 	}
 
 	/**
@@ -375,6 +399,183 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 		};
 
 		validateSmokingStatusObservationValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateSmokingStatusObservationEffectiveTime() {
+		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationEffectiveTimeTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
+			"validateSmokingStatusObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
+				target.init();
+
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationEffectiveTime(
+					(SmokingStatusMeaningfulUse2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusObservationEffectiveTimeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSmokingStatusObservationIVLTSCenter() {
+		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationIVLTSCenterTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
+			"validateSmokingStatusObservationIVLTSCenter", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_CENTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.getEffectiveTime().setCenter(DatatypesFactory.eINSTANCE.createIVXB_TS());
+			}
+
+			@Override
+			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSCenter(
+					(SmokingStatusMeaningfulUse2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusObservationIVLTSCenterTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSmokingStatusObservationIVLTSHigh() {
+		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationIVLTSHighTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
+			"validateSmokingStatusObservationIVLTSHigh", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.getEffectiveTime().setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
+			}
+
+			@Override
+			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSHigh(
+					(SmokingStatusMeaningfulUse2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusObservationIVLTSHighTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSmokingStatusObservationIVLTSLow() {
+		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationIVLTSLowTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
+			"validateSmokingStatusObservationIVLTSLow", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.getEffectiveTime().setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
+			}
+
+			@Override
+			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSLow(
+					(SmokingStatusMeaningfulUse2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusObservationIVLTSLowTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSmokingStatusObservationIVLTSWidth() {
+		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationIVLTSWidthTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
+			"validateSmokingStatusObservationIVLTSWidth", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.getEffectiveTime().setWidth((DatatypesFactory.eINSTANCE.createPQ()));
+			}
+
+			@Override
+			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSWidth(
+					(SmokingStatusMeaningfulUse2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusObservationIVLTSWidthTestCase.doValidationTest();
 	}
 
 	/**

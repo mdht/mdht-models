@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>VS Hearing Screening Test Result Values</title>
+<prolog id="prolog">
+<resourceid id="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.14"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>VS_HearingScreeningTestResultValues - 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.14</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Version</entry><entry>1</entry></row>
+<row><entry>Definition</entry><entry>This value set holds a list of coded concepts representing the possible result values produced by a device when performing hearing screening. If a test was not performed by the device, it does not send back a value. The code for "attempted, but unsuccessful-technical fail" indicates that the test was performed, but the value measured by the device could not be determined to be a clear pass or fail (refer).</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>164059009</entry><entry>SNOMEDCT</entry><entry>Pass</entry></row>
+<row><entry>183924009</entry><entry>SNOMEDCT</entry><entry>Refer</entry></row>
+<row><entry>103709008</entry><entry>SNOMEDCT</entry><entry>Attempted, but unsuccessful - technical fail</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

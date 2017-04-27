@@ -7,34 +7,24 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.consol.ActReference;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
-import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
-import org.openhealthtools.mdht.uml.cda.consol.InterventionAct;
+import org.openhealthtools.mdht.uml.cda.consol.EntryReference;
 import org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.ProgressTowardGoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.OutcomeObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Outcome Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -56,6 +46,17 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.OUTCOME_OBSERVATION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservationProgTowardGoalObsInversionIndIsTrue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationProgTowardGoalObsInversionIndIsTrue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -103,9 +104,8 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateOutcomeObservationActReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OutcomeObservationOperations.validateOutcomeObservationActReference(this, diagnostics, context);
+	public boolean validateOutcomeObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -113,9 +113,38 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateOutcomeObservationActReference2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OutcomeObservationOperations.validateOutcomeObservationActReference2(this, diagnostics, context);
+	public boolean validateOutcomeObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservationEntryReferenceGoalObs(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationEntryReferenceGoalObs(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservationEntryReferenceInterventionAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationEntryReferenceInterventionAct(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -135,16 +164,6 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * @generated
 	 */
 	@Override
-	public boolean validateOutcomeObservationGoalObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OutcomeObservationOperations.validateOutcomeObservationGoalObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateOutcomeObservationProgressTowardGoalObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationProgressTowardGoalObservation(
@@ -156,9 +175,8 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateOutcomeObservationInterventionAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OutcomeObservationOperations.validateOutcomeObservationInterventionAct(this, diagnostics, context);
+	public boolean validateOutcomeObservationReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationReference(this, diagnostics, context);
 	}
 
 	/**
@@ -166,10 +184,29 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateOutcomeObservationExternalDocumentReference(DiagnosticChain diagnostics,
+	public boolean validateOutcomeObservationEntryRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OutcomeObservationOperations.validateOutcomeObservationExternalDocumentReference(
+		return OutcomeObservationOperations.validateOutcomeObservationEntryRelationship(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservationReferenceTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationReferenceTypeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOutcomeObservationReferenceExternalDocumentReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OutcomeObservationOperations.validateOutcomeObservationReferenceExternalDocumentReference(
 			this, diagnostics, context);
 	}
 
@@ -178,9 +215,8 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ActReference> getActReferences() {
-		return OutcomeObservationOperations.getActReferences(this);
+	public EList<EntryReference> getEntryReferenceGoalObss() {
+		return OutcomeObservationOperations.getEntryReferenceGoalObss(this);
 	}
 
 	/**
@@ -188,19 +224,8 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ActReference> getActReference2s() {
-		return OutcomeObservationOperations.getActReference2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<GoalObservation> getGoalObservations() {
-		return OutcomeObservationOperations.getGoalObservations(this);
+	public EList<EntryReference> getEntryReferenceInterventionActs() {
+		return OutcomeObservationOperations.getEntryReferenceInterventionActs(this);
 	}
 
 	/**
@@ -211,26 +236,6 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	@Override
 	public ProgressTowardGoalObservation getProgressTowardGoalObservation() {
 		return OutcomeObservationOperations.getProgressTowardGoalObservation(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<InterventionAct> getInterventionActs() {
-		return OutcomeObservationOperations.getInterventionActs(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ExternalDocumentReference> getExternalDocumentReferences() {
-		return OutcomeObservationOperations.getExternalDocumentReferences(this);
 	}
 
 	/**

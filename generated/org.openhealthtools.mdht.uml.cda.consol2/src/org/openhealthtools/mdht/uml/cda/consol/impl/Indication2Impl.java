@@ -7,27 +7,20 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.Indication2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Indication2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -56,9 +49,17 @@ public class Indication2Impl extends IndicationImpl implements Indication2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateIndication2ProblemIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Indication2Operations.validateIndication2ProblemIndication(this, diagnostics, context);
+	public boolean validateIndicationProblemIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return Indication2Operations.validateIndicationProblemIndication(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIndicationCodeNullFlavorValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return Indication2Operations.validateIndicationCodeNullFlavorValue(this, diagnostics, context);
 	}
 
 	/**
@@ -67,28 +68,8 @@ public class Indication2Impl extends IndicationImpl implements Indication2 {
 	 * @generated
 	 */
 	@Override
-	public boolean validateIndication2CodeNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Indication2Operations.validateIndication2CodeNullFlavor(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateIndication2CodeNullFlavorValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Indication2Operations.validateIndication2CodeNullFlavorValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateIndication2Text(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Indication2Operations.validateIndication2Text(this, diagnostics, context);
+	public boolean validateIndicationCodeNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return Indication2Operations.validateIndicationCodeNullFlavor(this, diagnostics, context);
 	}
 
 	/**

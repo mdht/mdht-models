@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.PatientConditionChangeAtDestinationObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.PatientConditionChangeAtDestinationObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Patient Condition Change At Destination Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PatientConditionChangeAtDestinationObservationImpl extends ObservationImpl implements
+public class PatientConditionChangeAtDestinationObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements
 		PatientConditionChangeAtDestinationObservation {
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,8 +50,7 @@ public class PatientConditionChangeAtDestinationObservationImpl extends Observat
 	 */
 	public boolean validatePatientConditionChangeAtDestinationObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientConditionChangeAtDestinationObservationOperations.validatePatientConditionChangeAtDestinationObservationTemplateId(
-			this, diagnostics, context);
+		return PatientConditionChangeAtDestinationObservationOperations.validatePatientConditionChangeAtDestinationObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +60,7 @@ public class PatientConditionChangeAtDestinationObservationImpl extends Observat
 	 */
 	public boolean validatePatientConditionChangeAtDestinationObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientConditionChangeAtDestinationObservationOperations.validatePatientConditionChangeAtDestinationObservationMoodCode(
-			this, diagnostics, context);
+		return PatientConditionChangeAtDestinationObservationOperations.validatePatientConditionChangeAtDestinationObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +70,7 @@ public class PatientConditionChangeAtDestinationObservationImpl extends Observat
 	 */
 	public boolean validatePatientConditionChangeAtDestinationObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientConditionChangeAtDestinationObservationOperations.validatePatientConditionChangeAtDestinationObservationCodeP(
-			this, diagnostics, context);
+		return PatientConditionChangeAtDestinationObservationOperations.validatePatientConditionChangeAtDestinationObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +80,7 @@ public class PatientConditionChangeAtDestinationObservationImpl extends Observat
 	 */
 	public boolean validatePatientConditionChangeAtDestinationObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientConditionChangeAtDestinationObservationOperations.validatePatientConditionChangeAtDestinationObservationCode(
-			this, diagnostics, context);
+		return PatientConditionChangeAtDestinationObservationOperations.validatePatientConditionChangeAtDestinationObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +90,7 @@ public class PatientConditionChangeAtDestinationObservationImpl extends Observat
 	 */
 	public boolean validatePatientConditionChangeAtDestinationObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientConditionChangeAtDestinationObservationOperations.validatePatientConditionChangeAtDestinationObservationValue(
-			this, diagnostics, context);
+		return PatientConditionChangeAtDestinationObservationOperations.validatePatientConditionChangeAtDestinationObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -116,8 +100,7 @@ public class PatientConditionChangeAtDestinationObservationImpl extends Observat
 	 */
 	public boolean validatePatientConditionChangeAtDestinationObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientConditionChangeAtDestinationObservationOperations.validatePatientConditionChangeAtDestinationObservationValueP(
-			this, diagnostics, context);
+		return PatientConditionChangeAtDestinationObservationOperations.validatePatientConditionChangeAtDestinationObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -126,17 +109,17 @@ public class PatientConditionChangeAtDestinationObservationImpl extends Observat
 	 * @generated
 	 */
 	public PatientConditionChangeAtDestinationObservation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PatientConditionChangeAtDestinationObservation init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PatientConditionChangeAtDestinationObservationImpl

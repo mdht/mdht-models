@@ -7,34 +7,27 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationsSection2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunizations Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ImmunizationsSection2Impl extends ImmunizationsSectionEntriesOptional2Impl implements
-		ImmunizationsSection2 {
+public class ImmunizationsSection2Impl extends ImmunizationsSectionEntriesOptional2Impl
+		implements ImmunizationsSection2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -125,9 +118,9 @@ public class ImmunizationsSection2Impl extends ImmunizationsSectionEntriesOption
 	 * @generated
 	 */
 	@Override
-	public boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity2(DiagnosticChain diagnostics,
+	public boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSection2Operations.validateImmunizationsSectionEntriesOptionalImmunizationActivity2(
+		return ImmunizationsSection2Operations.validateImmunizationsSectionEntriesOptionalImmunizationActivity(
 			this, diagnostics, context);
 	}
 

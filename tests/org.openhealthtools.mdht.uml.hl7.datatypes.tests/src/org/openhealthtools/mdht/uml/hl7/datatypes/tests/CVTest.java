@@ -10,11 +10,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CV;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.operations.CVOperations;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CV;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.operations.CVOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,8 +40,8 @@ public class CVTest extends CDAValidationTest {
 	@Test
 	public void testValidateTranslation() {
 		OperationsTestCase<CV> validateTranslationTestCase = new OperationsTestCase<CV>(
-			"validateTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			"validateTranslation", operationsForOCL.getOCLValue("VALIDATE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 			{
 				skipNullTest();
 			}
@@ -121,8 +121,7 @@ public class CVTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

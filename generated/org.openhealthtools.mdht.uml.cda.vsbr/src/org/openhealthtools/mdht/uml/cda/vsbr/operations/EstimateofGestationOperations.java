@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.EstimateofGestation;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -39,7 +37,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class EstimateofGestationOperations extends ClinicalStatementOperations {
+public class EstimateofGestationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +73,7 @@ public class EstimateofGestationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ESTIMATEOF_GESTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ESTIMATEOF_GESTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,28 +89,33 @@ public class EstimateofGestationOperations extends ClinicalStatementOperations {
 	public static boolean validateEstimateofGestationTemplateId(EstimateofGestation estimateofGestation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_ESTIMATEOF_GESTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ESTIMATEOF_GESTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ESTIMATEOF_GESTATION);
 			try {
-				VALIDATE_ESTIMATEOF_GESTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ESTIMATEOF_GESTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ESTIMATEOF_GESTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ESTIMATEOF_GESTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ESTIMATEOF_GESTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			estimateofGestation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ESTIMATEOF_GESTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				estimateofGestation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ESTIMATEOF_GESTATION__ESTIMATEOF_GESTATION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EstimateofGestationTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(estimateofGestation, context) }),
-					new Object[] { estimateofGestation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ESTIMATEOF_GESTATION__ESTIMATEOF_GESTATION_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"EstimateofGestationEstimateofGestationTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										estimateofGestation, context) }),
+						new Object[] { estimateofGestation }));
 			}
 
 			return false;
@@ -132,7 +142,7 @@ public class EstimateofGestationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ESTIMATEOF_GESTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ESTIMATEOF_GESTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,28 +158,33 @@ public class EstimateofGestationOperations extends ClinicalStatementOperations {
 	public static boolean validateEstimateofGestationClassCode(EstimateofGestation estimateofGestation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_ESTIMATEOF_GESTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ESTIMATEOF_GESTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ESTIMATEOF_GESTATION);
 			try {
-				VALIDATE_ESTIMATEOF_GESTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ESTIMATEOF_GESTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ESTIMATEOF_GESTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ESTIMATEOF_GESTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ESTIMATEOF_GESTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			estimateofGestation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ESTIMATEOF_GESTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				estimateofGestation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ESTIMATEOF_GESTATION__ESTIMATEOF_GESTATION_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EstimateofGestationClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(estimateofGestation, context) }),
-					new Object[] { estimateofGestation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ESTIMATEOF_GESTATION__ESTIMATEOF_GESTATION_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"EstimateofGestationEstimateofGestationClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										estimateofGestation, context) }),
+						new Object[] { estimateofGestation }));
 			}
 
 			return false;
@@ -196,7 +211,7 @@ public class EstimateofGestationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ESTIMATEOF_GESTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ESTIMATEOF_GESTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -212,28 +227,32 @@ public class EstimateofGestationOperations extends ClinicalStatementOperations {
 	public static boolean validateEstimateofGestationMoodCode(EstimateofGestation estimateofGestation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_ESTIMATEOF_GESTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ESTIMATEOF_GESTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ESTIMATEOF_GESTATION);
 			try {
-				VALIDATE_ESTIMATEOF_GESTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ESTIMATEOF_GESTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ESTIMATEOF_GESTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ESTIMATEOF_GESTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ESTIMATEOF_GESTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			estimateofGestation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ESTIMATEOF_GESTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(estimateofGestation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ESTIMATEOF_GESTATION__ESTIMATEOF_GESTATION_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EstimateofGestationMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(estimateofGestation, context) }),
-					new Object[] { estimateofGestation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ESTIMATEOF_GESTATION__ESTIMATEOF_GESTATION_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"EstimateofGestationEstimateofGestationMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										estimateofGestation, context) }),
+						new Object[] { estimateofGestation }));
 			}
 
 			return false;
@@ -260,7 +279,7 @@ public class EstimateofGestationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ESTIMATEOF_GESTATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ESTIMATEOF_GESTATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,28 +295,32 @@ public class EstimateofGestationOperations extends ClinicalStatementOperations {
 	public static boolean validateEstimateofGestationCodeP(EstimateofGestation estimateofGestation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_ESTIMATEOF_GESTATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ESTIMATEOF_GESTATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ESTIMATEOF_GESTATION);
 			try {
-				VALIDATE_ESTIMATEOF_GESTATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ESTIMATEOF_GESTATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ESTIMATEOF_GESTATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ESTIMATEOF_GESTATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ESTIMATEOF_GESTATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			estimateofGestation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ESTIMATEOF_GESTATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(estimateofGestation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ESTIMATEOF_GESTATION__ESTIMATEOF_GESTATION_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EstimateofGestationCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(estimateofGestation, context) }),
-					new Object[] { estimateofGestation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ESTIMATEOF_GESTATION__ESTIMATEOF_GESTATION_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"EstimateofGestationEstimateofGestationCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										estimateofGestation, context) }),
+						new Object[] { estimateofGestation }));
 			}
 
 			return false;
@@ -313,9 +336,9 @@ public class EstimateofGestationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ESTIMATEOF_GESTATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '11884-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_ESTIMATEOF_GESTATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '11884-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEstimateofGestationCode(EstimateofGestation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimateof Gestation Code</em>}' invariant operation.
@@ -326,7 +349,7 @@ public class EstimateofGestationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ESTIMATEOF_GESTATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ESTIMATEOF_GESTATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -342,28 +365,32 @@ public class EstimateofGestationOperations extends ClinicalStatementOperations {
 	public static boolean validateEstimateofGestationCode(EstimateofGestation estimateofGestation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_ESTIMATEOF_GESTATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ESTIMATEOF_GESTATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ESTIMATEOF_GESTATION);
 			try {
-				VALIDATE_ESTIMATEOF_GESTATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ESTIMATEOF_GESTATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ESTIMATEOF_GESTATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ESTIMATEOF_GESTATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ESTIMATEOF_GESTATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ESTIMATEOF_GESTATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			estimateofGestation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ESTIMATEOF_GESTATION__ESTIMATEOF_GESTATION_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EstimateofGestationCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(estimateofGestation, context) }),
-					new Object[] { estimateofGestation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ESTIMATEOF_GESTATION__ESTIMATEOF_GESTATION_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"EstimateofGestationEstimateofGestationCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										estimateofGestation, context) }),
+						new Object[] { estimateofGestation }));
 			}
 
 			return false;
@@ -390,7 +417,7 @@ public class EstimateofGestationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ESTIMATEOF_GESTATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ESTIMATEOF_GESTATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -406,28 +433,32 @@ public class EstimateofGestationOperations extends ClinicalStatementOperations {
 	public static boolean validateEstimateofGestationValue(EstimateofGestation estimateofGestation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_ESTIMATEOF_GESTATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ESTIMATEOF_GESTATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ESTIMATEOF_GESTATION);
 			try {
-				VALIDATE_ESTIMATEOF_GESTATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ESTIMATEOF_GESTATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ESTIMATEOF_GESTATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ESTIMATEOF_GESTATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ESTIMATEOF_GESTATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			estimateofGestation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ESTIMATEOF_GESTATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(estimateofGestation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ESTIMATEOF_GESTATION__ESTIMATEOF_GESTATION_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EstimateofGestationValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(estimateofGestation, context) }),
-					new Object[] { estimateofGestation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ESTIMATEOF_GESTATION__ESTIMATEOF_GESTATION_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"EstimateofGestationEstimateofGestationValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										estimateofGestation, context) }),
+						new Object[] { estimateofGestation }));
 			}
 
 			return false;

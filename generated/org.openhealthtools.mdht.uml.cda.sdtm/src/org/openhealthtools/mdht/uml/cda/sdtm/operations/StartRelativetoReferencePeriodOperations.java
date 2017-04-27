@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.StartRelativetoReferencePeriod;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -40,7 +34,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class StartRelativetoReferencePeriodOperations extends ClinicalStatementOperations {
+public class StartRelativetoReferencePeriodOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +71,7 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -84,25 +86,35 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 */
 	
 	public static  boolean validateStartRelativetoReferencePeriodTemplateId(StartRelativetoReferencePeriod startRelativetoReferencePeriod, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.START_RELATIVETO_REFERENCE_PERIOD);
 			try {
-				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(startRelativetoReferencePeriod)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(startRelativetoReferencePeriod)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.START_RELATIVETO_REFERENCE_PERIOD__START_RELATIVETO_REFERENCE_PERIOD_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodStartRelativetoReferencePeriodTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
 						 new Object [] { startRelativetoReferencePeriod }));
 			}
 			 
@@ -130,7 +142,7 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -145,25 +157,35 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 */
 	
 	public static  boolean validateStartRelativetoReferencePeriodClassCode(StartRelativetoReferencePeriod startRelativetoReferencePeriod, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.START_RELATIVETO_REFERENCE_PERIOD);
 			try {
-				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(startRelativetoReferencePeriod)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(startRelativetoReferencePeriod)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.START_RELATIVETO_REFERENCE_PERIOD__START_RELATIVETO_REFERENCE_PERIOD_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodStartRelativetoReferencePeriodClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
 						 new Object [] { startRelativetoReferencePeriod }));
 			}
 			 
@@ -191,7 +213,7 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -206,25 +228,35 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 */
 	
 	public static  boolean validateStartRelativetoReferencePeriodMoodCode(StartRelativetoReferencePeriod startRelativetoReferencePeriod, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.START_RELATIVETO_REFERENCE_PERIOD);
 			try {
-				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(startRelativetoReferencePeriod)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(startRelativetoReferencePeriod)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.START_RELATIVETO_REFERENCE_PERIOD__START_RELATIVETO_REFERENCE_PERIOD_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodStartRelativetoReferencePeriodMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
 						 new Object [] { startRelativetoReferencePeriod }));
 			}
 			 
@@ -252,7 +284,7 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -267,25 +299,35 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 */
 	
 	public static  boolean validateStartRelativetoReferencePeriodCodeP(StartRelativetoReferencePeriod startRelativetoReferencePeriod, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.START_RELATIVETO_REFERENCE_PERIOD);
 			try {
-				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(startRelativetoReferencePeriod)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(startRelativetoReferencePeriod)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.START_RELATIVETO_REFERENCE_PERIOD__START_RELATIVETO_REFERENCE_PERIOD_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodStartRelativetoReferencePeriodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
 						 new Object [] { startRelativetoReferencePeriod }));
 			}
 			 
@@ -315,7 +357,7 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -330,25 +372,35 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 */
 	
 	public static  boolean validateStartRelativetoReferencePeriodCode(StartRelativetoReferencePeriod startRelativetoReferencePeriod, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.START_RELATIVETO_REFERENCE_PERIOD);
 			try {
-				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(startRelativetoReferencePeriod)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(startRelativetoReferencePeriod)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.START_RELATIVETO_REFERENCE_PERIOD__START_RELATIVETO_REFERENCE_PERIOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodStartRelativetoReferencePeriodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
 						 new Object [] { startRelativetoReferencePeriod }));
 			}
 			 
@@ -378,7 +430,7 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -393,25 +445,35 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 */
 	
 	public static  boolean validateStartRelativetoReferencePeriodValue(StartRelativetoReferencePeriod startRelativetoReferencePeriod, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.START_RELATIVETO_REFERENCE_PERIOD);
 			try {
-				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(startRelativetoReferencePeriod)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(startRelativetoReferencePeriod)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.START_RELATIVETO_REFERENCE_PERIOD__START_RELATIVETO_REFERENCE_PERIOD_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodStartRelativetoReferencePeriodValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
 						 new Object [] { startRelativetoReferencePeriod }));
 			}
 			 
@@ -439,7 +501,7 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -454,25 +516,35 @@ public class StartRelativetoReferencePeriodOperations extends ClinicalStatementO
 	 */
 	
 	public static  boolean validateStartRelativetoReferencePeriodValueP(StartRelativetoReferencePeriod startRelativetoReferencePeriod, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.START_RELATIVETO_REFERENCE_PERIOD);
 			try {
-				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(startRelativetoReferencePeriod)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_START_RELATIVETO_REFERENCE_PERIOD_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(startRelativetoReferencePeriod)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.START_RELATIVETO_REFERENCE_PERIOD__START_RELATIVETO_REFERENCE_PERIOD_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StartRelativetoReferencePeriodStartRelativetoReferencePeriodValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(startRelativetoReferencePeriod, context) }),
 						 new Object [] { startRelativetoReferencePeriod }));
 			}
 			 

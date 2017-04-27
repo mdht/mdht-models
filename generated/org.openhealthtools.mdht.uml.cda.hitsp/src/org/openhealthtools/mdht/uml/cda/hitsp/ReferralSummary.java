@@ -10,9 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalSummary;
 
 /**
@@ -38,5 +36,6 @@ public interface ReferralSummary extends MedicalSummary {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReferralSummary init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ReferralSummary init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // ReferralSummary

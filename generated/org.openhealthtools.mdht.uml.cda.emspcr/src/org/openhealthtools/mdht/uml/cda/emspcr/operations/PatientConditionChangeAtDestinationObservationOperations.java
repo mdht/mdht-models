@@ -12,19 +12,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.PatientConditionChangeAtDestinationObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,7 +39,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class PatientConditionChangeAtDestinationObservationOperations extends ClinicalStatementOperations {
+public class PatientConditionChangeAtDestinationObservationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,7 +75,7 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -90,28 +91,38 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	public static boolean validatePatientConditionChangeAtDestinationObservationTemplateId(
 			PatientConditionChangeAtDestinationObservation patientConditionChangeAtDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION);
 			try {
-				VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientConditionChangeAtDestinationObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("PatientConditionChangeAtDestinationObservationTemplateId"),
-					new Object[] { patientConditionChangeAtDestinationObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(patientConditionChangeAtDestinationObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("PatientConditionChangeAtDestinationObservationPatientConditionChangeAtDestinationObservationTemplateId"),
+						 new Object [] { patientConditionChangeAtDestinationObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -136,7 +147,7 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -152,28 +163,38 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	public static boolean validatePatientConditionChangeAtDestinationObservationMoodCode(
 			PatientConditionChangeAtDestinationObservation patientConditionChangeAtDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION);
 			try {
-				VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientConditionChangeAtDestinationObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("PatientConditionChangeAtDestinationObservationMoodCode"),
-					new Object[] { patientConditionChangeAtDestinationObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(patientConditionChangeAtDestinationObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("PatientConditionChangeAtDestinationObservationPatientConditionChangeAtDestinationObservationMoodCode"),
+						 new Object [] { patientConditionChangeAtDestinationObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -198,7 +219,7 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,28 +235,38 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	public static boolean validatePatientConditionChangeAtDestinationObservationCodeP(
 			PatientConditionChangeAtDestinationObservation patientConditionChangeAtDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION);
 			try {
-				VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientConditionChangeAtDestinationObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("PatientConditionChangeAtDestinationObservationCodeP"),
-					new Object[] { patientConditionChangeAtDestinationObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(patientConditionChangeAtDestinationObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("PatientConditionChangeAtDestinationObservationPatientConditionChangeAtDestinationObservationCodeP"),
+						 new Object [] { patientConditionChangeAtDestinationObservation }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -243,13 +274,11 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.emspcr.PatientConditionChangeAtDestinationObservationCodeP",
-						passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.emspcr.PatientConditionChangeAtDestinationObservationCodeP", passToken);
 				}
 				passToken.add(patientConditionChangeAtDestinationObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -263,9 +292,9 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67551-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67551-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientConditionChangeAtDestinationObservationCode(PatientConditionChangeAtDestinationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Change At Destination Observation Code</em>}' invariant operation.
@@ -276,7 +305,7 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -292,37 +321,44 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	public static boolean validatePatientConditionChangeAtDestinationObservationCode(
 			PatientConditionChangeAtDestinationObservation patientConditionChangeAtDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientConditionChangeAtDestinationObservationCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(patientConditionChangeAtDestinationObservation)) {
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientConditionChangeAtDestinationObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(patientConditionChangeAtDestinationObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		if (VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION);
 			try {
-				VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientConditionChangeAtDestinationObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("PatientConditionChangeAtDestinationObservationCode"),
-					new Object[] { patientConditionChangeAtDestinationObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(patientConditionChangeAtDestinationObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("PatientConditionChangeAtDestinationObservationPatientConditionChangeAtDestinationObservationCode"),
+						 new Object [] { patientConditionChangeAtDestinationObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -336,9 +372,9 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA11011-6' or value.code = 'LA17181-1' or value.code = 'LA65-8')))";
+	protected static final String VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA11011-6' or value.code = 'LA17181-1' or value.code = 'LA65-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientConditionChangeAtDestinationObservationValue(PatientConditionChangeAtDestinationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Change At Destination Observation Value</em>}' invariant operation.
@@ -349,7 +385,7 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -365,28 +401,38 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	public static boolean validatePatientConditionChangeAtDestinationObservationValue(
 			PatientConditionChangeAtDestinationObservation patientConditionChangeAtDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION);
 			try {
-				VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientConditionChangeAtDestinationObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("PatientConditionChangeAtDestinationObservationValue"),
-					new Object[] { patientConditionChangeAtDestinationObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(patientConditionChangeAtDestinationObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("PatientConditionChangeAtDestinationObservationPatientConditionChangeAtDestinationObservationValue"),
+						 new Object [] { patientConditionChangeAtDestinationObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -411,7 +457,7 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -427,28 +473,38 @@ public class PatientConditionChangeAtDestinationObservationOperations extends Cl
 	public static boolean validatePatientConditionChangeAtDestinationObservationValueP(
 			PatientConditionChangeAtDestinationObservation patientConditionChangeAtDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION);
 			try {
-				VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientConditionChangeAtDestinationObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("PatientConditionChangeAtDestinationObservationValueP"),
-					new Object[] { patientConditionChangeAtDestinationObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(patientConditionChangeAtDestinationObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("PatientConditionChangeAtDestinationObservationPatientConditionChangeAtDestinationObservationValueP"),
+						 new Object [] { patientConditionChangeAtDestinationObservation }));
+			}
+			 
 			return false;
 		}
 		return true;

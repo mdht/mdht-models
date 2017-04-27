@@ -5,8 +5,6 @@ package org.openhealthtools.mdht.uml.cda.vsbr;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
-
 /**
  * <!-- begin-user-doc -->
  * The <b>Package</b> for the model.
@@ -73,7 +71,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REALM_CODE = CDAPackage.CLINICAL_DOCUMENT__REALM_CODE;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -82,7 +80,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__TYPE_ID = CDAPackage.CLINICAL_DOCUMENT__TYPE_ID;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -91,7 +89,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__TEMPLATE_ID = CDAPackage.CLINICAL_DOCUMENT__TEMPLATE_ID;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -100,7 +98,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__ID = CDAPackage.CLINICAL_DOCUMENT__ID;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -109,7 +107,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CODE = CDAPackage.CLINICAL_DOCUMENT__CODE;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -118,7 +116,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__TITLE = CDAPackage.CLINICAL_DOCUMENT__TITLE;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -127,7 +125,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__EFFECTIVE_TIME = CDAPackage.CLINICAL_DOCUMENT__EFFECTIVE_TIME;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -136,7 +134,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CONFIDENTIALITY_CODE = CDAPackage.CLINICAL_DOCUMENT__CONFIDENTIALITY_CODE;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -145,7 +143,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__LANGUAGE_CODE = CDAPackage.CLINICAL_DOCUMENT__LANGUAGE_CODE;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Set Id</b></em>' containment reference.
@@ -154,7 +152,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__SET_ID = CDAPackage.CLINICAL_DOCUMENT__SET_ID;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__SET_ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__SET_ID;
 
 	/**
 	 * The feature id for the '<em><b>Version Number</b></em>' containment reference.
@@ -163,7 +161,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__VERSION_NUMBER = CDAPackage.CLINICAL_DOCUMENT__VERSION_NUMBER;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__VERSION_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__VERSION_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Copy Time</b></em>' containment reference.
@@ -172,7 +170,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__COPY_TIME = CDAPackage.CLINICAL_DOCUMENT__COPY_TIME;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__COPY_TIME = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__COPY_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Record Target</b></em>' containment reference list.
@@ -181,7 +179,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__RECORD_TARGET = CDAPackage.CLINICAL_DOCUMENT__RECORD_TARGET;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__RECORD_TARGET = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__RECORD_TARGET;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -190,7 +188,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__AUTHOR = CDAPackage.CLINICAL_DOCUMENT__AUTHOR;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Data Enterer</b></em>' containment reference.
@@ -199,7 +197,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__DATA_ENTERER = CDAPackage.CLINICAL_DOCUMENT__DATA_ENTERER;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__DATA_ENTERER = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__DATA_ENTERER;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -208,7 +206,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__INFORMANT = CDAPackage.CLINICAL_DOCUMENT__INFORMANT;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Custodian</b></em>' containment reference.
@@ -217,7 +215,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CUSTODIAN = CDAPackage.CLINICAL_DOCUMENT__CUSTODIAN;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CUSTODIAN = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CUSTODIAN;
 
 	/**
 	 * The feature id for the '<em><b>Information Recipient</b></em>' containment reference list.
@@ -226,7 +224,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__INFORMATION_RECIPIENT = CDAPackage.CLINICAL_DOCUMENT__INFORMATION_RECIPIENT;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__INFORMATION_RECIPIENT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__INFORMATION_RECIPIENT;
 
 	/**
 	 * The feature id for the '<em><b>Legal Authenticator</b></em>' containment reference.
@@ -235,7 +233,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__LEGAL_AUTHENTICATOR = CDAPackage.CLINICAL_DOCUMENT__LEGAL_AUTHENTICATOR;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__LEGAL_AUTHENTICATOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__LEGAL_AUTHENTICATOR;
 
 	/**
 	 * The feature id for the '<em><b>Authenticator</b></em>' containment reference list.
@@ -244,7 +242,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__AUTHENTICATOR = CDAPackage.CLINICAL_DOCUMENT__AUTHENTICATOR;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__AUTHENTICATOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__AUTHENTICATOR;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -253,7 +251,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__PARTICIPANT = CDAPackage.CLINICAL_DOCUMENT__PARTICIPANT;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>In Fulfillment Of</b></em>' containment reference list.
@@ -262,7 +260,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__IN_FULFILLMENT_OF = CDAPackage.CLINICAL_DOCUMENT__IN_FULFILLMENT_OF;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__IN_FULFILLMENT_OF = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__IN_FULFILLMENT_OF;
 
 	/**
 	 * The feature id for the '<em><b>Documentation Of</b></em>' containment reference list.
@@ -271,7 +269,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__DOCUMENTATION_OF = CDAPackage.CLINICAL_DOCUMENT__DOCUMENTATION_OF;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__DOCUMENTATION_OF = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__DOCUMENTATION_OF;
 
 	/**
 	 * The feature id for the '<em><b>Related Document</b></em>' containment reference list.
@@ -280,7 +278,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__RELATED_DOCUMENT = CDAPackage.CLINICAL_DOCUMENT__RELATED_DOCUMENT;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__RELATED_DOCUMENT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__RELATED_DOCUMENT;
 
 	/**
 	 * The feature id for the '<em><b>Authorization</b></em>' containment reference list.
@@ -289,7 +287,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__AUTHORIZATION = CDAPackage.CLINICAL_DOCUMENT__AUTHORIZATION;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__AUTHORIZATION = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__AUTHORIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Component Of</b></em>' containment reference.
@@ -298,7 +296,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__COMPONENT_OF = CDAPackage.CLINICAL_DOCUMENT__COMPONENT_OF;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__COMPONENT_OF = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__COMPONENT_OF;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference.
@@ -307,7 +305,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__COMPONENT = CDAPackage.CLINICAL_DOCUMENT__COMPONENT;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -316,7 +314,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__NULL_FLAVOR = CDAPackage.CLINICAL_DOCUMENT__NULL_FLAVOR;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -325,7 +323,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CLASS_CODE = CDAPackage.CLINICAL_DOCUMENT__CLASS_CODE;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -334,7 +332,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__MOOD_CODE = CDAPackage.CLINICAL_DOCUMENT__MOOD_CODE;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Reporting Birth Informationfromaclinicalsettingtovitalrecords</em>' class.
@@ -343,7 +341,8 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FEATURE_COUNT = CDAPackage.CLINICAL_DOCUMENT_FEATURE_COUNT + 0;
+	int REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.PrenatalTestingandSurveillanceSectionImpl <em>Prenatal Testingand Surveillance Section</em>}' class.
@@ -362,7 +361,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -371,7 +370,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -380,7 +379,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -389,7 +388,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__ID = CDAPackage.SECTION__ID;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -398,7 +397,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__CODE = CDAPackage.SECTION__CODE;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -407,7 +406,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -416,7 +415,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -425,7 +424,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -434,7 +433,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -443,7 +442,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -452,7 +451,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -461,7 +460,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -470,7 +469,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__ENTRY = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -479,7 +478,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -488,7 +487,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__SECTION_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -497,7 +496,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -506,7 +505,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -515,7 +514,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Prenatal Testingand Surveillance Section</em>' class.
@@ -524,7 +523,8 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
+	int PRENATAL_TESTINGAND_SURVEILLANCE_SECTION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.PrenatalCareImpl <em>Prenatal Care</em>}' class.
@@ -543,7 +543,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__REALM_CODE = CDAPackage.ACT__REALM_CODE;
+	int PRENATAL_CARE__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -552,7 +552,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__TYPE_ID = CDAPackage.ACT__TYPE_ID;
+	int PRENATAL_CARE__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.ACT__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -561,7 +561,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
+	int PRENATAL_CARE__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.ACT__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -570,7 +570,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__ID = CDAPackage.ACT__ID;
+	int PRENATAL_CARE__ID = org.eclipse.mdht.uml.cda.CDAPackage.ACT__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -579,7 +579,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__CODE = CDAPackage.ACT__CODE;
+	int PRENATAL_CARE__CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -588,7 +588,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__TEXT = CDAPackage.ACT__TEXT;
+	int PRENATAL_CARE__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.ACT__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -597,7 +597,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
+	int PRENATAL_CARE__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -606,7 +606,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
+	int PRENATAL_CARE__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.ACT__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -615,7 +615,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
+	int PRENATAL_CARE__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -624,7 +624,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+	int PRENATAL_CARE__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -633,7 +633,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__SUBJECT = CDAPackage.ACT__SUBJECT;
+	int PRENATAL_CARE__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.ACT__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -642,7 +642,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+	int PRENATAL_CARE__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.ACT__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -651,7 +651,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__PERFORMER = CDAPackage.ACT__PERFORMER;
+	int PRENATAL_CARE__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.ACT__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -660,7 +660,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__AUTHOR = CDAPackage.ACT__AUTHOR;
+	int PRENATAL_CARE__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.ACT__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -669,7 +669,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__INFORMANT = CDAPackage.ACT__INFORMANT;
+	int PRENATAL_CARE__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.ACT__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -678,7 +678,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+	int PRENATAL_CARE__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.ACT__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -687,7 +687,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+	int PRENATAL_CARE__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.ACT__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -696,7 +696,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__REFERENCE = CDAPackage.ACT__REFERENCE;
+	int PRENATAL_CARE__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -705,7 +705,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+	int PRENATAL_CARE__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.ACT__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -714,7 +714,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+	int PRENATAL_CARE__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.ACT__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -723,7 +723,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+	int PRENATAL_CARE__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -732,7 +732,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+	int PRENATAL_CARE__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -741,7 +741,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+	int PRENATAL_CARE__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.ACT__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Prenatal Care</em>' class.
@@ -750,7 +750,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRENATAL_CARE_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
+	int PRENATAL_CARE_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.ACT_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.PriorPregnancyHistorySectionImpl <em>Prior Pregnancy History Section</em>}' class.
@@ -769,7 +769,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -778,7 +778,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -787,7 +787,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -796,7 +796,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__ID = CDAPackage.SECTION__ID;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -805,7 +805,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__CODE = CDAPackage.SECTION__CODE;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -814,7 +814,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -823,7 +823,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -832,7 +832,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -841,7 +841,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -850,7 +850,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -859,7 +859,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -868,7 +868,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -877,7 +877,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__ENTRY = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -886,7 +886,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -895,7 +895,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__SECTION_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -904,7 +904,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -913,7 +913,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -922,7 +922,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+	int PRIOR_PREGNANCY_HISTORY_SECTION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Prior Pregnancy History Section</em>' class.
@@ -931,7 +931,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIOR_PREGNANCY_HISTORY_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
+	int PRIOR_PREGNANCY_HISTORY_SECTION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.DateofLastLiveBirthImpl <em>Dateof Last Live Birth</em>}' class.
@@ -950,7 +950,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int DATEOF_LAST_LIVE_BIRTH__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -959,7 +959,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int DATEOF_LAST_LIVE_BIRTH__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -968,7 +968,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int DATEOF_LAST_LIVE_BIRTH__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -977,7 +977,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__ID = CDAPackage.OBSERVATION__ID;
+	int DATEOF_LAST_LIVE_BIRTH__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -986,7 +986,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__CODE = CDAPackage.OBSERVATION__CODE;
+	int DATEOF_LAST_LIVE_BIRTH__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -995,7 +995,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int DATEOF_LAST_LIVE_BIRTH__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -1004,7 +1004,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int DATEOF_LAST_LIVE_BIRTH__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -1013,7 +1013,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int DATEOF_LAST_LIVE_BIRTH__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -1022,7 +1022,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int DATEOF_LAST_LIVE_BIRTH__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -1031,7 +1031,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int DATEOF_LAST_LIVE_BIRTH__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -1040,7 +1040,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int DATEOF_LAST_LIVE_BIRTH__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -1049,7 +1049,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int DATEOF_LAST_LIVE_BIRTH__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -1058,7 +1058,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int DATEOF_LAST_LIVE_BIRTH__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -1067,7 +1067,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int DATEOF_LAST_LIVE_BIRTH__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -1076,7 +1076,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int DATEOF_LAST_LIVE_BIRTH__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -1085,7 +1085,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int DATEOF_LAST_LIVE_BIRTH__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -1094,7 +1094,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int DATEOF_LAST_LIVE_BIRTH__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -1103,7 +1103,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int DATEOF_LAST_LIVE_BIRTH__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -1112,7 +1112,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int DATEOF_LAST_LIVE_BIRTH__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -1121,7 +1121,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int DATEOF_LAST_LIVE_BIRTH__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -1130,7 +1130,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int DATEOF_LAST_LIVE_BIRTH__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -1139,7 +1139,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int DATEOF_LAST_LIVE_BIRTH__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -1148,7 +1148,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int DATEOF_LAST_LIVE_BIRTH__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -1157,7 +1157,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int DATEOF_LAST_LIVE_BIRTH__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -1166,7 +1166,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int DATEOF_LAST_LIVE_BIRTH__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -1175,7 +1175,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int DATEOF_LAST_LIVE_BIRTH__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -1184,7 +1184,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int DATEOF_LAST_LIVE_BIRTH__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -1193,7 +1193,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int DATEOF_LAST_LIVE_BIRTH__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -1202,7 +1202,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int DATEOF_LAST_LIVE_BIRTH__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -1211,7 +1211,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int DATEOF_LAST_LIVE_BIRTH__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Dateof Last Live Birth</em>' class.
@@ -1220,7 +1220,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATEOF_LAST_LIVE_BIRTH_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int DATEOF_LAST_LIVE_BIRTH_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.LastMenstrualPeriodDateImpl <em>Last Menstrual Period Date</em>}' class.
@@ -1239,7 +1239,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int LAST_MENSTRUAL_PERIOD_DATE__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -1248,7 +1248,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int LAST_MENSTRUAL_PERIOD_DATE__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -1257,7 +1257,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int LAST_MENSTRUAL_PERIOD_DATE__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -1266,7 +1266,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__ID = CDAPackage.OBSERVATION__ID;
+	int LAST_MENSTRUAL_PERIOD_DATE__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -1275,7 +1275,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__CODE = CDAPackage.OBSERVATION__CODE;
+	int LAST_MENSTRUAL_PERIOD_DATE__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -1284,7 +1284,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int LAST_MENSTRUAL_PERIOD_DATE__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -1293,7 +1293,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int LAST_MENSTRUAL_PERIOD_DATE__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -1302,7 +1302,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int LAST_MENSTRUAL_PERIOD_DATE__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -1311,7 +1311,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int LAST_MENSTRUAL_PERIOD_DATE__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -1320,7 +1320,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int LAST_MENSTRUAL_PERIOD_DATE__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -1329,7 +1329,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int LAST_MENSTRUAL_PERIOD_DATE__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -1338,7 +1338,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int LAST_MENSTRUAL_PERIOD_DATE__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -1347,7 +1347,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int LAST_MENSTRUAL_PERIOD_DATE__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -1356,7 +1356,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int LAST_MENSTRUAL_PERIOD_DATE__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -1365,7 +1365,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int LAST_MENSTRUAL_PERIOD_DATE__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -1374,7 +1374,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int LAST_MENSTRUAL_PERIOD_DATE__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -1383,7 +1383,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int LAST_MENSTRUAL_PERIOD_DATE__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -1392,7 +1392,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int LAST_MENSTRUAL_PERIOD_DATE__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -1401,7 +1401,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int LAST_MENSTRUAL_PERIOD_DATE__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -1410,7 +1410,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int LAST_MENSTRUAL_PERIOD_DATE__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -1419,7 +1419,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int LAST_MENSTRUAL_PERIOD_DATE__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -1428,7 +1428,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int LAST_MENSTRUAL_PERIOD_DATE__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -1437,7 +1437,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int LAST_MENSTRUAL_PERIOD_DATE__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -1446,7 +1446,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int LAST_MENSTRUAL_PERIOD_DATE__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -1455,7 +1455,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int LAST_MENSTRUAL_PERIOD_DATE__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -1464,7 +1464,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int LAST_MENSTRUAL_PERIOD_DATE__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -1473,7 +1473,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int LAST_MENSTRUAL_PERIOD_DATE__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -1482,7 +1482,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int LAST_MENSTRUAL_PERIOD_DATE__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -1491,7 +1491,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int LAST_MENSTRUAL_PERIOD_DATE__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -1500,7 +1500,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int LAST_MENSTRUAL_PERIOD_DATE__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Last Menstrual Period Date</em>' class.
@@ -1509,7 +1509,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LAST_MENSTRUAL_PERIOD_DATE_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int LAST_MENSTRUAL_PERIOD_DATE_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.NumberofBirthsNowLivingImpl <em>Numberof Births Now Living</em>}' class.
@@ -1528,7 +1528,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int NUMBEROF_BIRTHS_NOW_LIVING__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -1537,7 +1537,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int NUMBEROF_BIRTHS_NOW_LIVING__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -1546,7 +1546,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int NUMBEROF_BIRTHS_NOW_LIVING__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -1555,7 +1555,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__ID = CDAPackage.OBSERVATION__ID;
+	int NUMBEROF_BIRTHS_NOW_LIVING__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -1564,7 +1564,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__CODE = CDAPackage.OBSERVATION__CODE;
+	int NUMBEROF_BIRTHS_NOW_LIVING__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -1573,7 +1573,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int NUMBEROF_BIRTHS_NOW_LIVING__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -1582,7 +1582,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int NUMBEROF_BIRTHS_NOW_LIVING__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -1591,7 +1591,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int NUMBEROF_BIRTHS_NOW_LIVING__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -1600,7 +1600,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int NUMBEROF_BIRTHS_NOW_LIVING__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -1609,7 +1609,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int NUMBEROF_BIRTHS_NOW_LIVING__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -1618,7 +1618,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int NUMBEROF_BIRTHS_NOW_LIVING__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -1627,7 +1627,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int NUMBEROF_BIRTHS_NOW_LIVING__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -1636,7 +1636,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int NUMBEROF_BIRTHS_NOW_LIVING__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -1645,7 +1645,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int NUMBEROF_BIRTHS_NOW_LIVING__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -1654,7 +1654,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int NUMBEROF_BIRTHS_NOW_LIVING__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -1663,7 +1663,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int NUMBEROF_BIRTHS_NOW_LIVING__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -1672,7 +1672,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int NUMBEROF_BIRTHS_NOW_LIVING__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -1681,7 +1681,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int NUMBEROF_BIRTHS_NOW_LIVING__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -1690,7 +1690,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int NUMBEROF_BIRTHS_NOW_LIVING__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -1699,7 +1699,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int NUMBEROF_BIRTHS_NOW_LIVING__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -1708,7 +1708,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int NUMBEROF_BIRTHS_NOW_LIVING__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -1717,7 +1717,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int NUMBEROF_BIRTHS_NOW_LIVING__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -1726,7 +1726,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int NUMBEROF_BIRTHS_NOW_LIVING__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -1735,7 +1735,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int NUMBEROF_BIRTHS_NOW_LIVING__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -1744,7 +1744,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int NUMBEROF_BIRTHS_NOW_LIVING__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -1753,7 +1753,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int NUMBEROF_BIRTHS_NOW_LIVING__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -1762,7 +1762,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int NUMBEROF_BIRTHS_NOW_LIVING__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -1771,7 +1771,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int NUMBEROF_BIRTHS_NOW_LIVING__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -1780,7 +1780,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int NUMBEROF_BIRTHS_NOW_LIVING__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -1789,7 +1789,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int NUMBEROF_BIRTHS_NOW_LIVING__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Numberof Births Now Living</em>' class.
@@ -1798,7 +1798,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_BIRTHS_NOW_LIVING_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int NUMBEROF_BIRTHS_NOW_LIVING_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.NumberofLiveBirthsNowDeadImpl <em>Numberof Live Births Now Dead</em>}' class.
@@ -1817,7 +1817,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -1826,7 +1826,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -1835,7 +1835,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -1844,7 +1844,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__ID = CDAPackage.OBSERVATION__ID;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -1853,7 +1853,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__CODE = CDAPackage.OBSERVATION__CODE;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -1862,7 +1862,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -1871,7 +1871,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -1880,7 +1880,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -1889,7 +1889,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -1898,7 +1898,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -1907,7 +1907,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -1916,7 +1916,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -1925,7 +1925,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -1934,7 +1934,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -1943,7 +1943,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -1952,7 +1952,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -1961,7 +1961,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -1970,7 +1970,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -1979,7 +1979,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -1988,7 +1988,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -1997,7 +1997,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -2006,7 +2006,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -2015,7 +2015,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -2024,7 +2024,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -2033,7 +2033,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -2042,7 +2042,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -2051,7 +2051,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -2060,7 +2060,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -2069,7 +2069,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -2078,7 +2078,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Numberof Live Births Now Dead</em>' class.
@@ -2087,7 +2087,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int NUMBEROF_LIVE_BIRTHS_NOW_DEAD_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.OtherPregnancyOutcomeImpl <em>Other Pregnancy Outcome</em>}' class.
@@ -2106,7 +2106,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int OTHER_PREGNANCY_OUTCOME__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -2115,7 +2115,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int OTHER_PREGNANCY_OUTCOME__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -2124,7 +2124,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int OTHER_PREGNANCY_OUTCOME__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -2133,7 +2133,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__ID = CDAPackage.OBSERVATION__ID;
+	int OTHER_PREGNANCY_OUTCOME__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -2142,7 +2142,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__CODE = CDAPackage.OBSERVATION__CODE;
+	int OTHER_PREGNANCY_OUTCOME__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -2151,7 +2151,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int OTHER_PREGNANCY_OUTCOME__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -2160,7 +2160,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int OTHER_PREGNANCY_OUTCOME__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -2169,7 +2169,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int OTHER_PREGNANCY_OUTCOME__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -2178,7 +2178,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int OTHER_PREGNANCY_OUTCOME__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -2187,7 +2187,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int OTHER_PREGNANCY_OUTCOME__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -2196,7 +2196,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int OTHER_PREGNANCY_OUTCOME__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -2205,7 +2205,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int OTHER_PREGNANCY_OUTCOME__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -2214,7 +2214,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int OTHER_PREGNANCY_OUTCOME__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -2223,7 +2223,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int OTHER_PREGNANCY_OUTCOME__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -2232,7 +2232,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int OTHER_PREGNANCY_OUTCOME__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -2241,7 +2241,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int OTHER_PREGNANCY_OUTCOME__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -2250,7 +2250,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int OTHER_PREGNANCY_OUTCOME__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -2259,7 +2259,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int OTHER_PREGNANCY_OUTCOME__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -2268,7 +2268,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int OTHER_PREGNANCY_OUTCOME__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -2277,7 +2277,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int OTHER_PREGNANCY_OUTCOME__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -2286,7 +2286,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int OTHER_PREGNANCY_OUTCOME__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -2295,7 +2295,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int OTHER_PREGNANCY_OUTCOME__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -2304,7 +2304,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int OTHER_PREGNANCY_OUTCOME__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -2313,7 +2313,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int OTHER_PREGNANCY_OUTCOME__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -2322,7 +2322,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int OTHER_PREGNANCY_OUTCOME__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -2331,7 +2331,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int OTHER_PREGNANCY_OUTCOME__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -2340,7 +2340,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int OTHER_PREGNANCY_OUTCOME__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -2349,7 +2349,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int OTHER_PREGNANCY_OUTCOME__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -2358,7 +2358,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int OTHER_PREGNANCY_OUTCOME__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -2367,7 +2367,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int OTHER_PREGNANCY_OUTCOME__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Other Pregnancy Outcome</em>' class.
@@ -2376,7 +2376,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_PREGNANCY_OUTCOME_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int OTHER_PREGNANCY_OUTCOME_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.EstimateofGestationImpl <em>Estimateof Gestation</em>}' class.
@@ -2395,7 +2395,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int ESTIMATEOF_GESTATION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -2404,7 +2404,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int ESTIMATEOF_GESTATION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -2413,7 +2413,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int ESTIMATEOF_GESTATION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -2422,7 +2422,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__ID = CDAPackage.OBSERVATION__ID;
+	int ESTIMATEOF_GESTATION__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -2431,7 +2431,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int ESTIMATEOF_GESTATION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -2440,7 +2440,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int ESTIMATEOF_GESTATION__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -2449,7 +2449,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int ESTIMATEOF_GESTATION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -2458,7 +2458,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int ESTIMATEOF_GESTATION__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -2467,7 +2467,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int ESTIMATEOF_GESTATION__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -2476,7 +2476,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int ESTIMATEOF_GESTATION__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -2485,7 +2485,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int ESTIMATEOF_GESTATION__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -2494,7 +2494,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int ESTIMATEOF_GESTATION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -2503,7 +2503,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int ESTIMATEOF_GESTATION__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -2512,7 +2512,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int ESTIMATEOF_GESTATION__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -2521,7 +2521,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int ESTIMATEOF_GESTATION__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -2530,7 +2530,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int ESTIMATEOF_GESTATION__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -2539,7 +2539,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int ESTIMATEOF_GESTATION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -2548,7 +2548,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int ESTIMATEOF_GESTATION__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -2557,7 +2557,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int ESTIMATEOF_GESTATION__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -2566,7 +2566,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int ESTIMATEOF_GESTATION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -2575,7 +2575,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int ESTIMATEOF_GESTATION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -2584,7 +2584,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int ESTIMATEOF_GESTATION__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -2593,7 +2593,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int ESTIMATEOF_GESTATION__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -2602,7 +2602,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int ESTIMATEOF_GESTATION__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -2611,7 +2611,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int ESTIMATEOF_GESTATION__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -2620,7 +2620,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int ESTIMATEOF_GESTATION__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -2629,7 +2629,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int ESTIMATEOF_GESTATION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -2638,7 +2638,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int ESTIMATEOF_GESTATION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -2647,7 +2647,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int ESTIMATEOF_GESTATION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -2656,7 +2656,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int ESTIMATEOF_GESTATION__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Estimateof Gestation</em>' class.
@@ -2665,7 +2665,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ESTIMATEOF_GESTATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int ESTIMATEOF_GESTATION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.NewbornDeliverySectionImpl <em>Newborn Delivery Section</em>}' class.
@@ -2684,7 +2684,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+	int NEWBORN_DELIVERY_SECTION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -2693,7 +2693,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+	int NEWBORN_DELIVERY_SECTION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -2702,7 +2702,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+	int NEWBORN_DELIVERY_SECTION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -2711,7 +2711,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__ID = CDAPackage.SECTION__ID;
+	int NEWBORN_DELIVERY_SECTION__ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -2720,7 +2720,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__CODE = CDAPackage.SECTION__CODE;
+	int NEWBORN_DELIVERY_SECTION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -2729,7 +2729,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+	int NEWBORN_DELIVERY_SECTION__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -2738,7 +2738,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+	int NEWBORN_DELIVERY_SECTION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -2747,7 +2747,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+	int NEWBORN_DELIVERY_SECTION__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -2756,7 +2756,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+	int NEWBORN_DELIVERY_SECTION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -2765,7 +2765,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+	int NEWBORN_DELIVERY_SECTION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -2774,7 +2774,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+	int NEWBORN_DELIVERY_SECTION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -2783,7 +2783,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+	int NEWBORN_DELIVERY_SECTION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -2792,7 +2792,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+	int NEWBORN_DELIVERY_SECTION__ENTRY = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -2801,7 +2801,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+	int NEWBORN_DELIVERY_SECTION__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -2810,7 +2810,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+	int NEWBORN_DELIVERY_SECTION__SECTION_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -2819,7 +2819,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+	int NEWBORN_DELIVERY_SECTION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -2828,7 +2828,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+	int NEWBORN_DELIVERY_SECTION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -2837,7 +2837,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+	int NEWBORN_DELIVERY_SECTION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Newborn Delivery Section</em>' class.
@@ -2846,7 +2846,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORN_DELIVERY_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
+	int NEWBORN_DELIVERY_SECTION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.BirthOrderImpl <em>Birth Order</em>}' class.
@@ -2865,7 +2865,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int BIRTH_ORDER__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -2874,7 +2874,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int BIRTH_ORDER__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -2883,7 +2883,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int BIRTH_ORDER__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -2892,7 +2892,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__ID = CDAPackage.OBSERVATION__ID;
+	int BIRTH_ORDER__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -2901,7 +2901,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__CODE = CDAPackage.OBSERVATION__CODE;
+	int BIRTH_ORDER__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -2910,7 +2910,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int BIRTH_ORDER__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -2919,7 +2919,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int BIRTH_ORDER__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -2928,7 +2928,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int BIRTH_ORDER__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -2937,7 +2937,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int BIRTH_ORDER__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -2946,7 +2946,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int BIRTH_ORDER__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -2955,7 +2955,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int BIRTH_ORDER__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -2964,7 +2964,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int BIRTH_ORDER__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -2973,7 +2973,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int BIRTH_ORDER__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -2982,7 +2982,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int BIRTH_ORDER__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -2991,7 +2991,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int BIRTH_ORDER__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -3000,7 +3000,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int BIRTH_ORDER__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -3009,7 +3009,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int BIRTH_ORDER__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -3018,7 +3018,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int BIRTH_ORDER__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -3027,7 +3027,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int BIRTH_ORDER__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -3036,7 +3036,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int BIRTH_ORDER__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -3045,7 +3045,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int BIRTH_ORDER__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -3054,7 +3054,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int BIRTH_ORDER__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -3063,7 +3063,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int BIRTH_ORDER__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -3072,7 +3072,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int BIRTH_ORDER__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -3081,7 +3081,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int BIRTH_ORDER__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -3090,7 +3090,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int BIRTH_ORDER__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -3099,7 +3099,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int BIRTH_ORDER__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -3108,7 +3108,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int BIRTH_ORDER__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -3117,7 +3117,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int BIRTH_ORDER__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -3126,7 +3126,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int BIRTH_ORDER__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Birth Order</em>' class.
@@ -3135,7 +3135,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIRTH_ORDER_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int BIRTH_ORDER_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.NumberofInfantsBornAliveImpl <em>Numberof Infants Born Alive</em>}' class.
@@ -3154,7 +3154,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int NUMBEROF_INFANTS_BORN_ALIVE__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -3163,7 +3163,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int NUMBEROF_INFANTS_BORN_ALIVE__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -3172,7 +3172,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int NUMBEROF_INFANTS_BORN_ALIVE__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -3181,7 +3181,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__ID = CDAPackage.OBSERVATION__ID;
+	int NUMBEROF_INFANTS_BORN_ALIVE__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -3190,7 +3190,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__CODE = CDAPackage.OBSERVATION__CODE;
+	int NUMBEROF_INFANTS_BORN_ALIVE__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -3199,7 +3199,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int NUMBEROF_INFANTS_BORN_ALIVE__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -3208,7 +3208,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int NUMBEROF_INFANTS_BORN_ALIVE__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -3217,7 +3217,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int NUMBEROF_INFANTS_BORN_ALIVE__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -3226,7 +3226,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int NUMBEROF_INFANTS_BORN_ALIVE__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -3235,7 +3235,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int NUMBEROF_INFANTS_BORN_ALIVE__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -3244,7 +3244,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int NUMBEROF_INFANTS_BORN_ALIVE__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -3253,7 +3253,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int NUMBEROF_INFANTS_BORN_ALIVE__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -3262,7 +3262,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int NUMBEROF_INFANTS_BORN_ALIVE__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -3271,7 +3271,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int NUMBEROF_INFANTS_BORN_ALIVE__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -3280,7 +3280,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int NUMBEROF_INFANTS_BORN_ALIVE__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -3289,7 +3289,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int NUMBEROF_INFANTS_BORN_ALIVE__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -3298,7 +3298,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int NUMBEROF_INFANTS_BORN_ALIVE__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -3307,7 +3307,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int NUMBEROF_INFANTS_BORN_ALIVE__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -3316,7 +3316,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int NUMBEROF_INFANTS_BORN_ALIVE__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -3325,7 +3325,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int NUMBEROF_INFANTS_BORN_ALIVE__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -3334,7 +3334,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int NUMBEROF_INFANTS_BORN_ALIVE__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -3343,7 +3343,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int NUMBEROF_INFANTS_BORN_ALIVE__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -3352,7 +3352,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int NUMBEROF_INFANTS_BORN_ALIVE__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -3361,7 +3361,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int NUMBEROF_INFANTS_BORN_ALIVE__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -3370,7 +3370,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int NUMBEROF_INFANTS_BORN_ALIVE__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -3379,7 +3379,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int NUMBEROF_INFANTS_BORN_ALIVE__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -3388,7 +3388,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int NUMBEROF_INFANTS_BORN_ALIVE__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -3397,7 +3397,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int NUMBEROF_INFANTS_BORN_ALIVE__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -3406,7 +3406,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int NUMBEROF_INFANTS_BORN_ALIVE__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -3415,7 +3415,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int NUMBEROF_INFANTS_BORN_ALIVE__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Numberof Infants Born Alive</em>' class.
@@ -3424,7 +3424,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NUMBEROF_INFANTS_BORN_ALIVE_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int NUMBEROF_INFANTS_BORN_ALIVE_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.CongenitalAnomalyImpl <em>Congenital Anomaly</em>}' class.
@@ -3443,7 +3443,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int CONGENITAL_ANOMALY__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -3452,7 +3452,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int CONGENITAL_ANOMALY__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -3461,7 +3461,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int CONGENITAL_ANOMALY__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -3470,7 +3470,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__ID = CDAPackage.OBSERVATION__ID;
+	int CONGENITAL_ANOMALY__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -3479,7 +3479,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__CODE = CDAPackage.OBSERVATION__CODE;
+	int CONGENITAL_ANOMALY__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -3488,7 +3488,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int CONGENITAL_ANOMALY__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -3497,7 +3497,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int CONGENITAL_ANOMALY__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -3506,7 +3506,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int CONGENITAL_ANOMALY__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -3515,7 +3515,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int CONGENITAL_ANOMALY__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -3524,7 +3524,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int CONGENITAL_ANOMALY__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -3533,7 +3533,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int CONGENITAL_ANOMALY__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -3542,7 +3542,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int CONGENITAL_ANOMALY__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -3551,7 +3551,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int CONGENITAL_ANOMALY__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -3560,7 +3560,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int CONGENITAL_ANOMALY__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -3569,7 +3569,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int CONGENITAL_ANOMALY__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -3578,7 +3578,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int CONGENITAL_ANOMALY__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -3587,7 +3587,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int CONGENITAL_ANOMALY__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -3596,7 +3596,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int CONGENITAL_ANOMALY__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -3605,7 +3605,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int CONGENITAL_ANOMALY__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -3614,7 +3614,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int CONGENITAL_ANOMALY__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -3623,7 +3623,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int CONGENITAL_ANOMALY__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -3632,7 +3632,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int CONGENITAL_ANOMALY__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -3641,7 +3641,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int CONGENITAL_ANOMALY__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -3650,7 +3650,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int CONGENITAL_ANOMALY__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -3659,7 +3659,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int CONGENITAL_ANOMALY__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -3668,7 +3668,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int CONGENITAL_ANOMALY__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -3677,7 +3677,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int CONGENITAL_ANOMALY__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -3686,7 +3686,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int CONGENITAL_ANOMALY__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -3695,7 +3695,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int CONGENITAL_ANOMALY__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -3704,7 +3704,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int CONGENITAL_ANOMALY__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Congenital Anomaly</em>' class.
@@ -3713,7 +3713,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONGENITAL_ANOMALY_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int CONGENITAL_ANOMALY_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.NewbornsVitalSignsSectionImpl <em>Newborns Vital Signs Section</em>}' class.
@@ -3732,7 +3732,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+	int NEWBORNS_VITAL_SIGNS_SECTION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -3741,7 +3741,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+	int NEWBORNS_VITAL_SIGNS_SECTION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -3750,7 +3750,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+	int NEWBORNS_VITAL_SIGNS_SECTION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -3759,7 +3759,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__ID = CDAPackage.SECTION__ID;
+	int NEWBORNS_VITAL_SIGNS_SECTION__ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -3768,7 +3768,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__CODE = CDAPackage.SECTION__CODE;
+	int NEWBORNS_VITAL_SIGNS_SECTION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -3777,7 +3777,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+	int NEWBORNS_VITAL_SIGNS_SECTION__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -3786,7 +3786,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+	int NEWBORNS_VITAL_SIGNS_SECTION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -3795,7 +3795,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+	int NEWBORNS_VITAL_SIGNS_SECTION__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -3804,7 +3804,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+	int NEWBORNS_VITAL_SIGNS_SECTION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -3813,7 +3813,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+	int NEWBORNS_VITAL_SIGNS_SECTION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -3822,7 +3822,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+	int NEWBORNS_VITAL_SIGNS_SECTION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -3831,7 +3831,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+	int NEWBORNS_VITAL_SIGNS_SECTION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -3840,7 +3840,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+	int NEWBORNS_VITAL_SIGNS_SECTION__ENTRY = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -3849,7 +3849,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+	int NEWBORNS_VITAL_SIGNS_SECTION__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -3858,7 +3858,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+	int NEWBORNS_VITAL_SIGNS_SECTION__SECTION_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -3867,7 +3867,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+	int NEWBORNS_VITAL_SIGNS_SECTION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -3876,7 +3876,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+	int NEWBORNS_VITAL_SIGNS_SECTION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -3885,7 +3885,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+	int NEWBORNS_VITAL_SIGNS_SECTION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Newborns Vital Signs Section</em>' class.
@@ -3894,7 +3894,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
+	int NEWBORNS_VITAL_SIGNS_SECTION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.NewbornsVitalSignsObservationImpl <em>Newborns Vital Signs Observation</em>}' class.
@@ -3913,7 +3913,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -3922,7 +3922,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -3931,7 +3931,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -3940,7 +3940,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -3949,7 +3949,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -3958,7 +3958,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -3967,7 +3967,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -3976,7 +3976,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -3985,7 +3985,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -3994,7 +3994,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -4003,7 +4003,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -4012,7 +4012,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -4021,7 +4021,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -4030,7 +4030,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -4039,7 +4039,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -4048,7 +4048,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -4057,7 +4057,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -4066,7 +4066,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -4075,7 +4075,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -4084,7 +4084,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -4093,7 +4093,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -4102,7 +4102,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -4111,7 +4111,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -4120,7 +4120,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -4129,7 +4129,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -4138,7 +4138,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -4147,7 +4147,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -4156,7 +4156,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -4165,7 +4165,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -4174,7 +4174,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Newborns Vital Signs Observation</em>' class.
@@ -4183,7 +4183,8 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEWBORNS_VITAL_SIGNS_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int NEWBORNS_VITAL_SIGNS_OBSERVATION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.AbnormalConditionoftheNewbornImpl <em>Abnormal Conditionofthe Newborn</em>}' class.
@@ -4202,7 +4203,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -4211,7 +4212,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -4220,7 +4221,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -4229,7 +4230,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__ID = CDAPackage.OBSERVATION__ID;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -4238,7 +4239,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__CODE = CDAPackage.OBSERVATION__CODE;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -4247,7 +4248,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -4256,7 +4257,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -4265,7 +4266,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -4274,7 +4275,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -4283,7 +4284,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -4292,7 +4293,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -4301,7 +4302,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -4310,7 +4311,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -4319,7 +4320,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -4328,7 +4329,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -4337,7 +4338,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -4346,7 +4347,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -4355,7 +4356,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -4364,7 +4365,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -4373,7 +4374,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -4382,7 +4383,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -4391,7 +4392,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -4400,7 +4401,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -4409,7 +4410,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -4418,7 +4419,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -4427,7 +4428,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -4436,7 +4437,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -4445,7 +4446,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -4454,7 +4455,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -4463,7 +4464,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Abnormal Conditionofthe Newborn</em>' class.
@@ -4472,7 +4473,8 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ABNORMAL_CONDITIONOFTHE_NEWBORN_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int ABNORMAL_CONDITIONOFTHE_NEWBORN_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.InfantLivingImpl <em>Infant Living</em>}' class.
@@ -4491,7 +4493,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int INFANT_LIVING__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -4500,7 +4502,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int INFANT_LIVING__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -4509,7 +4511,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int INFANT_LIVING__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -4518,7 +4520,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__ID = CDAPackage.OBSERVATION__ID;
+	int INFANT_LIVING__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -4527,7 +4529,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__CODE = CDAPackage.OBSERVATION__CODE;
+	int INFANT_LIVING__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -4536,7 +4538,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int INFANT_LIVING__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -4545,7 +4547,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int INFANT_LIVING__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -4554,7 +4556,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int INFANT_LIVING__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -4563,7 +4565,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int INFANT_LIVING__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -4572,7 +4574,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int INFANT_LIVING__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -4581,7 +4583,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int INFANT_LIVING__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -4590,7 +4592,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int INFANT_LIVING__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -4599,7 +4601,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int INFANT_LIVING__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -4608,7 +4610,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int INFANT_LIVING__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -4617,7 +4619,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int INFANT_LIVING__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -4626,7 +4628,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int INFANT_LIVING__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -4635,7 +4637,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int INFANT_LIVING__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -4644,7 +4646,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int INFANT_LIVING__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -4653,7 +4655,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int INFANT_LIVING__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -4662,7 +4664,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int INFANT_LIVING__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -4671,7 +4673,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int INFANT_LIVING__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -4680,7 +4682,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int INFANT_LIVING__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -4689,7 +4691,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int INFANT_LIVING__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -4698,7 +4700,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int INFANT_LIVING__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -4707,7 +4709,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int INFANT_LIVING__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -4716,7 +4718,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int INFANT_LIVING__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -4725,7 +4727,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int INFANT_LIVING__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -4734,7 +4736,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int INFANT_LIVING__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -4743,7 +4745,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int INFANT_LIVING__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -4752,7 +4754,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int INFANT_LIVING__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Infant Living</em>' class.
@@ -4761,7 +4763,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_LIVING_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int INFANT_LIVING_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.InfantBreastfedImpl <em>Infant Breastfed</em>}' class.
@@ -4780,7 +4782,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int INFANT_BREASTFED__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -4789,7 +4791,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int INFANT_BREASTFED__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -4798,7 +4800,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int INFANT_BREASTFED__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -4807,7 +4809,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__ID = CDAPackage.OBSERVATION__ID;
+	int INFANT_BREASTFED__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -4816,7 +4818,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__CODE = CDAPackage.OBSERVATION__CODE;
+	int INFANT_BREASTFED__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -4825,7 +4827,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int INFANT_BREASTFED__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -4834,7 +4836,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int INFANT_BREASTFED__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -4843,7 +4845,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int INFANT_BREASTFED__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -4852,7 +4854,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int INFANT_BREASTFED__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -4861,7 +4863,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int INFANT_BREASTFED__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -4870,7 +4872,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int INFANT_BREASTFED__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -4879,7 +4881,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int INFANT_BREASTFED__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -4888,7 +4890,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int INFANT_BREASTFED__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -4897,7 +4899,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int INFANT_BREASTFED__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -4906,7 +4908,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int INFANT_BREASTFED__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -4915,7 +4917,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int INFANT_BREASTFED__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -4924,7 +4926,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int INFANT_BREASTFED__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -4933,7 +4935,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int INFANT_BREASTFED__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -4942,7 +4944,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int INFANT_BREASTFED__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -4951,7 +4953,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int INFANT_BREASTFED__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -4960,7 +4962,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int INFANT_BREASTFED__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -4969,7 +4971,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int INFANT_BREASTFED__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -4978,7 +4980,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int INFANT_BREASTFED__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -4987,7 +4989,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int INFANT_BREASTFED__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -4996,7 +4998,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int INFANT_BREASTFED__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -5005,7 +5007,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int INFANT_BREASTFED__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -5014,7 +5016,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int INFANT_BREASTFED__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -5023,7 +5025,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int INFANT_BREASTFED__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -5032,7 +5034,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int INFANT_BREASTFED__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -5041,7 +5043,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int INFANT_BREASTFED__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Infant Breastfed</em>' class.
@@ -5050,7 +5052,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_BREASTFED_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int INFANT_BREASTFED_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.InfantTransferImpl <em>Infant Transfer</em>}' class.
@@ -5069,7 +5071,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int INFANT_TRANSFER__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -5078,7 +5080,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int INFANT_TRANSFER__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -5087,7 +5089,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int INFANT_TRANSFER__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -5096,7 +5098,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__ID = CDAPackage.OBSERVATION__ID;
+	int INFANT_TRANSFER__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -5105,7 +5107,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__CODE = CDAPackage.OBSERVATION__CODE;
+	int INFANT_TRANSFER__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -5114,7 +5116,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int INFANT_TRANSFER__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -5123,7 +5125,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int INFANT_TRANSFER__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -5132,7 +5134,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int INFANT_TRANSFER__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -5141,7 +5143,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int INFANT_TRANSFER__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -5150,7 +5152,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int INFANT_TRANSFER__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -5159,7 +5161,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int INFANT_TRANSFER__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -5168,7 +5170,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int INFANT_TRANSFER__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -5177,7 +5179,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int INFANT_TRANSFER__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -5186,7 +5188,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int INFANT_TRANSFER__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -5195,7 +5197,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int INFANT_TRANSFER__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -5204,7 +5206,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int INFANT_TRANSFER__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -5213,7 +5215,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int INFANT_TRANSFER__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -5222,7 +5224,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int INFANT_TRANSFER__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -5231,7 +5233,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int INFANT_TRANSFER__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -5240,7 +5242,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int INFANT_TRANSFER__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -5249,7 +5251,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int INFANT_TRANSFER__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -5258,7 +5260,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int INFANT_TRANSFER__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -5267,7 +5269,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int INFANT_TRANSFER__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -5276,7 +5278,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int INFANT_TRANSFER__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -5285,7 +5287,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int INFANT_TRANSFER__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -5294,7 +5296,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int INFANT_TRANSFER__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -5303,7 +5305,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int INFANT_TRANSFER__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -5312,7 +5314,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int INFANT_TRANSFER__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -5321,7 +5323,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int INFANT_TRANSFER__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -5330,7 +5332,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int INFANT_TRANSFER__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Infant Transfer</em>' class.
@@ -5339,7 +5341,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFANT_TRANSFER_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int INFANT_TRANSFER_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.PluralityImpl <em>Plurality</em>}' class.
@@ -5358,7 +5360,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int PLURALITY__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -5367,7 +5369,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int PLURALITY__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -5376,7 +5378,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int PLURALITY__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -5385,7 +5387,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__ID = CDAPackage.OBSERVATION__ID;
+	int PLURALITY__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -5394,7 +5396,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__CODE = CDAPackage.OBSERVATION__CODE;
+	int PLURALITY__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -5403,7 +5405,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int PLURALITY__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -5412,7 +5414,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int PLURALITY__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -5421,7 +5423,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int PLURALITY__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -5430,7 +5432,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int PLURALITY__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -5439,7 +5441,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int PLURALITY__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -5448,7 +5450,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int PLURALITY__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -5457,7 +5459,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int PLURALITY__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -5466,7 +5468,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int PLURALITY__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -5475,7 +5477,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int PLURALITY__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -5484,7 +5486,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int PLURALITY__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -5493,7 +5495,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int PLURALITY__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -5502,7 +5504,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int PLURALITY__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -5511,7 +5513,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int PLURALITY__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -5520,7 +5522,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int PLURALITY__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -5529,7 +5531,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int PLURALITY__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -5538,7 +5540,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int PLURALITY__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -5547,7 +5549,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int PLURALITY__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -5556,7 +5558,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int PLURALITY__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -5565,7 +5567,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int PLURALITY__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -5574,7 +5576,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int PLURALITY__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -5583,7 +5585,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int PLURALITY__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -5592,7 +5594,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int PLURALITY__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -5601,7 +5603,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int PLURALITY__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -5610,7 +5612,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int PLURALITY__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -5619,7 +5621,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int PLURALITY__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Plurality</em>' class.
@@ -5628,7 +5630,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLURALITY_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int PLURALITY_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.AssessmentsSectionImpl <em>Assessments Section</em>}' class.
@@ -5647,7 +5649,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+	int ASSESSMENTS_SECTION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -5656,7 +5658,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+	int ASSESSMENTS_SECTION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -5665,7 +5667,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+	int ASSESSMENTS_SECTION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -5674,7 +5676,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__ID = CDAPackage.SECTION__ID;
+	int ASSESSMENTS_SECTION__ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -5683,7 +5685,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__CODE = CDAPackage.SECTION__CODE;
+	int ASSESSMENTS_SECTION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -5692,7 +5694,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+	int ASSESSMENTS_SECTION__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -5701,7 +5703,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+	int ASSESSMENTS_SECTION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -5710,7 +5712,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+	int ASSESSMENTS_SECTION__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -5719,7 +5721,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+	int ASSESSMENTS_SECTION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -5728,7 +5730,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+	int ASSESSMENTS_SECTION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -5737,7 +5739,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+	int ASSESSMENTS_SECTION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -5746,7 +5748,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+	int ASSESSMENTS_SECTION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -5755,7 +5757,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+	int ASSESSMENTS_SECTION__ENTRY = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -5764,7 +5766,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+	int ASSESSMENTS_SECTION__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -5773,7 +5775,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+	int ASSESSMENTS_SECTION__SECTION_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -5782,7 +5784,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+	int ASSESSMENTS_SECTION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -5791,7 +5793,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+	int ASSESSMENTS_SECTION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -5800,7 +5802,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+	int ASSESSMENTS_SECTION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Assessments Section</em>' class.
@@ -5809,7 +5811,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENTS_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
+	int ASSESSMENTS_SECTION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.AssessmentObservationImpl <em>Assessment Observation</em>}' class.
@@ -5828,7 +5830,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int ASSESSMENT_OBSERVATION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -5837,7 +5839,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int ASSESSMENT_OBSERVATION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -5846,7 +5848,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int ASSESSMENT_OBSERVATION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -5855,7 +5857,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+	int ASSESSMENT_OBSERVATION__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -5864,7 +5866,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int ASSESSMENT_OBSERVATION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -5873,7 +5875,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int ASSESSMENT_OBSERVATION__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -5882,7 +5884,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int ASSESSMENT_OBSERVATION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -5891,7 +5893,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int ASSESSMENT_OBSERVATION__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -5900,7 +5902,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int ASSESSMENT_OBSERVATION__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -5909,7 +5911,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int ASSESSMENT_OBSERVATION__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -5918,7 +5920,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int ASSESSMENT_OBSERVATION__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -5927,7 +5929,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int ASSESSMENT_OBSERVATION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -5936,7 +5938,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int ASSESSMENT_OBSERVATION__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -5945,7 +5947,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int ASSESSMENT_OBSERVATION__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -5954,7 +5956,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int ASSESSMENT_OBSERVATION__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -5963,7 +5965,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int ASSESSMENT_OBSERVATION__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -5972,7 +5974,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int ASSESSMENT_OBSERVATION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -5981,7 +5983,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int ASSESSMENT_OBSERVATION__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -5990,7 +5992,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int ASSESSMENT_OBSERVATION__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -5999,7 +6001,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int ASSESSMENT_OBSERVATION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -6008,7 +6010,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int ASSESSMENT_OBSERVATION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -6017,7 +6019,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int ASSESSMENT_OBSERVATION__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -6026,7 +6028,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int ASSESSMENT_OBSERVATION__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -6035,7 +6037,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int ASSESSMENT_OBSERVATION__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -6044,7 +6046,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int ASSESSMENT_OBSERVATION__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -6053,7 +6055,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int ASSESSMENT_OBSERVATION__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -6062,7 +6064,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int ASSESSMENT_OBSERVATION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -6071,7 +6073,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int ASSESSMENT_OBSERVATION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -6080,7 +6082,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int ASSESSMENT_OBSERVATION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -6089,7 +6091,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int ASSESSMENT_OBSERVATION__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Assessment Observation</em>' class.
@@ -6098,7 +6100,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSESSMENT_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int ASSESSMENT_OBSERVATION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.LaborandDeliverySectionImpl <em>Laborand Delivery Section</em>}' class.
@@ -6117,7 +6119,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+	int LABORAND_DELIVERY_SECTION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -6126,7 +6128,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+	int LABORAND_DELIVERY_SECTION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -6135,7 +6137,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+	int LABORAND_DELIVERY_SECTION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -6144,7 +6146,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__ID = CDAPackage.SECTION__ID;
+	int LABORAND_DELIVERY_SECTION__ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -6153,7 +6155,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__CODE = CDAPackage.SECTION__CODE;
+	int LABORAND_DELIVERY_SECTION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -6162,7 +6164,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+	int LABORAND_DELIVERY_SECTION__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -6171,7 +6173,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+	int LABORAND_DELIVERY_SECTION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -6180,7 +6182,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+	int LABORAND_DELIVERY_SECTION__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -6189,7 +6191,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+	int LABORAND_DELIVERY_SECTION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -6198,7 +6200,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+	int LABORAND_DELIVERY_SECTION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -6207,7 +6209,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+	int LABORAND_DELIVERY_SECTION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -6216,7 +6218,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+	int LABORAND_DELIVERY_SECTION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -6225,7 +6227,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+	int LABORAND_DELIVERY_SECTION__ENTRY = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -6234,7 +6236,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+	int LABORAND_DELIVERY_SECTION__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -6243,7 +6245,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+	int LABORAND_DELIVERY_SECTION__SECTION_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -6252,7 +6254,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+	int LABORAND_DELIVERY_SECTION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -6261,7 +6263,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+	int LABORAND_DELIVERY_SECTION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -6270,7 +6272,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+	int LABORAND_DELIVERY_SECTION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Laborand Delivery Section</em>' class.
@@ -6279,7 +6281,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
+	int LABORAND_DELIVERY_SECTION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.LaborandDeliveryProcessImpl <em>Laborand Delivery Process</em>}' class.
@@ -6298,7 +6300,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__REALM_CODE = CDAPackage.ACT__REALM_CODE;
+	int LABORAND_DELIVERY_PROCESS__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -6307,7 +6309,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__TYPE_ID = CDAPackage.ACT__TYPE_ID;
+	int LABORAND_DELIVERY_PROCESS__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.ACT__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -6316,7 +6318,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__TEMPLATE_ID = CDAPackage.ACT__TEMPLATE_ID;
+	int LABORAND_DELIVERY_PROCESS__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.ACT__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -6325,7 +6327,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__ID = CDAPackage.ACT__ID;
+	int LABORAND_DELIVERY_PROCESS__ID = org.eclipse.mdht.uml.cda.CDAPackage.ACT__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -6334,7 +6336,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__CODE = CDAPackage.ACT__CODE;
+	int LABORAND_DELIVERY_PROCESS__CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -6343,7 +6345,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__TEXT = CDAPackage.ACT__TEXT;
+	int LABORAND_DELIVERY_PROCESS__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.ACT__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -6352,7 +6354,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__STATUS_CODE = CDAPackage.ACT__STATUS_CODE;
+	int LABORAND_DELIVERY_PROCESS__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -6361,7 +6363,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__EFFECTIVE_TIME = CDAPackage.ACT__EFFECTIVE_TIME;
+	int LABORAND_DELIVERY_PROCESS__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.ACT__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -6370,7 +6372,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__PRIORITY_CODE = CDAPackage.ACT__PRIORITY_CODE;
+	int LABORAND_DELIVERY_PROCESS__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -6379,7 +6381,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__LANGUAGE_CODE = CDAPackage.ACT__LANGUAGE_CODE;
+	int LABORAND_DELIVERY_PROCESS__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -6388,7 +6390,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__SUBJECT = CDAPackage.ACT__SUBJECT;
+	int LABORAND_DELIVERY_PROCESS__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.ACT__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -6397,7 +6399,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__SPECIMEN = CDAPackage.ACT__SPECIMEN;
+	int LABORAND_DELIVERY_PROCESS__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.ACT__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -6406,7 +6408,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__PERFORMER = CDAPackage.ACT__PERFORMER;
+	int LABORAND_DELIVERY_PROCESS__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.ACT__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -6415,7 +6417,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__AUTHOR = CDAPackage.ACT__AUTHOR;
+	int LABORAND_DELIVERY_PROCESS__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.ACT__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -6424,7 +6426,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__INFORMANT = CDAPackage.ACT__INFORMANT;
+	int LABORAND_DELIVERY_PROCESS__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.ACT__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -6433,7 +6435,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__PARTICIPANT = CDAPackage.ACT__PARTICIPANT;
+	int LABORAND_DELIVERY_PROCESS__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.ACT__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -6442,7 +6444,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__ENTRY_RELATIONSHIP = CDAPackage.ACT__ENTRY_RELATIONSHIP;
+	int LABORAND_DELIVERY_PROCESS__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.ACT__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -6451,7 +6453,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__REFERENCE = CDAPackage.ACT__REFERENCE;
+	int LABORAND_DELIVERY_PROCESS__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -6460,7 +6462,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__PRECONDITION = CDAPackage.ACT__PRECONDITION;
+	int LABORAND_DELIVERY_PROCESS__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.ACT__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -6469,7 +6471,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+	int LABORAND_DELIVERY_PROCESS__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.ACT__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -6478,7 +6480,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
+	int LABORAND_DELIVERY_PROCESS__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -6487,7 +6489,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__MOOD_CODE = CDAPackage.ACT__MOOD_CODE;
+	int LABORAND_DELIVERY_PROCESS__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ACT__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -6496,7 +6498,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS__NEGATION_IND = CDAPackage.ACT__NEGATION_IND;
+	int LABORAND_DELIVERY_PROCESS__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.ACT__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Laborand Delivery Process</em>' class.
@@ -6505,7 +6507,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCESS_FEATURE_COUNT = CDAPackage.ACT_FEATURE_COUNT + 0;
+	int LABORAND_DELIVERY_PROCESS_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.ACT_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.CharacteristicofLaborandDeliveryImpl <em>Characteristicof Laborand Delivery</em>}' class.
@@ -6524,7 +6526,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -6533,7 +6535,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -6542,7 +6544,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -6551,7 +6553,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__ID = CDAPackage.OBSERVATION__ID;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -6560,7 +6562,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__CODE = CDAPackage.OBSERVATION__CODE;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -6569,7 +6571,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -6578,7 +6580,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -6587,7 +6589,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -6596,7 +6598,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -6605,7 +6607,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -6614,7 +6616,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -6623,7 +6625,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -6632,7 +6634,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -6641,7 +6643,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -6650,7 +6652,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -6659,7 +6661,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -6668,7 +6670,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -6677,7 +6679,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -6686,7 +6688,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -6695,7 +6697,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -6704,7 +6706,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -6713,7 +6715,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -6722,7 +6724,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -6731,7 +6733,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -6740,7 +6742,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -6749,7 +6751,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -6758,7 +6760,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -6767,7 +6769,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -6776,7 +6778,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -6785,7 +6787,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int CHARACTERISTICOF_LABORAND_DELIVERY__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Characteristicof Laborand Delivery</em>' class.
@@ -6794,7 +6796,8 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTERISTICOF_LABORAND_DELIVERY_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int CHARACTERISTICOF_LABORAND_DELIVERY_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.PlannedHomeBirthImpl <em>Planned Home Birth</em>}' class.
@@ -6813,7 +6816,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int PLANNED_HOME_BIRTH__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -6822,7 +6825,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int PLANNED_HOME_BIRTH__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -6831,7 +6834,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int PLANNED_HOME_BIRTH__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -6840,7 +6843,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__ID = CDAPackage.OBSERVATION__ID;
+	int PLANNED_HOME_BIRTH__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -6849,7 +6852,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__CODE = CDAPackage.OBSERVATION__CODE;
+	int PLANNED_HOME_BIRTH__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -6858,7 +6861,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int PLANNED_HOME_BIRTH__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -6867,7 +6870,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int PLANNED_HOME_BIRTH__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -6876,7 +6879,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int PLANNED_HOME_BIRTH__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -6885,7 +6888,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int PLANNED_HOME_BIRTH__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -6894,7 +6897,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int PLANNED_HOME_BIRTH__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -6903,7 +6906,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int PLANNED_HOME_BIRTH__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -6912,7 +6915,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int PLANNED_HOME_BIRTH__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -6921,7 +6924,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int PLANNED_HOME_BIRTH__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -6930,7 +6933,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int PLANNED_HOME_BIRTH__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -6939,7 +6942,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int PLANNED_HOME_BIRTH__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -6948,7 +6951,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int PLANNED_HOME_BIRTH__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -6957,7 +6960,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int PLANNED_HOME_BIRTH__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -6966,7 +6969,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int PLANNED_HOME_BIRTH__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -6975,7 +6978,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int PLANNED_HOME_BIRTH__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -6984,7 +6987,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int PLANNED_HOME_BIRTH__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -6993,7 +6996,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int PLANNED_HOME_BIRTH__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -7002,7 +7005,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int PLANNED_HOME_BIRTH__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -7011,7 +7014,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int PLANNED_HOME_BIRTH__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -7020,7 +7023,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int PLANNED_HOME_BIRTH__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -7029,7 +7032,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int PLANNED_HOME_BIRTH__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -7038,7 +7041,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int PLANNED_HOME_BIRTH__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -7047,7 +7050,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int PLANNED_HOME_BIRTH__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -7056,7 +7059,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int PLANNED_HOME_BIRTH__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -7065,7 +7068,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int PLANNED_HOME_BIRTH__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -7074,7 +7077,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int PLANNED_HOME_BIRTH__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Planned Home Birth</em>' class.
@@ -7083,7 +7086,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLANNED_HOME_BIRTH_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int PLANNED_HOME_BIRTH_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.MaternalTransferImpl <em>Maternal Transfer</em>}' class.
@@ -7102,7 +7105,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int MATERNAL_TRANSFER__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -7111,7 +7114,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int MATERNAL_TRANSFER__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -7120,7 +7123,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int MATERNAL_TRANSFER__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -7129,7 +7132,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__ID = CDAPackage.OBSERVATION__ID;
+	int MATERNAL_TRANSFER__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -7138,7 +7141,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__CODE = CDAPackage.OBSERVATION__CODE;
+	int MATERNAL_TRANSFER__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -7147,7 +7150,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int MATERNAL_TRANSFER__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -7156,7 +7159,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int MATERNAL_TRANSFER__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -7165,7 +7168,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int MATERNAL_TRANSFER__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -7174,7 +7177,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int MATERNAL_TRANSFER__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -7183,7 +7186,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int MATERNAL_TRANSFER__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -7192,7 +7195,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int MATERNAL_TRANSFER__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -7201,7 +7204,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int MATERNAL_TRANSFER__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -7210,7 +7213,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int MATERNAL_TRANSFER__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -7219,7 +7222,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int MATERNAL_TRANSFER__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -7228,7 +7231,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int MATERNAL_TRANSFER__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -7237,7 +7240,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int MATERNAL_TRANSFER__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -7246,7 +7249,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int MATERNAL_TRANSFER__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -7255,7 +7258,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int MATERNAL_TRANSFER__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -7264,7 +7267,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int MATERNAL_TRANSFER__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -7273,7 +7276,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int MATERNAL_TRANSFER__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -7282,7 +7285,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int MATERNAL_TRANSFER__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -7291,7 +7294,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int MATERNAL_TRANSFER__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -7300,7 +7303,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int MATERNAL_TRANSFER__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -7309,7 +7312,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int MATERNAL_TRANSFER__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -7318,7 +7321,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int MATERNAL_TRANSFER__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -7327,7 +7330,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int MATERNAL_TRANSFER__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -7336,7 +7339,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int MATERNAL_TRANSFER__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -7345,7 +7348,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int MATERNAL_TRANSFER__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -7354,7 +7357,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int MATERNAL_TRANSFER__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -7363,7 +7366,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int MATERNAL_TRANSFER__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Maternal Transfer</em>' class.
@@ -7372,7 +7375,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_TRANSFER_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int MATERNAL_TRANSFER_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.MaternalMorbidityImpl <em>Maternal Morbidity</em>}' class.
@@ -7391,7 +7394,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int MATERNAL_MORBIDITY__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -7400,7 +7403,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int MATERNAL_MORBIDITY__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -7409,7 +7412,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int MATERNAL_MORBIDITY__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -7418,7 +7421,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__ID = CDAPackage.OBSERVATION__ID;
+	int MATERNAL_MORBIDITY__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -7427,7 +7430,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__CODE = CDAPackage.OBSERVATION__CODE;
+	int MATERNAL_MORBIDITY__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -7436,7 +7439,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int MATERNAL_MORBIDITY__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -7445,7 +7448,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int MATERNAL_MORBIDITY__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -7454,7 +7457,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int MATERNAL_MORBIDITY__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -7463,7 +7466,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int MATERNAL_MORBIDITY__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -7472,7 +7475,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int MATERNAL_MORBIDITY__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -7481,7 +7484,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int MATERNAL_MORBIDITY__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -7490,7 +7493,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int MATERNAL_MORBIDITY__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -7499,7 +7502,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int MATERNAL_MORBIDITY__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -7508,7 +7511,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int MATERNAL_MORBIDITY__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -7517,7 +7520,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int MATERNAL_MORBIDITY__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -7526,7 +7529,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int MATERNAL_MORBIDITY__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -7535,7 +7538,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int MATERNAL_MORBIDITY__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -7544,7 +7547,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int MATERNAL_MORBIDITY__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -7553,7 +7556,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int MATERNAL_MORBIDITY__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -7562,7 +7565,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int MATERNAL_MORBIDITY__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -7571,7 +7574,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int MATERNAL_MORBIDITY__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -7580,7 +7583,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int MATERNAL_MORBIDITY__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -7589,7 +7592,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int MATERNAL_MORBIDITY__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -7598,7 +7601,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int MATERNAL_MORBIDITY__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -7607,7 +7610,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int MATERNAL_MORBIDITY__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -7616,7 +7619,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int MATERNAL_MORBIDITY__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -7625,7 +7628,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int MATERNAL_MORBIDITY__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -7634,7 +7637,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int MATERNAL_MORBIDITY__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -7643,7 +7646,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int MATERNAL_MORBIDITY__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -7652,7 +7655,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int MATERNAL_MORBIDITY__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Maternal Morbidity</em>' class.
@@ -7661,7 +7664,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MATERNAL_MORBIDITY_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int MATERNAL_MORBIDITY_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.PregnancyRiskFactorImpl <em>Pregnancy Risk Factor</em>}' class.
@@ -7680,7 +7683,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int PREGNANCY_RISK_FACTOR__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -7689,7 +7692,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int PREGNANCY_RISK_FACTOR__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -7698,7 +7701,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int PREGNANCY_RISK_FACTOR__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -7707,7 +7710,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__ID = CDAPackage.OBSERVATION__ID;
+	int PREGNANCY_RISK_FACTOR__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -7716,7 +7719,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__CODE = CDAPackage.OBSERVATION__CODE;
+	int PREGNANCY_RISK_FACTOR__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -7725,7 +7728,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int PREGNANCY_RISK_FACTOR__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -7734,7 +7737,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int PREGNANCY_RISK_FACTOR__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -7743,7 +7746,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int PREGNANCY_RISK_FACTOR__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -7752,7 +7755,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int PREGNANCY_RISK_FACTOR__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -7761,7 +7764,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int PREGNANCY_RISK_FACTOR__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -7770,7 +7773,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int PREGNANCY_RISK_FACTOR__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -7779,7 +7782,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int PREGNANCY_RISK_FACTOR__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -7788,7 +7791,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int PREGNANCY_RISK_FACTOR__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -7797,7 +7800,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int PREGNANCY_RISK_FACTOR__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -7806,7 +7809,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int PREGNANCY_RISK_FACTOR__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -7815,7 +7818,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int PREGNANCY_RISK_FACTOR__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -7824,7 +7827,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int PREGNANCY_RISK_FACTOR__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -7833,7 +7836,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int PREGNANCY_RISK_FACTOR__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -7842,7 +7845,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int PREGNANCY_RISK_FACTOR__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -7851,7 +7854,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int PREGNANCY_RISK_FACTOR__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -7860,7 +7863,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int PREGNANCY_RISK_FACTOR__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -7869,7 +7872,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int PREGNANCY_RISK_FACTOR__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -7878,7 +7881,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int PREGNANCY_RISK_FACTOR__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -7887,7 +7890,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int PREGNANCY_RISK_FACTOR__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -7896,7 +7899,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int PREGNANCY_RISK_FACTOR__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -7905,7 +7908,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int PREGNANCY_RISK_FACTOR__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -7914,7 +7917,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int PREGNANCY_RISK_FACTOR__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -7923,7 +7926,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int PREGNANCY_RISK_FACTOR__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -7932,7 +7935,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int PREGNANCY_RISK_FACTOR__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -7941,7 +7944,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int PREGNANCY_RISK_FACTOR__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Pregnancy Risk Factor</em>' class.
@@ -7950,7 +7953,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PREGNANCY_RISK_FACTOR_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int PREGNANCY_RISK_FACTOR_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.LaborandDeliveryProcedureSectionImpl <em>Laborand Delivery Procedure Section</em>}' class.
@@ -7969,7 +7972,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -7978,7 +7981,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -7987,7 +7990,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -7996,7 +7999,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__ID = CDAPackage.SECTION__ID;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -8005,7 +8008,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__CODE = CDAPackage.SECTION__CODE;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -8014,7 +8017,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -8023,7 +8026,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -8032,7 +8035,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -8041,7 +8044,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -8050,7 +8053,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -8059,7 +8062,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -8068,7 +8071,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -8077,7 +8080,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__ENTRY = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -8086,7 +8089,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -8095,7 +8098,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__SECTION_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -8104,7 +8107,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -8113,7 +8116,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -8122,7 +8125,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Laborand Delivery Procedure Section</em>' class.
@@ -8131,7 +8134,8 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LABORAND_DELIVERY_PROCEDURE_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
+	int LABORAND_DELIVERY_PROCEDURE_SECTION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.ObstetricProcedureImpl <em>Obstetric Procedure</em>}' class.
@@ -8150,7 +8154,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__REALM_CODE = CDAPackage.PROCEDURE__REALM_CODE;
+	int OBSTETRIC_PROCEDURE__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -8159,7 +8163,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__TYPE_ID = CDAPackage.PROCEDURE__TYPE_ID;
+	int OBSTETRIC_PROCEDURE__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -8168,7 +8172,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__TEMPLATE_ID = CDAPackage.PROCEDURE__TEMPLATE_ID;
+	int OBSTETRIC_PROCEDURE__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -8177,7 +8181,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__ID = CDAPackage.PROCEDURE__ID;
+	int OBSTETRIC_PROCEDURE__ID = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -8186,7 +8190,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__CODE = CDAPackage.PROCEDURE__CODE;
+	int OBSTETRIC_PROCEDURE__CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -8195,7 +8199,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__TEXT = CDAPackage.PROCEDURE__TEXT;
+	int OBSTETRIC_PROCEDURE__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -8204,7 +8208,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__STATUS_CODE = CDAPackage.PROCEDURE__STATUS_CODE;
+	int OBSTETRIC_PROCEDURE__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -8213,7 +8217,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__EFFECTIVE_TIME = CDAPackage.PROCEDURE__EFFECTIVE_TIME;
+	int OBSTETRIC_PROCEDURE__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -8222,7 +8226,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__PRIORITY_CODE = CDAPackage.PROCEDURE__PRIORITY_CODE;
+	int OBSTETRIC_PROCEDURE__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -8231,7 +8235,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__LANGUAGE_CODE = CDAPackage.PROCEDURE__LANGUAGE_CODE;
+	int OBSTETRIC_PROCEDURE__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -8240,7 +8244,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__METHOD_CODE = CDAPackage.PROCEDURE__METHOD_CODE;
+	int OBSTETRIC_PROCEDURE__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Approach Site Code</b></em>' containment reference list.
@@ -8249,7 +8253,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__APPROACH_SITE_CODE = CDAPackage.PROCEDURE__APPROACH_SITE_CODE;
+	int OBSTETRIC_PROCEDURE__APPROACH_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__APPROACH_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -8258,7 +8262,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__TARGET_SITE_CODE = CDAPackage.PROCEDURE__TARGET_SITE_CODE;
+	int OBSTETRIC_PROCEDURE__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -8267,7 +8271,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__SUBJECT = CDAPackage.PROCEDURE__SUBJECT;
+	int OBSTETRIC_PROCEDURE__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -8276,7 +8280,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__SPECIMEN = CDAPackage.PROCEDURE__SPECIMEN;
+	int OBSTETRIC_PROCEDURE__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -8285,7 +8289,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__PERFORMER = CDAPackage.PROCEDURE__PERFORMER;
+	int OBSTETRIC_PROCEDURE__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -8294,7 +8298,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__AUTHOR = CDAPackage.PROCEDURE__AUTHOR;
+	int OBSTETRIC_PROCEDURE__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -8303,7 +8307,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__INFORMANT = CDAPackage.PROCEDURE__INFORMANT;
+	int OBSTETRIC_PROCEDURE__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -8312,7 +8316,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__PARTICIPANT = CDAPackage.PROCEDURE__PARTICIPANT;
+	int OBSTETRIC_PROCEDURE__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -8321,7 +8325,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__ENTRY_RELATIONSHIP = CDAPackage.PROCEDURE__ENTRY_RELATIONSHIP;
+	int OBSTETRIC_PROCEDURE__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -8330,7 +8334,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__REFERENCE = CDAPackage.PROCEDURE__REFERENCE;
+	int OBSTETRIC_PROCEDURE__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -8339,7 +8343,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__PRECONDITION = CDAPackage.PROCEDURE__PRECONDITION;
+	int OBSTETRIC_PROCEDURE__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -8348,7 +8352,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__NULL_FLAVOR = CDAPackage.PROCEDURE__NULL_FLAVOR;
+	int OBSTETRIC_PROCEDURE__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -8357,7 +8361,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__CLASS_CODE = CDAPackage.PROCEDURE__CLASS_CODE;
+	int OBSTETRIC_PROCEDURE__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -8366,7 +8370,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__MOOD_CODE = CDAPackage.PROCEDURE__MOOD_CODE;
+	int OBSTETRIC_PROCEDURE__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -8375,7 +8379,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE__NEGATION_IND = CDAPackage.PROCEDURE__NEGATION_IND;
+	int OBSTETRIC_PROCEDURE__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Obstetric Procedure</em>' class.
@@ -8384,7 +8388,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OBSTETRIC_PROCEDURE_FEATURE_COUNT = CDAPackage.PROCEDURE_FEATURE_COUNT + 0;
+	int OBSTETRIC_PROCEDURE_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.MethodofDeliveryImpl <em>Methodof Delivery</em>}' class.
@@ -8403,7 +8407,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__REALM_CODE = CDAPackage.PROCEDURE__REALM_CODE;
+	int METHODOF_DELIVERY__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -8412,7 +8416,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__TYPE_ID = CDAPackage.PROCEDURE__TYPE_ID;
+	int METHODOF_DELIVERY__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -8421,7 +8425,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__TEMPLATE_ID = CDAPackage.PROCEDURE__TEMPLATE_ID;
+	int METHODOF_DELIVERY__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -8430,7 +8434,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__ID = CDAPackage.PROCEDURE__ID;
+	int METHODOF_DELIVERY__ID = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -8439,7 +8443,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__CODE = CDAPackage.PROCEDURE__CODE;
+	int METHODOF_DELIVERY__CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -8448,7 +8452,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__TEXT = CDAPackage.PROCEDURE__TEXT;
+	int METHODOF_DELIVERY__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -8457,7 +8461,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__STATUS_CODE = CDAPackage.PROCEDURE__STATUS_CODE;
+	int METHODOF_DELIVERY__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -8466,7 +8470,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__EFFECTIVE_TIME = CDAPackage.PROCEDURE__EFFECTIVE_TIME;
+	int METHODOF_DELIVERY__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -8475,7 +8479,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__PRIORITY_CODE = CDAPackage.PROCEDURE__PRIORITY_CODE;
+	int METHODOF_DELIVERY__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -8484,7 +8488,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__LANGUAGE_CODE = CDAPackage.PROCEDURE__LANGUAGE_CODE;
+	int METHODOF_DELIVERY__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -8493,7 +8497,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__METHOD_CODE = CDAPackage.PROCEDURE__METHOD_CODE;
+	int METHODOF_DELIVERY__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Approach Site Code</b></em>' containment reference list.
@@ -8502,7 +8506,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__APPROACH_SITE_CODE = CDAPackage.PROCEDURE__APPROACH_SITE_CODE;
+	int METHODOF_DELIVERY__APPROACH_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__APPROACH_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -8511,7 +8515,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__TARGET_SITE_CODE = CDAPackage.PROCEDURE__TARGET_SITE_CODE;
+	int METHODOF_DELIVERY__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -8520,7 +8524,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__SUBJECT = CDAPackage.PROCEDURE__SUBJECT;
+	int METHODOF_DELIVERY__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -8529,7 +8533,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__SPECIMEN = CDAPackage.PROCEDURE__SPECIMEN;
+	int METHODOF_DELIVERY__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -8538,7 +8542,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__PERFORMER = CDAPackage.PROCEDURE__PERFORMER;
+	int METHODOF_DELIVERY__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -8547,7 +8551,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__AUTHOR = CDAPackage.PROCEDURE__AUTHOR;
+	int METHODOF_DELIVERY__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -8556,7 +8560,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__INFORMANT = CDAPackage.PROCEDURE__INFORMANT;
+	int METHODOF_DELIVERY__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -8565,7 +8569,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__PARTICIPANT = CDAPackage.PROCEDURE__PARTICIPANT;
+	int METHODOF_DELIVERY__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -8574,7 +8578,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__ENTRY_RELATIONSHIP = CDAPackage.PROCEDURE__ENTRY_RELATIONSHIP;
+	int METHODOF_DELIVERY__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -8583,7 +8587,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__REFERENCE = CDAPackage.PROCEDURE__REFERENCE;
+	int METHODOF_DELIVERY__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -8592,7 +8596,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__PRECONDITION = CDAPackage.PROCEDURE__PRECONDITION;
+	int METHODOF_DELIVERY__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -8601,7 +8605,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__NULL_FLAVOR = CDAPackage.PROCEDURE__NULL_FLAVOR;
+	int METHODOF_DELIVERY__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -8610,7 +8614,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__CLASS_CODE = CDAPackage.PROCEDURE__CLASS_CODE;
+	int METHODOF_DELIVERY__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -8619,7 +8623,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__MOOD_CODE = CDAPackage.PROCEDURE__MOOD_CODE;
+	int METHODOF_DELIVERY__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -8628,7 +8632,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY__NEGATION_IND = CDAPackage.PROCEDURE__NEGATION_IND;
+	int METHODOF_DELIVERY__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Methodof Delivery</em>' class.
@@ -8637,7 +8641,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHODOF_DELIVERY_FEATURE_COUNT = CDAPackage.PROCEDURE_FEATURE_COUNT + 0;
+	int METHODOF_DELIVERY_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.PROCEDURE_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.OnsetofLaborImpl <em>Onsetof Labor</em>}' class.
@@ -8656,7 +8660,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int ONSETOF_LABOR__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -8665,7 +8669,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int ONSETOF_LABOR__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -8674,7 +8678,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int ONSETOF_LABOR__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -8683,7 +8687,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__ID = CDAPackage.OBSERVATION__ID;
+	int ONSETOF_LABOR__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -8692,7 +8696,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__CODE = CDAPackage.OBSERVATION__CODE;
+	int ONSETOF_LABOR__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -8701,7 +8705,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int ONSETOF_LABOR__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -8710,7 +8714,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int ONSETOF_LABOR__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -8719,7 +8723,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int ONSETOF_LABOR__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -8728,7 +8732,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int ONSETOF_LABOR__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -8737,7 +8741,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int ONSETOF_LABOR__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -8746,7 +8750,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int ONSETOF_LABOR__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -8755,7 +8759,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int ONSETOF_LABOR__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -8764,7 +8768,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int ONSETOF_LABOR__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -8773,7 +8777,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int ONSETOF_LABOR__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -8782,7 +8786,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int ONSETOF_LABOR__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -8791,7 +8795,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int ONSETOF_LABOR__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -8800,7 +8804,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int ONSETOF_LABOR__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -8809,7 +8813,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int ONSETOF_LABOR__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -8818,7 +8822,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int ONSETOF_LABOR__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -8827,7 +8831,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int ONSETOF_LABOR__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -8836,7 +8840,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int ONSETOF_LABOR__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -8845,7 +8849,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int ONSETOF_LABOR__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -8854,7 +8858,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int ONSETOF_LABOR__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -8863,7 +8867,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int ONSETOF_LABOR__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -8872,7 +8876,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int ONSETOF_LABOR__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -8881,7 +8885,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int ONSETOF_LABOR__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -8890,7 +8894,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int ONSETOF_LABOR__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -8899,7 +8903,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int ONSETOF_LABOR__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -8908,7 +8912,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int ONSETOF_LABOR__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -8917,7 +8921,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int ONSETOF_LABOR__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Onsetof Labor</em>' class.
@@ -8926,7 +8930,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ONSETOF_LABOR_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int ONSETOF_LABOR_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.MothersVitalSignsSectionImpl <em>Mothers Vital Signs Section</em>}' class.
@@ -8945,7 +8949,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+	int MOTHERS_VITAL_SIGNS_SECTION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -8954,7 +8958,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+	int MOTHERS_VITAL_SIGNS_SECTION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -8963,7 +8967,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+	int MOTHERS_VITAL_SIGNS_SECTION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -8972,7 +8976,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__ID = CDAPackage.SECTION__ID;
+	int MOTHERS_VITAL_SIGNS_SECTION__ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -8981,7 +8985,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__CODE = CDAPackage.SECTION__CODE;
+	int MOTHERS_VITAL_SIGNS_SECTION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -8990,7 +8994,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+	int MOTHERS_VITAL_SIGNS_SECTION__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -8999,7 +9003,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+	int MOTHERS_VITAL_SIGNS_SECTION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -9008,7 +9012,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+	int MOTHERS_VITAL_SIGNS_SECTION__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -9017,7 +9021,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+	int MOTHERS_VITAL_SIGNS_SECTION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -9026,7 +9030,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+	int MOTHERS_VITAL_SIGNS_SECTION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -9035,7 +9039,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+	int MOTHERS_VITAL_SIGNS_SECTION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -9044,7 +9048,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+	int MOTHERS_VITAL_SIGNS_SECTION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -9053,7 +9057,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+	int MOTHERS_VITAL_SIGNS_SECTION__ENTRY = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -9062,7 +9066,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+	int MOTHERS_VITAL_SIGNS_SECTION__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -9071,7 +9075,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+	int MOTHERS_VITAL_SIGNS_SECTION__SECTION_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -9080,7 +9084,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+	int MOTHERS_VITAL_SIGNS_SECTION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -9089,7 +9093,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+	int MOTHERS_VITAL_SIGNS_SECTION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -9098,7 +9102,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+	int MOTHERS_VITAL_SIGNS_SECTION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Mothers Vital Signs Section</em>' class.
@@ -9107,7 +9111,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
+	int MOTHERS_VITAL_SIGNS_SECTION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.MothersVitalSignsObservationImpl <em>Mothers Vital Signs Observation</em>}' class.
@@ -9126,7 +9130,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -9135,7 +9139,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -9144,7 +9148,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -9153,7 +9157,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -9162,7 +9166,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -9171,7 +9175,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -9180,7 +9184,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -9189,7 +9193,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -9198,7 +9202,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -9207,7 +9211,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -9216,7 +9220,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -9225,7 +9229,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -9234,7 +9238,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -9243,7 +9247,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -9252,7 +9256,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -9261,7 +9265,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -9270,7 +9274,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -9279,7 +9283,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -9288,7 +9292,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -9297,7 +9301,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -9306,7 +9310,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -9315,7 +9319,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -9324,7 +9328,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -9333,7 +9337,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -9342,7 +9346,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -9351,7 +9355,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -9360,7 +9364,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -9369,7 +9373,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -9378,7 +9382,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -9387,7 +9391,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Mothers Vital Signs Observation</em>' class.
@@ -9396,7 +9400,8 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTHERS_VITAL_SIGNS_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int MOTHERS_VITAL_SIGNS_OBSERVATION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.HistoryofInfectionLiveBirthSectionImpl <em>Historyof Infection Live Birth Section</em>}' class.
@@ -9415,7 +9420,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -9424,7 +9429,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -9433,7 +9438,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -9442,7 +9447,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__ID = CDAPackage.SECTION__ID;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -9451,7 +9456,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__CODE = CDAPackage.SECTION__CODE;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -9460,7 +9465,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -9469,7 +9474,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -9478,7 +9483,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -9487,7 +9492,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -9496,7 +9501,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -9505,7 +9510,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -9514,7 +9519,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -9523,7 +9528,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__ENTRY = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -9532,7 +9537,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -9541,7 +9546,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__SECTION_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -9550,7 +9555,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -9559,7 +9564,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -9568,7 +9573,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Historyof Infection Live Birth Section</em>' class.
@@ -9577,7 +9582,8 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
+	int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.InfectionPresentLiveBirthImpl <em>Infection Present Live Birth</em>}' class.
@@ -9596,7 +9602,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int INFECTION_PRESENT_LIVE_BIRTH__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -9605,7 +9611,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int INFECTION_PRESENT_LIVE_BIRTH__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -9614,7 +9620,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int INFECTION_PRESENT_LIVE_BIRTH__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -9623,7 +9629,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__ID = CDAPackage.OBSERVATION__ID;
+	int INFECTION_PRESENT_LIVE_BIRTH__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -9632,7 +9638,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__CODE = CDAPackage.OBSERVATION__CODE;
+	int INFECTION_PRESENT_LIVE_BIRTH__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -9641,7 +9647,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int INFECTION_PRESENT_LIVE_BIRTH__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -9650,7 +9656,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int INFECTION_PRESENT_LIVE_BIRTH__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -9659,7 +9665,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int INFECTION_PRESENT_LIVE_BIRTH__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -9668,7 +9674,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int INFECTION_PRESENT_LIVE_BIRTH__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -9677,7 +9683,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int INFECTION_PRESENT_LIVE_BIRTH__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -9686,7 +9692,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int INFECTION_PRESENT_LIVE_BIRTH__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -9695,7 +9701,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int INFECTION_PRESENT_LIVE_BIRTH__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -9704,7 +9710,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int INFECTION_PRESENT_LIVE_BIRTH__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -9713,7 +9719,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int INFECTION_PRESENT_LIVE_BIRTH__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -9722,7 +9728,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int INFECTION_PRESENT_LIVE_BIRTH__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -9731,7 +9737,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int INFECTION_PRESENT_LIVE_BIRTH__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -9740,7 +9746,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int INFECTION_PRESENT_LIVE_BIRTH__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -9749,7 +9755,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int INFECTION_PRESENT_LIVE_BIRTH__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -9758,7 +9764,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int INFECTION_PRESENT_LIVE_BIRTH__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -9767,7 +9773,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int INFECTION_PRESENT_LIVE_BIRTH__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -9776,7 +9782,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int INFECTION_PRESENT_LIVE_BIRTH__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -9785,7 +9791,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int INFECTION_PRESENT_LIVE_BIRTH__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -9794,7 +9800,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int INFECTION_PRESENT_LIVE_BIRTH__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -9803,7 +9809,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int INFECTION_PRESENT_LIVE_BIRTH__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -9812,7 +9818,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int INFECTION_PRESENT_LIVE_BIRTH__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -9821,7 +9827,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int INFECTION_PRESENT_LIVE_BIRTH__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -9830,7 +9836,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int INFECTION_PRESENT_LIVE_BIRTH__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -9839,7 +9845,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int INFECTION_PRESENT_LIVE_BIRTH__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -9848,7 +9854,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int INFECTION_PRESENT_LIVE_BIRTH__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -9857,7 +9863,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int INFECTION_PRESENT_LIVE_BIRTH__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Infection Present Live Birth</em>' class.
@@ -9866,7 +9872,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_LIVE_BIRTH_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int INFECTION_PRESENT_LIVE_BIRTH_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.FetalDeliverySectionImpl <em>Fetal Delivery Section</em>}' class.
@@ -9885,7 +9891,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+	int FETAL_DELIVERY_SECTION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -9894,7 +9900,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+	int FETAL_DELIVERY_SECTION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -9903,7 +9909,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+	int FETAL_DELIVERY_SECTION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -9912,7 +9918,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__ID = CDAPackage.SECTION__ID;
+	int FETAL_DELIVERY_SECTION__ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -9921,7 +9927,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__CODE = CDAPackage.SECTION__CODE;
+	int FETAL_DELIVERY_SECTION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -9930,7 +9936,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+	int FETAL_DELIVERY_SECTION__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -9939,7 +9945,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+	int FETAL_DELIVERY_SECTION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -9948,7 +9954,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+	int FETAL_DELIVERY_SECTION__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -9957,7 +9963,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+	int FETAL_DELIVERY_SECTION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -9966,7 +9972,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+	int FETAL_DELIVERY_SECTION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -9975,7 +9981,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+	int FETAL_DELIVERY_SECTION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -9984,7 +9990,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+	int FETAL_DELIVERY_SECTION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -9993,7 +9999,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+	int FETAL_DELIVERY_SECTION__ENTRY = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -10002,7 +10008,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+	int FETAL_DELIVERY_SECTION__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -10011,7 +10017,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+	int FETAL_DELIVERY_SECTION__SECTION_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -10020,7 +10026,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+	int FETAL_DELIVERY_SECTION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -10029,7 +10035,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+	int FETAL_DELIVERY_SECTION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -10038,7 +10044,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+	int FETAL_DELIVERY_SECTION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Fetal Delivery Section</em>' class.
@@ -10047,7 +10053,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
+	int FETAL_DELIVERY_SECTION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.AutopsyPerformanceImpl <em>Autopsy Performance</em>}' class.
@@ -10066,7 +10072,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int AUTOPSY_PERFORMANCE__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -10075,7 +10081,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int AUTOPSY_PERFORMANCE__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -10084,7 +10090,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int AUTOPSY_PERFORMANCE__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -10093,7 +10099,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__ID = CDAPackage.OBSERVATION__ID;
+	int AUTOPSY_PERFORMANCE__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -10102,7 +10108,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__CODE = CDAPackage.OBSERVATION__CODE;
+	int AUTOPSY_PERFORMANCE__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -10111,7 +10117,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int AUTOPSY_PERFORMANCE__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -10120,7 +10126,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int AUTOPSY_PERFORMANCE__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -10129,7 +10135,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int AUTOPSY_PERFORMANCE__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -10138,7 +10144,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int AUTOPSY_PERFORMANCE__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -10147,7 +10153,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int AUTOPSY_PERFORMANCE__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -10156,7 +10162,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int AUTOPSY_PERFORMANCE__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -10165,7 +10171,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int AUTOPSY_PERFORMANCE__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -10174,7 +10180,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int AUTOPSY_PERFORMANCE__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -10183,7 +10189,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int AUTOPSY_PERFORMANCE__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -10192,7 +10198,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int AUTOPSY_PERFORMANCE__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -10201,7 +10207,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int AUTOPSY_PERFORMANCE__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -10210,7 +10216,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int AUTOPSY_PERFORMANCE__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -10219,7 +10225,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int AUTOPSY_PERFORMANCE__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -10228,7 +10234,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int AUTOPSY_PERFORMANCE__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -10237,7 +10243,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int AUTOPSY_PERFORMANCE__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -10246,7 +10252,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int AUTOPSY_PERFORMANCE__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -10255,7 +10261,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int AUTOPSY_PERFORMANCE__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -10264,7 +10270,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int AUTOPSY_PERFORMANCE__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -10273,7 +10279,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int AUTOPSY_PERFORMANCE__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -10282,7 +10288,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int AUTOPSY_PERFORMANCE__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -10291,7 +10297,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int AUTOPSY_PERFORMANCE__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -10300,7 +10306,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int AUTOPSY_PERFORMANCE__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -10309,7 +10315,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int AUTOPSY_PERFORMANCE__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -10318,7 +10324,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int AUTOPSY_PERFORMANCE__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -10327,7 +10333,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int AUTOPSY_PERFORMANCE__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Autopsy Performance</em>' class.
@@ -10336,7 +10342,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUTOPSY_PERFORMANCE_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int AUTOPSY_PERFORMANCE_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.FetalDeathOccurranceImpl <em>Fetal Death Occurrance</em>}' class.
@@ -10355,7 +10361,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int FETAL_DEATH_OCCURRANCE__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -10364,7 +10370,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int FETAL_DEATH_OCCURRANCE__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -10373,7 +10379,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int FETAL_DEATH_OCCURRANCE__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -10382,7 +10388,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__ID = CDAPackage.OBSERVATION__ID;
+	int FETAL_DEATH_OCCURRANCE__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -10391,7 +10397,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__CODE = CDAPackage.OBSERVATION__CODE;
+	int FETAL_DEATH_OCCURRANCE__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -10400,7 +10406,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int FETAL_DEATH_OCCURRANCE__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -10409,7 +10415,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int FETAL_DEATH_OCCURRANCE__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -10418,7 +10424,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int FETAL_DEATH_OCCURRANCE__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -10427,7 +10433,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int FETAL_DEATH_OCCURRANCE__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -10436,7 +10442,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int FETAL_DEATH_OCCURRANCE__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -10445,7 +10451,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int FETAL_DEATH_OCCURRANCE__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -10454,7 +10460,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int FETAL_DEATH_OCCURRANCE__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -10463,7 +10469,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int FETAL_DEATH_OCCURRANCE__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -10472,7 +10478,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int FETAL_DEATH_OCCURRANCE__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -10481,7 +10487,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int FETAL_DEATH_OCCURRANCE__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -10490,7 +10496,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int FETAL_DEATH_OCCURRANCE__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -10499,7 +10505,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int FETAL_DEATH_OCCURRANCE__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -10508,7 +10514,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int FETAL_DEATH_OCCURRANCE__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -10517,7 +10523,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int FETAL_DEATH_OCCURRANCE__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -10526,7 +10532,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int FETAL_DEATH_OCCURRANCE__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -10535,7 +10541,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int FETAL_DEATH_OCCURRANCE__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -10544,7 +10550,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int FETAL_DEATH_OCCURRANCE__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -10553,7 +10559,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int FETAL_DEATH_OCCURRANCE__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -10562,7 +10568,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int FETAL_DEATH_OCCURRANCE__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -10571,7 +10577,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int FETAL_DEATH_OCCURRANCE__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -10580,7 +10586,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int FETAL_DEATH_OCCURRANCE__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -10589,7 +10595,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int FETAL_DEATH_OCCURRANCE__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -10598,7 +10604,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int FETAL_DEATH_OCCURRANCE__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -10607,7 +10613,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int FETAL_DEATH_OCCURRANCE__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -10616,7 +10622,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int FETAL_DEATH_OCCURRANCE__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Fetal Death Occurrance</em>' class.
@@ -10625,7 +10631,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DEATH_OCCURRANCE_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int FETAL_DEATH_OCCURRANCE_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.FetalDeliveryTimeImpl <em>Fetal Delivery Time</em>}' class.
@@ -10644,7 +10650,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int FETAL_DELIVERY_TIME__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -10653,7 +10659,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int FETAL_DELIVERY_TIME__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -10662,7 +10668,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int FETAL_DELIVERY_TIME__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -10671,7 +10677,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__ID = CDAPackage.OBSERVATION__ID;
+	int FETAL_DELIVERY_TIME__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -10680,7 +10686,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__CODE = CDAPackage.OBSERVATION__CODE;
+	int FETAL_DELIVERY_TIME__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -10689,7 +10695,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int FETAL_DELIVERY_TIME__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -10698,7 +10704,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int FETAL_DELIVERY_TIME__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -10707,7 +10713,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int FETAL_DELIVERY_TIME__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -10716,7 +10722,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int FETAL_DELIVERY_TIME__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -10725,7 +10731,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int FETAL_DELIVERY_TIME__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -10734,7 +10740,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int FETAL_DELIVERY_TIME__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -10743,7 +10749,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int FETAL_DELIVERY_TIME__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -10752,7 +10758,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int FETAL_DELIVERY_TIME__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -10761,7 +10767,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int FETAL_DELIVERY_TIME__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -10770,7 +10776,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int FETAL_DELIVERY_TIME__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -10779,7 +10785,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int FETAL_DELIVERY_TIME__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -10788,7 +10794,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int FETAL_DELIVERY_TIME__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -10797,7 +10803,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int FETAL_DELIVERY_TIME__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -10806,7 +10812,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int FETAL_DELIVERY_TIME__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -10815,7 +10821,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int FETAL_DELIVERY_TIME__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -10824,7 +10830,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int FETAL_DELIVERY_TIME__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -10833,7 +10839,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int FETAL_DELIVERY_TIME__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -10842,7 +10848,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int FETAL_DELIVERY_TIME__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -10851,7 +10857,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int FETAL_DELIVERY_TIME__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -10860,7 +10866,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int FETAL_DELIVERY_TIME__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -10869,7 +10875,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int FETAL_DELIVERY_TIME__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -10878,7 +10884,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int FETAL_DELIVERY_TIME__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -10887,7 +10893,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int FETAL_DELIVERY_TIME__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -10896,7 +10902,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int FETAL_DELIVERY_TIME__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -10905,7 +10911,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int FETAL_DELIVERY_TIME__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Fetal Delivery Time</em>' class.
@@ -10914,7 +10920,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FETAL_DELIVERY_TIME_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int FETAL_DELIVERY_TIME_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImpl <em>Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords</em>}' class.
@@ -10933,7 +10939,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REALM_CODE = CDAPackage.CLINICAL_DOCUMENT__REALM_CODE;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -10942,7 +10948,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__TYPE_ID = CDAPackage.CLINICAL_DOCUMENT__TYPE_ID;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -10951,7 +10957,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__TEMPLATE_ID = CDAPackage.CLINICAL_DOCUMENT__TEMPLATE_ID;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -10960,7 +10966,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__ID = CDAPackage.CLINICAL_DOCUMENT__ID;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -10969,7 +10975,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CODE = CDAPackage.CLINICAL_DOCUMENT__CODE;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -10978,7 +10984,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__TITLE = CDAPackage.CLINICAL_DOCUMENT__TITLE;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -10987,7 +10993,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__EFFECTIVE_TIME = CDAPackage.CLINICAL_DOCUMENT__EFFECTIVE_TIME;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -10996,7 +11002,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CONFIDENTIALITY_CODE = CDAPackage.CLINICAL_DOCUMENT__CONFIDENTIALITY_CODE;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -11005,7 +11011,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__LANGUAGE_CODE = CDAPackage.CLINICAL_DOCUMENT__LANGUAGE_CODE;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Set Id</b></em>' containment reference.
@@ -11014,7 +11020,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__SET_ID = CDAPackage.CLINICAL_DOCUMENT__SET_ID;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__SET_ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__SET_ID;
 
 	/**
 	 * The feature id for the '<em><b>Version Number</b></em>' containment reference.
@@ -11023,7 +11029,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__VERSION_NUMBER = CDAPackage.CLINICAL_DOCUMENT__VERSION_NUMBER;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__VERSION_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__VERSION_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Copy Time</b></em>' containment reference.
@@ -11032,7 +11038,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__COPY_TIME = CDAPackage.CLINICAL_DOCUMENT__COPY_TIME;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__COPY_TIME = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__COPY_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Record Target</b></em>' containment reference list.
@@ -11041,7 +11047,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__RECORD_TARGET = CDAPackage.CLINICAL_DOCUMENT__RECORD_TARGET;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__RECORD_TARGET = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__RECORD_TARGET;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -11050,7 +11056,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__AUTHOR = CDAPackage.CLINICAL_DOCUMENT__AUTHOR;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Data Enterer</b></em>' containment reference.
@@ -11059,7 +11065,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__DATA_ENTERER = CDAPackage.CLINICAL_DOCUMENT__DATA_ENTERER;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__DATA_ENTERER = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__DATA_ENTERER;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -11068,7 +11074,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__INFORMANT = CDAPackage.CLINICAL_DOCUMENT__INFORMANT;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Custodian</b></em>' containment reference.
@@ -11077,7 +11083,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CUSTODIAN = CDAPackage.CLINICAL_DOCUMENT__CUSTODIAN;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CUSTODIAN = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CUSTODIAN;
 
 	/**
 	 * The feature id for the '<em><b>Information Recipient</b></em>' containment reference list.
@@ -11086,7 +11092,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__INFORMATION_RECIPIENT = CDAPackage.CLINICAL_DOCUMENT__INFORMATION_RECIPIENT;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__INFORMATION_RECIPIENT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__INFORMATION_RECIPIENT;
 
 	/**
 	 * The feature id for the '<em><b>Legal Authenticator</b></em>' containment reference.
@@ -11095,7 +11101,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__LEGAL_AUTHENTICATOR = CDAPackage.CLINICAL_DOCUMENT__LEGAL_AUTHENTICATOR;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__LEGAL_AUTHENTICATOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__LEGAL_AUTHENTICATOR;
 
 	/**
 	 * The feature id for the '<em><b>Authenticator</b></em>' containment reference list.
@@ -11104,7 +11110,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__AUTHENTICATOR = CDAPackage.CLINICAL_DOCUMENT__AUTHENTICATOR;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__AUTHENTICATOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__AUTHENTICATOR;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -11113,7 +11119,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__PARTICIPANT = CDAPackage.CLINICAL_DOCUMENT__PARTICIPANT;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>In Fulfillment Of</b></em>' containment reference list.
@@ -11122,7 +11128,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__IN_FULFILLMENT_OF = CDAPackage.CLINICAL_DOCUMENT__IN_FULFILLMENT_OF;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__IN_FULFILLMENT_OF = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__IN_FULFILLMENT_OF;
 
 	/**
 	 * The feature id for the '<em><b>Documentation Of</b></em>' containment reference list.
@@ -11131,7 +11137,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__DOCUMENTATION_OF = CDAPackage.CLINICAL_DOCUMENT__DOCUMENTATION_OF;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__DOCUMENTATION_OF = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__DOCUMENTATION_OF;
 
 	/**
 	 * The feature id for the '<em><b>Related Document</b></em>' containment reference list.
@@ -11140,7 +11146,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__RELATED_DOCUMENT = CDAPackage.CLINICAL_DOCUMENT__RELATED_DOCUMENT;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__RELATED_DOCUMENT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__RELATED_DOCUMENT;
 
 	/**
 	 * The feature id for the '<em><b>Authorization</b></em>' containment reference list.
@@ -11149,7 +11155,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__AUTHORIZATION = CDAPackage.CLINICAL_DOCUMENT__AUTHORIZATION;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__AUTHORIZATION = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__AUTHORIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Component Of</b></em>' containment reference.
@@ -11158,7 +11164,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__COMPONENT_OF = CDAPackage.CLINICAL_DOCUMENT__COMPONENT_OF;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__COMPONENT_OF = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__COMPONENT_OF;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference.
@@ -11167,7 +11173,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__COMPONENT = CDAPackage.CLINICAL_DOCUMENT__COMPONENT;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -11176,7 +11182,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__NULL_FLAVOR = CDAPackage.CLINICAL_DOCUMENT__NULL_FLAVOR;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -11185,7 +11191,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CLASS_CODE = CDAPackage.CLINICAL_DOCUMENT__CLASS_CODE;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -11194,7 +11200,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__MOOD_CODE = CDAPackage.CLINICAL_DOCUMENT__MOOD_CODE;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords</em>' class.
@@ -11203,7 +11209,8 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FEATURE_COUNT = CDAPackage.CLINICAL_DOCUMENT_FEATURE_COUNT + 0;
+	int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.HistoryofInfectionFetalDeathSectionImpl <em>Historyof Infection Fetal Death Section</em>}' class.
@@ -11222,7 +11229,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -11231,7 +11238,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -11240,7 +11247,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -11249,7 +11256,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__ID = CDAPackage.SECTION__ID;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -11258,7 +11265,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__CODE = CDAPackage.SECTION__CODE;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -11267,7 +11274,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TITLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -11276,7 +11283,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -11285,7 +11292,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CONFIDENTIALITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -11294,7 +11301,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -11303,7 +11310,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -11312,7 +11319,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -11321,7 +11328,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -11330,7 +11337,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__ENTRY = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ENTRY;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -11339,7 +11346,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -11348,7 +11355,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__SECTION_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SECTION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -11357,7 +11364,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -11366,7 +11373,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -11375,7 +11382,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Historyof Infection Fetal Death Section</em>' class.
@@ -11384,7 +11391,8 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
+	int HISTORYOF_INFECTION_FETAL_DEATH_SECTION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.vsbr.impl.InfectionPresentFetalDeathImpl <em>Infection Present Fetal Death</em>}' class.
@@ -11403,7 +11411,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int INFECTION_PRESENT_FETAL_DEATH__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -11412,7 +11420,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int INFECTION_PRESENT_FETAL_DEATH__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -11421,7 +11429,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int INFECTION_PRESENT_FETAL_DEATH__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -11430,7 +11438,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__ID = CDAPackage.OBSERVATION__ID;
+	int INFECTION_PRESENT_FETAL_DEATH__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -11439,7 +11447,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__CODE = CDAPackage.OBSERVATION__CODE;
+	int INFECTION_PRESENT_FETAL_DEATH__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -11448,7 +11456,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int INFECTION_PRESENT_FETAL_DEATH__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -11457,7 +11465,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int INFECTION_PRESENT_FETAL_DEATH__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -11466,7 +11474,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int INFECTION_PRESENT_FETAL_DEATH__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -11475,7 +11483,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int INFECTION_PRESENT_FETAL_DEATH__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -11484,7 +11492,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int INFECTION_PRESENT_FETAL_DEATH__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -11493,7 +11501,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int INFECTION_PRESENT_FETAL_DEATH__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -11502,7 +11510,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int INFECTION_PRESENT_FETAL_DEATH__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -11511,7 +11519,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int INFECTION_PRESENT_FETAL_DEATH__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -11520,7 +11528,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int INFECTION_PRESENT_FETAL_DEATH__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -11529,7 +11537,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int INFECTION_PRESENT_FETAL_DEATH__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -11538,7 +11546,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int INFECTION_PRESENT_FETAL_DEATH__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -11547,7 +11555,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int INFECTION_PRESENT_FETAL_DEATH__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -11556,7 +11564,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int INFECTION_PRESENT_FETAL_DEATH__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -11565,7 +11573,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int INFECTION_PRESENT_FETAL_DEATH__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -11574,7 +11582,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int INFECTION_PRESENT_FETAL_DEATH__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -11583,7 +11591,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int INFECTION_PRESENT_FETAL_DEATH__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -11592,7 +11600,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int INFECTION_PRESENT_FETAL_DEATH__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -11601,7 +11609,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int INFECTION_PRESENT_FETAL_DEATH__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -11610,7 +11618,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int INFECTION_PRESENT_FETAL_DEATH__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -11619,7 +11627,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int INFECTION_PRESENT_FETAL_DEATH__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -11628,7 +11636,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int INFECTION_PRESENT_FETAL_DEATH__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -11637,7 +11645,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int INFECTION_PRESENT_FETAL_DEATH__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -11646,7 +11654,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int INFECTION_PRESENT_FETAL_DEATH__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -11655,7 +11663,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int INFECTION_PRESENT_FETAL_DEATH__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -11664,7 +11672,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int INFECTION_PRESENT_FETAL_DEATH__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Infection Present Fetal Death</em>' class.
@@ -11673,7 +11681,7 @@ public interface VsbrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFECTION_PRESENT_FETAL_DEATH_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int INFECTION_PRESENT_FETAL_DEATH_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.vsbr.ReportingBirthInformationfromaclinicalsettingtovitalrecords <em>Reporting Birth Informationfromaclinicalsettingtovitalrecords</em>}'.

@@ -17,26 +17,23 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SocialHistorySectionOperations;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>Social History Section</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ * <!-- begin-user-doc --> An implementation of the model object ' <em><b>Social
+ * History Section</b></em>'. <!-- end-user-doc -->
+ *
  * @generated
  */
-public class SocialHistorySectionImpl extends
-		org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistorySectionImpl
+public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistorySectionImpl
 		implements SocialHistorySection {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected SocialHistorySectionImpl() {
@@ -45,7 +42,7 @@ public class SocialHistorySectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -55,44 +52,39 @@ public class SocialHistorySectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	@Override
-	public boolean validateMU2CONSOLSocialHistorySectionSmokingStatusObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistorySectionOperations
-				.validateMU2CONSOLSocialHistorySectionSmokingStatusObservation(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
 	public EList<SmokingStatusObservation> getMu2consolSmokingStatusObservations() {
-		return SocialHistorySectionOperations
-				.getMu2consolSmokingStatusObservations(this);
+		return SocialHistorySectionOperations.getMu2consolSmokingStatusObservations(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateSocialHistorySectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistorySectionOperations
-				.validateSocialHistorySectionTemplateId(this, diagnostics,
-						context);
+	public boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
+	 * @generated
+	 */
+	@Override
+	public boolean validateSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateSocialHistorySectionSmokingStatusObservation(this, diagnostics,
+				context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
@@ -102,12 +94,11 @@ public class SocialHistorySectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public SocialHistorySection init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public SocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
 	}

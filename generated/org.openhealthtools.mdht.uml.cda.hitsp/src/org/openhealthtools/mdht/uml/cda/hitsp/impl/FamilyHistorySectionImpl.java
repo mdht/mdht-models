@@ -10,14 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistory;
 import org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
@@ -28,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.FamilyMedicalHistorySectionImpl
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Family History Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,7 +54,8 @@ public class FamilyHistorySectionImpl extends FamilyMedicalHistorySectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPFamilyHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPFamilyHistorySectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return FamilyHistorySectionOperations.validateHITSPFamilyHistorySectionTemplateId(this, diagnostics, context);
 	}
 
@@ -69,7 +66,8 @@ public class FamilyHistorySectionImpl extends FamilyMedicalHistorySectionImpl im
 	 */
 	public boolean validateHITSPFamilyHistorySectionFamilyHistory(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySectionOperations.validateHITSPFamilyHistorySectionFamilyHistory(this, diagnostics, context);
+		return FamilyHistorySectionOperations.validateHITSPFamilyHistorySectionFamilyHistory(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -88,7 +86,7 @@ public class FamilyHistorySectionImpl extends FamilyMedicalHistorySectionImpl im
 	 */
 	@Override
 	public FamilyHistorySection init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -97,8 +95,9 @@ public class FamilyHistorySectionImpl extends FamilyMedicalHistorySectionImpl im
 	 * @generated
 	 */
 	@Override
-	public FamilyHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public FamilyHistorySection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // FamilyHistorySectionImpl

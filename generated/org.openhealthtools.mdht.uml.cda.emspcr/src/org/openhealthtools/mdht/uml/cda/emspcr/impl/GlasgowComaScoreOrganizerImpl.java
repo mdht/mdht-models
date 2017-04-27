@@ -6,17 +6,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.GlasgowComaScoreOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.GlasgowEye;
@@ -24,21 +18,16 @@ import org.openhealthtools.mdht.uml.cda.emspcr.GlasgowMotor;
 import org.openhealthtools.mdht.uml.cda.emspcr.GlasgowQualifier;
 import org.openhealthtools.mdht.uml.cda.emspcr.GlasgowTotal;
 import org.openhealthtools.mdht.uml.cda.emspcr.GlasgowVerbal;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.GlasgowComaScoreOrganizerOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Glasgow Coma Score Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class GlasgowComaScoreOrganizerImpl extends OrganizerImpl implements GlasgowComaScoreOrganizer {
+public class GlasgowComaScoreOrganizerImpl extends org.eclipse.mdht.uml.cda.impl.OrganizerImpl implements GlasgowComaScoreOrganizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -64,8 +53,7 @@ public class GlasgowComaScoreOrganizerImpl extends OrganizerImpl implements Glas
 	 * @generated
 	 */
 	public boolean validateGlasgowComaScoreOrganizerGlasgowEye(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerGlasgowEye(
-			this, diagnostics, context);
+		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerGlasgowEye(this, diagnostics, context);
 	}
 
 	/**
@@ -75,8 +63,7 @@ public class GlasgowComaScoreOrganizerImpl extends OrganizerImpl implements Glas
 	 */
 	public boolean validateGlasgowComaScoreOrganizerGlasgowMotor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerGlasgowMotor(
-			this, diagnostics, context);
+		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerGlasgowMotor(this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +73,7 @@ public class GlasgowComaScoreOrganizerImpl extends OrganizerImpl implements Glas
 	 */
 	public boolean validateGlasgowComaScoreOrganizerGlasgowQualifier(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerGlasgowQualifier(
-			this, diagnostics, context);
+		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerGlasgowQualifier(this, diagnostics, context);
 	}
 
 	/**
@@ -97,8 +83,7 @@ public class GlasgowComaScoreOrganizerImpl extends OrganizerImpl implements Glas
 	 */
 	public boolean validateGlasgowComaScoreOrganizerGlasgowTotal(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerGlasgowTotal(
-			this, diagnostics, context);
+		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerGlasgowTotal(this, diagnostics, context);
 	}
 
 	/**
@@ -108,8 +93,7 @@ public class GlasgowComaScoreOrganizerImpl extends OrganizerImpl implements Glas
 	 */
 	public boolean validateGlasgowComaScoreOrganizerGlasgowVerbal(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerGlasgowVerbal(
-			this, diagnostics, context);
+		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerGlasgowVerbal(this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +102,7 @@ public class GlasgowComaScoreOrganizerImpl extends OrganizerImpl implements Glas
 	 * @generated
 	 */
 	public boolean validateGlasgowComaScoreOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerTemplateId(
-			this, diagnostics, context);
+		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -129,8 +112,7 @@ public class GlasgowComaScoreOrganizerImpl extends OrganizerImpl implements Glas
 	 */
 	public boolean validateGlasgowComaScoreOrganizerEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerEffectiveTime(
-			this, diagnostics, context);
+		return GlasgowComaScoreOrganizerOperations.validateGlasgowComaScoreOrganizerEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -184,16 +166,16 @@ public class GlasgowComaScoreOrganizerImpl extends OrganizerImpl implements Glas
 	 * @generated
 	 */
 	public GlasgowComaScoreOrganizer init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GlasgowComaScoreOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public GlasgowComaScoreOrganizer init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // GlasgowComaScoreOrganizerImpl

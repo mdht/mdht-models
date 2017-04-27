@@ -20,8 +20,6 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.HistoryofInfectionFetalDeathSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.InfectionPresentFetalDeath;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
@@ -45,7 +43,15 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class HistoryofInfectionFetalDeathSectionOperations extends SectionOperations {
+public class HistoryofInfectionFetalDeathSectionOperations
+		extends org.eclipse.mdht.uml.cda.operations.SectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,7 +80,7 @@ public class HistoryofInfectionFetalDeathSectionOperations extends SectionOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,30 +97,34 @@ public class HistoryofInfectionFetalDeathSectionOperations extends SectionOperat
 			HistoryofInfectionFetalDeathSection historyofInfectionFetalDeathSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.HISTORYOF_INFECTION_FETAL_DEATH_SECTION);
 			try {
-				VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyofInfectionFetalDeathSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyofInfectionFetalDeathSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.HISTORYOF_INFECTION_FETAL_DEATH_SECTION__HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HistoryofInfectionFetalDeathSectionTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									historyofInfectionFetalDeathSection, context) }),
-					new Object[] { historyofInfectionFetalDeathSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.HISTORYOF_INFECTION_FETAL_DEATH_SECTION__HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"HistoryofInfectionFetalDeathSectionHistoryofInfectionFetalDeathSectionTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										historyofInfectionFetalDeathSection, context) }),
+						new Object[] { historyofInfectionFetalDeathSection }));
 			}
 
 			return false;
@@ -130,9 +140,9 @@ public class HistoryofInfectionFetalDeathSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '71459-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '71459-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryofInfectionFetalDeathSectionCode(HistoryofInfectionFetalDeathSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Historyof Infection Fetal Death Section Code</em>}' invariant operation.
@@ -143,7 +153,7 @@ public class HistoryofInfectionFetalDeathSectionOperations extends SectionOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,29 +170,34 @@ public class HistoryofInfectionFetalDeathSectionOperations extends SectionOperat
 			HistoryofInfectionFetalDeathSection historyofInfectionFetalDeathSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.HISTORYOF_INFECTION_FETAL_DEATH_SECTION);
 			try {
-				VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyofInfectionFetalDeathSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyofInfectionFetalDeathSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.HISTORYOF_INFECTION_FETAL_DEATH_SECTION__HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HistoryofInfectionFetalDeathSectionCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									historyofInfectionFetalDeathSection, context) }),
-					new Object[] { historyofInfectionFetalDeathSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.HISTORYOF_INFECTION_FETAL_DEATH_SECTION__HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"HistoryofInfectionFetalDeathSectionHistoryofInfectionFetalDeathSectionCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										historyofInfectionFetalDeathSection, context) }),
+						new Object[] { historyofInfectionFetalDeathSection }));
 			}
 
 			return false;
@@ -198,7 +213,7 @@ public class HistoryofInfectionFetalDeathSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infection Present: Fetal Death))";
+	protected static final String VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::InfectionPresentFetalDeath))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryofInfectionFetalDeathSectionInfectionPresentFetalDeath(HistoryofInfectionFetalDeathSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Historyof Infection Fetal Death Section Infection Present Fetal Death</em>}' invariant operation.
@@ -209,7 +224,7 @@ public class HistoryofInfectionFetalDeathSectionOperations extends SectionOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -226,30 +241,34 @@ public class HistoryofInfectionFetalDeathSectionOperations extends SectionOperat
 			HistoryofInfectionFetalDeathSection historyofInfectionFetalDeathSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.HISTORYOF_INFECTION_FETAL_DEATH_SECTION);
 			try {
-				VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyofInfectionFetalDeathSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyofInfectionFetalDeathSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.HISTORYOF_INFECTION_FETAL_DEATH_SECTION__HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HistoryofInfectionFetalDeathSectionInfectionPresentFetalDeath",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									historyofInfectionFetalDeathSection, context) }),
-					new Object[] { historyofInfectionFetalDeathSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.HISTORYOF_INFECTION_FETAL_DEATH_SECTION__HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"HistoryofInfectionFetalDeathSectionHistoryofInfectionFetalDeathSectionInfectionPresentFetalDeath",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										historyofInfectionFetalDeathSection, context) }),
+						new Object[] { historyofInfectionFetalDeathSection }));
 			}
 
 			return false;
@@ -265,7 +284,7 @@ public class HistoryofInfectionFetalDeathSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INFECTION_PRESENT_FETAL_DEATHS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infection Present: Fetal Death)).oclAsType(vsbr::Infection Present: Fetal Death)";
+	protected static final String GET_INFECTION_PRESENT_FETAL_DEATHS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::InfectionPresentFetalDeath)).oclAsType(vsbr::InfectionPresentFetalDeath)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInfectionPresentFetalDeaths(HistoryofInfectionFetalDeathSection) <em>Get Infection Present Fetal Deaths</em>}' query operation.
@@ -285,20 +304,25 @@ public class HistoryofInfectionFetalDeathSectionOperations extends SectionOperat
 
 	public static EList<InfectionPresentFetalDeath> getInfectionPresentFetalDeaths(
 			HistoryofInfectionFetalDeathSection historyofInfectionFetalDeathSection) {
+
 		if (GET_INFECTION_PRESENT_FETAL_DEATHS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.HISTORYOF_INFECTION_FETAL_DEATH_SECTION,
 				VsbrPackage.Literals.HISTORYOF_INFECTION_FETAL_DEATH_SECTION.getEAllOperations().get(58));
 			try {
-				GET_INFECTION_PRESENT_FETAL_DEATHS__EOCL_QRY = helper.createQuery(GET_INFECTION_PRESENT_FETAL_DEATHS__EOCL_EXP);
+				GET_INFECTION_PRESENT_FETAL_DEATHS__EOCL_QRY = helper.createQuery(
+					GET_INFECTION_PRESENT_FETAL_DEATHS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_INFECTION_PRESENT_FETAL_DEATHS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_INFECTION_PRESENT_FETAL_DEATHS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<InfectionPresentFetalDeath> result = (Collection<InfectionPresentFetalDeath>) query.evaluate(historyofInfectionFetalDeathSection);
+		Collection<InfectionPresentFetalDeath> result = (Collection<InfectionPresentFetalDeath>) query.evaluate(
+			historyofInfectionFetalDeathSection);
 		return new BasicEList.UnmodifiableEList<InfectionPresentFetalDeath>(result.size(), result.toArray());
 	}
 

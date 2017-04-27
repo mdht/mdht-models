@@ -22,80 +22,71 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.impl.EntityImpl;
-
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 import org.openhealthtools.mdht.uml.cda.phmr.ScopingEntity;
-
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ScopingEntityOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Scoping Entity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ScopingEntityImpl extends EntityImpl implements ScopingEntity {
+public class ScopingEntityImpl extends org.eclipse.mdht.uml.cda.impl.EntityImpl implements ScopingEntity {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected ScopingEntityImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhmrPackage.Literals.SCOPING_ENTITY;
-  }
+		return PhmrPackage.Literals.SCOPING_ENTITY;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateScopingEntityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ScopingEntityOperations.validateScopingEntityTemplateId(this, diagnostics, context);
-  }
+		return ScopingEntityOperations.validateScopingEntityTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateScopingEntityDesc(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ScopingEntityOperations.validateScopingEntityDesc(this, diagnostics, context);
-  }
+		return ScopingEntityOperations.validateScopingEntityDesc(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public ScopingEntity init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -103,8 +94,8 @@ public class ScopingEntityImpl extends EntityImpl implements ScopingEntity {
      * @generated
      */
     @Override
-	public ScopingEntity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public ScopingEntity init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //ScopingEntityImpl

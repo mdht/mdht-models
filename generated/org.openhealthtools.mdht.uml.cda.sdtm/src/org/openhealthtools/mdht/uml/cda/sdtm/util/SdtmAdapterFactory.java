@@ -4,27 +4,101 @@ package org.openhealthtools.mdht.uml.cda.sdtm.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
-
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
-import org.openhealthtools.mdht.uml.cda.Consumable;
-import org.openhealthtools.mdht.uml.cda.Encounter;
-import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.ObservationRange;
-import org.openhealthtools.mdht.uml.cda.Participant2;
-import org.openhealthtools.mdht.uml.cda.Procedure;
-import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
-
-import org.openhealthtools.mdht.uml.cda.sdtm.*;
-
-import org.openhealthtools.mdht.uml.hl7.rim.Act;
-import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
-import org.openhealthtools.mdht.uml.hl7.rim.Participation;
+import org.openhealthtools.mdht.uml.cda.sdtm.AdverseEvent;
+import org.openhealthtools.mdht.uml.cda.sdtm.AssayQuantitation;
+import org.openhealthtools.mdht.uml.cda.sdtm.BodySystemorOrganClass;
+import org.openhealthtools.mdht.uml.cda.sdtm.BodyWeight;
+import org.openhealthtools.mdht.uml.cda.sdtm.BodyWeightGain;
+import org.openhealthtools.mdht.uml.cda.sdtm.Category;
+import org.openhealthtools.mdht.uml.cda.sdtm.ClinicalEvent;
+import org.openhealthtools.mdht.uml.cda.sdtm.ClinicalObservation;
+import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
+import org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication;
+import org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantTreatment;
+import org.openhealthtools.mdht.uml.cda.sdtm.ConsumableMaterial;
+import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
+import org.openhealthtools.mdht.uml.cda.sdtm.DeathDiagnosis;
+import org.openhealthtools.mdht.uml.cda.sdtm.DeathRelationship;
+import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
+import org.openhealthtools.mdht.uml.cda.sdtm.DoseAdjustmentReason;
+import org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability;
+import org.openhealthtools.mdht.uml.cda.sdtm.ECGTestResult;
+import org.openhealthtools.mdht.uml.cda.sdtm.EventDuration;
+import org.openhealthtools.mdht.uml.cda.sdtm.EventOutcome;
+import org.openhealthtools.mdht.uml.cda.sdtm.EventPattern;
+import org.openhealthtools.mdht.uml.cda.sdtm.EventStudyDay;
+import org.openhealthtools.mdht.uml.cda.sdtm.EventorFindingSeverity;
+import org.openhealthtools.mdht.uml.cda.sdtm.ExclusionReason;
+import org.openhealthtools.mdht.uml.cda.sdtm.FastingStatus;
+import org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout;
+import org.openhealthtools.mdht.uml.cda.sdtm.FoodandWaterConsumption;
+import org.openhealthtools.mdht.uml.cda.sdtm.GroupIdentifier;
+import org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalDisposition;
+import org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure;
+import org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalLaboratoryTestResult;
+import org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentSection;
+import org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDemographics;
+import org.openhealthtools.mdht.uml.cda.sdtm.InclusionorExclusionCriteriaNotMet;
+import org.openhealthtools.mdht.uml.cda.sdtm.Indication;
+import org.openhealthtools.mdht.uml.cda.sdtm.IntendedRegimen;
+import org.openhealthtools.mdht.uml.cda.sdtm.MacroscopicFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.MassIdentification;
+import org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem;
+import org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySpecimenFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility;
+import org.openhealthtools.mdht.uml.cda.sdtm.MicroscopicFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonPerformanceReason;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonStudyTreatmentRelationship;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanDisposition;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanExposure;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanLaboratoryTestResult;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanSubjectDataDocumentSection;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanSubjectDemographics;
+import org.openhealthtools.mdht.uml.cda.sdtm.OrganMeasurement;
+import org.openhealthtools.mdht.uml.cda.sdtm.OtherTreatmentActionTaken;
+import org.openhealthtools.mdht.uml.cda.sdtm.PalpableMass;
+import org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticConcentrationFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.PhysicalExaminationFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.PlannedStudyDay;
+import org.openhealthtools.mdht.uml.cda.sdtm.PositionofSubject;
+import org.openhealthtools.mdht.uml.cda.sdtm.PreSpecifiedEvent;
+import org.openhealthtools.mdht.uml.cda.sdtm.ProtocolDeviation;
+import org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.ReferencePeriod;
+import org.openhealthtools.mdht.uml.cda.sdtm.ReferenceRange;
+import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
+import org.openhealthtools.mdht.uml.cda.sdtm.ResultCategory;
+import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
+import org.openhealthtools.mdht.uml.cda.sdtm.SeriousEvent;
+import org.openhealthtools.mdht.uml.cda.sdtm.SpecimenInformation;
+import org.openhealthtools.mdht.uml.cda.sdtm.StartRelativetoReferencePeriod;
+import org.openhealthtools.mdht.uml.cda.sdtm.StopRelativetoReferencePeriod;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyArm;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyDayPeriod;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyEpoch;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyFindingEvaluator;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectEvent;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectIntervention;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyTestOrganization;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyTreatmentActionTaken;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyTreatmentCausality;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubjectCharacteristic;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubjectDataHumanClinicalTrials;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubjectDataNonClinicalTrials;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubjectElement;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubjectPool;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse;
+import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
+import org.openhealthtools.mdht.uml.cda.sdtm.TimingReference;
+import org.openhealthtools.mdht.uml.cda.sdtm.Toxicity;
+import org.openhealthtools.mdht.uml.cda.sdtm.TumorFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.Visit;
+import org.openhealthtools.mdht.uml.cda.sdtm.VitalSign;
 
 /**
  * <!-- begin-user-doc -->
@@ -451,59 +525,59 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 				return createReferenceRangeAdapter();
 			}
 			@Override
-			public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
+			public Adapter caseInfrastructureRoot(org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot object) {
 				return createInfrastructureRootAdapter();
 			}
 			@Override
-			public Adapter caseAct(Act object) {
+			public Adapter caseAct(org.eclipse.mdht.uml.hl7.rim.Act object) {
 				return createActAdapter();
 			}
 			@Override
-			public Adapter caseClinicalDocument(ClinicalDocument object) {
+			public Adapter caseClinicalDocument(org.eclipse.mdht.uml.cda.ClinicalDocument object) {
 				return createClinicalDocumentAdapter();
 			}
 			@Override
-			public Adapter caseSection(Section object) {
+			public Adapter caseSection(org.eclipse.mdht.uml.cda.Section object) {
 				return createSectionAdapter();
 			}
 			@Override
-			public Adapter caseClinicalStatement(ClinicalStatement object) {
+			public Adapter caseClinicalStatement(org.eclipse.mdht.uml.cda.ClinicalStatement object) {
 				return createClinicalStatementAdapter();
 			}
 			@Override
-			public Adapter caseCDA_Act(org.openhealthtools.mdht.uml.cda.Act object) {
+			public Adapter caseCDA_Act(org.eclipse.mdht.uml.cda.Act object) {
 				return createCDA_ActAdapter();
 			}
 			@Override
-			public Adapter caseObservation(Observation object) {
+			public Adapter caseObservation(org.eclipse.mdht.uml.cda.Observation object) {
 				return createObservationAdapter();
 			}
 			@Override
-			public Adapter caseEncounter(Encounter object) {
+			public Adapter caseEncounter(org.eclipse.mdht.uml.cda.Encounter object) {
 				return createEncounterAdapter();
 			}
 			@Override
-			public Adapter caseProcedure(Procedure object) {
+			public Adapter caseProcedure(org.eclipse.mdht.uml.cda.Procedure object) {
 				return createProcedureAdapter();
 			}
 			@Override
-			public Adapter caseSubstanceAdministration(SubstanceAdministration object) {
+			public Adapter caseSubstanceAdministration(org.eclipse.mdht.uml.cda.SubstanceAdministration object) {
 				return createSubstanceAdministrationAdapter();
 			}
 			@Override
-			public Adapter caseParticipation(Participation object) {
+			public Adapter caseParticipation(org.eclipse.mdht.uml.hl7.rim.Participation object) {
 				return createParticipationAdapter();
 			}
 			@Override
-			public Adapter caseConsumable(Consumable object) {
+			public Adapter caseConsumable(org.eclipse.mdht.uml.cda.Consumable object) {
 				return createConsumableAdapter();
 			}
 			@Override
-			public Adapter caseParticipant2(Participant2 object) {
+			public Adapter caseParticipant2(org.eclipse.mdht.uml.cda.Participant2 object) {
 				return createParticipant2Adapter();
 			}
 			@Override
-			public Adapter caseObservationRange(ObservationRange object) {
+			public Adapter caseObservationRange(org.eclipse.mdht.uml.cda.ObservationRange object) {
 				return createObservationRangeAdapter();
 			}
 			@Override
@@ -1815,13 +1889,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot <em>Infrastructure Root</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot <em>Infrastructure Root</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot
+	 * @see org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot
 	 * @generated
 	 */
 	public Adapter createInfrastructureRootAdapter() {
@@ -1829,13 +1903,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.Act <em>Act</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.hl7.rim.Act <em>Act</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.Act
+	 * @see org.eclipse.mdht.uml.hl7.rim.Act
 	 * @generated
 	 */
 	public Adapter createActAdapter() {
@@ -1843,13 +1917,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ClinicalDocument <em>Clinical Document</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.ClinicalDocument <em>Clinical Document</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ClinicalDocument
+	 * @see org.eclipse.mdht.uml.cda.ClinicalDocument
 	 * @generated
 	 */
 	public Adapter createClinicalDocumentAdapter() {
@@ -1857,13 +1931,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Section <em>Section</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Section <em>Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Section
+	 * @see org.eclipse.mdht.uml.cda.Section
 	 * @generated
 	 */
 	public Adapter createSectionAdapter() {
@@ -1871,13 +1945,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ClinicalStatement <em>Clinical Statement</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.ClinicalStatement <em>Clinical Statement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ClinicalStatement
+	 * @see org.eclipse.mdht.uml.cda.ClinicalStatement
 	 * @generated
 	 */
 	public Adapter createClinicalStatementAdapter() {
@@ -1885,13 +1959,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Act <em>Act</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Act <em>Act</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Act
+	 * @see org.eclipse.mdht.uml.cda.Act
 	 * @generated
 	 */
 	public Adapter createCDA_ActAdapter() {
@@ -1899,13 +1973,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Observation <em>Observation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Observation <em>Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Observation
+	 * @see org.eclipse.mdht.uml.cda.Observation
 	 * @generated
 	 */
 	public Adapter createObservationAdapter() {
@@ -1913,13 +1987,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Encounter <em>Encounter</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Encounter <em>Encounter</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Encounter
+	 * @see org.eclipse.mdht.uml.cda.Encounter
 	 * @generated
 	 */
 	public Adapter createEncounterAdapter() {
@@ -1927,13 +2001,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Procedure <em>Procedure</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Procedure <em>Procedure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Procedure
+	 * @see org.eclipse.mdht.uml.cda.Procedure
 	 * @generated
 	 */
 	public Adapter createProcedureAdapter() {
@@ -1941,13 +2015,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.SubstanceAdministration <em>Substance Administration</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.SubstanceAdministration <em>Substance Administration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.SubstanceAdministration
+	 * @see org.eclipse.mdht.uml.cda.SubstanceAdministration
 	 * @generated
 	 */
 	public Adapter createSubstanceAdministrationAdapter() {
@@ -1955,13 +2029,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.Participation <em>Participation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.hl7.rim.Participation <em>Participation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.Participation
+	 * @see org.eclipse.mdht.uml.hl7.rim.Participation
 	 * @generated
 	 */
 	public Adapter createParticipationAdapter() {
@@ -1969,13 +2043,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Consumable <em>Consumable</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Consumable <em>Consumable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Consumable
+	 * @see org.eclipse.mdht.uml.cda.Consumable
 	 * @generated
 	 */
 	public Adapter createConsumableAdapter() {
@@ -1983,13 +2057,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Participant2 <em>Participant2</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Participant2 <em>Participant2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Participant2
+	 * @see org.eclipse.mdht.uml.cda.Participant2
 	 * @generated
 	 */
 	public Adapter createParticipant2Adapter() {
@@ -1997,13 +2071,13 @@ public class SdtmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ObservationRange <em>Observation Range</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.ObservationRange <em>Observation Range</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ObservationRange
+	 * @see org.eclipse.mdht.uml.cda.ObservationRange
 	 * @generated
 	 */
 	public Adapter createObservationRangeAdapter() {

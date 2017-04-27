@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSection;
@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ResultsSectionOperatio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Results Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -99,7 +97,8 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResultsSectionOperations.validateResultsSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
@@ -119,7 +118,8 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultsSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResultsSectionOperations.validateResultsSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 

@@ -7,6 +7,7 @@
    
     Contributors:
         Dan Brown - initial API and implementation
+        		  - update paths post-git transfer
         
     Usage:
     Run this as an ant task after a full transform, reload, regen (model and test code) has been run
@@ -43,7 +44,7 @@
  
  	<!-- Locations -->
  	<property name="LocalGenManifest" location="${basedir}/META-INF/MANIFEST.MF" />
- 	<property name="ExternalTestManifest" location="${basedir}/../org.openhealthtools.mdht.uml.cda.consol2.tests/META-INF/MANIFEST.MF" />
+ 	<property name="ExternalTestManifest" location="${basedir}/../../tests/org.openhealthtools.mdht.uml.cda.consol2.tests/META-INF/MANIFEST.MF" />
  	
  	<!-- Replacements -->
  	<!-- /search strings -->

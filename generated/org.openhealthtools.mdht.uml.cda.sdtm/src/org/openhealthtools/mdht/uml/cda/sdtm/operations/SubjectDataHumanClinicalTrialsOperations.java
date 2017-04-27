@@ -7,22 +7,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalDocumentOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentSection;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubjectDataHumanClinicalTrials;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -57,7 +49,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOperations {
+public class SubjectDataHumanClinicalTrialsOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalDocumentOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -86,7 +86,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -101,25 +101,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsTemplateId(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -147,7 +157,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -162,25 +172,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsClassCode(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -208,7 +228,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -223,25 +243,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsMoodCode(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -269,7 +299,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -284,25 +314,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsCodeP(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -332,7 +372,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -347,25 +387,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsCode(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -393,7 +443,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -408,25 +458,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsConfidentialityCodeP(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsConfidentialityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsConfidentialityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -456,7 +516,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -471,25 +531,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsConfidentialityCode(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CONFIDENTIALITY_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsConfidentialityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsConfidentialityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -517,7 +587,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -532,25 +602,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsEffectiveTime(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -578,7 +658,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -593,25 +673,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsId(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -639,7 +729,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -654,25 +744,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsLanguageCode(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_LANGUAGE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsLanguageCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsLanguageCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -700,7 +800,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -715,25 +815,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsRealmCode(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_REALM_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsRealmCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsRealmCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -761,7 +871,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -776,25 +886,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsSetId(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SET_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSetId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsSetId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -822,7 +942,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -837,25 +957,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsVersionNumber(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_VERSION_NUMBER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsVersionNumber", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsVersionNumber", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -883,7 +1013,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_STUDY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_STUDY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -898,25 +1028,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsStudyRelationship(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_STUDY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_STUDY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_STUDY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_STUDY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_STUDY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_STUDY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_STUDY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_STUDY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_STUDY_RELATIONSHIP,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsStudyRelationship", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsStudyRelationship", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -944,7 +1084,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SUBJECT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SUBJECT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -959,25 +1099,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsSubjectParticipation(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SUBJECT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SUBJECT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SUBJECT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SUBJECT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SUBJECT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SUBJECT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SUBJECT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SUBJECT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_SUBJECT_PARTICIPATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectParticipation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsSubjectParticipation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -1005,7 +1155,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1020,25 +1170,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsAuthor(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_AUTHOR,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsAuthor", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsAuthor", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -1066,7 +1226,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1081,25 +1241,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsCustodian(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_CUSTODIAN,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsCustodian", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsCustodian", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -1127,7 +1297,7 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1142,25 +1312,35 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  boolean validateSubjectDataHumanClinicalTrialsHumanClinicalSubjectDataDocumentSection(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS);
 			try {
-				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectDataHumanClinicalTrials)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectDataHumanClinicalTrials)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS__SUBJECT_DATA_HUMAN_CLINICAL_TRIALS_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsHumanClinicalSubjectDataDocumentSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectDataHumanClinicalTrialsSubjectDataHumanClinicalTrialsHumanClinicalSubjectDataDocumentSection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectDataHumanClinicalTrials, context) }),
 						 new Object [] { subjectDataHumanClinicalTrials }));
 			}
 			 
@@ -1196,8 +1376,13 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 	 */
 	
 	public static  HumanClinicalSubjectDataDocumentSection getHumanClinicalSubjectDataDocumentSection(SubjectDataHumanClinicalTrials subjectDataHumanClinicalTrials) {
+	
+	
+	
 		if (GET_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS, SdtmPackage.Literals.SUBJECT_DATA_HUMAN_CLINICAL_TRIALS.getEAllOperations().get(47));
 			try {
 				GET_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__EOCL_QRY = helper.createQuery(GET_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__EOCL_EXP);
@@ -1205,8 +1390,9 @@ public class SubjectDataHumanClinicalTrialsOperations extends ClinicalDocumentOp
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_HUMAN_CLINICAL_SUBJECT_DATA_DOCUMENT_SECTION__EOCL_QRY);
 		return (HumanClinicalSubjectDataDocumentSection) query.evaluate(subjectDataHumanClinicalTrials);
 	}
 

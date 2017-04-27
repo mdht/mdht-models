@@ -28,13 +28,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.MedicalEquipment;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.MedicalEquipmentOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 
 /**
@@ -143,66 +143,69 @@ public void testValidateMedicalEquipmentText() {
  
 									
 public void testValidateMedicalEquipmentDeviceDefinitionOrganizer() {
-      OperationsTestCase<MedicalEquipment> validateMedicalEquipmentDeviceDefinitionOrganizerTestCase = new OperationsTestCase<MedicalEquipment>(
-      "validateMedicalEquipmentDeviceDefinitionOrganizer",
-      operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_DEVICE_DEFINITION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<MedicalEquipment> validateMedicalEquipmentDeviceDefinitionOrganizerTestCase = new OperationsTestCase<MedicalEquipment>(
+			"validateMedicalEquipmentDeviceDefinitionOrganizer",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_DEVICE_DEFINITION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(MedicalEquipment target) {
+			@Override
+			protected void updateToFail(MedicalEquipment target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(MedicalEquipment target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(MedicalEquipment target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return MedicalEquipmentOperations.validateMedicalEquipmentDeviceDefinitionOrganizer(
-          (MedicalEquipment) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return MedicalEquipmentOperations.validateMedicalEquipmentDeviceDefinitionOrganizer(
+					(MedicalEquipment) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateMedicalEquipmentDeviceDefinitionOrganizerTestCase.doValidationTest();
+		validateMedicalEquipmentDeviceDefinitionOrganizerTestCase.doValidationTest();
 }		
 
 
@@ -240,66 +243,69 @@ target.getDeviceDefinitionOrganizers();
  
 									
 public void testValidateMedicalEquipmentSectionTemplateId() {
-      OperationsTestCase<MedicalEquipment> validateMedicalEquipmentSectionTemplateIdTestCase = new OperationsTestCase<MedicalEquipment>(
-      "validateMedicalEquipmentSectionTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<MedicalEquipment> validateMedicalEquipmentSectionTemplateIdTestCase = new OperationsTestCase<MedicalEquipment>(
+			"validateMedicalEquipmentSectionTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(MedicalEquipment target) {
+			@Override
+			protected void updateToFail(MedicalEquipment target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(MedicalEquipment target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(MedicalEquipment target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return MedicalEquipmentOperations.validateMedicalEquipmentSectionTemplateId(
-          (MedicalEquipment) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return MedicalEquipmentOperations.validateMedicalEquipmentSectionTemplateId(
+					(MedicalEquipment) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateMedicalEquipmentSectionTemplateIdTestCase.doValidationTest();
+		validateMedicalEquipmentSectionTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -328,6 +334,7 @@ public void testValidateMedicalEquipmentSectionTemplateId() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<MedicalEquipment> {
+		@Override
 		public MedicalEquipment create() {		
 			return PhmrFactory.eINSTANCE.createMedicalEquipment();
 		}
@@ -359,9 +366,9 @@ public void testValidateMedicalEquipmentSectionTemplateId() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -371,8 +378,8 @@ public void testValidateMedicalEquipmentSectionTemplateId() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

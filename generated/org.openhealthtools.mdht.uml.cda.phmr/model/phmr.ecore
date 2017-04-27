@@ -5,7 +5,7 @@
   <eAnnotations source="http://www.openhealthtools.org/mdht/uml">
     <details key="initializers" value="org.openhealthtools.mdht.uml.cda.phmr"/>
   </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceAccuracyObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceAccuracyObservation" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="DeviceAccuracyObservationTemplateId DeviceAccuracyObservationClassCode DeviceAccuracyObservationCode DeviceAccuracyObservationCodeP DeviceAccuracyObservationMoodCode DeviceAccuracyObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.9.3"/>
@@ -132,7 +132,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceDefinitionOrganizer" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Organizer">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceDefinitionOrganizer" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Organizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="DeviceDefinitionOrganizerTemplateId DeviceDefinitionOrganizerClassCode DeviceDefinitionOrganizerMoodCode DeviceDefinitionOrganizerParticipant"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.9.4"/>
@@ -338,7 +338,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SamplingFrequencyObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="SamplingFrequencyObservation" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SamplingFrequencyObservationTemplateId SamplingFrequencyObservationCode SamplingFrequencyObservationCodeP SamplingFrequencyObservationMoodCode SamplingFrequencyObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.9.10"/>
@@ -446,7 +446,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceMeasurementRangeObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceMeasurementRangeObservation" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="DeviceMeasurementRangeObservationTemplateId DeviceMeasurementRangeObservationClassCode DeviceMeasurementRangeObservationCode DeviceMeasurementRangeObservationCodeP DeviceMeasurementRangeObservationMoodCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.9.5"/>
@@ -554,7 +554,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeviceResolutionObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="DeviceResolutionObservation" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="DeviceResolutionObservationTemplateId DeviceResolutionObservationClassCode DeviceResolutionObservationCode DeviceResolutionObservationMoodCode DeviceResolutionObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.9.6"/>
@@ -660,7 +660,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EventObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="EventObservation" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="EventObservationTemplateId EventObservationClassCode EventObservationCode EventObservationMoodCode EventObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.9.7"/>
@@ -988,7 +988,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ObservationMediaJPG" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ObservationMedia">
+  <eClassifiers xsi:type="ecore:EClass" name="ObservationMediaJPG" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//ObservationMedia">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ObservationMediaJPGTemplateId ObservationMediaJPGClassCode ObservationMediaJPGMoodCode ObservationMediaJPGValue"/>
       <details key="templateId.root" value="null"/>
@@ -1072,7 +1072,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ObservationNullFlavor" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="ObservationNullFlavor" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ObservationNullFlavorTemplateId ObservationNullFlavorClassCode ObservationNullFlavorMoodCode ObservationNullFlavorWaveformObservation ObservationNullFlavorWaveformSamplePeriodObservation"/>
       <details key="templateId.root" value="null"/>
@@ -1186,7 +1186,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="WaveformObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="WaveformObservation" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="WaveformObservationTemplateId WaveformObservationClassCode WaveformObservationCode WaveformObservationMoodCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.9.11"/>
@@ -1292,7 +1292,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="WaveformSamplePeriodObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="WaveformSamplePeriodObservation" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="WaveformSamplePeriodObservationTemplateId WaveformSamplePeriodObservationClassCode WaveformSamplePeriodObservationCode WaveformSamplePeriodObservationMoodCode WaveformSamplePeriodObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.9.13"/>
@@ -1398,7 +1398,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Participant" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Participant2">
+  <eClassifiers xsi:type="ecore:EClass" name="Participant" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Participant2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ParticipantTemplateId ParticipantPHMRProductInstance"/>
       <details key="templateId.root" value="null"/>
@@ -1613,7 +1613,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GeneralHeaderConstraints" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ClinicalDocument">
+  <eClassifiers xsi:type="ecore:EClass" name="GeneralHeaderConstraints" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//ClinicalDocument">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsTypeIdExtension GeneralHeaderConstraintsSetIdAndVersionNumber GeneralHeaderConstraintsSetIdAndIdAreUnique GeneralHeaderConstraintsCopyTimeNotPresent GeneralHeaderConstraintsHasRecordTargetPatientRole GeneralHeaderConstraintsHasPatientBirthTime GeneralHeaderConstraintsHasAdministrativeGenderCode GeneralHeaderConstraintsHasAuthorTime GeneralHeaderConstraintsHasAssignedAuthorId GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice GeneralHeaderConstraintsHasDataEntererAssignedPerson GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson GeneralHeaderConstraintsAuthenticatorHasAssignedPerson GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP GeneralHeaderConstraintsConfidentialityCode GeneralHeaderConstraintsEffectiveTime GeneralHeaderConstraintsId GeneralHeaderConstraintsLanguageCode GeneralHeaderConstraintsTitle GeneralHeaderConstraintsTypeId"/>
       <details key="templateId.root" value="null"/>
@@ -2256,7 +2256,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="WaveformSeriesObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="WaveformSeriesObservation" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="WaveformSeriesObservationTemplateId WaveformSeriesObservationClassCode WaveformSeriesObservationCode WaveformSeriesObservationCodeP WaveformSeriesObservationEffectiveTime WaveformSeriesObservationMoodCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.9.12"/>
@@ -2439,12 +2439,12 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getObservationMediaJPG" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ObservationMedia">
+    <eOperations name="getObservationMediaJPG" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//ObservationMedia">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservationMedia()->select(observationMedia : cda::ObservationMedia | not observationMedia.oclIsUndefined() and observationMedia.oclIsKindOf(cda::ObservationMedia))->asSequence()->any(true).oclAsType(cda::ObservationMedia)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getObservationNullFlavor" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+    <eOperations name="getObservationNullFlavor" ordered="false" lowerBound="1" eType="ecore:EClass platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->any(true).oclAsType(cda::Observation)"/>
       </eAnnotations>
@@ -2503,7 +2503,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ParticipantRole" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ParticipantRole">
+  <eClassifiers xsi:type="ecore:EClass" name="ParticipantRole" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//ParticipantRole">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PHMRParticipantRoleTemplateId PHMRParticipantRoleId"/>
       <details key="templateId.root" value="null"/>
@@ -2653,7 +2653,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PHMRProductInstanceReference" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Participant2">
+  <eClassifiers xsi:type="ecore:EClass" name="PHMRProductInstanceReference" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Participant2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PHMRProductInstanceReferenceTemplateId PHMRProductInstanceReferenceTypeCode PHMRProductInstanceReferenceParticipantRole"/>
       <details key="templateId.root" value="null"/>
@@ -2717,7 +2717,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PlayingDevice" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Device">
+  <eClassifiers xsi:type="ecore:EClass" name="PlayingDevice" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Device">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlayingDeviceTemplateId PlayingDeviceCode PlayingDeviceManufacturerModelName"/>
       <details key="templateId.root" value="null"/>
@@ -2782,7 +2782,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ScopingEntity" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Entity">
+  <eClassifiers xsi:type="ecore:EClass" name="ScopingEntity" eSuperTypes="platform:/plugin/org.eclipse.mdht.uml.cda/model/cda.ecore#//Entity">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ScopingEntityTemplateId ScopingEntityDesc"/>
       <details key="templateId.root" value="null"/>

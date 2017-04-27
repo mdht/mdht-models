@@ -10,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,12 +19,12 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProgressNote2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId ProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 ProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent ProgressNote2Code ProgressNote2CodeP ProgressNote2ComponentOf ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProgressNote2DocumentationOfServiceEventTemplateId ProgressNote2DocumentationOfServiceEventClassCode ProgressNote2DocumentationOfServiceEvent ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProgressNote2ComponentOfEncompassingEncounterId ProgressNote2ComponentOfEncompassingEncounterEffectiveTime ProgressNote2ComponentOfEncompassingEncounterLocation ProgressNote2ComponentOfEncompassingEncounter' templateId.root='2.16.840.1.113883.10.20.22.1.9' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ProgressNote2Code='ProgressNote2CodeP' constraints.validation.warning='ProgressNote2DocumentationOf ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow ProgressNote2DocumentationOfServiceEventEffectiveTime' constraints.validation.info='ProgressNote2AssessmentSection ProgressNote2PlanOfTreatmentSection2 ProgressNote2AssessmentAndPlanSection2 ProgressNote2AllergiesSectionEntriesOptional2 ProgressNote2ChiefComplaintSection ProgressNote2InterventionsSection2 ProgressNote2InstructionsSection2 ProgressNote2MedicationsSectionEntriesOptional2 ProgressNote2ObjectiveSection ProgressNote2PhysicalExamSection2 ProgressNote2ProblemSectionEntriesOptional2 ProgressNote2ResultsSectionEntriesOptional2 ProgressNote2ReviewOfSystemsSection ProgressNote2SubjectiveSection ProgressNote2VitalSignsSectionEntriesOptional2 ProgressNote2NutritionSection' constraints.validation.query='ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProgressNote2DocumentationOfServiceEventTemplateId ProgressNote2DocumentationOfServiceEventClassCode ProgressNote2DocumentationOfServiceEventEffectiveTime ProgressNote2DocumentationOfServiceEvent ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProgressNote2ComponentOfEncompassingEncounterId ProgressNote2ComponentOfEncompassingEncounterEffectiveTime ProgressNote2ComponentOfEncompassingEncounterLocation ProgressNote2ComponentOfEncompassingEncounter'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId ProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2 ProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent ProgressNote2Code ProgressNote2CodeP ProgressNote2ComponentOf ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProgressNote2DocumentationOfServiceEventTemplateId ProgressNote2DocumentationOfServiceEventClassCode ProgressNote2DocumentationOfServiceEvent ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProgressNote2ComponentOfEncompassingEncounterId ProgressNote2ComponentOfEncompassingEncounterEffectiveTime ProgressNote2ComponentOfEncompassingEncounterLocation ProgressNote2ComponentOfEncompassingEncounter' templateId.root='2.16.840.1.113883.10.20.22.1.9' templateId.extension='2015-08-01' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ProgressNote2Code='ProgressNote2CodeP' constraints.validation.warning='ProgressNote2DocumentationOf ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow ProgressNote2DocumentationOfServiceEventEffectiveTime' constraints.validation.info='ProgressNote2AssessmentSection ProgressNote2PlanOfTreatmentSection2 ProgressNote2AssessmentAndPlanSection2 ProgressNote2AllergiesSectionEntriesOptional2 ProgressNote2ChiefComplaintSection ProgressNote2InterventionsSection2 ProgressNote2InstructionsSection2 ProgressNote2MedicationsSectionEntriesOptional2 ProgressNote2ObjectiveSection ProgressNote2PhysicalExamSection2 ProgressNote2ProblemSectionEntriesOptional2 ProgressNote2ResultsSectionEntriesOptional2 ProgressNote2ReviewOfSystemsSection ProgressNote2SubjectiveSection ProgressNote2VitalSignsSectionEntriesOptional2 ProgressNote2NutritionSection' constraints.validation.query='ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProgressNote2DocumentationOfServiceEventTemplateId ProgressNote2DocumentationOfServiceEventClassCode ProgressNote2DocumentationOfServiceEventEffectiveTime ProgressNote2DocumentationOfServiceEvent ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility ProgressNote2ComponentOfEncompassingEncounterId ProgressNote2ComponentOfEncompassingEncounterEffectiveTime ProgressNote2ComponentOfEncompassingEncounterLocation ProgressNote2ComponentOfEncompassingEncounter'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2DocumentationOf constraints.validation.error='ProgressNote2DocumentationOfServiceEvent'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2DocumentationOfServiceEvent constraints.validation.error='ProgressNote2DocumentationOfServiceEventTemplateId ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProgressNote2DocumentationOfServiceEventClassCode' templateId.root='2.16.840.1.113883.10.20.21.3.1' classCode='PCPR' constraints.validation.warning='ProgressNote2DocumentationOfServiceEventEffectiveTime ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow' constraints.validation.query='ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2DocumentationOfServiceEvent constraints.validation.error='ProgressNote2DocumentationOfServiceEventTemplateId ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth ProgressNote2DocumentationOfServiceEventClassCode' templateId.root='2.16.840.1.113883.10.20.21.3.1' classCode='PCPR' constraints.validation.warning='ProgressNote2DocumentationOfServiceEventEffectiveTime ServiceEventProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow' constraints.validation.query='ServiceEventProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDT constraints.validation.warning='ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOf constraints.validation.error='ProgressNote2ComponentOfEncompassingEncounter'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOfEncompassingEncounter constraints.validation.error='ProgressNote2ComponentOfEncompassingEncounterId ProgressNote2ComponentOfEncompassingEncounterEffectiveTime ProgressNote2ComponentOfEncompassingEncounterLocation ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow' constraints.validation.query='ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOfEncompassingEncounter constraints.validation.error='ProgressNote2ComponentOfEncompassingEncounterId ProgressNote2ComponentOfEncompassingEncounterEffectiveTime ProgressNote2ComponentOfEncompassingEncounterLocation EncompassingEncounterProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow' constraints.validation.query='EncompassingEncounterProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOfEncompassingEncounterLocation constraints.validation.error='ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility constraints.validation.error='ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDT constraints.validation.error='ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow'"
@@ -237,7 +237,8 @@ public interface ProgressNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional2))'"
 	 * @generated
 	 */
-	boolean validateProgressNote2ProblemSectionEntriesOptional2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProgressNote2ProblemSectionEntriesOptional2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,7 +250,8 @@ public interface ProgressNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional2))'"
 	 * @generated
 	 */
-	boolean validateProgressNote2ResultsSectionEntriesOptional2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProgressNote2ResultsSectionEntriesOptional2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -323,8 +325,8 @@ public interface ProgressNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.width.oclIsUndefined() xor not effectiveTime.high.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -397,7 +399,7 @@ public interface ProgressNote2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null).location->excluding(null).healthCareFacility->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null).location->excluding(null).healthCareFacility->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (( not id->isEmpty()) ))'"
 	 * @generated
 	 */
 	boolean validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId(
@@ -413,8 +415,8 @@ public interface ProgressNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null).location->excluding(null)->reject(healthCareFacility->one(healthCareFacility : cda::HealthCareFacility | not healthCareFacility.oclIsUndefined() and healthCareFacility.oclIsKindOf(cda::HealthCareFacility)))'"
 	 * @generated
 	 */
-	boolean validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -423,7 +425,7 @@ public interface ProgressNote2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (( not id->isEmpty()) ))'"
 	 * @generated
 	 */
 	boolean validateProgressNote2ComponentOfEncompassingEncounterId(DiagnosticChain diagnostics,

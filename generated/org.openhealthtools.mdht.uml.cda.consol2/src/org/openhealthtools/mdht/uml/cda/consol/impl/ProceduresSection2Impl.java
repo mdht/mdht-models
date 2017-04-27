@@ -7,31 +7,24 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSection2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedures Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -186,7 +179,8 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
@@ -196,9 +190,33 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionEntriesOptionalProcedureActivityProcedure2(DiagnosticChain diagnostics,
+	public boolean validateProceduresSectionEntriesOptionalProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure2(
+		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProceduresSectionEntriesOptionalProcedureActivityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProceduresSectionEntriesOptionalProcedureActivityAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityAct(
 			this, diagnostics, context);
 	}
 

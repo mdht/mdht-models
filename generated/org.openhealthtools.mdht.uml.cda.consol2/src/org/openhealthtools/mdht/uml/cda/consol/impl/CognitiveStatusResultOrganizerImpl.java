@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -23,8 +23,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CognitiveStatusResultO
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Cognitive Status Result Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -65,21 +63,8 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<CognitiveStatusResultObservation> getCognitiveStatusResultObservations() {
-		return CognitiveStatusResultOrganizerOperations.getCognitiveStatusResultObservations(this);
+	public EList<CognitiveStatusResultObservation> getConsolCognitiveStatusResultObservations() {
+		return CognitiveStatusResultOrganizerOperations.getConsolCognitiveStatusResultObservations(this);
 	}
 
 	/**
@@ -150,6 +135,17 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	@Override
 	public boolean validateResultOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerResultObservation(
+			this, diagnostics, context);
 	}
 
 	/**

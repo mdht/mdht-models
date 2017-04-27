@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.eclipse.mdht</groupId>
+	<artifactId>cda-runtime</artifactId>
+	<version>2.5.16.BUILD-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Model Driven Health Tools CDA Runtime</name>
+	<description>Model Driven Health Tools CDA Runtime</description>
+	<url>https://projects.eclipse.org/projects/modeling.mdht</url>
+
+	<licenses>
+		<license>
+			<name>Eclipse</name>
+			<url>https://www.eclipse.org/legal/epl-v10.html</url>
+		</license>
+	</licenses>
+
+	<scm />
+
+
+
+	<developers />
+
+
+
+	<properties />
+
+
+
+	<distributionManagement>
+		<repository>
+			<id>cdatools.com</id>
+			<name>cdatools.com-releases</name>
+			<url>http://www.cdatools.com:8081/artifactory/libs-release-local</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>cdatools.com</id>
+			<name>cdatools.com-snapshots</name>
+			<url>http://www.cdatools.com:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>cdatoolsRelease</id>
+			<name>cdatools.com-releases</name>
+			<url>http://www.cdatools.com:8081/artifactory/ext-release-local</url>
+		</repository>
+		<repository>
+			<id>cdatoolsSnapshot</id>
+			<name>cdatools.com-snapshots</name>
+			<url>http://www.cdatools.com:8081/artifactory/libs-snapshot-local</url>
+		</repository>
+	</repositories>
+
+
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- Runtime dependencies for eclipse -->
+			<dependency>
+				<groupId>lpg.runtime.java</groupId>
+				<artifactId>lpg.runtime.java</artifactId>
+				<version>2.0.17.v201004271640</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.eclipse.emf.ecore.xmi</groupId>
+				<artifactId>org.eclipse.emf.ecore.xmi</artifactId>
+				<version>2.11.1.v20160208-0816</version>
+
+			</dependency>
+
+
+			<dependency>
+				<groupId>org.eclipse.emf.ecore</groupId>
+				<artifactId>org.eclipse.emf.ecore</artifactId>
+				<version>2.11.2.v20160208-0816</version>
+
+			</dependency>
+
+			<dependency>
+				<groupId>org.eclipse.emf.common</groupId>
+				<artifactId>org.eclipse.emf.common</artifactId>
+				<version>2.11.1.v20160208-0816</version>
+
+			</dependency>
+
+			<dependency>
+				<groupId>org.eclipse.ocl</groupId>
+				<artifactId>org.eclipse.ocl</artifactId>
+				<version>3.5.0.v20150521-1211</version>
+
+			</dependency>
+
+			<dependency>
+				<groupId>org.eclipse.ocl</groupId>
+				<artifactId>org.eclipse.ocl</artifactId>
+				<version>3.5.0.v20150521-1211</version>
+
+			</dependency>
+
+			<dependency>
+				<groupId>org.eclipse.ocl.common</groupId>
+				<artifactId>org.eclipse.ocl.common</artifactId>
+				<version>1.3.0.v20150519-0914</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.eclipse.ocl.ecore</groupId>
+				<artifactId>org.eclipse.ocl.ecore</artifactId>
+				<version>3.5.0.v20150525-1635</version>
+
+			</dependency>
+
+			<dependency>
+				<groupId>org.eclipse.uml2</groupId>
+				<artifactId>org.eclipse.uml2.types</artifactId>
+				<version>2.0.0.v20160201-0816</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openhealthtools.mdht</groupId>
+				<artifactId>org.openhealthtools.mdht.emf.runtime</artifactId>
+				<version>2.5.19-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openhealthtools.mdht</groupId>
+				<artifactId>org.openhealthtools.mdht.uml.hl7.vocab</artifactId>
+				<version>2.5.19-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openhealthtools.mdht</groupId>
+				<artifactId>org.openhealthtools.mdht.uml.hl7.datatypes</artifactId>
+				<version>2.5.19-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openhealthtools.mdht</groupId>
+				<artifactId>org.openhealthtools.mdht.uml.hl7.rim</artifactId>
+				<version>2.5.19-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.openhealthtools.mdht.cda</groupId>
+				<artifactId>org.openhealthtools.mdht.uml.cda</artifactId>
+				<version>2.5.19-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openhealthtools.mdht.cda</groupId>
+				<artifactId>org.openhealthtools.mdht.uml.cda.cdt</artifactId>
+				<version>2.5.16-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openhealthtools.mdht.cda</groupId>
+				<artifactId>org.openhealthtools.mdht.uml.cda.ccd</artifactId>
+				<version>2.5.16-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openhealthtools.mdht.cda</groupId>
+				<artifactId>org.openhealthtools.mdht.uml.cda.ihe</artifactId>
+				<version>2.5.16-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openhealthtools.mdht.cda</groupId>
+				<artifactId>org.openhealthtools.mdht.uml.cda.hitsp</artifactId>
+				<version>2.5.16-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openhealthtools.mdht.cda</groupId>
+				<artifactId>org.openhealthtools.mdht.uml.cda.consol</artifactId>
+				<version>2.5.16-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openhealthtools.mdht.cda</groupId>
+				<artifactId>org.openhealthtools.mdht.uml.cda.clondata</artifactId>
+				<version>0.3.0-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openhealthtools.mdht.cda</groupId>
+				<artifactId>org.openhealthtools.mdht.uml.cda.qrdoc</artifactId>
+				<version>0.3.0-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openhealthtools.mdht.cda</groupId>
+				<artifactId>org.openhealthtools.mdht.uml.cda.qfdd</artifactId>
+				<version>0.3.0-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
+		

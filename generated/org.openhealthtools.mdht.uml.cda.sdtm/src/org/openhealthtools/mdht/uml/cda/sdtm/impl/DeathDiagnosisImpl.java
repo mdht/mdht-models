@@ -2,20 +2,12 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
 import org.openhealthtools.mdht.uml.cda.sdtm.DeathDiagnosis;
@@ -24,19 +16,16 @@ import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
 import org.openhealthtools.mdht.uml.cda.sdtm.ResultCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.DeathDiagnosisOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Death Diagnosis</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class DeathDiagnosisImpl extends ObservationImpl implements DeathDiagnosis {
+public class DeathDiagnosisImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements DeathDiagnosis {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -273,7 +262,7 @@ public class DeathDiagnosisImpl extends ObservationImpl implements DeathDiagnosi
 	 */
 	@Override
 	public DeathDiagnosis init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -281,8 +270,8 @@ public class DeathDiagnosisImpl extends ObservationImpl implements DeathDiagnosi
      * @generated
      */
     @Override
-	public DeathDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public DeathDiagnosis init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //DeathDiagnosisImpl

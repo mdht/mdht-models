@@ -1,9 +1,5 @@
 
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 
@@ -11,14 +7,20 @@ package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.operations.CoronerCaseTransferOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 
 /**
@@ -31,11 +33,11 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer#validateCoronerCaseTransferCoronerCase(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Case Transfer Coroner Case</em>}</li>
  * </ul>
  * </p>
  *
@@ -102,6 +104,9 @@ public void testValidateCoronerCaseTransferTemplateId() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -176,6 +181,9 @@ public void testValidateCoronerCaseTransferClassCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -189,6 +197,83 @@ public void testValidateCoronerCaseTransferClassCode() {
 		};
 
 		validateCoronerCaseTransferClassCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateCoronerCaseTransferMoodCode() {
+			OperationsTestCase<CoronerCaseTransfer> validateCoronerCaseTransferMoodCodeTestCase = new OperationsTestCase<CoronerCaseTransfer>(
+			"validateCoronerCaseTransferMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_CORONER_CASE_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(CoronerCaseTransfer target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CoronerCaseTransfer target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return CoronerCaseTransferOperations.validateCoronerCaseTransferMoodCode(
+					(CoronerCaseTransfer) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCoronerCaseTransferMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -250,6 +335,9 @@ public void testValidateCoronerCaseTransferCodeP() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -324,6 +412,9 @@ public void testValidateCoronerCaseTransferCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -337,154 +428,6 @@ public void testValidateCoronerCaseTransferCode() {
 		};
 
 		validateCoronerCaseTransferCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateCoronerCaseTransferId() {
-			OperationsTestCase<CoronerCaseTransfer> validateCoronerCaseTransferIdTestCase = new OperationsTestCase<CoronerCaseTransfer>(
-			"validateCoronerCaseTransferId",
-			operationsForOCL.getOCLValue("VALIDATE_CORONER_CASE_TRANSFER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(CoronerCaseTransfer target) {
-
-			}
-
-			@Override
-			protected void updateToPass(CoronerCaseTransfer target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return CoronerCaseTransferOperations.validateCoronerCaseTransferId(
-					(CoronerCaseTransfer) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCoronerCaseTransferIdTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateCoronerCaseTransferMoodCode() {
-			OperationsTestCase<CoronerCaseTransfer> validateCoronerCaseTransferMoodCodeTestCase = new OperationsTestCase<CoronerCaseTransfer>(
-			"validateCoronerCaseTransferMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_CORONER_CASE_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(CoronerCaseTransfer target) {
-
-			}
-
-			@Override
-			protected void updateToPass(CoronerCaseTransfer target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return CoronerCaseTransferOperations.validateCoronerCaseTransferMoodCode(
-					(CoronerCaseTransfer) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCoronerCaseTransferMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -549,6 +492,9 @@ public void testValidateCoronerCaseTransferValue() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -562,6 +508,83 @@ public void testValidateCoronerCaseTransferValue() {
 		};
 
 		validateCoronerCaseTransferValueTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateCoronerCaseTransferCoronerCase() {
+			OperationsTestCase<CoronerCaseTransfer> validateCoronerCaseTransferCoronerCaseTestCase = new OperationsTestCase<CoronerCaseTransfer>(
+			"validateCoronerCaseTransferCoronerCase",
+			operationsForOCL.getOCLValue("VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(CoronerCaseTransfer target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CoronerCaseTransfer target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return CoronerCaseTransferOperations.validateCoronerCaseTransferCoronerCase(
+					(CoronerCaseTransfer) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCoronerCaseTransferCoronerCaseTestCase.doValidationTest();
 }		
 
 
@@ -590,6 +613,7 @@ public void testValidateCoronerCaseTransferValue() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<CoronerCaseTransfer> {
+		@Override
 		public CoronerCaseTransfer create() {		
 			return VsdrFactory.eINSTANCE.createCoronerCaseTransfer();
 		}

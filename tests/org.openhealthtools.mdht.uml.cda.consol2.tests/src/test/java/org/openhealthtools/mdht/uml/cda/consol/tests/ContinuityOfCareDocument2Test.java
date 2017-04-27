@@ -16,28 +16,28 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedAuthor;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.Author;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.DocumentationOf;
+import org.eclipse.mdht.uml.cda.Organization;
+import org.eclipse.mdht.uml.cda.Performer1;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.ServiceEvent;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.ActClassRoot;
+import org.eclipse.mdht.uml.hl7.vocab.NullFlavor;
+import org.eclipse.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.Author;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.DocumentationOf;
-import org.openhealthtools.mdht.uml.cda.Organization;
-import org.openhealthtools.mdht.uml.cda.Performer1;
-import org.openhealthtools.mdht.uml.cda.Person;
-import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ContinuityOfCareDocument2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,8 +115,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	@Test
 	public void testValidateContinuityOfCareDocument2CodeP() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2CodePTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
-			"validateContinuityOfCareDocument2CodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateContinuityOfCareDocument2CodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -190,8 +190,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	@Test
 	public void testValidateContinuityOfCareDocument2Author() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2AuthorTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
-			"validateContinuityOfCareDocument2Author",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateContinuityOfCareDocument2Author", operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -225,7 +225,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOf() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOf",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -259,7 +260,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2AllergiesSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2AllergiesSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2AllergiesSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -293,7 +295,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2MedicationsSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2MedicationsSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2MedicationsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -327,7 +330,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2ProblemSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2ProblemSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2ProblemSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -361,7 +365,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2ProceduresSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2ProceduresSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2ProceduresSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -395,7 +400,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2ResultsSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2ResultsSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2ResultsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -429,7 +435,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -463,7 +470,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2EncountersSectionEntriesOptional2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2EncountersSectionEntriesOptional2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2EncountersSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -497,7 +505,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2FunctionalStatusSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2FunctionalStatusSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2FunctionalStatusSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -531,7 +540,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2ImmunizationsSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2ImmunizationsSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2ImmunizationsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -565,7 +575,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2MedicalEquipmentSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2MedicalEquipmentSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2MedicalEquipmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -599,7 +610,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2PayersSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2PayersSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2PayersSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -633,7 +645,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2PlanOfTreatmentSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2PlanOfTreatmentSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2PlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -667,7 +680,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2SocialHistorySection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2SocialHistorySection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2SocialHistorySection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -701,7 +715,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2VitalSignsSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2VitalSignsSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2VitalSignsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -735,7 +750,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2MentalStatusSection() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2MentalStatusSectionTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2MentalStatusSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -776,7 +792,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2NutritionSection() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2NutritionSectionTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2NutritionSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -817,7 +834,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2FamilyHistorySection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2FamilyHistorySection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2FamilyHistorySection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -851,7 +869,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganizationTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -947,7 +966,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganizationTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -995,7 +1015,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2AuthorAssignedAuthor() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2AuthorAssignedAuthorTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2AuthorAssignedAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1033,7 +1054,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLowTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1073,7 +1095,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHighTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1113,39 +1136,650 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifierTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			private static final String NPI_ID = "2.16.840.1.113883.4.6";
+
+			private static final String INCORRECT_NPI_ID = "2.16.777.7.777777.7.7";
+
+			private static final String EXT_VAL = "ValueIsIrrelevant";
+
 			@Override
-			protected void updateToFail(ContinuityOfCareDocument2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				Person ap = CDAFactory.eINSTANCE.createPerson();
-				ae.setAssignedPerson(ap);
-				ae.getIds().add(DatatypesFactory.eINSTANCE.createII("Not2.16.840.1.113883.4.6", "12345"));
-				perf.setAssignedEntity(ae);
-				se.getPerformers().add(perf);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// f1
+						// <assignedPerson> exists and there is one id and the id/@root does NOT = '2.16.840.1.113883.4.6'
+						// and the id's/@extension exists)
+						// expect fail because assigned person exists and the only root (NPI) is incorrect
+						System.out.println("\nf1");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// f2
+						// -<assignedPerson> exists and there is one id and (the id/@root = '2.16.840.1.113883.4.6'
+						// and the only id/@extension DOES NOT EXIST)
+						// expect fail because assigned person exists and the only id/@extension does not exist
+						System.out.println("\nf2");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// f3
+						// -<assignedPerson> exists and there is one id and (the id/@root does NOT = '2.16.840.1.113883.4.6'
+						// and the id's/@extension DOES NOT EXIST)
+						// expect fail because assigned person exists and the root (NPI) is incorrect and
+						// the only id/@extension does not exist
+						System.out.println("\nf3");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				// null testing
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// fn1
+						// one id
+						// nullFlavor replacing the root instead of the extension
+						System.out.println("\nfn1");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						II id = DatatypesFactory.eINSTANCE.createII();
+						id.setExtension(EXT_VAL);
+						ae.getIds().add(id);
+						ae.getIds().get(0).setNullFlavor(NullFlavor.UNK);
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// fn2
+						// one id
+						// incorrect NPI in the root mixed with a null flavor
+						System.out.println("\nfn2 \nincorrect NPI in the root mixed with a null flavor");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID));
+						ae.getIds().get(0).setNullFlavor(NullFlavor.UNK);
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				// old tests
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// one id only
+						// Id is NOT equal to 2.16.840.1.113883.4.6 (or does not have a nullFlavor set instead)
+						// and does not have an @extension (has assignedPerson)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("111111"));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// one id only
+						// id does not have an attribute root or extension (or any attribute) (or does not have a nullFlavor set instead)
+						// (has assignedPerson)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// two ids
+						// Has Id but has two id's with a root each (has assignedPerson) (neither of which have a valid NPI)
+						// It should fail, but under the hood, it should only be failing due to not having at least one valid id as opposed to failing
+						// both specifically
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("111111"));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("222222"));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// two ids
+						// Has an assignedPerson element and the assignedEntity has two ids (neither of which have a valid NPI)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII());
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
 			}
 
 			@Override
-			protected void updateToPass(ContinuityOfCareDocument2 target) {
-				target.getDocumentationOfs().clear();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				Person ap = CDAFactory.eINSTANCE.createPerson();
-				ae.setAssignedPerson(ap);
-				ae.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.4.6", "12345"));
-				perf.setAssignedEntity(ae);
-				se.getPerformers().add(perf);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// p1
+						// one id only
+						// <assignedPerson> exists and there is an id and (the id/@root = '2.16.840.1.113883.4.6'
+						// and the id's/@extension exists)
+						System.out.println("\np1");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// p2
+						// NO id
+						// If there is no id, none of the checks can be enforced, instead, that will be caught by:
+						// Consol Assigned Author SHALL contain at least one [1..*] id (CONF:5449)
+						// If there's an assignedPerson element and the assignedAuthor has zero (no) ids
+						System.out.println("\np2");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// p3
+						// one id only
+						// *NO ASSIGNED PERSON
+						// If <assignedPerson> DOES NOT exist (we don't enforce the id/@root or id/@extension NPI warning at all
+						// For the example we have an incorrect NPI, which is NOT checked.
+						System.out.println("\np3");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				// nullFlavor tests
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// pn1
+						// one id only
+						// correct NPI root and a nullFlavor at the same time (no extension)
+						System.out.println("\npn1");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						II id = DatatypesFactory.eINSTANCE.createII();
+						id.setRoot(NPI_ID);
+						id.setNullFlavor(NullFlavor.UNK);
+						ae.getIds().add(id);
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// pn2
+						// one id only
+						// nullFlavor in id (and nothing else in id), has assignedPerson
+						System.out.println("\npn2");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NullFlavor.ASKU));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				// multiple id tests (see errata 1015)
+				// http://www.hl7.org/dstucomments/showdetail_comment.cfm?commentid=1015
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// DSTU:1015-1
+						// two valid ids
+						// <assignedPerson> exists and there are 2 ids
+						// the id/@root both = '2.16.840.1.113883.4.6' and the id/@extension both exist
+						System.out.println("\nDSTU:1015-1");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// DSTU:1015-2
+						// three valid ids
+						// <assignedPerson> exists and there are 3 ids
+						// the id/@root all = '2.16.840.1.113883.4.6' and the id/@extension all exist
+						System.out.println("\nDSTU:1015-2");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// Note: This is the most important test for verifying errata 1015 is working
+						// DSTU:1015-3
+						// one valid id, one invalid id, only one valid id is needed to pass
+						// <assignedPerson> exists and there are 2 ids
+						// one id/@root = '2.16.840.1.113883.4.6' and the other is invalid
+						// the id/@extension both exist
+						System.out.println("\nDSTU:1015-3");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// DSTU:1015-4
+						// one valid id, two invalid ids, only one valid id is needed to pass
+						// <assignedPerson> exists and there are 3 ids
+						// one id/@root = '2.16.840.1.113883.4.6' and the other 2 are invalid
+						// the id/@extension all exist
+						System.out.println("\nDSTU:1015-4");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID, EXT_VAL));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// DSTU:1015-5
+						// two ids
+						// 1st id: incorrect NPI and has extension
+						// 2nd id: correct NPI root and a nullFlavor at the same time (no extension)
+						System.out.println("\nDSTU:1015-5");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID, EXT_VAL));
+						II id2 = DatatypesFactory.eINSTANCE.createII();
+						id2.setRoot(NPI_ID);
+						id2.setNullFlavor(NullFlavor.UNK);
+						ae.getIds().add(id2);
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// DSTU:1015-6
+						// two ids
+						// 1st and second id are the same (except nullFlavor type):
+						// nullFlavor in id (and nothing else in id), has assignedPerson
+						System.out.println("\nDSTU:1015-6");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NullFlavor.ASKU));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NullFlavor.UNK));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				// *no assignedPerson tests which negates the requirements
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// one id only
+						// Id is equal to 2.16.840.1.113883.4.6 (without assignedPerson)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.4.6"));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// one id only
+						// nullFlavor on Id without assignedPerson
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NullFlavor.ASKU));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// one id only
+						// (*no assignedPerson) and no extension
+						// Id is NOT equal to 2.16.840.1.113883.4.6 (or does not have a nullFlavor set instead)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("111111"));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// one id only
+						// Id does not have an attribute root (or any attribute) (or does not have a nullFlavor set instead) and no extension
+						// but *no assignedPerson
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// two incorrect ids
+						// Has Id but has two roots (*no assignedPerson)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("111111"));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("222222"));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// one empty id element but no assignedPerson to enforce rule
+						// Has Id but has zero roots (*no assignedPerson)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
 			}
 
 			@Override
@@ -1168,13 +1802,14 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityIdTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ContinuityOfCareDocument2 target) {
+				// no id
 				target.init();
-
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
@@ -1186,18 +1821,43 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 			}
 
 			@Override
-			protected void updateToPass(ContinuityOfCareDocument2 target) {
-				target.getDocumentationOfs().clear();
+			public void addPassTests() {
 
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.4.6", "12345"));
-				perf.setAssignedEntity(ae);
-				se.getPerformers().add(perf);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// 1 id only
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.4.6", "5555555555"));
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// more than 1 id
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.4.6", "5555555555"));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.9.9", "54321"));
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
 			}
 
 			@Override
@@ -1220,7 +1880,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPersonTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1274,8 +1935,15 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCodeTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific performer type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
 
 			@Override
 			protected void updateToFail(ContinuityOfCareDocument2 target) {
@@ -1325,7 +1993,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1373,7 +2042,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventClassCode() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventClassCodeTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1415,7 +2085,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTimeTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1457,7 +2128,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventPerformer() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventPerformer",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1499,7 +2171,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEvent() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEvent",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1741,8 +2414,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

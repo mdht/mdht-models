@@ -16,15 +16,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProgressTowardGoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProgressTowardGoalObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
  * <!-- begin-user-doc -->
@@ -60,7 +60,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	public void testValidateProgressTowardGoalObservationTemplateId() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationTemplateIdTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
 			"validateProgressTowardGoalObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -94,7 +95,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	public void testValidateProgressTowardGoalObservationClassCode() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationClassCodeTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
 			"validateProgressTowardGoalObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -127,8 +129,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProgressTowardGoalObservationMoodCode() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationMoodCodeTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
-			"validateProgressTowardGoalObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressTowardGoalObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -161,8 +163,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProgressTowardGoalObservationId() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationIdTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
-			"validateProgressTowardGoalObservationId",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressTowardGoalObservationId", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -198,8 +200,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProgressTowardGoalObservationCodeP() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationCodePTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
-			"validateProgressTowardGoalObservationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressTowardGoalObservationCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -232,8 +234,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProgressTowardGoalObservationCode() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationCodeTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
-			"validateProgressTowardGoalObservationCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressTowardGoalObservationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -276,7 +278,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	public void testValidateProgressTowardGoalObservationStatusCode() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationStatusCodeTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
 			"validateProgressTowardGoalObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -313,7 +316,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	public void testValidateProgressTowardGoalObservationStatusCodeP() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationStatusCodePTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
 			"validateProgressTowardGoalObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -346,8 +350,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProgressTowardGoalObservationValue() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationValueTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
-			"validateProgressTowardGoalObservationValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressTowardGoalObservationValue", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -383,8 +387,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProgressTowardGoalObservationValueP() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationValuePTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
-			"validateProgressTowardGoalObservationValueP",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressTowardGoalObservationValueP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

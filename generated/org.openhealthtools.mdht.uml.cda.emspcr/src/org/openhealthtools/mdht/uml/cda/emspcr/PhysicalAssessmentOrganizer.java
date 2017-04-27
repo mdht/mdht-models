@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Organizer;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +35,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPhysicalAssessmentOrganizerMentalStatusAssessmentComponent constraints.validation.info='PhysicalAssessmentOrganizerMentalStatusAssessmentComponentObservation'"
  * @generated
  */
-public interface PhysicalAssessmentOrganizer extends Organizer {
+public interface PhysicalAssessmentOrganizer extends org.eclipse.mdht.uml.cda.Organizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -240,9 +233,9 @@ public interface PhysicalAssessmentOrganizer extends Organizer {
 	public PhysicalAssessmentOrganizer init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PhysicalAssessmentOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public PhysicalAssessmentOrganizer init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // PhysicalAssessmentOrganizer

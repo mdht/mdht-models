@@ -2,20 +2,12 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.AssayQuantitation;
 import org.openhealthtools.mdht.uml.cda.sdtm.BodySystemorOrganClass;
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
@@ -35,19 +27,16 @@ import org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectFinding;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.Toxicity;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.StudySubjectFindingOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Study Subject Finding</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class StudySubjectFindingImpl extends ObservationImpl implements StudySubjectFinding {
+public class StudySubjectFindingImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements StudySubjectFinding {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -574,7 +563,7 @@ public class StudySubjectFindingImpl extends ObservationImpl implements StudySub
 	 */
 	@Override
 	public StudySubjectFinding init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -582,8 +571,8 @@ public class StudySubjectFindingImpl extends ObservationImpl implements StudySub
      * @generated
      */
     @Override
-	public StudySubjectFinding init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public StudySubjectFinding init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //StudySubjectFindingImpl

@@ -1,19 +1,21 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.ObstetricProcedure;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.ObstetricProcedureOperations;
 
 /**
@@ -43,6 +45,7 @@ public class ObstetricProcedureTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateObstetricProcedureTemplateId() {
 		OperationsTestCase<ObstetricProcedure> validateObstetricProcedureTemplateIdTestCase = new OperationsTestCase<ObstetricProcedure>(
 			"validateObstetricProcedureTemplateId",
@@ -77,6 +80,7 @@ public class ObstetricProcedureTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateObstetricProcedureClassCode() {
 		OperationsTestCase<ObstetricProcedure> validateObstetricProcedureClassCodeTestCase = new OperationsTestCase<ObstetricProcedure>(
 			"validateObstetricProcedureClassCode",
@@ -111,6 +115,7 @@ public class ObstetricProcedureTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateObstetricProcedureMoodCode() {
 		OperationsTestCase<ObstetricProcedure> validateObstetricProcedureMoodCodeTestCase = new OperationsTestCase<ObstetricProcedure>(
 			"validateObstetricProcedureMoodCode",
@@ -145,6 +150,7 @@ public class ObstetricProcedureTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateObstetricProcedureNegationInd() {
 		OperationsTestCase<ObstetricProcedure> validateObstetricProcedureNegationIndTestCase = new OperationsTestCase<ObstetricProcedure>(
 			"validateObstetricProcedureNegationInd",
@@ -179,6 +185,7 @@ public class ObstetricProcedureTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateObstetricProcedureCode() {
 		OperationsTestCase<ObstetricProcedure> validateObstetricProcedureCodeTestCase = new OperationsTestCase<ObstetricProcedure>(
 			"validateObstetricProcedureCode",
@@ -213,6 +220,7 @@ public class ObstetricProcedureTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateObstetricProcedureCodeP() {
 		OperationsTestCase<ObstetricProcedure> validateObstetricProcedureCodePTestCase = new OperationsTestCase<ObstetricProcedure>(
 			"validateObstetricProcedureCodeP",
@@ -295,8 +303,7 @@ public class ObstetricProcedureTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

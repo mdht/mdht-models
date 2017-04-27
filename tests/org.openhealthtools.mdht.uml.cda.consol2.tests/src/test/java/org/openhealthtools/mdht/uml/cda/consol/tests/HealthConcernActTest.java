@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -16,19 +16,22 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Reference;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
+import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HealthConcernActOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,33 +48,28 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Act Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActActReferenceExtra(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Act Reference Extra</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActHealthConcernActErRefr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Health Concern Act Er Refr</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActHealthConcernActErComp(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Health Concern Act Er Comp</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActAssessmentScaleObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Assessment Scale Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActCognitiveAbilitiesObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Cognitive Abilities Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActFamilyHistoryOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Family History Organizer</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActMentalStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Mental Status Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActFamilyHistoryOrganizer2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Family History Organizer2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActNutritionAssessment(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Nutrition Assessment</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActNutritionAssessmentExtra(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Nutrition Assessment Extra</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActPregnancyObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Pregnancy Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActCaregiverCharacteristics(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Caregiver Characteristics</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActCulturalAndReligiousObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Cultural And Religious Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActCharacteristicsOfHomeEnvironment(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Characteristics Of Home Environment</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActNutritionalStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Nutritional Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActPatientPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Patient Priority Preference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActActReferenceExtra3(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Act Reference Extra3</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActEntryReferenceGeneral(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Entry Reference General</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActSelfCareActivities(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Self Care Activities</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActSensoryAndSpeechStatus(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Sensory And Speech Status</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActWoundObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Wound Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Provider Priority Preference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act External Document Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActSensoryStatus(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Sensory Status</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActLongitudinalCareWoundObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Longitudinal Care Wound Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActProblemObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Problem Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActAllergyObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Allergy Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActCognitiveStatusObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Cognitive Status Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActCognitiveStatusObservation2Extra(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Cognitive Status Observation2 Extra</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActCurrentSmokingStatus2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Current Smoking Status2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActMentalStatusObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Mental Status Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActSmokingStatusMeaningfulUse2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Smoking Status Meaningful Use2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActEncounterDiagnosis2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Encounter Diagnosis2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActFunctionalStatusObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Functional Status Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActHospitalAdmissionDiagnosis2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Hospital Admission Diagnosis2</em>}</li>
@@ -86,31 +84,26 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActProblemObservation2Support(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Problem Observation2 Support</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActResultOrganizer2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Result Organizer2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActProblemConcernAct2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Problem Concern Act2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getActReferences() <em>Get Act References</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getActReferenceExtras() <em>Get Act Reference Extras</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Reference Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#validateHealthConcernActReferenceExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act Reference External Document Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getAssessmentScaleObservations() <em>Get Assessment Scale Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getCognitiveAbilitiesObservations() <em>Get Cognitive Abilities Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getFamilyHistoryOrganizers() <em>Get Family History Organizers</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getMentalStatusObservations() <em>Get Mental Status Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getFamilyHistoryOrganizer2s() <em>Get Family History Organizer2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getNutritionAssessments() <em>Get Nutrition Assessments</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getNutritionAssessmentExtras() <em>Get Nutrition Assessment Extras</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getPregnancyObservations() <em>Get Pregnancy Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getCaregiverCharacteristicss() <em>Get Caregiver Characteristicss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getCulturalAndReligiousObservations() <em>Get Cultural And Religious Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getCharacteristicsOfHomeEnvironments() <em>Get Characteristics Of Home Environments</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getNutritionalStatusObservations() <em>Get Nutritional Status Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getPatientPriorityPreferences() <em>Get Patient Priority Preferences</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getActReferenceExtra3s() <em>Get Act Reference Extra3s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getEntryReferenceGenerals() <em>Get Entry Reference Generals</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getSelfCareActivitiess() <em>Get Self Care Activitiess</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getSensoryAndSpeechStatuss() <em>Get Sensory And Speech Statuss</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getWoundObservations() <em>Get Wound Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getProviderPriorityPreferences() <em>Get Provider Priority Preferences</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getExternalDocumentReferences() <em>Get External Document References</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getSensoryStatuss() <em>Get Sensory Statuss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getLongitudinalCareWoundObservations() <em>Get Longitudinal Care Wound Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getPriorityPreferences() <em>Get Priority Preferences</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getProblemObservation2s() <em>Get Problem Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getAllergyObservation2s() <em>Get Allergy Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getCognitiveStatusObservation2s() <em>Get Cognitive Status Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getCognitiveStatusObservation2Extras() <em>Get Cognitive Status Observation2 Extras</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getCurrentSmokingStatus2s() <em>Get Current Smoking Status2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getMentalStatusObservation2s() <em>Get Mental Status Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getSmokingStatusMeaningfulUse2s() <em>Get Smoking Status Meaningful Use2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getEncounterDiagnosis2s() <em>Get Encounter Diagnosis2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getFunctionalStatusObservation2s() <em>Get Functional Status Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct#getHospitalAdmissionDiagnosis2s() <em>Get Hospital Admission Diagnosis2s</em>}</li>
@@ -324,9 +317,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 			protected void updateToPass(HealthConcernAct target) {
 				target.init();
 				CD codeCD = DatatypesFactory.eINSTANCE.createCD();
-				codeCD.setCode("CONC");
-				codeCD.setCodeSystem("2.16.840.1.113883.5.6");
-				codeCD.setCodeSystemName("HL7ActClass");
+				codeCD.setCode("75310-3");
+				codeCD.setCodeSystem(LOINC_ID);
 				target.setCode(codeCD);
 			}
 
@@ -388,6 +380,39 @@ public class HealthConcernActTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHealthConcernActStatusCodeP() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActStatusCodePTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HealthConcernAct target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(HealthConcernAct target) {
+				target.setStatusCode(DatatypesFactory.eINSTANCE.createCS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HealthConcernActOperations.validateHealthConcernActStatusCodeP(
+					(HealthConcernAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernActStatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated
 	*/
 	@Test
@@ -428,10 +453,11 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateHealthConcernActActReference() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActActReferenceTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActActReference",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateHealthConcernActHealthConcernActErRefr() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActHealthConcernActErRefrTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActHealthConcernActErRefr",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_HEALTH_CONCERN_ACT_ER_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -444,20 +470,21 @@ public class HealthConcernActTest extends CDAValidationTest {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setAct(ConsolFactory.eINSTANCE.createActReference().init());
+				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
 				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return HealthConcernActOperations.validateHealthConcernActActReference(
+				return HealthConcernActOperations.validateHealthConcernActHealthConcernActErRefr(
 					(HealthConcernAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateHealthConcernActActReferenceTestCase.doValidationTest();
+		validateHealthConcernActHealthConcernActErRefrTestCase.doValidationTest();
 	}
 
 	/**
@@ -465,10 +492,11 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateHealthConcernActActReferenceExtra() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActActReferenceExtraTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActActReferenceExtra",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_ACT_REFERENCE_EXTRA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateHealthConcernActHealthConcernActErComp() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActHealthConcernActErCompTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActHealthConcernActErComp",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_HEALTH_CONCERN_ACT_ER_COMP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -481,7 +509,7 @@ public class HealthConcernActTest extends CDAValidationTest {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				er.setAct(ConsolFactory.eINSTANCE.createActReference().init());
+				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
 				target.getEntryRelationships().add(er);
 
 			}
@@ -489,13 +517,13 @@ public class HealthConcernActTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return HealthConcernActOperations.validateHealthConcernActActReferenceExtra(
+				return HealthConcernActOperations.validateHealthConcernActHealthConcernActErComp(
 					(HealthConcernAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateHealthConcernActActReferenceExtraTestCase.doValidationTest();
+		validateHealthConcernActHealthConcernActErCompTestCase.doValidationTest();
 	}
 
 	/**
@@ -506,7 +534,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActAssessmentScaleObservation() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActAssessmentScaleObservationTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActAssessmentScaleObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -540,10 +569,11 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateHealthConcernActCognitiveAbilitiesObservation() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActCognitiveAbilitiesObservationTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActCognitiveAbilitiesObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_COGNITIVE_ABILITIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateHealthConcernActFamilyHistoryOrganizer2() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActFamilyHistoryOrganizer2TestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActFamilyHistoryOrganizer2",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -556,94 +586,20 @@ public class HealthConcernActTest extends CDAValidationTest {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createCognitiveAbilitiesObservation().init());
+				er.setOrganizer(ConsolFactory.eINSTANCE.createFamilyHistoryOrganizer2().init());
 				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return HealthConcernActOperations.validateHealthConcernActCognitiveAbilitiesObservation(
+				return HealthConcernActOperations.validateHealthConcernActFamilyHistoryOrganizer2(
 					(HealthConcernAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateHealthConcernActCognitiveAbilitiesObservationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHealthConcernActFamilyHistoryOrganizer() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActFamilyHistoryOrganizerTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActFamilyHistoryOrganizer",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HealthConcernAct target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HealthConcernAct target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setOrganizer(ConsolFactory.eINSTANCE.createFamilyHistoryOrganizer().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HealthConcernActOperations.validateHealthConcernActFamilyHistoryOrganizer(
-					(HealthConcernAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHealthConcernActFamilyHistoryOrganizerTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHealthConcernActMentalStatusObservation() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActMentalStatusObservationTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActMentalStatusObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_MENTAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HealthConcernAct target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HealthConcernAct target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createMentalStatusObservation().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HealthConcernActOperations.validateHealthConcernActMentalStatusObservation(
-					(HealthConcernAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHealthConcernActMentalStatusObservationTestCase.doValidationTest();
+		validateHealthConcernActFamilyHistoryOrganizer2TestCase.doValidationTest();
 	}
 
 	/**
@@ -653,8 +609,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActNutritionAssessment() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActNutritionAssessmentTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActNutritionAssessment",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActNutritionAssessment", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -688,48 +644,10 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateHealthConcernActNutritionAssessmentExtra() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActNutritionAssessmentExtraTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActNutritionAssessmentExtra",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_NUTRITION_ASSESSMENT_EXTRA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HealthConcernAct target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HealthConcernAct target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createNutritionAssessment().init());
-				target.getEntryRelationships().add(er);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HealthConcernActOperations.validateHealthConcernActNutritionAssessmentExtra(
-					(HealthConcernAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHealthConcernActNutritionAssessmentExtraTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
 	public void testValidateHealthConcernActPregnancyObservation() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActPregnancyObservationTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActPregnancyObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActPregnancyObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -766,7 +684,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActCaregiverCharacteristics() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActCaregiverCharacteristicsTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActCaregiverCharacteristics",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -803,7 +722,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActCulturalAndReligiousObservation() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActCulturalAndReligiousObservationTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActCulturalAndReligiousObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -840,7 +760,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActCharacteristicsOfHomeEnvironment() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActCharacteristicsOfHomeEnvironmentTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActCharacteristicsOfHomeEnvironment",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -877,7 +798,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActNutritionalStatusObservation() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActNutritionalStatusObservationTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActNutritionalStatusObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -911,10 +833,10 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateHealthConcernActPatientPriorityPreference() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActPatientPriorityPreferenceTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActPatientPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PATIENT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateHealthConcernActEntryReferenceGeneral() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActEntryReferenceGeneralTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActEntryReferenceGeneral", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_ENTRY_REFERENCE_GENERAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -927,44 +849,7 @@ public class HealthConcernActTest extends CDAValidationTest {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createPatientPriorityPreference().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HealthConcernActOperations.validateHealthConcernActPatientPriorityPreference(
-					(HealthConcernAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHealthConcernActPatientPriorityPreferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHealthConcernActActReferenceExtra3() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActActReferenceExtra3TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActActReferenceExtra3",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_ACT_REFERENCE_EXTRA3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HealthConcernAct target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HealthConcernAct target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setAct(ConsolFactory.eINSTANCE.createActReference().init());
+				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
 				target.getEntryRelationships().add(er);
 
 			}
@@ -972,13 +857,13 @@ public class HealthConcernActTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return HealthConcernActOperations.validateHealthConcernActActReferenceExtra3(
+				return HealthConcernActOperations.validateHealthConcernActEntryReferenceGeneral(
 					(HealthConcernAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateHealthConcernActActReferenceExtra3TestCase.doValidationTest();
+		validateHealthConcernActEntryReferenceGeneralTestCase.doValidationTest();
 	}
 
 	/**
@@ -988,8 +873,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActAuthorParticipation() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActAuthorParticipationTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1021,8 +906,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActSelfCareActivities() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActSelfCareActivitiesTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActSelfCareActivities",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActSelfCareActivities", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1055,10 +940,10 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateHealthConcernActSensoryAndSpeechStatus() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActSensoryAndSpeechStatusTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActSensoryAndSpeechStatus",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateHealthConcernActSensoryStatus() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActSensoryStatusTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActSensoryStatus",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1070,20 +955,20 @@ public class HealthConcernActTest extends CDAValidationTest {
 			protected void updateToPass(HealthConcernAct target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createSensoryAndSpeechStatus());
+				er.setObservation(ConsolFactory.eINSTANCE.createSensoryStatus());
 				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return HealthConcernActOperations.validateHealthConcernActSensoryAndSpeechStatus(
+				return HealthConcernActOperations.validateHealthConcernActSensoryStatus(
 					(HealthConcernAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateHealthConcernActSensoryAndSpeechStatusTestCase.doValidationTest();
+		validateHealthConcernActSensoryStatusTestCase.doValidationTest();
 	}
 
 	/**
@@ -1091,35 +976,38 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateHealthConcernActWoundObservation() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActWoundObservationTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActWoundObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateHealthConcernActLongitudinalCareWoundObservation() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActLongitudinalCareWoundObservationTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActLongitudinalCareWoundObservation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_LONGITUDINAL_CARE_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HealthConcernAct target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(HealthConcernAct target) {
+				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createWoundObservation().init());
+				er.setObservation(ConsolFactory.eINSTANCE.createLongitudinalCareWoundObservation().init());
 				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return HealthConcernActOperations.validateHealthConcernActWoundObservation(
+				return HealthConcernActOperations.validateHealthConcernActLongitudinalCareWoundObservation(
 					(HealthConcernAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateHealthConcernActWoundObservationTestCase.doValidationTest();
+		validateHealthConcernActLongitudinalCareWoundObservationTestCase.doValidationTest();
 	}
 
 	/**
@@ -1127,10 +1015,10 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateHealthConcernActProviderPriorityPreference() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActProviderPriorityPreferenceTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActProviderPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateHealthConcernActPriorityPreference() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActPriorityPreferenceTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActPriorityPreference", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1142,57 +1030,20 @@ public class HealthConcernActTest extends CDAValidationTest {
 			protected void updateToPass(HealthConcernAct target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createProviderPriorityPreference().init());
+				er.setObservation(ConsolFactory.eINSTANCE.createPriorityPreference().init());
 				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return HealthConcernActOperations.validateHealthConcernActProviderPriorityPreference(
+				return HealthConcernActOperations.validateHealthConcernActPriorityPreference(
 					(HealthConcernAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateHealthConcernActProviderPriorityPreferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHealthConcernActExternalDocumentReference() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActExternalDocumentReferenceTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActExternalDocumentReference",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HealthConcernAct target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected void updateToPass(HealthConcernAct target) {
-				target.getEntryRelationships().get(0).setAct(
-					ConsolFactory.eINSTANCE.createExternalDocumentReference().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HealthConcernActOperations.validateHealthConcernActExternalDocumentReference(
-					(HealthConcernAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHealthConcernActExternalDocumentReferenceTestCase.doValidationTest();
+		validateHealthConcernActPriorityPreferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -1202,8 +1053,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActProblemObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActProblemObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActProblemObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActProblemObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1240,8 +1091,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActAllergyObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActAllergyObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActAllergyObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActAllergyObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1275,10 +1126,11 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateHealthConcernActCognitiveStatusObservation2() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActCognitiveStatusObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActCognitiveStatusObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_COGNITIVE_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateHealthConcernActMentalStatusObservation2() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActMentalStatusObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActMentalStatusObservation2",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1299,13 +1151,13 @@ public class HealthConcernActTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return HealthConcernActOperations.validateHealthConcernActCognitiveStatusObservation2(
+				return HealthConcernActOperations.validateHealthConcernActMentalStatusObservation2(
 					(HealthConcernAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateHealthConcernActCognitiveStatusObservation2TestCase.doValidationTest();
+		validateHealthConcernActMentalStatusObservation2TestCase.doValidationTest();
 	}
 
 	/**
@@ -1313,48 +1165,11 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateHealthConcernActCognitiveStatusObservation2Extra() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActCognitiveStatusObservation2ExtraTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActCognitiveStatusObservation2Extra",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_COGNITIVE_STATUS_OBSERVATION2_EXTRA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HealthConcernAct target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HealthConcernAct target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createMentalStatusObservation2().init());
-				target.getEntryRelationships().add(er);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HealthConcernActOperations.validateHealthConcernActCognitiveStatusObservation2Extra(
-					(HealthConcernAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHealthConcernActCognitiveStatusObservation2ExtraTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHealthConcernActCurrentSmokingStatus2() {
-		OperationsTestCase<HealthConcernAct> validateHealthConcernActCurrentSmokingStatus2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActCurrentSmokingStatus2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_CURRENT_SMOKING_STATUS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateHealthConcernActSmokingStatusMeaningfulUse2() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActSmokingStatusMeaningfulUse2TestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActSmokingStatusMeaningfulUse2",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1369,19 +1184,18 @@ public class HealthConcernActTest extends CDAValidationTest {
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				er.setObservation(ConsolFactory.eINSTANCE.createSmokingStatusMeaningfulUse2().init());
 				target.getEntryRelationships().add(er);
-
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return HealthConcernActOperations.validateHealthConcernActCurrentSmokingStatus2(
+				return HealthConcernActOperations.validateHealthConcernActSmokingStatusMeaningfulUse2(
 					(HealthConcernAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateHealthConcernActCurrentSmokingStatus2TestCase.doValidationTest();
+		validateHealthConcernActSmokingStatusMeaningfulUse2TestCase.doValidationTest();
 	}
 
 	/**
@@ -1391,8 +1205,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActEncounterDiagnosis2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActEncounterDiagnosis2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActEncounterDiagnosis2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActEncounterDiagnosis2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1430,7 +1244,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActFunctionalStatusObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActFunctionalStatusObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActFunctionalStatusObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1468,7 +1283,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActHospitalAdmissionDiagnosis2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActHospitalAdmissionDiagnosis2TestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActHospitalAdmissionDiagnosis2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1506,7 +1322,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActPostprocedureDiagnosis2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActPostprocedureDiagnosis2TestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActPostprocedureDiagnosis2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1543,8 +1360,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActPreoperativeDiagnosis2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActPreoperativeDiagnosis2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActPreoperativeDiagnosis2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActPreoperativeDiagnosis2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1581,8 +1398,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActReactionObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActReactionObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActReactionObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActReactionObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1619,8 +1436,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActResultObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActResultObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActResultObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActResultObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1658,7 +1475,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActSocialHistoryObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActSocialHistoryObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActSocialHistoryObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1696,7 +1514,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActSubstanceOrDeviceAllergyObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActSubstanceOrDeviceAllergyObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActSubstanceOrDeviceAllergyObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1771,8 +1590,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActVitalSignObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActVitalSignObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActVitalSignObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActVitalSignObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1810,7 +1629,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActProblemObservation2Support() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActProblemObservation2SupportTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActProblemObservation2Support",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PROBLEM_OBSERVATION2_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_PROBLEM_OBSERVATION2_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1847,8 +1667,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActResultOrganizer2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActResultOrganizer2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActResultOrganizer2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActResultOrganizer2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1885,8 +1705,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActProblemConcernAct2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActProblemConcernAct2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActProblemConcernAct2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActProblemConcernAct2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1918,26 +1738,112 @@ public class HealthConcernActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
-	public void testGetActReferences() {
+	public void testValidateHealthConcernActReference() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActReferenceTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActReference",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-		HealthConcernAct target = objectFactory.create();
-		target.getActReferences();
+			@Override
+			protected void updateToFail(HealthConcernAct target) {
+				target.init();
+			}
 
+			@Override
+			protected void updateToPass(HealthConcernAct target) {
+				target.getReferences().add(CDAFactory.eINSTANCE.createReference());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HealthConcernActOperations.validateHealthConcernActReference(
+					(HealthConcernAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernActReferenceTestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
-	public void testGetActReferenceExtras() {
+	public void testValidateHealthConcernActReferenceTypeCode() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActReferenceTypeCodeTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActReferenceTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-		HealthConcernAct target = objectFactory.create();
-		target.getActReferenceExtras();
+			@Override
+			protected void updateToFail(HealthConcernAct target) {
+				target.init();
+				Reference ref = CDAFactory.eINSTANCE.createReference();
+				target.getReferences().add(ref);
+				ExternalDocumentReference edr = ConsolFactory.eINSTANCE.createExternalDocumentReference().init();
+				ref.setExternalDocument(edr);
+			}
 
+			@Override
+			protected void updateToPass(HealthConcernAct target) {
+				for (Reference r : target.getReferences()) {
+					r.setTypeCode(x_ActRelationshipExternalReference.REFR);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HealthConcernActOperations.validateHealthConcernActReferenceTypeCode(
+					(HealthConcernAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernActReferenceTypeCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHealthConcernActReferenceExternalDocumentReference() {
+		OperationsTestCase<HealthConcernAct> validateHealthConcernActReferenceExternalDocumentReferenceTestCase = new OperationsTestCase<HealthConcernAct>(
+			"validateHealthConcernActReferenceExternalDocumentReference",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HealthConcernAct target) {
+				target.init();
+				Reference ref = CDAFactory.eINSTANCE.createReference();
+				target.getReferences().add(ref);
+			}
+
+			@Override
+			protected void updateToPass(HealthConcernAct target) {
+				for (Reference r : target.getReferences()) {
+					r.setExternalDocument(ConsolFactory.eINSTANCE.createExternalDocumentReference().init());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HealthConcernActOperations.validateHealthConcernActReferenceExternalDocumentReference(
+					(HealthConcernAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernActReferenceExternalDocumentReferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -1957,34 +1863,10 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetCognitiveAbilitiesObservations() {
+	public void testGetFamilyHistoryOrganizer2s() {
 
 		HealthConcernAct target = objectFactory.create();
-		target.getCognitiveAbilitiesObservations();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetFamilyHistoryOrganizers() {
-
-		HealthConcernAct target = objectFactory.create();
-		target.getFamilyHistoryOrganizers();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetMentalStatusObservations() {
-
-		HealthConcernAct target = objectFactory.create();
-		target.getMentalStatusObservations();
+		target.getFamilyHistoryOrganizer2s();
 
 	}
 
@@ -1997,18 +1879,6 @@ public class HealthConcernActTest extends CDAValidationTest {
 
 		HealthConcernAct target = objectFactory.create();
 		target.getNutritionAssessments();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetNutritionAssessmentExtras() {
-
-		HealthConcernAct target = objectFactory.create();
-		target.getNutritionAssessmentExtras();
 
 	}
 
@@ -2077,22 +1947,10 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPatientPriorityPreferences() {
+	public void testGetEntryReferenceGenerals() {
 
 		HealthConcernAct target = objectFactory.create();
-		target.getPatientPriorityPreferences();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetActReferenceExtra3s() {
-
-		HealthConcernAct target = objectFactory.create();
-		target.getActReferenceExtra3s();
+		target.getEntryReferenceGenerals();
 
 	}
 
@@ -2113,10 +1971,10 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetSensoryAndSpeechStatuss() {
+	public void testGetSensoryStatuss() {
 
 		HealthConcernAct target = objectFactory.create();
-		target.getSensoryAndSpeechStatuss();
+		target.getSensoryStatuss();
 
 	}
 
@@ -2125,10 +1983,10 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetWoundObservations() {
+	public void testGetLongitudinalCareWoundObservations() {
 
 		HealthConcernAct target = objectFactory.create();
-		target.getWoundObservations();
+		target.getLongitudinalCareWoundObservations();
 
 	}
 
@@ -2137,22 +1995,10 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProviderPriorityPreferences() {
+	public void testGetPriorityPreferences() {
 
 		HealthConcernAct target = objectFactory.create();
-		target.getProviderPriorityPreferences();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetExternalDocumentReferences() {
-
-		HealthConcernAct target = objectFactory.create();
-		target.getExternalDocumentReferences();
+		target.getPriorityPreferences();
 
 	}
 
@@ -2185,10 +2031,10 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetCognitiveStatusObservation2s() {
+	public void testGetMentalStatusObservation2s() {
 
 		HealthConcernAct target = objectFactory.create();
-		target.getCognitiveStatusObservation2s();
+		target.getMentalStatusObservation2s();
 
 	}
 
@@ -2197,22 +2043,10 @@ public class HealthConcernActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetCognitiveStatusObservation2Extras() {
+	public void testGetSmokingStatusMeaningfulUse2s() {
 
 		HealthConcernAct target = objectFactory.create();
-		target.getCognitiveStatusObservation2Extras();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetCurrentSmokingStatus2s() {
-
-		HealthConcernAct target = objectFactory.create();
-		target.getCurrentSmokingStatus2s();
+		target.getSmokingStatusMeaningfulUse2s();
 
 	}
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="project">
+    <description>
+            This is a custom ANT build script which replaces references of \r\n with \n
+            in OCL annotations, enabling source code generated on Windows and Mac/Linux platforms
+            to be the same.
+    </description>
+    <target name="fixNewlines" description="Fixes newlines in OCL annotations">
+		
+		<!-- Ensure Windows newlines are used in the OCL statements, regardless of the platform MDHT is running on -->
+		<echo>Replacing non-Windows newlines with Windows newlines</echo>
+		<replaceregexp match="\\r\\n" replace="\\\\n" byline="true">
+			<fileset dir="src/">
+    			<include name="**/*.java"/>
+			</fileset>
+		</replaceregexp>
+    </target>
+</project>

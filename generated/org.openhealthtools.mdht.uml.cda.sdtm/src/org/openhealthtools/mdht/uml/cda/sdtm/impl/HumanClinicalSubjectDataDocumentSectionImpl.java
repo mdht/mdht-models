@@ -2,20 +2,12 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.AdverseEvent;
 import org.openhealthtools.mdht.uml.cda.sdtm.ClinicalEvent;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
@@ -33,19 +25,16 @@ import org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectIntervention;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubjectCharacteristic;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubjectElement;
 import org.openhealthtools.mdht.uml.cda.sdtm.Visit;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.HumanClinicalSubjectDataDocumentSectionOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Human Clinical Subject Data Document Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class HumanClinicalSubjectDataDocumentSectionImpl extends SectionImpl implements HumanClinicalSubjectDataDocumentSection {
+public class HumanClinicalSubjectDataDocumentSectionImpl extends org.eclipse.mdht.uml.cda.impl.SectionImpl implements HumanClinicalSubjectDataDocumentSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -462,7 +451,7 @@ public class HumanClinicalSubjectDataDocumentSectionImpl extends SectionImpl imp
 	 */
 	@Override
 	public HumanClinicalSubjectDataDocumentSection init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -470,8 +459,8 @@ public class HumanClinicalSubjectDataDocumentSectionImpl extends SectionImpl imp
      * @generated
      */
     @Override
-	public HumanClinicalSubjectDataDocumentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public HumanClinicalSubjectDataDocumentSection init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //HumanClinicalSubjectDataDocumentSectionImpl

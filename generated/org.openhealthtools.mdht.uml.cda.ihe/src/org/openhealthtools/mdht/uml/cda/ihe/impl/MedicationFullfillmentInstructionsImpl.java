@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.FulfillmentInstructionImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions;
@@ -26,37 +26,35 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.MedicationFullfillmentIns
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Fullfillment Instructions</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructionImpl implements
-		MedicationFullfillmentInstructions {
+public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructionImpl
+		implements MedicationFullfillmentInstructions {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MedicationFullfillmentInstructionsImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.MEDICATION_FULLFILLMENT_INSTRUCTIONS;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationFullfillmentInstructionsTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsTemplateId(
@@ -64,10 +62,10 @@ public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationFullfillmentInstructionsCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCodeP(
@@ -75,10 +73,10 @@ public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationFullfillmentInstructionsCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCode(
@@ -86,10 +84,10 @@ public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationFullfillmentInstructionsStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsStatusCode(
@@ -97,10 +95,10 @@ public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationFullfillmentInstructionsText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsText(
@@ -108,10 +106,10 @@ public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public MedicationFullfillmentInstructions init() {
 		return Initializer.Util.init(this);

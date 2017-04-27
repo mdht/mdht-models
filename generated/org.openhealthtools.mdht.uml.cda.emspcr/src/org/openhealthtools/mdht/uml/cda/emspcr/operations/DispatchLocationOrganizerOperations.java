@@ -11,19 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.DispatchLocationOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +36,14 @@ import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
  *
  * @generated
  */
-public class DispatchLocationOrganizerOperations extends OrganizerOperations {
+public class DispatchLocationOrganizerOperations extends org.eclipse.mdht.uml.cda.operations.OrganizerOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,7 +72,7 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,28 +88,38 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	public static boolean validateDispatchLocationOrganizerDispatchLocationNameRelationship(
 			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_ORGANIZER);
 			try {
-				VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationNameRelationship"),
-					new Object[] { dispatchLocationOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchLocationOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationOrganizerDispatchLocationNameRelationship"),
+						 new Object [] { dispatchLocationOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -133,7 +144,7 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,28 +160,38 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	public static boolean validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(
 			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_ORGANIZER);
 			try {
-				VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationLatitudeRelationship"),
-					new Object[] { dispatchLocationOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchLocationOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationOrganizerDispatchLocationLatitudeRelationship"),
+						 new Object [] { dispatchLocationOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -195,7 +216,7 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,28 +232,38 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	public static boolean validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(
 			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_ORGANIZER);
 			try {
-				VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationLongtudeRelationship"),
-					new Object[] { dispatchLocationOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchLocationOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationOrganizerDispatchLocationLongtudeRelationship"),
+						 new Object [] { dispatchLocationOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -257,7 +288,7 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,26 +304,38 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	public static boolean validateDispatchLocationOrganizerTemplateId(
 			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_ORGANIZER);
 			try {
-				VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerTemplateId"),
-					new Object[] { dispatchLocationOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchLocationOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationOrganizerTemplateId"),
+						 new Object [] { dispatchLocationOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;

@@ -15,13 +15,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Component1;
+import org.eclipse.mdht.uml.cda.EncompassingEncounter;
+import org.eclipse.mdht.uml.cda.EncounterParticipant;
+import org.eclipse.mdht.uml.cda.InFulfillmentOf;
+import org.eclipse.mdht.uml.cda.ResponsibleParty;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component1;
-import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
-import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
-import org.openhealthtools.mdht.uml.cda.InFulfillmentOf;
-import org.openhealthtools.mdht.uml.cda.ResponsibleParty;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
@@ -46,9 +49,6 @@ import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ConsultationNoteOperations;
 import org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraintsOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -140,7 +140,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSectionsTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -180,7 +181,7 @@ public class ConsultationNoteTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
+			 *
 			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
@@ -225,7 +226,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresentTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -234,7 +236,7 @@ public class ConsultationNoteTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
+			 *
 			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addFailTests()
 			 */
 			@Override
@@ -315,7 +317,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSectionTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -329,7 +332,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 					@Override
 					public void updateToFail(ConsultationNote target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
 					}
 
@@ -339,7 +343,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 					@Override
 					public void updateToFail(ConsultationNote target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
 					}
 
@@ -349,7 +354,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 					@Override
 					public void updateToFail(ConsultationNote target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
 						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
 					}
@@ -364,7 +370,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 					@Override
 					public void updateToPass(ConsultationNote target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 
 					}
 				});
@@ -400,7 +407,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteHasReasonForReferralOrReasonForVisit() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteHasReasonForReferralOrReasonForVisitTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteHasReasonForReferralOrReasonForVisit",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_HAS_REASON_FOR_REFERRAL_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_HAS_REASON_FOR_REFERRAL_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -520,8 +528,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateConsultationNoteInFulfillmentOf() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteInFulfillmentOfTestCase = new OperationsTestCase<ConsultationNote>(
-			"validateConsultationNoteInFulfillmentOf",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateConsultationNoteInFulfillmentOf", operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -590,8 +598,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateConsultationNoteAssessmentSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteAssessmentSectionTestCase = new OperationsTestCase<ConsultationNote>(
-			"validateConsultationNoteAssessmentSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateConsultationNoteAssessmentSection", operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -632,7 +640,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteAssessmentAndPlanSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteAssessmentAndPlanSectionTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteAssessmentAndPlanSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -672,8 +681,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateConsultationNotePlanOfCareSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNotePlanOfCareSectionTestCase = new OperationsTestCase<ConsultationNote>(
-			"validateConsultationNotePlanOfCareSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateConsultationNotePlanOfCareSection", operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -714,7 +723,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteHistoryOfPresentIllness() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteHistoryOfPresentIllnessTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteHistoryOfPresentIllness",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -748,8 +758,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateConsultationNotePhysicalExamSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNotePhysicalExamSectionTestCase = new OperationsTestCase<ConsultationNote>(
-			"validateConsultationNotePhysicalExamSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateConsultationNotePhysicalExamSection", operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -790,7 +800,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteReasonForReferralSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteReasonForReferralSectionTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteReasonForReferralSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -830,8 +841,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateConsultationNoteReasonForVisitSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteReasonForVisitSectionTestCase = new OperationsTestCase<ConsultationNote>(
-			"validateConsultationNoteReasonForVisitSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateConsultationNoteReasonForVisitSection", operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -871,8 +882,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateConsultationNoteAllergiesSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteAllergiesSectionTestCase = new OperationsTestCase<ConsultationNote>(
-			"validateConsultationNoteAllergiesSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateConsultationNoteAllergiesSection", operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -912,8 +923,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateConsultationNoteChiefComplaintSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteChiefComplaintSectionTestCase = new OperationsTestCase<ConsultationNote>(
-			"validateConsultationNoteChiefComplaintSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateConsultationNoteChiefComplaintSection", operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -954,7 +965,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteChiefComplaintAndReasonForVisitSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteChiefComplaintAndReasonForVisitSectionTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteChiefComplaintAndReasonForVisitSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -994,8 +1006,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateConsultationNoteFamilyHistorySection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteFamilyHistorySectionTestCase = new OperationsTestCase<ConsultationNote>(
-			"validateConsultationNoteFamilyHistorySection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateConsultationNoteFamilyHistorySection", operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1035,8 +1047,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateConsultationNoteGeneralStatusSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteGeneralStatusSectionTestCase = new OperationsTestCase<ConsultationNote>(
-			"validateConsultationNoteGeneralStatusSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateConsultationNoteGeneralStatusSection", operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1077,7 +1089,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteHistoryOfPastIllnessSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteHistoryOfPastIllnessSectionTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteHistoryOfPastIllnessSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1117,8 +1130,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateConsultationNoteImmunizationsSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteImmunizationsSectionTestCase = new OperationsTestCase<ConsultationNote>(
-			"validateConsultationNoteImmunizationsSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateConsultationNoteImmunizationsSection", operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1159,7 +1172,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteMedicationsSectionEntriesOptional() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteMedicationsSectionEntriesOptionalTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteMedicationsSectionEntriesOptional",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1200,7 +1214,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteProblemSectionEntriesOptional() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteProblemSectionEntriesOptionalTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteProblemSectionEntriesOptional",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1241,7 +1256,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteProceduresSectionEntriesOptional() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteProceduresSectionEntriesOptionalTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteProceduresSectionEntriesOptional",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1282,7 +1298,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteResultsSectionEntriesOptional() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteResultsSectionEntriesOptionalTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteResultsSectionEntriesOptional",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1323,7 +1340,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteReviewOfSystemsSection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteReviewOfSystemsSectionTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteReviewOfSystemsSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1363,8 +1381,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateConsultationNoteSocialHistorySection() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteSocialHistorySectionTestCase = new OperationsTestCase<ConsultationNote>(
-			"validateConsultationNoteSocialHistorySection",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateConsultationNoteSocialHistorySection", operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1405,7 +1423,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteVitalSignsSectionEntriesOptional() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteVitalSignsSectionEntriesOptionalTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteVitalSignsSectionEntriesOptional",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1446,7 +1465,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteInFulfillmentOfOrderId() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteInFulfillmentOfOrderIdTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteInFulfillmentOfOrderId",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1486,8 +1506,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateConsultationNoteInFulfillmentOfOrder() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteInFulfillmentOfOrderTestCase = new OperationsTestCase<ConsultationNote>(
-			"validateConsultationNoteInFulfillmentOfOrder",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateConsultationNoteInFulfillmentOfOrder", operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1526,7 +1546,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBothTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1581,7 +1602,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1626,7 +1648,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDayTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1667,7 +1690,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinuteTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1708,7 +1732,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecondTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1749,7 +1774,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffsetTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1791,7 +1817,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBothTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1836,7 +1863,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1877,7 +1905,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTimeTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1917,7 +1946,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteComponentOfEncompassingEncounter2Id() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteComponentOfEncompassingEncounter2IdTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteComponentOfEncompassingEncounter2Id",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1954,7 +1984,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1994,7 +2025,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2035,7 +2067,8 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	public void testValidateConsultationNoteComponentOfEncompassingEncounter() {
 		OperationsTestCase<ConsultationNote> validateConsultationNoteComponentOfEncompassingEncounterTestCase = new OperationsTestCase<ConsultationNote>(
 			"validateConsultationNoteComponentOfEncompassingEncounter",
-			operationsForOCL.getOCLValue("VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

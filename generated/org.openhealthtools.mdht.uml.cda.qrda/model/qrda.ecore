@@ -6,7 +6,7 @@
     <details key="initializers" value="org.openhealthtools.mdht.uml.cda.qrda"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="QualityReportingDocumentArchitectureDocument"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ClinicalDocument">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//ClinicalDocument">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="QualityReportingDocumentArchitectureDocumentTemplateId QualityReportingDocumentArchitectureDocumentCode QualityReportingDocumentArchitectureDocumentCodeP QualityReportingDocumentArchitectureDocumentTitle QualityReportingDocumentArchitectureDocumentCustodian QualityReportingDocumentArchitectureDocumentLegalAuthenticator QualityReportingDocumentArchitectureDocumentRecordTarget QualityReportingDocumentArchitectureDocumentMeasureSection"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.24.1.1"/>
@@ -177,7 +177,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MeasureSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="MeasureSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MeasureSectionTemplateId MeasureSectionCode MeasureSectionText MeasureSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.24.2.2"/>

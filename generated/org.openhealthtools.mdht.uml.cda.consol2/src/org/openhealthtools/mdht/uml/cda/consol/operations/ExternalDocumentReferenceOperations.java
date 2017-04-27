@@ -6,31 +6,19 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
-import org.eclipse.emf.ecore.EClassifier;
-import org.eclipse.emf.ecore.EObject;
-
+import org.eclipse.mdht.uml.cda.operations.ExternalDocumentOperations;
 import org.eclipse.ocl.ParserException;
-import org.eclipse.ocl.Query;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,23 +31,23 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceReferenceExternalDocumentClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceReferenceExternalDocumentMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceReferenceExternalDocumentId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceReferenceExternalDocumentCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceReferenceExternalDocumentSetId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Set Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceReferenceExternalDocumentVersionNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Version Number</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference Type Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceReferenceExternalDocument(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceSetId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Set Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference#validateExternalDocumentReferenceVersionNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Version Number</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class ExternalDocumentReferenceOperations extends ClinicalStatementOperations {
+public class ExternalDocumentReferenceOperations extends ExternalDocumentOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -88,7 +76,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,23 +93,29 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
 			try {
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			externalDocumentReference)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				externalDocumentReference)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceTemplateId"),
-					new Object[] { externalDocumentReference }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceTemplateId"),
+						new Object[] { externalDocumentReference }));
 			}
 
 			return false;
@@ -137,7 +131,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('classCode')";
+	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('classCode') and self.classCode=vocab::ActClassDocument::DOCCLIN";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceClassCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Class Code</em>}' invariant operation.
@@ -148,7 +142,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -165,23 +159,29 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
 			try {
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			externalDocumentReference)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				externalDocumentReference)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceClassCode"),
-					new Object[] { externalDocumentReference }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceClassCode"),
+						new Object[] { externalDocumentReference }));
 			}
 
 			return false;
@@ -197,7 +197,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_DocumentActMood::EVN";
+	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode') and self.moodCode=vocab::ActMood::EVN";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceMoodCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Mood Code</em>}' invariant operation.
@@ -208,7 +208,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -221,27 +221,32 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 	 * @generated
 	 */
 
-	public static boolean validateExternalDocumentReferenceMoodCode(
-			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static boolean validateExternalDocumentReferenceMoodCode(ExternalDocumentReference externalDocumentReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
 			try {
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			externalDocumentReference)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				externalDocumentReference)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceMoodCode"),
-					new Object[] { externalDocumentReference }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceMoodCode"),
+						new Object[] { externalDocumentReference }));
 			}
 
 			return false;
@@ -250,25 +255,25 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateExternalDocumentReferenceCodeP(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Code P</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateExternalDocumentReferenceId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Id</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceCodeP(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateExternalDocumentReferenceId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() =  1)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceCodeP(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Code P</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceCodeP(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateExternalDocumentReferenceId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -281,38 +286,31 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 	 * @generated
 	 */
 
-	public static boolean validateExternalDocumentReferenceCodeP(ExternalDocumentReference externalDocumentReference,
+	public static boolean validateExternalDocumentReferenceId(ExternalDocumentReference externalDocumentReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
 			try {
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			externalDocumentReference)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceCodeP"),
-					new Object[] { externalDocumentReference }));
-			}
 
-			if (context != null) {
-				// generate a pass token for my dependent constraints to short-circuit or filter results
-				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReferenceCodeP");
-				if (passToken == null) {
-					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReferenceCodeP", passToken);
-				}
-				passToken.add(externalDocumentReference);
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				externalDocumentReference)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_ID,
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceId"),
+						new Object[] { externalDocumentReference }));
 			}
 
 			return false;
@@ -328,9 +326,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = 'DOCCLIN' and value.codeSystem = '2.16.840.1.113883.5.6')";
+	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Code</em>}' invariant operation.
@@ -341,7 +337,7 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -357,579 +353,55 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 	public static boolean validateExternalDocumentReferenceCode(ExternalDocumentReference externalDocumentReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReferenceCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(externalDocumentReference)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
+		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
 			try {
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			externalDocumentReference)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				externalDocumentReference)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_CODE,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceCode"),
-					new Object[] { externalDocumentReference }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateExternalDocumentReferenceReference(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReference(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->one(reference : cda::Reference | not reference.oclIsUndefined() and reference.oclIsKindOf(cda::Reference))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceReference(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReference(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param externalDocumentReference The receiving '<em><b>External Document Reference</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateExternalDocumentReferenceReference(
-			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
-			try {
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			externalDocumentReference)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReference"),
-					new Object[] { externalDocumentReference }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateExternalDocumentReferenceReferenceExternalDocumentClassCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Class Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocumentClassCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->excluding(null).externalDocument->excluding(null)->reject(classCode=vocab::ActClassDocument::DOCCLIN)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceReferenceExternalDocumentClassCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Class Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocumentClassCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param externalDocumentReference The receiving '<em><b>External Document Reference</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateExternalDocumentReferenceReferenceExternalDocumentClassCode(
-			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(externalDocumentReference);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocumentClassCode"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateExternalDocumentReferenceReferenceExternalDocumentMoodCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocumentMoodCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->excluding(null).externalDocument->excluding(null)->reject(isDefined('moodCode') and moodCode=vocab::ActMood::EVN)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceReferenceExternalDocumentMoodCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocumentMoodCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param externalDocumentReference The receiving '<em><b>External Document Reference</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateExternalDocumentReferenceReferenceExternalDocumentMoodCode(
-			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(externalDocumentReference);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocumentMoodCode"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateExternalDocumentReferenceReferenceExternalDocumentId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocumentId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->excluding(null).externalDocument->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceReferenceExternalDocumentId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocumentId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param externalDocumentReference The receiving '<em><b>External Document Reference</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateExternalDocumentReferenceReferenceExternalDocumentId(
-			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(externalDocumentReference);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_ID,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocumentId"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateExternalDocumentReferenceReferenceExternalDocumentCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocumentCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->excluding(null).externalDocument->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceReferenceExternalDocumentCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocumentCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param externalDocumentReference The receiving '<em><b>External Document Reference</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateExternalDocumentReferenceReferenceExternalDocumentCode(
-			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(externalDocumentReference);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_CODE,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocumentCode"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateExternalDocumentReferenceReferenceExternalDocumentSetId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Set Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocumentSetId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->excluding(null).externalDocument->excluding(null)->reject((setId.oclIsUndefined() or setId.isNullFlavorUndefined()) implies (not setId.oclIsUndefined()))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceReferenceExternalDocumentSetId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Set Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocumentSetId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param externalDocumentReference The receiving '<em><b>External Document Reference</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateExternalDocumentReferenceReferenceExternalDocumentSetId(
-			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(externalDocumentReference);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_SET_ID,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocumentSetId"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateExternalDocumentReferenceReferenceExternalDocumentVersionNumber(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Version Number</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocumentVersionNumber(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->excluding(null).externalDocument->excluding(null)->reject((versionNumber.oclIsUndefined() or versionNumber.isNullFlavorUndefined()) implies (not versionNumber.oclIsUndefined()))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceReferenceExternalDocumentVersionNumber(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document Version Number</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocumentVersionNumber(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param externalDocumentReference The receiving '<em><b>External Document Reference</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateExternalDocumentReferenceReferenceExternalDocumentVersionNumber(
-			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(externalDocumentReference);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT_VERSION_NUMBER,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocumentVersionNumber"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateExternalDocumentReferenceReferenceTypeCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference Type Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceTypeCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->excluding(null)->reject(typeCode=vocab::x_ActRelationshipExternalReference::REFR)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceReferenceTypeCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference Type Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceTypeCode(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param externalDocumentReference The receiving '<em><b>External Document Reference</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateExternalDocumentReferenceReferenceTypeCode(
-			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(externalDocumentReference);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
+				diagnostics.add(
+					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceTypeCode"),
-						new Object[] { eObject }));
-				}
-
+						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_CODE,
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceCode"),
+						new Object[] { externalDocumentReference }));
 			}
-			return oclResultSet.isEmpty();
+
+			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateExternalDocumentReferenceReferenceExternalDocument(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateExternalDocumentReferenceSetId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Set Id</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocument(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateExternalDocumentReferenceSetId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->excluding(null)->reject(externalDocument->one(externalDocument : cda::ExternalDocument | not externalDocument.oclIsUndefined() and externalDocument.oclIsKindOf(cda::ExternalDocument)))";
+	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.setId.oclIsUndefined() or self.setId.isNullFlavorUndefined()) implies (not self.setId.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceReferenceExternalDocument(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Reference External Document</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceSetId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Set Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateExternalDocumentReferenceReferenceExternalDocument(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateExternalDocumentReferenceSetId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Query<?, ?, ?> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+	protected static ThreadLocal<Constraint> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -941,37 +413,103 @@ public class ExternalDocumentReferenceOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateExternalDocumentReferenceReferenceExternalDocument(
-			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
 
-		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateExternalDocumentReferenceSetId(ExternalDocumentReference externalDocumentReference,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(externalDocumentReference);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				externalDocumentReference)) {
 			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_REFERENCE_EXTERNAL_DOCUMENT,
-						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceReferenceExternalDocument"),
-						new Object[] { eObject }));
-				}
-
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_SET_ID,
+						ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceSetId"),
+						new Object[] { externalDocumentReference }));
 			}
-			return oclResultSet.isEmpty();
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateExternalDocumentReferenceVersionNumber(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Version Number</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateExternalDocumentReferenceVersionNumber(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.versionNumber.oclIsUndefined() or self.versionNumber.isNullFlavorUndefined()) implies (not self.versionNumber.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceVersionNumber(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Version Number</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateExternalDocumentReferenceVersionNumber(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param externalDocumentReference The receiving '<em><b>External Document Reference</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateExternalDocumentReferenceVersionNumber(
+			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
+			try {
+				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				externalDocumentReference)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER,
+						ConsolPlugin.INSTANCE.getString(
+							"ExternalDocumentReferenceExternalDocumentReferenceVersionNumber"),
+						new Object[] { externalDocumentReference }));
+			}
+
+			return false;
 		}
 		return true;
 	}

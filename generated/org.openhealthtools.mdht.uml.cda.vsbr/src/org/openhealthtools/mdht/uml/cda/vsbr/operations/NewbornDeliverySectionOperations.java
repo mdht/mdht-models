@@ -20,8 +20,6 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.AbnormalConditionoftheNewborn;
 import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.BirthOrder;
@@ -88,7 +86,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class NewbornDeliverySectionOperations extends SectionOperations {
+public class NewbornDeliverySectionOperations extends org.eclipse.mdht.uml.cda.operations.SectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -117,7 +122,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -133,27 +138,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionTemplateId(NewbornDeliverySection newbornDeliverySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -180,7 +192,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -196,27 +208,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionClassCode(NewbornDeliverySection newbornDeliverySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -243,7 +262,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -259,27 +278,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionMoodCode(NewbornDeliverySection newbornDeliverySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -295,9 +321,9 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '57075-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '57075-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionCode(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Code</em>}' invariant operation.
@@ -308,7 +334,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -324,27 +350,33 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionCode(NewbornDeliverySection newbornDeliverySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -371,7 +403,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -387,27 +419,33 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionText(NewbornDeliverySection newbornDeliverySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_TEXT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionText",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_TEXT,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionText",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -423,7 +461,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject->one(subject : cda::Subject | not subject.oclIsUndefined() and subject.oclIsKindOf(cda::Subject))";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies subject->one(subject : cda::Subject | not subject.oclIsUndefined() and subject.oclIsKindOf(cda::Subject))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionSubject(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Subject</em>}' invariant operation.
@@ -434,7 +472,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -450,27 +488,33 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionSubject(NewbornDeliverySection newbornDeliverySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_SUBJECT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionSubject",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_SUBJECT,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionSubject",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -486,7 +530,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Birth Order) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::BirthOrder) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionBirthOrder(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Birth Order</em>}' invariant operation.
@@ -497,7 +541,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -513,27 +557,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionBirthOrder(NewbornDeliverySection newbornDeliverySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_BIRTH_ORDER,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionBirthOrder",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_BIRTH_ORDER,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionBirthOrder",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -549,7 +600,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Number of Infants Born Alive) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::NumberofInfantsBornAlive) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionNumberOfInfantsBornAlive(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Number Of Infants Born Alive</em>}' invariant operation.
@@ -560,7 +611,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -576,28 +627,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNumberOfInfantsBornAlive(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNumberOfInfantsBornAlive",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNumberOfInfantsBornAlive",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -613,7 +670,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Congenital Anomaly) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::CongenitalAnomaly) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionCongenitalAnomalies(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Congenital Anomalies</em>}' invariant operation.
@@ -624,7 +681,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -640,28 +697,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionCongenitalAnomalies(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionCongenitalAnomalies",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionCongenitalAnomalies",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -677,7 +740,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Newborns Vital Signs Section))";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::NewbornsVitalSignsSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionNewbornsVitalSignsSection(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Newborns Vital Signs Section</em>}' invariant operation.
@@ -688,7 +751,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -704,28 +767,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNewbornsVitalSignsSection(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNewbornsVitalSignsSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNewbornsVitalSignsSection",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -741,7 +810,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Abnormal Condition of the Newborn) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::AbnormalConditionoftheNewborn) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Abnormal Conditions Of The Newborn</em>}' invariant operation.
@@ -752,7 +821,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -768,29 +837,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionAbnormalConditionsOfTheNewborn",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionAbnormalConditionsOfTheNewborn",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -806,7 +880,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infant Living) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::InfantLiving) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionInfantLiving(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Infant Living</em>}' invariant operation.
@@ -817,7 +891,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -833,27 +907,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionInfantLiving(NewbornDeliverySection newbornDeliverySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_INFANT_LIVING,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionInfantLiving",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_INFANT_LIVING,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionInfantLiving",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -869,7 +950,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infant Breastfed) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::InfantBreastfed) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionInfantBreastfed(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Infant Breastfed</em>}' invariant operation.
@@ -880,7 +961,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -896,27 +977,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionInfantBreastfed(NewbornDeliverySection newbornDeliverySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionInfantBreastfed",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionInfantBreastfed",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -932,7 +1020,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::InfantTransfer) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::InfantTransfer) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionInfantTransfer(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Infant Transfer</em>}' invariant operation.
@@ -943,7 +1031,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -959,27 +1047,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionInfantTransfer(NewbornDeliverySection newbornDeliverySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionInfantTransfer",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionInfantTransfer",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -995,7 +1090,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_PLURALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Plurality) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_PLURALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Plurality) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionPlurality(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Plurality</em>}' invariant operation.
@@ -1006,7 +1101,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_PLURALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_PLURALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1022,27 +1117,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionPlurality(NewbornDeliverySection newbornDeliverySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_PLURALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_PLURALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_PLURALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_PLURALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_PLURALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_PLURALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_PLURALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_PLURALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_PLURALITY,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionPlurality",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_PLURALITY,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionPlurality",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1058,7 +1160,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Assessments Section))";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::AssessmentsSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionAssessmentsSection(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Assessments Section</em>}' invariant operation.
@@ -1069,7 +1171,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1085,27 +1187,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionAssessmentsSection(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionAssessmentsSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionAssessmentsSection",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1132,7 +1241,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1148,29 +1257,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornClassCode(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1197,7 +1311,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1213,29 +1327,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1262,7 +1381,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1278,29 +1397,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornSDTCId(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornSDTCId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornSDTCId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1327,7 +1451,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1343,29 +1467,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornName(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornName",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornName",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1381,9 +1510,9 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((administrativeGenderCode.oclIsUndefined() or administrativeGenderCode.isNullFlavorUndefined()) implies (not administrativeGenderCode.oclIsUndefined() and administrativeGenderCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = administrativeGenderCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.5.1'))";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((administrativeGenderCode.oclIsUndefined() or administrativeGenderCode.isNullFlavorUndefined()) implies (not administrativeGenderCode.oclIsUndefined() and administrativeGenderCode.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = administrativeGenderCode.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.5.1'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Newborn Subject Role Of Newborn Newborn Administrative Gender Code</em>}' invariant operation.
@@ -1394,7 +1523,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1410,29 +1539,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1459,7 +1593,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1475,29 +1609,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeP(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1524,7 +1663,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1540,29 +1679,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornBirthTime(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornBirthTime",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornBirthTime",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1589,7 +1733,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1605,29 +1749,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornClassCode(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNewbornSubjectRoleOfNewbornClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNewbornSubjectRoleOfNewbornClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1643,9 +1792,9 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject->excluding(null).relatedSubject->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = code.oclAsType(datatypes::CE) in "
-			+ "value.code = 'CHILD' and value.codeSystem = '2.16.840.1.113883.5.111'))";
+	protected static final String VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject->excluding(null).relatedSubject->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = code.oclAsType(datatypes::CE) in " +
+			"value.code = 'CHILD' and value.codeSystem = '2.16.840.1.113883.5.111'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornCode(NewbornDeliverySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Newborn Subject Role Of Newborn Code</em>}' invariant operation.
@@ -1656,7 +1805,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1672,29 +1821,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornCode(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNewbornSubjectRoleOfNewbornCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNewbornSubjectRoleOfNewbornCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1721,7 +1875,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1737,29 +1891,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornSubject(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNewbornSubjectRoleOfNewbornSubject",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNewbornSubjectRoleOfNewbornSubject",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1786,7 +1945,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1802,28 +1961,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNewbornSubjectTypeCode(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNewbornSubjectTypeCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNewbornSubjectTypeCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1850,7 +2015,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1866,28 +2031,34 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	public static boolean validateNewbornDeliverySectionNewbornSubjectRelatedSubject(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION);
 			try {
-				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornDeliverySection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornDeliverySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornDeliverySectionNewbornSubjectRelatedSubject",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornDeliverySection, context) }), new Object[] { newbornDeliverySection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORN_DELIVERY_SECTION__NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornDeliverySectionNewbornDeliverySectionNewbornSubjectRelatedSubject",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornDeliverySection, context) }),
+						new Object[] { newbornDeliverySection }));
 			}
 
 			return false;
@@ -1903,7 +2074,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_BIRTH_ORDER__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Birth Order))->asSequence()->any(true).oclAsType(vsbr::Birth Order)";
+	protected static final String GET_BIRTH_ORDER__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::BirthOrder))->asSequence()->any(true).oclAsType(vsbr::BirthOrder)";
 
 	/**
 	 * The cached OCL query for the '{@link #getBirthOrder(NewbornDeliverySection) <em>Get Birth Order</em>}' query operation.
@@ -1922,8 +2093,10 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 */
 
 	public static BirthOrder getBirthOrder(NewbornDeliverySection newbornDeliverySection) {
+
 		if (GET_BIRTH_ORDER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION,
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION.getEAllOperations().get(83));
@@ -1933,7 +2106,8 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_BIRTH_ORDER__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_BIRTH_ORDER__EOCL_QRY);
 		return (BirthOrder) query.evaluate(newbornDeliverySection);
 	}
 
@@ -1945,7 +2119,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Number of Infants Born Alive))->asSequence()->any(true).oclAsType(vsbr::Number of Infants Born Alive)";
+	protected static final String GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::NumberofInfantsBornAlive))->asSequence()->any(true).oclAsType(vsbr::NumberofInfantsBornAlive)";
 
 	/**
 	 * The cached OCL query for the '{@link #getNumberOfInfantsBornAlive(NewbornDeliverySection) <em>Get Number Of Infants Born Alive</em>}' query operation.
@@ -1964,18 +2138,22 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 */
 
 	public static NumberofInfantsBornAlive getNumberOfInfantsBornAlive(NewbornDeliverySection newbornDeliverySection) {
+
 		if (GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION,
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION.getEAllOperations().get(84));
 			try {
-				GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_QRY = helper.createQuery(GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_EXP);
+				GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_QRY = helper.createQuery(
+					GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NUMBER_OF_INFANTS_BORN_ALIVE__EOCL_QRY);
 		return (NumberofInfantsBornAlive) query.evaluate(newbornDeliverySection);
 	}
 
@@ -1987,7 +2165,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONGENITAL_ANOMALIESS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Congenital Anomaly)).oclAsType(vsbr::Congenital Anomaly)";
+	protected static final String GET_CONGENITAL_ANOMALIESS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::CongenitalAnomaly)).oclAsType(vsbr::CongenitalAnomaly)";
 
 	/**
 	 * The cached OCL query for the '{@link #getCongenitalAnomaliess(NewbornDeliverySection) <em>Get Congenital Anomaliess</em>}' query operation.
@@ -2006,8 +2184,10 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 */
 
 	public static EList<CongenitalAnomaly> getCongenitalAnomaliess(NewbornDeliverySection newbornDeliverySection) {
+
 		if (GET_CONGENITAL_ANOMALIESS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION,
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION.getEAllOperations().get(85));
@@ -2017,7 +2197,8 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONGENITAL_ANOMALIESS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONGENITAL_ANOMALIESS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<CongenitalAnomaly> result = (Collection<CongenitalAnomaly>) query.evaluate(newbornDeliverySection);
 		return new BasicEList.UnmodifiableEList<CongenitalAnomaly>(result.size(), result.toArray());
@@ -2031,7 +2212,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_NEWBORNS_VITAL_SIGNS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Newborns Vital Signs Section))->asSequence()->any(true).oclAsType(vsbr::Newborns Vital Signs Section)";
+	protected static final String GET_NEWBORNS_VITAL_SIGNS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::NewbornsVitalSignsSection))->asSequence()->any(true).oclAsType(vsbr::NewbornsVitalSignsSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getNewbornsVitalSignsSection(NewbornDeliverySection) <em>Get Newborns Vital Signs Section</em>}' query operation.
@@ -2049,19 +2230,24 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 */
 
-	public static NewbornsVitalSignsSection getNewbornsVitalSignsSection(NewbornDeliverySection newbornDeliverySection) {
+	public static NewbornsVitalSignsSection getNewbornsVitalSignsSection(
+			NewbornDeliverySection newbornDeliverySection) {
+
 		if (GET_NEWBORNS_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION,
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION.getEAllOperations().get(86));
 			try {
-				GET_NEWBORNS_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_NEWBORNS_VITAL_SIGNS_SECTION__EOCL_EXP);
+				GET_NEWBORNS_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(
+					GET_NEWBORNS_VITAL_SIGNS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NEWBORNS_VITAL_SIGNS_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NEWBORNS_VITAL_SIGNS_SECTION__EOCL_QRY);
 		return (NewbornsVitalSignsSection) query.evaluate(newbornDeliverySection);
 	}
 
@@ -2073,7 +2259,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Abnormal Condition of the Newborn)).oclAsType(vsbr::Abnormal Condition of the Newborn)";
+	protected static final String GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::AbnormalConditionoftheNewborn)).oclAsType(vsbr::AbnormalConditionoftheNewborn)";
 
 	/**
 	 * The cached OCL query for the '{@link #getAbnormalConditionsOfTheNewborns(NewbornDeliverySection) <em>Get Abnormal Conditions Of The Newborns</em>}' query operation.
@@ -2093,20 +2279,25 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 
 	public static EList<AbnormalConditionoftheNewborn> getAbnormalConditionsOfTheNewborns(
 			NewbornDeliverySection newbornDeliverySection) {
+
 		if (GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION,
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION.getEAllOperations().get(87));
 			try {
-				GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_QRY = helper.createQuery(GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_EXP);
+				GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_QRY = helper.createQuery(
+					GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_ABNORMAL_CONDITIONS_OF_THE_NEWBORNS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<AbnormalConditionoftheNewborn> result = (Collection<AbnormalConditionoftheNewborn>) query.evaluate(newbornDeliverySection);
+		Collection<AbnormalConditionoftheNewborn> result = (Collection<AbnormalConditionoftheNewborn>) query.evaluate(
+			newbornDeliverySection);
 		return new BasicEList.UnmodifiableEList<AbnormalConditionoftheNewborn>(result.size(), result.toArray());
 	}
 
@@ -2118,7 +2309,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INFANT_LIVING__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infant Living))->asSequence()->any(true).oclAsType(vsbr::Infant Living)";
+	protected static final String GET_INFANT_LIVING__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::InfantLiving))->asSequence()->any(true).oclAsType(vsbr::InfantLiving)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInfantLiving(NewbornDeliverySection) <em>Get Infant Living</em>}' query operation.
@@ -2137,8 +2328,10 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 */
 
 	public static InfantLiving getInfantLiving(NewbornDeliverySection newbornDeliverySection) {
+
 		if (GET_INFANT_LIVING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION,
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION.getEAllOperations().get(88));
@@ -2148,7 +2341,8 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_INFANT_LIVING__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_INFANT_LIVING__EOCL_QRY);
 		return (InfantLiving) query.evaluate(newbornDeliverySection);
 	}
 
@@ -2160,7 +2354,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INFANT_BREASTFED__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infant Breastfed))->asSequence()->any(true).oclAsType(vsbr::Infant Breastfed)";
+	protected static final String GET_INFANT_BREASTFED__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::InfantBreastfed))->asSequence()->any(true).oclAsType(vsbr::InfantBreastfed)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInfantBreastfed(NewbornDeliverySection) <em>Get Infant Breastfed</em>}' query operation.
@@ -2179,8 +2373,10 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 */
 
 	public static InfantBreastfed getInfantBreastfed(NewbornDeliverySection newbornDeliverySection) {
+
 		if (GET_INFANT_BREASTFED__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION,
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION.getEAllOperations().get(89));
@@ -2190,7 +2386,8 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_INFANT_BREASTFED__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_INFANT_BREASTFED__EOCL_QRY);
 		return (InfantBreastfed) query.evaluate(newbornDeliverySection);
 	}
 
@@ -2221,8 +2418,10 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 */
 
 	public static InfantTransfer getInfantTransfer(NewbornDeliverySection newbornDeliverySection) {
+
 		if (GET_INFANT_TRANSFER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION,
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION.getEAllOperations().get(90));
@@ -2232,7 +2431,8 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_INFANT_TRANSFER__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_INFANT_TRANSFER__EOCL_QRY);
 		return (InfantTransfer) query.evaluate(newbornDeliverySection);
 	}
 
@@ -2263,8 +2463,10 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 */
 
 	public static Plurality getPlurality(NewbornDeliverySection newbornDeliverySection) {
+
 		if (GET_PLURALITY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION,
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION.getEAllOperations().get(91));
@@ -2274,7 +2476,8 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLURALITY__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLURALITY__EOCL_QRY);
 		return (Plurality) query.evaluate(newbornDeliverySection);
 	}
 
@@ -2286,7 +2489,7 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ASSESSMENTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Assessments Section))->asSequence()->any(true).oclAsType(vsbr::Assessments Section)";
+	protected static final String GET_ASSESSMENTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::AssessmentsSection))->asSequence()->any(true).oclAsType(vsbr::AssessmentsSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getAssessmentsSection(NewbornDeliverySection) <em>Get Assessments Section</em>}' query operation.
@@ -2305,8 +2508,10 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 	 */
 
 	public static AssessmentsSection getAssessmentsSection(NewbornDeliverySection newbornDeliverySection) {
+
 		if (GET_ASSESSMENTS_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION,
 				VsbrPackage.Literals.NEWBORN_DELIVERY_SECTION.getEAllOperations().get(92));
@@ -2316,7 +2521,8 @@ public class NewbornDeliverySectionOperations extends SectionOperations {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ASSESSMENTS_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_ASSESSMENTS_SECTION__EOCL_QRY);
 		return (AssessmentsSection) query.evaluate(newbornDeliverySection);
 	}
 

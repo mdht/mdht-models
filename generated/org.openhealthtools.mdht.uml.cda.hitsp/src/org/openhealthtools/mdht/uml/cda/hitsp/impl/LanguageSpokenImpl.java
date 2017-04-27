@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.LanguageSpoken;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.LanguageSpokenOperations;
@@ -26,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.LanguageCommunicationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Language Spoken</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -56,7 +52,8 @@ public class LanguageSpokenImpl extends LanguageCommunicationImpl implements Lan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLanguageSpokenNoProficiencyLevelCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateLanguageSpokenNoProficiencyLevelCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return LanguageSpokenOperations.validateLanguageSpokenNoProficiencyLevelCode(this, diagnostics, context);
 	}
 
@@ -85,7 +82,7 @@ public class LanguageSpokenImpl extends LanguageCommunicationImpl implements Lan
 	 */
 	@Override
 	public LanguageSpoken init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -94,8 +91,9 @@ public class LanguageSpokenImpl extends LanguageCommunicationImpl implements Lan
 	 * @generated
 	 */
 	@Override
-	public LanguageSpoken init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public LanguageSpoken init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // LanguageSpokenImpl

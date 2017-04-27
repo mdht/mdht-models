@@ -3,29 +3,21 @@
 package org.openhealthtools.mdht.uml.cda.vsdr.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyPerformance;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.operations.AutopsyPerformanceOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Autopsy Performance</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -208,7 +200,8 @@ public class AutopsyPerformanceImpl extends ObservationImpl implements AutopsyPe
 	public AutopsyPerformance init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated

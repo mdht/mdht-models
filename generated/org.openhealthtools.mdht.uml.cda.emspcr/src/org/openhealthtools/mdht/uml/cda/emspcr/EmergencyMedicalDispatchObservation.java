@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EmergencyMedicalDispatchObservationTemplateId EmergencyMedicalDispatchObservationMoodCode EmergencyMedicalDispatchObservationCode EmergencyMedicalDispatchObservationCodeP EmergencyMedicalDispatchObservationValue EmergencyMedicalDispatchObservationValueP' templateId.root='2.16.840.1.1133883.17.3.10.1.73' moodCode='EVN' code.code='67488-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Emergency medical dispatch performed NEMSIS' constraints.validation.dependOn.EmergencyMedicalDispatchObservationCode='EmergencyMedicalDispatchObservationCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
  * @generated
  */
-public interface EmergencyMedicalDispatchObservation extends Observation {
+public interface EmergencyMedicalDispatchObservation extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -110,9 +103,9 @@ public interface EmergencyMedicalDispatchObservation extends Observation {
 	public EmergencyMedicalDispatchObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EmergencyMedicalDispatchObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public EmergencyMedicalDispatchObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // EmergencyMedicalDispatchObservation

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -16,18 +16,21 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Reference;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentActMood;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
+import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.InterventionActOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,20 +42,18 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActMoodCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Mood Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActGoalObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Goal Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActNutritionRecommendations(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Nutrition Recommendations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Act Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActActReferenceGoal(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Act Reference Goal</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActInterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Intervention Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActNutritionRecommendation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Nutrition Recommendation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActInterventionEntryReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Intervention Entry Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActGoalObsEntryReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Goal Obs Entry Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act External Document Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActAdvanceDirectiveObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Advance Directive Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActImmunizationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Immunization Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Medication Activity2</em>}</li>
@@ -62,18 +63,14 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActEncounterActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Encounter Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActNonMedicinalSupplyActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Non Medicinal Supply Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActInstruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Instruction2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActPlannedAct2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Planned Act2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActPlannedEncounter2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Planned Encounter2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActPlannedObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Planned Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActPlannedProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Planned Procedure2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActPlannedMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Planned Medication Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActPlannedSupply2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Planned Supply2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getGoalObservations() <em>Get Goal Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActHandoffCommunicationParticipants(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Handoff Communication Participants</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActPlannedInterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Planned Intervention Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Reference Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#validateInterventionActReferenceExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Intervention Act Reference External Document Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getInterventionActs() <em>Get Intervention Acts</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getNutritionRecommendationss() <em>Get Nutrition Recommendationss</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getActReferences() <em>Get Act References</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getActReferenceGoals() <em>Get Act Reference Goals</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getExternalDocumentReferences() <em>Get External Document References</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getNutritionRecommendations() <em>Get Nutrition Recommendations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getInterventionEntryReferences() <em>Get Intervention Entry References</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getAdvanceDirectiveObservation2s() <em>Get Advance Directive Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getImmunizationActivity2s() <em>Get Immunization Activity2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getMedicationActivity2s() <em>Get Medication Activity2s</em>}</li>
@@ -83,12 +80,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getEncounterActivity2s() <em>Get Encounter Activity2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getNonMedicinalSupplyActivity2s() <em>Get Non Medicinal Supply Activity2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getInstruction2s() <em>Get Instruction2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getPlannedAct2s() <em>Get Planned Act2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getPlannedEncounter2s() <em>Get Planned Encounter2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getPlannedObservation2s() <em>Get Planned Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getPlannedProcedure2s() <em>Get Planned Procedure2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getPlannedMedicationActivity2s() <em>Get Planned Medication Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getPlannedSupply2s() <em>Get Planned Supply2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getHandoffCommunicationParticipantss() <em>Get Handoff Communication Participantss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionAct#getPlannedInterventionActs() <em>Get Planned Intervention Acts</em>}</li>
  * </ul>
  * </p>
  *
@@ -170,40 +163,6 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateInterventionActMoodCodeP() {
-		OperationsTestCase<InterventionAct> validateInterventionActMoodCodePTestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActMoodCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(InterventionAct target) {
-
-			}
-
-			@Override
-			protected void updateToPass(InterventionAct target) {
-				target.init();
-				target.setMoodCode(x_DocumentActMood.APT);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return InterventionActOperations.validateInterventionActMoodCodeP(
-					(InterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInterventionActMoodCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
 	public void testValidateInterventionActMoodCode() {
 		OperationsTestCase<InterventionAct> validateInterventionActMoodCodeTestCase = new OperationsTestCase<InterventionAct>(
 			"validateInterventionActMoodCode",
@@ -219,7 +178,7 @@ public class InterventionActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(InterventionAct target) {
 
-				target.setMoodCode(x_DocumentActMood.APT);
+				target.setMoodCode(x_DocumentActMood.EVN);
 			}
 
 			@Override
@@ -249,7 +208,8 @@ public class InterventionActTest extends CDAValidationTest {
 	public void testValidateInterventionActId() {
 		OperationsTestCase<InterventionAct> validateInterventionActIdTestCase = new OperationsTestCase<InterventionAct>(
 			"validateInterventionActId",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(InterventionAct target) {
@@ -391,6 +351,40 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+	public void testValidateInterventionActStatusCodeP() {
+		OperationsTestCase<InterventionAct> validateInterventionActStatusCodePTestCase = new OperationsTestCase<InterventionAct>(
+			"validateInterventionActStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(InterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(InterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return InterventionActOperations.validateInterventionActStatusCodeP(
+					(InterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInterventionActStatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
 	public void testValidateInterventionActEffectiveTime() {
 		OperationsTestCase<InterventionAct> validateInterventionActEffectiveTimeTestCase = new OperationsTestCase<InterventionAct>(
 			"validateInterventionActEffectiveTime",
@@ -428,47 +422,11 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateInterventionActGoalObservation() {
-		OperationsTestCase<InterventionAct> validateInterventionActGoalObservationTestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActGoalObservation",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateInterventionActInterventionAct() {
+		OperationsTestCase<InterventionAct> validateInterventionActInterventionActTestCase = new OperationsTestCase<InterventionAct>(
+			"validateInterventionActInterventionAct",
+			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			@Override
-			protected void updateToFail(InterventionAct target) {
-
-			}
-
-			@Override
-			protected void updateToPass(InterventionAct target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-				er.setObservation(ConsolFactory.eINSTANCE.createGoalObservation());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return InterventionActOperations.validateInterventionActGoalObservation(
-					(InterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInterventionActGoalObservationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateInterventionAct() {
-		OperationsTestCase<InterventionAct> validateInterventionActTestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionAct",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
 
 			@Override
 			protected void updateToFail(InterventionAct target) {
@@ -487,13 +445,13 @@ public class InterventionActTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InterventionActOperations.validateInterventionAct(
+				return InterventionActOperations.validateInterventionActInterventionAct(
 					(InterventionAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateInterventionActTestCase.doValidationTest();
+		validateInterventionActInterventionActTestCase.doValidationTest();
 	}
 
 	/**
@@ -501,10 +459,10 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateInterventionActNutritionRecommendations() {
-		OperationsTestCase<InterventionAct> validateInterventionActNutritionRecommendationsTestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActNutritionRecommendations",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateInterventionActNutritionRecommendation() {
+		OperationsTestCase<InterventionAct> validateInterventionActNutritionRecommendationTestCase = new OperationsTestCase<InterventionAct>(
+			"validateInterventionActNutritionRecommendation", operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -516,20 +474,21 @@ public class InterventionActTest extends CDAValidationTest {
 			protected void updateToPass(InterventionAct target) {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createNutritionRecommendations());
+				er.setAct(ConsolFactory.eINSTANCE.createNutritionRecommendation());
 				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InterventionActOperations.validateInterventionActNutritionRecommendations(
+				return InterventionActOperations.validateInterventionActNutritionRecommendation(
 					(InterventionAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateInterventionActNutritionRecommendationsTestCase.doValidationTest();
+		validateInterventionActNutritionRecommendationTestCase.doValidationTest();
 	}
 
 	/**
@@ -537,10 +496,11 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateInterventionActActReference() {
-		OperationsTestCase<InterventionAct> validateInterventionActActReferenceTestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActActReference",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateInterventionActInterventionEntryReference() {
+		OperationsTestCase<InterventionAct> validateInterventionActInterventionEntryReferenceTestCase = new OperationsTestCase<InterventionAct>(
+			"validateInterventionActInterventionEntryReference",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_INTERVENTION_ENTRY_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -553,20 +513,21 @@ public class InterventionActTest extends CDAValidationTest {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setAct(ConsolFactory.eINSTANCE.createActReference().init());
+				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
 				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InterventionActOperations.validateInterventionActActReference(
+				return InterventionActOperations.validateInterventionActInterventionEntryReference(
 					(InterventionAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateInterventionActActReferenceTestCase.doValidationTest();
+		validateInterventionActInterventionEntryReferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -574,10 +535,10 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateInterventionActActReferenceGoal() {
-		OperationsTestCase<InterventionAct> validateInterventionActActReferenceGoalTestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActActReferenceGoal",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_ACT_REFERENCE_GOAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateInterventionActGoalObsEntryReference() {
+		OperationsTestCase<InterventionAct> validateInterventionActGoalObsEntryReferenceTestCase = new OperationsTestCase<InterventionAct>(
+			"validateInterventionActGoalObsEntryReference", operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_GOAL_OBS_ENTRY_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -589,22 +550,21 @@ public class InterventionActTest extends CDAValidationTest {
 			protected void updateToPass(InterventionAct target) {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.GEVL);
-				er.setAct(ConsolFactory.eINSTANCE.createActReference().init());
+				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
+				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
 				target.getEntryRelationships().add(er);
-
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InterventionActOperations.validateInterventionActActReferenceGoal(
+				return InterventionActOperations.validateInterventionActGoalObsEntryReference(
 					(InterventionAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateInterventionActActReferenceGoalTestCase.doValidationTest();
+		validateInterventionActGoalObsEntryReferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -614,8 +574,8 @@ public class InterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidateInterventionActAuthorParticipation() {
 		OperationsTestCase<InterventionAct> validateInterventionActAuthorParticipationTestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateInterventionActAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -645,46 +605,11 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateInterventionActExternalDocumentReference() {
-		OperationsTestCase<InterventionAct> validateInterventionActExternalDocumentReferenceTestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActExternalDocumentReference",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(InterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(InterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setAct(ConsolFactory.eINSTANCE.createExternalDocumentReference().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return InterventionActOperations.validateInterventionActExternalDocumentReference(
-					(InterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInterventionActExternalDocumentReferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
 	public void testValidateInterventionActAdvanceDirectiveObservation2() {
 		OperationsTestCase<InterventionAct> validateInterventionActAdvanceDirectiveObservation2TestCase = new OperationsTestCase<InterventionAct>(
 			"validateInterventionActAdvanceDirectiveObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -721,8 +646,8 @@ public class InterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidateInterventionActImmunizationActivity2() {
 		OperationsTestCase<InterventionAct> validateInterventionActImmunizationActivity2TestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActImmunizationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateInterventionActImmunizationActivity2", operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -759,8 +684,8 @@ public class InterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidateInterventionActMedicationActivity2() {
 		OperationsTestCase<InterventionAct> validateInterventionActMedicationActivity2TestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActMedicationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateInterventionActMedicationActivity2", operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -797,8 +722,8 @@ public class InterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidateInterventionActProcedureActivityAct2() {
 		OperationsTestCase<InterventionAct> validateInterventionActProcedureActivityAct2TestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActProcedureActivityAct2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateInterventionActProcedureActivityAct2", operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -836,7 +761,8 @@ public class InterventionActTest extends CDAValidationTest {
 	public void testValidateInterventionActProcedureActivityObservation2() {
 		OperationsTestCase<InterventionAct> validateInterventionActProcedureActivityObservation2TestCase = new OperationsTestCase<InterventionAct>(
 			"validateInterventionActProcedureActivityObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -874,7 +800,8 @@ public class InterventionActTest extends CDAValidationTest {
 	public void testValidateInterventionActProcedureActivityProcedure2() {
 		OperationsTestCase<InterventionAct> validateInterventionActProcedureActivityProcedure2TestCase = new OperationsTestCase<InterventionAct>(
 			"validateInterventionActProcedureActivityProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -911,8 +838,8 @@ public class InterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidateInterventionActEncounterActivity2() {
 		OperationsTestCase<InterventionAct> validateInterventionActEncounterActivity2TestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActEncounterActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateInterventionActEncounterActivity2", operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -950,7 +877,8 @@ public class InterventionActTest extends CDAValidationTest {
 	public void testValidateInterventionActNonMedicinalSupplyActivity2() {
 		OperationsTestCase<InterventionAct> validateInterventionActNonMedicinalSupplyActivity2TestCase = new OperationsTestCase<InterventionAct>(
 			"validateInterventionActNonMedicinalSupplyActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1023,37 +951,39 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateInterventionActPlannedAct2() {
-		OperationsTestCase<InterventionAct> validateInterventionActPlannedAct2TestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActPlannedAct2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateInterventionActHandoffCommunicationParticipants() {
+		OperationsTestCase<InterventionAct> validateInterventionActHandoffCommunicationParticipantsTestCase = new OperationsTestCase<InterventionAct>(
+			"validateInterventionActHandoffCommunicationParticipants",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(InterventionAct target) {
-
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected void updateToPass(InterventionAct target) {
-				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setAct(ConsolFactory.eINSTANCE.createPlannedAct2().init());
+				er.setAct(ConsolFactory.eINSTANCE.createHandoffCommunicationParticipants().init());
 				target.getEntryRelationships().add(er);
-
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InterventionActOperations.validateInterventionActPlannedAct2(
+				return InterventionActOperations.validateInterventionActHandoffCommunicationParticipants(
 					(InterventionAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateInterventionActPlannedAct2TestCase.doValidationTest();
+		validateInterventionActHandoffCommunicationParticipantsTestCase.doValidationTest();
 	}
 
 	/**
@@ -1061,10 +991,10 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateInterventionActPlannedEncounter2() {
-		OperationsTestCase<InterventionAct> validateInterventionActPlannedEncounter2TestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActPlannedEncounter2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateInterventionActPlannedInterventionAct() {
+		OperationsTestCase<InterventionAct> validateInterventionActPlannedInterventionActTestCase = new OperationsTestCase<InterventionAct>(
+			"validateInterventionActPlannedInterventionAct", operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1077,21 +1007,20 @@ public class InterventionActTest extends CDAValidationTest {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setEncounter(ConsolFactory.eINSTANCE.createPlannedEncounter2().init());
+				er.setAct(ConsolFactory.eINSTANCE.createPlannedInterventionAct().init());
 				target.getEntryRelationships().add(er);
-
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InterventionActOperations.validateInterventionActPlannedEncounter2(
+				return InterventionActOperations.validateInterventionActPlannedInterventionAct(
 					(InterventionAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateInterventionActPlannedEncounter2TestCase.doValidationTest();
+		validateInterventionActPlannedInterventionActTestCase.doValidationTest();
 	}
 
 	/**
@@ -1099,36 +1028,33 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateInterventionActPlannedObservation2() {
-		OperationsTestCase<InterventionAct> validateInterventionActPlannedObservation2TestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActPlannedObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateInterventionActReference() {
+		OperationsTestCase<InterventionAct> validateInterventionActReferenceTestCase = new OperationsTestCase<InterventionAct>(
+			"validateInterventionActReference",
+			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(InterventionAct target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(InterventionAct target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createPlannedObservation2().init());
-				target.getEntryRelationships().add(er);
+				Reference ref = CDAFactory.eINSTANCE.createReference();
+				target.getReferences().add(ref);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InterventionActOperations.validateInterventionActPlannedObservation2(
+				return InterventionActOperations.validateInterventionActReference(
 					(InterventionAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateInterventionActPlannedObservation2TestCase.doValidationTest();
+		validateInterventionActReferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -1136,36 +1062,38 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateInterventionActPlannedProcedure2() {
-		OperationsTestCase<InterventionAct> validateInterventionActPlannedProcedure2TestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActPlannedProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateInterventionActReferenceTypeCode() {
+		OperationsTestCase<InterventionAct> validateInterventionActReferenceTypeCodeTestCase = new OperationsTestCase<InterventionAct>(
+			"validateInterventionActReferenceTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(InterventionAct target) {
-
+				target.init();
+				Reference ref = CDAFactory.eINSTANCE.createReference();
+				target.getReferences().add(ref);
+				ExternalDocumentReference edr = ConsolFactory.eINSTANCE.createExternalDocumentReference().init();
+				ref.setExternalDocument(edr);
 			}
 
 			@Override
 			protected void updateToPass(InterventionAct target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setProcedure(ConsolFactory.eINSTANCE.createPlannedProcedure2().init());
-				target.getEntryRelationships().add(er);
+				for (Reference r : target.getReferences()) {
+					r.setTypeCode(x_ActRelationshipExternalReference.REFR);
+				}
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InterventionActOperations.validateInterventionActPlannedProcedure2(
+				return InterventionActOperations.validateInterventionActReferenceTypeCode(
 					(InterventionAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateInterventionActPlannedProcedure2TestCase.doValidationTest();
+		validateInterventionActReferenceTypeCodeTestCase.doValidationTest();
 	}
 
 	/**
@@ -1173,87 +1101,37 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateInterventionActPlannedMedicationActivity2() {
-		OperationsTestCase<InterventionAct> validateInterventionActPlannedMedicationActivity2TestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActPlannedMedicationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateInterventionActReferenceExternalDocumentReference() {
+		OperationsTestCase<InterventionAct> validateInterventionActReferenceExternalDocumentReferenceTestCase = new OperationsTestCase<InterventionAct>(
+			"validateInterventionActReferenceExternalDocumentReference",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(InterventionAct target) {
-
+				target.init();
+				Reference ref = CDAFactory.eINSTANCE.createReference();
+				target.getReferences().add(ref);
 			}
 
 			@Override
 			protected void updateToPass(InterventionAct target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createPlannedMedicationActivity2().init());
-				target.getEntryRelationships().add(er);
-
+				for (Reference r : target.getReferences()) {
+					r.setExternalDocument(ConsolFactory.eINSTANCE.createExternalDocumentReference().init());
+				}
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InterventionActOperations.validateInterventionActPlannedMedicationActivity2(
+				return InterventionActOperations.validateInterventionActReferenceExternalDocumentReference(
 					(InterventionAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateInterventionActPlannedMedicationActivity2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateInterventionActPlannedSupply2() {
-		OperationsTestCase<InterventionAct> validateInterventionActPlannedSupply2TestCase = new OperationsTestCase<InterventionAct>(
-			"validateInterventionActPlannedSupply2",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTION_ACT_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(InterventionAct target) {
-
-			}
-
-			@Override
-			protected void updateToPass(InterventionAct target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setSupply(ConsolFactory.eINSTANCE.createPlannedSupply2().init());
-				target.getEntryRelationships().add(er);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return InterventionActOperations.validateInterventionActPlannedSupply2(
-					(InterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInterventionActPlannedSupply2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetGoalObservations() {
-
-		InterventionAct target = objectFactory.create();
-		target.getGoalObservations();
-
+		validateInterventionActReferenceExternalDocumentReferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -1273,10 +1151,10 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetNutritionRecommendationss() {
+	public void testGetNutritionRecommendations() {
 
 		InterventionAct target = objectFactory.create();
-		target.getNutritionRecommendationss();
+		target.getNutritionRecommendations();
 
 	}
 
@@ -1285,34 +1163,10 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetActReferences() {
+	public void testGetInterventionEntryReferences() {
 
 		InterventionAct target = objectFactory.create();
-		target.getActReferences();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetActReferenceGoals() {
-
-		InterventionAct target = objectFactory.create();
-		target.getActReferenceGoals();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetExternalDocumentReferences() {
-
-		InterventionAct target = objectFactory.create();
-		target.getExternalDocumentReferences();
+		target.getInterventionEntryReferences();
 
 	}
 
@@ -1429,10 +1283,10 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedAct2s() {
+	public void testGetHandoffCommunicationParticipantss() {
 
 		InterventionAct target = objectFactory.create();
-		target.getPlannedAct2s();
+		target.getHandoffCommunicationParticipantss();
 
 	}
 
@@ -1441,58 +1295,10 @@ public class InterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedEncounter2s() {
+	public void testGetPlannedInterventionActs() {
 
 		InterventionAct target = objectFactory.create();
-		target.getPlannedEncounter2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetPlannedObservation2s() {
-
-		InterventionAct target = objectFactory.create();
-		target.getPlannedObservation2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetPlannedProcedure2s() {
-
-		InterventionAct target = objectFactory.create();
-		target.getPlannedProcedure2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetPlannedMedicationActivity2s() {
-
-		InterventionAct target = objectFactory.create();
-		target.getPlannedMedicationActivity2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetPlannedSupply2s() {
-
-		InterventionAct target = objectFactory.create();
-		target.getPlannedSupply2s();
+		target.getPlannedInterventionActs();
 
 	}
 

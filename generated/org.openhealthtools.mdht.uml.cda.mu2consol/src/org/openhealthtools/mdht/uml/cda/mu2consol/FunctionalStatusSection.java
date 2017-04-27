@@ -13,22 +13,20 @@ package org.openhealthtools.mdht.uml.cda.mu2consol;
 import java.lang.Iterable;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultObservation;
-import org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultOrganizer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Functional Status Section</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getFunctionalStatusSection()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.22.2.14'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation
+ *        constraints.validation.error='FunctionalStatusSectionTemplateId'
+ *        templateId.root='2.16.840.1.113883.10.20.22.2.14'"
  * @generated
  */
-public interface FunctionalStatusSection extends
-		org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection {
+public interface FunctionalStatusSection extends org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.getObservations()->select(observation : cda::Observation | not
@@ -36,9 +34,12 @@ public interface FunctionalStatusSection extends
 	 * observation.oclIsKindOf(consol::CognitiveStatusResultObservation
 	 * )).oclAsType(consol::CognitiveStatusResultObservation) <!-- end-model-doc
 	 * -->
-	 * 
+	 *
 	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusResultObservation)).oclAsType(consol::CognitiveStatusResultObservation)'"
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getObservations()->select(observation :
+	 *        cda::Observation | not observation.oclIsUndefined() and
+	 *        observation.oclIsKindOf(consol::CognitiveStatusResultObservation)).oclAsType(consol::CognitiveStatusResultObservation)'"
 	 * @generated
 	 */
 	EList<CognitiveStatusResultObservation> getMu2consolCognitiveStatusResultObservations();
@@ -50,45 +51,51 @@ public interface FunctionalStatusSection extends
 	 * organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer
 	 * )).oclAsType(consol::CognitiveStatusResultOrganizer) <!-- end-model-doc
 	 * -->
-	 * 
+	 *
 	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer)).oclAsType(consol::CognitiveStatusResultOrganizer)'"
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getOrganizers()->select(organizer : cda::Organizer |
+	 *        not organizer.oclIsUndefined() and
+	 *        organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer)).oclAsType(consol::CognitiveStatusResultOrganizer)'"
 	 * @generated
 	 */
 	EList<CognitiveStatusResultOrganizer> getMu2consolCognitiveStatusResultOrganizers();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::FunctionalStatusResultObservation)).oclAsType(mu2consol::FunctionalStatusResultObservation)'"
+	 *
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getObservations()->select(observation :
+	 *        cda::Observation | not observation.oclIsUndefined() and
+	 *        observation.oclIsKindOf(mu2consol::FunctionalStatusResultObservation)).oclAsType(mu2consol::FunctionalStatusResultObservation)'"
 	 * @generated
 	 */
 	EList<FunctionalStatusResultObservation> getMu2consolFunctionalStatusResultObservations();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(mu2consol::FunctionalStatusResultOrganizer)).oclAsType(mu2consol::FunctionalStatusResultOrganizer)'"
+	 *
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getOrganizers()->select(organizer : cda::Organizer |
+	 *        not organizer.oclIsUndefined() and
+	 *        organizer.oclIsKindOf(mu2consol::FunctionalStatusResultOrganizer)).oclAsType(mu2consol::FunctionalStatusResultOrganizer)'"
 	 * @generated
 	 */
 	EList<FunctionalStatusResultOrganizer> getMu2consolFunctionalStatusResultOrganizers();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
-	@Override
 	public FunctionalStatusSection init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
-	@Override
-	public FunctionalStatusSection init(
-			Iterable<? extends Initializer<? extends EObject>> initializers);
+	public FunctionalStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusSection

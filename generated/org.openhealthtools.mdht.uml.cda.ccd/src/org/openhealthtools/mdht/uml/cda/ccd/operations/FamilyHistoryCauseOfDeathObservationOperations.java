@@ -39,6 +39,13 @@ import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
  * @generated
  */
 public class FamilyHistoryCauseOfDeathObservationOperations extends FamilyHistoryObservationOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -67,7 +74,7 @@ public class FamilyHistoryCauseOfDeathObservationOperations extends FamilyHistor
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,25 +91,30 @@ public class FamilyHistoryCauseOfDeathObservationOperations extends FamilyHistor
 			FamilyHistoryCauseOfDeathObservation familyHistoryCauseOfDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION);
 			try {
-				VALIDATE_FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistoryCauseOfDeathObservation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				familyHistoryCauseOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION__FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION_ENTRY_RELATIONSHIP,
-					CCDPlugin.INSTANCE.getString("FamilyHistoryCauseOfDeathObservationEntryRelationship"),
-					new Object[] { familyHistoryCauseOfDeathObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION__FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION_ENTRY_RELATIONSHIP,
+						CCDPlugin.INSTANCE.getString(
+							"FamilyHistoryCauseOfDeathObservationFamilyHistoryCauseOfDeathObservationEntryRelationship"),
+						new Object[] { familyHistoryCauseOfDeathObservation }));
 			}
 
 			return false;
@@ -128,7 +140,7 @@ public class FamilyHistoryCauseOfDeathObservationOperations extends FamilyHistor
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,23 +156,30 @@ public class FamilyHistoryCauseOfDeathObservationOperations extends FamilyHistor
 			FamilyHistoryCauseOfDeathObservation familyHistoryCauseOfDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION);
 			try {
-				VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistoryCauseOfDeathObservation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				familyHistoryCauseOfDeathObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID,
-					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationTemplateId"),
-					new Object[] { familyHistoryCauseOfDeathObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID,
+						CCDPlugin.INSTANCE.getString(
+							"FamilyHistoryCauseOfDeathObservationFamilyHistoryObservationTemplateId"),
+						new Object[] { familyHistoryCauseOfDeathObservation }));
 			}
 
 			return false;

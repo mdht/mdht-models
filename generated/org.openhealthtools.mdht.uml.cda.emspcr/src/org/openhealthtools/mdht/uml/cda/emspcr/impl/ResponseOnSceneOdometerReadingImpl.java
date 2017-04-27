@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ResponseOnSceneOdometerReading;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ResponseOnSceneOdometerReadingOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Response On Scene Odometer Reading</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ResponseOnSceneOdometerReadingImpl extends ObservationImpl implements ResponseOnSceneOdometerReading {
+public class ResponseOnSceneOdometerReadingImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements ResponseOnSceneOdometerReading {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class ResponseOnSceneOdometerReadingImpl extends ObservationImpl implemen
 	 */
 	public boolean validateResponseOnSceneOdometerReadingTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingTemplateId(
-			this, diagnostics, context);
+		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +59,7 @@ public class ResponseOnSceneOdometerReadingImpl extends ObservationImpl implemen
 	 */
 	public boolean validateResponseOnSceneOdometerReadingMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingMoodCode(
-			this, diagnostics, context);
+		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +68,7 @@ public class ResponseOnSceneOdometerReadingImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateResponseOnSceneOdometerReadingCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingCodeP(
-			this, diagnostics, context);
+		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +77,7 @@ public class ResponseOnSceneOdometerReadingImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateResponseOnSceneOdometerReadingCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingCode(
-			this, diagnostics, context);
+		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingCode(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +86,7 @@ public class ResponseOnSceneOdometerReadingImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateResponseOnSceneOdometerReadingValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingValue(
-			this, diagnostics, context);
+		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingValue(this, diagnostics, context);
 	}
 
 	/**
@@ -111,16 +95,16 @@ public class ResponseOnSceneOdometerReadingImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public ResponseOnSceneOdometerReading init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ResponseOnSceneOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public ResponseOnSceneOdometerReading init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ResponseOnSceneOdometerReadingImpl

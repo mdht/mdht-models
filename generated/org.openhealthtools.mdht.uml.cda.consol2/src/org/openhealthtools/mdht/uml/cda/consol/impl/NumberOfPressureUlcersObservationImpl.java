@@ -12,22 +12,21 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NumberOfPressureUlcersObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Number Of Pressure Ulcers Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class NumberOfPressureUlcersObservationImpl extends ObservationImpl implements NumberOfPressureUlcersObservation {
+public class NumberOfPressureUlcersObservationImpl extends ObservationImpl
+		implements NumberOfPressureUlcersObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -89,7 +88,8 @@ public class NumberOfPressureUlcersObservationImpl extends ObservationImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean validateNumberOfPressureUlcersObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNumberOfPressureUlcersObservationId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NumberOfPressureUlcersObservationOperations.validateNumberOfPressureUlcersObservationId(
 			this, diagnostics, context);
 	}

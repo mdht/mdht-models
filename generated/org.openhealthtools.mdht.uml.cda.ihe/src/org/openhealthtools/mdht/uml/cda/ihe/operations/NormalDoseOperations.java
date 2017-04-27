@@ -39,67 +39,79 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  * @generated
  */
 public class NormalDoseOperations extends MedicationOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected NormalDoseOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Normal Dose No Subordinate Substance Administration</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Normal Dose No Subordinate Substance Administration</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship.substanceAdministration->isEmpty()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Normal Dose No Subordinate Substance Administration</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Normal Dose No Subordinate Substance Administration</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-	protected static Constraint VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param normalDose The receiving '<em><b>Normal Dose</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param normalDose The receiving '<em><b>Normal Dose</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose normalDose,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(IHEPackage.Literals.NORMAL_DOSE);
 			try {
-				VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			normalDose)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				normalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
-					IHEValidator.NORMAL_DOSE__NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION,
-					IHEPlugin.INSTANCE.getString("NormalDoseNoSubordinateSubstanceAdministration"),
-					new Object[] { normalDose }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+						IHEValidator.NORMAL_DOSE__NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION,
+						IHEPlugin.INSTANCE.getString("NormalDoseNormalDoseNoSubordinateSubstanceAdministration"),
+						new Object[] { normalDose }));
 			}
 
 			return false;
@@ -108,53 +120,58 @@ public class NormalDoseOperations extends MedicationOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateNormalDoseTemplateId(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Normal Dose Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateNormalDoseTemplateId(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Normal Dose Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateNormalDoseTemplateId(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateNormalDoseTemplateId(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.7.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateNormalDoseTemplateId(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Normal Dose Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateNormalDoseTemplateId(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Normal Dose Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateNormalDoseTemplateId(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateNormalDoseTemplateId(NormalDose, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<Constraint> VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param normalDose The receiving '<em><b>Normal Dose</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param normalDose The receiving '<em><b>Normal Dose</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateNormalDoseTemplateId(NormalDose normalDose, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(IHEPackage.Literals.NORMAL_DOSE);
 			try {
-				VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(normalDose)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			normalDose)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
-					IHEValidator.NORMAL_DOSE__NORMAL_DOSE_TEMPLATE_ID,
-					IHEPlugin.INSTANCE.getString("NormalDoseTemplateId"), new Object[] { normalDose }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+						IHEValidator.NORMAL_DOSE__NORMAL_DOSE_TEMPLATE_ID,
+						IHEPlugin.INSTANCE.getString("NormalDoseNormalDoseTemplateId"), new Object[] { normalDose }));
 			}
 
 			return false;

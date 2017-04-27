@@ -1,21 +1,24 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.MothersVitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.MothersVitalSignsSectionOperations;
 
 /**
@@ -32,8 +35,8 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.MothersVitalSignsSection
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MothersVitalSignsSection#validateMothersVitalSignsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mothers Vital Signs Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MothersVitalSignsSection#validateMothersVitalSignsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mothers Vital Signs Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MothersVitalSignsSection#validateMothersVitalSignsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mothers Vital Signs Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MothersVitalSignsSection#validateMothersVitalSignsSectionVitalSignsObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mothers Vital Signs Section Vital Signs Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MothersVitalSignsSection#getVitalSignsObservations() <em>Get Vital Signs Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MothersVitalSignsSection#validateMothersVitalSignsSectionMothersVitalSignsObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mothers Vital Signs Section Mothers Vital Signs Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MothersVitalSignsSection#getMothersVitalSignsObservations() <em>Get Mothers Vital Signs Observations</em>}</li>
  * </ul>
  * </p>
  *
@@ -47,10 +50,11 @@ public class MothersVitalSignsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMothersVitalSignsSectionTemplateId() {
 		OperationsTestCase<MothersVitalSignsSection> validateMothersVitalSignsSectionTemplateIdTestCase = new OperationsTestCase<MothersVitalSignsSection>(
-			"validateMothersVitalSignsSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MOTHERS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMothersVitalSignsSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_MOTHERS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -81,10 +85,11 @@ public class MothersVitalSignsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMothersVitalSignsSectionClassCode() {
 		OperationsTestCase<MothersVitalSignsSection> validateMothersVitalSignsSectionClassCodeTestCase = new OperationsTestCase<MothersVitalSignsSection>(
-			"validateMothersVitalSignsSectionClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_MOTHERS_VITAL_SIGNS_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMothersVitalSignsSectionClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MOTHERS_VITAL_SIGNS_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -115,10 +120,11 @@ public class MothersVitalSignsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMothersVitalSignsSectionMoodCode() {
 		OperationsTestCase<MothersVitalSignsSection> validateMothersVitalSignsSectionMoodCodeTestCase = new OperationsTestCase<MothersVitalSignsSection>(
-			"validateMothersVitalSignsSectionMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_MOTHERS_VITAL_SIGNS_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMothersVitalSignsSectionMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MOTHERS_VITAL_SIGNS_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -149,6 +155,7 @@ public class MothersVitalSignsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMothersVitalSignsSectionCode() {
 		OperationsTestCase<MothersVitalSignsSection> validateMothersVitalSignsSectionCodeTestCase = new OperationsTestCase<MothersVitalSignsSection>(
 			"validateMothersVitalSignsSectionCode",
@@ -183,6 +190,7 @@ public class MothersVitalSignsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMothersVitalSignsSectionCodeP() {
 		OperationsTestCase<MothersVitalSignsSection> validateMothersVitalSignsSectionCodePTestCase = new OperationsTestCase<MothersVitalSignsSection>(
 			"validateMothersVitalSignsSectionCodeP",
@@ -217,6 +225,7 @@ public class MothersVitalSignsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMothersVitalSignsSectionText() {
 		OperationsTestCase<MothersVitalSignsSection> validateMothersVitalSignsSectionTextTestCase = new OperationsTestCase<MothersVitalSignsSection>(
 			"validateMothersVitalSignsSectionText",
@@ -254,10 +263,12 @@ public class MothersVitalSignsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateMothersVitalSignsSectionVitalSignsObservation() {
-		OperationsTestCase<MothersVitalSignsSection> validateMothersVitalSignsSectionVitalSignsObservationTestCase = new OperationsTestCase<MothersVitalSignsSection>(
-			"validateMothersVitalSignsSectionVitalSignsObservation",
-			operationsForOCL.getOCLValue("VALIDATE_MOTHERS_VITAL_SIGNS_SECTION_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateMothersVitalSignsSectionMothersVitalSignsObservation() {
+		OperationsTestCase<MothersVitalSignsSection> validateMothersVitalSignsSectionMothersVitalSignsObservationTestCase = new OperationsTestCase<MothersVitalSignsSection>(
+			"validateMothersVitalSignsSectionMothersVitalSignsObservation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MOTHERS_VITAL_SIGNS_SECTION_MOTHERS_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -274,13 +285,13 @@ public class MothersVitalSignsSectionTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return MothersVitalSignsSectionOperations.validateMothersVitalSignsSectionVitalSignsObservation(
+				return MothersVitalSignsSectionOperations.validateMothersVitalSignsSectionMothersVitalSignsObservation(
 					(MothersVitalSignsSection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateMothersVitalSignsSectionVitalSignsObservationTestCase.doValidationTest();
+		validateMothersVitalSignsSectionMothersVitalSignsObservationTestCase.doValidationTest();
 	}
 
 	/**
@@ -288,10 +299,11 @@ public class MothersVitalSignsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetVitalSignsObservations() {
+
+	public void testGetMothersVitalSignsObservations() {
 
 		MothersVitalSignsSection target = objectFactory.create();
-		target.getVitalSignsObservations();
+		target.getMothersVitalSignsObservations();
 
 	}
 
@@ -348,8 +360,7 @@ public class MothersVitalSignsSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

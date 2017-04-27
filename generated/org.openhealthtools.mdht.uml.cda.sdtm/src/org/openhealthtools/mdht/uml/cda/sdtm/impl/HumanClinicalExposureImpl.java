@@ -2,20 +2,12 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -32,19 +24,16 @@ import org.openhealthtools.mdht.uml.cda.sdtm.StudyEpoch;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.TimingReference;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.HumanClinicalExposureOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Human Clinical Exposure</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class HumanClinicalExposureImpl extends SubstanceAdministrationImpl implements HumanClinicalExposure {
+public class HumanClinicalExposureImpl extends org.eclipse.mdht.uml.cda.impl.SubstanceAdministrationImpl implements HumanClinicalExposure {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -561,7 +550,7 @@ public class HumanClinicalExposureImpl extends SubstanceAdministrationImpl imple
 	 */
 	@Override
 	public HumanClinicalExposure init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -569,8 +558,8 @@ public class HumanClinicalExposureImpl extends SubstanceAdministrationImpl imple
      * @generated
      */
     @Override
-	public HumanClinicalExposure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public HumanClinicalExposure init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //HumanClinicalExposureImpl

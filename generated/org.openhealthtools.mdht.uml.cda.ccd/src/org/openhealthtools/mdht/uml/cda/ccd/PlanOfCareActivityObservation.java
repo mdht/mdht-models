@@ -15,8 +15,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Observation;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,7 +39,8 @@ public interface PlanOfCareActivityObservation extends Observation, PlanOfCareAc
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode = vocab::x_ActMoodDocumentObservation::INT or self.moodCode = vocab::x_ActMoodDocumentObservation::GOL\r\n  or self.moodCode = vocab::x_ActMoodDocumentObservation::PRMS or self.moodCode = vocab::x_ActMoodDocumentObservation::PRP\r\n  or self.moodCode = vocab::x_ActMoodDocumentObservation::RQO'"
 	 * @generated
 	 */
-	boolean validatePlanOfCareActivityObservationMoodCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlanOfCareActivityObservationMoodCodeValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

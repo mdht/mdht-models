@@ -8,7 +8,6 @@ package org.openhealthtools.mdht.uml.cda.qrda;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -76,7 +75,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__REALM_CODE = CDAPackage.CLINICAL_DOCUMENT__REALM_CODE;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -85,7 +84,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__TYPE_ID = CDAPackage.CLINICAL_DOCUMENT__TYPE_ID;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -94,7 +93,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__TEMPLATE_ID = CDAPackage.CLINICAL_DOCUMENT__TEMPLATE_ID;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -103,7 +102,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__ID = CDAPackage.CLINICAL_DOCUMENT__ID;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -112,7 +111,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__CODE = CDAPackage.CLINICAL_DOCUMENT__CODE;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CODE;
 
 	/**
      * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -121,7 +120,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__TITLE = CDAPackage.CLINICAL_DOCUMENT__TITLE;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__TITLE;
 
 	/**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -130,7 +129,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__EFFECTIVE_TIME = CDAPackage.CLINICAL_DOCUMENT__EFFECTIVE_TIME;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__EFFECTIVE_TIME;
 
 	/**
      * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -139,7 +138,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__CONFIDENTIALITY_CODE = CDAPackage.CLINICAL_DOCUMENT__CONFIDENTIALITY_CODE;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CONFIDENTIALITY_CODE;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -148,7 +147,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__LANGUAGE_CODE = CDAPackage.CLINICAL_DOCUMENT__LANGUAGE_CODE;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Set Id</b></em>' containment reference.
@@ -157,7 +156,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__SET_ID = CDAPackage.CLINICAL_DOCUMENT__SET_ID;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__SET_ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__SET_ID;
 
 	/**
      * The feature id for the '<em><b>Version Number</b></em>' containment reference.
@@ -166,7 +165,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__VERSION_NUMBER = CDAPackage.CLINICAL_DOCUMENT__VERSION_NUMBER;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__VERSION_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__VERSION_NUMBER;
 
 	/**
      * The feature id for the '<em><b>Copy Time</b></em>' containment reference.
@@ -175,7 +174,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__COPY_TIME = CDAPackage.CLINICAL_DOCUMENT__COPY_TIME;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__COPY_TIME = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__COPY_TIME;
 
 	/**
      * The feature id for the '<em><b>Record Target</b></em>' containment reference list.
@@ -184,7 +183,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__RECORD_TARGET = CDAPackage.CLINICAL_DOCUMENT__RECORD_TARGET;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__RECORD_TARGET = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__RECORD_TARGET;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -193,7 +192,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__AUTHOR = CDAPackage.CLINICAL_DOCUMENT__AUTHOR;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Data Enterer</b></em>' containment reference.
@@ -202,7 +201,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__DATA_ENTERER = CDAPackage.CLINICAL_DOCUMENT__DATA_ENTERER;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__DATA_ENTERER = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__DATA_ENTERER;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -211,7 +210,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__INFORMANT = CDAPackage.CLINICAL_DOCUMENT__INFORMANT;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Custodian</b></em>' containment reference.
@@ -220,7 +219,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__CUSTODIAN = CDAPackage.CLINICAL_DOCUMENT__CUSTODIAN;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__CUSTODIAN = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CUSTODIAN;
 
 	/**
      * The feature id for the '<em><b>Information Recipient</b></em>' containment reference list.
@@ -229,7 +228,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__INFORMATION_RECIPIENT = CDAPackage.CLINICAL_DOCUMENT__INFORMATION_RECIPIENT;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__INFORMATION_RECIPIENT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__INFORMATION_RECIPIENT;
 
 	/**
      * The feature id for the '<em><b>Legal Authenticator</b></em>' containment reference.
@@ -238,7 +237,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__LEGAL_AUTHENTICATOR = CDAPackage.CLINICAL_DOCUMENT__LEGAL_AUTHENTICATOR;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__LEGAL_AUTHENTICATOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__LEGAL_AUTHENTICATOR;
 
 	/**
      * The feature id for the '<em><b>Authenticator</b></em>' containment reference list.
@@ -247,7 +246,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__AUTHENTICATOR = CDAPackage.CLINICAL_DOCUMENT__AUTHENTICATOR;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__AUTHENTICATOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__AUTHENTICATOR;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -256,7 +255,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__PARTICIPANT = CDAPackage.CLINICAL_DOCUMENT__PARTICIPANT;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>In Fulfillment Of</b></em>' containment reference list.
@@ -265,7 +264,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__IN_FULFILLMENT_OF = CDAPackage.CLINICAL_DOCUMENT__IN_FULFILLMENT_OF;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__IN_FULFILLMENT_OF = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__IN_FULFILLMENT_OF;
 
 	/**
      * The feature id for the '<em><b>Documentation Of</b></em>' containment reference list.
@@ -274,7 +273,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__DOCUMENTATION_OF = CDAPackage.CLINICAL_DOCUMENT__DOCUMENTATION_OF;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__DOCUMENTATION_OF = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__DOCUMENTATION_OF;
 
 	/**
      * The feature id for the '<em><b>Related Document</b></em>' containment reference list.
@@ -283,7 +282,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__RELATED_DOCUMENT = CDAPackage.CLINICAL_DOCUMENT__RELATED_DOCUMENT;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__RELATED_DOCUMENT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__RELATED_DOCUMENT;
 
 	/**
      * The feature id for the '<em><b>Authorization</b></em>' containment reference list.
@@ -292,7 +291,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__AUTHORIZATION = CDAPackage.CLINICAL_DOCUMENT__AUTHORIZATION;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__AUTHORIZATION = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__AUTHORIZATION;
 
 	/**
      * The feature id for the '<em><b>Component Of</b></em>' containment reference.
@@ -301,7 +300,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__COMPONENT_OF = CDAPackage.CLINICAL_DOCUMENT__COMPONENT_OF;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__COMPONENT_OF = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__COMPONENT_OF;
 
 	/**
      * The feature id for the '<em><b>Component</b></em>' containment reference.
@@ -310,7 +309,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__COMPONENT = CDAPackage.CLINICAL_DOCUMENT__COMPONENT;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__COMPONENT;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -319,7 +318,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__NULL_FLAVOR = CDAPackage.CLINICAL_DOCUMENT__NULL_FLAVOR;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -328,7 +327,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__CLASS_CODE = CDAPackage.CLINICAL_DOCUMENT__CLASS_CODE;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -337,7 +336,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__MOOD_CODE = CDAPackage.CLINICAL_DOCUMENT__MOOD_CODE;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__MOOD_CODE;
 
 	/**
      * The number of structural features of the '<em>Quality Reporting Document Architecture Document</em>' class.
@@ -346,7 +345,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT_FEATURE_COUNT = CDAPackage.CLINICAL_DOCUMENT_FEATURE_COUNT + 0;
+	int QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.qrda.impl.MeasureSectionImpl <em>Measure Section</em>}' class.
@@ -365,7 +364,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__REALM_CODE = CDAPackage.SECTION__REALM_CODE;
+	int MEASURE_SECTION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -374,7 +373,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__TYPE_ID = CDAPackage.SECTION__TYPE_ID;
+	int MEASURE_SECTION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -383,7 +382,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__TEMPLATE_ID = CDAPackage.SECTION__TEMPLATE_ID;
+	int MEASURE_SECTION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -392,7 +391,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__ID = CDAPackage.SECTION__ID;
+	int MEASURE_SECTION__ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -401,7 +400,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__CODE = CDAPackage.SECTION__CODE;
+	int MEASURE_SECTION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CODE;
 
 	/**
      * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -410,7 +409,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__TITLE = CDAPackage.SECTION__TITLE;
+	int MEASURE_SECTION__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TITLE;
 
 	/**
      * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -419,7 +418,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__TEXT = CDAPackage.SECTION__TEXT;
+	int MEASURE_SECTION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__TEXT;
 
 	/**
      * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -428,7 +427,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__CONFIDENTIALITY_CODE = CDAPackage.SECTION__CONFIDENTIALITY_CODE;
+	int MEASURE_SECTION__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CONFIDENTIALITY_CODE;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -437,7 +436,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__LANGUAGE_CODE = CDAPackage.SECTION__LANGUAGE_CODE;
+	int MEASURE_SECTION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -446,7 +445,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__SUBJECT = CDAPackage.SECTION__SUBJECT;
+	int MEASURE_SECTION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SUBJECT;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -455,7 +454,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__AUTHOR = CDAPackage.SECTION__AUTHOR;
+	int MEASURE_SECTION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -464,7 +463,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__INFORMANT = CDAPackage.SECTION__INFORMANT;
+	int MEASURE_SECTION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Entry</b></em>' containment reference list.
@@ -473,7 +472,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__ENTRY = CDAPackage.SECTION__ENTRY;
+	int MEASURE_SECTION__ENTRY = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__ENTRY;
 
 	/**
      * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -482,7 +481,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__COMPONENT = CDAPackage.SECTION__COMPONENT;
+	int MEASURE_SECTION__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__COMPONENT;
 
 	/**
      * The feature id for the '<em><b>Section Id</b></em>' attribute.
@@ -491,7 +490,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__SECTION_ID = CDAPackage.SECTION__SECTION_ID;
+	int MEASURE_SECTION__SECTION_ID = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__SECTION_ID;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -500,7 +499,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__NULL_FLAVOR = CDAPackage.SECTION__NULL_FLAVOR;
+	int MEASURE_SECTION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -509,7 +508,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__CLASS_CODE = CDAPackage.SECTION__CLASS_CODE;
+	int MEASURE_SECTION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -518,7 +517,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION__MOOD_CODE = CDAPackage.SECTION__MOOD_CODE;
+	int MEASURE_SECTION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.SECTION__MOOD_CODE;
 
 	/**
      * The number of structural features of the '<em>Measure Section</em>' class.
@@ -527,7 +526,7 @@ public interface QRDAPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int MEASURE_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
+	int MEASURE_SECTION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 
 	/**

@@ -22,80 +22,73 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.phmr.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
-
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ParticipantRoleOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Participant Role</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ParticipantRoleImpl extends org.openhealthtools.mdht.uml.cda.impl.ParticipantRoleImpl implements ParticipantRole {
+public class ParticipantRoleImpl extends org.eclipse.mdht.uml.cda.impl.ParticipantRoleImpl implements ParticipantRole {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected ParticipantRoleImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhmrPackage.Literals.PARTICIPANT_ROLE;
-  }
+		return PhmrPackage.Literals.PARTICIPANT_ROLE;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
 public boolean validatePHMRParticipantRoleTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return ParticipantRoleOperations.validatePHMRParticipantRoleTemplateId(this, diagnostics, context);
-  }
+		return ParticipantRoleOperations.validatePHMRParticipantRoleTemplateId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
 public boolean validatePHMRParticipantRoleId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return ParticipantRoleOperations.validatePHMRParticipantRoleId(this, diagnostics, context);
-  }
+		return ParticipantRoleOperations.validatePHMRParticipantRoleId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public ParticipantRole init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -103,8 +96,8 @@ public boolean validatePHMRParticipantRoleId(DiagnosticChain diagnostics, Map<Ob
      * @generated
      */
     @Override
-	public ParticipantRole init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public ParticipantRole init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //ParticipantRoleImpl

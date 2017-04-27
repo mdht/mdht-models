@@ -6,17 +6,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.IncidentDispositionObservation;
@@ -26,21 +20,16 @@ import org.openhealthtools.mdht.uml.cda.emspcr.PrearrivalActivationObservation;
 import org.openhealthtools.mdht.uml.cda.emspcr.ReasonForChoosingDestinationObservation;
 import org.openhealthtools.mdht.uml.cda.emspcr.TransportMethodObservation;
 import org.openhealthtools.mdht.uml.cda.emspcr.TransportModeObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSDispositionSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>EMS Disposition Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class EMSDispositionSectionImpl extends SectionImpl implements EMSDispositionSection {
+public class EMSDispositionSectionImpl extends org.eclipse.mdht.uml.cda.impl.SectionImpl implements EMSDispositionSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -112,8 +101,7 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 */
 	public boolean validateEMSDispositionSectionNumberOfPatientsObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSDispositionSectionOperations.validateEMSDispositionSectionNumberOfPatientsObservation(
-			this, diagnostics, context);
+		return EMSDispositionSectionOperations.validateEMSDispositionSectionNumberOfPatientsObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -123,8 +111,7 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 */
 	public boolean validateEMSDispositionSectionIncidentDispositionObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSDispositionSectionOperations.validateEMSDispositionSectionIncidentDispositionObservation(
-			this, diagnostics, context);
+		return EMSDispositionSectionOperations.validateEMSDispositionSectionIncidentDispositionObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -134,8 +121,7 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 */
 	public boolean validateEMSDispositionSectionTransportModeObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSDispositionSectionOperations.validateEMSDispositionSectionTransportModeObservation(
-			this, diagnostics, context);
+		return EMSDispositionSectionOperations.validateEMSDispositionSectionTransportModeObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -145,8 +131,7 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 */
 	public boolean validateEMSDispositionSectionTransportMethodObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSDispositionSectionOperations.validateEMSDispositionSectionTransportMethodObservation(
-			this, diagnostics, context);
+		return EMSDispositionSectionOperations.validateEMSDispositionSectionTransportMethodObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -156,8 +141,7 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 */
 	public boolean validateEMSDispositionSectionReasonForChoosingDestinationObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSDispositionSectionOperations.validateEMSDispositionSectionReasonForChoosingDestinationObservation(
-			this, diagnostics, context);
+		return EMSDispositionSectionOperations.validateEMSDispositionSectionReasonForChoosingDestinationObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -167,8 +151,7 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 */
 	public boolean validateEMSDispositionSectionPrearrivalActivationObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSDispositionSectionOperations.validateEMSDispositionSectionPrearrivalActivationObservation(
-			this, diagnostics, context);
+		return EMSDispositionSectionOperations.validateEMSDispositionSectionPrearrivalActivationObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -178,8 +161,7 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 */
 	public boolean validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSDispositionSectionOperations.validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(
-			this, diagnostics, context);
+		return EMSDispositionSectionOperations.validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -251,16 +233,16 @@ public class EMSDispositionSectionImpl extends SectionImpl implements EMSDisposi
 	 * @generated
 	 */
 	public EMSDispositionSection init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSDispositionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public EMSDispositionSection init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EMSDispositionSectionImpl

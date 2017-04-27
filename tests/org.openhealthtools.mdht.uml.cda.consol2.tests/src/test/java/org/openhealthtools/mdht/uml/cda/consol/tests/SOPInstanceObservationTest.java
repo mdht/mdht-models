@@ -14,19 +14,19 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SOPInstanceObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,7 +50,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationSOPInstanceObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation SOP Instance Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationPurposeofReferenceObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Purposeof Reference Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationReferencedFramesObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Referenced Frames Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#getSOPInstanceObservations() <em>Get SOP Instance Observations</em>}</li>
@@ -72,7 +72,8 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	public void testValidateSOPInstanceObservationEffectiveTimeHasValue() {
 		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationEffectiveTimeHasValueTestCase = new OperationsTestCase<SOPInstanceObservation>(
 			"validateSOPInstanceObservationEffectiveTimeHasValue",
-			operationsForOCL.getOCLValue("VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME_HAS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME_HAS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -109,7 +110,8 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	public void testValidateSOPInstanceObservationEffectiveTimeNoLow() {
 		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationEffectiveTimeNoLowTestCase = new OperationsTestCase<SOPInstanceObservation>(
 			"validateSOPInstanceObservationEffectiveTimeNoLow",
-			operationsForOCL.getOCLValue("VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME_NO_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME_NO_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -148,7 +150,8 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	public void testValidateSOPInstanceObservationEffectiveTimeNoHigh() {
 		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationEffectiveTimeNoHighTestCase = new OperationsTestCase<SOPInstanceObservation>(
 			"validateSOPInstanceObservationEffectiveTimeNoHigh",
-			operationsForOCL.getOCLValue("VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME_NO_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME_NO_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -186,8 +189,8 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSOPInstanceObservationTextMediaType() {
 		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationTextMediaTypeTestCase = new OperationsTestCase<SOPInstanceObservation>(
-			"validateSOPInstanceObservationTextMediaType",
-			operationsForOCL.getOCLValue("VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSOPInstanceObservationTextMediaType", operationsForOCL.getOCLValue(
+				"VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -223,8 +226,8 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSOPInstanceObservationTextReference() {
 		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationTextReferenceTestCase = new OperationsTestCase<SOPInstanceObservation>(
-			"validateSOPInstanceObservationTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSOPInstanceObservationTextReference", operationsForOCL.getOCLValue(
+				"VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -260,7 +263,8 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	public void testValidateSOPInstanceObservationTextReferenceValue() {
 		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationTextReferenceValueTestCase = new OperationsTestCase<SOPInstanceObservation>(
 			"validateSOPInstanceObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -297,8 +301,8 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSOPInstanceObservationTemplateId() {
 		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationTemplateIdTestCase = new OperationsTestCase<SOPInstanceObservation>(
-			"validateSOPInstanceObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SOP_INSTANCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSOPInstanceObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SOP_INSTANCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -331,8 +335,8 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSOPInstanceObservationClassCode() {
 		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationClassCodeTestCase = new OperationsTestCase<SOPInstanceObservation>(
-			"validateSOPInstanceObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_SOP_INSTANCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSOPInstanceObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SOP_INSTANCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -365,8 +369,8 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSOPInstanceObservationEffectiveTime() {
 		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationEffectiveTimeTestCase = new OperationsTestCase<SOPInstanceObservation>(
-			"validateSOPInstanceObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSOPInstanceObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -577,13 +581,14 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
-	public void testValidateSOPInstanceObservation() {
-		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationTestCase = new OperationsTestCase<SOPInstanceObservation>(
-			"validateSOPInstanceObservation",
-			operationsForOCL.getOCLValue("VALIDATE_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateSOPInstanceObservationSOPInstanceObservation() {
+		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationSOPInstanceObservationTestCase = new OperationsTestCase<SOPInstanceObservation>(
+			"validateSOPInstanceObservationSOPInstanceObservation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -604,13 +609,13 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return SOPInstanceObservationOperations.validateSOPInstanceObservation(
+				return SOPInstanceObservationOperations.validateSOPInstanceObservationSOPInstanceObservation(
 					(SOPInstanceObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateSOPInstanceObservationTestCase.doValidationTest();
+		validateSOPInstanceObservationSOPInstanceObservationTestCase.doValidationTest();
 	}
 
 	// /**
@@ -660,7 +665,8 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	public void testValidateSOPInstanceObservationPurposeofReferenceObservation() {
 		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationPurposeofReferenceObservationTestCase = new OperationsTestCase<SOPInstanceObservation>(
 			"validateSOPInstanceObservationPurposeofReferenceObservation",
-			operationsForOCL.getOCLValue("VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -698,7 +704,8 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	public void testValidateSOPInstanceObservationReferencedFramesObservation() {
 		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationReferencedFramesObservationTestCase = new OperationsTestCase<SOPInstanceObservation>(
 			"validateSOPInstanceObservationReferencedFramesObservation",
-			operationsForOCL.getOCLValue("VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

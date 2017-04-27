@@ -7,27 +7,20 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.TobaccoUse2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Tobacco Use2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -56,9 +49,28 @@ public class TobaccoUse2Impl extends TobaccoUseImpl implements TobaccoUse2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateTobaccoUse2Id(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TobaccoUse2Operations.validateTobaccoUse2Id(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateTobaccoUse2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUse2Operations.validateTobaccoUse2AuthorParticipation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTobaccoUse2CDCodeTermAssertionOrLoinc(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return TobaccoUse2Operations.validateTobaccoUse2CDCodeTermAssertionOrLoinc(this, diagnostics, context);
 	}
 
 	/**

@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectiveObservation;
 
 /**
@@ -161,5 +159,6 @@ public interface AdvanceDirective extends AdvanceDirectiveObservation {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdvanceDirective init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public AdvanceDirective init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // AdvanceDirective

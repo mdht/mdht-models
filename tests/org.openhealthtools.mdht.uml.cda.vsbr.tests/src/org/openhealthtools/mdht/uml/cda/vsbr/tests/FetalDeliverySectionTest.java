@@ -1,21 +1,24 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.FetalDeliverySectionOperations;
 
 /**
@@ -32,11 +35,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.FetalDeliverySectionOper
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionBirthOrder(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Birth Order</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionNumberofInfantsBornAlive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Numberof Infants Born Alive</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionNumberOfInfantsBornAlive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Number Of Infants Born Alive</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionAutopsyPerformance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Autopsy Performance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionFetalDeathOccurrance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Fetal Death Occurrance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionPlurality(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Plurality</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionCongenitalAnomalies(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Congenital Anomalies</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionCongenitalAnomaly(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Congenital Anomaly</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionFetalDeliveryTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Fetal Delivery Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionFetalDeliverySubject(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Fetal Delivery Subject</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Fetal Delivery Subject Role Of Fetus Fetus Class Code</em>}</li>
@@ -49,11 +52,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.FetalDeliverySectionOper
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionFetalDeliverySubjectTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Fetal Delivery Subject Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetus(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Section Fetal Delivery Subject Role Of Fetus</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getBirthOrder() <em>Get Birth Order</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getNumberofInfantsBornAlive() <em>Get Numberof Infants Born Alive</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getNumberOfInfantsBornAlive() <em>Get Number Of Infants Born Alive</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getAutopsyPerformance() <em>Get Autopsy Performance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getFetalDeathOccurrance() <em>Get Fetal Death Occurrance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getPlurality() <em>Get Plurality</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getCongenitalAnomaliess() <em>Get Congenital Anomaliess</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getCongenitalAnomalies() <em>Get Congenital Anomalies</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection#getFetalDeliveryTime() <em>Get Fetal Delivery Time</em>}</li>
  * </ul>
  * </p>
@@ -68,6 +71,7 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionTemplateId() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionTemplateIdTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionTemplateId",
@@ -102,6 +106,7 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionClassCode() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionClassCodeTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionClassCode",
@@ -136,6 +141,7 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionMoodCode() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionMoodCodeTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionMoodCode",
@@ -170,6 +176,7 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionCode() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionCodeTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionCode",
@@ -204,6 +211,7 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionText() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionTextTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionText",
@@ -241,6 +249,7 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionBirthOrder() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionBirthOrderTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionBirthOrder",
@@ -275,10 +284,12 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateFetalDeliverySectionNumberofInfantsBornAlive() {
-		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionNumberofInfantsBornAliveTestCase = new OperationsTestCase<FetalDeliverySection>(
-			"validateFetalDeliverySectionNumberofInfantsBornAlive",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateFetalDeliverySectionNumberOfInfantsBornAlive() {
+		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionNumberOfInfantsBornAliveTestCase = new OperationsTestCase<FetalDeliverySection>(
+			"validateFetalDeliverySectionNumberOfInfantsBornAlive",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -295,13 +306,13 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return FetalDeliverySectionOperations.validateFetalDeliverySectionNumberofInfantsBornAlive(
+				return FetalDeliverySectionOperations.validateFetalDeliverySectionNumberOfInfantsBornAlive(
 					(FetalDeliverySection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateFetalDeliverySectionNumberofInfantsBornAliveTestCase.doValidationTest();
+		validateFetalDeliverySectionNumberOfInfantsBornAliveTestCase.doValidationTest();
 	}
 
 	/**
@@ -309,10 +320,11 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionAutopsyPerformance() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionAutopsyPerformanceTestCase = new OperationsTestCase<FetalDeliverySection>(
-			"validateFetalDeliverySectionAutopsyPerformance",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFetalDeliverySectionAutopsyPerformance", operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -343,10 +355,12 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionFetalDeathOccurrance() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionFetalDeathOccurranceTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionFetalDeathOccurrance",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DEATH_OCCURRANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DEATH_OCCURRANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -377,6 +391,7 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionPlurality() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionPluralityTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionPlurality",
@@ -411,10 +426,11 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateFetalDeliverySectionCongenitalAnomalies() {
-		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionCongenitalAnomaliesTestCase = new OperationsTestCase<FetalDeliverySection>(
-			"validateFetalDeliverySectionCongenitalAnomalies",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateFetalDeliverySectionCongenitalAnomaly() {
+		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionCongenitalAnomalyTestCase = new OperationsTestCase<FetalDeliverySection>(
+			"validateFetalDeliverySectionCongenitalAnomaly", operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -431,13 +447,13 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return FetalDeliverySectionOperations.validateFetalDeliverySectionCongenitalAnomalies(
+				return FetalDeliverySectionOperations.validateFetalDeliverySectionCongenitalAnomaly(
 					(FetalDeliverySection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateFetalDeliverySectionCongenitalAnomaliesTestCase.doValidationTest();
+		validateFetalDeliverySectionCongenitalAnomalyTestCase.doValidationTest();
 	}
 
 	/**
@@ -445,10 +461,11 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionFetalDeliveryTime() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionFetalDeliveryTimeTestCase = new OperationsTestCase<FetalDeliverySection>(
-			"validateFetalDeliverySectionFetalDeliveryTime",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFetalDeliverySectionFetalDeliveryTime", operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -479,10 +496,12 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionFetalDeliverySubject() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionFetalDeliverySubjectTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionFetalDeliverySubject",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -513,10 +532,12 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusClassCode() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusClassCodeTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -547,10 +568,12 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCodeTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -581,10 +604,12 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusName() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusNameTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusName",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -615,10 +640,12 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -649,10 +676,12 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodePTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -683,10 +712,12 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusClassCode() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusClassCodeTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -717,10 +748,12 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetus() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetus",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -751,10 +784,12 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionFetalDeliverySubjectTypeCode() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionFetalDeliverySubjectTypeCodeTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionFetalDeliverySubjectTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -785,10 +820,12 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeliverySectionFetalDeliverySubjectRoleOfFetus() {
 		OperationsTestCase<FetalDeliverySection> validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusTestCase = new OperationsTestCase<FetalDeliverySection>(
 			"validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetus",
-			operationsForOCL.getOCLValue("VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -819,6 +856,7 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetBirthOrder() {
 
 		FetalDeliverySection target = objectFactory.create();
@@ -831,10 +869,11 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetNumberofInfantsBornAlive() {
+
+	public void testGetNumberOfInfantsBornAlive() {
 
 		FetalDeliverySection target = objectFactory.create();
-		target.getNumberofInfantsBornAlive();
+		target.getNumberOfInfantsBornAlive();
 
 	}
 
@@ -843,6 +882,7 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetAutopsyPerformance() {
 
 		FetalDeliverySection target = objectFactory.create();
@@ -855,6 +895,7 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetFetalDeathOccurrance() {
 
 		FetalDeliverySection target = objectFactory.create();
@@ -867,6 +908,7 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetPlurality() {
 
 		FetalDeliverySection target = objectFactory.create();
@@ -879,10 +921,11 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetCongenitalAnomaliess() {
+
+	public void testGetCongenitalAnomalies() {
 
 		FetalDeliverySection target = objectFactory.create();
-		target.getCongenitalAnomaliess();
+		target.getCongenitalAnomalies();
 
 	}
 
@@ -891,6 +934,7 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetFetalDeliveryTime() {
 
 		FetalDeliverySection target = objectFactory.create();
@@ -951,8 +995,7 @@ public class FetalDeliverySectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

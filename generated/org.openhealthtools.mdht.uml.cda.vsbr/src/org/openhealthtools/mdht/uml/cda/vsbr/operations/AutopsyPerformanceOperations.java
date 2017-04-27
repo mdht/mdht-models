@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.AutopsyPerformance;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -42,7 +40,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
+public class AutopsyPerformanceOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,7 +76,7 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AUTOPSY_PERFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_AUTOPSY_PERFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,28 +92,32 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	public static boolean validateAutopsyPerformanceTemplateId(AutopsyPerformance autopsyPerformance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_AUTOPSY_PERFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_AUTOPSY_PERFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.AUTOPSY_PERFORMANCE);
 			try {
-				VALIDATE_AUTOPSY_PERFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_AUTOPSY_PERFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTOPSY_PERFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			autopsyPerformance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_AUTOPSY_PERFORMANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(autopsyPerformance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AutopsyPerformanceTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(autopsyPerformance, context) }),
-					new Object[] { autopsyPerformance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AutopsyPerformanceAutopsyPerformanceTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										autopsyPerformance, context) }),
+						new Object[] { autopsyPerformance }));
 			}
 
 			return false;
@@ -135,7 +144,7 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AUTOPSY_PERFORMANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_AUTOPSY_PERFORMANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,28 +160,32 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	public static boolean validateAutopsyPerformanceClassCode(AutopsyPerformance autopsyPerformance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_AUTOPSY_PERFORMANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_AUTOPSY_PERFORMANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.AUTOPSY_PERFORMANCE);
 			try {
-				VALIDATE_AUTOPSY_PERFORMANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_AUTOPSY_PERFORMANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTOPSY_PERFORMANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			autopsyPerformance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_AUTOPSY_PERFORMANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(autopsyPerformance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AutopsyPerformanceClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(autopsyPerformance, context) }),
-					new Object[] { autopsyPerformance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AutopsyPerformanceAutopsyPerformanceClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										autopsyPerformance, context) }),
+						new Object[] { autopsyPerformance }));
 			}
 
 			return false;
@@ -199,7 +212,7 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AUTOPSY_PERFORMANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_AUTOPSY_PERFORMANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -215,28 +228,32 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	public static boolean validateAutopsyPerformanceMoodCode(AutopsyPerformance autopsyPerformance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_AUTOPSY_PERFORMANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_AUTOPSY_PERFORMANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.AUTOPSY_PERFORMANCE);
 			try {
-				VALIDATE_AUTOPSY_PERFORMANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_AUTOPSY_PERFORMANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTOPSY_PERFORMANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			autopsyPerformance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_AUTOPSY_PERFORMANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(autopsyPerformance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AutopsyPerformanceMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(autopsyPerformance, context) }),
-					new Object[] { autopsyPerformance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AutopsyPerformanceAutopsyPerformanceMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										autopsyPerformance, context) }),
+						new Object[] { autopsyPerformance }));
 			}
 
 			return false;
@@ -263,7 +280,7 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AUTOPSY_PERFORMANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_AUTOPSY_PERFORMANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -279,28 +296,32 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	public static boolean validateAutopsyPerformanceCodeP(AutopsyPerformance autopsyPerformance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_AUTOPSY_PERFORMANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_AUTOPSY_PERFORMANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.AUTOPSY_PERFORMANCE);
 			try {
-				VALIDATE_AUTOPSY_PERFORMANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_AUTOPSY_PERFORMANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTOPSY_PERFORMANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			autopsyPerformance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_AUTOPSY_PERFORMANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(autopsyPerformance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AutopsyPerformanceCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(autopsyPerformance, context) }),
-					new Object[] { autopsyPerformance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AutopsyPerformanceAutopsyPerformanceCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										autopsyPerformance, context) }),
+						new Object[] { autopsyPerformance }));
 			}
 
 			return false;
@@ -316,9 +337,9 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_AUTOPSY_PERFORMANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '73768-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_AUTOPSY_PERFORMANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '73768-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAutopsyPerformanceCode(AutopsyPerformance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Performance Code</em>}' invariant operation.
@@ -329,7 +350,7 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AUTOPSY_PERFORMANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_AUTOPSY_PERFORMANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -345,28 +366,32 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	public static boolean validateAutopsyPerformanceCode(AutopsyPerformance autopsyPerformance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_AUTOPSY_PERFORMANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_AUTOPSY_PERFORMANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.AUTOPSY_PERFORMANCE);
 			try {
-				VALIDATE_AUTOPSY_PERFORMANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_AUTOPSY_PERFORMANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTOPSY_PERFORMANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_AUTOPSY_PERFORMANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			autopsyPerformance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AutopsyPerformanceCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(autopsyPerformance, context) }),
-					new Object[] { autopsyPerformance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AutopsyPerformanceAutopsyPerformanceCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										autopsyPerformance, context) }),
+						new Object[] { autopsyPerformance }));
 			}
 
 			return false;
@@ -382,9 +407,9 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_AUTOPSY_PERFORMANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '29240004' or value.code = '44551000009109' or value.code = '434661000124109')))";
+	protected static final String VALIDATE_AUTOPSY_PERFORMANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '29240004' or value.code = '44551000009109' or value.code = '434661000124109')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAutopsyPerformanceValue(AutopsyPerformance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Performance Value</em>}' invariant operation.
@@ -395,7 +420,7 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AUTOPSY_PERFORMANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_AUTOPSY_PERFORMANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -411,28 +436,32 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	public static boolean validateAutopsyPerformanceValue(AutopsyPerformance autopsyPerformance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_AUTOPSY_PERFORMANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_AUTOPSY_PERFORMANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.AUTOPSY_PERFORMANCE);
 			try {
-				VALIDATE_AUTOPSY_PERFORMANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_AUTOPSY_PERFORMANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTOPSY_PERFORMANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_AUTOPSY_PERFORMANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			autopsyPerformance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AutopsyPerformanceValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(autopsyPerformance, context) }),
-					new Object[] { autopsyPerformance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AutopsyPerformanceAutopsyPerformanceValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										autopsyPerformance, context) }),
+						new Object[] { autopsyPerformance }));
 			}
 
 			return false;
@@ -459,7 +488,7 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AUTOPSY_PERFORMANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_AUTOPSY_PERFORMANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -475,28 +504,32 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	public static boolean validateAutopsyPerformanceValueP(AutopsyPerformance autopsyPerformance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_AUTOPSY_PERFORMANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_AUTOPSY_PERFORMANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.AUTOPSY_PERFORMANCE);
 			try {
-				VALIDATE_AUTOPSY_PERFORMANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_AUTOPSY_PERFORMANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTOPSY_PERFORMANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			autopsyPerformance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_AUTOPSY_PERFORMANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(autopsyPerformance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_VALUE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AutopsyPerformanceValueP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(autopsyPerformance, context) }),
-					new Object[] { autopsyPerformance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_VALUE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AutopsyPerformanceAutopsyPerformanceValueP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										autopsyPerformance, context) }),
+						new Object[] { autopsyPerformance }));
 			}
 
 			return false;
@@ -523,7 +556,7 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AUTOPSY_PERFORMANCE_USE_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_AUTOPSY_PERFORMANCE_USE_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -539,28 +572,34 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	public static boolean validateAutopsyPerformanceUseAssociation(AutopsyPerformance autopsyPerformance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_AUTOPSY_PERFORMANCE_USE_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_AUTOPSY_PERFORMANCE_USE_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.AUTOPSY_PERFORMANCE);
 			try {
-				VALIDATE_AUTOPSY_PERFORMANCE_USE_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_USE_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_AUTOPSY_PERFORMANCE_USE_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_AUTOPSY_PERFORMANCE_USE_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AUTOPSY_PERFORMANCE_USE_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			autopsyPerformance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_AUTOPSY_PERFORMANCE_USE_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				autopsyPerformance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_USE_ASSOCIATION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AutopsyPerformanceUseAssociation",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(autopsyPerformance, context) }),
-					new Object[] { autopsyPerformance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_USE_ASSOCIATION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AutopsyPerformanceAutopsyPerformanceUseAssociation",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										autopsyPerformance, context) }),
+						new Object[] { autopsyPerformance }));
 			}
 
 			return false;
@@ -587,7 +626,7 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -603,29 +642,34 @@ public class AutopsyPerformanceOperations extends ClinicalStatementOperations {
 	public static boolean validateAutopsyPerformanceHistologicalExamAssociation(AutopsyPerformance autopsyPerformance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.AUTOPSY_PERFORMANCE);
 			try {
-				VALIDATE_AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			autopsyPerformance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				autopsyPerformance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AutopsyPerformanceHistologicalExamAssociation",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(autopsyPerformance, context) }),
-					new Object[] { autopsyPerformance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AutopsyPerformanceAutopsyPerformanceHistologicalExamAssociation",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										autopsyPerformance, context) }),
+						new Object[] { autopsyPerformance }));
 			}
 
 			return false;

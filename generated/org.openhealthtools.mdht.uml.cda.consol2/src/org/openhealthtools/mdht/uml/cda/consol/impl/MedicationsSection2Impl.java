@@ -7,29 +7,22 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsSection2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medications Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -122,9 +115,9 @@ public class MedicationsSection2Impl extends MedicationsSectionEntriesOptional2I
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity2(DiagnosticChain diagnostics,
+	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSection2Operations.validateMedicationsSectionEntriesOptionalMedicationActivity2(
+		return MedicationsSection2Operations.validateMedicationsSectionEntriesOptionalMedicationActivity(
 			this, diagnostics, context);
 	}
 

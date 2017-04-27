@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Hearing Plan Of Care Document"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.1]"/>
+<meta name="description" content="[ClinicalDocument: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.1]"/>
+<meta name="DC.Coverage" content="ClinicalDocument"/>
+<meta name="DC.Relation" scheme="URI" content="../content/DocumentTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Hearing Plan Of Care Document</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Hearing Plan Of Care Document</h1>
+
+
+
+<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.1</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i"><strong class="ph b">Template Design Relationships</strong><br/>
+This template is an adaptation of the IHE UV Realm HPoC Document template. It references section templates which have been adapted for the US Realm. These adapted section templates include entry templates which have been adapted for the US Realm. Machine readable entries associated with US Realm templates have been modified to use vocabulary constraints established for the Hearing Plan of Care in the US Realm.<br/>
+<br/>
+<strong class="ph b">Template Purpose</strong><br/>
+This document records information for the hearing plan of care for a newborn. It includes hearing plan of care instructions and planned care activities. It includes the results of the hearing screening provided prior to discharge as well as information about hearing risk indicators which may be available. It includes the newborn's problems list, highlighting the concerns which are likely to be relevant for a hearing plan of care. It also includes treatment procedures performed on the newborn during the birth encounter, highlighting the procedures which are likely to be relevant for a hearing plan of care.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.1"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="HearingPlanOfCareHeader.html" title="[ClinicalDocument: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.2.1]">Hearing Plan Of Care Header</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.2.1</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">realmCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="US" </tt>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">typeId</strong></tt>
+<ol class="ol" type="a">
+<li class="li">typeId <strong class="ph b">SHALL</strong> contain exactly one [1..1] @root="2.16.840.1.113883.1.3"</li>
+
+<li class="li">typeId <strong class="ph b">SHALL</strong> contain exactly one [1..1] @extension="POCD_HD000040"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt>
+<ol class="ol" type="a">
+<li class="li">id <strong class="ph b">SHALL</strong> be a globally unique identifier for the document</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="34817-7" </tt><em class="ph i">Hearing Screening Evaluation and Management Note</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HearingPlanOfCareSection.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.1]">Hearing Plan Of Care Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">MAY</strong> equal "Hearing Screening Evaluation and Management Note"
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+<ol class="ol" type="a">
+<li class="li">effectiveTime <strong class="ph b">SHALL</strong> conform to US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">confidentialityCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> HL7 BasicConfidentialityKind 2.16.840.1.113883.1.11.16926</tt><strong class="ph b"> STATIC</strong>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> Language 2.16.840.1.113883.1.11.11526</tt><strong class="ph b"> DYNAMIC</strong>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HearingScreeningSection.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.2]">Hearing Screening Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.2</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="RiskIndicatorsForHearingLossSection.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.3]">Risk Indicators For Hearing Loss Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.3</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemsSection.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.4]">Problems Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.4</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureSection.html" title="[Section: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.6]">Procedure Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.6</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">setId</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Both setId and versionNumber <strong class="ph b">SHALL</strong> be present or both <strong class="ph b">SHALL</strong> be absent.</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">versionNumber</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Both setId and versionNumber <strong class="ph b">SHALL</strong> be present or both <strong class="ph b">SHALL</strong> be absent.</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Hearing Plan Of Care Document example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;realmCode code="US"/&gt;
+  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.1"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.2.1"/&gt;
+  &lt;id root="MDHT" extension="175002991"/&gt;
+  &lt;code code="34817-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hearing Screening Evaluation and Management Note"/&gt;
+  &lt;title&gt;Hearing Screening Evaluation and Management Note&lt;/title&gt;
+  &lt;effectiveTime/&gt;
+  &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
+  &lt;setId root="MDHT" extension="a1dc43cf-f993-4398-8898-90c70e4a30a8"/&gt;
+  &lt;versionNumber value="1"/&gt;
+  &lt;recordTarget&gt;
+    &lt;realmCode code="Code forrealmCode"/&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;patientRole/&gt;
+  &lt;/recordTarget&gt;
+  &lt;author&gt;
+    &lt;realmCode code="Code forrealmCode"/&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;time/&gt;
+    &lt;assignedAuthor/&gt;
+  &lt;/author&gt;
+  &lt;custodian/&gt;
+  &lt;component&gt;
+    &lt;structuredBody&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;realmCode code="Code forrealmCode"/&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.1"/&gt;
+          &lt;id root="MDHT" extension="1887665624"/&gt;
+          &lt;code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of Care for Hearing"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;entry&gt;
+            &lt;act/&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;encounter/&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation/&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;procedure/&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;substanceAdministration classCode="SBADM"/&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;supply classCode="SPLY"/&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;act/&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;realmCode code="Code forrealmCode"/&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.2"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.3.1"/&gt;
+          &lt;id root="MDHT" extension="1751429810"/&gt;
+          &lt;code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;entry&gt;
+            &lt;organizer/&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;realmCode code="Code forrealmCode"/&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.3"/&gt;
+          &lt;id root="MDHT" extension="1516241671"/&gt;
+          &lt;code code="58232-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hearing Loss Risk Indicators"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;entry&gt;
+            &lt;observation/&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;realmCode code="Code forrealmCode"/&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.4"/&gt;
+          &lt;id root="MDHT" extension="1792006410"/&gt;
+          &lt;code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;entry&gt;
+            &lt;act/&gt;
+          &lt;/entry&gt;
+          &lt;component&gt;
+            &lt;section/&gt;
+          &lt;/component&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;realmCode code="Code forrealmCode"/&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.6"/&gt;
+          &lt;id root="MDHT" extension="1675661859"/&gt;
+          &lt;code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+          &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+          &lt;entry&gt;
+            &lt;procedure/&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;act/&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+    &lt;/structuredBody&gt;
+  &lt;/component&gt;
+&lt;/ClinicalDocument&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/DocumentTemplates.html">DOCUMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

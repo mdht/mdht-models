@@ -7,29 +7,22 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergiesSection2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Allergies Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -90,7 +83,8 @@ public class AllergiesSection2Impl extends AllergiesSectionEntriesOptional2Impl 
 	@Override
 	public boolean validateAllergiesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergiesSection2Operations.validateAllergiesSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return AllergiesSection2Operations.validateAllergiesSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -99,7 +93,8 @@ public class AllergiesSection2Impl extends AllergiesSectionEntriesOptional2Impl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAllergiesSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergiesSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergiesSection2Operations.validateAllergiesSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
@@ -109,7 +104,8 @@ public class AllergiesSection2Impl extends AllergiesSectionEntriesOptional2Impl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAllergiesSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergiesSectionEntriesOptionalCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergiesSection2Operations.validateAllergiesSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
@@ -119,9 +115,9 @@ public class AllergiesSection2Impl extends AllergiesSectionEntriesOptional2Impl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAllergiesSectionEntriesOptionalAllergyConcernAct2(DiagnosticChain diagnostics,
+	public boolean validateAllergiesSectionEntriesOptionalAllergyProblemAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergiesSection2Operations.validateAllergiesSectionEntriesOptionalAllergyConcernAct2(
+		return AllergiesSection2Operations.validateAllergiesSectionEntriesOptionalAllergyProblemAct(
 			this, diagnostics, context);
 	}
 

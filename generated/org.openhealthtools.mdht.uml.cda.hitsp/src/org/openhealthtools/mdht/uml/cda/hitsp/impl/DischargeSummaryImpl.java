@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdmissionMedicationHistorySection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AllergiesReactionsSection;
@@ -45,8 +43,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.MedicalSummaryImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Discharge Summary</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -75,7 +71,8 @@ public class DischargeSummaryImpl extends MedicalSummaryImpl implements Discharg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryProblemListSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDischargeSummaryProblemListSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryProblemListSection(this, diagnostics, context);
 	}
 
@@ -206,7 +203,8 @@ public class DischargeSummaryImpl extends MedicalSummaryImpl implements Discharg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDischargeSummaryPhysicalExamSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDischargeSummaryPhysicalExamSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryPhysicalExamSection(this, diagnostics, context);
 	}
 
@@ -448,7 +446,7 @@ public class DischargeSummaryImpl extends MedicalSummaryImpl implements Discharg
 	 */
 	@Override
 	public DischargeSummary init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -457,8 +455,9 @@ public class DischargeSummaryImpl extends MedicalSummaryImpl implements Discharg
 	 * @generated
 	 */
 	@Override
-	public DischargeSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public DischargeSummary init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // DischargeSummaryImpl

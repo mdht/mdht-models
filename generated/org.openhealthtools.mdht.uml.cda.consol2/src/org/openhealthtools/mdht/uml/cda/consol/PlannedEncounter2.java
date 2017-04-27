@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -15,7 +11,7 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,7 +20,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedEncounter2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityEncounterTemplateId PlannedEncounter2CodeP PlannedEncounter2StatusCode PlannedEncounter2StatusCodeP PlannedEncounter2EffectiveTime PlannedEncounter2PerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.40' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='PlannedEncounter2Code PlannedEncounter2Author' statusCode.code='active' constraints.validation.info='PlannedEncounter2Performer PlannedEncounter2ServiceDeliveryLocation PlannedEncounter2PatientPriorityPreference PlannedEncounter2ProviderPriorityPreference PlannedEncounter2Indication2' constraints.validation.query='PlannedEncounter2PerformerAssignedEntity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityEncounterTemplateId PlannedEncounter2ParticipantServiceDeliveryLocationTypeCode PlanOfCareActivityEncounterMoodCode PlannedEncounter2StatusCode PlannedEncounter2StatusCodeP PlannedEncounter2PerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.40' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='PlannedEncounter2Code PlannedEncounter2CodeP PlannedEncounter2EffectiveTime PlannedEncounter2AuthorParticipation' constraints.validation.dependOn.PlannedEncounter2Code='PlannedEncounter2CodeP' statusCode.code='active' constraints.validation.info='PlannedEncounter2Performer PlannedEncounter2ServiceDeliveryLocation PlannedEncounter2PriorityPreference PlannedEncounter2Indication2' constraints.validation.query='PlannedEncounter2PerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedEncounter2Performer constraints.validation.error='PlannedEncounter2PerformerAssignedEntity'"
  * @generated
  */
@@ -36,10 +32,11 @@ public interface PlannedEncounter2 extends PlanOfCareActivityEncounter {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->select(par : cda::Participant2 | par.participantRole.oclIsTypeOf(consol::ServiceDeliveryLocation))->forAll(pars : cda::Participant2 | pars.typeCode=vocab::ParticipationType::LOC)'"
 	 * @generated
 	 */
-	boolean validatePlannedEncounter2Code(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlannedEncounter2ParticipantServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -52,6 +49,18 @@ public interface PlannedEncounter2 extends PlanOfCareActivityEncounter {
 	 * @generated
 	 */
 	boolean validatePlannedEncounter2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validatePlannedEncounter2Code(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -108,18 +117,6 @@ public interface PlannedEncounter2 extends PlanOfCareActivityEncounter {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(rim::Participation))'"
-	 * @generated
-	 */
-	boolean validatePlannedEncounter2Author(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->exists(participant : cda::Participant2 | not participant.participantRole.oclIsUndefined() and participant.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))'"
 	 * @generated
 	 */
@@ -132,22 +129,10 @@ public interface PlannedEncounter2 extends PlanOfCareActivityEncounter {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PatientPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
-	boolean validatePlannedEncounter2PatientPriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProviderPriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
-	 * @generated
-	 */
-	boolean validatePlannedEncounter2ProviderPriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlannedEncounter2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,6 +145,18 @@ public interface PlannedEncounter2 extends PlanOfCareActivityEncounter {
 	 * @generated
 	 */
 	boolean validatePlannedEncounter2Indication2(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
+	 * @generated
+	 */
+	boolean validatePlannedEncounter2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -186,19 +183,10 @@ public interface PlannedEncounter2 extends PlanOfCareActivityEncounter {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PatientPriorityPreference))->asSequence()->any(true).oclAsType(consol::PatientPriorityPreference)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference))->asSequence()->any(true).oclAsType(consol::PriorityPreference)'"
 	 * @generated
 	 */
-	PatientPriorityPreference getPatientPriorityPreference();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProviderPriorityPreference)).oclAsType(consol::ProviderPriorityPreference)'"
-	 * @generated
-	 */
-	EList<ProviderPriorityPreference> getProviderPriorityPreferences();
+	PriorityPreference getPriorityPreference();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,7 +202,6 @@ public interface PlannedEncounter2 extends PlanOfCareActivityEncounter {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PlannedEncounter2 init();
 
 	/**
@@ -222,6 +209,5 @@ public interface PlannedEncounter2 extends PlanOfCareActivityEncounter {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PlannedEncounter2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedEncounter2

@@ -3,32 +3,25 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.NumberOfPressureUlcersObservation2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Number Of Pressure Ulcers Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlcersObservationImpl implements
-		NumberOfPressureUlcersObservation2 {
+public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlcersObservationImpl
+		implements NumberOfPressureUlcersObservation2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53,9 +46,9 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode(
+	public boolean validateNumberOfPressureUlcersObservation2CDTranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2CDTranslation(
 			this, diagnostics, context);
 	}
 
@@ -64,9 +57,9 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode(
+	public boolean validateNumberOfPressureUlcersObservation2CDTranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2CDTranslationP(
 			this, diagnostics, context);
 	}
 
@@ -89,50 +82,6 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	public boolean validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationValueP(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationValueP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservationEntryRelationshipObservationValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNumberOfPressureUlcersObservation2NumberOfPressureUlcersObservationEntryRelationshipTypeCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2NumberOfPressureUlcersObservationEntryRelationshipTypeCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateNumberOfPressureUlcersObservation2NumberOfPressureUlcersObservationEntryRelationshipObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2NumberOfPressureUlcersObservationEntryRelationshipObservation(
 			this, diagnostics, context);
 	}
 
@@ -181,6 +130,78 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationship(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationValueP(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationValueP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationValue(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservation(
 			this, diagnostics, context);
 	}
 

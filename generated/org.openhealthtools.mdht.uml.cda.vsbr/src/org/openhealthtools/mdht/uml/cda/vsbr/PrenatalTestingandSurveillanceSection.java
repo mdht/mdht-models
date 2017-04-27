@@ -10,10 +10,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Section;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Prenatal Testingand Surveillance Section</b></em>'.
@@ -21,10 +17,11 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage#getPrenatalTestingandSurveillanceSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Prenatal Testing and Surveillance SectionTemplateId Prenatal Testing and Surveillance SectionClassCode Prenatal Testing and Surveillance SectionMoodCode Prenatal Testing and Surveillance SectionCode Prenatal Testing and Surveillance SectionText Prenatal Testing and Surveillance SectionPrenatalCare' templateId.root='2.16.840.1.113883.10.20.26.3' classCode='DOCSECT' moodCode='EVN' code.code='57078-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Antenatal testing and surveillance'"
+ * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Prenatal Testing and Surveillance Section'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Prenatal Testing and Surveillance SectionTemplateId Prenatal Testing and Surveillance SectionClassCode Prenatal Testing and Surveillance SectionMoodCode Prenatal Testing and Surveillance SectionCode Prenatal Testing and Surveillance SectionText Prenatal Testing and Surveillance SectionPrenatalCare' templateId.root='2.16.840.1.113883.10.20.26.3' classCode='DOCSECT' moodCode='EVN' code.code='57078-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Antenatal testing and surveillance'"
  * @generated
  */
-public interface PrenatalTestingandSurveillanceSection extends Section {
+public interface PrenatalTestingandSurveillanceSection extends org.eclipse.mdht.uml.cda.Section {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -32,7 +29,8 @@ public interface PrenatalTestingandSurveillanceSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.26.3\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Prenatal Testing and Surveillance SectionTemplateId'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.26.3\')'"
 	 * @generated
 	 */
 	boolean validatePrenatalTestingandSurveillanceSectionTemplateId(DiagnosticChain diagnostics,
@@ -45,7 +43,8 @@ public interface PrenatalTestingandSurveillanceSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'classCode\') and self.classCode=vocab::ActClass::DOCSECT'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Prenatal Testing and Surveillance SectionClassCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'classCode\') and self.classCode=vocab::ActClass::DOCSECT'"
 	 * @generated
 	 */
 	boolean validatePrenatalTestingandSurveillanceSectionClassCode(DiagnosticChain diagnostics,
@@ -58,7 +57,8 @@ public interface PrenatalTestingandSurveillanceSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\') and self.moodCode=vocab::ActMood::EVN'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Prenatal Testing and Surveillance SectionMoodCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\') and self.moodCode=vocab::ActMood::EVN'"
 	 * @generated
 	 */
 	boolean validatePrenatalTestingandSurveillanceSectionMoodCode(DiagnosticChain diagnostics,
@@ -71,7 +71,8 @@ public interface PrenatalTestingandSurveillanceSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'57078-8\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Prenatal Testing and Surveillance SectionCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'57078-8\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validatePrenatalTestingandSurveillanceSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -83,7 +84,8 @@ public interface PrenatalTestingandSurveillanceSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.oclIsUndefined()'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Prenatal Testing and Surveillance SectionText'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.oclIsUndefined()'"
 	 * @generated
 	 */
 	boolean validatePrenatalTestingandSurveillanceSectionText(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -95,7 +97,8 @@ public interface PrenatalTestingandSurveillanceSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(vsbr::Prenatal Care) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Prenatal Testing and Surveillance SectionPrenatalCare'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(vsbr::PrenatalCare) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
 	 * @generated
 	 */
 	boolean validatePrenatalTestingandSurveillanceSectionPrenatalCare(DiagnosticChain diagnostics,
@@ -105,7 +108,7 @@ public interface PrenatalTestingandSurveillanceSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(vsbr::Prenatal Care))->asSequence()->any(true).oclAsType(vsbr::Prenatal Care)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(vsbr::PrenatalCare))->asSequence()->any(true).oclAsType(vsbr::PrenatalCare)'"
 	 * @generated
 	 */
 	PrenatalCare getPrenatalCare();
@@ -122,5 +125,6 @@ public interface PrenatalTestingandSurveillanceSection extends Section {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PrenatalTestingandSurveillanceSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public PrenatalTestingandSurveillanceSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // PrenatalTestingandSurveillanceSection

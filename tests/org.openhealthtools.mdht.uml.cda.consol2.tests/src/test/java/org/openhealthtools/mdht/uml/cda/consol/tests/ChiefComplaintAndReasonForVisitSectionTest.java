@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ChiefComplaintAndReasonForVisitSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +53,8 @@ public class ChiefComplaintAndReasonForVisitSectionTest extends CDAValidationTes
 	public void testValidateChiefComplaintAndReasonForVisitSectionTemplateId() {
 		OperationsTestCase<ChiefComplaintAndReasonForVisitSection> validateChiefComplaintAndReasonForVisitSectionTemplateIdTestCase = new OperationsTestCase<ChiefComplaintAndReasonForVisitSection>(
 			"validateChiefComplaintAndReasonForVisitSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -87,7 +88,8 @@ public class ChiefComplaintAndReasonForVisitSectionTest extends CDAValidationTes
 	public void testValidateChiefComplaintAndReasonForVisitSectionCode() {
 		OperationsTestCase<ChiefComplaintAndReasonForVisitSection> validateChiefComplaintAndReasonForVisitSectionCodeTestCase = new OperationsTestCase<ChiefComplaintAndReasonForVisitSection>(
 			"validateChiefComplaintAndReasonForVisitSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -121,7 +123,8 @@ public class ChiefComplaintAndReasonForVisitSectionTest extends CDAValidationTes
 	public void testValidateChiefComplaintAndReasonForVisitSectionCodeP() {
 		OperationsTestCase<ChiefComplaintAndReasonForVisitSection> validateChiefComplaintAndReasonForVisitSectionCodePTestCase = new OperationsTestCase<ChiefComplaintAndReasonForVisitSection>(
 			"validateChiefComplaintAndReasonForVisitSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -155,7 +158,8 @@ public class ChiefComplaintAndReasonForVisitSectionTest extends CDAValidationTes
 	public void testValidateChiefComplaintAndReasonForVisitSectionText() {
 		OperationsTestCase<ChiefComplaintAndReasonForVisitSection> validateChiefComplaintAndReasonForVisitSectionTextTestCase = new OperationsTestCase<ChiefComplaintAndReasonForVisitSection>(
 			"validateChiefComplaintAndReasonForVisitSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -192,7 +196,8 @@ public class ChiefComplaintAndReasonForVisitSectionTest extends CDAValidationTes
 	public void testValidateChiefComplaintAndReasonForVisitSectionTitle() {
 		OperationsTestCase<ChiefComplaintAndReasonForVisitSection> validateChiefComplaintAndReasonForVisitSectionTitleTestCase = new OperationsTestCase<ChiefComplaintAndReasonForVisitSection>(
 			"validateChiefComplaintAndReasonForVisitSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

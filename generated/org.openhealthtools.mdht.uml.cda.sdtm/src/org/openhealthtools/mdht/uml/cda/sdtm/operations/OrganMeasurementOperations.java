@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -32,7 +25,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SpecimenInformation;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -73,7 +65,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class OrganMeasurementOperations extends ClinicalStatementOperations {
+public class OrganMeasurementOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -102,7 +102,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -117,25 +117,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementTemplateId(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -163,7 +173,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -178,25 +188,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementClassCode(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -224,7 +244,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -239,25 +259,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementMoodCode(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -285,7 +315,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -300,25 +330,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementId(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -346,7 +386,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -361,25 +401,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementCodeP(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -409,7 +459,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -424,25 +474,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementCode(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -470,7 +530,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -485,25 +545,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementStatusCode(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -531,7 +601,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -546,25 +616,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementValue(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -592,7 +672,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -607,25 +687,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementInterpretationCodeP(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_INTERPRETATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -655,7 +745,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -670,25 +760,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementInterpretationCode(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_INTERPRETATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -716,7 +816,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -731,25 +831,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementNonPerformanceReason(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -777,7 +887,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -792,25 +902,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementSpecimenInformation(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_SPECIMEN_INFORMATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -838,7 +958,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -853,25 +973,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementDataCollection(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_DATA_COLLECTION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -899,7 +1029,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -914,25 +1044,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementComment(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -960,7 +1100,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -975,25 +1115,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementExclusionReason(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_EXCLUSION_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementExclusionReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementExclusionReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -1021,7 +1171,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1036,25 +1186,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementRelatedRecord(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -1082,7 +1242,7 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ORGAN_MEASUREMENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ORGAN_MEASUREMENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1097,25 +1257,35 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateOrganMeasurementSupplementalValue(OrganMeasurement organMeasurement, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ORGAN_MEASUREMENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ORGAN_MEASUREMENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ORGAN_MEASUREMENT);
 			try {
-				VALIDATE_ORGAN_MEASUREMENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ORGAN_MEASUREMENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ORGAN_MEASUREMENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ORGAN_MEASUREMENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(organMeasurement)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ORGAN_MEASUREMENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(organMeasurement)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ORGAN_MEASUREMENT__ORGAN_MEASUREMENT_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "OrganMeasurementOrganMeasurementSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(organMeasurement, context) }),
 						 new Object [] { organMeasurement }));
 			}
 			 
@@ -1151,8 +1321,13 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(OrganMeasurement organMeasurement) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ORGAN_MEASUREMENT, SdtmPackage.Literals.ORGAN_MEASUREMENT.getEAllOperations().get(68));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1160,8 +1335,9 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(organMeasurement);
 	}
 
@@ -1192,8 +1368,13 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  SpecimenInformation getSpecimenInformation(OrganMeasurement organMeasurement) {
+	
+	
+	
 		if (GET_SPECIMEN_INFORMATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ORGAN_MEASUREMENT, SdtmPackage.Literals.ORGAN_MEASUREMENT.getEAllOperations().get(69));
 			try {
 				GET_SPECIMEN_INFORMATION__EOCL_QRY = helper.createQuery(GET_SPECIMEN_INFORMATION__EOCL_EXP);
@@ -1201,8 +1382,9 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
 		return (SpecimenInformation) query.evaluate(organMeasurement);
 	}
 
@@ -1233,8 +1415,13 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DataCollection getDataCollection(OrganMeasurement organMeasurement) {
+	
+	
+	
 		if (GET_DATA_COLLECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ORGAN_MEASUREMENT, SdtmPackage.Literals.ORGAN_MEASUREMENT.getEAllOperations().get(70));
 			try {
 				GET_DATA_COLLECTION__EOCL_QRY = helper.createQuery(GET_DATA_COLLECTION__EOCL_EXP);
@@ -1242,8 +1429,9 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DATA_COLLECTION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DATA_COLLECTION__EOCL_QRY);
 		return (DataCollection) query.evaluate(organMeasurement);
 	}
 
@@ -1274,8 +1462,13 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  Comment getComment(OrganMeasurement organMeasurement) {
+	
+	
+	
 		if (GET_COMMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ORGAN_MEASUREMENT, SdtmPackage.Literals.ORGAN_MEASUREMENT.getEAllOperations().get(71));
 			try {
 				GET_COMMENT__EOCL_QRY = helper.createQuery(GET_COMMENT__EOCL_EXP);
@@ -1283,8 +1476,9 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENT__EOCL_QRY);
 		return (Comment) query.evaluate(organMeasurement);
 	}
 
@@ -1315,8 +1509,13 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(OrganMeasurement organMeasurement) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ORGAN_MEASUREMENT, SdtmPackage.Literals.ORGAN_MEASUREMENT.getEAllOperations().get(72));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1324,8 +1523,9 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(organMeasurement);
 	}
 
@@ -1356,8 +1556,13 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  ExclusionReason getExclusionReason(OrganMeasurement organMeasurement) {
+	
+	
+	
 		if (GET_EXCLUSION_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ORGAN_MEASUREMENT, SdtmPackage.Literals.ORGAN_MEASUREMENT.getEAllOperations().get(73));
 			try {
 				GET_EXCLUSION_REASON__EOCL_QRY = helper.createQuery(GET_EXCLUSION_REASON__EOCL_EXP);
@@ -1365,8 +1570,9 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EXCLUSION_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EXCLUSION_REASON__EOCL_QRY);
 		return (ExclusionReason) query.evaluate(organMeasurement);
 	}
 
@@ -1397,8 +1603,13 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(OrganMeasurement organMeasurement) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ORGAN_MEASUREMENT, SdtmPackage.Literals.ORGAN_MEASUREMENT.getEAllOperations().get(74));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1406,8 +1617,9 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(organMeasurement);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -1440,8 +1652,13 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(OrganMeasurement organMeasurement) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ORGAN_MEASUREMENT, SdtmPackage.Literals.ORGAN_MEASUREMENT.getEAllOperations().get(75));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -1449,8 +1666,9 @@ public class OrganMeasurementOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(organMeasurement);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());

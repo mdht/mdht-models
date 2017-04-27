@@ -7,34 +7,27 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationsSectionEntriesOptional2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunizations Section Entries Optional2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ImmunizationsSectionEntriesOptional2Impl extends ImmunizationsSectionEntriesOptionalImpl implements
-		ImmunizationsSectionEntriesOptional2 {
+public class ImmunizationsSectionEntriesOptional2Impl extends ImmunizationsSectionEntriesOptionalImpl
+		implements ImmunizationsSectionEntriesOptional2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52,18 +45,6 @@ public class ImmunizationsSectionEntriesOptional2Impl extends ImmunizationsSecti
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptional2Operations.validateImmunizationsSectionEntriesOptionalImmunizationActivity2(
-			this, diagnostics, context);
 	}
 
 	/**
@@ -109,6 +90,18 @@ public class ImmunizationsSectionEntriesOptional2Impl extends ImmunizationsSecti
 	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptional2Operations.validateImmunizationsSectionEntriesOptionalCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationsSectionEntriesOptional2Operations.validateImmunizationsSectionEntriesOptionalImmunizationActivity(
 			this, diagnostics, context);
 	}
 

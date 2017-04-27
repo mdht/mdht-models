@@ -17,21 +17,19 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReactionObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Reaction Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -92,7 +90,8 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * @generated
 	 */
 	@Override
-	public boolean validateReactionObservationEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateReactionObservationEffectiveTimeLow(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ReactionObservationOperations.validateReactionObservationEffectiveTimeLow(this, diagnostics, context);
 	}
 
@@ -102,7 +101,8 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * @generated
 	 */
 	@Override
-	public boolean validateReactionObservationEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateReactionObservationEffectiveTimeHigh(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ReactionObservationOperations.validateReactionObservationEffectiveTimeHigh(this, diagnostics, context);
 	}
 
@@ -230,6 +230,15 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	@Override
 	public boolean validateReactionObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReactionObservationOperations.validateReactionObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservationOperations.validateReactionObservationValueP(this, diagnostics, context);
 	}
 
 	/**

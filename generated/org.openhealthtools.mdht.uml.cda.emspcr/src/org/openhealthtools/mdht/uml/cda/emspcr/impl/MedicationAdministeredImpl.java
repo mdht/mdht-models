@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministered;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.MedicationAdministeredOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Administered</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class MedicationAdministeredImpl extends SubstanceAdministrationImpl implements MedicationAdministered {
+public class MedicationAdministeredImpl extends org.eclipse.mdht.uml.cda.impl.SubstanceAdministrationImpl implements MedicationAdministered {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class MedicationAdministeredImpl extends SubstanceAdministrationImpl impl
 	 */
 	public boolean validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(
-			this, diagnostics, context);
+		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +59,7 @@ public class MedicationAdministeredImpl extends SubstanceAdministrationImpl impl
 	 */
 	public boolean validateMedicationAdministeredMedicationConsumable(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationConsumable(
-			this, diagnostics, context);
+		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationConsumable(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +69,7 @@ public class MedicationAdministeredImpl extends SubstanceAdministrationImpl impl
 	 */
 	public boolean validateMedicationAdministeredResponseRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationAdministeredOperations.validateMedicationAdministeredResponseRelationship(
-			this, diagnostics, context);
+		return MedicationAdministeredOperations.validateMedicationAdministeredResponseRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +79,7 @@ public class MedicationAdministeredImpl extends SubstanceAdministrationImpl impl
 	 */
 	public boolean validateMedicationAdministeredMedicationComplicationRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationComplicationRelationship(
-			this, diagnostics, context);
+		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationComplicationRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +89,7 @@ public class MedicationAdministeredImpl extends SubstanceAdministrationImpl impl
 	 */
 	public boolean validateMedicationAdministeredMedicationPriorAdministrationRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationPriorAdministrationRelationship(
-			this, diagnostics, context);
+		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationPriorAdministrationRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +99,7 @@ public class MedicationAdministeredImpl extends SubstanceAdministrationImpl impl
 	 */
 	public boolean validateMedicationAdministeredMedicationPerformerParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationPerformerParticipation(
-			this, diagnostics, context);
+		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationPerformerParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -126,8 +109,7 @@ public class MedicationAdministeredImpl extends SubstanceAdministrationImpl impl
 	 */
 	public boolean validateMedicationAdministeredMedicationAuthorizationRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationAuthorizationRelationship(
-			this, diagnostics, context);
+		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationAuthorizationRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -137,8 +119,7 @@ public class MedicationAdministeredImpl extends SubstanceAdministrationImpl impl
 	 */
 	public boolean validateMedicationAdministeredMedicationAdministrationDeviceParticipant(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationAdministrationDeviceParticipant(
-			this, diagnostics, context);
+		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationAdministrationDeviceParticipant(this, diagnostics, context);
 	}
 
 	/**
@@ -202,8 +183,7 @@ public class MedicationAdministeredImpl extends SubstanceAdministrationImpl impl
 	 */
 	public boolean validateMedicationAdministeredApproachSiteCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationAdministeredOperations.validateMedicationAdministeredApproachSiteCodeP(
-			this, diagnostics, context);
+		return MedicationAdministeredOperations.validateMedicationAdministeredApproachSiteCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -213,8 +193,7 @@ public class MedicationAdministeredImpl extends SubstanceAdministrationImpl impl
 	 */
 	public boolean validateMedicationAdministeredApproachSiteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationAdministeredOperations.validateMedicationAdministeredApproachSiteCode(
-			this, diagnostics, context);
+		return MedicationAdministeredOperations.validateMedicationAdministeredApproachSiteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -241,16 +220,16 @@ public class MedicationAdministeredImpl extends SubstanceAdministrationImpl impl
 	 * @generated
 	 */
 	public MedicationAdministered init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationAdministered init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public MedicationAdministered init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationAdministeredImpl

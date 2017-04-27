@@ -6,18 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Organizer;
-import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSAllergiesAndAdverseReactionsSectionTemplateId EMSAllergiesAndAdverseReactionsSectionCode EMSAllergiesAndAdverseReactionsSectionTitle EMSAllergiesAndAdverseReactionsSectionText EMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies EMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer' templateId.root='2.16.840.1.113883.17.3.10.1.13' code.code='48765-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Allergies and adverse reactions Document' title.mixed='EMS Allergies and Adverse Reactions'"
  * @generated
  */
-public interface EMSAllergiesAndAdverseReactionsSection extends Section {
+public interface EMSAllergiesAndAdverseReactionsSection extends org.eclipse.mdht.uml.cda.Section {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -121,7 +113,7 @@ public interface EMSAllergiesAndAdverseReactionsSection extends Section {
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(cda::Organizer))->asSequence()->any(true).oclAsType(cda::Organizer)'"
 	 * @generated
 	 */
-	Organizer getEMSDrugAllergyOrganizer();
+	org.eclipse.mdht.uml.cda.Organizer getEMSDrugAllergyOrganizer();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -131,9 +123,9 @@ public interface EMSAllergiesAndAdverseReactionsSection extends Section {
 	public EMSAllergiesAndAdverseReactionsSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSAllergiesAndAdverseReactionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public EMSAllergiesAndAdverseReactionsSection init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // EMSAllergiesAndAdverseReactionsSection

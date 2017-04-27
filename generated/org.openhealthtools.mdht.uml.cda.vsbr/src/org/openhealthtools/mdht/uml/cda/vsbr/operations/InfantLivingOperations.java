@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.InfantLiving;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -39,7 +37,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class InfantLivingOperations extends ClinicalStatementOperations {
+public class InfantLivingOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +73,7 @@ public class InfantLivingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INFANT_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_INFANT_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,27 +89,32 @@ public class InfantLivingOperations extends ClinicalStatementOperations {
 	public static boolean validateInfantLivingTemplateId(InfantLiving infantLiving, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INFANT_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_INFANT_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.INFANT_LIVING);
 			try {
-				VALIDATE_INFANT_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFANT_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INFANT_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INFANT_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFANT_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INFANT_LIVING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			infantLiving)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.INFANT_LIVING__INFANT_LIVING_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"InfantLivingTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(infantLiving, context) }),
-					new Object[] { infantLiving }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.INFANT_LIVING__INFANT_LIVING_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"InfantLivingInfantLivingTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										infantLiving, context) }),
+						new Object[] { infantLiving }));
 			}
 
 			return false;
@@ -131,7 +141,7 @@ public class InfantLivingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INFANT_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_INFANT_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,26 +157,32 @@ public class InfantLivingOperations extends ClinicalStatementOperations {
 	public static boolean validateInfantLivingClassCode(InfantLiving infantLiving, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INFANT_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_INFANT_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.INFANT_LIVING);
 			try {
-				VALIDATE_INFANT_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFANT_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INFANT_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INFANT_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFANT_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(infantLiving)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INFANT_LIVING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			infantLiving)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.INFANT_LIVING__INFANT_LIVING_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"InfantLivingClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(infantLiving, context) }),
-					new Object[] { infantLiving }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.INFANT_LIVING__INFANT_LIVING_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"InfantLivingInfantLivingClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										infantLiving, context) }),
+						new Object[] { infantLiving }));
 			}
 
 			return false;
@@ -193,7 +209,7 @@ public class InfantLivingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INFANT_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_INFANT_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,26 +225,32 @@ public class InfantLivingOperations extends ClinicalStatementOperations {
 	public static boolean validateInfantLivingMoodCode(InfantLiving infantLiving, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INFANT_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_INFANT_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.INFANT_LIVING);
 			try {
-				VALIDATE_INFANT_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFANT_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INFANT_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INFANT_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFANT_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(infantLiving)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INFANT_LIVING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			infantLiving)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.INFANT_LIVING__INFANT_LIVING_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"InfantLivingMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(infantLiving, context) }),
-					new Object[] { infantLiving }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.INFANT_LIVING__INFANT_LIVING_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"InfantLivingInfantLivingMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										infantLiving, context) }),
+						new Object[] { infantLiving }));
 			}
 
 			return false;
@@ -255,7 +277,7 @@ public class InfantLivingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INFANT_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_INFANT_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,26 +293,32 @@ public class InfantLivingOperations extends ClinicalStatementOperations {
 	public static boolean validateInfantLivingCodeP(InfantLiving infantLiving, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INFANT_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_INFANT_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.INFANT_LIVING);
 			try {
-				VALIDATE_INFANT_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFANT_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INFANT_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INFANT_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFANT_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(infantLiving)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INFANT_LIVING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			infantLiving)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.INFANT_LIVING__INFANT_LIVING_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"InfantLivingCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(infantLiving, context) }),
-					new Object[] { infantLiving }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.INFANT_LIVING__INFANT_LIVING_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"InfantLivingInfantLivingCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										infantLiving, context) }),
+						new Object[] { infantLiving }));
 			}
 
 			return false;
@@ -306,9 +334,9 @@ public class InfantLivingOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '73757-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '73757-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInfantLivingCode(InfantLiving, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Infant Living Code</em>}' invariant operation.
@@ -319,7 +347,7 @@ public class InfantLivingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -335,25 +363,32 @@ public class InfantLivingOperations extends ClinicalStatementOperations {
 	public static boolean validateInfantLivingCode(InfantLiving infantLiving, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.INFANT_LIVING);
 			try {
-				VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(infantLiving)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			infantLiving)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE, VsbrValidator.INFANT_LIVING__INFANT_LIVING_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"InfantLivingCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(infantLiving, context) }),
-					new Object[] { infantLiving }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.INFANT_LIVING__INFANT_LIVING_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"InfantLivingInfantLivingCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										infantLiving, context) }),
+						new Object[] { infantLiving }));
 			}
 
 			return false;
@@ -380,7 +415,7 @@ public class InfantLivingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INFANT_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_INFANT_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -396,26 +431,32 @@ public class InfantLivingOperations extends ClinicalStatementOperations {
 	public static boolean validateInfantLivingValue(InfantLiving infantLiving, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INFANT_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_INFANT_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.INFANT_LIVING);
 			try {
-				VALIDATE_INFANT_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFANT_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INFANT_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INFANT_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFANT_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(infantLiving)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INFANT_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			infantLiving)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.INFANT_LIVING__INFANT_LIVING_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"InfantLivingValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(infantLiving, context) }),
-					new Object[] { infantLiving }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.INFANT_LIVING__INFANT_LIVING_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"InfantLivingInfantLivingValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										infantLiving, context) }),
+						new Object[] { infantLiving }));
 			}
 
 			return false;

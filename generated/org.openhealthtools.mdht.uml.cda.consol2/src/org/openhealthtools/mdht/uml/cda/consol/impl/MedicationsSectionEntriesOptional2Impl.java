@@ -7,34 +7,27 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSectionEntriesOptional2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsSectionEntriesOptional2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medications Section Entries Optional2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEntriesOptionalImpl implements
-		MedicationsSectionEntriesOptional2 {
+public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEntriesOptionalImpl
+		implements MedicationsSectionEntriesOptional2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,9 +52,9 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationsSectionEntriesOptional2AbsenceOfMedications(DiagnosticChain diagnostics,
+	public boolean validateMedicationsSectionEntriesOptionalAbsenceOfMedications(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptional2AbsenceOfMedications(
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalAbsenceOfMedications(
 			this, diagnostics, context);
 	}
 
@@ -74,18 +67,6 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	public boolean validateMedicationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalMedicationActivity2(
 			this, diagnostics, context);
 	}
 
@@ -120,6 +101,18 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	public boolean validateMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalMedicationActivity(
 			this, diagnostics, context);
 	}
 

@@ -2,34 +2,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.PreSpecifiedEvent;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.PreSpecifiedEventOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Pre Specified Event</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PreSpecifiedEventImpl extends ObservationImpl implements PreSpecifiedEvent {
+public class PreSpecifiedEventImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements PreSpecifiedEvent {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -116,7 +105,7 @@ public class PreSpecifiedEventImpl extends ObservationImpl implements PreSpecifi
 	 */
 	@Override
 	public PreSpecifiedEvent init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -124,8 +113,8 @@ public class PreSpecifiedEventImpl extends ObservationImpl implements PreSpecifi
      * @generated
      */
     @Override
-	public PreSpecifiedEvent init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public PreSpecifiedEvent init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //PreSpecifiedEventImpl

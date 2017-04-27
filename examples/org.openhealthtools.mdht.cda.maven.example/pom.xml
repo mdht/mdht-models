@@ -3,68 +3,97 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.openhealthtools.mdht.cda.maven</groupId>
-	<artifactId>example</artifactId>
-	<version>0.2.0-SNAPSHOT</version>
+	<groupId>org.openhealthtools.mdht.cda.examples</groupId>
+	<artifactId>org.openhealthtools.mdht.cda.maven</artifactId>
+	<version>3.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<!-- MDHT CDA Runtime Parent POM -->
-	<parent>
-		<groupId>org.openhealthtools.mdht.runtime</groupId>
-		<artifactId>cda</artifactId>
-		<version>1.2.0</version>
-	</parent>
-
-
-	<!-- Maven Repositories -->
 	<repositories>
 		<repository>
-			<id>central</id>
-			<name>Maven Repository Switchboard</name>
-			<layout>default</layout>
-			<url>http://repo1.maven.org/maven2</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
+			<id>MDHT.ext-release-local</id>
+			<name>MDHT.ext-release-local</name>
+			<url>http://devsoap.sitenv.org:8081/artifactory/ext-release-local</url>
 		</repository>
-
-		<!--  CDA Tools Release - Contains 3rd party jars not available on other Maven repositories -->
 		<repository>
-			<id>cdatoolsrelease</id>
-			<name>cdatools.com-releases</name>
-			<url>http://www.cdatools.com:8081/artifactory/ext-release-local</url>
-		</repository>
-
-		<!--  CDA Snapshot, Contains the latest stable build of cda plugins (consol,hitsp,etc)-->
-		<repository>
-			<id>cdatoolssnapshot</id>
-			<name>cdatools.com-releases</name>
-			<url>http://www.cdatools.com:8081/artifactory/libs-snapshot-local</url>
-		</repository>
-
-		<repository>
-			<id>EclipseLink Repo</id>
-			<url>http://www.eclipse.org/downloads/download.php?r=1&amp;nf=1&amp;file=/rt/eclipselink/maven.repo</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
+			<id>MDHT.libs-snapshot-local</id>
+			<name>MDHT.libs-snapshot-local</name>
+			<url>http://devsoap.sitenv.org:8081/artifactory/libs-snapshot-local</url>
 		</repository>
 	</repositories>
 
+ 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				 <groupId>org.eclipse.mdht</groupId>
+    			<artifactId>org.eclipse.mdht.cda-runtime</artifactId>
+				<version>3.0.0-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<dependencies>
-
-
-		<!--  CDA Consol Dependency -->
+		<!-- MDHT 3rd Party Dependencies -->
 		<dependency>
-			<groupId>org.openhealthtools.mdht.uml.cda</groupId>
-			<artifactId>consol</artifactId>
-			<version>1.2.0-SNAPSHOT</version>
+			<groupId>lpg.runtime.java</groupId>
+			<artifactId>lpg.runtime.java</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.eclipse.emf.ecore.xmi</groupId>
+			<artifactId>org.eclipse.emf.ecore.xmi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.emf.ecore</groupId>
+			<artifactId>org.eclipse.emf.ecore</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.emf.common</groupId>
+			<artifactId>org.eclipse.emf.common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.ocl</groupId>
+			<artifactId>org.eclipse.ocl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.ocl.common</groupId>
+			<artifactId>org.eclipse.ocl.common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.ocl.ecore</groupId>
+			<artifactId>org.eclipse.ocl.ecore</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.uml2.types</groupId>
+			<artifactId>org.eclipse.uml2.types</artifactId>
+		</dependency>
+		<!-- MDHT Core Dependencies -->
+		<dependency>
+			<groupId>org.eclipse.mdht</groupId>
+			<artifactId>org.eclipse.mdht.emf.runtime</artifactId>
+		</dependency>
+		<!-- MDHT CDA Dependencies -->
+		<dependency>
+			<groupId>org.eclipse.mdht</groupId>
+			<artifactId>org.eclipse.mdht.uml.hl7.vocab</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.mdht</groupId>
+			<artifactId>org.eclipse.mdht.uml.hl7.datatypes</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.mdht</groupId>
+			<artifactId>org.eclipse.mdht.uml.hl7.rim</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.mdht</groupId>
+			<artifactId>org.eclipse.mdht.uml.cda</artifactId>
+		</dependency>
+		<!-- MDHT CDA Implementation Guide Dependencies -->
+		<dependency>
+			<groupId>org.openhealthtools.mdht.cda</groupId>
+			<artifactId>org.openhealthtools.mdht.uml.cda.consol2</artifactId>
+		</dependency>
 	</dependencies>
-
-
-
-
 </project>

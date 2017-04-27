@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -37,7 +30,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.TimingReference;
 import org.openhealthtools.mdht.uml.cda.sdtm.Toxicity;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -92,7 +84,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStatementOperations {
+public class HumanClinicalLaboratoryTestResultOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -121,7 +121,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -136,25 +136,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultTemplateId(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -182,7 +192,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -197,25 +207,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultClassCode(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -243,7 +263,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -258,25 +278,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultMoodCode(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -304,7 +334,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -319,25 +349,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultId(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -365,7 +405,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -380,25 +420,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultCodeP(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -428,7 +478,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -443,25 +493,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultCode(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -489,7 +549,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -504,25 +564,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultStatusCode(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -550,7 +620,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -565,25 +635,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultValue(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -611,7 +691,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -626,25 +706,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultMethodCodeP(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -674,7 +764,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -689,25 +779,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultMethodCode(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_METHOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -735,7 +835,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -750,25 +850,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultInterpretationCodeP(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -798,7 +908,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -813,25 +923,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultInterpretationCode(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_INTERPRETATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -859,7 +979,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -874,25 +994,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultGroupIdentifier(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -920,7 +1050,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -935,25 +1065,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultSpecimenInformation(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SPECIMEN_INFORMATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -981,7 +1121,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -996,25 +1136,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultNonPerformanceReason(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -1042,7 +1192,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1057,25 +1207,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultStudyTestOrganization(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_STUDY_TEST_ORGANIZATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultStudyTestOrganization", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultStudyTestOrganization", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -1103,7 +1263,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1118,25 +1278,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultTimingReference(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TIMING_REFERENCE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -1164,7 +1334,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1179,25 +1349,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultComment(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -1225,7 +1405,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1240,25 +1420,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultDomainAssignment(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -1286,7 +1476,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1301,25 +1491,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultRelatedRecord(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -1347,7 +1547,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1362,25 +1562,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultSupplementalValue(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -1408,7 +1618,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1423,25 +1633,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultToxicity(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_TOXICITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultToxicity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultToxicity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -1469,7 +1689,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1484,25 +1704,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultCategory(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -1530,7 +1760,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1545,25 +1775,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultSubCategory(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -1591,7 +1831,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1606,25 +1846,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultFastingStatus(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FASTING_STATUS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultFastingStatus", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultFastingStatus", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -1652,7 +1902,7 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1667,25 +1917,35 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  boolean validateHumanClinicalLaboratoryTestResultFindingAbout(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT);
 			try {
-				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalLaboratoryTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalLaboratoryTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_LABORATORY_TEST_RESULT__HUMAN_CLINICAL_LABORATORY_TEST_RESULT_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalLaboratoryTestResultHumanClinicalLaboratoryTestResultFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalLaboratoryTestResult, context) }),
 						 new Object [] { humanClinicalLaboratoryTestResult }));
 			}
 			 
@@ -1721,8 +1981,13 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT, SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT.getEAllOperations().get(77));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1730,8 +1995,9 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(humanClinicalLaboratoryTestResult);
 	}
 
@@ -1762,8 +2028,13 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  SpecimenInformation getSpecimenInformation(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult) {
+	
+	
+	
 		if (GET_SPECIMEN_INFORMATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT, SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT.getEAllOperations().get(78));
 			try {
 				GET_SPECIMEN_INFORMATION__EOCL_QRY = helper.createQuery(GET_SPECIMEN_INFORMATION__EOCL_EXP);
@@ -1771,8 +2042,9 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
 		return (SpecimenInformation) query.evaluate(humanClinicalLaboratoryTestResult);
 	}
 
@@ -1803,8 +2075,13 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT, SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT.getEAllOperations().get(79));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1812,8 +2089,9 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(humanClinicalLaboratoryTestResult);
 	}
 
@@ -1844,8 +2122,13 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  TimingReference getTimingReference(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult) {
+	
+	
+	
 		if (GET_TIMING_REFERENCE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT, SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT.getEAllOperations().get(80));
 			try {
 				GET_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_TIMING_REFERENCE__EOCL_EXP);
@@ -1853,8 +2136,9 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
 		return (TimingReference) query.evaluate(humanClinicalLaboratoryTestResult);
 	}
 
@@ -1885,8 +2169,13 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  EList<Comment> getComments(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT, SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT.getEAllOperations().get(81));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1894,8 +2183,9 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(humanClinicalLaboratoryTestResult);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -1928,8 +2218,13 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT, SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT.getEAllOperations().get(82));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1937,8 +2232,9 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(humanClinicalLaboratoryTestResult);
 	}
 
@@ -1969,8 +2265,13 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT, SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT.getEAllOperations().get(83));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1978,8 +2279,9 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(humanClinicalLaboratoryTestResult);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -2012,8 +2314,13 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT, SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT.getEAllOperations().get(84));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -2021,8 +2328,9 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(humanClinicalLaboratoryTestResult);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -2055,8 +2363,13 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  Toxicity getToxicity(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult) {
+	
+	
+	
 		if (GET_TOXICITY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT, SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT.getEAllOperations().get(85));
 			try {
 				GET_TOXICITY__EOCL_QRY = helper.createQuery(GET_TOXICITY__EOCL_EXP);
@@ -2064,8 +2377,9 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TOXICITY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TOXICITY__EOCL_QRY);
 		return (Toxicity) query.evaluate(humanClinicalLaboratoryTestResult);
 	}
 
@@ -2096,8 +2410,13 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  Category getCategory(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT, SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT.getEAllOperations().get(86));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -2105,8 +2424,9 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(humanClinicalLaboratoryTestResult);
 	}
 
@@ -2137,8 +2457,13 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  SubCategory getSubCategory(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT, SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT.getEAllOperations().get(87));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -2146,8 +2471,9 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(humanClinicalLaboratoryTestResult);
 	}
 
@@ -2178,8 +2504,13 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  FastingStatus getFastingStatus(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult) {
+	
+	
+	
 		if (GET_FASTING_STATUS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT, SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT.getEAllOperations().get(88));
 			try {
 				GET_FASTING_STATUS__EOCL_QRY = helper.createQuery(GET_FASTING_STATUS__EOCL_EXP);
@@ -2187,8 +2518,9 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FASTING_STATUS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FASTING_STATUS__EOCL_QRY);
 		return (FastingStatus) query.evaluate(humanClinicalLaboratoryTestResult);
 	}
 
@@ -2219,8 +2551,13 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(HumanClinicalLaboratoryTestResult humanClinicalLaboratoryTestResult) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT, SdtmPackage.Literals.HUMAN_CLINICAL_LABORATORY_TEST_RESULT.getEAllOperations().get(89));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -2228,8 +2565,9 @@ public class HumanClinicalLaboratoryTestResultOperations extends ClinicalStateme
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(humanClinicalLaboratoryTestResult);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());

@@ -12,7 +12,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -24,13 +24,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusResult
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Functional Status Result Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class FunctionalStatusResultObservationImpl extends ResultObservationImpl implements
-		FunctionalStatusResultObservation {
+public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
+		implements FunctionalStatusResultObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -48,30 +46,6 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.FUNCTIONAL_STATUS_RESULT_OBSERVATION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusResultObservationTextReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationTextReference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusResultObservationTextReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationTextReferenceValue(
-			this, diagnostics, context);
 	}
 
 	/**
@@ -216,6 +190,29 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 * @generated
 	 */
 	@Override
+	public boolean validateResultObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultObservationOperations.validateResultObservationTextReference(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusResultObservationOperations.validateResultObservationTextReferenceValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusResultObservationOperations.validateResultObservationTemplateId(
 			this, diagnostics, context);
@@ -239,7 +236,8 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 */
 	@Override
 	public boolean validateResultObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateResultObservationMoodCode(this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateResultObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -321,7 +319,8 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return FunctionalStatusResultObservationOperations.validateResultObservationInterpretationCode(
 			this, diagnostics, context);
 	}

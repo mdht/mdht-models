@@ -14,14 +14,14 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyStatusObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,8 +52,8 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAllergyStatusObservationTemplateId() {
 		OperationsTestCase<AllergyStatusObservation> validateAllergyStatusObservationTemplateIdTestCase = new OperationsTestCase<AllergyStatusObservation>(
-			"validateAllergyStatusObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyStatusObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -86,8 +86,8 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAllergyStatusObservationClassCode() {
 		OperationsTestCase<AllergyStatusObservation> validateAllergyStatusObservationClassCodeTestCase = new OperationsTestCase<AllergyStatusObservation>(
-			"validateAllergyStatusObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyStatusObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -120,8 +120,8 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAllergyStatusObservationMoodCode() {
 		OperationsTestCase<AllergyStatusObservation> validateAllergyStatusObservationMoodCodeTestCase = new OperationsTestCase<AllergyStatusObservation>(
-			"validateAllergyStatusObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyStatusObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -188,8 +188,8 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAllergyStatusObservationStatusCode() {
 		OperationsTestCase<AllergyStatusObservation> validateAllergyStatusObservationStatusCodeTestCase = new OperationsTestCase<AllergyStatusObservation>(
-			"validateAllergyStatusObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyStatusObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -220,7 +220,7 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT 
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateAllergyStatusObservationValue() {

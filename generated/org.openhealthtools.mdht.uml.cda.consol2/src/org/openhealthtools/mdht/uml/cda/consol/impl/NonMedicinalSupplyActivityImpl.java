@@ -16,19 +16,17 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SupplyImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NonMedicinalSupplyActivityOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SupplyImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Non Medicinal Supply Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -82,7 +80,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * @generated
 	 */
 	@Override
-	public boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityTemplateId(
 			this, diagnostics, context);
 	}
@@ -93,7 +92,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * @generated
 	 */
 	@Override
-	public boolean validateNonMedicinalSupplyActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNonMedicinalSupplyActivityClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityClassCode(
 			this, diagnostics, context);
 	}
@@ -104,7 +104,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * @generated
 	 */
 	@Override
-	public boolean validateNonMedicinalSupplyActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNonMedicinalSupplyActivityMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityMoodCode(
 			this, diagnostics, context);
 	}
@@ -125,7 +126,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * @generated
 	 */
 	@Override
-	public boolean validateNonMedicinalSupplyActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNonMedicinalSupplyActivityStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityStatusCode(
 			this, diagnostics, context);
 	}
@@ -148,7 +150,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * @generated
 	 */
 	@Override
-	public boolean validateNonMedicinalSupplyActivityQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNonMedicinalSupplyActivityQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityQuantity(
 			this, diagnostics, context);
 	}

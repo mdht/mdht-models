@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.OperativeNoteSurgicalProcedureSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.OperativeNoteSurgicalProcedureSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +53,8 @@ public class OperativeNoteSurgicalProcedureSectionTest extends CDAValidationTest
 	public void testValidateOperativeNoteSurgicalProcedureSectionTemplateId() {
 		OperationsTestCase<OperativeNoteSurgicalProcedureSection> validateOperativeNoteSurgicalProcedureSectionTemplateIdTestCase = new OperationsTestCase<OperativeNoteSurgicalProcedureSection>(
 			"validateOperativeNoteSurgicalProcedureSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -87,7 +88,8 @@ public class OperativeNoteSurgicalProcedureSectionTest extends CDAValidationTest
 	public void testValidateOperativeNoteSurgicalProcedureSectionCode() {
 		OperationsTestCase<OperativeNoteSurgicalProcedureSection> validateOperativeNoteSurgicalProcedureSectionCodeTestCase = new OperationsTestCase<OperativeNoteSurgicalProcedureSection>(
 			"validateOperativeNoteSurgicalProcedureSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -121,7 +123,8 @@ public class OperativeNoteSurgicalProcedureSectionTest extends CDAValidationTest
 	public void testValidateOperativeNoteSurgicalProcedureSectionCodeP() {
 		OperationsTestCase<OperativeNoteSurgicalProcedureSection> validateOperativeNoteSurgicalProcedureSectionCodePTestCase = new OperationsTestCase<OperativeNoteSurgicalProcedureSection>(
 			"validateOperativeNoteSurgicalProcedureSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -155,7 +158,8 @@ public class OperativeNoteSurgicalProcedureSectionTest extends CDAValidationTest
 	public void testValidateOperativeNoteSurgicalProcedureSectionText() {
 		OperationsTestCase<OperativeNoteSurgicalProcedureSection> validateOperativeNoteSurgicalProcedureSectionTextTestCase = new OperationsTestCase<OperativeNoteSurgicalProcedureSection>(
 			"validateOperativeNoteSurgicalProcedureSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -192,7 +196,8 @@ public class OperativeNoteSurgicalProcedureSectionTest extends CDAValidationTest
 	public void testValidateOperativeNoteSurgicalProcedureSectionTitle() {
 		OperationsTestCase<OperativeNoteSurgicalProcedureSection> validateOperativeNoteSurgicalProcedureSectionTitleTestCase = new OperationsTestCase<OperativeNoteSurgicalProcedureSection>(
 			"validateOperativeNoteSurgicalProcedureSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

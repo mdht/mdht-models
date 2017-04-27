@@ -7,30 +7,24 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.OrganizerImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicalEquipmentOrganizerOperations;
-import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medical Equipment Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +53,20 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
-	public boolean validateMedicalEquipmentOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicalEquipmentOrganizerTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerTemplateId(
 			this, diagnostics, context);
 	}
@@ -71,7 +77,8 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicalEquipmentOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicalEquipmentOrganizerClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerClassCode(
 			this, diagnostics, context);
 	}
@@ -83,7 +90,8 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 */
 	@Override
 	public boolean validateMedicalEquipmentOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerMoodCode(this, diagnostics, context);
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -112,7 +120,8 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicalEquipmentOrganizerStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicalEquipmentOrganizerStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerStatusCodeP(
 			this, diagnostics, context);
 	}
@@ -123,7 +132,8 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicalEquipmentOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicalEquipmentOrganizerStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerStatusCode(
 			this, diagnostics, context);
 	}
@@ -159,6 +169,27 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	public boolean validateMedicalEquipmentOrganizerProcedureActivityProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerProcedureActivityProcedure2(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizerIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerIVLTSLow(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentOrganizerIVLTSHigh(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerIVLTSHigh(
 			this, diagnostics, context);
 	}
 

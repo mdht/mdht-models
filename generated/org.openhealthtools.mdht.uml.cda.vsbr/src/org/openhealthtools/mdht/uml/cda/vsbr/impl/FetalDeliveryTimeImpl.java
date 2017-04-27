@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliveryTime;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,10 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.FetalDeliveryTimeOperati
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Fetal Delivery Time</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class FetalDeliveryTimeImpl extends ObservationImpl implements FetalDeliveryTime {
+public class FetalDeliveryTimeImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements FetalDeliveryTime {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -110,7 +104,7 @@ public class FetalDeliveryTimeImpl extends ObservationImpl implements FetalDeliv
 	 * @generated
 	 */
 	public FetalDeliveryTime init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -118,8 +112,9 @@ public class FetalDeliveryTimeImpl extends ObservationImpl implements FetalDeliv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FetalDeliveryTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public FetalDeliveryTime init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // FetalDeliveryTimeImpl

@@ -2,34 +2,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationRangeImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.ReferenceRange;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.ReferenceRangeOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Reference Range</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ReferenceRangeImpl extends ObservationRangeImpl implements ReferenceRange {
+public class ReferenceRangeImpl extends org.eclipse.mdht.uml.cda.impl.ObservationRangeImpl implements ReferenceRange {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -126,7 +115,7 @@ public class ReferenceRangeImpl extends ObservationRangeImpl implements Referenc
 	 */
 	@Override
 	public ReferenceRange init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -134,8 +123,8 @@ public class ReferenceRangeImpl extends ObservationRangeImpl implements Referenc
      * @generated
      */
     @Override
-	public ReferenceRange init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public ReferenceRange init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //ReferenceRangeImpl

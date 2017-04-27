@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.EFactory;
 /**
  * <!-- begin-user-doc --> The <b>Factory</b> for the model. It provides a
  * create method for each non-abstract class of the model. <!-- end-user-doc -->
- * 
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage
  * @generated
  */
@@ -23,16 +23,15 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
-	Mu2consolFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolFactoryImpl
-			.init();
+	Mu2consolFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>General Header Constraints</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>General Header Constraints</em>'.
 	 * @generated
 	 */
@@ -41,7 +40,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Summary Of Care Record</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Summary Of Care Record</em>'.
 	 * @generated
 	 */
@@ -50,7 +49,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Social History Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Social History Section</em>'.
 	 * @generated
 	 */
@@ -59,7 +58,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Smoking Status Observation</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Smoking Status Observation</em>'.
 	 * @generated
 	 */
@@ -68,7 +67,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Results Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Results Section</em>'.
 	 * @generated
 	 */
@@ -77,7 +76,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Result Organizer</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Result Organizer</em>'.
 	 * @generated
 	 */
@@ -86,7 +85,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Result Observation</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Result Observation</em>'.
 	 * @generated
 	 */
@@ -95,7 +94,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Procedures Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Procedures Section</em>'.
 	 * @generated
 	 */
@@ -104,7 +103,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Procedure Activity Procedure</em>'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Procedure Activity Procedure</em>'.
 	 * @generated
 	 */
@@ -113,40 +112,38 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Clinical Office Visit Summary</em>'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Clinical Office Visit Summary</em>'.
 	 * @generated
 	 */
 	ClinicalOfficeVisitSummary createClinicalOfficeVisitSummary();
 
 	/**
-	 * Returns a new object of class '<em>Medications Administered Section</em>
-	 * '. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '<em>Medications Administered Section</em>
-	 *         '.
+	 * Returns a new object of class '<em>Medications Administered
+	 * Section</em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @return a new object of class '<em>Medications Administered
+	 *         Section</em>'.
 	 * @generated
 	 */
 	MedicationsAdministeredSection createMedicationsAdministeredSection();
 
 	/**
-	 * Returns a new object of class '
-	 * <em>Transition Of Care Ambulatory Summary</em>'. <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '
-	 *         <em>Transition Of Care Ambulatory Summary</em>'.
+	 * Returns a new object of class '<em>Transition Of Care Ambulatory
+	 * Summary</em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @return a new object of class '<em>Transition Of Care Ambulatory
+	 *         Summary</em>'.
 	 * @generated
 	 */
 	TransitionOfCareAmbulatorySummary createTransitionOfCareAmbulatorySummary();
 
 	/**
-	 * Returns a new object of class '
-	 * <em>Transition Of Care Inpatient Summary</em>'. <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '
-	 *         <em>Transition Of Care Inpatient Summary</em>'.
+	 * Returns a new object of class '<em>Transition Of Care Inpatient
+	 * Summary</em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @return a new object of class '<em>Transition Of Care Inpatient
+	 *         Summary</em>'.
 	 * @generated
 	 */
 	TransitionOfCareInpatientSummary createTransitionOfCareInpatientSummary();
@@ -154,7 +151,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>View Download Transmit Summary</em>'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>View Download Transmit Summary</em>'.
 	 * @generated
 	 */
@@ -163,7 +160,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>VDT Inpatient Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>VDT Inpatient Summary</em>'.
 	 * @generated
 	 */
@@ -172,7 +169,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>VDT Ambulatory Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>VDT Ambulatory Summary</em>'.
 	 * @generated
 	 */
@@ -181,51 +178,48 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Functional Status Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Functional Status Section</em>'.
 	 * @generated
 	 */
 	FunctionalStatusSection createFunctionalStatusSection();
 
 	/**
-	 * Returns a new object of class '
-	 * <em>Cognitive Status Result Observation</em>'. <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '
-	 *         <em>Cognitive Status Result Observation</em>'.
+	 * Returns a new object of class '<em>Cognitive Status Result
+	 * Observation</em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @return a new object of class '<em>Cognitive Status Result
+	 *         Observation</em>'.
 	 * @generated
 	 */
 	CognitiveStatusResultObservation createCognitiveStatusResultObservation();
 
 	/**
-	 * Returns a new object of class '<em>Cognitive Status Result Organizer</em>
-	 * '. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '<em>Cognitive Status Result Organizer</em>
-	 *         '.
+	 * Returns a new object of class '<em>Cognitive Status Result
+	 * Organizer</em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @return a new object of class '<em>Cognitive Status Result
+	 *         Organizer</em>'.
 	 * @generated
 	 */
 	CognitiveStatusResultOrganizer createCognitiveStatusResultOrganizer();
 
 	/**
-	 * Returns a new object of class '
-	 * <em>Functional Status Result Observation</em>'. <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '
-	 *         <em>Functional Status Result Observation</em>'.
+	 * Returns a new object of class '<em>Functional Status Result
+	 * Observation</em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @return a new object of class '<em>Functional Status Result
+	 *         Observation</em>'.
 	 * @generated
 	 */
 	FunctionalStatusResultObservation createFunctionalStatusResultObservation();
 
 	/**
-	 * Returns a new object of class '
-	 * <em>Functional Status Result Organizer</em>'. <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '
-	 *         <em>Functional Status Result Organizer</em>'.
+	 * Returns a new object of class '<em>Functional Status Result
+	 * Organizer</em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
+	 * @return a new object of class '<em>Functional Status Result
+	 *         Organizer</em>'.
 	 * @generated
 	 */
 	FunctionalStatusResultOrganizer createFunctionalStatusResultOrganizer();
@@ -233,7 +227,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns the package supported by this factory. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return the package supported by this factory.
 	 * @generated
 	 */

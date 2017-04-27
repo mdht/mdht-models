@@ -16,11 +16,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReasonForReferralSection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -51,7 +51,8 @@ public class ReasonForReferralSection2Test extends CDAValidationTest {
 	public void testValidateReasonForReferralSection2PatientReferralAct() {
 		OperationsTestCase<ReasonForReferralSection2> validateReasonForReferralSection2PatientReferralActTestCase = new OperationsTestCase<ReasonForReferralSection2>(
 			"validateReasonForReferralSection2PatientReferralAct",
-			operationsForOCL.getOCLValue("VALIDATE_REASON_FOR_REFERRAL_SECTION2_PATIENT_REFERRAL_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REASON_FOR_REFERRAL_SECTION2_PATIENT_REFERRAL_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -95,8 +96,8 @@ public class ReasonForReferralSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateReasonForReferralSectionTemplateId() {
 		OperationsTestCase<ReasonForReferralSection2> validateReasonForReferralSectionTemplateIdTestCase = new OperationsTestCase<ReasonForReferralSection2>(
-			"validateReasonForReferralSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReasonForReferralSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -16,21 +16,21 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.Act;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActClassDocumentEntryAct;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentActMood;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.Act;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedCoverageOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActClassDocumentEntryAct;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -49,6 +49,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageEntryRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Entry Relationship</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageEntryRelationshipActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Entry Relationship Act Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageEntryRelationshipActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Entry Relationship Act Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage#validatePlannedCoverageEntryRelationshipActId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Entry Relationship Act Id</em>}</li>
@@ -176,7 +177,8 @@ public class PlannedCoverageTest extends CDAValidationTest {
 	public void testValidatePlannedCoverageId() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageIdTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageId",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedCoverage target) {
@@ -353,8 +355,8 @@ public class PlannedCoverageTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedCoverageEntryRelationship() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipTestCase = new OperationsTestCase<PlannedCoverage>(
-			"validatePlannedCoverageEntryRelationship",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedCoverageEntryRelationship", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -386,10 +388,45 @@ public class PlannedCoverageTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidatePlannedCoverageAuthorParticipation() {
+		OperationsTestCase<PlannedCoverage> validatePlannedCoverageAuthorParticipationTestCase = new OperationsTestCase<PlannedCoverage>(
+			"validatePlannedCoverageAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedCoverage target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedCoverage target) {
+				target.init();
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedCoverageOperations.validatePlannedCoverageAuthorParticipation(
+					(PlannedCoverage) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedCoverageAuthorParticipationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidatePlannedCoverageEntryRelationshipActClassCode() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActClassCodeTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipActClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -424,7 +461,8 @@ public class PlannedCoverageTest extends CDAValidationTest {
 	public void testValidatePlannedCoverageEntryRelationshipActMoodCode() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActMoodCodeTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipActMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -458,8 +496,8 @@ public class PlannedCoverageTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedCoverageEntryRelationshipActId() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActIdTestCase = new OperationsTestCase<PlannedCoverage>(
-			"validatePlannedCoverageEntryRelationshipActId",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedCoverageEntryRelationshipActId", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -495,7 +533,8 @@ public class PlannedCoverageTest extends CDAValidationTest {
 	public void testValidatePlannedCoverageEntryRelationshipActCodeP() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActCodePTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipActCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -531,7 +570,8 @@ public class PlannedCoverageTest extends CDAValidationTest {
 	public void testValidatePlannedCoverageEntryRelationshipActCode() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActCodeTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipActCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -569,7 +609,8 @@ public class PlannedCoverageTest extends CDAValidationTest {
 	public void testValidatePlannedCoverageEntryRelationshipActStatusCode() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActStatusCodeTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipActStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -605,7 +646,8 @@ public class PlannedCoverageTest extends CDAValidationTest {
 	public void testValidatePlannedCoverageEntryRelationshipActStatusCodeP() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActStatusCodePTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipActStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -642,7 +684,8 @@ public class PlannedCoverageTest extends CDAValidationTest {
 	public void testValidatePlannedCoverageEntryRelationshipTypeCode() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipTypeCodeTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -677,8 +720,8 @@ public class PlannedCoverageTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedCoverageEntryRelationshipAct() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActTestCase = new OperationsTestCase<PlannedCoverage>(
-			"validatePlannedCoverageEntryRelationshipAct",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedCoverageEntryRelationshipAct", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

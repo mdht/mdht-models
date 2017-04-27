@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -64,5 +62,6 @@ public interface Comment extends org.openhealthtools.mdht.uml.cda.ihe.Comment {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Comment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public Comment init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // Comment

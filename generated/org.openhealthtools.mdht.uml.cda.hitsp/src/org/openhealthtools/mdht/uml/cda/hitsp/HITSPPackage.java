@@ -12,7 +12,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
@@ -599,7 +598,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int MEDICATION_TYPE__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -608,7 +607,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int MEDICATION_TYPE__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -617,7 +616,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int MEDICATION_TYPE__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -626,7 +625,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__ID = CDAPackage.OBSERVATION__ID;
+	int MEDICATION_TYPE__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -635,7 +634,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__CODE = CDAPackage.OBSERVATION__CODE;
+	int MEDICATION_TYPE__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -644,7 +643,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int MEDICATION_TYPE__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -653,7 +652,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int MEDICATION_TYPE__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -662,7 +661,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int MEDICATION_TYPE__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -671,7 +670,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int MEDICATION_TYPE__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -680,7 +679,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int MEDICATION_TYPE__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -689,7 +688,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int MEDICATION_TYPE__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -698,7 +697,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int MEDICATION_TYPE__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -707,7 +706,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int MEDICATION_TYPE__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -716,7 +715,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int MEDICATION_TYPE__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -725,7 +724,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int MEDICATION_TYPE__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -734,7 +733,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int MEDICATION_TYPE__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -743,7 +742,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int MEDICATION_TYPE__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -752,7 +751,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int MEDICATION_TYPE__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -761,7 +760,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int MEDICATION_TYPE__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -770,7 +769,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int MEDICATION_TYPE__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -779,7 +778,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int MEDICATION_TYPE__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -788,7 +787,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int MEDICATION_TYPE__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -797,7 +796,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int MEDICATION_TYPE__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -806,7 +805,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int MEDICATION_TYPE__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -815,7 +814,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int MEDICATION_TYPE__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -824,7 +823,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int MEDICATION_TYPE__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -833,7 +832,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int MEDICATION_TYPE__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -842,7 +841,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int MEDICATION_TYPE__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -851,7 +850,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int MEDICATION_TYPE__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -860,7 +859,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int MEDICATION_TYPE__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Medication Type</em>' class.
@@ -869,7 +868,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATION_TYPE_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int MEDICATION_TYPE_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.hitsp.impl.MedicationOrderInformationImpl <em>Medication Order Information</em>}' class.
@@ -7335,7 +7334,8 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_FEATURE_COUNT = IHEPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_FEATURE_COUNT + 0;
+	int HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_FEATURE_COUNT = IHEPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -7677,7 +7677,8 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADMISSION_MEDICATION_HISTORY_SECTION_FEATURE_COUNT = IHEPackage.ADMISSION_MEDICATION_HISTORY_SECTION_FEATURE_COUNT + 0;
+	int ADMISSION_MEDICATION_HISTORY_SECTION_FEATURE_COUNT = IHEPackage.ADMISSION_MEDICATION_HISTORY_SECTION_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -7848,7 +7849,8 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_FEATURE_COUNT = IHEPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_FEATURE_COUNT + 0;
+	int HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_FEATURE_COUNT = IHEPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -13386,7 +13388,7 @@ public interface HITSPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HITSP_REGISTRY_DELEGATE_FEATURE_COUNT = CDAPackage.REGISTRY_DELEGATE_FEATURE_COUNT + 0;
+	int HITSP_REGISTRY_DELEGATE_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.REGISTRY_DELEGATE_FEATURE_COUNT + 0;
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.hitsp.AllergyDrugSensitivity <em>Allergy Drug Sensitivity</em>}'.

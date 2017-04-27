@@ -10,10 +10,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Reporting Birth Informationfromaclinicalsettingtovitalrecords</b></em>'.
@@ -21,18 +17,20 @@ import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage#getReportingBirthInformationfromaclinicalsettingtovitalrecords()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Reporting Birth Information from a clinical setting to vital recordsTemplateId Reporting Birth Information from a clinical setting to vital recordsMoodCode Reporting Birth Information from a clinical setting to vital recordsRealmCode Reporting Birth Information from a clinical setting to vital recordsRealmCodeP Reporting Birth Information from a clinical setting to vital recordsTypeId Reporting Birth Information from a clinical setting to vital recordsId Reporting Birth Information from a clinical setting to vital recordsCode Reporting Birth Information from a clinical setting to vital recordsCodeP Reporting Birth Information from a clinical setting to vital recordsTitle Reporting Birth Information from a clinical setting to vital recordsEffectiveTime Reporting Birth Information from a clinical setting to vital recordsConfidentialityCode Reporting Birth Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Birth Information from a clinical setting to vital recordsLanguageCode Reporting Birth Information from a clinical setting to vital recordsAuthor Reporting Birth Information from a clinical setting to vital recordsCustodian Reporting Birth Information from a clinical setting to vital recordsRecordTarget Reporting Birth Information from a clinical setting to vital recordsPrenatalTestingAndSurveillance Reporting Birth Information from a clinical setting to vital recordsPregnancyHistory Reporting Birth Information from a clinical setting to vital recordsNewbornDeliverySection Reporting Birth Information from a clinical setting to vital recordsLaborAndDeliverySection Reporting Birth Information from a clinical setting to vital recordsHistoryOfInfectionLiveBirthSection' templateId.root='2.16.840.1.113883.10.20.26.1' classCode='DOCCLIN' moodCode='EVN' realmCode.code='USA' code.code='68998-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='U.S. standard certificate of live birth - 2003 revision'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthor typeCode='AUT' constraints.validation.error='AuthorAssignedAuthor'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor constraints.validation.error='AssignedAuthorId AssignedAuthorClassCode' classCode='ASSIGNED'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTarget typeCode='RCT' constraints.validation.error='RecordTargetTypeCode RecordTargetPatientRole'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRole classCode='PAT' constraints.validation.error='PatientRoleClassCode PatientRoleId PatientRolePatient' constraints.validation.warning='PatientRoleAddr'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatient classCode='PSN' constraints.validation.error='PatientClassCode PatientDeterminerCode PatientName' determinerCode='INSTANCE'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodian typeCode='CST' constraints.validation.error='CustodianTypeCode CustodianAssignedCustodian'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian classCode='ASSIGNED' constraints.validation.error='AssignedCustodianClassCode'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganization classCode='ORG' constraints.validation.error='CustodianOrganizationClassCode CustodianOrganizationDeterminerCode CustodianOrganizationId' determinerCode='INSTANCE'"
+ * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital records'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Reporting Birth Information from a clinical setting to vital recordsTemplateId Reporting Birth Information from a clinical setting to vital recordsMoodCode Reporting Birth Information from a clinical setting to vital recordsRealmCode Reporting Birth Information from a clinical setting to vital recordsRealmCodeP Reporting Birth Information from a clinical setting to vital recordsTypeId Reporting Birth Information from a clinical setting to vital recordsId Reporting Birth Information from a clinical setting to vital recordsCode Reporting Birth Information from a clinical setting to vital recordsCodeP Reporting Birth Information from a clinical setting to vital recordsTitle Reporting Birth Information from a clinical setting to vital recordsEffectiveTime Reporting Birth Information from a clinical setting to vital recordsConfidentialityCode Reporting Birth Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Birth Information from a clinical setting to vital recordsLanguageCode Reporting Birth Information from a clinical setting to vital recordsAuthor Reporting Birth Information from a clinical setting to vital recordsCustodian Reporting Birth Information from a clinical setting to vital recordsRecordTarget Reporting Birth Information from a clinical setting to vital recordsPrenatalTestingAndSurveillance Reporting Birth Information from a clinical setting to vital recordsPregnancyHistory Reporting Birth Information from a clinical setting to vital recordsNewbornDeliverySection Reporting Birth Information from a clinical setting to vital recordsLaborAndDeliverySection Reporting Birth Information from a clinical setting to vital recordsHistoryOfInfectionLiveBirthSection' templateId.root='2.16.840.1.113883.10.20.26.1' classCode='DOCCLIN' moodCode='EVN' realmCode.code='USA' code.code='68998-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='U.S. standard certificate of live birth - 2003 revision'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthor typeCode='AUT' constraints.validation.error='Reporting Birth Information from a clinical setting to vital recordsAuthorAssignedAuthor'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor constraints.validation.error='Reporting Birth Information from a clinical setting to vital recordsAuthorAssignedAuthorId Reporting Birth Information from a clinical setting to vital recordsAuthorAssignedAuthorClassCode' classCode='ASSIGNED'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTarget typeCode='RCT' constraints.validation.error='Reporting Birth Information from a clinical setting to vital recordsRecordTargetTypeCode Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRole'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRole classCode='PAT' constraints.validation.error='Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRoleClassCode Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRoleId Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRolePatient' constraints.validation.warning='Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRoleAddr'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatient classCode='PSN' constraints.validation.error='Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRolePatientClassCode Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRolePatientDeterminerCode Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRolePatientName' determinerCode='INSTANCE'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodian typeCode='CST' constraints.validation.error='Reporting Birth Information from a clinical setting to vital recordsCustodianTypeCode Reporting Birth Information from a clinical setting to vital recordsCustodianAssignedCustodian'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian classCode='ASSIGNED' constraints.validation.error='Reporting Birth Information from a clinical setting to vital recordsCustodianAssignedCustodianClassCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganization classCode='ORG' constraints.validation.error='Reporting Birth Information from a clinical setting to vital recordsCustodianAssignedCustodianCustodianOrganizationClassCode Reporting Birth Information from a clinical setting to vital recordsCustodianAssignedCustodianCustodianOrganizationDeterminerCode Reporting Birth Information from a clinical setting to vital recordsCustodianAssignedCustodianCustodianOrganizationId' determinerCode='INSTANCE'"
  * @generated
  */
-public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords extends ClinicalDocument {
+public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords
+		extends org.eclipse.mdht.uml.cda.ClinicalDocument {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -40,7 +38,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.26.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsTemplateId'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.26.1\')'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsTemplateId(DiagnosticChain diagnostics,
@@ -53,7 +52,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\') and self.moodCode=vocab::ActMood::EVN'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsMoodCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\') and self.moodCode=vocab::ActMood::EVN'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsMoodCode(DiagnosticChain diagnostics,
@@ -66,7 +66,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (self.realmCode->size() = 1 and self.realmCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = element.oclAsType(datatypes::CS) in \r\nvalue.code = \'USA\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsRealmCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (self.realmCode->size() = 1 and self.realmCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = element.oclAsType(datatypes::CS) in \nvalue.code = \'USA\'))'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsRealmCode(DiagnosticChain diagnostics,
@@ -79,7 +80,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (self.realmCode->size() = 1)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsRealmCodeP'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (self.realmCode->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsRealmCodeP(DiagnosticChain diagnostics,
@@ -92,7 +94,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.typeId.oclIsUndefined() or self.typeId.isNullFlavorUndefined()) implies (not self.typeId.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsTypeId'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.typeId.oclIsUndefined() or self.typeId.isNullFlavorUndefined()) implies (not self.typeId.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsTypeId(DiagnosticChain diagnostics,
@@ -105,7 +108,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id.oclIsUndefined() or self.id.isNullFlavorUndefined()) implies (not self.id.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsId'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id.oclIsUndefined() or self.id.isNullFlavorUndefined()) implies (not self.id.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsId(DiagnosticChain diagnostics,
@@ -118,7 +122,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsCodeP'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsCodeP(DiagnosticChain diagnostics,
@@ -131,7 +136,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'68998-4\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'68998-4\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsCode(DiagnosticChain diagnostics,
@@ -144,7 +150,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsTitle'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsTitle(DiagnosticChain diagnostics,
@@ -157,7 +164,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsEffectiveTime'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsEffectiveTime(
@@ -170,7 +178,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsConfidentialityCodeP'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP(
@@ -183,7 +192,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.5.25\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsConfidentialityCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.5.25\')'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsConfidentialityCode(
@@ -196,11 +206,12 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsLanguageCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.languageCode.oclIsUndefined() or self.languageCode.isNullFlavorUndefined()) implies (not self.languageCode.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsLanguageCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsLanguageCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,7 +220,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsAuthor'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthor(DiagnosticChain diagnostics,
@@ -222,7 +234,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->one(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsCustodian'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->one(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodian(DiagnosticChain diagnostics,
@@ -235,11 +248,12 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsRecordTarget'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget))'"
 	 * @generated
 	 */
-	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTarget(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTarget(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,7 +262,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsPrenatalTestingAndSurveillance'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::PrenatalTestingandSurveillanceSection))'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance(
@@ -261,7 +276,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prior Pregnancy History Section))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsPregnancyHistory'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::PriorPregnancyHistorySection))'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsPregnancyHistory(
@@ -274,7 +290,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Newborn Delivery Section))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsNewbornDeliverySection'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::NewbornDeliverySection))'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsNewbornDeliverySection(
@@ -287,7 +304,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsLaborAndDeliverySection'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::LaborandDeliverySection))'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection(
@@ -300,7 +318,8 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection: Live Birth Section))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Reporting Birth Information from a clinical setting to vital recordsHistoryOfInfectionLiveBirthSection'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::HistoryofInfectionLiveBirthSection))'"
 	 * @generated
 	 */
 	boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionLiveBirthSection(
@@ -310,7 +329,7 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))->asSequence()->any(true).oclAsType(vsbr::Prenatal Testing and Surveillance Section)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::PrenatalTestingandSurveillanceSection))->asSequence()->any(true).oclAsType(vsbr::PrenatalTestingandSurveillanceSection)'"
 	 * @generated
 	 */
 	PrenatalTestingandSurveillanceSection getPrenatalTestingAndSurveillance();
@@ -319,7 +338,7 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prior Pregnancy History Section))->asSequence()->any(true).oclAsType(vsbr::Prior Pregnancy History Section)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::PriorPregnancyHistorySection))->asSequence()->any(true).oclAsType(vsbr::PriorPregnancyHistorySection)'"
 	 * @generated
 	 */
 	PriorPregnancyHistorySection getPregnancyHistory();
@@ -328,7 +347,7 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Newborn Delivery Section))->asSequence()->any(true).oclAsType(vsbr::Newborn Delivery Section)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::NewbornDeliverySection))->asSequence()->any(true).oclAsType(vsbr::NewbornDeliverySection)'"
 	 * @generated
 	 */
 	NewbornDeliverySection getNewbornDeliverySection();
@@ -337,7 +356,7 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Section)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::LaborandDeliverySection))->asSequence()->any(true).oclAsType(vsbr::LaborandDeliverySection)'"
 	 * @generated
 	 */
 	LaborandDeliverySection getLaborAndDeliverySection();
@@ -346,7 +365,7 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection: Live Birth Section))->asSequence()->any(true).oclAsType(vsbr::History of Infection: Live Birth Section)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::HistoryofInfectionLiveBirthSection))->asSequence()->any(true).oclAsType(vsbr::HistoryofInfectionLiveBirthSection)'"
 	 * @generated
 	 */
 	HistoryofInfectionLiveBirthSection getHistoryOfInfectionLiveBirthSection();
@@ -364,5 +383,5 @@ public interface ReportingBirthInformationfromaclinicalsettingtovitalrecords ext
 	 * @generated
 	 */
 	public ReportingBirthInformationfromaclinicalsettingtovitalrecords init(
-			Iterable<? extends Initializer<? extends EObject>> initializers);
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // ReportingBirthInformationfromaclinicalsettingtovitalrecords

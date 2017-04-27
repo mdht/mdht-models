@@ -11,19 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.AirbagDeploymentStatus;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +37,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class AirbagDeploymentStatusOperations extends ClinicalStatementOperations {
+public class AirbagDeploymentStatusOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72,7 +73,7 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,26 +88,38 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 
 	public static boolean validateAirbagDeploymentStatusTemplateId(AirbagDeploymentStatus airbagDeploymentStatus,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.AIRBAG_DEPLOYMENT_STATUS);
 			try {
-				VALIDATE_AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			airbagDeploymentStatus)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.AIRBAG_DEPLOYMENT_STATUS__AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("AirbagDeploymentStatusTemplateId"),
-					new Object[] { airbagDeploymentStatus }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(airbagDeploymentStatus)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.AIRBAG_DEPLOYMENT_STATUS__AIRBAG_DEPLOYMENT_STATUS_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("AirbagDeploymentStatusAirbagDeploymentStatusTemplateId"),
+						 new Object [] { airbagDeploymentStatus }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -131,7 +144,7 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -146,26 +159,38 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 
 	public static boolean validateAirbagDeploymentStatusMoodCode(AirbagDeploymentStatus airbagDeploymentStatus,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.AIRBAG_DEPLOYMENT_STATUS);
 			try {
-				VALIDATE_AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			airbagDeploymentStatus)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.AIRBAG_DEPLOYMENT_STATUS__AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("AirbagDeploymentStatusMoodCode"),
-					new Object[] { airbagDeploymentStatus }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(airbagDeploymentStatus)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.AIRBAG_DEPLOYMENT_STATUS__AIRBAG_DEPLOYMENT_STATUS_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("AirbagDeploymentStatusAirbagDeploymentStatusMoodCode"),
+						 new Object [] { airbagDeploymentStatus }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -179,9 +204,9 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67500-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67500-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAirbagDeploymentStatusCode(AirbagDeploymentStatus, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airbag Deployment Status Code</em>}' invariant operation.
@@ -192,7 +217,7 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -207,26 +232,38 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 
 	public static boolean validateAirbagDeploymentStatusCode(AirbagDeploymentStatus airbagDeploymentStatus,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.AIRBAG_DEPLOYMENT_STATUS);
 			try {
-				VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			airbagDeploymentStatus)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.AIRBAG_DEPLOYMENT_STATUS__AIRBAG_DEPLOYMENT_STATUS_CODE,
-					EmspcrPlugin.INSTANCE.getString("AirbagDeploymentStatusCode"),
-					new Object[] { airbagDeploymentStatus }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(airbagDeploymentStatus)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.AIRBAG_DEPLOYMENT_STATUS__AIRBAG_DEPLOYMENT_STATUS_CODE,
+						 EmspcrPlugin.INSTANCE.getString("AirbagDeploymentStatusAirbagDeploymentStatusCode"),
+						 new Object [] { airbagDeploymentStatus }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -240,9 +277,9 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17384-1' or value.code = 'LA17385-8' or value.code = 'LA17386-6' or value.code = 'LA17387-4' or value.code = 'LA17388-2' or value.code = 'LA46-8')))";
+	protected static final String VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17384-1' or value.code = 'LA17385-8' or value.code = 'LA17386-6' or value.code = 'LA17387-4' or value.code = 'LA17388-2' or value.code = 'LA46-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAirbagDeploymentStatusValue(AirbagDeploymentStatus, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airbag Deployment Status Value</em>}' invariant operation.
@@ -253,7 +290,7 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -268,26 +305,38 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 
 	public static boolean validateAirbagDeploymentStatusValue(AirbagDeploymentStatus airbagDeploymentStatus,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.AIRBAG_DEPLOYMENT_STATUS);
 			try {
-				VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			airbagDeploymentStatus)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.AIRBAG_DEPLOYMENT_STATUS__AIRBAG_DEPLOYMENT_STATUS_VALUE,
-					EmspcrPlugin.INSTANCE.getString("AirbagDeploymentStatusValue"),
-					new Object[] { airbagDeploymentStatus }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(airbagDeploymentStatus)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.AIRBAG_DEPLOYMENT_STATUS__AIRBAG_DEPLOYMENT_STATUS_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("AirbagDeploymentStatusAirbagDeploymentStatusValue"),
+						 new Object [] { airbagDeploymentStatus }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -312,7 +361,7 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -327,26 +376,38 @@ public class AirbagDeploymentStatusOperations extends ClinicalStatementOperation
 
 	public static boolean validateAirbagDeploymentStatusValueP(AirbagDeploymentStatus airbagDeploymentStatus,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.AIRBAG_DEPLOYMENT_STATUS);
 			try {
-				VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			airbagDeploymentStatus)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.AIRBAG_DEPLOYMENT_STATUS__AIRBAG_DEPLOYMENT_STATUS_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("AirbagDeploymentStatusValueP"),
-					new Object[] { airbagDeploymentStatus }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_AIRBAG_DEPLOYMENT_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(airbagDeploymentStatus)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.AIRBAG_DEPLOYMENT_STATUS__AIRBAG_DEPLOYMENT_STATUS_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("AirbagDeploymentStatusAirbagDeploymentStatusValueP"),
+						 new Object [] { airbagDeploymentStatus }));
+			}
+			 
 			return false;
 		}
 		return true;

@@ -11,19 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.ExistenceOfDrugAllergyObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +36,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class ExistenceOfDrugAllergyObservationOperations extends ClinicalStatementOperations {
+public class ExistenceOfDrugAllergyObservationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,7 +72,7 @@ public class ExistenceOfDrugAllergyObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,28 +88,38 @@ public class ExistenceOfDrugAllergyObservationOperations extends ClinicalStateme
 	public static boolean validateExistenceOfDrugAllergyObservationTemplateId(
 			ExistenceOfDrugAllergyObservation existenceOfDrugAllergyObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION);
 			try {
-				VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			existenceOfDrugAllergyObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION__EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugAllergyObservationTemplateId"),
-					new Object[] { existenceOfDrugAllergyObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(existenceOfDrugAllergyObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION__EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugAllergyObservationExistenceOfDrugAllergyObservationTemplateId"),
+						 new Object [] { existenceOfDrugAllergyObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -133,7 +144,7 @@ public class ExistenceOfDrugAllergyObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,28 +160,38 @@ public class ExistenceOfDrugAllergyObservationOperations extends ClinicalStateme
 	public static boolean validateExistenceOfDrugAllergyObservationMoodCode(
 			ExistenceOfDrugAllergyObservation existenceOfDrugAllergyObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION);
 			try {
-				VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			existenceOfDrugAllergyObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION__EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugAllergyObservationMoodCode"),
-					new Object[] { existenceOfDrugAllergyObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(existenceOfDrugAllergyObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION__EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugAllergyObservationExistenceOfDrugAllergyObservationMoodCode"),
+						 new Object [] { existenceOfDrugAllergyObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -184,9 +205,9 @@ public class ExistenceOfDrugAllergyObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67794-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67794-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExistenceOfDrugAllergyObservationCode(ExistenceOfDrugAllergyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of Drug Allergy Observation Code</em>}' invariant operation.
@@ -197,7 +218,7 @@ public class ExistenceOfDrugAllergyObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -213,26 +234,38 @@ public class ExistenceOfDrugAllergyObservationOperations extends ClinicalStateme
 	public static boolean validateExistenceOfDrugAllergyObservationCode(
 			ExistenceOfDrugAllergyObservation existenceOfDrugAllergyObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION);
 			try {
-				VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			existenceOfDrugAllergyObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION__EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugAllergyObservationCode"),
-					new Object[] { existenceOfDrugAllergyObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(existenceOfDrugAllergyObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION__EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugAllergyObservationExistenceOfDrugAllergyObservationCode"),
+						 new Object [] { existenceOfDrugAllergyObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -257,7 +290,7 @@ public class ExistenceOfDrugAllergyObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,26 +306,38 @@ public class ExistenceOfDrugAllergyObservationOperations extends ClinicalStateme
 	public static boolean validateExistenceOfDrugAllergyObservationValue(
 			ExistenceOfDrugAllergyObservation existenceOfDrugAllergyObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION);
 			try {
-				VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			existenceOfDrugAllergyObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION__EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugAllergyObservationValue"),
-					new Object[] { existenceOfDrugAllergyObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(existenceOfDrugAllergyObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION__EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugAllergyObservationExistenceOfDrugAllergyObservationValue"),
+						 new Object [] { existenceOfDrugAllergyObservation }));
+			}
+			 
 			return false;
 		}
 		return true;

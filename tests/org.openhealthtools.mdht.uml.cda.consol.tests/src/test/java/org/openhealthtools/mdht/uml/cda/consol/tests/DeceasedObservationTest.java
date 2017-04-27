@@ -10,20 +10,20 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DeceasedObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -57,13 +57,13 @@ public class DeceasedObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not 
+	* @generated not
 	*/
 	@Test
 	public void testValidateDeceasedObservationEffectiveTimeLow() {
 		OperationsTestCase<DeceasedObservation> validateDeceasedObservationEffectiveTimeLowTestCase = new OperationsTestCase<DeceasedObservation>(
-			"validateDeceasedObservationEffectiveTimeLow",
-			operationsForOCL.getOCLValue("VALIDATE_DECEASED_OBSERVATION_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDeceasedObservationEffectiveTimeLow", operationsForOCL.getOCLValue(
+				"VALIDATE_DECEASED_OBSERVATION_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -378,8 +378,8 @@ public class DeceasedObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateDeceasedObservationEffectiveTime() {
 		OperationsTestCase<DeceasedObservation> validateDeceasedObservationEffectiveTimeTestCase = new OperationsTestCase<DeceasedObservation>(
-			"validateDeceasedObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_DECEASED_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDeceasedObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_DECEASED_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -489,8 +489,8 @@ public class DeceasedObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateDeceasedObservationProblemObservation() {
 		OperationsTestCase<DeceasedObservation> validateDeceasedObservationProblemObservationTestCase = new OperationsTestCase<DeceasedObservation>(
-			"validateDeceasedObservationProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDeceasedObservationProblemObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

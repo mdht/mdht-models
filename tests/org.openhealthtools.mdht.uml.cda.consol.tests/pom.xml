@@ -6,14 +6,32 @@
 	<artifactId>org.openhealthtools.mdht.uml.cda.consol.tests</artifactId>
 	<parent>
 		<groupId>org.openhealthtools.mdht.cda</groupId>
-		<artifactId>tests</artifactId>
-		<version>2.0.0-SNAPSHOT</version>
+		<artifactId>org.openhealthtools.mdht.cda.tests</artifactId>
+		<version>3.0.0-SNAPSHOT</version>
 	</parent>
-	<version>2.0.0-SNAPSHOT</version>
+	<version>3.0.0-SNAPSHOT</version>
 	<packaging>eclipse-plugin</packaging>
 
 	<build>
 		<plugins>
+
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<additionalparam>-Xdoclint:none</additionalparam>
+							<skip>true</skip>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -74,18 +92,15 @@
 							<tasks>
 								<concat destfile="target/surefire-reports/allvalidationresults.xml"
 									force="no">
-									<filelist dir="src/test/resource"
-										files="start.tag" />
+									<filelist dir="src/test/resource" files="start.tag" />
 									<fileset dir="target/surefire-reports" includes="test*.xml" />
-									<filelist dir="src/test/resource"
-										files="end.tag" />
+									<filelist dir="src/test/resource" files="end.tag" />
 								</concat>
 								<junitreport todir="target/surefire-reports">
 									<fileset dir="target/surefire-reports">
 										<include name="TEST-*.xml" />
 									</fileset>
-									<report  styledir="."
-										format="frames" todir="target/surefire-reports">
+									<report styledir="." format="frames" todir="target/surefire-reports">
 									</report>
 								</junitreport>
 							</tasks>

@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Vital Sign Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -67,7 +65,8 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 * @generated
 	 */
 	@Override
-	public boolean validateVitalSignObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignObservationReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return VitalSignObservationOperations.validateVitalSignObservationReferenceValue(this, diagnostics, context);
 	}
 
@@ -79,7 +78,8 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	@Override
 	public boolean validateVitalSignObservationTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignObservationOperations.validateVitalSignObservationTextReferenceValue(this, diagnostics, context);
+		return VitalSignObservationOperations.validateVitalSignObservationTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -157,6 +157,15 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateVitalSignObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignObservationOperations.validateVitalSignObservationStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateVitalSignObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignObservationOperations.validateVitalSignObservationEffectiveTime(this, diagnostics, context);
@@ -180,7 +189,8 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	@Override
 	public boolean validateVitalSignObservationInterpretationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignObservationOperations.validateVitalSignObservationInterpretationCode(this, diagnostics, context);
+		return VitalSignObservationOperations.validateVitalSignObservationInterpretationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -199,7 +209,8 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 * @generated
 	 */
 	@Override
-	public boolean validateVitalSignObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignObservationTargetSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return VitalSignObservationOperations.validateVitalSignObservationTargetSiteCode(this, diagnostics, context);
 	}
 

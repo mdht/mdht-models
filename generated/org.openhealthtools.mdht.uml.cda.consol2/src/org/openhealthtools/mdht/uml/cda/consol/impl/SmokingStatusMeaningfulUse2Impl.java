@@ -3,32 +3,25 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusMeaningfulUse2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Smoking Status Meaningful Use2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImpl implements
-		SmokingStatusMeaningfulUse2 {
+public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImpl
+		implements SmokingStatusMeaningfulUse2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -46,17 +39,6 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.SMOKING_STATUS_MEANINGFUL_USE2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSmokingStatusMeaningfulUse2EffectiveTimeLow(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2EffectiveTimeLow(
-			this, diagnostics, context);
 	}
 
 	/**
@@ -84,9 +66,22 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
-	public boolean validateTobaccoUseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateTobaccoUseTemplateId(this, diagnostics, context);
+	public boolean validateSmokingStatusObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -115,18 +110,6 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 * @generated
 	 */
 	@Override
-	public boolean validateSmokingStatusObservationEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationEffectiveTime(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateSmokingStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationValueP(this, diagnostics, context);
 	}
@@ -139,6 +122,64 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	@Override
 	public boolean validateSmokingStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSmokingStatusObservationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationEffectiveTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSmokingStatusObservationIVLTSCenter(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSCenter(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSmokingStatusObservationIVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSHigh(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSmokingStatusObservationIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSLow(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSmokingStatusObservationIVLTSWidth(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSWidth(
+			this, diagnostics, context);
 	}
 
 	/**

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -16,15 +16,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveOrganizerOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,6 +43,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Advance Directive Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#validateAdvanceDirectiveOrganizerAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer#getAdvanceDirectiveObservation2s() <em>Get Advance Directive Observation2s</em>}</li>
  * </ul>
  * </p>
@@ -59,8 +60,8 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectiveOrganizerTemplateId() {
 		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerTemplateIdTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
-			"validateAdvanceDirectiveOrganizerTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveOrganizerTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -93,8 +94,8 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectiveOrganizerClassCode() {
 		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerClassCodeTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
-			"validateAdvanceDirectiveOrganizerClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveOrganizerClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -127,8 +128,8 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectiveOrganizerMoodCode() {
 		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerMoodCodeTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
-			"validateAdvanceDirectiveOrganizerMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveOrganizerMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -267,8 +268,8 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectiveOrganizerStatusCodeP() {
 		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerStatusCodePTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
-			"validateAdvanceDirectiveOrganizerStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveOrganizerStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -301,8 +302,8 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectiveOrganizerStatusCode() {
 		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerStatusCodeTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
-			"validateAdvanceDirectiveOrganizerStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveOrganizerStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -346,7 +347,8 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	public void testValidateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2() {
 		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2TestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
 			"validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -372,6 +374,41 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 		};
 
 		validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAdvanceDirectiveOrganizerAuthorParticipation() {
+		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerAuthorParticipationTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
+			"validateAdvanceDirectiveOrganizerAuthorParticipation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectiveOrganizer target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectiveOrganizer target) {
+				target.init();
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAuthorParticipation(
+					(AdvanceDirectiveOrganizer) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectiveOrganizerAuthorParticipationTestCase.doValidationTest();
 	}
 
 	/**

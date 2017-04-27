@@ -32,7 +32,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 */
 	public static ConsolFactory init() {
 		try {
-			ConsolFactory theConsolFactory = (ConsolFactory) EPackage.Registry.INSTANCE.getEFactory(ConsolPackage.eNS_URI);
+			ConsolFactory theConsolFactory = (ConsolFactory) EPackage.Registry.INSTANCE.getEFactory(
+				ConsolPackage.eNS_URI);
 			if (theConsolFactory != null) {
 				return theConsolFactory;
 			}
@@ -394,8 +395,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createFetusSubjectContext();
 			case ConsolPackage.OBSERVER_CONTEXT:
 				return createObserverContext();
-			case ConsolPackage.ACT_REFERENCE:
-				return createActReference();
+			case ConsolPackage.ENTRY_REFERENCE:
+				return createEntryReference();
 			case ConsolPackage.ADVANCE_DIRECTIVE_ORGANIZER:
 				return createAdvanceDirectiveOrganizer();
 			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION2:
@@ -408,8 +409,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCulturalAndReligiousObservation();
 			case ConsolPackage.DRUG_MONITORING_ACT:
 				return createDrugMonitoringAct();
-			case ConsolPackage.HANDOFF_COMMUNICATION:
-				return createHandoffCommunication();
+			case ConsolPackage.HANDOFF_COMMUNICATION_PARTICIPANTS:
+				return createHandoffCommunicationParticipants();
 			case ConsolPackage.MEDICAL_EQUIPMENT_ORGANIZER:
 				return createMedicalEquipmentOrganizer();
 			case ConsolPackage.NON_MEDICINAL_SUPPLY_ACTIVITY2:
@@ -432,48 +433,66 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createReactionObservation2();
 			case ConsolPackage.SEVERITY_OBSERVATION2:
 				return createSeverityObservation2();
+			case ConsolPackage.MEDICATION_FREE_TEXT_SIG:
+				return createMedicationFreeTextSig();
 			case ConsolPackage.MENTAL_STATUS_OBSERVATION:
 				return createMentalStatusObservation();
 			case ConsolPackage.NUTRITION_ASSESSMENT:
 				return createNutritionAssessment();
-			case ConsolPackage.NUTRITION_RECOMMENDATIONS:
-				return createNutritionRecommendations();
+			case ConsolPackage.NUTRITION_RECOMMENDATION:
+				return createNutritionRecommendation();
+			case ConsolPackage.PLANNED_ENCOUNTER2:
+				return createPlannedEncounter2();
+			case ConsolPackage.PRIORITY_PREFERENCE:
+				return createPriorityPreference();
+			case ConsolPackage.PLANNED_MEDICATION_ACTIVITY2:
+				return createPlannedMedicationActivity2();
+			case ConsolPackage.PLANNED_OBSERVATION2:
+				return createPlannedObservation2();
+			case ConsolPackage.PLANNED_COVERAGE:
+				return createPlannedCoverage();
+			case ConsolPackage.PLANNED_PROCEDURE2:
+				return createPlannedProcedure2();
+			case ConsolPackage.PLANNED_SUPPLY2:
+				return createPlannedSupply2();
+			case ConsolPackage.PLANNED_ACT2:
+				return createPlannedAct2();
 			case ConsolPackage.NUTRITIONAL_STATUS_OBSERVATION:
 				return createNutritionalStatusObservation();
 			case ConsolPackage.OUTCOME_OBSERVATION:
 				return createOutcomeObservation();
+			case ConsolPackage.PROGRESS_TOWARD_GOAL_OBSERVATION:
+				return createProgressTowardGoalObservation();
+			case ConsolPackage.PATIENT_REFERRAL_ACT:
+				return createPatientReferralAct();
 			case ConsolPackage.GOAL_OBSERVATION:
 				return createGoalObservation();
-			case ConsolPackage.PLANNED_OBSERVATION2:
-				return createPlannedObservation2();
-			case ConsolPackage.PATIENT_PRIORITY_PREFERENCE:
-				return createPatientPriorityPreference();
-			case ConsolPackage.PROVIDER_PRIORITY_PREFERENCE:
-				return createProviderPriorityPreference();
-			case ConsolPackage.PLANNED_COVERAGE:
-				return createPlannedCoverage();
 			case ConsolPackage.HEALTH_CONCERN_ACT:
 				return createHealthConcernAct();
+			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2:
+				return createFamilyHistoryOrganizer2();
+			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2:
+				return createFamilyHistoryObservation2();
 			case ConsolPackage.SELF_CARE_ACTIVITIES:
 				return createSelfCareActivities();
-			case ConsolPackage.SENSORY_AND_SPEECH_STATUS:
-				return createSensoryAndSpeechStatus();
-			case ConsolPackage.WOUND_OBSERVATION:
-				return createWoundObservation();
+			case ConsolPackage.SENSORY_STATUS:
+				return createSensoryStatus();
+			case ConsolPackage.LONGITUDINAL_CARE_WOUND_OBSERVATION:
+				return createLongitudinalCareWoundObservation();
 			case ConsolPackage.PROBLEM_OBSERVATION2:
 				return createProblemObservation2();
 			case ConsolPackage.PROGNOSIS_OBSERVATION:
 				return createPrognosisObservation();
 			case ConsolPackage.WOUND_MEASUREMENT_OBSERVATION:
 				return createWoundMeasurementObservation();
-			case ConsolPackage.WOUND_CHARACTERISTICS:
-				return createWoundCharacteristics();
+			case ConsolPackage.WOUND_CHARACTERISTIC:
+				return createWoundCharacteristic();
 			case ConsolPackage.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2:
 				return createNumberOfPressureUlcersObservation2();
-			case ConsolPackage.EXTERNAL_DOCUMENT_REFERENCE:
-				return createExternalDocumentReference();
 			case ConsolPackage.ALLERGY_OBSERVATION2:
 				return createAllergyObservation2();
+			case ConsolPackage.CRITICALITY_OBSERVATION:
+				return createCriticalityObservation();
 			case ConsolPackage.MENTAL_STATUS_OBSERVATION2:
 				return createMentalStatusObservation2();
 			case ConsolPackage.SMOKING_STATUS_MEANINGFUL_USE2:
@@ -502,18 +521,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createResultOrganizer2();
 			case ConsolPackage.PROBLEM_CONCERN_ACT2:
 				return createProblemConcernAct2();
-			case ConsolPackage.PLANNED_ENCOUNTER2:
-				return createPlannedEncounter2();
-			case ConsolPackage.PLANNED_PROCEDURE2:
-				return createPlannedProcedure2();
-			case ConsolPackage.PLANNED_MEDICATION_ACTIVITY2:
-				return createPlannedMedicationActivity2();
-			case ConsolPackage.PLANNED_SUPPLY2:
-				return createPlannedSupply2();
-			case ConsolPackage.PLANNED_ACT2:
-				return createPlannedAct2();
-			case ConsolPackage.PROGRESS_TOWARD_GOAL_OBSERVATION:
-				return createProgressTowardGoalObservation();
 			case ConsolPackage.INTERVENTION_ACT:
 				return createInterventionAct();
 			case ConsolPackage.IMMUNIZATION_ACTIVITY2:
@@ -524,18 +531,22 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProcedureActivityObservation2();
 			case ConsolPackage.ENCOUNTER_ACTIVITY2:
 				return createEncounterActivity2();
-			case ConsolPackage.PATIENT_REFERRAL_ACT:
-				return createPatientReferralAct();
+			case ConsolPackage.PLANNED_INTERVENTION_ACT:
+				return createPlannedInterventionAct();
 			case ConsolPackage.PLANNED_IMMUNIZATION_ACTIVITY:
 				return createPlannedImmunizationActivity();
+			case ConsolPackage.EXTERNAL_DOCUMENT_REFERENCE:
+				return createExternalDocumentReference();
 			case ConsolPackage.GOALS_SECTION:
 				return createGoalsSection();
 			case ConsolPackage.HEALTH_CONCERNS_SECTION:
 				return createHealthConcernsSection();
 			case ConsolPackage.HEALTH_STATUS_OBSERVATION2:
 				return createHealthStatusObservation2();
-			case ConsolPackage.HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION:
-				return createHealthStatusEvaluationsOutcomesSection();
+			case ConsolPackage.RISK_CONCERN_ACT:
+				return createRiskConcernAct();
+			case ConsolPackage.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION:
+				return createHealthStatusEvaluationsAndOutcomesSection();
 			case ConsolPackage.MENTAL_STATUS_SECTION:
 				return createMentalStatusSection();
 			case ConsolPackage.MENTAL_STATUS_ORGANIZER2:
@@ -572,6 +583,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createResultsSectionEntriesOptional2();
 			case ConsolPackage.SOCIAL_HISTORY_SECTION2:
 				return createSocialHistorySection2();
+			case ConsolPackage.BIRTH_SEX_OBSERVATION:
+				return createBirthSexObservation();
 			case ConsolPackage.VITAL_SIGNS_SECTION2:
 				return createVitalSignsSection2();
 			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2:
@@ -602,6 +615,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createMedicationsSectionEntriesOptional2();
 			case ConsolPackage.REASON_FOR_REFERRAL_SECTION2:
 				return createReasonForReferralSection2();
+			case ConsolPackage.FAMILY_HISTORY_SECTION2:
+				return createFamilyHistorySection2();
 			case ConsolPackage.TRANSFER_SUMMARY:
 				return createTransferSummary();
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION2:
@@ -610,10 +625,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createEncountersSection2();
 			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2:
 				return createEncountersSectionEntriesOptional2();
-			case ConsolPackage.DISCHARGE_DIAGNOSIS_SECTION2:
-				return createDischargeDiagnosisSection2();
-			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS2:
-				return createHospitalDischargeDiagnosis2();
 			case ConsolPackage.PAYERS_SECTION2:
 				return createPayersSection2();
 			case ConsolPackage.COVERAGE_ACTIVITY2:
@@ -622,12 +633,22 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPolicyActivity2();
 			case ConsolPackage.PROCEDURES_SECTION2:
 				return createProceduresSection2();
+			case ConsolPackage.DISCHARGE_DIAGNOSIS_SECTION2:
+				return createDischargeDiagnosisSection2();
+			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS2:
+				return createHospitalDischargeDiagnosis2();
+			case ConsolPackage.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2:
+				return createAdmissionMedicationsSectionEntriesOptional2();
+			case ConsolPackage.ADMISSION_MEDICATION2:
+				return createAdmissionMedication2();
+			case ConsolPackage.ADMISSION_DIAGNOSIS_SECTION2:
+				return createAdmissionDiagnosisSection2();
+			case ConsolPackage.COURSE_OF_CARE_SECTION:
+				return createCourseOfCareSection();
 			case ConsolPackage.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT:
 				return createUSRealmHeaderPatientGeneratedDocument();
 			case ConsolPackage.AUTHOR_PARTICIPATION:
 				return createAuthorParticipation();
-			case ConsolPackage.ADMISSION_MEDICATION2:
-				return createAdmissionMedication2();
 			case ConsolPackage.DECEASED_OBSERVATION2:
 				return createDeceasedObservation2();
 			case ConsolPackage.DISCHARGE_MEDICATION2:
@@ -642,10 +663,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createAnesthesiaSection2();
 			case ConsolPackage.COMPLICATIONS_SECTION2:
 				return createComplicationsSection2();
-			case ConsolPackage.ADMISSION_DIAGNOSIS_SECTION2:
-				return createAdmissionDiagnosisSection2();
-			case ConsolPackage.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2:
-				return createAdmissionMedicationsSectionEntriesOptional2();
 			case ConsolPackage.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2:
 				return createDischargeMedicationsSectionEntriesOptional2();
 			case ConsolPackage.INSTRUCTIONS_SECTION2:
@@ -666,12 +683,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createDischargeMedicationsSection2();
 			case ConsolPackage.CONSULTATION_NOTE2:
 				return createConsultationNote2();
-			case ConsolPackage.FAMILY_HISTORY_SECTION2:
-				return createFamilyHistorySection2();
-			case ConsolPackage.FAMILY_HISTORY_ORGANIZER2:
-				return createFamilyHistoryOrganizer2();
-			case ConsolPackage.FAMILY_HISTORY_OBSERVATION2:
-				return createFamilyHistoryObservation2();
 			case ConsolPackage.CONTINUITY_OF_CARE_DOCUMENT2:
 				return createContinuityOfCareDocument2();
 			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT2:
@@ -692,8 +703,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPreconditionForSubstanceAdministration2();
 			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER2:
 				return createPhysicianReadingStudyPerformer2();
-			case ConsolPackage.COURSE_OF_CARE_SECTION:
-				return createCourseOfCareSection();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2343,10 +2352,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ActReference createActReference() {
-		ActReferenceImpl actReference = new ActReferenceImpl();
-		return actReference;
+	public EntryReference createEntryReference() {
+		EntryReferenceImpl entryReference = new EntryReferenceImpl();
+		return entryReference;
 	}
 
 	/**
@@ -2409,10 +2417,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public HandoffCommunication createHandoffCommunication() {
-		HandoffCommunicationImpl handoffCommunication = new HandoffCommunicationImpl();
-		return handoffCommunication;
+	public HandoffCommunicationParticipants createHandoffCommunicationParticipants() {
+		HandoffCommunicationParticipantsImpl handoffCommunicationParticipants = new HandoffCommunicationParticipantsImpl();
+		return handoffCommunicationParticipants;
 	}
 
 	/**
@@ -2453,10 +2460,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public NutritionRecommendations createNutritionRecommendations() {
-		NutritionRecommendationsImpl nutritionRecommendations = new NutritionRecommendationsImpl();
-		return nutritionRecommendations;
+	public NutritionRecommendation createNutritionRecommendation() {
+		NutritionRecommendationImpl nutritionRecommendation = new NutritionRecommendationImpl();
+		return nutritionRecommendation;
 	}
 
 	/**
@@ -2479,17 +2485,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public OutcomeObservation createOutcomeObservation() {
 		OutcomeObservationImpl outcomeObservation = new OutcomeObservationImpl();
 		return outcomeObservation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PatientPriorityPreference createPatientPriorityPreference() {
-		PatientPriorityPreferenceImpl patientPriorityPreference = new PatientPriorityPreferenceImpl();
-		return patientPriorityPreference;
 	}
 
 	/**
@@ -2597,17 +2592,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * @generated
 	 */
 	@Override
-	public ProviderPriorityPreference createProviderPriorityPreference() {
-		ProviderPriorityPreferenceImpl providerPriorityPreference = new ProviderPriorityPreferenceImpl();
-		return providerPriorityPreference;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public SelfCareActivities createSelfCareActivities() {
 		SelfCareActivitiesImpl selfCareActivities = new SelfCareActivitiesImpl();
 		return selfCareActivities;
@@ -2618,10 +2602,19 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public SensoryAndSpeechStatus createSensoryAndSpeechStatus() {
-		SensoryAndSpeechStatusImpl sensoryAndSpeechStatus = new SensoryAndSpeechStatusImpl();
-		return sensoryAndSpeechStatus;
+	public SensoryStatus createSensoryStatus() {
+		SensoryStatusImpl sensoryStatus = new SensoryStatusImpl();
+		return sensoryStatus;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LongitudinalCareWoundObservation createLongitudinalCareWoundObservation() {
+		LongitudinalCareWoundObservationImpl longitudinalCareWoundObservation = new LongitudinalCareWoundObservationImpl();
+		return longitudinalCareWoundObservation;
 	}
 
 	/**
@@ -2633,17 +2626,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public SubstanceAdministeredAct createSubstanceAdministeredAct() {
 		SubstanceAdministeredActImpl substanceAdministeredAct = new SubstanceAdministeredActImpl();
 		return substanceAdministeredAct;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WoundCharacteristics createWoundCharacteristics() {
-		WoundCharacteristicsImpl woundCharacteristics = new WoundCharacteristicsImpl();
-		return woundCharacteristics;
 	}
 
 	/**
@@ -2672,10 +2654,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public WoundObservation createWoundObservation() {
-		WoundObservationImpl woundObservation = new WoundObservationImpl();
-		return woundObservation;
+	public WoundCharacteristic createWoundCharacteristic() {
+		WoundCharacteristicImpl woundCharacteristic = new WoundCharacteristicImpl();
+		return woundCharacteristic;
 	}
 
 	/**
@@ -2698,17 +2679,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public HealthConcernsSection createHealthConcernsSection() {
 		HealthConcernsSectionImpl healthConcernsSection = new HealthConcernsSectionImpl();
 		return healthConcernsSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public HealthStatusEvaluationsOutcomesSection createHealthStatusEvaluationsOutcomesSection() {
-		HealthStatusEvaluationsOutcomesSectionImpl healthStatusEvaluationsOutcomesSection = new HealthStatusEvaluationsOutcomesSectionImpl();
-		return healthStatusEvaluationsOutcomesSection;
 	}
 
 	/**
@@ -3131,6 +3101,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public PriorityPreference createPriorityPreference() {
+		PriorityPreferenceImpl priorityPreference = new PriorityPreferenceImpl();
+		return priorityPreference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public PlannedObservation2 createPlannedObservation2() {
 		PlannedObservation2Impl plannedObservation2 = new PlannedObservation2Impl();
@@ -3300,6 +3280,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public SeverityObservation2 createSeverityObservation2() {
 		SeverityObservation2Impl severityObservation2 = new SeverityObservation2Impl();
 		return severityObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationFreeTextSig createMedicationFreeTextSig() {
+		MedicationFreeTextSigImpl medicationFreeTextSig = new MedicationFreeTextSigImpl();
+		return medicationFreeTextSig;
 	}
 
 	/**
@@ -3929,6 +3919,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public HealthStatusEvaluationsAndOutcomesSection createHealthStatusEvaluationsAndOutcomesSection() {
+		HealthStatusEvaluationsAndOutcomesSectionImpl healthStatusEvaluationsAndOutcomesSection = new HealthStatusEvaluationsAndOutcomesSectionImpl();
+		return healthStatusEvaluationsAndOutcomesSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public FamilyHistoryOrganizer2 createFamilyHistoryOrganizer2() {
 		FamilyHistoryOrganizer2Impl familyHistoryOrganizer2 = new FamilyHistoryOrganizer2Impl();
 		return familyHistoryOrganizer2;
@@ -3959,9 +3959,49 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public CriticalityObservation createCriticalityObservation() {
+		CriticalityObservationImpl criticalityObservation = new CriticalityObservationImpl();
+		return criticalityObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BirthSexObservation createBirthSexObservation() {
+		BirthSexObservationImpl birthSexObservation = new BirthSexObservationImpl();
+		return birthSexObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public CourseOfCareSection createCourseOfCareSection() {
 		CourseOfCareSectionImpl courseOfCareSection = new CourseOfCareSectionImpl();
 		return courseOfCareSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlannedInterventionAct createPlannedInterventionAct() {
+		PlannedInterventionActImpl plannedInterventionAct = new PlannedInterventionActImpl();
+		return plannedInterventionAct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RiskConcernAct createRiskConcernAct() {
+		RiskConcernActImpl riskConcernAct = new RiskConcernActImpl();
+		return riskConcernAct;
 	}
 
 	/**

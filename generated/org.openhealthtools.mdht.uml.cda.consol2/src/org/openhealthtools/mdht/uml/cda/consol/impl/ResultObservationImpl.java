@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -77,7 +75,8 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationTextReferenceValue(this, diagnostics, context);
 	}
 
@@ -108,7 +107,8 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultObservationAuthorMultiplicity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultObservationAuthorMultiplicity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationAuthorMultiplicity(this, diagnostics, context);
 	}
 
@@ -218,7 +218,8 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationInterpretationCode(this, diagnostics, context);
 	}
 

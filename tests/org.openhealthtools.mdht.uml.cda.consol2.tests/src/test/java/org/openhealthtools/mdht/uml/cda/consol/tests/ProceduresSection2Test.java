@@ -16,18 +16,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Entry;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
+import org.eclipse.mdht.uml.hl7.vocab.NullFlavor;
+import org.junit.Ignore;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Entry;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSection2Operations;
-import org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSectionEntriesOptional2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,7 +48,9 @@ import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection2#validateProceduresSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection2#validateProceduresSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection2#validateProceduresSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection2#validateProceduresSectionEntriesOptionalProcedureActivityProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Activity Procedure2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection2#validateProceduresSectionEntriesOptionalProcedureActivityProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Activity Procedure</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection2#validateProceduresSectionEntriesOptionalProcedureActivityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Activity Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection2#validateProceduresSectionEntriesOptionalProcedureActivityAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Activity Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection2#getConsolProcedureActivityProcedure2s() <em>Get Consol Procedure Activity Procedure2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection2#getConsolProcedureActivityObservation2s() <em>Get Consol Procedure Activity Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSection2#getConsolProcedureActivityAct2s() <em>Get Consol Procedure Activity Act2s</em>}</li>
@@ -67,8 +69,8 @@ public class ProceduresSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProceduresSection2HasProcedureActivity() {
 		OperationsTestCase<ProceduresSection2> validateProceduresSection2HasProcedureActivityTestCase = new OperationsTestCase<ProceduresSection2>(
-			"validateProceduresSection2HasProcedureActivity",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURES_SECTION2_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProceduresSection2HasProcedureActivity", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURES_SECTION2_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -333,7 +335,8 @@ public class ProceduresSection2Test extends CDAValidationTest {
 	public void testValidateProceduresSection2EntryProcedureActivityAct2() {
 		OperationsTestCase<ProceduresSection2> validateProceduresSection2EntryProcedureActivityAct2TestCase = new OperationsTestCase<ProceduresSection2>(
 			"validateProceduresSection2EntryProcedureActivityAct2",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURES_SECTION2_ENTRY_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURES_SECTION2_ENTRY_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -368,7 +371,8 @@ public class ProceduresSection2Test extends CDAValidationTest {
 	public void testValidateProceduresSection2EntryProcedureActivityObservation2() {
 		OperationsTestCase<ProceduresSection2> validateProceduresSection2EntryProcedureActivityObservation2TestCase = new OperationsTestCase<ProceduresSection2>(
 			"validateProceduresSection2EntryProcedureActivityObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURES_SECTION2_ENTRY_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURES_SECTION2_ENTRY_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -404,7 +408,8 @@ public class ProceduresSection2Test extends CDAValidationTest {
 	public void testValidateProceduresSection2EntryProcedureActivityProcedure2() {
 		OperationsTestCase<ProceduresSection2> validateProceduresSection2EntryProcedureActivityProcedure2TestCase = new OperationsTestCase<ProceduresSection2>(
 			"validateProceduresSection2EntryProcedureActivityProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURES_SECTION2_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURES_SECTION2_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -464,7 +469,8 @@ public class ProceduresSection2Test extends CDAValidationTest {
 	public void testValidateProceduresSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<ProceduresSection2> validateProceduresSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<ProceduresSection2>(
 			"validateProceduresSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -497,8 +503,8 @@ public class ProceduresSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProceduresSectionEntriesOptionalCodeP() {
 		OperationsTestCase<ProceduresSection2> validateProceduresSectionEntriesOptionalCodePTestCase = new OperationsTestCase<ProceduresSection2>(
-			"validateProceduresSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProceduresSectionEntriesOptionalCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -531,8 +537,8 @@ public class ProceduresSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProceduresSectionEntriesOptionalCode() {
 		OperationsTestCase<ProceduresSection2> validateProceduresSectionEntriesOptionalCodeTestCase = new OperationsTestCase<ProceduresSection2>(
-			"validateProceduresSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProceduresSectionEntriesOptionalCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -568,45 +574,52 @@ public class ProceduresSection2Test extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
+	* This association is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
 	*/
-	@Test
-	public void testValidateProceduresSectionEntriesOptionalProcedureActivityProcedure2() {
-		OperationsTestCase<ProceduresSection2> validateProceduresSectionEntriesOptionalProcedureActivityProcedure2TestCase = new OperationsTestCase<ProceduresSection2>(
-			"validateProceduresSectionEntriesOptionalProcedureActivityProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	@Ignore
+	public void testValidateProceduresSectionEntriesOptionalProcedureActivityProcedure() {
+		OperationsTestCase<ProceduresSection2> validateProceduresSectionEntriesOptionalProcedureActivityProcedureTestCase = new OperationsTestCase<ProceduresSection2>(
+			"validateProceduresSectionEntriesOptionalProcedureActivityProcedure",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProceduresSection2 target) {
-				// target.init defaults to a nullFlavor of NI which allows a pass
+
 			}
 
 			@Override
 			protected void updateToPass(ProceduresSection2 target) {
-				target.addProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
+				target.init();
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure2(
+				return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure(
 					(ProceduresSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProceduresSectionEntriesOptionalProcedureActivityProcedure2TestCase.doValidationTest();
+		validateProceduresSectionEntriesOptionalProcedureActivityProcedureTestCase.doValidationTest();
 	}
 
 	/**
 	*
 	* @generated NOT
+	* This association is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
 	*/
-	@Test
-	public void testValidateProceduresSectionEntriesOptionalProcedureActivityObservation2() {
-		OperationsTestCase<ProceduresSection2> validateProceduresSectionEntriesOptionalProcedureActivityObservation2TestCase = new OperationsTestCase<ProceduresSection2>(
-			"validateProceduresSectionEntriesOptionalProcedureActivityObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	@Ignore
+	public void testValidateProceduresSectionEntriesOptionalProcedureActivityObservation() {
+		OperationsTestCase<ProceduresSection2> validateProceduresSectionEntriesOptionalProcedureActivityObservationTestCase = new OperationsTestCase<ProceduresSection2>(
+			"validateProceduresSectionEntriesOptionalProcedureActivityObservation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -622,24 +635,27 @@ public class ProceduresSection2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProceduresSectionEntriesOptional2Operations.validateProceduresSectionEntriesOptionalProcedureActivityObservation2(
+				return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityObservation(
 					(ProceduresSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProceduresSectionEntriesOptionalProcedureActivityObservation2TestCase.doValidationTest();
+		validateProceduresSectionEntriesOptionalProcedureActivityObservationTestCase.doValidationTest();
 	}
 
 	/**
 	*
 	* @generated NOT
+	* This association is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
 	*/
-	@Test
-	public void testValidateProceduresSectionEntriesOptionalProcedureActivityAct2() {
-		OperationsTestCase<ProceduresSection2> validateProceduresSectionEntriesOptionalProcedureActivityAct2TestCase = new OperationsTestCase<ProceduresSection2>(
-			"validateProceduresSectionEntriesOptionalProcedureActivityAct2",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	@Ignore
+	public void testValidateProceduresSectionEntriesOptionalProcedureActivityAct() {
+		OperationsTestCase<ProceduresSection2> validateProceduresSectionEntriesOptionalProcedureActivityActTestCase = new OperationsTestCase<ProceduresSection2>(
+			"validateProceduresSectionEntriesOptionalProcedureActivityAct",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -655,13 +671,13 @@ public class ProceduresSection2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProceduresSectionEntriesOptional2Operations.validateProceduresSectionEntriesOptionalProcedureActivityAct2(
+				return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityAct(
 					(ProceduresSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProceduresSectionEntriesOptionalProcedureActivityAct2TestCase.doValidationTest();
+		validateProceduresSectionEntriesOptionalProcedureActivityActTestCase.doValidationTest();
 	}
 
 	/**

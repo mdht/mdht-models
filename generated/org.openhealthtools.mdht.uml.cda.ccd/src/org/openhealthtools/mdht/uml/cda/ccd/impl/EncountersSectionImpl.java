@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.EncountersSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounters Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -94,7 +92,8 @@ public class EncountersSectionImpl extends SectionImpl implements EncountersSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersSectionEncountersActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncountersSectionEncountersActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EncountersSectionOperations.validateEncountersSectionEncountersActivity(this, diagnostics, context);
 	}
 

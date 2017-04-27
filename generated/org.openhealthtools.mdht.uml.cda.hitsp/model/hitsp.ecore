@@ -952,7 +952,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MedicationType" eSuperTypes="../../org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="MedicationType" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationTypeTemplateId MedicationTypeCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.88.11.83.8.1"/>
@@ -5827,5 +5827,5 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PlannedProcedure" eSuperTypes="#//Procedure ../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ProcedureEntryPlanOfCareActivityProcedure"/>
   <eClassifiers xsi:type="ecore:EClass" name="PastProcedure" eSuperTypes="#//Procedure ../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ProcedureEntryProcedureActivityProcedure"/>
-  <eClassifiers xsi:type="ecore:EClass" name="HITSPRegistryDelegate" eSuperTypes="../../org.openhealthtools.mdht.uml.cda/model/cda.ecore#//RegistryDelegate"/>
+  <eClassifiers xsi:type="ecore:EClass" name="HITSPRegistryDelegate" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//RegistryDelegate"/>
 </ecore:EPackage>

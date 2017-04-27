@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -16,13 +16,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SelfCareActivitiesOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,8 +39,12 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities#validateSelfCareActivitiesMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Self Care Activities Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities#validateSelfCareActivitiesCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Self Care Activities Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities#validateSelfCareActivitiesCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Self Care Activities Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities#validateSelfCareActivitiesStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Self Care Activities Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities#validateSelfCareActivitiesStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Self Care Activities Status Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities#validateSelfCareActivitiesEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Self Care Activities Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities#validateSelfCareActivitiesValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Self Care Activities Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities#validateSelfCareActivitiesValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Self Care Activities Value P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities#validateSelfCareActivitiesAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Self Care Activities Author Participation</em>}</li>
  * </ul>
  * </p>
  *
@@ -228,6 +234,114 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated
+	*/
+	@Test
+	public void testValidateSelfCareActivitiesStatusCode() {
+		OperationsTestCase<SelfCareActivities> validateSelfCareActivitiesStatusCodeTestCase = new OperationsTestCase<SelfCareActivities>(
+			"validateSelfCareActivitiesStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SelfCareActivities target) {
+
+			}
+
+			@Override
+			protected void updateToPass(SelfCareActivities target) {
+				target.init();
+
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SelfCareActivitiesOperations.validateSelfCareActivitiesStatusCode(
+					(SelfCareActivities) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSelfCareActivitiesStatusCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateSelfCareActivitiesStatusCodeP() {
+		OperationsTestCase<SelfCareActivities> validateSelfCareActivitiesStatusCodePTestCase = new OperationsTestCase<SelfCareActivities>(
+			"validateSelfCareActivitiesStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SelfCareActivities target) {
+
+			}
+
+			@Override
+			protected void updateToPass(SelfCareActivities target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SelfCareActivitiesOperations.validateSelfCareActivitiesStatusCodeP(
+					(SelfCareActivities) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSelfCareActivitiesStatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateSelfCareActivitiesEffectiveTime() {
+		OperationsTestCase<SelfCareActivities> validateSelfCareActivitiesEffectiveTimeTestCase = new OperationsTestCase<SelfCareActivities>(
+			"validateSelfCareActivitiesEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_SELF_CARE_ACTIVITIES_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SelfCareActivities target) {
+
+			}
+
+			@Override
+			protected void updateToPass(SelfCareActivities target) {
+				target.init();
+
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SelfCareActivitiesOperations.validateSelfCareActivitiesEffectiveTime(
+					(SelfCareActivities) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSelfCareActivitiesEffectiveTimeTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated NOT
 	*/
 	@Test
@@ -295,6 +409,40 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 		};
 
 		validateSelfCareActivitiesValuePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSelfCareActivitiesAuthorParticipation() {
+		OperationsTestCase<SelfCareActivities> validateSelfCareActivitiesAuthorParticipationTestCase = new OperationsTestCase<SelfCareActivities>(
+			"validateSelfCareActivitiesAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SelfCareActivities target) {
+
+			}
+
+			@Override
+			protected void updateToPass(SelfCareActivities target) {
+				target.init();
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SelfCareActivitiesOperations.validateSelfCareActivitiesAuthorParticipation(
+					(SelfCareActivities) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSelfCareActivitiesAuthorParticipationTestCase.doValidationTest();
 	}
 
 	/**

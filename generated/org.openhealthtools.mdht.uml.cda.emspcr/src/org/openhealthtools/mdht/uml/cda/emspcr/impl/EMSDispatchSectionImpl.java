@@ -6,36 +6,25 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.ComplaintReportedByDispatch;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSDispatchSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmergencyMedicalDispatchObservation;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSDispatchSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>EMS Dispatch Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class EMSDispatchSectionImpl extends SectionImpl implements EMSDispatchSection {
+public class EMSDispatchSectionImpl extends org.eclipse.mdht.uml.cda.impl.SectionImpl implements EMSDispatchSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -98,8 +87,7 @@ public class EMSDispatchSectionImpl extends SectionImpl implements EMSDispatchSe
 	 */
 	public boolean validateEMSDispatchSectionEmergencyMedicalDispatchObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSDispatchSectionOperations.validateEMSDispatchSectionEmergencyMedicalDispatchObservation(
-			this, diagnostics, context);
+		return EMSDispatchSectionOperations.validateEMSDispatchSectionEmergencyMedicalDispatchObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -109,8 +97,7 @@ public class EMSDispatchSectionImpl extends SectionImpl implements EMSDispatchSe
 	 */
 	public boolean validateEMSDispatchSectionComplaintReportedByDispatch(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSDispatchSectionOperations.validateEMSDispatchSectionComplaintReportedByDispatch(
-			this, diagnostics, context);
+		return EMSDispatchSectionOperations.validateEMSDispatchSectionComplaintReportedByDispatch(this, diagnostics, context);
 	}
 
 	/**
@@ -137,16 +124,16 @@ public class EMSDispatchSectionImpl extends SectionImpl implements EMSDispatchSe
 	 * @generated
 	 */
 	public EMSDispatchSection init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSDispatchSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public EMSDispatchSection init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EMSDispatchSectionImpl

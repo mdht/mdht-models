@@ -15,15 +15,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MentalStatusSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,20 +38,12 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#validateMentalStatusSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#validateMentalStatusSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#validateMentalStatusSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#validateMentalStatusSectionCaregiverCharacteristics(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Caregiver Characteristics</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#validateMentalStatusSectionAssessmentScaleObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Assessment Scale Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#validateMentalStatusSectionCognitiveAbilitiesObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Cognitive Abilities Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#validateMentalStatusSectionMentalStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Mental Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#validateMentalStatusSectionCognitiveStatusOrganizer2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Cognitive Status Organizer2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#validateMentalStatusSectionCognitiveStatusObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Cognitive Status Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#validateMentalStatusSectionNonMedicinalSupplyActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Non Medicinal Supply Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#getCaregiverCharacteristicss() <em>Get Caregiver Characteristicss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#validateMentalStatusSectionMentalStatusOrganizer2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Mental Status Organizer2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#validateMentalStatusSectionMentalStatusObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Section Mental Status Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#getAssessmentScaleObservations() <em>Get Assessment Scale Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#getCognitiveAbilitiesObservations() <em>Get Cognitive Abilities Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#getMentalStatusObservations() <em>Get Mental Status Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#getCognitiveStatusOrganizer2s() <em>Get Cognitive Status Organizer2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#getCognitiveStatusObservation2s() <em>Get Cognitive Status Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#getNonMedicinalSupplyActivity2s() <em>Get Non Medicinal Supply Activity2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#getMentalStatusOrganizer2s() <em>Get Mental Status Organizer2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection#getMentalStatusObservation2s() <em>Get Mental Status Observation2s</em>}</li>
  * </ul>
  * </p>
  *
@@ -96,7 +88,7 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateMentalStatusSectionCode() {
@@ -107,13 +99,13 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(MentalStatusSection target) {
-
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
 			protected void updateToPass(MentalStatusSection target) {
-				target.init();
-
+				target.setCode(DatatypesFactory.eINSTANCE.createCE("10190-7", LOINC_ID));
 			}
 
 			@Override
@@ -130,7 +122,7 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateMentalStatusSectionCodeP() {
@@ -141,12 +133,13 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(MentalStatusSection target) {
-
+				target.init();
+				target.setCode(null);
 			}
 
 			@Override
 			protected void updateToPass(MentalStatusSection target) {
-				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
 
 			}
 
@@ -241,43 +234,11 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateMentalStatusSectionCaregiverCharacteristics() {
-		OperationsTestCase<MentalStatusSection> validateMentalStatusSectionCaregiverCharacteristicsTestCase = new OperationsTestCase<MentalStatusSection>(
-			"validateMentalStatusSectionCaregiverCharacteristics",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_SECTION_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MentalStatusSection target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(MentalStatusSection target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createCaregiverCharacteristics());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MentalStatusSectionOperations.validateMentalStatusSectionCaregiverCharacteristics(
-					(MentalStatusSection) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMentalStatusSectionCaregiverCharacteristicsTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
 	public void testValidateMentalStatusSectionAssessmentScaleObservation() {
 		OperationsTestCase<MentalStatusSection> validateMentalStatusSectionAssessmentScaleObservationTestCase = new OperationsTestCase<MentalStatusSection>(
 			"validateMentalStatusSectionAssessmentScaleObservation",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_SECTION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_SECTION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -307,10 +268,11 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateMentalStatusSectionCognitiveAbilitiesObservation() {
-		OperationsTestCase<MentalStatusSection> validateMentalStatusSectionCognitiveAbilitiesObservationTestCase = new OperationsTestCase<MentalStatusSection>(
-			"validateMentalStatusSectionCognitiveAbilitiesObservation",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_SECTION_COGNITIVE_ABILITIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateMentalStatusSectionMentalStatusOrganizer2() {
+		OperationsTestCase<MentalStatusSection> validateMentalStatusSectionMentalStatusOrganizer2TestCase = new OperationsTestCase<MentalStatusSection>(
+			"validateMentalStatusSectionMentalStatusOrganizer2",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_SECTION_MENTAL_STATUS_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -320,86 +282,20 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(MentalStatusSection target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createCognitiveAbilitiesObservation().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MentalStatusSectionOperations.validateMentalStatusSectionCognitiveAbilitiesObservation(
-					(MentalStatusSection) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMentalStatusSectionCognitiveAbilitiesObservationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateMentalStatusSectionMentalStatusObservation() {
-		OperationsTestCase<MentalStatusSection> validateMentalStatusSectionMentalStatusObservationTestCase = new OperationsTestCase<MentalStatusSection>(
-			"validateMentalStatusSectionMentalStatusObservation",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_SECTION_MENTAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MentalStatusSection target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(MentalStatusSection target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createMentalStatusObservation().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusObservation(
-					(MentalStatusSection) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMentalStatusSectionMentalStatusObservationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateMentalStatusSectionCognitiveStatusOrganizer2() {
-		OperationsTestCase<MentalStatusSection> validateMentalStatusSectionCognitiveStatusOrganizer2TestCase = new OperationsTestCase<MentalStatusSection>(
-			"validateMentalStatusSectionCognitiveStatusOrganizer2",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_SECTION_COGNITIVE_STATUS_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MentalStatusSection target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MentalStatusSection target) {
-				target.init();
 				target.addOrganizer(ConsolFactory.eINSTANCE.createMentalStatusOrganizer2().init());
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return MentalStatusSectionOperations.validateMentalStatusSectionCognitiveStatusOrganizer2(
+				return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusOrganizer2(
 					(MentalStatusSection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateMentalStatusSectionCognitiveStatusOrganizer2TestCase.doValidationTest();
+		validateMentalStatusSectionMentalStatusOrganizer2TestCase.doValidationTest();
 	}
 
 	/**
@@ -407,79 +303,33 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateMentalStatusSectionCognitiveStatusObservation2() {
-		OperationsTestCase<MentalStatusSection> validateMentalStatusSectionCognitiveStatusObservation2TestCase = new OperationsTestCase<MentalStatusSection>(
-			"validateMentalStatusSectionCognitiveStatusObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_SECTION_COGNITIVE_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateMentalStatusSectionMentalStatusObservation2() {
+		OperationsTestCase<MentalStatusSection> validateMentalStatusSectionMentalStatusObservation2TestCase = new OperationsTestCase<MentalStatusSection>(
+			"validateMentalStatusSectionMentalStatusObservation2",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_SECTION_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MentalStatusSection target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(MentalStatusSection target) {
-				target.init();
 				target.addObservation(ConsolFactory.eINSTANCE.createMentalStatusObservation2().init());
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return MentalStatusSectionOperations.validateMentalStatusSectionCognitiveStatusObservation2(
+				return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusObservation2(
 					(MentalStatusSection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateMentalStatusSectionCognitiveStatusObservation2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateMentalStatusSectionNonMedicinalSupplyActivity2() {
-		OperationsTestCase<MentalStatusSection> validateMentalStatusSectionNonMedicinalSupplyActivity2TestCase = new OperationsTestCase<MentalStatusSection>(
-			"validateMentalStatusSectionNonMedicinalSupplyActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MentalStatusSection target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MentalStatusSection target) {
-				target.init();
-				target.addSupply(ConsolFactory.eINSTANCE.createNonMedicinalSupplyActivity2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MentalStatusSectionOperations.validateMentalStatusSectionNonMedicinalSupplyActivity2(
-					(MentalStatusSection) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMentalStatusSectionNonMedicinalSupplyActivity2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetCaregiverCharacteristicss() {
-
-		MentalStatusSection target = objectFactory.create();
-		target.getCaregiverCharacteristicss();
-
+		validateMentalStatusSectionMentalStatusObservation2TestCase.doValidationTest();
 	}
 
 	/**
@@ -499,10 +349,10 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetCognitiveAbilitiesObservations() {
+	public void testGetMentalStatusOrganizer2s() {
 
 		MentalStatusSection target = objectFactory.create();
-		target.getCognitiveAbilitiesObservations();
+		target.getMentalStatusOrganizer2s();
 
 	}
 
@@ -511,46 +361,10 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetMentalStatusObservations() {
+	public void testGetMentalStatusObservation2s() {
 
 		MentalStatusSection target = objectFactory.create();
-		target.getMentalStatusObservations();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetCognitiveStatusOrganizer2s() {
-
-		MentalStatusSection target = objectFactory.create();
-		target.getCognitiveStatusOrganizer2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetCognitiveStatusObservation2s() {
-
-		MentalStatusSection target = objectFactory.create();
-		target.getCognitiveStatusObservation2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetNonMedicinalSupplyActivity2s() {
-
-		MentalStatusSection target = objectFactory.create();
-		target.getNonMedicinalSupplyActivity2s();
+		target.getMentalStatusObservation2s();
 
 	}
 

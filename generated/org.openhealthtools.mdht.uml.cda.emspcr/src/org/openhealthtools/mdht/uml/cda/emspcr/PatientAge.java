@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PatientAgeTemplateId PatientAgeMoodCode PatientAgeCode PatientAgeCodeP PatientAgeValue' templateId.root='2.16.840.1.1133883.17.3.10.1.81' moodCode='EVN' code.code='30525-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Age' constraints.validation.dependOn.PatientAgeCode='PatientAgeCodeP'"
  * @generated
  */
-public interface PatientAge extends Observation {
+public interface PatientAge extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -97,9 +90,9 @@ public interface PatientAge extends Observation {
 	public PatientAge init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PatientAge init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public PatientAge init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // PatientAge

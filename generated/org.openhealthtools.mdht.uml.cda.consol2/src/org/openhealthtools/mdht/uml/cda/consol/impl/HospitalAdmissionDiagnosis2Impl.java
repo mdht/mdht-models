@@ -7,20 +7,15 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2;
-
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalAdmissionDiagnosis2Operations;
 
@@ -28,13 +23,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalAdmissionDiagn
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Hospital Admission Diagnosis2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class HospitalAdmissionDiagnosis2Impl extends HospitalAdmissionDiagnosisImpl implements
-		HospitalAdmissionDiagnosis2 {
+public class HospitalAdmissionDiagnosis2Impl extends HospitalAdmissionDiagnosisImpl
+		implements HospitalAdmissionDiagnosis2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -61,18 +54,7 @@ public class HospitalAdmissionDiagnosis2Impl extends HospitalAdmissionDiagnosisI
 	 */
 	@Override
 	public boolean validateHospitalAdmissionDiagnosisCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHospitalAdmissionDiagnosisProblemObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisProblemObservation2(
+		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisCodeP(
 			this, diagnostics, context);
 	}
 
@@ -92,7 +74,8 @@ public class HospitalAdmissionDiagnosis2Impl extends HospitalAdmissionDiagnosisI
 	 * @generated
 	 */
 	@Override
-	public boolean validateHospitalAdmissionDiagnosisTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHospitalAdmissionDiagnosisTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisTemplateId(
 			this, diagnostics, context);
 	}
@@ -105,6 +88,18 @@ public class HospitalAdmissionDiagnosis2Impl extends HospitalAdmissionDiagnosisI
 	@Override
 	public boolean validateHospitalAdmissionDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateHospitalAdmissionDiagnosisProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**

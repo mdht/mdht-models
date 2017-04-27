@@ -24,94 +24,90 @@ import org.openhealthtools.mdht.uml.cda.qrda.QualityReportingDocumentArchitectur
  */
 public class QRDAFactoryImpl extends EFactoryImpl implements QRDAFactory {
 	/**
-   * Creates the default factory implementation.
-   * <!-- begin-user-doc -->
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static QRDAFactory init() {
-    try
-    {
-      QRDAFactory theQRDAFactory = (QRDAFactory)EPackage.Registry.INSTANCE.getEFactory(QRDAPackage.eNS_URI);
-      if (theQRDAFactory != null)
-      {
-        return theQRDAFactory;
-      }
-    }
-    catch (Exception exception)
-    {
-      EcorePlugin.INSTANCE.log(exception);
-    }
-    return new QRDAFactoryImpl();
-  }
+		try {
+			QRDAFactory theQRDAFactory = (QRDAFactory)EPackage.Registry.INSTANCE.getEFactory(QRDAPackage.eNS_URI);
+			if (theQRDAFactory != null) {
+				return theQRDAFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new QRDAFactoryImpl();
+	}
 
 	/**
-   * Creates an instance of the factory.
-   * <!-- begin-user-doc -->
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public QRDAFactoryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public EObject create(EClass eClass) {
-    switch (eClass.getClassifierID())
-    {
-      case QRDAPackage.QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT: return createQualityReportingDocumentArchitectureDocument();
-      case QRDAPackage.MEASURE_SECTION: return createMeasureSection();
-      default:
-        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-    }
-  }
+		switch (eClass.getClassifierID()) {
+			case QRDAPackage.QUALITY_REPORTING_DOCUMENT_ARCHITECTURE_DOCUMENT: return createQualityReportingDocumentArchitectureDocument();
+			case QRDAPackage.MEASURE_SECTION: return createMeasureSection();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public QualityReportingDocumentArchitectureDocument createQualityReportingDocumentArchitectureDocument() {
-    QualityReportingDocumentArchitectureDocumentImpl qualityReportingDocumentArchitectureDocument = new QualityReportingDocumentArchitectureDocumentImpl();
-    return qualityReportingDocumentArchitectureDocument;
-  }
+		QualityReportingDocumentArchitectureDocumentImpl qualityReportingDocumentArchitectureDocument = new QualityReportingDocumentArchitectureDocumentImpl();
+		return qualityReportingDocumentArchitectureDocument;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public MeasureSection createMeasureSection() {
-    MeasureSectionImpl measureSection = new MeasureSectionImpl();
-    return measureSection;
-  }
+		MeasureSectionImpl measureSection = new MeasureSectionImpl();
+		return measureSection;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public QRDAPackage getQRDAPackage() {
-    return (QRDAPackage)getEPackage();
-  }
+		return (QRDAPackage)getEPackage();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @deprecated
-   * @generated
-   */
+	 * @deprecated
+	 * @generated
+	 */
 	@Deprecated
 	public static QRDAPackage getPackage() {
-    return QRDAPackage.eINSTANCE;
-  }
+		return QRDAPackage.eINSTANCE;
+	}
 
 } //QRDAFactoryImpl

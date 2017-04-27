@@ -3,34 +3,27 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeMedicationsSection2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Discharge Medications Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class DischargeMedicationsSection2Impl extends DischargeMedicationsSectionEntriesOptional2Impl implements
-		DischargeMedicationsSection2 {
+public class DischargeMedicationsSection2Impl extends DischargeMedicationsSectionEntriesOptional2Impl
+		implements DischargeMedicationsSection2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -106,6 +99,28 @@ public class DischargeMedicationsSection2Impl extends DischargeMedicationsSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDischargeMedicationsSection2CETranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeMedicationsSection2Operations.validateDischargeMedicationsSection2CETranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeMedicationsSection2CETranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeMedicationsSection2Operations.validateDischargeMedicationsSection2CETranslationP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -119,9 +134,9 @@ public class DischargeMedicationsSection2Impl extends DischargeMedicationsSectio
 	 * @generated
 	 */
 	@Override
-	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2(
+	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeMedicationsSection2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication2(
+		return DischargeMedicationsSection2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
 			this, diagnostics, context);
 	}
 

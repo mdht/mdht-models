@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.InfantBreastfed;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.InfantBreastfedOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,6 +48,7 @@ public class InfantBreastfedTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantBreastfedTemplateId() {
 		OperationsTestCase<InfantBreastfed> validateInfantBreastfedTemplateIdTestCase = new OperationsTestCase<InfantBreastfed>(
 			"validateInfantBreastfedTemplateId",
@@ -79,6 +83,7 @@ public class InfantBreastfedTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantBreastfedClassCode() {
 		OperationsTestCase<InfantBreastfed> validateInfantBreastfedClassCodeTestCase = new OperationsTestCase<InfantBreastfed>(
 			"validateInfantBreastfedClassCode",
@@ -113,6 +118,7 @@ public class InfantBreastfedTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantBreastfedMoodCode() {
 		OperationsTestCase<InfantBreastfed> validateInfantBreastfedMoodCodeTestCase = new OperationsTestCase<InfantBreastfed>(
 			"validateInfantBreastfedMoodCode",
@@ -147,6 +153,7 @@ public class InfantBreastfedTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantBreastfedCodeP() {
 		OperationsTestCase<InfantBreastfed> validateInfantBreastfedCodePTestCase = new OperationsTestCase<InfantBreastfed>(
 			"validateInfantBreastfedCodeP",
@@ -181,6 +188,7 @@ public class InfantBreastfedTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantBreastfedCode() {
 		OperationsTestCase<InfantBreastfed> validateInfantBreastfedCodeTestCase = new OperationsTestCase<InfantBreastfed>(
 			"validateInfantBreastfedCode",
@@ -215,6 +223,7 @@ public class InfantBreastfedTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantBreastfedValue() {
 		OperationsTestCase<InfantBreastfed> validateInfantBreastfedValueTestCase = new OperationsTestCase<InfantBreastfed>(
 			"validateInfantBreastfedValue",
@@ -300,8 +309,7 @@ public class InfantBreastfedTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

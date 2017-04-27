@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.MaternalTransfer;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.MaternalTransferOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,6 +49,7 @@ public class MaternalTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalTransferTemplateId() {
 		OperationsTestCase<MaternalTransfer> validateMaternalTransferTemplateIdTestCase = new OperationsTestCase<MaternalTransfer>(
 			"validateMaternalTransferTemplateId",
@@ -80,6 +84,7 @@ public class MaternalTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalTransferClassCode() {
 		OperationsTestCase<MaternalTransfer> validateMaternalTransferClassCodeTestCase = new OperationsTestCase<MaternalTransfer>(
 			"validateMaternalTransferClassCode",
@@ -114,6 +119,7 @@ public class MaternalTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalTransferMoodCode() {
 		OperationsTestCase<MaternalTransfer> validateMaternalTransferMoodCodeTestCase = new OperationsTestCase<MaternalTransfer>(
 			"validateMaternalTransferMoodCode",
@@ -148,6 +154,7 @@ public class MaternalTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalTransferCodeP() {
 		OperationsTestCase<MaternalTransfer> validateMaternalTransferCodePTestCase = new OperationsTestCase<MaternalTransfer>(
 			"validateMaternalTransferCodeP",
@@ -182,6 +189,7 @@ public class MaternalTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalTransferCode() {
 		OperationsTestCase<MaternalTransfer> validateMaternalTransferCodeTestCase = new OperationsTestCase<MaternalTransfer>(
 			"validateMaternalTransferCode",
@@ -216,6 +224,7 @@ public class MaternalTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalTransferValue() {
 		OperationsTestCase<MaternalTransfer> validateMaternalTransferValueTestCase = new OperationsTestCase<MaternalTransfer>(
 			"validateMaternalTransferValue",
@@ -253,6 +262,7 @@ public class MaternalTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalTransferParticipant() {
 		OperationsTestCase<MaternalTransfer> validateMaternalTransferParticipantTestCase = new OperationsTestCase<MaternalTransfer>(
 			"validateMaternalTransferParticipant",
@@ -335,8 +345,7 @@ public class MaternalTransferTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

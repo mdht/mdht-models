@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection;
@@ -34,16 +34,13 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SummaryOfCareRecord
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>Summary Of Care Record</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ *
  * @generated
  */
-public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
-		implements SummaryOfCareRecord {
+public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl implements SummaryOfCareRecord {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected SummaryOfCareRecordImpl() {
@@ -52,7 +49,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -62,168 +59,145 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateSummaryOfCareRecordCarePlanning(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordCarePlanning(this, diagnostics,
-						context);
+	public boolean validateSummaryOfCareRecordCarePlanning(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCarePlanning(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateSummaryOfCareRecordVitalSigns(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordVitalSigns(this, diagnostics,
-						context);
+	public boolean validateSummaryOfCareRecordVitalSigns(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordVitalSigns(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateSummaryOfCareRecordProblemSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordProblemSection(this, diagnostics,
-						context);
+	public boolean validateSummaryOfCareRecordProblemSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordProblemSection(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateSummaryOfCareRecordAllergiesSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordAllergiesSection(this, diagnostics,
-						context);
+	public boolean validateSummaryOfCareRecordAllergiesSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordAllergiesSection(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateSummaryOfCareRecordImmunizationsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordImmunizationsSection(this,
-						diagnostics, context);
+	public boolean validateSummaryOfCareRecordImmunizationsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordImmunizationsSection(this, diagnostics,
+				context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateSummaryOfCareRecordSocialHistorySection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordSocialHistorySection(this,
-						diagnostics, context);
+	public boolean validateSummaryOfCareRecordSocialHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordSocialHistorySection(this, diagnostics,
+				context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateSummaryOfCareRecordResultsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordResultsSection(this, diagnostics,
-						context);
+	public boolean validateSummaryOfCareRecordResultsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordResultsSection(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateSummaryOfCareRecordProceduresSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordProceduresSection(this,
-						diagnostics, context);
+	public boolean validateSummaryOfCareRecordProceduresSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordProceduresSection(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateSummaryOfCareRecordFunctionalStatusSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordFunctionalStatusSection(this,
-						diagnostics, context);
+	public boolean validateSummaryOfCareRecordFunctionalStatusSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordFunctionalStatusSection(this, diagnostics,
+				context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
 	public FunctionalStatusSection retrieveFunctionalStatusSection() {
-		return SummaryOfCareRecordOperations
-				.retrieveFunctionalStatusSection(this);
+		return SummaryOfCareRecordOperations.retrieveFunctionalStatusSection(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
 	public HospitalDischargeDiagnosisSection retrieveHospitalDischargeDiagnosisSection() {
-		return SummaryOfCareRecordOperations
-				.retrieveHospitalDischargeDiagnosisSection(this);
+		return SummaryOfCareRecordOperations.retrieveHospitalDischargeDiagnosisSection(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
 	public PostoperativeDiagnosisSection retrievePostoperativeDiagnosisSection() {
-		return SummaryOfCareRecordOperations
-				.retrievePostoperativeDiagnosisSection(this);
+		return SummaryOfCareRecordOperations.retrievePostoperativeDiagnosisSection(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
 	public PostprocedureDiagnosisSection retrievePostprocedureDiagnosisSection() {
-		return SummaryOfCareRecordOperations
-				.retrievePostprocedureDiagnosisSection(this);
+		return SummaryOfCareRecordOperations.retrievePostprocedureDiagnosisSection(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -233,7 +207,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -243,7 +217,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -253,7 +227,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -263,7 +237,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -273,7 +247,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -283,7 +257,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -293,7 +267,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -303,12 +277,11 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public SummaryOfCareRecord init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public SummaryOfCareRecord init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
 	}

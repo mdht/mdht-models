@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection;
-import org.openhealthtools.mdht.uml.cda.vsbr.NewbornsVitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.NewbornDeliverySectionOperations;
 
 /**
@@ -34,14 +37,15 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.NewbornDeliverySectionOp
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionSubject(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Subject</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionBirthOrder(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Birth Order</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionNumberofInfantsBornAlive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Numberof Infants Born Alive</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionNumberOfInfantsBornAlive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Number Of Infants Born Alive</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionCongenitalAnomalies(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Congenital Anomalies</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionNewbornsVitalSignsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Newborns Vital Signs Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionAbnormalConditionsoftheNewborn(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Abnormal Conditionsofthe Newborn</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Abnormal Conditions Of The Newborn</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionInfantLiving(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Infant Living</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionInfantBreastfed(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Infant Breastfed</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionInfantTransfer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Infant Transfer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionPlurality(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Plurality</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionAssessmentsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Assessments Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Newborn Subject Role Of Newborn Newborn Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Newborn Subject Role Of Newborn Newborn Determiner Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornSDTCId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Newborn Subject Role Of Newborn Newborn SDTC Id</em>}</li>
@@ -55,14 +59,15 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.NewbornDeliverySectionOp
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionNewbornSubjectTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Newborn Subject Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#validateNewbornDeliverySectionNewbornSubjectRelatedSubject(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborn Delivery Section Newborn Subject Related Subject</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getBirthOrder() <em>Get Birth Order</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getNumberofInfantsBornAlive() <em>Get Numberof Infants Born Alive</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getNumberOfInfantsBornAlive() <em>Get Number Of Infants Born Alive</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getCongenitalAnomaliess() <em>Get Congenital Anomaliess</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getNewbornsVitalSignsSection() <em>Get Newborns Vital Signs Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getAbnormalConditionsoftheNewborns() <em>Get Abnormal Conditionsofthe Newborns</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getAbnormalConditionsOfTheNewborns() <em>Get Abnormal Conditions Of The Newborns</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getInfantLiving() <em>Get Infant Living</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getInfantBreastfed() <em>Get Infant Breastfed</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getInfantTransfer() <em>Get Infant Transfer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getPlurality() <em>Get Plurality</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection#getAssessmentsSection() <em>Get Assessments Section</em>}</li>
  * </ul>
  * </p>
  *
@@ -76,10 +81,11 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionTemplateId() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionTemplateIdTestCase = new OperationsTestCase<NewbornDeliverySection>(
-			"validateNewbornDeliverySectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNewbornDeliverySectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -110,10 +116,11 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionClassCode() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionClassCodeTestCase = new OperationsTestCase<NewbornDeliverySection>(
-			"validateNewbornDeliverySectionClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNewbornDeliverySectionClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -144,6 +151,7 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionMoodCode() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionMoodCodeTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionMoodCode",
@@ -178,6 +186,7 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionCode() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionCodeTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionCode",
@@ -212,6 +221,7 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionText() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionTextTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionText",
@@ -249,6 +259,7 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionSubject() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionSubjectTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionSubject",
@@ -283,10 +294,11 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionBirthOrder() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionBirthOrderTestCase = new OperationsTestCase<NewbornDeliverySection>(
-			"validateNewbornDeliverySectionBirthOrder",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNewbornDeliverySectionBirthOrder", operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_BIRTH_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -317,10 +329,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateNewbornDeliverySectionNumberofInfantsBornAlive() {
-		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNumberofInfantsBornAliveTestCase = new OperationsTestCase<NewbornDeliverySection>(
-			"validateNewbornDeliverySectionNumberofInfantsBornAlive",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBEROF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateNewbornDeliverySectionNumberOfInfantsBornAlive() {
+		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNumberOfInfantsBornAliveTestCase = new OperationsTestCase<NewbornDeliverySection>(
+			"validateNewbornDeliverySectionNumberOfInfantsBornAlive",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -337,13 +351,13 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return NewbornDeliverySectionOperations.validateNewbornDeliverySectionNumberofInfantsBornAlive(
+				return NewbornDeliverySectionOperations.validateNewbornDeliverySectionNumberOfInfantsBornAlive(
 					(NewbornDeliverySection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateNewbornDeliverySectionNumberofInfantsBornAliveTestCase.doValidationTest();
+		validateNewbornDeliverySectionNumberOfInfantsBornAliveTestCase.doValidationTest();
 	}
 
 	/**
@@ -351,10 +365,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionCongenitalAnomalies() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionCongenitalAnomaliesTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionCongenitalAnomalies",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_CONGENITAL_ANOMALIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -385,10 +401,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionNewbornsVitalSignsSection() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNewbornsVitalSignsSectionTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionNewbornsVitalSignsSection",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORNS_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -403,7 +421,7 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 				/* NewbornsVitalSignsSection */
 				NewbornsVitalSignsSection section =
 
-				VsbrFactory.eINSTANCE.createNewbornsVitalSignsSection().init();
+						VsbrFactory.eINSTANCE.createNewbornsVitalSignsSection().init();
 
 				target.addSection(section);
 
@@ -426,10 +444,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateNewbornDeliverySectionAbnormalConditionsoftheNewborn() {
-		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionAbnormalConditionsoftheNewbornTestCase = new OperationsTestCase<NewbornDeliverySection>(
-			"validateNewbornDeliverySectionAbnormalConditionsoftheNewborn",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONSOFTHE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateNewbornDeliverySectionAbnormalConditionsOfTheNewborn() {
+		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionAbnormalConditionsOfTheNewbornTestCase = new OperationsTestCase<NewbornDeliverySection>(
+			"validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_ABNORMAL_CONDITIONS_OF_THE_NEWBORN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -446,13 +466,13 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return NewbornDeliverySectionOperations.validateNewbornDeliverySectionAbnormalConditionsoftheNewborn(
+				return NewbornDeliverySectionOperations.validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(
 					(NewbornDeliverySection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateNewbornDeliverySectionAbnormalConditionsoftheNewbornTestCase.doValidationTest();
+		validateNewbornDeliverySectionAbnormalConditionsOfTheNewbornTestCase.doValidationTest();
 	}
 
 	/**
@@ -460,10 +480,11 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionInfantLiving() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionInfantLivingTestCase = new OperationsTestCase<NewbornDeliverySection>(
-			"validateNewbornDeliverySectionInfantLiving",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNewbornDeliverySectionInfantLiving", operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -494,10 +515,11 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionInfantBreastfed() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionInfantBreastfedTestCase = new OperationsTestCase<NewbornDeliverySection>(
-			"validateNewbornDeliverySectionInfantBreastfed",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNewbornDeliverySectionInfantBreastfed", operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_BREASTFED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -528,10 +550,11 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionInfantTransfer() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionInfantTransferTestCase = new OperationsTestCase<NewbornDeliverySection>(
-			"validateNewbornDeliverySectionInfantTransfer",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNewbornDeliverySectionInfantTransfer", operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_INFANT_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -562,6 +585,7 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionPlurality() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionPluralityTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionPlurality",
@@ -596,10 +620,55 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
+	public void testValidateNewbornDeliverySectionAssessmentsSection() {
+		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionAssessmentsSectionTestCase = new OperationsTestCase<NewbornDeliverySection>(
+			"validateNewbornDeliverySectionAssessmentsSection",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_ASSESSMENTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(NewbornDeliverySection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NewbornDeliverySection target) {
+				target.init();
+
+				/* AssessmentsSection */
+				AssessmentsSection section =
+
+						VsbrFactory.eINSTANCE.createAssessmentsSection().init();
+
+				target.addSection(section);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NewbornDeliverySectionOperations.validateNewbornDeliverySectionAssessmentsSection(
+					(NewbornDeliverySection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNewbornDeliverySectionAssessmentsSectionTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
 	public void testValidateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornClassCode() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornClassCodeTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -630,10 +699,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornDeterminerCodeTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -664,10 +735,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornSDTCId() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornSDTCIdTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornSDTCId",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_SDTC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -698,10 +771,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornName() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornNameTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornName",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -732,10 +807,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -766,10 +843,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeP() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodePTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -800,10 +879,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornBirthTime() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornBirthTimeTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornBirthTime",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_NEWBORN_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -834,10 +915,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionNewbornSubjectRoleOfNewbornClassCode() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornClassCodeTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -868,10 +951,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionNewbornSubjectRoleOfNewbornCode() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornCodeTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornCode",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -902,10 +987,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionNewbornSubjectRoleOfNewbornSubject() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornSubjectTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornSubject",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_ROLE_OF_NEWBORN_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -936,10 +1023,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionNewbornSubjectTypeCode() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNewbornSubjectTypeCodeTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionNewbornSubjectTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -970,10 +1059,12 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNewbornDeliverySectionNewbornSubjectRelatedSubject() {
 		OperationsTestCase<NewbornDeliverySection> validateNewbornDeliverySectionNewbornSubjectRelatedSubjectTestCase = new OperationsTestCase<NewbornDeliverySection>(
 			"validateNewbornDeliverySectionNewbornSubjectRelatedSubject",
-			operationsForOCL.getOCLValue("VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NEWBORN_DELIVERY_SECTION_NEWBORN_SUBJECT_RELATED_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1004,6 +1095,7 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetBirthOrder() {
 
 		NewbornDeliverySection target = objectFactory.create();
@@ -1016,10 +1108,11 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetNumberofInfantsBornAlive() {
+
+	public void testGetNumberOfInfantsBornAlive() {
 
 		NewbornDeliverySection target = objectFactory.create();
-		target.getNumberofInfantsBornAlive();
+		target.getNumberOfInfantsBornAlive();
 
 	}
 
@@ -1028,6 +1121,7 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetCongenitalAnomaliess() {
 
 		NewbornDeliverySection target = objectFactory.create();
@@ -1040,6 +1134,7 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetNewbornsVitalSignsSection() {
 
 		NewbornDeliverySection target = objectFactory.create();
@@ -1052,10 +1147,11 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAbnormalConditionsoftheNewborns() {
+
+	public void testGetAbnormalConditionsOfTheNewborns() {
 
 		NewbornDeliverySection target = objectFactory.create();
-		target.getAbnormalConditionsoftheNewborns();
+		target.getAbnormalConditionsOfTheNewborns();
 
 	}
 
@@ -1064,6 +1160,7 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetInfantLiving() {
 
 		NewbornDeliverySection target = objectFactory.create();
@@ -1076,6 +1173,7 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetInfantBreastfed() {
 
 		NewbornDeliverySection target = objectFactory.create();
@@ -1088,6 +1186,7 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetInfantTransfer() {
 
 		NewbornDeliverySection target = objectFactory.create();
@@ -1100,10 +1199,24 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetPlurality() {
 
 		NewbornDeliverySection target = objectFactory.create();
 		target.getPlurality();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testGetAssessmentsSection() {
+
+		NewbornDeliverySection target = objectFactory.create();
+		target.getAssessmentsSection();
 
 	}
 
@@ -1160,8 +1273,7 @@ public class NewbornDeliverySectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

@@ -2,19 +2,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -23,19 +15,16 @@ import org.openhealthtools.mdht.uml.cda.sdtm.GroupIdentifier;
 import org.openhealthtools.mdht.uml.cda.sdtm.NonPerformanceReason;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.FindingAboutOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Finding About</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class FindingAboutImpl extends ObservationImpl implements FindingAbout {
+public class FindingAboutImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements FindingAbout {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -412,7 +401,7 @@ public class FindingAboutImpl extends ObservationImpl implements FindingAbout {
 	 */
 	@Override
 	public FindingAbout init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -420,8 +409,8 @@ public class FindingAboutImpl extends ObservationImpl implements FindingAbout {
      * @generated
      */
     @Override
-	public FindingAbout init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public FindingAbout init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //FindingAboutImpl

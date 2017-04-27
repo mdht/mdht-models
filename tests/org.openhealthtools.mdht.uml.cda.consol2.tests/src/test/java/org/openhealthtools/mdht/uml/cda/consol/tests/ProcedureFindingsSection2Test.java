@@ -16,11 +16,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureFindingsSection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,11 +30,11 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection2#validateProcedureFindingsSectionProblemObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Findings Section Problem Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection2#getConsolProblemObservation2s() <em>Get Consol Problem Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection2#validateProcedureFindingsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Findings Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection2#validateProcedureFindingsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Findings Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection2#validateProcedureFindingsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Findings Section Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection2#validateProcedureFindingsSectionProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Findings Section Problem Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -42,39 +42,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  */
 
 public class ProcedureFindingsSection2Test extends CDAValidationTest {
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProcedureFindingsSectionProblemObservation2() {
-		OperationsTestCase<ProcedureFindingsSection2> validateProcedureFindingsSectionProblemObservation2TestCase = new OperationsTestCase<ProcedureFindingsSection2>(
-			"validateProcedureFindingsSectionProblemObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_FINDINGS_SECTION_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProcedureFindingsSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(ProcedureFindingsSection2 target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createProblemObservation2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionProblemObservation2(
-					(ProcedureFindingsSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProcedureFindingsSectionProblemObservation2TestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -95,8 +62,8 @@ public class ProcedureFindingsSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureFindingsSectionTemplateId() {
 		OperationsTestCase<ProcedureFindingsSection2> validateProcedureFindingsSectionTemplateIdTestCase = new OperationsTestCase<ProcedureFindingsSection2>(
-			"validateProcedureFindingsSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_FINDINGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureFindingsSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_FINDINGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -195,6 +162,40 @@ public class ProcedureFindingsSection2Test extends CDAValidationTest {
 		};
 
 		validateProcedureFindingsSectionCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateProcedureFindingsSectionProblemObservation() {
+		OperationsTestCase<ProcedureFindingsSection2> validateProcedureFindingsSectionProblemObservationTestCase = new OperationsTestCase<ProcedureFindingsSection2>(
+			"validateProcedureFindingsSectionProblemObservation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_FINDINGS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProcedureFindingsSection2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(ProcedureFindingsSection2 target) {
+				target.addObservation(ConsolFactory.eINSTANCE.createProblemObservation2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionProblemObservation(
+					(ProcedureFindingsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProcedureFindingsSectionProblemObservationTestCase.doValidationTest();
 	}
 
 	/**

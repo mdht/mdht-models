@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.OperativeNoteFluidSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.OperativeNoteFluidSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,8 +52,8 @@ public class OperativeNoteFluidSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNoteFluidSectionTemplateId() {
 		OperationsTestCase<OperativeNoteFluidSection> validateOperativeNoteFluidSectionTemplateIdTestCase = new OperationsTestCase<OperativeNoteFluidSection>(
-			"validateOperativeNoteFluidSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNoteFluidSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -120,8 +120,8 @@ public class OperativeNoteFluidSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNoteFluidSectionCodeP() {
 		OperationsTestCase<OperativeNoteFluidSection> validateOperativeNoteFluidSectionCodePTestCase = new OperationsTestCase<OperativeNoteFluidSection>(
-			"validateOperativeNoteFluidSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNoteFluidSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

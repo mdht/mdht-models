@@ -20,36 +20,34 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.IHERegistryDelegateOperat
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Registry Delegate</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class IHERegistryDelegateImpl extends EObjectImpl implements IHERegistryDelegate {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected IHERegistryDelegateImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.IHE_REGISTRY_DELEGATE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EClass getEClass(String templateId, Object context) {
 		return IHERegistryDelegateOperations.getEClass(this, templateId, context);
 	}

@@ -8,12 +8,11 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
 
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
@@ -40,6 +39,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  * @generated
  */
 public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperations {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +75,7 @@ public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,27 +92,34 @@ public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperat
 			NumberofLiveBirthsNowDead numberofLiveBirthsNowDead, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NUMBEROF_LIVE_BIRTHS_NOW_DEAD);
 			try {
-				VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberofLiveBirthsNowDead)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				numberofLiveBirthsNowDead)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NUMBEROF_LIVE_BIRTHS_NOW_DEAD_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NumberofLiveBirthsNowDeadTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									numberofLiveBirthsNowDead, context) }), new Object[] { numberofLiveBirthsNowDead }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NUMBEROF_LIVE_BIRTHS_NOW_DEAD_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NumberofLiveBirthsNowDeadNumberofLiveBirthsNowDeadTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										numberofLiveBirthsNowDead, context) }),
+						new Object[] { numberofLiveBirthsNowDead }));
 			}
 
 			return false;
@@ -132,7 +146,7 @@ public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,27 +163,34 @@ public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperat
 			NumberofLiveBirthsNowDead numberofLiveBirthsNowDead, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NUMBEROF_LIVE_BIRTHS_NOW_DEAD);
 			try {
-				VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberofLiveBirthsNowDead)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				numberofLiveBirthsNowDead)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NumberofLiveBirthsNowDeadClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									numberofLiveBirthsNowDead, context) }), new Object[] { numberofLiveBirthsNowDead }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NumberofLiveBirthsNowDeadNumberofLiveBirthsNowDeadClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										numberofLiveBirthsNowDead, context) }),
+						new Object[] { numberofLiveBirthsNowDead }));
 			}
 
 			return false;
@@ -196,7 +217,7 @@ public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,31 +230,37 @@ public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperat
 	 * @generated
 	 */
 
-	public static boolean validateNumberofLiveBirthsNowDeadMoodCode(
-			NumberofLiveBirthsNowDead numberofLiveBirthsNowDead, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static boolean validateNumberofLiveBirthsNowDeadMoodCode(NumberofLiveBirthsNowDead numberofLiveBirthsNowDead,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NUMBEROF_LIVE_BIRTHS_NOW_DEAD);
 			try {
-				VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberofLiveBirthsNowDead)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				numberofLiveBirthsNowDead)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NUMBEROF_LIVE_BIRTHS_NOW_DEAD_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NumberofLiveBirthsNowDeadMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									numberofLiveBirthsNowDead, context) }), new Object[] { numberofLiveBirthsNowDead }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NUMBEROF_LIVE_BIRTHS_NOW_DEAD_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NumberofLiveBirthsNowDeadNumberofLiveBirthsNowDeadMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										numberofLiveBirthsNowDead, context) }),
+						new Object[] { numberofLiveBirthsNowDead }));
 			}
 
 			return false;
@@ -260,7 +287,7 @@ public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,27 +303,34 @@ public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperat
 	public static boolean validateNumberofLiveBirthsNowDeadCodeP(NumberofLiveBirthsNowDead numberofLiveBirthsNowDead,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NUMBEROF_LIVE_BIRTHS_NOW_DEAD);
 			try {
-				VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberofLiveBirthsNowDead)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				numberofLiveBirthsNowDead)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NumberofLiveBirthsNowDeadCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									numberofLiveBirthsNowDead, context) }), new Object[] { numberofLiveBirthsNowDead }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NumberofLiveBirthsNowDeadNumberofLiveBirthsNowDeadCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										numberofLiveBirthsNowDead, context) }),
+						new Object[] { numberofLiveBirthsNowDead }));
 			}
 
 			return false;
@@ -312,9 +346,9 @@ public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '68496-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '68496-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNumberofLiveBirthsNowDeadCode(NumberofLiveBirthsNowDead, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Live Births Now Dead Code</em>}' invariant operation.
@@ -325,7 +359,7 @@ public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -341,27 +375,34 @@ public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperat
 	public static boolean validateNumberofLiveBirthsNowDeadCode(NumberofLiveBirthsNowDead numberofLiveBirthsNowDead,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NUMBEROF_LIVE_BIRTHS_NOW_DEAD);
 			try {
-				VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberofLiveBirthsNowDead)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				numberofLiveBirthsNowDead)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NumberofLiveBirthsNowDeadCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									numberofLiveBirthsNowDead, context) }), new Object[] { numberofLiveBirthsNowDead }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NumberofLiveBirthsNowDeadNumberofLiveBirthsNowDeadCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										numberofLiveBirthsNowDead, context) }),
+						new Object[] { numberofLiveBirthsNowDead }));
 			}
 
 			return false;
@@ -388,7 +429,7 @@ public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -404,27 +445,34 @@ public class NumberofLiveBirthsNowDeadOperations extends ClinicalStatementOperat
 	public static boolean validateNumberofLiveBirthsNowDeadValue(NumberofLiveBirthsNowDead numberofLiveBirthsNowDead,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NUMBEROF_LIVE_BIRTHS_NOW_DEAD);
 			try {
-				VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberofLiveBirthsNowDead)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				numberofLiveBirthsNowDead)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NUMBEROF_LIVE_BIRTHS_NOW_DEAD_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NumberofLiveBirthsNowDeadValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									numberofLiveBirthsNowDead, context) }), new Object[] { numberofLiveBirthsNowDead }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NUMBEROF_LIVE_BIRTHS_NOW_DEAD__NUMBEROF_LIVE_BIRTHS_NOW_DEAD_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NumberofLiveBirthsNowDeadNumberofLiveBirthsNowDeadValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										numberofLiveBirthsNowDead, context) }),
+						new Object[] { numberofLiveBirthsNowDead }));
 			}
 
 			return false;

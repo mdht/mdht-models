@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.MaternalMorbidity;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,10 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.MaternalMorbidityOperati
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Maternal Morbidity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class MaternalMorbidityImpl extends ObservationImpl implements MaternalMorbidity {
+public class MaternalMorbidityImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements MaternalMorbidity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -127,7 +121,7 @@ public class MaternalMorbidityImpl extends ObservationImpl implements MaternalMo
 	 * @generated
 	 */
 	public MaternalMorbidity init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -135,8 +129,9 @@ public class MaternalMorbidityImpl extends ObservationImpl implements MaternalMo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MaternalMorbidity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public MaternalMorbidity init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // MaternalMorbidityImpl

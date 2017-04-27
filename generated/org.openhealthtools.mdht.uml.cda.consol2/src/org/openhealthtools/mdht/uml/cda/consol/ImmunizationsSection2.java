@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +19,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getImmunizationsSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionEntriesOptionalCode ImmunizationsSectionEntriesOptionalCodeP ImmunizationsSection2Title ImmunizationsSection2Text ImmunizationsSectionEntriesOptionalImmunizationActivity2' templateId.root='2.16.840.1.113883.10.20.22.2.2.1' templateId.extension='2014-06-09' nullFlavor='NI' constraints.validation.info='ImmunizationsSection2NullFlavor' code.code='11369-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Immunizations' constraints.validation.dependOn.ImmunizationsSectionEntriesOptionalCode='ImmunizationsSectionEntriesOptionalCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionEntriesOptionalCode ImmunizationsSectionEntriesOptionalCodeP ImmunizationsSection2Title ImmunizationsSection2Text ImmunizationsSectionEntriesOptionalImmunizationActivity' templateId.root='2.16.840.1.113883.10.20.22.2.2.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='ImmunizationsSection2NullFlavor' code.code='11369-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Immunizations' constraints.validation.dependOn.ImmunizationsSectionEntriesOptionalCode='ImmunizationsSectionEntriesOptionalCodeP'"
  * @generated
  */
 public interface ImmunizationsSection2 extends ImmunizationsSectionEntriesOptional2 {
@@ -68,7 +64,6 @@ public interface ImmunizationsSection2 extends ImmunizationsSectionEntriesOption
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ImmunizationsSection2 init();
 
 	/**
@@ -76,6 +71,5 @@ public interface ImmunizationsSection2 extends ImmunizationsSectionEntriesOption
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ImmunizationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ImmunizationsSection2

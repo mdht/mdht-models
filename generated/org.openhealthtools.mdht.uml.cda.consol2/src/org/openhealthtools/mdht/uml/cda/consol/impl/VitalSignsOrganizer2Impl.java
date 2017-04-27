@@ -7,29 +7,22 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsOrganizer2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Vital Signs Organizer2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -69,9 +62,9 @@ public class VitalSignsOrganizer2Impl extends VitalSignsOrganizerImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateVitalSignsOrganizerVitalSignObservation2(DiagnosticChain diagnostics,
+	public boolean validateVitalSignsOrganizer2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizerVitalSignObservation2(
+		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2AuthorParticipation(
 			this, diagnostics, context);
 	}
 
@@ -80,11 +73,18 @@ public class VitalSignsOrganizer2Impl extends VitalSignsOrganizerImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateVitalSignsOrganizer2AuthorParticipation(DiagnosticChain diagnostics,
+	public boolean validateVitalSignsOrganizer2CDTranslation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2CDTranslation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVitalSignsOrganizer2CDTranslationP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2AuthorParticipation(
-			this, diagnostics, context);
+		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2CDTranslationP(this, diagnostics, context);
 	}
 
 	/**
@@ -125,6 +125,18 @@ public class VitalSignsOrganizer2Impl extends VitalSignsOrganizerImpl implements
 	@Override
 	public boolean validateVitalSignsOrganizerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizerEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizerVitalSignObservation(
+			this, diagnostics, context);
 	}
 
 	/**

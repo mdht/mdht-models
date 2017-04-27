@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability;
@@ -42,7 +35,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.StudyDayPeriod;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.Visit;
 import org.openhealthtools.mdht.uml.cda.sdtm.VitalSign;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -100,7 +92,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class VisitOperations extends ClinicalStatementOperations {
+public class VisitOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -129,7 +129,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -144,25 +144,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitTemplateId(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_TEMPLATE_ID,
-						 SdtmPlugin.INSTANCE.getString("VisitTemplateId"),
+						 SdtmPlugin.INSTANCE.getString("VisitVisitTemplateId"),
 						 new Object [] { visit }));
 			}
 			 
@@ -190,7 +200,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -205,25 +215,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitClassCode(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_CLASS_CODE,
-						 SdtmPlugin.INSTANCE.getString("VisitClassCode"),
+						 SdtmPlugin.INSTANCE.getString("VisitVisitClassCode"),
 						 new Object [] { visit }));
 			}
 			 
@@ -251,7 +271,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -266,25 +286,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitMoodCode(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_MOOD_CODE,
-						 SdtmPlugin.INSTANCE.getString("VisitMoodCode"),
+						 SdtmPlugin.INSTANCE.getString("VisitVisitMoodCode"),
 						 new Object [] { visit }));
 			}
 			 
@@ -314,7 +344,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -329,25 +359,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitCode(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_CODE,
-						 SdtmPlugin.INSTANCE.getString("VisitCode"),
+						 SdtmPlugin.INSTANCE.getString("VisitVisitCode"),
 						 new Object [] { visit }));
 			}
 			 
@@ -375,7 +415,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -390,25 +430,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitCodeP(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_CODE_P,
-						 SdtmPlugin.INSTANCE.getString("VisitCodeP"),
+						 SdtmPlugin.INSTANCE.getString("VisitVisitCodeP"),
 						 new Object [] { visit }));
 			}
 			 
@@ -436,7 +486,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -451,25 +501,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitId(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_ID,
-						 SdtmPlugin.INSTANCE.getString("VisitId"),
+						 SdtmPlugin.INSTANCE.getString("VisitVisitId"),
 						 new Object [] { visit }));
 			}
 			 
@@ -497,7 +557,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -512,25 +572,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitText(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.INFO,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_TEXT,
-						 SdtmPlugin.INSTANCE.getString("VisitText"),
+						 SdtmPlugin.INSTANCE.getString("VisitVisitText"),
 						 new Object [] { visit }));
 			}
 			 
@@ -558,7 +628,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -573,25 +643,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitEffectiveTime(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.WARNING,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_EFFECTIVE_TIME,
-						 SdtmPlugin.INSTANCE.getString("VisitEffectiveTime"),
+						 SdtmPlugin.INSTANCE.getString("VisitVisitEffectiveTime"),
 						 new Object [] { visit }));
 			}
 			 
@@ -619,7 +699,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_HUMAN_CLINICAL_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_HUMAN_CLINICAL_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -634,25 +714,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitHumanClinicalVitalSign(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_HUMAN_CLINICAL_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_HUMAN_CLINICAL_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_HUMAN_CLINICAL_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_HUMAN_CLINICAL_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_HUMAN_CLINICAL_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_HUMAN_CLINICAL_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_HUMAN_CLINICAL_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_HUMAN_CLINICAL_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_HUMAN_CLINICAL_VITAL_SIGN,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitHumanClinicalVitalSign", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitHumanClinicalVitalSign", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -680,7 +770,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -695,25 +785,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitPlannedStudyDay(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_PLANNED_STUDY_DAY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitPlannedStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitPlannedStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -741,7 +841,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -756,25 +856,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitECGTestResult(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_ECG_TEST_RESULT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitECGTestResult", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitECGTestResult", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -802,7 +912,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_PHYSICAL_EXAMINATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_PHYSICAL_EXAMINATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -817,25 +927,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitPhysicalExamination(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_PHYSICAL_EXAMINATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_PHYSICAL_EXAMINATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_PHYSICAL_EXAMINATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_PHYSICAL_EXAMINATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_PHYSICAL_EXAMINATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_PHYSICAL_EXAMINATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_PHYSICAL_EXAMINATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_PHYSICAL_EXAMINATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_PHYSICAL_EXAMINATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitPhysicalExamination", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitPhysicalExamination", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -863,7 +983,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_MICROBIOLOGY_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_MICROBIOLOGY_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -878,25 +998,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitMicrobiologySpecimen(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_MICROBIOLOGY_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_MICROBIOLOGY_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_MICROBIOLOGY_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_MICROBIOLOGY_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_MICROBIOLOGY_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_MICROBIOLOGY_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_MICROBIOLOGY_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_MICROBIOLOGY_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_MICROBIOLOGY_SPECIMEN,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitMicrobiologySpecimen", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitMicrobiologySpecimen", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -924,7 +1054,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_MICROBIOLOGY_SUSCEPTIBILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_MICROBIOLOGY_SUSCEPTIBILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -939,25 +1069,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitMicrobiologySusceptibility(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_MICROBIOLOGY_SUSCEPTIBILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_MICROBIOLOGY_SUSCEPTIBILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_MICROBIOLOGY_SUSCEPTIBILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_MICROBIOLOGY_SUSCEPTIBILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_MICROBIOLOGY_SUSCEPTIBILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_MICROBIOLOGY_SUSCEPTIBILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_MICROBIOLOGY_SUSCEPTIBILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_MICROBIOLOGY_SUSCEPTIBILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_MICROBIOLOGY_SUSCEPTIBILITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitMicrobiologySusceptibility", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitMicrobiologySusceptibility", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -985,7 +1125,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1000,25 +1140,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitPharmacokineticConcentrationFinding(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_PHARMACOKINETIC_CONCENTRATION_FINDING,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitPharmacokineticConcentrationFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitPharmacokineticConcentrationFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -1046,7 +1196,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1061,25 +1211,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitFindingAbout(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -1107,7 +1267,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_DRUG_ACCOUNTABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_DRUG_ACCOUNTABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1122,25 +1282,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitDrugAccountability(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_DRUG_ACCOUNTABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_DRUG_ACCOUNTABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_DRUG_ACCOUNTABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_DRUG_ACCOUNTABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_DRUG_ACCOUNTABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_DRUG_ACCOUNTABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_DRUG_ACCOUNTABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_DRUG_ACCOUNTABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_DRUG_ACCOUNTABILITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitDrugAccountability", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitDrugAccountability", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -1168,7 +1338,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1183,25 +1353,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitStudyDayPeriod(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_STUDY_DAY_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -1229,7 +1409,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1244,25 +1424,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitComment(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.INFO,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_COMMENT,
-						 SdtmPlugin.INSTANCE.getString("VisitComment"),
+						 SdtmPlugin.INSTANCE.getString("VisitVisitComment"),
 						 new Object [] { visit }));
 			}
 			 
@@ -1290,7 +1480,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1305,25 +1495,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitDomainAssignment(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -1351,7 +1551,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1366,25 +1566,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitRelatedRecord(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -1412,7 +1622,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1427,25 +1637,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitSupplementalValue(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -1473,7 +1693,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_HUMAN_CLINICAL_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_HUMAN_CLINICAL_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1488,25 +1708,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitHumanClinicalLaboratoryTestResult(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_HUMAN_CLINICAL_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_HUMAN_CLINICAL_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_HUMAN_CLINICAL_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_HUMAN_CLINICAL_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_HUMAN_CLINICAL_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_HUMAN_CLINICAL_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_HUMAN_CLINICAL_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_HUMAN_CLINICAL_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_HUMAN_CLINICAL_LABORATORY_TEST_RESULT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitHumanClinicalLaboratoryTestResult", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitHumanClinicalLaboratoryTestResult", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -1534,7 +1764,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_QUESTIONNAIRE_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_QUESTIONNAIRE_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1549,25 +1779,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitQuestionnaireFinding(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_QUESTIONNAIRE_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_QUESTIONNAIRE_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_QUESTIONNAIRE_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_QUESTIONNAIRE_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_QUESTIONNAIRE_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_QUESTIONNAIRE_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_QUESTIONNAIRE_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_QUESTIONNAIRE_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_QUESTIONNAIRE_FINDING,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitQuestionnaireFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitQuestionnaireFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -1595,7 +1835,7 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VISIT_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VISIT_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1610,25 +1850,35 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVisitPharmacokineticParameterFinding(Visit visit, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VISIT_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VISIT_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VISIT);
 			try {
-				VALIDATE_VISIT_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VISIT_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VISIT_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VISIT_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VISIT_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(visit)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VISIT_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(visit)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VISIT__VISIT_PHARMACOKINETIC_PARAMETER_FINDING,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitPharmacokineticParameterFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VisitVisitPharmacokineticParameterFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(visit, context) }),
 						 new Object [] { visit }));
 			}
 			 
@@ -1664,8 +1914,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<VitalSign> getHumanClinicalVitalSigns(Visit visit) {
+	
+	
+	
 		if (GET_HUMAN_CLINICAL_VITAL_SIGNS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(76));
 			try {
 				GET_HUMAN_CLINICAL_VITAL_SIGNS__EOCL_QRY = helper.createQuery(GET_HUMAN_CLINICAL_VITAL_SIGNS__EOCL_EXP);
@@ -1673,8 +1928,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HUMAN_CLINICAL_VITAL_SIGNS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_HUMAN_CLINICAL_VITAL_SIGNS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<VitalSign> result = (Collection<VitalSign>) query.evaluate(visit);
 		return new BasicEList.UnmodifiableEList<VitalSign>(result.size(), result.toArray());
@@ -1707,8 +1963,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  PlannedStudyDay getPlannedStudyDay(Visit visit) {
+	
+	
+	
 		if (GET_PLANNED_STUDY_DAY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(77));
 			try {
 				GET_PLANNED_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_PLANNED_STUDY_DAY__EOCL_EXP);
@@ -1716,8 +1977,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_STUDY_DAY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_STUDY_DAY__EOCL_QRY);
 		return (PlannedStudyDay) query.evaluate(visit);
 	}
 
@@ -1748,8 +2010,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<ECGTestResult> getECGTestResults(Visit visit) {
+	
+	
+	
 		if (GET_ECG_TEST_RESULTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(78));
 			try {
 				GET_ECG_TEST_RESULTS__EOCL_QRY = helper.createQuery(GET_ECG_TEST_RESULTS__EOCL_EXP);
@@ -1757,8 +2024,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ECG_TEST_RESULTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_ECG_TEST_RESULTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ECGTestResult> result = (Collection<ECGTestResult>) query.evaluate(visit);
 		return new BasicEList.UnmodifiableEList<ECGTestResult>(result.size(), result.toArray());
@@ -1791,8 +2059,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<PhysicalExaminationFinding> getPhysicalExaminations(Visit visit) {
+	
+	
+	
 		if (GET_PHYSICAL_EXAMINATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(79));
 			try {
 				GET_PHYSICAL_EXAMINATIONS__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAMINATIONS__EOCL_EXP);
@@ -1800,8 +2073,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PHYSICAL_EXAMINATIONS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PHYSICAL_EXAMINATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PhysicalExaminationFinding> result = (Collection<PhysicalExaminationFinding>) query.evaluate(visit);
 		return new BasicEList.UnmodifiableEList<PhysicalExaminationFinding>(result.size(), result.toArray());
@@ -1834,8 +2108,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  MicrobiologySpecimenFinding getMicrobiologySpecimen(Visit visit) {
+	
+	
+	
 		if (GET_MICROBIOLOGY_SPECIMEN__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(80));
 			try {
 				GET_MICROBIOLOGY_SPECIMEN__EOCL_QRY = helper.createQuery(GET_MICROBIOLOGY_SPECIMEN__EOCL_EXP);
@@ -1843,8 +2122,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MICROBIOLOGY_SPECIMEN__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_MICROBIOLOGY_SPECIMEN__EOCL_QRY);
 		return (MicrobiologySpecimenFinding) query.evaluate(visit);
 	}
 
@@ -1875,8 +2155,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  MicrobiologySusceptibility getMicrobiologySusceptibility(Visit visit) {
+	
+	
+	
 		if (GET_MICROBIOLOGY_SUSCEPTIBILITY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(81));
 			try {
 				GET_MICROBIOLOGY_SUSCEPTIBILITY__EOCL_QRY = helper.createQuery(GET_MICROBIOLOGY_SUSCEPTIBILITY__EOCL_EXP);
@@ -1884,8 +2169,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MICROBIOLOGY_SUSCEPTIBILITY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_MICROBIOLOGY_SUSCEPTIBILITY__EOCL_QRY);
 		return (MicrobiologySusceptibility) query.evaluate(visit);
 	}
 
@@ -1916,8 +2202,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  PharmacokineticConcentrationFinding getPharmacokineticConcentrationFinding(Visit visit) {
+	
+	
+	
 		if (GET_PHARMACOKINETIC_CONCENTRATION_FINDING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(82));
 			try {
 				GET_PHARMACOKINETIC_CONCENTRATION_FINDING__EOCL_QRY = helper.createQuery(GET_PHARMACOKINETIC_CONCENTRATION_FINDING__EOCL_EXP);
@@ -1925,8 +2216,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PHARMACOKINETIC_CONCENTRATION_FINDING__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PHARMACOKINETIC_CONCENTRATION_FINDING__EOCL_QRY);
 		return (PharmacokineticConcentrationFinding) query.evaluate(visit);
 	}
 
@@ -1957,8 +2249,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(Visit visit) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(83));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -1966,8 +2263,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(visit);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());
@@ -2000,8 +2298,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DrugAccountability getDrugAccountability(Visit visit) {
+	
+	
+	
 		if (GET_DRUG_ACCOUNTABILITY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(84));
 			try {
 				GET_DRUG_ACCOUNTABILITY__EOCL_QRY = helper.createQuery(GET_DRUG_ACCOUNTABILITY__EOCL_EXP);
@@ -2009,8 +2312,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DRUG_ACCOUNTABILITY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DRUG_ACCOUNTABILITY__EOCL_QRY);
 		return (DrugAccountability) query.evaluate(visit);
 	}
 
@@ -2041,8 +2345,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  StudyDayPeriod getStudyDayPeriod(Visit visit) {
+	
+	
+	
 		if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(85));
 			try {
 				GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);
@@ -2050,8 +2359,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
 		return (StudyDayPeriod) query.evaluate(visit);
 	}
 
@@ -2082,8 +2392,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<Comment> getComments(Visit visit) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(86));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -2091,8 +2406,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(visit);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -2125,8 +2441,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(Visit visit) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(87));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -2134,8 +2455,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(visit);
 	}
 
@@ -2166,8 +2488,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(Visit visit) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(88));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -2175,8 +2502,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(visit);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -2209,8 +2537,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(Visit visit) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(89));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -2218,8 +2551,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(visit);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -2252,8 +2586,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<HumanClinicalLaboratoryTestResult> getHumanClinicalLaboratoryTestResults(Visit visit) {
+	
+	
+	
 		if (GET_HUMAN_CLINICAL_LABORATORY_TEST_RESULTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(90));
 			try {
 				GET_HUMAN_CLINICAL_LABORATORY_TEST_RESULTS__EOCL_QRY = helper.createQuery(GET_HUMAN_CLINICAL_LABORATORY_TEST_RESULTS__EOCL_EXP);
@@ -2261,8 +2600,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HUMAN_CLINICAL_LABORATORY_TEST_RESULTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_HUMAN_CLINICAL_LABORATORY_TEST_RESULTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<HumanClinicalLaboratoryTestResult> result = (Collection<HumanClinicalLaboratoryTestResult>) query.evaluate(visit);
 		return new BasicEList.UnmodifiableEList<HumanClinicalLaboratoryTestResult>(result.size(), result.toArray());
@@ -2295,8 +2635,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<QuestionnaireFinding> getQuestionnaireFindings(Visit visit) {
+	
+	
+	
 		if (GET_QUESTIONNAIRE_FINDINGS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(91));
 			try {
 				GET_QUESTIONNAIRE_FINDINGS__EOCL_QRY = helper.createQuery(GET_QUESTIONNAIRE_FINDINGS__EOCL_EXP);
@@ -2304,8 +2649,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_QUESTIONNAIRE_FINDINGS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_QUESTIONNAIRE_FINDINGS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<QuestionnaireFinding> result = (Collection<QuestionnaireFinding>) query.evaluate(visit);
 		return new BasicEList.UnmodifiableEList<QuestionnaireFinding>(result.size(), result.toArray());
@@ -2338,8 +2684,13 @@ public class VisitOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<PharmacokineticParameterFinding> getPharmacokineticParameterFindings(Visit visit) {
+	
+	
+	
 		if (GET_PHARMACOKINETIC_PARAMETER_FINDINGS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VISIT, SdtmPackage.Literals.VISIT.getEAllOperations().get(92));
 			try {
 				GET_PHARMACOKINETIC_PARAMETER_FINDINGS__EOCL_QRY = helper.createQuery(GET_PHARMACOKINETIC_PARAMETER_FINDINGS__EOCL_EXP);
@@ -2347,8 +2698,9 @@ public class VisitOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PHARMACOKINETIC_PARAMETER_FINDINGS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PHARMACOKINETIC_PARAMETER_FINDINGS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PharmacokineticParameterFinding> result = (Collection<PharmacokineticParameterFinding>) query.evaluate(visit);
 		return new BasicEList.UnmodifiableEList<PharmacokineticParameterFinding>(result.size(), result.toArray());

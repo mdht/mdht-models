@@ -24,17 +24,18 @@
 package org.openhealthtools.mdht.uml.cda.phmr.tests;
 
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceMeasurementRangeObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.DeviceMeasurementRangeObservationOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 
 /**
@@ -69,66 +70,69 @@ public class DeviceMeasurementRangeObservationTest extends  CDAValidationTest {
  
 									
 public void testValidateDeviceMeasurementRangeObservationTemplateId() {
-      OperationsTestCase<DeviceMeasurementRangeObservation> validateDeviceMeasurementRangeObservationTemplateIdTestCase = new OperationsTestCase<DeviceMeasurementRangeObservation>(
-      "validateDeviceMeasurementRangeObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_MEASUREMENT_RANGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceMeasurementRangeObservation> validateDeviceMeasurementRangeObservationTemplateIdTestCase = new OperationsTestCase<DeviceMeasurementRangeObservation>(
+			"validateDeviceMeasurementRangeObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_MEASUREMENT_RANGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceMeasurementRangeObservation target) {
+			@Override
+			protected void updateToFail(DeviceMeasurementRangeObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceMeasurementRangeObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceMeasurementRangeObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationTemplateId(
-          (DeviceMeasurementRangeObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationTemplateId(
+					(DeviceMeasurementRangeObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceMeasurementRangeObservationTemplateIdTestCase.doValidationTest();
+		validateDeviceMeasurementRangeObservationTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -143,66 +147,69 @@ public void testValidateDeviceMeasurementRangeObservationTemplateId() {
  
 									
 public void testValidateDeviceMeasurementRangeObservationClassCode() {
-      OperationsTestCase<DeviceMeasurementRangeObservation> validateDeviceMeasurementRangeObservationClassCodeTestCase = new OperationsTestCase<DeviceMeasurementRangeObservation>(
-      "validateDeviceMeasurementRangeObservationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_MEASUREMENT_RANGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceMeasurementRangeObservation> validateDeviceMeasurementRangeObservationClassCodeTestCase = new OperationsTestCase<DeviceMeasurementRangeObservation>(
+			"validateDeviceMeasurementRangeObservationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_MEASUREMENT_RANGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceMeasurementRangeObservation target) {
+			@Override
+			protected void updateToFail(DeviceMeasurementRangeObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceMeasurementRangeObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceMeasurementRangeObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationClassCode(
-          (DeviceMeasurementRangeObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationClassCode(
+					(DeviceMeasurementRangeObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceMeasurementRangeObservationClassCodeTestCase.doValidationTest();
+		validateDeviceMeasurementRangeObservationClassCodeTestCase.doValidationTest();
 }		
 
 
@@ -217,66 +224,69 @@ public void testValidateDeviceMeasurementRangeObservationClassCode() {
  
 									
 public void testValidateDeviceMeasurementRangeObservationCodeP() {
-      OperationsTestCase<DeviceMeasurementRangeObservation> validateDeviceMeasurementRangeObservationCodePTestCase = new OperationsTestCase<DeviceMeasurementRangeObservation>(
-      "validateDeviceMeasurementRangeObservationCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_MEASUREMENT_RANGE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceMeasurementRangeObservation> validateDeviceMeasurementRangeObservationCodePTestCase = new OperationsTestCase<DeviceMeasurementRangeObservation>(
+			"validateDeviceMeasurementRangeObservationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_MEASUREMENT_RANGE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceMeasurementRangeObservation target) {
+			@Override
+			protected void updateToFail(DeviceMeasurementRangeObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceMeasurementRangeObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceMeasurementRangeObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationCodeP(
-          (DeviceMeasurementRangeObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationCodeP(
+					(DeviceMeasurementRangeObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceMeasurementRangeObservationCodePTestCase.doValidationTest();
+		validateDeviceMeasurementRangeObservationCodePTestCase.doValidationTest();
 }		
 
 
@@ -291,69 +301,80 @@ public void testValidateDeviceMeasurementRangeObservationCodeP() {
  
 									
 public void testValidateDeviceMeasurementRangeObservationCode() {
-      OperationsTestCase<DeviceMeasurementRangeObservation> validateDeviceMeasurementRangeObservationCodeTestCase = new OperationsTestCase<DeviceMeasurementRangeObservation>(
-      "validateDeviceMeasurementRangeObservationCode",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_MEASUREMENT_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceMeasurementRangeObservation> validateDeviceMeasurementRangeObservationCodeTestCase = new OperationsTestCase<DeviceMeasurementRangeObservation>(
+			"validateDeviceMeasurementRangeObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_MEASUREMENT_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceMeasurementRangeObservation target) {
+			@Override
+			protected void updateToFail(DeviceMeasurementRangeObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceMeasurementRangeObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceMeasurementRangeObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+			
+				CD cd  = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		
         
-    
-      
-        
-      
-        
-        
-        
-      
-        CD cd  = DatatypesFactory.eINSTANCE.createCD();
-        target.setCode(cd);
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+        @Override
+            protected void setDependency(DeviceMeasurementRangeObservation target) {
+                Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+                passToken.add(target);
+                map.put("org.openhealthtools.mdht.uml.cda.phmr.DeviceMeasurementRangeObservationCodeP", passToken);
+            }
+         
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationCode(
-          (DeviceMeasurementRangeObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationCode(
+					(DeviceMeasurementRangeObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceMeasurementRangeObservationCodeTestCase.doValidationTest();
+		validateDeviceMeasurementRangeObservationCodeTestCase.doValidationTest();
 }		
 
 
@@ -368,66 +389,69 @@ public void testValidateDeviceMeasurementRangeObservationCode() {
  
 									
 public void testValidateDeviceMeasurementRangeObservationMoodCode() {
-      OperationsTestCase<DeviceMeasurementRangeObservation> validateDeviceMeasurementRangeObservationMoodCodeTestCase = new OperationsTestCase<DeviceMeasurementRangeObservation>(
-      "validateDeviceMeasurementRangeObservationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_MEASUREMENT_RANGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceMeasurementRangeObservation> validateDeviceMeasurementRangeObservationMoodCodeTestCase = new OperationsTestCase<DeviceMeasurementRangeObservation>(
+			"validateDeviceMeasurementRangeObservationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_MEASUREMENT_RANGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceMeasurementRangeObservation target) {
+			@Override
+			protected void updateToFail(DeviceMeasurementRangeObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceMeasurementRangeObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceMeasurementRangeObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationMoodCode(
-          (DeviceMeasurementRangeObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceMeasurementRangeObservationOperations.validateDeviceMeasurementRangeObservationMoodCode(
+					(DeviceMeasurementRangeObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceMeasurementRangeObservationMoodCodeTestCase.doValidationTest();
+		validateDeviceMeasurementRangeObservationMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -456,6 +480,7 @@ public void testValidateDeviceMeasurementRangeObservationMoodCode() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<DeviceMeasurementRangeObservation> {
+		@Override
 		public DeviceMeasurementRangeObservation create() {		
 			return PhmrFactory.eINSTANCE.createDeviceMeasurementRangeObservation();
 		}
@@ -487,9 +512,9 @@ public void testValidateDeviceMeasurementRangeObservationMoodCode() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -499,8 +524,8 @@ public void testValidateDeviceMeasurementRangeObservationMoodCode() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

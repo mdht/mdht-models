@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
@@ -32,7 +25,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -71,7 +63,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatementOperations {
+public class InclusionorExclusionCriteriaNotMetOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -100,7 +100,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -115,25 +115,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetTemplateId(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -161,7 +171,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -176,25 +186,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetClassCode(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -222,7 +242,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -237,25 +257,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetMoodCode(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -283,7 +313,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -298,25 +328,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetId(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -344,7 +384,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -359,25 +399,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetCodeP(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -407,7 +457,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -422,25 +472,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetCode(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -468,7 +528,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -483,25 +543,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetValue(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -529,7 +599,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -544,25 +614,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetDataCollection(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DATA_COLLECTION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -590,7 +670,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -605,25 +685,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetComment(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -651,7 +741,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -666,25 +756,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetDomainAssignment(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -712,7 +812,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -727,25 +827,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetRelatedRecord(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -773,7 +883,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -788,25 +898,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetSupplementalValue(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -834,7 +954,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -849,25 +969,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetCategory(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -895,7 +1025,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -910,25 +1040,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetSubCategory(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -956,7 +1096,7 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -971,25 +1111,35 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  boolean validateInclusionorExclusionCriteriaNotMetFindingAbout(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET);
 			try {
-				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(inclusionorExclusionCriteriaNotMet)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(inclusionorExclusionCriteriaNotMet)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET__INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "InclusionorExclusionCriteriaNotMetInclusionorExclusionCriteriaNotMetFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(inclusionorExclusionCriteriaNotMet, context) }),
 						 new Object [] { inclusionorExclusionCriteriaNotMet }));
 			}
 			 
@@ -1025,8 +1175,13 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  DataCollection getDataCollection(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet) {
+	
+	
+	
 		if (GET_DATA_COLLECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET, SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET.getEAllOperations().get(66));
 			try {
 				GET_DATA_COLLECTION__EOCL_QRY = helper.createQuery(GET_DATA_COLLECTION__EOCL_EXP);
@@ -1034,8 +1189,9 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DATA_COLLECTION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DATA_COLLECTION__EOCL_QRY);
 		return (DataCollection) query.evaluate(inclusionorExclusionCriteriaNotMet);
 	}
 
@@ -1066,8 +1222,13 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  EList<Comment> getComments(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET, SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET.getEAllOperations().get(67));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1075,8 +1236,9 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(inclusionorExclusionCriteriaNotMet);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -1109,8 +1271,13 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET, SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET.getEAllOperations().get(68));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1118,8 +1285,9 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(inclusionorExclusionCriteriaNotMet);
 	}
 
@@ -1150,8 +1318,13 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET, SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET.getEAllOperations().get(69));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1159,8 +1332,9 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(inclusionorExclusionCriteriaNotMet);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -1193,8 +1367,13 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET, SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET.getEAllOperations().get(70));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -1202,8 +1381,9 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(inclusionorExclusionCriteriaNotMet);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -1236,8 +1416,13 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  Category getCategory(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET, SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET.getEAllOperations().get(71));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -1245,8 +1430,9 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(inclusionorExclusionCriteriaNotMet);
 	}
 
@@ -1277,8 +1463,13 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  SubCategory getSubCategory(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET, SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET.getEAllOperations().get(72));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -1286,8 +1477,9 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(inclusionorExclusionCriteriaNotMet);
 	}
 
@@ -1318,8 +1510,13 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(InclusionorExclusionCriteriaNotMet inclusionorExclusionCriteriaNotMet) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET, SdtmPackage.Literals.INCLUSIONOR_EXCLUSION_CRITERIA_NOT_MET.getEAllOperations().get(73));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -1327,8 +1524,9 @@ public class InclusionorExclusionCriteriaNotMetOperations extends ClinicalStatem
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(inclusionorExclusionCriteriaNotMet);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());

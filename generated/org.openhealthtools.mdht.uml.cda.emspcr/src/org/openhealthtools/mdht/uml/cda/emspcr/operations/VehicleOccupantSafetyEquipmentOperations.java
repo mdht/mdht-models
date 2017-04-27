@@ -11,19 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.VehicleOccupantSafetyEquipment;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +36,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementOperations {
+public class VehicleOccupantSafetyEquipmentOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,7 +72,7 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,27 +88,38 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	public static boolean validateVehicleOccupantSafetyEquipmentTemplateId(
 			VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT);
 			try {
-				VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vehicleOccupantSafetyEquipment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("VehicleOccupantSafetyEquipmentTemplateId"),
-					new Object[] { vehicleOccupantSafetyEquipment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vehicleOccupantSafetyEquipment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("VehicleOccupantSafetyEquipmentVehicleOccupantSafetyEquipmentTemplateId"),
+						 new Object [] { vehicleOccupantSafetyEquipment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -132,7 +144,7 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,26 +160,38 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	public static boolean validateVehicleOccupantSafetyEquipmentMoodCode(
 			VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT);
 			try {
-				VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vehicleOccupantSafetyEquipment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("VehicleOccupantSafetyEquipmentMoodCode"),
-					new Object[] { vehicleOccupantSafetyEquipment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vehicleOccupantSafetyEquipment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("VehicleOccupantSafetyEquipmentVehicleOccupantSafetyEquipmentMoodCode"),
+						 new Object [] { vehicleOccupantSafetyEquipment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -181,9 +205,9 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67499-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67499-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVehicleOccupantSafetyEquipmentCode(VehicleOccupantSafetyEquipment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vehicle Occupant Safety Equipment Code</em>}' invariant operation.
@@ -194,7 +218,7 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,26 +234,38 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	public static boolean validateVehicleOccupantSafetyEquipmentCode(
 			VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT);
 			try {
-				VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vehicleOccupantSafetyEquipment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE,
-					EmspcrPlugin.INSTANCE.getString("VehicleOccupantSafetyEquipmentCode"),
-					new Object[] { vehicleOccupantSafetyEquipment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vehicleOccupantSafetyEquipment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_CODE,
+						 EmspcrPlugin.INSTANCE.getString("VehicleOccupantSafetyEquipmentVehicleOccupantSafetyEquipmentCode"),
+						 new Object [] { vehicleOccupantSafetyEquipment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -243,9 +279,9 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA17375-9' or value.code = 'LA17376-7' or value.code = 'LA17377-5' or value.code = 'LA17378-3' or value.code = 'LA17379-1' or value.code = 'LA17380-9' or value.code = 'LA17382-5' or value.code = 'LA46-8' or value.code = 'LA9381-0' or value.code = 'LA9391-9' or value.code = 'LA9392-7' or value.code = 'LA9393-5')))";
+	protected static final String VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA17375-9' or value.code = 'LA17376-7' or value.code = 'LA17377-5' or value.code = 'LA17378-3' or value.code = 'LA17379-1' or value.code = 'LA17380-9' or value.code = 'LA17382-5' or value.code = 'LA46-8' or value.code = 'LA9381-0' or value.code = 'LA9391-9' or value.code = 'LA9392-7' or value.code = 'LA9393-5')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVehicleOccupantSafetyEquipmentValue(VehicleOccupantSafetyEquipment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vehicle Occupant Safety Equipment Value</em>}' invariant operation.
@@ -256,7 +292,7 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -272,26 +308,38 @@ public class VehicleOccupantSafetyEquipmentOperations extends ClinicalStatementO
 	public static boolean validateVehicleOccupantSafetyEquipmentValue(
 			VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT);
 			try {
-				VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vehicleOccupantSafetyEquipment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE,
-					EmspcrPlugin.INSTANCE.getString("VehicleOccupantSafetyEquipmentValue"),
-					new Object[] { vehicleOccupantSafetyEquipment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vehicleOccupantSafetyEquipment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__VEHICLE_OCCUPANT_SAFETY_EQUIPMENT_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("VehicleOccupantSafetyEquipmentVehicleOccupantSafetyEquipmentValue"),
+						 new Object [] { vehicleOccupantSafetyEquipment }));
+			}
+			 
 			return false;
 		}
 		return true;

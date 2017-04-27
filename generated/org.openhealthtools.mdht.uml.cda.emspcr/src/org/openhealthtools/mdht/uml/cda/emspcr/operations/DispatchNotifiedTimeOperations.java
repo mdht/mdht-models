@@ -12,19 +12,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.DispatchNotifiedTime;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -44,7 +38,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations {
+public class DispatchNotifiedTimeOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -73,7 +74,7 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_NOTIFIED_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_NOTIFIED_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,26 +89,38 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 
 	public static boolean validateDispatchNotifiedTimeTemplateId(DispatchNotifiedTime dispatchNotifiedTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_NOTIFIED_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_NOTIFIED_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_NOTIFIED_TIME);
 			try {
-				VALIDATE_DISPATCH_NOTIFIED_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_NOTIFIED_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_NOTIFIED_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_NOTIFIED_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_NOTIFIED_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchNotifiedTime)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_NOTIFIED_TIME__DISPATCH_NOTIFIED_TIME_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("DispatchNotifiedTimeTemplateId"),
-					new Object[] { dispatchNotifiedTime }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_NOTIFIED_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchNotifiedTime)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_NOTIFIED_TIME__DISPATCH_NOTIFIED_TIME_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("DispatchNotifiedTimeDispatchNotifiedTimeTemplateId"),
+						 new Object [] { dispatchNotifiedTime }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -132,7 +145,7 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_NOTIFIED_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_NOTIFIED_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,26 +160,38 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 
 	public static boolean validateDispatchNotifiedTimeMoodCode(DispatchNotifiedTime dispatchNotifiedTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_NOTIFIED_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_NOTIFIED_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_NOTIFIED_TIME);
 			try {
-				VALIDATE_DISPATCH_NOTIFIED_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_NOTIFIED_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_NOTIFIED_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_NOTIFIED_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_NOTIFIED_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchNotifiedTime)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_NOTIFIED_TIME__DISPATCH_NOTIFIED_TIME_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("DispatchNotifiedTimeMoodCode"),
-					new Object[] { dispatchNotifiedTime }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_NOTIFIED_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchNotifiedTime)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_NOTIFIED_TIME__DISPATCH_NOTIFIED_TIME_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchNotifiedTimeDispatchNotifiedTimeMoodCode"),
+						 new Object [] { dispatchNotifiedTime }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -191,7 +216,7 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_NOTIFIED_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_NOTIFIED_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -206,25 +231,38 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 
 	public static boolean validateDispatchNotifiedTimeCodeP(DispatchNotifiedTime dispatchNotifiedTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_NOTIFIED_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_NOTIFIED_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_NOTIFIED_TIME);
 			try {
-				VALIDATE_DISPATCH_NOTIFIED_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_NOTIFIED_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_NOTIFIED_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_NOTIFIED_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_NOTIFIED_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchNotifiedTime)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_NOTIFIED_TIME__DISPATCH_NOTIFIED_TIME_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("DispatchNotifiedTimeCodeP"), new Object[] { dispatchNotifiedTime }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_NOTIFIED_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchNotifiedTime)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_NOTIFIED_TIME__DISPATCH_NOTIFIED_TIME_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("DispatchNotifiedTimeDispatchNotifiedTimeCodeP"),
+						 new Object [] { dispatchNotifiedTime }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -236,7 +274,7 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 				}
 				passToken.add(dispatchNotifiedTime);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -250,9 +288,9 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '69470-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69470-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDispatchNotifiedTimeCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Code</em>}' invariant operation.
@@ -263,7 +301,7 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -278,33 +316,44 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 
 	public static boolean validateDispatchNotifiedTimeCode(DispatchNotifiedTime dispatchNotifiedTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.DispatchNotifiedTimeCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.DispatchNotifiedTimeCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(dispatchNotifiedTime)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		if (VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_NOTIFIED_TIME);
 			try {
-				VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchNotifiedTime)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_NOTIFIED_TIME__DISPATCH_NOTIFIED_TIME_CODE,
-					EmspcrPlugin.INSTANCE.getString("DispatchNotifiedTimeCode"), new Object[] { dispatchNotifiedTime }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchNotifiedTime)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_NOTIFIED_TIME__DISPATCH_NOTIFIED_TIME_CODE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchNotifiedTimeDispatchNotifiedTimeCode"),
+						 new Object [] { dispatchNotifiedTime }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -329,7 +378,7 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_NOTIFIED_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_NOTIFIED_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -344,25 +393,38 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 
 	public static boolean validateDispatchNotifiedTimeValue(DispatchNotifiedTime dispatchNotifiedTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_NOTIFIED_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_NOTIFIED_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_NOTIFIED_TIME);
 			try {
-				VALIDATE_DISPATCH_NOTIFIED_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_NOTIFIED_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_NOTIFIED_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_NOTIFIED_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_NOTIFIED_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchNotifiedTime)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_NOTIFIED_TIME__DISPATCH_NOTIFIED_TIME_VALUE,
-					EmspcrPlugin.INSTANCE.getString("DispatchNotifiedTimeValue"), new Object[] { dispatchNotifiedTime }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_NOTIFIED_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchNotifiedTime)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_NOTIFIED_TIME__DISPATCH_NOTIFIED_TIME_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchNotifiedTimeDispatchNotifiedTimeValue"),
+						 new Object [] { dispatchNotifiedTime }));
+			}
+			 
 			return false;
 		}
 		return true;

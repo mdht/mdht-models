@@ -3,33 +3,26 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeDiagnosisSection2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Discharge Diagnosis Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSectionImpl implements
-		DischargeDiagnosisSection2 {
+public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSectionImpl
+		implements DischargeDiagnosisSection2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -54,9 +47,20 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2(DiagnosticChain diagnostics,
+	public boolean validateDischargeDiagnosisSection2CETranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2(
+		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeDiagnosisSection2CETranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslationP(
 			this, diagnostics, context);
 	}
 
@@ -102,6 +106,18 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	public boolean validateHospitalDischargeDiagnosisSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(
 			this, diagnostics, context);
 	}
 

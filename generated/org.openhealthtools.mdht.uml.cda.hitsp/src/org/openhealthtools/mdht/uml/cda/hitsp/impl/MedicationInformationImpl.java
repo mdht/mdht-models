@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationInformation;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.MedicationInformationOperations;
@@ -26,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.ProductEntryImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Information</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,7 +54,8 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 */
 	public boolean validateMedicationInformationCodedProductName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationCodedProductName(this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationCodedProductName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -88,7 +85,8 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationInformationCodedBrandName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationInformationCodedBrandName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationCodedBrandName(this, diagnostics, context);
 	}
 
@@ -141,7 +139,7 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 */
 	@Override
 	public MedicationInformation init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -150,8 +148,9 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	 * @generated
 	 */
 	@Override
-	public MedicationInformation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public MedicationInformation init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // MedicationInformationImpl

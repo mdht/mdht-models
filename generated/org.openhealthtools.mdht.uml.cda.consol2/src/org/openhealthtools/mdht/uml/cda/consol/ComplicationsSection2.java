@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -15,7 +11,7 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,7 +20,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getComplicationsSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ComplicationsSectionTemplateId ComplicationsSectionCode ComplicationsSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.37' templateId.extension='2014-06-09' code.code='55109-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Complications' constraints.validation.dependOn.ComplicationsSectionCode='ComplicationsSectionCodeP' constraints.validation.info='ComplicationsSectionProblemObservation2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ComplicationsSectionTemplateId ComplicationsSectionCode ComplicationsSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.37' templateId.extension='2015-08-01' constraints.validation.info='ComplicationsSectionExplicitComplications ComplicationsSectionProblemObservation' code.code='55109-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Complications' constraints.validation.dependOn.ComplicationsSectionCode='ComplicationsSectionCodeP'"
  * @generated
  */
 public interface ComplicationsSection2 extends ComplicationsSection {
@@ -38,19 +34,7 @@ public interface ComplicationsSection2 extends ComplicationsSection {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
 	 * @generated
 	 */
-	boolean validateComplicationsSection2ExplicitComplications(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation2))'"
-	 * @generated
-	 */
-	boolean validateComplicationsSectionProblemObservation2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateComplicationsSectionExplicitComplications(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -66,7 +50,6 @@ public interface ComplicationsSection2 extends ComplicationsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ComplicationsSection2 init();
 
 	/**
@@ -74,6 +57,5 @@ public interface ComplicationsSection2 extends ComplicationsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ComplicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ComplicationsSection2

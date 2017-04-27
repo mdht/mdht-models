@@ -5,31 +5,31 @@
       <body>The General Status section describes general observations and readily observable attributes of the patient, including affect and demeanor, apparent age compared to actual age, gender, ethnicity, nutritional status based on appearance, body build and habitus (e.g., muscular, cachectic, obese), developmental or other deformities, gait and mobility, personal hygiene, evidence of distress, and voice quality and speech.</body>
     </ownedComment>
     <generalization xmi:id="_2P7e0BSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_2Pxt7hSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Pxt8BSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Pxt7xSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_qrBvsCzoEeG29eivM7bhbw" name="title" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uLFWESzoEeG29eivM7bhbw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uLFWECzoEeG29eivM7bhbw" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_qrBIoCzoEeG29eivM7bhbw" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tptuYCzoEeG29eivM7bhbw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tptHUCzoEeG29eivM7bhbw" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2Pxt8xSVEeGGzu7fmW9pXw" base_Class="_2Pxt6xSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.2.5" assigningAuthorityName="HL7">
     <ruleId>CONF:10457</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2Pxt9RSVEeGGzu7fmW9pXw" code="10210-3" displayName="GENERAL STATUS" base_Property="_2Pxt7hSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:15473</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2Pxt0hSVEeGGzu7fmW9pXw" name="PhysicalExamSection">
@@ -38,22 +38,22 @@
 The Physical Exam section may contain multiple nested subsections: Vital Signs, General Status, and those listed in the Additional Physical Examination Subsections appendix.</body>
     </ownedComment>
     <generalization xmi:id="_2RkdqxSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_2Pxt4hSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_fHjFcCzoEeG29eivM7bhbw" name="title" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h5PJ8SzoEeG29eivM7bhbw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h5PJ8CzoEeG29eivM7bhbw" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_fHgpMCzoEeG29eivM7bhbw" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jVS4QCzoEeG29eivM7bhbw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jVSRMCzoEeG29eivM7bhbw" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_sWz4oOcPEeGINOJ_SD9_dA" name="pressureUlcerObservation" association="_sWz4oucPEeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="../consol.uml#_9rQowOZbEeGINOJ_SD9_dA"/>
@@ -74,7 +74,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2Pxt3RSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:CodeSystemConstraint xmi:id="_2Pxt4xSVEeGGzu7fmW9pXw" code="29545-1" displayName="PHYSICAL EXAMINATION" base_Property="_2Pxt4hSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:15398</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2RqkMBSVEeGGzu7fmW9pXw" name="ReviewOfSystemsSection">
@@ -82,29 +82,29 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
       <body>The Review of Systems section contains a relevant collection of symptoms and functions systematically gathered by a clinician. It includes symptoms the patient is currently experiencing, some of which were not elicited during the history of present illness, as well as a potentially large number of pertinent negatives, for example, symptoms that the patient denied experiencing.</body>
     </ownedComment>
     <generalization xmi:id="_2RqkOhSVEeGGzu7fmW9pXw">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_2RqkNhSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_VzwKhCtWEeGlWN0TVxk9LA" name="title" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k8qDUCtWEeGlWN0TVxk9LA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k8pcQCtWEeGlWN0TVxk9LA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_VzwKgCtWEeGlWN0TVxk9LA" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lVxt8StWEeGlWN0TVxk9LA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lVxt8CtWEeGlWN0TVxk9LA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_TYymkBnUEeGs5a462vYX5Q" base_Class="_2RqkMBSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.18">
     <ruleId>CONF:10469</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2RqkNxSVEeGGzu7fmW9pXw" code="10187-3" displayName="REVIEW OF SYSTEMS" base_Property="_2RqkNhSVEeGGzu7fmW9pXw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:15436</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_lr2roCtWEeGlWN0TVxk9LA" base_Property="_VzwKhCtWEeGlWN0TVxk9LA">
@@ -114,12 +114,10 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ruleId>CONF:7815</ruleId>
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_g54lwCzoEeG29eivM7bhbw" base_Property="_fHjFcCzoEeG29eivM7bhbw">
-    <ruleId>CONF:7808</ruleId>
-    <ruleId>R2.0=CONF:1098-7808</ruleId>
+    <ruleId>CONF:7808, R2.1=CONF:1198-7808</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_itf4cCzoEeG29eivM7bhbw" base_Property="_fHgpMCzoEeG29eivM7bhbw">
-    <ruleId>CONF:7809</ruleId>
-    <ruleId>R2.0=CONF:1098-7809</ruleId>
+    <ruleId>CONF:7809, R2.1=CONF:1198-7809</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_ujBU8CzoEeG29eivM7bhbw" base_Property="_qrBIoCzoEeG29eivM7bhbw">
     <ruleId>CONF:7988</ruleId>
@@ -146,49 +144,46 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ownedEnd xmi:id="_u7pz8ucPEeGINOJ_SD9_dA" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_u7pz8ecPEeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_xNc3cOcPEeGINOJ_SD9_dA" severity="INFO" base_Association="_sWz4oucPEeGINOJ_SD9_dA">
-    <ruleId>CONF:17094</ruleId>
-    <ruleId>CONF:17095</ruleId>
+    <ruleId>CONF:17094, CONF:17095</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_xrgFYOcPEeGINOJ_SD9_dA" severity="INFO" base_Association="_t133oOcPEeGINOJ_SD9_dA">
-    <ruleId>CONF:17096</ruleId>
-    <ruleId>CONF:17097</ruleId>
+    <ruleId>CONF:17096, CONF:17097</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_yKvmIOcPEeGINOJ_SD9_dA" severity="INFO" base_Association="_u7pz8ecPEeGINOJ_SD9_dA">
-    <ruleId>CONF:17098</ruleId>
-    <ruleId>CONF:17099</ruleId>
+    <ruleId>CONF:17098, CONF:17099</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_4YgVsOZbEeGINOJ_SD9_dA" name="HighestPressureUlcerStage">
     <ownedComment xmi:id="_lI9UMOb2EeGINOJ_SD9_dA">
       <body>This observation contains a description of the wound tissue of the most severe or highest staged pressure ulcer observed on a patient.</body>
     </ownedComment>
     <generalization xmi:id="_mPs50Ob2EeGINOJ_SD9_dA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_qBIkEOb2EeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_aAD3sOb3EeGINOJ_SD9_dA" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_qBLnYOb2EeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_eiVwEOb3EeGINOJ_SD9_dA" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_qBLAUOb2EeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kCb7kOb3EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kCV08Ob3EeGINOJ_SD9_dA" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_qBJyMOb2EeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_qBMOcOb2EeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tF5gIOb3EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tFwWMOb3EeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_gliW4Ob3EeGINOJ_SD9_dA" base_Class="_4YgVsOZbEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.77">
@@ -208,7 +203,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ruleId>CONF:14731</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_nV4CQOb3EeGINOJ_SD9_dA" code="420905001" displayName="Highest Pressure Ulcer Stage" base_Property="_qBJyMOb2EeGINOJ_SD9_dA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:14732</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_tnRH0Ob3EeGINOJ_SD9_dA" base_Property="_qBMOcOb2EeGINOJ_SD9_dA">
@@ -219,51 +214,51 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
       <body>This clinical statement enumerates the number of pressure ulcers observed in a particular stage.</body>
     </ownedComment>
     <generalization xmi:id="_7c4sseZbEeGINOJ_SD9_dA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_4rvdsOb-EeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_6VXt8Ob-EeGINOJ_SD9_dA" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvduOb-EeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_JHTRMOb_EeGINOJ_SD9_dA" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvdteb-EeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VCTDkOb_EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VCQAQOb_EeGINOJ_SD9_dA" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvdseb-EeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvdueb-EeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nHyCQOb_EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nHtJwOb_EeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvdsub-EeGINOJ_SD9_dA" name="effectiveTime" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qCkYYOb_EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qChVEOb_EeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvdvOb-EeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tsXwoOb_EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsTfMOb_EeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4rvdv-b-EeGINOJ_SD9_dA" name="author" visibility="private" aggregation="composite" association="_4rvdwub-EeGINOJ_SD9_dA">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xRh5ceb_EeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xRh5cOb_EeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_DxAakOcCEeGINOJ_SD9_dA" name="entryRelationship" type="_EuSiMOcCEeGINOJ_SD9_dA" association="_DxKLkecCEeGINOJ_SD9_dA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PpH4EecCEeGINOJ_SD9_dA" value="1"/>
@@ -274,12 +269,12 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
         <body>INLINE&amp;typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ</body>
       </ownedComment>
       <generalization xmi:id="_EucTMOcCEeGINOJ_SD9_dA">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_FQgecOcCEeGINOJ_SD9_dA" name="typeCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_MHVMUOcCEeGINOJ_SD9_dA" value="SUBJ"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IRUkEOcCEeGINOJ_SD9_dA" name="observation" type="_lwnlkOcAEeGINOJ_SD9_dA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JOxDwOcCEeGINOJ_SD9_dA" value="1"/>
@@ -288,23 +283,23 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_lwnlkOcAEeGINOJ_SD9_dA" name="Observation">
         <generalization xmi:id="_lwr3AOcAEeGINOJ_SD9_dA">
-          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
         </generalization>
         <ownedAttribute xmi:id="_ng0-8OcAEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_qJm_EOcAEeGINOJ_SD9_dA" value="OBS"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_ng1mAOcAEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_uDMfwOcAEeGINOJ_SD9_dA" value="EVN"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_ng1mAecAEeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fvPCAevOEeGFM5lVxX0tzg" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fvPCAOvOEeGFM5lVxX0tzg" value="1"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
@@ -316,44 +311,36 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ownedEnd xmi:id="_DxKLkucCEeGINOJ_SD9_dA" type="_7c4ssOZbEeGINOJ_SD9_dA" association="_DxKLkecCEeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_PMNZ8Ob_EeGINOJ_SD9_dA" base_Class="_7c4ssOZbEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.76">
-    <ruleId>CONF:14707</ruleId>
-    <ruleId>CONF:14708</ruleId>
+    <ruleId>CONF:14707, CONF:14708</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_5NqfAOb-EeGINOJ_SD9_dA" base_Property="_4rvdsOb-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14705</ruleId>
-    <ruleId>R2.0=CONF:1098-14705</ruleId>
+    <ruleId>CONF:14705, R2.1=CONF:1198-14705</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_MfbqoOb_EeGINOJ_SD9_dA" base_Property="_4rvduOb-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14706</ruleId>
-    <ruleId>R2.0=CONF:1098-14706</ruleId>
+    <ruleId>CONF:14706, R2.1=CONF:1198-14706</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Tb4fYOb_EeGINOJ_SD9_dA" base_Property="_4rvdteb-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14709</ruleId>
-    <ruleId>R2.0=CONF:1098-14709</ruleId>
+    <ruleId>CONF:14709, R2.1=CONF:1198-14709</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_WuTSYOb_EeGINOJ_SD9_dA" base_Property="_4rvdseb-EeGINOJ_SD9_dA">
     <ruleId>CONF:14767</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_YdKA4Ob_EeGINOJ_SD9_dA" code="2264892003" displayName="number of pressure ulcers" base_Property="_4rvdseb-EeGINOJ_SD9_dA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:14768</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_eutegOb_EeGINOJ_SD9_dA" base_Property="_4rvdueb-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14714</ruleId>
-    <ruleId>R2.0=CONF:1098-14714</ruleId>
+    <ruleId>CONF:14714, R2.1=CONF:1198-14714</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_jwzfYOb_EeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_4rvdueb-EeGINOJ_SD9_dA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:14714</ruleId>
-    <ruleId>R2.0=CONF:1098-19108</ruleId>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:14714, R2.1=CONF:1198-19108</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_pBadYOb_EeGINOJ_SD9_dA" base_Property="_4rvdsub-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14715</ruleId>
-    <ruleId>R2.0=CONF:1098-14715</ruleId>
+    <ruleId>CONF:14715, R2.1=CONF:1198-14715</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_usV_4Ob_EeGINOJ_SD9_dA" base_Property="_4rvdvOb-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14771</ruleId>
-    <ruleId>R2.0=CONF:1098-14771</ruleId>
+    <ruleId>CONF:14771, R2.1=CONF:1198-14771</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_F9vX4OcCEeGINOJ_SD9_dA" base_Property="_FQgecOcCEeGINOJ_SD9_dA">
     <ruleId>CONF:14719</ruleId>
@@ -371,8 +358,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ruleId>CONF:14725</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_ydqVYOb_EeGINOJ_SD9_dA" severity="INFO" base_Association="_4rvdwub-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14717</ruleId>
-    <ruleId>R2.0=CONF:1098-14717</ruleId>
+    <ruleId>CONF:14717, R2.1=CONF:1198-14717</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_QGo6gOcCEeGINOJ_SD9_dA" base_Association="_DxKLkecCEeGINOJ_SD9_dA">
     <ruleId>CONF:14718</ruleId>
@@ -382,104 +368,104 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
       <body>This template represents the Wound Measurement Observations of wound width, depth and length.</body>
     </ownedComment>
     <generalization xmi:id="_94MpsZp7EeOK6dzbL4VoTA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_Bs8GoJp8EeOK6dzbL4VoTA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_5tYZoJp8EeOK6dzbL4VoTA" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bs8tsJp8EeOK6dzbL4VoTA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_6UxJwJp8EeOK6dzbL4VoTA" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bs8GpZp8EeOK6dzbL4VoTA" name="id" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Eko3EZp9EeOK6dzbL4VoTA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Eko3EJp9EeOK6dzbL4VoTA" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bs8GoZp8EeOK6dzbL4VoTA" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bs8tsZp8EeOK6dzbL4VoTA" name="statusCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FGmUoJp9EeOK6dzbL4VoTA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FGltkJp9EeOK6dzbL4VoTA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bs8Gopp8EeOK6dzbL4VoTA" name="effectiveTime" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FmkOIJp9EeOK6dzbL4VoTA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FmjnEJp9EeOK6dzbL4VoTA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bs9UwJp8EeOK6dzbL4VoTA" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GNqDUZp9EeOK6dzbL4VoTA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GNqDUJp9EeOK6dzbL4VoTA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_VBPo4Jp8EeOK6dzbL4VoTA" base_Class="_94MpsJp7EeOK6dzbL4VoTA" templateId="2.16.840.1.113883.10.20.22.4.133">
-    <ruleId>CONF:29928</ruleId>
-    <ruleId>CONF:29929</ruleId>
+    <ruleId>CONF:1098-29928</ruleId>
+    <ruleId>CONF:1098-29929</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_8XUQUJp8EeOK6dzbL4VoTA" base_Property="_Bs8GoJp8EeOK6dzbL4VoTA">
-    <ruleId>CONF:29926</ruleId>
+    <ruleId>CONF:1098-29926</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_94HUsJp8EeOK6dzbL4VoTA" base_Property="_Bs8tsJp8EeOK6dzbL4VoTA">
-    <ruleId>CONF:29927</ruleId>
+    <ruleId>CONF:1098-29927</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="__A13UJp8EeOK6dzbL4VoTA" base_Property="_Bs8GpZp8EeOK6dzbL4VoTA">
-    <ruleId>CONF:29930</ruleId>
+    <ruleId>CONF:1098-29930</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_AJYMsJp9EeOK6dzbL4VoTA" base_Property="_Bs8GoZp8EeOK6dzbL4VoTA"/>
   <CDA:PropertyValidation xmi:id="_Ary9QJp9EeOK6dzbL4VoTA" base_Property="_Bs8tsZp8EeOK6dzbL4VoTA">
-    <ruleId>CONF:29933</ruleId>
+    <ruleId>CONF:1098-29933</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_BL29YJp9EeOK6dzbL4VoTA" base_Property="_Bs8Gopp8EeOK6dzbL4VoTA">
-    <ruleId>CONF:29935</ruleId>
+    <ruleId>CONF:1098-29935</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_BoAt4Jp9EeOK6dzbL4VoTA" base_Property="_Bs9UwJp8EeOK6dzbL4VoTA">
-    <ruleId>CONF:29936</ruleId>
+    <ruleId>CONF:1098-29936</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_E1sVYJp-EeOK6dzbL4VoTA" base_Property="_Bs8GoZp8EeOK6dzbL4VoTA">
     <reference href="../consol-vocab.uml#_gEooYZp9EeOK6dzbL4VoTA"/>
-    <ruleId>CONF:29931</ruleId>
+    <ruleId>CONF:1098-29931</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_PIuEYJp-EeOK6dzbL4VoTA" code="completed" displayName="Completed" base_Property="_Bs8tsZp8EeOK6dzbL4VoTA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:29934</ruleId>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-29934</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Class xmi:id="_09uFMJp_EeOK6dzbL4VoTA" name="WoundObservation">
+  <uml:Class xmi:id="_09uFMJp_EeOK6dzbL4VoTA" name="LongitudinalCareWoundObservation">
     <ownedComment xmi:id="_bkc6YJqAEeOK6dzbL4VoTA">
-      <body>This template represents acquired or surgical wounds commonly found in the long term care population. It is not intended to encompass all wound types. The template includes the general type of wound (e.g., pressure ulcers, surgical incisions, deep tissue injury wounds) and may include wound measurements and wound characteristics.</body>
+      <body>This template represents acquired or surgical wounds and is not intended to encompass all wound types. The template applies to wounds such as pressure ulcers, surgical incisions, and deep tissue injury wounds. Information in this template may include information about the wound measurements characteristics.</body>
     </ownedComment>
     <generalization xmi:id="_09uFMZp_EeOK6dzbL4VoTA">
       <general xmi:type="uml:Class" href="consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
     </generalization>
     <ownedAttribute xmi:id="_D3928JqAEeOK6dzbL4VoTA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_l7Rc4JqDEeOK6dzbL4VoTA" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_D3928pqAEeOK6dzbL4VoTA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_n6MnsJqDEeOK6dzbL4VoTA" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_D3928ZqAEeOK6dzbL4VoTA" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_D3_FEJqAEeOK6dzbL4VoTA" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDWmYZqDEeOK6dzbL4VoTA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XDWmYJqDEeOK6dzbL4VoTA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_b7VP0K75EeORf5eJaKt1KQ" name="authorParticipation" association="_b7XsEK75EeORf5eJaKt1KQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
@@ -512,81 +498,83 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ownedAttribute xmi:id="_FCpMAD6wEeSQrqXAgqtM5g" name="targetSiteCode" visibility="private" type="_tJODUD6wEeSQrqXAgqtM5g" aggregation="composite">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l47skT6wEeSQrqXAgqtM5g"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l47skD6wEeSQrqXAgqtM5g" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_tJODUD6wEeSQrqXAgqtM5g" name="CD">
       <ownedComment xmi:id="_yfKNQD6wEeSQrqXAgqtM5g">
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_tJOqYD6wEeSQrqXAgqtM5g">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_uVvg0D6wEeSQrqXAgqtM5g" name="qualifier" visibility="private" type="__nvNED6wEeSQrqXAgqtM5g" aggregation="composite">
         <ownedComment xmi:id="_Ze60MD62EeSQrqXAgqtM5g">
-          <body>If targetSite/qualifierCode name/value pairs are used, care must be taken to avoid conflict with the SNOMED-CT body structure code used in observation/value.  SNOMED-CT body structure codes are often pre-coordinated with laterality.</body>
+          <body>If targetSite/qualifierCode name/value pairs are used, care must be taken to avoid conflict with the SNOMED-CT body structure code used in observation/value. SNOMED-CT body structure codes are often pre-coordinated with laterality.</body>
         </ownedComment>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uVvg0T6wEeSQrqXAgqtM5g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uVvg0j6wEeSQrqXAgqtM5g" value="*"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__CseMD56Ed6cla2oXsPtlA"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#__CseMD56Ed6cla2oXsPtlA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="__nvNED6wEeSQrqXAgqtM5g" name="CR">
         <generalization xmi:id="__nv0ID6wEeSQrqXAgqtM5g">
-          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_gokTgD55Ed6cla2oXsPtlA"/>
+          <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_gokTgD55Ed6cla2oXsPtlA"/>
         </generalization>
         <ownedAttribute xmi:id="_A9KH4D6xEeSQrqXAgqtM5g" name="name" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_hSvR4D55Ed6cla2oXsPtlA"/>
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_hSvR4D55Ed6cla2oXsPtlA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C7wikD6xEeSQrqXAgqtM5g" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C7v7gD6xEeSQrqXAgqtM5g" value="1"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_1BffAD56Ed6cla2oXsPtlA"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_1BffAD56Ed6cla2oXsPtlA"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_A9KH4z6xEeSQrqXAgqtM5g" name="value" visibility="private" type="_TLQ3ED6xEeSQrqXAgqtM5g" aggregation="composite">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DhKVsT6xEeSQrqXAgqtM5g" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DhKVsD6xEeSQrqXAgqtM5g" value="1"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_1Vdj4D56Ed6cla2oXsPtlA"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_1Vdj4D56Ed6cla2oXsPtlA"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_TLQ3ED6xEeSQrqXAgqtM5g" name="CD">
           <ownedRule xmi:id="_aAebYD6xEeSQrqXAgqtM5g" name="valueTerminology" constrainedElement="_TLQ3ED6xEeSQrqXAgqtM5g">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_b9VJoD6xEeSQrqXAgqtM5g">
               <language>Analysis</language>
-              <body>The @code SHOULD be selected from ValueSet TargetSite Qualifiers 2.16.840.1.113883.11.20.9.37 STATIC</body>
+              <language>OCL</language>
+              <body>The @code SHOULD be selected from ValueSet TargetSite Qualifiers 2.16.840.1.113883.11.20.9.37 STATIC 2014-09-01</body>
+              <body>code = '2.16.840.1.113883.6.96'</body>
             </specification>
           </ownedRule>
           <generalization xmi:id="_TLQ3ET6xEeSQrqXAgqtM5g">
-            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </generalization>
           <ownedAttribute xmi:id="_T9TYAD6xEeSQrqXAgqtM5g" name="code" visibility="private">
-            <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U7gFoT6xEeSQrqXAgqtM5g" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U7gFoD6xEeSQrqXAgqtM5g" value="1"/>
-            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
+            <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
   <CDA:PropertyValidation xmi:id="_UXrxsJqAEeOK6dzbL4VoTA" base_Property="_D3_FEJqAEeOK6dzbL4VoTA"/>
-  <CDA:CDATemplate xmi:id="_XjgNcJqAEeOK6dzbL4VoTA" base_Class="_09uFMJp_EeOK6dzbL4VoTA" templateId="2.16.840.1.113883.10.20.22.4.114">
-    <ruleId>CONF:29473</ruleId>
-    <ruleId>CONF:29474</ruleId>
+  <CDA:CDATemplate xmi:id="_XjgNcJqAEeOK6dzbL4VoTA" base_Class="_09uFMJp_EeOK6dzbL4VoTA" templateId="2.16.840.1.113883.10.20.22.4.114" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-29473</ruleId>
+    <ruleId>CONF:1198-29474</ruleId>
+    <ruleId>CONF:1198-32913</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_R48-EJqDEeOK6dzbL4VoTA" base_Property="_D3928JqAEeOK6dzbL4VoTA">
-    <ruleId>CONF:31012</ruleId>
+    <ruleId>CONF:1198-31012</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_SVRGoJqDEeOK6dzbL4VoTA" base_Property="_D3928pqAEeOK6dzbL4VoTA">
-    <ruleId>CONF:31013</ruleId>
+    <ruleId>CONF:1198-31013</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_TEF7gJqDEeOK6dzbL4VoTA" base_Property="_D3928ZqAEeOK6dzbL4VoTA">
-    <ruleId>CONF:29476</ruleId>
+    <ruleId>CONF:1198-29476</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_UhUHcJqDEeOK6dzbL4VoTA" severity="WARNING"/>
   <CDA:CodeSystemConstraint xmi:id="_CaNisJqEEeOK6dzbL4VoTA" code="ASSERTION" displayName="assertion" base_Property="_D3928ZqAEeOK6dzbL4VoTA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:29477</ruleId>
-    <ruleId>CONF:31010</ruleId>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-29477, CONF:1198-31010</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_lfiGoJqEEeOK6dzbL4VoTA" base_Property="_D3_FEJqAEeOK6dzbL4VoTA" severity="WARNING">
     <reference href="../consol-vocab.uml#_1Vl9MZqAEeOK6dzbL4VoTA"/>
-    <ruleId>CONF:29485</ruleId>
+    <ruleId>CONF:1198-29485</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_5DBe8JqFEeOK6dzbL4VoTA" severity="WARNING">
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
@@ -596,50 +584,47 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ownedEnd xmi:id="_YQqmsZqGEeOK6dzbL4VoTA" type="_09uFMJp_EeOK6dzbL4VoTA" association="_YQqmsJqGEeOK6dzbL4VoTA"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_bMgswJqGEeOK6dzbL4VoTA" severity="WARNING" base_Association="_YQqmsJqGEeOK6dzbL4VoTA" typeCode="COMP">
-    <ruleId>CONF:29495</ruleId>
-    <ruleId>CONF:29496</ruleId>
-    <ruleId>CONF:29497</ruleId>
+    <ruleId>CONF:1198-29495, CONF:1198-29496, CONF:1198-29497</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_IJ6JEJqHEeOK6dzbL4VoTA" memberEnd="_IJ468JqHEeOK6dzbL4VoTA _IJ6JEZqHEeOK6dzbL4VoTA">
     <ownedEnd xmi:id="_IJ6JEZqHEeOK6dzbL4VoTA" type="_09uFMJp_EeOK6dzbL4VoTA" association="_IJ6JEJqHEeOK6dzbL4VoTA"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_LB5C0JqHEeOK6dzbL4VoTA" severity="WARNING" base_Association="_IJ6JEJqHEeOK6dzbL4VoTA" typeCode="COMP">
-    <ruleId>CONF:29503</ruleId>
-    <ruleId>CONF:29504</ruleId>
-    <ruleId>CONF:29505</ruleId>
+    <ruleId>CONF:1198-29503, CONF:1198-29504, CONF:1198-29505</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_mSNZYJqHEeOK6dzbL4VoTA" memberEnd="_mSMLQJqHEeOK6dzbL4VoTA _mSNZYZqHEeOK6dzbL4VoTA">
     <ownedEnd xmi:id="_mSNZYZqHEeOK6dzbL4VoTA" type="_09uFMJp_EeOK6dzbL4VoTA" association="_mSNZYJqHEeOK6dzbL4VoTA"/>
   </uml:Association>
-  <CDA:EntryRelationship xmi:id="_rSn_QJqHEeOK6dzbL4VoTA" severity="WARNING" base_Association="_mSNZYJqHEeOK6dzbL4VoTA" typeCode="COMP">
-    <ruleId>CONF:31893</ruleId>
-    <ruleId>CONF:31894</ruleId>
-    <ruleId>CONF:31919</ruleId>
+  <CDA:EntryRelationship xmi:id="_rSn_QJqHEeOK6dzbL4VoTA" severity="INFO" base_Association="_mSNZYJqHEeOK6dzbL4VoTA" typeCode="COMP">
+    <ruleId>CONF:1198-31893, CONF:1198-31894, CONF:1198-31919</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_CDn9gJ2LEeORR8_YW0n_jQ" name="PhysicalFindingsOfSkinSection">
     <ownedComment xmi:id="_VjDKoJ2LEeORR8_YW0n_jQ">
       <body>The Skin Physical Exam section includes direct observations made by the clinician. This section includes only observations made by the examining clinician using inspection and palpation; it does not include laboratory or imaging findings. The examination may be reported as a collection of random clinical statements or it may be reported categorically.</body>
     </ownedComment>
+    <ownedComment xmi:id="_k98SkPm-EeSGHoih4Jm09A">
+      <body>REMOVED</body>
+    </ownedComment>
     <generalization xmi:id="_CDn9gZ2LEeORR8_YW0n_jQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_HoxBEJ2LEeORR8_YW0n_jQ" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_emycAZ2LEeORR8_YW0n_jQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_emycAJ2LEeORR8_YW0n_jQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_HoxoIJ2LEeORR8_YW0n_jQ" name="title" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e7PpEJ2LEeORR8_YW0n_jQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e7PCAJ2LEeORR8_YW0n_jQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_HoxBE52LEeORR8_YW0n_jQ" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fQPBoJ2LEeORR8_YW0n_jQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fQOakJ2LEeORR8_YW0n_jQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_EOIQwJ2MEeORR8_YW0n_jQ" name="woundObservation" type="_09uFMJp_EeOK6dzbL4VoTA" association="_EOJe4J2MEeORR8_YW0n_jQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EOIQwZ2MEeORR8_YW0n_jQ"/>
@@ -660,7 +645,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ruleId>CONF:29904</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_kEc-kJ2LEeORR8_YW0n_jQ" code="10206-1" displayName="Physical findings of Skin Narrative" base_Property="_HoxBEJ2LEeORR8_YW0n_jQ">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:29902</ruleId>
     <ruleId>CONF:32150</ruleId>
   </CDA:CodeSystemConstraint>
@@ -675,19 +660,27 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ownedEnd xmi:id="_b7XsEa75EeORf5eJaKt1KQ" type="_09uFMJp_EeOK6dzbL4VoTA" association="_b7XsEK75EeORf5eJaKt1KQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_cpIJ8K75EeORf5eJaKt1KQ" severity="WARNING" base_Association="_b7XsEK75EeORf5eJaKt1KQ">
-    <ruleId>CONF:31542</ruleId>
+    <ruleId>CONF:1198-31542</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_-nZiYP4uEeObaveuCI77uA" clientDependency="_Ug1T0P4vEeObaveuCI77uA" name="PhysicalExamSection2">
     <ownedComment xmi:id="_ITYfgP4vEeObaveuCI77uA">
-      <body>The section includes direct observations made by a clinician. The examination may include the use of simple instruments and may also describe simple maneuvers performed directly on the patient's body. &#xD;
-It also includes observations made by the examining clinician using only inspection, palpation, auscultation, and percussion. It does not include laboratory or imaging findings. &#xD;
-The exam may be limited to pertinent body systems based on the patient's chief complaint or it may include a comprehensive examination. The examination may be reported as a collection of random clinical statements or it may be reported categorically. &#xD;
-The Physical Exam Section may contain multiple nested subsections.</body>
+      <body>&lt;p>&#xD;
+The section includes direct observations made by a clinician. The examination may include the use of simple instruments and may also describe simple maneuvers performed directly on the patient's body.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+It also includes observations made by the examining clinician using only inspection, palpation, auscultation, and percussion. It does not include laboratory or imaging findings.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+The exam may be limited to pertinent body systems based on the patient's chief complaint or it may include a comprehensive examination. The examination may be reported as a collection of random clinical statements or it may be reported categorically.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+The Physical Exam Section may contain multiple nested subsections.&#xD;
+&lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_-nb-oP4uEeObaveuCI77uA" general="_2Pxt0hSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_Ug1T0P4vEeObaveuCI77uA" name="PhysicalExamSection" client="_-nZiYP4uEeObaveuCI77uA" supplier="_2Pxt0hSVEeGGzu7fmW9pXw" contract="_2Pxt0hSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_buWDYP4vEeObaveuCI77uA" name="code" visibility="private" redefinedProperty="_2Pxt4hSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_1IPq4P4vEeObaveuCI77uA" name="woundObservation" type="_09uFMJp_EeOK6dzbL4VoTA" association="_1ISHIP4vEeObaveuCI77uA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1IPq4f4vEeObaveuCI77uA"/>
@@ -718,84 +711,79 @@ The Physical Exam Section may contain multiple nested subsections.</body>
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_ASUmAaZKEeSy2PrVxD6riw">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_dJUMoEcEEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_dJUMoEcEEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_FSD2cKZKEeSy2PrVxD6riw" name="section" visibility="private" type="_Tk0xcKZKEeSy2PrVxD6riw" aggregation="composite">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FSD2caZKEeSy2PrVxD6riw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FSD2cqZKEeSy2PrVxD6riw" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_RlypgTxYEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_RlypgTxYEd6JwqSGecoePg"/>
         <association href="../consol.uml#_FSEdgKZKEeSy2PrVxD6riw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Tk0xcKZKEeSy2PrVxD6riw" name="Section">
         <generalization xmi:id="_Tk1YgKZKEeSy2PrVxD6riw">
-          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
         </generalization>
         <ownedAttribute xmi:id="_VSB6IKZKEeSy2PrVxD6riw" name="code" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aGu_QKZKEeSy2PrVxD6riw" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aGuYMKZKEeSy2PrVxD6riw" value="1"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_VSB6JqZKEeSy2PrVxD6riw" name="title" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_azpIkKZKEeSy2PrVxD6riw" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_azohgKZKEeSy2PrVxD6riw" value="1"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_VSB6I6ZKEeSy2PrVxD6riw" name="text" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+          <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ba7yEKZKEeSy2PrVxD6riw" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ba7LAKZKEeSy2PrVxD6riw" value="1"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_CtZHYP4vEeObaveuCI77uA" base_Class="_-nZiYP4uEeObaveuCI77uA" templateId="2.16.840.1.113883.10.20.2.10" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-7806</ruleId>
-    <ruleId>CONF:1098-10465</ruleId>
-    <ruleId>CONF:1098-32587</ruleId>
+  <CDA:CDATemplate xmi:id="_CtZHYP4vEeObaveuCI77uA" base_Class="_-nZiYP4uEeObaveuCI77uA" templateId="2.16.840.1.113883.10.20.2.10" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7806, CONF:1198-10465, CONF:1198-32587</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_S90o8P4vEeObaveuCI77uA" base_Generalization="_-nb-oP4uEeObaveuCI77uA"/>
   <CDA:CodeSystemConstraint xmi:id="_buWqcP4vEeObaveuCI77uA" code="29545-1" displayName="Physical Findings" base_Property="_buWDYP4vEeObaveuCI77uA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15398</ruleId>
-    <ruleId>CONF:1098-30931</ruleId>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-15398, CONF:1198-30931</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_buX4kP4vEeObaveuCI77uA" base_Property="_buWDYP4vEeObaveuCI77uA">
-    <ruleId>CONF:1098-15397</ruleId>
+    <ruleId>CONF:1198-15397</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_1ISHIP4vEeObaveuCI77uA" memberEnd="_1IPq4P4vEeObaveuCI77uA _1ISHIf4vEeObaveuCI77uA">
     <ownedEnd xmi:id="_1ISHIf4vEeObaveuCI77uA" type="_-nZiYP4uEeObaveuCI77uA" association="_1ISHIP4vEeObaveuCI77uA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_2BMsIP4vEeObaveuCI77uA" severity="INFO" base_Association="_1ISHIP4vEeObaveuCI77uA">
-    <ruleId>CONF:1098-31926</ruleId>
-    <ruleId>CONF:1098-31927</ruleId>
+    <ruleId>CONF:1198-31926, CONF:1198-31927</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_mt0tMD6wEeSQrqXAgqtM5g" severity="WARNING" base_Property="_FCpMAD6wEeSQrqXAgqtM5g"/>
   <CDA:ValueSetConstraint xmi:id="_n3GpcD6wEeSQrqXAgqtM5g" base_Property="_FCpMAD6wEeSQrqXAgqtM5g" severity="WARNING">
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:29488</ruleId>
+    <ruleId>CONF:1198-29488</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8HnVQD6wEeSQrqXAgqtM5g" severity="INFO" base_Property="_uVvg0D6wEeSQrqXAgqtM5g">
-    <ruleId>CONF:29490</ruleId>
+    <ruleId>CONF:1198-29490</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_CBGRID6xEeSQrqXAgqtM5g" base_Property="_A9KH4D6xEeSQrqXAgqtM5g">
-    <ruleId>CONF:29491</ruleId>
+    <ruleId>CONF:1198-29491</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_CVXQ8D6xEeSQrqXAgqtM5g" base_Property="_A9KH4z6xEeSQrqXAgqtM5g">
-    <ruleId>CONF:29493</ruleId>
+    <ruleId>CONF:1198-29493</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_HKsBID6xEeSQrqXAgqtM5g" code="272741003" displayName="laterality" base_Property="_A9KH4D6xEeSQrqXAgqtM5g">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:29492</ruleId>
-    <ruleId>CONF:31524</ruleId>
+    <ruleId>CONF:1198-29492, CONF:1198-31524</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_VJmzED6xEeSQrqXAgqtM5g" base_Property="_T9TYAD6xEeSQrqXAgqtM5g">
-    <ruleId>CONF:29494</ruleId>
+    <ruleId>CONF:1198-29494</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_bC9MED6xEeSQrqXAgqtM5g" severity="WARNING" base_Constraint="_aAebYD6xEeSQrqXAgqtM5g">
-    <ruleId>CONF:29494</ruleId>
+    <ruleId>CONF:1198-29494</ruleId>
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_YYgjwIC3EeS108flGLVEBA" clientDependency="_jv8goIC4EeS108flGLVEBA" name="NumberOfPressureUlcersObservation2">
     <ownedComment xmi:id="_awOMkIC4EeS108flGLVEBA">
@@ -803,9 +791,7 @@ The Physical Exam Section may contain multiple nested subsections.</body>
     </ownedComment>
     <generalization xmi:id="_YZLSIIC3EeS108flGLVEBA" general="_7c4ssOZbEeGINOJ_SD9_dA"/>
     <substitution xmi:id="_jv8goIC4EeS108flGLVEBA" name="NumberOfPressureUlcersObservation" client="_YYgjwIC3EeS108flGLVEBA" supplier="_7c4ssOZbEeGINOJ_SD9_dA" contract="_7c4ssOZbEeGINOJ_SD9_dA"/>
-    <ownedAttribute xmi:id="_nvQ5EIC8EeS108flGLVEBA" name="code" visibility="private" aggregation="composite" redefinedProperty="_4rvdseb-EeGINOJ_SD9_dA">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:id="_nvQ5EIC8EeS108flGLVEBA" name="code" visibility="private" type="_KMZXUE9gEeWsIc5CMrI4GA" aggregation="composite" redefinedProperty="_4rvdseb-EeGINOJ_SD9_dA"/>
     <ownedAttribute xmi:id="_sApxkIDDEeS108flGLVEBA" name="entryRelationship" type="_H1WAgIDEEeS108flGLVEBA" redefinedProperty="_DxAakOcCEeGINOJ_SD9_dA" association="_sApxk4DDEeS108flGLVEBA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CehFwYDEEeS108flGLVEBA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CehFwIDEEeS108flGLVEBA" value="1"/>
@@ -816,7 +802,7 @@ The Physical Exam Section may contain multiple nested subsections.</body>
       </ownedComment>
       <generalization xmi:id="_H1WAgYDEEeS108flGLVEBA" general="_EuSiMOcCEeGINOJ_SD9_dA"/>
       <ownedAttribute xmi:id="_Jq83QIDEEeS108flGLVEBA" name="typeCode" visibility="private" isReadOnly="true" redefinedProperty="_FQgecOcCEeGINOJ_SD9_dA">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_RCWioIDEEeS108flGLVEBA" value="SUBJ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_AvXm4IDFEeS108flGLVEBA" name="observation" type="_vE1pYIDFEeS108flGLVEBA" redefinedProperty="_IRUkEOcCEeGINOJ_SD9_dA" association="_AvXm44DFEeS108flGLVEBA">
@@ -826,92 +812,110 @@ The Physical Exam Section may contain multiple nested subsections.</body>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_vE1pYIDFEeS108flGLVEBA" name="Observation">
         <generalization xmi:id="_vE2QcIDFEeS108flGLVEBA" general="_lwnlkOcAEeGINOJ_SD9_dA"/>
         <ownedAttribute xmi:id="_0jK6UIDFEeS108flGLVEBA" name="classCode" visibility="private" isReadOnly="true" redefinedProperty="_ng0-8OcAEeGINOJ_SD9_dA">
-          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rotYIDFEeS108flGLVEBA" value="OBS"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_0jK6UoDFEeS108flGLVEBA" name="moodCode" visibility="private" isReadOnly="true" redefinedProperty="_ng1mAOcAEeGINOJ_SD9_dA">
-          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_ES0DAIDGEeS108flGLVEBA" value="EVN"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_0jK6UYDFEeS108flGLVEBA" name="code" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_0jK6U4DFEeS108flGLVEBA" name="value" visibility="private" aggregation="composite" redefinedProperty="_ng1mAecAEeGINOJ_SD9_dA">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2ZmbAIDGEeS108flGLVEBA" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2ZgUYIDGEeS108flGLVEBA" value="1"/>
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_KMZXUE9gEeWsIc5CMrI4GA" name="CD">
+      <ownedComment xmi:id="_OgMHwE9gEeWsIc5CMrI4GA">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_KMZ-YE9gEeWsIc5CMrI4GA">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_KuxroE9gEeWsIc5CMrI4GA" name="translation" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T3BpkU9gEeWsIc5CMrI4GA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T3BpkE9gEeWsIc5CMrI4GA" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2sh74IC3EeS108flGLVEBA" base_Class="_YYgjwIC3EeS108flGLVEBA" templateId="2.16.840.1.113883.10.20.22.4.76" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-14707</ruleId>
-    <ruleId>CONF:1098-14708</ruleId>
+  <CDA:CDATemplate xmi:id="_2sh74IC3EeS108flGLVEBA" base_Class="_YYgjwIC3EeS108flGLVEBA" templateId="2.16.840.1.113883.10.20.22.4.76" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-14707, CONF:1198-14708, CONF:1198-32604</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_dWmY8IC4EeS108flGLVEBA" base_Generalization="_YZLSIIC3EeS108flGLVEBA"/>
   <CDA:PropertyValidation xmi:id="_nvQ5EYC8EeS108flGLVEBA" base_Property="_nvQ5EIC8EeS108flGLVEBA">
-    <ruleId>CONF:1098-14767</ruleId>
+    <ruleId>CONF:1198-14767</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_nvW_sIC8EeS108flGLVEBA" code="75277-4" displayName="Number of pressure ulcers" base_Property="_nvQ5EIC8EeS108flGLVEBA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-14768</ruleId>
-    <ruleId>CONF:1098-32164</ruleId>
+  <CDA:CodeSystemConstraint xmi:id="_nvW_sIC8EeS108flGLVEBA" code="2264892003" displayName="Number of pressure ulcers" base_Property="_nvQ5EIC8EeS108flGLVEBA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-14768, CONF:1198-32164</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_sApxk4DDEeS108flGLVEBA" memberEnd="_sApxkIDDEeS108flGLVEBA _sApxlIDDEeS108flGLVEBA">
     <ownedEnd xmi:id="_sApxlIDDEeS108flGLVEBA" type="_YYgjwIC3EeS108flGLVEBA" association="_sApxk4DDEeS108flGLVEBA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_8yTJ0IDDEeS108flGLVEBA" base_Association="_sApxk4DDEeS108flGLVEBA">
-    <ruleId>CONF:1098-14718</ruleId>
+    <ruleId>CONF:1198-14718</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_S7AtYIDEEeS108flGLVEBA" base_Property="_Jq83QIDEEeS108flGLVEBA">
-    <ruleId>CONF:1098-14719</ruleId>
+    <ruleId>CONF:1198-14719</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_AvXm44DFEeS108flGLVEBA" memberEnd="_AvXm4IDFEeS108flGLVEBA _AvdtgIDFEeS108flGLVEBA">
     <ownedEnd xmi:id="_AvdtgIDFEeS108flGLVEBA" type="_H1WAgIDEEeS108flGLVEBA" association="_AvXm44DFEeS108flGLVEBA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_fo3qoIDFEeS108flGLVEBA" base_Association="_AvXm44DFEeS108flGLVEBA">
-    <ruleId>CONF:1098-14720</ruleId>
+    <ruleId>CONF:1198-14720</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_8dUGYIDFEeS108flGLVEBA" base_Property="_0jK6UIDFEeS108flGLVEBA">
-    <ruleId>CONF:1098-14721</ruleId>
+    <ruleId>CONF:1198-14721</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_AYMAgIDGEeS108flGLVEBA" base_Property="_0jK6UYDFEeS108flGLVEBA"/>
   <CDA:PropertyValidation xmi:id="_CW0QYIDGEeS108flGLVEBA" base_Property="_0jK6UoDFEeS108flGLVEBA">
-    <ruleId>CONF:1098-14722</ruleId>
+    <ruleId>CONF:1198-14722</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_1cwYQIDGEeS108flGLVEBA" base_Property="_0jK6U4DFEeS108flGLVEBA"/>
   <CDA:ValueSetConstraint xmi:id="_Z7XqYIDHEeS108flGLVEBA" base_Property="_0jK6U4DFEeS108flGLVEBA" severity="WARNING">
     <reference href="../consol-vocab.uml#_3NE1YOcAEeGINOJ_SD9_dA"/>
-    <ruleId>CONF:1098-14725</ruleId>
+    <ruleId>CONF:1198-14725</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_20TkkIDHEeS108flGLVEBA" code="ASSERTION" displayName="Assertion" base_Property="_0jK6UYDFEeS108flGLVEBA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-31930</ruleId>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-31930</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_u2URsIF0EeSMbOpQu8Kfvw" memberEnd="_u2ScgIF0EeSMbOpQu8Kfvw _u2U4wIF0EeSMbOpQu8Kfvw">
     <ownedEnd xmi:id="_u2U4wIF0EeSMbOpQu8Kfvw" type="_09uFMJp_EeOK6dzbL4VoTA" association="_u2URsIF0EeSMbOpQu8Kfvw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_8PJUAIF0EeSMbOpQu8Kfvw" severity="INFO" base_Association="_u2URsIF0EeSMbOpQu8Kfvw" typeCode="COMP">
-    <ruleId>CONF:1098-31890</ruleId>
-    <ruleId>CONF:1098-31891</ruleId>
-    <ruleId>CONF:1098-31892</ruleId>
+    <ruleId>CONF:1198-31890, CONF:1198-31891, CONF:1198-31892</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_07jiEKZJEeSy2PrVxD6riw" memberEnd="_07iT8KZJEeSy2PrVxD6riw _07kJIKZJEeSy2PrVxD6riw">
     <ownedEnd xmi:id="_07kJIKZJEeSy2PrVxD6riw" type="_-nZiYP4uEeObaveuCI77uA" association="_07jiEKZJEeSy2PrVxD6riw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_2Y30oKZJEeSy2PrVxD6riw" severity="INFO" base_Association="_07jiEKZJEeSy2PrVxD6riw">
-    <ruleId>CONF:1098-32434</ruleId>
+    <ruleId>CONF:1198-32434</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_YfMZsKZKEeSy2PrVxD6riw" base_Property="_VSB6IKZKEeSy2PrVxD6riw"/>
   <CDA:TextValue xmi:id="_ZEvWwKZKEeSy2PrVxD6riw" base_Property="_VSB6JqZKEeSy2PrVxD6riw">
-    <ruleId>CONF:1098-32437</ruleId>
+    <ruleId>CONF:1198-32437</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_Zd4PgKZKEeSy2PrVxD6riw" base_Property="_VSB6I6ZKEeSy2PrVxD6riw">
-    <ruleId>CONF:1098-32438</ruleId>
+    <ruleId>CONF:1198-32438</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_mQC6cKZKEeSy2PrVxD6riw" base_Property="_VSB6IKZKEeSy2PrVxD6riw">
     <reference href="../consol-vocab.uml#_3uYZkKZKEeSy2PrVxD6riw"/>
-    <ruleId>CONF:1098-32436</ruleId>
+    <ruleId>CONF:1198-32436</ruleId>
   </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_UOFesE9gEeWsIc5CMrI4GA" base_Property="_KuxroE9gEeWsIc5CMrI4GA">
+    <ruleId>CONF:1198-32849</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_YYTcYE9gEeWsIc5CMrI4GA" code="75277-4" displayName="Number of pressure ulcers" base_Property="_KuxroE9gEeWsIc5CMrI4GA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-32850</ruleId>
+    <ruleId>CONF:1198-32851</ruleId>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>

@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentObservation;
 import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
@@ -26,12 +22,10 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.AssessmentsSectionOperat
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Assessments Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class AssessmentsSectionImpl extends SectionImpl implements AssessmentsSection {
+public class AssessmentsSectionImpl extends org.eclipse.mdht.uml.cda.impl.SectionImpl implements AssessmentsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -110,6 +104,15 @@ public class AssessmentsSectionImpl extends SectionImpl implements AssessmentsSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAssessmentsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentsSectionOperations.validateAssessmentsSectionTitle(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAssessmentsSectionAssessmentObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentsSectionOperations.validateAssessmentsSectionAssessmentObservation(this, diagnostics, context);
@@ -130,7 +133,7 @@ public class AssessmentsSectionImpl extends SectionImpl implements AssessmentsSe
 	 * @generated
 	 */
 	public AssessmentsSection init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -138,8 +141,9 @@ public class AssessmentsSectionImpl extends SectionImpl implements AssessmentsSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssessmentsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public AssessmentsSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // AssessmentsSectionImpl

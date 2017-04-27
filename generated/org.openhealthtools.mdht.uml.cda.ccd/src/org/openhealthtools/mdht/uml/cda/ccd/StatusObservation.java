@@ -15,8 +15,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Observation;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,7 +39,8 @@ public interface StatusObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.validateTargetOfEntryRelationship()'"
 	 * @generated
 	 */
-	boolean validateStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateStatusObservationTargetOfEntryRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -63,7 +64,8 @@ public interface StatusObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->select(er|not er.observation.oclIsUndefined())->isEmpty()'"
 	 * @generated
 	 */
-	boolean validateStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateStatusObservationNoAdditionalRelationships(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.InfantLiving;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,10 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.InfantLivingOperations;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Infant Living</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class InfantLivingImpl extends ObservationImpl implements InfantLiving {
+public class InfantLivingImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements InfantLiving {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -109,7 +103,7 @@ public class InfantLivingImpl extends ObservationImpl implements InfantLiving {
 	 * @generated
 	 */
 	public InfantLiving init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -117,8 +111,9 @@ public class InfantLivingImpl extends ObservationImpl implements InfantLiving {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public InfantLiving init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public InfantLiving init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // InfantLivingImpl

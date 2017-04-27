@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Hearing Plan Of Care Relevant Procedures Sub Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.7</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.7"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i><b>Template Design Relationships</b>
+This template is an adaptation of the IHE US Procedures section template. The entry components use a more tightly constrained design. They are limited to only those treatment procedures or treatment acts that come from a value set defined to indicate the type of procedures or acts that are relevant to hearing screening. The entry is only an id pointer to the procedures or acts, from the list of procedures, which match the defined inclusion criteria. 
+
+<b>Template Purpose</b>
+This sub-section gathers information within the Procedures section for certain clinical procedures which are identified as relevant to hearing care planning. Procedures are identified as "pertinent" through the use of a value set established to identify procedure acts and other more general acts considered relevant for hearing care planning. Procedures and acts from the Procedure section which match one of the concepts in the established value sets (one for procedures, another for other acts) are gathered within this specialized sub-section in order to be readily available for more efficient review or processing when the hearing plan of care is accessed.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.7"</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="47519-4-HPOC" </tt><i>HPOC History of Procedures</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>title</b></tt>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>procedure</b></tt>, where its type is <xref href="../HearingPlanOfCareProcedureActivityProcedure.dita">Hearing Plan Of Care Procedure Activity Procedure</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareProcedureActivityProcedure.dita">Hearing Plan Of Care Procedure Activity Procedure</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.20</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt>, where its type is <xref href="../HearingPlanOfCareProcedureActivityAct.dita">Hearing Plan Of Care Procedure Activity Act</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareProcedureActivityAct.dita">Hearing Plan Of Care Procedure Activity Act</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.21</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="47519-4-HPOC" </tt><i>HPOC History of Procedures</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>title</b></tt>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>procedure</b></tt>, where its type is <xref href="../HearingPlanOfCareProcedureActivityProcedure.dita">Hearing Plan Of Care Procedure Activity Procedure</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareProcedureActivityProcedure.dita">Hearing Plan Of Care Procedure Activity Procedure</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.20</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt>, where its type is <xref href="../HearingPlanOfCareProcedureActivityAct.dita">Hearing Plan Of Care Procedure Activity Act</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareProcedureActivityAct.dita">Hearing Plan Of Care Procedure Activity Act</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.21</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hpoc::HearingPlanOfCareRelevantProceduresSubSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryAct</entry><entry>entryAct</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EntryAct</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryProcedure</entry><entry>entryProcedure</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EntryProcedure</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="627288723"/>
+  <code code="47017780"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <procedure>
+      <id root="MDHT" extension="492555392"/>
+      <code code="115996666"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <priorityCode code="1920676541"/>
+      <methodCode code="924313190"/>
+      <targetSiteCode code="1750341036"/>
+    </procedure>
+  </entry>
+  <entry>
+    <act>
+      <id root="MDHT" extension="2021513878"/>
+      <code code="2102626914"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <priorityCode code="471211200"/>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Hearing Plan Of Care Relevant Procedures Sub Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.7</tt>]</p>
+</body>
+</topic>

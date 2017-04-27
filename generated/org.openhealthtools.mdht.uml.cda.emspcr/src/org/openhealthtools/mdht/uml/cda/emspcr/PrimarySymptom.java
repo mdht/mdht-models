@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PrimarySymptomTemplateId PrimarySymptomMoodCode PrimarySymptomCode PrimarySymptomCodeP PrimarySymptomValue PrimarySymptomValueP' templateId.root='2.16.840.1.1133883.17.3.10.1.66' moodCode='EVN' code.code='67774-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Primary sign and symptom NEMSIS' constraints.validation.dependOn.PrimarySymptomCode='PrimarySymptomCodeP' value.codeSystem='2.16.840.1.113883.6.90' value.codeSystemName='ICD-10 CM'"
  * @generated
  */
-public interface PrimarySymptom extends Observation {
+public interface PrimarySymptom extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -109,9 +102,9 @@ public interface PrimarySymptom extends Observation {
 	public PrimarySymptom init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PrimarySymptom init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public PrimarySymptom init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // PrimarySymptom

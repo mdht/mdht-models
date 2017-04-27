@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +19,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getIndication2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IndicationTemplateId IndicationCodeP IndicationId' templateId.root='2.16.840.1.113883.10.20.22.4.19' templateId.extension='2014-06-09' constraints.validation.warning='Indication2Text IndicationValue' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.info='IndicationCode IndicationValueP' constraints.validation.dependOn.IndicationCode='IndicationCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.IndicationValue='IndicationValueP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IndicationTemplateId IndicationId IndicationCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.19' templateId.extension='2014-06-09' constraints.validation.info='IndicationProblemIndication IndicationCodeNullFlavor IndicationCodeNullFlavorValue IndicationCode IndicationValueP' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.IndicationCode='IndicationCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='IndicationValue' constraints.validation.dependOn.IndicationValue='IndicationValueP'"
  * @generated
  */
 public interface Indication2 extends Indication {
@@ -37,7 +33,7 @@ public interface Indication2 extends Indication {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
 	 * @generated
 	 */
-	boolean validateIndication2ProblemIndication(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateIndicationProblemIndication(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,38 +45,13 @@ public interface Indication2 extends Indication {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
 	 * @generated
 	 */
-	boolean validateIndication2CodeNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
-	 * @generated
-	 */
-	boolean validateIndication2CodeNullFlavorValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateIndication2Text(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateIndicationCodeNullFlavorValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Indication2 init();
 
 	/**
@@ -88,6 +59,5 @@ public interface Indication2 extends Indication {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Indication2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Indication2

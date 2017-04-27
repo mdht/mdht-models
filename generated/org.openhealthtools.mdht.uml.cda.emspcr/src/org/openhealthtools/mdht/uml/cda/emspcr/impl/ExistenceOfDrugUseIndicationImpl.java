@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ExistenceOfDrugUseIndication;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ExistenceOfDrugUseIndicationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Existence Of Drug Use Indication</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ExistenceOfDrugUseIndicationImpl extends ObservationImpl implements ExistenceOfDrugUseIndication {
+public class ExistenceOfDrugUseIndicationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements ExistenceOfDrugUseIndication {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class ExistenceOfDrugUseIndicationImpl extends ObservationImpl implements
 	 */
 	public boolean validateExistenceOfDrugUseIndicationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationTemplateId(
-			this, diagnostics, context);
+		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +58,7 @@ public class ExistenceOfDrugUseIndicationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateExistenceOfDrugUseIndicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationMoodCode(
-			this, diagnostics, context);
+		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +67,7 @@ public class ExistenceOfDrugUseIndicationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateExistenceOfDrugUseIndicationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationCodeP(
-			this, diagnostics, context);
+		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +76,7 @@ public class ExistenceOfDrugUseIndicationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateExistenceOfDrugUseIndicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationCode(
-			this, diagnostics, context);
+		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +85,7 @@ public class ExistenceOfDrugUseIndicationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateExistenceOfDrugUseIndicationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationValue(
-			this, diagnostics, context);
+		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -110,16 +94,16 @@ public class ExistenceOfDrugUseIndicationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public ExistenceOfDrugUseIndication init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ExistenceOfDrugUseIndication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public ExistenceOfDrugUseIndication init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ExistenceOfDrugUseIndicationImpl

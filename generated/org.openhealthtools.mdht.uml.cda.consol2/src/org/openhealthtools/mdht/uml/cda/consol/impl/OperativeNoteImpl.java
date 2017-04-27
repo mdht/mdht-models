@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection;
 import org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -41,8 +41,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.OperativeNoteOperation
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Operative Note</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -186,12 +184,12 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateOperativeNoteFluidSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteFluidSection(this, diagnostics, context);
+	public boolean validateOperativeNoteOperativeNoteFluidSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteOperativeNoteFluidSection(this, diagnostics, context);
 	}
 
 	/**
@@ -199,10 +197,10 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateOperativeNoteSurgicalProcedureSection(DiagnosticChain diagnostics,
+	public boolean validateOperativeNoteOperativeNoteSurgicalProcedureSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteSurgicalProcedureSection(this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteOperativeNoteSurgicalProcedureSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -221,7 +219,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * @generated
 	 */
 	@Override
-	public boolean validateOperativeNotePlannedProcedureSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOperativeNotePlannedProcedureSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OperativeNoteOperations.validateOperativeNotePlannedProcedureSection(this, diagnostics, context);
 	}
 
@@ -253,7 +252,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * @generated
 	 */
 	@Override
-	public boolean validateOperativeNoteSurgicalDrainsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOperativeNoteSurgicalDrainsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OperativeNoteOperations.validateOperativeNoteSurgicalDrainsSection(this, diagnostics, context);
 	}
 
@@ -287,8 +287,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * @generated
 	 */
 	@Override
-	public boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(
 			this, diagnostics, context);
 	}
@@ -613,7 +613,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OperativeNoteOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 

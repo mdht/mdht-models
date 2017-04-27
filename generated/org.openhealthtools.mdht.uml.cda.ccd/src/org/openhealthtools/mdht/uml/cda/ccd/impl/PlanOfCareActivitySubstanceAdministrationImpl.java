@@ -16,23 +16,21 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivitySubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.PlanOfCareActivitySubstanceAdministrationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Plan Of Care Activity Substance Administration</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdministrationImpl implements
-		PlanOfCareActivitySubstanceAdministration {
+public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdministrationImpl
+		implements PlanOfCareActivitySubstanceAdministration {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

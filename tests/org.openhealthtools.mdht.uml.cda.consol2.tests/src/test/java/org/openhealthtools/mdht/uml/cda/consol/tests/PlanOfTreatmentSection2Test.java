@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -16,11 +16,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfTreatmentSection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,15 +30,8 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlannedObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Planned Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlannedEncounter2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Planned Encounter2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlannedAct2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Planned Act2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlannedProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Planned Procedure2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlannedMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Planned Medication Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlannedSupply2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Planned Supply2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionInstruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2HandoffCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Handoff Communication</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2NutritionRecommendations(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Nutrition Recommendations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2NutritionRecommendation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Nutrition Recommendation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2PlannedImmunizationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Planned Immunization Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2GoalObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Goal Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolPlannedObservation2s() <em>Get Consol Planned Observation2s</em>}</li>
@@ -49,12 +42,19 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolPlannedSupply2s() <em>Get Consol Planned Supply2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getConsolInstruction2s() <em>Get Consol Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getHandoffCommunications() <em>Get Handoff Communications</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getNutritionRecommendationss() <em>Get Nutrition Recommendationss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getNutritionRecommendations() <em>Get Nutrition Recommendations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getPlannedImmunizationActivities() <em>Get Planned Immunization Activities</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getGoalObservations() <em>Get Goal Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlanOfCareActivityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Plan Of Care Activity Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlanOfCareActivityEncounter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Plan Of Care Activity Encounter</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlanOfCareActivityAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Plan Of Care Activity Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlanOfCareActivityProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Plan Of Care Activity Procedure</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Plan Of Care Activity Substance Administration</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlanOfCareActivitySupply(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Plan Of Care Activity Supply</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionInstructions(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Instructions</em>}</li>
  * </ul>
  * </p>
  *
@@ -68,241 +68,11 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidatePlanOfCareSectionPlannedObservation2() {
-		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlannedObservation2TestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
-			"validatePlanOfCareSectionPlannedObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlanOfTreatmentSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlanOfTreatmentSection2 target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createPlannedObservation2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedObservation2(
-					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlanOfCareSectionPlannedObservation2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlanOfCareSectionPlannedEncounter2() {
-		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlannedEncounter2TestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
-			"validatePlanOfCareSectionPlannedEncounter2",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlanOfTreatmentSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlanOfTreatmentSection2 target) {
-				target.addEncounter(ConsolFactory.eINSTANCE.createPlannedEncounter2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedEncounter2(
-					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlanOfCareSectionPlannedEncounter2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlanOfCareSectionPlannedAct2() {
-		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlannedAct2TestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
-			"validatePlanOfCareSectionPlannedAct2",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlanOfTreatmentSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlanOfTreatmentSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createPlannedAct2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedAct2(
-					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlanOfCareSectionPlannedAct2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlanOfCareSectionPlannedProcedure2() {
-		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlannedProcedure2TestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
-			"validatePlanOfCareSectionPlannedProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlanOfTreatmentSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlanOfTreatmentSection2 target) {
-				target.addProcedure(ConsolFactory.eINSTANCE.createPlannedProcedure2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedProcedure2(
-					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlanOfCareSectionPlannedProcedure2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlanOfCareSectionPlannedMedicationActivity2() {
-		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlannedMedicationActivity2TestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
-			"validatePlanOfCareSectionPlannedMedicationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlanOfTreatmentSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlanOfTreatmentSection2 target) {
-				target.addSubstanceAdministration(ConsolFactory.eINSTANCE.createPlannedMedicationActivity2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedMedicationActivity2(
-					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlanOfCareSectionPlannedMedicationActivity2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlanOfCareSectionPlannedSupply2() {
-		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlannedSupply2TestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
-			"validatePlanOfCareSectionPlannedSupply2",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlanOfTreatmentSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlanOfTreatmentSection2 target) {
-				target.addSupply(ConsolFactory.eINSTANCE.createPlannedSupply2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedSupply2(
-					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlanOfCareSectionPlannedSupply2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlanOfCareSectionInstruction2() {
-		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionInstruction2TestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
-			"validatePlanOfCareSectionInstruction2",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlanOfTreatmentSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlanOfTreatmentSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createInstruction2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionInstruction2(
-					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlanOfCareSectionInstruction2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
 	public void testValidatePlanOfTreatmentSection2HandoffCommunication() {
 		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfTreatmentSection2HandoffCommunicationTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
 			"validatePlanOfTreatmentSection2HandoffCommunication",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_TREATMENT_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_TREATMENT_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -312,7 +82,7 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(PlanOfTreatmentSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createHandoffCommunication().init());
+				target.addAct(ConsolFactory.eINSTANCE.createHandoffCommunicationParticipants().init());
 			}
 
 			@Override
@@ -332,10 +102,11 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidatePlanOfTreatmentSection2NutritionRecommendations() {
-		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfTreatmentSection2NutritionRecommendationsTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
-			"validatePlanOfTreatmentSection2NutritionRecommendations",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidatePlanOfTreatmentSection2NutritionRecommendation() {
+		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfTreatmentSection2NutritionRecommendationTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
+			"validatePlanOfTreatmentSection2NutritionRecommendation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -345,19 +116,19 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(PlanOfTreatmentSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createNutritionRecommendations().init());
+				target.addAct(ConsolFactory.eINSTANCE.createNutritionRecommendation().init());
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2NutritionRecommendations(
+				return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2NutritionRecommendation(
 					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePlanOfTreatmentSection2NutritionRecommendationsTestCase.doValidationTest();
+		validatePlanOfTreatmentSection2NutritionRecommendationTestCase.doValidationTest();
 	}
 
 	/**
@@ -368,7 +139,8 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	public void testValidatePlanOfTreatmentSection2PlannedImmunizationActivity() {
 		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfTreatmentSection2PlannedImmunizationActivityTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
 			"validatePlanOfTreatmentSection2PlannedImmunizationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -402,7 +174,8 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	public void testValidatePlanOfTreatmentSection2GoalObservation() {
 		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfTreatmentSection2GoalObservationTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
 			"validatePlanOfTreatmentSection2GoalObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -528,10 +301,10 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetNutritionRecommendationss() {
+	public void testGetNutritionRecommendations() {
 
 		PlanOfTreatmentSection2 target = objectFactory.create();
-		target.getNutritionRecommendationss();
+		target.getNutritionRecommendations();
 
 	}
 
@@ -666,6 +439,243 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 		};
 
 		validatePlanOfCareSectionCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlanOfCareSectionPlanOfCareActivityObservation() {
+		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlanOfCareActivityObservationTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
+			"validatePlanOfCareSectionPlanOfCareActivityObservation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlanOfTreatmentSection2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlanOfTreatmentSection2 target) {
+				target.addObservation(ConsolFactory.eINSTANCE.createPlannedObservation2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlanOfCareActivityObservation(
+					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfCareSectionPlanOfCareActivityObservationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlanOfCareSectionPlanOfCareActivityEncounter() {
+		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlanOfCareActivityEncounterTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
+			"validatePlanOfCareSectionPlanOfCareActivityEncounter",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlanOfTreatmentSection2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlanOfTreatmentSection2 target) {
+				target.addEncounter(ConsolFactory.eINSTANCE.createPlannedEncounter2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlanOfCareActivityEncounter(
+					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfCareSectionPlanOfCareActivityEncounterTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlanOfCareSectionPlanOfCareActivityAct() {
+		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlanOfCareActivityActTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
+			"validatePlanOfCareSectionPlanOfCareActivityAct",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlanOfTreatmentSection2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlanOfTreatmentSection2 target) {
+				target.addAct(ConsolFactory.eINSTANCE.createPlannedAct2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlanOfCareActivityAct(
+					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfCareSectionPlanOfCareActivityActTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlanOfCareSectionPlanOfCareActivityProcedure() {
+		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlanOfCareActivityProcedureTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
+			"validatePlanOfCareSectionPlanOfCareActivityProcedure",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlanOfTreatmentSection2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlanOfTreatmentSection2 target) {
+				target.addProcedure(ConsolFactory.eINSTANCE.createPlannedProcedure2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlanOfCareActivityProcedure(
+					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfCareSectionPlanOfCareActivityProcedureTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration() {
+		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministrationTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
+			"validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlanOfTreatmentSection2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlanOfTreatmentSection2 target) {
+				target.addSubstanceAdministration(ConsolFactory.eINSTANCE.createPlannedMedicationActivity2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(
+					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministrationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlanOfCareSectionPlanOfCareActivitySupply() {
+		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlanOfCareActivitySupplyTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
+			"validatePlanOfCareSectionPlanOfCareActivitySupply",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUPPLY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlanOfTreatmentSection2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlanOfTreatmentSection2 target) {
+				target.addSupply(ConsolFactory.eINSTANCE.createPlannedSupply2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlanOfCareActivitySupply(
+					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfCareSectionPlanOfCareActivitySupplyTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlanOfCareSectionInstructions() {
+		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionInstructionsTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
+			"validatePlanOfCareSectionInstructions",
+			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlanOfTreatmentSection2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(PlanOfTreatmentSection2 target) {
+				target.addAct(ConsolFactory.eINSTANCE.createInstruction2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionInstructions(
+					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfCareSectionInstructionsTestCase.doValidationTest();
 	}
 
 	/**

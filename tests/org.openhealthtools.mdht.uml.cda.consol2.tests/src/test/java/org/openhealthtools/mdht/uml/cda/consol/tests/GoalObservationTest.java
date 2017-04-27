@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -11,21 +11,26 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Reference;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.GoalObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,35 +40,30 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPatientPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Patient Priority Preference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Act Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Status Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationGoalObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Goal Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationActReferenceER(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Act Reference ER</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationHealthConcernAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Health Concern Act</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationProviderPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Provider Priority Preference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation External Document Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedEncounter2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned Encounter2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned Procedure2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned Medication Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedSupply2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned Supply2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedAct2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned Act2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getConsolPatientPriorityPreference() <em>Get Consol Patient Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationHealthConcernActER(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Health Concern Act ER</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedERs(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned ERs</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Reference Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationReferenceExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Reference External Document Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getGoalObservations() <em>Get Goal Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getActReferences() <em>Get Act References</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getHealthConcernActs() <em>Get Health Concern Acts</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getConsolProviderPriorityPreferences() <em>Get Consol Provider Priority Preferences</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getExternalDocumentReferences() <em>Get External Document References</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPlannedEncounter2s() <em>Get Planned Encounter2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPlannedObservation2s() <em>Get Planned Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPlannedProcedure2s() <em>Get Planned Procedure2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPlannedMedicationActivity2s() <em>Get Planned Medication Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPlannedSupply2s() <em>Get Planned Supply2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPlannedAct2s() <em>Get Planned Act2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validatePlanOfCareActivityObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Observation Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getActReferenceERs() <em>Get Act Reference ERs</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getHealthConcernActERs() <em>Get Health Concern Act ERs</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPriorityPreference() <em>Get Priority Preference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPlannedERss() <em>Get Planned ERss</em>}</li>
  * </ul>
  * </p>
  *
@@ -71,6 +71,40 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  */
 
 public class GoalObservationTest extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateGoalObservationTemplateId() {
+		OperationsTestCase<GoalObservation> validateGoalObservationTemplateIdTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GoalObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(GoalObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalObservationOperations.validateGoalObservationTemplateId(
+					(GoalObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalObservationTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -145,10 +179,10 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateGoalObservationCode() {
-		OperationsTestCase<GoalObservation> validateGoalObservationCodeTestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservationCode",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateGoalObservationId() {
+		OperationsTestCase<GoalObservation> validateGoalObservationIdTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationId",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -160,9 +194,85 @@ public class GoalObservationTest extends CDAValidationTest {
 			protected void updateToPass(GoalObservation target) {
 				target.init();
 
+				II ii = DatatypesFactory.eINSTANCE.createII();
+				target.getIds().add(ii);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalObservationOperations.validateGoalObservationId(
+					(GoalObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalObservationIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateGoalObservationCodeP() {
+		OperationsTestCase<GoalObservation> validateGoalObservationCodePTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GoalObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(GoalObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalObservationOperations.validateGoalObservationCodeP(
+					(GoalObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalObservationCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGoalObservationCode() {
+		OperationsTestCase<GoalObservation> validateGoalObservationCodeTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GoalObservation target) {
+				target.init();
 				CD cd = DatatypesFactory.eINSTANCE.createCD();
 				target.setCode(cd);
+			}
 
+			@Override
+			protected void updateToPass(GoalObservation target) {
+				target.setCode(DatatypesFactory.eINSTANCE.createCD("hasCode", LOINC_ID));
+			}
+
+			@Override
+			protected void setDependency(GoalObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.GoalObservationCodeP", passToken);
 			}
 
 			@Override
@@ -182,10 +292,44 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGoalObservationPatientPriorityPreference() {
-		OperationsTestCase<GoalObservation> validateGoalObservationPatientPriorityPreferenceTestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservationPatientPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_PATIENT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateGoalObservationStatusCode() {
+		OperationsTestCase<GoalObservation> validateGoalObservationStatusCodeTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GoalObservation target) {
+				target.init();
+				target.setStatusCode(DatatypesFactory.eINSTANCE.createCS(BAD_CODE_VALUE));
+			}
+
+			@Override
+			protected void updateToPass(GoalObservation target) {
+				target.getStatusCode().setCode("active");
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalObservationOperations.validateGoalObservationStatusCode(
+					(GoalObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalObservationStatusCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateGoalObservationStatusCodeP() {
+		OperationsTestCase<GoalObservation> validateGoalObservationStatusCodePTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -195,22 +339,94 @@ public class GoalObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(GoalObservation target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-				er.setObservation(ConsolFactory.eINSTANCE.createPatientPriorityPreference().init());
-				target.getEntryRelationships().add(er);
+				target.init();
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return GoalObservationOperations.validateGoalObservationPatientPriorityPreference(
+				return GoalObservationOperations.validateGoalObservationStatusCodeP(
 					(GoalObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGoalObservationPatientPriorityPreferenceTestCase.doValidationTest();
+		validateGoalObservationStatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateGoalObservationEffectiveTime() {
+		OperationsTestCase<GoalObservation> validateGoalObservationEffectiveTimeTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationEffectiveTime",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GoalObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(GoalObservation target) {
+				target.init();
+
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalObservationOperations.validateGoalObservationEffectiveTime(
+					(GoalObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalObservationEffectiveTimeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateGoalObservationValue() {
+		OperationsTestCase<GoalObservation> validateGoalObservationValueTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationValue",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GoalObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(GoalObservation target) {
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalObservationOperations.validateGoalObservationValue(
+					(GoalObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalObservationValueTestCase.doValidationTest();
 	}
 
 	/**
@@ -218,10 +434,11 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGoalObservation() {
-		OperationsTestCase<GoalObservation> validateGoalObservationTestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservation",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+	public void testValidateGoalObservationGoalObservation() {
+		OperationsTestCase<GoalObservation> validateGoalObservationGoalObservationTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationGoalObservation",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(GoalObservation target) {
@@ -240,13 +457,13 @@ public class GoalObservationTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return GoalObservationOperations.validateGoalObservation(
+				return GoalObservationOperations.validateGoalObservationGoalObservation(
 					(GoalObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGoalObservationTestCase.doValidationTest();
+		validateGoalObservationGoalObservationTestCase.doValidationTest();
 	}
 
 	/**
@@ -254,10 +471,10 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGoalObservationActReference() {
-		OperationsTestCase<GoalObservation> validateGoalObservationActReferenceTestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservationActReference",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateGoalObservationActReferenceER() {
+		OperationsTestCase<GoalObservation> validateGoalObservationActReferenceERTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationActReferenceER",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_ACT_REFERENCE_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -270,20 +487,20 @@ public class GoalObservationTest extends CDAValidationTest {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setAct(ConsolFactory.eINSTANCE.createActReference().init());
+				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
 				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return GoalObservationOperations.validateGoalObservationActReference(
+				return GoalObservationOperations.validateGoalObservationActReferenceER(
 					(GoalObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGoalObservationActReferenceTestCase.doValidationTest();
+		validateGoalObservationActReferenceERTestCase.doValidationTest();
 	}
 
 	/**
@@ -293,8 +510,8 @@ public class GoalObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateGoalObservationAuthorParticipation() {
 		OperationsTestCase<GoalObservation> validateGoalObservationAuthorParticipationTestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservationAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGoalObservationAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_GOAL_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -325,10 +542,10 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGoalObservationHealthConcernAct() {
-		OperationsTestCase<GoalObservation> validateGoalObservationHealthConcernActTestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservationHealthConcernAct",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_HEALTH_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateGoalObservationHealthConcernActER() {
+		OperationsTestCase<GoalObservation> validateGoalObservationHealthConcernActERTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationHealthConcernActER", operationsForOCL.getOCLValue(
+				"VALIDATE_GOAL_OBSERVATION_HEALTH_CONCERN_ACT_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -343,20 +560,20 @@ public class GoalObservationTest extends CDAValidationTest {
 			protected void updateToPass(GoalObservation target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setAct(ConsolFactory.eINSTANCE.createHealthConcernAct().init());
+				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
 				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return GoalObservationOperations.validateGoalObservationHealthConcernAct(
+				return GoalObservationOperations.validateGoalObservationHealthConcernActER(
 					(GoalObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGoalObservationHealthConcernActTestCase.doValidationTest();
+		validateGoalObservationHealthConcernActERTestCase.doValidationTest();
 	}
 
 	/**
@@ -364,74 +581,35 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGoalObservationProviderPriorityPreference() {
-		OperationsTestCase<GoalObservation> validateGoalObservationProviderPriorityPreferenceTestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservationProviderPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_PROVIDER_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateGoalObservationPriorityPreference() {
+		OperationsTestCase<GoalObservation> validateGoalObservationPriorityPreferenceTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationPriorityPreference", operationsForOCL.getOCLValue(
+				"VALIDATE_GOAL_OBSERVATION_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(GoalObservation target) {
-				target.init();
-			}
 
-			@Override
-			protected void updateToPass(GoalObservation target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-				er.setObservation(ConsolFactory.eINSTANCE.createProviderPriorityPreference().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return GoalObservationOperations.validateGoalObservationProviderPriorityPreference(
-					(GoalObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateGoalObservationProviderPriorityPreferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateGoalObservationExternalDocumentReference() {
-		OperationsTestCase<GoalObservation> validateGoalObservationExternalDocumentReferenceTestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservationExternalDocumentReference",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(GoalObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected void updateToPass(GoalObservation target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setAct(ConsolFactory.eINSTANCE.createExternalDocumentReference().init());
+				er.setObservation(ConsolFactory.eINSTANCE.createPriorityPreference().init());
 				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return GoalObservationOperations.validateGoalObservationExternalDocumentReference(
+				return GoalObservationOperations.validateGoalObservationPriorityPreference(
 					(GoalObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGoalObservationExternalDocumentReferenceTestCase.doValidationTest();
+		validateGoalObservationPriorityPreferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -439,10 +617,10 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGoalObservationPlannedEncounter2() {
-		OperationsTestCase<GoalObservation> validateGoalObservationPlannedEncounter2TestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservationPlannedEncounter2",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateGoalObservationPlannedERs() {
+		OperationsTestCase<GoalObservation> validateGoalObservationPlannedERsTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationPlannedERs",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_PLANNED_ERS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -455,7 +633,7 @@ public class GoalObservationTest extends CDAValidationTest {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				er.setEncounter(ConsolFactory.eINSTANCE.createPlannedEncounter2().init());
+				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
 				target.getEntryRelationships().add(er);
 
 			}
@@ -463,13 +641,13 @@ public class GoalObservationTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return GoalObservationOperations.validateGoalObservationPlannedEncounter2(
+				return GoalObservationOperations.validateGoalObservationPlannedERs(
 					(GoalObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGoalObservationPlannedEncounter2TestCase.doValidationTest();
+		validateGoalObservationPlannedERsTestCase.doValidationTest();
 	}
 
 	/**
@@ -477,148 +655,32 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGoalObservationPlannedObservation2() {
-		OperationsTestCase<GoalObservation> validateGoalObservationPlannedObservation2TestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservationPlannedObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateGoalObservationReference() {
+		OperationsTestCase<GoalObservation> validateGoalObservationReferenceTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationReference",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(GoalObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(GoalObservation target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				er.setObservation(ConsolFactory.eINSTANCE.createPlannedObservation2().init());
-				target.getEntryRelationships().add(er);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return GoalObservationOperations.validateGoalObservationPlannedObservation2(
-					(GoalObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateGoalObservationPlannedObservation2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateGoalObservationPlannedProcedure2() {
-		OperationsTestCase<GoalObservation> validateGoalObservationPlannedProcedure2TestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservationPlannedProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(GoalObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(GoalObservation target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				er.setProcedure(ConsolFactory.eINSTANCE.createPlannedProcedure2().init());
-				target.getEntryRelationships().add(er);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return GoalObservationOperations.validateGoalObservationPlannedProcedure2(
-					(GoalObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateGoalObservationPlannedProcedure2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateGoalObservationPlannedMedicationActivity2() {
-		OperationsTestCase<GoalObservation> validateGoalObservationPlannedMedicationActivity2TestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservationPlannedMedicationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(GoalObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(GoalObservation target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createPlannedMedicationActivity2().init());
-				target.getEntryRelationships().add(er);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return GoalObservationOperations.validateGoalObservationPlannedMedicationActivity2(
-					(GoalObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateGoalObservationPlannedMedicationActivity2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateGoalObservationPlannedSupply2() {
-		OperationsTestCase<GoalObservation> validateGoalObservationPlannedSupply2TestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservationPlannedSupply2",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(GoalObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(GoalObservation target) {
 				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				er.setSupply(ConsolFactory.eINSTANCE.createPlannedSupply2().init());
-				target.getEntryRelationships().add(er);
+			}
 
+			@Override
+			protected void updateToPass(GoalObservation target) {
+				target.getReferences().add(CDAFactory.eINSTANCE.createReference());
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return GoalObservationOperations.validateGoalObservationPlannedSupply2(
+				return GoalObservationOperations.validateGoalObservationReference(
 					(GoalObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGoalObservationPlannedSupply2TestCase.doValidationTest();
+		validateGoalObservationReferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -626,48 +688,74 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGoalObservationPlannedAct2() {
-		OperationsTestCase<GoalObservation> validateGoalObservationPlannedAct2TestCase = new OperationsTestCase<GoalObservation>(
-			"validateGoalObservationPlannedAct2",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateGoalObservationReferenceTypeCode() {
+		OperationsTestCase<GoalObservation> validateGoalObservationReferenceTypeCodeTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationReferenceTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_GOAL_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(GoalObservation target) {
-
+				target.init();
+				Reference ref = CDAFactory.eINSTANCE.createReference();
+				target.getReferences().add(ref);
 			}
 
 			@Override
 			protected void updateToPass(GoalObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				er.setAct(ConsolFactory.eINSTANCE.createPlannedAct2().init());
-				target.getEntryRelationships().add(er);
+				for (Reference r : target.getReferences()) {
+					r.setTypeCode(x_ActRelationshipExternalReference.REFR);
+				}
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return GoalObservationOperations.validateGoalObservationPlannedAct2(
+				return GoalObservationOperations.validateGoalObservationReferenceTypeCode(
 					(GoalObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGoalObservationPlannedAct2TestCase.doValidationTest();
+		validateGoalObservationReferenceTypeCodeTestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
-	public void testGetConsolPatientPriorityPreference() {
+	public void testValidateGoalObservationReferenceExternalDocumentReference() {
+		OperationsTestCase<GoalObservation> validateGoalObservationReferenceExternalDocumentReferenceTestCase = new OperationsTestCase<GoalObservation>(
+			"validateGoalObservationReferenceExternalDocumentReference",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GOAL_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-		GoalObservation target = objectFactory.create();
-		target.getConsolPatientPriorityPreference();
+			@Override
+			protected void updateToFail(GoalObservation target) {
+				target.init();
+				Reference ref = CDAFactory.eINSTANCE.createReference();
+				target.getReferences().add(ref);
+			}
 
+			@Override
+			protected void updateToPass(GoalObservation target) {
+				for (Reference r : target.getReferences()) {
+					r.setExternalDocument(ConsolFactory.eINSTANCE.createExternalDocumentReference().init());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalObservationOperations.validateGoalObservationReferenceExternalDocumentReference(
+					(GoalObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalObservationReferenceExternalDocumentReferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -687,10 +775,10 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetActReferences() {
+	public void testGetActReferenceERs() {
 
 		GoalObservation target = objectFactory.create();
-		target.getActReferences();
+		target.getActReferenceERs();
 
 	}
 
@@ -699,10 +787,10 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHealthConcernActs() {
+	public void testGetHealthConcernActERs() {
 
 		GoalObservation target = objectFactory.create();
-		target.getHealthConcernActs();
+		target.getHealthConcernActERs();
 
 	}
 
@@ -711,10 +799,10 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolProviderPriorityPreferences() {
+	public void testGetPriorityPreference() {
 
 		GoalObservation target = objectFactory.create();
-		target.getConsolProviderPriorityPreferences();
+		target.getPriorityPreference();
 
 	}
 
@@ -723,117 +811,11 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetExternalDocumentReferences() {
+	public void testGetPlannedERss() {
 
 		GoalObservation target = objectFactory.create();
-		target.getExternalDocumentReferences();
+		target.getPlannedERss();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetPlannedEncounter2s() {
-
-		GoalObservation target = objectFactory.create();
-		target.getPlannedEncounter2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetPlannedObservation2s() {
-
-		GoalObservation target = objectFactory.create();
-		target.getPlannedObservation2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetPlannedProcedure2s() {
-
-		GoalObservation target = objectFactory.create();
-		target.getPlannedProcedure2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetPlannedMedicationActivity2s() {
-
-		GoalObservation target = objectFactory.create();
-		target.getPlannedMedicationActivity2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetPlannedSupply2s() {
-
-		GoalObservation target = objectFactory.create();
-		target.getPlannedSupply2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetPlannedAct2s() {
-
-		GoalObservation target = objectFactory.create();
-		target.getPlannedAct2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePlanOfCareActivityObservationTemplateId() {
-		OperationsTestCase<GoalObservation> validatePlanOfCareActivityObservationTemplateIdTestCase = new OperationsTestCase<GoalObservation>(
-			"validatePlanOfCareActivityObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(GoalObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(GoalObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return GoalObservationOperations.validatePlanOfCareActivityObservationTemplateId(
-					(GoalObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlanOfCareActivityObservationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

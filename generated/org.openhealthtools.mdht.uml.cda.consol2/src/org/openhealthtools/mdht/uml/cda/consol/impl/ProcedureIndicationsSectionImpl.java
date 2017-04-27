@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureIndicationsSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Indications Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -72,7 +70,8 @@ public class ProcedureIndicationsSectionImpl extends SectionImpl implements Proc
 	 */
 	@Override
 	public boolean validateProcedureIndicationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionCode(this, diagnostics, context);
+		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,7 +92,8 @@ public class ProcedureIndicationsSectionImpl extends SectionImpl implements Proc
 	 */
 	@Override
 	public boolean validateProcedureIndicationsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionText(this, diagnostics, context);
+		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionText(
+			this, diagnostics, context);
 	}
 
 	/**

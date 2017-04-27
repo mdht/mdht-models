@@ -7,32 +7,25 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicianofRecordParticipant2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Physicianof Record Participant2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PhysicianofRecordParticipant2Impl extends PhysicianofRecordParticipantImpl implements
-		PhysicianofRecordParticipant2 {
+public class PhysicianofRecordParticipant2Impl extends PhysicianofRecordParticipantImpl
+		implements PhysicianofRecordParticipant2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,45 +51,9 @@ public class PhysicianofRecordParticipant2Impl extends PhysicianofRecordParticip
 	 * @generated
 	 */
 	@Override
-	public boolean validatePhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePhysicianofRecordParticipant2AssignedEntityHasNationalProviderId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityHasNationalProviderId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson(
 			this, diagnostics, context);
 	}
 
@@ -133,6 +90,42 @@ public class PhysicianofRecordParticipant2Impl extends PhysicianofRecordParticip
 	public boolean validatePhysicianofRecordParticipantAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipantAssignedEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPersonName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipantAssignedEntityAssignedPersonName(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPerson(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipantAssignedEntityAssignedPerson(
 			this, diagnostics, context);
 	}
 

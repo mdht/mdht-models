@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ProviderPrimaryImpression;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ProviderPrimaryImpressionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Provider Primary Impression</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ProviderPrimaryImpressionImpl extends ObservationImpl implements ProviderPrimaryImpression {
+public class ProviderPrimaryImpressionImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements ProviderPrimaryImpression {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,8 +48,7 @@ public class ProviderPrimaryImpressionImpl extends ObservationImpl implements Pr
 	 * @generated
 	 */
 	public boolean validateProviderPrimaryImpressionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderPrimaryImpressionOperations.validateProviderPrimaryImpressionTemplateId(
-			this, diagnostics, context);
+		return ProviderPrimaryImpressionOperations.validateProviderPrimaryImpressionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -114,16 +102,16 @@ public class ProviderPrimaryImpressionImpl extends ObservationImpl implements Pr
 	 * @generated
 	 */
 	public ProviderPrimaryImpression init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProviderPrimaryImpression init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public ProviderPrimaryImpression init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProviderPrimaryImpressionImpl

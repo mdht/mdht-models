@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.PatientContactParticipant;
 
 /**
@@ -53,5 +51,6 @@ public interface SupportParticipant extends PatientContactParticipant, Support {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SupportParticipant init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public SupportParticipant init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // SupportParticipant

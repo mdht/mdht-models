@@ -10,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPreconditionForSubstanceAdministration2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PreconditionForSubstanceAdministrationTemplateId PreconditionForSubstanceAdministrationCode PreconditionForSubstanceAdministrationCodeP PreconditionForSubstanceAdministrationValue PreconditionForSubstanceAdministrationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.25' templateId.extension='2014-06-09' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.info='PreconditionForSubstanceAdministrationText' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PreconditionForSubstanceAdministrationTemplateId PreconditionForSubstanceAdministrationCode PreconditionForSubstanceAdministrationCodeP PreconditionForSubstanceAdministrationText PreconditionForSubstanceAdministrationValue PreconditionForSubstanceAdministrationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.25' templateId.extension='2014-06-09' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
  * @generated
  */
 public interface PreconditionForSubstanceAdministration2 extends PreconditionForSubstanceAdministration {
@@ -33,7 +33,8 @@ public interface PreconditionForSubstanceAdministration2 extends PreconditionFor
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validatePreconditionForSubstanceAdministrationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePreconditionForSubstanceAdministrationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -60,5 +61,6 @@ public interface PreconditionForSubstanceAdministration2 extends PreconditionFor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PreconditionForSubstanceAdministration2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public PreconditionForSubstanceAdministration2 init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PreconditionForSubstanceAdministration2

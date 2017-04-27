@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.hitsp.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
@@ -28,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.ProblemEntryImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Condition Entry</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -152,7 +148,8 @@ public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEnt
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemEntryProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemEntryProblemStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConditionEntryOperations.validateProblemEntryProblemStatusObservation(this, diagnostics, context);
 	}
 
@@ -163,7 +160,7 @@ public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEnt
 	 */
 	@Override
 	public ConditionEntry init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -172,8 +169,9 @@ public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEnt
 	 * @generated
 	 */
 	@Override
-	public ConditionEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public ConditionEntry init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // ConditionEntryImpl

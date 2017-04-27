@@ -12,18 +12,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PressureUlcerObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Pressure Ulcer Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -161,8 +159,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	 * @generated
 	 */
 	@Override
-	public boolean validatePressureUlcerObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PressureUlcerObservationOperations.validatePressureUlcerObservationTemplateId(this, diagnostics, context);
+	public boolean validatePressureUlcerObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PressureUlcerObservationOperations.validatePressureUlcerObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -191,7 +191,8 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	 * @generated
 	 */
 	@Override
-	public boolean validatePressureUlcerObservationNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePressureUlcerObservationNegationInd(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationNegationInd(
 			this, diagnostics, context);
 	}
@@ -234,6 +235,28 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	@Override
 	public boolean validatePressureUlcerObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePressureUlcerObservationStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PressureUlcerObservationOperations.validatePressureUlcerObservationStatusCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePressureUlcerObservationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PressureUlcerObservationOperations.validatePressureUlcerObservationEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**

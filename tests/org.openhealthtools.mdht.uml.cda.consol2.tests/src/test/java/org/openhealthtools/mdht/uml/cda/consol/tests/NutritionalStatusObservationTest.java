@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -16,19 +16,19 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionalStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NutritionalStatusObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -66,8 +66,8 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionalStatusObservationTemplateId() {
 		OperationsTestCase<NutritionalStatusObservation> validateNutritionalStatusObservationTemplateIdTestCase = new OperationsTestCase<NutritionalStatusObservation>(
-			"validateNutritionalStatusObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionalStatusObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -100,8 +100,8 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionalStatusObservationClassCode() {
 		OperationsTestCase<NutritionalStatusObservation> validateNutritionalStatusObservationClassCodeTestCase = new OperationsTestCase<NutritionalStatusObservation>(
-			"validateNutritionalStatusObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionalStatusObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -134,8 +134,8 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionalStatusObservationMoodCode() {
 		OperationsTestCase<NutritionalStatusObservation> validateNutritionalStatusObservationMoodCodeTestCase = new OperationsTestCase<NutritionalStatusObservation>(
-			"validateNutritionalStatusObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionalStatusObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -205,8 +205,8 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionalStatusObservationCodeP() {
 		OperationsTestCase<NutritionalStatusObservation> validateNutritionalStatusObservationCodePTestCase = new OperationsTestCase<NutritionalStatusObservation>(
-			"validateNutritionalStatusObservationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionalStatusObservationCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -239,21 +239,24 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionalStatusObservationCode() {
 		OperationsTestCase<NutritionalStatusObservation> validateNutritionalStatusObservationCodeTestCase = new OperationsTestCase<NutritionalStatusObservation>(
-			"validateNutritionalStatusObservationCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionalStatusObservationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(NutritionalStatusObservation target) {
-
+				target.init();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				cd.setCode(BAD_CODE_VALUE);
+				cd.setCodeSystem(SNOMEDCT_ID);
+				target.setCode(cd);
 			}
 
 			@Override
 			protected void updateToPass(NutritionalStatusObservation target) {
-				target.init();
 				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				cd.setCode("87276001");
-				cd.setCodeSystem("2.16.840.1.113883.6.96");
+				cd.setCode("75305-3");
+				cd.setCodeSystem(LOINC_ID);
 				target.setCode(cd);
 			}
 
@@ -283,8 +286,8 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionalStatusObservationStatusCode() {
 		OperationsTestCase<NutritionalStatusObservation> validateNutritionalStatusObservationStatusCodeTestCase = new OperationsTestCase<NutritionalStatusObservation>(
-			"validateNutritionalStatusObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionalStatusObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -321,7 +324,8 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 	public void testValidateNutritionalStatusObservationStatusCodeP() {
 		OperationsTestCase<NutritionalStatusObservation> validateNutritionalStatusObservationStatusCodePTestCase = new OperationsTestCase<NutritionalStatusObservation>(
 			"validateNutritionalStatusObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -355,7 +359,8 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 	public void testValidateNutritionalStatusObservationEffectiveTime() {
 		OperationsTestCase<NutritionalStatusObservation> validateNutritionalStatusObservationEffectiveTimeTestCase = new OperationsTestCase<NutritionalStatusObservation>(
 			"validateNutritionalStatusObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -391,8 +396,8 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionalStatusObservationValue() {
 		OperationsTestCase<NutritionalStatusObservation> validateNutritionalStatusObservationValueTestCase = new OperationsTestCase<NutritionalStatusObservation>(
-			"validateNutritionalStatusObservationValue",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionalStatusObservationValue", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -428,8 +433,8 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionalStatusObservationValueP() {
 		OperationsTestCase<NutritionalStatusObservation> validateNutritionalStatusObservationValuePTestCase = new OperationsTestCase<NutritionalStatusObservation>(
-			"validateNutritionalStatusObservationValueP",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionalStatusObservationValueP", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -463,7 +468,8 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 	public void testValidateNutritionalStatusObservationNutritionAssessment() {
 		OperationsTestCase<NutritionalStatusObservation> validateNutritionalStatusObservationNutritionAssessmentTestCase = new OperationsTestCase<NutritionalStatusObservation>(
 			"validateNutritionalStatusObservationNutritionAssessment",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITIONAL_STATUS_OBSERVATION_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

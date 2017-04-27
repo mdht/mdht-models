@@ -10,12 +10,12 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.AD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.operations.ADOperations;
+import org.eclipse.mdht.uml.hl7.vocab.AddressPartType;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.operations.ADOperations;
-import org.openhealthtools.mdht.uml.hl7.vocab.AddressPartType;
 
 /**
  * <!-- begin-user-doc -->
@@ -313,7 +313,8 @@ public class ADTest extends CDAValidationTest {
 	public void testValidateStreetAddressLine() {
 		OperationsTestCase<AD> validateStreetAddressLineTestCase = new OperationsTestCase<AD>(
 			"validateStreetAddressLine",
-			operationsForOCL.getOCLValue("VALIDATE_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 			{
 				skipNullTest();
 			}
@@ -393,13 +394,15 @@ public class ADTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AD target) {
-				target.getHouseNumberNumerics().add(DatatypesFactory.eINSTANCE.createADXP(AddressPartType.ADL, "12345"));
+				target.getHouseNumberNumerics().add(
+					DatatypesFactory.eINSTANCE.createADXP(AddressPartType.ADL, "12345"));
 			}
 
 			@Override
 			protected void updateToPass(AD target) {
 				target.getHouseNumberNumerics().clear();
-				target.getHouseNumberNumerics().add(DatatypesFactory.eINSTANCE.createADXP(AddressPartType.BNN, "12345"));
+				target.getHouseNumberNumerics().add(
+					DatatypesFactory.eINSTANCE.createADXP(AddressPartType.BNN, "12345"));
 
 			}
 
@@ -566,7 +569,8 @@ public class ADTest extends CDAValidationTest {
 	public void testValidateAdditionalLocator() {
 		OperationsTestCase<AD> validateAdditionalLocatorTestCase = new OperationsTestCase<AD>(
 			"validateAdditionalLocator",
-			operationsForOCL.getOCLValue("VALIDATE_ADDITIONAL_LOCATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_ADDITIONAL_LOCATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 			{
 				skipNullTest();
 			}
@@ -1151,8 +1155,7 @@ public class ADTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.MedicationPriorAdministrationObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.MedicationPriorAdministrationObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Prior Administration Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class MedicationPriorAdministrationObservationImpl extends ObservationImpl implements
+public class MedicationPriorAdministrationObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements
 		MedicationPriorAdministrationObservation {
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,8 +50,7 @@ public class MedicationPriorAdministrationObservationImpl extends ObservationImp
 	 */
 	public boolean validateMedicationPriorAdministrationObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationTemplateId(
-			this, diagnostics, context);
+		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +60,7 @@ public class MedicationPriorAdministrationObservationImpl extends ObservationImp
 	 */
 	public boolean validateMedicationPriorAdministrationObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationMoodCode(
-			this, diagnostics, context);
+		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +70,7 @@ public class MedicationPriorAdministrationObservationImpl extends ObservationImp
 	 */
 	public boolean validateMedicationPriorAdministrationObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationCodeP(
-			this, diagnostics, context);
+		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +80,7 @@ public class MedicationPriorAdministrationObservationImpl extends ObservationImp
 	 */
 	public boolean validateMedicationPriorAdministrationObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationCode(
-			this, diagnostics, context);
+		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +90,7 @@ public class MedicationPriorAdministrationObservationImpl extends ObservationImp
 	 */
 	public boolean validateMedicationPriorAdministrationObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationValue(
-			this, diagnostics, context);
+		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -115,16 +99,16 @@ public class MedicationPriorAdministrationObservationImpl extends ObservationImp
 	 * @generated
 	 */
 	public MedicationPriorAdministrationObservation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationPriorAdministrationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public MedicationPriorAdministrationObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationPriorAdministrationObservationImpl

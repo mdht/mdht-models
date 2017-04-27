@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.OnsetofLabor;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.OnsetofLaborOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -47,6 +50,7 @@ public class OnsetofLaborTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateOnsetofLaborTemplateId() {
 		OperationsTestCase<OnsetofLabor> validateOnsetofLaborTemplateIdTestCase = new OperationsTestCase<OnsetofLabor>(
 			"validateOnsetofLaborTemplateId",
@@ -81,6 +85,7 @@ public class OnsetofLaborTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateOnsetofLaborClassCode() {
 		OperationsTestCase<OnsetofLabor> validateOnsetofLaborClassCodeTestCase = new OperationsTestCase<OnsetofLabor>(
 			"validateOnsetofLaborClassCode",
@@ -115,6 +120,7 @@ public class OnsetofLaborTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateOnsetofLaborMoodCode() {
 		OperationsTestCase<OnsetofLabor> validateOnsetofLaborMoodCodeTestCase = new OperationsTestCase<OnsetofLabor>(
 			"validateOnsetofLaborMoodCode",
@@ -149,6 +155,7 @@ public class OnsetofLaborTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateOnsetofLaborCodeP() {
 		OperationsTestCase<OnsetofLabor> validateOnsetofLaborCodePTestCase = new OperationsTestCase<OnsetofLabor>(
 			"validateOnsetofLaborCodeP",
@@ -169,7 +176,8 @@ public class OnsetofLaborTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return OnsetofLaborOperations.validateOnsetofLaborCodeP((OnsetofLabor) objectToTest, diagnostician, map);
+				return OnsetofLaborOperations.validateOnsetofLaborCodeP(
+					(OnsetofLabor) objectToTest, diagnostician, map);
 			}
 
 		};
@@ -182,10 +190,12 @@ public class OnsetofLaborTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateOnsetofLaborCode() {
 		OperationsTestCase<OnsetofLabor> validateOnsetofLaborCodeTestCase = new OperationsTestCase<OnsetofLabor>(
 			"validateOnsetofLaborCode",
-			operationsForOCL.getOCLValue("VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(OnsetofLabor target) {
@@ -214,6 +224,7 @@ public class OnsetofLaborTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateOnsetofLaborCodeVS() {
 		OperationsTestCase<OnsetofLabor> validateOnsetofLaborCodeVSTestCase = new OperationsTestCase<OnsetofLabor>(
 			"validateOnsetofLaborCodeVS",
@@ -248,10 +259,12 @@ public class OnsetofLaborTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateOnsetofLaborValue() {
 		OperationsTestCase<OnsetofLabor> validateOnsetofLaborValueTestCase = new OperationsTestCase<OnsetofLabor>(
 			"validateOnsetofLaborValue",
-			operationsForOCL.getOCLValue("VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(OnsetofLabor target) {
@@ -270,7 +283,8 @@ public class OnsetofLaborTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return OnsetofLaborOperations.validateOnsetofLaborValue((OnsetofLabor) objectToTest, diagnostician, map);
+				return OnsetofLaborOperations.validateOnsetofLaborValue(
+					(OnsetofLabor) objectToTest, diagnostician, map);
 			}
 
 		};
@@ -283,6 +297,7 @@ public class OnsetofLaborTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateOnsetofLaborValueP() {
 		OperationsTestCase<OnsetofLabor> validateOnsetofLaborValuePTestCase = new OperationsTestCase<OnsetofLabor>(
 			"validateOnsetofLaborValueP",
@@ -365,8 +380,7 @@ public class OnsetofLaborTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

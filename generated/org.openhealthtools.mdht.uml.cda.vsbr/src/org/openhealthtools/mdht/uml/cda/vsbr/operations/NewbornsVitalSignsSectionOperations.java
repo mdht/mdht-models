@@ -17,8 +17,6 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.NewbornsVitalSignsObservation;
 import org.openhealthtools.mdht.uml.cda.vsbr.NewbornsVitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
@@ -46,7 +44,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class NewbornsVitalSignsSectionOperations extends SectionOperations {
+public class NewbornsVitalSignsSectionOperations extends org.eclipse.mdht.uml.cda.operations.SectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -75,7 +80,7 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,27 +97,34 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 			NewbornsVitalSignsSection newbornsVitalSignsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORNS_VITAL_SIGNS_SECTION);
 			try {
-				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornsVitalSignsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornsVitalSignsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornsVitalSignsSectionTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornsVitalSignsSection, context) }), new Object[] { newbornsVitalSignsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornsVitalSignsSectionNewbornsVitalSignsSectionTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornsVitalSignsSection, context) }),
+						new Object[] { newbornsVitalSignsSection }));
 			}
 
 			return false;
@@ -139,7 +151,7 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -156,27 +168,34 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 			NewbornsVitalSignsSection newbornsVitalSignsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORNS_VITAL_SIGNS_SECTION);
 			try {
-				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornsVitalSignsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornsVitalSignsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornsVitalSignsSectionClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornsVitalSignsSection, context) }), new Object[] { newbornsVitalSignsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornsVitalSignsSectionNewbornsVitalSignsSectionClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornsVitalSignsSection, context) }),
+						new Object[] { newbornsVitalSignsSection }));
 			}
 
 			return false;
@@ -203,7 +222,7 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -216,31 +235,37 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	 * @generated
 	 */
 
-	public static boolean validateNewbornsVitalSignsSectionMoodCode(
-			NewbornsVitalSignsSection newbornsVitalSignsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static boolean validateNewbornsVitalSignsSectionMoodCode(NewbornsVitalSignsSection newbornsVitalSignsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORNS_VITAL_SIGNS_SECTION);
 			try {
-				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornsVitalSignsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornsVitalSignsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornsVitalSignsSectionMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornsVitalSignsSection, context) }), new Object[] { newbornsVitalSignsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornsVitalSignsSectionNewbornsVitalSignsSectionMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornsVitalSignsSection, context) }),
+						new Object[] { newbornsVitalSignsSection }));
 			}
 
 			return false;
@@ -256,9 +281,9 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '8716-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '8716-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornsVitalSignsSectionCode(NewbornsVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborns Vital Signs Section Code</em>}' invariant operation.
@@ -269,7 +294,7 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -285,27 +310,33 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	public static boolean validateNewbornsVitalSignsSectionCode(NewbornsVitalSignsSection newbornsVitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORNS_VITAL_SIGNS_SECTION);
 			try {
-				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornsVitalSignsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornsVitalSignsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornsVitalSignsSectionCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornsVitalSignsSection, context) }), new Object[] { newbornsVitalSignsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornsVitalSignsSectionNewbornsVitalSignsSectionCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornsVitalSignsSection, context) }),
+						new Object[] { newbornsVitalSignsSection }));
 			}
 
 			return false;
@@ -332,7 +363,7 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -348,27 +379,34 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	public static boolean validateNewbornsVitalSignsSectionCodeP(NewbornsVitalSignsSection newbornsVitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORNS_VITAL_SIGNS_SECTION);
 			try {
-				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornsVitalSignsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornsVitalSignsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornsVitalSignsSectionCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornsVitalSignsSection, context) }), new Object[] { newbornsVitalSignsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornsVitalSignsSectionNewbornsVitalSignsSectionCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornsVitalSignsSection, context) }),
+						new Object[] { newbornsVitalSignsSection }));
 			}
 
 			return false;
@@ -395,7 +433,7 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -411,27 +449,33 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	public static boolean validateNewbornsVitalSignsSectionText(NewbornsVitalSignsSection newbornsVitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORNS_VITAL_SIGNS_SECTION);
 			try {
-				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornsVitalSignsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornsVitalSignsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_TEXT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornsVitalSignsSectionText",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornsVitalSignsSection, context) }), new Object[] { newbornsVitalSignsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_TEXT,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornsVitalSignsSectionNewbornsVitalSignsSectionText",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornsVitalSignsSection, context) }),
+						new Object[] { newbornsVitalSignsSection }));
 			}
 
 			return false;
@@ -447,7 +491,7 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Newborns Vital Signs Observation))";
+	protected static final String VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::NewbornsVitalSignsObservation))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNewbornsVitalSignsSectionNewbornsVitalSignsObservation(NewbornsVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Newborns Vital Signs Section Newborns Vital Signs Observation</em>}' invariant operation.
@@ -458,7 +502,7 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -475,29 +519,34 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 			NewbornsVitalSignsSection newbornsVitalSignsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.NEWBORNS_VITAL_SIGNS_SECTION);
 			try {
-				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			newbornsVitalSignsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				newbornsVitalSignsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"NewbornsVitalSignsSectionNewbornsVitalSignsObservation",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									newbornsVitalSignsSection, context) }), new Object[] { newbornsVitalSignsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.NEWBORNS_VITAL_SIGNS_SECTION__NEWBORNS_VITAL_SIGNS_SECTION_NEWBORNS_VITAL_SIGNS_OBSERVATION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"NewbornsVitalSignsSectionNewbornsVitalSignsSectionNewbornsVitalSignsObservation",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										newbornsVitalSignsSection, context) }),
+						new Object[] { newbornsVitalSignsSection }));
 			}
 
 			return false;
@@ -513,7 +562,7 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_NEWBORNS_VITAL_SIGNS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Newborns Vital Signs Observation))->asSequence()->any(true).oclAsType(vsbr::Newborns Vital Signs Observation)";
+	protected static final String GET_NEWBORNS_VITAL_SIGNS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::NewbornsVitalSignsObservation))->asSequence()->any(true).oclAsType(vsbr::NewbornsVitalSignsObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getNewbornsVitalSignsObservation(NewbornsVitalSignsSection) <em>Get Newborns Vital Signs Observation</em>}' query operation.
@@ -533,18 +582,22 @@ public class NewbornsVitalSignsSectionOperations extends SectionOperations {
 
 	public static NewbornsVitalSignsObservation getNewbornsVitalSignsObservation(
 			NewbornsVitalSignsSection newbornsVitalSignsSection) {
+
 		if (GET_NEWBORNS_VITAL_SIGNS_OBSERVATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.NEWBORNS_VITAL_SIGNS_SECTION,
 				VsbrPackage.Literals.NEWBORNS_VITAL_SIGNS_SECTION.getEAllOperations().get(62));
 			try {
-				GET_NEWBORNS_VITAL_SIGNS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_NEWBORNS_VITAL_SIGNS_OBSERVATION__EOCL_EXP);
+				GET_NEWBORNS_VITAL_SIGNS_OBSERVATION__EOCL_QRY = helper.createQuery(
+					GET_NEWBORNS_VITAL_SIGNS_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NEWBORNS_VITAL_SIGNS_OBSERVATION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NEWBORNS_VITAL_SIGNS_OBSERVATION__EOCL_QRY);
 		return (NewbornsVitalSignsObservation) query.evaluate(newbornsVitalSignsSection);
 	}
 

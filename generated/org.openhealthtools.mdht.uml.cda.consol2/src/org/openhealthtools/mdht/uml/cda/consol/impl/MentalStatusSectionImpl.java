@@ -7,37 +7,25 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
-import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
-import org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection;
-
-import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MentalStatusSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Mental Status Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -117,18 +105,6 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * @generated
 	 */
 	@Override
-	public boolean validateMentalStatusSectionCaregiverCharacteristics(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MentalStatusSectionOperations.validateMentalStatusSectionCaregiverCharacteristics(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateMentalStatusSectionAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MentalStatusSectionOperations.validateMentalStatusSectionAssessmentScaleObservation(
@@ -140,10 +116,9 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMentalStatusSectionCognitiveAbilitiesObservation(DiagnosticChain diagnostics,
+	public boolean validateMentalStatusSectionMentalStatusOrganizer2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusSectionOperations.validateMentalStatusSectionCognitiveAbilitiesObservation(
+		return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusOrganizer2(
 			this, diagnostics, context);
 	}
 
@@ -152,54 +127,10 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMentalStatusSectionMentalStatusObservation(DiagnosticChain diagnostics,
+	public boolean validateMentalStatusSectionMentalStatusObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusObservation(
+		return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusObservation2(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMentalStatusSectionCognitiveStatusOrganizer2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MentalStatusSectionOperations.validateMentalStatusSectionCognitiveStatusOrganizer2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMentalStatusSectionCognitiveStatusObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MentalStatusSectionOperations.validateMentalStatusSectionCognitiveStatusObservation2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMentalStatusSectionNonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MentalStatusSectionOperations.validateMentalStatusSectionNonMedicinalSupplyActivity2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<CaregiverCharacteristics> getCaregiverCharacteristicss() {
-		return MentalStatusSectionOperations.getCaregiverCharacteristicss(this);
 	}
 
 	/**
@@ -217,9 +148,8 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<CognitiveAbilitiesObservation> getCognitiveAbilitiesObservations() {
-		return MentalStatusSectionOperations.getCognitiveAbilitiesObservations(this);
+	public EList<MentalStatusOrganizer2> getMentalStatusOrganizer2s() {
+		return MentalStatusSectionOperations.getMentalStatusOrganizer2s(this);
 	}
 
 	/**
@@ -227,36 +157,8 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<MentalStatusObservation> getMentalStatusObservations() {
-		return MentalStatusSectionOperations.getMentalStatusObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<MentalStatusOrganizer2> getCognitiveStatusOrganizer2s() {
-		return MentalStatusSectionOperations.getCognitiveStatusOrganizer2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<MentalStatusObservation2> getCognitiveStatusObservation2s() {
-		return MentalStatusSectionOperations.getCognitiveStatusObservation2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<NonMedicinalSupplyActivity2> getNonMedicinalSupplyActivity2s() {
-		return MentalStatusSectionOperations.getNonMedicinalSupplyActivity2s(this);
+	public EList<MentalStatusObservation2> getMentalStatusObservation2s() {
+		return MentalStatusSectionOperations.getMentalStatusObservation2s(this);
 	}
 
 	/**

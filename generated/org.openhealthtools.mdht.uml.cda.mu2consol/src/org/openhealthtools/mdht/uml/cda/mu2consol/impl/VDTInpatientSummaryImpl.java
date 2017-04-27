@@ -16,25 +16,22 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTInpatientSummaryOperations;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>VDT Inpatient Summary</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ * <!-- begin-user-doc --> An implementation of the model object ' <em><b>VDT
+ * Inpatient Summary</b></em>'. <!-- end-user-doc -->
+ *
  * @generated
  */
-public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
-		implements VDTInpatientSummary {
+public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl implements VDTInpatientSummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected VDTInpatientSummaryImpl() {
@@ -43,7 +40,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -53,96 +50,83 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTInpatientSummaryAdmissionDate(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations
-				.validateVDTInpatientSummaryAdmissionDate(this, diagnostics,
-						context);
+	public boolean validateVDTInpatientSummaryAdmissionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryAdmissionDate(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTInpatientSummaryDischargeDate(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations
-				.validateVDTInpatientSummaryDischargeDate(this, diagnostics,
-						context);
+	public boolean validateVDTInpatientSummaryDischargeDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryDischargeDate(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTInpatientSummaryAdmissionDischargeLocation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations
-				.validateVDTInpatientSummaryAdmissionDischargeLocation(this,
-						diagnostics, context);
+	public boolean validateVDTInpatientSummaryAdmissionDischargeLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryAdmissionDischargeLocation(this, diagnostics,
+				context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTInpatientSummaryMedications(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations
-				.validateVDTInpatientSummaryMedications(this, diagnostics,
-						context);
+	public boolean validateVDTInpatientSummaryMedications(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryMedications(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTInpatientSummaryReasonforHospitalization(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations
-				.validateVDTInpatientSummaryReasonforHospitalization(this,
-						diagnostics, context);
+	public boolean validateVDTInpatientSummaryReasonforHospitalization(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryReasonforHospitalization(this, diagnostics,
+				context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTInpatientSummaryHospitalDischargeInstructionsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations
-				.validateVDTInpatientSummaryHospitalDischargeInstructionsSection(
-						this, diagnostics, context);
+	public boolean validateVDTInpatientSummaryHospitalDischargeInstructionsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalDischargeInstructionsSection(this,
+				diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
-		return VDTInpatientSummaryOperations
-				.getHospitalDischargeInstructionsSection(this);
+		return VDTInpatientSummaryOperations.getHospitalDischargeInstructionsSection(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -152,12 +136,11 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public VDTInpatientSummary init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public VDTInpatientSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
 	}

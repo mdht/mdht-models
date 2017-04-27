@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.PastMedicalHistorySection;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.PastMedicalHistorySectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Past Medical History Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -67,7 +65,8 @@ public class PastMedicalHistorySectionImpl extends SectionImpl implements PastMe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePastMedicalHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePastMedicalHistorySectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionTemplateId(
 			this, diagnostics, context);
 	}
@@ -101,7 +100,7 @@ public class PastMedicalHistorySectionImpl extends SectionImpl implements PastMe
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public PastMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {

@@ -10,14 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.Condition;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.ProblemListSection;
@@ -28,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.ActiveProblemsSectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem List Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -87,7 +83,7 @@ public class ProblemListSectionImpl extends ActiveProblemsSectionImpl implements
 	 */
 	@Override
 	public ProblemListSection init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -96,8 +92,9 @@ public class ProblemListSectionImpl extends ActiveProblemsSectionImpl implements
 	 * @generated
 	 */
 	@Override
-	public ProblemListSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public ProblemListSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // ProblemListSectionImpl

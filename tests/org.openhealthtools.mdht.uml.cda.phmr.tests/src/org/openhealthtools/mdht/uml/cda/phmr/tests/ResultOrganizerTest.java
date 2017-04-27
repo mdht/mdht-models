@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ResultOrganizerOperations;
@@ -43,8 +43,8 @@ import org.openhealthtools.mdht.uml.cda.phmr.operations.ResultOrganizerOperation
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#validatePhmrResultOrganizerNumericObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Numeric Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#validatePhmrResultOrganizerWaveformSeriesObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Result Organizer Waveform Series Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#validatePHMRResultOrganizerNumericObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Result Organizer Numeric Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#validatePHMRResultOrganizerWaveformSeriesObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Result Organizer Waveform Series Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#getNumericObservations() <em>Get Numeric Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#getWaveformSeriesObservations() <em>Get Waveform Series Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ResultOrganizer#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
@@ -66,73 +66,76 @@ public class ResultOrganizerTest extends  CDAValidationTest {
 
  
 									
-public void testValidatePhmrResultOrganizerNumericObservation() {
-      OperationsTestCase<ResultOrganizer> validatePhmrResultOrganizerNumericObservationTestCase = new OperationsTestCase<ResultOrganizer>(
-      "validatePhmrResultOrganizerNumericObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+public void testValidatePHMRResultOrganizerNumericObservation() {
+			OperationsTestCase<ResultOrganizer> validatePHMRResultOrganizerNumericObservationTestCase = new OperationsTestCase<ResultOrganizer>(
+			"validatePHMRResultOrganizerNumericObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHMR_RESULT_ORGANIZER_NUMERIC_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultOrganizer target) {
+			@Override
+			protected void updateToFail(ResultOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultOrganizer target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultOrganizerOperations.validatePhmrResultOrganizerNumericObservation(
-          (ResultOrganizer) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ResultOrganizerOperations.validatePHMRResultOrganizerNumericObservation(
+					(ResultOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhmrResultOrganizerNumericObservationTestCase.doValidationTest();
-}		
-
-
+		validatePHMRResultOrganizerNumericObservationTestCase.doValidationTest();
+}
 
 
-/**
+
+
+	/**
 *
 * @generated
 */
@@ -140,70 +143,71 @@ public void testValidatePhmrResultOrganizerNumericObservation() {
 
  
 									
-public void testValidatePhmrResultOrganizerWaveformSeriesObservation() {
-      OperationsTestCase<ResultOrganizer> validatePhmrResultOrganizerWaveformSeriesObservationTestCase = new OperationsTestCase<ResultOrganizer>(
-      "validatePhmrResultOrganizerWaveformSeriesObservation",
-      operationsForOCL.getOCLValue("VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+public void testValidatePHMRResultOrganizerWaveformSeriesObservation() {
+			OperationsTestCase<ResultOrganizer> validatePHMRResultOrganizerWaveformSeriesObservationTestCase = new OperationsTestCase<ResultOrganizer>(
+			"validatePHMRResultOrganizerWaveformSeriesObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHMR_RESULT_ORGANIZER_WAVEFORM_SERIES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultOrganizer target) {
+			@Override
+			protected void updateToFail(ResultOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultOrganizer target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultOrganizerOperations.validatePhmrResultOrganizerWaveformSeriesObservation(
-          (ResultOrganizer) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ResultOrganizerOperations.validatePHMRResultOrganizerWaveformSeriesObservation(
+					(ResultOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhmrResultOrganizerWaveformSeriesObservationTestCase.doValidationTest();
-}		
-
-
+		validatePHMRResultOrganizerWaveformSeriesObservationTestCase.doValidationTest();
+}
 
 
 
@@ -261,66 +265,69 @@ target.getWaveformSeriesObservations();
  
 									
 public void testValidateResultOrganizerTemplateId() {
-      OperationsTestCase<ResultOrganizer> validateResultOrganizerTemplateIdTestCase = new OperationsTestCase<ResultOrganizer>(
-      "validateResultOrganizerTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<ResultOrganizer> validateResultOrganizerTemplateIdTestCase = new OperationsTestCase<ResultOrganizer>(
+			"validateResultOrganizerTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(ResultOrganizer target) {
+			@Override
+			protected void updateToFail(ResultOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ResultOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ResultOrganizer target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultOrganizerOperations.validateResultOrganizerTemplateId(
-          (ResultOrganizer) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ResultOrganizerOperations.validateResultOrganizerTemplateId(
+					(ResultOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateResultOrganizerTemplateIdTestCase.doValidationTest();
+		validateResultOrganizerTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -349,6 +356,7 @@ public void testValidateResultOrganizerTemplateId() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<ResultOrganizer> {
+		@Override
 		public ResultOrganizer create() {		
 			return PhmrFactory.eINSTANCE.createResultOrganizer();
 		}
@@ -380,9 +388,9 @@ public void testValidateResultOrganizerTemplateId() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -392,8 +400,8 @@ public void testValidateResultOrganizerTemplateId() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

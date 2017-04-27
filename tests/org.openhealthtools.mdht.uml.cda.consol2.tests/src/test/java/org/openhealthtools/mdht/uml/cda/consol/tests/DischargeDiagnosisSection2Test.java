@@ -16,12 +16,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeDiagnosisSection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,11 +32,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Section Hospital Discharge Diagnosis2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateDischargeDiagnosisSection2CETranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diagnosis Section2 CE Translation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateDischargeDiagnosisSection2CETranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diagnosis Section2 CE Translation P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#getConsolHospitalDischargeDiagnosis2() <em>Get Consol Hospital Discharge Diagnosis2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateHospitalDischargeDiagnosisSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateHospitalDischargeDiagnosisSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateHospitalDischargeDiagnosisSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Section Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Section Hospital Discharge Diagnosis</em>}</li>
  * </ul>
  * </p>
  *
@@ -49,32 +52,77 @@ public class DischargeDiagnosisSection2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2() {
-		OperationsTestCase<DischargeDiagnosisSection2> validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2TestCase = new OperationsTestCase<DischargeDiagnosisSection2>(
-			"validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_HOSPITAL_DISCHARGE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateDischargeDiagnosisSection2CETranslation() {
+		OperationsTestCase<DischargeDiagnosisSection2> validateDischargeDiagnosisSection2CETranslationTestCase = new OperationsTestCase<DischargeDiagnosisSection2>(
+			"validateDischargeDiagnosisSection2CETranslation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_DIAGNOSIS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeDiagnosisSection2 target) {
-
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.getCode().setCode("11535-2");
+				target.getCode().setCodeSystem(LOINC_ID);
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
 			}
 
 			@Override
 			protected void updateToPass(DischargeDiagnosisSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createHospitalDischargeDiagnosis2().init());
+				for (CD t : target.getCode().getTranslations()) {
+					t.setCode("78375-3");
+					t.setCodeSystem(LOINC_ID);
+				}
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2(
+				return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslation(
 					(DischargeDiagnosisSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2TestCase.doValidationTest();
+		validateDischargeDiagnosisSection2CETranslationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateDischargeDiagnosisSection2CETranslationP() {
+		OperationsTestCase<DischargeDiagnosisSection2> validateDischargeDiagnosisSection2CETranslationPTestCase = new OperationsTestCase<DischargeDiagnosisSection2>(
+			"validateDischargeDiagnosisSection2CETranslationP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_DIAGNOSIS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeDiagnosisSection2 target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.getCode().setCode("11535-2");
+				target.getCode().setCodeSystem(LOINC_ID);
+			}
+
+			@Override
+			protected void updateToPass(DischargeDiagnosisSection2 target) {
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslationP(
+					(DischargeDiagnosisSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeDiagnosisSection2CETranslationPTestCase.doValidationTest();
 	}
 
 	/**
@@ -97,7 +145,8 @@ public class DischargeDiagnosisSection2Test extends CDAValidationTest {
 	public void testValidateHospitalDischargeDiagnosisSectionTemplateId() {
 		OperationsTestCase<DischargeDiagnosisSection2> validateHospitalDischargeDiagnosisSectionTemplateIdTestCase = new OperationsTestCase<DischargeDiagnosisSection2>(
 			"validateHospitalDischargeDiagnosisSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -131,7 +180,8 @@ public class DischargeDiagnosisSection2Test extends CDAValidationTest {
 	public void testValidateHospitalDischargeDiagnosisSectionCodeP() {
 		OperationsTestCase<DischargeDiagnosisSection2> validateHospitalDischargeDiagnosisSectionCodePTestCase = new OperationsTestCase<DischargeDiagnosisSection2>(
 			"validateHospitalDischargeDiagnosisSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -164,8 +214,8 @@ public class DischargeDiagnosisSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalDischargeDiagnosisSectionCode() {
 		OperationsTestCase<DischargeDiagnosisSection2> validateHospitalDischargeDiagnosisSectionCodeTestCase = new OperationsTestCase<DischargeDiagnosisSection2>(
-			"validateHospitalDischargeDiagnosisSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalDischargeDiagnosisSectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -176,7 +226,7 @@ public class DischargeDiagnosisSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(DischargeDiagnosisSection2 target) {
-				target.getCode().setCode("C-CDAV2-DDN");
+				target.getCode().setCode("11535-2");
 				target.getCode().setCodeSystem(LOINC_ID);
 			}
 
@@ -197,6 +247,40 @@ public class DischargeDiagnosisSection2Test extends CDAValidationTest {
 		};
 
 		validateHospitalDischargeDiagnosisSectionCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis() {
+		OperationsTestCase<DischargeDiagnosisSection2> validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisTestCase = new OperationsTestCase<DischargeDiagnosisSection2>(
+			"validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_HOSPITAL_DISCHARGE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeDiagnosisSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeDiagnosisSection2 target) {
+				target.addAct(ConsolFactory.eINSTANCE.createHospitalDischargeDiagnosis2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(
+					(DischargeDiagnosisSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisTestCase.doValidationTest();
 	}
 
 	/**

@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ClinicalDocumentImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.HistoryofInfectionLiveBirthSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliverySection;
 import org.openhealthtools.mdht.uml.cda.vsbr.NewbornDeliverySection;
@@ -29,13 +25,12 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.ReportingBirthInformatio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Reporting Birth Informationfromaclinicalsettingtovitalrecords</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ReportingBirthInformationfromaclinicalsettingtovitalrecordsImpl extends ClinicalDocumentImpl implements
-		ReportingBirthInformationfromaclinicalsettingtovitalrecords {
+public class ReportingBirthInformationfromaclinicalsettingtovitalrecordsImpl
+		extends org.eclipse.mdht.uml.cda.impl.ClinicalDocumentImpl
+		implements ReportingBirthInformationfromaclinicalsettingtovitalrecords {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -126,8 +121,8 @@ public class ReportingBirthInformationfromaclinicalsettingtovitalrecordsImpl ext
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsCodeP(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingBirthInformationfromaclinicalsettingtovitalrecordsCodeP(
 			this, diagnostics, context);
 	}
@@ -148,8 +143,8 @@ public class ReportingBirthInformationfromaclinicalsettingtovitalrecordsImpl ext
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsTitle(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateReportingBirthInformationfromaclinicalsettingtovitalrecordsTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.validateReportingBirthInformationfromaclinicalsettingtovitalrecordsTitle(
 			this, diagnostics, context);
 	}
@@ -292,7 +287,8 @@ public class ReportingBirthInformationfromaclinicalsettingtovitalrecordsImpl ext
 	 * @generated
 	 */
 	public PrenatalTestingandSurveillanceSection getPrenatalTestingAndSurveillance() {
-		return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.getPrenatalTestingAndSurveillance(this);
+		return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.getPrenatalTestingAndSurveillance(
+			this);
 	}
 
 	/**
@@ -328,7 +324,8 @@ public class ReportingBirthInformationfromaclinicalsettingtovitalrecordsImpl ext
 	 * @generated
 	 */
 	public HistoryofInfectionLiveBirthSection getHistoryOfInfectionLiveBirthSection() {
-		return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.getHistoryOfInfectionLiveBirthSection(this);
+		return ReportingBirthInformationfromaclinicalsettingtovitalrecordsOperations.getHistoryOfInfectionLiveBirthSection(
+			this);
 	}
 
 	/**
@@ -337,7 +334,7 @@ public class ReportingBirthInformationfromaclinicalsettingtovitalrecordsImpl ext
 	 * @generated
 	 */
 	public ReportingBirthInformationfromaclinicalsettingtovitalrecords init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -346,8 +343,8 @@ public class ReportingBirthInformationfromaclinicalsettingtovitalrecordsImpl ext
 	 * @generated
 	 */
 	public ReportingBirthInformationfromaclinicalsettingtovitalrecords init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // ReportingBirthInformationfromaclinicalsettingtovitalrecordsImpl

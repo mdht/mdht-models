@@ -7,35 +7,28 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusOrganizer2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Functional Status Organizer2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrganizerImpl implements
-		FunctionalStatusOrganizer2 {
+public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrganizerImpl
+		implements FunctionalStatusOrganizer2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53,30 +46,6 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusOrganizer2CodeCodeSystem(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2CodeCodeSystem(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusResultOrganizerFunctionalStatusObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusResultOrganizerFunctionalStatusObservation2(
-			this, diagnostics, context);
 	}
 
 	/**
@@ -129,6 +98,16 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 * @generated
 	 */
 	@Override
+	public boolean validateResultOrganizerCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusOrganizer2Operations.validateResultOrganizerCodeValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusOrganizer2Operations.validateResultOrganizerTemplateId(this, diagnostics, context);
 	}
@@ -161,6 +140,18 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	@Override
 	public boolean validateResultOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusOrganizer2Operations.validateResultOrganizerStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
+			this, diagnostics, context);
 	}
 
 	/**

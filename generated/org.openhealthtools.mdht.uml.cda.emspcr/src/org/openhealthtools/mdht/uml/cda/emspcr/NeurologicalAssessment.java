@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NeurologicalAssessmentTemplateId NeurologicalAssessmentMoodCode NeurologicalAssessmentCode NeurologicalAssessmentCodeP NeurologicalAssessmentValue NeurologicalAssessmentValueP' templateId.root='2.16.840.1.1133883.17.3.10.1.141' moodCode='EVN' code.code='67536-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Neurological assessment Nervous system NEMSIS' constraints.validation.dependOn.NeurologicalAssessmentCode='NeurologicalAssessmentCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
  * @generated
  */
-public interface NeurologicalAssessment extends Observation {
+public interface NeurologicalAssessment extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -109,9 +102,9 @@ public interface NeurologicalAssessment extends Observation {
 	public NeurologicalAssessment init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NeurologicalAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public NeurologicalAssessment init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // NeurologicalAssessment

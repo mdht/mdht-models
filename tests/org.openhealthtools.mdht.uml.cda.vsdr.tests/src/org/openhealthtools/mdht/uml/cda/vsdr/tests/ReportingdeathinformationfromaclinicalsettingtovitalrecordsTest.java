@@ -1,9 +1,5 @@
 
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 
@@ -11,73 +7,59 @@ package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords;
+
+import org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrFactory;
-import org.openhealthtools.mdht.uml.cda.vsdr.operations.ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
+
+import org.openhealthtools.mdht.uml.cda.vsdr.operations.ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations;
 
 
 /**
  * <!-- begin-user-doc -->
- * A static utility class that provides operations related to '<em><b>Reportingdeathinformationfromaclinicalsettingtovitalrecords</b></em>' model objects.
+ * A static utility class that provides operations related to '<em><b>Reporting Death Informationfroma Clinical Settingto Vital Records</b></em>' model objects.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Confidentiality Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Confidentiality Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsLanguageCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Language Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRealmCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Realm Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Title</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Custodian</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsDeathReportDocumentBody(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Death Report Document Body</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTarget(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Custodian Assigned Custodian Custodian Organization Name</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Custodian Assigned Custodian Custodian Organization Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Custodian Assigned Custodian</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author Authoring Person Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonDeterminerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author Authoring Person Determiner Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author Authoring Person Name</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author Authoring Person</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Type Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Author Assigned Author</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person Administrative Gender Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person Administrative Gender Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonBirthTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person Birth Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonDeterminerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person Determiner Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person Name</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Addr</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient Person</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Type Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reportingdeathinformationfromaclinicalsettingtovitalrecords Record Target Patient</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords#getDeathReportDocumentBody() <em>Get Death Report Document Body</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Confidentiality Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Confidentiality Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsLanguageCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Language Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Realm Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Realm Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Title</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Custodian</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsDeathReportDocumentBody(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Death Report Document Body</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Author</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Record Target</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Custodian Assigned Custodian Custodian Organization Name</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Custodian Assigned Custodian Custodian Organization Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Death Informationfroma Clinical Settingto Vital Records Custodian Assigned Custodian</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords#getDeathReportDocumentBody() <em>Get Death Report Document Body</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
  
-public class ReportingdeathinformationfromaclinicalsettingtovitalrecordsTest extends  CDAValidationTest {
+public class ReportingDeathInformationfromaClinicalSettingtoVitalRecordsTest extends  CDAValidationTest {
 
 
 
@@ -89,19 +71,19 @@ public class ReportingdeathinformationfromaclinicalsettingtovitalrecordsTest ext
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsTemplateId() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTemplateIdTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTemplateId() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTemplateIdTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -137,19 +119,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTemplateId(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTemplateId(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTemplateIdTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -163,19 +148,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsClassCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsClassCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsClassCode() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsClassCodeTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -211,19 +196,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsClassCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsClassCode(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsClassCodeTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsClassCodeTestCase.doValidationTest();
 }		
 
 
@@ -237,19 +225,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsCodeP() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCodePTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsMoodCode() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsMoodCodeTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -285,19 +273,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCodeP(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsMoodCode(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCodePTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -311,19 +302,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodeP() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodePTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -359,19 +350,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodeP(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCodeTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodePTestCase.doValidationTest();
 }		
 
 
@@ -385,19 +379,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCodePTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCode() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodeTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCode",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -433,19 +427,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCode(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCodePTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCodeTestCase.doValidationTest();
 }		
 
 
@@ -459,19 +456,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodeP() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodePTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -507,19 +504,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodeP(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsConfidentialityCodeTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodePTestCase.doValidationTest();
 }		
 
 
@@ -533,19 +533,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsId() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsIdTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsId",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCode() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodeTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCode",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -581,19 +581,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsId(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCode(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsIdTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsConfidentialityCodeTestCase.doValidationTest();
 }		
 
 
@@ -607,19 +610,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsLanguageCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsLanguageCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsLanguageCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsId() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsIdTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsId",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -655,19 +658,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsLanguageCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsId(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsLanguageCodeTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsIdTestCase.doValidationTest();
 }		
 
 
@@ -681,19 +687,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsMoodCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsMoodCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsLanguageCode() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsLanguageCodeTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsLanguageCode",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -729,19 +735,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsMoodCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsLanguageCode(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsMoodCodeTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsLanguageCodeTestCase.doValidationTest();
 }		
 
 
@@ -755,19 +764,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRealmCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRealmCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRealmCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCode() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodeTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCode",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -803,19 +812,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRealmCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCode(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRealmCodeTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodeTestCase.doValidationTest();
 }		
 
 
@@ -829,19 +841,96 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsTitle() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTitleTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTitle",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodeP() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodePTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodeP(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRealmCodePTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTitle() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTitleTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTitle",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -880,19 +969,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTitle(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTitle(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsTitleTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsTitleTestCase.doValidationTest();
 }		
 
 
@@ -906,19 +998,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsEffectiveTime() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsEffectiveTimeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsEffectiveTime() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsEffectiveTimeTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsEffectiveTime",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -957,19 +1049,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsEffectiveTime(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsEffectiveTime(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsEffectiveTimeTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsEffectiveTimeTestCase.doValidationTest();
 }		
 
 
@@ -983,19 +1078,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodian() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodian",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -1031,19 +1126,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodian(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianTestCase.doValidationTest();
 }		
 
 
@@ -1057,19 +1155,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsDeathReportDocumentBody() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsDeathReportDocumentBodyTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsDeathReportDocumentBody",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_DEATH_REPORT_DOCUMENT_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsDeathReportDocumentBody() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsDeathReportDocumentBodyTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsDeathReportDocumentBody",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_DEATH_REPORT_DOCUMENT_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -1105,19 +1203,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsDeathReportDocumentBody(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsDeathReportDocumentBody(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsDeathReportDocumentBodyTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsDeathReportDocumentBodyTestCase.doValidationTest();
 }		
 
 
@@ -1131,19 +1232,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthor() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthorTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -1179,19 +1280,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthor(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthorTestCase.doValidationTest();
 }		
 
 
@@ -1205,19 +1309,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTarget() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTarget",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTargetTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -1253,19 +1357,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTarget(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTargetTestCase.doValidationTest();
 }		
 
 
@@ -1279,19 +1386,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationName() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationNameTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationName",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationName() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationNameTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationName",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -1327,19 +1434,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationName(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationName(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationNameTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationNameTestCase.doValidationTest();
 }		
 
 
@@ -1353,19 +1463,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationId() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationIdTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationId",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationId() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationIdTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationId",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -1401,19 +1511,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationId(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationId(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationIdTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationIdTestCase.doValidationTest();
 }		
 
 
@@ -1427,19 +1540,19 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 
  
 									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodian() {
+			OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianTestCase = new OperationsTestCase<ReportingDeathInformationfromaClinicalSettingtoVitalRecords>(
+			"validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodian",
+			operationsForOCL.getOCLValue("VALIDATE_REPORTING_DEATH_INFORMATIONFROMA_CLINICAL_SETTINGTO_VITAL_RECORDS_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToFail(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 
 			}
 
 			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
+			protected void updateToPass(ReportingDeathInformationfromaClinicalSettingtoVitalRecords target) {
 				target.init();
 				
 				
@@ -1475,1573 +1588,22 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
+				return ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations.validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodian(
+					(ReportingDeathInformationfromaClinicalSettingtoVitalRecords) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonClassCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonClassCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR_AUTHORING_PERSON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonClassCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonClassCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonDeterminerCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonDeterminerCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonDeterminerCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR_AUTHORING_PERSON_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonDeterminerCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonDeterminerCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonName() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonNameTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR_AUTHORING_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonName(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonNameTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorClassCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorClassCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorClassCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorClassCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorId() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorIdTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorId",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorId(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorIdTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPerson() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPerson",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR_AUTHORING_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPerson(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAuthoringPersonTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTypeCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTypeCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTypeCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTypeCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTime() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTimeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTime",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTime(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorTimeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCodeP() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCodePTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCodeP(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonAdministrativeGenderCodePTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonBirthTime() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonBirthTimeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonBirthTime",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonBirthTime(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonBirthTimeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonClassCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonClassCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonClassCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonClassCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonDeterminerCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonDeterminerCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonDeterminerCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonDeterminerCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonDeterminerCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonName() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonNameTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonName(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonNameTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientClassCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientClassCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientClassCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientClassCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientId() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientIdTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientId",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientId(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientIdTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientAddr() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientAddrTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientAddr",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientAddr(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientAddrTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPerson() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPerson",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPerson(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientPersonTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetTypeCode() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetTypeCodeTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetTypeCode(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetTypeCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatient() {
-			OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords> validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientTestCase = new OperationsTestCase<Reportingdeathinformationfromaclinicalsettingtovitalrecords>(
-			"validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatient",
-			operationsForOCL.getOCLValue("VALIDATE_REPORTINGDEATHINFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Reportingdeathinformationfromaclinicalsettingtovitalrecords target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations.validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatient(
-					(Reportingdeathinformationfromaclinicalsettingtovitalrecords) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReportingdeathinformationfromaclinicalsettingtovitalrecordsRecordTargetPatientTestCase.doValidationTest();
+		validateReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianTestCase.doValidationTest();
 }		
 
 
@@ -3060,7 +1622,7 @@ public void testValidateReportingdeathinformationfromaclinicalsettingtovitalreco
 public void testGetDeathReportDocumentBody() {
 
 
-Reportingdeathinformationfromaclinicalsettingtovitalrecords target = objectFactory.create();
+ReportingDeathInformationfromaClinicalSettingtoVitalRecords target = objectFactory.create();
 target.getDeathReportDocumentBody();
 
 
@@ -3074,7 +1636,7 @@ target.getDeathReportDocumentBody();
 *
 * @generated
 */
-	private static class OperationsForOCL extends ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations {
+	private static class OperationsForOCL extends ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations {
 		public String getOCLValue(String fieldName) {
 
 			String oclValue = null;
@@ -3092,9 +1654,10 @@ target.getDeathReportDocumentBody();
 *
 * @generated
 */
-	private static class ObjectFactory implements TestObjectFactory<Reportingdeathinformationfromaclinicalsettingtovitalrecords> {
-		public Reportingdeathinformationfromaclinicalsettingtovitalrecords create() {		
-			return VsdrFactory.eINSTANCE.createReportingdeathinformationfromaclinicalsettingtovitalrecords();
+	private static class ObjectFactory implements TestObjectFactory<ReportingDeathInformationfromaClinicalSettingtoVitalRecords> {
+		@Override
+		public ReportingDeathInformationfromaClinicalSettingtoVitalRecords create() {		
+			return VsdrFactory.eINSTANCE.createReportingDeathInformationfromaClinicalSettingtoVitalRecords();
 		}
 	}
 
@@ -3116,7 +1679,7 @@ target.getDeathReportDocumentBody();
 * Tests Operations Constructor for 100% coverage
 * @generated
 */	
-	private static class ConstructorTestClass extends ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations {};
+	private static class ConstructorTestClass extends ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations {};
 	
 		/**
 * Tests Operations Constructor for 100% coverage
@@ -3143,4 +1706,4 @@ target.getDeathReportDocumentBody();
 
 	
 	
-} // ReportingdeathinformationfromaclinicalsettingtovitalrecordsOperations
+} // ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations

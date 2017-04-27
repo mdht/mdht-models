@@ -7,27 +7,20 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistoryObservation2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Social History Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -49,6 +42,29 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSocialHistoryObservation2ReferenceAttribute(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2ReferenceAttribute(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSocialHistoryObservationStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +96,31 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSocialHistoryObservation2CDTranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2CDTranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSocialHistoryObservation2CDTranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2CDTranslationP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
-	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservationTemplateId(
 			this, diagnostics, context);
 	}
@@ -114,6 +153,18 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	@Override
 	public boolean validateSocialHistoryObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSocialHistoryObservationStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**

@@ -7,29 +7,21 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.AuthorImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.AuthorParticipationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.AuthorImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Author Participation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -101,18 +93,6 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * @generated
 	 */
 	@Override
-	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationId(
@@ -160,9 +140,10 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAuthorParticipationAssignedAuthorId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorId(this, diagnostics, context);
+	public boolean validateAuthorParticipationAssignedAuthorCodeTerminology(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorCodeTerminology(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -171,9 +152,9 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * @generated
 	 */
 	@Override
-	public boolean validateAuthorParticipationAssignedAuthorCodeP(DiagnosticChain diagnostics,
+	public boolean validateAuthorParticipationAssignedAuthorId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorCodeP(this, diagnostics, context);
+		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorId(this, diagnostics, context);
 	}
 
 	/**

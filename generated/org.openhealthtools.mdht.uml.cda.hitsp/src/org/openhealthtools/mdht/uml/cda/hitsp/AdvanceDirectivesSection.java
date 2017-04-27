@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedAdvanceDirectivesSection;
 
 /**
@@ -27,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.CodedAdvanceDirectivesSection;
  * <!-- begin-model-doc -->
  * <p>
  *     The Advance Directives Section contains information that defines the patient's expectations and requests
- *     for care along with the locations of the documents. 
+ *     for care along with the locations of the documents.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -83,5 +81,6 @@ public interface AdvanceDirectivesSection extends CodedAdvanceDirectivesSection 
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public AdvanceDirectivesSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // AdvanceDirectivesSection

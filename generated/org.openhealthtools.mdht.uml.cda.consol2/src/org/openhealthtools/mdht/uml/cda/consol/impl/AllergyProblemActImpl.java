@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyProblemActOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Allergy Problem Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -69,7 +67,8 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAllergyProblemActEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergyProblemActEffectiveTimeHigh(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActEffectiveTimeHigh(this, diagnostics, context);
 	}
 
@@ -149,7 +148,8 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAllergyProblemActAllergyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergyProblemActAllergyObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActAllergyObservation(this, diagnostics, context);
 	}
 

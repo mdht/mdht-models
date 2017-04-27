@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.ihe.CarePlanSection;
 
@@ -27,11 +25,11 @@ import org.openhealthtools.mdht.uml.cda.ihe.CarePlanSection;
  * <!-- begin-model-doc -->
  * <p>
  *     The Plan of Care Section contains information about the expectations for care to be provided including
- *     proposed interventions and goals for improving the condition of the patient. 
+ *     proposed interventions and goals for improving the condition of the patient.
  * </p>
  * <p>
  *     A plan of care section varies from the assessment and plan section defined above in that it does not
- *     include a physician assessment of the patient condition. 
+ *     include a physician assessment of the patient condition.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -149,5 +147,6 @@ public interface PlanOfCareSection extends AssessmentAndPlanSection, CarePlanSec
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfCareSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public PlanOfCareSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // PlanOfCareSection

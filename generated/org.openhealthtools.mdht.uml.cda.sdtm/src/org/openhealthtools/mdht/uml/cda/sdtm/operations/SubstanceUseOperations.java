@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.SubstanceAdministrationOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
@@ -38,7 +31,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.StudyDayPeriod;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -94,7 +86,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class SubstanceUseOperations extends SubstanceAdministrationOperations {
+public class SubstanceUseOperations extends org.eclipse.mdht.uml.cda.operations.SubstanceAdministrationOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -123,7 +123,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -138,25 +138,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseTemplateId(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -184,7 +194,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -199,25 +209,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseClassCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -245,7 +265,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -260,25 +280,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseMoodCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -306,7 +336,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -321,25 +351,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseId(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -367,7 +407,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -382,25 +422,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseStatusCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -428,7 +478,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -443,25 +493,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseText(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_TEXT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -489,7 +549,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -504,25 +564,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseEffectiveTime(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -550,7 +620,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -565,25 +635,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseDoseQuantity(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_DOSE_QUANTITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -611,7 +691,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -626,25 +706,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseMaxDoseQuantity(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_MAX_DOSE_QUANTITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseMaxDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseMaxDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -672,7 +762,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -687,25 +777,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseRouteCodeP(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_ROUTE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseRouteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseRouteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -735,7 +835,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -750,25 +850,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseRouteCode(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_ROUTE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseRouteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseRouteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -796,7 +906,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -811,25 +921,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseConsumableMaterial(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_CONSUMABLE_MATERIAL,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseConsumableMaterial", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseConsumableMaterial", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -857,7 +977,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -872,25 +992,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUsePreSpecifiedEvent(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_PRE_SPECIFIED_EVENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUsePreSpecifiedEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUsePreSpecifiedEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -918,7 +1048,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -933,25 +1063,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseNonPerformanceReason(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -979,7 +1119,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -994,25 +1134,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseDataCollection(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_DATA_COLLECTION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -1040,7 +1190,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1055,25 +1205,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseStudyDayPeriod(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_STUDY_DAY_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -1101,7 +1261,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1116,25 +1276,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseComment(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -1162,7 +1332,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1177,25 +1347,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseDomainAssignment(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -1223,7 +1403,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1238,25 +1418,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseRelatedRecord(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -1284,7 +1474,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1299,25 +1489,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseSupplementalValue(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -1345,7 +1545,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1360,25 +1560,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseStartRelativetoReferencePeriod(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_START_RELATIVETO_REFERENCE_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseStartRelativetoReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseStartRelativetoReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -1406,7 +1616,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1421,25 +1631,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseStopRelativetoReferencePeriod(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_STOP_RELATIVETO_REFERENCE_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseStopRelativetoReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseStopRelativetoReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -1467,7 +1687,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1482,25 +1702,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseCategory(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -1528,7 +1758,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1543,25 +1773,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseSubCategory(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -1589,7 +1829,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1604,25 +1844,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseFindingAbout(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -1650,7 +1900,7 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBSTANCE_USE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBSTANCE_USE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1665,25 +1915,35 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  boolean validateSubstanceUseEventDuration(SubstanceUse substanceUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBSTANCE_USE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBSTANCE_USE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBSTANCE_USE);
 			try {
-				VALIDATE_SUBSTANCE_USE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_USE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_USE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBSTANCE_USE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_USE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(substanceUse)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBSTANCE_USE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(substanceUse)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBSTANCE_USE__SUBSTANCE_USE_EVENT_DURATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseEventDuration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubstanceUseSubstanceUseEventDuration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(substanceUse, context) }),
 						 new Object [] { substanceUse }));
 			}
 			 
@@ -1719,8 +1979,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  PreSpecifiedEvent getPreSpecifiedEvent(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_PRE_SPECIFIED_EVENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(78));
 			try {
 				GET_PRE_SPECIFIED_EVENT__EOCL_QRY = helper.createQuery(GET_PRE_SPECIFIED_EVENT__EOCL_EXP);
@@ -1728,8 +1993,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PRE_SPECIFIED_EVENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PRE_SPECIFIED_EVENT__EOCL_QRY);
 		return (PreSpecifiedEvent) query.evaluate(substanceUse);
 	}
 
@@ -1760,8 +2026,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(79));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1769,8 +2040,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(substanceUse);
 	}
 
@@ -1801,8 +2073,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  DataCollection getDataCollection(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_DATA_COLLECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(80));
 			try {
 				GET_DATA_COLLECTION__EOCL_QRY = helper.createQuery(GET_DATA_COLLECTION__EOCL_EXP);
@@ -1810,8 +2087,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DATA_COLLECTION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DATA_COLLECTION__EOCL_QRY);
 		return (DataCollection) query.evaluate(substanceUse);
 	}
 
@@ -1842,8 +2120,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  StudyDayPeriod getStudyDayPeriod(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(81));
 			try {
 				GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);
@@ -1851,8 +2134,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
 		return (StudyDayPeriod) query.evaluate(substanceUse);
 	}
 
@@ -1883,8 +2167,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  EList<Comment> getComments(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(82));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1892,8 +2181,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(substanceUse);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -1926,8 +2216,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(83));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1935,8 +2230,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(substanceUse);
 	}
 
@@ -1967,8 +2263,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(84));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1976,8 +2277,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(substanceUse);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -2010,8 +2312,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(85));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -2019,8 +2326,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(substanceUse);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -2053,8 +2361,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  StartRelativetoReferencePeriod getStartRelativetoReferencePeriod(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(86));
 			try {
 				GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY = helper.createQuery(GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_EXP);
@@ -2062,8 +2375,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY);
 		return (StartRelativetoReferencePeriod) query.evaluate(substanceUse);
 	}
 
@@ -2094,8 +2408,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  StopRelativetoReferencePeriod getStopRelativetoReferencePeriod(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(87));
 			try {
 				GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY = helper.createQuery(GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_EXP);
@@ -2103,8 +2422,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY);
 		return (StopRelativetoReferencePeriod) query.evaluate(substanceUse);
 	}
 
@@ -2135,8 +2455,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  Category getCategory(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(88));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -2144,8 +2469,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(substanceUse);
 	}
 
@@ -2176,8 +2502,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  SubCategory getSubCategory(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(89));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -2185,8 +2516,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(substanceUse);
 	}
 
@@ -2217,8 +2549,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(90));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -2226,8 +2563,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(substanceUse);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());
@@ -2260,8 +2598,13 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 	 */
 	
 	public static  EventDuration getEventDuration(SubstanceUse substanceUse) {
+	
+	
+	
 		if (GET_EVENT_DURATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBSTANCE_USE, SdtmPackage.Literals.SUBSTANCE_USE.getEAllOperations().get(91));
 			try {
 				GET_EVENT_DURATION__EOCL_QRY = helper.createQuery(GET_EVENT_DURATION__EOCL_EXP);
@@ -2269,8 +2612,9 @@ public class SubstanceUseOperations extends SubstanceAdministrationOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EVENT_DURATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EVENT_DURATION__EOCL_QRY);
 		return (EventDuration) query.evaluate(substanceUse);
 	}
 

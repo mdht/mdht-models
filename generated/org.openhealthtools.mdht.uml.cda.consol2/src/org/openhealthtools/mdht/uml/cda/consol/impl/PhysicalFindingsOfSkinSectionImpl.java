@@ -7,31 +7,23 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalFindingsOfSkinSection;
-import org.openhealthtools.mdht.uml.cda.consol.WoundObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalFindingsOfSkinSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Physical Findings Of Skin Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -84,7 +76,8 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * @generated
 	 */
 	@Override
-	public boolean validatePhysicalFindingsOfSkinSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePhysicalFindingsOfSkinSectionCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionCodeP(
 			this, diagnostics, context);
 	}
@@ -95,7 +88,8 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * @generated
 	 */
 	@Override
-	public boolean validatePhysicalFindingsOfSkinSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePhysicalFindingsOfSkinSectionTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionTitle(
 			this, diagnostics, context);
 	}
@@ -129,7 +123,7 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * @generated
 	 */
 	@Override
-	public EList<WoundObservation> getWoundObservations() {
+	public EList<LongitudinalCareWoundObservation> getWoundObservations() {
 		return PhysicalFindingsOfSkinSectionOperations.getWoundObservations(this);
 	}
 

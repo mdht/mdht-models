@@ -7,28 +7,21 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.CharacteristicsOfHomeEnvironmentOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Characteristics Of Home Environment</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -94,7 +87,8 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateCharacteristicsOfHomeEnvironmentId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCharacteristicsOfHomeEnvironmentId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentId(
 			this, diagnostics, context);
 	}
@@ -117,7 +111,8 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateCharacteristicsOfHomeEnvironmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCharacteristicsOfHomeEnvironmentCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentCode(
 			this, diagnostics, context);
 	}
@@ -155,6 +150,17 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	public boolean validateCharacteristicsOfHomeEnvironmentValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCharacteristicsOfHomeEnvironmentValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValueP(
 			this, diagnostics, context);
 	}
 

@@ -5,12 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.openhealthtools.mdht.cda</groupId>
-		<artifactId>plugins</artifactId>
-		<version>2.0.0-SNAPSHOT</version>
+		<artifactId>org.openhealthtools.mdht.cda.docs</artifactId>
+		<version>3.0.0-SNAPSHOT</version>
 	</parent>
 	<groupId>org.openhealthtools.mdht.cda</groupId>
 	<artifactId>org.openhealthtools.mdht.uml.cda.consol.doc</artifactId>
-	<version>2.0.0-SNAPSHOT</version>
+	<version>3.0.0-SNAPSHOT</version>
 	<packaging>eclipse-plugin</packaging>
 
 	

@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection;
@@ -26,17 +26,14 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ProceduresSectionOp
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>Procedures Section</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ *
  * @generated
  */
-public class ProceduresSectionImpl extends
-		org.openhealthtools.mdht.uml.cda.consol.impl.ProceduresSectionImpl
+public class ProceduresSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.ProceduresSectionImpl
 		implements ProceduresSection {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected ProceduresSectionImpl() {
@@ -45,7 +42,7 @@ public class ProceduresSectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -55,44 +52,41 @@ public class ProceduresSectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
 	public EList<ProcedureActivityProcedure> getMu2consolProcedureActivityProcedures() {
-		return ProceduresSectionOperations
-				.getMu2consolProcedureActivityProcedures(this);
+		return ProceduresSectionOperations.getMu2consolProcedureActivityProcedures(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionEntriesOptionalTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionOperations
-				.validateProceduresSectionEntriesOptionalTemplateId(this,
-						diagnostics, context);
+	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics,
+				context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionProcedureActivityProcedure(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionOperations
-				.validateProceduresSectionProcedureActivityProcedure(this,
-						diagnostics, context);
+	public boolean validateProceduresSectionProcedureActivityProcedure(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityProcedure(this, diagnostics,
+				context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -102,12 +96,11 @@ public class ProceduresSectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public ProceduresSection init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ProceduresSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
 	}

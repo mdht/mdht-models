@@ -7,17 +7,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.MannerofDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
 
 /**
@@ -41,6 +36,14 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * @generated
  */
 public class MannerofDeathOperations extends ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +72,7 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MANNEROF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MANNEROF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -84,25 +87,35 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMannerofDeathTemplateId(MannerofDeath mannerofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MANNEROF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MANNEROF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.MANNEROF_DEATH);
 			try {
-				VALIDATE_MANNEROF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MANNEROF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MANNEROF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANNEROF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MANNEROF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mannerofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANNEROF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mannerofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.MANNEROF_DEATH__MANNEROF_DEATH_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathMannerofDeathTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
 						 new Object [] { mannerofDeath }));
 			}
 			 
@@ -130,7 +143,7 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MANNEROF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MANNEROF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -145,25 +158,35 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMannerofDeathClassCode(MannerofDeath mannerofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MANNEROF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MANNEROF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.MANNEROF_DEATH);
 			try {
-				VALIDATE_MANNEROF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MANNEROF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MANNEROF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANNEROF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MANNEROF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mannerofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANNEROF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mannerofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.MANNEROF_DEATH__MANNEROF_DEATH_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathMannerofDeathClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
 						 new Object [] { mannerofDeath }));
 			}
 			 
@@ -191,7 +214,7 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MANNEROF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MANNEROF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -206,25 +229,35 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMannerofDeathMoodCode(MannerofDeath mannerofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MANNEROF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MANNEROF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.MANNEROF_DEATH);
 			try {
-				VALIDATE_MANNEROF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MANNEROF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MANNEROF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANNEROF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MANNEROF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mannerofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANNEROF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mannerofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.MANNEROF_DEATH__MANNEROF_DEATH_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathMannerofDeathMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
 						 new Object [] { mannerofDeath }));
 			}
 			 
@@ -252,7 +285,7 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MANNEROF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MANNEROF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -267,25 +300,35 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMannerofDeathCodeP(MannerofDeath mannerofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MANNEROF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MANNEROF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.MANNEROF_DEATH);
 			try {
-				VALIDATE_MANNEROF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MANNEROF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MANNEROF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANNEROF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MANNEROF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mannerofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANNEROF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mannerofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.MANNEROF_DEATH__MANNEROF_DEATH_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathMannerofDeathCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
 						 new Object [] { mannerofDeath }));
 			}
 			 
@@ -315,7 +358,7 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MANNEROF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MANNEROF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -330,25 +373,35 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMannerofDeathCode(MannerofDeath mannerofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MANNEROF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MANNEROF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.MANNEROF_DEATH);
 			try {
-				VALIDATE_MANNEROF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MANNEROF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MANNEROF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANNEROF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MANNEROF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mannerofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANNEROF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mannerofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.MANNEROF_DEATH__MANNEROF_DEATH_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathMannerofDeathCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
 						 new Object [] { mannerofDeath }));
 			}
 			 
@@ -378,7 +431,7 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MANNEROF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MANNEROF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -393,25 +446,35 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMannerofDeathValue(MannerofDeath mannerofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MANNEROF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MANNEROF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.MANNEROF_DEATH);
 			try {
-				VALIDATE_MANNEROF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MANNEROF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MANNEROF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANNEROF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MANNEROF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mannerofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANNEROF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mannerofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.MANNEROF_DEATH__MANNEROF_DEATH_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathMannerofDeathValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
 						 new Object [] { mannerofDeath }));
 			}
 			 
@@ -439,7 +502,7 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MANNEROF_DEATH_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MANNEROF_DEATH_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -454,25 +517,35 @@ public class MannerofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMannerofDeathValueP(MannerofDeath mannerofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MANNEROF_DEATH_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MANNEROF_DEATH_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.MANNEROF_DEATH);
 			try {
-				VALIDATE_MANNEROF_DEATH_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MANNEROF_DEATH_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MANNEROF_DEATH_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANNEROF_DEATH_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MANNEROF_DEATH_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(mannerofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANNEROF_DEATH_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mannerofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.MANNEROF_DEATH__MANNEROF_DEATH_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MannerofDeathMannerofDeathValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(mannerofDeath, context) }),
 						 new Object [] { mannerofDeath }));
 			}
 			 

@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
 import org.openhealthtools.mdht.uml.cda.sdtm.ExclusionReason;
@@ -32,7 +25,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.StudyDayPeriod;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -75,7 +67,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class FoodandWaterConsumptionOperations extends ClinicalStatementOperations {
+public class FoodandWaterConsumptionOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -104,7 +104,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -119,25 +119,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionTemplateId(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -165,7 +175,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -180,25 +190,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionClassCode(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -226,7 +246,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -241,25 +261,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionMoodCode(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -287,7 +317,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -302,25 +332,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionId(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -348,7 +388,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -363,25 +403,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionCodeP(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -411,7 +461,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -426,25 +476,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionCode(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -472,7 +532,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -487,25 +547,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionStatusCode(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -533,7 +603,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -548,25 +618,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionEffectiveTime(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -594,7 +674,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -609,25 +689,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionValue(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -655,7 +745,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -670,25 +760,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionInterpretationCodeP(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -718,7 +818,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -733,25 +833,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionInterpretationCode(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_INTERPRETATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -779,7 +889,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -794,25 +904,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionNonPerformanceReason(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -840,7 +960,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -855,25 +975,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionStudyDayPeriod(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_STUDY_DAY_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -901,7 +1031,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -916,25 +1046,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionExclusionReason(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_EXCLUSION_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionExclusionReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionExclusionReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -962,7 +1102,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -977,25 +1117,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionGroupIdentifier(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -1023,7 +1173,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1038,25 +1188,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionComment(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -1084,7 +1244,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1099,25 +1259,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionDomainAssignment(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -1145,7 +1315,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1160,25 +1330,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionRelatedRecord(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -1206,7 +1386,7 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_FOODAND_WATER_CONSUMPTION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_FOODAND_WATER_CONSUMPTION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1221,25 +1401,35 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  boolean validateFoodandWaterConsumptionSupplementalValue(FoodandWaterConsumption foodandWaterConsumption, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_FOODAND_WATER_CONSUMPTION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_FOODAND_WATER_CONSUMPTION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION);
 			try {
-				VALIDATE_FOODAND_WATER_CONSUMPTION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FOODAND_WATER_CONSUMPTION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FOODAND_WATER_CONSUMPTION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(foodandWaterConsumption)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FOODAND_WATER_CONSUMPTION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(foodandWaterConsumption)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.FOODAND_WATER_CONSUMPTION__FOODAND_WATER_CONSUMPTION_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "FoodandWaterConsumptionFoodandWaterConsumptionSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(foodandWaterConsumption, context) }),
 						 new Object [] { foodandWaterConsumption }));
 			}
 			 
@@ -1275,8 +1465,13 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(FoodandWaterConsumption foodandWaterConsumption) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION, SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION.getEAllOperations().get(70));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1284,8 +1479,9 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(foodandWaterConsumption);
 	}
 
@@ -1316,8 +1512,13 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  StudyDayPeriod getStudyDayPeriod(FoodandWaterConsumption foodandWaterConsumption) {
+	
+	
+	
 		if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION, SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION.getEAllOperations().get(71));
 			try {
 				GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);
@@ -1325,8 +1526,9 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
 		return (StudyDayPeriod) query.evaluate(foodandWaterConsumption);
 	}
 
@@ -1357,8 +1559,13 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  ExclusionReason getExclusionReason(FoodandWaterConsumption foodandWaterConsumption) {
+	
+	
+	
 		if (GET_EXCLUSION_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION, SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION.getEAllOperations().get(72));
 			try {
 				GET_EXCLUSION_REASON__EOCL_QRY = helper.createQuery(GET_EXCLUSION_REASON__EOCL_EXP);
@@ -1366,8 +1573,9 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EXCLUSION_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EXCLUSION_REASON__EOCL_QRY);
 		return (ExclusionReason) query.evaluate(foodandWaterConsumption);
 	}
 
@@ -1398,8 +1606,13 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(FoodandWaterConsumption foodandWaterConsumption) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION, SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION.getEAllOperations().get(73));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1407,8 +1620,9 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(foodandWaterConsumption);
 	}
 
@@ -1439,8 +1653,13 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  EList<Comment> getComments(FoodandWaterConsumption foodandWaterConsumption) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION, SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION.getEAllOperations().get(74));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1448,8 +1667,9 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(foodandWaterConsumption);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -1482,8 +1702,13 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(FoodandWaterConsumption foodandWaterConsumption) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION, SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION.getEAllOperations().get(75));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1491,8 +1716,9 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(foodandWaterConsumption);
 	}
 
@@ -1523,8 +1749,13 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(FoodandWaterConsumption foodandWaterConsumption) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION, SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION.getEAllOperations().get(76));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1532,8 +1763,9 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(foodandWaterConsumption);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -1566,8 +1798,13 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(FoodandWaterConsumption foodandWaterConsumption) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION, SdtmPackage.Literals.FOODAND_WATER_CONSUMPTION.getEAllOperations().get(77));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -1575,8 +1812,9 @@ public class FoodandWaterConsumptionOperations extends ClinicalStatementOperatio
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(foodandWaterConsumption);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());

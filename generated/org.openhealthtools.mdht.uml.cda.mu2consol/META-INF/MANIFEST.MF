@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Version: 2.0.0.qualifier
+Bundle-Version: 3.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.mu2consol;singleton:=true
@@ -12,12 +12,12 @@ Bundle-Localization: plugin
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.ocl.ecore;visibility:=reexport,
- org.openhealthtools.mdht.uml.cda;visibility:=reexport,
- org.openhealthtools.mdht.uml.hl7.datatypes;visibility:=reexport,
- org.openhealthtools.mdht.uml.hl7.rim;visibility:=reexport,
- org.openhealthtools.mdht.uml.hl7.vocab;visibility:=reexport,
- org.eclipse.uml2.types;visibility:=reexport,
- org.openhealthtools.mdht.uml.cda.consol;visibility:=reexport
+ org.eclipse.mdht.uml.cda;visibility:=reexport,
+ org.openhealthtools.mdht.uml.cda.consol2;visibility:=reexport,
+ org.eclipse.mdht.uml.hl7.datatypes;visibility:=reexport,
+ org.eclipse.mdht.uml.hl7.rim;visibility:=reexport,
+ org.eclipse.mdht.uml.hl7.vocab;visibility:=reexport,
+ org.eclipse.uml2.types;visibility:=reexport
 Export-Package: org.openhealthtools.mdht.uml.cda.mu2consol,
  org.openhealthtools.mdht.uml.cda.mu2consol.impl,
  org.openhealthtools.mdht.uml.cda.mu2consol.operations,

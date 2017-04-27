@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_jfoCUOZbEeGINOJ_SD9_dA" name="CognitiveStatusResultOrganizer">
     <ownedComment xmi:id="_67cIUOZiEeGINOJ_SD9_dA">
       <body>This clinical statement identifies a set of cognitive status result observations. It contains information applicable to all of the contained cognitive status result observations. A result organizer may be used to group questions in a Patient Health Questionaire (PHQ). &#xD;
@@ -17,74 +17,67 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
       <general xmi:type="uml:Class" href="consol-results.uml#_2JxzgBSVEeGGzu7fmW9pXw"/>
     </generalization>
     <ownedAttribute xmi:id="_Dku5YOZjEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOnw0DcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOnw0DcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_OBLDEOZjEeGINOJ_SD9_dA" value="CLUSTER"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_NjnHQEb9Ed6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_NjnHQEb9Ed6besF9iFIJkQ"/>
       <redefinedProperty href="consol-results.uml#_eyn08NzJEeG4UqssEkZt3w"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Dku5auZjEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dku5a-ZjEeGINOJ_SD9_dA" value="EVN"/>
       <redefinedProperty href="consol-results.uml#_2JzBoBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Dku5ZuZjEeGINOJ_SD9_dA" name="id" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dku5aOZjEeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dku5Z-ZjEeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="consol-results.uml#_2JzBoxSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Dku5YuZjEeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dku5ZOZjEeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dku5Y-ZjEeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
       <redefinedProperty href="consol-results.uml#_DiXJUB7KEeGaOZtrEokzNQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Dku5beZjEeGINOJ_SD9_dA" name="statusCode" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <redefinedProperty href="consol-results.uml#_2JzoshSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_0aKXMOZjEeGINOJ_SD9_dA" name="cognitiveStatusResultObservation" type="_gkBM0OZbEeGINOJ_SD9_dA" association="_0aKXMuZjEeGINOJ_SD9_dA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2AElEeZjEeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2AElEOZjEeGINOJ_SD9_dA" value="*"/>
+      <redefinedProperty href="consol-results.uml#_2JxzgxSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_0aKXMuZjEeGINOJ_SD9_dA" memberEnd="_0aKXMOZjEeGINOJ_SD9_dA _0aKXM-ZjEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_0aKXM-ZjEeGINOJ_SD9_dA" type="_jfoCUOZbEeGINOJ_SD9_dA" association="_0aKXMuZjEeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_SABeQOZjEeGINOJ_SD9_dA" base_Class="_jfoCUOZbEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.75">
-    <ruleId>CONF:14375</ruleId>
-    <ruleId>CONF:14376</ruleId>
+    <ruleId>CONF:14375, CONF:14376</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_hRKtEOZjEeGINOJ_SD9_dA" severity="WARNING" base_Constraint="_ckydgOZjEeGINOJ_SD9_dA">
-    <ruleId>CONF:14697</ruleId>
-    <ruleId>CONF:14698</ruleId>
+    <ruleId>CONF:14697, CONF:14698</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_Dku5YeZjEeGINOJ_SD9_dA" base_Property="_Dku5YOZjEeGINOJ_SD9_dA">
-    <ruleId>CONF:14369</ruleId>
-    <ruleId>R2.0=CONF:1098-14369</ruleId>
+    <ruleId>CONF:14369, R2.1=CONF:1198-14369</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Dku5bOZjEeGINOJ_SD9_dA" base_Property="_Dku5auZjEeGINOJ_SD9_dA">
-    <ruleId>CONF:14371</ruleId>
-    <ruleId>R2.0=CONF:1098-14371</ruleId>
+    <ruleId>CONF:14371, R2.1=CONF:1198-14371</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Dku5aeZjEeGINOJ_SD9_dA" base_Property="_Dku5ZuZjEeGINOJ_SD9_dA">
-    <ruleId>CONF:14377</ruleId>
-    <ruleId>R2.0=CONF:1098-14377</ruleId>
+    <ruleId>CONF:14377, R2.1=CONF:1198-14377</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Dku5ZeZjEeGINOJ_SD9_dA" base_Property="_Dku5YuZjEeGINOJ_SD9_dA">
     <ruleId>CONF:14378</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Dku5b-ZjEeGINOJ_SD9_dA" base_Property="_Dku5beZjEeGINOJ_SD9_dA"/>
   <CDA:CodeSystemConstraint xmi:id="_u12aEOZjEeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_Dku5beZjEeGINOJ_SD9_dA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:14372</ruleId>
-    <ruleId>R2.0=CONF:1098-14372</ruleId>
-    <ruleId>R2.0=CONF:1098-19093</ruleId>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:14372, R2.1=CONF:1198-14372, R2.1=CONF:1198-19093</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_4CskIOZjEeGINOJ_SD9_dA" base_Association="_0aKXMuZjEeGINOJ_SD9_dA">
-    <ruleId>CONF:14373</ruleId>
-    <ruleId>CONF:14381</ruleId>
+    <ruleId>CONF:14373, CONF:14381</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_gkBM0OZbEeGINOJ_SD9_dA" name="CognitiveStatusResultObservation">
     <ownedComment xmi:id="_7vqakOZiEeGINOJ_SD9_dA">
@@ -121,72 +114,72 @@ This is different from a cognitive status problem observation, which is a clinic
       <general xmi:type="uml:Class" href="consol-results.uml#_2J1d4BSVEeGGzu7fmW9pXw"/>
     </generalization>
     <ownedAttribute xmi:id="_rPRcUOZgEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_rPRcUeZgEeGINOJ_SD9_dA" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <redefinedProperty href="consol-results.uml#_2J4hMRSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcZeZgEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_rPRcZuZgEeGINOJ_SD9_dA" value="EVN"/>
       <redefinedProperty href="consol-results.uml#_2J4hMxSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcWeZgEeGINOJ_SD9_dA" name="id" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rPRcW-ZgEeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPRcWuZgEeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="consol-results.uml#_2J5IQBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcU-ZgEeGINOJ_SD9_dA" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="consol-results.uml#_2J1d6hSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPamROZgEeGINOJ_SD9_dA" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rPamRuZgEeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPamReZgEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="consol-results.uml#_JTUuoByWEeGaOZtrEokzNQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcaOZgEeGINOJ_SD9_dA" name="statusCode" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <redefinedProperty href="consol-results.uml#_2J5vUBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcVeZgEeGINOJ_SD9_dA" name="effectiveTime" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_TUuSQOZhEeGINOJ_SD9_dA">
         <body>Represents clinically effective time of the measurement, which may be the time the measurement was performed (e.g., a BP measurement), or may be the time the sample was taken (and measured some time afterwards).</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rPRcV-ZgEeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPRcVuZgEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="consol-results.uml#_2J1d6xSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPamSOZgEeGINOJ_SD9_dA" name="value" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
       <redefinedProperty href="consol-results.uml#_2J1d7xSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcXeZgEeGINOJ_SD9_dA" name="interpretationCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rPRcX-ZgEeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPRcXuZgEeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="consol-results.uml#_2J6WYBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcYeZgEeGINOJ_SD9_dA" name="methodCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rPRcY-ZgEeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPRcYuZgEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="consol-results.uml#_2J6WZRSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPamQOZgEeGINOJ_SD9_dA" name="targetSiteCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rPamQuZgEeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPamQeZgEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="consol-results.uml#_Wwv9wBt9EeG4C_iCHrZZ9w"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPamSuZgEeGINOJ_SD9_dA" name="author" visibility="private" aggregation="composite" association="_rPamTeZgEeGINOJ_SD9_dA">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x0MFYeZhEeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x0MFYOZhEeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_1Rt8MOZhEeGINOJ_SD9_dA" name="nonMedicinalSupplyActivity" association="_1R3GIOZhEeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="consol-medications.uml#_2HIvMBSVEeGGzu7fmW9pXw"/>
@@ -210,12 +203,12 @@ This is different from a cognitive status problem observation, which is a clinic
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_SJCs0eZiEeGINOJ_SD9_dA">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_XFrNMEcaEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_XFrNMEcaEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_SifHkOZiEeGINOJ_SD9_dA" name="observationRange" visibility="private" type="_U74A0OZiEeGINOJ_SD9_dA" aggregation="composite">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SifHkuZiEeGINOJ_SD9_dA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SifHkeZiEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fupywUobEd6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fupywUobEd6c3qsAxlFHaQ"/>
         <association href="../consol.uml#_SioRgOZiEeGINOJ_SD9_dA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_U74A0OZiEeGINOJ_SD9_dA" name="ObservationRange">
@@ -228,7 +221,7 @@ This is different from a cognitive status problem observation, which is a clinic
           </specification>
         </ownedRule>
         <generalization xmi:id="_U74A0eZiEeGINOJ_SD9_dA">
-          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ujrlMEcZEd6besF9iFIJkQ"/>
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ujrlMEcZEd6besF9iFIJkQ"/>
         </generalization>
       </nestedClassifier>
     </nestedClassifier>
@@ -274,7 +267,7 @@ This is different from a cognitive status problem observation, which is a clinic
     <ruleId>CONF:14591</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_1rarEOZgEeGINOJ_SD9_dA" code="373930000" displayName="Cognitive function finding" base_Property="_rPRcU-ZgEeGINOJ_SD9_dA" severity="WARNING">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:14592</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_rPamR-ZgEeGINOJ_SD9_dA" severity="WARNING" base_Property="_rPamROZgEeGINOJ_SD9_dA">
@@ -284,7 +277,7 @@ This is different from a cognitive status problem observation, which is a clinic
     <ruleId>CONF:14254</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_LD1aIOZhEeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_rPRcaOZgEeGINOJ_SD9_dA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_rPRcWOZgEeGINOJ_SD9_dA" base_Property="_rPRcVeZgEeGINOJ_SD9_dA">
     <ruleId>CONF:14261</ruleId>
@@ -327,7 +320,18 @@ This is different from a cognitive status problem observation, which is a clinic
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_dXKPQOZbEeGINOJ_SD9_dA" name="CognitiveStatusProblemObservation">
     <ownedComment xmi:id="_FgL9oOZcEeGINOJ_SD9_dA">
-      <body>The Mental Status Observation template represents an observation about mental status that can come from a broad range of subjective and objective information (including measured data) to address those categories described in the Mental Status Section. See also Assessment Scale Observation for specific collections of observations that together yield a summary evaluation of a particular condition.</body>
+      <body>&lt;p>&#xD;
+A cognitive status problem observation is a clinical statement that describes a patient's cognitive condition, findings, or symptoms. Examples of cognitive problem observations are inability to recall, amnesia, dementia, and aggressive behavior.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+A cognitive problem observation is a finding or medical condition. This is different from a cognitive result observation, which is a response to a question that provides insight into the patient's cognitive status, judgement, comprehension ability, or response speed.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF THIS IMPLEMENTATION GUIDE. USE OF THIS TEMPLATE IS NOT RECOMMENDED.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Reason for deprecation: Cognitive Status Problem Observation has been merged, without loss of expressivity, into Mental Status Observation (2.16.840.1.113883.10.20.22.4.74:2014-06-09).&#xD;
+&lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_daqkUOZdEeGINOJ_SD9_dA" name="hasTextReference">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_daqkUeZdEeGINOJ_SD9_dA">
@@ -383,15 +387,15 @@ This is different from a cognitive status problem observation, which is a clinic
       <general xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
     </generalization>
     <ownedAttribute xmi:id="_aFueQOZcEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_aFueQeZcEeGINOJ_SD9_dA" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <redefinedProperty href="consol-problems.uml#_6-B3UBUyEeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueUeZcEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_aFueUuZcEeGINOJ_SD9_dA" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_6-ejRBUyEeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueVOZcEeGINOJ_SD9_dA" name="negationInd" visibility="private">
@@ -401,53 +405,53 @@ This is different from a cognitive status problem observation, which is a clinic
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aFueVuZcEeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aFueVeZcEeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_LYVyAExtEd6h-an5IXo-DA"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_LYVyAExtEd6h-an5IXo-DA"/>
       <redefinedProperty href="consol-problems.uml#_qzvdsCAtEeGetMjKLkqR8g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueSuZcEeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kfHL4QUdEeOAnLCjMscTnA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kfHL4AUdEeOAnLCjMscTnA" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_6-ejQBUyEeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueQ-ZcEeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_6-UyQBUyEeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aF4PQOZcEeGINOJ_SD9_dA" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aF4PQuZcEeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aF4PQeZcEeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_zGbQJCAuEeGetMjKLkqR8g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueWOZcEeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aFueWuZcEeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aFueWeZcEeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_zGbQICAuEeGetMjKLkqR8g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueRuZcEeGINOJ_SD9_dA" name="effectiveTime" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aFueSOZcEeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aFueR-ZcEeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_zGapECAuEeGetMjKLkqR8g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueTuZcEeGINOJ_SD9_dA" name="methodCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aFueUOZcEeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aFueT-ZcEeGINOJ_SD9_dA" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1jr3cEo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1jr3cEo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aF4PROZcEeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aF4PRuZcEeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aF4PReZcEeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_zGb3MSAuEeGetMjKLkqR8g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FvvKoOZeEeGINOJ_SD9_dA" name="nonMedicinalSupplyActivity" association="_FvvKouZeEeGINOJ_SD9_dA">
@@ -508,7 +512,7 @@ This is different from a cognitive status problem observation, which is a clinic
     <ruleId>CONF:14804</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_1FScAOZcEeGINOJ_SD9_dA" code="373930000" displayName="Cognitive function finding" base_Property="_aFueQ-ZcEeGINOJ_SD9_dA" severity="WARNING">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:14805</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_aF4PQ-ZcEeGINOJ_SD9_dA" severity="WARNING" base_Property="_aF4PQOZcEeGINOJ_SD9_dA"/>
@@ -516,7 +520,7 @@ This is different from a cognitive status problem observation, which is a clinic
     <ruleId>CONF:14341</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_aFueW-ZcEeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_aFueWOZcEeGINOJ_SD9_dA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:14323</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_aFueSeZcEeGINOJ_SD9_dA" severity="WARNING" base_Property="_aFueRuZcEeGINOJ_SD9_dA">
@@ -525,9 +529,9 @@ This is different from a cognitive status problem observation, which is a clinic
   <CDA:PropertyValidation xmi:id="_r7wPMOZdEeGINOJ_SD9_dA" severity="INFO" base_Property="_aFueTuZcEeGINOJ_SD9_dA">
     <ruleId>CONF:14693</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_aF4PR-ZcEeGINOJ_SD9_dA" base_Property="_aF4PROZcEeGINOJ_SD9_dA" severity="WARNING">
-    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_aF4PR-ZcEeGINOJ_SD9_dA" severity="WARNING" base_Property="_aF4PROZcEeGINOJ_SD9_dA">
     <ruleId>CONF:14349</ruleId>
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_P7LgYOZdEeGINOJ_SD9_dA" base_Property="_aF4PROZcEeGINOJ_SD9_dA"/>
   <CDA:EntryRelationship xmi:id="_OZw7gOZeEeGINOJ_SD9_dA" severity="INFO" base_Association="_FvvKouZeEeGINOJ_SD9_dA" typeCode="REFR">
@@ -566,39 +570,39 @@ This is different from a cognitive status problem observation, which is a clinic
       </specification>
     </ownedRule>
     <generalization xmi:id="_1ZMrwOY2EeGINOJ_SD9_dA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_aZZWEOY5EeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_LGhMcOY6EeGINOJ_SD9_dA" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aZZWFeY5EeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Mk_VkOY6EeGINOJ_SD9_dA" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aZZWEeY5EeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aZZWEuY5EeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O6XRgeY6EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O6XRgOY6EeGINOJ_SD9_dA" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aZZWFuY5EeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j61aoeY6EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j61aoOY6EeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aZZWGeY5EeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ty-kceY6EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ty-kcOY6EeGINOJ_SD9_dA" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_HWZw0OY6EeGINOJ_SD9_dA" base_Class="_1ZKPgOY2EeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.86">
@@ -627,7 +631,7 @@ This is different from a cognitive status problem observation, which is a clinic
     <ruleId>CONF:16724</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_k-OxUOY6EeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_aZZWFuY5EeGINOJ_SD9_dA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_o6Zr8OY6EeGINOJ_SD9_dA" base_Property="_aZZWFuY5EeGINOJ_SD9_dA">
     <ruleId>CONF:16720</ruleId>
@@ -656,69 +660,69 @@ This is different from a cognitive status problem observation, which is a clinic
       </specification>
     </ownedRule>
     <generalization xmi:id="_Zi33YeYxEeGINOJ_SD9_dA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_hvJ8UOYxEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_c8rZ4OYzEeGINOJ_SD9_dA" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8XuYxEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_fGF9cOYzEeGINOJ_SD9_dA" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8UeYxEeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8UuYxEeGINOJ_SD9_dA" name="derivationExpr" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_5Lc8wOYzEeGINOJ_SD9_dA">
         <body>The optional derivation expression records text showing how the score was calculated from its component data</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hvJ8VOYxEeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hvJ8U-YxEeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YXKk0Eo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_YXKk0Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8VeYxEeGINOJ_SD9_dA" name="effectiveTime" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_LjN-QOY0EeGINOJ_SD9_dA">
         <body>Represents clinically effective time of the measurement, which may be when the measurement was performed (e.g., a BP measurement), or may be when sample was taken (and measured some time afterwards)</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MwdNceY0EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MwdNcOY0EeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8WOYxEeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mjdt8eYzEeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mjdt8OYzEeGINOJ_SD9_dA" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8W-YxEeGINOJ_SD9_dA" name="interpretationCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hvJ8XeYxEeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hvJ8XOYxEeGINOJ_SD9_dA" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zHXmAEo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_zHXmAEo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8X-YxEeGINOJ_SD9_dA" name="author" visibility="private" aggregation="composite" association="_hvJ8YuYxEeGINOJ_SD9_dA">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hvJ8YeYxEeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hvJ8YOYxEeGINOJ_SD9_dA" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_-ralYOYzEeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tMUJ4OY2EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tMS7wOY2EeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_QifUoOY0EeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rlm-gOY0EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RlmXcOY0EeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_y4n3UOY0EeGINOJ_SD9_dA" name="referenceRange" type="_0N8rgOY0EeGINOJ_SD9_dA" association="_y4psgOY0EeGINOJ_SD9_dA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CXkRkOY1EeGINOJ_SD9_dA"/>
@@ -736,12 +740,12 @@ This is different from a cognitive status problem observation, which is a clinic
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_0N9SkOY0EeGINOJ_SD9_dA">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_XFrNMEcaEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_XFrNMEcaEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_5VNgQOY0EeGINOJ_SD9_dA" name="observationRange" visibility="private" type="_6F7LgOY0EeGINOJ_SD9_dA" aggregation="composite">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5VNgQuY0EeGINOJ_SD9_dA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5VNgQeY0EeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fupywUobEd6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fupywUobEd6c3qsAxlFHaQ"/>
         <association href="../consol.uml#_5VOuYOY0EeGINOJ_SD9_dA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_6F7LgOY0EeGINOJ_SD9_dA" name="ObservationRange">
@@ -770,13 +774,13 @@ This is different from a cognitive status problem observation, which is a clinic
           </specification>
         </ownedRule>
         <generalization xmi:id="_6F8ZoOY0EeGINOJ_SD9_dA">
-          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ujrlMEcZEd6besF9iFIJkQ"/>
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ujrlMEcZEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_7tF9oOY0EeGINOJ_SD9_dA" name="text" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8mFbIOY0EeGINOJ_SD9_dA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8mE0EOY0EeGINOJ_SD9_dA" value="1"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JeqKIErZEd6FXKclYGEDCw"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JeqKIErZEd6FXKclYGEDCw"/>
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
@@ -825,7 +829,7 @@ This is different from a cognitive status problem observation, which is a clinic
     <ruleId>CONF:14444</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_ANrCUOY0EeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_-ralYOYzEeGINOJ_SD9_dA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_SXnqQOY0EeGINOJ_SD9_dA" base_Property="_QifUoOY0EeGINOJ_SD9_dA">
     <ruleId>CONF:14450</ruleId>
@@ -858,49 +862,49 @@ This is different from a cognitive status problem observation, which is a clinic
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_lsVbMOY_EeGINOJ_SD9_dA">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>the code/@code SHALL be selected from LOINC (codeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96</body>
+        <body>the value/@code SHALL be selected from LOINC (codeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96</body>
         <body>self.value->forAll(val | val.isNullFlavorDefined() or val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.1' or val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.96')</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="__pNCUeY-EeGINOJ_SD9_dA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_GfC4wOY_EeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_H3tU0OY_EeGINOJ_SD9_dA" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GfC4xeY_EeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_MhQS0OY_EeGINOJ_SD9_dA" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GfC4wuY_EeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TAyiEeY_EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TAyiEOY_EeGINOJ_SD9_dA" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GfC4weY_EeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GfC4xuY_EeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cjNTgeY_EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cjNTgOY_EeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GfC4yeY_EeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hXndseY_EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hXndsOY_EeGINOJ_SD9_dA" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GfC4zOY_EeGINOJ_SD9_dA" name="participant" visibility="private" type="_FxahQOZAEeGINOJ_SD9_dA" aggregation="composite" association="_GfC4z-Y_EeGINOJ_SD9_dA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LnlDYeZAEeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LnlDYOZAEeGINOJ_SD9_dA" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_azFbAUxoEd6h-an5IXo-DA"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_azFbAUxoEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_FxahQOZAEeGINOJ_SD9_dA" name="Participant">
       <ownedComment xmi:id="_o9Kn4OZBEeGINOJ_SD9_dA">
@@ -923,35 +927,35 @@ This is different from a cognitive status problem observation, which is a clinic
         </specification>
       </ownedRule>
       <generalization xmi:id="_FxahQeZAEeGINOJ_SD9_dA">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_yp6noEJ8EeOECfdQ4ITPew" name="typeCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_9IjJsEJ8EeOECfdQ4ITPew" value="IND"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_HlUH0OZAEeGINOJ_SD9_dA" name="time" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HlUH0uZAEeGINOJ_SD9_dA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HlUH0eZAEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vWA0AErdEd6FXKclYGEDCw"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vWA0AErdEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_HlUH0-ZAEeGINOJ_SD9_dA" name="participantRole" visibility="private" type="_I2ZVMOZAEeGINOJ_SD9_dA" aggregation="composite">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HlUH1eZAEeGINOJ_SD9_dA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HlUH1OZAEeGINOJ_SD9_dA" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_uuZlAUoaEd6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_uuZlAUoaEd6c3qsAxlFHaQ"/>
         <association href="../consol.uml#_HldRwOZAEeGINOJ_SD9_dA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_I2ZVMOZAEeGINOJ_SD9_dA" name="ParticipantRole">
         <generalization xmi:id="_I2ZVMeZAEeGINOJ_SD9_dA">
-          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_JnCvAOZAEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aVK5MeZAEeGINOJ_SD9_dA" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aVK5MOZAEeGINOJ_SD9_dA" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_5K_kcEJ7EeOECfdQ4ITPew" value="CAREGIVER"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
@@ -982,7 +986,7 @@ This is different from a cognitive status problem observation, which is a clinic
     <ruleId>CONF:14233</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_dl3DUOY_EeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_GfC4xuY_EeGINOJ_SD9_dA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_h-JSMOY_EeGINOJ_SD9_dA" base_Property="_GfC4yeY_EeGINOJ_SD9_dA">
     <ruleId>CONF:14599</ruleId>
@@ -1009,52 +1013,55 @@ This is different from a cognitive status problem observation, which is a clinic
     <ownedComment xmi:id="_V3xvYIoBEeOoMZgUoTghIg">
       <body>The Cognitive Abilities Observation represents a patient's ability to perform specific cognitive tasks (e.g., ability to plan, logical sequencing ability, ability to think abstractly).</body>
     </ownedComment>
+    <ownedComment xmi:id="_bOntkPm-EeSGHoih4Jm09A">
+      <body>REMOVED</body>
+    </ownedComment>
     <generalization xmi:id="_Y_otoIoAEeOoMZgUoTghIg">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_9fGUUIoAEeOoMZgUoTghIg" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_hgrsMIoBEeOoMZgUoTghIg" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_9fHicIoAEeOoMZgUoTghIg" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_iSSIQIoBEeOoMZgUoTghIg" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_9fG7Y4oAEeOoMZgUoTghIg" name="id" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5HlsEYoBEeOoMZgUoTghIg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5HlsEIoBEeOoMZgUoTghIg" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_9fGUUYoAEeOoMZgUoTghIg" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_9fHidIoAEeOoMZgUoTghIg" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9fHidooAEeOoMZgUoTghIg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9fHidYoAEeOoMZgUoTghIg" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_9fHicYoAEeOoMZgUoTghIg" name="statusCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AkPOYYoDEeOoMZgUoTghIg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AkPOYIoDEeOoMZgUoTghIg" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_9fG7YIoAEeOoMZgUoTghIg" name="effectiveTime" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9FgBMYoDEeOoMZgUoTghIg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9FgBMIoDEeOoMZgUoTghIg" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_9fHid4oAEeOoMZgUoTghIg" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__7dhsYoDEeOoMZgUoTghIg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__7dhsIoDEeOoMZgUoTghIg" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_7sls8KvCEeOEkquDecUlEw" name="authorParticipation" association="_7sqlcKvCEeOEkquDecUlEw">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
@@ -1080,9 +1087,9 @@ This is different from a cognitive status problem observation, which is a clinic
     <ruleId>CONF:29250</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Ac3QgIoCEeOoMZgUoTghIg" base_Property="_9fGUUYoAEeOoMZgUoTghIg"/>
-  <CDA:ValueSetConstraint xmi:id="_KR74MIoCEeOoMZgUoTghIg" base_Property="_9fGUUYoAEeOoMZgUoTghIg" severity="WARNING">
-    <reference href="../consol-vocab.uml#_hfQH0YoMEeOoMZgUoTghIg"/>
+  <CDA:ValueSetConstraint xmi:id="_KR74MIoCEeOoMZgUoTghIg" severity="WARNING" base_Property="_9fGUUYoAEeOoMZgUoTghIg">
     <ruleId>CONF:29251</ruleId>
+    <reference href="../consol-vocab.uml#_hfQH0YoMEeOoMZgUoTghIg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_fNoPAIoCEeOoMZgUoTghIg" severity="WARNING" base_Property="_9fHidIoAEeOoMZgUoTghIg">
     <ruleId>CONF:29252</ruleId>
@@ -1091,7 +1098,7 @@ This is different from a cognitive status problem observation, which is a clinic
     <ruleId>CONF:29256</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_CK0xsIoDEeOoMZgUoTghIg" code="completed" displayName="Completed" base_Property="_9fHicYoAEeOoMZgUoTghIg">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:29257</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2iyiIIoDEeOoMZgUoTghIg" base_Property="_9fG7YIoAEeOoMZgUoTghIg">
@@ -1106,54 +1113,54 @@ This is different from a cognitive status problem observation, which is a clinic
     <ruleId>CONF:29267</ruleId>
     <ruleId>CONF:29268</ruleId>
   </CDA:EntryRelationship>
-  <CDA:ValueSetConstraint xmi:id="_lLcTcIoREeOoMZgUoTghIg" base_Property="_9fHid4oAEeOoMZgUoTghIg" severity="WARNING">
-    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
+  <CDA:ValueSetConstraint xmi:id="_lLcTcIoREeOoMZgUoTghIg" severity="WARNING" base_Property="_9fHid4oAEeOoMZgUoTghIg">
     <ruleId>CONF:29264</ruleId>
+    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_-lJmEI0kEeOB0eBUISUB4Q" name="MentalStatusObservation">
     <ownedComment xmi:id="_WTRLwI0mEeOB0eBUISUB4Q">
       <body>This template represents observations relating intellectual and mental powers and state of mind. Mental status observations in a clinical note often have a psychological focus (e.g., level of consciousness, mood, anxiety level, reasoning ability).</body>
     </ownedComment>
     <generalization xmi:id="_-lJmEY0kEeOB0eBUISUB4Q">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_vnbNEI0lEeOB0eBUISUB4Q" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_KcZrcI0mEeOB0eBUISUB4Q" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_vncbMI0lEeOB0eBUISUB4Q" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Lgha4I0mEeOB0eBUISUB4Q" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_vnb0I40lEeOB0eBUISUB4Q" name="id" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GJtHMY0mEeOB0eBUISUB4Q" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GJtHMI0mEeOB0eBUISUB4Q" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_vnbNEY0lEeOB0eBUISUB4Q" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_vncbMY0lEeOB0eBUISUB4Q" name="statusCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HmGMsY0mEeOB0eBUISUB4Q" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HmGMsI0mEeOB0eBUISUB4Q" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_vnb0II0lEeOB0eBUISUB4Q" name="effectiveTime" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IMoBMY0mEeOB0eBUISUB4Q" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMoBMI0mEeOB0eBUISUB4Q" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_vncbNI0lEeOB0eBUISUB4Q" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JFaDUY0mEeOB0eBUISUB4Q" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JFaDUI0mEeOB0eBUISUB4Q" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_6pMbcK4hEeORf5eJaKt1KQ" name="authorParticipation" association="_6pOQoK4hEeORf5eJaKt1KQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
@@ -1183,236 +1190,213 @@ This is different from a cognitive status problem observation, which is a clinic
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_EFX38I0mEeOB0eBUISUB4Q" base_Property="_vncbNI0lEeOB0eBUISUB4Q"/>
   <CDA:CDATemplate xmi:id="_PtmfUI0mEeOB0eBUISUB4Q" base_Class="_-lJmEI0kEeOB0eBUISUB4Q" templateId="2.16.840.1.113883.10.20.22.4.125">
-    <ruleId>CONF:29186</ruleId>
-    <ruleId>CONF:29187</ruleId>
+    <ruleId>CONF:29186, CONF:29187</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_0TCyMI0mEeOB0eBUISUB4Q" code="completed" displayName="Completed" base_Property="_vncbMY0lEeOB0eBUISUB4Q">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:29195</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_9HAQQI0oEeOB0eBUISUB4Q" base_Property="_vnbNEY0lEeOB0eBUISUB4Q" severity="WARNING">
-    <reference href="../consol-vocab.uml#_CRVckI0oEeOB0eBUISUB4Q"/>
+  <CDA:ValueSetConstraint xmi:id="_9HAQQI0oEeOB0eBUISUB4Q" severity="WARNING" base_Property="_vnbNEY0lEeOB0eBUISUB4Q">
     <ruleId>CONF:29189</ruleId>
+    <reference href="../consol-vocab.uml#_CRVckI0oEeOB0eBUISUB4Q"/>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_Oa-dAI0qEeOB0eBUISUB4Q" base_Property="_vncbNI0lEeOB0eBUISUB4Q" severity="WARNING">
-    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
+  <CDA:ValueSetConstraint xmi:id="_Oa-dAI0qEeOB0eBUISUB4Q" severity="WARNING" base_Property="_vncbNI0lEeOB0eBUISUB4Q">
     <ruleId>CONF:29202</ruleId>
+    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_PrukII0zEeOB0eBUISUB4Q" memberEnd="_Prt9EI0zEeOB0eBUISUB4Q _PrukIY0zEeOB0eBUISUB4Q">
     <ownedEnd xmi:id="_PrukIY0zEeOB0eBUISUB4Q" type="_-lJmEI0kEeOB0eBUISUB4Q" association="_PrukII0zEeOB0eBUISUB4Q"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_eiNQMI0zEeOB0eBUISUB4Q" severity="INFO" base_Association="_PrukII0zEeOB0eBUISUB4Q" typeCode="COMP">
-    <ruleId>CONF:29207</ruleId>
-    <ruleId>CONF:29208</ruleId>
-    <ruleId>CONF:29209</ruleId>
+    <ruleId>CONF:29207, CONF:29208, CONF:29209</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_kyeGAJm4EeOLJeQez13EkQ" name="SensoryAndSpeechStatus">
+  <uml:Class xmi:id="_kyeGAJm4EeOLJeQez13EkQ" name="SensoryStatus">
     <ownedComment xmi:id="_LirAQJm5EeOLJeQez13EkQ">
       <body>This template represents a patient's sensory or speech ability. It may contain an assessment scale observations related to the sensory or speech ability.</body>
     </ownedComment>
     <generalization xmi:id="_kyeGAZm4EeOLJeQez13EkQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_wSfzoJm4EeOLJeQez13EkQ" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_wFJesJm5EeOLJeQez13EkQ" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_wSfzpZm4EeOLJeQez13EkQ" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_w-6_UJm5EeOLJeQez13EkQ" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_wSfzoZm4EeOLJeQez13EkQ" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_wSfzppm4EeOLJeQez13EkQ" name="statusCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m7Yd0Jm5EeOLJeQez13EkQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m7X2wJm5EeOLJeQez13EkQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_wSfzopm4EeOLJeQez13EkQ" name="effectiveTime" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+    <ownedAttribute xmi:id="_wSfzopm4EeOLJeQez13EkQ" name="effectiveTime" visibility="private" type="_ZFOAYAPrEeWlspDC_8d7eg" aggregation="composite">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mUs4UJm5EeOLJeQez13EkQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mUsRQJm5EeOLJeQez13EkQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_wSgasJm4EeOLJeQez13EkQ" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nwHtcJm5EeOLJeQez13EkQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nwHGYJm5EeOLJeQez13EkQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_rAkqMJm8EeOLJeQez13EkQ" name="author" type="_FmA3wJm9EeOLJeQez13EkQ" association="_rAl4UJm8EeOLJeQez13EkQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1_q1AJm8EeOLJeQez13EkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1_qN8Jm8EeOLJeQez13EkQ" value="1"/>
+    <ownedAttribute xmi:id="_XSxV4APsEeWlspDC_8d7eg" name="authorParticipation" association="_XSykAAPsEeWlspDC_8d7eg">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y-IEcQPsEeWlspDC_8d7eg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y-IEcAPsEeWlspDC_8d7eg" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_6SCMoJm9EeOLJeQez13EkQ" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_6SDawJm9EeOLJeQez13EkQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6SCzsJm9EeOLJeQez13EkQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6SCzsZm9EeOLJeQez13EkQ" value="*"/>
     </ownedAttribute>
-    <nestedClassifier xmi:type="uml:Class" xmi:id="_FmA3wJm9EeOLJeQez13EkQ" name="Author">
-      <ownedComment xmi:id="_s9kF4Jm9EeOLJeQez13EkQ">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_ZFOAYAPrEeWlspDC_8d7eg" name="IVLTS">
+      <ownedComment xmi:id="_bMOJIAPrEeWlspDC_8d7eg">
         <body>INLINE</body>
       </ownedComment>
-      <generalization xmi:id="_FmBe0Jm9EeOLJeQez13EkQ">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      <generalization xmi:id="_ZFOncAPrEeWlspDC_8d7eg">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       </generalization>
-      <ownedAttribute xmi:id="_MoMhEJm9EeOLJeQez13EkQ" name="time" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_t59eEEofEd6c3qsAxlFHaQ"/>
+      <ownedAttribute xmi:id="_Zhr58APrEeWlspDC_8d7eg" name="low" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_fKKlYAPrEeWlspDC_8d7eg">
+          <body>The effectiveTime/low (a.k.a. &quot;onset date&quot;) asserts when the condition became biologically active.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nYhG4APrEeWlspDC_8d7eg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nYgf0APrEeWlspDC_8d7eg" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ZhrS4APrEeWlspDC_8d7eg" name="high" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_jp7VQAPrEeWlspDC_8d7eg">
+          <body>The effectiveTime/high (a.k.a. &quot;resolution date&quot;) asserts when the condition became biologically resolved.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZhrS4QPrEeWlspDC_8d7eg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZhrS4gPrEeWlspDC_8d7eg" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_PYeNIJm5EeOLJeQez13EkQ" base_Class="_kyeGAJm4EeOLJeQez13EkQ" templateId="2.16.840.1.113883.10.20.22.4.127">
-    <ruleId>CONF:27959</ruleId>
-    <ruleId>CONF:27960</ruleId>
+    <ruleId>CONF:1098-27959</ruleId>
+    <ruleId>CONF:1098-27960</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_fKKkQJm5EeOLJeQez13EkQ" base_Property="_wSfzoJm4EeOLJeQez13EkQ">
-    <ruleId>CONF:31017</ruleId>
+    <ruleId>CONF:1098-31017</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_iwfKsJm5EeOLJeQez13EkQ" base_Property="_wSfzoZm4EeOLJeQez13EkQ"/>
   <CDA:PropertyValidation xmi:id="_jJ03wJm5EeOLJeQez13EkQ" base_Property="_wSfzopm4EeOLJeQez13EkQ">
-    <ruleId>CONF:31441</ruleId>
+    <ruleId>CONF:1098-31441</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_jhyEwJm5EeOLJeQez13EkQ" base_Property="_wSfzpZm4EeOLJeQez13EkQ">
-    <ruleId>CONF:31018</ruleId>
+    <ruleId>CONF:1098-31018</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_j8PMIJm5EeOLJeQez13EkQ" base_Property="_wSfzppm4EeOLJeQez13EkQ">
-    <ruleId>CONF:31437</ruleId>
+    <ruleId>CONF:1098-31437</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_kURRoJm5EeOLJeQez13EkQ" base_Property="_wSgasJm4EeOLJeQez13EkQ"/>
-  <CDA:ValueSetConstraint xmi:id="_5jGKYJm6EeOLJeQez13EkQ" base_Property="_wSfzoZm4EeOLJeQez13EkQ" severity="WARNING">
+  <CDA:ValueSetConstraint xmi:id="_5jGKYJm6EeOLJeQez13EkQ" severity="WARNING" base_Property="_wSfzoZm4EeOLJeQez13EkQ">
+    <ruleId>CONF:1098-27962</ruleId>
     <reference href="../consol-vocab.uml#_Sv4_cZm6EeOLJeQez13EkQ"/>
-    <ruleId>CONF:27962</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_D8_WYJm7EeOLJeQez13EkQ" code="completed" base_Property="_wSfzppm4EeOLJeQez13EkQ">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:31438</ruleId>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-31438</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_bnkVUJm7EeOLJeQez13EkQ" base_Property="_wSgasJm4EeOLJeQez13EkQ" severity="WARNING">
+  <CDA:ValueSetConstraint xmi:id="_bnkVUJm7EeOLJeQez13EkQ" severity="WARNING" base_Property="_wSgasJm4EeOLJeQez13EkQ">
+    <ruleId>CONF:1098-27974</ruleId>
     <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
-    <ruleId>CONF:27974</ruleId>
   </CDA:ValueSetConstraint>
-  <uml:Association xmi:id="_rAl4UJm8EeOLJeQez13EkQ" memberEnd="_rAkqMJm8EeOLJeQez13EkQ _rAl4UZm8EeOLJeQez13EkQ">
-    <ownedEnd xmi:id="_rAl4UZm8EeOLJeQez13EkQ" type="_kyeGAJm4EeOLJeQez13EkQ" association="_rAl4UJm8EeOLJeQez13EkQ"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_tGrbEJm8EeOLJeQez13EkQ" severity="WARNING" base_Association="_rAl4UJm8EeOLJeQez13EkQ">
-    <ruleId>CONF:31439</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_OQiX4Jm9EeOLJeQez13EkQ" base_Property="_MoMhEJm9EeOLJeQez13EkQ">
-    <ruleId>CONF:31440</ruleId>
-  </CDA:PropertyValidation>
   <uml:Association xmi:id="_6SDawJm9EeOLJeQez13EkQ" memberEnd="_6SCMoJm9EeOLJeQez13EkQ _6SDawZm9EeOLJeQez13EkQ">
     <ownedEnd xmi:id="_6SDawZm9EeOLJeQez13EkQ" type="_kyeGAJm4EeOLJeQez13EkQ" association="_6SDawJm9EeOLJeQez13EkQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_CFFSMJm-EeOLJeQez13EkQ" severity="INFO" base_Association="_6SDawJm9EeOLJeQez13EkQ" typeCode="COMP">
-    <ruleId>CONF:27984</ruleId>
-    <ruleId>CONF:27985</ruleId>
-    <ruleId>CONF:27986</ruleId>
+    <ruleId>CONF:1098-27984</ruleId>
+    <ruleId>CONF:1098-27985</ruleId>
+    <ruleId>CONF:1098-27986</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_4tfOMJ2CEeORR8_YW0n_jQ" name="MentalStatusSection">
     <ownedComment xmi:id="_HxweoJ2DEeORR8_YW0n_jQ">
-      <body>The Mental Status Section contains observation and evaluations related to patient's psychological and mental competency and deficits including cognitive functioning (e.g., mood, anxiety, perceptual disturbances) and cognitive ability (e.g., concentration, intellect, visual-spatial perception).</body>
+      <body>&lt;p>&#xD;
+The Mental Status Section contains observations and evaluations related to a patient's psychological and mental competency and deficits including, but not limited to any of the following types of information:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+&lt;li>Appearance (e.g., unusual grooming, clothing or body modifications)&lt;/li>&#xD;
+&lt;li>Attitude (e.g., cooperative, guarded, hostile)&lt;/li>&#xD;
+&lt;li>Behavior/psychomotor (e.g., abnormal movements, eye contact, tics)&lt;/li>&#xD;
+&lt;li>Mood and affect (e.g., anxious, angry, euphoric)&lt;/li>&#xD;
+&lt;li>Speech and Language (e.g., pressured speech, perseveration)&lt;/li>&#xD;
+&lt;li>Thought process (e.g., logic, coherence)&lt;/li>&#xD;
+&lt;li>Thought content (e.g., delusions, phobias)&lt;/li>&#xD;
+&lt;li>Perception (e.g., voices, hallucinations)&lt;/li>&#xD;
+&lt;li>Cognition (e.g., memory, alertness/consciousness, attention, orientation) – which were included in Cognitive Status Observation in earlier publications of C-CDA.&lt;/li>&#xD;
+&lt;li>Insight and judgment (e.g., understanding of condition, decision making)&lt;/li>&#xD;
+&lt;/ul></body>
     </ownedComment>
     <generalization xmi:id="_4tf1QJ2CEeORR8_YW0n_jQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_8_RMcJ2CEeORR8_YW0n_jQ" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PB_LAZ2DEeORR8_YW0n_jQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PB_LAJ2DEeORR8_YW0n_jQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_8_Rzg52CEeORR8_YW0n_jQ" name="title" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PcO3AZ2DEeORR8_YW0n_jQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PcO3AJ2DEeORR8_YW0n_jQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_8_RzgJ2CEeORR8_YW0n_jQ" name="text" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P4PdkZ2DEeORR8_YW0n_jQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P4PdkJ2DEeORR8_YW0n_jQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_H58sQDq-EeSyGa6KC25kiw" name="cognitiveStatusOrganizer2" type="_6LYrULkoEeODDJAC5t5vpw" association="_H596YDq-EeSyGa6KC25kiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H59TUDq-EeSyGa6KC25kiw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H59TUTq-EeSyGa6KC25kiw" value="*"/>
+    <ownedAttribute xmi:id="_AEg8kPglEeSx6PQhw3nAUw" name="mentalStatusOrganizer2" type="_6LYrULkoEeODDJAC5t5vpw" association="_AEixwPglEeSx6PQhw3nAUw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AEhjoPglEeSx6PQhw3nAUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AEhjofglEeSx6PQhw3nAUw" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_PLrNcDq-EeSyGa6KC25kiw" name="cognitiveStatusObservation2" type="_ze150PitEeOXlK95I8tUew" association="_PLsbkDq-EeSyGa6KC25kiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PLr0gDq-EeSyGa6KC25kiw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PLr0gTq-EeSyGa6KC25kiw" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_yrW3MJ2DEeORR8_YW0n_jQ" name="caregiverCharacteristics" type="__pNCUOY-EeGINOJ_SD9_dA" association="_yrYFUJ2DEeORR8_YW0n_jQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yrW3MZ2DEeORR8_YW0n_jQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yrW3Mp2DEeORR8_YW0n_jQ" value="*"/>
+    <ownedAttribute xmi:id="_YkEbsPglEeSx6PQhw3nAUw" name="mentalStatusObservation2" type="_ze150PitEeOXlK95I8tUew" association="_YkFp0PglEeSx6PQhw3nAUw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YkEbsfglEeSx6PQhw3nAUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YkEbsvglEeSx6PQhw3nAUw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_A4wxEJ2EEeORR8_YW0n_jQ" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_A4xYIJ2EEeORR8_YW0n_jQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A4wxEZ2EEeORR8_YW0n_jQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A4wxEp2EEeORR8_YW0n_jQ" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_TfRwoDq-EeSyGa6KC25kiw" name="nonMedicinalSupplyActivity2" association="_TfTl0Dq-EeSyGa6KC25kiw">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_k_C20OaCEeOmzetP5oaH3A"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TfSXsDq-EeSyGa6KC25kiw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TfSXsTq-EeSyGa6KC25kiw" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_K9PGsJ2EEeORR8_YW0n_jQ" name="cognitiveAbilitiesObservation" type="_Y_oGkIoAEeOoMZgUoTghIg" association="_K9QU0J2EEeORR8_YW0n_jQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K9PGsZ2EEeORR8_YW0n_jQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K9PGsp2EEeORR8_YW0n_jQ" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_VjTGcJ2EEeORR8_YW0n_jQ" name="mentalStatusObservation" type="_-lJmEI0kEeOB0eBUISUB4Q" association="_VjU7oJ2EEeORR8_YW0n_jQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VjTtgJ2EEeORR8_YW0n_jQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VjTtgZ2EEeORR8_YW0n_jQ" value="*"/>
-    </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_AIPvkJ2DEeORR8_YW0n_jQ" base_Class="_4tfOMJ2CEeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.56">
-    <ruleId>CONF:28293</ruleId>
-    <ruleId>CONF:28294</ruleId>
+  <CDA:CDATemplate xmi:id="_AIPvkJ2DEeORR8_YW0n_jQ" base_Class="_4tfOMJ2CEeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.56" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-28293</ruleId>
+    <ruleId>CONF:1198-28294</ruleId>
+    <ruleId>CONF:1198-32793</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_LHlyAJ2DEeORR8_YW0n_jQ" base_Property="_8_RMcJ2CEeORR8_YW0n_jQ">
-    <ruleId>CONF:28295</ruleId>
+    <ruleId>CONF:1198-28295</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_LfnQcJ2DEeORR8_YW0n_jQ" base_Property="_8_Rzg52CEeORR8_YW0n_jQ">
-    <ruleId>CONF:28297</ruleId>
+    <ruleId>CONF:1198-28297</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_L3WbAJ2DEeORR8_YW0n_jQ" base_Property="_8_RzgJ2CEeORR8_YW0n_jQ">
-    <ruleId>CONF:28298</ruleId>
+    <ruleId>CONF:1198-28298</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_ZczkEJ2DEeORR8_YW0n_jQ" code="10190-7" displayName="Mental Status" base_Property="_8_RMcJ2CEeORR8_YW0n_jQ">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:28296</ruleId>
-    <ruleId>CONF:30826</ruleId>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-28296, CONF:1198-30826</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Association xmi:id="_yrYFUJ2DEeORR8_YW0n_jQ" memberEnd="_yrW3MJ2DEeORR8_YW0n_jQ _yrYsYJ2DEeORR8_YW0n_jQ">
-    <ownedEnd xmi:id="_yrYsYJ2DEeORR8_YW0n_jQ" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_yrYFUJ2DEeORR8_YW0n_jQ"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_zsGigJ2DEeORR8_YW0n_jQ" severity="INFO" base_Association="_yrYFUJ2DEeORR8_YW0n_jQ">
-    <ruleId>CONF:28311</ruleId>
-    <ruleId>CONF:28312</ruleId>
-  </CDA:AssociationValidation>
   <uml:Association xmi:id="_A4xYIJ2EEeORR8_YW0n_jQ" memberEnd="_A4wxEJ2EEeORR8_YW0n_jQ _A4ymQJ2EEeORR8_YW0n_jQ">
     <ownedEnd xmi:id="_A4ymQJ2EEeORR8_YW0n_jQ" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_A4xYIJ2EEeORR8_YW0n_jQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_BgUgUJ2EEeORR8_YW0n_jQ" severity="INFO" base_Association="_A4xYIJ2EEeORR8_YW0n_jQ">
-    <ruleId>CONF:28313</ruleId>
-    <ruleId>CONF:28314</ruleId>
-  </CDA:AssociationValidation>
-  <uml:Association xmi:id="_K9QU0J2EEeORR8_YW0n_jQ" memberEnd="_K9PGsJ2EEeORR8_YW0n_jQ _K9QU0Z2EEeORR8_YW0n_jQ">
-    <ownedEnd xmi:id="_K9QU0Z2EEeORR8_YW0n_jQ" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_K9QU0J2EEeORR8_YW0n_jQ"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_LYNygJ2EEeORR8_YW0n_jQ" severity="INFO" base_Association="_K9QU0J2EEeORR8_YW0n_jQ">
-    <ruleId>CONF:28323</ruleId>
-    <ruleId>CONF:28324</ruleId>
-  </CDA:AssociationValidation>
-  <uml:Association xmi:id="_VjU7oJ2EEeORR8_YW0n_jQ" memberEnd="_VjTGcJ2EEeORR8_YW0n_jQ _VjU7oZ2EEeORR8_YW0n_jQ">
-    <ownedEnd xmi:id="_VjU7oZ2EEeORR8_YW0n_jQ" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_VjU7oJ2EEeORR8_YW0n_jQ"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_W5e2QJ2EEeORR8_YW0n_jQ" severity="INFO" base_Association="_VjU7oJ2EEeORR8_YW0n_jQ">
-    <ruleId>CONF:28325</ruleId>
-    <ruleId>CONF:28326</ruleId>
+    <ruleId>CONF:1198-28313, CONF:1198-28314</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_7sqlcKvCEeOEkquDecUlEw" memberEnd="_7sls8KvCEeOEkquDecUlEw _7sqlcavCEeOEkquDecUlEw">
     <ownedEnd xmi:id="_7sqlcavCEeOEkquDecUlEw" type="_Y_oGkIoAEeOoMZgUoTghIg" association="_7sqlcKvCEeOEkquDecUlEw"/>
@@ -1426,7 +1410,7 @@ This is different from a cognitive status problem observation, which is a clinic
   <CDA:AssociationValidation xmi:id="_7slLEK4hEeORf5eJaKt1KQ" severity="WARNING" base_Association="_6pOQoK4hEeORf5eJaKt1KQ">
     <ruleId>CONF:31435</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_6LYrULkoEeODDJAC5t5vpw" clientDependency="_dfDNQLkpEeODDJAC5t5vpw" name="MentalStatusOrganizer2">
+  <uml:Class xmi:id="_6LYrULkoEeODDJAC5t5vpw" name="MentalStatusOrganizer2">
     <ownedComment xmi:id="_XgdH4LkpEeODDJAC5t5vpw">
       <body>The Mental Status Organizer template may be used to group related Mental Status Observations (e.g., results of mental tests) and associated Assessment Scale Observations into subcategories and/or groupings by time. Subcategories can be things such as Mood and Affect, Behavior, Thought Process, Perception, Cognition, etc.</body>
     </ownedComment>
@@ -1434,8 +1418,8 @@ This is different from a cognitive status problem observation, which is a clinic
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_AhS9YayxEeSB84STE1Ny6A">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>code/@code should be selected from ICF (codeSystem 2.16.840.1.113883.6.254) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</body>
-        <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.254' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+        <body>code/@code SHOULD be selected from ICF (codeSystem 2.16.840.1.113883.6.254) OR LOINC (codeSystem 2.16.840.1.113883.6.96)</body>
+        <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.254' or self.code.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_if4Q0KyzEeSB84STE1Ny6A" name="hasCodeOrEffectiveTime" constrainedElement="_6LYrULkoEeODDJAC5t5vpw">
@@ -1450,10 +1434,10 @@ This is different from a cognitive status problem observation, which is a clinic
     <substitution xmi:id="_dfDNQLkpEeODDJAC5t5vpw" name="CognitiveStatusResultOrganizer" client="_6LYrULkoEeODDJAC5t5vpw" supplier="_jfoCUOZbEeGINOJ_SD9_dA" contract="_jfoCUOZbEeGINOJ_SD9_dA"/>
     <ownedAttribute xmi:id="_AAy_gLkpEeODDJAC5t5vpw" name="code" visibility="private" type="_L-lgEKyxEeSB84STE1Ny6A" aggregation="composite" redefinedProperty="_Dku5YuZjEeGINOJ_SD9_dA">
       <ownedComment xmi:id="_oyR1ALkpEeODDJAC5t5vpw">
-        <body>The code selected should indicate the category that groups the contained mental status observations (e.g., communication, learning and applying knowledge).</body>
+        <body>The code selected indicates the category that groups the contained mental status observations (e.g., communication, learning and applying knowledge).</body>
       </ownedComment>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ozMJUKywEeSB84STE1Ny6A"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ozLiQKywEeSB84STE1Ny6A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EWlCMU9aEeWsIc5CMrI4GA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EWlCME9aEeWsIc5CMrI4GA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_QW4-APjAEeOXlK95I8tUew" name="mentalStatusObservation2" type="_ze150PitEeOXlK95I8tUew" redefinedProperty="_0aKXMOZjEeGINOJ_SD9_dA" association="_QW6zMPjAEeOXlK95I8tUew">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R26mUPjAEeOXlK95I8tUew" value="1"/>
@@ -1463,37 +1447,35 @@ This is different from a cognitive status problem observation, which is a clinic
       <ownedComment xmi:id="_d1mBEKy1EeSB84STE1Ny6A">
         <body>The effectiveTime is an interval that spans the effectiveTimes of the contained mental status observations. Because all contained mental status observations have a required time stamp, it is not required that this effectiveTime be populated.</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cQHRAay1EeSB84STE1Ny6A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cQHRAqy1EeSB84STE1Ny6A" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_VIaUIErcEd6FXKclYGEDCw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_VIaUIErcEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_L-lgEKyxEeSB84STE1Ny6A" name="CD">
       <ownedComment xmi:id="__ozGwKy-EeSB84STE1Ny6A">
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_L-mHIKyxEeSB84STE1Ny6A">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_NV3cEKyxEeSB84STE1Ny6A" name="code" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NV3cEayxEeSB84STE1Ny6A"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NV3cEqyxEeSB84STE1Ny6A" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RLXjUU9aEeWsIc5CMrI4GA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RLXjUE9aEeWsIc5CMrI4GA" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
-  <CDA:PropertyValidation xmi:id="_AAzmkLkpEeODDJAC5t5vpw" severity="WARNING" base_Property="_AAy_gLkpEeODDJAC5t5vpw">
-    <ruleId>CONF:1098-14378</ruleId>
+  <CDA:PropertyValidation xmi:id="_AAzmkLkpEeODDJAC5t5vpw" base_Property="_AAy_gLkpEeODDJAC5t5vpw">
+    <ruleId>CONF:1198-14378</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_E6468LkpEeODDJAC5t5vpw" base_Class="_6LYrULkoEeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.75" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-14375</ruleId>
-    <ruleId>CONF:1098-14376</ruleId>
-    <ruleId>CONF:1098-32566</ruleId>
+  <CDA:CDATemplate xmi:id="_E6468LkpEeODDJAC5t5vpw" base_Class="_6LYrULkoEeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.75" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-14375, CONF:1198-14376, CONF:1198-32566</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_ze150PitEeOXlK95I8tUew" name="MentalStatusObservation2">
     <ownedComment xmi:id="_igg7APiuEeOXlK95I8tUew">
-      <body>This template represents a patient's cognitive status (e.g., mood, memory, ability to make decisions) and problems that limit cognition (e.g., amnesia, dementia, aggressive behavior). The template may include assessment scale observations, identify supporting caregivers, and provide information about non-medicinal supplies.</body>
+      <body>The Mental Status Observation template represents an observation about mental status that can come from a broad range of subjective and objective information (including measured data) to address those categories described in the Mental Status Section. See also Assessment Scale Observation for specific collections of observations that together yield a summary evaluation of a particular condition.</body>
     </ownedComment>
     <ownedRule xmi:id="_3zrgMPi6EeOXlK95I8tUew" name="valueDatatype">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_3zrgMfi6EeOXlK95I8tUew">
@@ -1504,45 +1486,44 @@ This is different from a cognitive status problem observation, which is a clinic
       </specification>
     </ownedRule>
     <generalization xmi:id="_ze150fitEeOXlK95I8tUew">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_DzAE0PiuEeOXlK95I8tUew" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Y3R6cPivEeOXlK95I8tUew" value="OBS"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_DzB6APiuEeOXlK95I8tUew" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZlNXcPivEeOXlK95I8tUew" value="EVN"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_DzAr5PiuEeOXlK95I8tUew" name="id" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CHgW4PivEeOXlK95I8tUew" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CHfIwPivEeOXlK95I8tUew" value="*"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_DzAr4PiuEeOXlK95I8tUew" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+    <ownedAttribute xmi:id="_DzAr4PiuEeOXlK95I8tUew" name="code" visibility="private" type="_wYem8E9XEeWsIc5CMrI4GA" aggregation="composite">
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_DzChEPiuEeOXlK95I8tUew" name="statusCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C_4JUPivEeOXlK95I8tUew" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C_27MPivEeOXlK95I8tUew" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_DzAr4fiuEeOXlK95I8tUew" name="effectiveTime" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EHzasPivEeOXlK95I8tUew" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EHyMkPivEeOXlK95I8tUew" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_DzChFviuEeOXlK95I8tUew" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FZjWcPivEeOXlK95I8tUew" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FZivYPivEeOXlK95I8tUew" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_nKpc8PiwEeOXlK95I8tUew" name="authorParticipation" association="_nKrSIPiwEeOXlK95I8tUew">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
@@ -1554,55 +1535,64 @@ This is different from a cognitive status problem observation, which is a clinic
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CPw6Avi6EeOXlK95I8tUew" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_QhZMkPi6EeOXlK95I8tUew" name="referenceRange" association="_QhbBwPi6EeOXlK95I8tUew">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_XFrNMEcaEd6besF9iFIJkQ"/>
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_XFrNMEcaEd6besF9iFIJkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QhZMkfi6EeOXlK95I8tUew"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QhZMkvi6EeOXlK95I8tUew" value="*"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wYem8E9XEeWsIc5CMrI4GA" name="CD">
+      <ownedComment xmi:id="_yofhwE9XEeWsIc5CMrI4GA">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_wYfOAE9XEeWsIc5CMrI4GA">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_xGYOwE9XEeWsIc5CMrI4GA" name="translation" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FP1QUE9YEeWsIc5CMrI4GA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FP0CME9YEeWsIc5CMrI4GA" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_hOCmgPiuEeOXlK95I8tUew" base_Class="_ze150PitEeOXlK95I8tUew" templateId="2.16.840.1.113883.10.20.22.4.74" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-14255</ruleId>
-    <ruleId>CONF:1098-14256</ruleId>
-    <ruleId>CONF:1098-32565</ruleId>
+  <CDA:CDATemplate xmi:id="_hOCmgPiuEeOXlK95I8tUew" base_Class="_ze150PitEeOXlK95I8tUew" templateId="2.16.840.1.113883.10.20.22.4.74" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-14255, CONF:1198-14256, CONF:1198-32565</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_506OkPiuEeOXlK95I8tUew" base_Property="_DzAE0PiuEeOXlK95I8tUew">
-    <ruleId>CONF:1098-14249</ruleId>
+    <ruleId>CONF:1198-14249</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_6KwiwPiuEeOXlK95I8tUew" base_Property="_DzB6APiuEeOXlK95I8tUew">
-    <ruleId>CONF:1098-14250</ruleId>
+    <ruleId>CONF:1198-14250</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_6jqyAPiuEeOXlK95I8tUew" base_Property="_DzAr5PiuEeOXlK95I8tUew">
-    <ruleId>CONF:1098-14257</ruleId>
+    <ruleId>CONF:1198-14257</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_63dQsPiuEeOXlK95I8tUew" base_Property="_DzAr4PiuEeOXlK95I8tUew">
-    <ruleId>CONF:1098-14591</ruleId>
+    <ruleId>CONF:1198-14591</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_9ZaQEPiuEeOXlK95I8tUew" base_Property="_DzChEPiuEeOXlK95I8tUew">
-    <ruleId>CONF:1098-14254</ruleId>
+    <ruleId>CONF:1198-14254</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_91STwPiuEeOXlK95I8tUew" base_Property="_DzAr4fiuEeOXlK95I8tUew">
-    <ruleId>CONF:1098-14261</ruleId>
+    <ruleId>CONF:1198-14261</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_-JykIPiuEeOXlK95I8tUew" base_Property="_DzChFviuEeOXlK95I8tUew">
-    <ruleId>CONF:1098-14263</ruleId>
+    <ruleId>CONF:1198-14263</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_9qeVcPivEeOXlK95I8tUew" code="75275-8" displayName="Cognitive function" base_Property="_DzAr4PiuEeOXlK95I8tUew">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-32788</ruleId>
-    <ruleId>CONF:1098-32789</ruleId>
+  <CDA:CodeSystemConstraint xmi:id="_9qeVcPivEeOXlK95I8tUew" code="373930000" displayName="Cognitive function" base_Property="_DzAr4PiuEeOXlK95I8tUew">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-32788, CONF:1198-32789</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_nKrSIPiwEeOXlK95I8tUew" memberEnd="_nKpc8PiwEeOXlK95I8tUew _nKrSIfiwEeOXlK95I8tUew">
     <ownedEnd xmi:id="_nKrSIfiwEeOXlK95I8tUew" type="_ze150PitEeOXlK95I8tUew" association="_nKrSIPiwEeOXlK95I8tUew"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_nrncAPiwEeOXlK95I8tUew" severity="WARNING" base_Association="_nKrSIPiwEeOXlK95I8tUew">
-    <ruleId>CONF:1098-14266</ruleId>
+    <ruleId>CONF:1198-14266</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_CPyIIPi6EeOXlK95I8tUew" memberEnd="_CPw6APi6EeOXlK95I8tUew _CPyIIfi6EeOXlK95I8tUew">
     <ownedEnd xmi:id="_CPyIIfi6EeOXlK95I8tUew" type="_ze150PitEeOXlK95I8tUew" association="_CPyIIPi6EeOXlK95I8tUew"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_DugI4Pi6EeOXlK95I8tUew" severity="INFO" base_Association="_CPyIIPi6EeOXlK95I8tUew" typeCode="COMP">
-    <ruleId>CONF:1098-14469</ruleId>
-    <ruleId>CONF:1098-14595</ruleId>
-    <ruleId>CONF:1098-14470</ruleId>
+    <ruleId>CONF:1198-14469, CONF:1198-14595, CONF:1198-14470</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_QhbBwPi6EeOXlK95I8tUew" memberEnd="_QhZMkPi6EeOXlK95I8tUew _Qhbo0Pi6EeOXlK95I8tUew">
     <ownedComment xmi:id="_X9OE8Pi6EeOXlK95I8tUew">
@@ -1611,54 +1601,63 @@ This is different from a cognitive status problem observation, which is a clinic
     <ownedEnd xmi:id="_Qhbo0Pi6EeOXlK95I8tUew" type="_ze150PitEeOXlK95I8tUew" association="_QhbBwPi6EeOXlK95I8tUew"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_RQ8aMPi6EeOXlK95I8tUew" severity="INFO" base_Association="_QhbBwPi6EeOXlK95I8tUew">
-    <ruleId>CONF:1098-14267</ruleId>
+    <ruleId>CONF:1198-14267</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_3zrgMvi6EeOXlK95I8tUew" severity="WARNING" base_Constraint="_3zrgMPi6EeOXlK95I8tUew">
-    <ruleId>CONF:1098-14271</ruleId>
+    <ruleId>CONF:1198-14271</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_R2DAcPi8EeOXlK95I8tUew" code="completed" displayName="Completed" base_Property="_DzChEPiuEeOXlK95I8tUew">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-19092</ruleId>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-19092</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_QW6zMPjAEeOXlK95I8tUew" memberEnd="_QW4-APjAEeOXlK95I8tUew _QW6zMfjAEeOXlK95I8tUew">
     <ownedEnd xmi:id="_QW6zMfjAEeOXlK95I8tUew" type="_6LYrULkoEeODDJAC5t5vpw" association="_QW6zMPjAEeOXlK95I8tUew"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_RGG0cPjAEeOXlK95I8tUew" base_Association="_QW6zMPjAEeOXlK95I8tUew">
-    <ruleId>CONF:1098-14373</ruleId>
-    <ruleId>CONF:1098-14381</ruleId>
-  </CDA:AssociationValidation>
-  <uml:Association xmi:id="_H596YDq-EeSyGa6KC25kiw" memberEnd="_H58sQDq-EeSyGa6KC25kiw _H596YTq-EeSyGa6KC25kiw">
-    <ownedEnd xmi:id="_H596YTq-EeSyGa6KC25kiw" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_H596YDq-EeSyGa6KC25kiw"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_IckRIDq-EeSyGa6KC25kiw" severity="INFO" base_Association="_H596YDq-EeSyGa6KC25kiw">
-    <ruleId>CONF:28301</ruleId>
-    <ruleId>CONF:28302</ruleId>
-  </CDA:AssociationValidation>
-  <uml:Association xmi:id="_PLsbkDq-EeSyGa6KC25kiw" memberEnd="_PLrNcDq-EeSyGa6KC25kiw _PLsbkTq-EeSyGa6KC25kiw">
-    <ownedEnd xmi:id="_PLsbkTq-EeSyGa6KC25kiw" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_PLsbkDq-EeSyGa6KC25kiw"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_PvazsDq-EeSyGa6KC25kiw" severity="INFO" base_Association="_PLsbkDq-EeSyGa6KC25kiw">
-    <ruleId>CONF:28305</ruleId>
-    <ruleId>CONF:28306</ruleId>
-  </CDA:AssociationValidation>
-  <uml:Association xmi:id="_TfTl0Dq-EeSyGa6KC25kiw" memberEnd="_TfRwoDq-EeSyGa6KC25kiw _TfTl0Tq-EeSyGa6KC25kiw">
-    <ownedEnd xmi:id="_TfTl0Tq-EeSyGa6KC25kiw" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_TfTl0Dq-EeSyGa6KC25kiw"/>
-  </uml:Association>
-  <CDA:AssociationValidation xmi:id="_T6qsIDq-EeSyGa6KC25kiw" severity="INFO" base_Association="_TfTl0Dq-EeSyGa6KC25kiw">
-    <ruleId>CONF:28315</ruleId>
-    <ruleId>CONF:30782</ruleId>
+    <ruleId>CONF:1198-14373, CONF:1198-14381</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_AhTkcKyxEeSB84STE1Ny6A" severity="WARNING" base_Constraint="_AhS9YKyxEeSB84STE1Ny6A">
-    <ruleId>CONF:1098-14698</ruleId>
+    <ruleId>CONF:1198-14698</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="_OYiaAKyxEeSB84STE1Ny6A" severity="WARNING" base_Property="_NV3cEKyxEeSB84STE1Ny6A">
-    <ruleId>CONF:1098-14697</ruleId>
+  <CDA:PropertyValidation xmi:id="_OYiaAKyxEeSB84STE1Ny6A" base_Property="_NV3cEKyxEeSB84STE1Ny6A">
+    <ruleId>CONF:1198-14697</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_Mknd8Ky0EeSB84STE1Ny6A" base_Constraint="_if4Q0KyzEeSB84STE1Ny6A">
-    <ruleId>CONF:1098-32425</ruleId>
-    <ruleId>CONF:1098-32426</ruleId>
+    <ruleId>CONF:1198-32425, CONF:1198-32426</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_eh_NAKy1EeSB84STE1Ny6A" severity="WARNING" base_Property="_cQHRAKy1EeSB84STE1Ny6A">
-    <ruleId>CONF:1098-32424</ruleId>
+    <ruleId>CONF:1198-32424</ruleId>
   </CDA:PropertyValidation>
+  <uml:Association xmi:id="_AEixwPglEeSx6PQhw3nAUw" memberEnd="_AEg8kPglEeSx6PQhw3nAUw _AEixwfglEeSx6PQhw3nAUw">
+    <ownedEnd xmi:id="_AEixwfglEeSx6PQhw3nAUw" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_AEixwPglEeSx6PQhw3nAUw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_CKkDEPglEeSx6PQhw3nAUw" severity="INFO" base_Association="_AEixwPglEeSx6PQhw3nAUw">
+    <ruleId>CONF:1198-28301, CONF:1198-28302</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_YkFp0PglEeSx6PQhw3nAUw" memberEnd="_YkEbsPglEeSx6PQhw3nAUw _YkFp0fglEeSx6PQhw3nAUw">
+    <ownedEnd xmi:id="_YkFp0fglEeSx6PQhw3nAUw" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_YkFp0PglEeSx6PQhw3nAUw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_ZBQuAPglEeSx6PQhw3nAUw" severity="INFO" base_Association="_YkFp0PglEeSx6PQhw3nAUw">
+    <ruleId>CONF:1198-28305, CONF:1198-28306</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_lLbkQAPrEeWlspDC_8d7eg" base_Property="_Zhr58APrEeWlspDC_8d7eg">
+    <ruleId>CONF:1098-32630</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mVeVgAPrEeWlspDC_8d7eg" severity="INFO" base_Property="_ZhrS4APrEeWlspDC_8d7eg">
+    <ruleId>CONF:1098-32631</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_XSykAAPsEeWlspDC_8d7eg" memberEnd="_XSxV4APsEeWlspDC_8d7eg _XSykAQPsEeWlspDC_8d7eg">
+    <ownedEnd xmi:id="_XSykAQPsEeWlspDC_8d7eg" type="_kyeGAJm4EeOLJeQez13EkQ" association="_XSykAAPsEeWlspDC_8d7eg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_X65F0APsEeWlspDC_8d7eg" severity="WARNING" base_Association="_XSykAAPsEeWlspDC_8d7eg">
+    <ruleId>CONF:1098-31439</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_1KmSIE9XEeWsIc5CMrI4GA" base_Property="_xGYOwE9XEeWsIc5CMrI4GA">
+    <ruleId>CONF:1198-32790</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_5eODcE9XEeWsIc5CMrI4GA" code="75275-8" displayName="Cognitive Function" base_Property="_xGYOwE9XEeWsIc5CMrI4GA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-32791</ruleId>
+    <ruleId>CONF:1198-32792</ruleId>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>

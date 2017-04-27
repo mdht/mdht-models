@@ -24,17 +24,18 @@
 package org.openhealthtools.mdht.uml.cda.phmr.tests;
 
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceAccuracyObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.DeviceAccuracyObservationOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 
 /**
@@ -70,66 +71,69 @@ public class DeviceAccuracyObservationTest extends  CDAValidationTest {
  
 									
 public void testValidateDeviceAccuracyObservationTemplateId() {
-      OperationsTestCase<DeviceAccuracyObservation> validateDeviceAccuracyObservationTemplateIdTestCase = new OperationsTestCase<DeviceAccuracyObservation>(
-      "validateDeviceAccuracyObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_ACCURACY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceAccuracyObservation> validateDeviceAccuracyObservationTemplateIdTestCase = new OperationsTestCase<DeviceAccuracyObservation>(
+			"validateDeviceAccuracyObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_ACCURACY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceAccuracyObservation target) {
+			@Override
+			protected void updateToFail(DeviceAccuracyObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceAccuracyObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceAccuracyObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationTemplateId(
-          (DeviceAccuracyObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationTemplateId(
+					(DeviceAccuracyObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceAccuracyObservationTemplateIdTestCase.doValidationTest();
+		validateDeviceAccuracyObservationTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -144,66 +148,69 @@ public void testValidateDeviceAccuracyObservationTemplateId() {
  
 									
 public void testValidateDeviceAccuracyObservationClassCode() {
-      OperationsTestCase<DeviceAccuracyObservation> validateDeviceAccuracyObservationClassCodeTestCase = new OperationsTestCase<DeviceAccuracyObservation>(
-      "validateDeviceAccuracyObservationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_ACCURACY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceAccuracyObservation> validateDeviceAccuracyObservationClassCodeTestCase = new OperationsTestCase<DeviceAccuracyObservation>(
+			"validateDeviceAccuracyObservationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_ACCURACY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceAccuracyObservation target) {
+			@Override
+			protected void updateToFail(DeviceAccuracyObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceAccuracyObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceAccuracyObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationClassCode(
-          (DeviceAccuracyObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationClassCode(
+					(DeviceAccuracyObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceAccuracyObservationClassCodeTestCase.doValidationTest();
+		validateDeviceAccuracyObservationClassCodeTestCase.doValidationTest();
 }		
 
 
@@ -218,66 +225,69 @@ public void testValidateDeviceAccuracyObservationClassCode() {
  
 									
 public void testValidateDeviceAccuracyObservationCodeP() {
-      OperationsTestCase<DeviceAccuracyObservation> validateDeviceAccuracyObservationCodePTestCase = new OperationsTestCase<DeviceAccuracyObservation>(
-      "validateDeviceAccuracyObservationCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_ACCURACY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceAccuracyObservation> validateDeviceAccuracyObservationCodePTestCase = new OperationsTestCase<DeviceAccuracyObservation>(
+			"validateDeviceAccuracyObservationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_ACCURACY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceAccuracyObservation target) {
+			@Override
+			protected void updateToFail(DeviceAccuracyObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceAccuracyObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceAccuracyObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationCodeP(
-          (DeviceAccuracyObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationCodeP(
+					(DeviceAccuracyObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceAccuracyObservationCodePTestCase.doValidationTest();
+		validateDeviceAccuracyObservationCodePTestCase.doValidationTest();
 }		
 
 
@@ -292,69 +302,80 @@ public void testValidateDeviceAccuracyObservationCodeP() {
  
 									
 public void testValidateDeviceAccuracyObservationCode() {
-      OperationsTestCase<DeviceAccuracyObservation> validateDeviceAccuracyObservationCodeTestCase = new OperationsTestCase<DeviceAccuracyObservation>(
-      "validateDeviceAccuracyObservationCode",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_ACCURACY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceAccuracyObservation> validateDeviceAccuracyObservationCodeTestCase = new OperationsTestCase<DeviceAccuracyObservation>(
+			"validateDeviceAccuracyObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_ACCURACY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceAccuracyObservation target) {
+			@Override
+			protected void updateToFail(DeviceAccuracyObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceAccuracyObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceAccuracyObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+			
+				CD cd  = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		
         
-    
-      
-        
-      
-        
-        
-        
-      
-        CD cd  = DatatypesFactory.eINSTANCE.createCD();
-        target.setCode(cd);
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+        @Override
+            protected void setDependency(DeviceAccuracyObservation target) {
+                Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+                passToken.add(target);
+                map.put("org.openhealthtools.mdht.uml.cda.phmr.DeviceAccuracyObservationCodeP", passToken);
+            }
+         
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationCode(
-          (DeviceAccuracyObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationCode(
+					(DeviceAccuracyObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceAccuracyObservationCodeTestCase.doValidationTest();
+		validateDeviceAccuracyObservationCodeTestCase.doValidationTest();
 }		
 
 
@@ -369,66 +390,69 @@ public void testValidateDeviceAccuracyObservationCode() {
  
 									
 public void testValidateDeviceAccuracyObservationMoodCode() {
-      OperationsTestCase<DeviceAccuracyObservation> validateDeviceAccuracyObservationMoodCodeTestCase = new OperationsTestCase<DeviceAccuracyObservation>(
-      "validateDeviceAccuracyObservationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_ACCURACY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceAccuracyObservation> validateDeviceAccuracyObservationMoodCodeTestCase = new OperationsTestCase<DeviceAccuracyObservation>(
+			"validateDeviceAccuracyObservationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_ACCURACY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceAccuracyObservation target) {
+			@Override
+			protected void updateToFail(DeviceAccuracyObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceAccuracyObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceAccuracyObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationMoodCode(
-          (DeviceAccuracyObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationMoodCode(
+					(DeviceAccuracyObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceAccuracyObservationMoodCodeTestCase.doValidationTest();
+		validateDeviceAccuracyObservationMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -443,69 +467,72 @@ public void testValidateDeviceAccuracyObservationMoodCode() {
  
 									
 public void testValidateDeviceAccuracyObservationValue() {
-      OperationsTestCase<DeviceAccuracyObservation> validateDeviceAccuracyObservationValueTestCase = new OperationsTestCase<DeviceAccuracyObservation>(
-      "validateDeviceAccuracyObservationValue",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_ACCURACY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceAccuracyObservation> validateDeviceAccuracyObservationValueTestCase = new OperationsTestCase<DeviceAccuracyObservation>(
+			"validateDeviceAccuracyObservationValue",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_ACCURACY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceAccuracyObservation target) {
+			@Override
+			protected void updateToFail(DeviceAccuracyObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceAccuracyObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceAccuracyObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-      
-        CD value = DatatypesFactory.eINSTANCE.createCD();
-        target.getValues().add(value);
-        
+				
+			
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationValue(
-          (DeviceAccuracyObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationValue(
+					(DeviceAccuracyObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceAccuracyObservationValueTestCase.doValidationTest();
+		validateDeviceAccuracyObservationValueTestCase.doValidationTest();
 }		
 
 
@@ -534,6 +561,7 @@ public void testValidateDeviceAccuracyObservationValue() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<DeviceAccuracyObservation> {
+		@Override
 		public DeviceAccuracyObservation create() {		
 			return PhmrFactory.eINSTANCE.createDeviceAccuracyObservation();
 		}
@@ -565,9 +593,9 @@ public void testValidateDeviceAccuracyObservationValue() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -577,8 +605,8 @@ public void testValidateDeviceAccuracyObservationValue() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

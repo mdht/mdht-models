@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Risk Indicators For Hearing Loss Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.3</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.3"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i><b>Template Design Relationships</b>
+This template is an adaptation of the IHE UV Realm Risk Indicators for Hearing Loss section template. Machine readable entries associated with this template have been modified to use US Realm vocabulary constraints established for this purpose. 
+The design is adapted from templates being developed for C-CDA R2.0 which are intended to track identified risks.
+
+<b>Template Purpose</b>
+The Risk Indicators for Hearing Loss section indicates if specific risks relevant to hearing loss are present or not. Use of null flavors, to encode information indicating that an assessment of the risk was not performed or to record that no information is currently available in the system, is out of scope for this template. (Alternate representations using a nullFlavor section or an alternate entry patterns for nullFlavor expressions will be considered for a future version.)</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.3"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15433)<tt><b>/@code</b>="58232-0" </tt><i>Hearing Loss Risk Indicators</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys Contains exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../RiskIndicatorForHearingLossObservation.dita">Risk Indicator For Hearing Loss Observation</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../RiskIndicatorForHearingLossObservation.dita">Risk Indicator For Hearing Loss Observation</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.1.4.15</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15433)<tt><b>/@code</b>="58232-0" </tt><i>Hearing Loss Risk Indicators</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys Contains exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../RiskIndicatorForHearingLossObservation.dita">Risk Indicator For Hearing Loss Observation</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../RiskIndicatorForHearingLossObservation.dita">Risk Indicator For Hearing Loss Observation</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.1.4.15</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hpoc::RiskIndicatorsForHearingLossSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15433</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> </entry></row> 
+<row><entry>riskIndicatorsForHearingLossSection</entry><entry>riskIndicatorsForHearingLossSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>RiskIndicatorsForHearingLossSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="330327749"/>
+  <code code="1020866702"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="1177885351"/>
+      <code code="268094064"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1492507578"/>
+    </observation>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Risk Indicators For Hearing Loss Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.3</tt>]</p>
+</body>
+</topic>

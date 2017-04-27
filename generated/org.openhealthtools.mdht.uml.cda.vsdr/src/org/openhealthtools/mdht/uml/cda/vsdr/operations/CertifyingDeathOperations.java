@@ -7,17 +7,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.CertifyingDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
 
 /**
@@ -40,6 +35,14 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * @generated
  */
 public class CertifyingDeathOperations extends ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +71,7 @@ public class CertifyingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CERTIFYING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CERTIFYING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -83,25 +86,35 @@ public class CertifyingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCertifyingDeathTemplateId(CertifyingDeath certifyingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CERTIFYING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CERTIFYING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CERTIFYING_DEATH);
 			try {
-				VALIDATE_CERTIFYING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CERTIFYING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CERTIFYING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CERTIFYING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CERTIFYING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(certifyingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CERTIFYING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(certifyingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CERTIFYING_DEATH__CERTIFYING_DEATH_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CertifyingDeathTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(certifyingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CertifyingDeathCertifyingDeathTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(certifyingDeath, context) }),
 						 new Object [] { certifyingDeath }));
 			}
 			 
@@ -129,7 +142,7 @@ public class CertifyingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CERTIFYING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CERTIFYING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -144,25 +157,35 @@ public class CertifyingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCertifyingDeathClassCode(CertifyingDeath certifyingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CERTIFYING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CERTIFYING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CERTIFYING_DEATH);
 			try {
-				VALIDATE_CERTIFYING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CERTIFYING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CERTIFYING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CERTIFYING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CERTIFYING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(certifyingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CERTIFYING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(certifyingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CERTIFYING_DEATH__CERTIFYING_DEATH_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CertifyingDeathClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(certifyingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CertifyingDeathCertifyingDeathClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(certifyingDeath, context) }),
 						 new Object [] { certifyingDeath }));
 			}
 			 
@@ -190,7 +213,7 @@ public class CertifyingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CERTIFYING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CERTIFYING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -205,25 +228,35 @@ public class CertifyingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCertifyingDeathMoodCode(CertifyingDeath certifyingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CERTIFYING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CERTIFYING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CERTIFYING_DEATH);
 			try {
-				VALIDATE_CERTIFYING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CERTIFYING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CERTIFYING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CERTIFYING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CERTIFYING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(certifyingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CERTIFYING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(certifyingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CERTIFYING_DEATH__CERTIFYING_DEATH_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CertifyingDeathMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(certifyingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CertifyingDeathCertifyingDeathMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(certifyingDeath, context) }),
 						 new Object [] { certifyingDeath }));
 			}
 			 
@@ -253,7 +286,7 @@ public class CertifyingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CERTIFYING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CERTIFYING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -268,25 +301,35 @@ public class CertifyingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCertifyingDeathCode(CertifyingDeath certifyingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CERTIFYING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CERTIFYING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CERTIFYING_DEATH);
 			try {
-				VALIDATE_CERTIFYING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CERTIFYING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CERTIFYING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CERTIFYING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CERTIFYING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(certifyingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CERTIFYING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(certifyingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CERTIFYING_DEATH__CERTIFYING_DEATH_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CertifyingDeathCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(certifyingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CertifyingDeathCertifyingDeathCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(certifyingDeath, context) }),
 						 new Object [] { certifyingDeath }));
 			}
 			 
@@ -314,7 +357,7 @@ public class CertifyingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CERTIFYING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CERTIFYING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -329,25 +372,35 @@ public class CertifyingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCertifyingDeathEffectiveTime(CertifyingDeath certifyingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CERTIFYING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CERTIFYING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CERTIFYING_DEATH);
 			try {
-				VALIDATE_CERTIFYING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CERTIFYING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CERTIFYING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CERTIFYING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CERTIFYING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(certifyingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CERTIFYING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(certifyingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CERTIFYING_DEATH__CERTIFYING_DEATH_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CertifyingDeathEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(certifyingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CertifyingDeathCertifyingDeathEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(certifyingDeath, context) }),
 						 new Object [] { certifyingDeath }));
 			}
 			 
@@ -375,7 +428,7 @@ public class CertifyingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CERTIFYING_DEATH_CERTIFICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CERTIFYING_DEATH_CERTIFICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -390,25 +443,35 @@ public class CertifyingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCertifyingDeathCertificationPerformer(CertifyingDeath certifyingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CERTIFYING_DEATH_CERTIFICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CERTIFYING_DEATH_CERTIFICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CERTIFYING_DEATH);
 			try {
-				VALIDATE_CERTIFYING_DEATH_CERTIFICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CERTIFYING_DEATH_CERTIFICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CERTIFYING_DEATH_CERTIFICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CERTIFYING_DEATH_CERTIFICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CERTIFYING_DEATH_CERTIFICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(certifyingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CERTIFYING_DEATH_CERTIFICATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(certifyingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CERTIFYING_DEATH__CERTIFYING_DEATH_CERTIFICATION_PERFORMER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CertifyingDeathCertificationPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(certifyingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CertifyingDeathCertifyingDeathCertificationPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(certifyingDeath, context) }),
 						 new Object [] { certifyingDeath }));
 			}
 			 

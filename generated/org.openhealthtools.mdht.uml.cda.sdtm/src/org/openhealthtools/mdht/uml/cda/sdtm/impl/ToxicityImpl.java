@@ -2,34 +2,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.Toxicity;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.ToxicityOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Toxicity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ToxicityImpl extends ObservationImpl implements Toxicity {
+public class ToxicityImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements Toxicity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -126,7 +115,7 @@ public class ToxicityImpl extends ObservationImpl implements Toxicity {
 	 */
 	@Override
 	public Toxicity init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -134,8 +123,8 @@ public class ToxicityImpl extends ObservationImpl implements Toxicity {
      * @generated
      */
     @Override
-	public Toxicity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public Toxicity init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //ToxicityImpl

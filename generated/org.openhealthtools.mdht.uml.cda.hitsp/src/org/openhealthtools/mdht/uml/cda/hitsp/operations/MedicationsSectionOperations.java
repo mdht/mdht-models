@@ -45,8 +45,15 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
  *
  * @generated
  */
-public class MedicationsSectionOperations extends
-		org.openhealthtools.mdht.uml.cda.ihe.operations.MedicationsSectionOperations {
+public class MedicationsSectionOperations
+		extends org.openhealthtools.mdht.uml.cda.ihe.operations.MedicationsSectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -75,7 +82,7 @@ public class MedicationsSectionOperations extends
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,23 +98,29 @@ public class MedicationsSectionOperations extends
 	public static boolean validateHITSPMedicationsSectionTemplateId(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATIONS_SECTION);
 			try {
-				VALIDATE_HITSP_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.MEDICATIONS_SECTION__HITSP_MEDICATIONS_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HITSPMedicationsSectionTemplateId"),
-					new Object[] { medicationsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.MEDICATIONS_SECTION__HITSP_MEDICATIONS_SECTION_TEMPLATE_ID,
+						HITSPPlugin.INSTANCE.getString("MedicationsSectionHITSPMedicationsSectionTemplateId"),
+						new Object[] { medicationsSection }));
 			}
 
 			return false;
@@ -134,7 +147,7 @@ public class MedicationsSectionOperations extends
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,23 +163,29 @@ public class MedicationsSectionOperations extends
 	public static boolean validateHITSPMedicationsSectionMedication(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATIONS_SECTION);
 			try {
-				VALIDATE_HITSP_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.MEDICATIONS_SECTION__HITSP_MEDICATIONS_SECTION_MEDICATION,
-					HITSPPlugin.INSTANCE.getString("HITSPMedicationsSectionMedication"),
-					new Object[] { medicationsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.MEDICATIONS_SECTION__HITSP_MEDICATIONS_SECTION_MEDICATION,
+						HITSPPlugin.INSTANCE.getString("MedicationsSectionHITSPMedicationsSectionMedication"),
+						new Object[] { medicationsSection }));
 			}
 
 			return false;
@@ -200,8 +219,10 @@ public class MedicationsSectionOperations extends
 	 * @generated
 	 */
 	public static EList<Medication> getHITSPMedications(MedicationsSection medicationsSection) {
+
 		if (GET_HITSP_MEDICATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.MEDICATIONS_SECTION,
 				HITSPPackage.Literals.MEDICATIONS_SECTION.getEAllOperations().get(69));
@@ -211,7 +232,8 @@ public class MedicationsSectionOperations extends
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HITSP_MEDICATIONS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_HITSP_MEDICATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Medication> result = (Collection<Medication>) query.evaluate(medicationsSection);
 		return new BasicEList.UnmodifiableEList<Medication>(result.size(), result.toArray());

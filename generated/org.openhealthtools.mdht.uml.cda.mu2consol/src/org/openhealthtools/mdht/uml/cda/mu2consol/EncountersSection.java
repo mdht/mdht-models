@@ -10,43 +10,45 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Encounters Section</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getEncountersSection()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolEncountersSectionTemplateId Mu2consolEncountersSectionEncounterActivities' templateId.root='2.16.840.1.113883.10.20.22.2.22.1'"
+ * @model annotation= "http://www.openhealthtools.org/mdht/uml/cda/annotation
+ *        constraints.validation.error='Mu2consolEncountersSectionTemplateId
+ *        Mu2consolEncountersSectionEncounterActivities'
+ *        templateId.root='2.16.840.1.113883.10.20.22.2.22.1'"
  * @generated
  */
-public interface EncountersSection extends
-		org.openhealthtools.mdht.uml.cda.consol.EncountersSection {
+public interface EncountersSection extends org.openhealthtools.mdht.uml.cda.consol.EncountersSection {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.entry->exists(entry : cda::Entry | not
 	 * entry.encounter.oclIsUndefined() and
 	 * entry.encounter.oclIsKindOf(mu2consol::EncounterActivities))
-	 * 
+	 *
 	 * @param diagnostics
 	 *            The chain of diagnostics to which problems are to be appended.
 	 * @param context
 	 *            The cache of context-specific information. <!-- end-model-doc
 	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(mu2consol::EncounterActivities))'"
+	 * @model annotation= "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.entry->exists(entry : cda::Entry | not
+	 *        entry.encounter.oclIsUndefined() and
+	 *        entry.encounter.oclIsKindOf(mu2consol::EncounterActivities))'"
 	 * @generated
 	 */
-	boolean validateMu2consolEncountersSectionEncounterActivities(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMu2consolEncountersSectionEncounterActivities(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -54,16 +56,19 @@ public interface EncountersSection extends
 	 * encounter.oclIsUndefined() and
 	 * encounter.oclIsKindOf(mu2consol::EncounterActivities
 	 * )).oclAsType(mu2consol::EncounterActivities) <!-- end-model-doc -->
-	 * 
+	 *
 	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(mu2consol::EncounterActivities)).oclAsType(mu2consol::EncounterActivities)'"
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getEncounters()->select(encounter : cda::Encounter |
+	 *        not encounter.oclIsUndefined() and
+	 *        encounter.oclIsKindOf(mu2consol::EncounterActivities)).oclAsType(mu2consol::EncounterActivities)'"
 	 * @generated
 	 */
 	EList<EncounterActivities> getMu2consolEncounterActivitiess();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -71,10 +76,9 @@ public interface EncountersSection extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public EncountersSection init(
-			Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EncountersSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncountersSection

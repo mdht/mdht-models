@@ -14,11 +14,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DICOMObjectCatalogSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,8 +48,8 @@ public class DICOMObjectCatalogSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateDICOMObjectCatalogSectionTemplateId() {
 		OperationsTestCase<DICOMObjectCatalogSection> validateDICOMObjectCatalogSectionTemplateIdTestCase = new OperationsTestCase<DICOMObjectCatalogSection>(
-			"validateDICOMObjectCatalogSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDICOMObjectCatalogSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -116,8 +116,8 @@ public class DICOMObjectCatalogSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateDICOMObjectCatalogSectionCodeP() {
 		OperationsTestCase<DICOMObjectCatalogSection> validateDICOMObjectCatalogSectionCodePTestCase = new OperationsTestCase<DICOMObjectCatalogSection>(
-			"validateDICOMObjectCatalogSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDICOMObjectCatalogSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -150,8 +150,8 @@ public class DICOMObjectCatalogSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateDICOMObjectCatalogSectionStudyAct() {
 		OperationsTestCase<DICOMObjectCatalogSection> validateDICOMObjectCatalogSectionStudyActTestCase = new OperationsTestCase<DICOMObjectCatalogSection>(
-			"validateDICOMObjectCatalogSectionStudyAct",
-			operationsForOCL.getOCLValue("VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDICOMObjectCatalogSectionStudyAct", operationsForOCL.getOCLValue(
+				"VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

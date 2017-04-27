@@ -15,15 +15,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NutritionSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -84,7 +84,7 @@ public class NutritionSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateNutritionSectionCode() {
@@ -95,12 +95,13 @@ public class NutritionSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(NutritionSection target) {
-
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
 			protected void updateToPass(NutritionSection target) {
-				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE("61144-2", LOINC_ID));
 
 			}
 
@@ -118,7 +119,7 @@ public class NutritionSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateNutritionSectionCodeP() {
@@ -129,12 +130,13 @@ public class NutritionSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(NutritionSection target) {
-
+				target.init();
+				target.setCode(null);
 			}
 
 			@Override
 			protected void updateToPass(NutritionSection target) {
-				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
 
 			}
 
@@ -232,7 +234,8 @@ public class NutritionSectionTest extends CDAValidationTest {
 	public void testValidateNutritionSectionNutritionalStatusObservation() {
 		OperationsTestCase<NutritionSection> validateNutritionSectionNutritionalStatusObservationTestCase = new OperationsTestCase<NutritionSection>(
 			"validateNutritionSectionNutritionalStatusObservation",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

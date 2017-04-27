@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalExamSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -235,7 +235,8 @@ public class PhysicalExamSectionTest extends CDAValidationTest {
 	public void testValidatePhysicalExamSectionPressureUlcerObservation() {
 		OperationsTestCase<PhysicalExamSection> validatePhysicalExamSectionPressureUlcerObservationTestCase = new OperationsTestCase<PhysicalExamSection>(
 			"validatePhysicalExamSectionPressureUlcerObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -269,7 +270,8 @@ public class PhysicalExamSectionTest extends CDAValidationTest {
 	public void testValidatePhysicalExamSectionNumberOfPressureUlcersObservation() {
 		OperationsTestCase<PhysicalExamSection> validatePhysicalExamSectionNumberOfPressureUlcersObservationTestCase = new OperationsTestCase<PhysicalExamSection>(
 			"validatePhysicalExamSectionNumberOfPressureUlcersObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -303,7 +305,8 @@ public class PhysicalExamSectionTest extends CDAValidationTest {
 	public void testValidatePhysicalExamSectionHighestPressureUlcerStage() {
 		OperationsTestCase<PhysicalExamSection> validatePhysicalExamSectionHighestPressureUlcerStageTestCase = new OperationsTestCase<PhysicalExamSection>(
 			"validatePhysicalExamSectionHighestPressureUlcerStage",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

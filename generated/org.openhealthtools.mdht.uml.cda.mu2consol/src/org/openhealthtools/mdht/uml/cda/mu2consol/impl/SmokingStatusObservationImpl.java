@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SmokingStatusObservationOperations;
@@ -24,18 +24,14 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SmokingStatusObserv
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>Smoking Status Observation</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ *
  * @generated
  */
-public class SmokingStatusObservationImpl
-		extends
-		org.openhealthtools.mdht.uml.cda.consol.impl.SmokingStatusObservationImpl
-		implements SmokingStatusObservation {
+public class SmokingStatusObservationImpl extends
+		org.openhealthtools.mdht.uml.cda.consol.impl.SmokingStatusObservationImpl implements SmokingStatusObservation {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected SmokingStatusObservationImpl() {
@@ -44,7 +40,7 @@ public class SmokingStatusObservationImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -54,45 +50,51 @@ public class SmokingStatusObservationImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateTobaccoUseTemplateId(DiagnosticChain diagnostics,
+	public boolean validateSmokingStatusObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateTobaccoUseTemplateId(
-				this, diagnostics, context);
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationTemplateId(this, diagnostics,
+				context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
+	 * @generated
+	 */
+	// @Override
+	// public boolean validateTobaccoUseTemplateId(DiagnosticChain diagnostics,
+	// Map<Object, Object> context) {
+	// return SmokingStatusObservationOperations.validateTobaccoUseTemplateId(
+	// this, diagnostics, context);
+	// }
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateSmokingStatusObservationValueP(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations
-				.validateSmokingStatusObservationValueP(this, diagnostics,
-						context);
+	public boolean validateSmokingStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationValueP(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateSmokingStatusObservationValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations
-				.validateSmokingStatusObservationValue(this, diagnostics,
-						context);
+	public boolean validateSmokingStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationValue(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -102,12 +104,11 @@ public class SmokingStatusObservationImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public SmokingStatusObservation init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public SmokingStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
 	}

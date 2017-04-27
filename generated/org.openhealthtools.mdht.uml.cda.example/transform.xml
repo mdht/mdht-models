@@ -7,7 +7,7 @@
 -->
 <project name="CDA Model Transformation" basedir="." default="all">
 	<property name="modelName" value="example" />
-	<property name="cdaPluginPath" location="${basedir}/../org.openhealthtools.mdht.uml.cda" />
+	<eclipse.convertPath resourcePath="org.openhealthtools.mdht.uml.cda" property="cdaPluginPath"/>
 	<property name="validation.failOnError" value="false"/>
 
 	<macrodef name="convertEcorePaths">

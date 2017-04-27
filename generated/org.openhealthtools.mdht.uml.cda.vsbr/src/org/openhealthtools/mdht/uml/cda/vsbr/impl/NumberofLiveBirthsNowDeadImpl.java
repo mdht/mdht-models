@@ -11,10 +11,9 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,8 +23,6 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.NumberofLiveBirthsNowDea
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Numberof Live Births Now Dead</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -54,7 +51,8 @@ public class NumberofLiveBirthsNowDeadImpl extends ObservationImpl implements Nu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNumberofLiveBirthsNowDeadTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNumberofLiveBirthsNowDeadTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NumberofLiveBirthsNowDeadOperations.validateNumberofLiveBirthsNowDeadTemplateId(
 			this, diagnostics, context);
 	}
@@ -64,7 +62,8 @@ public class NumberofLiveBirthsNowDeadImpl extends ObservationImpl implements Nu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNumberofLiveBirthsNowDeadClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNumberofLiveBirthsNowDeadClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NumberofLiveBirthsNowDeadOperations.validateNumberofLiveBirthsNowDeadClassCode(
 			this, diagnostics, context);
 	}
@@ -75,7 +74,8 @@ public class NumberofLiveBirthsNowDeadImpl extends ObservationImpl implements Nu
 	 * @generated
 	 */
 	public boolean validateNumberofLiveBirthsNowDeadMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofLiveBirthsNowDeadOperations.validateNumberofLiveBirthsNowDeadMoodCode(this, diagnostics, context);
+		return NumberofLiveBirthsNowDeadOperations.validateNumberofLiveBirthsNowDeadMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**

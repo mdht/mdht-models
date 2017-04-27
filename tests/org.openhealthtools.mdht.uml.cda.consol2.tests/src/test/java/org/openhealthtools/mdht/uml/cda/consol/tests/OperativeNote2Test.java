@@ -16,14 +16,22 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.Authorization;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Consent;
+import org.eclipse.mdht.uml.cda.DocumentationOf;
+import org.eclipse.mdht.uml.cda.Performer1;
+import org.eclipse.mdht.uml.cda.ServiceEvent;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.ActClass;
+import org.eclipse.mdht.uml.hl7.vocab.ActMood;
+import org.eclipse.mdht.uml.hl7.vocab.ActRelationshipType;
+import org.eclipse.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.Authorization;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Consent;
-import org.openhealthtools.mdht.uml.cda.DocumentationOf;
-import org.openhealthtools.mdht.uml.cda.Performer1;
-import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.OperativeNote2;
 import org.openhealthtools.mdht.uml.cda.consol.OperativeNoteFluidSection;
@@ -36,14 +44,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ProcedureImplantsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureSpecimensTakenSection;
 import org.openhealthtools.mdht.uml.cda.consol.SurgicalDrainsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.OperativeNote2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClass;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActMood;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActRelationshipType;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 
 /**
  * <!-- begin-user-doc -->
@@ -273,8 +273,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNote2AnesthesiaSection2() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2AnesthesiaSection2TestCase = new OperationsTestCase<OperativeNote2>(
-			"validateOperativeNote2AnesthesiaSection2",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_ANESTHESIA_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNote2AnesthesiaSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_ANESTHESIA_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -307,8 +307,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNote2ComplicationsSection2() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2ComplicationsSection2TestCase = new OperationsTestCase<OperativeNote2>(
-			"validateOperativeNote2ComplicationsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_COMPLICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNote2ComplicationsSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_COMPLICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -342,7 +342,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2PreoperativeDiagnosisSection2() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2PreoperativeDiagnosisSection2TestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2PreoperativeDiagnosisSection2",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -376,7 +377,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2ProcedureEstimatedBloodLossSection() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2ProcedureEstimatedBloodLossSectionTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2ProcedureEstimatedBloodLossSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -417,7 +419,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2ProcedureFindingsSection2() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2ProcedureFindingsSection2TestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2ProcedureFindingsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -451,7 +454,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2ProcedureSpecimensTakenSection() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2ProcedureSpecimensTakenSectionTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2ProcedureSpecimensTakenSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -492,7 +496,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2ProcedureDescriptionSection() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2ProcedureDescriptionSectionTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2ProcedureDescriptionSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -533,7 +538,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2PostoperativeDiagnosisSection() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2PostoperativeDiagnosisSectionTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2PostoperativeDiagnosisSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -573,8 +579,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNote2ProcedureImplantsSection() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2ProcedureImplantsSectionTestCase = new OperationsTestCase<OperativeNote2>(
-			"validateOperativeNote2ProcedureImplantsSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNote2ProcedureImplantsSection", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -615,7 +621,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2OperativeNoteFluidSection() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2OperativeNoteFluidSectionTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2OperativeNoteFluidSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -656,7 +663,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2OperativeNoteSurgicalProcedureSection() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2OperativeNoteSurgicalProcedureSectionTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2OperativeNoteSurgicalProcedureSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -696,8 +704,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNote2PlanOfTreatmentSection2() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2PlanOfTreatmentSection2TestCase = new OperationsTestCase<OperativeNote2>(
-			"validateOperativeNote2PlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNote2PlanOfTreatmentSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -730,8 +738,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNote2PlannedProcedureSection2() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2PlannedProcedureSection2TestCase = new OperationsTestCase<OperativeNote2>(
-			"validateOperativeNote2PlannedProcedureSection2",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNote2PlannedProcedureSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -765,7 +773,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2ProcedureDispositionSection() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2ProcedureDispositionSectionTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2ProcedureDispositionSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -806,7 +815,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2ProcedureIndicationsSection2() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2ProcedureIndicationsSection2TestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2ProcedureIndicationsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -839,8 +849,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNote2SurgicalDrainsSection() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2SurgicalDrainsSectionTestCase = new OperationsTestCase<OperativeNote2>(
-			"validateOperativeNote2SurgicalDrainsSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNote2SurgicalDrainsSection", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -881,7 +891,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLowTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -924,7 +935,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -976,7 +988,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodePTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1028,8 +1041,15 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerTypeCode() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerTypeCodeTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventPerformerTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific performer type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
 
 			@Override
 			protected void updateToFail(OperativeNote2 target) {
@@ -1077,7 +1097,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntity() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1125,7 +1146,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1134,6 +1156,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 				CE code = DatatypesFactory.eINSTANCE.createCE();
 				ae.setCode(code);
@@ -1155,6 +1178,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 							DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 							ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 							Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+							perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 							AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 							CE code = DatatypesFactory.eINSTANCE.createCE(CUR_CODE, "2.16.840.1.113883.12.443");
 							ae.setCode(code);
@@ -1187,7 +1211,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodePTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1196,6 +1221,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 				perf.setAssignedEntity(ae);
 				se.getPerformers().add(perf);
@@ -1210,6 +1236,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 				CE code = DatatypesFactory.eINSTANCE.createCE();
 				ae.setCode(code);
@@ -1240,8 +1267,15 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCodeTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific performer type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
 
 			@Override
 			protected void updateToFail(OperativeNote2 target) {
@@ -1287,7 +1321,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1296,6 +1331,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				se.getPerformers().add(perf);
 				dof.setServiceEvent(se);
 				target.getDocumentationOfs().add(dof);
@@ -1308,6 +1344,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 				perf.setAssignedEntity(ae);
 				se.getPerformers().add(perf);
@@ -1336,7 +1373,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidthTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1387,7 +1425,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidthTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1616,7 +1655,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventProcedureCodes() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventProcedureCodesTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventProcedureCodes",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1631,7 +1671,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
+			 *
 			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
@@ -1701,7 +1741,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventEffectiveTime() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventEffectiveTimeTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1747,7 +1788,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventCode() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventCodeTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventCode",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1790,7 +1832,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventPerformer() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventPerformer",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1804,14 +1847,11 @@ public class OperativeNote2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(OperativeNote2 target) {
-				target.getDocumentationOfs().clear();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				se.getPerformers().add(perf);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
-
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					Performer1 performer = CDAFactory.eINSTANCE.createPerformer1();
+					performer.setTypeCode(x_ServiceEventPerformer.PPRF);
+					dof.getServiceEvent().getPerformers().add(performer);
+				}
 			}
 
 			@Override
@@ -1834,7 +1874,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEventPerformerAssistants() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEventPerformerAssistants",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1852,6 +1893,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				se.getPerformers().add(perf);
 				dof.setServiceEvent(se);
 				target.getDocumentationOfs().add(dof);
@@ -1878,7 +1920,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2DocumentationOfServiceEvent() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2DocumentationOfServiceEventTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2DocumentationOfServiceEvent",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1918,7 +1961,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2AuthorizationConsentClassCode() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2AuthorizationConsentClassCodeTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2AuthorizationConsentClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1957,7 +2001,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2AuthorizationConsentMoodCode() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2AuthorizationConsentMoodCodeTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2AuthorizationConsentMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1996,7 +2041,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	public void testValidateOperativeNote2AuthorizationConsentStatusCode() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2AuthorizationConsentStatusCodeTestCase = new OperationsTestCase<OperativeNote2>(
 			"validateOperativeNote2AuthorizationConsentStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2034,8 +2080,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNote2AuthorizationTypeCode() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2AuthorizationTypeCodeTestCase = new OperationsTestCase<OperativeNote2>(
-			"validateOperativeNote2AuthorizationTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNote2AuthorizationTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2071,8 +2117,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNote2AuthorizationConsent() {
 		OperationsTestCase<OperativeNote2> validateOperativeNote2AuthorizationConsentTestCase = new OperationsTestCase<OperativeNote2>(
-			"validateOperativeNote2AuthorizationConsent",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNote2AuthorizationConsent", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2301,8 +2347,8 @@ public class OperativeNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<OperativeNote2> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<OperativeNote2>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

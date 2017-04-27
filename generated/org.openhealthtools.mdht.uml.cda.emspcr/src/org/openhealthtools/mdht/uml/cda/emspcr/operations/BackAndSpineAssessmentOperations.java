@@ -12,19 +12,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.BackAndSpineAssessment;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,7 +42,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class BackAndSpineAssessmentOperations extends ClinicalStatementOperations {
+public class BackAndSpineAssessmentOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -77,7 +78,7 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,26 +93,38 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 
 	public static boolean validateBackAndSpineAssessmentTemplateId(BackAndSpineAssessment backAndSpineAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BACK_AND_SPINE_ASSESSMENT);
 			try {
-				VALIDATE_BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			backAndSpineAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentTemplateId"),
-					new Object[] { backAndSpineAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(backAndSpineAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentBackAndSpineAssessmentTemplateId"),
+						 new Object [] { backAndSpineAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -136,7 +149,7 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_BACK_AND_SPINE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,26 +164,38 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 
 	public static boolean validateBackAndSpineAssessmentMoodCode(BackAndSpineAssessment backAndSpineAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BACK_AND_SPINE_ASSESSMENT);
 			try {
-				VALIDATE_BACK_AND_SPINE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_BACK_AND_SPINE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			backAndSpineAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentMoodCode"),
-					new Object[] { backAndSpineAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(backAndSpineAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentBackAndSpineAssessmentMoodCode"),
+						 new Object [] { backAndSpineAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -195,7 +220,7 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,26 +235,38 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 
 	public static boolean validateBackAndSpineAssessmentCodeP(BackAndSpineAssessment backAndSpineAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BACK_AND_SPINE_ASSESSMENT);
 			try {
-				VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			backAndSpineAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentCodeP"),
-					new Object[] { backAndSpineAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(backAndSpineAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentBackAndSpineAssessmentCodeP"),
+						 new Object [] { backAndSpineAssessment }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -241,7 +278,7 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 				}
 				passToken.add(backAndSpineAssessment);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -255,9 +292,9 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67532-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67532-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBackAndSpineAssessmentCode(BackAndSpineAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Back And Spine Assessment Code</em>}' invariant operation.
@@ -268,7 +305,7 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,34 +320,44 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 
 	public static boolean validateBackAndSpineAssessmentCode(BackAndSpineAssessment backAndSpineAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.BackAndSpineAssessmentCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.BackAndSpineAssessmentCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(backAndSpineAssessment)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BACK_AND_SPINE_ASSESSMENT);
 			try {
-				VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			backAndSpineAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_CODE,
-					EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentCode"),
-					new Object[] { backAndSpineAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(backAndSpineAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_CODE,
+						 EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentBackAndSpineAssessmentCode"),
+						 new Object [] { backAndSpineAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -335,7 +382,7 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -350,26 +397,38 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 
 	public static boolean validateBackAndSpineAssessmentEffectiveTime(BackAndSpineAssessment backAndSpineAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BACK_AND_SPINE_ASSESSMENT);
 			try {
-				VALIDATE_BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			backAndSpineAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME,
-					EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentEffectiveTime"),
-					new Object[] { backAndSpineAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(backAndSpineAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_EFFECTIVE_TIME,
+						 EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentBackAndSpineAssessmentEffectiveTime"),
+						 new Object [] { backAndSpineAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -383,9 +442,9 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17208-2' or value.code = 'LA17209-0' or value.code = 'LA17214-0' or value.code = 'LA17215-7' or value.code = 'LA17220-7' or value.code = 'LA17244-7' or value.code = 'LA17245-4' or value.code = 'LA17256-1' or value.code = 'LA17257-9' or value.code = 'LA17258-7' or value.code = 'LA17259-5' or value.code = 'LA18220-6' or value.code = 'LA18221-4' or value.code = 'LA18222-2' or value.code = 'LA18223-0' or value.code = 'LA18224-8' or value.code = 'LA18225-5' or value.code = 'LA18226-3' or value.code = 'LA6626-1' or value.code = 'LA6630-3' or value.code = 'LA7410-9' or value.code = 'LA7452-1' or value.code = 'LA7460-4')))";
+	protected static final String VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17208-2' or value.code = 'LA17209-0' or value.code = 'LA17214-0' or value.code = 'LA17215-7' or value.code = 'LA17220-7' or value.code = 'LA17244-7' or value.code = 'LA17245-4' or value.code = 'LA17256-1' or value.code = 'LA17257-9' or value.code = 'LA17258-7' or value.code = 'LA17259-5' or value.code = 'LA18220-6' or value.code = 'LA18221-4' or value.code = 'LA18222-2' or value.code = 'LA18223-0' or value.code = 'LA18224-8' or value.code = 'LA18225-5' or value.code = 'LA18226-3' or value.code = 'LA6626-1' or value.code = 'LA6630-3' or value.code = 'LA7410-9' or value.code = 'LA7452-1' or value.code = 'LA7460-4')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBackAndSpineAssessmentValue(BackAndSpineAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Back And Spine Assessment Value</em>}' invariant operation.
@@ -396,7 +455,7 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -411,26 +470,38 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 
 	public static boolean validateBackAndSpineAssessmentValue(BackAndSpineAssessment backAndSpineAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BACK_AND_SPINE_ASSESSMENT);
 			try {
-				VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			backAndSpineAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_VALUE,
-					EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentValue"),
-					new Object[] { backAndSpineAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(backAndSpineAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentBackAndSpineAssessmentValue"),
+						 new Object [] { backAndSpineAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -455,7 +526,7 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -470,26 +541,38 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 
 	public static boolean validateBackAndSpineAssessmentValueP(BackAndSpineAssessment backAndSpineAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BACK_AND_SPINE_ASSESSMENT);
 			try {
-				VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			backAndSpineAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentValueP"),
-					new Object[] { backAndSpineAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(backAndSpineAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentBackAndSpineAssessmentValueP"),
+						 new Object [] { backAndSpineAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -503,9 +586,9 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->size() = 1 and self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18726-2' or value.code = 'LA18727-0' or value.code = 'LA18728-8' or value.code = 'LA18729-6' or value.code = 'LA18730-4' or value.code = 'LA18731-2' or value.code = 'LA18732-0' or value.code = 'LA18733-8' or value.code = 'LA18734-6' or value.code = 'LA18735-3' or value.code = 'LA18736-1' or value.code = 'LA18737-9' or value.code = 'LA18738-7')))";
+	protected static final String VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->size() = 1 and self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18726-2' or value.code = 'LA18727-0' or value.code = 'LA18728-8' or value.code = 'LA18729-6' or value.code = 'LA18730-4' or value.code = 'LA18731-2' or value.code = 'LA18732-0' or value.code = 'LA18733-8' or value.code = 'LA18734-6' or value.code = 'LA18735-3' or value.code = 'LA18736-1' or value.code = 'LA18737-9' or value.code = 'LA18738-7')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBackAndSpineAssessmentTargetSiteCode(BackAndSpineAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Back And Spine Assessment Target Site Code</em>}' invariant operation.
@@ -516,7 +599,7 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -531,26 +614,38 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 
 	public static boolean validateBackAndSpineAssessmentTargetSiteCode(BackAndSpineAssessment backAndSpineAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BACK_AND_SPINE_ASSESSMENT);
 			try {
-				VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			backAndSpineAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE,
-					EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentTargetSiteCode"),
-					new Object[] { backAndSpineAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(backAndSpineAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE,
+						 EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentBackAndSpineAssessmentTargetSiteCode"),
+						 new Object [] { backAndSpineAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -575,7 +670,7 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -590,26 +685,38 @@ public class BackAndSpineAssessmentOperations extends ClinicalStatementOperation
 
 	public static boolean validateBackAndSpineAssessmentTargetSiteCodeP(BackAndSpineAssessment backAndSpineAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BACK_AND_SPINE_ASSESSMENT);
 			try {
-				VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			backAndSpineAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentTargetSiteCodeP"),
-					new Object[] { backAndSpineAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(backAndSpineAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BACK_AND_SPINE_ASSESSMENT__BACK_AND_SPINE_ASSESSMENT_TARGET_SITE_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("BackAndSpineAssessmentBackAndSpineAssessmentTargetSiteCodeP"),
+						 new Object [] { backAndSpineAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;

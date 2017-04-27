@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <meta>
+        <filters directoryPatterns="" filePatterns=""
+            positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="ContentProfileSamples.xpr">
+        <folder name="c32">
+            <file name="c32/C32_CDA.xsd"/>
+            <file name="c32/C32_POCD_MT000040.xsd"/>
+            <file name="c32/datatypes-base.xsd"/>
+            <file name="c32/datatypes.xsd"/>
+            <file name="c32/NarrativeBlock.xsd"/>
+            <file name="c32/SDTC_Extension.xsd"/>
+            <file name="c32/voc.xsd"/>
+        </folder>
+        <folder path="../"/>
+        <folder path="../../org.hl7.security.ds4p.directprofile.doc/"/>
+        <folder path="../../org.hl7.security.ds4p.exchangeprofile.doc/"/>
+        <file name="sampleXDMetadata.xml"/>
+        <file name="SegmentedDocumentContentProfileSample.xml"/>
+    </projectTree>
+</project>

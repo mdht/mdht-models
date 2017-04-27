@@ -10,7 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.cdt;
 
-import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
+import org.eclipse.mdht.uml.cda.RegistryDelegate;
 
 /**
  * <!-- begin-user-doc -->

@@ -14,18 +14,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.PQ;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.QuantityMeasurementObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.QuantityMeasurementObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PQ;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -61,7 +61,8 @@ public class QuantityMeasurementObservationTest extends CDAValidationTest {
 	public void testValidateQuantityMeasurementObservationCodeCodeSystemDIR() {
 		OperationsTestCase<QuantityMeasurementObservation> validateQuantityMeasurementObservationCodeCodeSystemDIRTestCase = new OperationsTestCase<QuantityMeasurementObservation>(
 			"validateQuantityMeasurementObservationCodeCodeSystemDIR",
-			operationsForOCL.getOCLValue("VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DIR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DIR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -95,7 +96,8 @@ public class QuantityMeasurementObservationTest extends CDAValidationTest {
 	public void testValidateQuantityMeasurementObservationCodeCodeSystemDICOM() {
 		OperationsTestCase<QuantityMeasurementObservation> validateQuantityMeasurementObservationCodeCodeSystemDICOMTestCase = new OperationsTestCase<QuantityMeasurementObservation>(
 			"validateQuantityMeasurementObservationCodeCodeSystemDICOM",
-			operationsForOCL.getOCLValue("VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DICOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DICOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -130,7 +132,8 @@ public class QuantityMeasurementObservationTest extends CDAValidationTest {
 	public void testValidateQuantityMeasurementObservationTemplateId() {
 		OperationsTestCase<QuantityMeasurementObservation> validateQuantityMeasurementObservationTemplateIdTestCase = new OperationsTestCase<QuantityMeasurementObservation>(
 			"validateQuantityMeasurementObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -164,7 +167,8 @@ public class QuantityMeasurementObservationTest extends CDAValidationTest {
 	public void testValidateQuantityMeasurementObservationClassCode() {
 		OperationsTestCase<QuantityMeasurementObservation> validateQuantityMeasurementObservationClassCodeTestCase = new OperationsTestCase<QuantityMeasurementObservation>(
 			"validateQuantityMeasurementObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -197,8 +201,8 @@ public class QuantityMeasurementObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateQuantityMeasurementObservationMoodCode() {
 		OperationsTestCase<QuantityMeasurementObservation> validateQuantityMeasurementObservationMoodCodeTestCase = new OperationsTestCase<QuantityMeasurementObservation>(
-			"validateQuantityMeasurementObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateQuantityMeasurementObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -231,8 +235,8 @@ public class QuantityMeasurementObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateQuantityMeasurementObservationCode() {
 		OperationsTestCase<QuantityMeasurementObservation> validateQuantityMeasurementObservationCodeTestCase = new OperationsTestCase<QuantityMeasurementObservation>(
-			"validateQuantityMeasurementObservationCode",
-			operationsForOCL.getOCLValue("VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateQuantityMeasurementObservationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -269,7 +273,8 @@ public class QuantityMeasurementObservationTest extends CDAValidationTest {
 	public void testValidateQuantityMeasurementObservationEffectiveTime() {
 		OperationsTestCase<QuantityMeasurementObservation> validateQuantityMeasurementObservationEffectiveTimeTestCase = new OperationsTestCase<QuantityMeasurementObservation>(
 			"validateQuantityMeasurementObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -305,8 +310,8 @@ public class QuantityMeasurementObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateQuantityMeasurementObservationValue() {
 		OperationsTestCase<QuantityMeasurementObservation> validateQuantityMeasurementObservationValueTestCase = new OperationsTestCase<QuantityMeasurementObservation>(
-			"validateQuantityMeasurementObservationValue",
-			operationsForOCL.getOCLValue("VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateQuantityMeasurementObservationValue", operationsForOCL.getOCLValue(
+				"VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -343,7 +348,8 @@ public class QuantityMeasurementObservationTest extends CDAValidationTest {
 	public void testValidateQuantityMeasurementObservationSOPInstanceObservation() {
 		OperationsTestCase<QuantityMeasurementObservation> validateQuantityMeasurementObservationSOPInstanceObservationTestCase = new OperationsTestCase<QuantityMeasurementObservation>(
 			"validateQuantityMeasurementObservationSOPInstanceObservation",
-			operationsForOCL.getOCLValue("VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

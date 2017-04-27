@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Hearing Screening Result Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.13</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.13"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i><b>Template Design Relationships</b>
+This template is a further constraint of the IHE UV Realm Hearing Screening Result Observation template. Machine readable entries associated with this template use US Realm vocabulary constraints established for this purpose.
+
+The design is an adaptation of the C-CDA R1.1 Result Observation template (2.16.840.1.113883.10.20.22.4.2). Hearing screening devices return a value which results from interpreting their internal readings to produce a result from the device. In the future, if raw values will be returned from the device, then an interpretation code element would be needed and the associated reference ranges could be defined. For now, the value returned from the test is sufficient for both capturing the measure result and interpreting the result.
+
+<b>Template Purpose</b>
+This observation records the result of screening an ear. When the screening device returns an invalid reading, the reason for this invalid result may be recorded if it is known or determinable.
+In this template the negationInd attribute of the observation act SHALL function as defined for Observation.ActionNegationInd in the HL7 V3 Core Principles. This negation behavior affects the action of the act and is further constrained by other elements of the act class which are the elements of the act class which are not considered related to the document's context. For example: elements like id and statusCode are not affected by the negation which the Observation.ActionNegationInd mechanism is used.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.13"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultObservation.html">Consol Result Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.2</tt>)</li>
+<li>Contains zero or one [0..1] <tt><b>@negationInd</b></tt>
+<ol>
+<li>WHEN THE HEARING SCREENING WAS NOT PERFORMED: <b>SHALL</b> contain exactly one [1..1] @negationInd="true" Event (CodeSystem: ActMood 2.16.840.1.113883.5.1001) STATIC.</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:7133)<tt><b>/@code</b>="417491009" </tt><i>Neonatal Hearing Test (Procedure)</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7138)
+<ol>
+<li><b>SHALL</b> satisfy: contains exactly one [1..1] reference such that it contains exactly one [1..1] @value such that it begins with a '#' and points to its corresponding narrative (using the approach defined in CDA Release 2, Section 4.3.5.1)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7140, CONF:7141)
+<ul><li><p><lines><i>Represents clinically effective time of the measurement, which may be when the measurement was performed (e.g., a BP measurement), or may be when sample was taken (and measured some time afterwards).</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:7143), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/VS_HearingScreeningTestResultValues.dita">VS_HearingScreeningTestResultValues</xref> 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.14</tt><b> STATIC</b> 1
+<ol>
+<li><b>SHALL NOT</b> contain a value when negationInd="true"</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF:7148), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/VS_HearingScreeningMethods.dita">VS_HearingScreeningMethods</xref> 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.13</tt><b> STATIC</b> 1
+<ol>
+<li><b>SHALL NOT</b> contain a methodCode when negationInd="true"</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:7153), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/VS_HearingScreeningTargetSites.dita">VS_HearingScreeningTargetSites</xref> 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.12</tt><b> STATIC</b> 1
+<ol>
+<li><b>SHALL NOT</b> contain a methodCode when negationInd="true"</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt>
+<ol>
+<li>Contains exactly one [1..1] CDA Author</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>performer</b></tt>
+<ol>
+<li>Contains exactly one [1..1] CDA Performer2</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RSON" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt>, where its type is <xref href="../ReasonNotScreened.dita">Reason Not Screened</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../ReasonNotScreened.dita">Reason Not Screened</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.10</tt>)</li></ol></li></ol>
+</li>
+<li>Contains zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="REFR" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CommentActivity.html">Consol Comment Activity</xref><ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CommentActivity.html">Consol Comment Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.64</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultObservation.html">Consol Result Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.2</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7130)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7131)
+</li>
+<li>Contains zero or one [0..1] <tt><b>@negationInd</b></tt>
+<ol>
+<li>WHEN THE HEARING SCREENING WAS NOT PERFORMED: <b>SHALL</b> contain exactly one [1..1] @negationInd="true" Event (CodeSystem: ActMood 2.16.840.1.113883.5.1001) STATIC.</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7137)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:7133)<tt><b>/@code</b>="417491009" </tt><i>Neonatal Hearing Test (Procedure)</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7138)
+<ol>
+<li><b>SHALL</b> satisfy: contains exactly one [1..1] reference such that it contains exactly one [1..1] @value such that it begins with a '#' and points to its corresponding narrative (using the approach defined in CDA Release 2, Section 4.3.5.1)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:7134), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ResultStatus.dita">Result Status</xref> 2.16.840.1.113883.11.20.9.39</tt><b> STATIC</b> 2012-04-27 (CONF:14849)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7140, CONF:7141)
+<ul><li><p><lines><i>Represents clinically effective time of the measurement, which may be when the measurement was performed (e.g., a BP measurement), or may be when sample was taken (and measured some time afterwards).</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:7143), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/VS_HearingScreeningTestResultValues.dita">VS_HearingScreeningTestResultValues</xref> 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.14</tt><b> STATIC</b> 1
+<ol>
+<li><b>SHALL NOT</b> contain a value when negationInd="true"</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>interpretationCode</b></tt> (CONF:7147)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF:7148), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/VS_HearingScreeningMethods.dita">VS_HearingScreeningMethods</xref> 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.13</tt><b> STATIC</b> 1
+<ol>
+<li><b>SHALL NOT</b> contain a methodCode when negationInd="true"</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:7153), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/VS_HearingScreeningTargetSites.dita">VS_HearingScreeningTargetSites</xref> 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.12</tt><b> STATIC</b> 1
+<ol>
+<li><b>SHALL NOT</b> contain a methodCode when negationInd="true"</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt>
+<ol>
+<li>Contains exactly one [1..1] CDA Author</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>performer</b></tt>
+<ol>
+<li>Contains exactly one [1..1] CDA Performer2</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RSON" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt>, where its type is <xref href="../ReasonNotScreened.dita">Reason Not Screened</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../ReasonNotScreened.dita">Reason Not Screened</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.10</tt>)</li></ol></li></ol>
+</li>
+<li>Contains zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="REFR" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CommentActivity.html">Consol Comment Activity</xref><ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CommentActivity.html">Consol Comment Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.64</tt>)</li></ol></li></ol>
+</li>
+<li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:15924)</li>
+<li>reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:15925)</li>
+<li>This reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15926)</li>
+<li>The value for 'code' in a result observation <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)
+Laboratory results <b>SHOULD</b> be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or other constrained terminology named by the US Department of Health and Human Services Office of National Coordinator or other federal agency. Local and/or regional codes for laboratory results are allowed. The Local and/or regional codes <b>SHOULD</b> be sent in the translation element. (CONF:7166)</li>
+<li><b>SHOULD</b> contain zero or more [0..*] referenceRange. Such referenceRanges, if present, <b>SHALL</b> contain exactly one [1..1] observationRange. This observationRange <b>SHALL NOT</b> contain [0..0] code (CONF:7152)</li>
+<li><b>MAY</b> contain zero or one [0..1] author (CONF:7149)</li>
+<li>WHEN THE HEARING SCREENING WAS NOT PERFORMED: <b>SHALL</b> contain exactly one [1..1] @negationInd="true" Event (CodeSystem: ActMood 2.16.840.1.113883.5.1001) STATIC.</li>
+<li><b>SHALL</b> satisfy: contains exactly one [1..1] reference such that it contains exactly one [1..1] @value such that it begins with a '#' and points to its corresponding narrative (using the approach defined in CDA Release 2, Section 4.3.5.1)</li>
+<li><b>SHALL NOT</b> contain a value when negationInd="true"</li>
+<li><b>SHALL NOT</b> contain a methodCode when negationInd="true"</li>
+<li><b>SHALL NOT</b> contain a methodCode when negationInd="true"</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hpoc::HearingScreeningResultObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7133</entry><entry>SNOMEDCT 2.16.840.1.113883.6.96 </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:7140CONF:7141</entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:7148</entry><entry> </entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:7153</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ED</entry><entry>CONF:7138</entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7143</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationshipReasonNotScreened</entry><entry>entryRelationshipReasonNotScreened</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EntryRelationshipReasonNotScreened</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationshipRefer</entry><entry>entryRelationshipRefer</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>EntryRelationshipRefer</entry><entry></entry><entry> </entry></row> 
+<row><entry>observation</entry><entry>observation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>HearingScreeningResultObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1905168681"/>
+  <code code="2128779901"/>
+  <text>Text Value</text>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2015"/>
+    <high value="2015"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="984648080"/>
+  <interpretationCode code="615422832"/>
+  <methodCode code="421712412"/>
+  <targetSiteCode xsi:type="CE" code="1245649369"/>
+  <performer/>
+  <author/>
+  <entryRelationship typeCode="RSON">
+    <act>
+      <code code="732641445"/>
+      <text>Text Value</text>
+    </act>
+  </entryRelationship>
+  <entryRelationship typeCode="REFR">
+    <act>
+      <code code="1534672088"/>
+      <text>Text Value</text>
+      <author/>
+    </act>
+  </entryRelationship>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Hearing Screening Result Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.13</tt>]</p>
+</body>
+</topic>

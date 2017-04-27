@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -16,15 +16,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PrognosisObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PrognosisObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -207,7 +207,7 @@ public class PrognosisObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(PrognosisObservation target) {
-				CD code = DatatypesFactory.eINSTANCE.createCD("170967006", SNOMEDCT_ID);
+				CD code = DatatypesFactory.eINSTANCE.createCD("75328-5", LOINC_ID);
 				target.setCode(code);
 			}
 
@@ -274,8 +274,8 @@ public class PrognosisObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePrognosisObservationStatusCodeP() {
 		OperationsTestCase<PrognosisObservation> validatePrognosisObservationStatusCodePTestCase = new OperationsTestCase<PrognosisObservation>(
-			"validatePrognosisObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePrognosisObservationStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -308,8 +308,8 @@ public class PrognosisObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePrognosisObservationEffectiveTime() {
 		OperationsTestCase<PrognosisObservation> validatePrognosisObservationEffectiveTimeTestCase = new OperationsTestCase<PrognosisObservation>(
-			"validatePrognosisObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePrognosisObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

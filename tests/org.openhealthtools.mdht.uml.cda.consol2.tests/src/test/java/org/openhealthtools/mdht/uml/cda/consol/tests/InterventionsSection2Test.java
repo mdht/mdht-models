@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014, 2015 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -16,11 +16,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.InterventionsSection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,8 +32,10 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2InterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Intervention Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2HandoffCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Handoff Communication</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2PlannedInterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Planned Intervention Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#getInterventionActs() <em>Get Intervention Acts</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#getHandoffCommunications() <em>Get Handoff Communications</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#getPlannedInterventionActs() <em>Get Planned Intervention Acts</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Code</em>}</li>
@@ -52,8 +54,8 @@ public class InterventionsSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateInterventionsSection2InterventionAct() {
 		OperationsTestCase<InterventionsSection2> validateInterventionsSection2InterventionActTestCase = new OperationsTestCase<InterventionsSection2>(
-			"validateInterventionsSection2InterventionAct",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateInterventionsSection2InterventionAct", operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -86,7 +88,8 @@ public class InterventionsSection2Test extends CDAValidationTest {
 	public void testValidateInterventionsSection2HandoffCommunication() {
 		OperationsTestCase<InterventionsSection2> validateInterventionsSection2HandoffCommunicationTestCase = new OperationsTestCase<InterventionsSection2>(
 			"validateInterventionsSection2HandoffCommunication",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -96,7 +99,7 @@ public class InterventionsSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(InterventionsSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createHandoffCommunication().init());
+				target.addAct(ConsolFactory.eINSTANCE.createHandoffCommunicationParticipants().init());
 			}
 
 			@Override
@@ -109,6 +112,41 @@ public class InterventionsSection2Test extends CDAValidationTest {
 		};
 
 		validateInterventionsSection2HandoffCommunicationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateInterventionsSection2PlannedInterventionAct() {
+		OperationsTestCase<InterventionsSection2> validateInterventionsSection2PlannedInterventionActTestCase = new OperationsTestCase<InterventionsSection2>(
+			"validateInterventionsSection2PlannedInterventionAct",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(InterventionsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(InterventionsSection2 target) {
+				target.init();
+				target.addAct(ConsolFactory.eINSTANCE.createPlannedInterventionAct().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return InterventionsSection2Operations.validateInterventionsSection2PlannedInterventionAct(
+					(InterventionsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInterventionsSection2PlannedInterventionActTestCase.doValidationTest();
 	}
 
 	/**
@@ -132,6 +170,18 @@ public class InterventionsSection2Test extends CDAValidationTest {
 
 		InterventionsSection2 target = objectFactory.create();
 		target.getHandoffCommunications();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetPlannedInterventionActs() {
+
+		InterventionsSection2 target = objectFactory.create();
+		target.getPlannedInterventionActs();
 
 	}
 

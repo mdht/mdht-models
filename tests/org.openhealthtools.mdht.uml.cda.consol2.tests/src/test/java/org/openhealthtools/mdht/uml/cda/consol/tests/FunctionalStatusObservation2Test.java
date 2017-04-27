@@ -16,17 +16,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusObservation2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,16 +37,22 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusObservation2TextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Observation2 Text Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusObservation2TextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Observation2 Text Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Observation2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Non Medicinal Supply Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Observation2 Reference Range Observation Range No Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#getConsolNonMedicinalSupplyActivity2() <em>Get Consol Non Medicinal Supply Activity2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Text Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Text Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationInterpretationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Interpretation Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationMethodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Method Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationTargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusResultObservationReferenceRange(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Reference Range</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusResultObservationAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Author</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Non Medicinal Supply Activity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Reference Range Observation Range No Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusResultObservationReferenceRangeObservationRange(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Reference Range Observation Range</em>}</li>
  * </ul>
  * </p>
  *
@@ -57,87 +64,13 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateFunctionalStatusObservation2TextReference() {
-		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusObservation2TextReferenceTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
-			"validateFunctionalStatusObservation2TextReference",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusObservation2Operations.validateFunctionalStatusObservation2TextReference(
-					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusObservation2TextReferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateFunctionalStatusObservation2TextReferenceValue() {
-		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusObservation2TextReferenceValueTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
-			"validateFunctionalStatusObservation2TextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusObservation2 target) {
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusObservation2Operations.validateFunctionalStatusObservation2TextReferenceValue(
-					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusObservation2TextReferenceValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
 	*/
 	@Test
 	public void testValidateFunctionalStatusObservation2AuthorParticipation() {
 		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusObservation2AuthorParticipationTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
 			"validateFunctionalStatusObservation2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -165,39 +98,14 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateFunctionalStatusResultObservationNonMedicinalSupplyActivity2() {
-		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2TestCase = new OperationsTestCase<FunctionalStatusObservation2>(
-			"validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
+	public void testGetConsolNonMedicinalSupplyActivity2() {
 
-			@Override
-			protected void updateToFail(FunctionalStatusObservation2 target) {
+		FunctionalStatusObservation2 target = objectFactory.create();
+		target.getConsolNonMedicinalSupplyActivity2();
 
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusObservation2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setSupply(ConsolFactory.eINSTANCE.createNonMedicinalSupplyActivity2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2(
-					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusResultObservationNonMedicinalSupplyActivity2TestCase.doValidationTest();
 	}
 
 	/**
@@ -207,10 +115,10 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 	* It always returns true and there is no reason to test it
 	*/
 	@Ignore
-	public void testValidateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCode() {
-		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCodeTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
-			"validateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCode",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateResultObservationTextReference() {
+		OperationsTestCase<FunctionalStatusObservation2> validateResultObservationTextReferenceTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
+			"validateResultObservationTextReference",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -227,25 +135,52 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return FunctionalStatusObservation2Operations.validateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCode(
+				return FunctionalStatusObservation2Operations.validateResultObservationTextReference(
 					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateFunctionalStatusObservation2ReferenceRangeObservationRangeNoCodeTestCase.doValidationTest();
+		validateResultObservationTextReferenceTestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
 	*/
-	@Test
-	public void testGetConsolNonMedicinalSupplyActivity2() {
+	@Ignore
+	public void testValidateResultObservationTextReferenceValue() {
+		OperationsTestCase<FunctionalStatusObservation2> validateResultObservationTextReferenceValueTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
+			"validateResultObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-		FunctionalStatusObservation2 target = objectFactory.create();
-		target.getConsolNonMedicinalSupplyActivity2();
+			@Override
+			protected void updateToFail(FunctionalStatusObservation2 target) {
 
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusObservation2 target) {
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusObservation2Operations.validateResultObservationTextReferenceValue(
+					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationTextReferenceValueTestCase.doValidationTest();
 	}
 
 	/**
@@ -363,12 +298,161 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
+	* This attribute is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateResultObservationText() {
+		OperationsTestCase<FunctionalStatusObservation2> validateResultObservationTextTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
+			"validateResultObservationText",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusObservation2 target) {
+				target.init();
+
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				target.setText(text);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusObservation2Operations.validateResultObservationText(
+					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationTextTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This attribute is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateResultObservationInterpretationCode() {
+		OperationsTestCase<FunctionalStatusObservation2> validateResultObservationInterpretationCodeTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
+			"validateResultObservationInterpretationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusObservation2Operations.validateResultObservationInterpretationCode(
+					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationInterpretationCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This attribute is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	@Test
+	public void testValidateResultObservationMethodCode() {
+		OperationsTestCase<FunctionalStatusObservation2> validateResultObservationMethodCodeTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
+			"validateResultObservationMethodCode",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusObservation2Operations.validateResultObservationMethodCode(
+					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationMethodCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This attribute is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateResultObservationTargetSiteCode() {
+		OperationsTestCase<FunctionalStatusObservation2> validateResultObservationTargetSiteCodeTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
+			"validateResultObservationTargetSiteCode", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusObservation2Operations.validateResultObservationTargetSiteCode(
+					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationTargetSiteCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateFunctionalStatusResultObservationReferenceRange() {
 		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusResultObservationReferenceRangeTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
 			"validateFunctionalStatusResultObservationReferenceRange",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -391,6 +475,155 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 		};
 
 		validateFunctionalStatusResultObservationReferenceRangeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This association is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateFunctionalStatusResultObservationAuthor() {
+		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusResultObservationAuthorTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
+			"validateFunctionalStatusResultObservationAuthor",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationAuthor(
+					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFunctionalStatusResultObservationAuthorTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateFunctionalStatusResultObservationNonMedicinalSupplyActivity() {
+		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusResultObservationNonMedicinalSupplyActivityTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
+			"validateFunctionalStatusResultObservationNonMedicinalSupplyActivity",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusObservation2 target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				er.setSupply(ConsolFactory.eINSTANCE.createNonMedicinalSupplyActivity2().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(
+					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFunctionalStatusResultObservationNonMedicinalSupplyActivityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode() {
+		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCodeTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
+			"validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(
+					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This association is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateFunctionalStatusResultObservationReferenceRangeObservationRange() {
+		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusResultObservationReferenceRangeObservationRangeTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
+			"validateFunctionalStatusResultObservationReferenceRangeObservationRange",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationReferenceRangeObservationRange(
+					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFunctionalStatusResultObservationReferenceRangeObservationRangeTestCase.doValidationTest();
 	}
 
 	/**

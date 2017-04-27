@@ -7,17 +7,13 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -28,16 +24,13 @@ import org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStage;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
-import org.openhealthtools.mdht.uml.cda.consol.SensoryAndSpeechStatus;
-
+import org.openhealthtools.mdht.uml.cda.consol.SensoryStatus;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusSection2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Functional Status Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -69,42 +62,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	@Override
 	public boolean validateFunctionalStatusSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusSectionFunctionalStatusOrganizer2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionFunctionalStatusOrganizer2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusSectionFunctionalStatusObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionFunctionalStatusObservation2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusSectionNonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionNonMedicinalSupplyActivity2(
-			this, diagnostics, context);
 	}
 
 	/**
@@ -217,7 +174,7 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * @generated
 	 */
 	@Override
-	public EList<SensoryAndSpeechStatus> getSensoryAndSpeechStatuss() {
+	public EList<SensoryStatus> getSensoryAndSpeechStatuss() {
 		return FunctionalStatusSection2Operations.getSensoryAndSpeechStatuss(this);
 	}
 
@@ -239,6 +196,90 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	@Override
 	public boolean validateFunctionalStatusSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusSectionFunctionalStatusResultOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionFunctionalStatusResultOrganizer(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusSectionFunctionalStatusResultObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionFunctionalStatusResultObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusSectionCognitiveStatusResultOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionCognitiveStatusResultOrganizer(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusSectionCognitiveStatusResultObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionCognitiveStatusResultObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusSectionNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionNonMedicinalSupplyActivity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusSectionNumberOfPressureUlcersObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionNumberOfPressureUlcersObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusSectionHighestPressureUlcerStage(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionHighestPressureUlcerStage(
+			this, diagnostics, context);
 	}
 
 	/**

@@ -11,26 +11,27 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedAuthor;
+import org.eclipse.mdht.uml.cda.Author;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Organization;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.AD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.vocab.PostalAddressUse;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
-import org.openhealthtools.mdht.uml.cda.Author;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Organization;
-import org.openhealthtools.mdht.uml.cda.Person;
 import org.openhealthtools.mdht.uml.cda.consol.CommentActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CommentActivityOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.vocab.PostalAddressUse;
 
 /**
  * <!-- begin-user-doc -->
@@ -55,8 +56,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.PostalAddressUse;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Postal Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address State</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Street Address Line</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Use P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Use</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Use P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author Has Person Or Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorAssignPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author Assign Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author Addr</em>}</li>
@@ -116,8 +117,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateCommentActivityTextReferenceValue() {
 		OperationsTestCase<CommentActivity> validateCommentActivityTextReferenceValueTestCase = new OperationsTestCase<CommentActivity>(
-			"validateCommentActivityTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCommentActivityTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -299,7 +300,7 @@ public class CommentActivityTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateCommentActivityCode() {
@@ -317,6 +318,13 @@ public class CommentActivityTest extends CDAValidationTest {
 			protected void updateToPass(CommentActivity target) {
 				target.init();
 
+			}
+
+			@Override
+			protected void setDependency(CommentActivity target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.CommentActivityCodeP", passToken);
 			}
 
 			@Override
@@ -411,7 +419,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreetTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -479,267 +488,43 @@ public class CommentActivityTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity() {
-		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCityTestCase = new OperationsTestCase<CommentActivity>(
-			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(
-					(CommentActivity) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(CommentActivity target) {
-				target.init();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				author.setTime(DatatypesFactory.eINSTANCE.createTS());
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
-			}
-
-			@Override
-			protected void updateToPass(CommentActivity target) {
-				target.getAuthors().clear();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				author.setTime(DatatypesFactory.eINSTANCE.createTS());
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getAddrs().add(createUSRealmAddress());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
-			}
-
-		};
-
-		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry() {
-		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountryTestCase = new OperationsTestCase<CommentActivity>(
-			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(
-					(CommentActivity) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(CommentActivity target) {
-				target.init();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				author.setTime(DatatypesFactory.eINSTANCE.createTS());
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
-			}
-
-			@Override
-			protected void updateToPass(CommentActivity target) {
-				target.getAuthors().clear();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				author.setTime(DatatypesFactory.eINSTANCE.createTS());
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getAddrs().add(createUSRealmAddress());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
-			}
-
-		};
-
-		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountryTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode() {
-		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<CommentActivity>(
-			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(
-					(CommentActivity) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(CommentActivity target) {
-				target.init();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				author.setTime(DatatypesFactory.eINSTANCE.createTS());
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
-			}
-
-			@Override
-			protected void updateToPass(CommentActivity target) {
-				target.getAuthors().clear();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				author.setTime(DatatypesFactory.eINSTANCE.createTS());
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getAddrs().add(createUSRealmAddress());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
-			}
-
-		};
-
-		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState() {
-		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStateTestCase = new OperationsTestCase<CommentActivity>(
-			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(
-					(CommentActivity) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(CommentActivity target) {
-				target.init();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				author.setTime(DatatypesFactory.eINSTANCE.createTS());
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
-			}
-
-			@Override
-			protected void updateToPass(CommentActivity target) {
-				target.getAuthors().clear();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				author.setTime(DatatypesFactory.eINSTANCE.createTS());
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getAddrs().add(createUSRealmAddress());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
-			}
-
-		};
-
-		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStateTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine() {
-		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase = new OperationsTestCase<CommentActivity>(
-			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-					(CommentActivity) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(CommentActivity target) {
-				target.init();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				author.setTime(DatatypesFactory.eINSTANCE.createTS());
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
-			}
-
-			@Override
-			protected void updateToPass(CommentActivity target) {
-				target.getAuthors().clear();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				author.setTime(DatatypesFactory.eINSTANCE.createTS());
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getAddrs().add(createUSRealmAddress());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
-			}
-
-		};
-
-		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUsePTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			@Override
+			protected void updateToFail(CommentActivity target) {
+				target.init();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+				author.setTime(DatatypesFactory.eINSTANCE.createTS());
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				aa.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				author.setAssignedAuthor(aa);
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected void updateToPass(CommentActivity target) {
+				target.getAuthors().clear();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+				author.setTime(DatatypesFactory.eINSTANCE.createTS());
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				aa.getAddrs().add(createUSRealmAddress());
+				author.setAssignedAuthor(aa);
+				target.getAuthors().add(author);
+			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
 				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(
 					(CommentActivity) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(CommentActivity target) {
-				target.init();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				author.setTime(DatatypesFactory.eINSTANCE.createTS());
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
-			}
-
-			@Override
-			protected void updateToPass(CommentActivity target) {
-				target.getAuthors().clear();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				author.setTime(DatatypesFactory.eINSTANCE.createTS());
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getAddrs().add(createUSRealmAddress());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
 			}
 
 		};
@@ -749,21 +534,15 @@ public class CommentActivityTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(
-					(CommentActivity) objectToTest, diagnostician, map);
-			}
 
 			@Override
 			protected void updateToFail(CommentActivity target) {
@@ -790,6 +569,13 @@ public class CommentActivityTest extends CDAValidationTest {
 				target.getAuthors().add(author);
 			}
 
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(
+					(CommentActivity) objectToTest, diagnostician, map);
+			}
+
 		};
 
 		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseTestCase.doValidationTest();
@@ -800,10 +586,241 @@ public class CommentActivityTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry() {
+		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountryTestCase = new OperationsTestCase<CommentActivity>(
+			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CommentActivity target) {
+				target.init();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+				author.setTime(DatatypesFactory.eINSTANCE.createTS());
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				aa.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				author.setAssignedAuthor(aa);
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected void updateToPass(CommentActivity target) {
+				target.getAuthors().clear();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+				author.setTime(DatatypesFactory.eINSTANCE.createTS());
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				aa.getAddrs().add(createUSRealmAddress());
+				author.setAssignedAuthor(aa);
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(
+					(CommentActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountryTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState() {
+		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStateTestCase = new OperationsTestCase<CommentActivity>(
+			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CommentActivity target) {
+				target.init();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+				author.setTime(DatatypesFactory.eINSTANCE.createTS());
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				aa.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				author.setAssignedAuthor(aa);
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected void updateToPass(CommentActivity target) {
+				target.getAuthors().clear();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+				author.setTime(DatatypesFactory.eINSTANCE.createTS());
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				aa.getAddrs().add(createUSRealmAddress());
+				author.setAssignedAuthor(aa);
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(
+					(CommentActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStateTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity() {
+		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCityTestCase = new OperationsTestCase<CommentActivity>(
+			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CommentActivity target) {
+				target.init();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+				author.setTime(DatatypesFactory.eINSTANCE.createTS());
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				aa.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				author.setAssignedAuthor(aa);
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected void updateToPass(CommentActivity target) {
+				target.getAuthors().clear();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+				author.setTime(DatatypesFactory.eINSTANCE.createTS());
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				aa.getAddrs().add(createUSRealmAddress());
+				author.setAssignedAuthor(aa);
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(
+					(CommentActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode() {
+		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<CommentActivity>(
+			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CommentActivity target) {
+				target.init();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+				author.setTime(DatatypesFactory.eINSTANCE.createTS());
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				aa.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				author.setAssignedAuthor(aa);
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected void updateToPass(CommentActivity target) {
+				target.getAuthors().clear();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+				author.setTime(DatatypesFactory.eINSTANCE.createTS());
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				aa.getAddrs().add(createUSRealmAddress());
+				author.setAssignedAuthor(aa);
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(
+					(CommentActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine() {
+		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase = new OperationsTestCase<CommentActivity>(
+			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CommentActivity target) {
+				target.init();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+				author.setTime(DatatypesFactory.eINSTANCE.createTS());
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				aa.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				author.setAssignedAuthor(aa);
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected void updateToPass(CommentActivity target) {
+				target.getAuthors().clear();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+				author.setTime(DatatypesFactory.eINSTANCE.createTS());
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				aa.getAddrs().add(createUSRealmAddress());
+				author.setAssignedAuthor(aa);
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+					(CommentActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganizationTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -936,7 +953,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorAssignPersonName() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorAssignPersonNameTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorAssignPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ASSIGN_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ASSIGN_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 			{
 				this.skipFailsTest();
@@ -981,7 +999,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorAddr() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorAddrTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorAddr",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1025,8 +1044,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateCommentActivityAuthorAssignedAuthorId() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorIdTestCase = new OperationsTestCase<CommentActivity>(
-			"validateCommentActivityAuthorAssignedAuthorId",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCommentActivityAuthorAssignedAuthorId", operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1109,8 +1128,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateCommentActivityAuthorAssignedAuthor() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorTestCase = new OperationsTestCase<CommentActivity>(
-			"validateCommentActivityAuthorAssignedAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCommentActivityAuthorAssignedAuthor", operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1168,6 +1187,7 @@ public class CommentActivityTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<CommentActivity> {
+		@Override
 		public CommentActivity create() {
 			return ConsolFactory.eINSTANCE.createCommentActivity();
 		}

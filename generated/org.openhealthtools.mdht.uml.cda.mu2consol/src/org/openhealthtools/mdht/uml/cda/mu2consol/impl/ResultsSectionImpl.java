@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ResultsSection;
@@ -26,17 +26,14 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultsSectionOpera
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>Results Section</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ *
  * @generated
  */
-public class ResultsSectionImpl extends
-		org.openhealthtools.mdht.uml.cda.consol.impl.ResultsSectionImpl
+public class ResultsSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.ResultsSectionImpl
 		implements ResultsSection {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected ResultsSectionImpl() {
@@ -45,7 +42,7 @@ public class ResultsSectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -55,7 +52,7 @@ public class ResultsSectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -65,32 +62,28 @@ public class ResultsSectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultsSectionEntriesOptionalTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionOperations
-				.validateResultsSectionEntriesOptionalTemplateId(this,
-						diagnostics, context);
+	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultsSectionResultOrganizer(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionOperations.validateResultsSectionResultOrganizer(
-				this, diagnostics, context);
+	public boolean validateResultsSectionResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionResultOrganizer(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -100,12 +93,11 @@ public class ResultsSectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
-	public ResultsSection init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public ResultsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
 	}

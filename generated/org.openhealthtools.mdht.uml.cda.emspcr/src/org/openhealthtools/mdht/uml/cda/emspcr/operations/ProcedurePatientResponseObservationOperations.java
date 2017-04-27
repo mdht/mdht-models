@@ -12,19 +12,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.ProcedurePatientResponseObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,7 +39,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class ProcedurePatientResponseObservationOperations extends ClinicalStatementOperations {
+public class ProcedurePatientResponseObservationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,7 +75,7 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -90,28 +91,38 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	public static boolean validateProcedurePatientResponseObservationTemplateId(
 			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PATIENT_RESPONSE_OBSERVATION);
 			try {
-				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedurePatientResponseObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationTemplateId"),
-					new Object[] { procedurePatientResponseObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(procedurePatientResponseObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationProcedurePatientResponseObservationTemplateId"),
+						 new Object [] { procedurePatientResponseObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -136,7 +147,7 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -152,28 +163,38 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	public static boolean validateProcedurePatientResponseObservationMoodCode(
 			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PATIENT_RESPONSE_OBSERVATION);
 			try {
-				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedurePatientResponseObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationMoodCode"),
-					new Object[] { procedurePatientResponseObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(procedurePatientResponseObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationProcedurePatientResponseObservationMoodCode"),
+						 new Object [] { procedurePatientResponseObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -198,7 +219,7 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,28 +235,38 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	public static boolean validateProcedurePatientResponseObservationCodeP(
 			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PATIENT_RESPONSE_OBSERVATION);
 			try {
-				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedurePatientResponseObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationCodeP"),
-					new Object[] { procedurePatientResponseObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(procedurePatientResponseObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationProcedurePatientResponseObservationCodeP"),
+						 new Object [] { procedurePatientResponseObservation }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -243,12 +274,11 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.emspcr.ProcedurePatientResponseObservationCodeP", passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.emspcr.ProcedurePatientResponseObservationCodeP", passToken);
 				}
 				passToken.add(procedurePatientResponseObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -262,9 +292,9 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67546-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67546-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Code</em>}' invariant operation.
@@ -275,7 +305,7 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -291,36 +321,44 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	public static boolean validateProcedurePatientResponseObservationCode(
 			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProcedurePatientResponseObservationCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(procedurePatientResponseObservation)) {
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProcedurePatientResponseObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(procedurePatientResponseObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PATIENT_RESPONSE_OBSERVATION);
 			try {
-				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedurePatientResponseObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationCode"),
-					new Object[] { procedurePatientResponseObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(procedurePatientResponseObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationProcedurePatientResponseObservationCode"),
+						 new Object [] { procedurePatientResponseObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -334,9 +372,9 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA11011-6' or value.code = 'LA17181-1' or value.code = 'LA65-8')))";
+	protected static final String VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA11011-6' or value.code = 'LA17181-1' or value.code = 'LA65-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationValue(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Value</em>}' invariant operation.
@@ -347,7 +385,7 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -363,27 +401,38 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	public static boolean validateProcedurePatientResponseObservationValue(
 			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PATIENT_RESPONSE_OBSERVATION);
 			try {
-				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedurePatientResponseObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationValue"),
-					new Object[] { procedurePatientResponseObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(procedurePatientResponseObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationProcedurePatientResponseObservationValue"),
+						 new Object [] { procedurePatientResponseObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -408,7 +457,7 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -424,28 +473,38 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 	public static boolean validateProcedurePatientResponseObservationValueP(
 			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PATIENT_RESPONSE_OBSERVATION);
 			try {
-				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedurePatientResponseObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationValueP"),
-					new Object[] { procedurePatientResponseObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(procedurePatientResponseObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationProcedurePatientResponseObservationValueP"),
+						 new Object [] { procedurePatientResponseObservation }));
+			}
+			 
 			return false;
 		}
 		return true;

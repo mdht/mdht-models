@@ -22,90 +22,81 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.impl.DeviceImpl;
-
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 import org.openhealthtools.mdht.uml.cda.phmr.PlayingDevice;
-
 import org.openhealthtools.mdht.uml.cda.phmr.operations.PlayingDeviceOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Playing Device</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PlayingDeviceImpl extends DeviceImpl implements PlayingDevice {
+public class PlayingDeviceImpl extends org.eclipse.mdht.uml.cda.impl.DeviceImpl implements PlayingDevice {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PlayingDeviceImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhmrPackage.Literals.PLAYING_DEVICE;
-  }
+		return PhmrPackage.Literals.PLAYING_DEVICE;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlayingDeviceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PlayingDeviceOperations.validatePlayingDeviceTemplateId(this, diagnostics, context);
-  }
+		return PlayingDeviceOperations.validatePlayingDeviceTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlayingDeviceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PlayingDeviceOperations.validatePlayingDeviceCode(this, diagnostics, context);
-  }
+		return PlayingDeviceOperations.validatePlayingDeviceCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlayingDeviceManufacturerModelName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PlayingDeviceOperations.validatePlayingDeviceManufacturerModelName(this, diagnostics, context);
-  }
+		return PlayingDeviceOperations.validatePlayingDeviceManufacturerModelName(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public PlayingDevice init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -113,8 +104,8 @@ public class PlayingDeviceImpl extends DeviceImpl implements PlayingDevice {
      * @generated
      */
     @Override
-	public PlayingDevice init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public PlayingDevice init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //PlayingDeviceImpl

@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation;
@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSectionOpera
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedures Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -169,7 +167,8 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
@@ -179,7 +178,8 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProceduresSectionEntriesOptionalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalText(this, diagnostics, context);
 	}
 

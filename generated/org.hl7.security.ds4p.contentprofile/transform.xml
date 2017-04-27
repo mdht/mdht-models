@@ -1,0 +1,32 @@
+<?eclipse version="3.0"?>
+<project name="CDA Model Transformation"  basedir="." default="all">
+<eclipse.convertPath resourcePath="org.eclipse.mdht.uml.cda" property="cdaPluginPath"/>
+<property name="modelName" value="contentprofile"/>
+<macrodef name="convertEcorePaths">
+<attribute name="filePath"/>
+<sequential>
+<replace file="@{filePath}" token="CONSOL_MODEL" value="CONSOL_ECOREMODEL"/>
+<replace file="@{filePath}" token="consol.uml" value="consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-documents.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-allergies.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-problems.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-other.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-medications.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-familyhistory.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-socialhistory.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-results.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-advancedirectives.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-encounters.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-immunizations.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-payers.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-planofcare.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-procedures.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-vitalsigns.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-exams.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-discharge.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".controlled/consol-dicom.uml" value="/consol_Ecore.uml"/>
+<replace file="@{filePath}" token="consentdirective.uml" value="/model/consentdirective_Ecore.uml"/>
+ </sequential>
+</macrodef>
+<import file="${cdaPluginPath}/transform-common.xml"/>
+</project>

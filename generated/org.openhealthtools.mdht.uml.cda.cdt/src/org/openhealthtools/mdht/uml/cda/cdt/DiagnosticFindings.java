@@ -12,7 +12,7 @@ package org.openhealthtools.mdht.uml.cda.cdt;
 
 import java.lang.Iterable;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
 
 /**
@@ -26,6 +26,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
  * @generated
  */
 public interface DiagnosticFindings extends ResultsSection {
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -35,7 +36,7 @@ public interface DiagnosticFindings extends ResultsSection {
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public DiagnosticFindings init(Iterable<? extends Initializer<? extends EObject>> initializers);
