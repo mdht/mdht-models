@@ -8,6 +8,6 @@
 		<artifactId>org.openhealthtools.mdht.cda.features</artifactId>
 		<version>3.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>org.openhealthtools.mdht.uml.cda.doc</artifactId>
+	<artifactId>org.openhealthtools.mdht.uml.cda.models.doc</artifactId>
 	<packaging>eclipse-feature</packaging>
 </project>

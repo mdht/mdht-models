@@ -198,6 +198,19 @@
 				</plugins>
 			</build>
 		</profile>
+
+		<!--  This profiles builds the update sites which are not always needed -->
+		<profile>
+			<id>Sites</id>
+			<modules>
+				<module>generated</module>
+				<module>doc</module>
+				<module>tests</module>
+				<module>releng</module>
+			</modules>
+		</profile>
+
+
 	</profiles>
 
 	<scm>
