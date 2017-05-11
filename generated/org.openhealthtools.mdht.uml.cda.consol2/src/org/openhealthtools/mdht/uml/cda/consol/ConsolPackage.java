@@ -10010,6 +10010,15 @@ public interface ConsolPackage extends EPackage {
 	int ENCOUNTER_ACTIVITIES__EFFECTIVE_TIME = CDAPackage.ENCOUNTER__EFFECTIVE_TIME;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_ACTIVITIES__SDTC_DISCHARGE_DISPOSITION_CODE = CDAPackage.ENCOUNTER__SDTC_DISCHARGE_DISPOSITION_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10125,15 +10134,6 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int ENCOUNTER_ACTIVITIES__MOOD_CODE = CDAPackage.ENCOUNTER__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTER_ACTIVITIES__SDTC_DISCHARGE_DISPOSITION_CODE = CDAPackage.ENCOUNTER__SDTC_DISCHARGE_DISPOSITION_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Encounter Activities</em>' class.
@@ -16833,6 +16833,15 @@ public interface ConsolPackage extends EPackage {
 	int PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EFFECTIVE_TIME = CDAPackage.ENCOUNTER__EFFECTIVE_TIME;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_ENCOUNTER__SDTC_DISCHARGE_DISPOSITION_CODE = CDAPackage.ENCOUNTER__SDTC_DISCHARGE_DISPOSITION_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16948,15 +16957,6 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLAN_OF_CARE_ACTIVITY_ENCOUNTER__MOOD_CODE = CDAPackage.ENCOUNTER__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PLAN_OF_CARE_ACTIVITY_ENCOUNTER__SDTC_DISCHARGE_DISPOSITION_CODE = CDAPackage.ENCOUNTER__SDTC_DISCHARGE_DISPOSITION_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Plan Of Care Activity Encounter</em>' class.
@@ -42883,6 +42883,15 @@ public interface ConsolPackage extends EPackage {
 	int PLANNED_ENCOUNTER2__EFFECTIVE_TIME = PLAN_OF_CARE_ACTIVITY_ENCOUNTER__EFFECTIVE_TIME;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLANNED_ENCOUNTER2__SDTC_DISCHARGE_DISPOSITION_CODE = PLAN_OF_CARE_ACTIVITY_ENCOUNTER__SDTC_DISCHARGE_DISPOSITION_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -42998,15 +43007,6 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLANNED_ENCOUNTER2__MOOD_CODE = PLAN_OF_CARE_ACTIVITY_ENCOUNTER__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PLANNED_ENCOUNTER2__SDTC_DISCHARGE_DISPOSITION_CODE = PLAN_OF_CARE_ACTIVITY_ENCOUNTER__SDTC_DISCHARGE_DISPOSITION_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Planned Encounter2</em>' class.
@@ -55425,6 +55425,15 @@ public interface ConsolPackage extends EPackage {
 	int ENCOUNTER_ACTIVITY2__EFFECTIVE_TIME = ENCOUNTER_ACTIVITIES__EFFECTIVE_TIME;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_ACTIVITY2__SDTC_DISCHARGE_DISPOSITION_CODE = ENCOUNTER_ACTIVITIES__SDTC_DISCHARGE_DISPOSITION_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -55540,15 +55549,6 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int ENCOUNTER_ACTIVITY2__MOOD_CODE = ENCOUNTER_ACTIVITIES__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTER_ACTIVITY2__SDTC_DISCHARGE_DISPOSITION_CODE = ENCOUNTER_ACTIVITIES__SDTC_DISCHARGE_DISPOSITION_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Encounter Activity2</em>' class.
