@@ -446,22 +446,23 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 					}
 				});
 
-				// bad code
+				// bad codeSystem
 				addFailTest(new FailTest() {
 					@Override
 					public void updateToFail(ImmunizationMedicationInformation target) {
 						target.init();
 						Material mm = CDAFactory.eINSTANCE.createMaterial();
-						mm.setCode(DatatypesFactory.eINSTANCE.createCE(BAD_CODE_VALUE, VACCINES_ADMINISTERED_CVX));
+						mm.setCode(DatatypesFactory.eINSTANCE.createCE("notRelevant", BAD_CODESYSTEM_ID));
 						target.setManufacturedMaterial(mm);
 					}
 				});
 
+				// Note: can't fail invalid codes since we removed them due to it being a dynamic set
 			}
 
 			@Override
 			public void addPassTests() {
-				final String[] VACCINE_CODES_ADDED = { "143", "150", "163" };
+				final String[] VACCINE_CODES_ADDED = { "143", "150", "163", "166" };
 				for (final String code : VACCINE_CODES_ADDED) {
 					addPassTest(new PassTest() {
 						@Override
