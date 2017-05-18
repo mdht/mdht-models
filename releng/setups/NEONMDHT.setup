@@ -1,95 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<setup:Product
-    xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:git="http://www.eclipse.org/oomph/setup/git/1.0"
-    xmlns:projects="http://www.eclipse.org/oomph/setup/projects/1.0"
-    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
-    xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
-    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/git/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Git.ecore http://www.eclipse.org/oomph/setup/projects/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Projects.ecore"
-    name="MDHTAnalysis"
-    label="MDHTAnalysis">
-  <annotation
-      source="http://www.eclipse.org/oomph/setup/BrandingInfo">
-    <detail
-        key="folderName">
-      <value>MDHTAnalysis</value>
-    </detail>
-    <detail
-        key="folderName.macosx">
-      <value>MDHTAnalysis</value>
-    </detail>
-  </annotation>
-  <setupTask
-      xsi:type="setup:InstallationTask"
-      id="installation">
-    <description>
-      MDHT for Analysis
-
-    </description>
-  </setupTask>
-  <setupTask
-      xsi:type="git:GitCloneTask"
-      id="git.sample_ccdas"
-      remoteURI="https://github.com/mdht/sample_ccdas.git"
-      pushURI="https://github.com/mdht/sample_ccdas.git"
-      checkoutBranch="master"
-      recursive="true"
-      restrictToCheckoutBranch="true">
-    <description>
-     MDHT for Analysis
-
-    </description>
-  </setupTask>
-  <setupTask
-      xsi:type="projects:ProjectsImportTask">
-    <sourceLocator
-        rootFolder="${git.sample_ccdas.location}"
-        locateNestedProjects="true"/>
-  </setupTask>
-  <version name="neon"
-      label="Neon"
-      requiredJavaVersion="1.7">
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="${scope.product.label} (${scope.product.version.label})">
-      <requirement
-          name="org.eclipse.platform.ide"/>
-      <requirement
-          name="org.eclipse.platform.feature.group"/>
-      <requirement
-          name="org.eclipse.rcp.feature.group"/>
-      <requirement
-          name="epp.package.modeling"/>
-      <requirement
-          name="org.eclipse.jdt.feature.group"/>
-      <requirement
-          name="org.eclipse.pde.feature.group"/>
-      <requirement
-          name="org.eclipse.oomph.setup.feature.group"/>
-      <requirement
-          name="org.eclipse.mdht.uml.cda.basic.feature.group"/>
-      <requirement
-          name="org.eclipse.mdht.uml.cda.tooling.feature.group"/>
-      <requirement
-          name="org.eclipse.mdht.dita.feature.group"/>
-      
-      <requirement
-          name="org.eclipse.wst.xml_ui.feature.feature.group"/>
-      <requirement
-          name="org.openhealthtools.mdht.uml.cda.models.feature.group"/>
-      <requirement
-          name="org.openhealthtools.mdht.uml.cda.models.doc.feature.group"/>
-      <repository
-          url="http://download.eclipse.org/releases/neon"/>
-      <repository
-          url="https://hudson.eclipse.org/mdht/job/MDHT-master/lastSuccessfulBuild/artifact/repository"/>
-      
-      <repository
-          url="http://oht-modeling.sourceforge.net/updates/ccda"/>
-    </setupTask>
-    <description>NEONMDHT for Neon.</description>
-  </version>
-  <description>NEONMDHT provides cool stuff.</description>
+<setup:Product xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:git="http://www.eclipse.org/oomph/setup/git/1.0"
+	xmlns:projects="http://www.eclipse.org/oomph/setup/projects/1.0"
+	xmlns:setup="http://www.eclipse.org/oomph/setup/1.0" xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
+	xsi:schemaLocation="http://www.eclipse.org/oomph/setup/git/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Git.ecore http://www.eclipse.org/oomph/setup/projects/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Projects.ecore"
+	name="MDHTAnalysis" label="MDHTAnalysis">
+	<annotation source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+		<detail key="folderName">
+			<value>MDHTAnalysis</value>
+		</detail>
+		<detail key="folderName.macosx">
+			<value>MDHTAnalysis</value>
+		</detail>
+	</annotation>
+	<setupTask xsi:type="setup:InstallationTask" id="installation">
+		<description>
+			MDHT for Analysis
+		</description>
+	</setupTask>
+	<setupTask xsi:type="git:GitCloneTask" id="git.sample_ccdas"
+		remoteURI="https://github.com/mdht/sample_ccdas.git" pushURI="https://github.com/mdht/sample_ccdas.git"
+		checkoutBranch="master" recursive="true" restrictToCheckoutBranch="true">
+		<description>
+			MDHT for Analysis
+		</description>
+	</setupTask>
+	<setupTask xsi:type="projects:ProjectsImportTask">
+		<sourceLocator rootFolder="${git.sample_ccdas.location}"
+			locateNestedProjects="true" />
+	</setupTask>
+	<version name="neon" label="Neon" requiredJavaVersion="1.7">
+		<setupTask xsi:type="setup.p2:P2Task"
+			label="${scope.product.label} (${scope.product.version.label})">
+			<requirement name="org.eclipse.platform.ide" />
+			<requirement name="org.eclipse.platform.feature.group" />
+			<requirement name="org.eclipse.rcp.feature.group" />
+			<requirement name="epp.package.modeling" />
+			<requirement name="org.eclipse.jdt.feature.group" />
+			<requirement name="org.eclipse.pde.feature.group" />
+			<requirement name="org.eclipse.oomph.setup.feature.group" />
+			<requirement name="org.eclipse.mdht.uml.cda.basic.feature.group" />
+			<requirement name="org.eclipse.mdht.uml.cda.tooling.feature.group" />
+			<requirement name="org.eclipse.mdht.dita.feature.group" />
+			<requirement name="org.eclipse.wst.xml_ui.feature.feature.group" />
+			<requirement name="org.openhealthtools.mdht.uml.cda.models.feature.group" />
+			<requirement
+				name="org.openhealthtools.mdht.uml.cda.models.doc.feature.group" />
+			<repository url="http://download.eclipse.org/releases/neon" />
+			<repository
+				url="https://hudson.eclipse.org/mdht/job/MDHT-master/lastSuccessfulBuild/artifact/repository" />
+			<repository url="http://oht-modeling.sourceforge.net/updates/ccda" />
+			<repository url="http://download.eclipse.org/nebula/releases/latest" />
+		</setupTask>
+		<description>NEONMDHT for Neon.</description>
+	</version>
+	<description>MDHT Analysis provides workbench for CDA analysis</description>
 </setup:Product>
