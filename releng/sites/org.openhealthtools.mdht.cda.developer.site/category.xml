@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.openhealthtools.mdht.uml.cda.doc_3.0.0.qualifier.jar" id="org.openhealthtools.mdht.uml.cda.doc" version="3.0.0.qualifier"/>
-   <feature url="features/org.openhealthtools.mdht.uml.cda.models_3.0.0.qualifier.jar" id="org.openhealthtools.mdht.uml.cda.models" version="3.0.0.qualifier"/>
+   <feature url="features/org.openhealthtools.mdht.uml.cda.models.doc_3.0.0.qualifier.jar" id="org.openhealthtools.mdht.uml.cda.models.doc" version="3.0.0.qualifier">
+      <category name="org.openhealthtools.mdht.uml.cda.runtime.cat"/>
+   </feature>
+   <feature url="features/org.openhealthtools.mdht.uml.cda.models_3.0.0.qualifier.jar" id="org.openhealthtools.mdht.uml.cda.models" version="3.0.0.qualifier">
+      <category name="org.openhealthtools.mdht.uml.cda.runtime.cat"/>
+   </feature>
    <category-def name="org.openhealthtools.mdht.uml.cda.runtime.cat" label="MDHT CDA Runtime"/>
 </site>

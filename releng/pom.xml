@@ -15,9 +15,7 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>org.eclipse.mdht.cda-runtime</module>
-		<module>org.openhealthtools.mdht.uml.cda.ccd</module>
-		 
-
+		<module>features</module>
+		<module>sites</module>
 	</modules>
 </project>

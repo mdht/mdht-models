@@ -10,6 +10,8 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.cda.maven.example;
 
+import java.util.Date;
+
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.mdht.uml.cda.AssignedAuthor;
 import org.eclipse.mdht.uml.cda.AssignedCustodian;
@@ -18,16 +20,22 @@ import org.eclipse.mdht.uml.cda.CDAFactory;
 import org.eclipse.mdht.uml.cda.Custodian;
 import org.eclipse.mdht.uml.cda.CustodianOrganization;
 import org.eclipse.mdht.uml.cda.DocumentationOf;
+import org.eclipse.mdht.uml.cda.Encounter;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
 import org.eclipse.mdht.uml.cda.InfrastructureRootTypeId;
 import org.eclipse.mdht.uml.cda.Organization;
 import org.eclipse.mdht.uml.cda.Patient;
 import org.eclipse.mdht.uml.cda.PatientRole;
 import org.eclipse.mdht.uml.cda.Person;
 import org.eclipse.mdht.uml.cda.RecordTarget;
+import org.eclipse.mdht.uml.cda.Section;
 import org.eclipse.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument;
+import org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2;
+import org.openhealthtools.mdht.uml.cda.consol.EncounterActivities;
+import org.openhealthtools.mdht.uml.cda.consol.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection;
@@ -43,6 +51,9 @@ import org.eclipse.mdht.uml.hl7.datatypes.PN;
 import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.eclipse.mdht.uml.hl7.datatypes.TEL;
 import org.eclipse.mdht.uml.hl7.datatypes.TS;
+import org.eclipse.mdht.uml.hl7.vocab.ActClassObservation;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActMoodDocumentObservation;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 public class Examples {
 
@@ -174,6 +185,51 @@ public class Examples {
 		allergiesSection.setText(text);
 
 	}
+	
+	
+	public static void create()
+	{
+	try {
+		org.eclipse.mdht.uml.cda.Encounter encounter = ConsolFactory.eINSTANCE.createEncounterActivity2().init();
+
+//			encounter.setClassCode(ActClass.ENC);
+//			encounter.setMoodCode(x_DocumentEncounterMood.EVN);	
+//			encounter.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.10.20.22.4.49","2015-08-01"));
+//			encounter.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.10.20.24.3.23","2016-02-01"));
+//			encounter.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.3.3619.99.7","Inpatient999"));
+//			 
+//			encounter.setCode(DatatypesFactory.eINSTANCE.createCD("32485007", "2.16.840.1.113883.6.96", "SNOMED-CT", ""));
+			encounter.setText(DatatypesFactory.eINSTANCE.createED("Inpatient Encounter"));
+			encounter.setStatusCode(DatatypesFactory.eINSTANCE.createCS("completed"));
+//			encounter.setEffectiveTime(EffectiveTimeSegment.createIVLTSEffectiveTime("20150101000000+0530", "20151231000000+0530"));
+			
+			encounter.getSDTCDischargeDispositionCodes().add( DatatypesFactory.eINSTANCE.createCE("10161009", "2.16.840.1.113883.6.96", "SNOMED-CT", null));
+			
+			
+			
+			
+//			if(null != encounterModel.getPrincipalDiagnosisList()){
+				EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
+				entryRelationship.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				org.eclipse.mdht.uml.cda.Observation observation=CDAFactory.eINSTANCE.createObservation();
+				
+				encounter.getEntryRelationships().add(entryRelationship);
+				observation.setClassCode(ActClassObservation.OBS);
+				observation.setMoodCode(x_ActMoodDocumentObservation.EVN);
+				observation.setCode(DatatypesFactory.eINSTANCE.createCD("8319008", "2.16.840.1.113883.6.96","SNOMED-CT", "Principal Diagnosis"));
+				observation.getValues().add(DatatypesFactory.eINSTANCE.createCD("707980005", "2.16.840.1.113883.6.96", "SNOMED-CT", null));
+				
+				entryRelationship.setObservation(observation);
+				
+//			}
+				
+				CDAUtil.saveSnippet(encounter, System.out);
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 	public static void createCCD() throws Exception {
 
@@ -204,6 +260,27 @@ public class Examples {
 		ResultsSection ResultsSection = ConsolFactory.eINSTANCE.createResultsSection().init();
 
 		ccdDocument.addSection(ResultsSection);
+		
+		 
+		EncountersSection encountersSection = ConsolFactory.eINSTANCE.createEncountersSection().init();
+		
+		 EncounterActivities target =  ConsolFactory.eINSTANCE.createEncounterActivities().init();
+		 
+		target.addAct(ConsolFactory.eINSTANCE.createEncounterDiagnosis().init());
+		CE sdtcCode = DatatypesFactory.eINSTANCE.createCE();
+		sdtcCode.setCode("notChecked"); // Required to be defined, but not to any specific String
+		sdtcCode.setCodeSystem("NUBC_CODESYSTEM_VALUE"); // the actual constraint checked which must be accurate
+		sdtcCode.setCodeSystemName("NUBC UB-04 FL17-Patient Status"); // not required (not checked as a constraint)
+		
+		target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+		target.setPriorityCode(DatatypesFactory.eINSTANCE.createCE());
+		target.getSDTCDischargeDispositionCodes().add(sdtcCode);
+
+		encountersSection.addEncounter(target);
+		
+		CDAUtil.saveSnippet(encountersSection, System.out);
+		
+		ccdDocument.addSection(encountersSection);
 
 		// create a validation result object to collect diagnostics produced during validation
 		ValidationResult result = new ValidationResult();
@@ -237,7 +314,8 @@ public class Examples {
 	 */
 	public static void main(String[] args) throws Exception {
 
-		createCCD();
+		create();
+//		createCCD();
 
 	}
 
