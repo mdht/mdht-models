@@ -2286,27 +2286,27 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   <uml:Association xmi:id="_C-fawCzBEeGMXrZ0DiQwGg" memberEnd="_C-ezsCzBEeGMXrZ0DiQwGg _C-fawSzBEeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_C-fawSzBEeGMXrZ0DiQwGg" type="_2DNRcBSVEeGGzu7fmW9pXw" association="_C-fawCzBEeGMXrZ0DiQwGg"/>
   </uml:Association>
-  <CDA:ValueSetConstraint xmi:id="_cfM7wDVPEeGIw7CntkyPQw" severity="WARNING" base_Property="_2DNR6RSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:5259, R2.1=CONF:1198-5259</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_cfM7wDVPEeGIw7CntkyPQw" base_Property="_2DNR6RSVEeGGzu7fmW9pXw" severity="WARNING">
     <reference href="../consol-vocab.uml#_8K870TVPEeGIw7CntkyPQw"/>
+    <ruleId>CONF:5259, R2.1=CONF:1198-5259</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_J18sMDVQEeGIw7CntkyPQw" base_Property="_2DNR8RSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:5372</ruleId>
     <ruleId>R2.1=CONF:1198-5372</ruleId>
     <ruleId>DSTU:806</ruleId>
-    <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_IliiUDVSEeGIw7CntkyPQw" base_Property="_7OvVECylEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5317, R2.1=CONF:1198-5317</ruleId>
     <reference href="../consol-vocab.uml#_2aTk8EFaEeGFqszUdHc61Q"/>
+    <ruleId>CONF:5317, R2.1=CONF:1198-5317</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_2Odn4DVSEeGIw7CntkyPQw" base_Property="_7Otf4SylEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5303, R2.1=CONF:1198-5303</ruleId>
     <reference href="../consol-vocab.uml#_9lb5cEFbEeGFqszUdHc61Q"/>
+    <ruleId>CONF:5303, R2.1=CONF:1198-5303</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_4sRHEDVSEeGIw7CntkyPQw" base_Property="_7OuuACylEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5322</ruleId>
     <reference href="../consol-vocab.uml#_0Uo48EFaEeGFqszUdHc61Q"/>
+    <ruleId>CONF:5322</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_trWscDVUEeGIw7CntkyPQw" severity="WARNING" base_Constraint="_oGeuoDVUEeGIw7CntkyPQw">
     <ruleId>CONF:9996, R2.1=CONF:1198-16820</ruleId>
@@ -2775,8 +2775,8 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
     <ruleId>CONF:10040</ruleId>
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_GzN18DstEeGvzMYhXuqAEA" base_Property="_X-4tMDssEeGvzMYhXuqAEA">
-    <ruleId>CONF:17177</ruleId>
     <reference href="../consol-vocab.uml#_Z8iQMTstEeGvzMYhXuqAEA"/>
+    <ruleId>CONF:17177</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_jQQhgDsxEeGvzMYhXuqAEA" base_Association="_7kxgMDsvEeGvzMYhXuqAEA">
     <ruleId>CONF:8386</ruleId>
@@ -3265,8 +3265,8 @@ A History and Physical Examination is required upon hospital admission as well a
     <ruleId>CONF:10045</ruleId>
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_bHudUD1kEeG3tde5scYNWA" base_Property="_-2L6UD1jEeG3tde5scYNWA">
-    <ruleId>CONF:17186</ruleId>
     <reference href="../consol-vocab.uml#_MBvVoD1kEeG3tde5scYNWA"/>
+    <ruleId>CONF:17186</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_i1MC0D1lEeG3tde5scYNWA" base_Property="_hFaHQD1lEeG3tde5scYNWA">
     <ruleId>ii.</ruleId>
@@ -3601,8 +3601,8 @@ A History and Physical Examination is required upon hospital admission as well a
     <ruleId>CONF:10048</ruleId>
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_UWlS4D4jEeGhnL_c4sBHGg" base_Property="_3GPlUD4iEeGhnL_c4sBHGg">
-    <ruleId>CONF:17188</ruleId>
     <reference href="../consol-vocab.uml#_IuPWwT4jEeGhnL_c4sBHGg"/>
+    <ruleId>CONF:17188</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_pg8iYD4kEeGhnL_c4sBHGg" base_Property="_hRyvoD4kEeGhnL_c4sBHGg">
     <ruleId>i.</ruleId>
@@ -4150,8 +4150,8 @@ A History and Physical Examination is required upon hospital admission as well a
     <ruleId>CONF:10050</ruleId>
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_kv8rwD7YEeGvOdejHZ7dYg" base_Property="_S9Np8D7YEeGvOdejHZ7dYg">
-    <ruleId>CONF:17183</ruleId>
     <reference href="../consol-vocab.uml#_oDanoD7YEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:17183</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_J87WID-REeGvOdejHZ7dYg" base_Property="_JYhokD-REeGvOdejHZ7dYg">
     <ruleId>CONF:8501</ruleId>
@@ -4608,8 +4608,8 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
     <ruleId>CONF:10051</ruleId>
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_IyHHAD_MEeGXieeKs7NJjA" base_Property="_X72iwD_LEeGXieeKs7NJjA">
-    <ruleId>CONF:17190</ruleId>
     <reference href="../consol-vocab.uml#_6yjb4T_LEeGXieeKs7NJjA"/>
+    <ruleId>CONF:17190</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_XosSAD_SEeGXieeKs7NJjA" base_Property="_uTQ3YD_QEeGXieeKs7NJjA">
     <ruleId>CONF:7598</ruleId>
@@ -5194,8 +5194,8 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ruleId>CONF:8409</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_4p4lIEUvEeGdQ4KWAmnbhw" base_Property="_Z-7JIEUuEeGdQ4KWAmnbhw">
-    <ruleId>CONF:14834</ruleId>
     <reference href="../consol-vocab.uml#_hJA70UUvEeGdQ4KWAmnbhw"/>
+    <ruleId>CONF:14834</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Z_g_A0UuEeGdQ4KWAmnbhw" base_Property="_Z_g_AEUuEeGdQ4KWAmnbhw">
     <ruleId>CONF:5363</ruleId>
@@ -5340,12 +5340,12 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ruleId>CONF:8457</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_3hZQMG1JEeGCevFpokwODw" base_Property="_2Uz-3xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:17179</ruleId>
     <reference href="../consol-vocab.uml#_R_D60TzDEeGMk58Mp9-wVA"/>
+    <ruleId>CONF:17179</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_K_GwoG1LEeGCevFpokwODw" base_Property="_7Os41CylEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5323</ruleId>
     <reference href="../consol-vocab.uml#_fgCQUG1GEeGCevFpokwODw"/>
+    <ruleId>CONF:5323</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8ccgkHK9EeGig5KF4CgPyw" severity="WARNING" base_Property="_nLKckSymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_Q2rJEHK-EeGig5KF4CgPyw" severity="INFO" base_Property="_ZGMo0CytEeGMXrZ0DiQwGg"/>
@@ -5395,15 +5395,15 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:ConstraintValidation xmi:id="_yT_xwMbvEeGp28IjMvW3Ag" base_Constraint="_gAs2kEraEeGJpZWiuxRVIw"/>
   <CDA:PropertyValidation xmi:id="_qfj70NBVEeGg9eE98HsYZw" severity="WARNING" base_Property="_7OuuACylEeGMXrZ0DiQwGg"/>
   <CDA:ValueSetConstraint xmi:id="_kzAzQNBWEeGg9eE98HsYZw" base_Property="_d3LCgNBWEeGg9eE98HsYZw">
-    <ruleId>CONF:7263, R2.1=CONF:1198-7263</ruleId>
     <reference href="../consol-vocab.uml#_0Uo48EFaEeGFqszUdHc61Q"/>
+    <ruleId>CONF:7263, R2.1=CONF:1198-7263</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_mcDNoNBWEeGg9eE98HsYZw" severity="INFO" base_Property="_d3LCgNBWEeGg9eE98HsYZw"/>
   <CDA:PropertyValidation xmi:id="_G_Cs0NBZEeG2b5vwscX4AA" base_Property="_DKwi4NBZEeG2b5vwscX4AA"/>
   <CDA:ValueSetConstraint xmi:id="_oIdS0NBbEeGF655cTEGY8Q" base_Property="_DKwi4NBZEeG2b5vwscX4AA">
+    <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:5407</ruleId>
     <ruleId>DSTU:806</ruleId>
-    <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Vj9PoOxkEeG7k4bbVdXbXw" severity="WARNING" base_Property="_T-Xx4OxkEeG7k4bbVdXbXw">
     <ruleId>CONF:7993, R2.1=CONF:1198-7993</ruleId>
@@ -5494,8 +5494,8 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_pfkSUPIeEeGu1M-cCXg0Dg" severity="INFO" base_Property="_d9iBTPIYEeGu1M-cCXg0Dg"/>
   <CDA:ValueSetConstraint xmi:id="_q0I4kPIeEeGu1M-cCXg0Dg" base_Property="_d9iBTPIYEeGu1M-cCXg0Dg">
-    <ruleId>CONF:7154, R2.1=CONF:81-7154</ruleId>
     <reference href="../consol-vocab.uml#_RSgFgW1EEeGCevFpokwODw"/>
+    <ruleId>CONF:7154, R2.1=CONF:81-7154</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_v_5y0PIeEeGu1M-cCXg0Dg" base_Property="_d9iBQPIYEeGu1M-cCXg0Dg">
     <ruleId>CONF:7159, R2.1=CONF:81-7159</ruleId>
@@ -5518,9 +5518,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_6AKvIPIkEeGu1M-cCXg0Dg" base_Property="_1GS6sCymEeGMXrZ0DiQwGg">
     <ruleId>CONF:5445, R2.1=CONF:1198-5445</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_nCw0gPIlEeGu1M-cCXg0Dg" severity="WARNING" base_Property="_93hfwCymEeGMXrZ0DiQwGg">
-    <ruleId>CONF:16788</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_nCw0gPIlEeGu1M-cCXg0Dg" base_Property="_93hfwCymEeGMXrZ0DiQwGg" severity="WARNING">
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:16788</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_vXYgoPImEeGu1M-cCXg0Dg" severity="WARNING" base_Property="_qugRAPImEeGu1M-cCXg0Dg">
     <ruleId>CONF:7995, R2.1=CONF:1198-7995</ruleId>
@@ -5534,9 +5534,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_lv62IPIxEeGu1M-cCXg0Dg" base_Property="_S_jt0CzFEeGMXrZ0DiQwGg">
     <ruleId>CONF:5583, R2.1=CONF:1198-5583</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_w4qFIPIxEeGu1M-cCXg0Dg" severity="WARNING" base_Property="_nlqjxzVYEeGIw7CntkyPQw">
-    <ruleId>CONF:17000, R2.1=CONF:1198-17000</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_w4qFIPIxEeGu1M-cCXg0Dg" base_Property="_nlqjxzVYEeGIw7CntkyPQw" severity="WARNING">
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:17000, R2.1=CONF:1198-17000</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8OQrcPIxEeGu1M-cCXg0Dg" severity="WARNING" base_Property="_7OIEIPIxEeGu1M-cCXg0Dg">
     <ruleId>CONF:7999, R2.1=CONF:1198-7999</ruleId>
@@ -5544,9 +5544,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_SDAxMPIyEeGu1M-cCXg0Dg" base_Property="_7LnMcOxvEeG7k4bbVdXbXw">
     <ruleId>CONF:5598, R2.1=CONF:1198-5598</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_sZjAEPIyEeGu1M-cCXg0Dg" severity="WARNING" base_Property="_IMkP4CzGEeGMXrZ0DiQwGg">
-    <ruleId>CONF:16826, R2.1=CONF:1198-16826</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_sZjAEPIyEeGu1M-cCXg0Dg" base_Property="_IMkP4CzGEeGMXrZ0DiQwGg" severity="WARNING">
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:16826, R2.1=CONF:1198-16826</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_3uffEPIyEeGu1M-cCXg0Dg" severity="WARNING" base_Property="_2PTkQPIyEeGu1M-cCXg0Dg">
     <ruleId>CONF:8000, R2.1=CONF:1198-8000</ruleId>
@@ -5637,8 +5637,8 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ruleId>CONF:14912</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_Lj7aMPK8EeGFUPBL8qS7yQ" base_Property="_9MWQoPK7EeGFUPBL8qS7yQ">
-    <ruleId>CONF:14913</ruleId>
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:14913</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_oT3JYPK8EeGFUPBL8qS7yQ" base_Constraint="_fHsUwPK8EeGFUPBL8qS7yQ">
     <ruleId>CONF:9937</ruleId>
@@ -5720,8 +5720,8 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_x7ehsPePEeGE6_g8dRyaRg" severity="WARNING" base_Property="_qB12z_IPEeGu1M-cCXg0Dg"/>
   <CDA:ValueSetConstraint xmi:id="_KITSEPeQEeGE6_g8dRyaRg" base_Property="_qB12z_IPEeGu1M-cCXg0Dg">
-    <ruleId>CONF:7290, R2.1=CONF:81-7290</ruleId>
     <reference href="../consol-vocab.uml#_x6zGAG1HEeGCevFpokwODw"/>
+    <ruleId>CONF:7290, R2.1=CONF:81-7290</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_xY4DoCeiEeKFA9nMp1YYPg" base_Property="_wsF2ICeiEeKFA9nMp1YYPg">
     <ruleId>CONF:14840, R2.1=CONF:1198-14840</ruleId>
@@ -7021,8 +7021,8 @@ The Care Plan is continually evolving and dynamic. The Care Plan CDA instance is
     <ruleId>CONF:1198-31685</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_exFCwJ6DEeOr4eM3k36wAg" base_Property="__jD9AZ6BEeOr4eM3k36wAg">
-    <ruleId>CONF:1198-32367</ruleId>
     <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:1198-32367</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_DRp78J8BEeOr4eM3k36wAg" memberEnd="_DRoGwJ8BEeOr4eM3k36wAg _DRp78Z8BEeOr4eM3k36wAg">
     <ownedEnd xmi:id="_DRp78Z8BEeOr4eM3k36wAg" type="_2jWfwJ5wEeOr4eM3k36wAg" association="_DRp78J8BEeOr4eM3k36wAg"/>
@@ -7040,8 +7040,8 @@ The Care Plan is continually evolving and dynamic. The Care Plan CDA instance is
     <ruleId>CONF:1198-31897</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_4WWkoJ8DEeOr4eM3k36wAg" base_Property="_v3kP4J8CEeOr4eM3k36wAg">
-    <ruleId>CONF:1198-31898</ruleId>
     <reference href="../consol-vocab.uml#_4m1G4EFaEeGFqszUdHc61Q"/>
+    <ruleId>CONF:1198-31898</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_jdyk4J8EEeOr4eM3k36wAg" memberEnd="_jdwvsJ8EEeOr4eM3k36wAg _jdyk4Z8EEeOr4eM3k36wAg">
     <ownedEnd xmi:id="_jdyk4Z8EEeOr4eM3k36wAg" type="_uZtx0J8CEeOr4eM3k36wAg" association="_jdyk4J8EEeOr4eM3k36wAg"/>
@@ -7095,8 +7095,8 @@ The Care Plan is continually evolving and dynamic. The Care Plan CDA instance is
     <ruleId>CONF:1198-29893</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_fsopoJ8TEeOr4eM3k36wAg" base_Property="_Pj-kAJ8TEeOr4eM3k36wAg">
-    <ruleId>CONF:1198-31889</ruleId>
     <reference href="../consol-vocab.uml#_pucs0J8TEeOr4eM3k36wAg"/>
+    <ruleId>CONF:1198-31889</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_zfXX0J8UEeOr4eM3k36wAg" memberEnd="_zfVioJ8UEeOr4eM3k36wAg _zfXX0Z8UEeOr4eM3k36wAg">
     <ownedEnd xmi:id="_zfXX0Z8UEeOr4eM3k36wAg" type="_MHJQwJ8TEeOr4eM3k36wAg" association="_zfXX0J8UEeOr4eM3k36wAg"/>
@@ -7481,8 +7481,8 @@ This participant represents the clinician to contact for questions about the ref
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_PJLvcKAFEeOQs7VC4HptuQ" base_Generalization="_itUS4KAEEeOQs7VC4HptuQ"/>
   <CDA:ValueSetConstraint xmi:id="_RySqQKAGEeOQs7VC4HptuQ" base_Property="_x7GrsKAEEeOQs7VC4HptuQ">
-    <ruleId>CONF:1198-28949</ruleId>
     <reference href="../consol-vocab.uml#_lIHr8aAFEeOQs7VC4HptuQ"/>
+    <ruleId>CONF:1198-28949</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_kalloKAHEeOQs7VC4HptuQ" memberEnd="_kakXgKAHEeOQs7VC4HptuQ _kalloaAHEeOQs7VC4HptuQ">
     <ownedEnd xmi:id="_kalloaAHEeOQs7VC4HptuQ" type="_itRPkKAEEeOQs7VC4HptuQ" association="_kalloKAHEeOQs7VC4HptuQ"/>
@@ -7515,8 +7515,8 @@ This participant represents the clinician to contact for questions about the ref
     <ruleId>CONF:1198-31643</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_mrJ14KAOEeOQs7VC4HptuQ" base_Property="_go70wKAOEeOQs7VC4HptuQ">
-    <ruleId>CONF:1198-31925</ruleId>
     <reference href="../consol-vocab.uml#_9ZCoaO9eEeSE7JpIy9Dpjg"/>
+    <ruleId>CONF:1198-31925</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_y15UcKAOEeOQs7VC4HptuQ" base_Property="_go70wKAOEeOQs7VC4HptuQ"/>
   <uml:Association xmi:id="_A7R6wKAPEeOQs7VC4HptuQ" memberEnd="_A7QsoKAPEeOQs7VC4HptuQ _A7Sh0KAPEeOQs7VC4HptuQ">
@@ -7971,8 +7971,8 @@ The performer(s) represents the healthcare providers involved in the current or 
     <ruleId>CONF:1198-29838</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_XnQ1UKDREeOPqKnBFQcY_A" base_Property="_xyTbUKDQEeOPqKnBFQcY_A">
-    <ruleId>CONF:1198-28243</ruleId>
     <reference href="../consol-vocab.uml#_2hwCcKDPEeOPqKnBFQcY_A"/>
+    <ruleId>CONF:1198-28243</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_zqJb0KDSEeOPqKnBFQcY_A" memberEnd="_zqINsKDSEeOPqKnBFQcY_A _zqJb0aDSEeOPqKnBFQcY_A">
     <ownedEnd xmi:id="_zqJb0aDSEeOPqKnBFQcY_A" type="_mgnrsKDQEeOPqKnBFQcY_A" association="_zqJb0KDSEeOPqKnBFQcY_A"/>
@@ -7991,8 +7991,8 @@ The performer(s) represents the healthcare providers involved in the current or 
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_7r-HwKDTEeOPqKnBFQcY_A" base_Property="_zdmYIKDTEeOPqKnBFQcY_A"/>
   <CDA:ValueSetConstraint xmi:id="_BOvMwKDUEeOPqKnBFQcY_A" base_Property="_zdmYIKDTEeOPqKnBFQcY_A">
-    <ruleId>CONF:1198-31873</ruleId>
     <reference href="../consol-vocab.uml#_9ZCoaO9eEeSE7JpIy9Dpjg"/>
+    <ruleId>CONF:1198-31873</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_XCU04KDUEeOPqKnBFQcY_A" memberEnd="_XCTmwKDUEeOPqKnBFQcY_A _XCVb8KDUEeOPqKnBFQcY_A">
     <ownedEnd xmi:id="_XCVb8KDUEeOPqKnBFQcY_A" type="_xR_cMKDTEeOPqKnBFQcY_A" association="_XCU04KDUEeOPqKnBFQcY_A"/>
@@ -8772,8 +8772,8 @@ When indicating the performer was the primary care physician the functionCode sh
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_tCAMAKlKEeOTwZftO6CV5g" severity="WARNING" base_Property="_sGMrEKlKEeOTwZftO6CV5g"/>
   <CDA:ValueSetConstraint xmi:id="_xheoAKlKEeOTwZftO6CV5g" base_Property="_sGMrEKlKEeOTwZftO6CV5g">
-    <ruleId>CONF:1198-28473</ruleId>
     <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:1198-28473</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_avto8KlhEeO4L-NdFOGFPw" memberEnd="_avlGEKlhEeO4L-NdFOGFPw _avto8alhEeO4L-NdFOGFPw">
     <ownedEnd xmi:id="_avto8alhEeO4L-NdFOGFPw" type="_lQMSAKlJEeOTwZftO6CV5g" association="_avto8KlhEeO4L-NdFOGFPw"/>
@@ -8827,9 +8827,9 @@ When indicating the performer was the primary care physician the functionCode sh
     <ruleId>CONF:1198-28679</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_CrjEUKlsEeO4L-NdFOGFPw" severity="INFO" base_Property="_BP93IKlsEeO4L-NdFOGFPw"/>
-  <CDA:ValueSetConstraint xmi:id="_DrQ04KlsEeO4L-NdFOGFPw" severity="WARNING" base_Property="_BP93IKlsEeO4L-NdFOGFPw">
-    <ruleId>CONF:1198-28680</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_DrQ04KlsEeO4L-NdFOGFPw" base_Property="_BP93IKlsEeO4L-NdFOGFPw" severity="WARNING">
     <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:1198-28680</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_Gf1_4KltEeO4L-NdFOGFPw" memberEnd="_Gf0KsKltEeO4L-NdFOGFPw _Gf1_4altEeO4L-NdFOGFPw">
     <ownedEnd xmi:id="_Gf1_4altEeO4L-NdFOGFPw" type="_OA1xkKi8EeOTwZftO6CV5g" association="_Gf1_4KltEeO4L-NdFOGFPw"/>
@@ -8844,9 +8844,9 @@ When indicating the performer was the primary care physician the functionCode sh
   <CDA:PropertyValidation xmi:id="_Kz2WQKluEeO4L-NdFOGFPw" severity="INFO" base_Property="_Abai0KluEeO4L-NdFOGFPw">
     <ruleId>CONF:1198-28683</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_OdG78KluEeO4L-NdFOGFPw" severity="WARNING" base_Property="_Abai0KluEeO4L-NdFOGFPw">
-    <ruleId>CONF:1198-28684</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_OdG78KluEeO4L-NdFOGFPw" base_Property="_Abai0KluEeO4L-NdFOGFPw" severity="WARNING">
     <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:1198-28684</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_MoDpYKlvEeO4L-NdFOGFPw" memberEnd="_MoCbQKlvEeO4L-NdFOGFPw _MoEQcKlvEeO4L-NdFOGFPw">
     <ownedEnd xmi:id="_MoEQcKlvEeO4L-NdFOGFPw" type="_OA1xkKi8EeOTwZftO6CV5g" association="_MoDpYKlvEeO4L-NdFOGFPw"/>
@@ -8927,9 +8927,9 @@ When indicating the performer was the primary care physician the functionCode sh
     <ruleId>CONF:1198-28701</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_50qlYKl6EeO4L-NdFOGFPw" severity="WARNING" base_Property="_2K3NIKl6EeO4L-NdFOGFPw"/>
-  <CDA:ValueSetConstraint xmi:id="_GupIgKl7EeO4L-NdFOGFPw" severity="WARNING" base_Property="_2K3NIKl6EeO4L-NdFOGFPw">
-    <ruleId>CONF:1198-28702</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_GupIgKl7EeO4L-NdFOGFPw" base_Property="_2K3NIKl6EeO4L-NdFOGFPw" severity="WARNING">
     <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:1198-28702</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_4E7zEKn8EeO4L-NdFOGFPw" memberEnd="_4E5W0Kn8EeO4L-NdFOGFPw _4E7zEan8EeO4L-NdFOGFPw">
     <ownedEnd xmi:id="_4E7zEan8EeO4L-NdFOGFPw" type="_OA1xkKi8EeOTwZftO6CV5g" association="_4E7zEKn8EeO4L-NdFOGFPw"/>
@@ -8947,9 +8947,9 @@ When indicating the performer was the primary care physician the functionCode sh
     <ruleId>CONF:1198-28705</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_DXJRsKn-EeO4L-NdFOGFPw" severity="WARNING" base_Property="_BdoLUKn-EeO4L-NdFOGFPw"/>
-  <CDA:ValueSetConstraint xmi:id="_IySEsKn-EeO4L-NdFOGFPw" severity="WARNING" base_Property="_BdoLUKn-EeO4L-NdFOGFPw">
-    <ruleId>CONF:1198-28706</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_IySEsKn-EeO4L-NdFOGFPw" base_Property="_BdoLUKn-EeO4L-NdFOGFPw" severity="WARNING">
     <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:1198-28706</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_O2OHoKn_EeO4L-NdFOGFPw" severity="WARNING" base_Constraint="_0B3UUKn-EeO4L-NdFOGFPw"/>
   <uml:Association xmi:id="_cT2U8KoAEeO4L-NdFOGFPw" memberEnd="_cT0fwKoAEeO4L-NdFOGFPw _cT2U8aoAEeO4L-NdFOGFPw">
@@ -8999,13 +8999,13 @@ When indicating the performer was the primary care physician the functionCode sh
     <ruleId>CONF:1198-28716</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_PXchMKoGEeO4L-NdFOGFPw" severity="INFO" base_Property="_-x8HgKoFEeO4L-NdFOGFPw"/>
-  <CDA:ValueSetConstraint xmi:id="_Ri1asKoGEeO4L-NdFOGFPw" severity="WARNING" base_Property="_-x8HgKoFEeO4L-NdFOGFPw">
-    <ruleId>CONF:1198-28718</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_Ri1asKoGEeO4L-NdFOGFPw" base_Property="_-x8HgKoFEeO4L-NdFOGFPw" severity="WARNING">
     <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:1198-28718</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_uJKakKoJEeO4L-NdFOGFPw" base_Property="_ruikgKoEEeO4L-NdFOGFPw">
-    <ruleId>CONF:1198-28714</ruleId>
     <reference href="../consol-vocab.uml#_uGfWgKoIEeO4L-NdFOGFPw"/>
+    <ruleId>CONF:1198-28714</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_9SceAKuiEeOhqMhzpJF7Fw" memberEnd="_9SaBwKuiEeOhqMhzpJF7Fw _9SceAauiEeOhqMhzpJF7Fw">
     <ownedEnd xmi:id="_9SceAauiEeOhqMhzpJF7Fw" type="_HFAWQKAIEeOQs7VC4HptuQ" association="_9SceAKuiEeOhqMhzpJF7Fw"/>
@@ -9043,13 +9043,13 @@ When indicating the performer was the primary care physician the functionCode sh
     <ruleId>CONF:1198-5283</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_LTNHYBwPEeSMr-NWzQuDBw" base_Property="_LTMgUBwPEeSMr-NWzQuDBw">
-    <ruleId>CONF:1198-5322</ruleId>
     <reference href="../consol-vocab.uml#_PPZjUIuxEeSZu6J-Yjmr9w"/>
+    <ruleId>CONF:1198-5322</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_LTO8kBwPEeSMr-NWzQuDBw" base_Property="_LTMgUBwPEeSMr-NWzQuDBw"/>
   <CDA:ValueSetConstraint xmi:id="_ypGvsBwPEeSMr-NWzQuDBw" base_Property="_ypGIoBwPEeSMr-NWzQuDBw">
-    <ruleId>CONF:1198-5323</ruleId>
     <reference href="../consol-vocab.uml#_mBa3s4uzEeSZu6J-Yjmr9w"/>
+    <ruleId>CONF:1198-5323</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_ypJL8BwPEeSMr-NWzQuDBw" base_Property="_ypGIoBwPEeSMr-NWzQuDBw"/>
   <uml:Association xmi:id="_G1l3IBwQEeSMr-NWzQuDBw" memberEnd="_G1kpABwQEeSMr-NWzQuDBw _G1l3IRwQEeSMr-NWzQuDBw">
@@ -9060,8 +9060,8 @@ When indicating the performer was the primary care physician the functionCode sh
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_iie08BwQEeSMr-NWzQuDBw" severity="WARNING" base_Property="_iidm0BwQEeSMr-NWzQuDBw"/>
   <CDA:ValueSetConstraint xmi:id="_tNQ8oBwQEeSMr-NWzQuDBw" base_Property="_iidm0BwQEeSMr-NWzQuDBw">
-    <ruleId>CONF:1198-5326</ruleId>
     <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:1198-5326</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_Iy-UYBwREeSMr-NWzQuDBw" memberEnd="_Iy9GQBwREeSMr-NWzQuDBw _Iy-UYRwREeSMr-NWzQuDBw">
     <ownedEnd xmi:id="_Iy-UYRwREeSMr-NWzQuDBw" type="_AaXVkBwPEeSMr-NWzQuDBw" association="_Iy-UYBwREeSMr-NWzQuDBw"/>
@@ -9071,8 +9071,8 @@ When indicating the performer was the primary care physician the functionCode sh
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_XtDuExwREeSMr-NWzQuDBw" base_Property="_XtDuEBwREeSMr-NWzQuDBw"/>
   <CDA:ValueSetConstraint xmi:id="_XtE8MBwREeSMr-NWzQuDBw" base_Property="_XtDuEBwREeSMr-NWzQuDBw">
-    <ruleId>CONF:1198-5407</ruleId>
     <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1198-5407</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_tR8y4BwREeSMr-NWzQuDBw" severity="WARNING" base_Property="_tR8L0BwREeSMr-NWzQuDBw">
     <ruleId>CONF:1198-5414</ruleId>
@@ -9375,11 +9375,11 @@ A Consultation Note includes the reason for the referral, history of present ill
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_9SViUCFsEeSt4IEYu7xgbw" name="Participant">
       <ownedComment xmi:id="_B1BDUCFtEeSt4IEYu7xgbw">
-        <body>INLINE</body>
+        <body>INLINE&amp;typeCode = vocab::ParticipationType::CALLBCK</body>
       </ownedComment>
       <ownedComment xmi:id="_DbdcsCFtEeSt4IEYu7xgbw">
         <body>participant&#xD;
-This participant represents the person to contact for questions about the consult summary.????This call back contact individual may be a different person than the individual(s) identified in the author or legalAuthenticator participant.</body>
+This participant represents the person to contact for questions about the consult summary. This call back contact individual may be a different person than the individual(s) identified in the author or legalAuthenticator participant.</body>
       </ownedComment>
       <generalization xmi:id="_9SWJYCFsEeSt4IEYu7xgbw">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
@@ -9562,8 +9562,8 @@ A Consultation Note is always associated with an encounter;????the id element of
   <CDA:ConformsTo xmi:id="_m0g5ICFmEeSt4IEYu7xgbw" base_Generalization="_PkS68CFmEeSt4IEYu7xgbw"/>
   <CDA:PropertyValidation xmi:id="_ZfBXUCFpEeSt4IEYu7xgbw" base_Property="_ZfAwQCFpEeSt4IEYu7xgbw"/>
   <CDA:ValueSetConstraint xmi:id="_gD1vMCFpEeSt4IEYu7xgbw" base_Property="_ZfAwQCFpEeSt4IEYu7xgbw">
-    <ruleId>CONF:1198-17176</ruleId>
     <reference href="../consol-vocab.uml#_Z8iQMTstEeGvzMYhXuqAEA"/>
+    <ruleId>CONF:1198-17176</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_W9LlUCFsEeSt4IEYu7xgbw" memberEnd="_W9KXMCFsEeSt4IEYu7xgbw _W9LlUSFsEeSt4IEYu7xgbw">
     <ownedEnd xmi:id="_W9LlUSFsEeSt4IEYu7xgbw" type="_PkP3oCFmEeSt4IEYu7xgbw" association="_W9LlUCFsEeSt4IEYu7xgbw"/>
@@ -10788,9 +10788,9 @@ Note: The section/code SHOULD be selected from LOINC or DICOM for sections not l
   <CDA:PropertyValidation xmi:id="_WUiCECL6EeS4d9o7u1_H3A" base_Property="_WUe-wCL6EeS4d9o7u1_H3A">
     <ruleId>CONF:1198-14833</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_KCRw0CL7EeS4d9o7u1_H3A" severity="WARNING" base_Property="_WUe-wCL6EeS4d9o7u1_H3A">
-    <ruleId>CONF:1198-14834</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_KCRw0CL7EeS4d9o7u1_H3A" base_Property="_WUe-wCL6EeS4d9o7u1_H3A" severity="WARNING">
     <reference href="../consol-vocab.uml#_tcT18CL6EeS4d9o7u1_H3A"/>
+    <ruleId>CONF:1198-14834</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="__9V2QCL8EeS4d9o7u1_H3A" memberEnd="__9UoICL8EeS4d9o7u1_H3A __9V2QSL8EeS4d9o7u1_H3A">
     <ownedEnd xmi:id="__9V2QSL8EeS4d9o7u1_H3A" type="_4JRRsCJnEeSBLYc2hU6GfA" association="__9V2QCL8EeS4d9o7u1_H3A"/>
@@ -10966,9 +10966,9 @@ Note: The section/code SHOULD be selected from LOINC or DICOM for sections not l
   <CDA:PropertyValidation xmi:id="_H-q2UCMnEeS4d9o7u1_H3A" base_Property="_FhwvACMnEeS4d9o7u1_H3A">
     <ruleId>CONF:1198-31057</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_H9_toCM3EeS4d9o7u1_H3A" severity="WARNING" base_Property="_FhwvACMnEeS4d9o7u1_H3A">
-    <ruleId>CONF:1198-31207</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_H9_toCM3EeS4d9o7u1_H3A" base_Property="_FhwvACMnEeS4d9o7u1_H3A" severity="WARNING">
     <reference href="../consol-vocab.uml#_bh5u8CMzEeS4d9o7u1_H3A"/>
+    <ruleId>CONF:1198-31207</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_cyV0YCM5EeS4d9o7u1_H3A" severity="WARNING" base_Property="_Oi1BsyM5EeS4d9o7u1_H3A">
     <ruleId>CONF:1198-31058</ruleId>
@@ -11392,8 +11392,8 @@ The dischargeDispositionCode, @displayName, or NUBC UB-04 Print Name, must be di
     <ruleId>CONF:1198-17178</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_4IxhUCP6EeS4d9o7u1_H3A" base_Property="_vvilgCP6EeS4d9o7u1_H3A">
-    <ruleId>CONF:1198-17179</ruleId>
     <reference href="../consol-vocab.uml#_R_D60TzDEeGMk58Mp9-wVA"/>
+    <ruleId>CONF:1198-17179</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="__bUFYCP7EeS4d9o7u1_H3A" memberEnd="__bS3QCP7EeS4d9o7u1_H3A __bUscCP7EeS4d9o7u1_H3A">
     <ownedEnd xmi:id="__bUscCP7EeS4d9o7u1_H3A" type="_89EzQCP5EeS4d9o7u1_H3A" association="__bUFYCP7EeS4d9o7u1_H3A"/>
@@ -11426,9 +11426,9 @@ The dischargeDispositionCode, @displayName, or NUBC UB-04 Print Name, must be di
     <ruleId>CONF:1198-8473</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_hR5d8CP_EeS4d9o7u1_H3A" base_Property="_glaLYCP_EeS4d9o7u1_H3A"/>
-  <CDA:ValueSetConstraint xmi:id="_Asif4CQAEeS4d9o7u1_H3A" severity="WARNING" base_Property="_glaLYCP_EeS4d9o7u1_H3A">
-    <ruleId>CONF:1198-8476</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_Asif4CQAEeS4d9o7u1_H3A" base_Property="_glaLYCP_EeS4d9o7u1_H3A" severity="WARNING">
     <reference href="../consol-vocab.uml#_2L5TYhSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1198-8476</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_LqODgCQCEeS4d9o7u1_H3A" memberEnd="_LqM1YCQCEeS4d9o7u1_H3A _LqODgSQCEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_LqODgSQCEeS4d9o7u1_H3A" type="_P-vwkCP-EeS4d9o7u1_H3A" association="_LqODgCQCEeS4d9o7u1_H3A"/>
@@ -11904,8 +11904,8 @@ The H&amp;P Note is always associated with an encounter.</body>
     <ruleId>CONF:1198-17185</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_g4SeIClwEeSoCqqrpX8LzQ" base_Property="_R6XtUClwEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1198-17186</ruleId>
     <reference href="../consol-vocab.uml#_MBvVoD1kEeG3tde5scYNWA"/>
+    <ruleId>CONF:1198-17186</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_89RL0ClwEeSoCqqrpX8LzQ" memberEnd="_89PWoClwEeSoCqqrpX8LzQ _89RL0SlwEeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_89RL0SlwEeSoCqqrpX8LzQ" type="_4mLhsCluEeSoCqqrpX8LzQ" association="_89RL0ClwEeSoCqqrpX8LzQ"/>
@@ -12426,8 +12426,8 @@ This performer represents any assistants.</body>
     <ruleId>CONF:1198-17187</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_wi7hAC1gEeSoCqqrpX8LzQ" base_Property="_apK_cC1gEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1198-17188</ruleId>
     <reference href="../consol-vocab.uml#_IuPWwT4jEeGhnL_c4sBHGg"/>
+    <ruleId>CONF:1198-17188</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_Li018C1hEeSoCqqrpX8LzQ" memberEnd="_LizAwC1hEeSoCqqrpX8LzQ _Li018S1hEeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_Li018S1hEeSoCqqrpX8LzQ" type="_aH1CYC1fEeSoCqqrpX8LzQ" association="_Li018C1hEeSoCqqrpX8LzQ"/>
@@ -12467,8 +12467,8 @@ This performer represents any assistants.</body>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_NvbMMC1oEeSoCqqrpX8LzQ" base_Property="_NF4f8C1oEeSoCqqrpX8LzQ"/>
   <CDA:ValueSetConstraint xmi:id="_WMkXoC1oEeSoCqqrpX8LzQ" base_Property="_NF4f8C1oEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1198-8490</ruleId>
     <reference href="../consol-vocab.uml#_8lYFkC1oEeSoCqqrpX8LzQ"/>
+    <ruleId>CONF:1198-8490</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8eWloC1qEeSoCqqrpX8LzQ" base_Property="_74sT0C1qEeSoCqqrpX8LzQ">
     <ruleId>CONF:1198-8487</ruleId>
@@ -13105,8 +13105,8 @@ This performer identifies any assistants.</body>
     <ruleId>CONF:1198-17182</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_YC3cwC4qEeSoCqqrpX8LzQ" base_Property="_VZ7roC4qEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1198-17183</ruleId>
     <reference href="../consol-vocab.uml#_oDanoD7YEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:1198-17183</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_lIJQ8C4qEeSoCqqrpX8LzQ" memberEnd="_lIIC0C4qEeSoCqqrpX8LzQ _lIJQ8S4qEeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_lIJQ8S4qEeSoCqqrpX8LzQ" type="_JD8b0C4pEeSoCqqrpX8LzQ" association="_lIJQ8C4qEeSoCqqrpX8LzQ"/>
@@ -13175,8 +13175,8 @@ This performer identifies any assistants.</body>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_YJbBoC4zEeSoCqqrpX8LzQ" severity="WARNING" base_Property="_XMjJsC4zEeSoCqqrpX8LzQ"/>
   <CDA:ValueSetConstraint xmi:id="_ddEskC4zEeSoCqqrpX8LzQ" base_Property="_XMjJsC4zEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1198-14912</ruleId>
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:1198-14912</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__3LJQC4zEeSoCqqrpX8LzQ" base_Property="__Nf6IC4zEeSoCqqrpX8LzQ">
     <ruleId>CONF:1198-8511</ruleId>
@@ -13681,8 +13681,8 @@ All visits take place at a specific location. When available, the location ID is
     <ruleId>CONF:1198-17189</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_qk3PoC-bEeSoCqqrpX8LzQ" base_Property="_b7CfgC-bEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1198-17190</ruleId>
     <reference href="../consol-vocab.uml#_6yjb4T_LEeGXieeKs7NJjA"/>
+    <ruleId>CONF:1198-17190</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_Ja9aEC-cEeSoCqqrpX8LzQ" memberEnd="_Ja690C-cEeSoCqqrpX8LzQ _Ja-BIC-cEeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_Ja-BIC-cEeSoCqqrpX8LzQ" type="_qVEVkC-aEeSoCqqrpX8LzQ" association="_Ja9aEC-cEeSoCqqrpX8LzQ"/>
@@ -14366,8 +14366,8 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Wmfe4EgUEeSfpbeq3Ftc1g" severity="WARNING" base_Property="_R3ojEEgUEeSfpbeq3Ftc1g"/>
   <CDA:ValueSetConstraint xmi:id="_lmky4EgUEeSfpbeq3Ftc1g" base_Property="_R3ojEEgUEeSfpbeq3Ftc1g">
-    <ruleId>CONF:1198-32003</ruleId>
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:1198-32003</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_jW15IIr1EeSTD58Y2T30Mw" base_Property="_2DNR8RSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_7GbcMIurEeSZu6J-Yjmr9w" base_Property="_7Ga1IIurEeSZu6J-Yjmr9w">
@@ -14405,8 +14405,8 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_q6AbgI1ZEeS-Q90NIeadnQ" severity="INFO" base_Property="_q59YMI1ZEeS-Q90NIeadnQ"/>
   <CDA:ValueSetConstraint xmi:id="_y2a4cI1ZEeS-Q90NIeadnQ" base_Property="_q59YMI1ZEeS-Q90NIeadnQ">
-    <ruleId>CONF:1198-32173</ruleId>
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:1198-32173</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_F5RFAI1fEeS-Q90NIeadnQ" memberEnd="_F5P24I1fEeS-Q90NIeadnQ _F5RFAY1fEeS-Q90NIeadnQ">
     <ownedEnd xmi:id="_F5RFAY1fEeS-Q90NIeadnQ" type="_HIK-cBwcEeSMr-NWzQuDBw" association="_F5RFAI1fEeS-Q90NIeadnQ"/>
@@ -14416,8 +14416,8 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   </uml:Association>
   <CDA:PropertyValidation xmi:id="_eRZGcI1fEeS-Q90NIeadnQ" severity="INFO" base_Property="_eRWDII1fEeS-Q90NIeadnQ"/>
   <CDA:ValueSetConstraint xmi:id="_k6L_YI1fEeS-Q90NIeadnQ" base_Property="_eRWDII1fEeS-Q90NIeadnQ">
-    <ruleId>CONF:1198-32174</ruleId>
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:1198-32174</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_xfer8I1fEeS-Q90NIeadnQ" base_Property="_xfeE4I1fEeS-Q90NIeadnQ">
     <ruleId>CONF:1198-8220</ruleId>
@@ -14443,9 +14443,9 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   <CDA:PropertyValidation xmi:id="_00caQI-cEeSbueAOLwZrNw" severity="INFO" base_Property="_00bzMI-cEeSbueAOLwZrNw">
     <ruleId>CONF:1198-16818</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_87VB0I-cEeSbueAOLwZrNw" severity="WARNING" base_Property="_00bzMI-cEeSbueAOLwZrNw">
-    <ruleId>CONF:1198-32889</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_87VB0I-cEeSbueAOLwZrNw" base_Property="_00bzMI-cEeSbueAOLwZrNw" severity="WARNING">
     <reference href="../consol-vocab.uml#_jVJukGKxEeOD5bEp3nNX5w"/>
+    <ruleId>CONF:1198-32889</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_l-N68I-eEeSbueAOLwZrNw" memberEnd="_l-Ms0I-eEeSbueAOLwZrNw _l-OiAI-eEeSbueAOLwZrNw">
     <ownedEnd xmi:id="_l-OiAI-eEeSbueAOLwZrNw" type="_ThcuoBwkEeSMr-NWzQuDBw" association="_l-N68I-eEeSbueAOLwZrNw"/>
@@ -14454,9 +14454,9 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <ruleId>CONF:1198-14841</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_N5uKsI-fEeSbueAOLwZrNw" severity="WARNING" base_Property="_N5tjoI-fEeSbueAOLwZrNw"/>
-  <CDA:ValueSetConstraint xmi:id="_aSEncI-fEeSbueAOLwZrNw" severity="WARNING" base_Property="_N5tjoI-fEeSbueAOLwZrNw">
-    <ruleId>CONF:1198-14842</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_aSEncI-fEeSbueAOLwZrNw" base_Property="_N5tjoI-fEeSbueAOLwZrNw" severity="WARNING">
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:1198-14842</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_lH2PYpBpEeSSfIVHL_x3Xw" base_Constraint="_lH2PYJBpEeSSfIVHL_x3Xw">
     <ruleId>CONF:10127, R2.1=CONF:81-10127</ruleId>
@@ -14604,8 +14604,8 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_w-8d4J3KEeSofqct4VeYrw" base_Property="_wHsFwJ3KEeSofqct4VeYrw"/>
   <CDA:ValueSetConstraint xmi:id="_zT1RoJ3KEeSofqct4VeYrw" base_Property="_wHsFwJ3KEeSofqct4VeYrw">
-    <ruleId>CONF:1198-32739</ruleId>
     <reference href="../consol-vocab.uml#_8lYFkC1oEeSoCqqrpX8LzQ"/>
+    <ruleId>CONF:1198-32739</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_nNM8AKAEEeSy_9HMspjkmw" base_Property="_mbKbEKAEEeSy_9HMspjkmw">
     <ruleId>CONF:1198-26449, CONF:1198-8513</ruleId>
@@ -14627,8 +14627,8 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_4TKQAKAHEeSy_9HMspjkmw" severity="WARNING" base_Property="_2ya2AKAHEeSy_9HMspjkmw"/>
   <CDA:ValueSetConstraint xmi:id="_7tDkAKAHEeSy_9HMspjkmw" base_Property="_2ya2AKAHEeSy_9HMspjkmw">
-    <ruleId>CONF:1198-32735</ruleId>
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:1198-32735</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_R3lnUKAaEeSy_9HMspjkmw" severity="WARNING" base_Property="_QjKLAKAaEeSy_9HMspjkmw">
     <ruleId>CONF:1198-9482</ruleId>
@@ -14703,9 +14703,9 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <ruleId>CONF:1198-32650</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_-XkikPAhEeSw2PsYr-oqaQ" severity="INFO" base_Property="_9x4bkPAhEeSw2PsYr-oqaQ"/>
-  <CDA:ValueSetConstraint xmi:id="_JOzK0PAiEeSw2PsYr-oqaQ" severity="WARNING" base_Property="_9x4bkPAhEeSw2PsYr-oqaQ">
-    <ruleId>CONF:1198-32651</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_JOzK0PAiEeSw2PsYr-oqaQ" base_Property="_9x4bkPAhEeSw2PsYr-oqaQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:1198-32651</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_SDaJIPKVEeS1WcRYptzY3g" severity="WARNING" base_Property="_RK9eMPKVEeS1WcRYptzY3g">
     <ruleId>CONF:1198-28470</ruleId>

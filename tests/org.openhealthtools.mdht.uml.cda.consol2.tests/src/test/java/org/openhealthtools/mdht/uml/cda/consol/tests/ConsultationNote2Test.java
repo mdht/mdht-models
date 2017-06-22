@@ -626,6 +626,7 @@ public class ConsultationNote2Test extends CDAValidationTest {
 			protected void updateToPass(ConsultationNote2 target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.CALLBCK);
 			}
 
 			@Override
@@ -1654,6 +1655,7 @@ public class ConsultationNote2Test extends CDAValidationTest {
 				p.setAssociatedEntity(ae);
 				Person ap = CDAFactory.eINSTANCE.createPerson();
 				ae.setAssociatedPerson(ap);
+				p.setTypeCode(ParticipationType.CALLBCK);
 			}
 
 			@Override
@@ -1694,11 +1696,13 @@ public class ConsultationNote2Test extends CDAValidationTest {
 				target.getParticipants().add(p);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				p.setAssociatedEntity(ae);
+				p.setTypeCode(ParticipationType.CALLBCK);
 			}
 
 			@Override
 			protected void updateToPass(ConsultationNote2 target) {
 				for (Participant1 p : target.getParticipants()) {
+					p.setTypeCode(ParticipationType.CALLBCK);
 					p.getAssociatedEntity().setClassCode(RoleClassAssociative.ASSIGNED);
 				}
 			}
@@ -1734,12 +1738,14 @@ public class ConsultationNote2Test extends CDAValidationTest {
 				target.getParticipants().add(p);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				p.setAssociatedEntity(ae);
+				p.setTypeCode(ParticipationType.CALLBCK);
 			}
 
 			@Override
 			protected void updateToPass(ConsultationNote2 target) {
 				for (Participant1 p : target.getParticipants()) {
 					p.getAssociatedEntity().getIds().add(DatatypesFactory.eINSTANCE.createII());
+					p.setTypeCode(ParticipationType.CALLBCK);
 				}
 			}
 
@@ -1774,12 +1780,14 @@ public class ConsultationNote2Test extends CDAValidationTest {
 				target.getParticipants().add(p);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				p.setAssociatedEntity(ae);
+				p.setTypeCode(ParticipationType.CALLBCK);
 			}
 
 			@Override
 			protected void updateToPass(ConsultationNote2 target) {
 				for (Participant1 p : target.getParticipants()) {
 					p.getAssociatedEntity().getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+					p.setTypeCode(ParticipationType.CALLBCK);
 				}
 			}
 
@@ -1814,11 +1822,13 @@ public class ConsultationNote2Test extends CDAValidationTest {
 				target.getParticipants().add(p);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				p.setAssociatedEntity(ae);
+				p.setTypeCode(ParticipationType.CALLBCK);
 			}
 
 			@Override
 			protected void updateToPass(ConsultationNote2 target) {
 				for (Participant1 p : target.getParticipants()) {
+					p.setTypeCode(ParticipationType.CALLBCK);
 					p.getAssociatedEntity().getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
 				}
 			}
@@ -1854,6 +1864,7 @@ public class ConsultationNote2Test extends CDAValidationTest {
 				target.getParticipants().add(p);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				p.setAssociatedEntity(ae);
+				p.setTypeCode(ParticipationType.CALLBCK);
 			}
 
 			@Override
@@ -1895,12 +1906,14 @@ public class ConsultationNote2Test extends CDAValidationTest {
 				target.getParticipants().add(p);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				p.setAssociatedEntity(ae);
+				p.setTypeCode(ParticipationType.CALLBCK);
 			}
 
 			@Override
 			protected void updateToPass(ConsultationNote2 target) {
 				for (Participant1 p : target.getParticipants()) {
 					p.getAssociatedEntity().setScopingOrganization(CDAFactory.eINSTANCE.createOrganization());
+					p.setTypeCode(ParticipationType.CALLBCK);
 				}
 			}
 
@@ -1927,11 +1940,10 @@ public class ConsultationNote2Test extends CDAValidationTest {
 				"VALIDATE_CONSULTATION_NOTE2_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
-			@Override
-			protected void updateToFail(ConsultationNote2 target) {
-				target.init();
-				Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
-				target.getParticipants().add(p);
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific performer type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
 			}
 
 			@Override
@@ -1970,6 +1982,7 @@ public class ConsultationNote2Test extends CDAValidationTest {
 				target.init();
 				Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
 				target.getParticipants().add(p);
+				p.setTypeCode(ParticipationType.CALLBCK);
 			}
 
 			@Override
