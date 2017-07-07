@@ -32,7 +32,7 @@ public class DS4PUtil {
 	
 	private static final String CONTENTPROFILE = "CONTENTPROFILE";
 	
-	public static void validateAsDSP4(InputStream is,final ValidationHandler handler) throws Exception {
+	public static void validateAsDS4P(InputStream is, final ValidationHandler handler) throws Exception {
 		
 		ValidationHandler filterHandler = new ValidationHandler() {
 
