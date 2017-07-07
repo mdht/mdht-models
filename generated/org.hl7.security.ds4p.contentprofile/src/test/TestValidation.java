@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationHandler;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
-import org.hl7.security.ds4p.contentprofile.util.DSP4Util;
+import org.hl7.security.ds4p.contentprofile.util.DS4PUtil;
 
 public class TestValidation {
 
@@ -34,7 +34,7 @@ public class TestValidation {
 
 		};
 		
-		DSP4Util.validateAsDSP4(new FileInputStream("samples/SegmentedDocumentContentProfileSample.xml"),handler);
+		DS4PUtil.validateAsDSP4(new FileInputStream("samples/SegmentedDocumentContentProfileSample.xml"),handler);
 
 	}
 
