@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.SecurityObservation;
 
@@ -26,7 +27,7 @@ import org.hl7.security.ds4p.contentprofile.operations.SecurityObservationOperat
  *
  * @generated
  */
-public abstract class SecurityObservationImpl extends EObjectImpl implements SecurityObservation {
+public abstract class SecurityObservationImpl extends ObservationImpl implements SecurityObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

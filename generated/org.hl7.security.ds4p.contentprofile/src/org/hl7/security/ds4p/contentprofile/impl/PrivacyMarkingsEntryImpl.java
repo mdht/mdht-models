@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
+import org.eclipse.mdht.uml.cda.impl.EntryImpl;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsEntry;
 
@@ -26,7 +27,7 @@ import org.hl7.security.ds4p.contentprofile.operations.PrivacyMarkingsEntryOpera
  *
  * @generated
  */
-public class PrivacyMarkingsEntryImpl extends EObjectImpl implements PrivacyMarkingsEntry {
+public class PrivacyMarkingsEntryImpl extends EntryImpl implements PrivacyMarkingsEntry {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
