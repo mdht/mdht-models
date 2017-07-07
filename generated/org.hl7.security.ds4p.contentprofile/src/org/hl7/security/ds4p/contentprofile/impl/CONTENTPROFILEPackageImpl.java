@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
+import org.eclipse.mdht.uml.cda.CDAPackage;
 import org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer;
 
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEFactory;
@@ -200,6 +201,9 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 
         isInited = true;
 
+        // Initialize simple dependencies
+        CDAPackage.eINSTANCE.eClass();
+
         // Create package meta-data objects
         theCONTENTPROFILEPackage.createPackageContents();
 
@@ -210,8 +214,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
         EValidator.Registry.INSTANCE.put
             (theCONTENTPROFILEPackage, 
              new EValidator.Descriptor() {
-                 @Override
-				public EValidator getEValidator() {
+                 public EValidator getEValidator() {
                      return CONTENTPROFILEValidator.INSTANCE;
                  }
              });
@@ -474,15 +477,28 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
         setNsPrefix(eNS_PREFIX);
         setNsURI(eNS_URI);
 
+        // Obtain other dependent packages
+        CDAPackage theCDAPackage = (CDAPackage)EPackage.Registry.INSTANCE.getEPackage(CDAPackage.eNS_URI);
+
         // Create type parameters
 
         // Set bounds for type parameters
 
         // Add supertypes to classes
+        privacySegmentedSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+        privacyMarkingsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
         obligationPolicySecurityObservationEClass.getESuperTypes().add(this.getSecurityObservation());
+        securityObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
+        mandatoryDocumentProvenanceEClass.getESuperTypes().add(theCDAPackage.getAuthor());
+        mandatoryDocumentAssignedAuthorEClass.getESuperTypes().add(theCDAPackage.getAssignedAuthor());
+        privacyAnnotationEClass.getESuperTypes().add(theCDAPackage.getOrganizer());
         refrainPolicySecurityObservationEClass.getESuperTypes().add(this.getSecurityObservation());
         purposeOfUseSecurityObservationEClass.getESuperTypes().add(this.getSecurityObservation());
         confidentialitySecurityObservationEClass.getESuperTypes().add(this.getSecurityObservation());
+        mandatoryEntryProvenanceEClass.getESuperTypes().add(theCDAPackage.getAuthor());
+        mandatoryEntryAssignedAuthorEClass.getESuperTypes().add(theCDAPackage.getAssignedAuthor());
+        privacyAnnotationEntryRelationshipEClass.getESuperTypes().add(theCDAPackage.getEntryRelationship());
+        privacyMarkingsEntryEClass.getESuperTypes().add(theCDAPackage.getEntry());
 
         // Initialize classes and features; add operations and parameters
         initEClass(privacySegmentedDocumentEClass, PrivacySegmentedDocument.class, "PrivacySegmentedDocument", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

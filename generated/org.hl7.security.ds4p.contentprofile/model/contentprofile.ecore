@@ -102,7 +102,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PrivacySegmentedSection">
+  <eClassifiers xsi:type="ecore:EClass" name="PrivacySegmentedSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PrivacySegmentedSectionTemplateId PrivacySegmentedSectionConfidentialityCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.3251.1.10"/>
@@ -187,7 +187,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PrivacyMarkingsSection">
+  <eClassifiers xsi:type="ecore:EClass" name="PrivacyMarkingsSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PrivacyMarkingsSectionTemplateId PrivacyMarkingsSectionCodeP PrivacyMarkingsSectionText"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.3251.1.5"/>
@@ -411,7 +411,8 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SecurityObservation" abstract="true">
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityObservation" abstract="true"
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP SecurityObservationValue SecurityObservationValueP SecurityObservationMoodCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.445.21"/>
@@ -537,7 +538,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MandatoryDocumentProvenance">
+  <eClassifiers xsi:type="ecore:EClass" name="MandatoryDocumentProvenance" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Author">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MandatoryDocumentProvenanceTemplateId MandatoryDocumentProvenanceTime MandatoryDocumentProvenanceAssignedAuthor"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.3251.1.2"/>
@@ -600,7 +601,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MandatoryDocumentAssignedAuthor">
+  <eClassifiers xsi:type="ecore:EClass" name="MandatoryDocumentAssignedAuthor" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//AssignedAuthor">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MandatoryDocumentAssignedAuthorTemplateId MandatoryDocumentAssignedAuthorTelecomEmail"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.3251.1.3"/>
@@ -702,7 +703,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PrivacyAnnotation">
+  <eClassifiers xsi:type="ecore:EClass" name="PrivacyAnnotation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Organizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PrivacyAnnotationTemplateId PrivacyAnnotationClassCode PrivacyAnnotationMoodCode PrivacyAnnotationStatusCode PrivacyAnnotationStatusCodeP PrivacyAnnotationConfidentialityCodeSecurityObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.3251.1.4"/>
@@ -1328,7 +1329,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MandatoryEntryProvenance">
+  <eClassifiers xsi:type="ecore:EClass" name="MandatoryEntryProvenance" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Author">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MandatoryEntryProvenanceTemplateId MandatoryEntryProvenanceTime MandatoryEntryProvenanceAssignedAuthor"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.3251.1.6"/>
@@ -1391,7 +1392,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MandatoryEntryAssignedAuthor">
+  <eClassifiers xsi:type="ecore:EClass" name="MandatoryEntryAssignedAuthor" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//AssignedAuthor">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MandatoryEntryAssignedAuthorTemplateId MandatoryEntryAssignedAuthorAssignedAuthoringDevice MandatoryEntryAssignedAuthorAssignedPerson MandatoryEntryAssignedAuthorRepresentedOrganization"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.3251.1.7"/>
@@ -1473,7 +1474,8 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PrivacyAnnotationEntryRelationship">
+  <eClassifiers xsi:type="ecore:EClass" name="PrivacyAnnotationEntryRelationship"
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//EntryRelationship">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PrivacyAnnotationEntryRelationshipTemplateId PrivacyAnnotationEntryRelationshipOrganizer"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.3251.1.11"/>
@@ -1517,7 +1519,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PrivacyMarkingsEntry">
+  <eClassifiers xsi:type="ecore:EClass" name="PrivacyMarkingsEntry" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Entry">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PrivacyMarkingsEntryTemplateId PrivacyMarkingsEntryOrganizer"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.3251.1.9"/>

@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
+import org.eclipse.mdht.uml.cda.impl.AuthorImpl;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.MandatoryEntryProvenance;
 
@@ -26,7 +27,7 @@ import org.hl7.security.ds4p.contentprofile.operations.MandatoryEntryProvenanceO
  *
  * @generated
  */
-public class MandatoryEntryProvenanceImpl extends EObjectImpl implements MandatoryEntryProvenance {
+public class MandatoryEntryProvenanceImpl extends AuthorImpl implements MandatoryEntryProvenance {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

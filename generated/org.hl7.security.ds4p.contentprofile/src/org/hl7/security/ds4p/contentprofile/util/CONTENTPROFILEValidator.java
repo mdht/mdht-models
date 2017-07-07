@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.EObjectValidator;
 
+import org.eclipse.mdht.uml.cda.util.CDAValidator;
 import org.hl7.security.ds4p.contentprofile.*;
 
 /**
@@ -616,6 +617,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
 
 	/**
+	 * The cached base package validator.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected CDAValidator cdaValidator;
+
+	/**
 	 * Creates an instance of the switch.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -623,6 +632,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 */
 	public CONTENTPROFILEValidator() {
 		super();
+		cdaValidator = CDAValidator.INSTANCE;
 	}
 
 	/**
@@ -759,6 +769,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(privacySegmentedSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacySegmentedSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacySegmentedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(privacySegmentedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(privacySegmentedSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePrivacySegmentedSection_validatePrivacySegmentedSectionTemplateId(privacySegmentedSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePrivacySegmentedSection_validatePrivacySegmentedSectionConfidentialityCode(privacySegmentedSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePrivacySegmentedSection_validatePrivacySegmentedSectionConfidentialityCodeP(privacySegmentedSection, diagnostics, context);
@@ -821,6 +833,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(privacyMarkingsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacyMarkingsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacyMarkingsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(privacyMarkingsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(privacyMarkingsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionTemplateId(privacyMarkingsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionCode(privacyMarkingsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionCodeP(privacyMarkingsSection, diagnostics, context);
@@ -1054,6 +1068,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(mandatoryDocumentProvenance, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(mandatoryDocumentProvenance, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(mandatoryDocumentProvenance, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateAuthor_validateTypeCode(mandatoryDocumentProvenance, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateAuthor_validateContextControlCode(mandatoryDocumentProvenance, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceTemplateId(mandatoryDocumentProvenance, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceTime(mandatoryDocumentProvenance, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceAssignedAuthor(mandatoryDocumentProvenance, diagnostics, context);
@@ -1105,6 +1121,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(mandatoryDocumentAssignedAuthor, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(mandatoryDocumentAssignedAuthor, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(mandatoryDocumentAssignedAuthor, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateAssignedAuthor_validateAssignedAuthorChoice(mandatoryDocumentAssignedAuthor, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateAssignedAuthor_validateClassCode(mandatoryDocumentAssignedAuthor, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorTemplateId(mandatoryDocumentAssignedAuthor, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorTelecomEmail(mandatoryDocumentAssignedAuthor, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(mandatoryDocumentAssignedAuthor, diagnostics, context);
@@ -1578,6 +1596,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(mandatoryEntryProvenance, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(mandatoryEntryProvenance, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(mandatoryEntryProvenance, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateAuthor_validateTypeCode(mandatoryEntryProvenance, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateAuthor_validateContextControlCode(mandatoryEntryProvenance, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceTemplateId(mandatoryEntryProvenance, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceTime(mandatoryEntryProvenance, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceAssignedAuthor(mandatoryEntryProvenance, diagnostics, context);
@@ -1629,6 +1649,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(mandatoryEntryAssignedAuthor, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(mandatoryEntryAssignedAuthor, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(mandatoryEntryAssignedAuthor, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateAssignedAuthor_validateAssignedAuthorChoice(mandatoryEntryAssignedAuthor, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateAssignedAuthor_validateClassCode(mandatoryEntryAssignedAuthor, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorTemplateId(mandatoryEntryAssignedAuthor, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(mandatoryEntryAssignedAuthor, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorAssignedPerson(mandatoryEntryAssignedAuthor, diagnostics, context);
@@ -1691,6 +1713,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(privacyAnnotationEntryRelationship, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacyAnnotationEntryRelationship, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacyAnnotationEntryRelationship, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateEntryRelationship_validateClinicalStatement(privacyAnnotationEntryRelationship, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePrivacyAnnotationEntryRelationship_validatePrivacyAnnotationEntryRelationshipTemplateId(privacyAnnotationEntryRelationship, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePrivacyAnnotationEntryRelationship_validatePrivacyAnnotationEntryRelationshipOrganizer(privacyAnnotationEntryRelationship, diagnostics, context);
 		return result;
@@ -1731,6 +1754,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(privacyMarkingsEntry, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacyMarkingsEntry, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacyMarkingsEntry, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateEntry_validateClinicalStatement(privacyMarkingsEntry, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateEntry_validateContextConductionInd(privacyMarkingsEntry, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePrivacyMarkingsEntry_validatePrivacyMarkingsEntryTemplateId(privacyMarkingsEntry, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePrivacyMarkingsEntry_validatePrivacyMarkingsEntryOrganizer(privacyMarkingsEntry, diagnostics, context);
 		return result;
