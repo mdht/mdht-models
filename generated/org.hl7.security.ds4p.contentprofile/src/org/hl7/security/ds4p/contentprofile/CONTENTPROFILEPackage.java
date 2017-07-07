@@ -1,4 +1,8 @@
 /**
+ * Contributors:
+ * Sean Muir (JKM) - initial API and implementation
+ * Dan Brown (Ai) - Added method signatures to support the unloading and reloading
+ *    				of the DS4P Package from the registry
  */
 package org.hl7.security.ds4p.contentprofile;
 
@@ -3057,6 +3061,24 @@ public interface CONTENTPROFILEPackage extends EPackage {
      * @generated
      */
     CONTENTPROFILEFactory getCONTENTPROFILEFactory();
+    
+	/**
+	 * Unloads CONTENTPROFILEPackage from the registry if it has been loaded so we
+	 * get back only the results of the next package referenced. If needed, typically for validation
+	 * purposes, this should be run prior to registering the new package of chosen. -db
+	 *
+	 * @generated NOT
+	 */
+	void unload();
+
+	/**
+	 * Reloads CONTENTPROFILEPackage into the registry if it has been unloaded so we
+	 * get back results from this and whatever else might be loaded. If needed, typically for validation 
+	 * purposes, this should be run prior to registering the another package. -db
+	 *
+	 * @generated NOT
+	 */
+	void reload();    
 
     /**
      * <!-- begin-user-doc -->

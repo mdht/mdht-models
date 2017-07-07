@@ -1,20 +1,22 @@
 /**
+ * Contributors:
+ * Sean Muir (JKM) - initial API and implementation
+ * Dan Brown (Ai) - Added method implementations to support the unloading and reloading
+ *    				of the DS4P Package from the registry
  */
 package org.hl7.security.ds4p.contentprofile.impl;
+
+import java.util.Iterator;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EValidator;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.CDAPackage;
 import org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEFactory;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.ConfidentialitySecurityObservation;
@@ -33,7 +35,6 @@ import org.hl7.security.ds4p.contentprofile.ProtectedProblem;
 import org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation;
 import org.hl7.security.ds4p.contentprofile.RefrainPolicySecurityObservation;
 import org.hl7.security.ds4p.contentprofile.SecurityObservation;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -214,7 +215,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
         EValidator.Registry.INSTANCE.put
             (theCONTENTPROFILEPackage, 
              new EValidator.Descriptor() {
-                 public EValidator getEValidator() {
+                 @Override
+				public EValidator getEValidator() {
                      return CONTENTPROFILEValidator.INSTANCE;
                  }
              });
@@ -401,6 +403,44 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 	public CONTENTPROFILEFactory getCONTENTPROFILEFactory() {
         return (CONTENTPROFILEFactory)getEFactoryInstance();
     }
+    
+	/**
+	 * @generated NOT
+	 */
+	private static boolean isUnloaded = false;
+
+	/**
+	 * @generated NOT
+	 */
+	@Override
+	public void unload() {
+		if (isUnloaded) {
+			return;
+		}
+
+		for (Iterator<String> iter = EPackage.Registry.INSTANCE.keySet().iterator(); iter.hasNext();) {
+			String key = iter.next();
+			if (key.equals(CONTENTPROFILEPackage.eNS_URI)) {
+				iter.remove();
+			}
+		}
+
+		isUnloaded = true;
+	}
+
+	/**
+	 * @generated NOT
+	 */
+	@Override
+	public void reload() {
+		if (!isUnloaded) {
+			return;
+		}
+		// since ds4p is not in the registry, add it back
+		EPackage.Registry.INSTANCE.put(CONTENTPROFILEPackage.eNS_URI, this);
+
+		isUnloaded = false;
+	}    
 
     /**
      * <!-- begin-user-doc -->
