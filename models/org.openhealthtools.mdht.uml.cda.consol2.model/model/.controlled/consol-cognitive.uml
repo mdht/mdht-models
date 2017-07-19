@@ -529,9 +529,9 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
   <CDA:PropertyValidation xmi:id="_r7wPMOZdEeGINOJ_SD9_dA" severity="INFO" base_Property="_aFueTuZcEeGINOJ_SD9_dA">
     <ruleId>CONF:14693</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_aF4PR-ZcEeGINOJ_SD9_dA" severity="WARNING" base_Property="_aF4PROZcEeGINOJ_SD9_dA">
-    <ruleId>CONF:14349</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_aF4PR-ZcEeGINOJ_SD9_dA" base_Property="_aF4PROZcEeGINOJ_SD9_dA" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:14349</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_P7LgYOZdEeGINOJ_SD9_dA" base_Property="_aF4PROZcEeGINOJ_SD9_dA"/>
   <CDA:EntryRelationship xmi:id="_OZw7gOZeEeGINOJ_SD9_dA" severity="INFO" base_Association="_FvvKouZeEeGINOJ_SD9_dA" typeCode="REFR">
@@ -1087,9 +1087,9 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     <ruleId>CONF:29250</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Ac3QgIoCEeOoMZgUoTghIg" base_Property="_9fGUUYoAEeOoMZgUoTghIg"/>
-  <CDA:ValueSetConstraint xmi:id="_KR74MIoCEeOoMZgUoTghIg" severity="WARNING" base_Property="_9fGUUYoAEeOoMZgUoTghIg">
-    <ruleId>CONF:29251</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_KR74MIoCEeOoMZgUoTghIg" base_Property="_9fGUUYoAEeOoMZgUoTghIg" severity="WARNING">
     <reference href="../consol-vocab.uml#_hfQH0YoMEeOoMZgUoTghIg"/>
+    <ruleId>CONF:29251</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_fNoPAIoCEeOoMZgUoTghIg" severity="WARNING" base_Property="_9fHidIoAEeOoMZgUoTghIg">
     <ruleId>CONF:29252</ruleId>
@@ -1113,9 +1113,9 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     <ruleId>CONF:29267</ruleId>
     <ruleId>CONF:29268</ruleId>
   </CDA:EntryRelationship>
-  <CDA:ValueSetConstraint xmi:id="_lLcTcIoREeOoMZgUoTghIg" severity="WARNING" base_Property="_9fHid4oAEeOoMZgUoTghIg">
-    <ruleId>CONF:29264</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_lLcTcIoREeOoMZgUoTghIg" base_Property="_9fHid4oAEeOoMZgUoTghIg" severity="WARNING">
     <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
+    <ruleId>CONF:29264</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_-lJmEI0kEeOB0eBUISUB4Q" name="MentalStatusObservation">
     <ownedComment xmi:id="_WTRLwI0mEeOB0eBUISUB4Q">
@@ -1196,13 +1196,13 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:29195</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_9HAQQI0oEeOB0eBUISUB4Q" severity="WARNING" base_Property="_vnbNEY0lEeOB0eBUISUB4Q">
-    <ruleId>CONF:29189</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_9HAQQI0oEeOB0eBUISUB4Q" base_Property="_vnbNEY0lEeOB0eBUISUB4Q" severity="WARNING">
     <reference href="../consol-vocab.uml#_CRVckI0oEeOB0eBUISUB4Q"/>
+    <ruleId>CONF:29189</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_Oa-dAI0qEeOB0eBUISUB4Q" severity="WARNING" base_Property="_vncbNI0lEeOB0eBUISUB4Q">
-    <ruleId>CONF:29202</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_Oa-dAI0qEeOB0eBUISUB4Q" base_Property="_vncbNI0lEeOB0eBUISUB4Q" severity="WARNING">
     <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
+    <ruleId>CONF:29202</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_PrukII0zEeOB0eBUISUB4Q" memberEnd="_Prt9EI0zEeOB0eBUISUB4Q _PrukIY0zEeOB0eBUISUB4Q">
     <ownedEnd xmi:id="_PrukIY0zEeOB0eBUISUB4Q" type="_-lJmEI0kEeOB0eBUISUB4Q" association="_PrukII0zEeOB0eBUISUB4Q"/>
@@ -1302,17 +1302,17 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     <ruleId>CONF:1098-31437</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_kURRoJm5EeOLJeQez13EkQ" base_Property="_wSgasJm4EeOLJeQez13EkQ"/>
-  <CDA:ValueSetConstraint xmi:id="_5jGKYJm6EeOLJeQez13EkQ" severity="WARNING" base_Property="_wSfzoZm4EeOLJeQez13EkQ">
-    <ruleId>CONF:1098-27962</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_5jGKYJm6EeOLJeQez13EkQ" base_Property="_wSfzoZm4EeOLJeQez13EkQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_Sv4_cZm6EeOLJeQez13EkQ"/>
+    <ruleId>CONF:1098-27962</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_D8_WYJm7EeOLJeQez13EkQ" code="completed" base_Property="_wSfzppm4EeOLJeQez13EkQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31438</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_bnkVUJm7EeOLJeQez13EkQ" severity="WARNING" base_Property="_wSgasJm4EeOLJeQez13EkQ">
-    <ruleId>CONF:1098-27974</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_bnkVUJm7EeOLJeQez13EkQ" base_Property="_wSgasJm4EeOLJeQez13EkQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
+    <ruleId>CONF:1098-27974</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_6SDawJm9EeOLJeQez13EkQ" memberEnd="_6SCMoJm9EeOLJeQez13EkQ _6SDawZm9EeOLJeQez13EkQ">
     <ownedEnd xmi:id="_6SDawZm9EeOLJeQez13EkQ" type="_kyeGAJm4EeOLJeQez13EkQ" association="_6SDawJm9EeOLJeQez13EkQ"/>
@@ -1485,59 +1485,134 @@ The Mental Status Section contains observations and evaluations related to a pat
         <body>self.value->forAll(val | val.oclIsTypeOf(datatypes::CD) implies (val.isNullFlavorDefined() or val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.96'))</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_ze150fitEeOXlK95I8tUew">
-      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-    </generalization>
-    <ownedAttribute xmi:id="_DzAE0PiuEeOXlK95I8tUew" name="classCode" visibility="private" isReadOnly="true">
+    <ownedRule xmi:id="_vI6fAGwBEeeGpbQRBTrLBg" name="textReference">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_vI6fAWwBEeeGpbQRBTrLBg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_DFgJQGwCEeeGpbQRBTrLBg" name="textReferenceValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_DFgJQWwCEeeGpbQRBTrLBg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_C35gMGwEEeeGpbQRBTrLBg" name="referenceValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_C35gMWwEEeeGpbQRBTrLBg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_EoR4sGwEEeeGpbQRBTrLBg" name="codeValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_EoR4sWwEEeeGpbQRBTrLBg">
+        <language>OCL</language>
+        <language>Analysis</language>
+        <body>true</body>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_GW59sGwEEeeGpbQRBTrLBg" name="noObservationRangeCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_GW59sWwEEeeGpbQRBTrLBg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_H5oUsGwEEeeGpbQRBTrLBg" name="authorMultiplicity">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_H5oUsWwEEeeGpbQRBTrLBg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_ze150fitEeOXlK95I8tUew" general="_gkBM0OZbEeGINOJ_SD9_dA"/>
+    <substitution xmi:id="_tV8oMGvjEeeGpbQRBTrLBg" name="CognitiveStatusResultObservation" client="_ze150PitEeOXlK95I8tUew" supplier="_gkBM0OZbEeGINOJ_SD9_dA" contract="_gkBM0OZbEeGINOJ_SD9_dA"/>
+    <ownedAttribute xmi:id="_DzAE0PiuEeOXlK95I8tUew" name="classCode" visibility="private" isReadOnly="true" redefinedProperty="_rPRcUOZgEeGINOJ_SD9_dA">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Y3R6cPivEeOXlK95I8tUew" value="OBS"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_DzB6APiuEeOXlK95I8tUew" name="moodCode" visibility="private" isReadOnly="true">
+    <ownedAttribute xmi:id="_DzB6APiuEeOXlK95I8tUew" name="moodCode" visibility="private" isReadOnly="true" redefinedProperty="_rPRcZeZgEeGINOJ_SD9_dA">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZlNXcPivEeOXlK95I8tUew" value="EVN"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_DzAr5PiuEeOXlK95I8tUew" name="id" visibility="private" aggregation="composite">
+    <ownedAttribute xmi:id="_DzAr5PiuEeOXlK95I8tUew" name="id" visibility="private" aggregation="composite" redefinedProperty="_rPRcWeZgEeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CHgW4PivEeOXlK95I8tUew" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CHfIwPivEeOXlK95I8tUew" value="*"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_DzAr4PiuEeOXlK95I8tUew" name="code" visibility="private" type="_wYem8E9XEeWsIc5CMrI4GA" aggregation="composite">
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_DzChEPiuEeOXlK95I8tUew" name="statusCode" visibility="private" aggregation="composite">
+    <ownedAttribute xmi:id="_DzAr4PiuEeOXlK95I8tUew" name="code" visibility="private" type="_wYem8E9XEeWsIc5CMrI4GA" aggregation="composite" redefinedProperty="_rPRcU-ZgEeGINOJ_SD9_dA"/>
+    <ownedAttribute xmi:id="_DzChEPiuEeOXlK95I8tUew" name="statusCode" visibility="private" aggregation="composite" redefinedProperty="_rPRcaOZgEeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C_4JUPivEeOXlK95I8tUew" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C_27MPivEeOXlK95I8tUew" value="1"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_DzAr4fiuEeOXlK95I8tUew" name="effectiveTime" visibility="private" aggregation="composite">
+    <ownedAttribute xmi:id="_DzAr4fiuEeOXlK95I8tUew" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_rPRcVeZgEeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EHzasPivEeOXlK95I8tUew" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EHyMkPivEeOXlK95I8tUew" value="1"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_DzChFviuEeOXlK95I8tUew" name="value" visibility="private" aggregation="composite">
+    <ownedAttribute xmi:id="_DzChFviuEeOXlK95I8tUew" name="value" visibility="private" aggregation="composite" redefinedProperty="_rPamSOZgEeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FZjWcPivEeOXlK95I8tUew" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FZivYPivEeOXlK95I8tUew" value="1"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_nKpc8PiwEeOXlK95I8tUew" name="authorParticipation" association="_nKrSIPiwEeOXlK95I8tUew">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nKpc8fiwEeOXlK95I8tUew"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nKpc8viwEeOXlK95I8tUew" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_CPw6APi6EeOXlK95I8tUew" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_CPyIIPi6EeOXlK95I8tUew">
+    <ownedAttribute xmi:id="_CPw6APi6EeOXlK95I8tUew" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" redefinedProperty="_5l_NwOZhEeGINOJ_SD9_dA" association="_CPyIIPi6EeOXlK95I8tUew">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CPw6Afi6EeOXlK95I8tUew"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CPw6Avi6EeOXlK95I8tUew" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_QhZMkPi6EeOXlK95I8tUew" name="referenceRange" association="_QhbBwPi6EeOXlK95I8tUew">
-      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_XFrNMEcaEd6besF9iFIJkQ"/>
+    <ownedAttribute xmi:id="_QhZMkPi6EeOXlK95I8tUew" name="referenceRange" type="_EsyTUGwGEeeGpbQRBTrLBg" redefinedProperty="_8m8dUOZhEeGINOJ_SD9_dA" association="_QhbBwPi6EeOXlK95I8tUew">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QhZMkfi6EeOXlK95I8tUew"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QhZMkvi6EeOXlK95I8tUew" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xoHOsGvoEeeGpbQRBTrLBg" name="text" visibility="private" aggregation="composite" redefinedProperty="_rPamROZgEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xoHOsWvoEeeGpbQRBTrLBg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xoHOsmvoEeeGpbQRBTrLBg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_VqxkoGvpEeeGpbQRBTrLBg" name="interpretationCode" visibility="private" aggregation="composite" redefinedProperty="_rPRcXeZgEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VqxkoWvpEeeGpbQRBTrLBg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VqxkomvpEeeGpbQRBTrLBg" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Vq9x4GvpEeeGpbQRBTrLBg" name="methodCode" visibility="private" aggregation="composite" redefinedProperty="_rPRcYeZgEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vq9x4WvpEeeGpbQRBTrLBg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vq9x4mvpEeeGpbQRBTrLBg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Vq_nEGvpEeeGpbQRBTrLBg" name="targetSiteCode" visibility="private" aggregation="composite" redefinedProperty="_rPamQOZgEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vq_nEWvpEeeGpbQRBTrLBg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vq_nEmvpEeeGpbQRBTrLBg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_qbONYGvsEeeGpbQRBTrLBg" name="author" visibility="private" aggregation="composite" redefinedProperty="_rPamSuZgEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qbONYWvsEeeGpbQRBTrLBg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qbONYmvsEeeGpbQRBTrLBg" value="1"/>
+      <association href="../consol.uml#_qbQCkGvsEeeGpbQRBTrLBg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_qbUUAGvsEeeGpbQRBTrLBg" name="nonMedicinalSupplyActivity" redefinedProperty="_1Rt8MOZhEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2HIvMBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qbUUAWvsEeeGpbQRBTrLBg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qbUUAmvsEeeGpbQRBTrLBg" value="*"/>
+      <association href="../consol.uml#_qbbowGvsEeeGpbQRBTrLBg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_qbfTIGvsEeeGpbQRBTrLBg" name="caregiverCharacteristics" type="__pNCUOY-EeGINOJ_SD9_dA" redefinedProperty="_2p8TYOZhEeGINOJ_SD9_dA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qbfTIWvsEeeGpbQRBTrLBg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qbfTImvsEeeGpbQRBTrLBg" value="*"/>
+      <association href="../consol.uml#_qbhvYGvsEeeGpbQRBTrLBg"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_wYem8E9XEeWsIc5CMrI4GA" name="CD">
       <ownedComment xmi:id="_yofhwE9XEeWsIc5CMrI4GA">
@@ -1552,6 +1627,28 @@ The Mental Status Section contains observations and evaluations related to a pat
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FP0CME9YEeWsIc5CMrI4GA" value="1"/>
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
       </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_EsyTUGwGEeeGpbQRBTrLBg" name="ReferenceRange">
+      <ownedComment xmi:id="_IehfkGwGEeeGpbQRBTrLBg">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_Esy6YGwGEeeGpbQRBTrLBg" general="_SJCs0OZiEeGINOJ_SD9_dA"/>
+      <ownedAttribute xmi:id="_kjV1MGwGEeeGpbQRBTrLBg" name="observationRange" visibility="private" type="_eP_LUGwHEeeGpbQRBTrLBg" aggregation="composite" redefinedProperty="_SifHkOZiEeGINOJ_SD9_dA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kjV1MWwGEeeGpbQRBTrLBg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kjV1MmwGEeeGpbQRBTrLBg" value="1"/>
+        <association href="../consol.uml#_kjXDUGwGEeeGpbQRBTrLBg"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_eP_LUGwHEeeGpbQRBTrLBg" name="ObservationRange">
+        <ownedRule xmi:id="_r3bRYGwHEeeGpbQRBTrLBg" name="noCode">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_r3bRYWwHEeeGpbQRBTrLBg">
+            <language>Analysis</language>
+            <language>OCL</language>
+            <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+            <body>true</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_eP_yYGwHEeeGpbQRBTrLBg" general="_U74A0OZiEeGINOJ_SD9_dA"/>
+      </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_hOCmgPiuEeOXlK95I8tUew" base_Class="_ze150PitEeOXlK95I8tUew" templateId="2.16.840.1.113883.10.20.22.4.74" templateVersion="2015-08-01">
@@ -1660,4 +1757,12 @@ The Mental Status Section contains observations and evaluations related to a pat
     <ruleId>CONF:1198-32791</ruleId>
     <ruleId>CONF:1198-32792</ruleId>
   </CDA:CodeSystemConstraint>
+  <CDA:ConformsTo xmi:id="_7BzUMGvjEeeGpbQRBTrLBg" base_Generalization="_ze150fitEeOXlK95I8tUew"/>
+  <CDA:ConstraintValidation xmi:id="_49Tp4GwEEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_C35gMGwEEeeGpbQRBTrLBg"/>
+  <CDA:ConstraintValidation xmi:id="_9V1JUGwEEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_EoR4sGwEEeeGpbQRBTrLBg"/>
+  <CDA:ConstraintValidation xmi:id="_99x6IGwEEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_GW59sGwEEeeGpbQRBTrLBg"/>
+  <CDA:ConstraintValidation xmi:id="_-cl9EGwEEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_H5oUsGwEEeeGpbQRBTrLBg"/>
+  <CDA:ConstraintValidation xmi:id="_KvvJsGwFEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_vI6fAGwBEeeGpbQRBTrLBg"/>
+  <CDA:ConstraintValidation xmi:id="_LSPZ0GwFEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_DFgJQGwCEeeGpbQRBTrLBg"/>
+  <CDA:ConstraintValidation xmi:id="_2T6eYGwHEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_r3bRYGwHEeeGpbQRBTrLBg"/>
 </xmi:XMI>
