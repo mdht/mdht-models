@@ -9955,7 +9955,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_BMze0SJUEeSBLYc2hU6GfA">
             <language>Analysis</language>
             <language>OCL</language>
-            <body>SHALL contain exactly one [1..1] assignedPerson and/or exactly one [1..1]????representedOrganization</body>
+            <body>SHALL contain exactly one [1..1] assignedPerson and/or exactly one [1..1] representedOrganization</body>
             <body>(not self.assignedPerson.oclIsUndefined()) or (not self.representedOrganization.oclIsUndefined())</body>
           </specification>
         </ownedRule>

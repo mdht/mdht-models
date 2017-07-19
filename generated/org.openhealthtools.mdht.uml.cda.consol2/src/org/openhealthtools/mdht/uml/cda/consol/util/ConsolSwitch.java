@@ -4316,6 +4316,12 @@ public class ConsolSwitch<T> {
 				MentalStatusObservation2 mentalStatusObservation2 = (MentalStatusObservation2) theEObject;
 				T result = caseMentalStatusObservation2(mentalStatusObservation2);
 				if (result == null) {
+					result = caseCognitiveStatusResultObservation(mentalStatusObservation2);
+				}
+				if (result == null) {
+					result = caseResultObservation(mentalStatusObservation2);
+				}
+				if (result == null) {
 					result = caseObservation(mentalStatusObservation2);
 				}
 				if (result == null) {
