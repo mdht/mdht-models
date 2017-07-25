@@ -28,11 +28,11 @@ import org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationHandler;
  *
  */
 @SuppressWarnings("restriction")
-public class DSP4Util {
+public class DS4PUtil {
 	
 	private static final String CONTENTPROFILE = "CONTENTPROFILE";
 	
-	public static void validateAsDSP4(InputStream is,final ValidationHandler handler) throws Exception {
+	public static void validateAsDS4P(InputStream is, final ValidationHandler handler) throws Exception {
 		
 		ValidationHandler filterHandler = new ValidationHandler() {
 
@@ -59,7 +59,7 @@ public class DSP4Util {
 			
 		};
 		
-		DSP4Util.load(is, filterHandler);
+		DS4PUtil.load(is, filterHandler);
 	}
 
 	private static int uriCounter = 0;

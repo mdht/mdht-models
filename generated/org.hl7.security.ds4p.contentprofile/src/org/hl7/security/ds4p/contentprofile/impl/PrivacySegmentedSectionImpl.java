@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.PrivacySegmentedSection;
 
@@ -26,7 +27,7 @@ import org.hl7.security.ds4p.contentprofile.operations.PrivacySegmentedSectionOp
  *
  * @generated
  */
-public class PrivacySegmentedSectionImpl extends EObjectImpl implements PrivacySegmentedSection {
+public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacySegmentedSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

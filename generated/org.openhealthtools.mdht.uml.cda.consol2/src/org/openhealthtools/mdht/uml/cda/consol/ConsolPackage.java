@@ -50876,7 +50876,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int MENTAL_STATUS_OBSERVATION2__REALM_CODE = COGNITIVE_STATUS_RESULT_OBSERVATION__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -50885,7 +50885,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int MENTAL_STATUS_OBSERVATION2__TYPE_ID = COGNITIVE_STATUS_RESULT_OBSERVATION__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -50894,7 +50894,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int MENTAL_STATUS_OBSERVATION2__TEMPLATE_ID = COGNITIVE_STATUS_RESULT_OBSERVATION__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -50903,7 +50903,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__ID = CDAPackage.OBSERVATION__ID;
+	int MENTAL_STATUS_OBSERVATION2__ID = COGNITIVE_STATUS_RESULT_OBSERVATION__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -50912,7 +50912,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__CODE = CDAPackage.OBSERVATION__CODE;
+	int MENTAL_STATUS_OBSERVATION2__CODE = COGNITIVE_STATUS_RESULT_OBSERVATION__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -50921,7 +50921,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int MENTAL_STATUS_OBSERVATION2__DERIVATION_EXPR = COGNITIVE_STATUS_RESULT_OBSERVATION__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -50930,7 +50930,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int MENTAL_STATUS_OBSERVATION2__TEXT = COGNITIVE_STATUS_RESULT_OBSERVATION__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -50939,7 +50939,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int MENTAL_STATUS_OBSERVATION2__STATUS_CODE = COGNITIVE_STATUS_RESULT_OBSERVATION__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -50948,7 +50948,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int MENTAL_STATUS_OBSERVATION2__EFFECTIVE_TIME = COGNITIVE_STATUS_RESULT_OBSERVATION__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -50957,7 +50957,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int MENTAL_STATUS_OBSERVATION2__PRIORITY_CODE = COGNITIVE_STATUS_RESULT_OBSERVATION__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -50966,7 +50966,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int MENTAL_STATUS_OBSERVATION2__REPEAT_NUMBER = COGNITIVE_STATUS_RESULT_OBSERVATION__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -50975,7 +50975,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int MENTAL_STATUS_OBSERVATION2__LANGUAGE_CODE = COGNITIVE_STATUS_RESULT_OBSERVATION__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -50984,7 +50984,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int MENTAL_STATUS_OBSERVATION2__VALUE = COGNITIVE_STATUS_RESULT_OBSERVATION__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -50993,7 +50993,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int MENTAL_STATUS_OBSERVATION2__INTERPRETATION_CODE = COGNITIVE_STATUS_RESULT_OBSERVATION__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -51002,7 +51002,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int MENTAL_STATUS_OBSERVATION2__METHOD_CODE = COGNITIVE_STATUS_RESULT_OBSERVATION__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -51011,7 +51011,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int MENTAL_STATUS_OBSERVATION2__TARGET_SITE_CODE = COGNITIVE_STATUS_RESULT_OBSERVATION__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -51020,7 +51020,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int MENTAL_STATUS_OBSERVATION2__SUBJECT = COGNITIVE_STATUS_RESULT_OBSERVATION__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -51029,7 +51029,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int MENTAL_STATUS_OBSERVATION2__SPECIMEN = COGNITIVE_STATUS_RESULT_OBSERVATION__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -51038,7 +51038,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int MENTAL_STATUS_OBSERVATION2__PERFORMER = COGNITIVE_STATUS_RESULT_OBSERVATION__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -51047,7 +51047,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int MENTAL_STATUS_OBSERVATION2__AUTHOR = COGNITIVE_STATUS_RESULT_OBSERVATION__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -51056,7 +51056,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int MENTAL_STATUS_OBSERVATION2__INFORMANT = COGNITIVE_STATUS_RESULT_OBSERVATION__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -51065,7 +51065,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int MENTAL_STATUS_OBSERVATION2__PARTICIPANT = COGNITIVE_STATUS_RESULT_OBSERVATION__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -51074,7 +51074,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int MENTAL_STATUS_OBSERVATION2__ENTRY_RELATIONSHIP = COGNITIVE_STATUS_RESULT_OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -51083,7 +51083,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int MENTAL_STATUS_OBSERVATION2__REFERENCE = COGNITIVE_STATUS_RESULT_OBSERVATION__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -51092,7 +51092,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int MENTAL_STATUS_OBSERVATION2__PRECONDITION = COGNITIVE_STATUS_RESULT_OBSERVATION__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -51101,7 +51101,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int MENTAL_STATUS_OBSERVATION2__REFERENCE_RANGE = COGNITIVE_STATUS_RESULT_OBSERVATION__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -51110,7 +51110,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int MENTAL_STATUS_OBSERVATION2__NULL_FLAVOR = COGNITIVE_STATUS_RESULT_OBSERVATION__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -51119,7 +51119,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int MENTAL_STATUS_OBSERVATION2__CLASS_CODE = COGNITIVE_STATUS_RESULT_OBSERVATION__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -51128,7 +51128,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int MENTAL_STATUS_OBSERVATION2__MOOD_CODE = COGNITIVE_STATUS_RESULT_OBSERVATION__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -51137,7 +51137,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int MENTAL_STATUS_OBSERVATION2__NEGATION_IND = COGNITIVE_STATUS_RESULT_OBSERVATION__NEGATION_IND;
 
 	/**
 	 * The number of structural features of the '<em>Mental Status Observation2</em>' class.
@@ -51146,7 +51146,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MENTAL_STATUS_OBSERVATION2_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int MENTAL_STATUS_OBSERVATION2_FEATURE_COUNT = COGNITIVE_STATUS_RESULT_OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
