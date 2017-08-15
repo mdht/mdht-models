@@ -17,7 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAnesthesiaSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnesthesiaSectionTemplateId AnesthesiaSectionCode AnesthesiaSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.25' templateId.extension='2014-06-09' code.code='59774-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Anesthesia' constraints.validation.dependOn.AnesthesiaSectionCode='AnesthesiaSectionCodeP' constraints.validation.info='AnesthesiaSectionProcedureActivityProcedure AnesthesiaSectionMedicationActivity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AnesthesiaSectionTemplateId AnesthesiaSectionCode AnesthesiaSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.25' templateId.extension='2014-06-09' constraints.validation.dependOn.AnesthesiaSectionCode='AnesthesiaSectionCodeP' constraints.validation.info='AnesthesiaSectionProcedureActivityProcedure AnesthesiaSectionMedicationActivity'"
  * @generated
  */
 public interface AnesthesiaSection2 extends AnesthesiaSection {

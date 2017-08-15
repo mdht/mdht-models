@@ -19,7 +19,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultsSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalCodeP ResultsSection2Title ResultsSection2Text ResultsSectionEntriesOptionalResultOrganizer' templateId.root='2.16.840.1.113883.10.20.22.2.3.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='ResultsSection2NullFlavor' code.code='30954-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Relevant diagnostic tests and/or laboratory data' constraints.validation.dependOn.ResultsSectionEntriesOptionalCode='ResultsSectionEntriesOptionalCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalCodeP ResultsSection2Title ResultsSection2Text ResultsSectionEntriesOptionalResultOrganizer' templateId.root='2.16.840.1.113883.10.20.22.2.3.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='ResultsSection2NullFlavor' constraints.validation.dependOn.ResultsSectionEntriesOptionalCode='ResultsSectionEntriesOptionalCodeP'"
  * @generated
  */
 public interface ResultsSection2 extends ResultsSectionEntriesOptional2 {

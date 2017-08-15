@@ -20,7 +20,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicalEquipmentSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.23' templateId.extension='2014-06-09' code.code='46264-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Medical Equipment' constraints.validation.dependOn.MedicalEquipmentSectionCode='MedicalEquipmentSectionCodeP' constraints.validation.warning='MedicalEquipmentSectionNonMedicinalSupplyActivity MedicalEquipmentSection2ProcedureActivityProcedure2' constraints.validation.info='MedicalEquipmentSection2MedicalEquipmentOrganizer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.23' templateId.extension='2014-06-09' constraints.validation.dependOn.MedicalEquipmentSectionCode='MedicalEquipmentSectionCodeP' constraints.validation.warning='MedicalEquipmentSectionNonMedicinalSupplyActivity MedicalEquipmentSection2ProcedureActivityProcedure2' constraints.validation.info='MedicalEquipmentSection2MedicalEquipmentOrganizer'"
  * @generated
  */
 public interface MedicalEquipmentSection2 extends MedicalEquipmentSection {

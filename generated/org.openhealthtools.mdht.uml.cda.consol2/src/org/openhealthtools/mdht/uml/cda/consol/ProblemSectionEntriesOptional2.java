@@ -20,7 +20,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemSectionEntriesOptional2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.5' templateId.extension='2015-08-01' code.code='11450-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Problem List' constraints.validation.dependOn.ProblemSectionEntriesOptionalCode='ProblemSectionEntriesOptionalCodeP' constraints.validation.warning='ProblemSectionEntriesOptionalProblemConcern' constraints.validation.info='ProblemSectionEntriesOptional2HealthStatusObservation2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.5' templateId.extension='2015-08-01' constraints.validation.dependOn.ProblemSectionEntriesOptionalCode='ProblemSectionEntriesOptionalCodeP' constraints.validation.warning='ProblemSectionEntriesOptionalProblemConcern' constraints.validation.info='ProblemSectionEntriesOptional2HealthStatusObservation2'"
  * @generated
  */
 public interface ProblemSectionEntriesOptional2 extends ProblemSectionEntriesOptional {

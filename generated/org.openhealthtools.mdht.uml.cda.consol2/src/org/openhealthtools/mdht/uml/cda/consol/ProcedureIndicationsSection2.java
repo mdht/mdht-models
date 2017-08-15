@@ -17,7 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureIndicationsSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureIndicationsSectionTemplateId ProcedureIndicationsSectionCode ProcedureIndicationsSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.29' templateId.extension='2014-06-09' code.code='59768-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Procedure Indications' constraints.validation.dependOn.ProcedureIndicationsSectionCode='ProcedureIndicationsSectionCodeP' constraints.validation.info='ProcedureIndicationsSectionIndication'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureIndicationsSectionTemplateId ProcedureIndicationsSectionCode ProcedureIndicationsSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.29' templateId.extension='2014-06-09' constraints.validation.dependOn.ProcedureIndicationsSectionCode='ProcedureIndicationsSectionCodeP' constraints.validation.info='ProcedureIndicationsSectionIndication'"
  * @generated
  */
 public interface ProcedureIndicationsSection2 extends ProcedureIndicationsSection {
