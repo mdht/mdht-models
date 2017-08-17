@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Package xmi:id="_ixAdAN2ZEeKXEcqvv8gwcA" name="contentprofile">
     <ownedComment xmi:id="_8mqmwOj6EeKeNYc-6Y-GoA">
       <body>This model describe the constraints applied to a Consolidated CDA (C-CDA)
@@ -33,7 +33,7 @@
       <importedPackage href="pathmap://TERM_MODEL/hitsp-c80.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
     <packageImport xmi:id="_kNzjMOMgEeKrWN0acRAq3w">
-	  <importedPackage href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_9PGi4IqLEeKIRdOX2_HXEA"/>      
+      <importedPackage href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_9PGi4IqLEeKIRdOX2_HXEA"/>
     </packageImport>
     <packageImport xmi:id="_C6IYYOcYEeKY_89Qw270LQ">
       <importedPackage href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_9O8yDYqLEeKIRdOX2_HXEA"/>
@@ -66,8 +66,8 @@
             This constrain is intended ensure  this element is not null. This information is
             necessary to establish the provenance of the document.</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e6hY8d5wEeKrY77pclOhsw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e6hY8t5wEeKrY77pclOhsw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e6hY8d5wEeKrY77pclOhsw" value="*"/>
         <subsettedProperty href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_2DNR_xSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_y3RCYOowEeKrOYS9kpIZsQ" name="privacyAndSecurityMarkingsSection" type="_R2qrUOcnEeKY_89Qw270LQ" association="_y3SQgOowEeKrOYS9kpIZsQ">
@@ -78,8 +78,8 @@
             redisclosure, the receiving system capabilities to display and use these marking will be
             validated in addition to its interoperability.</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FuVPAOoxEeKrOYS9kpIZsQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FuVPAeoxEeKrOYS9kpIZsQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FuVPAOoxEeKrOYS9kpIZsQ" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_qscWAOowEeKrOYS9kpIZsQ" name="segmentedSection" type="_yXPxsOcTEeKY_89Qw270LQ" association="_qsc9EeowEeKrOYS9kpIZsQ">
         <ownedComment xmi:id="_xRhMkOowEeKrOYS9kpIZsQ">
@@ -88,8 +88,8 @@
             annotations different than those already specified in the document header, then a
             document instance may not include segmented sections.</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Df60kGhSEeOqH651yKA2Aw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Df60kWhSEeOqH651yKA2Aw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Df60kGhSEeOqH651yKA2Aw" value="*"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_e6iAAN5wEeKrY77pclOhsw" name="author" memberEnd="_e6hY8N5wEeKrY77pclOhsw _e6inEN5wEeKrY77pclOhsw">
@@ -104,15 +104,15 @@
       <generalization xmi:id="_kDU_AGeaEeOu4KcTyYBqzA" general="_ECQ2QGeaEeOu4KcTyYBqzA"/>
       <ownedAttribute xmi:id="_cjNcg2eaEeOu4KcTyYBqzA" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
+        <redefinedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_cjNchGeaEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_cjNchWeaEeOu4KcTyYBqzA">
           <body>This attribute specifies a type of obligation policy, specifically.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cjNchmeaEeOu4KcTyYBqzA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cjNch2eaEeOu4KcTyYBqzA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cjNchmeaEeOu4KcTyYBqzA" value="1"/>
         <redefinedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
     </packagedElement>
@@ -135,8 +135,8 @@
         <general xmi:type="uml:Class" href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_xw9WkCymEeGMXrZ0DiQwGg"/>
       </generalization>
       <ownedAttribute xmi:id="_xYPlcOAFEeKtnLp4ZyOObA" name="assignedAuthor" type="_8ao74OAFEeKtnLp4ZyOObA" association="_xYQMgOAFEeKtnLp4ZyOObA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z9YSsOpnEeKoqPdSeAGzFw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z9Y5wOpnEeKoqPdSeAGzFw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z9YSsOpnEeKoqPdSeAGzFw" value="1"/>
         <redefinedProperty href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_4VMvkCy6EeGMXrZ0DiQwGg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_EwuxQGgHEeOZxdiNEEVgLA" name="time" visibility="private" aggregation="composite">
@@ -182,8 +182,8 @@
             use=&quot;EC&quot;/>  ]]&gt;</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_qP30QPImEeGu1M-cCXg0Dg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z9bEIPWfEeKodMpGRVXxjQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z9bEIfWfEeKodMpGRVXxjQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z9bEIPWfEeKodMpGRVXxjQ" value="*"/>
         <subsettedProperty href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_93iG0SymEeGMXrZ0DiQwGg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_FNWHoOAGEeKtnLp4ZyOObA" name="assignedAuthoringDevice" association="_FNWHouAGEeKtnLp4ZyOObA">
@@ -204,8 +204,8 @@
             provider must be identified at the section or entry level.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_ClARUOxvEeG7k4bbVdXbXw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FNWuseAGEeKtnLp4ZyOObA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FNWusuAGEeKtnLp4ZyOObA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FNWuseAGEeKtnLp4ZyOObA" value="1"/>
         <redefinedProperty href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_BwGpoOxvEeG7k4bbVdXbXw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_FNXVwOAGEeKtnLp4ZyOObA" name="representedOrganization" visibility="private" aggregation="composite" association="_FNXVw-AGEeKtnLp4ZyOObA">
@@ -215,8 +215,8 @@
             is mandatory.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_zjKW8EcZEd6besF9iFIJkQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FNXVweAGEeKtnLp4ZyOObA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FNXVwuAGEeKtnLp4ZyOObA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FNXVweAGEeKtnLp4ZyOObA" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_ytJQwUcgEd6besF9iFIJkQ"/>
       </ownedAttribute>
     </packagedElement>
@@ -263,40 +263,40 @@
             of marking, masking, redaction, anonymization and application of handling
           instructions</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cMZAYPQJEeKE9KYLAeRTpg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cMZAYfQJEeKE9KYLAeRTpg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cMZAYPQJEeKE9KYLAeRTpg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_dsq1sOc3EeKPjPc9z91TIQ" name="obligationPolicySecurityObservation" type="_cjNcgGeaEeOu4KcTyYBqzA" association="_dssq4Oc3EeKPjPc9z91TIQ">
         <ownedComment xmi:id="_d0BoAPPGEeKE9KYLAeRTpg">
           <body>Zero or more obligation policies may be specified for specific clinical statement in
             a PrivacyAnnotation.</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K7A_IO_rEeK1PoCIyXhubA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K7A_Ie_rEeK1PoCIyXhubA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K7A_IO_rEeK1PoCIyXhubA" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_jpgeMOdQEeKzv8U7OUnxlg" name="refrainPolicySecurityObservation" type="_OYUrIGeaEeOu4KcTyYBqzA" association="_jphFQudQEeKzv8U7OUnxlg">
         <ownedComment xmi:id="_e8BK0PPGEeKE9KYLAeRTpg">
           <body>Zero or more refrain policies may be specified for specific clinical statement in a
             PrivacyAnnotation.</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LmC5IO_rEeK1PoCIyXhubA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LmC5Ie_rEeK1PoCIyXhubA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LmC5IO_rEeK1PoCIyXhubA" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_6_SYMOdYEeKzv8U7OUnxlg" name="purposeOfUseSecurityObservation" type="_d4Y_YGedEeOu4KcTyYBqzA" association="_6_S_QedYEeKzv8U7OUnxlg">
         <ownedComment xmi:id="_hmB6APPGEeKE9KYLAeRTpg">
           <body>Zero or more purpose of use qualifiers may be specified for specific clinical
             statement in a PrivacyAnnotation.</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MLhkwO_rEeK1PoCIyXhubA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MLhkwe_rEeK1PoCIyXhubA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MLhkwO_rEeK1PoCIyXhubA" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_i12YkPPFEeKE9KYLAeRTpg" name="classCode" visibility="private">
         <ownedComment xmi:id="_q2rbcPPFEeKE9KYLAeRTpg">
           <body>This is a fixed class code for all privacy annotation sets.</body>
         </ownedComment>
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOnw0DcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_NjnHQEb9Ed6besF9iFIJkQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_mVgWUPPFEeKE9KYLAeRTpg" value="CLUSTER"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_NjnHQEb9Ed6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_i12_oPPFEeKE9KYLAeRTpg" name="moodCode" visibility="private">
         <ownedComment xmi:id="_5OHbEPPFEeKE9KYLAeRTpg">
@@ -304,10 +304,10 @@
             applied to a clinical statement in a section entry.</body>
         </ownedComment>
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i12_ofPFEeKE9KYLAeRTpg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i12_ovPFEeKE9KYLAeRTpg" value="1"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Z5I4MErcEd6FXKclYGEDCw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i12_ofPFEeKE9KYLAeRTpg" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_AWaaIGebEeOu4KcTyYBqzA" value="EVN"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Z5I4MErcEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ySb_0Oc3EeKPjPc9z91TIQ" name="statusCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_tCpjwPPFEeKE9KYLAeRTpg">
@@ -349,8 +349,8 @@
             application of  handling instructions</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oBG3oGekEeOUsp1D9sWlOg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oBG3oWekEeOUsp1D9sWlOg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oBG3oGekEeOUsp1D9sWlOg" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FJpJUErnEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_5BVEEOcTEeKY_89Qw270LQ" name="author" visibility="private" type="_GuP-4OdHEeKzv8U7OUnxlg" aggregation="composite" association="_5BWSMOcTEeKY_89Qw270LQ">
@@ -360,8 +360,8 @@
             the section if the author of the section is different than the author of the
           document.</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5BVEEecTEeKY_89Qw270LQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5BVEEucTEeKY_89Qw270LQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5BVEEecTEeKY_89Qw270LQ" value="*"/>
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#__UUVwEoXEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
@@ -393,8 +393,8 @@
             of the sending organization.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kLdQgKNUEeOZY6Ty6H254g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kLd3kKNUEeOZY6Ty6H254g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kLdQgKNUEeOZY6Ty6H254g" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_VuvwI-cnEeKY_89Qw270LQ" name="text" visibility="private" aggregation="composite">
@@ -407,8 +407,8 @@
             notice&quot; to the end-users viewing protected information.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kYytIGekEeOUsp1D9sWlOg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kYytIWekEeOUsp1D9sWlOg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kYytIGekEeOUsp1D9sWlOg" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_VuwXMOcnEeKY_89Qw270LQ" name="entry1" visibility="private" type="_tpQOYOdcEeKzv8U7OUnxlg" aggregation="composite" association="_Vuw-QOcnEeKY_89Qw270LQ">
@@ -419,8 +419,8 @@
             policy statements conveying restrictions associated with the use and disclosure of the
             information contained in the C-CDA document.</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VuwXMecnEeKY_89Qw270LQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VuwXMucnEeKY_89Qw270LQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VuwXMecnEeKY_89Qw270LQ" value="*"/>
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
       </ownedAttribute>
     </packagedElement>
@@ -452,8 +452,8 @@
             the author of the problem is different than the author of the section or document that
             sets the scope/context for this entry.</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wVjv0PSSEeKK541L1shYmw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wVkW4PSSEeKK541L1shYmw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wVjv0PSSEeKK541L1shYmw" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kU2FwudGEeKzv8U7OUnxlg" name="privacyAnnotations" visibility="private" type="_jF3PgOdZEeKzv8U7OUnxlg" aggregation="composite" association="_kU3T4OdGEeKzv8U7OUnxlg">
@@ -463,8 +463,8 @@
             annotations are required. The privacy annotations consist of several Security
             Observations similar to the Security Label specified in the HL7 HCS standard.</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yt-YsPSSEeKK541L1shYmw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yt-YsfSSEeKK541L1shYmw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yt-YsPSSEeKK541L1shYmw" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
       </ownedAttribute>
     </packagedElement>
@@ -491,8 +491,8 @@
           <body>This association specifies the organization, provider, or medical device that
             authored or created the information.</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JYhz0udHEeKzv8U7OUnxlg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JYhz0-dHEeKzv8U7OUnxlg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JYhz0udHEeKzv8U7OUnxlg" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_ieYjIUcgEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_UM-c0GgHEeOZxdiNEEVgLA" name="time" visibility="private" aggregation="composite">
@@ -525,20 +525,20 @@
       </generalization>
       <ownedAttribute xmi:id="_j5tA4OdREeKzv8U7OUnxlg" name="assignedAuthoringDevice" visibility="private" aggregation="composite" association="_j5tn8OdREeKzv8U7OUnxlg">
         <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_IIL8MEcEEd6besF9iFIJkQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j5tA4edREeKzv8U7OUnxlg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j5tA4udREeKzv8U7OUnxlg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j5tA4edREeKzv8U7OUnxlg" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Kx64YUchEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_j5tn8udREeKzv8U7OUnxlg" name="assignedPerson" visibility="private" aggregation="composite" association="_j5uPAOdREeKzv8U7OUnxlg">
         <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j5tn8-dREeKzv8U7OUnxlg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j5tn9OdREeKzv8U7OUnxlg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j5tn8-dREeKzv8U7OUnxlg" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9_sjEUcgEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_j5uPAudREeKzv8U7OUnxlg" name="representedOrganization" visibility="private" aggregation="composite" association="_j5uPBedREeKzv8U7OUnxlg">
         <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_zjKW8EcZEd6besF9iFIJkQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j5uPA-dREeKzv8U7OUnxlg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j5uPBOdREeKzv8U7OUnxlg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j5uPA-dREeKzv8U7OUnxlg" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_ytJQwUcgEd6besF9iFIJkQ"/>
       </ownedAttribute>
     </packagedElement>
@@ -564,8 +564,8 @@
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_lc1G4OdZEeKzv8U7OUnxlg" name="organizer" visibility="private" type="_2JXDsOAIEeKtnLp4ZyOObA" aggregation="composite" association="_lc1t8OdZEeKzv8U7OUnxlg">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QoHsYOdaEeKzv8U7OUnxlg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QoHsYedaEeKzv8U7OUnxlg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QoHsYOdaEeKzv8U7OUnxlg" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_GRyJUUcGEd6besF9iFIJkQ"/>
       </ownedAttribute>
     </packagedElement>
@@ -589,8 +589,8 @@
             purpose of use. This entry may be extended to include other types of security
             observation for more elaborate security labels, if needed.</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1zcBkOdcEeKzv8U7OUnxlg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1zcBkedcEeKzv8U7OUnxlg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1zcBkOdcEeKzv8U7OUnxlg" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Y3Eg4UbvEd6besF9iFIJkQ"/>
       </ownedAttribute>
     </packagedElement>
@@ -644,8 +644,8 @@
             &quot;Normal&quot; confidentiality).</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pZpm8P1AEeKdB8N84ufXAw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pZqOAP1AEeKdB8N84ufXAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pZpm8P1AEeKdB8N84ufXAw" value="1"/>
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kWuZQ_04EeKdB8N84ufXAw" name="valueSet" visibility="private">
@@ -653,8 +653,8 @@
           <body>The OID of the coding system or value set used to encode</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qH3X0P1AEeKdB8N84ufXAw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qH3X0f1AEeKdB8N84ufXAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qH3X0P1AEeKdB8N84ufXAw" value="1"/>
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_3fx3ADxkEd6JwqSGecoePg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kWuZRv04EeKdB8N84ufXAw" name="valueSetName" visibility="private">
@@ -663,8 +663,8 @@
             Confidentiality, LOINC, SNOMED-CT).</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_d4N5sEQ3EeCldOpAaJlPmA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qqVLsP1AEeKdB8N84ufXAw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qqVLsf1AEeKdB8N84ufXAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qqVLsP1AEeKdB8N84ufXAw" value="1"/>
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_50froDxkEd6JwqSGecoePg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kWvAUP04EeKdB8N84ufXAw" name="displayName" visibility="private">
@@ -673,8 +673,8 @@
             the display name &quot;Normal&quot; for code &quot;N&quot;).</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_d4N5sEQ3EeCldOpAaJlPmA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rNEsYP1AEeKdB8N84ufXAw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rNEsYf1AEeKdB8N84ufXAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rNEsYP1AEeKdB8N84ufXAw" value="1"/>
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_PZftgD57Ed6cla2oXsPtlA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kWvAU_04EeKdB8N84ufXAw" name="originalText" visibility="private" aggregation="composite">
@@ -683,8 +683,8 @@
             label to shown to the end user.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rxnj4P1AEeKdB8N84ufXAw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rxnj4f1AEeKdB8N84ufXAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rxnj4P1AEeKdB8N84ufXAw" value="1"/>
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_TgJEsD55Ed6cla2oXsPtlA"/>
       </ownedAttribute>
     </packagedElement>
@@ -705,8 +705,8 @@
             confidentiality levels that meet the needs of the DS4P project.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y623cP1AEeKdB8N84ufXAw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y623cf1AEeKdB8N84ufXAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y623cP1AEeKdB8N84ufXAw" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_wHuu4P1IEeKdB8N84ufXAw" value="2.16.840.1.113883.1.11.16926"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_NtHOcP1AEeKdB8N84ufXAw" name="valueSetName" visibility="private" redefinedProperty="_kWuZRv04EeKdB8N84ufXAw">
@@ -715,8 +715,8 @@
             confidentiality levels that meet the needs of the DS4P project.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_d4N5sEQ3EeCldOpAaJlPmA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yQwxkP1AEeKdB8N84ufXAw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yQwxkf1AEeKdB8N84ufXAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yQwxkP1AEeKdB8N84ufXAw" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_1QgmkP1IEeKdB8N84ufXAw" value="HL7 BasicConfidentialityKind"/>
       </ownedAttribute>
     </packagedElement>
@@ -740,8 +740,8 @@
             use&quot; metadata that meet the needs of the DS4P project.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IrMdof1JEeKdB8N84ufXAw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IrMdov1JEeKdB8N84ufXAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IrMdof1JEeKdB8N84ufXAw" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_jXu04P1NEeKdB8N84ufXAw" value="2.16.840.1.113883.1.11.20449"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IrNrwP1JEeKdB8N84ufXAw" name="valueSetName" visibility="private" redefinedProperty="_kWuZRv04EeKdB8N84ufXAw">
@@ -750,8 +750,8 @@
             &quot;purpose of use&quot; codes that meet the needs of the DS4P project.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_d4N5sEQ3EeCldOpAaJlPmA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IrNrwf1JEeKdB8N84ufXAw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IrNrwv1JEeKdB8N84ufXAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IrNrwf1JEeKdB8N84ufXAw" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_jEtvEP1JEeKdB8N84ufXAw" value="HL7 Purpose of Use"/>
       </ownedAttribute>
     </packagedElement>
@@ -777,8 +777,8 @@
             corresponding to the HL7 Refrain Policy Code Value set.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S8mxIf1LEeKdB8N84ufXAw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S8mxIv1LEeKdB8N84ufXAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S8mxIf1LEeKdB8N84ufXAw" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_dforAP1LEeKdB8N84ufXAw" value="2.16.840.1.113883.1.11.20446"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_S8nYMP1LEeKdB8N84ufXAw" name="valueSetName" visibility="private" redefinedProperty="_kWuZRv04EeKdB8N84ufXAw">
@@ -786,8 +786,8 @@
           <body>This value is fixed to &quot;HL7 Refrain Policy Code&quot; value set.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_d4N5sEQ3EeCldOpAaJlPmA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S8nYMf1LEeKdB8N84ufXAw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S8nYMv1LEeKdB8N84ufXAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S8nYMf1LEeKdB8N84ufXAw" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_mEvNsP1NEeKdB8N84ufXAw" value="HL7 Refrain Policy Code"/>
       </ownedAttribute>
     </packagedElement>
@@ -810,8 +810,8 @@
             corresponding to the HL7 Obligation Policy Code Value set.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NS2L8f1OEeKdB8N84ufXAw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NS2L8v1OEeKdB8N84ufXAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NS2L8f1OEeKdB8N84ufXAw" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_VbB0AP1OEeKdB8N84ufXAw" value="2.16.840.1.113883.1.11.20445"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_NS2zAP1OEeKdB8N84ufXAw" name="valueSetName" visibility="private" redefinedProperty="_kWuZRv04EeKdB8N84ufXAw">
@@ -820,8 +820,8 @@
           set.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_d4N5sEQ3EeCldOpAaJlPmA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NS2zAf1OEeKdB8N84ufXAw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NS2zAv1OEeKdB8N84ufXAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NS2zAf1OEeKdB8N84ufXAw" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_5UQhIP1OEeKdB8N84ufXAw" value="HL7 Obligation Policy Code"/>
       </ownedAttribute>
     </packagedElement>
@@ -857,8 +857,8 @@
             codes associated with confidentiality levels.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dYFEd2eZEeOu4KcTyYBqzA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dYFEeGeZEeOu4KcTyYBqzA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dYFEd2eZEeOu4KcTyYBqzA" value="1"/>
         <subsettedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
     </packagedElement>
@@ -887,8 +887,8 @@
             for various subclasses/specializations.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ECQ2R2eaEeOu4KcTyYBqzA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ECQ2SGeaEeOu4KcTyYBqzA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ECQ2R2eaEeOu4KcTyYBqzA" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ECQ2SWeaEeOu4KcTyYBqzA" name="moodCode" visibility="private">
@@ -898,8 +898,8 @@
             specific clinical statements included in a document section.</body>
         </ownedComment>
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_3nn7EGgIEeOZxdiNEEVgLA" value="EVN"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_OYUrIGeaEeOu4KcTyYBqzA" name="cdaRefrainPolicySecurityObservation">
@@ -920,15 +920,15 @@
             resource.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
+        <redefinedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_OYUrJWeaEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_OYUrJmeaEeOu4KcTyYBqzA">
           <body>This attribute specifies a type of refrain policy, specifically.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OYUrJ2eaEeOu4KcTyYBqzA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OYUrKGeaEeOu4KcTyYBqzA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OYUrJ2eaEeOu4KcTyYBqzA" value="1"/>
         <redefinedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_OYUrKWeaEeOu4KcTyYBqzA" name="ConfidentialitySecurityObservation">
@@ -938,7 +938,7 @@
             Security Classification (HCS) standard.</body>
         </ownedComment>
         <generalization xmi:id="_OYUrK2eaEeOu4KcTyYBqzA">
-          <general xmi:type="uml:Class" href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbpoIxwEeKqJ6NoJCkz3A"/>
+          <general xmi:type="uml:Class" href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbpoIxwEeKqJ6NoJCkz3A"/>
         </generalization>
         <ownedAttribute xmi:id="_OYUrLGeaEeOu4KcTyYBqzA" name="code" visibility="private" aggregation="composite">
           <ownedComment xmi:id="_OYUrLWeaEeOu4KcTyYBqzA">
@@ -958,7 +958,7 @@
               directive, policy, or regulation. [FIPS 199]</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          <redefinedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
+          <redefinedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_OYUrLmeaEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite">
           <ownedComment xmi:id="_OYUrL2eaEeOu4KcTyYBqzA">
@@ -966,17 +966,15 @@
               codes associated with confidentiality levels.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OYUrMGeaEeOu4KcTyYBqzA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OYUrMWeaEeOu4KcTyYBqzA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OYUrMGeaEeOu4KcTyYBqzA" value="1"/>
           <subsettedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
         </ownedAttribute>
       </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_d4Y_YGedEeOu4KcTyYBqzA" name="cdaPurposeOfUseSecurityObservation">
       <ownedComment xmi:id="_EHTxgGeeEeOu4KcTyYBqzA">
-        <body>This template is constrains the Security Observation to specify a &quot;purpose of
-          use&quot;. This template reuses the SecurityObservation implementing the HL7
-          Healthcare Security Classification (HCS) standard.</body>
+        <body>This template constrains the Security Observation to specify a &quot;purpose of use&quot;. This template reuses the SecurityObservation implementing the HL7 Healthcare Security Classification (HCS) standard.</body>
       </ownedComment>
       <generalization xmi:id="_3hm1QGedEeOu4KcTyYBqzA" general="_ECQ2QGeaEeOu4KcTyYBqzA"/>
       <ownedAttribute xmi:id="_d4Y_YmedEeOu4KcTyYBqzA" name="code" visibility="private" aggregation="composite">
@@ -985,7 +983,7 @@
             &quot;Security Control&quot; observation types.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
+        <redefinedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_d4Y_ZGedEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_d4Y_ZWedEeOu4KcTyYBqzA">
@@ -993,12 +991,12 @@
             Use Value set.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sBaEUGekEeOUsp1D9sWlOg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sBaEUWekEeOUsp1D9sWlOg" value="1"/>
-        <subsettedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sBaEUGekEeOUsp1D9sWlOg" value="1"/>
+        <subsettedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
     </packagedElement>
-     <profileApplication xmi:id="_ixAdA92ZEeKXEcqvv8gwcA">
+    <profileApplication xmi:id="_ixAdA92ZEeKXEcqvv8gwcA">
       <eAnnotations xmi:id="_ixAdBN2ZEeKXEcqvv8gwcA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
       </eAnnotations>
@@ -1294,14 +1292,14 @@
     <ruleId>CONF:16837</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_ECQ2T2eaEeOu4KcTyYBqzA" base_Property="_ECQ2Q2eaEeOu4KcTyYBqzA">
-    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
     <ruleId>CONF:16838</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_ECQ2UGeaEeOu4KcTyYBqzA" mandatory="true" base_Property="_ECQ2RWeaEeOu4KcTyYBqzA">
     <ruleId>CONF:16839</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_ECQ2UWeaEeOu4KcTyYBqzA" base_Property="_ECQ2RWeaEeOu4KcTyYBqzA">
-    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_3RPYMbg8EeKo5fRjhOhZFA"/>
+    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_3RPYMbg8EeKo5fRjhOhZFA"/>
     <ruleId>CONF:16840</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_ECQ2UmeaEeOu4KcTyYBqzA" base_Property="_ECQ2SWeaEeOu4KcTyYBqzA">
@@ -1380,14 +1378,14 @@
     <ruleId>CONF:14841</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_d4Y_a2edEeOu4KcTyYBqzA" code="SECCONOBS" displayName="Security Control" base_Property="_d4Y_YmedEeOu4KcTyYBqzA">
-    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+    <reference href="pathmap://CONTENTPROFILE_MODEL///contentprofile-vocab.uml#_3-WtyuovEeKrOYS9kpIZsQ"/>
     <ruleId>CONF:14883</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_d4Y_bGedEeOu4KcTyYBqzA" mandatory="true" base_Property="_d4Y_ZGedEeOu4KcTyYBqzA">
     <ruleId>CONF:9074</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_d4Y_bWedEeOu4KcTyYBqzA" base_Property="_d4Y_ZGedEeOu4KcTyYBqzA">
-    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_ecZIEIxWEeKqi7cG0-P5Sg"/>
+    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_ecZIEIxWEeKqi7cG0-P5Sg"/>
     <ruleId>CONF:14888</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_EwuxQWgHEeOZxdiNEEVgLA" mandatory="true" base_Property="_EwuxQGgHEeOZxdiNEEVgLA">
