@@ -33,10 +33,10 @@
       <importedPackage href="pathmap://TERM_MODEL/hitsp-c80.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
     <packageImport xmi:id="_kNzjMOMgEeKrWN0acRAq3w">
-      <importedPackage href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_9PGi4IqLEeKIRdOX2_HXEA"/>
+	  <importedPackage href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_9PGi4IqLEeKIRdOX2_HXEA"/>      
     </packageImport>
     <packageImport xmi:id="_C6IYYOcYEeKY_89Qw270LQ">
-      <importedPackage href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_9O8yDYqLEeKIRdOX2_HXEA"/>
+      <importedPackage href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_9O8yDYqLEeKIRdOX2_HXEA"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_iyzz0d2ZEeKXEcqvv8gwcA" name="cdaPrivacySegmentedDocument">
       <ownedComment xmi:id="_DJjHEOAKEeKtnLp4ZyOObA">
