@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+  <uml:Package xmi:id="_9PGi4IqLEeKIRdOX2_HXEA" name="consentdirective-vocab">
+    <ownedComment xmi:id="_KrAqcIxlEeKqi7cG0-P5Sg">
+      <body>The following value sets and coding system are used for terminology constraints.</body>
+    </ownedComment>
+    <packageImport xmi:id="_PCTRMI-OEeKD74C7V7ZhIw">
+      <importedPackage href="pathmap://TERM_MODEL/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packageImport xmi:id="_KvO88PaIEeWKEu3n2RZ4FA">
+      <importedPackage href="pathmap://TERM_MODEL///CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:EnumerationLiteral" xmi:id="_rMaf4I91EeKb9J31WmOroA" name="INFA"/>
+    <packagedElement xmi:type="uml:EnumerationLiteral" xmi:id="_KePkEI92EeKb9J31WmOroA" name="INFAO"/>
+    <packagedElement xmi:type="uml:EnumerationLiteral" xmi:id="_lqq8UI96EeKb9J31WmOroA" name="RSDID">
+      <ownedComment xmi:id="_MfeNQI98EeKb9J31WmOroA">
+        <body>Consent to have de-identified healthcare information in an electronic health record that is accessed for research purposes, but without consent to re-identify the information under any circumstance.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ecP-IIxWEeKqi7cG0-P5Sg" name="HL7 PurposeOfUse">
+      <ownedComment xmi:id="_w-0hcIxWEeKqi7cG0-P5Sg">
+        <body>Supports communication of purpose of use at a general level (e.g. treatment, emergency, research, etc.).&#xD;
+The following are example codes in this value set:</body>
+      </ownedComment>
+      <generalization xmi:id="_VI2HAPaGEeWKEu3n2RZ4FA">
+        <general xmi:type="uml:Enumeration" href="pathmap://TERM_MODEL///CodeSystems.uml#_dWuTYKDqEd-dVeaMP0XXQw"/>
+      </generalization>
+      <ownedLiteral xmi:id="_IR8AYI99EeKb9J31WmOroA" name="TREAT"/>
+      <ownedLiteral xmi:id="_KAzV8I99EeKb9J31WmOroA" name="ETREAT"/>
+      <ownedLiteral xmi:id="_LPCDoI99EeKb9J31WmOroA" name="HPAYMT"/>
+      <ownedLiteral xmi:id="_fYNTcPaFEeWKEu3n2RZ4FA" name="HRESCH">
+        <ownedComment xmi:id="_o-dcAPaFEeWKEu3n2RZ4FA">
+          <body>HRESCH health research</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_lBSb0PaFEeWKEu3n2RZ4FA" name="CLINTRCH">
+        <ownedComment xmi:id="_nNktMPaFEeWKEu3n2RZ4FA">
+          <body>CLINTRCH - clinical trial research</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_qF_EwPaFEeWKEu3n2RZ4FA" name=" CLINTRL">
+        <ownedComment xmi:id="_sE5BcPaFEeWKEu3n2RZ4FA">
+          <body>CLINTRL clinical trial</body>
+        </ownedComment>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_7GsEIIxoEeKIvYMIfi9SOQ" name="HL7 ObligationPolicyCode">
+      <ownedComment xmi:id="_O7rRkIxpEeKIvYMIfi9SOQ">
+        <body>Conveys the mandated workflow action that an information custodian, receiver, or user must perform .  &#xD;
+Description:  Per ISO 22600-2, ObligationPolicy instances 'are event-triggered and define actions to be performed by manager agent'. Per HL7 Composite Security and Privacy Domain Analysis Model:  This value set refers to the action required to receive the permission specified in the privacy rule.  [Nov Harm - Per OASIS XACML, an obligation is an operation specified in a policy or policy that is performed in conjunction with the enforcement of an access control decision.]&#xD;
+Note: this value set is currently specified in the ActCode code system but is actually a child of SecurityControlObservationValue.</body>
+      </ownedComment>
+      <generalization xmi:id="_YTF1cPaGEeWKEu3n2RZ4FA" general="_GW0Z8PaCEeWKEu3n2RZ4FA"/>
+      <ownedLiteral xmi:id="_uAQKYI9-EeKb9J31WmOroA" name="CPLYCD">
+        <ownedComment xmi:id="_CK2bcI9_EeKb9J31WmOroA">
+          <body>A mathematical transposition of a file or data stream so that it cannot be deciphered at the receiving end without the proper key. Encryption is a security feature that assures that only the parties who are supposed to be participating in a video conference or data transfer are able to do so. It can include a password, public and private keys, or a complex combination of all.  (Per Infoway.)</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_7XIr8I9-EeKb9J31WmOroA" name="ENCRYPT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_DypusIxpEeKIvYMIfi9SOQ" name="HL7 RefrainPolicy">
+      <ownedComment xmi:id="_JkM2kIxpEeKIvYMIfi9SOQ">
+        <body>Conveys prohibited actions which an information custodian, receiver, or user is not permitted to perform unless otherwise authorized or permitted under specified circumstances.&#xD;
+Description:  ISO 22600-2 species that a Refrain Policy &quot;defines actions the subjects must refrain from performing&quot;.  Per HL7 Composite Security and Privacy Domain Analysis Model:  May be used to indicate that a specific action is prohibited based on specific access control attributes e.g., purpose of use, information type, user role, etc.&#xD;
+The following are example codes in this value set:</body>
+      </ownedComment>
+      <generalization xmi:id="_XMn8oPaGEeWKEu3n2RZ4FA" general="_GW0Z8PaCEeWKEu3n2RZ4FA"/>
+      <ownedLiteral xmi:id="_GG0hwI9_EeKb9J31WmOroA" name="NORDSCLCD"/>
+      <ownedLiteral xmi:id="_PGdWQI9_EeKb9J31WmOroA" name="NOMOU"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3UgCkK6vEeKKNZXUvzAcRw" name="ActConsentType">
+      <ownedComment xmi:id="_F7RmMOouEeKrOYS9kpIZsQ">
+        <body>This value set is used to specify the disclosure or use action associated with a privacy consent directive.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_kkxdgI91EeKb9J31WmOroA" name="IDISCL">
+        <ownedComment xmi:id="_V0jtUI98EeKb9J31WmOroA">
+          <body>Consent to access or &quot;read&quot; only, which entails that the information is not to be copied, screen printed, saved, emailed, stored, re-disclosed or altered in any way. This level ensures that data which is masked or to which access is restricted will not be. Example: Opened and then emailed or screen printed for use outside of the consent directive purpose.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_c4cD8I91EeKb9J31WmOroA" name="ICOL"/>
+      <ownedLiteral xmi:id="_On7WQI92EeKb9J31WmOroA" name="INFASO"/>
+      <ownedLiteral xmi:id="_fsTgcI96EeKb9J31WmOroA" name="IRDSCL"/>
+      <ownedLiteral xmi:id="_lP2BgI96EeKb9J31WmOroA" name="RESEARCH"/>
+      <ownedLiteral xmi:id="_Lru4oI97EeKb9J31WmOroA" name="RSREID">
+        <ownedComment xmi:id="_AOLawI98EeKb9J31WmOroA">
+          <body>Consent to have de-identified healthcare information in an electronic health record that is accessed for research purposes re-identified under specific circumstances outlined in the consent</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_Uas-cI98EeKb9J31WmOroA" name="INFAO">
+        <ownedComment xmi:id="_bG0RII98EeKb9J31WmOroA">
+          <body>Consent to access or &quot;read&quot; only, which entails that the information is not to be copied, screen printed, saved, emailed, stored, re-disclosed or altered in any way. This level ensures that data which is masked or to which access is restricted will not be. Example: Opened and then emailed or screen printed for use outside of the consent directive purpose.</body>
+        </ownedComment>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_gPh1oK6wEeKKNZXUvzAcRw" name="ConsenterParticipationFunction">
+      <ownedComment xmi:id="_NKHygOouEeKrOYS9kpIZsQ">
+        <body>This value set is used to specify the relationship between the individual authenticating the privacy consent directive and the person who is the target of that record.</body>
+      </ownedComment>
+      <generalization xmi:id="_RIaskPaIEeWKEu3n2RZ4FA">
+        <general xmi:type="uml:Enumeration" href="pathmap://TERM_MODEL///CodeSystems.uml#_SizqcOxyEeG7k4bbVdXbXw"/>
+      </generalization>
+      <ownedLiteral xmi:id="_KBiUAK6xEeKKNZXUvzAcRw" name="FAMMEMB"/>
+      <ownedLiteral xmi:id="_NlOdMK6xEeKKNZXUvzAcRw" name="CHILD"/>
+      <ownedLiteral xmi:id="_VcmCEK6xEeKKNZXUvzAcRw" name="CHLDINLAW"/>
+      <ownedLiteral xmi:id="_aznKEK6xEeKKNZXUvzAcRw" name="EXT"/>
+      <ownedLiteral xmi:id="_hX1FAK6xEeKKNZXUvzAcRw" name="PRN"/>
+      <ownedLiteral xmi:id="_lEm4wK6xEeKKNZXUvzAcRw" name="SIB"/>
+      <ownedLiteral xmi:id="_o_ZTUK6xEeKKNZXUvzAcRw" name="SPS"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3RPYMLg8EeKo5fRjhOhZFA" name="SecurityObservationValueCodeSystem">
+      <ownedComment xmi:id="_AFHooLg9EeKo5fRjhOhZFA">
+        <body>This coding system is the parent code system for purpose of use, obligation, refrain. etc.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_u6YOIOdTEeKzv8U7OUnxlg" name="SecurityControlObservationValue">
+      <ownedComment xmi:id="_3Zd6UOdTEeKzv8U7OUnxlg">
+        <body>This coding system is the parent code system for purpose of use, obligation, refrain. etc.&#xD;
+Type of security metadata observation made about an IT resource (data, information object, service, or system capability), which may be used to make access control decisions. Security metadata are used in security labels. According to ISO/TS 22600-3:2009(E) A.9.1.7 SECURITY LABEL MATCHING, Security label matching compares the initiator's clearance to the target's security label. All of the following must be true for authorization to be granted:</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Y_j_kEUVEeSuOPP0Hhhcag" name="Confidentiality">
+      <ownedComment xmi:id="_FpPfcPHmEeW0j43IchBWqg">
+        <body>This is the confidentiality value set required for conformance to this IG.</body>
+      </ownedComment>
+      <generalization xmi:id="_LfdVcPaHEeWKEu3n2RZ4FA">
+        <general xmi:type="uml:Enumeration" href="pathmap://TERM_MODEL///CodeSystems.uml#_vNtCQDVPEeGIw7CntkyPQw"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_GW0Z8PaCEeWKEu3n2RZ4FA" name="ActCode">
+      <ownedComment xmi:id="_ThrcQPaDEeWKEu3n2RZ4FA">
+        <body>A code specifying the particular kind of Act that the Act-instance represents within its class.</body>
+      </ownedComment>
+    </packagedElement>
+    <profileApplication xmi:id="_9PGi4YqLEeKIRdOX2_HXEA">
+      <eAnnotations xmi:id="_9PGi4oqLEeKIRdOX2_HXEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <term:ValueSetVersion xmi:id="_ecZIEIxWEeKqi7cG0-P5Sg" identifier="2.16.840.1.113883.1.11.20448" fullName="Purpose of Use" definition="Reason for performing one or more operations on information, which may be permitted by source system’s security policy in accordance with one or more privacy policies and consent directives." type="Intensional" binding="Dynamic" base_Enumeration="_ecP-IIxWEeKqi7cG0-P5Sg">
+    <codeSystem href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_7GsEIYxoEeKIvYMIfi9SOQ" identifier="2.16.840.1.113883.1.11.20445" fullName="Obligation Policy Code" source="HL7" type="Intensional" binding="Dynamic" base_Enumeration="_7GsEIIxoEeKIvYMIfi9SOQ">
+    <codeSystem href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_DypusYxpEeKIvYMIfi9SOQ" identifier="2.16.840.1.113883.1.11.20446" fullName="RefrainPolicy" source="HL7" type="Intensional" binding="Dynamic" base_Enumeration="_DypusIxpEeKIvYMIfi9SOQ">
+    <codeSystem href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_KePkEY92EeKb9J31WmOroA" conceptName="Information Access" usageNote="Consent to access or &quot;read&quot; only, which entails that the information is not to be copied, screen printed, saved, emailed, stored, re-disclosed or altered in any way. This level ensures that data which is masked or to which access is restricted will not be. Example: Opened and then emailed or screen printed for use outside of the consent directive purpose." base_EnumerationLiteral="_KePkEI92EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_rMaf4Y91EeKb9J31WmOroA" conceptName="Information Access" usageNote="Consent to access healthcare information." base_EnumerationLiteral="_rMaf4I91EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_IR8AYY99EeKb9J31WmOroA" conceptName="Treatment" base_EnumerationLiteral="_IR8AYI99EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_KAzV8Y99EeKb9J31WmOroA" conceptName="Emergency Treatment" base_EnumerationLiteral="_KAzV8I99EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_LPCDoY99EeKb9J31WmOroA" conceptName="Healthcare payment" usageNote="To perform one or more operations on information for conducting financial or contractual activities related to payment for provision of health care." base_EnumerationLiteral="_LPCDoI99EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_uAQKYY9-EeKb9J31WmOroA" conceptName="Comply with consent directive" usageNote="Custodian security system must retrieve, evaluate, and comply with applicable information subject consent directives." base_EnumerationLiteral="_uAQKYI9-EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_7XIr8Y9-EeKb9J31WmOroA" conceptName="Encrypt information" usageNote="Custodian system must render information unreadable by algorithmically transforming plaintext into ciphertext." base_EnumerationLiteral="_7XIr8I9-EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_GG0hwY9_EeKb9J31WmOroA" conceptName="Prohibit redisclosure without consent directive" usageNote="Prohibition on redisclosure without patient consent directive." base_EnumerationLiteral="_GG0hwI9_EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_PGdWQY9_EeKb9J31WmOroA" conceptName="Prohibit disclosure without MOU" usageNote="Prohibition on disclosure without an interagency service agreement or memorandum of understanding (MOU)." base_EnumerationLiteral="_PGdWQI9_EeKb9J31WmOroA"/>
+  <term:ValueSetVersion xmi:id="_3UgCka6vEeKKNZXUvzAcRw" identifier="2.16.840.1.113883.1.11.19897" source="HL7" definition="This value setsystem is used to specify the action referred by a consent directive. the type of consent directive, e.g., to consent or dissent to collect, access, or use in specific ways within an EHRS or for health information exchange; or to disclose health information for purposes such as research." type="Intensional" binding="Dynamic" base_Enumeration="_3UgCkK6vEeKKNZXUvzAcRw">
+    <codeSystem href="file:/C:/Neelima/cda/workspace/org.hl7.cbcc.dprov.model/model/dprov-vocab.uml#_rx4gYS_IEeWhWYsfbXBOBA"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_c4cD8Y91EeKb9J31WmOroA" conceptName="Information Collection" usageNote="Consent to have healthcare information collected in an electronic health record. This entails that the information may be used in analysis, modified, updated." base_EnumerationLiteral="_c4cD8I91EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_kkxdgY91EeKb9J31WmOroA" conceptName="Information Disclosure" usageNote="Consent to have collected healthcare information disclosed." base_EnumerationLiteral="_kkxdgI91EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_On7WQY92EeKb9J31WmOroA" conceptName="Access and save only" usageNote="Consent to access and save only, which entails that access to the saved copy will remain locked." base_EnumerationLiteral="_On7WQI92EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_fsTgcY96EeKb9J31WmOroA" conceptName="Information redisclosure" usageNote="Information re-disclosed without the patient's consent." base_EnumerationLiteral="_fsTgcI96EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_lP2BgY96EeKb9J31WmOroA" conceptName="Research" usageNote="Consent to have healthcare information in an electronic health record accessed for research purposes." base_EnumerationLiteral="_lP2BgI96EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_lqq8UY96EeKb9J31WmOroA" conceptName="De-identified information access" base_EnumerationLiteral="_lqq8UI96EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_Lru4oY97EeKb9J31WmOroA" conceptName="De-identified information access" usageNote="Where there is a need to inform the subject of potential health issues." base_EnumerationLiteral="_Lru4oI97EeKb9J31WmOroA"/>
+  <term:ValueSetCode xmi:id="_Uas-cY98EeKb9J31WmOroA" conceptName="Access Only." base_EnumerationLiteral="_Uas-cI98EeKb9J31WmOroA"/>
+  <term:ValueSetVersion xmi:id="_gPh1oa6wEeKKNZXUvzAcRw" identifier="2.16.840.1.113883.1.11.19930" definition="This value set be used to specify the client's relationship to the Substitute Decision Maker involved in the creation of the privacy consent directive." type="Intensional" binding="Dynamic" base_Enumeration="_gPh1oK6wEeKKNZXUvzAcRw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_KBiUAa6xEeKKNZXUvzAcRw" conceptName="Family member" usageNote="A relationship between two people characterizing their &quot;familial&quot; relationship" base_EnumerationLiteral="_KBiUAK6xEeKKNZXUvzAcRw"/>
+  <term:ValueSetCode xmi:id="_NlOdMa6xEeKKNZXUvzAcRw" conceptName="Child" usageNote="Child" base_EnumerationLiteral="_NlOdMK6xEeKKNZXUvzAcRw"/>
+  <term:ValueSetCode xmi:id="_VcmCEa6xEeKKNZXUvzAcRw" conceptName="Child in-law" usageNote="Child in-law" base_EnumerationLiteral="_VcmCEK6xEeKKNZXUvzAcRw"/>
+  <term:ValueSetCode xmi:id="_aznKEa6xEeKKNZXUvzAcRw" conceptName="Exended family member" usageNote="Extended family member" base_EnumerationLiteral="_aznKEK6xEeKKNZXUvzAcRw"/>
+  <term:ValueSetCode xmi:id="_hX1FAa6xEeKKNZXUvzAcRw" conceptName="Parent" usageNote="Parent" base_EnumerationLiteral="_hX1FAK6xEeKKNZXUvzAcRw"/>
+  <term:ValueSetCode xmi:id="_lEm4wa6xEeKKNZXUvzAcRw" conceptName="Sibling" usageNote="Sibling" base_EnumerationLiteral="_lEm4wK6xEeKKNZXUvzAcRw"/>
+  <term:ValueSetCode xmi:id="_o_ZTUa6xEeKKNZXUvzAcRw" conceptName="Spouse" usageNote="Spouse" base_EnumerationLiteral="_o_ZTUK6xEeKKNZXUvzAcRw"/>
+  <term:CodeSystemVersion xmi:id="_3RPYMbg8EeKo5fRjhOhZFA" identifier="2.16.840.1.113883.5.1063" base_Enumeration="_3RPYMLg8EeKo5fRjhOhZFA"/>
+  <term:CodeSystemVersion xmi:id="_u6Y1MOdTEeKzv8U7OUnxlg" identifier="2.16.840.1.113883.1.11.20471" base_Enumeration="_u6YOIOdTEeKzv8U7OUnxlg"/>
+  <term:ValueSetVersion xmi:id="_Y_l0wEUVEeSuOPP0Hhhcag" identifier="2.16.840.1.113883.1.11.10228" fullName="Confidentiality Value Set" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vs_Confidentiality.html#Confidentiality" type="Intensional" binding="Dynamic" base_Enumeration="_Y_j_kEUVEeSuOPP0Hhhcag"/>
+  <term:CodeSystemVersion xmi:id="_GaRWkPaCEeWKEu3n2RZ4FA" identifier="2.16.840.1.113883.5.4" base_Enumeration="_GW0Z8PaCEeWKEu3n2RZ4FA"/>
+  <term:ValueSetCode xmi:id="_fYNTcfaFEeWKEu3n2RZ4FA" base_EnumerationLiteral="_fYNTcPaFEeWKEu3n2RZ4FA"/>
+  <term:ValueSetCode xmi:id="_lBTC4PaFEeWKEu3n2RZ4FA" base_EnumerationLiteral="_lBSb0PaFEeWKEu3n2RZ4FA"/>
+  <term:ValueSetCode xmi:id="_qF_r0PaFEeWKEu3n2RZ4FA" base_EnumerationLiteral="_qF_EwPaFEeWKEu3n2RZ4FA"/>
+</xmi:XMI>

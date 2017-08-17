@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>org.hl7.cbcc.privacy.consentdirective.model</name>
+	<comment></comment>
+	<projects>
+		<project>org.eclipse.mdht.uml.cda</project>
+		<project>org.openhealthtools.mdht.uml.cda.consol2.model</project>
+		<project>org.eclipse.mdht.uml.hl7.datatypes</project>
+		<project>org.eclipse.mdht.uml.hl7.rim</project>
+		<project>org.eclipse.mdht.uml.hl7.vocab</project>
+		<project>org.openhealthtools.mdht.uml.term.models</project>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+</projectDescription>
