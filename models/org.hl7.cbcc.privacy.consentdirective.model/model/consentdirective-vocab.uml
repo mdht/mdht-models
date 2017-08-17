@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Package xmi:id="_9PGi4IqLEeKIRdOX2_HXEA" name="consentdirective-vocab">
     <ownedComment xmi:id="_KrAqcIxlEeKqi7cG0-P5Sg">
       <body>The following value sets and coding system are used for terminology constraints.</body>
     </ownedComment>
-    <packageImport xmi:id="_PCTRMI-OEeKD74C7V7ZhIw">
-      <importedPackage href="pathmap://TERM_MODEL/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
-    </packageImport>
     <packageImport xmi:id="_KvO88PaIEeWKEu3n2RZ4FA">
       <importedPackage href="pathmap://TERM_MODEL///CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
