@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_9O8yDYqLEeKIRdOX2_HXEA" name="consentdirective">
+    <ownedComment xmi:id="_sCBWYIz9EeKkgJ6ecEFW1w">
+      <body>The following templates are intended to support the privacy consent document
+        specification:</body>
+    </ownedComment>
+    <packageImport xmi:id="_9RyDcIqLEeKIRdOX2_HXEA">
+      <importedPackage href="pathmap://CDA_MODEL/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_9RyDcYqLEeKIRdOX2_HXEA">
+      <importedPackage href="pathmap://DATATYPES_MODEL/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_9RyDcoqLEeKIRdOX2_HXEA">
+      <importedPackage href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_9PGi4IqLEeKIRdOX2_HXEA"/>
+    </packageImport>
+    <packageImport xmi:id="_WVmfsI-OEeKD74C7V7ZhIw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_ZjZRYI-OEeKD74C7V7ZhIw">
+      <importedPackage href="pathmap://TERM_MODEL/hitsp-c80.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packageImport xmi:id="_eIWDQI-OEeKD74C7V7ZhIw">
+      <importedPackage href="pathmap://CONSOL_MODEL/consol-vocab.uml#_2B97VRSVEeGGzu7fmW9pXw"/>
+    </packageImport>
+    <packageImport xmi:id="_Y074AI_SEeKqgc2mc-bO1g">
+      <importedPackage href="pathmap://VOCAB_MODEL/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="__DPhgN5zEeKrY77pclOhsw">
+      <importedPackage href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_9PGi4IqLEeKIRdOX2_HXEA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_D6zN8IrQEeKKAZsPkJwz-Q" name="PrivacyConsentHeaderAuthor">
+      <ownedComment xmi:id="_etjBwLpyEeKOGsq0LhG5DQ">
+        <body>This template specifies the constraints applied to the document author structure in
+          order to specify the provenance of a privacy consent directive document in a consistent
+          manner. The author of a consent is not a clinician but a client/patient or a designated
+          substitute decision maker who is acting on behalf of the patient/client.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SAah0ER3EeaTKetiFje49w" name="PrivacyConsentHeaderAuthorTemplateId" constrainedElement="_D6zN8IrQEeKKAZsPkJwz-Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SAbI4ER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.2')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SA2msER3EeaTKetiFje49w" name="PrivacyConsentHeaderAuthorFunctionCodeP" constrainedElement="_D6zN8IrQEeKKAZsPkJwz-Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SA2msUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.functionCode.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SAmIAER3EeaTKetiFje49w" name="PrivacyConsentHeaderAuthorFunctionCode" constrainedElement="_D6zN8IrQEeKKAZsPkJwz-Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SAmIAUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.functionCode.oclIsUndefined() and self.functionCode.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.functionCode.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.5.88' and (value.code = 'FAMMEMB' or value.code = 'CHILD' or value.code = 'CHLDINLAW' or value.code = 'EXT' or value.code = 'PRN' or value.code = 'SIB' or value.code = 'SPS')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SBDbAER3EeaTKetiFje49w" name="PrivacyConsentHeaderAuthorTime" constrainedElement="_D6zN8IrQEeKKAZsPkJwz-Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SBDbAUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.time.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SL-4oER3EeaTKetiFje49w" name="PrivacyConsentHeaderAuthorAssignedAuthor" constrainedElement="_D6zN8IrQEeKKAZsPkJwz-Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SL-4oUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.assignedAuthor->one(assignedAuthor : cda::AssignedAuthor | not assignedAuthor.oclIsUndefined() and assignedAuthor.oclIsKindOf(rim::Role))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_D7GI4IrQEeKKAZsPkJwz-Q">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FAh0UIvrEeK4VtU9bq_b_g" name="PrivacyConsentHeaderDocumentationOfServiceEvent">
+      <ownedComment xmi:id="_xQ8O0IvrEeK4VtU9bq_b_g">
+        <body>Each Privacy Consent Directive may have an explicit duration by specifying the related
+          service associated with issuing a privacy consent directive. The effective duration of a
+          Privacy Consent Directive establishes the valid period for the privacy consent or
+          authorization as directed by the client or Substitute Decision Maker. This constraint
+          applies specifically for those jurisdictions where Privacy Consent Directives are issued
+          for a predefined length of time.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SBHscER3EeaTKetiFje49w" name="PrivacyConsentHeaderDocumentationOfServiceEventTemplateId" constrainedElement="_FAh0UIvrEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SBITgER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.3')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SBPoQER3EeaTKetiFje49w" name="PrivacyConsentHeaderDocumentationOfServiceEventCode" constrainedElement="_FAh0UIvrEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SBPoQUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SBVH0ER3EeaTKetiFje49w" name="PrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime" constrainedElement="_FAh0UIvrEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SBVH0UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_FAh0UYvrEeK4VtU9bq_b_g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_lriDUEcaEd6besF9iFIJkQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jGGEQIvsEeK4VtU9bq_b_g" name="PrivacyConsentDirectiveDocument">
+      <ownedComment xmi:id="_VYcTkLpyEeKOGsq0LhG5DQ">
+        <body>The CDA R2 Implementation Guide for Privacy Consent Directives defines a set of
+          general constraints against the CDA R2 header. Conformance to this specification carries
+          with it an implicit adherence to Level 1 which asserts header element constraints.
+          Conformance to the standard at Level 1, whether specified or implicit, asserts header
+          element constraints but allows a non-XML body or an XML body that may or may not conform
+          to additional templates defined herein. Likewise, conformance to this specification at
+          Level 2 does not require conformance to entry-level templates, but does assert conformance
+          to header- and section-level templates. In all cases, required privacy clinical content
+          must be present.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SBYyMER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentTemplateId" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SBYyMUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.1.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SBuwcER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentCodeP" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SBuwcUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SBijMER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentCode" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SBijMUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '57016-8' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SB36YER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentTitle" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SB36YUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.title.oclIsUndefined() and self.title.getText() = 'Authorization for Disclosure'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SI_PAER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SI_PAUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consentdirective::PrivacyConsentDetailsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SJp9YER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentSignaturesSection" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SJp9YUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consentdirective::SignaturesSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SKFbMER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentAuthenticator" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SKFbMUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.authenticator->exists(authenticator : cda::Authenticator | not authenticator.oclIsUndefined() and authenticator.oclIsKindOf(rim::Participation))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SKN-EER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentAuthor" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SKN-EUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consentdirective::PrivacyConsentHeaderAuthor))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SKWg8ER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentDocumentationOf" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SKWg8UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.documentationOf->exists(documentationOf : cda::DocumentationOf | not documentationOf.oclIsUndefined() and documentationOf.oclIsKindOf(consentdirective::PrivacyConsentHeaderDocumentationOf))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SKd1sER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentInformationRecipient" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SKd1sUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.informationRecipient->exists(informationRecipient : cda::InformationRecipient | not informationRecipient.oclIsUndefined() and informationRecipient.oclIsKindOf(rim::Participation))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SKlxgER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentLegalAuthenticator" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SKlxgUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.legalAuthenticator->one(legalAuthenticator : cda::LegalAuthenticator | not legalAuthenticator.oclIsUndefined() and legalAuthenticator.oclIsKindOf(rim::Participation))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SKtGQER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentCustodian" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SKtGQUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.custodian->one(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(rim::Participation))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SK0bAER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentRecordTarget" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SK0bAUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(rim::Participation))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SK8W0ER3EeaTKetiFje49w" name="PrivacyConsentDirectiveDocumentRelatedDocument" constrainedElement="_jGGEQIvsEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SK8W0UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.relatedDocument->exists(relatedDocument : cda::RelatedDocument | not relatedDocument.oclIsUndefined() and relatedDocument.oclIsKindOf(rim::ActRelationship))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fvfYAIvwEeK4VtU9bq_b_g">
+        <ownedComment xmi:id="_t-iF8Oo9EeKrOYS9kpIZsQ">
+          <body>The Privacy Consent Directive Document is a specialization of CDA document intended
+            for universal/international use. In certain locales (e.g. US) additional constraints may
+            apply (Consolidated CDA General Header Constraints).</body>
+        </ownedComment>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedOperation xmi:id="_SJBEMER3EeaTKetiFje49w" name="getPrivacyConsentDetailsSection" bodyCondition="_SJBEM0R3EeaTKetiFje49w" isQuery="true">
+        <ownedRule xmi:id="_SJBEM0R3EeaTKetiFje49w" name="body" constrainedElement="_SJBEMER3EeaTKetiFje49w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_SJBENER3EeaTKetiFje49w">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consentdirective::PrivacyConsentDetailsSection))->asSequence()->any(true).oclAsType(consentdirective::PrivacyConsentDetailsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_SJBEMUR3EeaTKetiFje49w" type="__ZRnwIx1EeKqJ6NoJCkz3A" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SJBEMkR3EeaTKetiFje49w" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_SJqkcER3EeaTKetiFje49w" name="getSignaturesSection" bodyCondition="_SJqkc0R3EeaTKetiFje49w" isQuery="true">
+        <ownedRule xmi:id="_SJqkc0R3EeaTKetiFje49w" name="body" constrainedElement="_SJqkcER3EeaTKetiFje49w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_SJqkdER3EeaTKetiFje49w">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consentdirective::SignaturesSection))->asSequence()->any(true).oclAsType(consentdirective::SignaturesSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_SJqkcUR3EeaTKetiFje49w" type="_NAIpkIx3EeKqJ6NoJCkz3A" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SJqkckR3EeaTKetiFje49w" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mG6-sIvxEeK4VtU9bq_b_g" name="ConsentDirectiveEntry">
+      <ownedComment xmi:id="_RG-8cIxyEeKqJ6NoJCkz3A">
+        <body>This template is used to specify a consent directive using a structure based on the&#xD;
+          CDA Entry. The implementers have three choices to represent their privacy consent&#xD;
+          directives: as structured entry using ConsentDirective, as ComputablePolicy, or as Scanned&#xD;
+          Document. The privacy consent directive may be expressed as a consent directive structure&#xD;
+          using &quot;ConsentDirectiveDefinition&quot; template, a computable policy such as&#xD;
+          XACML using &quot;ComputablePolicyConsent&quot; template or simply scanned as an&#xD;
+          image file and linked to this document using &quot;ScannedPrivacyConsent&quot;&#xD;
+          template.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SB_PIER3EeaTKetiFje49w" name="ConsentDirectiveEntryTemplateId" constrainedElement="_mG6-sIvxEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SB_2MER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.4')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SCQ78ER3EeaTKetiFje49w" name="ConsentDirectiveEntryAct" constrainedElement="_mG6-sIvxEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SCQ78UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consentdirective::ConsentDirectiveStructuredDefinition))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SHZ6oER3EeaTKetiFje49w" name="ConsentDirectiveEntryObservation" constrainedElement="_mG6-sIvxEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SHZ6oUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consentdirective::ComputablePolicyConsent))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SHh2cER3EeaTKetiFje49w" name="ConsentDirectiveEntryObservationMedia" constrainedElement="_mG6-sIvxEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SHh2cUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.observationMedia->one(observationMedia : cda::ObservationMedia | not observationMedia.oclIsUndefined() and observationMedia.oclIsKindOf(consentdirective::ScannedPrivacyConsent))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_mG6-sYvxEeK4VtU9bq_b_g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mvjj0IwkEeK4VtU9bq_b_g" name="ConsentDirectiveStructuredDefinition">
+      <ownedComment xmi:id="_jwm_EIwnEeK4VtU9bq_b_g">
+        <body>This template specifies the CDA structure of entry for describing the privacy consent directive assertions in computable and scanned image forms.&#xD; The following asserts&#xD;
+conformance to the Privacy Consent Directive and supports several important definitions that together comprise an instance of a Privacy Consent Directive including: Purpose of Use allowed by the Privacy Consent Directive&#xD;, attributes of information recipients including role and identity&#xD;, the custodian(s) of the IIHI specified in the Privacy Consent Directive&#xD;, actions/Operations authorized or restricted by the Privacy Consent Directive&#xD;, information category or objects (IIHI) specified by the Privacy Consent Directive including Related Condition/Diagnosis and sensitivity specified by the Privacy Consent Directive&#xD;, Privacy Policy on which the Privacy Consent Directive was based, information recipient obligations regarding handling IIHI disclosed as a result of the Privacy Consent Directive.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SCSKEER3EeaTKetiFje49w" name="ConsentDirectiveStructuredDefinitionTemplateId" constrainedElement="_mvjj0IwkEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SCSKEUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.5')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SCj24ER3EeaTKetiFje49w" name="ConsentDirectiveStructuredDefinitionCodeP" constrainedElement="_mvjj0IwkEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SCj24UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SCY3wER3EeaTKetiFje49w" name="ConsentDirectiveStructuredDefinitionCode" constrainedElement="_mvjj0IwkEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SCY3wUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.1.11.20471' and (value.code = 'TREAT' or value.code = 'ETREAT' or value.code = 'HPAYMT' or value.code = 'HRESCH' or value.code = 'CLINTRCH' or value.code = ' CLINTRL')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SCvdEER3EeaTKetiFje49w" name="ConsentDirectiveStructuredDefinitionMoodCode" constrainedElement="_mvjj0IwkEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SCvdEUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SC84cER3EeaTKetiFje49w" name="ConsentDirectiveStructuredDefinitionInformant" constrainedElement="_mvjj0IwkEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SC84cUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.informant->exists(informant : cda::Informant12 | not informant.oclIsUndefined() and informant.oclIsKindOf(rim::Participation))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SDFbUER3EeaTKetiFje49w" name="ConsentDirectiveStructuredDefinitionParticipant" constrainedElement="_mvjj0IwkEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SDFbUUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(consentdirective::IIHIReceivingProvider))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SLH9AER3EeaTKetiFje49w" name="ConsentDirectiveStructuredDefinitionConsentAction" constrainedElement="_mvjj0IwkEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLH9AUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consentdirective::ConsentAction) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SLvBAER3EeaTKetiFje49w" name="ConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer" constrainedElement="_mvjj0IwkEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLvBAUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.organizer.oclIsUndefined() and entryRelationship.organizer.oclIsKindOf(consentdirective::InformationCriteriaReferencesOrganizer) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SL280ER3EeaTKetiFje49w" name="ConsentDirectiveStructuredDefinitionSecurityLabelCriteria" constrainedElement="_mvjj0IwkEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SL280UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.organizer.oclIsUndefined() and entryRelationship.organizer.oclIsKindOf(consentdirective::SecurityLabel) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_mvjj0YwkEeK4VtU9bq_b_g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedOperation xmi:id="_SLIkEER3EeaTKetiFje49w" name="getConsentActions" bodyCondition="_SLIkE0R3EeaTKetiFje49w" isQuery="true">
+        <ownedRule xmi:id="_SLIkE0R3EeaTKetiFje49w" name="body" constrainedElement="_SLIkEER3EeaTKetiFje49w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLIkFER3EeaTKetiFje49w">
+            <language>OCL</language>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consentdirective::ConsentAction)).oclAsType(consentdirective::ConsentAction)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_SLIkEUR3EeaTKetiFje49w" type="_Lq0m0IxTEeKqi7cG0-P5Sg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SLIkEkR3EeaTKetiFje49w" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_SLvoEER3EeaTKetiFje49w" name="getInformationCriteriaReferencesOrganizers" bodyCondition="_SLvoE0R3EeaTKetiFje49w" isQuery="true">
+        <ownedRule xmi:id="_SLvoE0R3EeaTKetiFje49w" name="body" constrainedElement="_SLvoEER3EeaTKetiFje49w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLvoFER3EeaTKetiFje49w">
+            <language>OCL</language>
+            <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consentdirective::InformationCriteriaReferencesOrganizer)).oclAsType(consentdirective::InformationCriteriaReferencesOrganizer)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_SLvoEUR3EeaTKetiFje49w" type="_17Z5wIxiEeKqi7cG0-P5Sg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SLvoEkR3EeaTKetiFje49w" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_SL3j4ER3EeaTKetiFje49w" name="getSecurityLabelCriteria" bodyCondition="_SL3j40R3EeaTKetiFje49w" isQuery="true">
+        <ownedRule xmi:id="_SL3j40R3EeaTKetiFje49w" name="body" constrainedElement="_SL3j4ER3EeaTKetiFje49w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_SL3j5ER3EeaTKetiFje49w">
+            <language>OCL</language>
+            <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consentdirective::SecurityLabel)).oclAsType(consentdirective::SecurityLabel)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_SL3j4UR3EeaTKetiFje49w" type="_PMkqYLp2EeKOGsq0LhG5DQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SL3j4kR3EeaTKetiFje49w" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ba01UIwmEeK4VtU9bq_b_g" name="IIHIReceivingProvider">
+      <ownedComment xmi:id="_XoaeMIwnEeK4VtU9bq_b_g">
+        <body>This template is used to represent the provider organization or person intended to
+          use, access, collect information as allowed or prevented by the action specified in this
+          privacy consent directive.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SDGpcER3EeaTKetiFje49w" name="IIHIReceivingProviderTemplateId" constrainedElement="_ba01UIwmEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SDGpcUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.7')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SDTdwER3EeaTKetiFje49w" name="IIHIReceivingProviderTypeCodeP" constrainedElement="_ba01UIwmEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SDTdwUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>isDefined('typeCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SDMJAER3EeaTKetiFje49w" name="IIHIReceivingProviderTypeCode" constrainedElement="_ba01UIwmEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SDMJAUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.typeCode.oclIsUndefined() and self.typeCode.oclIsKindOf(vocab::ParticipationType) and 
+let value : vocab::ParticipationType = self.typeCode.oclAsType(vocab::ParticipationType) in 
+value = vocab::ParticipationType::IRCP</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SDqqIER3EeaTKetiFje49w" name="IIHIReceivingProviderParticipantRole" constrainedElement="_ba01UIwmEeK4VtU9bq_b_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SDqqIUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(rim::Role))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_ba01UYwmEeK4VtU9bq_b_g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Lq0m0IxTEeKqi7cG0-P5Sg" name="ConsentAction">
+      <ownedComment xmi:id="_JWQw8IxYEeKqi7cG0-P5Sg">
+        <body>Template used to represent the action allowed and problem associated with the
+          information allowed by the Privacy Consent Directive.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SDr4QER3EeaTKetiFje49w" name="ConsentActionTemplateId" constrainedElement="_Lq0m0IxTEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SDr4QUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.8')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SD8-AER3EeaTKetiFje49w" name="ConsentActionCodeP" constrainedElement="_Lq0m0IxTEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SD8-AUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SDx-4ER3EeaTKetiFje49w" name="ConsentActionCode" constrainedElement="_Lq0m0IxTEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SDx-4UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'IDISCL' or value.code = 'ICOL' or value.code = 'INFASO' or value.code = 'IRDSCL' or value.code = 'RESEARCH' or value.code = 'RSREID' or value.code = 'INFAO'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SEIkMER3EeaTKetiFje49w" name="ConsentActionMoodCode" constrainedElement="_Lq0m0IxTEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SEIkMUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SERHEER3EeaTKetiFje49w" name="ConsentActionNegationInd" constrainedElement="_Lq0m0IxTEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SERHEUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.negationInd.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_Lq0m0YxTEeKqi7cG0-P5Sg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NAIpkIx3EeKqJ6NoJCkz3A" name="SignaturesSection">
+      <ownedComment xmi:id="_JYsGgIzfEeK9WffiIujeKg">
+        <body>An optional section in a Privacy Consent Directive is intended to hold the signatures
+          (as scanned images of wet signatures or an XML-Digital signature). While electronic
+          signatures cannot be captured in a CDA R2 document, CDA R2 supports external digital and
+          scanned wet signatures that can be included using RIM-based extensions. An XML digital
+          signatures wrapper may be used to wrap the CDA document according to local policy. This
+          section may be used to authenticate the origin and attest to the integrity of the Privacy
+          Consent.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SEXNsER3EeaTKetiFje49w" name="SignaturesSectionTemplateId" constrainedElement="_NAIpkIx3EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SEX0wER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.18')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SEd7YER3EeaTKetiFje49w" name="SignaturesSectionCode" constrainedElement="_NAIpkIx3EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SEd7YUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '57017-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SEkpEER3EeaTKetiFje49w" name="SignaturesSectionCodeP" constrainedElement="_NAIpkIx3EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SEkpEUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SEr90ER3EeaTKetiFje49w" name="SignaturesSectionText" constrainedElement="_NAIpkIx3EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SEr90UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.text.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SEyrgER3EeaTKetiFje49w" name="SignaturesSectionTitle" constrainedElement="_NAIpkIx3EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SEyrgUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Signatures')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SJJAAER3EeaTKetiFje49w" name="SignaturesSectionEntry" constrainedElement="_NAIpkIx3EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SJJAAUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consentdirective::SignatureImageEntry) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_NAIpkYx3EeKqJ6NoJCkz3A">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_17Z5wIxiEeKqi7cG0-P5Sg" name="InformationCriteriaReferencesOrganizer">
+      <ownedComment xmi:id="_ZxDqQIxqEeKIvYMIfi9SOQ">
+        <body>This organizer template supports the definition of information criteria to identify
+          the information referenced by the privacy consent. The criteria may include a specific
+          security label tag (e.g. confidentiality, purpose of use, obligation policy, refrain
+          policy, applicable privacy policy).</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SE3kAER3EeaTKetiFje49w" name="InformationCriteriaReferencesOrganizerTemplateId" constrainedElement="_17Z5wIxiEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SE4LEER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.9')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SE9qoER3EeaTKetiFje49w" name="InformationCriteriaReferencesOrganizerMoodCode" constrainedElement="_17Z5wIxiEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SE9qoUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SLV_cER3EeaTKetiFje49w" name="InformationCriteriaReferencesOrganizerInformationDefinition" constrainedElement="_17Z5wIxiEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLV_cUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consentdirective::CriteriumInformationDefinition))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SLeiUER3EeaTKetiFje49w" name="InformationCriteriaReferencesOrganizerRelatedProtectedProblem" constrainedElement="_17Z5wIxiEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLeiUUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consentdirective::CriteriumRelatedProtectedProblem))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SLmeIER3EeaTKetiFje49w" name="InformationCriteriaReferencesOrganizerConfidentialityCodeLabel" constrainedElement="_17Z5wIxiEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLmeIUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consentdirective::ConfidentialitySecurityObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_9yxdIM-WEeKA0vDW-e6agg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_SLV_ckR3EeaTKetiFje49w" name="getInformationDefinitions" bodyCondition="_SLWmgkR3EeaTKetiFje49w" isQuery="true">
+        <ownedRule xmi:id="_SLWmgkR3EeaTKetiFje49w" name="body" constrainedElement="_SLV_ckR3EeaTKetiFje49w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLWmg0R3EeaTKetiFje49w">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consentdirective::CriteriumInformationDefinition)).oclAsType(consentdirective::CriteriumInformationDefinition)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_SLWmgER3EeaTKetiFje49w" type="_QLns8IxdEeKqi7cG0-P5Sg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SLWmgUR3EeaTKetiFje49w" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_SLeiUkR3EeaTKetiFje49w" name="getRelatedProtectedProblems" bodyCondition="_SLeiVUR3EeaTKetiFje49w" isQuery="true">
+        <ownedRule xmi:id="_SLeiVUR3EeaTKetiFje49w" name="body" constrainedElement="_SLeiUkR3EeaTKetiFje49w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLeiVkR3EeaTKetiFje49w">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consentdirective::CriteriumRelatedProtectedProblem)).oclAsType(consentdirective::CriteriumRelatedProtectedProblem)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_SLeiU0R3EeaTKetiFje49w" type="_xt3s4IxjEeKqi7cG0-P5Sg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SLeiVER3EeaTKetiFje49w" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_SLnFMER3EeaTKetiFje49w" name="getConfidentialityCodeLabels" bodyCondition="_SLnFM0R3EeaTKetiFje49w" isQuery="true">
+        <ownedRule xmi:id="_SLnFM0R3EeaTKetiFje49w" name="body" constrainedElement="_SLnFMER3EeaTKetiFje49w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_SLnFNER3EeaTKetiFje49w">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consentdirective::ConfidentialitySecurityObservation)).oclAsType(consentdirective::ConfidentialitySecurityObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_SLnFMUR3EeaTKetiFje49w" type="_v97vQN5zEeKrY77pclOhsw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SLnFMkR3EeaTKetiFje49w" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xt3s4IxjEeKqi7cG0-P5Sg" name="CriteriumRelatedProtectedProblem">
+      <ownedComment xmi:id="_uMhMYIxrEeKIvYMIfi9SOQ">
+        <body>This template specifies the problem that is related to the information. This allows
+          EHRs to specify the diagnosis or problem associated with the information intended for
+          disclosure.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SFB8EER3EeaTKetiFje49w" name="CriteriumRelatedProtectedProblemTemplateId" constrainedElement="_xt3s4IxjEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SFCjIER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.11')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SFUP8ER3EeaTKetiFje49w" name="CriteriumRelatedProtectedProblemCodeP" constrainedElement="_xt3s4IxjEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SFUP8UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SFJQ0ER3EeaTKetiFje49w" name="CriteriumRelatedProtectedProblemCode" constrainedElement="_xt3s4IxjEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SFJQ0UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006' or value.code = '373930000')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SFhEQER3EeaTKetiFje49w" name="CriteriumRelatedProtectedProblemValue" constrainedElement="_xt3s4IxjEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SFhEQUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SFsDYER3EeaTKetiFje49w" name="CriteriumRelatedProtectedProblemValueP" constrainedElement="_xt3s4IxjEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SFsDYUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_xt3s4YxjEeKqi7cG0-P5Sg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HTbpoIxwEeKqJ6NoJCkz3A" name="SecurityObservation" isAbstract="true">
+      <ownedComment xmi:id="_HTbpoYxwEeKqJ6NoJCkz3A">
+        <body>This template is used to specify an security observation associated with an
+          information type specified in the privacy consent document or information instance that
+          appears in a CDA document. A security observation is an abstract template intended to
+          specialized for use to indicate a security classification, control, category, or integrity
+          criterion.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SF2bcER3EeaTKetiFje49w" name="SecurityObservationTemplateId" constrainedElement="_HTbpoIxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SF2bcUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.21')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SGCBoER3EeaTKetiFje49w" name="SecurityObservationCodeP" constrainedElement="_HTbpoIxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SGCosER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SF7T8ER3EeaTKetiFje49w" name="SecurityObservationCode" constrainedElement="_HTbpoIxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SF77AER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.1.11.20471'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SGIvUER3EeaTKetiFje49w" name="SecurityObservationMoodCode" constrainedElement="_HTbpoIxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SGIvUUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SGO18ER3EeaTKetiFje49w" name="SecurityObservationValue" constrainedElement="_HTbpoIxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SGO18UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.5.1063')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SGVjoER3EeaTKetiFje49w" name="SecurityObservationValueP" constrainedElement="_HTbpoIxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SGVjoUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CE))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_HTbpooxwEeKqJ6NoJCkz3A">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5WIy4IxwEeKqJ6NoJCkz3A" name="ObligationPolicySecurityObservation">
+      <ownedComment xmi:id="_Fw0K4IxxEeKqJ6NoJCkz3A">
+        <body>This template is used to specify an security observation associated with an
+          information type specified in the privacy consent document or information instance that
+          appears in a CDA document. This template specifies the obligation policy,
+        specifically.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SGbDMER3EeaTKetiFje49w" name="SecurityObservationTemplateId" constrainedElement="_5WIy4IxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SGbDMUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.14')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SGpFoER3EeaTKetiFje49w" name="SecurityObservationCodeP" constrainedElement="_5WIy4IxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SGpFoUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SGgiwER3EeaTKetiFje49w" name="SecurityObservationCode" constrainedElement="_5WIy4IxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SGgiwUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SHGYoER3EeaTKetiFje49w" name="SecurityObservationValueP" constrainedElement="_5WIy4IxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SHGYoUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.value->isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SGyPkER3EeaTKetiFje49w" name="SecurityObservationValue" constrainedElement="_5WIy4IxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SGyPkUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.1.11.20471' and (value.code = 'CPLYCD' or value.code = 'ENCRYPT'))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_5WIy4YxwEeKqJ6NoJCkz3A" general="_HTbpoIxwEeKqJ6NoJCkz3A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iiVZAIxyEeKqJ6NoJCkz3A" name="ComputablePolicyConsent">
+      <ownedComment xmi:id="_ttJEkIxyEeKqJ6NoJCkz3A">
+        <body>This template is used to represent an alternative representation of the Privacy
+          Consent Directive (e.g.,ODRL, XrML, XACML) as a computer-readable set of rules. An
+          implementation may use any appropriate representations of the privacy consent in addition
+          to the &quot;ConsentDirectiveStructuredDefinition&quot; which uses the Clinical
+          Template structure to express the elements of a consent directive in an interoperable
+        way.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SHjEkER3EeaTKetiFje49w" name="ComputablePolicyConsentTemplateId" constrainedElement="_iiVZAIxyEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SHjroER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.16')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SHuqwER3EeaTKetiFje49w" name="ComputablePolicyConsentCodeP" constrainedElement="_iiVZAIxyEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SHuqwUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SHn9EER3EeaTKetiFje49w" name="ComputablePolicyConsentCode" constrainedElement="_iiVZAIxyEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SHn9EUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SH1_gER3EeaTKetiFje49w" name="ComputablePolicyConsentMoodCode" constrainedElement="_iiVZAIxyEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SH1_gUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SH8tMER3EeaTKetiFje49w" name="ComputablePolicyConsentValue" constrainedElement="_iiVZAIxyEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SH8tMUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::ED)))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_iiVZAYxyEeKqJ6NoJCkz3A">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AzMIYIxzEeKqJ6NoJCkz3A" name="ScannedPrivacyConsent">
+      <ownedComment xmi:id="_edstAPHlEeW0j43IchBWqg">
+        <body>This template is used to convey the scanned image of the privacy consent document as an inline observation media structure.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SIA-oER3EeaTKetiFje49w" name="ScannedPrivacyConsentTemplateId" constrainedElement="_AzMIYIxzEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SIBlsER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.15')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SINy8ER3EeaTKetiFje49w" name="ScannedPrivacyConsentMoodCodeP" constrainedElement="_AzMIYIxzEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SINy8UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SIGeMER3EeaTKetiFje49w" name="ScannedPrivacyConsentMoodCode" constrainedElement="_AzMIYIxzEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SIGeMUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_ActMoodDocumentObservation) and 
+let value : vocab::x_ActMoodDocumentObservation = self.moodCode.oclAsType(vocab::x_ActMoodDocumentObservation) in 
+value = vocab::x_ActMoodDocumentObservation::DEF</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SIUgoER3EeaTKetiFje49w" name="ScannedPrivacyConsentValue" constrainedElement="_AzMIYIxzEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SIVHsER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.value.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_AzMIYYxzEeKqJ6NoJCkz3A">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_OnY2QEbuEd6besF9iFIJkQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__ZRnwIx1EeKqJ6NoJCkz3A" name="PrivacyConsentDetailsSection">
+      <ownedComment xmi:id="_ehr5cEA1EeStJrTg19sKwQ">
+        <body>This template specifies the constraints applied to the section of the document intended to describe the details of a consent in using a structured approach.&#xD;
+&#xD;
+The narrative text included in this section represents the human-readable representation of the directive/preferences&#xD;
+            expressed by in the section. This representation is available in addition to the&#xD;
+            structured &quot;ConsentDirectiveEntry&quot; template.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SIYLAER3EeaTKetiFje49w" name="PrivacyConsentDetailsSectionTemplateId" constrainedElement="__ZRnwIx1EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SIYyEER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.17')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SIdDgER3EeaTKetiFje49w" name="PrivacyConsentDetailsSectionCode" constrainedElement="__ZRnwIx1EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SIdDgUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '64292-6' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SIjxMER3EeaTKetiFje49w" name="PrivacyConsentDetailsSectionCodeP" constrainedElement="__ZRnwIx1EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SIjxMUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SIrtAER3EeaTKetiFje49w" name="PrivacyConsentDetailsSectionTitle" constrainedElement="__ZRnwIx1EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SIrtAUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Privacy Consent Directive Details')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SI3TMER3EeaTKetiFje49w" name="PrivacyConsentDetailsSectionEntry" constrainedElement="__ZRnwIx1EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SI3TMUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consentdirective::ConsentDirectiveEntry) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="__ZRnwYx1EeKqJ6NoJCkz3A">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_h5qdMIx3EeKqJ6NoJCkz3A" name="SignatureImageObservation">
+      <ownedComment xmi:id="_VnJAYIzfEeK9WffiIujeKg">
+        <body>This observationMedia template is intended to provide observationMedia for each
+          signature (e.g.,legalAuthenticator, authenticator) or a scanned version of the entire
+          privacy consent directive form including the signatures.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SJKOIER3EeaTKetiFje49w" name="SignatureImageObservationTemplateId" constrainedElement="_h5qdMIx3EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SJKOIUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.19')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SJPGoER3EeaTKetiFje49w" name="SignatureImageObservationMoodCode" constrainedElement="_h5qdMIx3EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SJPGoUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SJUmMER3EeaTKetiFje49w" name="SignatureImageObservationValue" constrainedElement="_h5qdMIx3EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SJUmMUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.value.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_h5qdMYx3EeKqJ6NoJCkz3A">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_OnY2QEbuEd6besF9iFIJkQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oP3xUIx3EeKqJ6NoJCkz3A" name="SignatureImageEntry">
+      <ownedComment xmi:id="_PPwAgIzfEeK9WffiIujeKg">
+        <body>This entry template is intended to provide observationMedia for each signature
+          (e.g.,legalAuthenticator, authenticator) or a scanned version of the entire privacy
+          consent directive form including the signatures.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SJXpgER3EeaTKetiFje49w" name="SignatureImageEntryTemplateId" constrainedElement="_oP3xUIx3EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SJYQkER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.20')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SJiBkER3EeaTKetiFje49w" name="SignatureImageEntryObservationMedia" constrainedElement="_oP3xUIx3EeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SJiBkUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.observationMedia->one(observationMedia : cda::ObservationMedia | not observationMedia.oclIsUndefined() and observationMedia.oclIsKindOf(consentdirective::SignatureImageObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_oP3xUYx3EeKqJ6NoJCkz3A">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zZzGYK6VEeKJZoHBxOqAtA" name="PrivacyConsentHeaderDocumentationOf">
+      <ownedComment xmi:id="_rc0O0PHlEeW0j43IchBWqg">
+        <body>This template is used to identify the service event associated with the consent directive document recorded for a patient.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SJrLgER3EeaTKetiFje49w" name="PrivacyConsentHeaderDocumentationOfTemplateId" constrainedElement="_zZzGYK6VEeKJZoHBxOqAtA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SJrykER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.26')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SJ-GcER3EeaTKetiFje49w" name="PrivacyConsentHeaderDocumentationOfServiceEvent" constrainedElement="_zZzGYK6VEeKJZoHBxOqAtA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SJ-GcUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.serviceEvent->one(serviceEvent : cda::ServiceEvent | not serviceEvent.oclIsUndefined() and serviceEvent.oclIsKindOf(consentdirective::PrivacyConsentHeaderDocumentationOfServiceEvent))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_zZzGYa6VEeKJZoHBxOqAtA">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_1fhigEcEEd6besF9iFIJkQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PMkqYLp2EeKOGsq0LhG5DQ" name="SecurityLabel" isAbstract="true">
+      <ownedComment xmi:id="_n3ZlYLp2EeKOGsq0LhG5DQ">
+        <body>A security label contains one or more SecurityObservation instances (e.g. Security
+          classification, category, control, etc.) This is an abstract template. In reality the
+          implementation would refer to a specific sub-class/specialization of this template. This
+          template does not have a template identifier because it is not expected to be used
+          &quot;as is&quot; but specialised into specific elements of a security
+        label.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SK9k8ER3EeaTKetiFje49w" name="SecurityLabelTemplateId" constrainedElement="_PMkqYLp2EeKOGsq0LhG5DQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SK9k8UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.24')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SO3NgER3EeaTKetiFje49w" name="SecurityLabelComponent" constrainedElement="_PMkqYLp2EeKOGsq0LhG5DQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SO3NgUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.component->exists(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(consentdirective::SecurityObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_PMkqYbp2EeKOGsq0LhG5DQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="__u_KEN2rEeKoiLx3fvoeLw" name="PrivacyConsentDirectiveDocumentSample" fileName="PrivacyConsentDirectiveDocumentSample.xml"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_v97vQN5zEeKrY77pclOhsw" name="ConfidentialitySecurityObservation">
+      <ownedComment xmi:id="__ZkpkOMjEeKrWN0acRAq3w">
+        <body>This template was updated to reuse the SecurityObservation template to encode the elements of a security label consistent with HL7 Healthcare Security Classification (HCS)standard.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SMAt0ER3EeaTKetiFje49w" name="SecurityObservationTemplateId" constrainedElement="_v97vQN5zEeKrY77pclOhsw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SMAt0UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.12')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SMOJMER3EeaTKetiFje49w" name="SecurityObservationCodeP" constrainedElement="_v97vQN5zEeKrY77pclOhsw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SMOJMUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SMGNYER3EeaTKetiFje49w" name="SecurityObservationCode" constrainedElement="_v97vQN5zEeKrY77pclOhsw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SMGNYUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'SECCLASSOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SMZIUER3EeaTKetiFje49w" name="ConfidentialitySecurityObservationValue" constrainedElement="_v97vQN5zEeKrY77pclOhsw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SMZIUUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.value->isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_v98WUN5zEeKrY77pclOhsw" general="_HTbpoIxwEeKqJ6NoJCkz3A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ehga4OdWEeKzv8U7OUnxlg" name="PurposeOfUseSecurityObservation">
+      <ownedComment xmi:id="_T2gr4PHlEeW0j43IchBWqg">
+        <body>This template is a specialization of a SecurityObservation template and it is used to specify an security observation associated with an&#xD;
+          information type specified in the privacy consent document or information instance that&#xD;
+          appears in a CDA document. This specialization is intended to convey the purpose of a disclosure, access, or use of protected information as asserted by a requestor and specified by a consent directive.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SMl8oER3EeaTKetiFje49w" name="SecurityObservationTemplateId" constrainedElement="_ehga4OdWEeKzv8U7OUnxlg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SMl8oUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.22')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SM0mIER3EeaTKetiFje49w" name="SecurityObservationCodeP" constrainedElement="_ehga4OdWEeKzv8U7OUnxlg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SM0mIUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SMrcMER3EeaTKetiFje49w" name="SecurityObservationCode" constrainedElement="_ehga4OdWEeKzv8U7OUnxlg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SMrcMUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SNLygER3EeaTKetiFje49w" name="PurposeOfUseSecurityObservationValueP" constrainedElement="_ehga4OdWEeKzv8U7OUnxlg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SNLygUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.value->isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SM-XIER3EeaTKetiFje49w" name="PurposeOfUseSecurityObservationValue" constrainedElement="_ehga4OdWEeKzv8U7OUnxlg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SM-XIUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.1.11.20471' and (value.code = 'TREAT' or value.code = 'ETREAT' or value.code = 'HPAYMT' or value.code = 'HRESCH' or value.code = 'CLINTRCH' or value.code = ' CLINTRL'))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_ehhB8OdWEeKzv8U7OUnxlg" general="_HTbpoIxwEeKqJ6NoJCkz3A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hcF0kIxwEeKqJ6NoJCkz3A" name="RefrainPolicySecurityObservation">
+      <ownedComment xmi:id="_svZU0IxwEeKqJ6NoJCkz3A">
+        <body>This template is used to specify a refrain policy associated with an information type
+          specified in the privacy consent document or information instance that appears in a CDA
+          document. This template specifies the refrain policy using the basis SecurityObsevation.
+          The refrain policy is used to indicate to the receiver of a protected health records a
+          specific policy to refrain from the use or re-disclosure of the data received from a third
+          party.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SNYm0ER3EeaTKetiFje49w" name="SecurityObservationTemplateId" constrainedElement="_hcF0kIxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SNZN4ER3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.23')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SNmpQER3EeaTKetiFje49w" name="SecurityObservationCodeP" constrainedElement="_hcF0kIxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SNmpQUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SNeGYER3EeaTKetiFje49w" name="SecurityObservationCode" constrainedElement="_hcF0kIxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SNeGYUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SOD8QER3EeaTKetiFje49w" name="SecurityObservationValueP" constrainedElement="_hcF0kIxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SOD8QUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>not self.value->isEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SNwaQER3EeaTKetiFje49w" name="SecurityObservationValue" constrainedElement="_hcF0kIxwEeKqJ6NoJCkz3A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SNwaQUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.1.11.20471' and (value.code = 'NORDSCLCD' or value.code = 'NOMOU'))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_hcF0kYxwEeKqJ6NoJCkz3A" general="_HTbpoIxwEeKqJ6NoJCkz3A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QLns8IxdEeKqi7cG0-P5Sg" name="CriteriumInformationDefinition">
+      <ownedComment xmi:id="_zyIKkLjMEeKKa_uuCO7-4w">
+        <body>This template specifies the information referenced by the consent using a set of
+          criteria. The object may be identified by a series of criteria including its LOINC code,
+          the time when it was created, its unique id, or other related criteria expressed using
+          &quot;InformationCriteriaReferences&quot; template.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_SOQJgER3EeaTKetiFje49w" name="CriteriumInformationDefinitionTemplateId" constrainedElement="_QLns8IxdEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SOQJgUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.10')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SObIoER3EeaTKetiFje49w" name="CriteriumInformationDefinitionCodeP" constrainedElement="_QLns8IxdEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SObIoUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SOVCAER3EeaTKetiFje49w" name="CriteriumInformationDefinitionCode" constrainedElement="_QLns8IxdEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SOVCAUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SOh2UER3EeaTKetiFje49w" name="CriteriumInformationDefinitionEffectiveTime" constrainedElement="_QLns8IxdEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SOh2UUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SOnV4ER3EeaTKetiFje49w" name="CriteriumInformationDefinitionMoodCode" constrainedElement="_QLns8IxdEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SOnV4UR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_SOs1cER3EeaTKetiFje49w" name="CriteriumInformationDefinitionId" constrainedElement="_QLns8IxdEeKqi7cG0-P5Sg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_SOs1cUR3EeaTKetiFje49w">
+          <language>OCL</language>
+          <body>(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_QLns8YxdEeKqi7cG0-P5Sg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <profileApplication xmi:id="_9O8yEIqLEeKIRdOX2_HXEA">
+      <eAnnotations xmi:id="_9O8yEYqLEeKIRdOX2_HXEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_R__EAER3EeaTKetiFje49w">
+      <eAnnotations xmi:id="_SABgQER3EeaTKetiFje49w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_9QvhoIqLEeKIRdOX2_HXEA" basePackage="org.hl7.cbcc.privacy" nsPrefix="consentdirective" nsURI="http://www.hl7.org/cbcc/privacy/consentdirective" packageName="consentdirective" prefix="CONSENTDIRECTIVE" base_Namespace="_9O8yDYqLEeKIRdOX2_HXEA"/>
+  <CDA:CDATemplate xmi:id="_S4-A8IrREeKKAZsPkJwz-Q" base_Class="_D6zN8IrQEeKKAZsPkJwz-Q" templateId="2.16.840.1.113883.3.445.2" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-2</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_oSPZAIvsEeK4VtU9bq_b_g" base_Class="_jGGEQIvsEeK4VtU9bq_b_g" templateId="2.16.840.1.113883.3.445.1.1" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-0</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="__jpNgIvtEeK4VtU9bq_b_g" severity="WARNING" base_Class="_FAh0UIvrEeK4VtU9bq_b_g" templateId="2.16.840.1.113883.3.445.3" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-3</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_CeO54IvvEeK4VtU9bq_b_g" severity="INFO">
+    <ruleId>CONF:9059</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_Zfp3MIwoEeK4VtU9bq_b_g" base_Class="_ba01UIwmEeK4VtU9bq_b_g" templateId="2.16.840.1.113883.3.445.7" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-7</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_iE71gIwpEeK4VtU9bq_b_g" base_Class="_mG6-sIvxEeK4VtU9bq_b_g" templateId="2.16.840.1.113883.3.445.4" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-4</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_pf1g0IwpEeK4VtU9bq_b_g" base_Class="_mvjj0IwkEeK4VtU9bq_b_g" templateId="2.16.840.1.113883.3.445.5" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-5</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_QhsFwIxsEeKIvYMIfi9SOQ" base_Class="_xt3s4IxjEeKqi7cG0-P5Sg" templateId="2.16.840.1.113883.3.445.11" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-11</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_aYKboIxsEeKIvYMIfi9SOQ" base_Class="_Lq0m0IxTEeKqi7cG0-P5Sg" templateId="2.16.840.1.113883.3.445.8" assigningAuthorityName="HL7 CBCC">
+    <ruleId>CONF-CD-8</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_qAhB0IxyEeKqJ6NoJCkz3A" base_Class="_iiVZAIxyEeKqJ6NoJCkz3A" templateId="2.16.840.1.113883.3.445.16" assigningAuthorityName="HL7 CBCC">
+    <ruleId>CONF-CD-16</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_Yw6NsIzfEeK9WffiIujeKg" base_Class="_NAIpkIx3EeKqJ6NoJCkz3A" templateId="2.16.840.1.113883.3.445.18" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-18</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_hBdHkIzfEeK9WffiIujeKg" base_Class="_h5qdMIx3EeKqJ6NoJCkz3A" templateId="2.16.840.1.113883.3.445.19" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-19</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_pyVHUIzfEeK9WffiIujeKg" base_Class="_oP3xUIx3EeKqJ6NoJCkz3A" templateId="2.16.840.1.113883.3.445.20" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-20</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_rD_jgIzfEeK9WffiIujeKg" base_Class="_HTbpoIxwEeKqJ6NoJCkz3A" templateId="2.16.840.1.113883.3.445.21" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-21</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_Y1G7wIzgEeK9WffiIujeKg" base_Class="_5WIy4IxwEeKqJ6NoJCkz3A" templateId="2.16.840.1.113883.3.445.14" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-14</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_iLsQoIzgEeK9WffiIujeKg" base_Class="_AzMIYIxzEeKqJ6NoJCkz3A" templateId="2.16.840.1.113883.3.445.15" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-15</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_pxtfcIzjEeK9WffiIujeKg" base_Class="__ZRnwIx1EeKqJ6NoJCkz3A" templateId="2.16.840.1.113883.3.445.17" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-17</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_63TucIzjEeK9WffiIujeKg" base_Class="_17Z5wIxiEeKqi7cG0-P5Sg" templateId="2.16.840.1.113883.3.445.9" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-9</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_evkCsLf7EeKp-9AKura1fA" severity="WARNING" base_Class="_zZzGYK6VEeKJZoHBxOqAtA" templateId="2.16.840.1.113883.3.445.26">
+    <ruleId>CONF-CD-26</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_eB3_BLg3EeKo5fRjhOhZFA" mandatory="true">
+    <ruleId>CONF:9074</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConformsTo xmi:id="_Yj1OULpuEeKOGsq0LhG5DQ" base_Generalization="__ZRnwYx1EeKqJ6NoJCkz3A">
+    <ruleId>CONF:14869</ruleId>
+  </CDA:ConformsTo>
+  <CDA:PropertyValidation xmi:id="_w-5TQM-cEeKA0vDW-e6agg"/>
+  <CDA:CDATemplate xmi:id="_zt9nIN56EeKrY77pclOhsw" base_Class="_v97vQN5zEeKrY77pclOhsw" templateId="2.16.840.1.113883.3.445.12" assigningAuthorityName="HL7 CBCC">
+    <ruleId>CONF-CD-12</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_4V-1kOMkEeKrWN0acRAq3w" base_Class="_PMkqYLp2EeKOGsq0LhG5DQ" templateId="2.16.840.1.113883.3.445.24" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-24</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="__lk4wOdWEeKzv8U7OUnxlg" base_Class="_ehga4OdWEeKzv8U7OUnxlg" templateId="2.16.840.1.113883.3.445.22" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-22</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_iybZ4Oo9EeKrOYS9kpIZsQ" base_Generalization="_fvfYAIvwEeK4VtU9bq_b_g">
+    <ruleId>CONF:14888</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_-D8qUOo9EeKrOYS9kpIZsQ" base_Generalization="_iiVZAYxyEeKqJ6NoJCkz3A">
+    <ruleId>CONF:14902</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="__HZrYOo9EeKrOYS9kpIZsQ" base_Generalization="_v98WUN5zEeKrY77pclOhsw">
+    <ruleId>CONF:14908</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="__3azEOo9EeKrOYS9kpIZsQ" base_Generalization="_Lq0m0YxTEeKqi7cG0-P5Sg">
+    <ruleId>CONF:14894</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_BypJoOo-EeKrOYS9kpIZsQ" base_Generalization="_mG6-sYvxEeK4VtU9bq_b_g">
+    <ruleId>CONF:14891</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_D48u0Oo-EeKrOYS9kpIZsQ" base_Generalization="_mvjj0YwkEeK4VtU9bq_b_g">
+    <ruleId>CONF:14892</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_FtoYgOo-EeKrOYS9kpIZsQ" base_Generalization="_xt3s4YxjEeKqi7cG0-P5Sg">
+    <ruleId>CONF:14898</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_Iv4BgOo-EeKrOYS9kpIZsQ" base_Generalization="_ba01UYwmEeK4VtU9bq_b_g">
+    <ruleId>CONF:14893</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_JgXDQOo-EeKrOYS9kpIZsQ" base_Generalization="_9yxdIM-WEeKA0vDW-e6agg">
+    <ruleId>CONF:14897</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_KjCoQOo-EeKrOYS9kpIZsQ" base_Generalization="_5WIy4YxwEeKqJ6NoJCkz3A">
+    <ruleId>CONF:14901</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_NFv1kOo-EeKrOYS9kpIZsQ" base_Generalization="_D7GI4IrQEeKKAZsPkJwz-Q">
+    <ruleId>CONF:14889</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_OhuEUOo-EeKrOYS9kpIZsQ" base_Generalization="_zZzGYa6VEeKJZoHBxOqAtA">
+    <ruleId>CONF:14906</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_PZgA4Oo-EeKrOYS9kpIZsQ" base_Generalization="_FAh0UYvrEeK4VtU9bq_b_g">
+    <ruleId>CONF:14890</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_QQbo4Oo-EeKrOYS9kpIZsQ" base_Generalization="_ehhB8OdWEeKzv8U7OUnxlg">
+    <ruleId>CONF:14909</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_STXxAOo-EeKrOYS9kpIZsQ" base_Generalization="_AzMIYYxzEeKqJ6NoJCkz3A">
+    <ruleId>CONF:14903</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_Tm0V4Oo-EeKrOYS9kpIZsQ" base_Generalization="_PMkqYbp2EeKOGsq0LhG5DQ">
+    <ruleId>CONF:14907</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_UeBDoOo-EeKrOYS9kpIZsQ" base_Generalization="_HTbpooxwEeKqJ6NoJCkz3A">
+    <ruleId>CONF:14899</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_VdTWYOo-EeKrOYS9kpIZsQ" base_Generalization="_oP3xUYx3EeKqJ6NoJCkz3A">
+    <ruleId>CONF:14905</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_WY2_sOo-EeKrOYS9kpIZsQ" base_Generalization="_h5qdMYx3EeKqJ6NoJCkz3A">
+    <ruleId>CONF:14904</ruleId>
+  </CDA:ConformsTo>
+  <CDA:ConformsTo xmi:id="_XOlGwOo-EeKrOYS9kpIZsQ" base_Generalization="_NAIpkYx3EeKqJ6NoJCkz3A">
+    <ruleId>CONF:14895</ruleId>
+  </CDA:ConformsTo>
+  <CDA:CDATemplate xmi:id="_zQsCsIzgEeK9WffiIujeKg" base_Class="_hcF0kIxwEeKqJ6NoJCkz3A" templateId="2.16.840.1.113883.3.445.23" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-23</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_RkZyMOo-EeKrOYS9kpIZsQ" base_Generalization="_hcF0kYxwEeKqJ6NoJCkz3A">
+    <ruleId>CONF:14900</ruleId>
+  </CDA:ConformsTo>
+  <CDA:CDATemplate xmi:id="_kp0qgIzhEeK9WffiIujeKg" base_Class="_QLns8IxdEeKqi7cG0-P5Sg" templateId="2.16.840.1.113883.3.445.10" assigningAuthorityName="HL7">
+    <ruleId>CONF-CD-10</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_E7PSQOo-EeKrOYS9kpIZsQ" base_Generalization="_QLns8YxdEeKqi7cG0-P5Sg">
+    <ruleId>CONF:14896</ruleId>
+  </CDA:ConformsTo>
+  <Ecore:EPackage xmi:id="_SAO7oER3EeaTKetiFje49w" base_Package="_9O8yDYqLEeKIRdOX2_HXEA" packageName="consentdirective" nsPrefix="consentdirective" nsURI="http://www.hl7.org/cbcc/privacy/consentdirective" basePackage="org.hl7.cbcc.privacy" prefix="CONSENTDIRECTIVE">
+    <annotation>http://www.eclipse.org/mdht/uml initializers='org.hl7.cbcc.privacy.consentdirective'</annotation>
+  </Ecore:EPackage>
+  <Ecore:EClass xmi:id="_SAdlIER3EeaTKetiFje49w" base_Class="_D6zN8IrQEeKKAZsPkJwz-Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PrivacyConsentHeaderAuthorTemplateId PrivacyConsentHeaderAuthorFunctionCode PrivacyConsentHeaderAuthorTime PrivacyConsentHeaderAuthorAssignedAuthor' templateId.root='2.16.840.1.113883.3.445.2' functionCode.codeSystem='2.16.840.1.113883.5.88' functionCode.codeSystemName='ParticipationFunction' constraints.validation.info='PrivacyConsentHeaderAuthorFunctionCodeP' constraints.validation.dependOn.PrivacyConsentHeaderAuthorFunctionCode='PrivacyConsentHeaderAuthorFunctionCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SBKvwER3EeaTKetiFje49w" base_Class="_FAh0UIvrEeK4VtU9bq_b_g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PrivacyConsentHeaderDocumentationOfServiceEventTemplateId PrivacyConsentHeaderDocumentationOfServiceEventCode' templateId.root='2.16.840.1.113883.3.445.3' constraints.validation.warning='PrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SBaAUER3EeaTKetiFje49w" base_Class="_jGGEQIvsEeK4VtU9bq_b_g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PrivacyConsentDirectiveDocumentTemplateId PrivacyConsentDirectiveDocumentCode PrivacyConsentDirectiveDocumentCodeP PrivacyConsentDirectiveDocumentTitle PrivacyConsentDirectiveDocumentAuthor PrivacyConsentDirectiveDocumentLegalAuthenticator PrivacyConsentDirectiveDocumentCustodian PrivacyConsentDirectiveDocumentRecordTarget' templateId.root='2.16.840.1.113883.3.445.1.1' code.code='57016-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Privacy Policy Acknowledgement Document' constraints.validation.dependOn.PrivacyConsentDirectiveDocumentCode='PrivacyConsentDirectiveDocumentCodeP' title.mixed='Authorization for Disclosure' constraints.validation.warning='PrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection PrivacyConsentDirectiveDocumentInformationRecipient PrivacyConsentDirectiveDocumentRelatedDocument' constraints.validation.info='PrivacyConsentDirectiveDocumentSignaturesSection PrivacyConsentDirectiveDocumentAuthenticator PrivacyConsentDirectiveDocumentDocumentationOf'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SCBrYER3EeaTKetiFje49w" base_Class="_mG6-sIvxEeK4VtU9bq_b_g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ConsentDirectiveEntryTemplateId' templateId.root='2.16.840.1.113883.3.445.4' constraints.validation.warning='ConsentDirectiveEntryAct ConsentDirectiveEntryObservationMedia' constraints.validation.info='ConsentDirectiveEntryObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SCT_QER3EeaTKetiFje49w" base_Class="_mvjj0IwkEeK4VtU9bq_b_g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ConsentDirectiveStructuredDefinitionTemplateId ConsentDirectiveStructuredDefinitionCode ConsentDirectiveStructuredDefinitionCodeP ConsentDirectiveStructuredDefinitionMoodCode' templateId.root='2.16.840.1.113883.3.445.5' code.codeSystem='2.16.840.1.113883.1.11.20471' code.codeSystemName='SecurityControlObservationValue' constraints.validation.dependOn.ConsentDirectiveStructuredDefinitionCode='ConsentDirectiveStructuredDefinitionCodeP' moodCode='DEF' constraints.validation.warning='ConsentDirectiveStructuredDefinitionInformant ConsentDirectiveStructuredDefinitionParticipant ConsentDirectiveStructuredDefinitionConsentAction ConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer' constraints.validation.info='ConsentDirectiveStructuredDefinitionSecurityLabelCriteria'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SDIeoER3EeaTKetiFje49w" base_Class="_ba01UIwmEeK4VtU9bq_b_g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IIHIReceivingProviderTemplateId IIHIReceivingProviderTypeCode IIHIReceivingProviderTypeCodeP IIHIReceivingProviderParticipantRole' templateId.root='2.16.840.1.113883.3.445.7' typeCode='IRCP' constraints.validation.dependOn.IIHIReceivingProviderTypeCode='IIHIReceivingProviderTypeCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SDtGYER3EeaTKetiFje49w" base_Class="_Lq0m0IxTEeKqi7cG0-P5Sg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ConsentActionTemplateId ConsentActionCode ConsentActionCodeP ConsentActionMoodCode' templateId.root='2.16.840.1.113883.3.445.8' code.codeSystemName='' constraints.validation.dependOn.ConsentActionCode='ConsentActionCodeP' moodCode='DEF' constraints.validation.warning='ConsentActionNegationInd'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SEaRAER3EeaTKetiFje49w" base_Class="_NAIpkIx3EeKqJ6NoJCkz3A">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SignaturesSectionTemplateId SignaturesSectionCode SignaturesSectionCodeP SignaturesSectionText' templateId.root='2.16.840.1.113883.3.445.18' code.code='57017-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Privacy Policy Details Signature Section' title.mixed='Signatures' constraints.validation.warning='SignaturesSectionTitle SignaturesSectionEntry'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SE5ZMER3EeaTKetiFje49w" base_Class="_17Z5wIxiEeKqi7cG0-P5Sg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InformationCriteriaReferencesOrganizerTemplateId InformationCriteriaReferencesOrganizerMoodCode' templateId.root='2.16.840.1.113883.3.445.9' moodCode='DEF' constraints.validation.info='InformationCriteriaReferencesOrganizerInformationDefinition InformationCriteriaReferencesOrganizerRelatedProtectedProblem InformationCriteriaReferencesOrganizerConfidentialityCodeLabel'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SFDxQER3EeaTKetiFje49w" base_Class="_xt3s4IxjEeKqi7cG0-P5Sg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CriteriumRelatedProtectedProblemTemplateId CriteriumRelatedProtectedProblemCodeP CriteriumRelatedProtectedProblemValueP' templateId.root='2.16.840.1.113883.3.445.11' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='CriteriumRelatedProtectedProblemCode CriteriumRelatedProtectedProblemValue' constraints.validation.dependOn.CriteriumRelatedProtectedProblemCode='CriteriumRelatedProtectedProblemCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SF3pkER3EeaTKetiFje49w" base_Class="_HTbpoIxwEeKqJ6NoJCkz3A">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP SecurityObservationMoodCode SecurityObservationValue SecurityObservationValueP' templateId.root='2.16.840.1.113883.3.445.21' code.codeSystem='2.16.840.1.113883.1.11.20471' code.codeSystemName='SecurityControlObservationValue' constraints.validation.dependOn.SecurityObservationCode='SecurityObservationCodeP' moodCode='DEF' value.codeSystem='2.16.840.1.113883.5.1063' value.codeSystemName='SecurityObservationValueCodeSystem'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SGc4YER3EeaTKetiFje49w" base_Class="_5WIy4IxwEeKqJ6NoJCkz3A">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP SecurityObservationValueP' templateId.root='2.16.840.1.113883.3.445.14' code.code='SECCONOBS' code.codeSystem='2.16.840.1.113883.1.11.20471' code.codeSystemName='SecurityControlObservationValue' code.displayName='Security Control' constraints.validation.dependOn.SecurityObservationCode='SecurityObservationCodeP' value.codeSystem='2.16.840.1.113883.1.11.20471' value.codeSystemName='SecurityControlObservationValue' constraints.validation.warning='SecurityObservationValue' constraints.validation.dependOn.SecurityObservationValue='SecurityObservationValueP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SHk5wER3EeaTKetiFje49w" base_Class="_iiVZAIxyEeKqJ6NoJCkz3A">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ComputablePolicyConsentTemplateId ComputablePolicyConsentCodeP ComputablePolicyConsentMoodCode' templateId.root='2.16.840.1.113883.3.445.16' code.code='57016-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Privacy Policy Acknowledgement Document' constraints.validation.info='ComputablePolicyConsentCode' constraints.validation.dependOn.ComputablePolicyConsentCode='ComputablePolicyConsentCodeP' moodCode='DEF' constraints.validation.warning='ComputablePolicyConsentValue'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SICz0ER3EeaTKetiFje49w" base_Class="_AzMIYIxzEeKqJ6NoJCkz3A">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ScannedPrivacyConsentTemplateId ScannedPrivacyConsentMoodCode ScannedPrivacyConsentMoodCodeP ScannedPrivacyConsentValue' templateId.root='2.16.840.1.113883.3.445.15' moodCode='DEF' constraints.validation.dependOn.ScannedPrivacyConsentMoodCode='ScannedPrivacyConsentMoodCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SIaAMER3EeaTKetiFje49w" base_Class="__ZRnwIx1EeKqJ6NoJCkz3A">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PrivacyConsentDetailsSectionTemplateId PrivacyConsentDetailsSectionCodeP PrivacyConsentDetailsSectionEntry' templateId.root='2.16.840.1.113883.3.445.17' code.code='64292-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Release of information consent' constraints.validation.warning='PrivacyConsentDetailsSectionCode' title.mixed='Privacy Consent Directive Details' constraints.validation.info='PrivacyConsentDetailsSectionTitle'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SJLcQER3EeaTKetiFje49w" base_Class="_h5qdMIx3EeKqJ6NoJCkz3A">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SignatureImageObservationTemplateId SignatureImageObservationMoodCode SignatureImageObservationValue' templateId.root='2.16.840.1.113883.3.445.19' moodCode='EVN'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SJZesER3EeaTKetiFje49w" base_Class="_oP3xUIx3EeKqJ6NoJCkz3A">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SignatureImageEntryTemplateId SignatureImageEntryObservationMedia' templateId.root='2.16.840.1.113883.3.445.20'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SJtAsER3EeaTKetiFje49w" base_Class="_zZzGYK6VEeKJZoHBxOqAtA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PrivacyConsentHeaderDocumentationOfTemplateId PrivacyConsentHeaderDocumentationOfServiceEvent' templateId.root='2.16.840.1.113883.3.445.26'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SK_aIER3EeaTKetiFje49w" base_Class="_PMkqYLp2EeKOGsq0LhG5DQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SecurityLabelTemplateId SecurityLabelComponent' templateId.root='2.16.840.1.113883.3.445.24'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SMCjAER3EeaTKetiFje49w" base_Class="_v97vQN5zEeKrY77pclOhsw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP ConfidentialitySecurityObservationValue' templateId.root='2.16.840.1.113883.3.445.12' code.code='SECCLASSOBS' code.codeSystem='2.16.840.1.113883.1.11.20471' code.codeSystemName='SecurityControlObservationValue' code.displayName='Security Category' constraints.validation.dependOn.SecurityObservationCode='SecurityObservationCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SMnx0ER3EeaTKetiFje49w" base_Class="_ehga4OdWEeKzv8U7OUnxlg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP PurposeOfUseSecurityObservationValue PurposeOfUseSecurityObservationValueP' templateId.root='2.16.840.1.113883.3.445.22' code.code='SECCONOBS' code.codeSystem='2.16.840.1.113883.1.11.20471' code.codeSystemName='SecurityControlObservationValue' code.displayName='Security Control' constraints.validation.dependOn.SecurityObservationCode='SecurityObservationCodeP' value.codeSystem='2.16.840.1.113883.1.11.20471' value.codeSystemName='SecurityControlObservationValue' constraints.validation.dependOn.PurposeOfUseSecurityObservationValue='PurposeOfUseSecurityObservationValueP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SNacAER3EeaTKetiFje49w" base_Class="_hcF0kIxwEeKqJ6NoJCkz3A">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP SecurityObservationValueP' templateId.root='2.16.840.1.113883.3.445.23' code.code='SECCONOBS' code.codeSystem='2.16.840.1.113883.1.11.20471' code.codeSystemName='SecurityControlObservationValue' code.displayName='Security Control Observation Type' constraints.validation.dependOn.SecurityObservationCode='SecurityObservationCodeP' value.codeSystem='2.16.840.1.113883.1.11.20471' value.codeSystemName='SecurityControlObservationValue' constraints.validation.warning='SecurityObservationValue' constraints.validation.dependOn.SecurityObservationValue='SecurityObservationValueP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_SOR-sER3EeaTKetiFje49w" base_Class="_QLns8IxdEeKqi7cG0-P5Sg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CriteriumInformationDefinitionTemplateId CriteriumInformationDefinitionCode CriteriumInformationDefinitionCodeP CriteriumInformationDefinitionMoodCode' templateId.root='2.16.840.1.113883.3.445.10' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.CriteriumInformationDefinitionCode='CriteriumInformationDefinitionCodeP' constraints.validation.info='CriteriumInformationDefinitionEffectiveTime CriteriumInformationDefinitionId' moodCode='DEF'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>
