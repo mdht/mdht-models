@@ -135,8 +135,8 @@ Type of security metadata observation made about an IT resource (data, informati
       <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
   </uml:Package>
-  <term:ValueSetVersion xmi:id="_ecZIEIxWEeKqi7cG0-P5Sg" identifier="2.16.840.1.113883.1.11.20448" fullName="Purpose of Use" definition="Reason for performing one or more operations on information, which may be permitted by source system’s security policy in accordance with one or more privacy policies and consent directives." type="Intensional" binding="Dynamic" base_Enumeration="_ecP-IIxWEeKqi7cG0-P5Sg">
-    <codeSystem href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+  <term:ValueSetVersion xmi:id="_ecZIEIxWEeKqi7cG0-P5Sg" identifier="2.16.840.1.113883.1.11.20448" fullName="Purpose of Use" definition="Reason for performing one or more operations on information, which may be permitted by source system’s security policy in accordance with one or more privacy policies and consent directives." type="Intensional" base_Enumeration="_ecP-IIxWEeKqi7cG0-P5Sg">
+    <codeSystem href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_3RPYMbg8EeKo5fRjhOhZFA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_7GsEIYxoEeKIvYMIfi9SOQ" identifier="2.16.840.1.113883.1.11.20445" fullName="Obligation Policy Code" source="HL7" type="Intensional" binding="Dynamic" base_Enumeration="_7GsEIIxoEeKIvYMIfi9SOQ">
     <codeSystem href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
