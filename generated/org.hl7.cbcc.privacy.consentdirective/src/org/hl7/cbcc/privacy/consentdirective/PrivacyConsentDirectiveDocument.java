@@ -2,9 +2,12 @@
  */
 package org.hl7.cbcc.privacy.consentdirective;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.ClinicalDocument;
 
 /**
@@ -76,7 +79,8 @@ public interface PrivacyConsentDirectiveDocument extends ClinicalDocument {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consentdirective::PrivacyConsentDetailsSection))'"
 	 * @generated
 	 */
-	boolean validatePrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,7 +92,8 @@ public interface PrivacyConsentDirectiveDocument extends ClinicalDocument {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consentdirective::SignaturesSection))'"
 	 * @generated
 	 */
-	boolean validatePrivacyConsentDirectiveDocumentSignaturesSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyConsentDirectiveDocumentSignaturesSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -100,7 +105,8 @@ public interface PrivacyConsentDirectiveDocument extends ClinicalDocument {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.authenticator->exists(authenticator : cda::Authenticator | not authenticator.oclIsUndefined() and authenticator.oclIsKindOf(rim::Participation))'"
 	 * @generated
 	 */
-	boolean validatePrivacyConsentDirectiveDocumentAuthenticator(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyConsentDirectiveDocumentAuthenticator(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -124,7 +130,8 @@ public interface PrivacyConsentDirectiveDocument extends ClinicalDocument {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->exists(documentationOf : cda::DocumentationOf | not documentationOf.oclIsUndefined() and documentationOf.oclIsKindOf(consentdirective::PrivacyConsentHeaderDocumentationOf))'"
 	 * @generated
 	 */
-	boolean validatePrivacyConsentDirectiveDocumentDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyConsentDirectiveDocumentDocumentationOf(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -136,7 +143,8 @@ public interface PrivacyConsentDirectiveDocument extends ClinicalDocument {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informationRecipient->exists(informationRecipient : cda::InformationRecipient | not informationRecipient.oclIsUndefined() and informationRecipient.oclIsKindOf(rim::Participation))'"
 	 * @generated
 	 */
-	boolean validatePrivacyConsentDirectiveDocumentInformationRecipient(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyConsentDirectiveDocumentInformationRecipient(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,7 +156,8 @@ public interface PrivacyConsentDirectiveDocument extends ClinicalDocument {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.legalAuthenticator->one(legalAuthenticator : cda::LegalAuthenticator | not legalAuthenticator.oclIsUndefined() and legalAuthenticator.oclIsKindOf(rim::Participation))'"
 	 * @generated
 	 */
-	boolean validatePrivacyConsentDirectiveDocumentLegalAuthenticator(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyConsentDirectiveDocumentLegalAuthenticator(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,7 +181,8 @@ public interface PrivacyConsentDirectiveDocument extends ClinicalDocument {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(rim::Participation))'"
 	 * @generated
 	 */
-	boolean validatePrivacyConsentDirectiveDocumentRecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyConsentDirectiveDocumentRecordTarget(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -184,7 +194,8 @@ public interface PrivacyConsentDirectiveDocument extends ClinicalDocument {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.relatedDocument->exists(relatedDocument : cda::RelatedDocument | not relatedDocument.oclIsUndefined() and relatedDocument.oclIsKindOf(rim::ActRelationship))'"
 	 * @generated
 	 */
-	boolean validatePrivacyConsentDirectiveDocumentRelatedDocument(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyConsentDirectiveDocumentRelatedDocument(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,4 +214,18 @@ public interface PrivacyConsentDirectiveDocument extends ClinicalDocument {
 	 * @generated
 	 */
 	SignaturesSection getSignaturesSection();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyConsentDirectiveDocument init();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyConsentDirectiveDocument init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrivacyConsentDirectiveDocument

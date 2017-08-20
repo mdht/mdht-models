@@ -46,7 +46,8 @@ public interface MandatoryEntryAssignedAuthor extends AssignedAuthor {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
 	 * @generated
 	 */
-	boolean validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -58,7 +59,8 @@ public interface MandatoryEntryAssignedAuthor extends AssignedAuthor {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
 	 * @generated
 	 */
-	boolean validateMandatoryEntryAssignedAuthorAssignedPerson(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMandatoryEntryAssignedAuthorAssignedPerson(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -70,7 +72,8 @@ public interface MandatoryEntryAssignedAuthor extends AssignedAuthor {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
 	 * @generated
 	 */
-	boolean validateMandatoryEntryAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMandatoryEntryAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,10 +81,11 @@ public interface MandatoryEntryAssignedAuthor extends AssignedAuthor {
 	 * @generated
 	 */
 	public MandatoryEntryAssignedAuthor init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MandatoryEntryAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MandatoryEntryAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MandatoryEntryAssignedAuthor

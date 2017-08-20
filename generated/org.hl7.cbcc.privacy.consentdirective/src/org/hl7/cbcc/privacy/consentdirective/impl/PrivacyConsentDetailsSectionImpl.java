@@ -2,10 +2,13 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 import org.hl7.cbcc.privacy.consentdirective.PrivacyConsentDetailsSection;
@@ -44,8 +47,10 @@ public class PrivacyConsentDetailsSectionImpl extends SectionImpl implements Pri
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDetailsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDetailsSectionOperations.validatePrivacyConsentDetailsSectionTemplateId(this, diagnostics, context);
+	public boolean validatePrivacyConsentDetailsSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDetailsSectionOperations.validatePrivacyConsentDetailsSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -55,7 +60,8 @@ public class PrivacyConsentDetailsSectionImpl extends SectionImpl implements Pri
 	 */
 	@Override
 	public boolean validatePrivacyConsentDetailsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDetailsSectionOperations.validatePrivacyConsentDetailsSectionCodeP(this, diagnostics, context);
+		return PrivacyConsentDetailsSectionOperations.validatePrivacyConsentDetailsSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +71,8 @@ public class PrivacyConsentDetailsSectionImpl extends SectionImpl implements Pri
 	 */
 	@Override
 	public boolean validatePrivacyConsentDetailsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDetailsSectionOperations.validatePrivacyConsentDetailsSectionCode(this, diagnostics, context);
+		return PrivacyConsentDetailsSectionOperations.validatePrivacyConsentDetailsSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +82,8 @@ public class PrivacyConsentDetailsSectionImpl extends SectionImpl implements Pri
 	 */
 	@Override
 	public boolean validatePrivacyConsentDetailsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDetailsSectionOperations.validatePrivacyConsentDetailsSectionTitle(this, diagnostics, context);
+		return PrivacyConsentDetailsSectionOperations.validatePrivacyConsentDetailsSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,6 +93,26 @@ public class PrivacyConsentDetailsSectionImpl extends SectionImpl implements Pri
 	 */
 	@Override
 	public boolean validatePrivacyConsentDetailsSectionEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDetailsSectionOperations.validatePrivacyConsentDetailsSectionEntry(this, diagnostics, context);
+		return PrivacyConsentDetailsSectionOperations.validatePrivacyConsentDetailsSectionEntry(
+			this, diagnostics, context);
 	}
-} //PrivacyConsentDetailsSectionImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyConsentDetailsSection init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyConsentDetailsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // PrivacyConsentDetailsSectionImpl

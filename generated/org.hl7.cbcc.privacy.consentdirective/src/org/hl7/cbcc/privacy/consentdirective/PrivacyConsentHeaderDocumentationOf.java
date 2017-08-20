@@ -2,9 +2,12 @@
  */
 package org.hl7.cbcc.privacy.consentdirective;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.DocumentationOf;
 
 /**
@@ -28,7 +31,8 @@ public interface PrivacyConsentHeaderDocumentationOf extends DocumentationOf {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.445.26\')'"
 	 * @generated
 	 */
-	boolean validatePrivacyConsentHeaderDocumentationOfTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyConsentHeaderDocumentationOfTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -40,5 +44,20 @@ public interface PrivacyConsentHeaderDocumentationOf extends DocumentationOf {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.serviceEvent->one(serviceEvent : cda::ServiceEvent | not serviceEvent.oclIsUndefined() and serviceEvent.oclIsKindOf(consentdirective::PrivacyConsentHeaderDocumentationOfServiceEvent))'"
 	 * @generated
 	 */
-	boolean validatePrivacyConsentHeaderDocumentationOfServiceEvent(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyConsentHeaderDocumentationOfServiceEvent(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyConsentHeaderDocumentationOf init();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyConsentHeaderDocumentationOf init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrivacyConsentHeaderDocumentationOf

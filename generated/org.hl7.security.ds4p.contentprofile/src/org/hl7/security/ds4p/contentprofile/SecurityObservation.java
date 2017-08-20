@@ -103,10 +103,11 @@ public interface SecurityObservation extends Observation {
 	 * @generated
 	 */
 	public SecurityObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SecurityObservation

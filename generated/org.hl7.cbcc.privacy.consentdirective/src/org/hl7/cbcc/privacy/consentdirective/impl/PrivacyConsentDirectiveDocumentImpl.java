@@ -2,10 +2,13 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.ClinicalDocumentImpl;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 import org.hl7.cbcc.privacy.consentdirective.PrivacyConsentDetailsSection;
@@ -20,7 +23,8 @@ import org.hl7.cbcc.privacy.consentdirective.operations.PrivacyConsentDirectiveD
  *
  * @generated
  */
-public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl implements PrivacyConsentDirectiveDocument {
+public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl
+		implements PrivacyConsentDirectiveDocument {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -46,8 +50,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentTemplateId(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -56,8 +62,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentCodeP(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,8 +74,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentCode(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +86,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentTitle(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +98,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -96,8 +110,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentSignaturesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentSignaturesSection(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentSignaturesSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentSignaturesSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -106,8 +122,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentAuthenticator(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentAuthenticator(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentAuthenticator(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentAuthenticator(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -116,8 +134,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentAuthor(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentAuthor(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentAuthor(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -126,8 +146,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentDocumentationOf(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentDocumentationOf(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentDocumentationOf(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -136,8 +158,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentInformationRecipient(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentInformationRecipient(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentInformationRecipient(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentInformationRecipient(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -146,8 +170,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentLegalAuthenticator(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentLegalAuthenticator(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentLegalAuthenticator(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentLegalAuthenticator(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -156,8 +182,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentCustodian(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentCustodian(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentCustodian(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentCustodian(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -166,8 +194,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentRecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentRecordTarget(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentRecordTarget(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentRecordTarget(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -176,8 +206,10 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentDirectiveDocumentRelatedDocument(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentRelatedDocument(this, diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocumentRelatedDocument(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentDirectiveDocumentOperations.validatePrivacyConsentDirectiveDocumentRelatedDocument(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -199,4 +231,23 @@ public class PrivacyConsentDirectiveDocumentImpl extends ClinicalDocumentImpl im
 	public SignaturesSection getSignaturesSection() {
 		return PrivacyConsentDirectiveDocumentOperations.getSignaturesSection(this);
 	}
-} //PrivacyConsentDirectiveDocumentImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyConsentDirectiveDocument init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyConsentDirectiveDocument init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // PrivacyConsentDirectiveDocumentImpl

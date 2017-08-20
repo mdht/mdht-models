@@ -36,7 +36,7 @@ public final class CONTENTPROFILEPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public CONTENTPROFILEPlugin() {
-		super(new ResourceLocator [] {});
+		super(new ResourceLocator[] {});
 	}
 
 	/**

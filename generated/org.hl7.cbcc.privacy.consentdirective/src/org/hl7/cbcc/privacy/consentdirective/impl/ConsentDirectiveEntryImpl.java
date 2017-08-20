@@ -2,10 +2,13 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.EntryImpl;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 import org.hl7.cbcc.privacy.consentdirective.ConsentDirectiveEntry;
@@ -74,7 +77,28 @@ public class ConsentDirectiveEntryImpl extends EntryImpl implements ConsentDirec
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsentDirectiveEntryObservationMedia(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsentDirectiveEntryOperations.validateConsentDirectiveEntryObservationMedia(this, diagnostics, context);
+	public boolean validateConsentDirectiveEntryObservationMedia(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsentDirectiveEntryOperations.validateConsentDirectiveEntryObservationMedia(
+			this, diagnostics, context);
 	}
-} //ConsentDirectiveEntryImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConsentDirectiveEntry init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConsentDirectiveEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ConsentDirectiveEntryImpl

@@ -66,10 +66,11 @@ public interface MandatoryEntryProvenance extends Author {
 	 * @generated
 	 */
 	public MandatoryEntryProvenance init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MandatoryEntryProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MandatoryEntryProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MandatoryEntryProvenance

@@ -54,11 +54,12 @@ public interface ConfidentialitySecurityObservation extends SecurityObservation 
 	 */
 	@Override
 	public ConfidentialitySecurityObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ConfidentialitySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ConfidentialitySecurityObservation

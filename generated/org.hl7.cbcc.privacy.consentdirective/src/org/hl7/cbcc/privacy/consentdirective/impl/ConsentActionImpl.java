@@ -2,10 +2,13 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 import org.hl7.cbcc.privacy.consentdirective.ConsentAction;
@@ -87,4 +90,23 @@ public class ConsentActionImpl extends ActImpl implements ConsentAction {
 	public boolean validateConsentActionNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsentActionOperations.validateConsentActionNegationInd(this, diagnostics, context);
 	}
-} //ConsentActionImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConsentAction init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConsentAction init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ConsentActionImpl

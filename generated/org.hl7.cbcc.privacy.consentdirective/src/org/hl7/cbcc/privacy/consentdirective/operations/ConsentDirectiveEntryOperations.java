@@ -7,12 +7,18 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.mdht.uml.cda.operations.EntryOperations;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
+import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPlugin;
 import org.hl7.cbcc.privacy.consentdirective.ConsentDirectiveEntry;
+
 import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
 
 /**
@@ -22,17 +28,24 @@ import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
  *
  * <p>
  * The following operations are supported:
- * </p>
  * <ul>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ConsentDirectiveEntry#validateConsentDirectiveEntryTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consent Directive Entry Template Id</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ConsentDirectiveEntry#validateConsentDirectiveEntryAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consent Directive Entry Act</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ConsentDirectiveEntry#validateConsentDirectiveEntryObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consent Directive Entry Observation</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ConsentDirectiveEntry#validateConsentDirectiveEntryObservationMedia(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Consent Directive Entry Observation Media</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class ConsentDirectiveEntryOperations extends EntryOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,9 +73,7 @@ public class ConsentDirectiveEntryOperations extends EntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_CONSENT_DIRECTIVE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_CONSENT_DIRECTIVE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -74,28 +85,35 @@ public class ConsentDirectiveEntryOperations extends EntryOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateConsentDirectiveEntryTemplateId(ConsentDirectiveEntry consentDirectiveEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CONSENT_DIRECTIVE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateConsentDirectiveEntryTemplateId(ConsentDirectiveEntry consentDirectiveEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_CONSENT_DIRECTIVE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CONSENT_DIRECTIVE_ENTRY);
 			try {
-				VALIDATE_CONSENT_DIRECTIVE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSENT_DIRECTIVE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_CONSENT_DIRECTIVE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CONSENT_DIRECTIVE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSENT_DIRECTIVE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consentDirectiveEntry)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONSENT_DIRECTIVE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				consentDirectiveEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CONSENT_DIRECTIVE_ENTRY__CONSENT_DIRECTIVE_ENTRY_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateConsentDirectiveEntryTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consentDirectiveEntry, context) }),
-						 new Object [] { consentDirectiveEntry }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CONSENT_DIRECTIVE_ENTRY__CONSENT_DIRECTIVE_ENTRY_TEMPLATE_ID,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"ConsentDirectiveEntryConsentDirectiveEntryTemplateId"),
+						new Object[] { consentDirectiveEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -119,9 +137,7 @@ public class ConsentDirectiveEntryOperations extends EntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_CONSENT_DIRECTIVE_ENTRY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_CONSENT_DIRECTIVE_ENTRY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -133,28 +149,32 @@ public class ConsentDirectiveEntryOperations extends EntryOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateConsentDirectiveEntryAct(ConsentDirectiveEntry consentDirectiveEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CONSENT_DIRECTIVE_ENTRY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateConsentDirectiveEntryAct(ConsentDirectiveEntry consentDirectiveEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_CONSENT_DIRECTIVE_ENTRY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CONSENT_DIRECTIVE_ENTRY);
 			try {
-				VALIDATE_CONSENT_DIRECTIVE_ENTRY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSENT_DIRECTIVE_ENTRY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_CONSENT_DIRECTIVE_ENTRY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CONSENT_DIRECTIVE_ENTRY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSENT_DIRECTIVE_ENTRY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consentDirectiveEntry)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONSENT_DIRECTIVE_ENTRY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consentDirectiveEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CONSENT_DIRECTIVE_ENTRY__CONSENT_DIRECTIVE_ENTRY_ACT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateConsentDirectiveEntryAct", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consentDirectiveEntry, context) }),
-						 new Object [] { consentDirectiveEntry }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CONSENT_DIRECTIVE_ENTRY__CONSENT_DIRECTIVE_ENTRY_ACT,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString("ConsentDirectiveEntryConsentDirectiveEntryAct"),
+						new Object[] { consentDirectiveEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -178,9 +198,7 @@ public class ConsentDirectiveEntryOperations extends EntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -192,28 +210,35 @@ public class ConsentDirectiveEntryOperations extends EntryOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateConsentDirectiveEntryObservation(ConsentDirectiveEntry consentDirectiveEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateConsentDirectiveEntryObservation(ConsentDirectiveEntry consentDirectiveEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CONSENT_DIRECTIVE_ENTRY);
 			try {
-				VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consentDirectiveEntry)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				consentDirectiveEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CONSENT_DIRECTIVE_ENTRY__CONSENT_DIRECTIVE_ENTRY_OBSERVATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateConsentDirectiveEntryObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consentDirectiveEntry, context) }),
-						 new Object [] { consentDirectiveEntry }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CONSENT_DIRECTIVE_ENTRY__CONSENT_DIRECTIVE_ENTRY_OBSERVATION,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"ConsentDirectiveEntryConsentDirectiveEntryObservation"),
+						new Object[] { consentDirectiveEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -237,9 +262,7 @@ public class ConsentDirectiveEntryOperations extends EntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -251,28 +274,35 @@ public class ConsentDirectiveEntryOperations extends EntryOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateConsentDirectiveEntryObservationMedia(ConsentDirectiveEntry consentDirectiveEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateConsentDirectiveEntryObservationMedia(ConsentDirectiveEntry consentDirectiveEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CONSENT_DIRECTIVE_ENTRY);
 			try {
-				VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consentDirectiveEntry)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONSENT_DIRECTIVE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				consentDirectiveEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CONSENT_DIRECTIVE_ENTRY__CONSENT_DIRECTIVE_ENTRY_OBSERVATION_MEDIA,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateConsentDirectiveEntryObservationMedia", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consentDirectiveEntry, context) }),
-						 new Object [] { consentDirectiveEntry }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CONSENT_DIRECTIVE_ENTRY__CONSENT_DIRECTIVE_ENTRY_OBSERVATION_MEDIA,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"ConsentDirectiveEntryConsentDirectiveEntryObservationMedia"),
+						new Object[] { consentDirectiveEntry }));
 			}
+
 			return false;
 		}
 		return true;

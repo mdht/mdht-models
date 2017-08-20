@@ -46,7 +46,8 @@ public interface MandatoryDocumentAssignedAuthor extends AssignedAuthor {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.telecom->isEmpty() or self.telecom->exists(element | element.isNullFlavorUndefined())) implies (( not self.telecom->isEmpty()) )'"
 	 * @generated
 	 */
-	boolean validateMandatoryDocumentAssignedAuthorTelecomEmail(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMandatoryDocumentAssignedAuthorTelecomEmail(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -58,7 +59,8 @@ public interface MandatoryDocumentAssignedAuthor extends AssignedAuthor {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedAuthoringDevice->one(assignedAuthoringDevice : cda::AuthoringDevice | not assignedAuthoringDevice.oclIsUndefined() and assignedAuthoringDevice.oclIsKindOf(cda::AuthoringDevice))'"
 	 * @generated
 	 */
-	boolean validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -70,7 +72,8 @@ public interface MandatoryDocumentAssignedAuthor extends AssignedAuthor {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person))'"
 	 * @generated
 	 */
-	boolean validateMandatoryDocumentAssignedAuthorAssignedPerson(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMandatoryDocumentAssignedAuthorAssignedPerson(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,7 +85,8 @@ public interface MandatoryDocumentAssignedAuthor extends AssignedAuthor {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.representedOrganization->one(representedOrganization : cda::Organization | not representedOrganization.oclIsUndefined() and representedOrganization.oclIsKindOf(rim::Entity))'"
 	 * @generated
 	 */
-	boolean validateMandatoryDocumentAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMandatoryDocumentAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -90,10 +94,11 @@ public interface MandatoryDocumentAssignedAuthor extends AssignedAuthor {
 	 * @generated
 	 */
 	public MandatoryDocumentAssignedAuthor init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MandatoryDocumentAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MandatoryDocumentAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MandatoryDocumentAssignedAuthor

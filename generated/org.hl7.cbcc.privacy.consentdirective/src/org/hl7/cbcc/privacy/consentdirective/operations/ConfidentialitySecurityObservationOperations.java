@@ -2,16 +2,22 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
+import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPlugin;
 import org.hl7.cbcc.privacy.consentdirective.ConfidentialitySecurityObservation;
+
 import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
 
 /**
@@ -21,17 +27,24 @@ import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
  *
  * <p>
  * The following operations are supported:
- * </p>
  * <ul>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ConfidentialitySecurityObservation#validateConfidentialitySecurityObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Confidentiality Security Observation Value</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ConfidentialitySecurityObservation#validateSecurityObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Security Observation Template Id</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ConfidentialitySecurityObservation#validateSecurityObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Security Observation Code P</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ConfidentialitySecurityObservation#validateSecurityObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Security Observation Code</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class ConfidentialitySecurityObservationOperations extends SecurityObservationOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,9 +72,7 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -73,28 +84,36 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateConfidentialitySecurityObservationValue(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateConfidentialitySecurityObservationValue(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CONFIDENTIALITY_SECURITY_OBSERVATION);
 			try {
-				VALIDATE_CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(confidentialitySecurityObservation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				confidentialitySecurityObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateConfidentialitySecurityObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(confidentialitySecurityObservation, context) }),
-						 new Object [] { confidentialitySecurityObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"ConfidentialitySecurityObservationConfidentialitySecurityObservationValue"),
+						new Object[] { confidentialitySecurityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -118,9 +137,7 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -132,28 +149,35 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSecurityObservationTemplateId(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateSecurityObservationTemplateId(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CONFIDENTIALITY_SECURITY_OBSERVATION);
 			try {
-				VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(confidentialitySecurityObservation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				confidentialitySecurityObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSecurityObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(confidentialitySecurityObservation, context) }),
-						 new Object [] { confidentialitySecurityObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"ConfidentialitySecurityObservationSecurityObservationTemplateId"),
+						new Object[] { confidentialitySecurityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -177,9 +201,7 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -191,28 +213,48 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSecurityObservationCodeP(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateSecurityObservationCodeP(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CONFIDENTIALITY_SECURITY_OBSERVATION);
 			try {
-				VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(confidentialitySecurityObservation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				confidentialitySecurityObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSecurityObservationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(confidentialitySecurityObservation, context) }),
-						 new Object [] { confidentialitySecurityObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE_P,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"ConfidentialitySecurityObservationSecurityObservationCodeP"),
+						new Object[] { confidentialitySecurityObservation }));
 			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.hl7.cbcc.privacy.consentdirective.SecurityObservationCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.hl7.cbcc.privacy.consentdirective.SecurityObservationCodeP", passToken);
+				}
+				passToken.add(confidentialitySecurityObservation);
+			}
+
 			return false;
 		}
 		return true;
@@ -226,9 +268,9 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'SECCLASSOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'";
+	protected static final String VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'SECCLASSOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSecurityObservationCode(ConfidentialitySecurityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Security Observation Code</em>}' invariant operation.
@@ -238,9 +280,7 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -252,28 +292,43 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSecurityObservationCode(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateSecurityObservationCode(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.hl7.cbcc.privacy.consentdirective.SecurityObservationCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(confidentialitySecurityObservation)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CONFIDENTIALITY_SECURITY_OBSERVATION);
 			try {
-				VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(confidentialitySecurityObservation)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			confidentialitySecurityObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSecurityObservationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(confidentialitySecurityObservation, context) }),
-						 new Object [] { confidentialitySecurityObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"ConfidentialitySecurityObservationSecurityObservationCode"),
+						new Object[] { confidentialitySecurityObservation }));
 			}
+
 			return false;
 		}
 		return true;

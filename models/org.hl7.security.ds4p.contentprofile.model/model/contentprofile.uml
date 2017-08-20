@@ -32,13 +32,10 @@
     <packageImport xmi:id="_sQ1GEN2cEeKXEcqvv8gwcA">
       <importedPackage href="pathmap://TERM_MODEL/hitsp-c80.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
-    <packageImport xmi:id="_kNzjMOMgEeKrWN0acRAq3w">
-      <importedPackage href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_9PGi4IqLEeKIRdOX2_HXEA"/>
+    <packageImport xmi:id="_zqPCsF5CEea3I4U564yxXQ">
+      <importedPackage href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective.uml#_9O8yDYqLEeKIRdOX2_HXEA"/>
     </packageImport>
-    <packageImport xmi:id="_C6IYYOcYEeKY_89Qw270LQ">
-      <importedPackage href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_9O8yDYqLEeKIRdOX2_HXEA"/>
-    </packageImport>
-    <packagedElement xmi:type="uml:Class" xmi:id="_iyzz0d2ZEeKXEcqvv8gwcA" name="cdaPrivacySegmentedDocument">
+    <packagedElement xmi:type="uml:Class" xmi:id="_iyzz0d2ZEeKXEcqvv8gwcA" name="PrivacySegmentedDocument">
       <ownedComment xmi:id="_DJjHEOAKEeKtnLp4ZyOObA">
         <body>This CDA document template may be applied to any document type that is the result of
           segmentation.  Is specifies that the document may contain sections and entries
@@ -95,16 +92,15 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_e6iAAN5wEeKrY77pclOhsw" name="author" memberEnd="_e6hY8N5wEeKrY77pclOhsw _e6inEN5wEeKrY77pclOhsw">
       <ownedEnd xmi:id="_e6inEN5wEeKrY77pclOhsw" type="_iyzz0d2ZEeKXEcqvv8gwcA" association="_e6iAAN5wEeKrY77pclOhsw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_cjNcgGeaEeOu4KcTyYBqzA" name="cdaObligationPolicySecurityObservation">
+    <packagedElement xmi:type="uml:Class" xmi:id="_cjNcgGeaEeOu4KcTyYBqzA" name="ObligationPolicySecurityObservation">
       <ownedComment xmi:id="_cjNcgWeaEeOu4KcTyYBqzA">
         <body>This template is constrains the Security Observation to specify a &quot;obligation
           policy code&quot;. This template reuses the SecurityObservation implementing the HL7
           Healthcare Security Classification (HCS) standard.</body>
       </ownedComment>
       <generalization xmi:id="_kDU_AGeaEeOu4KcTyYBqzA" general="_ECQ2QGeaEeOu4KcTyYBqzA"/>
-      <ownedAttribute xmi:id="_cjNcg2eaEeOu4KcTyYBqzA" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_cjNcg2eaEeOu4KcTyYBqzA" name="code" visibility="private" aggregation="composite" redefinedProperty="_ECQ2Q2eaEeOu4KcTyYBqzA">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_cjNchGeaEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_cjNchWeaEeOu4KcTyYBqzA">
@@ -113,10 +109,10 @@
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cjNch2eaEeOu4KcTyYBqzA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cjNchmeaEeOu4KcTyYBqzA" value="1"/>
-        <redefinedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
+        <redefinedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_sEmhkOAFEeKtnLp4ZyOObA" name="cdaMandatoryDocumentProvenance">
+    <packagedElement xmi:type="uml:Class" xmi:id="_sEmhkOAFEeKtnLp4ZyOObA" name="MandatoryDocumentProvenance">
       <ownedComment xmi:id="_Rl8xIOdbEeKzv8U7OUnxlg">
         <body>This CDA template is used to specify the mandatory elements of the 
           &quot;author&quot; structure in the header of a CDA document. The 
@@ -132,7 +128,7 @@
           is not left &quot;null&quot;.</body>
       </ownedComment>
       <generalization xmi:id="_sEnIoOAFEeKtnLp4ZyOObA">
-        <general xmi:type="uml:Class" href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_xw9WkCymEeGMXrZ0DiQwGg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_xYPlcOAFEeKtnLp4ZyOObA" name="assignedAuthor" type="_8ao74OAFEeKtnLp4ZyOObA" association="_xYQMgOAFEeKtnLp4ZyOObA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z9Y5wOpnEeKoqPdSeAGzFw" value="1"/>
@@ -151,7 +147,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_xYQMgOAFEeKtnLp4ZyOObA" name="assignedAuthor" memberEnd="_xYPlcOAFEeKtnLp4ZyOObA _xYQMgeAFEeKtnLp4ZyOObA">
       <ownedEnd xmi:id="_xYQMgeAFEeKtnLp4ZyOObA" type="_sEmhkOAFEeKtnLp4ZyOObA" association="_xYQMgOAFEeKtnLp4ZyOObA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_8ao74OAFEeKtnLp4ZyOObA" name="cdaMandatoryDocumentAssignedAuthor">
+    <packagedElement xmi:type="uml:Class" xmi:id="_8ao74OAFEeKtnLp4ZyOObA" name="MandatoryDocumentAssignedAuthor">
       <ownedComment xmi:id="_AyVbAOMeEeKrV7mIVAi8qQ">
         <body>This CDA template is used to specify the actual person, organization, and/or
           device  responsible for the contents of the document. If a document is an
@@ -166,7 +162,7 @@
           basis for digital certificates.</body>
       </ownedComment>
       <generalization xmi:id="_8ao74eAFEeKtnLp4ZyOObA">
-        <general xmi:type="uml:Class" href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_344-ICymEeGMXrZ0DiQwGg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_z2vcQEcDEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_FNU5gOAGEeKtnLp4ZyOObA" name="telecomEmail" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_5lL8QOAGEeKtnLp4ZyOObA">
@@ -181,10 +177,10 @@
             value=&quot;mailto:author@email.org&quot;
             use=&quot;EC&quot;/>  ]]&gt;</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_qP30QPImEeGu1M-cCXg0Dg"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z9bEIfWfEeKodMpGRVXxjQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z9bEIPWfEeKodMpGRVXxjQ" value="*"/>
-        <subsettedProperty href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_93iG0SymEeGMXrZ0DiQwGg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_FNWHoOAGEeKtnLp4ZyOObA" name="assignedAuthoringDevice" association="_FNWHouAGEeKtnLp4ZyOObA">
         <ownedComment xmi:id="_vuRhgOAGEeKtnLp4ZyOObA">
@@ -229,7 +225,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_FNXVw-AGEeKtnLp4ZyOObA" name="providerOrganization" memberEnd="_FNXVwOAGEeKtnLp4ZyOObA _FNXVxOAGEeKtnLp4ZyOObA">
       <ownedEnd xmi:id="_FNXVxOAGEeKtnLp4ZyOObA" type="_8ao74OAFEeKtnLp4ZyOObA" association="_FNXVw-AGEeKtnLp4ZyOObA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_2JXDsOAIEeKtnLp4ZyOObA" name="cdaPrivacyAnnotation">
+    <packagedElement xmi:type="uml:Class" xmi:id="_2JXDsOAIEeKtnLp4ZyOObA" name="PrivacyAnnotation">
       <ownedComment xmi:id="_ZYg8AOMdEeKrV7mIVAi8qQ">
         <body>The CDA privacy annotation is a set of security observations that allow for
           specific  privacy metadata to be identified and assigned to any entry in a
@@ -317,7 +313,7 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Artifact" xmi:id="_4vgUoOAKEeKtnLp4ZyOObA" name="SegmentedDocumentContentProfileSample" fileName="SegmentedDocumentContentProfileSample.xml"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_yXPxsOcTEeKY_89Qw270LQ" name="cdaPrivacySegmentedSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_yXPxsOcTEeKY_89Qw270LQ" name="PrivacySegmentedSection">
       <ownedComment xmi:id="_dEfeYOcWEeKY_89Qw270LQ">
         <body>This CDA template may apply to any section of a C-CDA document if that section
           metadata is  different than the document's overall. For instance, this template
@@ -368,7 +364,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_5BWSMOcTEeKY_89Qw270LQ" name="sectionAuthor" memberEnd="_5BVEEOcTEeKY_89Qw270LQ _5BW5QOcTEeKY_89Qw270LQ">
       <ownedEnd xmi:id="_5BW5QOcTEeKY_89Qw270LQ" type="_yXPxsOcTEeKY_89Qw270LQ" association="_5BWSMOcTEeKY_89Qw270LQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_R2qrUOcnEeKY_89Qw270LQ" name="cdaPrivacyMarkingsSection">
+    <packagedElement xmi:type="uml:Class" xmi:id="_R2qrUOcnEeKY_89Qw270LQ" name="PrivacyMarkingsSection">
       <ownedComment xmi:id="_3XCXwOdbEeKzv8U7OUnxlg">
         <body>This CDA template is intended to specify how a document, section, or entry may
           be  constrained to specify privacy and security markings. This section is intended
@@ -430,7 +426,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_dssq4Oc3EeKPjPc9z91TIQ" name="obligationPolicySecurityObservation" memberEnd="_dsq1sOc3EeKPjPc9z91TIQ _dstR8Oc3EeKPjPc9z91TIQ">
       <ownedEnd xmi:id="_dstR8Oc3EeKPjPc9z91TIQ" type="_2JXDsOAIEeKtnLp4ZyOObA" association="_dssq4Oc3EeKPjPc9z91TIQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_eR66AOdGEeKzv8U7OUnxlg" name="cdaProtectedProblem">
+    <packagedElement xmi:type="uml:Class" xmi:id="_eR66AOdGEeKzv8U7OUnxlg" name="ProtectedProblem">
       <ownedComment xmi:id="_DOz4AOdREeKzv8U7OUnxlg">
         <body>This CDA template is an example that demonstrates how the privacy metadata could be
           used to represent protected information (e.g. a protected problem &quot;HIV&quot;
@@ -474,7 +470,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_kU3T4OdGEeKzv8U7OUnxlg" name="privacyAnnotation" memberEnd="_kU2FwudGEeKzv8U7OUnxlg _kU3T4edGEeKzv8U7OUnxlg">
       <ownedEnd xmi:id="_kU3T4edGEeKzv8U7OUnxlg" type="_eR66AOdGEeKzv8U7OUnxlg" association="_kU3T4OdGEeKzv8U7OUnxlg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_GuP-4OdHEeKzv8U7OUnxlg" name="cdaMandatoryEntryProvenance">
+    <packagedElement xmi:type="uml:Class" xmi:id="_GuP-4OdHEeKzv8U7OUnxlg" name="MandatoryEntryProvenance">
       <ownedComment xmi:id="_0sgaQOdSEeKzv8U7OUnxlg">
         <body>This CDA template is used to specify the provenance of an act. observation, etc. in
           an  entry that contains protected information. This template is intended to help
@@ -509,7 +505,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_jphFQudQEeKzv8U7OUnxlg" name="refrainPolicySecurityObservation" memberEnd="_jpgeMOdQEeKzv8U7OUnxlg _jphsUOdQEeKzv8U7OUnxlg">
       <ownedEnd xmi:id="_jphsUOdQEeKzv8U7OUnxlg" type="_2JXDsOAIEeKtnLp4ZyOObA" association="_jphFQudQEeKzv8U7OUnxlg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_hBuuMOdREeKzv8U7OUnxlg" name="cdaMandatoryEntryAssignedAuthor">
+    <packagedElement xmi:type="uml:Class" xmi:id="_hBuuMOdREeKzv8U7OUnxlg" name="MandatoryEntryAssignedAuthor">
       <ownedComment xmi:id="_7XaMAOdSEeKzv8U7OUnxlg">
         <body>This CDA template specifies the assigned author (e.g. organization. provider, or
           device)  that is responsible for the contents of a act, observation. etc. in an
@@ -554,7 +550,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_6_S_QedYEeKzv8U7OUnxlg" name="purposeOfUseSecurityObservation" memberEnd="_6_SYMOdYEeKzv8U7OUnxlg _6_S_QudYEeKzv8U7OUnxlg">
       <ownedEnd xmi:id="_6_S_QudYEeKzv8U7OUnxlg" type="_2JXDsOAIEeKtnLp4ZyOObA" association="_6_S_QedYEeKzv8U7OUnxlg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_jF3PgOdZEeKzv8U7OUnxlg" name="cdaPrivacyAnnotationEntryRelationship">
+    <packagedElement xmi:type="uml:Class" xmi:id="_jF3PgOdZEeKzv8U7OUnxlg" name="PrivacyAnnotationEntryRelationship">
       <ownedComment xmi:id="_gJXzwOdaEeKzv8U7OUnxlg">
         <body>This CDA template is used to specify an association to an organizer template that
           holds  the privacy annotation (represented using a set of SecurityObservation
@@ -572,7 +568,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_lc1t8OdZEeKzv8U7OUnxlg" name="organizer" memberEnd="_lc1G4OdZEeKzv8U7OUnxlg _lc1t8edZEeKzv8U7OUnxlg">
       <ownedEnd xmi:id="_lc1t8edZEeKzv8U7OUnxlg" type="_jF3PgOdZEeKzv8U7OUnxlg" association="_lc1t8OdZEeKzv8U7OUnxlg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_tpQOYOdcEeKzv8U7OUnxlg" name="cdaPrivacyMarkingsEntry">
+    <packagedElement xmi:type="uml:Class" xmi:id="_tpQOYOdcEeKzv8U7OUnxlg" name="PrivacyMarkingsEntry">
       <ownedComment xmi:id="_lmtbMPQIEeKE9KYLAeRTpg">
         <body>This CDA entry template reuses a PrivacyAnnotation - a type of security label that
           specifies  confidentiality, obligation(s), refrain policies, and purpose of use.
@@ -825,7 +821,7 @@
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_5UQhIP1OEeKdB8N84ufXAw" value="HL7 Obligation Policy Code"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_dYFEcGeZEeOu4KcTyYBqzA" name="cdaConfidentialitySecurityObservation">
+    <packagedElement xmi:type="uml:Class" xmi:id="_dYFEcGeZEeOu4KcTyYBqzA" name="ConfidentialitySecurityObservation">
       <ownedComment xmi:id="_dYFEcWeZEeOu4KcTyYBqzA">
         <body>This template is constrains the Security Observation to specify a
           &quot;confidentiality code&quot;. This template reuses the SecurityObservation
@@ -859,10 +855,10 @@
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dYFEeGeZEeOu4KcTyYBqzA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dYFEd2eZEeOu4KcTyYBqzA" value="1"/>
-        <subsettedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
+        <subsettedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_ECQ2QGeaEeOu4KcTyYBqzA" name="cdaSecurityObservation" isAbstract="true">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ECQ2QGeaEeOu4KcTyYBqzA" name="SecurityObservation" isAbstract="true">
       <ownedComment xmi:id="_ECQ2QWeaEeOu4KcTyYBqzA">
         <body>This template is used to specify an security observation associated with an
           information type specified in the privacy consent document or information instance that
@@ -902,7 +898,7 @@
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_OYUrIGeaEeOu4KcTyYBqzA" name="cdaRefrainPolicySecurityObservation">
+    <packagedElement xmi:type="uml:Class" xmi:id="_OYUrIGeaEeOu4KcTyYBqzA" name="RefrainPolicySecurityObservation">
       <ownedComment xmi:id="_OYUrIWeaEeOu4KcTyYBqzA">
         <body>This template is constrains the Security Observation to specify a &quot;refrain
           policy code&quot;. This template reuses the SecurityObservation implementing the HL7
@@ -929,7 +925,7 @@
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OYUrKGeaEeOu4KcTyYBqzA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OYUrJ2eaEeOu4KcTyYBqzA" value="1"/>
-        <redefinedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
+        <redefinedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_OYUrKWeaEeOu4KcTyYBqzA" name="ConfidentialitySecurityObservation">
         <ownedComment xmi:id="_OYUrKmeaEeOu4KcTyYBqzA">
@@ -968,13 +964,15 @@
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OYUrMWeaEeOu4KcTyYBqzA" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OYUrMGeaEeOu4KcTyYBqzA" value="1"/>
-          <subsettedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
+          <subsettedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
         </ownedAttribute>
       </nestedClassifier>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_d4Y_YGedEeOu4KcTyYBqzA" name="cdaPurposeOfUseSecurityObservation">
+    <packagedElement xmi:type="uml:Class" xmi:id="_d4Y_YGedEeOu4KcTyYBqzA" name="PurposeOfUseSecurityObservation">
       <ownedComment xmi:id="_EHTxgGeeEeOu4KcTyYBqzA">
-        <body>This template constrains the Security Observation to specify a &quot;purpose of use&quot;. This template reuses the SecurityObservation implementing the HL7 Healthcare Security Classification (HCS) standard.</body>
+        <body>This template is constrains the Security Observation to specify a &quot;purpose of
+          use&quot;. This template reuses the SecurityObservation implementing the HL7
+          Healthcare Security Classification (HCS) standard.</body>
       </ownedComment>
       <generalization xmi:id="_3hm1QGedEeOu4KcTyYBqzA" general="_ECQ2QGeaEeOu4KcTyYBqzA"/>
       <ownedAttribute xmi:id="_d4Y_YmedEeOu4KcTyYBqzA" name="code" visibility="private" aggregation="composite">
@@ -1044,8 +1042,8 @@
     <ruleId>CONF-DS4P-4</ruleId>
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_nB838OcUEeKY_89Qw270LQ" base_Property="_5BUdAOcTEeKY_89Qw270LQ">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_8K870TVPEeGIw7CntkyPQw"/>
     <ruleId>CONF:16833</ruleId>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_8K870TVPEeGIw7CntkyPQw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_5P7rUOcUEeKY_89Qw270LQ" severity="WARNING" mandatory="true" base_Property="_5BUdAOcTEeKY_89Qw270LQ">
     <ruleId>CONF:16834</ruleId>
@@ -1095,8 +1093,8 @@
     <ruleId>CONF:9041</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_kUuxAedGEeKzv8U7OUnxlg" severity="WARNING">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:9045</ruleId>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_kUv_IOdGEeKzv8U7OUnxlg">
     <ruleId>CONF:9060</ruleId>
@@ -1116,8 +1114,8 @@
     <ruleId>CONF:9049</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_8PBm8OdGEeKzv8U7OUnxlg" severity="WARNING">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:9058</ruleId>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8PCOAOdGEeKzv8U7OUnxlg"/>
   <CDA:CodeSystemConstraint xmi:id="_NCT98OdHEeKzv8U7OUnxlg">
@@ -1168,8 +1166,8 @@
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_aQeBg-dsEeKzv8U7OUnxlg"/>
   <CDA:ValueSetConstraint xmi:id="_NQFysOmhEeKequ6sN6q-5g" severity="WARNING">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
     <ruleId>CONF:16788</ruleId>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_NQHA0OmhEeKequ6sN6q-5g">
     <ruleId>CONF:16787</ruleId>
@@ -1269,7 +1267,7 @@
     <ruleId>CONF:14841</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_dYFEfGeZEeOu4KcTyYBqzA" code="SECCLASSOBS" displayName="Security Category" base_Property="_dYFEc2eZEeOu4KcTyYBqzA">
-    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
     <ruleId>CONF:14888</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_dYFEfWeZEeOu4KcTyYBqzA" mandatory="true" base_Property="_dYFEdWeZEeOu4KcTyYBqzA">
@@ -1312,15 +1310,15 @@
     <ruleId>CONF:14841</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_OYUrNWeaEeOu4KcTyYBqzA" code="SECCONOBS" displayName="Security Control Observation Type" base_Property="_OYUrI2eaEeOu4KcTyYBqzA">
-    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
     <ruleId>CONF:14885</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_OYUrNmeaEeOu4KcTyYBqzA" mandatory="true" base_Property="_OYUrJWeaEeOu4KcTyYBqzA">
     <ruleId>CONF:9134</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_OYUrN2eaEeOu4KcTyYBqzA" base_Property="_OYUrJWeaEeOu4KcTyYBqzA">
-    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_DypusYxpEeKIvYMIfi9SOQ"/>
     <ruleId>CONF:9135</ruleId>
+    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_DypusYxpEeKIvYMIfi9SOQ"/>
   </CDA:ValueSetConstraint>
   <CDA:CDATemplate xmi:id="_OYUrOGeaEeOu4KcTyYBqzA" base_Class="_OYUrKWeaEeOu4KcTyYBqzA" templateId="2.16.840.1.113883.3.445.12" assigningAuthorityName="HL7 CBCC">
     <ruleId>CONF-CD-12</ruleId>
@@ -1332,7 +1330,7 @@
     <ruleId>CONF:14841</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_OYUrO2eaEeOu4KcTyYBqzA" code="SECCLASSOBS" displayName="Security Category" base_Property="_OYUrLGeaEeOu4KcTyYBqzA">
-    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
     <ruleId>CONF:14888</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_OYUrPGeaEeOu4KcTyYBqzA" mandatory="true" base_Property="_OYUrLmeaEeOu4KcTyYBqzA">
@@ -1352,15 +1350,15 @@
     <ruleId>CONF:14841</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_cjNci2eaEeOu4KcTyYBqzA" code="SECCONOBS" displayName="Security Control" base_Property="_cjNcg2eaEeOu4KcTyYBqzA">
-    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
     <ruleId>CONF:14886</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_cjNcjGeaEeOu4KcTyYBqzA" mandatory="true" base_Property="_cjNchGeaEeOu4KcTyYBqzA">
     <ruleId>CONF:9136</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_cjNcjWeaEeOu4KcTyYBqzA" base_Property="_cjNchGeaEeOu4KcTyYBqzA" severity="WARNING">
-    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_7GsEIYxoEeKIvYMIfi9SOQ"/>
+  <CDA:ValueSetConstraint xmi:id="_cjNcjWeaEeOu4KcTyYBqzA" severity="WARNING" base_Property="_cjNchGeaEeOu4KcTyYBqzA">
     <ruleId>CONF:9137</ruleId>
+    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_7GsEIYxoEeKIvYMIfi9SOQ"/>
   </CDA:ValueSetConstraint>
   <CDA:ConformsTo xmi:id="_opU5wGeaEeOu4KcTyYBqzA" base_Generalization="_kDU_AGeaEeOu4KcTyYBqzA">
     <ruleId>CONF:16828</ruleId>
@@ -1378,15 +1376,15 @@
     <ruleId>CONF:14841</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_d4Y_a2edEeOu4KcTyYBqzA" code="SECCONOBS" displayName="Security Control" base_Property="_d4Y_YmedEeOu4KcTyYBqzA">
-    <reference href="pathmap://CONTENTPROFILE_MODEL///contentprofile-vocab.uml#_3-WtyuovEeKrOYS9kpIZsQ"/>
+    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
     <ruleId>CONF:14883</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_d4Y_bGedEeOu4KcTyYBqzA" mandatory="true" base_Property="_d4Y_ZGedEeOu4KcTyYBqzA">
     <ruleId>CONF:9074</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_d4Y_bWedEeOu4KcTyYBqzA" base_Property="_d4Y_ZGedEeOu4KcTyYBqzA">
-    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_ecZIEIxWEeKqi7cG0-P5Sg"/>
     <ruleId>CONF:14888</ruleId>
+    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_ecZIEIxWEeKqi7cG0-P5Sg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_EwuxQWgHEeOZxdiNEEVgLA" mandatory="true" base_Property="_EwuxQGgHEeOZxdiNEEVgLA">
     <ruleId>CONF:16831</ruleId>

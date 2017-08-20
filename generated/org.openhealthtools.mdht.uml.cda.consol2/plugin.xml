@@ -13,4 +13,11 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <package class="org.openhealthtools.mdht.uml.cda.consol.ConsolPackage" genModel="model/consol.genmodel" uri="http://www.openhealthtools.org/mdht/uml/cda/consol"/>
    </extension>
+   
+   
+     <extension point="org.eclipse.emf.ecore.uri_mapping">
+		<mapping source="pathmap://CONSOL_ECOREMODEL/" target="model/">
+		</mapping>
+	</extension>
+	
 </plugin>

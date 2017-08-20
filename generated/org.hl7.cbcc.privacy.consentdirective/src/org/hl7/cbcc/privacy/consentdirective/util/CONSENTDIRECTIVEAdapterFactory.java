@@ -89,7 +89,7 @@ public class CONSENTDIRECTIVEAdapterFactory extends AdapterFactoryImpl {
 			return true;
 		}
 		if (object instanceof EObject) {
-			return ((EObject)object).eClass().getEPackage() == modelPackage;
+			return ((EObject) object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
 	}
@@ -100,169 +100,208 @@ public class CONSENTDIRECTIVEAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CONSENTDIRECTIVESwitch<Adapter> modelSwitch =
-		new CONSENTDIRECTIVESwitch<Adapter>() {
-			@Override
-			public Adapter casePrivacyConsentHeaderAuthor(PrivacyConsentHeaderAuthor object) {
-				return createPrivacyConsentHeaderAuthorAdapter();
-			}
-			@Override
-			public Adapter casePrivacyConsentHeaderDocumentationOfServiceEvent(PrivacyConsentHeaderDocumentationOfServiceEvent object) {
-				return createPrivacyConsentHeaderDocumentationOfServiceEventAdapter();
-			}
-			@Override
-			public Adapter casePrivacyConsentDirectiveDocument(PrivacyConsentDirectiveDocument object) {
-				return createPrivacyConsentDirectiveDocumentAdapter();
-			}
-			@Override
-			public Adapter casePrivacyConsentDetailsSection(PrivacyConsentDetailsSection object) {
-				return createPrivacyConsentDetailsSectionAdapter();
-			}
-			@Override
-			public Adapter caseSignaturesSection(SignaturesSection object) {
-				return createSignaturesSectionAdapter();
-			}
-			@Override
-			public Adapter caseConsentDirectiveEntry(ConsentDirectiveEntry object) {
-				return createConsentDirectiveEntryAdapter();
-			}
-			@Override
-			public Adapter caseConsentDirectiveStructuredDefinition(ConsentDirectiveStructuredDefinition object) {
-				return createConsentDirectiveStructuredDefinitionAdapter();
-			}
-			@Override
-			public Adapter caseConsentAction(ConsentAction object) {
-				return createConsentActionAdapter();
-			}
-			@Override
-			public Adapter caseInformationCriteriaReferencesOrganizer(InformationCriteriaReferencesOrganizer object) {
-				return createInformationCriteriaReferencesOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseCriteriumInformationDefinition(CriteriumInformationDefinition object) {
-				return createCriteriumInformationDefinitionAdapter();
-			}
-			@Override
-			public Adapter caseCriteriumRelatedProtectedProblem(CriteriumRelatedProtectedProblem object) {
-				return createCriteriumRelatedProtectedProblemAdapter();
-			}
-			@Override
-			public Adapter caseConfidentialitySecurityObservation(ConfidentialitySecurityObservation object) {
-				return createConfidentialitySecurityObservationAdapter();
-			}
-			@Override
-			public Adapter caseSecurityObservation(SecurityObservation object) {
-				return createSecurityObservationAdapter();
-			}
-			@Override
-			public Adapter caseSecurityLabel(SecurityLabel object) {
-				return createSecurityLabelAdapter();
-			}
-			@Override
-			public Adapter caseIIHIReceivingProvider(IIHIReceivingProvider object) {
-				return createIIHIReceivingProviderAdapter();
-			}
-			@Override
-			public Adapter caseObligationPolicySecurityObservation(ObligationPolicySecurityObservation object) {
-				return createObligationPolicySecurityObservationAdapter();
-			}
-			@Override
-			public Adapter caseComputablePolicyConsent(ComputablePolicyConsent object) {
-				return createComputablePolicyConsentAdapter();
-			}
-			@Override
-			public Adapter caseScannedPrivacyConsent(ScannedPrivacyConsent object) {
-				return createScannedPrivacyConsentAdapter();
-			}
-			@Override
-			public Adapter caseSignatureImageObservation(SignatureImageObservation object) {
-				return createSignatureImageObservationAdapter();
-			}
-			@Override
-			public Adapter caseSignatureImageEntry(SignatureImageEntry object) {
-				return createSignatureImageEntryAdapter();
-			}
-			@Override
-			public Adapter casePrivacyConsentHeaderDocumentationOf(PrivacyConsentHeaderDocumentationOf object) {
-				return createPrivacyConsentHeaderDocumentationOfAdapter();
-			}
-			@Override
-			public Adapter casePurposeOfUseSecurityObservation(PurposeOfUseSecurityObservation object) {
-				return createPurposeOfUseSecurityObservationAdapter();
-			}
-			@Override
-			public Adapter caseRefrainPolicySecurityObservation(RefrainPolicySecurityObservation object) {
-				return createRefrainPolicySecurityObservationAdapter();
-			}
-			@Override
-			public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
-				return createInfrastructureRootAdapter();
-			}
-			@Override
-			public Adapter caseParticipation(Participation object) {
-				return createParticipationAdapter();
-			}
-			@Override
-			public Adapter caseAuthor(Author object) {
-				return createAuthorAdapter();
-			}
-			@Override
-			public Adapter caseAct(Act object) {
-				return createActAdapter();
-			}
-			@Override
-			public Adapter caseServiceEvent(ServiceEvent object) {
-				return createServiceEventAdapter();
-			}
-			@Override
-			public Adapter caseClinicalDocument(ClinicalDocument object) {
-				return createClinicalDocumentAdapter();
-			}
-			@Override
-			public Adapter caseSection(Section object) {
-				return createSectionAdapter();
-			}
-			@Override
-			public Adapter caseActRelationship(ActRelationship object) {
-				return createActRelationshipAdapter();
-			}
-			@Override
-			public Adapter caseEntry(Entry object) {
-				return createEntryAdapter();
-			}
-			@Override
-			public Adapter caseClinicalStatement(ClinicalStatement object) {
-				return createClinicalStatementAdapter();
-			}
-			@Override
-			public Adapter caseCDA_Act(org.eclipse.mdht.uml.cda.Act object) {
-				return createCDA_ActAdapter();
-			}
-			@Override
-			public Adapter caseOrganizer(Organizer object) {
-				return createOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseObservation(Observation object) {
-				return createObservationAdapter();
-			}
-			@Override
-			public Adapter caseParticipant2(Participant2 object) {
-				return createParticipant2Adapter();
-			}
-			@Override
-			public Adapter caseObservationMedia(ObservationMedia object) {
-				return createObservationMediaAdapter();
-			}
-			@Override
-			public Adapter caseDocumentationOf(DocumentationOf object) {
-				return createDocumentationOfAdapter();
-			}
-			@Override
-			public Adapter defaultCase(EObject object) {
-				return createEObjectAdapter();
-			}
-		};
+	protected CONSENTDIRECTIVESwitch<Adapter> modelSwitch = new CONSENTDIRECTIVESwitch<Adapter>() {
+		@Override
+		public Adapter casePrivacyConsentHeaderAuthor(PrivacyConsentHeaderAuthor object) {
+			return createPrivacyConsentHeaderAuthorAdapter();
+		}
+
+		@Override
+		public Adapter casePrivacyConsentHeaderDocumentationOfServiceEvent(
+				PrivacyConsentHeaderDocumentationOfServiceEvent object) {
+			return createPrivacyConsentHeaderDocumentationOfServiceEventAdapter();
+		}
+
+		@Override
+		public Adapter casePrivacyConsentDirectiveDocument(PrivacyConsentDirectiveDocument object) {
+			return createPrivacyConsentDirectiveDocumentAdapter();
+		}
+
+		@Override
+		public Adapter casePrivacyConsentDetailsSection(PrivacyConsentDetailsSection object) {
+			return createPrivacyConsentDetailsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseSignaturesSection(SignaturesSection object) {
+			return createSignaturesSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseConsentDirectiveEntry(ConsentDirectiveEntry object) {
+			return createConsentDirectiveEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseConsentDirectiveStructuredDefinition(ConsentDirectiveStructuredDefinition object) {
+			return createConsentDirectiveStructuredDefinitionAdapter();
+		}
+
+		@Override
+		public Adapter caseConsentAction(ConsentAction object) {
+			return createConsentActionAdapter();
+		}
+
+		@Override
+		public Adapter caseInformationCriteriaReferencesOrganizer(InformationCriteriaReferencesOrganizer object) {
+			return createInformationCriteriaReferencesOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseCriteriumInformationDefinition(CriteriumInformationDefinition object) {
+			return createCriteriumInformationDefinitionAdapter();
+		}
+
+		@Override
+		public Adapter caseCriteriumRelatedProtectedProblem(CriteriumRelatedProtectedProblem object) {
+			return createCriteriumRelatedProtectedProblemAdapter();
+		}
+
+		@Override
+		public Adapter caseConfidentialitySecurityObservation(ConfidentialitySecurityObservation object) {
+			return createConfidentialitySecurityObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseSecurityObservation(SecurityObservation object) {
+			return createSecurityObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseSecurityLabel(SecurityLabel object) {
+			return createSecurityLabelAdapter();
+		}
+
+		@Override
+		public Adapter caseIIHIReceivingProvider(IIHIReceivingProvider object) {
+			return createIIHIReceivingProviderAdapter();
+		}
+
+		@Override
+		public Adapter caseObligationPolicySecurityObservation(ObligationPolicySecurityObservation object) {
+			return createObligationPolicySecurityObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseComputablePolicyConsent(ComputablePolicyConsent object) {
+			return createComputablePolicyConsentAdapter();
+		}
+
+		@Override
+		public Adapter caseScannedPrivacyConsent(ScannedPrivacyConsent object) {
+			return createScannedPrivacyConsentAdapter();
+		}
+
+		@Override
+		public Adapter caseSignatureImageObservation(SignatureImageObservation object) {
+			return createSignatureImageObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseSignatureImageEntry(SignatureImageEntry object) {
+			return createSignatureImageEntryAdapter();
+		}
+
+		@Override
+		public Adapter casePrivacyConsentHeaderDocumentationOf(PrivacyConsentHeaderDocumentationOf object) {
+			return createPrivacyConsentHeaderDocumentationOfAdapter();
+		}
+
+		@Override
+		public Adapter casePurposeOfUseSecurityObservation(PurposeOfUseSecurityObservation object) {
+			return createPurposeOfUseSecurityObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseRefrainPolicySecurityObservation(RefrainPolicySecurityObservation object) {
+			return createRefrainPolicySecurityObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
+			return createInfrastructureRootAdapter();
+		}
+
+		@Override
+		public Adapter caseParticipation(Participation object) {
+			return createParticipationAdapter();
+		}
+
+		@Override
+		public Adapter caseAuthor(Author object) {
+			return createAuthorAdapter();
+		}
+
+		@Override
+		public Adapter caseAct(Act object) {
+			return createActAdapter();
+		}
+
+		@Override
+		public Adapter caseServiceEvent(ServiceEvent object) {
+			return createServiceEventAdapter();
+		}
+
+		@Override
+		public Adapter caseClinicalDocument(ClinicalDocument object) {
+			return createClinicalDocumentAdapter();
+		}
+
+		@Override
+		public Adapter caseSection(Section object) {
+			return createSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseActRelationship(ActRelationship object) {
+			return createActRelationshipAdapter();
+		}
+
+		@Override
+		public Adapter caseEntry(Entry object) {
+			return createEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseClinicalStatement(ClinicalStatement object) {
+			return createClinicalStatementAdapter();
+		}
+
+		@Override
+		public Adapter caseCDA_Act(org.eclipse.mdht.uml.cda.Act object) {
+			return createCDA_ActAdapter();
+		}
+
+		@Override
+		public Adapter caseOrganizer(Organizer object) {
+			return createOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseObservation(Observation object) {
+			return createObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseParticipant2(Participant2 object) {
+			return createParticipant2Adapter();
+		}
+
+		@Override
+		public Adapter caseObservationMedia(ObservationMedia object) {
+			return createObservationMediaAdapter();
+		}
+
+		@Override
+		public Adapter caseDocumentationOf(DocumentationOf object) {
+			return createDocumentationOfAdapter();
+		}
+
+		@Override
+		public Adapter defaultCase(EObject object) {
+			return createEObjectAdapter();
+		}
+	};
 
 	/**
 	 * Creates an adapter for the <code>target</code>.
@@ -274,9 +313,8 @@ public class CONSENTDIRECTIVEAdapterFactory extends AdapterFactoryImpl {
 	 */
 	@Override
 	public Adapter createAdapter(Notifier target) {
-		return modelSwitch.doSwitch((EObject)target);
+		return modelSwitch.doSwitch((EObject) target);
 	}
-
 
 	/**
 	 * Creates a new adapter for an object of class '{@link org.hl7.cbcc.privacy.consentdirective.PrivacyConsentHeaderAuthor <em>Privacy Consent Header Author</em>}'.
@@ -836,4 +874,4 @@ public class CONSENTDIRECTIVEAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //CONSENTDIRECTIVEAdapterFactory
+} // CONSENTDIRECTIVEAdapterFactory

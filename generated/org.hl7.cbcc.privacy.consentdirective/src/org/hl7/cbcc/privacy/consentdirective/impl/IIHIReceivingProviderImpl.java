@@ -2,10 +2,13 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.Participant2Impl;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 import org.hl7.cbcc.privacy.consentdirective.IIHIReceivingProvider;
@@ -74,7 +77,27 @@ public class IIHIReceivingProviderImpl extends Participant2Impl implements IIHIR
 	 * @generated
 	 */
 	@Override
-	public boolean validateIIHIReceivingProviderParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateIIHIReceivingProviderParticipantRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return IIHIReceivingProviderOperations.validateIIHIReceivingProviderParticipantRole(this, diagnostics, context);
 	}
-} //IIHIReceivingProviderImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IIHIReceivingProvider init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IIHIReceivingProvider init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // IIHIReceivingProviderImpl

@@ -1016,7 +1016,7 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 */
 	@Override
 	protected EPackage getEPackage() {
-	  return CONSENTDIRECTIVEPackage.eINSTANCE;
+		return CONSENTDIRECTIVEPackage.eINSTANCE;
 	}
 
 	/**
@@ -1026,54 +1026,66 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_HEADER_AUTHOR:
-				return validatePrivacyConsentHeaderAuthor((PrivacyConsentHeaderAuthor)value, diagnostics, context);
+				return validatePrivacyConsentHeaderAuthor((PrivacyConsentHeaderAuthor) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT:
-				return validatePrivacyConsentHeaderDocumentationOfServiceEvent((PrivacyConsentHeaderDocumentationOfServiceEvent)value, diagnostics, context);
+				return validatePrivacyConsentHeaderDocumentationOfServiceEvent(
+					(PrivacyConsentHeaderDocumentationOfServiceEvent) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_DIRECTIVE_DOCUMENT:
-				return validatePrivacyConsentDirectiveDocument((PrivacyConsentDirectiveDocument)value, diagnostics, context);
+				return validatePrivacyConsentDirectiveDocument(
+					(PrivacyConsentDirectiveDocument) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_DETAILS_SECTION:
-				return validatePrivacyConsentDetailsSection((PrivacyConsentDetailsSection)value, diagnostics, context);
+				return validatePrivacyConsentDetailsSection((PrivacyConsentDetailsSection) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.SIGNATURES_SECTION:
-				return validateSignaturesSection((SignaturesSection)value, diagnostics, context);
+				return validateSignaturesSection((SignaturesSection) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.CONSENT_DIRECTIVE_ENTRY:
-				return validateConsentDirectiveEntry((ConsentDirectiveEntry)value, diagnostics, context);
+				return validateConsentDirectiveEntry((ConsentDirectiveEntry) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.CONSENT_DIRECTIVE_STRUCTURED_DEFINITION:
-				return validateConsentDirectiveStructuredDefinition((ConsentDirectiveStructuredDefinition)value, diagnostics, context);
+				return validateConsentDirectiveStructuredDefinition(
+					(ConsentDirectiveStructuredDefinition) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.CONSENT_ACTION:
-				return validateConsentAction((ConsentAction)value, diagnostics, context);
+				return validateConsentAction((ConsentAction) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.INFORMATION_CRITERIA_REFERENCES_ORGANIZER:
-				return validateInformationCriteriaReferencesOrganizer((InformationCriteriaReferencesOrganizer)value, diagnostics, context);
+				return validateInformationCriteriaReferencesOrganizer(
+					(InformationCriteriaReferencesOrganizer) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.CRITERIUM_INFORMATION_DEFINITION:
-				return validateCriteriumInformationDefinition((CriteriumInformationDefinition)value, diagnostics, context);
+				return validateCriteriumInformationDefinition(
+					(CriteriumInformationDefinition) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.CRITERIUM_RELATED_PROTECTED_PROBLEM:
-				return validateCriteriumRelatedProtectedProblem((CriteriumRelatedProtectedProblem)value, diagnostics, context);
+				return validateCriteriumRelatedProtectedProblem(
+					(CriteriumRelatedProtectedProblem) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.CONFIDENTIALITY_SECURITY_OBSERVATION:
-				return validateConfidentialitySecurityObservation((ConfidentialitySecurityObservation)value, diagnostics, context);
+				return validateConfidentialitySecurityObservation(
+					(ConfidentialitySecurityObservation) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.SECURITY_OBSERVATION:
-				return validateSecurityObservation((SecurityObservation)value, diagnostics, context);
+				return validateSecurityObservation((SecurityObservation) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.SECURITY_LABEL:
-				return validateSecurityLabel((SecurityLabel)value, diagnostics, context);
+				return validateSecurityLabel((SecurityLabel) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.IIHI_RECEIVING_PROVIDER:
-				return validateIIHIReceivingProvider((IIHIReceivingProvider)value, diagnostics, context);
+				return validateIIHIReceivingProvider((IIHIReceivingProvider) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.OBLIGATION_POLICY_SECURITY_OBSERVATION:
-				return validateObligationPolicySecurityObservation((ObligationPolicySecurityObservation)value, diagnostics, context);
+				return validateObligationPolicySecurityObservation(
+					(ObligationPolicySecurityObservation) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.COMPUTABLE_POLICY_CONSENT:
-				return validateComputablePolicyConsent((ComputablePolicyConsent)value, diagnostics, context);
+				return validateComputablePolicyConsent((ComputablePolicyConsent) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.SCANNED_PRIVACY_CONSENT:
-				return validateScannedPrivacyConsent((ScannedPrivacyConsent)value, diagnostics, context);
+				return validateScannedPrivacyConsent((ScannedPrivacyConsent) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.SIGNATURE_IMAGE_OBSERVATION:
-				return validateSignatureImageObservation((SignatureImageObservation)value, diagnostics, context);
+				return validateSignatureImageObservation((SignatureImageObservation) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.SIGNATURE_IMAGE_ENTRY:
-				return validateSignatureImageEntry((SignatureImageEntry)value, diagnostics, context);
+				return validateSignatureImageEntry((SignatureImageEntry) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF:
-				return validatePrivacyConsentHeaderDocumentationOf((PrivacyConsentHeaderDocumentationOf)value, diagnostics, context);
+				return validatePrivacyConsentHeaderDocumentationOf(
+					(PrivacyConsentHeaderDocumentationOf) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.PURPOSE_OF_USE_SECURITY_OBSERVATION:
-				return validatePurposeOfUseSecurityObservation((PurposeOfUseSecurityObservation)value, diagnostics, context);
+				return validatePurposeOfUseSecurityObservation(
+					(PurposeOfUseSecurityObservation) value, diagnostics, context);
 			case CONSENTDIRECTIVEPackage.REFRAIN_POLICY_SECURITY_OBSERVATION:
-				return validateRefrainPolicySecurityObservation((RefrainPolicySecurityObservation)value, diagnostics, context);
+				return validateRefrainPolicySecurityObservation(
+					(RefrainPolicySecurityObservation) value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -1084,23 +1096,60 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentHeaderAuthor(PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(privacyConsentHeaderAuthor, diagnostics, context)) return false;
+	public boolean validatePrivacyConsentHeaderAuthor(PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(privacyConsentHeaderAuthor, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateAuthor_validateTypeCode(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateAuthor_validateContextControlCode(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorTemplateId(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorFunctionCodeP(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorFunctionCode(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorTime(privacyConsentHeaderAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorAssignedAuthor(privacyConsentHeaderAuthor, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(privacyConsentHeaderAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(privacyConsentHeaderAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(privacyConsentHeaderAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(privacyConsentHeaderAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(privacyConsentHeaderAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(privacyConsentHeaderAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(privacyConsentHeaderAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateAuthor_validateTypeCode(privacyConsentHeaderAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateAuthor_validateContextControlCode(
+				privacyConsentHeaderAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorTemplateId(
+				privacyConsentHeaderAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorFunctionCodeP(
+				privacyConsentHeaderAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorFunctionCode(
+				privacyConsentHeaderAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorTime(
+				privacyConsentHeaderAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorAssignedAuthor(
+				privacyConsentHeaderAuthor, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1110,7 +1159,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorTemplateId(PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorTemplateId(
+			PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentHeaderAuthor.validatePrivacyConsentHeaderAuthorTemplateId(diagnostics, context);
 	}
 
@@ -1120,7 +1171,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorFunctionCodeP(PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorFunctionCodeP(
+			PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentHeaderAuthor.validatePrivacyConsentHeaderAuthorFunctionCodeP(diagnostics, context);
 	}
 
@@ -1130,7 +1183,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorFunctionCode(PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorFunctionCode(
+			PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentHeaderAuthor.validatePrivacyConsentHeaderAuthorFunctionCode(diagnostics, context);
 	}
 
@@ -1140,7 +1195,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorTime(PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorTime(
+			PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentHeaderAuthor.validatePrivacyConsentHeaderAuthorTime(diagnostics, context);
 	}
 
@@ -1150,7 +1207,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorAssignedAuthor(PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentHeaderAuthor_validatePrivacyConsentHeaderAuthorAssignedAuthor(
+			PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentHeaderAuthor.validatePrivacyConsentHeaderAuthorAssignedAuthor(diagnostics, context);
 	}
 
@@ -1159,20 +1218,56 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEvent(PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateServiceEvent_validateMoodCode(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentHeaderDocumentationOfServiceEvent_validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentHeaderDocumentationOfServiceEvent_validatePrivacyConsentHeaderDocumentationOfServiceEventCode(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentHeaderDocumentationOfServiceEvent_validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
+	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEvent(
+			PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(
+			privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(
+				privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(
+				privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(
+				privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(
+				privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateServiceEvent_validateMoodCode(
+				privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentHeaderDocumentationOfServiceEvent_validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId(
+				privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentHeaderDocumentationOfServiceEvent_validatePrivacyConsentHeaderDocumentationOfServiceEventCode(
+				privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentHeaderDocumentationOfServiceEvent_validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime(
+				privacyConsentHeaderDocumentationOfServiceEvent, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1182,8 +1277,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEvent_validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId(PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyConsentHeaderDocumentationOfServiceEvent.validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId(diagnostics, context);
+	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEvent_validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId(
+			PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return privacyConsentHeaderDocumentationOfServiceEvent.validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -1192,8 +1290,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEvent_validatePrivacyConsentHeaderDocumentationOfServiceEventCode(PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyConsentHeaderDocumentationOfServiceEvent.validatePrivacyConsentHeaderDocumentationOfServiceEventCode(diagnostics, context);
+	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEvent_validatePrivacyConsentHeaderDocumentationOfServiceEventCode(
+			PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return privacyConsentHeaderDocumentationOfServiceEvent.validatePrivacyConsentHeaderDocumentationOfServiceEventCode(
+			diagnostics, context);
 	}
 
 	/**
@@ -1202,8 +1303,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEvent_validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime(PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyConsentHeaderDocumentationOfServiceEvent.validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime(diagnostics, context);
+	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEvent_validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime(
+			PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return privacyConsentHeaderDocumentationOfServiceEvent.validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime(
+			diagnostics, context);
 	}
 
 	/**
@@ -1211,32 +1315,99 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(privacyConsentDirectiveDocument, diagnostics, context)) return false;
+	public boolean validatePrivacyConsentDirectiveDocument(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(privacyConsentDirectiveDocument, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentTemplateId(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentCodeP(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentCode(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentTitle(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentSignaturesSection(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentAuthenticator(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentAuthor(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentDocumentationOf(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentInformationRecipient(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentLegalAuthenticator(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentCustodian(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentRecordTarget(privacyConsentDirectiveDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentRelatedDocument(privacyConsentDirectiveDocument, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentTemplateId(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentCodeP(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentCode(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentTitle(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentSignaturesSection(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentAuthenticator(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentAuthor(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentDocumentationOf(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentInformationRecipient(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentLegalAuthenticator(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentCustodian(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentRecordTarget(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentRelatedDocument(
+				privacyConsentDirectiveDocument, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1246,7 +1417,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentTemplateId(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentTemplateId(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentTemplateId(diagnostics, context);
 	}
 
@@ -1256,7 +1429,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentCodeP(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentCodeP(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentCodeP(diagnostics, context);
 	}
 
@@ -1266,7 +1441,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentCode(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentCode(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentCode(diagnostics, context);
 	}
 
@@ -1276,7 +1453,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentTitle(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentTitle(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentTitle(diagnostics, context);
 	}
 
@@ -1286,8 +1465,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection(diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection(
+			diagnostics, context);
 	}
 
 	/**
@@ -1296,8 +1478,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentSignaturesSection(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentSignaturesSection(diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentSignaturesSection(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentSignaturesSection(
+			diagnostics, context);
 	}
 
 	/**
@@ -1306,8 +1491,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentAuthenticator(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentAuthenticator(diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentAuthenticator(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentAuthenticator(
+			diagnostics, context);
 	}
 
 	/**
@@ -1316,7 +1504,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentAuthor(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentAuthor(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentAuthor(diagnostics, context);
 	}
 
@@ -1326,8 +1516,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentDocumentationOf(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentDocumentationOf(diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentDocumentationOf(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentDocumentationOf(
+			diagnostics, context);
 	}
 
 	/**
@@ -1336,8 +1529,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentInformationRecipient(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentInformationRecipient(diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentInformationRecipient(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentInformationRecipient(
+			diagnostics, context);
 	}
 
 	/**
@@ -1346,8 +1542,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentLegalAuthenticator(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentLegalAuthenticator(diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentLegalAuthenticator(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentLegalAuthenticator(
+			diagnostics, context);
 	}
 
 	/**
@@ -1356,7 +1555,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentCustodian(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentCustodian(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentCustodian(diagnostics, context);
 	}
 
@@ -1366,8 +1567,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentRecordTarget(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentRecordTarget(diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentRecordTarget(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentRecordTarget(
+			diagnostics, context);
 	}
 
 	/**
@@ -1376,8 +1580,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentRelatedDocument(PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentRelatedDocument(diagnostics, context);
+	public boolean validatePrivacyConsentDirectiveDocument_validatePrivacyConsentDirectiveDocumentRelatedDocument(
+			PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return privacyConsentDirectiveDocument.validatePrivacyConsentDirectiveDocumentRelatedDocument(
+			diagnostics, context);
 	}
 
 	/**
@@ -1385,23 +1592,60 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDetailsSection(PrivacyConsentDetailsSection privacyConsentDetailsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(privacyConsentDetailsSection, diagnostics, context)) return false;
+	public boolean validatePrivacyConsentDetailsSection(PrivacyConsentDetailsSection privacyConsentDetailsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(privacyConsentDetailsSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionTemplateId(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionCode(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionCodeP(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionTitle(privacyConsentDetailsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionEntry(privacyConsentDetailsSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(privacyConsentDetailsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(privacyConsentDetailsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(privacyConsentDetailsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(privacyConsentDetailsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(privacyConsentDetailsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(privacyConsentDetailsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(privacyConsentDetailsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(
+				privacyConsentDetailsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(privacyConsentDetailsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionTemplateId(
+				privacyConsentDetailsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionCode(
+				privacyConsentDetailsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionCodeP(
+				privacyConsentDetailsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionTitle(
+				privacyConsentDetailsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionEntry(
+				privacyConsentDetailsSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1411,7 +1655,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionTemplateId(PrivacyConsentDetailsSection privacyConsentDetailsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionTemplateId(
+			PrivacyConsentDetailsSection privacyConsentDetailsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentDetailsSection.validatePrivacyConsentDetailsSectionTemplateId(diagnostics, context);
 	}
 
@@ -1421,7 +1667,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionCodeP(PrivacyConsentDetailsSection privacyConsentDetailsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionCodeP(
+			PrivacyConsentDetailsSection privacyConsentDetailsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentDetailsSection.validatePrivacyConsentDetailsSectionCodeP(diagnostics, context);
 	}
 
@@ -1431,7 +1679,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionCode(PrivacyConsentDetailsSection privacyConsentDetailsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionCode(
+			PrivacyConsentDetailsSection privacyConsentDetailsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentDetailsSection.validatePrivacyConsentDetailsSectionCode(diagnostics, context);
 	}
 
@@ -1441,7 +1691,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionTitle(PrivacyConsentDetailsSection privacyConsentDetailsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionTitle(
+			PrivacyConsentDetailsSection privacyConsentDetailsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentDetailsSection.validatePrivacyConsentDetailsSectionTitle(diagnostics, context);
 	}
 
@@ -1451,7 +1703,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionEntry(PrivacyConsentDetailsSection privacyConsentDetailsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyConsentDetailsSection_validatePrivacyConsentDetailsSectionEntry(
+			PrivacyConsentDetailsSection privacyConsentDetailsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacyConsentDetailsSection.validatePrivacyConsentDetailsSectionEntry(diagnostics, context);
 	}
 
@@ -1460,22 +1714,56 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveEntry(ConsentDirectiveEntry consentDirectiveEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(consentDirectiveEntry, diagnostics, context)) return false;
+	public boolean validateConsentDirectiveEntry(ConsentDirectiveEntry consentDirectiveEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(consentDirectiveEntry, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(consentDirectiveEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(consentDirectiveEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(consentDirectiveEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(consentDirectiveEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(consentDirectiveEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(consentDirectiveEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(consentDirectiveEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(consentDirectiveEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateEntry_validateClinicalStatement(consentDirectiveEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateEntry_validateContextConductionInd(consentDirectiveEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentDirectiveEntry_validateConsentDirectiveEntryTemplateId(consentDirectiveEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentDirectiveEntry_validateConsentDirectiveEntryAct(consentDirectiveEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentDirectiveEntry_validateConsentDirectiveEntryObservation(consentDirectiveEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentDirectiveEntry_validateConsentDirectiveEntryObservationMedia(consentDirectiveEntry, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(consentDirectiveEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(consentDirectiveEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(consentDirectiveEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(consentDirectiveEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(consentDirectiveEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(consentDirectiveEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(consentDirectiveEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateEntry_validateClinicalStatement(consentDirectiveEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateEntry_validateContextConductionInd(
+				consentDirectiveEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentDirectiveEntry_validateConsentDirectiveEntryTemplateId(
+				consentDirectiveEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentDirectiveEntry_validateConsentDirectiveEntryAct(
+				consentDirectiveEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentDirectiveEntry_validateConsentDirectiveEntryObservation(
+				consentDirectiveEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentDirectiveEntry_validateConsentDirectiveEntryObservationMedia(
+				consentDirectiveEntry, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1485,7 +1773,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveEntry_validateConsentDirectiveEntryTemplateId(ConsentDirectiveEntry consentDirectiveEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsentDirectiveEntry_validateConsentDirectiveEntryTemplateId(
+			ConsentDirectiveEntry consentDirectiveEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return consentDirectiveEntry.validateConsentDirectiveEntryTemplateId(diagnostics, context);
 	}
 
@@ -1495,7 +1784,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveEntry_validateConsentDirectiveEntryAct(ConsentDirectiveEntry consentDirectiveEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsentDirectiveEntry_validateConsentDirectiveEntryAct(
+			ConsentDirectiveEntry consentDirectiveEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return consentDirectiveEntry.validateConsentDirectiveEntryAct(diagnostics, context);
 	}
 
@@ -1505,7 +1795,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveEntry_validateConsentDirectiveEntryObservation(ConsentDirectiveEntry consentDirectiveEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsentDirectiveEntry_validateConsentDirectiveEntryObservation(
+			ConsentDirectiveEntry consentDirectiveEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return consentDirectiveEntry.validateConsentDirectiveEntryObservation(diagnostics, context);
 	}
 
@@ -1515,7 +1806,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveEntry_validateConsentDirectiveEntryObservationMedia(ConsentDirectiveEntry consentDirectiveEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsentDirectiveEntry_validateConsentDirectiveEntryObservationMedia(
+			ConsentDirectiveEntry consentDirectiveEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return consentDirectiveEntry.validateConsentDirectiveEntryObservationMedia(diagnostics, context);
 	}
 
@@ -1524,24 +1816,58 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignaturesSection(SignaturesSection signaturesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(signaturesSection, diagnostics, context)) return false;
+	public boolean validateSignaturesSection(SignaturesSection signaturesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(signaturesSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSignaturesSection_validateSignaturesSectionTemplateId(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSignaturesSection_validateSignaturesSectionCode(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSignaturesSection_validateSignaturesSectionCodeP(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSignaturesSection_validateSignaturesSectionText(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSignaturesSection_validateSignaturesSectionTitle(signaturesSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSignaturesSection_validateSignaturesSectionEntry(signaturesSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSignaturesSection_validateSignaturesSectionTemplateId(
+				signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSignaturesSection_validateSignaturesSectionCode(signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSignaturesSection_validateSignaturesSectionCodeP(signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSignaturesSection_validateSignaturesSectionText(signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSignaturesSection_validateSignaturesSectionTitle(signaturesSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSignaturesSection_validateSignaturesSectionEntry(signaturesSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1551,7 +1877,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignaturesSection_validateSignaturesSectionTemplateId(SignaturesSection signaturesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSignaturesSection_validateSignaturesSectionTemplateId(SignaturesSection signaturesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return signaturesSection.validateSignaturesSectionTemplateId(diagnostics, context);
 	}
 
@@ -1561,7 +1888,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignaturesSection_validateSignaturesSectionCodeP(SignaturesSection signaturesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSignaturesSection_validateSignaturesSectionCodeP(SignaturesSection signaturesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return signaturesSection.validateSignaturesSectionCodeP(diagnostics, context);
 	}
 
@@ -1571,7 +1899,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignaturesSection_validateSignaturesSectionCode(SignaturesSection signaturesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSignaturesSection_validateSignaturesSectionCode(SignaturesSection signaturesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return signaturesSection.validateSignaturesSectionCode(diagnostics, context);
 	}
 
@@ -1581,7 +1910,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignaturesSection_validateSignaturesSectionText(SignaturesSection signaturesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSignaturesSection_validateSignaturesSectionText(SignaturesSection signaturesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return signaturesSection.validateSignaturesSectionText(diagnostics, context);
 	}
 
@@ -1591,7 +1921,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignaturesSection_validateSignaturesSectionTitle(SignaturesSection signaturesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSignaturesSection_validateSignaturesSectionTitle(SignaturesSection signaturesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return signaturesSection.validateSignaturesSectionTitle(diagnostics, context);
 	}
 
@@ -1601,7 +1932,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignaturesSection_validateSignaturesSectionEntry(SignaturesSection signaturesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSignaturesSection_validateSignaturesSectionEntry(SignaturesSection signaturesSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return signaturesSection.validateSignaturesSectionEntry(diagnostics, context);
 	}
 
@@ -1610,20 +1942,48 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignatureImageEntry(SignatureImageEntry signatureImageEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(signatureImageEntry, diagnostics, context)) return false;
+	public boolean validateSignatureImageEntry(SignatureImageEntry signatureImageEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(signatureImageEntry, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(signatureImageEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(signatureImageEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(signatureImageEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(signatureImageEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(signatureImageEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(signatureImageEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(signatureImageEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(signatureImageEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateEntry_validateClinicalStatement(signatureImageEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateEntry_validateContextConductionInd(signatureImageEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSignatureImageEntry_validateSignatureImageEntryTemplateId(signatureImageEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSignatureImageEntry_validateSignatureImageEntryObservationMedia(signatureImageEntry, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(signatureImageEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(signatureImageEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(signatureImageEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(signatureImageEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(signatureImageEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(signatureImageEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(signatureImageEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateEntry_validateClinicalStatement(signatureImageEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateEntry_validateContextConductionInd(
+				signatureImageEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSignatureImageEntry_validateSignatureImageEntryTemplateId(
+				signatureImageEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSignatureImageEntry_validateSignatureImageEntryObservationMedia(
+				signatureImageEntry, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1633,7 +1993,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignatureImageEntry_validateSignatureImageEntryTemplateId(SignatureImageEntry signatureImageEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSignatureImageEntry_validateSignatureImageEntryTemplateId(
+			SignatureImageEntry signatureImageEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return signatureImageEntry.validateSignatureImageEntryTemplateId(diagnostics, context);
 	}
 
@@ -1643,7 +2004,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignatureImageEntry_validateSignatureImageEntryObservationMedia(SignatureImageEntry signatureImageEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSignatureImageEntry_validateSignatureImageEntryObservationMedia(
+			SignatureImageEntry signatureImageEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return signatureImageEntry.validateSignatureImageEntryObservationMedia(diagnostics, context);
 	}
 
@@ -1652,25 +2014,71 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveStructuredDefinition(ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(consentDirectiveStructuredDefinition, diagnostics, context)) return false;
+	public boolean validateConsentDirectiveStructuredDefinition(
+			ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(consentDirectiveStructuredDefinition, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionTemplateId(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionCodeP(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionCode(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionMoodCode(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionInformant(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionParticipant(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionConsentAction(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer(consentDirectiveStructuredDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionSecurityLabelCriteria(consentDirectiveStructuredDefinition, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionTemplateId(
+				consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionCodeP(
+				consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionCode(
+				consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionMoodCode(
+				consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionInformant(
+				consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionParticipant(
+				consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionConsentAction(
+				consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer(
+				consentDirectiveStructuredDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionSecurityLabelCriteria(
+				consentDirectiveStructuredDefinition, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1680,8 +2088,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionTemplateId(ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionTemplateId(diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionTemplateId(
+			ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -1690,8 +2101,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionCodeP(ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionCodeP(diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionCodeP(
+			ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionCodeP(
+			diagnostics, context);
 	}
 
 	/**
@@ -1700,8 +2114,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionCode(ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionCode(diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionCode(
+			ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionCode(
+			diagnostics, context);
 	}
 
 	/**
@@ -1710,8 +2127,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionMoodCode(ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionMoodCode(diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionMoodCode(
+			ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionMoodCode(
+			diagnostics, context);
 	}
 
 	/**
@@ -1720,8 +2140,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionInformant(ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionInformant(diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionInformant(
+			ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionInformant(
+			diagnostics, context);
 	}
 
 	/**
@@ -1730,8 +2153,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionParticipant(ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionParticipant(diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionParticipant(
+			ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionParticipant(
+			diagnostics, context);
 	}
 
 	/**
@@ -1740,8 +2166,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionConsentAction(ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionConsentAction(diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionConsentAction(
+			ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionConsentAction(
+			diagnostics, context);
 	}
 
 	/**
@@ -1750,8 +2179,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer(ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer(diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer(
+			ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer(
+			diagnostics, context);
 	}
 
 	/**
@@ -1760,8 +2192,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionSecurityLabelCriteria(ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionSecurityLabelCriteria(diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinition_validateConsentDirectiveStructuredDefinitionSecurityLabelCriteria(
+			ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return consentDirectiveStructuredDefinition.validateConsentDirectiveStructuredDefinitionSecurityLabelCriteria(
+			diagnostics, context);
 	}
 
 	/**
@@ -1769,21 +2204,48 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentAction(ConsentAction consentAction, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(consentAction, diagnostics, context)) return false;
+	public boolean validateConsentAction(ConsentAction consentAction, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(consentAction, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(consentAction, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(consentAction, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(consentAction, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(consentAction, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(consentAction, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(consentAction, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(consentAction, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(consentAction, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentAction_validateConsentActionTemplateId(consentAction, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentAction_validateConsentActionCodeP(consentAction, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentAction_validateConsentActionCode(consentAction, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentAction_validateConsentActionMoodCode(consentAction, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConsentAction_validateConsentActionNegationInd(consentAction, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(consentAction, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(consentAction, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(consentAction, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(consentAction, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(consentAction, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(consentAction, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(consentAction, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentAction_validateConsentActionTemplateId(consentAction, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentAction_validateConsentActionCodeP(consentAction, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentAction_validateConsentActionCode(consentAction, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentAction_validateConsentActionMoodCode(consentAction, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConsentAction_validateConsentActionNegationInd(consentAction, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1793,7 +2255,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentAction_validateConsentActionTemplateId(ConsentAction consentAction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsentAction_validateConsentActionTemplateId(ConsentAction consentAction,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return consentAction.validateConsentActionTemplateId(diagnostics, context);
 	}
 
@@ -1803,7 +2266,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentAction_validateConsentActionCodeP(ConsentAction consentAction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsentAction_validateConsentActionCodeP(ConsentAction consentAction,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return consentAction.validateConsentActionCodeP(diagnostics, context);
 	}
 
@@ -1813,7 +2277,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentAction_validateConsentActionCode(ConsentAction consentAction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsentAction_validateConsentActionCode(ConsentAction consentAction,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return consentAction.validateConsentActionCode(diagnostics, context);
 	}
 
@@ -1823,7 +2288,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentAction_validateConsentActionMoodCode(ConsentAction consentAction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsentAction_validateConsentActionMoodCode(ConsentAction consentAction,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return consentAction.validateConsentActionMoodCode(diagnostics, context);
 	}
 
@@ -1833,7 +2299,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsentAction_validateConsentActionNegationInd(ConsentAction consentAction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsentAction_validateConsentActionNegationInd(ConsentAction consentAction,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return consentAction.validateConsentActionNegationInd(diagnostics, context);
 	}
 
@@ -1842,21 +2309,56 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInformationCriteriaReferencesOrganizer(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(informationCriteriaReferencesOrganizer, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(informationCriteriaReferencesOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(informationCriteriaReferencesOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(informationCriteriaReferencesOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(informationCriteriaReferencesOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(informationCriteriaReferencesOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(informationCriteriaReferencesOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(informationCriteriaReferencesOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(informationCriteriaReferencesOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerTemplateId(informationCriteriaReferencesOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerMoodCode(informationCriteriaReferencesOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerInformationDefinition(informationCriteriaReferencesOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(informationCriteriaReferencesOrganizer, diagnostics, context);
-		if (result || diagnostics != null) result &= validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(informationCriteriaReferencesOrganizer, diagnostics, context);
+	public boolean validateInformationCriteriaReferencesOrganizer(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(informationCriteriaReferencesOrganizer, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(
+			informationCriteriaReferencesOrganizer, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(informationCriteriaReferencesOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(informationCriteriaReferencesOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				informationCriteriaReferencesOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(informationCriteriaReferencesOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(informationCriteriaReferencesOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(informationCriteriaReferencesOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(informationCriteriaReferencesOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerTemplateId(
+				informationCriteriaReferencesOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerMoodCode(
+				informationCriteriaReferencesOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerInformationDefinition(
+				informationCriteriaReferencesOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(
+				informationCriteriaReferencesOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(
+				informationCriteriaReferencesOrganizer, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1866,8 +2368,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerTemplateId(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return informationCriteriaReferencesOrganizer.validateInformationCriteriaReferencesOrganizerTemplateId(diagnostics, context);
+	public boolean validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerTemplateId(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return informationCriteriaReferencesOrganizer.validateInformationCriteriaReferencesOrganizerTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -1876,8 +2381,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerMoodCode(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return informationCriteriaReferencesOrganizer.validateInformationCriteriaReferencesOrganizerMoodCode(diagnostics, context);
+	public boolean validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerMoodCode(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return informationCriteriaReferencesOrganizer.validateInformationCriteriaReferencesOrganizerMoodCode(
+			diagnostics, context);
 	}
 
 	/**
@@ -1886,8 +2394,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerInformationDefinition(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return informationCriteriaReferencesOrganizer.validateInformationCriteriaReferencesOrganizerInformationDefinition(diagnostics, context);
+	public boolean validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerInformationDefinition(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return informationCriteriaReferencesOrganizer.validateInformationCriteriaReferencesOrganizerInformationDefinition(
+			diagnostics, context);
 	}
 
 	/**
@@ -1896,8 +2407,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return informationCriteriaReferencesOrganizer.validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(diagnostics, context);
+	public boolean validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return informationCriteriaReferencesOrganizer.validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(
+			diagnostics, context);
 	}
 
 	/**
@@ -1906,8 +2420,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return informationCriteriaReferencesOrganizer.validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(diagnostics, context);
+	public boolean validateInformationCriteriaReferencesOrganizer_validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return informationCriteriaReferencesOrganizer.validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(
+			diagnostics, context);
 	}
 
 	/**
@@ -1915,22 +2432,58 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCriteriumInformationDefinition(CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(criteriumInformationDefinition, diagnostics, context)) return false;
+	public boolean validateCriteriumInformationDefinition(CriteriumInformationDefinition criteriumInformationDefinition,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(criteriumInformationDefinition, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(criteriumInformationDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(criteriumInformationDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(criteriumInformationDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(criteriumInformationDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(criteriumInformationDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(criteriumInformationDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(criteriumInformationDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(criteriumInformationDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionTemplateId(criteriumInformationDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionCodeP(criteriumInformationDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionCode(criteriumInformationDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionEffectiveTime(criteriumInformationDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionMoodCode(criteriumInformationDefinition, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionId(criteriumInformationDefinition, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(criteriumInformationDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(criteriumInformationDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				criteriumInformationDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(criteriumInformationDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(criteriumInformationDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(criteriumInformationDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(criteriumInformationDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionTemplateId(
+				criteriumInformationDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionCodeP(
+				criteriumInformationDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionCode(
+				criteriumInformationDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionEffectiveTime(
+				criteriumInformationDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionMoodCode(
+				criteriumInformationDefinition, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionId(
+				criteriumInformationDefinition, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1940,7 +2493,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionTemplateId(CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionTemplateId(
+			CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return criteriumInformationDefinition.validateCriteriumInformationDefinitionTemplateId(diagnostics, context);
 	}
 
@@ -1950,7 +2505,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionCodeP(CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionCodeP(
+			CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return criteriumInformationDefinition.validateCriteriumInformationDefinitionCodeP(diagnostics, context);
 	}
 
@@ -1960,7 +2517,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionCode(CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionCode(
+			CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return criteriumInformationDefinition.validateCriteriumInformationDefinitionCode(diagnostics, context);
 	}
 
@@ -1970,7 +2529,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionEffectiveTime(CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionEffectiveTime(
+			CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return criteriumInformationDefinition.validateCriteriumInformationDefinitionEffectiveTime(diagnostics, context);
 	}
 
@@ -1980,7 +2541,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionMoodCode(CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionMoodCode(
+			CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return criteriumInformationDefinition.validateCriteriumInformationDefinitionMoodCode(diagnostics, context);
 	}
 
@@ -1990,7 +2553,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionId(CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCriteriumInformationDefinition_validateCriteriumInformationDefinitionId(
+			CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return criteriumInformationDefinition.validateCriteriumInformationDefinitionId(diagnostics, context);
 	}
 
@@ -1999,21 +2564,55 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCriteriumRelatedProtectedProblem(CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(criteriumRelatedProtectedProblem, diagnostics, context)) return false;
+	public boolean validateCriteriumRelatedProtectedProblem(
+			CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(criteriumRelatedProtectedProblem, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(criteriumRelatedProtectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(criteriumRelatedProtectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(criteriumRelatedProtectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(criteriumRelatedProtectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(criteriumRelatedProtectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(criteriumRelatedProtectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(criteriumRelatedProtectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(criteriumRelatedProtectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemTemplateId(criteriumRelatedProtectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemCodeP(criteriumRelatedProtectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemCode(criteriumRelatedProtectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemValue(criteriumRelatedProtectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemValueP(criteriumRelatedProtectedProblem, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(criteriumRelatedProtectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(criteriumRelatedProtectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				criteriumRelatedProtectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(criteriumRelatedProtectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(criteriumRelatedProtectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(criteriumRelatedProtectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(criteriumRelatedProtectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemTemplateId(
+				criteriumRelatedProtectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemCodeP(
+				criteriumRelatedProtectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemCode(
+				criteriumRelatedProtectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemValue(
+				criteriumRelatedProtectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemValueP(
+				criteriumRelatedProtectedProblem, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2023,8 +2622,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemTemplateId(CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return criteriumRelatedProtectedProblem.validateCriteriumRelatedProtectedProblemTemplateId(diagnostics, context);
+	public boolean validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemTemplateId(
+			CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return criteriumRelatedProtectedProblem.validateCriteriumRelatedProtectedProblemTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -2033,7 +2635,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemCodeP(CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemCodeP(
+			CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return criteriumRelatedProtectedProblem.validateCriteriumRelatedProtectedProblemCodeP(diagnostics, context);
 	}
 
@@ -2043,7 +2647,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemCode(CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemCode(
+			CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return criteriumRelatedProtectedProblem.validateCriteriumRelatedProtectedProblemCode(diagnostics, context);
 	}
 
@@ -2053,7 +2659,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemValue(CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemValue(
+			CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return criteriumRelatedProtectedProblem.validateCriteriumRelatedProtectedProblemValue(diagnostics, context);
 	}
 
@@ -2063,7 +2671,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemValueP(CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCriteriumRelatedProtectedProblem_validateCriteriumRelatedProtectedProblemValueP(
+			CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return criteriumRelatedProtectedProblem.validateCriteriumRelatedProtectedProblemValueP(diagnostics, context);
 	}
 
@@ -2072,23 +2682,63 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConfidentialitySecurityObservation(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(confidentialitySecurityObservation, diagnostics, context)) return false;
+	public boolean validateConfidentialitySecurityObservation(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(confidentialitySecurityObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConfidentialitySecurityObservation_validateSecurityObservationTemplateId(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConfidentialitySecurityObservation_validateSecurityObservationCodeP(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConfidentialitySecurityObservation_validateSecurityObservationCode(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationMoodCode(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValue(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValueP(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValue(confidentialitySecurityObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConfidentialitySecurityObservation_validateSecurityObservationTemplateId(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConfidentialitySecurityObservation_validateSecurityObservationCodeP(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConfidentialitySecurityObservation_validateSecurityObservationCode(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValue(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValueP(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValue(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2098,7 +2748,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValue(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValue(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return confidentialitySecurityObservation.validateConfidentialitySecurityObservationValue(diagnostics, context);
 	}
 
@@ -2108,7 +2760,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConfidentialitySecurityObservation_validateSecurityObservationTemplateId(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConfidentialitySecurityObservation_validateSecurityObservationTemplateId(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return confidentialitySecurityObservation.validateSecurityObservationTemplateId(diagnostics, context);
 	}
 
@@ -2118,7 +2772,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConfidentialitySecurityObservation_validateSecurityObservationCodeP(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConfidentialitySecurityObservation_validateSecurityObservationCodeP(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return confidentialitySecurityObservation.validateSecurityObservationCodeP(diagnostics, context);
 	}
 
@@ -2128,7 +2784,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConfidentialitySecurityObservation_validateSecurityObservationCode(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConfidentialitySecurityObservation_validateSecurityObservationCode(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return confidentialitySecurityObservation.validateSecurityObservationCode(diagnostics, context);
 	}
 
@@ -2137,22 +2795,57 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(securityObservation, diagnostics, context)) return false;
+	public boolean validateSecurityObservation(SecurityObservation securityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(securityObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationTemplateId(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationCodeP(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationCode(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationMoodCode(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValue(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValueP(securityObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationTemplateId(
+				securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationCodeP(
+				securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationCode(
+				securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValue(
+				securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValueP(
+				securityObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2162,7 +2855,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation_validateSecurityObservationTemplateId(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityObservation_validateSecurityObservationTemplateId(
+			SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityObservation.validateSecurityObservationTemplateId(diagnostics, context);
 	}
 
@@ -2172,7 +2866,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation_validateSecurityObservationCodeP(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityObservation_validateSecurityObservationCodeP(SecurityObservation securityObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityObservation.validateSecurityObservationCodeP(diagnostics, context);
 	}
 
@@ -2182,7 +2877,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation_validateSecurityObservationCode(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityObservation_validateSecurityObservationCode(SecurityObservation securityObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityObservation.validateSecurityObservationCode(diagnostics, context);
 	}
 
@@ -2192,7 +2888,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation_validateSecurityObservationMoodCode(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityObservation_validateSecurityObservationMoodCode(
+			SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityObservation.validateSecurityObservationMoodCode(diagnostics, context);
 	}
 
@@ -2202,7 +2899,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation_validateSecurityObservationValue(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityObservation_validateSecurityObservationValue(SecurityObservation securityObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityObservation.validateSecurityObservationValue(diagnostics, context);
 	}
 
@@ -2212,7 +2910,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation_validateSecurityObservationValueP(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityObservation_validateSecurityObservationValueP(
+			SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityObservation.validateSecurityObservationValueP(diagnostics, context);
 	}
 
@@ -2221,18 +2920,39 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityLabel(SecurityLabel securityLabel, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(securityLabel, diagnostics, context)) return false;
+	public boolean validateSecurityLabel(SecurityLabel securityLabel, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(securityLabel, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(securityLabel, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(securityLabel, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(securityLabel, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(securityLabel, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(securityLabel, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(securityLabel, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(securityLabel, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(securityLabel, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityLabel_validateSecurityLabelTemplateId(securityLabel, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityLabel_validateSecurityLabelComponent(securityLabel, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(securityLabel, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(securityLabel, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(securityLabel, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(securityLabel, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(securityLabel, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(securityLabel, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(securityLabel, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityLabel_validateSecurityLabelTemplateId(securityLabel, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityLabel_validateSecurityLabelComponent(securityLabel, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2242,7 +2962,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityLabel_validateSecurityLabelTemplateId(SecurityLabel securityLabel, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityLabel_validateSecurityLabelTemplateId(SecurityLabel securityLabel,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityLabel.validateSecurityLabelTemplateId(diagnostics, context);
 	}
 
@@ -2252,7 +2973,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityLabel_validateSecurityLabelComponent(SecurityLabel securityLabel, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityLabel_validateSecurityLabelComponent(SecurityLabel securityLabel,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityLabel.validateSecurityLabelComponent(diagnostics, context);
 	}
 
@@ -2261,21 +2983,53 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIIHIReceivingProvider(IIHIReceivingProvider iihiReceivingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(iihiReceivingProvider, diagnostics, context)) return false;
+	public boolean validateIIHIReceivingProvider(IIHIReceivingProvider iihiReceivingProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(iihiReceivingProvider, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(iihiReceivingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(iihiReceivingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(iihiReceivingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(iihiReceivingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(iihiReceivingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(iihiReceivingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(iihiReceivingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(iihiReceivingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateParticipant2_validateContextControlCode(iihiReceivingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validateIIHIReceivingProvider_validateIIHIReceivingProviderTemplateId(iihiReceivingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validateIIHIReceivingProvider_validateIIHIReceivingProviderTypeCodeP(iihiReceivingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validateIIHIReceivingProvider_validateIIHIReceivingProviderTypeCode(iihiReceivingProvider, diagnostics, context);
-		if (result || diagnostics != null) result &= validateIIHIReceivingProvider_validateIIHIReceivingProviderParticipantRole(iihiReceivingProvider, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(iihiReceivingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(iihiReceivingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(iihiReceivingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(iihiReceivingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(iihiReceivingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(iihiReceivingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(iihiReceivingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateParticipant2_validateContextControlCode(
+				iihiReceivingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateIIHIReceivingProvider_validateIIHIReceivingProviderTemplateId(
+				iihiReceivingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateIIHIReceivingProvider_validateIIHIReceivingProviderTypeCodeP(
+				iihiReceivingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateIIHIReceivingProvider_validateIIHIReceivingProviderTypeCode(
+				iihiReceivingProvider, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateIIHIReceivingProvider_validateIIHIReceivingProviderParticipantRole(
+				iihiReceivingProvider, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2285,7 +3039,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIIHIReceivingProvider_validateIIHIReceivingProviderTemplateId(IIHIReceivingProvider iihiReceivingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateIIHIReceivingProvider_validateIIHIReceivingProviderTemplateId(
+			IIHIReceivingProvider iihiReceivingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return iihiReceivingProvider.validateIIHIReceivingProviderTemplateId(diagnostics, context);
 	}
 
@@ -2295,7 +3050,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIIHIReceivingProvider_validateIIHIReceivingProviderTypeCodeP(IIHIReceivingProvider iihiReceivingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateIIHIReceivingProvider_validateIIHIReceivingProviderTypeCodeP(
+			IIHIReceivingProvider iihiReceivingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return iihiReceivingProvider.validateIIHIReceivingProviderTypeCodeP(diagnostics, context);
 	}
 
@@ -2305,7 +3061,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIIHIReceivingProvider_validateIIHIReceivingProviderTypeCode(IIHIReceivingProvider iihiReceivingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateIIHIReceivingProvider_validateIIHIReceivingProviderTypeCode(
+			IIHIReceivingProvider iihiReceivingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return iihiReceivingProvider.validateIIHIReceivingProviderTypeCode(diagnostics, context);
 	}
 
@@ -2315,7 +3072,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIIHIReceivingProvider_validateIIHIReceivingProviderParticipantRole(IIHIReceivingProvider iihiReceivingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateIIHIReceivingProvider_validateIIHIReceivingProviderParticipantRole(
+			IIHIReceivingProvider iihiReceivingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return iihiReceivingProvider.validateIIHIReceivingProviderParticipantRole(diagnostics, context);
 	}
 
@@ -2324,22 +3082,59 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObligationPolicySecurityObservation(ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(obligationPolicySecurityObservation, diagnostics, context)) return false;
+	public boolean validateObligationPolicySecurityObservation(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(obligationPolicySecurityObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateObligationPolicySecurityObservation_validateSecurityObservationTemplateId(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateObligationPolicySecurityObservation_validateSecurityObservationCodeP(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateObligationPolicySecurityObservation_validateSecurityObservationCode(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationMoodCode(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateObligationPolicySecurityObservation_validateSecurityObservationValue(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateObligationPolicySecurityObservation_validateSecurityObservationValueP(obligationPolicySecurityObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateObligationPolicySecurityObservation_validateSecurityObservationTemplateId(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateObligationPolicySecurityObservation_validateSecurityObservationCodeP(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateObligationPolicySecurityObservation_validateSecurityObservationCode(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateObligationPolicySecurityObservation_validateSecurityObservationValue(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateObligationPolicySecurityObservation_validateSecurityObservationValueP(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2349,7 +3144,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationTemplateId(ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationTemplateId(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return obligationPolicySecurityObservation.validateSecurityObservationTemplateId(diagnostics, context);
 	}
 
@@ -2359,7 +3156,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationCodeP(ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationCodeP(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return obligationPolicySecurityObservation.validateSecurityObservationCodeP(diagnostics, context);
 	}
 
@@ -2369,7 +3168,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationCode(ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationCode(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return obligationPolicySecurityObservation.validateSecurityObservationCode(diagnostics, context);
 	}
 
@@ -2379,7 +3180,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationValueP(ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationValueP(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return obligationPolicySecurityObservation.validateSecurityObservationValueP(diagnostics, context);
 	}
 
@@ -2389,7 +3192,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationValue(ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationValue(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return obligationPolicySecurityObservation.validateSecurityObservationValue(diagnostics, context);
 	}
 
@@ -2398,21 +3203,53 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComputablePolicyConsent(ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(computablePolicyConsent, diagnostics, context)) return false;
+	public boolean validateComputablePolicyConsent(ComputablePolicyConsent computablePolicyConsent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(computablePolicyConsent, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(computablePolicyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(computablePolicyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(computablePolicyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(computablePolicyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(computablePolicyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(computablePolicyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(computablePolicyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(computablePolicyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComputablePolicyConsent_validateComputablePolicyConsentTemplateId(computablePolicyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComputablePolicyConsent_validateComputablePolicyConsentCodeP(computablePolicyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComputablePolicyConsent_validateComputablePolicyConsentCode(computablePolicyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComputablePolicyConsent_validateComputablePolicyConsentMoodCode(computablePolicyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validateComputablePolicyConsent_validateComputablePolicyConsentValue(computablePolicyConsent, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(computablePolicyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(computablePolicyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(computablePolicyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(computablePolicyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(computablePolicyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(computablePolicyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(computablePolicyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComputablePolicyConsent_validateComputablePolicyConsentTemplateId(
+				computablePolicyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComputablePolicyConsent_validateComputablePolicyConsentCodeP(
+				computablePolicyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComputablePolicyConsent_validateComputablePolicyConsentCode(
+				computablePolicyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComputablePolicyConsent_validateComputablePolicyConsentMoodCode(
+				computablePolicyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateComputablePolicyConsent_validateComputablePolicyConsentValue(
+				computablePolicyConsent, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2422,7 +3259,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComputablePolicyConsent_validateComputablePolicyConsentTemplateId(ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComputablePolicyConsent_validateComputablePolicyConsentTemplateId(
+			ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return computablePolicyConsent.validateComputablePolicyConsentTemplateId(diagnostics, context);
 	}
 
@@ -2432,7 +3270,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComputablePolicyConsent_validateComputablePolicyConsentCodeP(ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComputablePolicyConsent_validateComputablePolicyConsentCodeP(
+			ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return computablePolicyConsent.validateComputablePolicyConsentCodeP(diagnostics, context);
 	}
 
@@ -2442,7 +3281,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComputablePolicyConsent_validateComputablePolicyConsentCode(ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComputablePolicyConsent_validateComputablePolicyConsentCode(
+			ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return computablePolicyConsent.validateComputablePolicyConsentCode(diagnostics, context);
 	}
 
@@ -2452,7 +3292,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComputablePolicyConsent_validateComputablePolicyConsentMoodCode(ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComputablePolicyConsent_validateComputablePolicyConsentMoodCode(
+			ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return computablePolicyConsent.validateComputablePolicyConsentMoodCode(diagnostics, context);
 	}
 
@@ -2462,7 +3303,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateComputablePolicyConsent_validateComputablePolicyConsentValue(ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateComputablePolicyConsent_validateComputablePolicyConsentValue(
+			ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return computablePolicyConsent.validateComputablePolicyConsentValue(diagnostics, context);
 	}
 
@@ -2471,20 +3313,49 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedPrivacyConsent(ScannedPrivacyConsent scannedPrivacyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(scannedPrivacyConsent, diagnostics, context)) return false;
+	public boolean validateScannedPrivacyConsent(ScannedPrivacyConsent scannedPrivacyConsent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(scannedPrivacyConsent, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(scannedPrivacyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(scannedPrivacyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(scannedPrivacyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(scannedPrivacyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(scannedPrivacyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(scannedPrivacyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(scannedPrivacyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(scannedPrivacyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validateScannedPrivacyConsent_validateScannedPrivacyConsentTemplateId(scannedPrivacyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validateScannedPrivacyConsent_validateScannedPrivacyConsentMoodCodeP(scannedPrivacyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validateScannedPrivacyConsent_validateScannedPrivacyConsentMoodCode(scannedPrivacyConsent, diagnostics, context);
-		if (result || diagnostics != null) result &= validateScannedPrivacyConsent_validateScannedPrivacyConsentValue(scannedPrivacyConsent, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(scannedPrivacyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(scannedPrivacyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(scannedPrivacyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(scannedPrivacyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(scannedPrivacyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(scannedPrivacyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(scannedPrivacyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateScannedPrivacyConsent_validateScannedPrivacyConsentTemplateId(
+				scannedPrivacyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateScannedPrivacyConsent_validateScannedPrivacyConsentMoodCodeP(
+				scannedPrivacyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateScannedPrivacyConsent_validateScannedPrivacyConsentMoodCode(
+				scannedPrivacyConsent, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateScannedPrivacyConsent_validateScannedPrivacyConsentValue(
+				scannedPrivacyConsent, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2494,7 +3365,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedPrivacyConsent_validateScannedPrivacyConsentTemplateId(ScannedPrivacyConsent scannedPrivacyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScannedPrivacyConsent_validateScannedPrivacyConsentTemplateId(
+			ScannedPrivacyConsent scannedPrivacyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return scannedPrivacyConsent.validateScannedPrivacyConsentTemplateId(diagnostics, context);
 	}
 
@@ -2504,7 +3376,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedPrivacyConsent_validateScannedPrivacyConsentMoodCodeP(ScannedPrivacyConsent scannedPrivacyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScannedPrivacyConsent_validateScannedPrivacyConsentMoodCodeP(
+			ScannedPrivacyConsent scannedPrivacyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return scannedPrivacyConsent.validateScannedPrivacyConsentMoodCodeP(diagnostics, context);
 	}
 
@@ -2514,7 +3387,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedPrivacyConsent_validateScannedPrivacyConsentMoodCode(ScannedPrivacyConsent scannedPrivacyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScannedPrivacyConsent_validateScannedPrivacyConsentMoodCode(
+			ScannedPrivacyConsent scannedPrivacyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return scannedPrivacyConsent.validateScannedPrivacyConsentMoodCode(diagnostics, context);
 	}
 
@@ -2524,7 +3398,8 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedPrivacyConsent_validateScannedPrivacyConsentValue(ScannedPrivacyConsent scannedPrivacyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScannedPrivacyConsent_validateScannedPrivacyConsentValue(
+			ScannedPrivacyConsent scannedPrivacyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return scannedPrivacyConsent.validateScannedPrivacyConsentValue(diagnostics, context);
 	}
 
@@ -2533,19 +3408,45 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignatureImageObservation(SignatureImageObservation signatureImageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(signatureImageObservation, diagnostics, context)) return false;
+	public boolean validateSignatureImageObservation(SignatureImageObservation signatureImageObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(signatureImageObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(signatureImageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(signatureImageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(signatureImageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(signatureImageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(signatureImageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(signatureImageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(signatureImageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(signatureImageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSignatureImageObservation_validateSignatureImageObservationTemplateId(signatureImageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSignatureImageObservation_validateSignatureImageObservationMoodCode(signatureImageObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSignatureImageObservation_validateSignatureImageObservationValue(signatureImageObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(signatureImageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(signatureImageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(signatureImageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(signatureImageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(signatureImageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(signatureImageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(signatureImageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSignatureImageObservation_validateSignatureImageObservationTemplateId(
+				signatureImageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSignatureImageObservation_validateSignatureImageObservationMoodCode(
+				signatureImageObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSignatureImageObservation_validateSignatureImageObservationValue(
+				signatureImageObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2555,7 +3456,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignatureImageObservation_validateSignatureImageObservationTemplateId(SignatureImageObservation signatureImageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSignatureImageObservation_validateSignatureImageObservationTemplateId(
+			SignatureImageObservation signatureImageObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return signatureImageObservation.validateSignatureImageObservationTemplateId(diagnostics, context);
 	}
 
@@ -2565,7 +3468,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignatureImageObservation_validateSignatureImageObservationMoodCode(SignatureImageObservation signatureImageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSignatureImageObservation_validateSignatureImageObservationMoodCode(
+			SignatureImageObservation signatureImageObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return signatureImageObservation.validateSignatureImageObservationMoodCode(diagnostics, context);
 	}
 
@@ -2575,7 +3480,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSignatureImageObservation_validateSignatureImageObservationValue(SignatureImageObservation signatureImageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSignatureImageObservation_validateSignatureImageObservationValue(
+			SignatureImageObservation signatureImageObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return signatureImageObservation.validateSignatureImageObservationValue(diagnostics, context);
 	}
 
@@ -2584,19 +3491,47 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentHeaderDocumentationOf(PrivacyConsentHeaderDocumentationOf privacyConsentHeaderDocumentationOf, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(privacyConsentHeaderDocumentationOf, diagnostics, context)) return false;
+	public boolean validatePrivacyConsentHeaderDocumentationOf(
+			PrivacyConsentHeaderDocumentationOf privacyConsentHeaderDocumentationOf, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(privacyConsentHeaderDocumentationOf, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(privacyConsentHeaderDocumentationOf, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(privacyConsentHeaderDocumentationOf, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(privacyConsentHeaderDocumentationOf, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(privacyConsentHeaderDocumentationOf, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(privacyConsentHeaderDocumentationOf, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(privacyConsentHeaderDocumentationOf, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacyConsentHeaderDocumentationOf, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacyConsentHeaderDocumentationOf, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateDocumentationOf_validateTypeCode(privacyConsentHeaderDocumentationOf, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentHeaderDocumentationOf_validatePrivacyConsentHeaderDocumentationOfTemplateId(privacyConsentHeaderDocumentationOf, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyConsentHeaderDocumentationOf_validatePrivacyConsentHeaderDocumentationOfServiceEvent(privacyConsentHeaderDocumentationOf, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(privacyConsentHeaderDocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(privacyConsentHeaderDocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				privacyConsentHeaderDocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(privacyConsentHeaderDocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(privacyConsentHeaderDocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(privacyConsentHeaderDocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(privacyConsentHeaderDocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateDocumentationOf_validateTypeCode(
+				privacyConsentHeaderDocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentHeaderDocumentationOf_validatePrivacyConsentHeaderDocumentationOfTemplateId(
+				privacyConsentHeaderDocumentationOf, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyConsentHeaderDocumentationOf_validatePrivacyConsentHeaderDocumentationOfServiceEvent(
+				privacyConsentHeaderDocumentationOf, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2606,8 +3541,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentHeaderDocumentationOf_validatePrivacyConsentHeaderDocumentationOfTemplateId(PrivacyConsentHeaderDocumentationOf privacyConsentHeaderDocumentationOf, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyConsentHeaderDocumentationOf.validatePrivacyConsentHeaderDocumentationOfTemplateId(diagnostics, context);
+	public boolean validatePrivacyConsentHeaderDocumentationOf_validatePrivacyConsentHeaderDocumentationOfTemplateId(
+			PrivacyConsentHeaderDocumentationOf privacyConsentHeaderDocumentationOf, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return privacyConsentHeaderDocumentationOf.validatePrivacyConsentHeaderDocumentationOfTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -2616,8 +3554,11 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyConsentHeaderDocumentationOf_validatePrivacyConsentHeaderDocumentationOfServiceEvent(PrivacyConsentHeaderDocumentationOf privacyConsentHeaderDocumentationOf, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyConsentHeaderDocumentationOf.validatePrivacyConsentHeaderDocumentationOfServiceEvent(diagnostics, context);
+	public boolean validatePrivacyConsentHeaderDocumentationOf_validatePrivacyConsentHeaderDocumentationOfServiceEvent(
+			PrivacyConsentHeaderDocumentationOf privacyConsentHeaderDocumentationOf, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return privacyConsentHeaderDocumentationOf.validatePrivacyConsentHeaderDocumentationOfServiceEvent(
+			diagnostics, context);
 	}
 
 	/**
@@ -2625,24 +3566,67 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePurposeOfUseSecurityObservation(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(purposeOfUseSecurityObservation, diagnostics, context)) return false;
+	public boolean validatePurposeOfUseSecurityObservation(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(purposeOfUseSecurityObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePurposeOfUseSecurityObservation_validateSecurityObservationTemplateId(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePurposeOfUseSecurityObservation_validateSecurityObservationCodeP(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePurposeOfUseSecurityObservation_validateSecurityObservationCode(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationMoodCode(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValue(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValueP(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValueP(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValue(purposeOfUseSecurityObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePurposeOfUseSecurityObservation_validateSecurityObservationTemplateId(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePurposeOfUseSecurityObservation_validateSecurityObservationCodeP(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePurposeOfUseSecurityObservation_validateSecurityObservationCode(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValue(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValueP(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValueP(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValue(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2652,7 +3636,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValueP(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValueP(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return purposeOfUseSecurityObservation.validatePurposeOfUseSecurityObservationValueP(diagnostics, context);
 	}
 
@@ -2662,7 +3648,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValue(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValue(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return purposeOfUseSecurityObservation.validatePurposeOfUseSecurityObservationValue(diagnostics, context);
 	}
 
@@ -2672,7 +3660,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePurposeOfUseSecurityObservation_validateSecurityObservationTemplateId(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePurposeOfUseSecurityObservation_validateSecurityObservationTemplateId(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return purposeOfUseSecurityObservation.validateSecurityObservationTemplateId(diagnostics, context);
 	}
 
@@ -2682,7 +3672,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePurposeOfUseSecurityObservation_validateSecurityObservationCodeP(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePurposeOfUseSecurityObservation_validateSecurityObservationCodeP(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return purposeOfUseSecurityObservation.validateSecurityObservationCodeP(diagnostics, context);
 	}
 
@@ -2692,7 +3684,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePurposeOfUseSecurityObservation_validateSecurityObservationCode(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePurposeOfUseSecurityObservation_validateSecurityObservationCode(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return purposeOfUseSecurityObservation.validateSecurityObservationCode(diagnostics, context);
 	}
 
@@ -2701,22 +3695,59 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRefrainPolicySecurityObservation(RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(refrainPolicySecurityObservation, diagnostics, context)) return false;
+	public boolean validateRefrainPolicySecurityObservation(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(refrainPolicySecurityObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateRefrainPolicySecurityObservation_validateSecurityObservationTemplateId(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateRefrainPolicySecurityObservation_validateSecurityObservationCodeP(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateRefrainPolicySecurityObservation_validateSecurityObservationCode(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationMoodCode(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateRefrainPolicySecurityObservation_validateSecurityObservationValue(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateRefrainPolicySecurityObservation_validateSecurityObservationValueP(refrainPolicySecurityObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateRefrainPolicySecurityObservation_validateSecurityObservationTemplateId(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateRefrainPolicySecurityObservation_validateSecurityObservationCodeP(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateRefrainPolicySecurityObservation_validateSecurityObservationCode(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateRefrainPolicySecurityObservation_validateSecurityObservationValue(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateRefrainPolicySecurityObservation_validateSecurityObservationValueP(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -2726,7 +3757,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationTemplateId(RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationTemplateId(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return refrainPolicySecurityObservation.validateSecurityObservationTemplateId(diagnostics, context);
 	}
 
@@ -2736,7 +3769,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationCodeP(RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationCodeP(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return refrainPolicySecurityObservation.validateSecurityObservationCodeP(diagnostics, context);
 	}
 
@@ -2746,7 +3781,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationCode(RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationCode(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return refrainPolicySecurityObservation.validateSecurityObservationCode(diagnostics, context);
 	}
 
@@ -2756,7 +3793,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationValueP(RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationValueP(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return refrainPolicySecurityObservation.validateSecurityObservationValueP(diagnostics, context);
 	}
 
@@ -2766,7 +3805,9 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationValue(RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationValue(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return refrainPolicySecurityObservation.validateSecurityObservationValue(diagnostics, context);
 	}
 
@@ -2781,4 +3822,4 @@ public class CONSENTDIRECTIVEValidator extends EObjectValidator {
 		return CONSENTDIRECTIVEPlugin.INSTANCE;
 	}
 
-} //CONSENTDIRECTIVEValidator
+} // CONSENTDIRECTIVEValidator

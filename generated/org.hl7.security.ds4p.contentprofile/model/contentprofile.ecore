@@ -5,7 +5,7 @@
   <eAnnotations source="http://www.eclipse.org/mdht/uml">
     <details key="initializers" value="org.hl7.security.ds4p.contentprofile"/>
   </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="PrivacySegmentedDocument">
+  <eClassifiers xsi:type="ecore:EClass" name="PrivacySegmentedDocument" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PrivacySegmentedDocumentTemplateId PrivacySegmentedDocumentAuthor1"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.3251.1.1"/>
@@ -1046,8 +1046,8 @@
       <details key="code.displayName" value="Security Control"/>
       <details key="constraints.validation.dependOn.PurposeOfUseSecurityObservationCode"
           value="PurposeOfUseSecurityObservationCodeP"/>
-      <details key="value.codeSystem" value="2.16.840.1.113883.1.11.20471"/>
-      <details key="value.codeSystemName" value="SecurityControlObservationValue"/>
+      <details key="value.codeSystem" value="2.16.840.1.113883.5.1063"/>
+      <details key="value.codeSystemName" value="SecurityObservationValueCodeSystem"/>
       <details key="constraints.validation.dependOn.PurposeOfUseSecurityObservationValue"
           value="PurposeOfUseSecurityObservationValueP"/>
     </eAnnotations>
@@ -1132,7 +1132,7 @@
     </eOperations>
     <eOperations name="PurposeOfUseSecurityObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xA;value.codeSystem = '2.16.840.1.113883.1.11.20471' and (value.code = 'TREAT' or value.code = 'ETREAT' or value.code = 'HPAYMT' or value.code = 'HRESCH' or value.code = 'CLINTRCH' or value.code = ' CLINTRL'))"/>
+        <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xA;value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'TREAT' or value.code = 'ETREAT' or value.code = 'HPAYMT' or value.code = 'HRESCH' or value.code = 'CLINTRCH' or value.code = ' CLINTRL'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1266,30 +1266,33 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProtectedProblem">
+  <eClassifiers xsi:type="ecore:EClass" name="ProtectedProblem" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ProblemObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProblemObservationTemplateId ProtectedProblemProblemProvenance ProtectedProblemPrivacyAnnotations"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.3251.1.8"/>
     </eAnnotations>
-    <eOperations name="ProblemObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.3251.1.8')"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+    <eAnnotations source="duplicates">
+      <contents xsi:type="ecore:EOperation" name="ProblemObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+          <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.3251.1.8')"/>
         </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ProblemObservation/ProblemObservationTemplateId"/>
+        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          </eAnnotations>
+        </eParameters>
+        <eParameters name="context">
+          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation" value="The cache of context-specific information."/>
+          </eAnnotations>
+          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          </eGenericType>
+        </eParameters>
+      </contents>
+    </eAnnotations>
     <eOperations name="ProtectedProblemProblemProvenance" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(contentprofile::MandatoryEntryProvenance))"/>

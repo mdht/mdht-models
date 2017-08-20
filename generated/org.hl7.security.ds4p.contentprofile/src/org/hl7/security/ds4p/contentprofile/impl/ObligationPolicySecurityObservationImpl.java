@@ -25,7 +25,8 @@ import org.hl7.security.ds4p.contentprofile.operations.ObligationPolicySecurityO
  *
  * @generated
  */
-public class ObligationPolicySecurityObservationImpl extends SecurityObservationImpl implements ObligationPolicySecurityObservation {
+public class ObligationPolicySecurityObservationImpl extends SecurityObservationImpl
+		implements ObligationPolicySecurityObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51,8 +52,10 @@ public class ObligationPolicySecurityObservationImpl extends SecurityObservation
 	 * @generated
 	 */
 	@Override
-	public boolean validateObligationPolicySecurityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ObligationPolicySecurityObservationOperations.validateObligationPolicySecurityObservationValueP(this, diagnostics, context);
+	public boolean validateObligationPolicySecurityObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ObligationPolicySecurityObservationOperations.validateObligationPolicySecurityObservationValueP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -61,8 +64,10 @@ public class ObligationPolicySecurityObservationImpl extends SecurityObservation
 	 * @generated
 	 */
 	@Override
-	public boolean validateObligationPolicySecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ObligationPolicySecurityObservationOperations.validateObligationPolicySecurityObservationValue(this, diagnostics, context);
+	public boolean validateObligationPolicySecurityObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ObligationPolicySecurityObservationOperations.validateObligationPolicySecurityObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -72,7 +77,8 @@ public class ObligationPolicySecurityObservationImpl extends SecurityObservation
 	 */
 	@Override
 	public boolean validateSecurityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ObligationPolicySecurityObservationOperations.validateSecurityObservationTemplateId(this, diagnostics, context);
+		return ObligationPolicySecurityObservationOperations.validateSecurityObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -82,7 +88,8 @@ public class ObligationPolicySecurityObservationImpl extends SecurityObservation
 	 */
 	@Override
 	public boolean validateSecurityObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ObligationPolicySecurityObservationOperations.validateSecurityObservationCodeP(this, diagnostics, context);
+		return ObligationPolicySecurityObservationOperations.validateSecurityObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -92,7 +99,8 @@ public class ObligationPolicySecurityObservationImpl extends SecurityObservation
 	 */
 	@Override
 	public boolean validateSecurityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ObligationPolicySecurityObservationOperations.validateSecurityObservationCode(this, diagnostics, context);
+		return ObligationPolicySecurityObservationOperations.validateSecurityObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -102,16 +110,17 @@ public class ObligationPolicySecurityObservationImpl extends SecurityObservation
 	 */
 	@Override
 	public ObligationPolicySecurityObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ObligationPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ObligationPolicySecurityObservationImpl
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ObligationPolicySecurityObservationImpl

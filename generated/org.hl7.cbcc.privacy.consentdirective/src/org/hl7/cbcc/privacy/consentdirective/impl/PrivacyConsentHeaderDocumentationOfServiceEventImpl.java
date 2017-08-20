@@ -2,10 +2,13 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.ServiceEventImpl;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 import org.hl7.cbcc.privacy.consentdirective.PrivacyConsentHeaderDocumentationOfServiceEvent;
@@ -18,7 +21,8 @@ import org.hl7.cbcc.privacy.consentdirective.operations.PrivacyConsentHeaderDocu
  *
  * @generated
  */
-public class PrivacyConsentHeaderDocumentationOfServiceEventImpl extends ServiceEventImpl implements PrivacyConsentHeaderDocumentationOfServiceEvent {
+public class PrivacyConsentHeaderDocumentationOfServiceEventImpl extends ServiceEventImpl
+		implements PrivacyConsentHeaderDocumentationOfServiceEvent {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -44,8 +48,10 @@ public class PrivacyConsentHeaderDocumentationOfServiceEventImpl extends Service
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentHeaderDocumentationOfServiceEventOperations.validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId(this, diagnostics, context);
+	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentHeaderDocumentationOfServiceEventOperations.validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -54,8 +60,10 @@ public class PrivacyConsentHeaderDocumentationOfServiceEventImpl extends Service
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEventCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentHeaderDocumentationOfServiceEventOperations.validatePrivacyConsentHeaderDocumentationOfServiceEventCode(this, diagnostics, context);
+	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEventCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentHeaderDocumentationOfServiceEventOperations.validatePrivacyConsentHeaderDocumentationOfServiceEventCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,7 +72,29 @@ public class PrivacyConsentHeaderDocumentationOfServiceEventImpl extends Service
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyConsentHeaderDocumentationOfServiceEventOperations.validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime(this, diagnostics, context);
+	public boolean validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyConsentHeaderDocumentationOfServiceEventOperations.validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime(
+			this, diagnostics, context);
 	}
-} //PrivacyConsentHeaderDocumentationOfServiceEventImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyConsentHeaderDocumentationOfServiceEvent init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyConsentHeaderDocumentationOfServiceEvent init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // PrivacyConsentHeaderDocumentationOfServiceEventImpl

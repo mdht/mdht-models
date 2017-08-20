@@ -13,42 +13,26 @@ package org.hl7.cbcc.privacy.consentdirective.util;
 import java.io.FileInputStream;
 
 import org.eclipse.emf.common.util.Diagnostic;
-import org.eclipse.mdht.uml.cda.AssignedAuthor;
-import org.eclipse.mdht.uml.cda.Author;
-import org.eclipse.mdht.uml.cda.CDAFactory;
 import org.eclipse.mdht.uml.cda.ClinicalDocument;
-import org.eclipse.mdht.uml.cda.InfrastructureRootTypeId;
-import org.eclipse.mdht.uml.cda.Organization;
-import org.eclipse.mdht.uml.cda.Patient;
-import org.eclipse.mdht.uml.cda.PatientRole;
-import org.eclipse.mdht.uml.cda.Person;
-import org.eclipse.mdht.uml.cda.RecordTarget;
 import org.eclipse.mdht.uml.cda.util.CDAUtil;
 import org.eclipse.mdht.uml.cda.util.ValidationResult;
-import org.eclipse.mdht.uml.hl7.datatypes.CE;
-import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.eclipse.mdht.uml.hl7.datatypes.II;
-import org.eclipse.mdht.uml.hl7.datatypes.PN;
-import org.eclipse.mdht.uml.hl7.datatypes.ST;
-import org.eclipse.mdht.uml.hl7.datatypes.TS;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 
 public class Main {
 	public static void main(String[] args) throws Exception {
-		
+
 		if (args.length != 1) {
 			System.out.println("Usage FileToBeValidate");
 			return;
 		}
-		
+
 		CONSENTDIRECTIVEPackage.eINSTANCE.getComputablePolicyConsent();
-		
+
 		CDAUtil.loadPackages();
-		
+
 		// create a validation result object to collect diagnostics produced during validation
 		ValidationResult result = new ValidationResult();
-		ClinicalDocument clinicalDocument = CDAUtil.load(new FileInputStream(args[0]), result);
- 
+		CDAUtil.load(new FileInputStream(args[0]), result);
 
 		System.out.println("\n***** Consent Directive validation results *****");
 		for (Diagnostic diagnostic : result.getErrorDiagnostics()) {

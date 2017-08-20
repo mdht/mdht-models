@@ -2,10 +2,13 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 import org.hl7.cbcc.privacy.consentdirective.ComputablePolicyConsent;
@@ -87,4 +90,23 @@ public class ComputablePolicyConsentImpl extends ObservationImpl implements Comp
 	public boolean validateComputablePolicyConsentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComputablePolicyConsentOperations.validateComputablePolicyConsentValue(this, diagnostics, context);
 	}
-} //ComputablePolicyConsentImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComputablePolicyConsent init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ComputablePolicyConsent init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ComputablePolicyConsentImpl

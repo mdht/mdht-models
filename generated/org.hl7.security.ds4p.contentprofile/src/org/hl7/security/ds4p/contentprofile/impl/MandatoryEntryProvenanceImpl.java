@@ -11,7 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 import org.eclipse.mdht.uml.cda.impl.AuthorImpl;
@@ -53,8 +52,10 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 * @generated
 	 */
 	@Override
-	public boolean validateMandatoryEntryProvenanceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceTemplateId(this, diagnostics, context);
+	public boolean validateMandatoryEntryProvenanceTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +74,10 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 * @generated
 	 */
 	@Override
-	public boolean validateMandatoryEntryProvenanceAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceAssignedAuthor(this, diagnostics, context);
+	public boolean validateMandatoryEntryProvenanceAssignedAuthor(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceAssignedAuthor(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -84,16 +87,17 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 */
 	@Override
 	public MandatoryEntryProvenance init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public MandatoryEntryProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //MandatoryEntryProvenanceImpl
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // MandatoryEntryProvenanceImpl

@@ -2,10 +2,13 @@
  */
 package org.hl7.cbcc.privacy.consentdirective;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.Act;
 
 /**
@@ -15,7 +18,7 @@ import org.eclipse.mdht.uml.cda.Act;
  *
  *
  * @see org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage#getConsentDirectiveStructuredDefinition()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ConsentDirectiveStructuredDefinitionTemplateId ConsentDirectiveStructuredDefinitionCode ConsentDirectiveStructuredDefinitionCodeP ConsentDirectiveStructuredDefinitionMoodCode' templateId.root='2.16.840.1.113883.3.445.5' code.codeSystem='2.16.840.1.113883.1.11.20471' code.codeSystemName='SecurityControlObservationValue' constraints.validation.dependOn.ConsentDirectiveStructuredDefinitionCode='ConsentDirectiveStructuredDefinitionCodeP' moodCode='DEF' constraints.validation.warning='ConsentDirectiveStructuredDefinitionInformant ConsentDirectiveStructuredDefinitionParticipant ConsentDirectiveStructuredDefinitionConsentAction ConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer' constraints.validation.info='ConsentDirectiveStructuredDefinitionSecurityLabelCriteria'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ConsentDirectiveStructuredDefinitionTemplateId ConsentDirectiveStructuredDefinitionCode ConsentDirectiveStructuredDefinitionCodeP ConsentDirectiveStructuredDefinitionMoodCode' templateId.root='2.16.840.1.113883.3.445.5' code.codeSystem='2.16.840.1.113883.5.1063' code.codeSystemName='SecurityObservationValueCodeSystem' constraints.validation.dependOn.ConsentDirectiveStructuredDefinitionCode='ConsentDirectiveStructuredDefinitionCodeP' moodCode='DEF' constraints.validation.warning='ConsentDirectiveStructuredDefinitionInformant ConsentDirectiveStructuredDefinitionParticipant ConsentDirectiveStructuredDefinitionConsentAction ConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer' constraints.validation.info='ConsentDirectiveStructuredDefinitionSecurityLabelCriteria'"
  * @generated
  */
 public interface ConsentDirectiveStructuredDefinition extends Act {
@@ -29,7 +32,8 @@ public interface ConsentDirectiveStructuredDefinition extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.445.5\')'"
 	 * @generated
 	 */
-	boolean validateConsentDirectiveStructuredDefinitionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateConsentDirectiveStructuredDefinitionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -50,7 +54,7 @@ public interface ConsentDirectiveStructuredDefinition extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.1.11.20471\' and (value.code = \'TREAT\' or value.code = \'ETREAT\' or value.code = \'HPAYMT\' or value.code = \'HRESCH\' or value.code = \'CLINTRCH\' or value.code = \' CLINTRL\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.5.1063\' and (value.code = \'TREAT\' or value.code = \'ETREAT\' or value.code = \'HPAYMT\' or value.code = \'HRESCH\' or value.code = \'CLINTRCH\' or value.code = \' CLINTRL\')'"
 	 * @generated
 	 */
 	boolean validateConsentDirectiveStructuredDefinitionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -65,7 +69,8 @@ public interface ConsentDirectiveStructuredDefinition extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
 	 * @generated
 	 */
-	boolean validateConsentDirectiveStructuredDefinitionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateConsentDirectiveStructuredDefinitionMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -77,7 +82,8 @@ public interface ConsentDirectiveStructuredDefinition extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informant->exists(informant : cda::Informant12 | not informant.oclIsUndefined() and informant.oclIsKindOf(rim::Participation))'"
 	 * @generated
 	 */
-	boolean validateConsentDirectiveStructuredDefinitionInformant(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateConsentDirectiveStructuredDefinitionInformant(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,7 +95,8 @@ public interface ConsentDirectiveStructuredDefinition extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(consentdirective::IIHIReceivingProvider))'"
 	 * @generated
 	 */
-	boolean validateConsentDirectiveStructuredDefinitionParticipant(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateConsentDirectiveStructuredDefinitionParticipant(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -101,7 +108,8 @@ public interface ConsentDirectiveStructuredDefinition extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consentdirective::ConsentAction) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateConsentDirectiveStructuredDefinitionConsentAction(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateConsentDirectiveStructuredDefinitionConsentAction(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -113,7 +121,8 @@ public interface ConsentDirectiveStructuredDefinition extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.organizer.oclIsUndefined() and entryRelationship.organizer.oclIsKindOf(consentdirective::InformationCriteriaReferencesOrganizer) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -125,7 +134,8 @@ public interface ConsentDirectiveStructuredDefinition extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.organizer.oclIsUndefined() and entryRelationship.organizer.oclIsKindOf(consentdirective::SecurityLabel) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateConsentDirectiveStructuredDefinitionSecurityLabelCriteria(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateConsentDirectiveStructuredDefinitionSecurityLabelCriteria(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -153,4 +163,18 @@ public interface ConsentDirectiveStructuredDefinition extends Act {
 	 * @generated
 	 */
 	EList<SecurityLabel> getSecurityLabelCriteria();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConsentDirectiveStructuredDefinition init();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConsentDirectiveStructuredDefinition init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ConsentDirectiveStructuredDefinition

@@ -2,17 +2,24 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
+import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPlugin;
 import org.hl7.cbcc.privacy.consentdirective.ScannedPrivacyConsent;
+
 import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
 
 /**
@@ -22,17 +29,24 @@ import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
  *
  * <p>
  * The following operations are supported:
- * </p>
  * <ul>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ScannedPrivacyConsent#validateScannedPrivacyConsentTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scanned Privacy Consent Template Id</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ScannedPrivacyConsent#validateScannedPrivacyConsentMoodCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scanned Privacy Consent Mood Code P</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ScannedPrivacyConsent#validateScannedPrivacyConsentMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scanned Privacy Consent Mood Code</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ScannedPrivacyConsent#validateScannedPrivacyConsentValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scanned Privacy Consent Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class ScannedPrivacyConsentOperations extends ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,9 +74,7 @@ public class ScannedPrivacyConsentOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_SCANNED_PRIVACY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_SCANNED_PRIVACY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -74,28 +86,35 @@ public class ScannedPrivacyConsentOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateScannedPrivacyConsentTemplateId(ScannedPrivacyConsent scannedPrivacyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SCANNED_PRIVACY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateScannedPrivacyConsentTemplateId(ScannedPrivacyConsent scannedPrivacyConsent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_SCANNED_PRIVACY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.SCANNED_PRIVACY_CONSENT);
 			try {
-				VALIDATE_SCANNED_PRIVACY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCANNED_PRIVACY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_SCANNED_PRIVACY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SCANNED_PRIVACY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCANNED_PRIVACY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scannedPrivacyConsent)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SCANNED_PRIVACY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				scannedPrivacyConsent)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.SCANNED_PRIVACY_CONSENT__SCANNED_PRIVACY_CONSENT_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateScannedPrivacyConsentTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(scannedPrivacyConsent, context) }),
-						 new Object [] { scannedPrivacyConsent }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.SCANNED_PRIVACY_CONSENT__SCANNED_PRIVACY_CONSENT_TEMPLATE_ID,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"ScannedPrivacyConsentScannedPrivacyConsentTemplateId"),
+						new Object[] { scannedPrivacyConsent }));
 			}
+
 			return false;
 		}
 		return true;
@@ -119,9 +138,7 @@ public class ScannedPrivacyConsentOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -133,28 +150,48 @@ public class ScannedPrivacyConsentOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateScannedPrivacyConsentMoodCodeP(ScannedPrivacyConsent scannedPrivacyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateScannedPrivacyConsentMoodCodeP(ScannedPrivacyConsent scannedPrivacyConsent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.SCANNED_PRIVACY_CONSENT);
 			try {
-				VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scannedPrivacyConsent)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				scannedPrivacyConsent)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.SCANNED_PRIVACY_CONSENT__SCANNED_PRIVACY_CONSENT_MOOD_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateScannedPrivacyConsentMoodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(scannedPrivacyConsent, context) }),
-						 new Object [] { scannedPrivacyConsent }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.SCANNED_PRIVACY_CONSENT__SCANNED_PRIVACY_CONSENT_MOOD_CODE_P,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"ScannedPrivacyConsentScannedPrivacyConsentMoodCodeP"),
+						new Object[] { scannedPrivacyConsent }));
 			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.hl7.cbcc.privacy.consentdirective.ScannedPrivacyConsentMoodCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.hl7.cbcc.privacy.consentdirective.ScannedPrivacyConsentMoodCodeP", passToken);
+				}
+				passToken.add(scannedPrivacyConsent);
+			}
+
 			return false;
 		}
 		return true;
@@ -168,9 +205,9 @@ public class ScannedPrivacyConsentOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_ActMoodDocumentObservation) and "+
-"let value : vocab::x_ActMoodDocumentObservation = self.moodCode.oclAsType(vocab::x_ActMoodDocumentObservation) in "+
-"value = vocab::x_ActMoodDocumentObservation::DEF";
+	protected static final String VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_ActMoodDocumentObservation) and " +
+			"let value : vocab::x_ActMoodDocumentObservation = self.moodCode.oclAsType(vocab::x_ActMoodDocumentObservation) in " +
+			"value = vocab::x_ActMoodDocumentObservation::DEF";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateScannedPrivacyConsentMoodCode(ScannedPrivacyConsent, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scanned Privacy Consent Mood Code</em>}' invariant operation.
@@ -180,9 +217,7 @@ public class ScannedPrivacyConsentOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -194,28 +229,41 @@ public class ScannedPrivacyConsentOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateScannedPrivacyConsentMoodCode(ScannedPrivacyConsent scannedPrivacyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateScannedPrivacyConsentMoodCode(ScannedPrivacyConsent scannedPrivacyConsent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.hl7.cbcc.privacy.consentdirective.ScannedPrivacyConsentMoodCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(scannedPrivacyConsent)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.SCANNED_PRIVACY_CONSENT);
 			try {
-				VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scannedPrivacyConsent)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SCANNED_PRIVACY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				scannedPrivacyConsent)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.SCANNED_PRIVACY_CONSENT__SCANNED_PRIVACY_CONSENT_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateScannedPrivacyConsentMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(scannedPrivacyConsent, context) }),
-						 new Object [] { scannedPrivacyConsent }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.SCANNED_PRIVACY_CONSENT__SCANNED_PRIVACY_CONSENT_MOOD_CODE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString("ScannedPrivacyConsentScannedPrivacyConsentMoodCode"),
+						new Object[] { scannedPrivacyConsent }));
 			}
+
 			return false;
 		}
 		return true;
@@ -239,9 +287,7 @@ public class ScannedPrivacyConsentOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_SCANNED_PRIVACY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_SCANNED_PRIVACY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -253,28 +299,33 @@ public class ScannedPrivacyConsentOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateScannedPrivacyConsentValue(ScannedPrivacyConsent scannedPrivacyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SCANNED_PRIVACY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateScannedPrivacyConsentValue(ScannedPrivacyConsent scannedPrivacyConsent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_SCANNED_PRIVACY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.SCANNED_PRIVACY_CONSENT);
 			try {
-				VALIDATE_SCANNED_PRIVACY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCANNED_PRIVACY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_SCANNED_PRIVACY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_SCANNED_PRIVACY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCANNED_PRIVACY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scannedPrivacyConsent)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SCANNED_PRIVACY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				scannedPrivacyConsent)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.SCANNED_PRIVACY_CONSENT__SCANNED_PRIVACY_CONSENT_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateScannedPrivacyConsentValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(scannedPrivacyConsent, context) }),
-						 new Object [] { scannedPrivacyConsent }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.SCANNED_PRIVACY_CONSENT__SCANNED_PRIVACY_CONSENT_VALUE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString("ScannedPrivacyConsentScannedPrivacyConsentValue"),
+						new Object[] { scannedPrivacyConsent }));
 			}
+
 			return false;
 		}
 		return true;

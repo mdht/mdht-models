@@ -46,12 +46,12 @@ public class CONSENTDIRECTIVEFactoryImpl extends EFactoryImpl implements CONSENT
 	 */
 	public static CONSENTDIRECTIVEFactory init() {
 		try {
-			CONSENTDIRECTIVEFactory theCONSENTDIRECTIVEFactory = (CONSENTDIRECTIVEFactory)EPackage.Registry.INSTANCE.getEFactory(CONSENTDIRECTIVEPackage.eNS_URI);
+			CONSENTDIRECTIVEFactory theCONSENTDIRECTIVEFactory = (CONSENTDIRECTIVEFactory) EPackage.Registry.INSTANCE.getEFactory(
+				CONSENTDIRECTIVEPackage.eNS_URI);
 			if (theCONSENTDIRECTIVEFactory != null) {
 				return theCONSENTDIRECTIVEFactory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new CONSENTDIRECTIVEFactoryImpl();
@@ -75,27 +75,48 @@ public class CONSENTDIRECTIVEFactoryImpl extends EFactoryImpl implements CONSENT
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_HEADER_AUTHOR: return createPrivacyConsentHeaderAuthor();
-			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT: return createPrivacyConsentHeaderDocumentationOfServiceEvent();
-			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_DIRECTIVE_DOCUMENT: return createPrivacyConsentDirectiveDocument();
-			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_DETAILS_SECTION: return createPrivacyConsentDetailsSection();
-			case CONSENTDIRECTIVEPackage.SIGNATURES_SECTION: return createSignaturesSection();
-			case CONSENTDIRECTIVEPackage.CONSENT_DIRECTIVE_ENTRY: return createConsentDirectiveEntry();
-			case CONSENTDIRECTIVEPackage.CONSENT_DIRECTIVE_STRUCTURED_DEFINITION: return createConsentDirectiveStructuredDefinition();
-			case CONSENTDIRECTIVEPackage.CONSENT_ACTION: return createConsentAction();
-			case CONSENTDIRECTIVEPackage.INFORMATION_CRITERIA_REFERENCES_ORGANIZER: return createInformationCriteriaReferencesOrganizer();
-			case CONSENTDIRECTIVEPackage.CRITERIUM_INFORMATION_DEFINITION: return createCriteriumInformationDefinition();
-			case CONSENTDIRECTIVEPackage.CRITERIUM_RELATED_PROTECTED_PROBLEM: return createCriteriumRelatedProtectedProblem();
-			case CONSENTDIRECTIVEPackage.CONFIDENTIALITY_SECURITY_OBSERVATION: return createConfidentialitySecurityObservation();
-			case CONSENTDIRECTIVEPackage.IIHI_RECEIVING_PROVIDER: return createIIHIReceivingProvider();
-			case CONSENTDIRECTIVEPackage.OBLIGATION_POLICY_SECURITY_OBSERVATION: return createObligationPolicySecurityObservation();
-			case CONSENTDIRECTIVEPackage.COMPUTABLE_POLICY_CONSENT: return createComputablePolicyConsent();
-			case CONSENTDIRECTIVEPackage.SCANNED_PRIVACY_CONSENT: return createScannedPrivacyConsent();
-			case CONSENTDIRECTIVEPackage.SIGNATURE_IMAGE_OBSERVATION: return createSignatureImageObservation();
-			case CONSENTDIRECTIVEPackage.SIGNATURE_IMAGE_ENTRY: return createSignatureImageEntry();
-			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF: return createPrivacyConsentHeaderDocumentationOf();
-			case CONSENTDIRECTIVEPackage.PURPOSE_OF_USE_SECURITY_OBSERVATION: return createPurposeOfUseSecurityObservation();
-			case CONSENTDIRECTIVEPackage.REFRAIN_POLICY_SECURITY_OBSERVATION: return createRefrainPolicySecurityObservation();
+			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_HEADER_AUTHOR:
+				return createPrivacyConsentHeaderAuthor();
+			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT:
+				return createPrivacyConsentHeaderDocumentationOfServiceEvent();
+			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_DIRECTIVE_DOCUMENT:
+				return createPrivacyConsentDirectiveDocument();
+			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_DETAILS_SECTION:
+				return createPrivacyConsentDetailsSection();
+			case CONSENTDIRECTIVEPackage.SIGNATURES_SECTION:
+				return createSignaturesSection();
+			case CONSENTDIRECTIVEPackage.CONSENT_DIRECTIVE_ENTRY:
+				return createConsentDirectiveEntry();
+			case CONSENTDIRECTIVEPackage.CONSENT_DIRECTIVE_STRUCTURED_DEFINITION:
+				return createConsentDirectiveStructuredDefinition();
+			case CONSENTDIRECTIVEPackage.CONSENT_ACTION:
+				return createConsentAction();
+			case CONSENTDIRECTIVEPackage.INFORMATION_CRITERIA_REFERENCES_ORGANIZER:
+				return createInformationCriteriaReferencesOrganizer();
+			case CONSENTDIRECTIVEPackage.CRITERIUM_INFORMATION_DEFINITION:
+				return createCriteriumInformationDefinition();
+			case CONSENTDIRECTIVEPackage.CRITERIUM_RELATED_PROTECTED_PROBLEM:
+				return createCriteriumRelatedProtectedProblem();
+			case CONSENTDIRECTIVEPackage.CONFIDENTIALITY_SECURITY_OBSERVATION:
+				return createConfidentialitySecurityObservation();
+			case CONSENTDIRECTIVEPackage.IIHI_RECEIVING_PROVIDER:
+				return createIIHIReceivingProvider();
+			case CONSENTDIRECTIVEPackage.OBLIGATION_POLICY_SECURITY_OBSERVATION:
+				return createObligationPolicySecurityObservation();
+			case CONSENTDIRECTIVEPackage.COMPUTABLE_POLICY_CONSENT:
+				return createComputablePolicyConsent();
+			case CONSENTDIRECTIVEPackage.SCANNED_PRIVACY_CONSENT:
+				return createScannedPrivacyConsent();
+			case CONSENTDIRECTIVEPackage.SIGNATURE_IMAGE_OBSERVATION:
+				return createSignatureImageObservation();
+			case CONSENTDIRECTIVEPackage.SIGNATURE_IMAGE_ENTRY:
+				return createSignatureImageEntry();
+			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF:
+				return createPrivacyConsentHeaderDocumentationOf();
+			case CONSENTDIRECTIVEPackage.PURPOSE_OF_USE_SECURITY_OBSERVATION:
+				return createPurposeOfUseSecurityObservation();
+			case CONSENTDIRECTIVEPackage.REFRAIN_POLICY_SECURITY_OBSERVATION:
+				return createRefrainPolicySecurityObservation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -339,7 +360,7 @@ public class CONSENTDIRECTIVEFactoryImpl extends EFactoryImpl implements CONSENT
 	 */
 	@Override
 	public CONSENTDIRECTIVEPackage getCONSENTDIRECTIVEPackage() {
-		return (CONSENTDIRECTIVEPackage)getEPackage();
+		return (CONSENTDIRECTIVEPackage) getEPackage();
 	}
 
 	/**
@@ -353,4 +374,4 @@ public class CONSENTDIRECTIVEFactoryImpl extends EFactoryImpl implements CONSENT
 		return CONSENTDIRECTIVEPackage.eINSTANCE;
 	}
 
-} //CONSENTDIRECTIVEFactoryImpl
+} // CONSENTDIRECTIVEFactoryImpl

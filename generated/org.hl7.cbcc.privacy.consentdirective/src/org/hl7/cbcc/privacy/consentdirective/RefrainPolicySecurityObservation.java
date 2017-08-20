@@ -2,6 +2,10 @@
  */
 package org.hl7.cbcc.privacy.consentdirective;
 
+import java.lang.Iterable;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Refrain Policy Security Observation</b></em>'.
@@ -13,4 +17,18 @@ package org.hl7.cbcc.privacy.consentdirective;
  * @generated
  */
 public interface RefrainPolicySecurityObservation extends SecurityObservation {
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RefrainPolicySecurityObservation init();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RefrainPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // RefrainPolicySecurityObservation

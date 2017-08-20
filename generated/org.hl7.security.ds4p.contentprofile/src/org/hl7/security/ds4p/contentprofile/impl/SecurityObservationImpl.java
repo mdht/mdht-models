@@ -11,7 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
@@ -114,16 +113,17 @@ public abstract class SecurityObservationImpl extends ObservationImpl implements
 	 */
 	@Override
 	public SecurityObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public SecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //SecurityObservationImpl
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // SecurityObservationImpl

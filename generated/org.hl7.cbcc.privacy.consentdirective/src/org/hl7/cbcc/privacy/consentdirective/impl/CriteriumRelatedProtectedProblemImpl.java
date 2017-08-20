@@ -2,10 +2,13 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 import org.hl7.cbcc.privacy.consentdirective.CriteriumRelatedProtectedProblem;
@@ -44,8 +47,10 @@ public class CriteriumRelatedProtectedProblemImpl extends ObservationImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateCriteriumRelatedProtectedProblemTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CriteriumRelatedProtectedProblemOperations.validateCriteriumRelatedProtectedProblemTemplateId(this, diagnostics, context);
+	public boolean validateCriteriumRelatedProtectedProblemTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CriteriumRelatedProtectedProblemOperations.validateCriteriumRelatedProtectedProblemTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -54,8 +59,10 @@ public class CriteriumRelatedProtectedProblemImpl extends ObservationImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateCriteriumRelatedProtectedProblemCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CriteriumRelatedProtectedProblemOperations.validateCriteriumRelatedProtectedProblemCodeP(this, diagnostics, context);
+	public boolean validateCriteriumRelatedProtectedProblemCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CriteriumRelatedProtectedProblemOperations.validateCriteriumRelatedProtectedProblemCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +71,10 @@ public class CriteriumRelatedProtectedProblemImpl extends ObservationImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateCriteriumRelatedProtectedProblemCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CriteriumRelatedProtectedProblemOperations.validateCriteriumRelatedProtectedProblemCode(this, diagnostics, context);
+	public boolean validateCriteriumRelatedProtectedProblemCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CriteriumRelatedProtectedProblemOperations.validateCriteriumRelatedProtectedProblemCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +83,10 @@ public class CriteriumRelatedProtectedProblemImpl extends ObservationImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateCriteriumRelatedProtectedProblemValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CriteriumRelatedProtectedProblemOperations.validateCriteriumRelatedProtectedProblemValue(this, diagnostics, context);
+	public boolean validateCriteriumRelatedProtectedProblemValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CriteriumRelatedProtectedProblemOperations.validateCriteriumRelatedProtectedProblemValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -84,7 +95,28 @@ public class CriteriumRelatedProtectedProblemImpl extends ObservationImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateCriteriumRelatedProtectedProblemValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CriteriumRelatedProtectedProblemOperations.validateCriteriumRelatedProtectedProblemValueP(this, diagnostics, context);
+	public boolean validateCriteriumRelatedProtectedProblemValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CriteriumRelatedProtectedProblemOperations.validateCriteriumRelatedProtectedProblemValueP(
+			this, diagnostics, context);
 	}
-} //CriteriumRelatedProtectedProblemImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CriteriumRelatedProtectedProblem init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CriteriumRelatedProtectedProblem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // CriteriumRelatedProtectedProblemImpl

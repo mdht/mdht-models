@@ -2,9 +2,12 @@
  */
 package org.hl7.cbcc.privacy.consentdirective;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.Organizer;
 
 /**
@@ -42,4 +45,18 @@ public interface SecurityLabel extends Organizer {
 	 * @generated
 	 */
 	boolean validateSecurityLabelComponent(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SecurityLabel init();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SecurityLabel init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SecurityLabel

@@ -2,11 +2,14 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 import org.hl7.cbcc.privacy.consentdirective.ConsentAction;
@@ -48,8 +51,10 @@ public class ConsentDirectiveStructuredDefinitionImpl extends ActImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsentDirectiveStructuredDefinitionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionTemplateId(this, diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinitionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,8 +63,10 @@ public class ConsentDirectiveStructuredDefinitionImpl extends ActImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsentDirectiveStructuredDefinitionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionCodeP(this, diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinitionCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +75,10 @@ public class ConsentDirectiveStructuredDefinitionImpl extends ActImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsentDirectiveStructuredDefinitionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionCode(this, diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinitionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +87,10 @@ public class ConsentDirectiveStructuredDefinitionImpl extends ActImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsentDirectiveStructuredDefinitionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionMoodCode(this, diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinitionMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +99,10 @@ public class ConsentDirectiveStructuredDefinitionImpl extends ActImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsentDirectiveStructuredDefinitionInformant(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionInformant(this, diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinitionInformant(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionInformant(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -98,8 +111,10 @@ public class ConsentDirectiveStructuredDefinitionImpl extends ActImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsentDirectiveStructuredDefinitionParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionParticipant(this, diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinitionParticipant(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionParticipant(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -108,8 +123,10 @@ public class ConsentDirectiveStructuredDefinitionImpl extends ActImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsentDirectiveStructuredDefinitionConsentAction(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionConsentAction(this, diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinitionConsentAction(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionConsentAction(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +135,10 @@ public class ConsentDirectiveStructuredDefinitionImpl extends ActImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer(this, diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -128,8 +147,10 @@ public class ConsentDirectiveStructuredDefinitionImpl extends ActImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateConsentDirectiveStructuredDefinitionSecurityLabelCriteria(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionSecurityLabelCriteria(this, diagnostics, context);
+	public boolean validateConsentDirectiveStructuredDefinitionSecurityLabelCriteria(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsentDirectiveStructuredDefinitionOperations.validateConsentDirectiveStructuredDefinitionSecurityLabelCriteria(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -161,4 +182,23 @@ public class ConsentDirectiveStructuredDefinitionImpl extends ActImpl implements
 	public EList<SecurityLabel> getSecurityLabelCriteria() {
 		return ConsentDirectiveStructuredDefinitionOperations.getSecurityLabelCriteria(this);
 	}
-} //ConsentDirectiveStructuredDefinitionImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConsentDirectiveStructuredDefinition init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConsentDirectiveStructuredDefinition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ConsentDirectiveStructuredDefinitionImpl

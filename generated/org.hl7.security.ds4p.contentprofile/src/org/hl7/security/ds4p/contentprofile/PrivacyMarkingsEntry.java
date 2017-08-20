@@ -54,10 +54,11 @@ public interface PrivacyMarkingsEntry extends Entry {
 	 * @generated
 	 */
 	public PrivacyMarkingsEntry init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PrivacyMarkingsEntry init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyMarkingsEntry init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrivacyMarkingsEntry

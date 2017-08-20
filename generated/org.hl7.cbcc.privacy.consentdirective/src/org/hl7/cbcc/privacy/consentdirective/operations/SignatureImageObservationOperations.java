@@ -7,12 +7,18 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
+import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPlugin;
 import org.hl7.cbcc.privacy.consentdirective.SignatureImageObservation;
+
 import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
 
 /**
@@ -22,16 +28,23 @@ import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
  *
  * <p>
  * The following operations are supported:
- * </p>
  * <ul>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.SignatureImageObservation#validateSignatureImageObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signature Image Observation Template Id</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.SignatureImageObservation#validateSignatureImageObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signature Image Observation Mood Code</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.SignatureImageObservation#validateSignatureImageObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signature Image Observation Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class SignatureImageObservationOperations extends ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,9 +72,7 @@ public class SignatureImageObservationOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_SIGNATURE_IMAGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_SIGNATURE_IMAGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -73,28 +84,36 @@ public class SignatureImageObservationOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSignatureImageObservationTemplateId(SignatureImageObservation signatureImageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SIGNATURE_IMAGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateSignatureImageObservationTemplateId(
+			SignatureImageObservation signatureImageObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_SIGNATURE_IMAGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.SIGNATURE_IMAGE_OBSERVATION);
 			try {
-				VALIDATE_SIGNATURE_IMAGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SIGNATURE_IMAGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_SIGNATURE_IMAGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SIGNATURE_IMAGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SIGNATURE_IMAGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(signatureImageObservation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SIGNATURE_IMAGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				signatureImageObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.SIGNATURE_IMAGE_OBSERVATION__SIGNATURE_IMAGE_OBSERVATION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignatureImageObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signatureImageObservation, context) }),
-						 new Object [] { signatureImageObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.SIGNATURE_IMAGE_OBSERVATION__SIGNATURE_IMAGE_OBSERVATION_TEMPLATE_ID,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"SignatureImageObservationSignatureImageObservationTemplateId"),
+						new Object[] { signatureImageObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -118,9 +137,7 @@ public class SignatureImageObservationOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_SIGNATURE_IMAGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_SIGNATURE_IMAGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -132,28 +149,35 @@ public class SignatureImageObservationOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSignatureImageObservationMoodCode(SignatureImageObservation signatureImageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SIGNATURE_IMAGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateSignatureImageObservationMoodCode(SignatureImageObservation signatureImageObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_SIGNATURE_IMAGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.SIGNATURE_IMAGE_OBSERVATION);
 			try {
-				VALIDATE_SIGNATURE_IMAGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SIGNATURE_IMAGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_SIGNATURE_IMAGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SIGNATURE_IMAGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SIGNATURE_IMAGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(signatureImageObservation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SIGNATURE_IMAGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				signatureImageObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.SIGNATURE_IMAGE_OBSERVATION__SIGNATURE_IMAGE_OBSERVATION_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignatureImageObservationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signatureImageObservation, context) }),
-						 new Object [] { signatureImageObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.SIGNATURE_IMAGE_OBSERVATION__SIGNATURE_IMAGE_OBSERVATION_MOOD_CODE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"SignatureImageObservationSignatureImageObservationMoodCode"),
+						new Object[] { signatureImageObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -177,9 +201,7 @@ public class SignatureImageObservationOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_SIGNATURE_IMAGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_SIGNATURE_IMAGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -191,28 +213,34 @@ public class SignatureImageObservationOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSignatureImageObservationValue(SignatureImageObservation signatureImageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SIGNATURE_IMAGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateSignatureImageObservationValue(SignatureImageObservation signatureImageObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_SIGNATURE_IMAGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.SIGNATURE_IMAGE_OBSERVATION);
 			try {
-				VALIDATE_SIGNATURE_IMAGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SIGNATURE_IMAGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_SIGNATURE_IMAGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_SIGNATURE_IMAGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SIGNATURE_IMAGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(signatureImageObservation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SIGNATURE_IMAGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				signatureImageObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.SIGNATURE_IMAGE_OBSERVATION__SIGNATURE_IMAGE_OBSERVATION_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignatureImageObservationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signatureImageObservation, context) }),
-						 new Object [] { signatureImageObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.SIGNATURE_IMAGE_OBSERVATION__SIGNATURE_IMAGE_OBSERVATION_VALUE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"SignatureImageObservationSignatureImageObservationValue"),
+						new Object[] { signatureImageObservation }));
 			}
+
 			return false;
 		}
 		return true;

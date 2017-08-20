@@ -39,13 +39,13 @@ import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
  * @generated
  */
 public class PurposeOfUseSecurityObservationOperations extends SecurityObservationOperations {
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -74,9 +74,8 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,44 +87,42 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePurposeOfUseSecurityObservationCodeP(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-   
-  	  
-  	  
+
+	public static boolean validatePurposeOfUseSecurityObservationCodeP(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PURPOSE_OF_USE_SECURITY_OBSERVATION);
 			try {
-				VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(purposeOfUseSecurityObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				purposeOfUseSecurityObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						 CONTENTPROFILEValidator.PURPOSE_OF_USE_SECURITY_OBSERVATION__PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE_P,
-						 CONTENTPROFILEPlugin.INSTANCE.getString("PurposeOfUseSecurityObservationPurposeOfUseSecurityObservationCodeP"),
-						 new Object [] { purposeOfUseSecurityObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						CONTENTPROFILEValidator.PURPOSE_OF_USE_SECURITY_OBSERVATION__PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE_P,
+						CONTENTPROFILEPlugin.INSTANCE.getString(
+							"PurposeOfUseSecurityObservationPurposeOfUseSecurityObservationCodeP"),
+						new Object[] { purposeOfUseSecurityObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -133,7 +130,7 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 				}
 				passToken.add(purposeOfUseSecurityObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -147,9 +144,9 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'";
+	protected static final String VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePurposeOfUseSecurityObservationCode(PurposeOfUseSecurityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purpose Of Use Security Observation Code</em>}' invariant operation.
@@ -159,9 +156,8 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,46 +169,46 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePurposeOfUseSecurityObservationCode(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservationCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(purposeOfUseSecurityObservation)) {
+
+	public static boolean validatePurposeOfUseSecurityObservationCode(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservationCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(purposeOfUseSecurityObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-   
-  	  
-  	  
+
 		if (VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PURPOSE_OF_USE_SECURITY_OBSERVATION);
 			try {
-				VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(purposeOfUseSecurityObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				purposeOfUseSecurityObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						 CONTENTPROFILEValidator.PURPOSE_OF_USE_SECURITY_OBSERVATION__PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE,
-						 CONTENTPROFILEPlugin.INSTANCE.getString("PurposeOfUseSecurityObservationPurposeOfUseSecurityObservationCode"),
-						 new Object [] { purposeOfUseSecurityObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						CONTENTPROFILEValidator.PURPOSE_OF_USE_SECURITY_OBSERVATION__PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE,
+						CONTENTPROFILEPlugin.INSTANCE.getString(
+							"PurposeOfUseSecurityObservationPurposeOfUseSecurityObservationCode"),
+						new Object[] { purposeOfUseSecurityObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -236,9 +232,8 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -250,52 +245,51 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePurposeOfUseSecurityObservationValueP(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-   
-  	  
-  	  
+
+	public static boolean validatePurposeOfUseSecurityObservationValueP(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PURPOSE_OF_USE_SECURITY_OBSERVATION);
 			try {
-				VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(purposeOfUseSecurityObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				purposeOfUseSecurityObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						 CONTENTPROFILEValidator.PURPOSE_OF_USE_SECURITY_OBSERVATION__PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE_P,
-						 CONTENTPROFILEPlugin.INSTANCE.getString("PurposeOfUseSecurityObservationPurposeOfUseSecurityObservationValueP"),
-						 new Object [] { purposeOfUseSecurityObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						CONTENTPROFILEValidator.PURPOSE_OF_USE_SECURITY_OBSERVATION__PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE_P,
+						CONTENTPROFILEPlugin.INSTANCE.getString(
+							"PurposeOfUseSecurityObservationPurposeOfUseSecurityObservationValueP"),
+						new Object[] { purposeOfUseSecurityObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservationValueP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservationValueP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservationValueP", passToken);
+					context.put(
+						"org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservationValueP", passToken);
 				}
 				passToken.add(purposeOfUseSecurityObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -309,9 +303,9 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = element.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.1.11.20471' and (value.code = 'TREAT' or value.code = 'ETREAT' or value.code = 'HPAYMT' or value.code = 'HRESCH' or value.code = 'CLINTRCH' or value.code = ' CLINTRL'))";
+	protected static final String VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = element.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'TREAT' or value.code = 'ETREAT' or value.code = 'HPAYMT' or value.code = 'HRESCH' or value.code = 'CLINTRCH' or value.code = ' CLINTRL'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePurposeOfUseSecurityObservationValue(PurposeOfUseSecurityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purpose Of Use Security Observation Value</em>}' invariant operation.
@@ -321,9 +315,8 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -335,46 +328,46 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePurposeOfUseSecurityObservationValue(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservationValueP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(purposeOfUseSecurityObservation)) {
+
+	public static boolean validatePurposeOfUseSecurityObservationValue(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservationValueP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(purposeOfUseSecurityObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-   
-  	  
-  	  
+
 		if (VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PURPOSE_OF_USE_SECURITY_OBSERVATION);
 			try {
-				VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(purposeOfUseSecurityObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				purposeOfUseSecurityObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						 CONTENTPROFILEValidator.PURPOSE_OF_USE_SECURITY_OBSERVATION__PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE,
-						 CONTENTPROFILEPlugin.INSTANCE.getString("PurposeOfUseSecurityObservationPurposeOfUseSecurityObservationValue"),
-						 new Object [] { purposeOfUseSecurityObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						CONTENTPROFILEValidator.PURPOSE_OF_USE_SECURITY_OBSERVATION__PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE,
+						CONTENTPROFILEPlugin.INSTANCE.getString(
+							"PurposeOfUseSecurityObservationPurposeOfUseSecurityObservationValue"),
+						new Object[] { purposeOfUseSecurityObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -398,9 +391,8 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -412,40 +404,36 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSecurityObservationTemplateId(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-   
-  	  
-  	  
+
+	public static boolean validateSecurityObservationTemplateId(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PURPOSE_OF_USE_SECURITY_OBSERVATION);
 			try {
-				VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(purposeOfUseSecurityObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				purposeOfUseSecurityObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						 CONTENTPROFILEValidator.PURPOSE_OF_USE_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID,
-						 CONTENTPROFILEPlugin.INSTANCE.getString("PurposeOfUseSecurityObservationSecurityObservationTemplateId"),
-						 new Object [] { purposeOfUseSecurityObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						CONTENTPROFILEValidator.PURPOSE_OF_USE_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID,
+						CONTENTPROFILEPlugin.INSTANCE.getString(
+							"PurposeOfUseSecurityObservationSecurityObservationTemplateId"),
+						new Object[] { purposeOfUseSecurityObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

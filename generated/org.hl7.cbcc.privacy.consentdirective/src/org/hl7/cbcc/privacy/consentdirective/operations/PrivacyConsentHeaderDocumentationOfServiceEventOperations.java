@@ -7,12 +7,18 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.mdht.uml.cda.operations.ServiceEventOperations;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
+import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPlugin;
 import org.hl7.cbcc.privacy.consentdirective.PrivacyConsentHeaderDocumentationOfServiceEvent;
+
 import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
 
 /**
@@ -22,16 +28,23 @@ import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
  *
  * <p>
  * The following operations are supported:
- * </p>
  * <ul>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.PrivacyConsentHeaderDocumentationOfServiceEvent#validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Privacy Consent Header Documentation Of Service Event Template Id</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.PrivacyConsentHeaderDocumentationOfServiceEvent#validatePrivacyConsentHeaderDocumentationOfServiceEventCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Privacy Consent Header Documentation Of Service Event Code</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.PrivacyConsentHeaderDocumentationOfServiceEvent#validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Privacy Consent Header Documentation Of Service Event Effective Time</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class PrivacyConsentHeaderDocumentationOfServiceEventOperations extends ServiceEventOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,9 +72,7 @@ public class PrivacyConsentHeaderDocumentationOfServiceEventOperations extends S
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -73,28 +84,36 @@ public class PrivacyConsentHeaderDocumentationOfServiceEventOperations extends S
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId(PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId(
+			PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT);
 			try {
-				VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(privacyConsentHeaderDocumentationOfServiceEvent)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				privacyConsentHeaderDocumentationOfServiceEvent)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT__PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePrivacyConsentHeaderDocumentationOfServiceEventTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(privacyConsentHeaderDocumentationOfServiceEvent, context) }),
-						 new Object [] { privacyConsentHeaderDocumentationOfServiceEvent }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT__PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"PrivacyConsentHeaderDocumentationOfServiceEventPrivacyConsentHeaderDocumentationOfServiceEventTemplateId"),
+						new Object[] { privacyConsentHeaderDocumentationOfServiceEvent }));
 			}
+
 			return false;
 		}
 		return true;
@@ -118,9 +137,7 @@ public class PrivacyConsentHeaderDocumentationOfServiceEventOperations extends S
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -132,28 +149,36 @@ public class PrivacyConsentHeaderDocumentationOfServiceEventOperations extends S
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePrivacyConsentHeaderDocumentationOfServiceEventCode(PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validatePrivacyConsentHeaderDocumentationOfServiceEventCode(
+			PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT);
 			try {
-				VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(privacyConsentHeaderDocumentationOfServiceEvent)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				privacyConsentHeaderDocumentationOfServiceEvent)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT__PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePrivacyConsentHeaderDocumentationOfServiceEventCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(privacyConsentHeaderDocumentationOfServiceEvent, context) }),
-						 new Object [] { privacyConsentHeaderDocumentationOfServiceEvent }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT__PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"PrivacyConsentHeaderDocumentationOfServiceEventPrivacyConsentHeaderDocumentationOfServiceEventCode"),
+						new Object[] { privacyConsentHeaderDocumentationOfServiceEvent }));
 			}
+
 			return false;
 		}
 		return true;
@@ -177,9 +202,7 @@ public class PrivacyConsentHeaderDocumentationOfServiceEventOperations extends S
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -191,28 +214,36 @@ public class PrivacyConsentHeaderDocumentationOfServiceEventOperations extends S
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime(PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime(
+			PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT);
 			try {
-				VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(privacyConsentHeaderDocumentationOfServiceEvent)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				privacyConsentHeaderDocumentationOfServiceEvent)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT__PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validatePrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(privacyConsentHeaderDocumentationOfServiceEvent, context) }),
-						 new Object [] { privacyConsentHeaderDocumentationOfServiceEvent }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT__PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"PrivacyConsentHeaderDocumentationOfServiceEventPrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime"),
+						new Object[] { privacyConsentHeaderDocumentationOfServiceEvent }));
 			}
+
 			return false;
 		}
 		return true;

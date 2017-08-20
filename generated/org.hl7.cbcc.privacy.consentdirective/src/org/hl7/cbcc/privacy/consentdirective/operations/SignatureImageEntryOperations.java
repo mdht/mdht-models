@@ -7,12 +7,18 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.mdht.uml.cda.operations.EntryOperations;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
+import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPlugin;
 import org.hl7.cbcc.privacy.consentdirective.SignatureImageEntry;
+
 import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
 
 /**
@@ -22,15 +28,22 @@ import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
  *
  * <p>
  * The following operations are supported:
- * </p>
  * <ul>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.SignatureImageEntry#validateSignatureImageEntryTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signature Image Entry Template Id</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.SignatureImageEntry#validateSignatureImageEntryObservationMedia(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Signature Image Entry Observation Media</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class SignatureImageEntryOperations extends EntryOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,9 +71,7 @@ public class SignatureImageEntryOperations extends EntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_SIGNATURE_IMAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_SIGNATURE_IMAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -72,28 +83,33 @@ public class SignatureImageEntryOperations extends EntryOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSignatureImageEntryTemplateId(SignatureImageEntry signatureImageEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SIGNATURE_IMAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateSignatureImageEntryTemplateId(SignatureImageEntry signatureImageEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_SIGNATURE_IMAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.SIGNATURE_IMAGE_ENTRY);
 			try {
-				VALIDATE_SIGNATURE_IMAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SIGNATURE_IMAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_SIGNATURE_IMAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_SIGNATURE_IMAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SIGNATURE_IMAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(signatureImageEntry)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SIGNATURE_IMAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				signatureImageEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.SIGNATURE_IMAGE_ENTRY__SIGNATURE_IMAGE_ENTRY_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignatureImageEntryTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signatureImageEntry, context) }),
-						 new Object [] { signatureImageEntry }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.SIGNATURE_IMAGE_ENTRY__SIGNATURE_IMAGE_ENTRY_TEMPLATE_ID,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString("SignatureImageEntrySignatureImageEntryTemplateId"),
+						new Object[] { signatureImageEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -117,9 +133,7 @@ public class SignatureImageEntryOperations extends EntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_SIGNATURE_IMAGE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_SIGNATURE_IMAGE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -131,28 +145,35 @@ public class SignatureImageEntryOperations extends EntryOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSignatureImageEntryObservationMedia(SignatureImageEntry signatureImageEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SIGNATURE_IMAGE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateSignatureImageEntryObservationMedia(SignatureImageEntry signatureImageEntry,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_SIGNATURE_IMAGE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.SIGNATURE_IMAGE_ENTRY);
 			try {
-				VALIDATE_SIGNATURE_IMAGE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SIGNATURE_IMAGE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_SIGNATURE_IMAGE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SIGNATURE_IMAGE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SIGNATURE_IMAGE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(signatureImageEntry)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SIGNATURE_IMAGE_ENTRY_OBSERVATION_MEDIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				signatureImageEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.SIGNATURE_IMAGE_ENTRY__SIGNATURE_IMAGE_ENTRY_OBSERVATION_MEDIA,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateSignatureImageEntryObservationMedia", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(signatureImageEntry, context) }),
-						 new Object [] { signatureImageEntry }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.SIGNATURE_IMAGE_ENTRY__SIGNATURE_IMAGE_ENTRY_OBSERVATION_MEDIA,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"SignatureImageEntrySignatureImageEntryObservationMedia"),
+						new Object[] { signatureImageEntry }));
 			}
+
 			return false;
 		}
 		return true;

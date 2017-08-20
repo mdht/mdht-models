@@ -2,9 +2,12 @@
  */
 package org.hl7.cbcc.privacy.consentdirective;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,4 +31,18 @@ public interface ConfidentialitySecurityObservation extends SecurityObservation 
 	 * @generated
 	 */
 	boolean validateConfidentialitySecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConfidentialitySecurityObservation init();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConfidentialitySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ConfidentialitySecurityObservation

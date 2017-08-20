@@ -2,10 +2,13 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.ObservationMediaImpl;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 import org.hl7.cbcc.privacy.consentdirective.SignatureImageObservation;
@@ -44,8 +47,10 @@ public class SignatureImageObservationImpl extends ObservationMediaImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateSignatureImageObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SignatureImageObservationOperations.validateSignatureImageObservationTemplateId(this, diagnostics, context);
+	public boolean validateSignatureImageObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SignatureImageObservationOperations.validateSignatureImageObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -55,7 +60,8 @@ public class SignatureImageObservationImpl extends ObservationMediaImpl implemen
 	 */
 	@Override
 	public boolean validateSignatureImageObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SignatureImageObservationOperations.validateSignatureImageObservationMoodCode(this, diagnostics, context);
+		return SignatureImageObservationOperations.validateSignatureImageObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,4 +73,23 @@ public class SignatureImageObservationImpl extends ObservationMediaImpl implemen
 	public boolean validateSignatureImageObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SignatureImageObservationOperations.validateSignatureImageObservationValue(this, diagnostics, context);
 	}
-} //SignatureImageObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SignatureImageObservation init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SignatureImageObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // SignatureImageObservationImpl

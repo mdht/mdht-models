@@ -46,7 +46,8 @@ public interface PrivacySegmentedSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.5.25\' and (value.code = \'N\' or value.code = \'R\' or value.code = \'V\')'"
 	 * @generated
 	 */
-	boolean validatePrivacySegmentedSectionConfidentialityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacySegmentedSectionConfidentialityCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -58,7 +59,8 @@ public interface PrivacySegmentedSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.confidentialityCode.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validatePrivacySegmentedSectionConfidentialityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacySegmentedSectionConfidentialityCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,10 +80,11 @@ public interface PrivacySegmentedSection extends Section {
 	 * @generated
 	 */
 	public PrivacySegmentedSection init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PrivacySegmentedSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacySegmentedSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrivacySegmentedSection

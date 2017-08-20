@@ -103,231 +103,453 @@ public class CONSENTDIRECTIVESwitch<T> extends Switch<T> {
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_HEADER_AUTHOR: {
-				PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor = (PrivacyConsentHeaderAuthor)theEObject;
+				PrivacyConsentHeaderAuthor privacyConsentHeaderAuthor = (PrivacyConsentHeaderAuthor) theEObject;
 				T result = casePrivacyConsentHeaderAuthor(privacyConsentHeaderAuthor);
-				if (result == null) result = caseAuthor(privacyConsentHeaderAuthor);
-				if (result == null) result = caseParticipation(privacyConsentHeaderAuthor);
-				if (result == null) result = caseInfrastructureRoot(privacyConsentHeaderAuthor);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseAuthor(privacyConsentHeaderAuthor);
+				}
+				if (result == null) {
+					result = caseParticipation(privacyConsentHeaderAuthor);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(privacyConsentHeaderAuthor);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF_SERVICE_EVENT: {
-				PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent = (PrivacyConsentHeaderDocumentationOfServiceEvent)theEObject;
-				T result = casePrivacyConsentHeaderDocumentationOfServiceEvent(privacyConsentHeaderDocumentationOfServiceEvent);
-				if (result == null) result = caseServiceEvent(privacyConsentHeaderDocumentationOfServiceEvent);
-				if (result == null) result = caseAct(privacyConsentHeaderDocumentationOfServiceEvent);
-				if (result == null) result = caseInfrastructureRoot(privacyConsentHeaderDocumentationOfServiceEvent);
-				if (result == null) result = defaultCase(theEObject);
+				PrivacyConsentHeaderDocumentationOfServiceEvent privacyConsentHeaderDocumentationOfServiceEvent = (PrivacyConsentHeaderDocumentationOfServiceEvent) theEObject;
+				T result = casePrivacyConsentHeaderDocumentationOfServiceEvent(
+					privacyConsentHeaderDocumentationOfServiceEvent);
+				if (result == null) {
+					result = caseServiceEvent(privacyConsentHeaderDocumentationOfServiceEvent);
+				}
+				if (result == null) {
+					result = caseAct(privacyConsentHeaderDocumentationOfServiceEvent);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(privacyConsentHeaderDocumentationOfServiceEvent);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_DIRECTIVE_DOCUMENT: {
-				PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument = (PrivacyConsentDirectiveDocument)theEObject;
+				PrivacyConsentDirectiveDocument privacyConsentDirectiveDocument = (PrivacyConsentDirectiveDocument) theEObject;
 				T result = casePrivacyConsentDirectiveDocument(privacyConsentDirectiveDocument);
-				if (result == null) result = caseClinicalDocument(privacyConsentDirectiveDocument);
-				if (result == null) result = caseAct(privacyConsentDirectiveDocument);
-				if (result == null) result = caseInfrastructureRoot(privacyConsentDirectiveDocument);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseClinicalDocument(privacyConsentDirectiveDocument);
+				}
+				if (result == null) {
+					result = caseAct(privacyConsentDirectiveDocument);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(privacyConsentDirectiveDocument);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_DETAILS_SECTION: {
-				PrivacyConsentDetailsSection privacyConsentDetailsSection = (PrivacyConsentDetailsSection)theEObject;
+				PrivacyConsentDetailsSection privacyConsentDetailsSection = (PrivacyConsentDetailsSection) theEObject;
 				T result = casePrivacyConsentDetailsSection(privacyConsentDetailsSection);
-				if (result == null) result = caseSection(privacyConsentDetailsSection);
-				if (result == null) result = caseAct(privacyConsentDetailsSection);
-				if (result == null) result = caseInfrastructureRoot(privacyConsentDetailsSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(privacyConsentDetailsSection);
+				}
+				if (result == null) {
+					result = caseAct(privacyConsentDetailsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(privacyConsentDetailsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.SIGNATURES_SECTION: {
-				SignaturesSection signaturesSection = (SignaturesSection)theEObject;
+				SignaturesSection signaturesSection = (SignaturesSection) theEObject;
 				T result = caseSignaturesSection(signaturesSection);
-				if (result == null) result = caseSection(signaturesSection);
-				if (result == null) result = caseAct(signaturesSection);
-				if (result == null) result = caseInfrastructureRoot(signaturesSection);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSection(signaturesSection);
+				}
+				if (result == null) {
+					result = caseAct(signaturesSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(signaturesSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.CONSENT_DIRECTIVE_ENTRY: {
-				ConsentDirectiveEntry consentDirectiveEntry = (ConsentDirectiveEntry)theEObject;
+				ConsentDirectiveEntry consentDirectiveEntry = (ConsentDirectiveEntry) theEObject;
 				T result = caseConsentDirectiveEntry(consentDirectiveEntry);
-				if (result == null) result = caseEntry(consentDirectiveEntry);
-				if (result == null) result = caseActRelationship(consentDirectiveEntry);
-				if (result == null) result = caseInfrastructureRoot(consentDirectiveEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseEntry(consentDirectiveEntry);
+				}
+				if (result == null) {
+					result = caseActRelationship(consentDirectiveEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(consentDirectiveEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.CONSENT_DIRECTIVE_STRUCTURED_DEFINITION: {
-				ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition = (ConsentDirectiveStructuredDefinition)theEObject;
+				ConsentDirectiveStructuredDefinition consentDirectiveStructuredDefinition = (ConsentDirectiveStructuredDefinition) theEObject;
 				T result = caseConsentDirectiveStructuredDefinition(consentDirectiveStructuredDefinition);
-				if (result == null) result = caseCDA_Act(consentDirectiveStructuredDefinition);
-				if (result == null) result = caseClinicalStatement(consentDirectiveStructuredDefinition);
-				if (result == null) result = caseAct(consentDirectiveStructuredDefinition);
-				if (result == null) result = caseInfrastructureRoot(consentDirectiveStructuredDefinition);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(consentDirectiveStructuredDefinition);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(consentDirectiveStructuredDefinition);
+				}
+				if (result == null) {
+					result = caseAct(consentDirectiveStructuredDefinition);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(consentDirectiveStructuredDefinition);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.CONSENT_ACTION: {
-				ConsentAction consentAction = (ConsentAction)theEObject;
+				ConsentAction consentAction = (ConsentAction) theEObject;
 				T result = caseConsentAction(consentAction);
-				if (result == null) result = caseCDA_Act(consentAction);
-				if (result == null) result = caseClinicalStatement(consentAction);
-				if (result == null) result = caseAct(consentAction);
-				if (result == null) result = caseInfrastructureRoot(consentAction);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseCDA_Act(consentAction);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(consentAction);
+				}
+				if (result == null) {
+					result = caseAct(consentAction);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(consentAction);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.INFORMATION_CRITERIA_REFERENCES_ORGANIZER: {
-				InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer = (InformationCriteriaReferencesOrganizer)theEObject;
+				InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer = (InformationCriteriaReferencesOrganizer) theEObject;
 				T result = caseInformationCriteriaReferencesOrganizer(informationCriteriaReferencesOrganizer);
-				if (result == null) result = caseOrganizer(informationCriteriaReferencesOrganizer);
-				if (result == null) result = caseClinicalStatement(informationCriteriaReferencesOrganizer);
-				if (result == null) result = caseAct(informationCriteriaReferencesOrganizer);
-				if (result == null) result = caseInfrastructureRoot(informationCriteriaReferencesOrganizer);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseOrganizer(informationCriteriaReferencesOrganizer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(informationCriteriaReferencesOrganizer);
+				}
+				if (result == null) {
+					result = caseAct(informationCriteriaReferencesOrganizer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(informationCriteriaReferencesOrganizer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.CRITERIUM_INFORMATION_DEFINITION: {
-				CriteriumInformationDefinition criteriumInformationDefinition = (CriteriumInformationDefinition)theEObject;
+				CriteriumInformationDefinition criteriumInformationDefinition = (CriteriumInformationDefinition) theEObject;
 				T result = caseCriteriumInformationDefinition(criteriumInformationDefinition);
-				if (result == null) result = caseObservation(criteriumInformationDefinition);
-				if (result == null) result = caseClinicalStatement(criteriumInformationDefinition);
-				if (result == null) result = caseAct(criteriumInformationDefinition);
-				if (result == null) result = caseInfrastructureRoot(criteriumInformationDefinition);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(criteriumInformationDefinition);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(criteriumInformationDefinition);
+				}
+				if (result == null) {
+					result = caseAct(criteriumInformationDefinition);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(criteriumInformationDefinition);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.CRITERIUM_RELATED_PROTECTED_PROBLEM: {
-				CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem = (CriteriumRelatedProtectedProblem)theEObject;
+				CriteriumRelatedProtectedProblem criteriumRelatedProtectedProblem = (CriteriumRelatedProtectedProblem) theEObject;
 				T result = caseCriteriumRelatedProtectedProblem(criteriumRelatedProtectedProblem);
-				if (result == null) result = caseObservation(criteriumRelatedProtectedProblem);
-				if (result == null) result = caseClinicalStatement(criteriumRelatedProtectedProblem);
-				if (result == null) result = caseAct(criteriumRelatedProtectedProblem);
-				if (result == null) result = caseInfrastructureRoot(criteriumRelatedProtectedProblem);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(criteriumRelatedProtectedProblem);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(criteriumRelatedProtectedProblem);
+				}
+				if (result == null) {
+					result = caseAct(criteriumRelatedProtectedProblem);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(criteriumRelatedProtectedProblem);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.CONFIDENTIALITY_SECURITY_OBSERVATION: {
-				ConfidentialitySecurityObservation confidentialitySecurityObservation = (ConfidentialitySecurityObservation)theEObject;
+				ConfidentialitySecurityObservation confidentialitySecurityObservation = (ConfidentialitySecurityObservation) theEObject;
 				T result = caseConfidentialitySecurityObservation(confidentialitySecurityObservation);
-				if (result == null) result = caseSecurityObservation(confidentialitySecurityObservation);
-				if (result == null) result = caseObservation(confidentialitySecurityObservation);
-				if (result == null) result = caseClinicalStatement(confidentialitySecurityObservation);
-				if (result == null) result = caseAct(confidentialitySecurityObservation);
-				if (result == null) result = caseInfrastructureRoot(confidentialitySecurityObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSecurityObservation(confidentialitySecurityObservation);
+				}
+				if (result == null) {
+					result = caseObservation(confidentialitySecurityObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(confidentialitySecurityObservation);
+				}
+				if (result == null) {
+					result = caseAct(confidentialitySecurityObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(confidentialitySecurityObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.SECURITY_OBSERVATION: {
-				SecurityObservation securityObservation = (SecurityObservation)theEObject;
+				SecurityObservation securityObservation = (SecurityObservation) theEObject;
 				T result = caseSecurityObservation(securityObservation);
-				if (result == null) result = caseObservation(securityObservation);
-				if (result == null) result = caseClinicalStatement(securityObservation);
-				if (result == null) result = caseAct(securityObservation);
-				if (result == null) result = caseInfrastructureRoot(securityObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(securityObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(securityObservation);
+				}
+				if (result == null) {
+					result = caseAct(securityObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(securityObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.SECURITY_LABEL: {
-				SecurityLabel securityLabel = (SecurityLabel)theEObject;
+				SecurityLabel securityLabel = (SecurityLabel) theEObject;
 				T result = caseSecurityLabel(securityLabel);
-				if (result == null) result = caseOrganizer(securityLabel);
-				if (result == null) result = caseClinicalStatement(securityLabel);
-				if (result == null) result = caseAct(securityLabel);
-				if (result == null) result = caseInfrastructureRoot(securityLabel);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseOrganizer(securityLabel);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(securityLabel);
+				}
+				if (result == null) {
+					result = caseAct(securityLabel);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(securityLabel);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.IIHI_RECEIVING_PROVIDER: {
-				IIHIReceivingProvider iihiReceivingProvider = (IIHIReceivingProvider)theEObject;
+				IIHIReceivingProvider iihiReceivingProvider = (IIHIReceivingProvider) theEObject;
 				T result = caseIIHIReceivingProvider(iihiReceivingProvider);
-				if (result == null) result = caseParticipant2(iihiReceivingProvider);
-				if (result == null) result = caseParticipation(iihiReceivingProvider);
-				if (result == null) result = caseInfrastructureRoot(iihiReceivingProvider);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseParticipant2(iihiReceivingProvider);
+				}
+				if (result == null) {
+					result = caseParticipation(iihiReceivingProvider);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(iihiReceivingProvider);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.OBLIGATION_POLICY_SECURITY_OBSERVATION: {
-				ObligationPolicySecurityObservation obligationPolicySecurityObservation = (ObligationPolicySecurityObservation)theEObject;
+				ObligationPolicySecurityObservation obligationPolicySecurityObservation = (ObligationPolicySecurityObservation) theEObject;
 				T result = caseObligationPolicySecurityObservation(obligationPolicySecurityObservation);
-				if (result == null) result = caseSecurityObservation(obligationPolicySecurityObservation);
-				if (result == null) result = caseObservation(obligationPolicySecurityObservation);
-				if (result == null) result = caseClinicalStatement(obligationPolicySecurityObservation);
-				if (result == null) result = caseAct(obligationPolicySecurityObservation);
-				if (result == null) result = caseInfrastructureRoot(obligationPolicySecurityObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSecurityObservation(obligationPolicySecurityObservation);
+				}
+				if (result == null) {
+					result = caseObservation(obligationPolicySecurityObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(obligationPolicySecurityObservation);
+				}
+				if (result == null) {
+					result = caseAct(obligationPolicySecurityObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(obligationPolicySecurityObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.COMPUTABLE_POLICY_CONSENT: {
-				ComputablePolicyConsent computablePolicyConsent = (ComputablePolicyConsent)theEObject;
+				ComputablePolicyConsent computablePolicyConsent = (ComputablePolicyConsent) theEObject;
 				T result = caseComputablePolicyConsent(computablePolicyConsent);
-				if (result == null) result = caseObservation(computablePolicyConsent);
-				if (result == null) result = caseClinicalStatement(computablePolicyConsent);
-				if (result == null) result = caseAct(computablePolicyConsent);
-				if (result == null) result = caseInfrastructureRoot(computablePolicyConsent);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservation(computablePolicyConsent);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(computablePolicyConsent);
+				}
+				if (result == null) {
+					result = caseAct(computablePolicyConsent);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(computablePolicyConsent);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.SCANNED_PRIVACY_CONSENT: {
-				ScannedPrivacyConsent scannedPrivacyConsent = (ScannedPrivacyConsent)theEObject;
+				ScannedPrivacyConsent scannedPrivacyConsent = (ScannedPrivacyConsent) theEObject;
 				T result = caseScannedPrivacyConsent(scannedPrivacyConsent);
-				if (result == null) result = caseObservationMedia(scannedPrivacyConsent);
-				if (result == null) result = caseClinicalStatement(scannedPrivacyConsent);
-				if (result == null) result = caseAct(scannedPrivacyConsent);
-				if (result == null) result = caseInfrastructureRoot(scannedPrivacyConsent);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservationMedia(scannedPrivacyConsent);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(scannedPrivacyConsent);
+				}
+				if (result == null) {
+					result = caseAct(scannedPrivacyConsent);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(scannedPrivacyConsent);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.SIGNATURE_IMAGE_OBSERVATION: {
-				SignatureImageObservation signatureImageObservation = (SignatureImageObservation)theEObject;
+				SignatureImageObservation signatureImageObservation = (SignatureImageObservation) theEObject;
 				T result = caseSignatureImageObservation(signatureImageObservation);
-				if (result == null) result = caseObservationMedia(signatureImageObservation);
-				if (result == null) result = caseClinicalStatement(signatureImageObservation);
-				if (result == null) result = caseAct(signatureImageObservation);
-				if (result == null) result = caseInfrastructureRoot(signatureImageObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseObservationMedia(signatureImageObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(signatureImageObservation);
+				}
+				if (result == null) {
+					result = caseAct(signatureImageObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(signatureImageObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.SIGNATURE_IMAGE_ENTRY: {
-				SignatureImageEntry signatureImageEntry = (SignatureImageEntry)theEObject;
+				SignatureImageEntry signatureImageEntry = (SignatureImageEntry) theEObject;
 				T result = caseSignatureImageEntry(signatureImageEntry);
-				if (result == null) result = caseEntry(signatureImageEntry);
-				if (result == null) result = caseActRelationship(signatureImageEntry);
-				if (result == null) result = caseInfrastructureRoot(signatureImageEntry);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseEntry(signatureImageEntry);
+				}
+				if (result == null) {
+					result = caseActRelationship(signatureImageEntry);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(signatureImageEntry);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.PRIVACY_CONSENT_HEADER_DOCUMENTATION_OF: {
-				PrivacyConsentHeaderDocumentationOf privacyConsentHeaderDocumentationOf = (PrivacyConsentHeaderDocumentationOf)theEObject;
+				PrivacyConsentHeaderDocumentationOf privacyConsentHeaderDocumentationOf = (PrivacyConsentHeaderDocumentationOf) theEObject;
 				T result = casePrivacyConsentHeaderDocumentationOf(privacyConsentHeaderDocumentationOf);
-				if (result == null) result = caseDocumentationOf(privacyConsentHeaderDocumentationOf);
-				if (result == null) result = caseActRelationship(privacyConsentHeaderDocumentationOf);
-				if (result == null) result = caseInfrastructureRoot(privacyConsentHeaderDocumentationOf);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseDocumentationOf(privacyConsentHeaderDocumentationOf);
+				}
+				if (result == null) {
+					result = caseActRelationship(privacyConsentHeaderDocumentationOf);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(privacyConsentHeaderDocumentationOf);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.PURPOSE_OF_USE_SECURITY_OBSERVATION: {
-				PurposeOfUseSecurityObservation purposeOfUseSecurityObservation = (PurposeOfUseSecurityObservation)theEObject;
+				PurposeOfUseSecurityObservation purposeOfUseSecurityObservation = (PurposeOfUseSecurityObservation) theEObject;
 				T result = casePurposeOfUseSecurityObservation(purposeOfUseSecurityObservation);
-				if (result == null) result = caseSecurityObservation(purposeOfUseSecurityObservation);
-				if (result == null) result = caseObservation(purposeOfUseSecurityObservation);
-				if (result == null) result = caseClinicalStatement(purposeOfUseSecurityObservation);
-				if (result == null) result = caseAct(purposeOfUseSecurityObservation);
-				if (result == null) result = caseInfrastructureRoot(purposeOfUseSecurityObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSecurityObservation(purposeOfUseSecurityObservation);
+				}
+				if (result == null) {
+					result = caseObservation(purposeOfUseSecurityObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(purposeOfUseSecurityObservation);
+				}
+				if (result == null) {
+					result = caseAct(purposeOfUseSecurityObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(purposeOfUseSecurityObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
 			case CONSENTDIRECTIVEPackage.REFRAIN_POLICY_SECURITY_OBSERVATION: {
-				RefrainPolicySecurityObservation refrainPolicySecurityObservation = (RefrainPolicySecurityObservation)theEObject;
+				RefrainPolicySecurityObservation refrainPolicySecurityObservation = (RefrainPolicySecurityObservation) theEObject;
 				T result = caseRefrainPolicySecurityObservation(refrainPolicySecurityObservation);
-				if (result == null) result = caseSecurityObservation(refrainPolicySecurityObservation);
-				if (result == null) result = caseObservation(refrainPolicySecurityObservation);
-				if (result == null) result = caseClinicalStatement(refrainPolicySecurityObservation);
-				if (result == null) result = caseAct(refrainPolicySecurityObservation);
-				if (result == null) result = caseInfrastructureRoot(refrainPolicySecurityObservation);
-				if (result == null) result = defaultCase(theEObject);
+				if (result == null) {
+					result = caseSecurityObservation(refrainPolicySecurityObservation);
+				}
+				if (result == null) {
+					result = caseObservation(refrainPolicySecurityObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(refrainPolicySecurityObservation);
+				}
+				if (result == null) {
+					result = caseAct(refrainPolicySecurityObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(refrainPolicySecurityObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
 				return result;
 			}
-			default: return defaultCase(theEObject);
+			default:
+				return defaultCase(theEObject);
 		}
 	}
 
@@ -357,7 +579,8 @@ public class CONSENTDIRECTIVESwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePrivacyConsentHeaderDocumentationOfServiceEvent(PrivacyConsentHeaderDocumentationOfServiceEvent object) {
+	public T casePrivacyConsentHeaderDocumentationOfServiceEvent(
+			PrivacyConsentHeaderDocumentationOfServiceEvent object) {
 		return null;
 	}
 
@@ -932,4 +1155,4 @@ public class CONSENTDIRECTIVESwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //CONSENTDIRECTIVESwitch
+} // CONSENTDIRECTIVESwitch

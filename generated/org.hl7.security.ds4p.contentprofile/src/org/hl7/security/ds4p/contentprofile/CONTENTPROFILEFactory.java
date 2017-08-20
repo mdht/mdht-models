@@ -165,4 +165,4 @@ public interface CONTENTPROFILEFactory extends EFactory {
 	 */
 	CONTENTPROFILEPackage getCONTENTPROFILEPackage();
 
-} //CONTENTPROFILEFactory
+} // CONTENTPROFILEFactory

@@ -9,6 +9,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.mdht.uml.cda.operations.EntryRelationshipOperations;
+
 import org.eclipse.ocl.ParserException;
 
 import org.eclipse.ocl.ecore.Constraint;
@@ -36,13 +37,13 @@ import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
  * @generated
  */
 public class PrivacyAnnotationEntryRelationshipOperations extends EntryRelationshipOperations {
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -71,9 +72,8 @@ public class PrivacyAnnotationEntryRelationshipOperations extends EntryRelations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,40 +85,37 @@ public class PrivacyAnnotationEntryRelationshipOperations extends EntryRelations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePrivacyAnnotationEntryRelationshipTemplateId(PrivacyAnnotationEntryRelationship privacyAnnotationEntryRelationship, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-   
-  	  
-  	  
+
+	public static boolean validatePrivacyAnnotationEntryRelationshipTemplateId(
+			PrivacyAnnotationEntryRelationship privacyAnnotationEntryRelationship, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP);
 			try {
-				VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacyAnnotationEntryRelationship)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				privacyAnnotationEntryRelationship)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						 CONTENTPROFILEValidator.PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP__PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID,
-						 CONTENTPROFILEPlugin.INSTANCE.getString("PrivacyAnnotationEntryRelationshipPrivacyAnnotationEntryRelationshipTemplateId"),
-						 new Object [] { privacyAnnotationEntryRelationship }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						CONTENTPROFILEValidator.PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP__PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID,
+						CONTENTPROFILEPlugin.INSTANCE.getString(
+							"PrivacyAnnotationEntryRelationshipPrivacyAnnotationEntryRelationshipTemplateId"),
+						new Object[] { privacyAnnotationEntryRelationship }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -142,9 +139,8 @@ public class PrivacyAnnotationEntryRelationshipOperations extends EntryRelations
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -156,40 +152,37 @@ public class PrivacyAnnotationEntryRelationshipOperations extends EntryRelations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validatePrivacyAnnotationEntryRelationshipOrganizer(PrivacyAnnotationEntryRelationship privacyAnnotationEntryRelationship, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-   
-  	  
-  	  
+
+	public static boolean validatePrivacyAnnotationEntryRelationshipOrganizer(
+			PrivacyAnnotationEntryRelationship privacyAnnotationEntryRelationship, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP);
 			try {
-				VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacyAnnotationEntryRelationship)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				privacyAnnotationEntryRelationship)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						 CONTENTPROFILEValidator.PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP__PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER,
-						 CONTENTPROFILEPlugin.INSTANCE.getString("PrivacyAnnotationEntryRelationshipPrivacyAnnotationEntryRelationshipOrganizer"),
-						 new Object [] { privacyAnnotationEntryRelationship }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						CONTENTPROFILEValidator.PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP__PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER,
+						CONTENTPROFILEPlugin.INSTANCE.getString(
+							"PrivacyAnnotationEntryRelationshipPrivacyAnnotationEntryRelationshipOrganizer"),
+						new Object[] { privacyAnnotationEntryRelationship }));
 			}
-			 
+
 			return false;
 		}
 		return true;

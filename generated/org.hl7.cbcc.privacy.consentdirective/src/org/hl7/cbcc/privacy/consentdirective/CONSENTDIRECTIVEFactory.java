@@ -219,4 +219,4 @@ public interface CONSENTDIRECTIVEFactory extends EFactory {
 	 */
 	CONSENTDIRECTIVEPackage getCONSENTDIRECTIVEPackage();
 
-} //CONSENTDIRECTIVEFactory
+} // CONSENTDIRECTIVEFactory

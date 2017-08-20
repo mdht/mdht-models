@@ -10,17 +10,25 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClassifier;
+
 import org.eclipse.mdht.uml.cda.operations.OrganizerOperations;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.eclipse.ocl.expressions.OCLExpression;
+
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
+import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPlugin;
 import org.hl7.cbcc.privacy.consentdirective.ConfidentialitySecurityObservation;
 import org.hl7.cbcc.privacy.consentdirective.CriteriumInformationDefinition;
 import org.hl7.cbcc.privacy.consentdirective.CriteriumRelatedProtectedProblem;
 import org.hl7.cbcc.privacy.consentdirective.InformationCriteriaReferencesOrganizer;
+
 import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
 
 /**
@@ -30,7 +38,6 @@ import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
  *
  * <p>
  * The following operations are supported:
- * </p>
  * <ul>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.InformationCriteriaReferencesOrganizer#validateInformationCriteriaReferencesOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Information Criteria References Organizer Template Id</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.InformationCriteriaReferencesOrganizer#validateInformationCriteriaReferencesOrganizerMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Information Criteria References Organizer Mood Code</em>}</li>
@@ -41,10 +48,18 @@ import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.InformationCriteriaReferencesOrganizer#getRelatedProtectedProblems() <em>Get Related Protected Problems</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.InformationCriteriaReferencesOrganizer#getConfidentialityCodeLabels() <em>Get Confidentiality Code Labels</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class InformationCriteriaReferencesOrganizerOperations extends OrganizerOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72,9 +87,7 @@ public class InformationCriteriaReferencesOrganizerOperations extends OrganizerO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,28 +99,36 @@ public class InformationCriteriaReferencesOrganizerOperations extends OrganizerO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateInformationCriteriaReferencesOrganizerTemplateId(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateInformationCriteriaReferencesOrganizerTemplateId(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER);
 			try {
-				VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(informationCriteriaReferencesOrganizer)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				informationCriteriaReferencesOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.INFORMATION_CRITERIA_REFERENCES_ORGANIZER__INFORMATION_CRITERIA_REFERENCES_ORGANIZER_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateInformationCriteriaReferencesOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(informationCriteriaReferencesOrganizer, context) }),
-						 new Object [] { informationCriteriaReferencesOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.INFORMATION_CRITERIA_REFERENCES_ORGANIZER__INFORMATION_CRITERIA_REFERENCES_ORGANIZER_TEMPLATE_ID,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"InformationCriteriaReferencesOrganizerInformationCriteriaReferencesOrganizerTemplateId"),
+						new Object[] { informationCriteriaReferencesOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -131,9 +152,7 @@ public class InformationCriteriaReferencesOrganizerOperations extends OrganizerO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,28 +164,36 @@ public class InformationCriteriaReferencesOrganizerOperations extends OrganizerO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateInformationCriteriaReferencesOrganizerMoodCode(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateInformationCriteriaReferencesOrganizerMoodCode(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER);
 			try {
-				VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(informationCriteriaReferencesOrganizer)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				informationCriteriaReferencesOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.INFORMATION_CRITERIA_REFERENCES_ORGANIZER__INFORMATION_CRITERIA_REFERENCES_ORGANIZER_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateInformationCriteriaReferencesOrganizerMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(informationCriteriaReferencesOrganizer, context) }),
-						 new Object [] { informationCriteriaReferencesOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.INFORMATION_CRITERIA_REFERENCES_ORGANIZER__INFORMATION_CRITERIA_REFERENCES_ORGANIZER_MOOD_CODE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"InformationCriteriaReferencesOrganizerInformationCriteriaReferencesOrganizerMoodCode"),
+						new Object[] { informationCriteriaReferencesOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -190,9 +217,7 @@ public class InformationCriteriaReferencesOrganizerOperations extends OrganizerO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_INFORMATION_DEFINITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_INFORMATION_DEFINITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,28 +229,36 @@ public class InformationCriteriaReferencesOrganizerOperations extends OrganizerO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateInformationCriteriaReferencesOrganizerInformationDefinition(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_INFORMATION_DEFINITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateInformationCriteriaReferencesOrganizerInformationDefinition(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_INFORMATION_DEFINITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER);
 			try {
-				VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_INFORMATION_DEFINITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_INFORMATION_DEFINITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_INFORMATION_DEFINITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_INFORMATION_DEFINITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_INFORMATION_DEFINITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(informationCriteriaReferencesOrganizer)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_INFORMATION_DEFINITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				informationCriteriaReferencesOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.INFORMATION_CRITERIA_REFERENCES_ORGANIZER__INFORMATION_CRITERIA_REFERENCES_ORGANIZER_INFORMATION_DEFINITION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateInformationCriteriaReferencesOrganizerInformationDefinition", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(informationCriteriaReferencesOrganizer, context) }),
-						 new Object [] { informationCriteriaReferencesOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.INFORMATION_CRITERIA_REFERENCES_ORGANIZER__INFORMATION_CRITERIA_REFERENCES_ORGANIZER_INFORMATION_DEFINITION,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"InformationCriteriaReferencesOrganizerInformationCriteriaReferencesOrganizerInformationDefinition"),
+						new Object[] { informationCriteriaReferencesOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -249,9 +282,7 @@ public class InformationCriteriaReferencesOrganizerOperations extends OrganizerO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_RELATED_PROTECTED_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_RELATED_PROTECTED_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -263,28 +294,36 @@ public class InformationCriteriaReferencesOrganizerOperations extends OrganizerO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_RELATED_PROTECTED_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_RELATED_PROTECTED_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER);
 			try {
-				VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_RELATED_PROTECTED_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_RELATED_PROTECTED_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_RELATED_PROTECTED_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_RELATED_PROTECTED_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_RELATED_PROTECTED_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(informationCriteriaReferencesOrganizer)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_RELATED_PROTECTED_PROBLEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				informationCriteriaReferencesOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.INFORMATION_CRITERIA_REFERENCES_ORGANIZER__INFORMATION_CRITERIA_REFERENCES_ORGANIZER_RELATED_PROTECTED_PROBLEM,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(informationCriteriaReferencesOrganizer, context) }),
-						 new Object [] { informationCriteriaReferencesOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.INFORMATION_CRITERIA_REFERENCES_ORGANIZER__INFORMATION_CRITERIA_REFERENCES_ORGANIZER_RELATED_PROTECTED_PROBLEM,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"InformationCriteriaReferencesOrganizerInformationCriteriaReferencesOrganizerRelatedProtectedProblem"),
+						new Object[] { informationCriteriaReferencesOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -308,9 +347,7 @@ public class InformationCriteriaReferencesOrganizerOperations extends OrganizerO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_CONFIDENTIALITY_CODE_LABEL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_CONFIDENTIALITY_CODE_LABEL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -322,28 +359,36 @@ public class InformationCriteriaReferencesOrganizerOperations extends OrganizerO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_CONFIDENTIALITY_CODE_LABEL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_CONFIDENTIALITY_CODE_LABEL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER);
 			try {
-				VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_CONFIDENTIALITY_CODE_LABEL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_CONFIDENTIALITY_CODE_LABEL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_CONFIDENTIALITY_CODE_LABEL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_CONFIDENTIALITY_CODE_LABEL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_CONFIDENTIALITY_CODE_LABEL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(informationCriteriaReferencesOrganizer)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INFORMATION_CRITERIA_REFERENCES_ORGANIZER_CONFIDENTIALITY_CODE_LABEL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				informationCriteriaReferencesOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.INFORMATION_CRITERIA_REFERENCES_ORGANIZER__INFORMATION_CRITERIA_REFERENCES_ORGANIZER_CONFIDENTIALITY_CODE_LABEL,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(informationCriteriaReferencesOrganizer, context) }),
-						 new Object [] { informationCriteriaReferencesOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.INFORMATION_CRITERIA_REFERENCES_ORGANIZER__INFORMATION_CRITERIA_REFERENCES_ORGANIZER_CONFIDENTIALITY_CODE_LABEL,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"InformationCriteriaReferencesOrganizerInformationCriteriaReferencesOrganizerConfidentialityCodeLabel"),
+						new Object[] { informationCriteriaReferencesOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -374,21 +419,26 @@ public class InformationCriteriaReferencesOrganizerOperations extends OrganizerO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<CriteriumInformationDefinition> getInformationDefinitions(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer) {
+	public static EList<CriteriumInformationDefinition> getInformationDefinitions(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer) {
+
 		if (GET_INFORMATION_DEFINITIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER, CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER.getEAllOperations().get(57));
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(
+				CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER,
+				CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER.getEAllOperations().get(57));
 			try {
 				GET_INFORMATION_DEFINITIONS__EOCL_QRY = helper.createQuery(GET_INFORMATION_DEFINITIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_INFORMATION_DEFINITIONS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_INFORMATION_DEFINITIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<CriteriumInformationDefinition> result = (Collection<CriteriumInformationDefinition>) query.evaluate(informationCriteriaReferencesOrganizer);
+		Collection<CriteriumInformationDefinition> result = (Collection<CriteriumInformationDefinition>) query.evaluate(
+			informationCriteriaReferencesOrganizer);
 		return new BasicEList.UnmodifiableEList<CriteriumInformationDefinition>(result.size(), result.toArray());
 	}
 
@@ -417,21 +467,26 @@ public class InformationCriteriaReferencesOrganizerOperations extends OrganizerO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<CriteriumRelatedProtectedProblem> getRelatedProtectedProblems(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer) {
+	public static EList<CriteriumRelatedProtectedProblem> getRelatedProtectedProblems(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer) {
+
 		if (GET_RELATED_PROTECTED_PROBLEMS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER, CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER.getEAllOperations().get(58));
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(
+				CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER,
+				CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER.getEAllOperations().get(58));
 			try {
 				GET_RELATED_PROTECTED_PROBLEMS__EOCL_QRY = helper.createQuery(GET_RELATED_PROTECTED_PROBLEMS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_PROTECTED_PROBLEMS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_PROTECTED_PROBLEMS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<CriteriumRelatedProtectedProblem> result = (Collection<CriteriumRelatedProtectedProblem>) query.evaluate(informationCriteriaReferencesOrganizer);
+		Collection<CriteriumRelatedProtectedProblem> result = (Collection<CriteriumRelatedProtectedProblem>) query.evaluate(
+			informationCriteriaReferencesOrganizer);
 		return new BasicEList.UnmodifiableEList<CriteriumRelatedProtectedProblem>(result.size(), result.toArray());
 	}
 
@@ -460,21 +515,27 @@ public class InformationCriteriaReferencesOrganizerOperations extends OrganizerO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	
-	public static  EList<ConfidentialitySecurityObservation> getConfidentialityCodeLabels(InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer) {
+	public static EList<ConfidentialitySecurityObservation> getConfidentialityCodeLabels(
+			InformationCriteriaReferencesOrganizer informationCriteriaReferencesOrganizer) {
+
 		if (GET_CONFIDENTIALITY_CODE_LABELS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER, CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER.getEAllOperations().get(59));
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(
+				CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER,
+				CONSENTDIRECTIVEPackage.Literals.INFORMATION_CRITERIA_REFERENCES_ORGANIZER.getEAllOperations().get(59));
 			try {
-				GET_CONFIDENTIALITY_CODE_LABELS__EOCL_QRY = helper.createQuery(GET_CONFIDENTIALITY_CODE_LABELS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_CONFIDENTIALITY_CODE_LABELS__EOCL_QRY = helper.createQuery(
+					GET_CONFIDENTIALITY_CODE_LABELS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONFIDENTIALITY_CODE_LABELS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONFIDENTIALITY_CODE_LABELS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ConfidentialitySecurityObservation> result = (Collection<ConfidentialitySecurityObservation>) query.evaluate(informationCriteriaReferencesOrganizer);
+		Collection<ConfidentialitySecurityObservation> result = (Collection<ConfidentialitySecurityObservation>) query.evaluate(
+			informationCriteriaReferencesOrganizer);
 		return new BasicEList.UnmodifiableEList<ConfidentialitySecurityObservation>(result.size(), result.toArray());
 	}
 

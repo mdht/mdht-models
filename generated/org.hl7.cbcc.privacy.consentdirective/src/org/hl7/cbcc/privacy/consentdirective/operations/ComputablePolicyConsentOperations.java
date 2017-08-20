@@ -2,17 +2,24 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
+import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPlugin;
 import org.hl7.cbcc.privacy.consentdirective.ComputablePolicyConsent;
+
 import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
 
 /**
@@ -22,7 +29,6 @@ import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
  *
  * <p>
  * The following operations are supported:
- * </p>
  * <ul>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ComputablePolicyConsent#validateComputablePolicyConsentTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Computable Policy Consent Template Id</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ComputablePolicyConsent#validateComputablePolicyConsentCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Computable Policy Consent Code P</em>}</li>
@@ -30,10 +36,18 @@ import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ComputablePolicyConsent#validateComputablePolicyConsentMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Computable Policy Consent Mood Code</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.ComputablePolicyConsent#validateComputablePolicyConsentValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Computable Policy Consent Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class ComputablePolicyConsentOperations extends ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -61,9 +75,7 @@ public class ComputablePolicyConsentOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_COMPUTABLE_POLICY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_COMPUTABLE_POLICY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -75,28 +87,35 @@ public class ComputablePolicyConsentOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComputablePolicyConsentTemplateId(ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_COMPUTABLE_POLICY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateComputablePolicyConsentTemplateId(ComputablePolicyConsent computablePolicyConsent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_COMPUTABLE_POLICY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.COMPUTABLE_POLICY_CONSENT);
 			try {
-				VALIDATE_COMPUTABLE_POLICY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMPUTABLE_POLICY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_COMPUTABLE_POLICY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_COMPUTABLE_POLICY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMPUTABLE_POLICY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(computablePolicyConsent)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_COMPUTABLE_POLICY_CONSENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				computablePolicyConsent)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.COMPUTABLE_POLICY_CONSENT__COMPUTABLE_POLICY_CONSENT_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateComputablePolicyConsentTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(computablePolicyConsent, context) }),
-						 new Object [] { computablePolicyConsent }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.COMPUTABLE_POLICY_CONSENT__COMPUTABLE_POLICY_CONSENT_TEMPLATE_ID,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"ComputablePolicyConsentComputablePolicyConsentTemplateId"),
+						new Object[] { computablePolicyConsent }));
 			}
+
 			return false;
 		}
 		return true;
@@ -120,9 +139,7 @@ public class ComputablePolicyConsentOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -134,28 +151,47 @@ public class ComputablePolicyConsentOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComputablePolicyConsentCodeP(ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateComputablePolicyConsentCodeP(ComputablePolicyConsent computablePolicyConsent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.COMPUTABLE_POLICY_CONSENT);
 			try {
-				VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(computablePolicyConsent)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				computablePolicyConsent)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.COMPUTABLE_POLICY_CONSENT__COMPUTABLE_POLICY_CONSENT_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateComputablePolicyConsentCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(computablePolicyConsent, context) }),
-						 new Object [] { computablePolicyConsent }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.COMPUTABLE_POLICY_CONSENT__COMPUTABLE_POLICY_CONSENT_CODE_P,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"ComputablePolicyConsentComputablePolicyConsentCodeP"),
+						new Object[] { computablePolicyConsent }));
 			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.hl7.cbcc.privacy.consentdirective.ComputablePolicyConsentCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.hl7.cbcc.privacy.consentdirective.ComputablePolicyConsentCodeP", passToken);
+				}
+				passToken.add(computablePolicyConsent);
+			}
+
 			return false;
 		}
 		return true;
@@ -169,9 +205,9 @@ public class ComputablePolicyConsentOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())";
+	protected static final String VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateComputablePolicyConsentCode(ComputablePolicyConsent, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Computable Policy Consent Code</em>}' invariant operation.
@@ -181,9 +217,7 @@ public class ComputablePolicyConsentOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -195,28 +229,41 @@ public class ComputablePolicyConsentOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComputablePolicyConsentCode(ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateComputablePolicyConsentCode(ComputablePolicyConsent computablePolicyConsent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.hl7.cbcc.privacy.consentdirective.ComputablePolicyConsentCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(computablePolicyConsent)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.COMPUTABLE_POLICY_CONSENT);
 			try {
-				VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(computablePolicyConsent)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_COMPUTABLE_POLICY_CONSENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				computablePolicyConsent)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.COMPUTABLE_POLICY_CONSENT__COMPUTABLE_POLICY_CONSENT_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateComputablePolicyConsentCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(computablePolicyConsent, context) }),
-						 new Object [] { computablePolicyConsent }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.COMPUTABLE_POLICY_CONSENT__COMPUTABLE_POLICY_CONSENT_CODE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString("ComputablePolicyConsentComputablePolicyConsentCode"),
+						new Object[] { computablePolicyConsent }));
 			}
+
 			return false;
 		}
 		return true;
@@ -240,9 +287,7 @@ public class ComputablePolicyConsentOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_COMPUTABLE_POLICY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_COMPUTABLE_POLICY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -254,28 +299,35 @@ public class ComputablePolicyConsentOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComputablePolicyConsentMoodCode(ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_COMPUTABLE_POLICY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateComputablePolicyConsentMoodCode(ComputablePolicyConsent computablePolicyConsent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_COMPUTABLE_POLICY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.COMPUTABLE_POLICY_CONSENT);
 			try {
-				VALIDATE_COMPUTABLE_POLICY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMPUTABLE_POLICY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_COMPUTABLE_POLICY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_COMPUTABLE_POLICY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMPUTABLE_POLICY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(computablePolicyConsent)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_COMPUTABLE_POLICY_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				computablePolicyConsent)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.COMPUTABLE_POLICY_CONSENT__COMPUTABLE_POLICY_CONSENT_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateComputablePolicyConsentMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(computablePolicyConsent, context) }),
-						 new Object [] { computablePolicyConsent }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.COMPUTABLE_POLICY_CONSENT__COMPUTABLE_POLICY_CONSENT_MOOD_CODE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"ComputablePolicyConsentComputablePolicyConsentMoodCode"),
+						new Object[] { computablePolicyConsent }));
 			}
+
 			return false;
 		}
 		return true;
@@ -299,9 +351,7 @@ public class ComputablePolicyConsentOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_COMPUTABLE_POLICY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_COMPUTABLE_POLICY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -313,28 +363,34 @@ public class ComputablePolicyConsentOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateComputablePolicyConsentValue(ComputablePolicyConsent computablePolicyConsent, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_COMPUTABLE_POLICY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateComputablePolicyConsentValue(ComputablePolicyConsent computablePolicyConsent,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_COMPUTABLE_POLICY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.COMPUTABLE_POLICY_CONSENT);
 			try {
-				VALIDATE_COMPUTABLE_POLICY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMPUTABLE_POLICY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_COMPUTABLE_POLICY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_COMPUTABLE_POLICY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMPUTABLE_POLICY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(computablePolicyConsent)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_COMPUTABLE_POLICY_CONSENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				computablePolicyConsent)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.COMPUTABLE_POLICY_CONSENT__COMPUTABLE_POLICY_CONSENT_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateComputablePolicyConsentValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(computablePolicyConsent, context) }),
-						 new Object [] { computablePolicyConsent }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.COMPUTABLE_POLICY_CONSENT__COMPUTABLE_POLICY_CONSENT_VALUE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"ComputablePolicyConsentComputablePolicyConsentValue"),
+						new Object[] { computablePolicyConsent }));
 			}
+
 			return false;
 		}
 		return true;

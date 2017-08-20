@@ -2,10 +2,13 @@
  */
 package org.hl7.cbcc.privacy.consentdirective;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.Organizer;
 
 /**
@@ -29,7 +32,8 @@ public interface InformationCriteriaReferencesOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.445.9\')'"
 	 * @generated
 	 */
-	boolean validateInformationCriteriaReferencesOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateInformationCriteriaReferencesOrganizerTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -41,7 +45,8 @@ public interface InformationCriteriaReferencesOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
 	 * @generated
 	 */
-	boolean validateInformationCriteriaReferencesOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateInformationCriteriaReferencesOrganizerMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -53,7 +58,8 @@ public interface InformationCriteriaReferencesOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consentdirective::CriteriumInformationDefinition))'"
 	 * @generated
 	 */
-	boolean validateInformationCriteriaReferencesOrganizerInformationDefinition(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateInformationCriteriaReferencesOrganizerInformationDefinition(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -65,7 +71,8 @@ public interface InformationCriteriaReferencesOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consentdirective::CriteriumRelatedProtectedProblem))'"
 	 * @generated
 	 */
-	boolean validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -77,7 +84,8 @@ public interface InformationCriteriaReferencesOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consentdirective::ConfidentialitySecurityObservation))'"
 	 * @generated
 	 */
-	boolean validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,4 +113,18 @@ public interface InformationCriteriaReferencesOrganizer extends Organizer {
 	 * @generated
 	 */
 	EList<ConfidentialitySecurityObservation> getConfidentialityCodeLabels();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InformationCriteriaReferencesOrganizer init();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InformationCriteriaReferencesOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InformationCriteriaReferencesOrganizer

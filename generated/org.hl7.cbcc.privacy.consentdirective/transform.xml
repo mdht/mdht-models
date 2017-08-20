@@ -2,6 +2,8 @@
 <project name="CDA Model Transformation"  basedir="." default="all">
 <eclipse.convertPath resourcePath="org.eclipse.mdht.uml.cda" property="cdaPluginPath"/>
 <property name="modelName" value="consentdirective"/>
+	<eclipse.convertPath resourcePath="org.hl7.cbcc.privacy.consentdirective.model/model/${modelName}.uml" property="modelPath.uml"/>
+
 <macrodef name="convertEcorePaths">
 <attribute name="filePath"/>
 <sequential>

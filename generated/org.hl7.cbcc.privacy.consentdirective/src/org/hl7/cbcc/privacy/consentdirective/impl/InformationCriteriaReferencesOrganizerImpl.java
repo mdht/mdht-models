@@ -2,11 +2,14 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.OrganizerImpl;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 import org.hl7.cbcc.privacy.consentdirective.ConfidentialitySecurityObservation;
@@ -22,7 +25,8 @@ import org.hl7.cbcc.privacy.consentdirective.operations.InformationCriteriaRefer
  *
  * @generated
  */
-public class InformationCriteriaReferencesOrganizerImpl extends OrganizerImpl implements InformationCriteriaReferencesOrganizer {
+public class InformationCriteriaReferencesOrganizerImpl extends OrganizerImpl
+		implements InformationCriteriaReferencesOrganizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -48,8 +52,10 @@ public class InformationCriteriaReferencesOrganizerImpl extends OrganizerImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validateInformationCriteriaReferencesOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InformationCriteriaReferencesOrganizerOperations.validateInformationCriteriaReferencesOrganizerTemplateId(this, diagnostics, context);
+	public boolean validateInformationCriteriaReferencesOrganizerTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InformationCriteriaReferencesOrganizerOperations.validateInformationCriteriaReferencesOrganizerTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,8 +64,10 @@ public class InformationCriteriaReferencesOrganizerImpl extends OrganizerImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validateInformationCriteriaReferencesOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InformationCriteriaReferencesOrganizerOperations.validateInformationCriteriaReferencesOrganizerMoodCode(this, diagnostics, context);
+	public boolean validateInformationCriteriaReferencesOrganizerMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InformationCriteriaReferencesOrganizerOperations.validateInformationCriteriaReferencesOrganizerMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +76,10 @@ public class InformationCriteriaReferencesOrganizerImpl extends OrganizerImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validateInformationCriteriaReferencesOrganizerInformationDefinition(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InformationCriteriaReferencesOrganizerOperations.validateInformationCriteriaReferencesOrganizerInformationDefinition(this, diagnostics, context);
+	public boolean validateInformationCriteriaReferencesOrganizerInformationDefinition(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InformationCriteriaReferencesOrganizerOperations.validateInformationCriteriaReferencesOrganizerInformationDefinition(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +88,10 @@ public class InformationCriteriaReferencesOrganizerImpl extends OrganizerImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InformationCriteriaReferencesOrganizerOperations.validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(this, diagnostics, context);
+	public boolean validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InformationCriteriaReferencesOrganizerOperations.validateInformationCriteriaReferencesOrganizerRelatedProtectedProblem(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +100,10 @@ public class InformationCriteriaReferencesOrganizerImpl extends OrganizerImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InformationCriteriaReferencesOrganizerOperations.validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(this, diagnostics, context);
+	public boolean validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return InformationCriteriaReferencesOrganizerOperations.validateInformationCriteriaReferencesOrganizerConfidentialityCodeLabel(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -121,4 +135,24 @@ public class InformationCriteriaReferencesOrganizerImpl extends OrganizerImpl im
 	public EList<ConfidentialitySecurityObservation> getConfidentialityCodeLabels() {
 		return InformationCriteriaReferencesOrganizerOperations.getConfidentialityCodeLabels(this);
 	}
-} //InformationCriteriaReferencesOrganizerImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InformationCriteriaReferencesOrganizer init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InformationCriteriaReferencesOrganizer init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // InformationCriteriaReferencesOrganizerImpl

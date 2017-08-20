@@ -21,7 +21,6 @@ import org.eclipse.mdht.uml.cda.ClinicalDocument;
 import org.eclipse.mdht.uml.cda.internal.resource.CDAResource;
 import org.eclipse.mdht.uml.cda.util.CDAUtil;
 import org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationHandler;
- 
 
 /**
  * @author seanmuir
@@ -29,36 +28,36 @@ import org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationHandler;
  */
 @SuppressWarnings("restriction")
 public class DS4PUtil {
-	
+
 	private static final String CONTENTPROFILE = "CONTENTPROFILE";
-	
+
 	public static void validateAsDS4P(InputStream is, final ValidationHandler handler) throws Exception {
-		
+
 		ValidationHandler filterHandler = new ValidationHandler() {
 
 			@Override
 			public void handleError(Diagnostic diagnostic) {
 				if (diagnostic.getMessage() != null && diagnostic.getMessage().startsWith(CONTENTPROFILE)) {
 					handler.handleError(diagnostic);
-				}			
+				}
 			}
 
 			@Override
 			public void handleWarning(Diagnostic diagnostic) {
 				if (diagnostic.getMessage() != null && diagnostic.getMessage().startsWith(CONTENTPROFILE)) {
 					handler.handleWarning(diagnostic);
-				}		
+				}
 			}
 
 			@Override
 			public void handleInfo(Diagnostic diagnostic) {
 				if (diagnostic.getMessage() != null && diagnostic.getMessage().startsWith(CONTENTPROFILE)) {
 					handler.handleInfo(diagnostic);
-				}	
+				}
 			}
-			
+
 		};
-		
+
 		DS4PUtil.load(is, filterHandler);
 	}
 

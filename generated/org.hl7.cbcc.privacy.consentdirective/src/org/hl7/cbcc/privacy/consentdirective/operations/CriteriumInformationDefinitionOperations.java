@@ -2,17 +2,24 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
+import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPlugin;
 import org.hl7.cbcc.privacy.consentdirective.CriteriumInformationDefinition;
+
 import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
 
 /**
@@ -22,7 +29,6 @@ import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
  *
  * <p>
  * The following operations are supported:
- * </p>
  * <ul>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.CriteriumInformationDefinition#validateCriteriumInformationDefinitionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Criterium Information Definition Template Id</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.CriteriumInformationDefinition#validateCriteriumInformationDefinitionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Criterium Information Definition Code P</em>}</li>
@@ -31,10 +37,18 @@ import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.CriteriumInformationDefinition#validateCriteriumInformationDefinitionMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Criterium Information Definition Mood Code</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.CriteriumInformationDefinition#validateCriteriumInformationDefinitionId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Criterium Information Definition Id</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class CriteriumInformationDefinitionOperations extends ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -62,9 +76,7 @@ public class CriteriumInformationDefinitionOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_CRITERIUM_INFORMATION_DEFINITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_CRITERIUM_INFORMATION_DEFINITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -76,28 +88,36 @@ public class CriteriumInformationDefinitionOperations extends ClinicalStatementO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCriteriumInformationDefinitionTemplateId(CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CRITERIUM_INFORMATION_DEFINITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateCriteriumInformationDefinitionTemplateId(
+			CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_CRITERIUM_INFORMATION_DEFINITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CRITERIUM_INFORMATION_DEFINITION);
 			try {
-				VALIDATE_CRITERIUM_INFORMATION_DEFINITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CRITERIUM_INFORMATION_DEFINITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_CRITERIUM_INFORMATION_DEFINITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CRITERIUM_INFORMATION_DEFINITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CRITERIUM_INFORMATION_DEFINITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(criteriumInformationDefinition)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CRITERIUM_INFORMATION_DEFINITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				criteriumInformationDefinition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CRITERIUM_INFORMATION_DEFINITION__CRITERIUM_INFORMATION_DEFINITION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCriteriumInformationDefinitionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(criteriumInformationDefinition, context) }),
-						 new Object [] { criteriumInformationDefinition }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CRITERIUM_INFORMATION_DEFINITION__CRITERIUM_INFORMATION_DEFINITION_TEMPLATE_ID,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"CriteriumInformationDefinitionCriteriumInformationDefinitionTemplateId"),
+						new Object[] { criteriumInformationDefinition }));
 			}
+
 			return false;
 		}
 		return true;
@@ -121,9 +141,7 @@ public class CriteriumInformationDefinitionOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -135,28 +153,49 @@ public class CriteriumInformationDefinitionOperations extends ClinicalStatementO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCriteriumInformationDefinitionCodeP(CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateCriteriumInformationDefinitionCodeP(
+			CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CRITERIUM_INFORMATION_DEFINITION);
 			try {
-				VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(criteriumInformationDefinition)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				criteriumInformationDefinition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CRITERIUM_INFORMATION_DEFINITION__CRITERIUM_INFORMATION_DEFINITION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCriteriumInformationDefinitionCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(criteriumInformationDefinition, context) }),
-						 new Object [] { criteriumInformationDefinition }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CRITERIUM_INFORMATION_DEFINITION__CRITERIUM_INFORMATION_DEFINITION_CODE_P,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"CriteriumInformationDefinitionCriteriumInformationDefinitionCodeP"),
+						new Object[] { criteriumInformationDefinition }));
 			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.hl7.cbcc.privacy.consentdirective.CriteriumInformationDefinitionCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.hl7.cbcc.privacy.consentdirective.CriteriumInformationDefinitionCodeP", passToken);
+				}
+				passToken.add(criteriumInformationDefinition);
+			}
+
 			return false;
 		}
 		return true;
@@ -170,9 +209,9 @@ public class CriteriumInformationDefinitionOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCriteriumInformationDefinitionCode(CriteriumInformationDefinition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Criterium Information Definition Code</em>}' invariant operation.
@@ -182,9 +221,7 @@ public class CriteriumInformationDefinitionOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -196,28 +233,45 @@ public class CriteriumInformationDefinitionOperations extends ClinicalStatementO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCriteriumInformationDefinitionCode(CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateCriteriumInformationDefinitionCode(
+			CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.hl7.cbcc.privacy.consentdirective.CriteriumInformationDefinitionCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(criteriumInformationDefinition)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CRITERIUM_INFORMATION_DEFINITION);
 			try {
-				VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(criteriumInformationDefinition)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CRITERIUM_INFORMATION_DEFINITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				criteriumInformationDefinition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CRITERIUM_INFORMATION_DEFINITION__CRITERIUM_INFORMATION_DEFINITION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCriteriumInformationDefinitionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(criteriumInformationDefinition, context) }),
-						 new Object [] { criteriumInformationDefinition }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CRITERIUM_INFORMATION_DEFINITION__CRITERIUM_INFORMATION_DEFINITION_CODE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"CriteriumInformationDefinitionCriteriumInformationDefinitionCode"),
+						new Object[] { criteriumInformationDefinition }));
 			}
+
 			return false;
 		}
 		return true;
@@ -241,9 +295,7 @@ public class CriteriumInformationDefinitionOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_CRITERIUM_INFORMATION_DEFINITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_CRITERIUM_INFORMATION_DEFINITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -255,28 +307,36 @@ public class CriteriumInformationDefinitionOperations extends ClinicalStatementO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCriteriumInformationDefinitionEffectiveTime(CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CRITERIUM_INFORMATION_DEFINITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateCriteriumInformationDefinitionEffectiveTime(
+			CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_CRITERIUM_INFORMATION_DEFINITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CRITERIUM_INFORMATION_DEFINITION);
 			try {
-				VALIDATE_CRITERIUM_INFORMATION_DEFINITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CRITERIUM_INFORMATION_DEFINITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_CRITERIUM_INFORMATION_DEFINITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CRITERIUM_INFORMATION_DEFINITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CRITERIUM_INFORMATION_DEFINITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(criteriumInformationDefinition)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CRITERIUM_INFORMATION_DEFINITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				criteriumInformationDefinition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CRITERIUM_INFORMATION_DEFINITION__CRITERIUM_INFORMATION_DEFINITION_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCriteriumInformationDefinitionEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(criteriumInformationDefinition, context) }),
-						 new Object [] { criteriumInformationDefinition }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CRITERIUM_INFORMATION_DEFINITION__CRITERIUM_INFORMATION_DEFINITION_EFFECTIVE_TIME,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"CriteriumInformationDefinitionCriteriumInformationDefinitionEffectiveTime"),
+						new Object[] { criteriumInformationDefinition }));
 			}
+
 			return false;
 		}
 		return true;
@@ -300,9 +360,7 @@ public class CriteriumInformationDefinitionOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_CRITERIUM_INFORMATION_DEFINITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_CRITERIUM_INFORMATION_DEFINITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -314,28 +372,36 @@ public class CriteriumInformationDefinitionOperations extends ClinicalStatementO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCriteriumInformationDefinitionMoodCode(CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CRITERIUM_INFORMATION_DEFINITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateCriteriumInformationDefinitionMoodCode(
+			CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_CRITERIUM_INFORMATION_DEFINITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CRITERIUM_INFORMATION_DEFINITION);
 			try {
-				VALIDATE_CRITERIUM_INFORMATION_DEFINITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CRITERIUM_INFORMATION_DEFINITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_CRITERIUM_INFORMATION_DEFINITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CRITERIUM_INFORMATION_DEFINITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CRITERIUM_INFORMATION_DEFINITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(criteriumInformationDefinition)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CRITERIUM_INFORMATION_DEFINITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				criteriumInformationDefinition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CRITERIUM_INFORMATION_DEFINITION__CRITERIUM_INFORMATION_DEFINITION_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCriteriumInformationDefinitionMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(criteriumInformationDefinition, context) }),
-						 new Object [] { criteriumInformationDefinition }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CRITERIUM_INFORMATION_DEFINITION__CRITERIUM_INFORMATION_DEFINITION_MOOD_CODE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"CriteriumInformationDefinitionCriteriumInformationDefinitionMoodCode"),
+						new Object[] { criteriumInformationDefinition }));
 			}
+
 			return false;
 		}
 		return true;
@@ -359,9 +425,7 @@ public class CriteriumInformationDefinitionOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_CRITERIUM_INFORMATION_DEFINITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_CRITERIUM_INFORMATION_DEFINITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -373,28 +437,36 @@ public class CriteriumInformationDefinitionOperations extends ClinicalStatementO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateCriteriumInformationDefinitionId(CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CRITERIUM_INFORMATION_DEFINITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateCriteriumInformationDefinitionId(
+			CriteriumInformationDefinition criteriumInformationDefinition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_CRITERIUM_INFORMATION_DEFINITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.CRITERIUM_INFORMATION_DEFINITION);
 			try {
-				VALIDATE_CRITERIUM_INFORMATION_DEFINITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CRITERIUM_INFORMATION_DEFINITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_CRITERIUM_INFORMATION_DEFINITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CRITERIUM_INFORMATION_DEFINITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CRITERIUM_INFORMATION_DEFINITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(criteriumInformationDefinition)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CRITERIUM_INFORMATION_DEFINITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				criteriumInformationDefinition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.CRITERIUM_INFORMATION_DEFINITION__CRITERIUM_INFORMATION_DEFINITION_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateCriteriumInformationDefinitionId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(criteriumInformationDefinition, context) }),
-						 new Object [] { criteriumInformationDefinition }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.CRITERIUM_INFORMATION_DEFINITION__CRITERIUM_INFORMATION_DEFINITION_ID,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"CriteriumInformationDefinitionCriteriumInformationDefinitionId"),
+						new Object[] { criteriumInformationDefinition }));
 			}
+
 			return false;
 		}
 		return true;

@@ -11,7 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 import org.eclipse.mdht.uml.cda.impl.AssignedAuthorImpl;
@@ -53,8 +52,10 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	 * @generated
 	 */
 	@Override
-	public boolean validateMandatoryEntryAssignedAuthorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorTemplateId(this, diagnostics, context);
+	public boolean validateMandatoryEntryAssignedAuthorTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -63,8 +64,10 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	 * @generated
 	 */
 	@Override
-	public boolean validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(this, diagnostics, context);
+	public boolean validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +76,10 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	 * @generated
 	 */
 	@Override
-	public boolean validateMandatoryEntryAssignedAuthorAssignedPerson(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorAssignedPerson(this, diagnostics, context);
+	public boolean validateMandatoryEntryAssignedAuthorAssignedPerson(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorAssignedPerson(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +88,10 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	 * @generated
 	 */
 	@Override
-	public boolean validateMandatoryEntryAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorRepresentedOrganization(this, diagnostics, context);
+	public boolean validateMandatoryEntryAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorRepresentedOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -94,16 +101,17 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	 */
 	@Override
 	public MandatoryEntryAssignedAuthor init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public MandatoryEntryAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //MandatoryEntryAssignedAuthorImpl
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // MandatoryEntryAssignedAuthorImpl

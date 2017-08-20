@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.util.EObjectValidator;
 
 import org.eclipse.mdht.uml.cda.util.CDAValidator;
 import org.hl7.security.ds4p.contentprofile.*;
+import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
  * <!-- begin-user-doc -->
@@ -494,7 +495,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROTECTED_PROBLEM__PROBLEM_OBSERVATION_TEMPLATE_ID = 57;
+	public static final int PROTECTED_PROBLEM__PROBLEM_OBSERVATION_TEMPLATE_ID = 59;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Protected Problem Problem Provenance' of 'Protected Problem'.
@@ -502,7 +503,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROTECTED_PROBLEM__PROTECTED_PROBLEM_PROBLEM_PROVENANCE = 58;
+	public static final int PROTECTED_PROBLEM__PROTECTED_PROBLEM_PROBLEM_PROVENANCE = 57;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Protected Problem Privacy Annotations' of 'Protected Problem'.
@@ -510,7 +511,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROTECTED_PROBLEM__PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS = 59;
+	public static final int PROTECTED_PROBLEM__PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS = 58;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mandatory Entry Provenance Template Id' of 'Mandatory Entry Provenance'.
@@ -625,6 +626,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	protected CDAValidator cdaValidator;
 
 	/**
+	 * The cached base package validator.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ConsolValidator consolValidator;
+
+	/**
 	 * Creates an instance of the switch.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -633,6 +642,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	public CONTENTPROFILEValidator() {
 		super();
 		cdaValidator = CDAValidator.INSTANCE;
+		consolValidator = ConsolValidator.INSTANCE;
 	}
 
 	/**
@@ -643,7 +653,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 */
 	@Override
 	protected EPackage getEPackage() {
-	  return CONTENTPROFILEPackage.eINSTANCE;
+		return CONTENTPROFILEPackage.eINSTANCE;
 	}
 
 	/**
@@ -653,40 +663,47 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 			case CONTENTPROFILEPackage.PRIVACY_SEGMENTED_DOCUMENT:
-				return validatePrivacySegmentedDocument((PrivacySegmentedDocument)value, diagnostics, context);
+				return validatePrivacySegmentedDocument((PrivacySegmentedDocument) value, diagnostics, context);
 			case CONTENTPROFILEPackage.PRIVACY_SEGMENTED_SECTION:
-				return validatePrivacySegmentedSection((PrivacySegmentedSection)value, diagnostics, context);
+				return validatePrivacySegmentedSection((PrivacySegmentedSection) value, diagnostics, context);
 			case CONTENTPROFILEPackage.PRIVACY_MARKINGS_SECTION:
-				return validatePrivacyMarkingsSection((PrivacyMarkingsSection)value, diagnostics, context);
+				return validatePrivacyMarkingsSection((PrivacyMarkingsSection) value, diagnostics, context);
 			case CONTENTPROFILEPackage.OBLIGATION_POLICY_SECURITY_OBSERVATION:
-				return validateObligationPolicySecurityObservation((ObligationPolicySecurityObservation)value, diagnostics, context);
+				return validateObligationPolicySecurityObservation(
+					(ObligationPolicySecurityObservation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.SECURITY_OBSERVATION:
-				return validateSecurityObservation((SecurityObservation)value, diagnostics, context);
+				return validateSecurityObservation((SecurityObservation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.MANDATORY_DOCUMENT_PROVENANCE:
-				return validateMandatoryDocumentProvenance((MandatoryDocumentProvenance)value, diagnostics, context);
+				return validateMandatoryDocumentProvenance((MandatoryDocumentProvenance) value, diagnostics, context);
 			case CONTENTPROFILEPackage.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR:
-				return validateMandatoryDocumentAssignedAuthor((MandatoryDocumentAssignedAuthor)value, diagnostics, context);
+				return validateMandatoryDocumentAssignedAuthor(
+					(MandatoryDocumentAssignedAuthor) value, diagnostics, context);
 			case CONTENTPROFILEPackage.PRIVACY_ANNOTATION:
-				return validatePrivacyAnnotation((PrivacyAnnotation)value, diagnostics, context);
+				return validatePrivacyAnnotation((PrivacyAnnotation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.REFRAIN_POLICY_SECURITY_OBSERVATION:
-				return validateRefrainPolicySecurityObservation((RefrainPolicySecurityObservation)value, diagnostics, context);
+				return validateRefrainPolicySecurityObservation(
+					(RefrainPolicySecurityObservation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.PURPOSE_OF_USE_SECURITY_OBSERVATION:
-				return validatePurposeOfUseSecurityObservation((PurposeOfUseSecurityObservation)value, diagnostics, context);
+				return validatePurposeOfUseSecurityObservation(
+					(PurposeOfUseSecurityObservation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.CONFIDENTIALITY_SECURITY_OBSERVATION:
-				return validateConfidentialitySecurityObservation((ConfidentialitySecurityObservation)value, diagnostics, context);
+				return validateConfidentialitySecurityObservation(
+					(ConfidentialitySecurityObservation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.PROTECTED_PROBLEM:
-				return validateProtectedProblem((ProtectedProblem)value, diagnostics, context);
+				return validateProtectedProblem((ProtectedProblem) value, diagnostics, context);
 			case CONTENTPROFILEPackage.MANDATORY_ENTRY_PROVENANCE:
-				return validateMandatoryEntryProvenance((MandatoryEntryProvenance)value, diagnostics, context);
+				return validateMandatoryEntryProvenance((MandatoryEntryProvenance) value, diagnostics, context);
 			case CONTENTPROFILEPackage.MANDATORY_ENTRY_ASSIGNED_AUTHOR:
-				return validateMandatoryEntryAssignedAuthor((MandatoryEntryAssignedAuthor)value, diagnostics, context);
+				return validateMandatoryEntryAssignedAuthor((MandatoryEntryAssignedAuthor) value, diagnostics, context);
 			case CONTENTPROFILEPackage.PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP:
-				return validatePrivacyAnnotationEntryRelationship((PrivacyAnnotationEntryRelationship)value, diagnostics, context);
+				return validatePrivacyAnnotationEntryRelationship(
+					(PrivacyAnnotationEntryRelationship) value, diagnostics, context);
 			case CONTENTPROFILEPackage.PRIVACY_MARKINGS_ENTRY:
-				return validatePrivacyMarkingsEntry((PrivacyMarkingsEntry)value, diagnostics, context);
+				return validatePrivacyMarkingsEntry((PrivacyMarkingsEntry) value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -697,20 +714,1141 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacySegmentedDocument(PrivacySegmentedDocument privacySegmentedDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(privacySegmentedDocument, diagnostics, context)) return false;
+	public boolean validatePrivacySegmentedDocument(PrivacySegmentedDocument privacySegmentedDocument,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(privacySegmentedDocument, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(privacySegmentedDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(privacySegmentedDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(privacySegmentedDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(privacySegmentedDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(privacySegmentedDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(privacySegmentedDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacySegmentedDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacySegmentedDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentTemplateId(privacySegmentedDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentAuthor1(privacySegmentedDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentSegmentedSection(privacySegmentedDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(privacySegmentedDocument, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdVersionNumber(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumberSetId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipient(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticator(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSupportParticipant(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheDayTS(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheMinuteTS(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheSecondTS(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMIfMorePreciseThanDayIncludeTimeZoneOffsetTS(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUseP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCountry(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressState(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTELUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUSRealmPatientNameMixedContent(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUseP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameFamily(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameGiven(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNamePrefix(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameSuffix(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUseP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCountry(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressState(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientIfSdtcEnforceRaceCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTELUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressState(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressCity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganization(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheDayTS(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheMinuteTS(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheSecondTS(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorGeneralHeaderConstraintsUSRealmDateAndTimeDTMIfMorePreciseThanDayIncludeTimeZoneOffsetTS(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTELUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonName(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasOneAssignedPersonOrOneAssignedAuthoringDevice(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthor(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTELUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonName(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAddr(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTELUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressState(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressCity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodian(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTELUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonName(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorTime(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTELUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAssignedPerson(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorTime(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorSignatureCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorSignatureCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityPersonName(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAddr(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAssignedPerson(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressState(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityAddr(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityPerson(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportTime(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrderId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrder(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityHasNationalProviderIdentifier(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1TypeCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTimeLow(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTime(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEvent(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentStatusCodeP(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentStatusCode(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsent(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentTemplateId(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentAuthor1(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentSegmentedSection(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(
+				privacySegmentedDocument, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -720,7 +1858,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentTemplateId(PrivacySegmentedDocument privacySegmentedDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentTemplateId(
+			PrivacySegmentedDocument privacySegmentedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacySegmentedDocument.validatePrivacySegmentedDocumentTemplateId(diagnostics, context);
 	}
 
@@ -730,7 +1870,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentAuthor1(PrivacySegmentedDocument privacySegmentedDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentAuthor1(
+			PrivacySegmentedDocument privacySegmentedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacySegmentedDocument.validatePrivacySegmentedDocumentAuthor1(diagnostics, context);
 	}
 
@@ -740,7 +1882,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentSegmentedSection(PrivacySegmentedDocument privacySegmentedDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentSegmentedSection(
+			PrivacySegmentedDocument privacySegmentedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return privacySegmentedDocument.validatePrivacySegmentedDocumentSegmentedSection(diagnostics, context);
 	}
 
@@ -750,8 +1894,11 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(PrivacySegmentedDocument privacySegmentedDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacySegmentedDocument.validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(diagnostics, context);
+	public boolean validatePrivacySegmentedDocument_validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(
+			PrivacySegmentedDocument privacySegmentedDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return privacySegmentedDocument.validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(
+			diagnostics, context);
 	}
 
 	/**
@@ -759,22 +1906,55 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacySegmentedSection(PrivacySegmentedSection privacySegmentedSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(privacySegmentedSection, diagnostics, context)) return false;
+	public boolean validatePrivacySegmentedSection(PrivacySegmentedSection privacySegmentedSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(privacySegmentedSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(privacySegmentedSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(privacySegmentedSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(privacySegmentedSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(privacySegmentedSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(privacySegmentedSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(privacySegmentedSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacySegmentedSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacySegmentedSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(privacySegmentedSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(privacySegmentedSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacySegmentedSection_validatePrivacySegmentedSectionTemplateId(privacySegmentedSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacySegmentedSection_validatePrivacySegmentedSectionConfidentialityCode(privacySegmentedSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacySegmentedSection_validatePrivacySegmentedSectionConfidentialityCodeP(privacySegmentedSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacySegmentedSection_validatePrivacySegmentedSectionAuthor(privacySegmentedSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(privacySegmentedSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(privacySegmentedSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(privacySegmentedSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(privacySegmentedSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(privacySegmentedSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(privacySegmentedSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(privacySegmentedSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(privacySegmentedSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(privacySegmentedSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacySegmentedSection_validatePrivacySegmentedSectionTemplateId(
+				privacySegmentedSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacySegmentedSection_validatePrivacySegmentedSectionConfidentialityCode(
+				privacySegmentedSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacySegmentedSection_validatePrivacySegmentedSectionConfidentialityCodeP(
+				privacySegmentedSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacySegmentedSection_validatePrivacySegmentedSectionAuthor(
+				privacySegmentedSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -784,7 +1964,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacySegmentedSection_validatePrivacySegmentedSectionTemplateId(PrivacySegmentedSection privacySegmentedSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacySegmentedSection_validatePrivacySegmentedSectionTemplateId(
+			PrivacySegmentedSection privacySegmentedSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacySegmentedSection.validatePrivacySegmentedSectionTemplateId(diagnostics, context);
 	}
 
@@ -794,7 +1975,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacySegmentedSection_validatePrivacySegmentedSectionConfidentialityCode(PrivacySegmentedSection privacySegmentedSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacySegmentedSection_validatePrivacySegmentedSectionConfidentialityCode(
+			PrivacySegmentedSection privacySegmentedSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacySegmentedSection.validatePrivacySegmentedSectionConfidentialityCode(diagnostics, context);
 	}
 
@@ -804,7 +1986,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacySegmentedSection_validatePrivacySegmentedSectionConfidentialityCodeP(PrivacySegmentedSection privacySegmentedSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacySegmentedSection_validatePrivacySegmentedSectionConfidentialityCodeP(
+			PrivacySegmentedSection privacySegmentedSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacySegmentedSection.validatePrivacySegmentedSectionConfidentialityCodeP(diagnostics, context);
 	}
 
@@ -814,7 +1997,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacySegmentedSection_validatePrivacySegmentedSectionAuthor(PrivacySegmentedSection privacySegmentedSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacySegmentedSection_validatePrivacySegmentedSectionAuthor(
+			PrivacySegmentedSection privacySegmentedSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacySegmentedSection.validatePrivacySegmentedSectionAuthor(diagnostics, context);
 	}
 
@@ -823,23 +2007,59 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyMarkingsSection(PrivacyMarkingsSection privacyMarkingsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(privacyMarkingsSection, diagnostics, context)) return false;
+	public boolean validatePrivacyMarkingsSection(PrivacyMarkingsSection privacyMarkingsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(privacyMarkingsSection, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionTemplateId(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionCode(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionCodeP(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionText(privacyMarkingsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionEntry1(privacyMarkingsSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(privacyMarkingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(privacyMarkingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(privacyMarkingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(privacyMarkingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(privacyMarkingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(privacyMarkingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(privacyMarkingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(privacyMarkingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(privacyMarkingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionTemplateId(
+				privacyMarkingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionCode(
+				privacyMarkingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionCodeP(
+				privacyMarkingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionText(
+				privacyMarkingsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionEntry1(
+				privacyMarkingsSection, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -849,7 +2069,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionTemplateId(PrivacyMarkingsSection privacyMarkingsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionTemplateId(
+			PrivacyMarkingsSection privacyMarkingsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyMarkingsSection.validatePrivacyMarkingsSectionTemplateId(diagnostics, context);
 	}
 
@@ -859,7 +2080,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionCode(PrivacyMarkingsSection privacyMarkingsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionCode(
+			PrivacyMarkingsSection privacyMarkingsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyMarkingsSection.validatePrivacyMarkingsSectionCode(diagnostics, context);
 	}
 
@@ -869,7 +2091,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionCodeP(PrivacyMarkingsSection privacyMarkingsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionCodeP(
+			PrivacyMarkingsSection privacyMarkingsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyMarkingsSection.validatePrivacyMarkingsSectionCodeP(diagnostics, context);
 	}
 
@@ -879,7 +2102,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionText(PrivacyMarkingsSection privacyMarkingsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionText(
+			PrivacyMarkingsSection privacyMarkingsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyMarkingsSection.validatePrivacyMarkingsSectionText(diagnostics, context);
 	}
 
@@ -889,7 +2113,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionEntry1(PrivacyMarkingsSection privacyMarkingsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyMarkingsSection_validatePrivacyMarkingsSectionEntry1(
+			PrivacyMarkingsSection privacyMarkingsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyMarkingsSection.validatePrivacyMarkingsSectionEntry1(diagnostics, context);
 	}
 
@@ -898,24 +2123,67 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObligationPolicySecurityObservation(ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(obligationPolicySecurityObservation, diagnostics, context)) return false;
+	public boolean validateObligationPolicySecurityObservation(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(obligationPolicySecurityObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateObligationPolicySecurityObservation_validateSecurityObservationTemplateId(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateObligationPolicySecurityObservation_validateSecurityObservationCodeP(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateObligationPolicySecurityObservation_validateSecurityObservationCode(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValue(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValueP(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationMoodCode(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateObligationPolicySecurityObservation_validateObligationPolicySecurityObservationValueP(obligationPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateObligationPolicySecurityObservation_validateObligationPolicySecurityObservationValue(obligationPolicySecurityObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateObligationPolicySecurityObservation_validateSecurityObservationTemplateId(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateObligationPolicySecurityObservation_validateSecurityObservationCodeP(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateObligationPolicySecurityObservation_validateSecurityObservationCode(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValue(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValueP(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateObligationPolicySecurityObservation_validateObligationPolicySecurityObservationValueP(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateObligationPolicySecurityObservation_validateObligationPolicySecurityObservationValue(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -925,8 +2193,11 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObligationPolicySecurityObservation_validateObligationPolicySecurityObservationValueP(ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return obligationPolicySecurityObservation.validateObligationPolicySecurityObservationValueP(diagnostics, context);
+	public boolean validateObligationPolicySecurityObservation_validateObligationPolicySecurityObservationValueP(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return obligationPolicySecurityObservation.validateObligationPolicySecurityObservationValueP(
+			diagnostics, context);
 	}
 
 	/**
@@ -935,8 +2206,11 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObligationPolicySecurityObservation_validateObligationPolicySecurityObservationValue(ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return obligationPolicySecurityObservation.validateObligationPolicySecurityObservationValue(diagnostics, context);
+	public boolean validateObligationPolicySecurityObservation_validateObligationPolicySecurityObservationValue(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return obligationPolicySecurityObservation.validateObligationPolicySecurityObservationValue(
+			diagnostics, context);
 	}
 
 	/**
@@ -945,7 +2219,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationTemplateId(ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationTemplateId(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return obligationPolicySecurityObservation.validateSecurityObservationTemplateId(diagnostics, context);
 	}
 
@@ -955,7 +2231,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationCodeP(ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationCodeP(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return obligationPolicySecurityObservation.validateSecurityObservationCodeP(diagnostics, context);
 	}
 
@@ -965,7 +2243,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationCode(ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationCode(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return obligationPolicySecurityObservation.validateSecurityObservationCode(diagnostics, context);
 	}
 
@@ -974,22 +2254,57 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(securityObservation, diagnostics, context)) return false;
+	public boolean validateSecurityObservation(SecurityObservation securityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(securityObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationTemplateId(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationCodeP(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationCode(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValue(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValueP(securityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationMoodCode(securityObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationTemplateId(
+				securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationCodeP(
+				securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationCode(
+				securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValue(
+				securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValueP(
+				securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				securityObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -999,7 +2314,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation_validateSecurityObservationTemplateId(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityObservation_validateSecurityObservationTemplateId(
+			SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityObservation.validateSecurityObservationTemplateId(diagnostics, context);
 	}
 
@@ -1009,7 +2325,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation_validateSecurityObservationCodeP(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityObservation_validateSecurityObservationCodeP(SecurityObservation securityObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityObservation.validateSecurityObservationCodeP(diagnostics, context);
 	}
 
@@ -1019,7 +2336,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation_validateSecurityObservationCode(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityObservation_validateSecurityObservationCode(SecurityObservation securityObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityObservation.validateSecurityObservationCode(diagnostics, context);
 	}
 
@@ -1029,7 +2347,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation_validateSecurityObservationValue(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityObservation_validateSecurityObservationValue(SecurityObservation securityObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityObservation.validateSecurityObservationValue(diagnostics, context);
 	}
 
@@ -1039,7 +2358,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation_validateSecurityObservationValueP(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityObservation_validateSecurityObservationValueP(
+			SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityObservation.validateSecurityObservationValueP(diagnostics, context);
 	}
 
@@ -1049,7 +2369,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSecurityObservation_validateSecurityObservationMoodCode(SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSecurityObservation_validateSecurityObservationMoodCode(
+			SecurityObservation securityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return securityObservation.validateSecurityObservationMoodCode(diagnostics, context);
 	}
 
@@ -1058,21 +2379,52 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryDocumentProvenance(MandatoryDocumentProvenance mandatoryDocumentProvenance, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(mandatoryDocumentProvenance, diagnostics, context)) return false;
+	public boolean validateMandatoryDocumentProvenance(MandatoryDocumentProvenance mandatoryDocumentProvenance,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(mandatoryDocumentProvenance, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(mandatoryDocumentProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(mandatoryDocumentProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(mandatoryDocumentProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(mandatoryDocumentProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(mandatoryDocumentProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(mandatoryDocumentProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(mandatoryDocumentProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(mandatoryDocumentProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateAuthor_validateTypeCode(mandatoryDocumentProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateAuthor_validateContextControlCode(mandatoryDocumentProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceTemplateId(mandatoryDocumentProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceTime(mandatoryDocumentProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceAssignedAuthor(mandatoryDocumentProvenance, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(mandatoryDocumentProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(mandatoryDocumentProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(mandatoryDocumentProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(mandatoryDocumentProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(mandatoryDocumentProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(mandatoryDocumentProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(mandatoryDocumentProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateAuthor_validateTypeCode(mandatoryDocumentProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateAuthor_validateContextControlCode(
+				mandatoryDocumentProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceTemplateId(
+				mandatoryDocumentProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceTime(
+				mandatoryDocumentProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceAssignedAuthor(
+				mandatoryDocumentProvenance, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1082,7 +2434,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceTemplateId(MandatoryDocumentProvenance mandatoryDocumentProvenance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceTemplateId(
+			MandatoryDocumentProvenance mandatoryDocumentProvenance, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mandatoryDocumentProvenance.validateMandatoryDocumentProvenanceTemplateId(diagnostics, context);
 	}
 
@@ -1092,7 +2446,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceTime(MandatoryDocumentProvenance mandatoryDocumentProvenance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceTime(
+			MandatoryDocumentProvenance mandatoryDocumentProvenance, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mandatoryDocumentProvenance.validateMandatoryDocumentProvenanceTime(diagnostics, context);
 	}
 
@@ -1102,7 +2458,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceAssignedAuthor(MandatoryDocumentProvenance mandatoryDocumentProvenance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMandatoryDocumentProvenance_validateMandatoryDocumentProvenanceAssignedAuthor(
+			MandatoryDocumentProvenance mandatoryDocumentProvenance, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mandatoryDocumentProvenance.validateMandatoryDocumentProvenanceAssignedAuthor(diagnostics, context);
 	}
 
@@ -1111,23 +2469,63 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryDocumentAssignedAuthor(MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(mandatoryDocumentAssignedAuthor, diagnostics, context)) return false;
+	public boolean validateMandatoryDocumentAssignedAuthor(
+			MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(mandatoryDocumentAssignedAuthor, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateAssignedAuthor_validateAssignedAuthorChoice(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateAssignedAuthor_validateClassCode(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorTemplateId(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorTelecomEmail(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorAssignedPerson(mandatoryDocumentAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorRepresentedOrganization(mandatoryDocumentAssignedAuthor, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateAssignedAuthor_validateAssignedAuthorChoice(
+				mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateAssignedAuthor_validateClassCode(
+				mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorTemplateId(
+				mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorTelecomEmail(
+				mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(
+				mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorAssignedPerson(
+				mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorRepresentedOrganization(
+				mandatoryDocumentAssignedAuthor, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1137,7 +2535,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorTemplateId(MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorTemplateId(
+			MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mandatoryDocumentAssignedAuthor.validateMandatoryDocumentAssignedAuthorTemplateId(diagnostics, context);
 	}
 
@@ -1147,8 +2547,11 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorTelecomEmail(MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return mandatoryDocumentAssignedAuthor.validateMandatoryDocumentAssignedAuthorTelecomEmail(diagnostics, context);
+	public boolean validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorTelecomEmail(
+			MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return mandatoryDocumentAssignedAuthor.validateMandatoryDocumentAssignedAuthorTelecomEmail(
+			diagnostics, context);
 	}
 
 	/**
@@ -1157,8 +2560,11 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return mandatoryDocumentAssignedAuthor.validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(diagnostics, context);
+	public boolean validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(
+			MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return mandatoryDocumentAssignedAuthor.validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(
+			diagnostics, context);
 	}
 
 	/**
@@ -1167,8 +2573,11 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorAssignedPerson(MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return mandatoryDocumentAssignedAuthor.validateMandatoryDocumentAssignedAuthorAssignedPerson(diagnostics, context);
+	public boolean validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorAssignedPerson(
+			MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return mandatoryDocumentAssignedAuthor.validateMandatoryDocumentAssignedAuthorAssignedPerson(
+			diagnostics, context);
 	}
 
 	/**
@@ -1177,8 +2586,11 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorRepresentedOrganization(MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return mandatoryDocumentAssignedAuthor.validateMandatoryDocumentAssignedAuthorRepresentedOrganization(diagnostics, context);
+	public boolean validateMandatoryDocumentAssignedAuthor_validateMandatoryDocumentAssignedAuthorRepresentedOrganization(
+			MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return mandatoryDocumentAssignedAuthor.validateMandatoryDocumentAssignedAuthorRepresentedOrganization(
+			diagnostics, context);
 	}
 
 	/**
@@ -1186,25 +2598,69 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyAnnotation(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(privacyAnnotation, diagnostics, context)) return false;
+	public boolean validatePrivacyAnnotation(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(privacyAnnotation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyAnnotation_validatePrivacyAnnotationTemplateId(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyAnnotation_validatePrivacyAnnotationClassCode(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyAnnotation_validatePrivacyAnnotationMoodCode(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyAnnotation_validatePrivacyAnnotationStatusCodeP(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyAnnotation_validatePrivacyAnnotationStatusCode(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyAnnotation_validatePrivacyAnnotationObligationPolicySecurityObservation(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyAnnotation_validatePrivacyAnnotationRefrainPolicySecurityObservation(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyAnnotation_validatePrivacyAnnotationPurposeOfUseSecurityObservation(privacyAnnotation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyAnnotation_validatePrivacyAnnotationConfidentialityCodeSecurityObservation(privacyAnnotation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyAnnotation_validatePrivacyAnnotationTemplateId(
+				privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyAnnotation_validatePrivacyAnnotationClassCode(
+				privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyAnnotation_validatePrivacyAnnotationMoodCode(
+				privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyAnnotation_validatePrivacyAnnotationStatusCodeP(
+				privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyAnnotation_validatePrivacyAnnotationStatusCode(
+				privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyAnnotation_validatePrivacyAnnotationObligationPolicySecurityObservation(
+				privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyAnnotation_validatePrivacyAnnotationRefrainPolicySecurityObservation(
+				privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyAnnotation_validatePrivacyAnnotationPurposeOfUseSecurityObservation(
+				privacyAnnotation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyAnnotation_validatePrivacyAnnotationConfidentialityCodeSecurityObservation(
+				privacyAnnotation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1214,7 +2670,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationTemplateId(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationTemplateId(PrivacyAnnotation privacyAnnotation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyAnnotation.validatePrivacyAnnotationTemplateId(diagnostics, context);
 	}
 
@@ -1224,7 +2681,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationClassCode(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationClassCode(PrivacyAnnotation privacyAnnotation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyAnnotation.validatePrivacyAnnotationClassCode(diagnostics, context);
 	}
 
@@ -1234,7 +2692,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationMoodCode(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationMoodCode(PrivacyAnnotation privacyAnnotation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyAnnotation.validatePrivacyAnnotationMoodCode(diagnostics, context);
 	}
 
@@ -1244,7 +2703,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationStatusCodeP(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationStatusCodeP(PrivacyAnnotation privacyAnnotation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyAnnotation.validatePrivacyAnnotationStatusCodeP(diagnostics, context);
 	}
 
@@ -1254,7 +2714,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationStatusCode(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationStatusCode(PrivacyAnnotation privacyAnnotation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyAnnotation.validatePrivacyAnnotationStatusCode(diagnostics, context);
 	}
 
@@ -1264,7 +2725,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationObligationPolicySecurityObservation(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationObligationPolicySecurityObservation(
+			PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyAnnotation.validatePrivacyAnnotationObligationPolicySecurityObservation(diagnostics, context);
 	}
 
@@ -1274,7 +2736,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationRefrainPolicySecurityObservation(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationRefrainPolicySecurityObservation(
+			PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyAnnotation.validatePrivacyAnnotationRefrainPolicySecurityObservation(diagnostics, context);
 	}
 
@@ -1284,7 +2747,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationPurposeOfUseSecurityObservation(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationPurposeOfUseSecurityObservation(
+			PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyAnnotation.validatePrivacyAnnotationPurposeOfUseSecurityObservation(diagnostics, context);
 	}
 
@@ -1294,7 +2758,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationConfidentialityCodeSecurityObservation(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyAnnotation_validatePrivacyAnnotationConfidentialityCodeSecurityObservation(
+			PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyAnnotation.validatePrivacyAnnotationConfidentialityCodeSecurityObservation(diagnostics, context);
 	}
 
@@ -1303,26 +2768,75 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRefrainPolicySecurityObservation(RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(refrainPolicySecurityObservation, diagnostics, context)) return false;
+	public boolean validateRefrainPolicySecurityObservation(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(refrainPolicySecurityObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateRefrainPolicySecurityObservation_validateSecurityObservationTemplateId(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationCodeP(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationCode(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValue(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValueP(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationMoodCode(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationCodeP(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationCode(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationValueP(refrainPolicySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationValue(refrainPolicySecurityObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateRefrainPolicySecurityObservation_validateSecurityObservationTemplateId(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationCodeP(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationCode(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValue(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValueP(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationCodeP(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationCode(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationValueP(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationValue(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1332,7 +2846,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationCodeP(RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationCodeP(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return refrainPolicySecurityObservation.validateRefrainPolicySecurityObservationCodeP(diagnostics, context);
 	}
 
@@ -1342,7 +2858,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationCode(RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationCode(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return refrainPolicySecurityObservation.validateRefrainPolicySecurityObservationCode(diagnostics, context);
 	}
 
@@ -1352,7 +2870,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationValueP(RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationValueP(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return refrainPolicySecurityObservation.validateRefrainPolicySecurityObservationValueP(diagnostics, context);
 	}
 
@@ -1362,7 +2882,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationValue(RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationValue(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return refrainPolicySecurityObservation.validateRefrainPolicySecurityObservationValue(diagnostics, context);
 	}
 
@@ -1372,7 +2894,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationTemplateId(RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationTemplateId(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return refrainPolicySecurityObservation.validateSecurityObservationTemplateId(diagnostics, context);
 	}
 
@@ -1381,26 +2905,75 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePurposeOfUseSecurityObservation(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(purposeOfUseSecurityObservation, diagnostics, context)) return false;
+	public boolean validatePurposeOfUseSecurityObservation(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(purposeOfUseSecurityObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePurposeOfUseSecurityObservation_validateSecurityObservationTemplateId(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationCodeP(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationCode(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValue(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValueP(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationMoodCode(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationCodeP(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationCode(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValueP(purposeOfUseSecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValue(purposeOfUseSecurityObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePurposeOfUseSecurityObservation_validateSecurityObservationTemplateId(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationCodeP(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationCode(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValue(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValueP(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationCodeP(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationCode(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValueP(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValue(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1410,7 +2983,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationCodeP(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationCodeP(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return purposeOfUseSecurityObservation.validatePurposeOfUseSecurityObservationCodeP(diagnostics, context);
 	}
 
@@ -1420,7 +2995,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationCode(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationCode(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return purposeOfUseSecurityObservation.validatePurposeOfUseSecurityObservationCode(diagnostics, context);
 	}
 
@@ -1430,7 +3007,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValueP(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValueP(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return purposeOfUseSecurityObservation.validatePurposeOfUseSecurityObservationValueP(diagnostics, context);
 	}
 
@@ -1440,7 +3019,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValue(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValue(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return purposeOfUseSecurityObservation.validatePurposeOfUseSecurityObservationValue(diagnostics, context);
 	}
 
@@ -1450,7 +3031,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePurposeOfUseSecurityObservation_validateSecurityObservationTemplateId(PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePurposeOfUseSecurityObservation_validateSecurityObservationTemplateId(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return purposeOfUseSecurityObservation.validateSecurityObservationTemplateId(diagnostics, context);
 	}
 
@@ -1459,24 +3042,67 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConfidentialitySecurityObservation(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(confidentialitySecurityObservation, diagnostics, context)) return false;
+	public boolean validateConfidentialitySecurityObservation(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(confidentialitySecurityObservation, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConfidentialitySecurityObservation_validateSecurityObservationTemplateId(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConfidentialitySecurityObservation_validateSecurityObservationCodeP(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConfidentialitySecurityObservation_validateSecurityObservationCode(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValue(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationValueP(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSecurityObservation_validateSecurityObservationMoodCode(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValueP(confidentialitySecurityObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValue(confidentialitySecurityObservation, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConfidentialitySecurityObservation_validateSecurityObservationTemplateId(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConfidentialitySecurityObservation_validateSecurityObservationCodeP(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConfidentialitySecurityObservation_validateSecurityObservationCode(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValue(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationValueP(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValueP(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValue(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1486,8 +3112,11 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValueP(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return confidentialitySecurityObservation.validateConfidentialitySecurityObservationValueP(diagnostics, context);
+	public boolean validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValueP(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return confidentialitySecurityObservation.validateConfidentialitySecurityObservationValueP(
+			diagnostics, context);
 	}
 
 	/**
@@ -1496,7 +3125,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValue(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValue(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return confidentialitySecurityObservation.validateConfidentialitySecurityObservationValue(diagnostics, context);
 	}
 
@@ -1506,7 +3137,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConfidentialitySecurityObservation_validateSecurityObservationTemplateId(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConfidentialitySecurityObservation_validateSecurityObservationTemplateId(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return confidentialitySecurityObservation.validateSecurityObservationTemplateId(diagnostics, context);
 	}
 
@@ -1516,7 +3149,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConfidentialitySecurityObservation_validateSecurityObservationCodeP(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConfidentialitySecurityObservation_validateSecurityObservationCodeP(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return confidentialitySecurityObservation.validateSecurityObservationCodeP(diagnostics, context);
 	}
 
@@ -1526,7 +3161,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConfidentialitySecurityObservation_validateSecurityObservationCode(ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConfidentialitySecurityObservation_validateSecurityObservationCode(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return confidentialitySecurityObservation.validateSecurityObservationCode(diagnostics, context);
 	}
 
@@ -1535,19 +3172,137 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProtectedProblem(ProtectedProblem protectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(protectedProblem, diagnostics, context)) return false;
+	public boolean validateProtectedProblem(ProtectedProblem protectedProblem, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(protectedProblem, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(protectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(protectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(protectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(protectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(protectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(protectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(protectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(protectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProtectedProblem_validateProblemObservationTemplateId(protectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProtectedProblem_validateProtectedProblemProblemProvenance(protectedProblem, diagnostics, context);
-		if (result || diagnostics != null) result &= validateProtectedProblem_validateProtectedProblemPrivacyAnnotations(protectedProblem, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationHasTextReference(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationTextReferenceValue(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationHasTextReferenceValue(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationHasOnsetDate(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationHasResolutionDate(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationValueNullFlavor(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationAgeObservationInversion(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationValueTranslation(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationValueTranslationCode(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProtectedProblem_validateProblemObservationTemplateId(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationClassCode(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationMoodCode(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationNegationInd(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationId(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationCodeP(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationCode(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationText(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationStatusCode(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationEffectiveTime(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationValue(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationValueP(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationAgeObservation(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationHealthStatusObservation(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProblemObservation_validateProblemObservationProblemStatus(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProtectedProblem_validateProtectedProblemProblemProvenance(
+				protectedProblem, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProtectedProblem_validateProtectedProblemPrivacyAnnotations(
+				protectedProblem, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1557,7 +3312,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProtectedProblem_validateProblemObservationTemplateId(ProtectedProblem protectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProtectedProblem_validateProblemObservationTemplateId(ProtectedProblem protectedProblem,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return protectedProblem.validateProblemObservationTemplateId(diagnostics, context);
 	}
 
@@ -1567,7 +3323,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProtectedProblem_validateProtectedProblemProblemProvenance(ProtectedProblem protectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProtectedProblem_validateProtectedProblemProblemProvenance(ProtectedProblem protectedProblem,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return protectedProblem.validateProtectedProblemProblemProvenance(diagnostics, context);
 	}
 
@@ -1577,7 +3334,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProtectedProblem_validateProtectedProblemPrivacyAnnotations(ProtectedProblem protectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProtectedProblem_validateProtectedProblemPrivacyAnnotations(
+			ProtectedProblem protectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return protectedProblem.validateProtectedProblemPrivacyAnnotations(diagnostics, context);
 	}
 
@@ -1586,21 +3344,52 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryEntryProvenance(MandatoryEntryProvenance mandatoryEntryProvenance, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(mandatoryEntryProvenance, diagnostics, context)) return false;
+	public boolean validateMandatoryEntryProvenance(MandatoryEntryProvenance mandatoryEntryProvenance,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(mandatoryEntryProvenance, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(mandatoryEntryProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(mandatoryEntryProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(mandatoryEntryProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(mandatoryEntryProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(mandatoryEntryProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(mandatoryEntryProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(mandatoryEntryProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(mandatoryEntryProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateAuthor_validateTypeCode(mandatoryEntryProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateAuthor_validateContextControlCode(mandatoryEntryProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceTemplateId(mandatoryEntryProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceTime(mandatoryEntryProvenance, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceAssignedAuthor(mandatoryEntryProvenance, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(mandatoryEntryProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(mandatoryEntryProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(mandatoryEntryProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(mandatoryEntryProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(mandatoryEntryProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(mandatoryEntryProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(mandatoryEntryProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateAuthor_validateTypeCode(mandatoryEntryProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateAuthor_validateContextControlCode(
+				mandatoryEntryProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceTemplateId(
+				mandatoryEntryProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceTime(
+				mandatoryEntryProvenance, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceAssignedAuthor(
+				mandatoryEntryProvenance, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1610,7 +3399,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceTemplateId(MandatoryEntryProvenance mandatoryEntryProvenance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceTemplateId(
+			MandatoryEntryProvenance mandatoryEntryProvenance, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mandatoryEntryProvenance.validateMandatoryEntryProvenanceTemplateId(diagnostics, context);
 	}
 
@@ -1620,7 +3411,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceTime(MandatoryEntryProvenance mandatoryEntryProvenance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceTime(
+			MandatoryEntryProvenance mandatoryEntryProvenance, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mandatoryEntryProvenance.validateMandatoryEntryProvenanceTime(diagnostics, context);
 	}
 
@@ -1630,7 +3423,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceAssignedAuthor(MandatoryEntryProvenance mandatoryEntryProvenance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMandatoryEntryProvenance_validateMandatoryEntryProvenanceAssignedAuthor(
+			MandatoryEntryProvenance mandatoryEntryProvenance, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mandatoryEntryProvenance.validateMandatoryEntryProvenanceAssignedAuthor(diagnostics, context);
 	}
 
@@ -1639,22 +3434,57 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryEntryAssignedAuthor(MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(mandatoryEntryAssignedAuthor, diagnostics, context)) return false;
+	public boolean validateMandatoryEntryAssignedAuthor(MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(mandatoryEntryAssignedAuthor, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(mandatoryEntryAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(mandatoryEntryAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(mandatoryEntryAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(mandatoryEntryAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(mandatoryEntryAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(mandatoryEntryAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(mandatoryEntryAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(mandatoryEntryAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateAssignedAuthor_validateAssignedAuthorChoice(mandatoryEntryAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateAssignedAuthor_validateClassCode(mandatoryEntryAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorTemplateId(mandatoryEntryAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(mandatoryEntryAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorAssignedPerson(mandatoryEntryAssignedAuthor, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorRepresentedOrganization(mandatoryEntryAssignedAuthor, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(mandatoryEntryAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(mandatoryEntryAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(mandatoryEntryAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(mandatoryEntryAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(mandatoryEntryAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(mandatoryEntryAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(mandatoryEntryAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateAssignedAuthor_validateAssignedAuthorChoice(
+				mandatoryEntryAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateAssignedAuthor_validateClassCode(
+				mandatoryEntryAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorTemplateId(
+				mandatoryEntryAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(
+				mandatoryEntryAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorAssignedPerson(
+				mandatoryEntryAssignedAuthor, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorRepresentedOrganization(
+				mandatoryEntryAssignedAuthor, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1664,7 +3494,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorTemplateId(MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorTemplateId(
+			MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mandatoryEntryAssignedAuthor.validateMandatoryEntryAssignedAuthorTemplateId(diagnostics, context);
 	}
 
@@ -1674,8 +3506,11 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return mandatoryEntryAssignedAuthor.validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(diagnostics, context);
+	public boolean validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(
+			MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return mandatoryEntryAssignedAuthor.validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(
+			diagnostics, context);
 	}
 
 	/**
@@ -1684,7 +3519,9 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorAssignedPerson(MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorAssignedPerson(
+			MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mandatoryEntryAssignedAuthor.validateMandatoryEntryAssignedAuthorAssignedPerson(diagnostics, context);
 	}
 
@@ -1694,8 +3531,11 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorRepresentedOrganization(MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return mandatoryEntryAssignedAuthor.validateMandatoryEntryAssignedAuthorRepresentedOrganization(diagnostics, context);
+	public boolean validateMandatoryEntryAssignedAuthor_validateMandatoryEntryAssignedAuthorRepresentedOrganization(
+			MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return mandatoryEntryAssignedAuthor.validateMandatoryEntryAssignedAuthorRepresentedOrganization(
+			diagnostics, context);
 	}
 
 	/**
@@ -1703,19 +3543,47 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyAnnotationEntryRelationship(PrivacyAnnotationEntryRelationship privacyAnnotationEntryRelationship, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(privacyAnnotationEntryRelationship, diagnostics, context)) return false;
+	public boolean validatePrivacyAnnotationEntryRelationship(
+			PrivacyAnnotationEntryRelationship privacyAnnotationEntryRelationship, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(privacyAnnotationEntryRelationship, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(privacyAnnotationEntryRelationship, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(privacyAnnotationEntryRelationship, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(privacyAnnotationEntryRelationship, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(privacyAnnotationEntryRelationship, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(privacyAnnotationEntryRelationship, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(privacyAnnotationEntryRelationship, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacyAnnotationEntryRelationship, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacyAnnotationEntryRelationship, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateEntryRelationship_validateClinicalStatement(privacyAnnotationEntryRelationship, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyAnnotationEntryRelationship_validatePrivacyAnnotationEntryRelationshipTemplateId(privacyAnnotationEntryRelationship, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyAnnotationEntryRelationship_validatePrivacyAnnotationEntryRelationshipOrganizer(privacyAnnotationEntryRelationship, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(privacyAnnotationEntryRelationship, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(privacyAnnotationEntryRelationship, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				privacyAnnotationEntryRelationship, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(privacyAnnotationEntryRelationship, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(privacyAnnotationEntryRelationship, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(privacyAnnotationEntryRelationship, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(privacyAnnotationEntryRelationship, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateEntryRelationship_validateClinicalStatement(
+				privacyAnnotationEntryRelationship, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyAnnotationEntryRelationship_validatePrivacyAnnotationEntryRelationshipTemplateId(
+				privacyAnnotationEntryRelationship, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyAnnotationEntryRelationship_validatePrivacyAnnotationEntryRelationshipOrganizer(
+				privacyAnnotationEntryRelationship, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1725,8 +3593,11 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyAnnotationEntryRelationship_validatePrivacyAnnotationEntryRelationshipTemplateId(PrivacyAnnotationEntryRelationship privacyAnnotationEntryRelationship, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyAnnotationEntryRelationship.validatePrivacyAnnotationEntryRelationshipTemplateId(diagnostics, context);
+	public boolean validatePrivacyAnnotationEntryRelationship_validatePrivacyAnnotationEntryRelationshipTemplateId(
+			PrivacyAnnotationEntryRelationship privacyAnnotationEntryRelationship, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return privacyAnnotationEntryRelationship.validatePrivacyAnnotationEntryRelationshipTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -1735,8 +3606,11 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyAnnotationEntryRelationship_validatePrivacyAnnotationEntryRelationshipOrganizer(PrivacyAnnotationEntryRelationship privacyAnnotationEntryRelationship, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return privacyAnnotationEntryRelationship.validatePrivacyAnnotationEntryRelationshipOrganizer(diagnostics, context);
+	public boolean validatePrivacyAnnotationEntryRelationship_validatePrivacyAnnotationEntryRelationshipOrganizer(
+			PrivacyAnnotationEntryRelationship privacyAnnotationEntryRelationship, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return privacyAnnotationEntryRelationship.validatePrivacyAnnotationEntryRelationshipOrganizer(
+			diagnostics, context);
 	}
 
 	/**
@@ -1744,20 +3618,48 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyMarkingsEntry(PrivacyMarkingsEntry privacyMarkingsEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(privacyMarkingsEntry, diagnostics, context)) return false;
+	public boolean validatePrivacyMarkingsEntry(PrivacyMarkingsEntry privacyMarkingsEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(privacyMarkingsEntry, diagnostics, context)) {
+			return false;
+		}
 		boolean result = validate_EveryMultiplicityConforms(privacyMarkingsEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(privacyMarkingsEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(privacyMarkingsEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(privacyMarkingsEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(privacyMarkingsEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(privacyMarkingsEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(privacyMarkingsEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(privacyMarkingsEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateEntry_validateClinicalStatement(privacyMarkingsEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateEntry_validateContextConductionInd(privacyMarkingsEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyMarkingsEntry_validatePrivacyMarkingsEntryTemplateId(privacyMarkingsEntry, diagnostics, context);
-		if (result || diagnostics != null) result &= validatePrivacyMarkingsEntry_validatePrivacyMarkingsEntryOrganizer(privacyMarkingsEntry, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(privacyMarkingsEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(privacyMarkingsEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(privacyMarkingsEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(privacyMarkingsEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(privacyMarkingsEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(privacyMarkingsEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(privacyMarkingsEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateEntry_validateClinicalStatement(privacyMarkingsEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateEntry_validateContextConductionInd(
+				privacyMarkingsEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyMarkingsEntry_validatePrivacyMarkingsEntryTemplateId(
+				privacyMarkingsEntry, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validatePrivacyMarkingsEntry_validatePrivacyMarkingsEntryOrganizer(
+				privacyMarkingsEntry, diagnostics, context);
+		}
 		return result;
 	}
 
@@ -1767,7 +3669,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyMarkingsEntry_validatePrivacyMarkingsEntryTemplateId(PrivacyMarkingsEntry privacyMarkingsEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyMarkingsEntry_validatePrivacyMarkingsEntryTemplateId(
+			PrivacyMarkingsEntry privacyMarkingsEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyMarkingsEntry.validatePrivacyMarkingsEntryTemplateId(diagnostics, context);
 	}
 
@@ -1777,7 +3680,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrivacyMarkingsEntry_validatePrivacyMarkingsEntryOrganizer(PrivacyMarkingsEntry privacyMarkingsEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrivacyMarkingsEntry_validatePrivacyMarkingsEntryOrganizer(
+			PrivacyMarkingsEntry privacyMarkingsEntry, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return privacyMarkingsEntry.validatePrivacyMarkingsEntryOrganizer(diagnostics, context);
 	}
 
@@ -1792,4 +3696,4 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		return CONTENTPROFILEPlugin.INSTANCE;
 	}
 
-} //CONTENTPROFILEValidator
+} // CONTENTPROFILEValidator

@@ -35,7 +35,7 @@ public final class CONSENTDIRECTIVEPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public CONSENTDIRECTIVEPlugin() {
-		super(new ResourceLocator [] {});
+		super(new ResourceLocator[] {});
 	}
 
 	/**

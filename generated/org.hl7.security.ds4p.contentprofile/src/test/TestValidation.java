@@ -33,8 +33,8 @@ public class TestValidation {
 			}
 
 		};
-		
-		DS4PUtil.validateAsDS4P(new FileInputStream("samples/SegmentedDocumentContentProfileSample.xml"),handler);
+
+		DS4PUtil.validateAsDS4P(new FileInputStream("samples/SegmentedDocumentContentProfileSample.xml"), handler);
 
 	}
 

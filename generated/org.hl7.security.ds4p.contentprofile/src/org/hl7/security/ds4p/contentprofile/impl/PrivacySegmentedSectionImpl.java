@@ -11,7 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 import org.eclipse.mdht.uml.cda.impl.SectionImpl;
@@ -63,8 +62,10 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacySegmentedSectionConfidentialityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacySegmentedSectionOperations.validatePrivacySegmentedSectionConfidentialityCode(this, diagnostics, context);
+	public boolean validatePrivacySegmentedSectionConfidentialityCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacySegmentedSectionOperations.validatePrivacySegmentedSectionConfidentialityCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +74,10 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacySegmentedSectionConfidentialityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacySegmentedSectionOperations.validatePrivacySegmentedSectionConfidentialityCodeP(this, diagnostics, context);
+	public boolean validatePrivacySegmentedSectionConfidentialityCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacySegmentedSectionOperations.validatePrivacySegmentedSectionConfidentialityCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -94,16 +97,17 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 */
 	@Override
 	public PrivacySegmentedSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public PrivacySegmentedSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //PrivacySegmentedSectionImpl
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // PrivacySegmentedSectionImpl

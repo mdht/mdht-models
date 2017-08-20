@@ -2,10 +2,13 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.EntryImpl;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 import org.hl7.cbcc.privacy.consentdirective.SignatureImageEntry;
@@ -54,7 +57,27 @@ public class SignatureImageEntryImpl extends EntryImpl implements SignatureImage
 	 * @generated
 	 */
 	@Override
-	public boolean validateSignatureImageEntryObservationMedia(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSignatureImageEntryObservationMedia(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SignatureImageEntryOperations.validateSignatureImageEntryObservationMedia(this, diagnostics, context);
 	}
-} //SignatureImageEntryImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SignatureImageEntry init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SignatureImageEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // SignatureImageEntryImpl

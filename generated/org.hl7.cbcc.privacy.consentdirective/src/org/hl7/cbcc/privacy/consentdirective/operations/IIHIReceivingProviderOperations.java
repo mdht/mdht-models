@@ -2,17 +2,24 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.mdht.uml.cda.operations.Participant2Operations;
+
 import org.eclipse.ocl.ParserException;
+
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
+
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
+import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPlugin;
 import org.hl7.cbcc.privacy.consentdirective.IIHIReceivingProvider;
+
 import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
 
 /**
@@ -22,17 +29,24 @@ import org.hl7.cbcc.privacy.consentdirective.util.CONSENTDIRECTIVEValidator;
  *
  * <p>
  * The following operations are supported:
- * </p>
  * <ul>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.IIHIReceivingProvider#validateIIHIReceivingProviderTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IIHI Receiving Provider Template Id</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.IIHIReceivingProvider#validateIIHIReceivingProviderTypeCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IIHI Receiving Provider Type Code P</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.IIHIReceivingProvider#validateIIHIReceivingProviderTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IIHI Receiving Provider Type Code</em>}</li>
  *   <li>{@link org.hl7.cbcc.privacy.consentdirective.IIHIReceivingProvider#validateIIHIReceivingProviderParticipantRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IIHI Receiving Provider Participant Role</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class IIHIReceivingProviderOperations extends Participant2Operations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,9 +74,7 @@ public class IIHIReceivingProviderOperations extends Participant2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_IIHI_RECEIVING_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_IIHI_RECEIVING_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -74,28 +86,35 @@ public class IIHIReceivingProviderOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateIIHIReceivingProviderTemplateId(IIHIReceivingProvider iihiReceivingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_IIHI_RECEIVING_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateIIHIReceivingProviderTemplateId(IIHIReceivingProvider iihiReceivingProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_IIHI_RECEIVING_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.IIHI_RECEIVING_PROVIDER);
 			try {
-				VALIDATE_IIHI_RECEIVING_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IIHI_RECEIVING_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_IIHI_RECEIVING_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_IIHI_RECEIVING_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IIHI_RECEIVING_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(iihiReceivingProvider)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_IIHI_RECEIVING_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				iihiReceivingProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.IIHI_RECEIVING_PROVIDER__IIHI_RECEIVING_PROVIDER_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateIIHIReceivingProviderTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(iihiReceivingProvider, context) }),
-						 new Object [] { iihiReceivingProvider }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.IIHI_RECEIVING_PROVIDER__IIHI_RECEIVING_PROVIDER_TEMPLATE_ID,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"IIHIReceivingProviderIIHIReceivingProviderTemplateId"),
+						new Object[] { iihiReceivingProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -119,9 +138,7 @@ public class IIHIReceivingProviderOperations extends Participant2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -133,28 +150,48 @@ public class IIHIReceivingProviderOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateIIHIReceivingProviderTypeCodeP(IIHIReceivingProvider iihiReceivingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateIIHIReceivingProviderTypeCodeP(IIHIReceivingProvider iihiReceivingProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.IIHI_RECEIVING_PROVIDER);
 			try {
-				VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(iihiReceivingProvider)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				iihiReceivingProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.IIHI_RECEIVING_PROVIDER__IIHI_RECEIVING_PROVIDER_TYPE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateIIHIReceivingProviderTypeCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(iihiReceivingProvider, context) }),
-						 new Object [] { iihiReceivingProvider }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.IIHI_RECEIVING_PROVIDER__IIHI_RECEIVING_PROVIDER_TYPE_CODE_P,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"IIHIReceivingProviderIIHIReceivingProviderTypeCodeP"),
+						new Object[] { iihiReceivingProvider }));
 			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.hl7.cbcc.privacy.consentdirective.IIHIReceivingProviderTypeCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.hl7.cbcc.privacy.consentdirective.IIHIReceivingProviderTypeCodeP", passToken);
+				}
+				passToken.add(iihiReceivingProvider);
+			}
+
 			return false;
 		}
 		return true;
@@ -168,9 +205,9 @@ public class IIHIReceivingProviderOperations extends Participant2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.typeCode.oclIsUndefined() and self.typeCode.oclIsKindOf(vocab::ParticipationType) and "+
-"let value : vocab::ParticipationType = self.typeCode.oclAsType(vocab::ParticipationType) in "+
-"value = vocab::ParticipationType::IRCP";
+	protected static final String VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.typeCode.oclIsUndefined() and self.typeCode.oclIsKindOf(vocab::ParticipationType) and " +
+			"let value : vocab::ParticipationType = self.typeCode.oclAsType(vocab::ParticipationType) in " +
+			"value = vocab::ParticipationType::IRCP";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateIIHIReceivingProviderTypeCode(IIHIReceivingProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IIHI Receiving Provider Type Code</em>}' invariant operation.
@@ -180,9 +217,7 @@ public class IIHIReceivingProviderOperations extends Participant2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -194,28 +229,41 @@ public class IIHIReceivingProviderOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateIIHIReceivingProviderTypeCode(IIHIReceivingProvider iihiReceivingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateIIHIReceivingProviderTypeCode(IIHIReceivingProvider iihiReceivingProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.hl7.cbcc.privacy.consentdirective.IIHIReceivingProviderTypeCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(iihiReceivingProvider)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.IIHI_RECEIVING_PROVIDER);
 			try {
-				VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(iihiReceivingProvider)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_IIHI_RECEIVING_PROVIDER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				iihiReceivingProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.IIHI_RECEIVING_PROVIDER__IIHI_RECEIVING_PROVIDER_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateIIHIReceivingProviderTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(iihiReceivingProvider, context) }),
-						 new Object [] { iihiReceivingProvider }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.IIHI_RECEIVING_PROVIDER__IIHI_RECEIVING_PROVIDER_TYPE_CODE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString("IIHIReceivingProviderIIHIReceivingProviderTypeCode"),
+						new Object[] { iihiReceivingProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -239,9 +287,7 @@ public class IIHIReceivingProviderOperations extends Participant2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static Constraint VALIDATE_IIHI_RECEIVING_PROVIDER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
+	protected static ThreadLocal<Constraint> VALIDATE_IIHI_RECEIVING_PROVIDER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -253,28 +299,35 @@ public class IIHIReceivingProviderOperations extends Participant2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateIIHIReceivingProviderParticipantRole(IIHIReceivingProvider iihiReceivingProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_IIHI_RECEIVING_PROVIDER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	public static boolean validateIIHIReceivingProviderParticipantRole(IIHIReceivingProvider iihiReceivingProvider,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_IIHI_RECEIVING_PROVIDER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONSENTDIRECTIVEPackage.Literals.IIHI_RECEIVING_PROVIDER);
 			try {
-				VALIDATE_IIHI_RECEIVING_PROVIDER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IIHI_RECEIVING_PROVIDER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				VALIDATE_IIHI_RECEIVING_PROVIDER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_IIHI_RECEIVING_PROVIDER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IIHI_RECEIVING_PROVIDER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(iihiReceivingProvider)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_IIHI_RECEIVING_PROVIDER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				iihiReceivingProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
-						 CONSENTDIRECTIVEValidator.IIHI_RECEIVING_PROVIDER__IIHI_RECEIVING_PROVIDER_PARTICIPANT_ROLE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateIIHIReceivingProviderParticipantRole", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(iihiReceivingProvider, context) }),
-						 new Object [] { iihiReceivingProvider }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONSENTDIRECTIVEValidator.DIAGNOSTIC_SOURCE,
+						CONSENTDIRECTIVEValidator.IIHI_RECEIVING_PROVIDER__IIHI_RECEIVING_PROVIDER_PARTICIPANT_ROLE,
+						CONSENTDIRECTIVEPlugin.INSTANCE.getString(
+							"IIHIReceivingProviderIIHIReceivingProviderParticipantRole"),
+						new Object[] { iihiReceivingProvider }));
 			}
+
 			return false;
 		}
 		return true;

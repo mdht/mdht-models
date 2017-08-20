@@ -2,10 +2,13 @@
  */
 package org.hl7.cbcc.privacy.consentdirective.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;
 import org.hl7.cbcc.privacy.consentdirective.PurposeOfUseSecurityObservation;
 import org.hl7.cbcc.privacy.consentdirective.operations.PurposeOfUseSecurityObservationOperations;
@@ -17,7 +20,8 @@ import org.hl7.cbcc.privacy.consentdirective.operations.PurposeOfUseSecurityObse
  *
  * @generated
  */
-public class PurposeOfUseSecurityObservationImpl extends SecurityObservationImpl implements PurposeOfUseSecurityObservation {
+public class PurposeOfUseSecurityObservationImpl extends SecurityObservationImpl
+		implements PurposeOfUseSecurityObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -43,8 +47,10 @@ public class PurposeOfUseSecurityObservationImpl extends SecurityObservationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validatePurposeOfUseSecurityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeOfUseSecurityObservationOperations.validatePurposeOfUseSecurityObservationValueP(this, diagnostics, context);
+	public boolean validatePurposeOfUseSecurityObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PurposeOfUseSecurityObservationOperations.validatePurposeOfUseSecurityObservationValueP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -53,8 +59,10 @@ public class PurposeOfUseSecurityObservationImpl extends SecurityObservationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validatePurposeOfUseSecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeOfUseSecurityObservationOperations.validatePurposeOfUseSecurityObservationValue(this, diagnostics, context);
+	public boolean validatePurposeOfUseSecurityObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PurposeOfUseSecurityObservationOperations.validatePurposeOfUseSecurityObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,7 +72,8 @@ public class PurposeOfUseSecurityObservationImpl extends SecurityObservationImpl
 	 */
 	@Override
 	public boolean validateSecurityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationTemplateId(this, diagnostics, context);
+		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,4 +95,25 @@ public class PurposeOfUseSecurityObservationImpl extends SecurityObservationImpl
 	public boolean validateSecurityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationCode(this, diagnostics, context);
 	}
-} //PurposeOfUseSecurityObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PurposeOfUseSecurityObservation init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PurposeOfUseSecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // PurposeOfUseSecurityObservationImpl

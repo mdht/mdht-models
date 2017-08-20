@@ -90,10 +90,11 @@ public interface PrivacyMarkingsSection extends Section {
 	 * @generated
 	 */
 	public PrivacyMarkingsSection init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PrivacyMarkingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyMarkingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrivacyMarkingsSection
