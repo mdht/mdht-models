@@ -847,7 +847,7 @@
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_dYFEdWeZEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_dYFEdWeZEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite" redefinedProperty="_ECQ2RWeaEeOu4KcTyYBqzA">
         <ownedComment xmi:id="_dYFEdmeZEeOu4KcTyYBqzA">
           <body>This value is extended beyond the BasicConfidentialityKind to allow for all the
             codes associated with confidentiality levels.</body>
@@ -855,7 +855,6 @@
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dYFEeGeZEeOu4KcTyYBqzA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dYFEd2eZEeOu4KcTyYBqzA" value="1"/>
-        <subsettedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ECQ2QGeaEeOu4KcTyYBqzA" name="SecurityObservation" isAbstract="true">
@@ -1042,8 +1041,8 @@
     <ruleId>CONF-DS4P-4</ruleId>
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_nB838OcUEeKY_89Qw270LQ" base_Property="_5BUdAOcTEeKY_89Qw270LQ">
-    <ruleId>CONF:16833</ruleId>
     <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_8K870TVPEeGIw7CntkyPQw"/>
+    <ruleId>CONF:16833</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_5P7rUOcUEeKY_89Qw270LQ" severity="WARNING" mandatory="true" base_Property="_5BUdAOcTEeKY_89Qw270LQ">
     <ruleId>CONF:16834</ruleId>
@@ -1093,8 +1092,8 @@
     <ruleId>CONF:9041</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_kUuxAedGEeKzv8U7OUnxlg" severity="WARNING">
-    <ruleId>CONF:9045</ruleId>
     <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:9045</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_kUv_IOdGEeKzv8U7OUnxlg">
     <ruleId>CONF:9060</ruleId>
@@ -1114,8 +1113,8 @@
     <ruleId>CONF:9049</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_8PBm8OdGEeKzv8U7OUnxlg" severity="WARNING">
-    <ruleId>CONF:9058</ruleId>
     <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:9058</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8PCOAOdGEeKzv8U7OUnxlg"/>
   <CDA:CodeSystemConstraint xmi:id="_NCT98OdHEeKzv8U7OUnxlg">
@@ -1166,8 +1165,8 @@
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_aQeBg-dsEeKzv8U7OUnxlg"/>
   <CDA:ValueSetConstraint xmi:id="_NQFysOmhEeKequ6sN6q-5g" severity="WARNING">
-    <ruleId>CONF:16788</ruleId>
     <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:16788</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_NQHA0OmhEeKequ6sN6q-5g">
     <ruleId>CONF:16787</ruleId>
@@ -1273,13 +1272,6 @@
   <CDA:PropertyValidation xmi:id="_dYFEfWeZEeOu4KcTyYBqzA" mandatory="true" base_Property="_dYFEdWeZEeOu4KcTyYBqzA">
     <ruleId>CONF:9074</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_dYFEfmeZEeOu4KcTyYBqzA" base_Property="_dYFEdWeZEeOu4KcTyYBqzA">
-    <ruleId>CONF:14850</ruleId>
-  </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_dYFEf2eZEeOu4KcTyYBqzA" base_Property="_dYFEdWeZEeOu4KcTyYBqzA">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_-5gOQGdLEeGkeaezs0FtvA"/>
-    <ruleId>CONF:16825</ruleId>
-  </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_ECQ2TGeaEeOu4KcTyYBqzA" base_Class="_ECQ2QGeaEeOu4KcTyYBqzA" templateId="2.16.840.1.113883.3.445.21" assigningAuthorityName="HL7">
     <ruleId>CONF-CD-21</ruleId>
   </CDA:CDATemplate>
@@ -1317,8 +1309,8 @@
     <ruleId>CONF:9134</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_OYUrN2eaEeOu4KcTyYBqzA" base_Property="_OYUrJWeaEeOu4KcTyYBqzA">
-    <ruleId>CONF:9135</ruleId>
     <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_DypusYxpEeKIvYMIfi9SOQ"/>
+    <ruleId>CONF:9135</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CDATemplate xmi:id="_OYUrOGeaEeOu4KcTyYBqzA" base_Class="_OYUrKWeaEeOu4KcTyYBqzA" templateId="2.16.840.1.113883.3.445.12" assigningAuthorityName="HL7 CBCC">
     <ruleId>CONF-CD-12</ruleId>
@@ -1356,9 +1348,9 @@
   <CDA:PropertyValidation xmi:id="_cjNcjGeaEeOu4KcTyYBqzA" mandatory="true" base_Property="_cjNchGeaEeOu4KcTyYBqzA">
     <ruleId>CONF:9136</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_cjNcjWeaEeOu4KcTyYBqzA" severity="WARNING" base_Property="_cjNchGeaEeOu4KcTyYBqzA">
-    <ruleId>CONF:9137</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_cjNcjWeaEeOu4KcTyYBqzA" base_Property="_cjNchGeaEeOu4KcTyYBqzA" severity="WARNING">
     <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_7GsEIYxoEeKIvYMIfi9SOQ"/>
+    <ruleId>CONF:9137</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConformsTo xmi:id="_opU5wGeaEeOu4KcTyYBqzA" base_Generalization="_kDU_AGeaEeOu4KcTyYBqzA">
     <ruleId>CONF:16828</ruleId>
@@ -1383,8 +1375,8 @@
     <ruleId>CONF:9074</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_d4Y_bWedEeOu4KcTyYBqzA" base_Property="_d4Y_ZGedEeOu4KcTyYBqzA">
-    <ruleId>CONF:14888</ruleId>
     <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_ecZIEIxWEeKqi7cG0-P5Sg"/>
+    <ruleId>CONF:14888</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_EwuxQWgHEeOZxdiNEEVgLA" mandatory="true" base_Property="_EwuxQGgHEeOZxdiNEEVgLA">
     <ruleId>CONF:16831</ruleId>
@@ -1392,4 +1384,8 @@
   <CDA:PropertyValidation xmi:id="_VCBOcGgHEeOZxdiNEEVgLA" mandatory="true" base_Property="_UM-c0GgHEeOZxdiNEEVgLA">
     <ruleId>CONF:16832</ruleId>
   </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_Jh7VwIa_EeegSfW2qw0JPQ" base_Property="_dYFEdWeZEeOu4KcTyYBqzA">
+    <reference href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_Y_l0wEUVEeSuOPP0Hhhcag"/>
+    <ruleId>CONF:14850</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
