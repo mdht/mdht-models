@@ -868,6 +868,16 @@
       <generalization xmi:id="_ECQ2QmeaEeOu4KcTyYBqzA">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
+      <ownedAttribute xmi:id="_ECQ2SWeaEeOu4KcTyYBqzA" name="moodCode" visibility="private" isReadOnly="true">
+        <ownedComment xmi:id="_ECQ2SmeaEeOu4KcTyYBqzA">
+          <body>A security observation specifies a field in a security label rather than a typical
+            clinical observation. It provides a way of expressing privacy metadata associated with
+            specific clinical statements included in a document section.</body>
+        </ownedComment>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_3nn7EGgIEeOZxdiNEEVgLA" value="EVN"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_ECQ2Q2eaEeOu4KcTyYBqzA" name="code" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_ECQ2RGeaEeOu4KcTyYBqzA">
           <body>The code identifies the observation as a security observation using a static
@@ -885,16 +895,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ECQ2SGeaEeOu4KcTyYBqzA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ECQ2R2eaEeOu4KcTyYBqzA" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_ECQ2SWeaEeOu4KcTyYBqzA" name="moodCode" visibility="private">
-        <ownedComment xmi:id="_ECQ2SmeaEeOu4KcTyYBqzA">
-          <body>A security observation specifies a field in a security label rather than a typical
-            clinical observation. It provides a way of expressing privacy metadata associated with
-            specific clinical statements included in a document section.</body>
-        </ownedComment>
-        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_3nn7EGgIEeOZxdiNEEVgLA" value="EVN"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_OYUrIGeaEeOu4KcTyYBqzA" name="RefrainPolicySecurityObservation">
@@ -1282,7 +1282,7 @@
     <ruleId>CONF:16837</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_ECQ2T2eaEeOu4KcTyYBqzA" base_Property="_ECQ2Q2eaEeOu4KcTyYBqzA">
-    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+    <reference href="pathmap://CONTENTPROFILE_MODEL///contentprofile-vocab.uml#_3-WtyuovEeKrOYS9kpIZsQ"/>
     <ruleId>CONF:16838</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_ECQ2UGeaEeOu4KcTyYBqzA" mandatory="true" base_Property="_ECQ2RWeaEeOu4KcTyYBqzA">
