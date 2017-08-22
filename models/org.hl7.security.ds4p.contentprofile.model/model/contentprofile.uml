@@ -1342,7 +1342,7 @@
     <ruleId>CONF:14841</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_cjNci2eaEeOu4KcTyYBqzA" code="SECCONOBS" displayName="Security Control" base_Property="_cjNcg2eaEeOu4KcTyYBqzA">
-    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+    <reference href="pathmap://CONTENTPROFILE_MODEL///contentprofile-vocab.uml#_3-WtyuovEeKrOYS9kpIZsQ"/>
     <ruleId>CONF:14886</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_cjNcjGeaEeOu4KcTyYBqzA" mandatory="true" base_Property="_cjNchGeaEeOu4KcTyYBqzA">
