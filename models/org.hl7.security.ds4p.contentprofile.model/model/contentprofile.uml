@@ -926,46 +926,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OYUrJ2eaEeOu4KcTyYBqzA" value="1"/>
         <redefinedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_OYUrKWeaEeOu4KcTyYBqzA" name="ConfidentialitySecurityObservation">
-        <ownedComment xmi:id="_OYUrKmeaEeOu4KcTyYBqzA">
-          <body>This template was updated from the DSTU version to reuse the SecurityObservation
-            template used to encode the elements of a security label consistent with HL7 Healthcare
-            Security Classification (HCS) standard.</body>
-        </ownedComment>
-        <generalization xmi:id="_OYUrK2eaEeOu4KcTyYBqzA">
-          <general xmi:type="uml:Class" href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbpoIxwEeKqJ6NoJCkz3A"/>
-        </generalization>
-        <ownedAttribute xmi:id="_OYUrLGeaEeOu4KcTyYBqzA" name="code" visibility="private" aggregation="composite">
-          <ownedComment xmi:id="_OYUrLWeaEeOu4KcTyYBqzA">
-            <body>Type of security metadata observation made about the category of an IT resource
-              (data, information object, service, or system capability), which may be used to make
-              access control decisions. Security category metadata is defined by ISO/IEC
-              2382-8:1998(E/F)/ T-REC-X.812-1995 as: &quot;A non hierarchical grouping of
-              sensitive information used to control access to data more finely than with
-              hierarchical security classification alone.&quot;    Rationale: A
-              security category observation supports requirement to specify the type of IT resource
-              to facilitate application of appropriate levels of information security according to a
-              range of levels of impact or consequences that might result from the unauthorized
-              disclosure, modification, or use of the information or information system. A resource
-              is assigned to a specific category of information (e.g., privacy, medical,
-              proprietary, financial, investigative, contractor sensitive, security management)
-              defined by an organization or in some instances, by a specific law, Executive Order,
-              directive, policy, or regulation. [FIPS 199]</body>
-          </ownedComment>
-          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          <redefinedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_OYUrLmeaEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite">
-          <ownedComment xmi:id="_OYUrL2eaEeOu4KcTyYBqzA">
-            <body>This value is extended beyond the BasicConfidentialityKind to allow for all the
-              codes associated with confidentiality levels.</body>
-          </ownedComment>
-          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OYUrMWeaEeOu4KcTyYBqzA" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OYUrMGeaEeOu4KcTyYBqzA" value="1"/>
-          <subsettedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
-        </ownedAttribute>
-      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_d4Y_YGedEeOu4KcTyYBqzA" name="PurposeOfUseSecurityObservation">
       <ownedComment xmi:id="_EHTxgGeeEeOu4KcTyYBqzA">
@@ -1302,7 +1262,7 @@
     <ruleId>CONF:14841</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_OYUrNWeaEeOu4KcTyYBqzA" code="SECCONOBS" displayName="Security Control Observation Type" base_Property="_OYUrI2eaEeOu4KcTyYBqzA">
-    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+    <reference href="pathmap://CONTENTPROFILE_MODEL///contentprofile-vocab.uml#_3-WtyuovEeKrOYS9kpIZsQ"/>
     <ruleId>CONF:14885</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_OYUrNmeaEeOu4KcTyYBqzA" mandatory="true" base_Property="_OYUrJWeaEeOu4KcTyYBqzA">
@@ -1312,29 +1272,6 @@
     <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_DypusYxpEeKIvYMIfi9SOQ"/>
     <ruleId>CONF:9135</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:CDATemplate xmi:id="_OYUrOGeaEeOu4KcTyYBqzA" base_Class="_OYUrKWeaEeOu4KcTyYBqzA" templateId="2.16.840.1.113883.3.445.12" assigningAuthorityName="HL7 CBCC">
-    <ruleId>CONF-CD-12</ruleId>
-  </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_OYUrOWeaEeOu4KcTyYBqzA" base_Generalization="_OYUrK2eaEeOu4KcTyYBqzA">
-    <ruleId>CONF:14908</ruleId>
-  </CDA:ConformsTo>
-  <CDA:PropertyValidation xmi:id="_OYUrOmeaEeOu4KcTyYBqzA" mandatory="true" base_Property="_OYUrLGeaEeOu4KcTyYBqzA">
-    <ruleId>CONF:14841</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_OYUrO2eaEeOu4KcTyYBqzA" code="SECCLASSOBS" displayName="Security Category" base_Property="_OYUrLGeaEeOu4KcTyYBqzA">
-    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
-    <ruleId>CONF:14888</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_OYUrPGeaEeOu4KcTyYBqzA" mandatory="true" base_Property="_OYUrLmeaEeOu4KcTyYBqzA">
-    <ruleId>CONF:9074</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_OYUrPWeaEeOu4KcTyYBqzA" base_Property="_OYUrLmeaEeOu4KcTyYBqzA">
-    <ruleId>CONF:14850</ruleId>
-  </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_OYUrPmeaEeOu4KcTyYBqzA" base_Property="_OYUrLmeaEeOu4KcTyYBqzA">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_-5gOQGdLEeGkeaezs0FtvA"/>
-    <ruleId>CONF:16827</ruleId>
-  </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_cjNciGeaEeOu4KcTyYBqzA" base_Class="_cjNcgGeaEeOu4KcTyYBqzA" templateId="2.16.840.1.113883.3.445.14" assigningAuthorityName="HL7">
     <ruleId>CONF-CD-14</ruleId>
   </CDA:CDATemplate>

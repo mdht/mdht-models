@@ -141,7 +141,7 @@ Type of security metadata observation made about an IT resource (data, informati
   <term:ValueSetVersion xmi:id="_7GsEIYxoEeKIvYMIfi9SOQ" identifier="2.16.840.1.113883.1.11.20445" fullName="Obligation Policy Code" source="HL7" type="Intensional" base_Enumeration="_7GsEIIxoEeKIvYMIfi9SOQ">
     <codeSystem href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_DypusYxpEeKIvYMIfi9SOQ" identifier="2.16.840.1.113883.1.11.20446" fullName="RefrainPolicy" source="HL7" type="Intensional" binding="Dynamic" base_Enumeration="_DypusIxpEeKIvYMIfi9SOQ">
+  <term:ValueSetVersion xmi:id="_DypusYxpEeKIvYMIfi9SOQ" identifier="2.16.840.1.113883.1.11.20446" fullName="RefrainPolicy" source="HL7" type="Intensional" base_Enumeration="_DypusIxpEeKIvYMIfi9SOQ">
     <codeSystem href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_KePkEY92EeKb9J31WmOroA" conceptName="Information Access" usageNote="Consent to access or &quot;read&quot; only, which entails that the information is not to be copied, screen printed, saved, emailed, stored, re-disclosed or altered in any way. This level ensures that data which is masked or to which access is restricted will not be. Example: Opened and then emailed or screen printed for use outside of the consent directive purpose." base_EnumerationLiteral="_KePkEI92EeKb9J31WmOroA"/>
