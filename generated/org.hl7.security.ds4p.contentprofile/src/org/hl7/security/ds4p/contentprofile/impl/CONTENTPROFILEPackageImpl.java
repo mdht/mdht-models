@@ -185,7 +185,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link CONTENTPROFILEPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -756,6 +756,17 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
+			securityObservationEClass, ecorePackage.getEBoolean(), "validateSecurityObservationMoodCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
 			securityObservationEClass, ecorePackage.getEBoolean(), "validateSecurityObservationCodeP", 0, 1, IS_UNIQUE,
 			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -791,17 +802,6 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		op = addEOperation(
 			securityObservationEClass, ecorePackage.getEBoolean(), "validateSecurityObservationValueP", 0, 1, IS_UNIQUE,
 			IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			securityObservationEClass, ecorePackage.getEBoolean(), "validateSecurityObservationMoodCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1125,28 +1125,6 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 			confidentialitySecurityObservationEClass, ConfidentialitySecurityObservation.class,
 			"ConfidentialitySecurityObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(
-			confidentialitySecurityObservationEClass, ecorePackage.getEBoolean(),
-			"validateConfidentialitySecurityObservationValueP", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			confidentialitySecurityObservationEClass, ecorePackage.getEBoolean(),
-			"validateConfidentialitySecurityObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		initEClass(
 			protectedProblemEClass, ProtectedProblem.class, "ProtectedProblem", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
@@ -1320,8 +1298,6 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		createAnnotationAnnotations();
 		// duplicates
 		createDuplicatesAnnotations();
-		// http://www.openhealthtools.org/mdht/uml/cda/annotation/contentprofileRefrainPolicySecurityObservationConfidentialitySecurityObservation
-		createContentprofileRefrainPolicySecurityObservationConfidentialitySecurityObservationAnnotations();
 	}
 
 	/**
@@ -1374,7 +1350,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 					"constraints.validation.error",
 					"SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP ObligationPolicySecurityObservationValueP",
 					"templateId.root", "2.16.840.1.113883.3.445.14", "code.code", "SECCONOBS", "code.codeSystem",
-					"2.16.840.1.113883.1.11.20471", "code.codeSystemName", "SecurityControlObservationValue",
+					"2.16.840.1.113883.1.11.20457", "code.codeSystemName", "SecurityObservationTypeCodeSystem",
 					"code.displayName", "Security Control", "constraints.validation.dependOn.SecurityObservationCode",
 					"SecurityObservationCodeP", "value.codeSystem", "2.16.840.1.113883.1.11.20471",
 					"value.codeSystemName", "SecurityControlObservationValue", "constraints.validation.warning",
@@ -1385,12 +1361,12 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 			securityObservationEClass, source,
 			new String[] {
 					"constraints.validation.error",
-					"SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP SecurityObservationValue SecurityObservationValueP SecurityObservationMoodCode",
-					"templateId.root", "2.16.840.1.113883.3.445.21", "code.codeSystem", "2.16.840.1.113883.1.11.20471",
-					"code.codeSystemName", "SecurityControlObservationValue",
+					"SecurityObservationTemplateId SecurityObservationMoodCode SecurityObservationCode SecurityObservationCodeP SecurityObservationValue SecurityObservationValueP",
+					"templateId.root", "2.16.840.1.113883.3.445.21", "moodCode", "EVN", "code.codeSystem",
+					"2.16.840.1.113883.1.11.20457", "code.codeSystemName", "SecurityObservationTypeCodeSystem",
 					"constraints.validation.dependOn.SecurityObservationCode", "SecurityObservationCodeP",
 					"value.codeSystem", "2.16.840.1.113883.5.1063", "value.codeSystemName",
-					"SecurityObservationValueCodeSystem", "moodCode", "EVN" });
+					"SecurityObservationValueCodeSystem" });
 		addAnnotation(
 			mandatoryDocumentProvenanceEClass, source,
 			new String[] {
@@ -1419,7 +1395,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 					"constraints.validation.error",
 					"SecurityObservationTemplateId RefrainPolicySecurityObservationCode RefrainPolicySecurityObservationCodeP RefrainPolicySecurityObservationValue RefrainPolicySecurityObservationValueP",
 					"templateId.root", "2.16.840.1.113883.3.445.23", "code.code", "SECCONOBS", "code.codeSystem",
-					"2.16.840.1.113883.1.11.20471", "code.codeSystemName", "SecurityControlObservationValue",
+					"2.16.840.1.113883.1.11.20457", "code.codeSystemName", "SecurityObservationTypeCodeSystem",
 					"code.displayName", "Security Control Observation Type",
 					"constraints.validation.dependOn.RefrainPolicySecurityObservationCode",
 					"RefrainPolicySecurityObservationCodeP", "value.codeSystem", "2.16.840.1.113883.1.11.20471",
@@ -1443,13 +1419,11 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 			confidentialitySecurityObservationEClass, source,
 			new String[] {
 					"constraints.validation.error",
-					"SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP ConfidentialitySecurityObservationValue ConfidentialitySecurityObservationValueP",
+					"SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP SecurityObservationValue",
 					"templateId.root", "2.16.840.1.113883.3.445.12", "code.code", "SECCLASSOBS", "code.codeSystem",
 					"2.16.840.1.113883.1.11.20471", "code.codeSystemName", "SecurityControlObservationValue",
 					"code.displayName", "Security Category", "constraints.validation.dependOn.SecurityObservationCode",
-					"SecurityObservationCodeP", "value.codeSystem", "2.16.840.1.113883.5.25", "value.codeSystemName",
-					"ConfidentialityCode", "constraints.validation.dependOn.ConfidentialitySecurityObservationValue",
-					"ConfidentialitySecurityObservationValueP" });
+					"SecurityObservationCodeP" });
 		addAnnotation(
 			protectedProblemEClass, source,
 			new String[] {
@@ -1494,28 +1468,6 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		addAnnotation(purposeOfUseSecurityObservationEClass, source, new String[] {});
 		addAnnotation(confidentialitySecurityObservationEClass, source, new String[] {});
 		addAnnotation(protectedProblemEClass, source, new String[] {});
-	}
-
-	/**
-	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/contentprofileRefrainPolicySecurityObservationConfidentialitySecurityObservation</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void createContentprofileRefrainPolicySecurityObservationConfidentialitySecurityObservationAnnotations() {
-		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/contentprofileRefrainPolicySecurityObservationConfidentialitySecurityObservation";
-		addAnnotation(
-			refrainPolicySecurityObservationEClass, source,
-			new String[] {
-					"constraints.validation.error",
-					"SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP RefrainPolicySecurityObservationConfidentialitySecurityObservationValue RefrainPolicySecurityObservationConfidentialitySecurityObservationValueP",
-					"templateId.root", "2.16.840.1.113883.3.445.12", "code.code", "SECCLASSOBS", "code.codeSystem",
-					"2.16.840.1.113883.1.11.20471", "code.codeSystemName", "SecurityControlObservationValue",
-					"code.displayName", "Security Category", "constraints.validation.dependOn.SecurityObservationCode",
-					"SecurityObservationCodeP", "value.codeSystem", "2.16.840.1.113883.5.25", "value.codeSystemName",
-					"ConfidentialityCode",
-					"constraints.validation.dependOn.RefrainPolicySecurityObservationConfidentialitySecurityObservationValue",
-					"RefrainPolicySecurityObservationConfidentialitySecurityObservationValueP" });
 	}
 
 } // CONTENTPROFILEPackageImpl

@@ -111,7 +111,6 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MandatoryDocumentAssignedAuthor init() {
 		return Initializer.Util.init(this);
 	}
@@ -121,7 +120,6 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MandatoryDocumentAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

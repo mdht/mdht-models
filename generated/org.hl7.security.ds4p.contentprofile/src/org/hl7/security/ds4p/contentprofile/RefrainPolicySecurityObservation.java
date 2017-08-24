@@ -19,8 +19,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage#getRefrainPolicySecurityObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SecurityObservationTemplateId RefrainPolicySecurityObservationCode RefrainPolicySecurityObservationCodeP RefrainPolicySecurityObservationValue RefrainPolicySecurityObservationValueP' templateId.root='2.16.840.1.113883.3.445.23' code.code='SECCONOBS' code.codeSystem='2.16.840.1.113883.1.11.20471' code.codeSystemName='SecurityControlObservationValue' code.displayName='Security Control Observation Type' constraints.validation.dependOn.RefrainPolicySecurityObservationCode='RefrainPolicySecurityObservationCodeP' value.codeSystem='2.16.840.1.113883.1.11.20471' value.codeSystemName='SecurityControlObservationValue' constraints.validation.dependOn.RefrainPolicySecurityObservationValue='RefrainPolicySecurityObservationValueP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/contentprofileRefrainPolicySecurityObservationConfidentialitySecurityObservation constraints.validation.error='SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP RefrainPolicySecurityObservationConfidentialitySecurityObservationValue RefrainPolicySecurityObservationConfidentialitySecurityObservationValueP' templateId.root='2.16.840.1.113883.3.445.12' code.code='SECCLASSOBS' code.codeSystem='2.16.840.1.113883.1.11.20471' code.codeSystemName='SecurityControlObservationValue' code.displayName='Security Category' constraints.validation.dependOn.SecurityObservationCode='SecurityObservationCodeP' value.codeSystem='2.16.840.1.113883.5.25' value.codeSystemName='ConfidentialityCode' constraints.validation.dependOn.RefrainPolicySecurityObservationConfidentialitySecurityObservationValue='RefrainPolicySecurityObservationConfidentialitySecurityObservationValueP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SecurityObservationTemplateId RefrainPolicySecurityObservationCode RefrainPolicySecurityObservationCodeP RefrainPolicySecurityObservationValue RefrainPolicySecurityObservationValueP' templateId.root='2.16.840.1.113883.3.445.23' code.code='SECCONOBS' code.codeSystem='2.16.840.1.113883.1.11.20457' code.codeSystemName='SecurityObservationTypeCodeSystem' code.displayName='Security Control Observation Type' constraints.validation.dependOn.RefrainPolicySecurityObservationCode='RefrainPolicySecurityObservationCodeP' value.codeSystem='2.16.840.1.113883.1.11.20471' value.codeSystemName='SecurityControlObservationValue' constraints.validation.dependOn.RefrainPolicySecurityObservationValue='RefrainPolicySecurityObservationValueP'"
  * @generated
  */
 public interface RefrainPolicySecurityObservation extends SecurityObservation {
@@ -43,7 +42,7 @@ public interface RefrainPolicySecurityObservation extends SecurityObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'SECCONOBS\' and value.codeSystem = \'2.16.840.1.113883.1.11.20471\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'SECCONOBS\' and value.codeSystem = \'2.16.840.1.113883.1.11.20457\''"
 	 * @generated
 	 */
 	boolean validateRefrainPolicySecurityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -77,7 +76,6 @@ public interface RefrainPolicySecurityObservation extends SecurityObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public RefrainPolicySecurityObservation init();
 
 	/**
@@ -85,6 +83,5 @@ public interface RefrainPolicySecurityObservation extends SecurityObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public RefrainPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // RefrainPolicySecurityObservation

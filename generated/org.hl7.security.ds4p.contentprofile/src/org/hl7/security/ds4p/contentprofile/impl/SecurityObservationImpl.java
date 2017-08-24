@@ -111,7 +111,6 @@ public abstract class SecurityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SecurityObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -121,7 +120,6 @@ public abstract class SecurityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

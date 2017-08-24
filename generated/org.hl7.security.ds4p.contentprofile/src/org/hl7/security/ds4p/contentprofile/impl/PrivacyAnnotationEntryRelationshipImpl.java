@@ -76,7 +76,6 @@ public class PrivacyAnnotationEntryRelationshipImpl extends EntryRelationshipImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PrivacyAnnotationEntryRelationship init() {
 		return Initializer.Util.init(this);
 	}
@@ -86,7 +85,6 @@ public class PrivacyAnnotationEntryRelationshipImpl extends EntryRelationshipImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PrivacyAnnotationEntryRelationship init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

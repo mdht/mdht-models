@@ -194,7 +194,6 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PrivacyAnnotation init() {
 		return Initializer.Util.init(this);
 	}
@@ -204,7 +203,6 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PrivacyAnnotation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

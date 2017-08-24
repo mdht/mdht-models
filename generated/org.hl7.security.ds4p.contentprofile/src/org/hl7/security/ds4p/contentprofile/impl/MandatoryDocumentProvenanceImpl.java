@@ -86,7 +86,6 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MandatoryDocumentProvenance init() {
 		return Initializer.Util.init(this);
 	}
@@ -96,7 +95,6 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MandatoryDocumentProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

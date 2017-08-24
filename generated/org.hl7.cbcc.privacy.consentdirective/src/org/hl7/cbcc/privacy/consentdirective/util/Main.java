@@ -13,7 +13,6 @@ package org.hl7.cbcc.privacy.consentdirective.util;
 import java.io.FileInputStream;
 
 import org.eclipse.emf.common.util.Diagnostic;
-import org.eclipse.mdht.uml.cda.ClinicalDocument;
 import org.eclipse.mdht.uml.cda.util.CDAUtil;
 import org.eclipse.mdht.uml.cda.util.ValidationResult;
 import org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage;

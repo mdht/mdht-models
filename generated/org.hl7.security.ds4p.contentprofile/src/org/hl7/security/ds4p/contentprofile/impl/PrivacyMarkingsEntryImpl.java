@@ -71,7 +71,6 @@ public class PrivacyMarkingsEntryImpl extends EntryImpl implements PrivacyMarkin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PrivacyMarkingsEntry init() {
 		return Initializer.Util.init(this);
 	}
@@ -81,7 +80,6 @@ public class PrivacyMarkingsEntryImpl extends EntryImpl implements PrivacyMarkin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PrivacyMarkingsEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

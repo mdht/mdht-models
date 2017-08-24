@@ -101,7 +101,6 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PrivacyMarkingsSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -111,7 +110,6 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PrivacyMarkingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

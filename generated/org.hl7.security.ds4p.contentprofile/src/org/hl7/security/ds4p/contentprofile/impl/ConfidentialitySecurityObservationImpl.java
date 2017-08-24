@@ -52,30 +52,6 @@ public class ConfidentialitySecurityObservationImpl extends SecurityObservationI
 	 * @generated
 	 */
 	@Override
-	public boolean validateConfidentialitySecurityObservationValueP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConfidentialitySecurityObservationOperations.validateConfidentialitySecurityObservationValueP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConfidentialitySecurityObservationValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConfidentialitySecurityObservationOperations.validateConfidentialitySecurityObservationValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateSecurityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConfidentialitySecurityObservationOperations.validateSecurityObservationTemplateId(
 			this, diagnostics, context);
@@ -100,6 +76,17 @@ public class ConfidentialitySecurityObservationImpl extends SecurityObservationI
 	@Override
 	public boolean validateSecurityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConfidentialitySecurityObservationOperations.validateSecurityObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConfidentialitySecurityObservationOperations.validateSecurityObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**

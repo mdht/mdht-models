@@ -76,7 +76,6 @@ public interface PurposeOfUseSecurityObservation extends SecurityObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PurposeOfUseSecurityObservation init();
 
 	/**
@@ -84,6 +83,5 @@ public interface PurposeOfUseSecurityObservation extends SecurityObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PurposeOfUseSecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PurposeOfUseSecurityObservation

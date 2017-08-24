@@ -99,7 +99,6 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MandatoryEntryAssignedAuthor init() {
 		return Initializer.Util.init(this);
 	}
@@ -109,7 +108,6 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MandatoryEntryAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

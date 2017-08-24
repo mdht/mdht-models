@@ -19,7 +19,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage#getObligationPolicySecurityObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP ObligationPolicySecurityObservationValueP' templateId.root='2.16.840.1.113883.3.445.14' code.code='SECCONOBS' code.codeSystem='2.16.840.1.113883.1.11.20471' code.codeSystemName='SecurityControlObservationValue' code.displayName='Security Control' constraints.validation.dependOn.SecurityObservationCode='SecurityObservationCodeP' value.codeSystem='2.16.840.1.113883.1.11.20471' value.codeSystemName='SecurityControlObservationValue' constraints.validation.warning='ObligationPolicySecurityObservationValue' constraints.validation.dependOn.ObligationPolicySecurityObservationValue='ObligationPolicySecurityObservationValueP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP ObligationPolicySecurityObservationValueP' templateId.root='2.16.840.1.113883.3.445.14' code.code='SECCONOBS' code.codeSystem='2.16.840.1.113883.1.11.20457' code.codeSystemName='SecurityObservationTypeCodeSystem' code.displayName='Security Control' constraints.validation.dependOn.SecurityObservationCode='SecurityObservationCodeP' value.codeSystem='2.16.840.1.113883.1.11.20471' value.codeSystemName='SecurityControlObservationValue' constraints.validation.warning='ObligationPolicySecurityObservationValue' constraints.validation.dependOn.ObligationPolicySecurityObservationValue='ObligationPolicySecurityObservationValueP'"
  * @generated
  */
 public interface ObligationPolicySecurityObservation extends SecurityObservation {
@@ -52,7 +52,6 @@ public interface ObligationPolicySecurityObservation extends SecurityObservation
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ObligationPolicySecurityObservation init();
 
 	/**
@@ -60,6 +59,5 @@ public interface ObligationPolicySecurityObservation extends SecurityObservation
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ObligationPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ObligationPolicySecurityObservation

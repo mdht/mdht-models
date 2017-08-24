@@ -199,7 +199,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE_P = 20;
+	public static final int SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE_P = 21;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Code' of 'Security Observation'.
@@ -207,7 +207,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE = 21;
+	public static final int SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE = 22;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Value' of 'Security Observation'.
@@ -215,7 +215,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE = 22;
+	public static final int SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE = 23;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Value P' of 'Security Observation'.
@@ -223,7 +223,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE_P = 23;
+	public static final int SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE_P = 24;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Mood Code' of 'Security Observation'.
@@ -231,7 +231,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SECURITY_OBSERVATION__SECURITY_OBSERVATION_MOOD_CODE = 24;
+	public static final int SECURITY_OBSERVATION__SECURITY_OBSERVATION_MOOD_CODE = 20;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mandatory Document Provenance Template Id' of 'Mandatory Document Provenance'.
@@ -450,28 +450,12 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	public static final int PURPOSE_OF_USE_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID = 51;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Confidentiality Security Observation Value P' of 'Confidentiality Security Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int CONFIDENTIALITY_SECURITY_OBSERVATION__CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE_P = 52;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Confidentiality Security Observation Value' of 'Confidentiality Security Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int CONFIDENTIALITY_SECURITY_OBSERVATION__CONFIDENTIALITY_SECURITY_OBSERVATION_VALUE = 53;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Template Id' of 'Confidentiality Security Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID = 54;
+	public static final int CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID = 52;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Code P' of 'Confidentiality Security Observation'.
@@ -479,7 +463,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE_P = 55;
+	public static final int CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE_P = 53;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Code' of 'Confidentiality Security Observation'.
@@ -487,7 +471,15 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE = 56;
+	public static final int CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE = 54;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Value' of 'Confidentiality Security Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE = 55;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Template Id' of 'Protected Problem'.
@@ -495,7 +487,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROTECTED_PROBLEM__PROBLEM_OBSERVATION_TEMPLATE_ID = 59;
+	public static final int PROTECTED_PROBLEM__PROBLEM_OBSERVATION_TEMPLATE_ID = 58;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Protected Problem Problem Provenance' of 'Protected Problem'.
@@ -503,7 +495,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROTECTED_PROBLEM__PROTECTED_PROBLEM_PROBLEM_PROVENANCE = 57;
+	public static final int PROTECTED_PROBLEM__PROTECTED_PROBLEM_PROBLEM_PROVENANCE = 56;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Protected Problem Privacy Annotations' of 'Protected Problem'.
@@ -511,7 +503,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PROTECTED_PROBLEM__PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS = 58;
+	public static final int PROTECTED_PROBLEM__PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS = 57;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mandatory Entry Provenance Template Id' of 'Mandatory Entry Provenance'.
@@ -519,7 +511,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MANDATORY_ENTRY_PROVENANCE__MANDATORY_ENTRY_PROVENANCE_TEMPLATE_ID = 60;
+	public static final int MANDATORY_ENTRY_PROVENANCE__MANDATORY_ENTRY_PROVENANCE_TEMPLATE_ID = 59;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mandatory Entry Provenance Time' of 'Mandatory Entry Provenance'.
@@ -527,7 +519,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MANDATORY_ENTRY_PROVENANCE__MANDATORY_ENTRY_PROVENANCE_TIME = 61;
+	public static final int MANDATORY_ENTRY_PROVENANCE__MANDATORY_ENTRY_PROVENANCE_TIME = 60;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mandatory Entry Provenance Assigned Author' of 'Mandatory Entry Provenance'.
@@ -535,7 +527,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MANDATORY_ENTRY_PROVENANCE__MANDATORY_ENTRY_PROVENANCE_ASSIGNED_AUTHOR = 62;
+	public static final int MANDATORY_ENTRY_PROVENANCE__MANDATORY_ENTRY_PROVENANCE_ASSIGNED_AUTHOR = 61;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mandatory Entry Assigned Author Template Id' of 'Mandatory Entry Assigned Author'.
@@ -543,7 +535,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MANDATORY_ENTRY_ASSIGNED_AUTHOR__MANDATORY_ENTRY_ASSIGNED_AUTHOR_TEMPLATE_ID = 63;
+	public static final int MANDATORY_ENTRY_ASSIGNED_AUTHOR__MANDATORY_ENTRY_ASSIGNED_AUTHOR_TEMPLATE_ID = 62;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mandatory Entry Assigned Author Assigned Authoring Device' of 'Mandatory Entry Assigned Author'.
@@ -551,7 +543,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MANDATORY_ENTRY_ASSIGNED_AUTHOR__MANDATORY_ENTRY_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE = 64;
+	public static final int MANDATORY_ENTRY_ASSIGNED_AUTHOR__MANDATORY_ENTRY_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE = 63;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mandatory Entry Assigned Author Assigned Person' of 'Mandatory Entry Assigned Author'.
@@ -559,7 +551,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MANDATORY_ENTRY_ASSIGNED_AUTHOR__MANDATORY_ENTRY_ASSIGNED_AUTHOR_ASSIGNED_PERSON = 65;
+	public static final int MANDATORY_ENTRY_ASSIGNED_AUTHOR__MANDATORY_ENTRY_ASSIGNED_AUTHOR_ASSIGNED_PERSON = 64;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mandatory Entry Assigned Author Represented Organization' of 'Mandatory Entry Assigned Author'.
@@ -567,7 +559,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MANDATORY_ENTRY_ASSIGNED_AUTHOR__MANDATORY_ENTRY_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION = 66;
+	public static final int MANDATORY_ENTRY_ASSIGNED_AUTHOR__MANDATORY_ENTRY_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION = 65;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Privacy Annotation Entry Relationship Template Id' of 'Privacy Annotation Entry Relationship'.
@@ -575,7 +567,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP__PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID = 67;
+	public static final int PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP__PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID = 66;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Privacy Annotation Entry Relationship Organizer' of 'Privacy Annotation Entry Relationship'.
@@ -583,7 +575,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP__PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER = 68;
+	public static final int PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP__PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER = 67;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Privacy Markings Entry Template Id' of 'Privacy Markings Entry'.
@@ -591,7 +583,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PRIVACY_MARKINGS_ENTRY__PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID = 69;
+	public static final int PRIVACY_MARKINGS_ENTRY__PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID = 68;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Privacy Markings Entry Organizer' of 'Privacy Markings Entry'.
@@ -599,7 +591,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PRIVACY_MARKINGS_ENTRY__PRIVACY_MARKINGS_ENTRY_ORGANIZER = 70;
+	public static final int PRIVACY_MARKINGS_ENTRY__PRIVACY_MARKINGS_ENTRY_ORGANIZER = 69;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -607,7 +599,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 70;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 69;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -2157,6 +2149,10 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				obligationPolicySecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				obligationPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateObligationPolicySecurityObservation_validateSecurityObservationCodeP(
 				obligationPolicySecurityObservation, diagnostics, context);
 		}
@@ -2170,10 +2166,6 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validateSecurityObservation_validateSecurityObservationValueP(
-				obligationPolicySecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
 				obligationPolicySecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -2286,6 +2278,10 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				securityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				securityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateSecurityObservation_validateSecurityObservationCodeP(
 				securityObservation, diagnostics, context);
 		}
@@ -2299,10 +2295,6 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validateSecurityObservation_validateSecurityObservationValueP(
-				securityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
 				securityObservation, diagnostics, context);
 		}
 		return result;
@@ -2802,6 +2794,10 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				refrainPolicySecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				refrainPolicySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateSecurityObservation_validateSecurityObservationCodeP(
 				refrainPolicySecurityObservation, diagnostics, context);
 		}
@@ -2815,10 +2811,6 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validateSecurityObservation_validateSecurityObservationValueP(
-				refrainPolicySecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
 				refrainPolicySecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -2939,6 +2931,10 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				purposeOfUseSecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				purposeOfUseSecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateSecurityObservation_validateSecurityObservationCodeP(
 				purposeOfUseSecurityObservation, diagnostics, context);
 		}
@@ -2952,10 +2948,6 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= validateSecurityObservation_validateSecurityObservationValueP(
-				purposeOfUseSecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
 				purposeOfUseSecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -3076,6 +3068,10 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				confidentialitySecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
+				confidentialitySecurityObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateConfidentialitySecurityObservation_validateSecurityObservationCodeP(
 				confidentialitySecurityObservation, diagnostics, context);
 		}
@@ -3084,51 +3080,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				confidentialitySecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationValue(
+			result &= validateConfidentialitySecurityObservation_validateSecurityObservationValue(
 				confidentialitySecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateSecurityObservation_validateSecurityObservationValueP(
 				confidentialitySecurityObservation, diagnostics, context);
 		}
-		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationMoodCode(
-				confidentialitySecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValueP(
-				confidentialitySecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValue(
-				confidentialitySecurityObservation, diagnostics, context);
-		}
 		return result;
-	}
-
-	/**
-	 * Validates the validateConfidentialitySecurityObservationValueP constraint of '<em>Confidentiality Security Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValueP(
-			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return confidentialitySecurityObservation.validateConfidentialitySecurityObservationValueP(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateConfidentialitySecurityObservationValue constraint of '<em>Confidentiality Security Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateConfidentialitySecurityObservation_validateConfidentialitySecurityObservationValue(
-			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return confidentialitySecurityObservation.validateConfidentialitySecurityObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -3165,6 +3124,18 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return confidentialitySecurityObservation.validateSecurityObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSecurityObservationValue constraint of '<em>Confidentiality Security Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConfidentialitySecurityObservation_validateSecurityObservationValue(
+			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return confidentialitySecurityObservation.validateSecurityObservationValue(diagnostics, context);
 	}
 
 	/**

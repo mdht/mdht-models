@@ -95,7 +95,6 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PrivacySegmentedSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -105,7 +104,6 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PrivacySegmentedSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

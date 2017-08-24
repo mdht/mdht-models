@@ -85,7 +85,6 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MandatoryEntryProvenance init() {
 		return Initializer.Util.init(this);
 	}
@@ -95,7 +94,6 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MandatoryEntryProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

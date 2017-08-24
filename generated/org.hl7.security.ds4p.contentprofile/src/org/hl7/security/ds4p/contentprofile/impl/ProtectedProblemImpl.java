@@ -62,27 +62,6 @@ public class ProtectedProblemImpl extends ProblemObservationImpl implements Prot
 	 * @generated
 	 */
 	@Override
-	public boolean validateProtectedProblemProblemProvenance(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProtectedProblemOperations.validateProtectedProblemProblemProvenance(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProtectedProblemPrivacyAnnotations(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProtectedProblemOperations.validateProtectedProblemPrivacyAnnotations(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ProtectedProblem init() {
 		return Initializer.Util.init(this);
 	}
@@ -96,5 +75,26 @@ public class ProtectedProblemImpl extends ProblemObservationImpl implements Prot
 	public ProtectedProblem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProtectedProblemProblemProvenance(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProtectedProblemOperations.validateProtectedProblemProblemProvenance(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProtectedProblemPrivacyAnnotations(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProtectedProblemOperations.validateProtectedProblemPrivacyAnnotations(this, diagnostics, context);
 	}
 } // ProtectedProblemImpl

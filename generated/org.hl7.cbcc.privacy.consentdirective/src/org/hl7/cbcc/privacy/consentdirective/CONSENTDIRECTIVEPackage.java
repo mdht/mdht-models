@@ -927,147 +927,147 @@ public interface CONSENTDIRECTIVEPackage extends EPackage {
 	int SIGNATURES_SECTION_FEATURE_COUNT = CDAPackage.SECTION_FEATURE_COUNT + 0;
 
 	/**
-	* The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__REALM_CODE = CDAPackage.ENTRY__REALM_CODE;
 
 	/**
-	* The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__TYPE_ID = CDAPackage.ENTRY__TYPE_ID;
 
 	/**
-	* The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__TEMPLATE_ID = CDAPackage.ENTRY__TEMPLATE_ID;
 
 	/**
-	* The feature id for the '<em><b>Act</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Act</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__ACT = CDAPackage.ENTRY__ACT;
 
 	/**
-	* The feature id for the '<em><b>Encounter</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Encounter</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__ENCOUNTER = CDAPackage.ENTRY__ENCOUNTER;
 
 	/**
-	* The feature id for the '<em><b>Observation</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Observation</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__OBSERVATION = CDAPackage.ENTRY__OBSERVATION;
 
 	/**
-	* The feature id for the '<em><b>Observation Media</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Observation Media</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__OBSERVATION_MEDIA = CDAPackage.ENTRY__OBSERVATION_MEDIA;
 
 	/**
-	* The feature id for the '<em><b>Organizer</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Organizer</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__ORGANIZER = CDAPackage.ENTRY__ORGANIZER;
 
 	/**
-	* The feature id for the '<em><b>Procedure</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Procedure</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__PROCEDURE = CDAPackage.ENTRY__PROCEDURE;
 
 	/**
-	* The feature id for the '<em><b>Region Of Interest</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Region Of Interest</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__REGION_OF_INTEREST = CDAPackage.ENTRY__REGION_OF_INTEREST;
 
 	/**
-	* The feature id for the '<em><b>Substance Administration</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Substance Administration</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__SUBSTANCE_ADMINISTRATION = CDAPackage.ENTRY__SUBSTANCE_ADMINISTRATION;
 
 	/**
-	* The feature id for the '<em><b>Supply</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Supply</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__SUPPLY = CDAPackage.ENTRY__SUPPLY;
 
 	/**
-	* The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__NULL_FLAVOR = CDAPackage.ENTRY__NULL_FLAVOR;
 
 	/**
-	* The feature id for the '<em><b>Type Code</b></em>' attribute.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Type Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__TYPE_CODE = CDAPackage.ENTRY__TYPE_CODE;
 
 	/**
-	* The feature id for the '<em><b>Context Conduction Ind</b></em>' attribute.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Context Conduction Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY__CONTEXT_CONDUCTION_IND = CDAPackage.ENTRY__CONTEXT_CONDUCTION_IND;
 
 	/**
-	* The number of structural features of the '<em>Consent Directive Entry</em>' class.
-	* <!-- begin-user-doc -->
+	 * The number of structural features of the '<em>Consent Directive Entry</em>' class.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_ENTRY_FEATURE_COUNT = CDAPackage.ENTRY_FEATURE_COUNT + 0;
 
 	/**
@@ -1280,12 +1280,12 @@ public interface CONSENTDIRECTIVEPackage extends EPackage {
 	int CONSENT_DIRECTIVE_STRUCTURED_DEFINITION__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
-	* The feature id for the '<em><b>Class Code</b></em>' attribute.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_DIRECTIVE_STRUCTURED_DEFINITION__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
 
 	/**
@@ -1515,12 +1515,12 @@ public interface CONSENTDIRECTIVEPackage extends EPackage {
 	int CONSENT_ACTION__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
-	* The feature id for the '<em><b>Class Code</b></em>' attribute.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONSENT_ACTION__CLASS_CODE = CDAPackage.ACT__CLASS_CODE;
 
 	/**
@@ -2030,12 +2030,12 @@ public interface CONSENTDIRECTIVEPackage extends EPackage {
 	int CRITERIUM_INFORMATION_DEFINITION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
-	* The number of structural features of the '<em>Criterium Information Definition</em>' class.
-	* <!-- begin-user-doc -->
+	 * The number of structural features of the '<em>Criterium Information Definition</em>' class.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CRITERIUM_INFORMATION_DEFINITION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
@@ -2328,12 +2328,12 @@ public interface CONSENTDIRECTIVEPackage extends EPackage {
 	int CRITERIUM_RELATED_PROTECTED_PROBLEM__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
-	* The number of structural features of the '<em>Criterium Related Protected Problem</em>' class.
-	* <!-- begin-user-doc -->
+	 * The number of structural features of the '<em>Criterium Related Protected Problem</em>' class.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CRITERIUM_RELATED_PROTECTED_PROBLEM_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
@@ -2626,12 +2626,12 @@ public interface CONSENTDIRECTIVEPackage extends EPackage {
 	int SECURITY_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
-	* The number of structural features of the '<em>Security Observation</em>' class.
-	* <!-- begin-user-doc -->
+	 * The number of structural features of the '<em>Security Observation</em>' class.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SECURITY_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
@@ -2924,12 +2924,12 @@ public interface CONSENTDIRECTIVEPackage extends EPackage {
 	int CONFIDENTIALITY_SECURITY_OBSERVATION__IN_FULFILLMENT_OF1 = SECURITY_OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
-	* The number of structural features of the '<em>Confidentiality Security Observation</em>' class.
-	* <!-- begin-user-doc -->
+	 * The number of structural features of the '<em>Confidentiality Security Observation</em>' class.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int CONFIDENTIALITY_SECURITY_OBSERVATION_FEATURE_COUNT = SECURITY_OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
@@ -3512,12 +3512,12 @@ public interface CONSENTDIRECTIVEPackage extends EPackage {
 	int OBLIGATION_POLICY_SECURITY_OBSERVATION__IN_FULFILLMENT_OF1 = SECURITY_OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
-	* The number of structural features of the '<em>Obligation Policy Security Observation</em>' class.
-	* <!-- begin-user-doc -->
+	 * The number of structural features of the '<em>Obligation Policy Security Observation</em>' class.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int OBLIGATION_POLICY_SECURITY_OBSERVATION_FEATURE_COUNT = SECURITY_OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
@@ -3810,12 +3810,12 @@ public interface CONSENTDIRECTIVEPackage extends EPackage {
 	int COMPUTABLE_POLICY_CONSENT__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
-	* The number of structural features of the '<em>Computable Policy Consent</em>' class.
-	* <!-- begin-user-doc -->
+	 * The number of structural features of the '<em>Computable Policy Consent</em>' class.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int COMPUTABLE_POLICY_CONSENT_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
@@ -4199,147 +4199,147 @@ public interface CONSENTDIRECTIVEPackage extends EPackage {
 	int SIGNATURE_IMAGE_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_MEDIA_FEATURE_COUNT + 0;
 
 	/**
-	* The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__REALM_CODE = CDAPackage.ENTRY__REALM_CODE;
 
 	/**
-	* The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__TYPE_ID = CDAPackage.ENTRY__TYPE_ID;
 
 	/**
-	* The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__TEMPLATE_ID = CDAPackage.ENTRY__TEMPLATE_ID;
 
 	/**
-	* The feature id for the '<em><b>Act</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Act</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__ACT = CDAPackage.ENTRY__ACT;
 
 	/**
-	* The feature id for the '<em><b>Encounter</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Encounter</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__ENCOUNTER = CDAPackage.ENTRY__ENCOUNTER;
 
 	/**
-	* The feature id for the '<em><b>Observation</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Observation</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__OBSERVATION = CDAPackage.ENTRY__OBSERVATION;
 
 	/**
-	* The feature id for the '<em><b>Observation Media</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Observation Media</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__OBSERVATION_MEDIA = CDAPackage.ENTRY__OBSERVATION_MEDIA;
 
 	/**
-	* The feature id for the '<em><b>Organizer</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Organizer</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__ORGANIZER = CDAPackage.ENTRY__ORGANIZER;
 
 	/**
-	* The feature id for the '<em><b>Procedure</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Procedure</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__PROCEDURE = CDAPackage.ENTRY__PROCEDURE;
 
 	/**
-	* The feature id for the '<em><b>Region Of Interest</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Region Of Interest</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__REGION_OF_INTEREST = CDAPackage.ENTRY__REGION_OF_INTEREST;
 
 	/**
-	* The feature id for the '<em><b>Substance Administration</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Substance Administration</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__SUBSTANCE_ADMINISTRATION = CDAPackage.ENTRY__SUBSTANCE_ADMINISTRATION;
 
 	/**
-	* The feature id for the '<em><b>Supply</b></em>' containment reference.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Supply</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__SUPPLY = CDAPackage.ENTRY__SUPPLY;
 
 	/**
-	* The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__NULL_FLAVOR = CDAPackage.ENTRY__NULL_FLAVOR;
 
 	/**
-	* The feature id for the '<em><b>Type Code</b></em>' attribute.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Type Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__TYPE_CODE = CDAPackage.ENTRY__TYPE_CODE;
 
 	/**
-	* The feature id for the '<em><b>Context Conduction Ind</b></em>' attribute.
-	* <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Context Conduction Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY__CONTEXT_CONDUCTION_IND = CDAPackage.ENTRY__CONTEXT_CONDUCTION_IND;
 
 	/**
-	* The number of structural features of the '<em>Signature Image Entry</em>' class.
-	* <!-- begin-user-doc -->
+	 * The number of structural features of the '<em>Signature Image Entry</em>' class.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int SIGNATURE_IMAGE_ENTRY_FEATURE_COUNT = CDAPackage.ENTRY_FEATURE_COUNT + 0;
 
 	/**
@@ -4705,12 +4705,12 @@ public interface CONSENTDIRECTIVEPackage extends EPackage {
 	int PURPOSE_OF_USE_SECURITY_OBSERVATION__IN_FULFILLMENT_OF1 = SECURITY_OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
-	* The number of structural features of the '<em>Purpose Of Use Security Observation</em>' class.
-	* <!-- begin-user-doc -->
+	 * The number of structural features of the '<em>Purpose Of Use Security Observation</em>' class.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int PURPOSE_OF_USE_SECURITY_OBSERVATION_FEATURE_COUNT = SECURITY_OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
@@ -5003,12 +5003,12 @@ public interface CONSENTDIRECTIVEPackage extends EPackage {
 	int REFRAIN_POLICY_SECURITY_OBSERVATION__IN_FULFILLMENT_OF1 = SECURITY_OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
-	* The number of structural features of the '<em>Refrain Policy Security Observation</em>' class.
-	* <!-- begin-user-doc -->
+	 * The number of structural features of the '<em>Refrain Policy Security Observation</em>' class.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	* @ordered
-	*/
+	 * @generated
+	 * @ordered
+	 */
 	int REFRAIN_POLICY_SECURITY_OBSERVATION_FEATURE_COUNT = SECURITY_OBSERVATION_FEATURE_COUNT + 0;
 
 	/**

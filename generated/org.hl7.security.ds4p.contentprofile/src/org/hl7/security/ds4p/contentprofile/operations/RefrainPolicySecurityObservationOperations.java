@@ -147,7 +147,7 @@ public class RefrainPolicySecurityObservationOperations extends SecurityObservat
 	 */
 	protected static final String VALIDATE_REFRAIN_POLICY_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
 			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
-			"value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'";
+			"value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20457'";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRefrainPolicySecurityObservationCode(RefrainPolicySecurityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Refrain Policy Security Observation Code</em>}' invariant operation.
