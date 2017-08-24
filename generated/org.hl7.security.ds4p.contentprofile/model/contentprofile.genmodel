@@ -206,24 +206,7 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/getPurposeOfUseSecurityObservations"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PrivacyAnnotation/getConfidentialityCodeSecurityObservation"/>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//RefrainPolicySecurityObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationValueP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationValueP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationValueP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//RefrainPolicySecurityObservation/RefrainPolicySecurityObservationValue/context"/>
-      </genOperations>
-    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//RefrainPolicySecurityObservation"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="contentprofile.ecore#//PurposeOfUseSecurityObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationCodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="contentprofile.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationCodeP/diagnostics"/>

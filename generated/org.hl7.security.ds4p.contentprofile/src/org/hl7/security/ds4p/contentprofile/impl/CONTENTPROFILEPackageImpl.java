@@ -185,7 +185,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 *
+	 * 
 	 * <p>This method is used to initialize {@link CONTENTPROFILEPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -1021,50 +1021,6 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 			refrainPolicySecurityObservationEClass, RefrainPolicySecurityObservation.class,
 			"RefrainPolicySecurityObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(
-			refrainPolicySecurityObservationEClass, ecorePackage.getEBoolean(),
-			"validateRefrainPolicySecurityObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			refrainPolicySecurityObservationEClass, ecorePackage.getEBoolean(),
-			"validateRefrainPolicySecurityObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			refrainPolicySecurityObservationEClass, ecorePackage.getEBoolean(),
-			"validateRefrainPolicySecurityObservationValueP", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			refrainPolicySecurityObservationEClass, ecorePackage.getEBoolean(),
-			"validateRefrainPolicySecurityObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		initEClass(purposeOfUseSecurityObservationEClass, PurposeOfUseSecurityObservation.class,
 			"PurposeOfUseSecurityObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1378,15 +1334,14 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 			refrainPolicySecurityObservationEClass, source,
 			new String[] {
 					"constraints.validation.error",
-					"SecurityObservationTemplateId RefrainPolicySecurityObservationCode RefrainPolicySecurityObservationCodeP RefrainPolicySecurityObservationValue RefrainPolicySecurityObservationValueP",
+					"SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP SecurityObservationValue SecurityObservationValueP",
 					"templateId.root", "2.16.840.1.113883.3.445.23", "code.code", "SECCONOBS", "code.codeSystem",
 					"2.16.840.1.113883.1.11.20457", "code.codeSystemName", "SecurityObservationTypeCodeSystem",
 					"code.displayName", "Security Control Observation Type",
-					"constraints.validation.dependOn.RefrainPolicySecurityObservationCode",
-					"RefrainPolicySecurityObservationCodeP", "value.codeSystem", "2.16.840.1.113883.1.11.20471",
-					"value.codeSystemName", "SecurityControlObservationValue",
-					"constraints.validation.dependOn.RefrainPolicySecurityObservationValue",
-					"RefrainPolicySecurityObservationValueP" });
+					"constraints.validation.dependOn.SecurityObservationCode", "SecurityObservationCodeP",
+					"value.codeSystem", "2.16.840.1.113883.1.11.20471", "value.codeSystemName",
+					"SecurityControlObservationValue", "constraints.validation.dependOn.SecurityObservationValue",
+					"SecurityObservationValueP" });
 		addAnnotation(
 			purposeOfUseSecurityObservationEClass, source,
 			new String[] {

@@ -370,44 +370,44 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	public static final int PRIVACY_ANNOTATION__PRIVACY_ANNOTATION_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION = 41;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Refrain Policy Security Observation Code P' of 'Refrain Policy Security Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int REFRAIN_POLICY_SECURITY_OBSERVATION__REFRAIN_POLICY_SECURITY_OBSERVATION_CODE_P = 42;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Refrain Policy Security Observation Code' of 'Refrain Policy Security Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int REFRAIN_POLICY_SECURITY_OBSERVATION__REFRAIN_POLICY_SECURITY_OBSERVATION_CODE = 43;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Refrain Policy Security Observation Value P' of 'Refrain Policy Security Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int REFRAIN_POLICY_SECURITY_OBSERVATION__REFRAIN_POLICY_SECURITY_OBSERVATION_VALUE_P = 44;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Refrain Policy Security Observation Value' of 'Refrain Policy Security Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int REFRAIN_POLICY_SECURITY_OBSERVATION__REFRAIN_POLICY_SECURITY_OBSERVATION_VALUE = 45;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Template Id' of 'Refrain Policy Security Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REFRAIN_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID = 46;
+	public static final int REFRAIN_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID = 42;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Code P' of 'Refrain Policy Security Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int REFRAIN_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE_P = 43;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Code' of 'Refrain Policy Security Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int REFRAIN_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE = 44;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Value P' of 'Refrain Policy Security Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int REFRAIN_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE_P = 45;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Value' of 'Refrain Policy Security Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int REFRAIN_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE = 46;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Purpose Of Use Security Observation Code P' of 'Purpose Of Use Security Observation'.
@@ -2798,86 +2798,22 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				refrainPolicySecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationCodeP(
+			result &= validateRefrainPolicySecurityObservation_validateSecurityObservationCodeP(
 				refrainPolicySecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationCode(
+			result &= validateRefrainPolicySecurityObservation_validateSecurityObservationCode(
 				refrainPolicySecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationValue(
+			result &= validateRefrainPolicySecurityObservation_validateSecurityObservationValue(
 				refrainPolicySecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationValueP(
-				refrainPolicySecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationCodeP(
-				refrainPolicySecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationCode(
-				refrainPolicySecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationValueP(
-				refrainPolicySecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationValue(
+			result &= validateRefrainPolicySecurityObservation_validateSecurityObservationValueP(
 				refrainPolicySecurityObservation, diagnostics, context);
 		}
 		return result;
-	}
-
-	/**
-	 * Validates the validateRefrainPolicySecurityObservationCodeP constraint of '<em>Refrain Policy Security Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationCodeP(
-			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return refrainPolicySecurityObservation.validateRefrainPolicySecurityObservationCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateRefrainPolicySecurityObservationCode constraint of '<em>Refrain Policy Security Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationCode(
-			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return refrainPolicySecurityObservation.validateRefrainPolicySecurityObservationCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateRefrainPolicySecurityObservationValueP constraint of '<em>Refrain Policy Security Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationValueP(
-			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return refrainPolicySecurityObservation.validateRefrainPolicySecurityObservationValueP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateRefrainPolicySecurityObservationValue constraint of '<em>Refrain Policy Security Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRefrainPolicySecurityObservation_validateRefrainPolicySecurityObservationValue(
-			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return refrainPolicySecurityObservation.validateRefrainPolicySecurityObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -2890,6 +2826,54 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return refrainPolicySecurityObservation.validateSecurityObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSecurityObservationCodeP constraint of '<em>Refrain Policy Security Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationCodeP(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return refrainPolicySecurityObservation.validateSecurityObservationCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSecurityObservationCode constraint of '<em>Refrain Policy Security Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationCode(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return refrainPolicySecurityObservation.validateSecurityObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSecurityObservationValueP constraint of '<em>Refrain Policy Security Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationValueP(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return refrainPolicySecurityObservation.validateSecurityObservationValueP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSecurityObservationValue constraint of '<em>Refrain Policy Security Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRefrainPolicySecurityObservation_validateSecurityObservationValue(
+			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return refrainPolicySecurityObservation.validateSecurityObservationValue(diagnostics, context);
 	}
 
 	/**

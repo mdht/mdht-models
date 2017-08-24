@@ -52,57 +52,49 @@ public class RefrainPolicySecurityObservationImpl extends SecurityObservationImp
 	 * @generated
 	 */
 	@Override
-	public boolean validateRefrainPolicySecurityObservationCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RefrainPolicySecurityObservationOperations.validateRefrainPolicySecurityObservationCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateRefrainPolicySecurityObservationCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RefrainPolicySecurityObservationOperations.validateRefrainPolicySecurityObservationCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateRefrainPolicySecurityObservationValueP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RefrainPolicySecurityObservationOperations.validateRefrainPolicySecurityObservationValueP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateRefrainPolicySecurityObservationValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RefrainPolicySecurityObservationOperations.validateRefrainPolicySecurityObservationValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateSecurityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return RefrainPolicySecurityObservationOperations.validateSecurityObservationTemplateId(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSecurityObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RefrainPolicySecurityObservationOperations.validateSecurityObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSecurityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RefrainPolicySecurityObservationOperations.validateSecurityObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSecurityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RefrainPolicySecurityObservationOperations.validateSecurityObservationValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RefrainPolicySecurityObservationOperations.validateSecurityObservationValue(this, diagnostics, context);
 	}
 
 	/**

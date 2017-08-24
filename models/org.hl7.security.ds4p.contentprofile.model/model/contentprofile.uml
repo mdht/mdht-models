@@ -904,7 +904,7 @@
           Healthcare Security Classification (HCS) standard.</body>
       </ownedComment>
       <generalization xmi:id="_yni2YGeaEeOu4KcTyYBqzA" general="_ECQ2QGeaEeOu4KcTyYBqzA"/>
-      <ownedAttribute xmi:id="_OYUrI2eaEeOu4KcTyYBqzA" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_OYUrI2eaEeOu4KcTyYBqzA" name="code" visibility="private" aggregation="composite" redefinedProperty="_ECQ2Q2eaEeOu4KcTyYBqzA">
         <ownedComment xmi:id="_OYUrJGeaEeOu4KcTyYBqzA">
           <body>This element specifies the type of security metadata observation made about the
             control of an IT resource (data, information object, service, or system capability),
@@ -915,16 +915,14 @@
             resource.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_OYUrJWeaEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_OYUrJWeaEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite" redefinedProperty="_ECQ2RWeaEeOu4KcTyYBqzA">
         <ownedComment xmi:id="_OYUrJmeaEeOu4KcTyYBqzA">
           <body>This attribute specifies a type of refrain policy, specifically.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OYUrKGeaEeOu4KcTyYBqzA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OYUrJ2eaEeOu4KcTyYBqzA" value="1"/>
-        <redefinedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_d4Y_YGedEeOu4KcTyYBqzA" name="PurposeOfUseSecurityObservation">
@@ -1249,7 +1247,7 @@
     <ruleId>CONF:16839</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_ECQ2UWeaEeOu4KcTyYBqzA" base_Property="_ECQ2RWeaEeOu4KcTyYBqzA">
-    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_3RPYMbg8EeKo5fRjhOhZFA"/>
+    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_3RPYMbg8EeKo5fRjhOhZFA"/>
     <ruleId>CONF:16840</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_ECQ2UmeaEeOu4KcTyYBqzA" base_Property="_ECQ2SWeaEeOu4KcTyYBqzA">
@@ -1269,7 +1267,7 @@
     <ruleId>CONF:9134</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_OYUrN2eaEeOu4KcTyYBqzA" base_Property="_OYUrJWeaEeOu4KcTyYBqzA">
-    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_DypusYxpEeKIvYMIfi9SOQ"/>
+    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_DypusYxpEeKIvYMIfi9SOQ"/>
     <ruleId>CONF:9135</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CDATemplate xmi:id="_cjNciGeaEeOu4KcTyYBqzA" base_Class="_cjNcgGeaEeOu4KcTyYBqzA" templateId="2.16.840.1.113883.3.445.14" assigningAuthorityName="HL7">
