@@ -1217,7 +1217,7 @@ The effectiveTime element is used to describe dates associated with the patient'
     <ruleId>CONF:1098-19174</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_gpO3QPMyEeOUvapeh9bVvQ" code="11367-0" displayName="History of tobacco use" base_Property="_gpOQMPMyEeOUvapeh9bVvQ">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.umlCodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-19175</ruleId>
     <ruleId>CONF:1098-32172</ruleId>
   </CDA:CodeSystemConstraint>
@@ -1276,7 +1276,7 @@ The effectiveTime element is used to describe dates associated with the patient'
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_9aG5gAFHEeSG_MJH-zNFRw" base_Generalization="_wLZcgAFHEeSG_MJH-zNFRw"/>
   <CDA:CodeSystemConstraint xmi:id="_l7q08AFOEeSG_MJH-zNFRw" code="29762-2" displayName="Social History" base_Property="_l7qN4AFOEeSG_MJH-zNFRw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.umlCodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-14820, CONF:1198-30814</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_l7tRMAFOEeSG_MJH-zNFRw" base_Property="_l7qN4AFOEeSG_MJH-zNFRw">
