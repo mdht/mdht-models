@@ -776,7 +776,7 @@ The Physical Exam Section may contain multiple nested subsections.&#xD;
     <ruleId>CONF:1198-29493</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_HKsBID6xEeSQrqXAgqtM5g" code="272741003" displayName="laterality" base_Property="_A9KH4D6xEeSQrqXAgqtM5g">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.umlCodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-29492, CONF:1198-31524</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_VJmzED6xEeSQrqXAgqtM5g" base_Property="_T9TYAD6xEeSQrqXAgqtM5g">
