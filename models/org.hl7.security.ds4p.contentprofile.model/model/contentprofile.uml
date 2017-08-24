@@ -940,7 +940,7 @@
             &quot;Security Control&quot; observation types.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
+        <redefinedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_d4Y_ZGedEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_d4Y_ZWedEeOu4KcTyYBqzA">
@@ -950,7 +950,7 @@
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sBaEUWekEeOUsp1D9sWlOg" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sBaEUGekEeOUsp1D9sWlOg" value="1"/>
-        <subsettedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
+        <subsettedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
     </packagedElement>
     <profileApplication xmi:id="_ixAdA92ZEeKXEcqvv8gwcA">
@@ -1305,14 +1305,14 @@
     <ruleId>CONF:14841</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_d4Y_a2edEeOu4KcTyYBqzA" code="SECCONOBS" displayName="Security Control" base_Property="_d4Y_YmedEeOu4KcTyYBqzA">
-    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+    <reference href="pathmap://CONTENTPROFILE_MODEL///contentprofile-vocab.uml#_3-WtyuovEeKrOYS9kpIZsQ"/>
     <ruleId>CONF:14883</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_d4Y_bGedEeOu4KcTyYBqzA" mandatory="true" base_Property="_d4Y_ZGedEeOu4KcTyYBqzA">
     <ruleId>CONF:9074</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_d4Y_bWedEeOu4KcTyYBqzA" base_Property="_d4Y_ZGedEeOu4KcTyYBqzA">
-    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_ecZIEIxWEeKqi7cG0-P5Sg"/>
+    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_ecZIEIxWEeKqi7cG0-P5Sg"/>
     <ruleId>CONF:14888</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_EwuxQWgHEeOZxdiNEEVgLA" mandatory="true" base_Property="_EwuxQGgHEeOZxdiNEEVgLA">
