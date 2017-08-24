@@ -6001,6 +6001,12 @@ OIDs SHALL be no more than 64 characters in length..</body>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oI-v4TWCEeWSirBmKjo0Zw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oI-v4DWCEeWSirBmKjo0Zw" value="1"/>
           </ownedAttribute>
+          <ownedAttribute xmi:id="_Ul7_EIdqEeeEdPtCCB--vA" name="sDTCEthnicGroupCode" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ul7_EYdqEeeEdPtCCB--vA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ul7_EodqEeeEdPtCCB--vA" value="*"/>
+            <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_dJAAkIdPEeeAsbPrNOnubg"/>
+          </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_al6nABwQEeSMr-NWzQuDBw" name="Guardian">
             <ownedRule xmi:id="_ildAUFP-EeSRgsl8Ss66oQ" name="CodeFromPersonalRelationshipOrResponsibleParty">
               <specification xmi:type="uml:OpaqueExpression" xmi:id="_ildAUVP-EeSRgsl8Ss66oQ">
@@ -14745,4 +14751,10 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <ruleId>CONF:1198-28682</ruleId>
     <ruleId>DSTU:618</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_WH-ZkIdqEeeEdPtCCB--vA" severity="INFO" base_Property="_Ul7_EIdqEeeEdPtCCB--vA">
+    <ruleId>1198-32901</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_W-4zcIdqEeeEdPtCCB--vA" base_Property="_Ul7_EIdqEeeEdPtCCB--vA" uri="consol-vocab::Detailed Ethnicity">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_cL0AwIdpEeeAsbPrNOnubg"/>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
