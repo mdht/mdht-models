@@ -12,7 +12,7 @@ public class TestValidation {
 
 	public static void main(String[] args) throws FileNotFoundException, Exception {
 
-		CONTENTPROFILEPackage.eINSTANCE.getMandatoryDocumentAssignedAuthor();
+		CONTENTPROFILEPackage.eINSTANCE.eClass();
 
 		ValidationHandler handler = new ValidationHandler() {
 
@@ -35,6 +35,10 @@ public class TestValidation {
 		};
 
 		DS4PUtil.validateAsDS4P(new FileInputStream("samples/SegmentedDocumentContentProfileSample.xml"), handler);
+		System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+		DS4PUtil.validateAsDS4P(new FileInputStream("samples/ds4pAmbTest1.xml"), handler);
+		System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+		DS4PUtil.validateAsDS4P(new FileInputStream("samples/170.315_b8_ds4p_amb_sample1_v2.xml"), handler);
 
 	}
 

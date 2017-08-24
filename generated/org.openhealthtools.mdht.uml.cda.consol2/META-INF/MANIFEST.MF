@@ -22,3 +22,4 @@ Export-Package: org.openhealthtools.mdht.uml.cda.consol,
  org.openhealthtools.mdht.uml.cda.consol.impl,
  org.openhealthtools.mdht.uml.cda.consol.operations,
  org.openhealthtools.mdht.uml.cda.consol.util
+Import-Package: org.apache.commons.lang
