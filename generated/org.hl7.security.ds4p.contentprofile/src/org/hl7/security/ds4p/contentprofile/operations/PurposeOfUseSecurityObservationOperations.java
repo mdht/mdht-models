@@ -146,7 +146,7 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	 */
 	protected static final String VALIDATE_PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
 			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
-			"value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'";
+			"value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20457'";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePurposeOfUseSecurityObservationCode(PurposeOfUseSecurityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purpose Of Use Security Observation Code</em>}' invariant operation.

@@ -665,26 +665,26 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 			case CONTENTPROFILEPackage.PRIVACY_MARKINGS_SECTION:
 				return validatePrivacyMarkingsSection((PrivacyMarkingsSection) value, diagnostics, context);
 			case CONTENTPROFILEPackage.OBLIGATION_POLICY_SECURITY_OBSERVATION:
-				return validateObligationPolicySecurityObservation(
-					(ObligationPolicySecurityObservation) value, diagnostics, context);
+				return validateObligationPolicySecurityObservation((ObligationPolicySecurityObservation) value,
+					diagnostics, context);
 			case CONTENTPROFILEPackage.SECURITY_OBSERVATION:
 				return validateSecurityObservation((SecurityObservation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.MANDATORY_DOCUMENT_PROVENANCE:
 				return validateMandatoryDocumentProvenance((MandatoryDocumentProvenance) value, diagnostics, context);
 			case CONTENTPROFILEPackage.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR:
-				return validateMandatoryDocumentAssignedAuthor(
-					(MandatoryDocumentAssignedAuthor) value, diagnostics, context);
+				return validateMandatoryDocumentAssignedAuthor((MandatoryDocumentAssignedAuthor) value, diagnostics,
+					context);
 			case CONTENTPROFILEPackage.PRIVACY_ANNOTATION:
 				return validatePrivacyAnnotation((PrivacyAnnotation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.REFRAIN_POLICY_SECURITY_OBSERVATION:
-				return validateRefrainPolicySecurityObservation(
-					(RefrainPolicySecurityObservation) value, diagnostics, context);
+				return validateRefrainPolicySecurityObservation((RefrainPolicySecurityObservation) value, diagnostics,
+					context);
 			case CONTENTPROFILEPackage.PURPOSE_OF_USE_SECURITY_OBSERVATION:
-				return validatePurposeOfUseSecurityObservation(
-					(PurposeOfUseSecurityObservation) value, diagnostics, context);
+				return validatePurposeOfUseSecurityObservation((PurposeOfUseSecurityObservation) value, diagnostics,
+					context);
 			case CONTENTPROFILEPackage.CONFIDENTIALITY_SECURITY_OBSERVATION:
-				return validateConfidentialitySecurityObservation(
-					(ConfidentialitySecurityObservation) value, diagnostics, context);
+				return validateConfidentialitySecurityObservation((ConfidentialitySecurityObservation) value,
+					diagnostics, context);
 			case CONTENTPROFILEPackage.PROTECTED_PROBLEM:
 				return validateProtectedProblem((ProtectedProblem) value, diagnostics, context);
 			case CONTENTPROFILEPackage.MANDATORY_ENTRY_PROVENANCE:
@@ -692,8 +692,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 			case CONTENTPROFILEPackage.MANDATORY_ENTRY_ASSIGNED_AUTHOR:
 				return validateMandatoryEntryAssignedAuthor((MandatoryEntryAssignedAuthor) value, diagnostics, context);
 			case CONTENTPROFILEPackage.PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP:
-				return validatePrivacyAnnotationEntryRelationship(
-					(PrivacyAnnotationEntryRelationship) value, diagnostics, context);
+				return validatePrivacyAnnotationEntryRelationship((PrivacyAnnotationEntryRelationship) value,
+					diagnostics, context);
 			case CONTENTPROFILEPackage.PRIVACY_MARKINGS_ENTRY:
 				return validatePrivacyMarkingsEntry((PrivacyMarkingsEntry) value, diagnostics, context);
 			default:

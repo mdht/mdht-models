@@ -599,9 +599,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(
-			privacySegmentedDocumentEClass, this.getPrivacySegmentedSection(), "getSegmentedSections", 1, -1, IS_UNIQUE,
-			!IS_ORDERED);
+		addEOperation(privacySegmentedDocumentEClass, this.getPrivacySegmentedSection(), "getSegmentedSections", 1, -1,
+			IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
 			privacySegmentedDocumentEClass, this.getPrivacyMarkingsSection(), "getPrivacyAndSecurityMarkingsSections",
@@ -655,8 +654,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(
-			privacyMarkingsSectionEClass, PrivacyMarkingsSection.class, "PrivacyMarkingsSection", !IS_ABSTRACT,
+		initEClass(privacyMarkingsSectionEClass, PrivacyMarkingsSection.class, "PrivacyMarkingsSection", !IS_ABSTRACT,
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
@@ -714,8 +712,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(
-			obligationPolicySecurityObservationEClass, ObligationPolicySecurityObservation.class,
+		initEClass(obligationPolicySecurityObservationEClass, ObligationPolicySecurityObservation.class,
 			"ObligationPolicySecurityObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
@@ -740,9 +737,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(
-			securityObservationEClass, SecurityObservation.class, "SecurityObservation", IS_ABSTRACT, !IS_INTERFACE,
-			IS_GENERATED_INSTANCE_CLASS);
+		initEClass(securityObservationEClass, SecurityObservation.class, "SecurityObservation", IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			securityObservationEClass, ecorePackage.getEBoolean(), "validateSecurityObservationTemplateId", 0, 1,
@@ -810,8 +806,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(
-			mandatoryDocumentProvenanceEClass, MandatoryDocumentProvenance.class, "MandatoryDocumentProvenance",
+		initEClass(mandatoryDocumentProvenanceEClass, MandatoryDocumentProvenance.class, "MandatoryDocumentProvenance",
 			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
@@ -847,8 +842,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(
-			mandatoryDocumentAssignedAuthorEClass, MandatoryDocumentAssignedAuthor.class,
+		initEClass(mandatoryDocumentAssignedAuthorEClass, MandatoryDocumentAssignedAuthor.class,
 			"MandatoryDocumentAssignedAuthor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
@@ -906,8 +900,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(
-			privacyAnnotationEClass, PrivacyAnnotation.class, "PrivacyAnnotation", !IS_ABSTRACT, !IS_INTERFACE,
+		initEClass(privacyAnnotationEClass, PrivacyAnnotation.class, "PrivacyAnnotation", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
@@ -1009,8 +1002,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(
-			privacyAnnotationEClass, this.getObligationPolicySecurityObservation(),
+		addEOperation(privacyAnnotationEClass, this.getObligationPolicySecurityObservation(),
 			"getObligationPolicySecurityObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
@@ -1073,8 +1065,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(
-			purposeOfUseSecurityObservationEClass, PurposeOfUseSecurityObservation.class,
+		initEClass(purposeOfUseSecurityObservationEClass, PurposeOfUseSecurityObservation.class,
 			"PurposeOfUseSecurityObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
@@ -1121,12 +1112,10 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(
-			confidentialitySecurityObservationEClass, ConfidentialitySecurityObservation.class,
+		initEClass(confidentialitySecurityObservationEClass, ConfidentialitySecurityObservation.class,
 			"ConfidentialitySecurityObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(
-			protectedProblemEClass, ProtectedProblem.class, "ProtectedProblem", !IS_ABSTRACT, !IS_INTERFACE,
+		initEClass(protectedProblemEClass, ProtectedProblem.class, "ProtectedProblem", !IS_ABSTRACT, !IS_INTERFACE,
 			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
@@ -1151,9 +1140,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(
-			mandatoryEntryProvenanceEClass, MandatoryEntryProvenance.class, "MandatoryEntryProvenance", !IS_ABSTRACT,
-			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(mandatoryEntryProvenanceEClass, MandatoryEntryProvenance.class, "MandatoryEntryProvenance",
+			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			mandatoryEntryProvenanceEClass, ecorePackage.getEBoolean(), "validateMandatoryEntryProvenanceTemplateId", 0,
@@ -1188,9 +1176,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(
-			mandatoryEntryAssignedAuthorEClass, MandatoryEntryAssignedAuthor.class, "MandatoryEntryAssignedAuthor",
-			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(mandatoryEntryAssignedAuthorEClass, MandatoryEntryAssignedAuthor.class,
+			"MandatoryEntryAssignedAuthor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			mandatoryEntryAssignedAuthorEClass, ecorePackage.getEBoolean(),
@@ -1236,8 +1223,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(
-			privacyAnnotationEntryRelationshipEClass, PrivacyAnnotationEntryRelationship.class,
+		initEClass(privacyAnnotationEntryRelationshipEClass, PrivacyAnnotationEntryRelationship.class,
 			"PrivacyAnnotationEntryRelationship", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
@@ -1262,9 +1248,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(
-			privacyMarkingsEntryEClass, PrivacyMarkingsEntry.class, "PrivacyMarkingsEntry", !IS_ABSTRACT, !IS_INTERFACE,
-			IS_GENERATED_INSTANCE_CLASS);
+		initEClass(privacyMarkingsEntryEClass, PrivacyMarkingsEntry.class, "PrivacyMarkingsEntry", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			privacyMarkingsEntryEClass, ecorePackage.getEBoolean(), "validatePrivacyMarkingsEntryTemplateId", 0, 1,
@@ -1408,7 +1393,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 					"constraints.validation.error",
 					"SecurityObservationTemplateId PurposeOfUseSecurityObservationCode PurposeOfUseSecurityObservationCodeP PurposeOfUseSecurityObservationValue PurposeOfUseSecurityObservationValueP",
 					"templateId.root", "2.16.840.1.113883.3.445.22", "code.code", "SECCONOBS", "code.codeSystem",
-					"2.16.840.1.113883.1.11.20471", "code.codeSystemName", "SecurityControlObservationValue",
+					"2.16.840.1.113883.1.11.20457", "code.codeSystemName", "SecurityObservationTypeCodeSystem",
 					"code.displayName", "Security Control",
 					"constraints.validation.dependOn.PurposeOfUseSecurityObservationCode",
 					"PurposeOfUseSecurityObservationCodeP", "value.codeSystem", "2.16.840.1.113883.5.1063",
