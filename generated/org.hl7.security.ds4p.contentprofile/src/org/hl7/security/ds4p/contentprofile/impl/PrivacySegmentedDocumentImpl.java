@@ -12,8 +12,6 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
@@ -22,6 +20,7 @@ import org.hl7.security.ds4p.contentprofile.PrivacySegmentedDocument;
 import org.hl7.security.ds4p.contentprofile.PrivacySegmentedSection;
 
 import org.hl7.security.ds4p.contentprofile.operations.PrivacySegmentedDocumentOperations;
+import org.openhealthtools.mdht.uml.cda.consol.impl.GeneralHeaderConstraintsImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +29,7 @@ import org.hl7.security.ds4p.contentprofile.operations.PrivacySegmentedDocumentO
  *
  * @generated
  */
-public class PrivacySegmentedDocumentImpl extends EObjectImpl implements PrivacySegmentedDocument {
+public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl implements PrivacySegmentedDocument {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -56,8 +55,10 @@ public class PrivacySegmentedDocumentImpl extends EObjectImpl implements Privacy
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacySegmentedDocumentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentTemplateId(this, diagnostics, context);
+	public boolean validatePrivacySegmentedDocumentTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +77,10 @@ public class PrivacySegmentedDocumentImpl extends EObjectImpl implements Privacy
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacySegmentedDocumentSegmentedSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentSegmentedSection(this, diagnostics, context);
+	public boolean validatePrivacySegmentedDocumentSegmentedSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentSegmentedSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +89,10 @@ public class PrivacySegmentedDocumentImpl extends EObjectImpl implements Privacy
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(this, diagnostics, context);
+	public boolean validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -117,16 +122,17 @@ public class PrivacySegmentedDocumentImpl extends EObjectImpl implements Privacy
 	 */
 	@Override
 	public PrivacySegmentedDocument init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public PrivacySegmentedDocument init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //PrivacySegmentedDocumentImpl
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // PrivacySegmentedDocumentImpl

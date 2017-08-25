@@ -449,7 +449,7 @@
     <ruleId>CONF:1098-30341</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_EiOuoI3MEeOB0eBUISUB4Q" code="active" displayName="Active" base_Property="_KJ-edY3FEeOB0eBUISUB4Q">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.umlCodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31698</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_SUujQI3OEeOB0eBUISUB4Q" severity="WARNING" base_Property="_KJ-ecI3FEeOB0eBUISUB4Q">
@@ -638,7 +638,7 @@
     <ruleId>CONF:1098-30893</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2ErYsI63EeOB0eBUISUB4Q" code="active" displayName="Active" base_Property="_Bz51YY63EeOB0eBUISUB4Q">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.umlCodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31598</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_wjuNYI6-EeOB0eBUISUB4Q" base_Property="_Bz4nQY63EeOB0eBUISUB4Q">

@@ -80,7 +80,7 @@ public interface PrivacyAnnotation extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'active\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'active\''"
 	 * @generated
 	 */
 	boolean validatePrivacyAnnotationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -95,7 +95,8 @@ public interface PrivacyAnnotation extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::ObligationPolicySecurityObservation))'"
 	 * @generated
 	 */
-	boolean validatePrivacyAnnotationObligationPolicySecurityObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyAnnotationObligationPolicySecurityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,7 +108,8 @@ public interface PrivacyAnnotation extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::RefrainPolicySecurityObservation))'"
 	 * @generated
 	 */
-	boolean validatePrivacyAnnotationRefrainPolicySecurityObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyAnnotationRefrainPolicySecurityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -119,7 +121,8 @@ public interface PrivacyAnnotation extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::PurposeOfUseSecurityObservation))'"
 	 * @generated
 	 */
-	boolean validatePrivacyAnnotationPurposeOfUseSecurityObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyAnnotationPurposeOfUseSecurityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -131,7 +134,8 @@ public interface PrivacyAnnotation extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::ConfidentialitySecurityObservation))'"
 	 * @generated
 	 */
-	boolean validatePrivacyAnnotationConfidentialityCodeSecurityObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyAnnotationConfidentialityCodeSecurityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -175,10 +179,11 @@ public interface PrivacyAnnotation extends Organizer {
 	 * @generated
 	 */
 	public PrivacyAnnotation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PrivacyAnnotation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyAnnotation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrivacyAnnotation

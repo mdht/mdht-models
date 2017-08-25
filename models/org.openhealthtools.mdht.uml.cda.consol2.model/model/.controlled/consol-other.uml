@@ -1430,7 +1430,7 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
     <ruleId>CONF:14358</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_r1Ki8Ob1EeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_A3WOMOb0EeGINOJ_SD9_dA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.umlCodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_cHvLUOb2EeGINOJ_SD9_dA" base_Association="_aWvu0Ob2EeGINOJ_SD9_dA">
     <ruleId>CONF:14359</ruleId>
@@ -2748,7 +2748,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
     <ruleId>CONF:1098-14358</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_YRfRQOD_EeOmBMTtnrPqww" code="completed" displayName="Completed" base_Property="_YReDIOD_EeOmBMTtnrPqww">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.umlCodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31434</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_xJoPgOD_EeOmBMTtnrPqww" memberEnd="_xJnBYOD_EeOmBMTtnrPqww _xJo2kOD_EeOmBMTtnrPqww">

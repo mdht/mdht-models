@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_ixMqQN2ZEeKXEcqvv8gwcA" name="contentprofile-vocab">
+    <ownedComment xmi:id="_9Bqg8GdPEeOu4KcTyYBqzA">
+      <body>The terminoloyg/value sets section contains the value set bindings referenced by the
+        templates and constraints used throughout this IG. It provides the links and information
+        required to look up the terminology.</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3-WtjeovEeKrOYS9kpIZsQ" name="ActConsentType">
+      <ownedComment xmi:id="_3-WtjuovEeKrOYS9kpIZsQ">
+        <body>This value set is used to specify the disclosure or use action associated with
+          a&#xD; privacy consent directive. The readers are encouraged to refer to the source
+          value set definitions for a comprehensive description and explanation of codes.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3-WtheovEeKrOYS9kpIZsQ" name="ActPrivacyLaw">
+      <ownedComment xmi:id="_3-WthuovEeKrOYS9kpIZsQ">
+        <body>This value set identifies a privacy policy as a coded value. These codes may encode
+          commonly used US policies (e.g .HIPAA self-pay, 42 CFR Part 2, Title 38 section 7332). The
+          readers are encouraged to refer to the source value set definitions for a comprehensive
+          description and explanation of codes.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3-WtmeovEeKrOYS9kpIZsQ" name="ConsenterParticipationFunction">
+      <ownedComment xmi:id="_3-WtmuovEeKrOYS9kpIZsQ">
+        <body>This value set is used to specify the relationship between the individual&#xD;
+          authenticating the privacy consent directive and the person who is the target of
+          that&#xD; record. This value set may specify a spouse, parent, child, etc. The readers
+          are encouraged to refer to the source value set definitions for a comprehensive
+          description and explanation of codes.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3-WtfOovEeKrOYS9kpIZsQ" name="HL7 ObligationPolicyCode">
+      <ownedComment xmi:id="_3-WtfeovEeKrOYS9kpIZsQ">
+        <body>Conveys the mandated workflow action that an information custodian, receiver, or
+          user&#xD; must perform . &#xD; Description: Per ISO 22600-2, ObligationPolicy
+          instances 'are&#xD; event-triggered and define actions to be performed by manager
+          agent'. Per HL7 Composite&#xD; Security and Privacy Domain Analysis Model: This value
+          set refers to the action required&#xD; to receive the permission specified in the
+          privacy rule. [Nov Harm - Per OASIS XACML, an&#xD; obligation is an operation
+          specified in a policy or policy that is performed in&#xD; conjunction with the
+          enforcement of an access control decision.&#xD; The obligation code may specify
+          &quot;comply with consent directive&quot;, &quot;encrypt
+          information&quot;. etc. The readers are encouraged to refer to the source value set
+          definitions for a comprehensive description and explanation of codes.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3-Wtd-ovEeKrOYS9kpIZsQ" name="HL7 PurposeOfUse">
+      <ownedComment xmi:id="_3-WteOovEeKrOYS9kpIZsQ">
+        <body>The rationale or purpose for an act relating to the management of personal
+          health&#xD; information, such as collecting personal health information for research
+          or public health&#xD; purposes.&#xD; This value set specifies codes for
+          &quot;Treatment&quot;, &quot;Payment&quot;,
+          &quot;Operations&quot;, etc.&#xD; The readers are encouraged to refer to the
+          source value set definitions for a comprehensive description and explanation of
+        codes.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3-WtgeovEeKrOYS9kpIZsQ" name="HL7 RefrainPolicy">
+      <ownedComment xmi:id="_3-WtguovEeKrOYS9kpIZsQ">
+        <body>Conveys prohibited actions which an information custodian, receiver, or user is
+          not&#xD; permitted to perform unless otherwise authorized or permitted under
+          specified&#xD; circumstances.&#xD; Description: ISO 22600-2 species that a Refrain
+          Policy&#xD; &quot;defines actions the subjects must refrain from
+          performing&quot;. Per HL7&#xD; Composite Security and Privacy Domain Analysis
+          Model: May be used to indicate that a&#xD; specific action is prohibited based on
+          specific access control attributes e.g., purpose of&#xD; use, information type, user
+          role, etc.&#xD; Note: this value set is currently&#xD; specified in the ActCode
+          code system but is actually a child of&#xD; SecurityControlObservationValue. This
+          value set includes codes such as NORDSLCD (Prohibition on redisclosure without patient
+          consent directive).The readers are encouraged to refer to the source value set definitions
+          for a comprehensive description and explanation of codes.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3-WtpOovEeKrOYS9kpIZsQ" name="SecurityObservationTypeCodeSystem">
+      <ownedComment xmi:id="_3-WtpeovEeKrOYS9kpIZsQ">
+        <body>Type of security meta data observation made about an IT resource (data,
+          information&#xD; object, service, or system capability), which may be used to make
+          access control&#xD; decisions. Security meta data are used in security labels.
+          According to ISO/TS&#xD; 22600-3:2009(E) A.9.1.7 SECURITY LABEL MATCHING, Security
+          label matching compares the&#xD; initiator™s clearance to the target's security label.
+          The readers are encouraged to refer to the source value set definitions for a
+          comprehensive description and explanation of codes.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3-WtouovEeKrOYS9kpIZsQ" name="SecurityObservationValueCodeSystem">
+      <ownedComment xmi:id="_3-Wto-ovEeKrOYS9kpIZsQ">
+        <body>This coding system is the parent code system for purpose of use, obligation,
+          refrain.&#xD; etc. The readers are encouraged to refer to the source value set
+          definitions for a comprehensive description and explanation of codes.</body>
+      </ownedComment>
+    </packagedElement>
+    <profileApplication xmi:id="_ixMqQd2ZEeKXEcqvv8gwcA">
+      <eAnnotations xmi:id="_ixMqQt2ZEeKXEcqvv8gwcA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <term:ValueSetVersion xmi:id="_3-WtueovEeKrOYS9kpIZsQ" identifier="2.16.840.1.113883.1.11.19897" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vocabulary.html" definition="This value setsystem is used to specify the action referred by a consent directive. the type of consent directive, e.g., to consent or dissent to collect, access, or use in specific ways within an EHRS or for health information exchange; or to disclose health information for purposes such as research." base_Enumeration="_3-WtjeovEeKrOYS9kpIZsQ">
+    <codeSystem href="pathmap://TERM_MODEL/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_3-WtteovEeKrOYS9kpIZsQ" identifier="2.16.840.1.113883.5.1138" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot2013SEP/html/infrastructure/vocabulary/vs_ActUSPrivacyLaw.html" definition="This is a specialization of ActPrivacyLaw represents a jurisdictional mandate in the US relating to privacy.&#xD;&#xA;ActPrivacyLaw codes may be associated with an Act or a Role to indicate the legal provision to which the assignment of an Act.confidentialityCode or Role.confidentialtyCode complies. May be used to further specify rationale for assignment of other ActPrivacyPolicy codes in the US realm, e.g., ETH and 42CFRPart2 can be differentiated from ETH and Title38Part1." type="Intensional" binding="Dynamic" base_Enumeration="_3-WtheovEeKrOYS9kpIZsQ">
+    <codeSystem href="pathmap://TERM_MODEL/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_3-WtweovEeKrOYS9kpIZsQ" identifier="2.16.840.1.113883.1.11.19930" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vocabulary.html" definition="This value set be used to specify the client's relationship to the Substitute Decision Maker – if one is involved in the creation of the privacy consent directive" type="Intensional" binding="Dynamic" base_Enumeration="_3-WtmeovEeKrOYS9kpIZsQ">
+    <codeSystem href="pathmap://TERM_MODEL/model/CodeSystems.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_3-Wtr-ovEeKrOYS9kpIZsQ" identifier="2.16.840.1.113883.1.11.20445" fullName="Obligation Policy Code" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot2013SEP/html/infrastructure/vocabulary/vs_ActCode.html#ObligationPolicy" definition="Conveys the mandated workflow action that an information custodian, receiver, or user must perform." base_Enumeration="_3-WtfOovEeKrOYS9kpIZsQ">
+    <codeSystem href="pathmap://TERM_MODEL/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_3-Wtq-ovEeKrOYS9kpIZsQ" identifier="2.16.840.1.113883.1.11.20448" fullName="Purpose of Use" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vocabulary.html" definition="Reason for performing one or more operations on information, which may be permitted by source system’s security policy in accordance with one or more privacy policies and consent directives." base_Enumeration="_3-Wtd-ovEeKrOYS9kpIZsQ">
+    <codeSystem href="pathmap://TERM_MODEL/model/CodeSystems.uml#_dWuTYaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_3-WtsuovEeKrOYS9kpIZsQ" identifier="2.16.840.1.113883.1.11.20446" fullName="RefrainPolicy" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot2013SEP/html/infrastructure/vocabulary/vs_ActCode.html#RefrainPolicy" definition="Conveys prohibited actions which an information custodian, receiver, or user is not permitted to perform unless otherwise authorized or permitted under specified circumstances." base_Enumeration="_3-WtgeovEeKrOYS9kpIZsQ">
+    <codeSystem href="pathmap://TERM_MODEL/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:CodeSystemVersion xmi:id="_3-WtyuovEeKrOYS9kpIZsQ" identifier="2.16.840.1.113883.1.11.20457" fullName="Security Observation Type Code System" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vocabulary.html" base_Enumeration="_3-WtpOovEeKrOYS9kpIZsQ"/>
+  <term:CodeSystemVersion xmi:id="_3-WtyeovEeKrOYS9kpIZsQ" identifier="2.16.840.1.113883.5.1063" fullName="Security Observation Value Code System" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vocabulary.html" base_Enumeration="_3-WtouovEeKrOYS9kpIZsQ"/>
+</xmi:XMI>

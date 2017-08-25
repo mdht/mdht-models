@@ -11,7 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 import org.eclipse.mdht.uml.cda.impl.AuthorImpl;
@@ -53,8 +52,10 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	 * @generated
 	 */
 	@Override
-	public boolean validateMandatoryDocumentProvenanceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceTemplateId(this, diagnostics, context);
+	public boolean validateMandatoryDocumentProvenanceTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,7 +65,8 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	 */
 	@Override
 	public boolean validateMandatoryDocumentProvenanceTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceTime(this, diagnostics, context);
+		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +75,10 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	 * @generated
 	 */
 	@Override
-	public boolean validateMandatoryDocumentProvenanceAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceAssignedAuthor(this, diagnostics, context);
+	public boolean validateMandatoryDocumentProvenanceAssignedAuthor(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceAssignedAuthor(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -82,18 +86,17 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MandatoryDocumentProvenance init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MandatoryDocumentProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //MandatoryDocumentProvenanceImpl
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // MandatoryDocumentProvenanceImpl

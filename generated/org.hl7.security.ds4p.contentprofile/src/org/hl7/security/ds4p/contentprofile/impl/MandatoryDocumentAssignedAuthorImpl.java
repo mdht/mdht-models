@@ -11,7 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 import org.eclipse.mdht.uml.cda.impl.AssignedAuthorImpl;
@@ -53,8 +52,10 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean validateMandatoryDocumentAssignedAuthorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorTemplateId(this, diagnostics, context);
+	public boolean validateMandatoryDocumentAssignedAuthorTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -63,8 +64,10 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean validateMandatoryDocumentAssignedAuthorTelecomEmail(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorTelecomEmail(this, diagnostics, context);
+	public boolean validateMandatoryDocumentAssignedAuthorTelecomEmail(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorTelecomEmail(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +76,10 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(this, diagnostics, context);
+	public boolean validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +88,10 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean validateMandatoryDocumentAssignedAuthorAssignedPerson(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorAssignedPerson(this, diagnostics, context);
+	public boolean validateMandatoryDocumentAssignedAuthorAssignedPerson(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorAssignedPerson(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +100,10 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean validateMandatoryDocumentAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorRepresentedOrganization(this, diagnostics, context);
+	public boolean validateMandatoryDocumentAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorRepresentedOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -102,18 +111,17 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MandatoryDocumentAssignedAuthor init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MandatoryDocumentAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //MandatoryDocumentAssignedAuthorImpl
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // MandatoryDocumentAssignedAuthorImpl

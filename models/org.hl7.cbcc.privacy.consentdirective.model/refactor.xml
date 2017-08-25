@@ -1,0 +1,30 @@
+<?eclipse version="3.0"?>
+<project name="CDA Model Transformation"  basedir="." default="applyURI">
+	
+	<target name="applyURI">
+		
+				
+		<sequential>
+			<replace dir="${basedir}/model" token='href="../../../org.openhealthtools.mdht.uml.term.models/model' value='href="pathmap://TERM_MODEL/'/>
+			<replace dir="${basedir}/model" token='href="../../org.openhealthtools.mdht.uml.term.models/model' value='href="pathmap://TERM_MODEL/'/>
+
+			<replace dir="${basedir}/model" token='href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/' value='href="pathmap://DATATYPES_MODEL/'/>
+			<replace dir="${basedir}/model" token='href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/' value='href="pathmap://DATATYPES_MODEL/'/>
+
+			<replace dir="${basedir}/model" token='href="../../../org.openhealthtools.mdht.uml.hl7.rim/model/' value='href="pathmap://RIM_MODEL/'/>
+			<replace dir="${basedir}/model" token='href="../../org.openhealthtools.mdht.uml.hl7.rim/model/' value='href="pathmap://RIM_MODEL/'/>
+				
+			<replace dir="${basedir}/model" token='href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/' value='href="pathmap://VOCAB_MODEL/'/>
+			<replace dir="${basedir}/model" token='href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/' value='href="pathmap://VOCAB_MODEL/'/>
+			
+			<replace dir="${basedir}/model" token='href="../../../org.openhealthtools.mdht.uml.cda/model/' value='href="pathmap://CDA_MODEL/'/>
+			<replace dir="${basedir}/model" token='href="../../org.openhealthtools.mdht.uml.cda/model/' value='href="pathmap://CDA_MODEL/'/>
+			
+			<replace dir="${basedir}/model" token='href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/' value='href="pathmap://CONSOL_MODEL/'/>
+		
+			
+					
+		</sequential>
+		
+	</target>
+</project>

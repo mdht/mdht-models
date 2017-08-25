@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.hl7.cbcc.privacy.consentdirective/src" modelPluginID="org.hl7.cbcc.privacy.consentdirective"
+    templateDirectory="/org.eclipse.mdht.uml.cda/templates" dynamicTemplates="true"
+    modelName="consentdirective_Ecore" modelPluginClass="CONSENTDIRECTIVEPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
+    complianceLevel="7.0" copyrightFields="false" runtimeVersion="2.9" usedGenPackages="../../org.eclipse.mdht.uml.cda/model/cda.genmodel#//cda ../../org.eclipse.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+  </genAnnotations>
+  <foreignModel>consentdirective_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="CONSENTDIRECTIVE" basePackage="org.hl7.cbcc.privacy"
+      disposableProviderFactory="true" ecorePackage="consentdirective.ecore#/" operationsPackage="org.hl7.cbcc.privacy.consentdirective.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//PrivacyConsentHeaderAuthor">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorFunctionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorFunctionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorFunctionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorFunctionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorFunctionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorFunctionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorAssignedAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorAssignedAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderAuthor/PrivacyConsentHeaderAuthorAssignedAuthor/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOfServiceEvent">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOfServiceEvent/PrivacyConsentHeaderDocumentationOfServiceEventTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOfServiceEvent/PrivacyConsentHeaderDocumentationOfServiceEventTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOfServiceEvent/PrivacyConsentHeaderDocumentationOfServiceEventTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOfServiceEvent/PrivacyConsentHeaderDocumentationOfServiceEventCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOfServiceEvent/PrivacyConsentHeaderDocumentationOfServiceEventCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOfServiceEvent/PrivacyConsentHeaderDocumentationOfServiceEventCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOfServiceEvent/PrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOfServiceEvent/PrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOfServiceEvent/PrivacyConsentHeaderDocumentationOfServiceEventEffectiveTime/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//PrivacyConsentDirectiveDocument">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentPrivacyConsentDetailsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentSignaturesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentSignaturesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentSignaturesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentAuthenticator">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentAuthenticator/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentAuthenticator/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentAuthor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentDocumentationOf">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentDocumentationOf/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentDocumentationOf/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentInformationRecipient">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentInformationRecipient/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentInformationRecipient/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentLegalAuthenticator">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentLegalAuthenticator/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentLegalAuthenticator/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentCustodian/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentRecordTarget">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentRecordTarget/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentRecordTarget/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentRelatedDocument">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentRelatedDocument/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDirectiveDocument/PrivacyConsentDirectiveDocumentRelatedDocument/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/getPrivacyConsentDetailsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDirectiveDocument/getSignaturesSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//PrivacyConsentDetailsSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentDetailsSection/PrivacyConsentDetailsSectionEntry/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//SignaturesSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SignaturesSection/SignaturesSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignaturesSection/SignaturesSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignaturesSection/SignaturesSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SignaturesSection/SignaturesSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignaturesSection/SignaturesSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignaturesSection/SignaturesSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SignaturesSection/SignaturesSectionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignaturesSection/SignaturesSectionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignaturesSection/SignaturesSectionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SignaturesSection/SignaturesSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignaturesSection/SignaturesSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignaturesSection/SignaturesSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SignaturesSection/SignaturesSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignaturesSection/SignaturesSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignaturesSection/SignaturesSectionTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SignaturesSection/SignaturesSectionEntry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignaturesSection/SignaturesSectionEntry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignaturesSection/SignaturesSectionEntry/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//ConsentDirectiveEntry">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveEntry/ConsentDirectiveEntryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveEntry/ConsentDirectiveEntryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveEntry/ConsentDirectiveEntryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveEntry/ConsentDirectiveEntryAct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveEntry/ConsentDirectiveEntryAct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveEntry/ConsentDirectiveEntryAct/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveEntry/ConsentDirectiveEntryObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveEntry/ConsentDirectiveEntryObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveEntry/ConsentDirectiveEntryObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveEntry/ConsentDirectiveEntryObservationMedia">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveEntry/ConsentDirectiveEntryObservationMedia/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveEntry/ConsentDirectiveEntryObservationMedia/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//ConsentDirectiveStructuredDefinition">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionInformant">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionInformant/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionInformant/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionParticipant">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionParticipant/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionParticipant/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionConsentAction">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionConsentAction/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionConsentAction/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionInformationCriteriaReferencesOrganizer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionSecurityLabelCriteria">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionSecurityLabelCriteria/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/ConsentDirectiveStructuredDefinitionSecurityLabelCriteria/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/getConsentActions"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/getInformationCriteriaReferencesOrganizers"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentDirectiveStructuredDefinition/getSecurityLabelCriteria"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//ConsentAction">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentAction/ConsentActionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentAction/ConsentActionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentAction/ConsentActionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentAction/ConsentActionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentAction/ConsentActionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentAction/ConsentActionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentAction/ConsentActionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentAction/ConsentActionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentAction/ConsentActionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentAction/ConsentActionMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentAction/ConsentActionMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentAction/ConsentActionMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConsentAction/ConsentActionNegationInd">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentAction/ConsentActionNegationInd/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConsentAction/ConsentActionNegationInd/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//InformationCriteriaReferencesOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerInformationDefinition">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerInformationDefinition/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerInformationDefinition/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerRelatedProtectedProblem">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerRelatedProtectedProblem/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerRelatedProtectedProblem/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerConfidentialityCodeLabel">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerConfidentialityCodeLabel/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/InformationCriteriaReferencesOrganizerConfidentialityCodeLabel/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/getInformationDefinitions"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/getRelatedProtectedProblems"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//InformationCriteriaReferencesOrganizer/getConfidentialityCodeLabels"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//CriteriumInformationDefinition">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumInformationDefinition/CriteriumInformationDefinitionId/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//CriteriumRelatedProtectedProblem">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//CriteriumRelatedProtectedProblem/CriteriumRelatedProtectedProblemValueP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//ConfidentialitySecurityObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ConfidentialitySecurityObservation/ConfidentialitySecurityObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConfidentialitySecurityObservation/ConfidentialitySecurityObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ConfidentialitySecurityObservation/ConfidentialitySecurityObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="consentdirective.ecore#//SecurityObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SecurityObservation/SecurityObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityObservation/SecurityObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityObservation/SecurityObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SecurityObservation/SecurityObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityObservation/SecurityObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityObservation/SecurityObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SecurityObservation/SecurityObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityObservation/SecurityObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityObservation/SecurityObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SecurityObservation/SecurityObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityObservation/SecurityObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityObservation/SecurityObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SecurityObservation/SecurityObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityObservation/SecurityObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityObservation/SecurityObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SecurityObservation/SecurityObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityObservation/SecurityObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityObservation/SecurityObservationValueP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="consentdirective.ecore#//SecurityLabel">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SecurityLabel/SecurityLabelTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityLabel/SecurityLabelTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityLabel/SecurityLabelTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SecurityLabel/SecurityLabelComponent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityLabel/SecurityLabelComponent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SecurityLabel/SecurityLabelComponent/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//IIHIReceivingProvider">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//IIHIReceivingProvider/IIHIReceivingProviderTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//IIHIReceivingProvider/IIHIReceivingProviderTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//IIHIReceivingProvider/IIHIReceivingProviderTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//IIHIReceivingProvider/IIHIReceivingProviderTypeCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//IIHIReceivingProvider/IIHIReceivingProviderTypeCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//IIHIReceivingProvider/IIHIReceivingProviderTypeCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//IIHIReceivingProvider/IIHIReceivingProviderTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//IIHIReceivingProvider/IIHIReceivingProviderTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//IIHIReceivingProvider/IIHIReceivingProviderTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//IIHIReceivingProvider/IIHIReceivingProviderParticipantRole">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//IIHIReceivingProvider/IIHIReceivingProviderParticipantRole/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//IIHIReceivingProvider/IIHIReceivingProviderParticipantRole/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//ObligationPolicySecurityObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//ComputablePolicyConsent">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ComputablePolicyConsent/ComputablePolicyConsentValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//ScannedPrivacyConsent">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ScannedPrivacyConsent/ScannedPrivacyConsentTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ScannedPrivacyConsent/ScannedPrivacyConsentTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ScannedPrivacyConsent/ScannedPrivacyConsentTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ScannedPrivacyConsent/ScannedPrivacyConsentMoodCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ScannedPrivacyConsent/ScannedPrivacyConsentMoodCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ScannedPrivacyConsent/ScannedPrivacyConsentMoodCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ScannedPrivacyConsent/ScannedPrivacyConsentMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ScannedPrivacyConsent/ScannedPrivacyConsentMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ScannedPrivacyConsent/ScannedPrivacyConsentMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//ScannedPrivacyConsent/ScannedPrivacyConsentValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ScannedPrivacyConsent/ScannedPrivacyConsentValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//ScannedPrivacyConsent/ScannedPrivacyConsentValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//SignatureImageObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SignatureImageObservation/SignatureImageObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignatureImageObservation/SignatureImageObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignatureImageObservation/SignatureImageObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SignatureImageObservation/SignatureImageObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignatureImageObservation/SignatureImageObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignatureImageObservation/SignatureImageObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SignatureImageObservation/SignatureImageObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignatureImageObservation/SignatureImageObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignatureImageObservation/SignatureImageObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//SignatureImageEntry">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SignatureImageEntry/SignatureImageEntryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignatureImageEntry/SignatureImageEntryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignatureImageEntry/SignatureImageEntryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//SignatureImageEntry/SignatureImageEntryObservationMedia">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignatureImageEntry/SignatureImageEntryObservationMedia/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//SignatureImageEntry/SignatureImageEntryObservationMedia/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOf">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOf/PrivacyConsentHeaderDocumentationOfTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOf/PrivacyConsentHeaderDocumentationOfTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOf/PrivacyConsentHeaderDocumentationOfTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOf/PrivacyConsentHeaderDocumentationOfServiceEvent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOf/PrivacyConsentHeaderDocumentationOfServiceEvent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PrivacyConsentHeaderDocumentationOf/PrivacyConsentHeaderDocumentationOfServiceEvent/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//PurposeOfUseSecurityObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consentdirective.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consentdirective.ecore#//PurposeOfUseSecurityObservation/PurposeOfUseSecurityObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consentdirective.ecore#//RefrainPolicySecurityObservation"/>
+  </genPackages>
+</genmodel:GenModel>

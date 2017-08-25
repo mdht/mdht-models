@@ -11,14 +11,13 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.ProtectedProblem;
 
 import org.hl7.security.ds4p.contentprofile.operations.ProtectedProblemOperations;
+import org.openhealthtools.mdht.uml.cda.consol.impl.ProblemObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +26,7 @@ import org.hl7.security.ds4p.contentprofile.operations.ProtectedProblemOperation
  *
  * @generated
  */
-public class ProtectedProblemImpl extends EObjectImpl implements ProtectedProblem {
+public class ProtectedProblemImpl extends ProblemObservationImpl implements ProtectedProblem {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -63,6 +62,27 @@ public class ProtectedProblemImpl extends EObjectImpl implements ProtectedProble
 	 * @generated
 	 */
 	@Override
+	public ProtectedProblem init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProtectedProblem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateProtectedProblemProblemProvenance(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProtectedProblemOperations.validateProtectedProblemProblemProvenance(this, diagnostics, context);
 	}
@@ -73,27 +93,8 @@ public class ProtectedProblemImpl extends EObjectImpl implements ProtectedProble
 	 * @generated
 	 */
 	@Override
-	public boolean validateProtectedProblemPrivacyAnnotations(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProtectedProblemPrivacyAnnotations(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProtectedProblemOperations.validateProtectedProblemPrivacyAnnotations(this, diagnostics, context);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProtectedProblem init() {
-	    return Initializer.Util.init(this);
-	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-	public ProtectedProblem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ProtectedProblemImpl
+} // ProtectedProblemImpl

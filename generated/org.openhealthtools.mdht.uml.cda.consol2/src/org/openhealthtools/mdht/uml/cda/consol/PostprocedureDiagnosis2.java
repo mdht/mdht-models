@@ -20,7 +20,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPostprocedureDiagnosis2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PostprocedureDiagnosisTemplateId PostprocedureDiagnosisCode PostprocedureDiagnosisCodeP PostprocedureDiagnosisProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.51' templateId.extension='2015-08-01' code.code='59769-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Postprocedure Diagnosis' constraints.validation.dependOn.PostprocedureDiagnosisCode='PostprocedureDiagnosisCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PostprocedureDiagnosisTemplateId PostprocedureDiagnosisCode PostprocedureDiagnosisCodeP PostprocedureDiagnosisProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.51' templateId.extension='2015-08-01' constraints.validation.dependOn.PostprocedureDiagnosisCode='PostprocedureDiagnosisCodeP'"
  * @generated
  */
 public interface PostprocedureDiagnosis2 extends PostprocedureDiagnosis {

@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.uml.cda.AssignedAuthor;
 import org.eclipse.mdht.uml.cda.Author;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
 import org.eclipse.mdht.uml.cda.ClinicalStatement;
 import org.eclipse.mdht.uml.cda.Entry;
 import org.eclipse.mdht.uml.cda.EntryRelationship;
@@ -23,6 +24,8 @@ import org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot;
 import org.eclipse.mdht.uml.hl7.rim.Participation;
 import org.eclipse.mdht.uml.hl7.rim.Role;
 import org.hl7.security.ds4p.contentprofile.*;
+import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 
 /**
  * <!-- begin-user-doc -->
@@ -67,7 +70,7 @@ public class CONTENTPROFILEAdapterFactory extends AdapterFactoryImpl {
 			return true;
 		}
 		if (object instanceof EObject) {
-			return ((EObject)object).eClass().getEPackage() == modelPackage;
+			return ((EObject) object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
 	}
@@ -78,129 +81,172 @@ public class CONTENTPROFILEAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CONTENTPROFILESwitch<Adapter> modelSwitch =
-		new CONTENTPROFILESwitch<Adapter>() {
-			@Override
-			public Adapter casePrivacySegmentedDocument(PrivacySegmentedDocument object) {
-				return createPrivacySegmentedDocumentAdapter();
-			}
-			@Override
-			public Adapter casePrivacySegmentedSection(PrivacySegmentedSection object) {
-				return createPrivacySegmentedSectionAdapter();
-			}
-			@Override
-			public Adapter casePrivacyMarkingsSection(PrivacyMarkingsSection object) {
-				return createPrivacyMarkingsSectionAdapter();
-			}
-			@Override
-			public Adapter caseObligationPolicySecurityObservation(ObligationPolicySecurityObservation object) {
-				return createObligationPolicySecurityObservationAdapter();
-			}
-			@Override
-			public Adapter caseSecurityObservation(SecurityObservation object) {
-				return createSecurityObservationAdapter();
-			}
-			@Override
-			public Adapter caseMandatoryDocumentProvenance(MandatoryDocumentProvenance object) {
-				return createMandatoryDocumentProvenanceAdapter();
-			}
-			@Override
-			public Adapter caseMandatoryDocumentAssignedAuthor(MandatoryDocumentAssignedAuthor object) {
-				return createMandatoryDocumentAssignedAuthorAdapter();
-			}
-			@Override
-			public Adapter casePrivacyAnnotation(PrivacyAnnotation object) {
-				return createPrivacyAnnotationAdapter();
-			}
-			@Override
-			public Adapter caseRefrainPolicySecurityObservation(RefrainPolicySecurityObservation object) {
-				return createRefrainPolicySecurityObservationAdapter();
-			}
-			@Override
-			public Adapter casePurposeOfUseSecurityObservation(PurposeOfUseSecurityObservation object) {
-				return createPurposeOfUseSecurityObservationAdapter();
-			}
-			@Override
-			public Adapter caseConfidentialitySecurityObservation(ConfidentialitySecurityObservation object) {
-				return createConfidentialitySecurityObservationAdapter();
-			}
-			@Override
-			public Adapter caseProtectedProblem(ProtectedProblem object) {
-				return createProtectedProblemAdapter();
-			}
-			@Override
-			public Adapter caseMandatoryEntryProvenance(MandatoryEntryProvenance object) {
-				return createMandatoryEntryProvenanceAdapter();
-			}
-			@Override
-			public Adapter caseMandatoryEntryAssignedAuthor(MandatoryEntryAssignedAuthor object) {
-				return createMandatoryEntryAssignedAuthorAdapter();
-			}
-			@Override
-			public Adapter casePrivacyAnnotationEntryRelationship(PrivacyAnnotationEntryRelationship object) {
-				return createPrivacyAnnotationEntryRelationshipAdapter();
-			}
-			@Override
-			public Adapter casePrivacyMarkingsEntry(PrivacyMarkingsEntry object) {
-				return createPrivacyMarkingsEntryAdapter();
-			}
-			@Override
-			public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
-				return createInfrastructureRootAdapter();
-			}
-			@Override
-			public Adapter caseAct(Act object) {
-				return createActAdapter();
-			}
-			@Override
-			public Adapter caseSection(Section object) {
-				return createSectionAdapter();
-			}
-			@Override
-			public Adapter caseClinicalStatement(ClinicalStatement object) {
-				return createClinicalStatementAdapter();
-			}
-			@Override
-			public Adapter caseObservation(Observation object) {
-				return createObservationAdapter();
-			}
-			@Override
-			public Adapter caseParticipation(Participation object) {
-				return createParticipationAdapter();
-			}
-			@Override
-			public Adapter caseAuthor(Author object) {
-				return createAuthorAdapter();
-			}
-			@Override
-			public Adapter caseRole(Role object) {
-				return createRoleAdapter();
-			}
-			@Override
-			public Adapter caseAssignedAuthor(AssignedAuthor object) {
-				return createAssignedAuthorAdapter();
-			}
-			@Override
-			public Adapter caseOrganizer(Organizer object) {
-				return createOrganizerAdapter();
-			}
-			@Override
-			public Adapter caseActRelationship(ActRelationship object) {
-				return createActRelationshipAdapter();
-			}
-			@Override
-			public Adapter caseEntryRelationship(EntryRelationship object) {
-				return createEntryRelationshipAdapter();
-			}
-			@Override
-			public Adapter caseEntry(Entry object) {
-				return createEntryAdapter();
-			}
-			@Override
-			public Adapter defaultCase(EObject object) {
-				return createEObjectAdapter();
-			}
-		};
+	protected CONTENTPROFILESwitch<Adapter> modelSwitch = new CONTENTPROFILESwitch<Adapter>() {
+		@Override
+		public Adapter casePrivacySegmentedDocument(PrivacySegmentedDocument object) {
+			return createPrivacySegmentedDocumentAdapter();
+		}
+
+		@Override
+		public Adapter casePrivacySegmentedSection(PrivacySegmentedSection object) {
+			return createPrivacySegmentedSectionAdapter();
+		}
+
+		@Override
+		public Adapter casePrivacyMarkingsSection(PrivacyMarkingsSection object) {
+			return createPrivacyMarkingsSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseObligationPolicySecurityObservation(ObligationPolicySecurityObservation object) {
+			return createObligationPolicySecurityObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseSecurityObservation(SecurityObservation object) {
+			return createSecurityObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseMandatoryDocumentProvenance(MandatoryDocumentProvenance object) {
+			return createMandatoryDocumentProvenanceAdapter();
+		}
+
+		@Override
+		public Adapter caseMandatoryDocumentAssignedAuthor(MandatoryDocumentAssignedAuthor object) {
+			return createMandatoryDocumentAssignedAuthorAdapter();
+		}
+
+		@Override
+		public Adapter casePrivacyAnnotation(PrivacyAnnotation object) {
+			return createPrivacyAnnotationAdapter();
+		}
+
+		@Override
+		public Adapter caseRefrainPolicySecurityObservation(RefrainPolicySecurityObservation object) {
+			return createRefrainPolicySecurityObservationAdapter();
+		}
+
+		@Override
+		public Adapter casePurposeOfUseSecurityObservation(PurposeOfUseSecurityObservation object) {
+			return createPurposeOfUseSecurityObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseConfidentialitySecurityObservation(ConfidentialitySecurityObservation object) {
+			return createConfidentialitySecurityObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseProtectedProblem(ProtectedProblem object) {
+			return createProtectedProblemAdapter();
+		}
+
+		@Override
+		public Adapter caseMandatoryEntryProvenance(MandatoryEntryProvenance object) {
+			return createMandatoryEntryProvenanceAdapter();
+		}
+
+		@Override
+		public Adapter caseMandatoryEntryAssignedAuthor(MandatoryEntryAssignedAuthor object) {
+			return createMandatoryEntryAssignedAuthorAdapter();
+		}
+
+		@Override
+		public Adapter casePrivacyAnnotationEntryRelationship(PrivacyAnnotationEntryRelationship object) {
+			return createPrivacyAnnotationEntryRelationshipAdapter();
+		}
+
+		@Override
+		public Adapter casePrivacyMarkingsEntry(PrivacyMarkingsEntry object) {
+			return createPrivacyMarkingsEntryAdapter();
+		}
+
+		@Override
+		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
+			return createInfrastructureRootAdapter();
+		}
+
+		@Override
+		public Adapter caseAct(Act object) {
+			return createActAdapter();
+		}
+
+		@Override
+		public Adapter caseClinicalDocument(ClinicalDocument object) {
+			return createClinicalDocumentAdapter();
+		}
+
+		@Override
+		public Adapter caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
+			return createGeneralHeaderConstraintsAdapter();
+		}
+
+		@Override
+		public Adapter caseSection(Section object) {
+			return createSectionAdapter();
+		}
+
+		@Override
+		public Adapter caseClinicalStatement(ClinicalStatement object) {
+			return createClinicalStatementAdapter();
+		}
+
+		@Override
+		public Adapter caseObservation(Observation object) {
+			return createObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseParticipation(Participation object) {
+			return createParticipationAdapter();
+		}
+
+		@Override
+		public Adapter caseAuthor(Author object) {
+			return createAuthorAdapter();
+		}
+
+		@Override
+		public Adapter caseRole(Role object) {
+			return createRoleAdapter();
+		}
+
+		@Override
+		public Adapter caseAssignedAuthor(AssignedAuthor object) {
+			return createAssignedAuthorAdapter();
+		}
+
+		@Override
+		public Adapter caseOrganizer(Organizer object) {
+			return createOrganizerAdapter();
+		}
+
+		@Override
+		public Adapter caseProblemObservation(ProblemObservation object) {
+			return createProblemObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseActRelationship(ActRelationship object) {
+			return createActRelationshipAdapter();
+		}
+
+		@Override
+		public Adapter caseEntryRelationship(EntryRelationship object) {
+			return createEntryRelationshipAdapter();
+		}
+
+		@Override
+		public Adapter caseEntry(Entry object) {
+			return createEntryAdapter();
+		}
+
+		@Override
+		public Adapter defaultCase(EObject object) {
+			return createEObjectAdapter();
+		}
+	};
 
 	/**
 	 * Creates an adapter for the <code>target</code>.
@@ -212,9 +258,8 @@ public class CONTENTPROFILEAdapterFactory extends AdapterFactoryImpl {
 	 */
 	@Override
 	public Adapter createAdapter(Notifier target) {
-		return modelSwitch.doSwitch((EObject)target);
+		return modelSwitch.doSwitch((EObject) target);
 	}
-
 
 	/**
 	 * Creates a new adapter for an object of class '{@link org.hl7.security.ds4p.contentprofile.PrivacySegmentedDocument <em>Privacy Segmented Document</em>}'.
@@ -469,6 +514,34 @@ public class CONTENTPROFILEAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.ClinicalDocument <em>Clinical Document</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.mdht.uml.cda.ClinicalDocument
+	 * @generated
+	 */
+	public Adapter createClinicalDocumentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints
+	 * @generated
+	 */
+	public Adapter createGeneralHeaderConstraintsAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Section <em>Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -581,6 +654,20 @@ public class CONTENTPROFILEAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation <em>Problem Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProblemObservation
+	 * @generated
+	 */
+	public Adapter createProblemObservationAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.hl7.rim.ActRelationship <em>Act Relationship</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -634,4 +721,4 @@ public class CONTENTPROFILEAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //CONTENTPROFILEAdapterFactory
+} // CONTENTPROFILEAdapterFactory

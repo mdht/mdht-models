@@ -2,8 +2,24 @@
 <project name="CDA Model Transformation"  basedir="." default="all">
 <eclipse.convertPath resourcePath="org.eclipse.mdht.uml.cda" property="cdaPluginPath"/>
 <property name="modelName" value="contentprofile"/>
+	
+	
+	<eclipse.convertPath resourcePath="org.eclipse.mdht.uml.cda" property="cdaPluginPath"/>
+	
+	<eclipse.convertPath resourcePath="org.hl7.security.ds4p.contentprofile.model/model/${modelName}.uml" property="modelPath.uml"/>
+
+<!--	<property name="modelPath.uml" location="${basedir}.model/model/${modelName}.uml"/> -->
+
+
+	<property name="validation.failOnError" value="false" />
+		
+	
 <macrodef name="convertEcorePaths">
 <attribute name="filePath"/>
+
+
+	
+	
 <sequential>
 <replace file="@{filePath}" token="CONSOL_MODEL" value="CONSOL_ECOREMODEL"/>
 <replace file="@{filePath}" token="consol.uml" value="consol_Ecore.uml"/>

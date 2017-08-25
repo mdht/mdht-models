@@ -12,7 +12,6 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 import org.eclipse.mdht.uml.cda.impl.OrganizerImpl;
@@ -108,8 +107,10 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyAnnotationObligationPolicySecurityObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyAnnotationOperations.validatePrivacyAnnotationObligationPolicySecurityObservation(this, diagnostics, context);
+	public boolean validatePrivacyAnnotationObligationPolicySecurityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyAnnotationOperations.validatePrivacyAnnotationObligationPolicySecurityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +119,10 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyAnnotationRefrainPolicySecurityObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyAnnotationOperations.validatePrivacyAnnotationRefrainPolicySecurityObservation(this, diagnostics, context);
+	public boolean validatePrivacyAnnotationRefrainPolicySecurityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyAnnotationOperations.validatePrivacyAnnotationRefrainPolicySecurityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -128,8 +131,10 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyAnnotationPurposeOfUseSecurityObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyAnnotationOperations.validatePrivacyAnnotationPurposeOfUseSecurityObservation(this, diagnostics, context);
+	public boolean validatePrivacyAnnotationPurposeOfUseSecurityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyAnnotationOperations.validatePrivacyAnnotationPurposeOfUseSecurityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -138,8 +143,10 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	 * @generated
 	 */
 	@Override
-	public boolean validatePrivacyAnnotationConfidentialityCodeSecurityObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrivacyAnnotationOperations.validatePrivacyAnnotationConfidentialityCodeSecurityObservation(this, diagnostics, context);
+	public boolean validatePrivacyAnnotationConfidentialityCodeSecurityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PrivacyAnnotationOperations.validatePrivacyAnnotationConfidentialityCodeSecurityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -187,18 +194,17 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PrivacyAnnotation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PrivacyAnnotation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //PrivacyAnnotationImpl
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // PrivacyAnnotationImpl

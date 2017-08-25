@@ -536,6 +536,15 @@ public interface ConsolPackage extends EPackage {
 	int ALLERGY_PROBLEM_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALLERGY_PROBLEM_ACT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -852,6 +861,15 @@ public interface ConsolPackage extends EPackage {
 	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Substance Or Device Allergy Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1139,6 +1157,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int ALLERGY_OBSERVATION__NEGATION_IND = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALLERGY_OBSERVATION__IN_FULFILLMENT_OF1 = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Allergy Observation</em>' class.
@@ -1430,6 +1457,15 @@ public interface ConsolPackage extends EPackage {
 	int ALLERGY_STATUS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALLERGY_STATUS_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Allergy Status Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1717,6 +1753,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int REACTION_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Reaction Observation</em>' class.
@@ -2008,6 +2053,15 @@ public interface ConsolPackage extends EPackage {
 	int SEVERITY_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Severity Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2223,6 +2277,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROCEDURE_ACTIVITY_PROCEDURE__PRECONDITION = CDAPackage.PROCEDURE__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE__IN_FULFILLMENT_OF1 = CDAPackage.PROCEDURE__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -2548,6 +2611,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int INDICATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INDICATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Indication</em>' class.
@@ -2930,6 +3002,15 @@ public interface ConsolPackage extends EPackage {
 	int MEDICATION_ACTIVITY__PRECONDITION = CDAPackage.SUBSTANCE_ADMINISTRATION__PRECONDITION;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_ACTIVITY__IN_FULFILLMENT_OF1 = CDAPackage.SUBSTANCE_ADMINISTRATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3192,6 +3273,15 @@ public interface ConsolPackage extends EPackage {
 	int MEDICATION_SUPPLY_ORDER__PRECONDITION = CDAPackage.SUPPLY__PRECONDITION;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_SUPPLY_ORDER__IN_FULFILLMENT_OF1 = CDAPackage.SUPPLY__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3416,6 +3506,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int INSTRUCTIONS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTIONS__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -3669,6 +3768,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int MEDICATION_DISPENSE__PRECONDITION = CDAPackage.SUPPLY__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_DISPENSE__IN_FULFILLMENT_OF1 = CDAPackage.SUPPLY__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -4241,6 +4349,15 @@ public interface ConsolPackage extends EPackage {
 	int AGE_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AGE_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Age Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4530,6 +4647,15 @@ public interface ConsolPackage extends EPackage {
 	int HEALTH_STATUS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEALTH_STATUS_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Health Status Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4727,6 +4853,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int COMMENT_ACTIVITY__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMMENT_ACTIVITY__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -4982,6 +5117,15 @@ public interface ConsolPackage extends EPackage {
 	int NON_MEDICINAL_SUPPLY_ACTIVITY__PRECONDITION = CDAPackage.SUPPLY__PRECONDITION;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NON_MEDICINAL_SUPPLY_ACTIVITY__IN_FULFILLMENT_OF1 = CDAPackage.SUPPLY__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5206,6 +5350,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROBLEM_CONCERN_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -5524,6 +5677,15 @@ public interface ConsolPackage extends EPackage {
 	int PROBLEM_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Problem Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5811,6 +5973,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROBLEM_STATUS__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_STATUS__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Problem Status</em>' class.
@@ -7839,6 +8010,15 @@ public interface ConsolPackage extends EPackage {
 	int PROCEDURE_ACTIVITY_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Procedure Activity Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8036,6 +8216,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROCEDURE_ACTIVITY_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -8906,6 +9095,15 @@ public interface ConsolPackage extends EPackage {
 	int RESULT_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Result Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9557,6 +9755,15 @@ public interface ConsolPackage extends EPackage {
 	int ADVANCE_DIRECTIVE_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Advance Directive Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10109,6 +10316,15 @@ public interface ConsolPackage extends EPackage {
 	int ENCOUNTER_ACTIVITIES__PRECONDITION = CDAPackage.ENCOUNTER__PRECONDITION;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_ACTIVITIES__IN_FULFILLMENT_OF1 = CDAPackage.ENCOUNTER__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10333,6 +10549,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int ENCOUNTER_DIAGNOSIS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_DIAGNOSIS__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -11022,6 +11247,15 @@ public interface ConsolPackage extends EPackage {
 	int FAMILY_HISTORY_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Family History Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11309,6 +11543,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int FAMILY_HISTORY_DEATH_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_DEATH_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Family History Death Observation</em>' class.
@@ -11971,6 +12214,15 @@ public interface ConsolPackage extends EPackage {
 	int FUNCTIONAL_STATUS_RESULT_OBSERVATION__NEGATION_IND = RESULT_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTIONAL_STATUS_RESULT_OBSERVATION__IN_FULFILLMENT_OF1 = RESULT_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Functional Status Result Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12258,6 +12510,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int CAREGIVER_CHARACTERISTICS__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAREGIVER_CHARACTERISTICS__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Caregiver Characteristics</em>' class.
@@ -12549,6 +12810,15 @@ public interface ConsolPackage extends EPackage {
 	int ASSESSMENT_SCALE_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSESSMENT_SCALE_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Assessment Scale Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12836,6 +13106,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Assessment Scale Supporting Observation</em>' class.
@@ -13317,6 +13596,15 @@ public interface ConsolPackage extends EPackage {
 	int COGNITIVE_STATUS_RESULT_OBSERVATION__NEGATION_IND = RESULT_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COGNITIVE_STATUS_RESULT_OBSERVATION__IN_FULFILLMENT_OF1 = RESULT_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Cognitive Status Result Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13604,6 +13892,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__NEGATION_IND = PROBLEM_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__IN_FULFILLMENT_OF1 = PROBLEM_OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Functional Status Problem Observation</em>' class.
@@ -13895,6 +14192,15 @@ public interface ConsolPackage extends EPackage {
 	int COGNITIVE_STATUS_PROBLEM_OBSERVATION__NEGATION_IND = PROBLEM_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COGNITIVE_STATUS_PROBLEM_OBSERVATION__IN_FULFILLMENT_OF1 = PROBLEM_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Cognitive Status Problem Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14182,6 +14488,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PRESSURE_ULCER_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRESSURE_ULCER_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Pressure Ulcer Observation</em>' class.
@@ -14473,6 +14788,15 @@ public interface ConsolPackage extends EPackage {
 	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Number Of Pressure Ulcers Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14760,6 +15084,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int HIGHEST_PRESSURE_ULCER_STAGE__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HIGHEST_PRESSURE_ULCER_STAGE__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Highest Pressure Ulcer Stage</em>' class.
@@ -15196,6 +15529,15 @@ public interface ConsolPackage extends EPackage {
 	int IMMUNIZATION_ACTIVITY__PRECONDITION = CDAPackage.SUBSTANCE_ADMINISTRATION__PRECONDITION;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMUNIZATION_ACTIVITY__IN_FULFILLMENT_OF1 = CDAPackage.SUBSTANCE_ADMINISTRATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15519,6 +15861,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int IMMUNIZATION_REFUSAL_REASON__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMUNIZATION_REFUSAL_REASON__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Immunization Refusal Reason</em>' class.
@@ -16082,6 +16433,15 @@ public interface ConsolPackage extends EPackage {
 	int COVERAGE_ACTIVITY__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COVERAGE_ACTIVITY__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16306,6 +16666,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int POLICY_ACTIVITY__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -16715,6 +17084,15 @@ public interface ConsolPackage extends EPackage {
 	int PLAN_OF_CARE_ACTIVITY_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_ACT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16930,6 +17308,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLAN_OF_CARE_ACTIVITY_ENCOUNTER__PRECONDITION = CDAPackage.ENCOUNTER__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_ENCOUNTER__IN_FULFILLMENT_OF1 = CDAPackage.ENCOUNTER__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -17248,6 +17635,15 @@ public interface ConsolPackage extends EPackage {
 	int PLAN_OF_CARE_ACTIVITY_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Plan Of Care Activity Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -17463,6 +17859,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLAN_OF_CARE_ACTIVITY_PROCEDURE__PRECONDITION = CDAPackage.PROCEDURE__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_PROCEDURE__IN_FULFILLMENT_OF1 = CDAPackage.PROCEDURE__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -17754,6 +18159,15 @@ public interface ConsolPackage extends EPackage {
 	int PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__PRECONDITION = CDAPackage.SUBSTANCE_ADMINISTRATION__PRECONDITION;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__IN_FULFILLMENT_OF1 = CDAPackage.SUBSTANCE_ADMINISTRATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -18015,6 +18429,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLAN_OF_CARE_ACTIVITY_SUPPLY__PRECONDITION = CDAPackage.SUPPLY__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_SUPPLY__IN_FULFILLMENT_OF1 = CDAPackage.SUPPLY__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -18514,6 +18937,15 @@ public interface ConsolPackage extends EPackage {
 	int SOCIAL_HISTORY_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Social History Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -18801,6 +19233,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PREGNANCY_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREGNANCY_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Pregnancy Observation</em>' class.
@@ -19092,6 +19533,15 @@ public interface ConsolPackage extends EPackage {
 	int ESTIMATED_DATE_OF_DELIVERY__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ESTIMATED_DATE_OF_DELIVERY__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Estimated Date Of Delivery</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -19381,6 +19831,15 @@ public interface ConsolPackage extends EPackage {
 	int SMOKING_STATUS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Smoking Status Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -19668,6 +20127,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int TOBACCO_USE__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Tobacco Use</em>' class.
@@ -20328,6 +20796,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int VITAL_SIGN_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Vital Sign Observation</em>' class.
@@ -21796,6 +22273,15 @@ public interface ConsolPackage extends EPackage {
 	int HOSPITAL_ADMISSION_DIAGNOSIS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22201,6 +22687,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADMISSION_MEDICATION__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -24374,6 +24869,15 @@ public interface ConsolPackage extends EPackage {
 	int HOSPITAL_DISCHARGE_DIAGNOSIS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_DISCHARGE_DIAGNOSIS__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -24960,6 +25464,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int DISCHARGE_MEDICATION__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATION__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -26655,6 +27168,15 @@ public interface ConsolPackage extends EPackage {
 	int AUTHORIZATION_ACTIVITY__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTHORIZATION_ACTIVITY__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -27606,6 +28128,15 @@ public interface ConsolPackage extends EPackage {
 	int STUDY_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STUDY_ACT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -27830,6 +28361,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int SERIES_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERIES_ACT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -28148,6 +28688,15 @@ public interface ConsolPackage extends EPackage {
 	int SOP_INSTANCE_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOP_INSTANCE_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>SOP Instance Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -28435,6 +28984,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PURPOSEOF_REFERENCE_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PURPOSEOF_REFERENCE_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Purposeof Reference Observation</em>' class.
@@ -28726,6 +29284,15 @@ public interface ConsolPackage extends EPackage {
 	int REFERENCED_FRAMES_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERENCED_FRAMES_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Referenced Frames Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -29013,6 +29580,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int BOUNDARY_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOUNDARY_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Boundary Observation</em>' class.
@@ -30843,6 +31419,15 @@ public interface ConsolPackage extends EPackage {
 	int POSTPROCEDURE_DIAGNOSIS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -31248,6 +31833,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PREOPERATIVE_DIAGNOSIS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -35283,6 +35877,15 @@ public interface ConsolPackage extends EPackage {
 	int TEXT_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEXT_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Text Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -35570,6 +36173,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUANTITY_MEASUREMENT_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUANTITY_MEASUREMENT_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Quantity Measurement Observation</em>' class.
@@ -35861,6 +36473,15 @@ public interface ConsolPackage extends EPackage {
 	int CODE_OBSERVATIONS__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CODE_OBSERVATIONS__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Code Observations</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -36058,6 +36679,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROCEDURE_CONTEXT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_CONTEXT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -36376,6 +37006,15 @@ public interface ConsolPackage extends EPackage {
 	int MEDICATION_USE_NONE_KNOWN__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_USE_NONE_KNOWN__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Medication Use None Known</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -36665,6 +37304,15 @@ public interface ConsolPackage extends EPackage {
 	int DECEASED_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DECEASED_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Deceased Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -36709,6 +37357,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int FETUS_SUBJECT_CONTEXT__TEMPLATE_ID = CDAPackage.RELATED_SUBJECT__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FETUS_SUBJECT_CONTEXT__ID = CDAPackage.RELATED_SUBJECT__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -37062,6 +37719,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int ENTRY_REFERENCE__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENTRY_REFERENCE__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -37570,6 +38236,15 @@ public interface ConsolPackage extends EPackage {
 	int ADVANCE_DIRECTIVE_OBSERVATION2__NEGATION_IND = ADVANCE_DIRECTIVE_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_OBSERVATION2__IN_FULFILLMENT_OF1 = ADVANCE_DIRECTIVE_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Advance Directive Observation2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -37857,6 +38532,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int CHARACTERISTICS_OF_HOME_ENVIRONMENT__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHARACTERISTICS_OF_HOME_ENVIRONMENT__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Characteristics Of Home Environment</em>' class.
@@ -38148,6 +38832,15 @@ public interface ConsolPackage extends EPackage {
 	int COGNITIVE_ABILITIES_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COGNITIVE_ABILITIES_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Cognitive Abilities Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38437,6 +39130,15 @@ public interface ConsolPackage extends EPackage {
 	int CULTURAL_AND_RELIGIOUS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CULTURAL_AND_RELIGIOUS_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Cultural And Religious Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38634,6 +39336,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int DRUG_MONITORING_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DRUG_MONITORING_ACT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -38860,6 +39571,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int HANDOFF_COMMUNICATION_PARTICIPANTS__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HANDOFF_COMMUNICATION_PARTICIPANTS__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -39305,6 +40025,15 @@ public interface ConsolPackage extends EPackage {
 	int NON_MEDICINAL_SUPPLY_ACTIVITY2__PRECONDITION = NON_MEDICINAL_SUPPLY_ACTIVITY__PRECONDITION;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NON_MEDICINAL_SUPPLY_ACTIVITY2__IN_FULFILLMENT_OF1 = NON_MEDICINAL_SUPPLY_ACTIVITY__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -39529,6 +40258,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int INSTRUCTION2__NULL_FLAVOR = INSTRUCTIONS__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTION2__IN_FULFILLMENT_OF1 = INSTRUCTIONS__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -39773,6 +40511,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROCEDURE_ACTIVITY_PROCEDURE2__PRECONDITION = PROCEDURE_ACTIVITY_PROCEDURE__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_PROCEDURE2__IN_FULFILLMENT_OF1 = PROCEDURE_ACTIVITY_PROCEDURE__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -40100,6 +40847,15 @@ public interface ConsolPackage extends EPackage {
 	int INDICATION2__NEGATION_IND = INDICATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INDICATION2__IN_FULFILLMENT_OF1 = INDICATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Indication2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -40353,6 +41109,15 @@ public interface ConsolPackage extends EPackage {
 	int MEDICATION_ACTIVITY2__PRECONDITION = MEDICATION_ACTIVITY__PRECONDITION;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_ACTIVITY2__IN_FULFILLMENT_OF1 = MEDICATION_ACTIVITY__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -40586,6 +41351,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int SUBSTANCE_ADMINISTERED_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_ADMINISTERED_ACT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -40841,6 +41615,15 @@ public interface ConsolPackage extends EPackage {
 	int MEDICATION_SUPPLY_ORDER2__PRECONDITION = MEDICATION_SUPPLY_ORDER__PRECONDITION;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_SUPPLY_ORDER2__IN_FULFILLMENT_OF1 = MEDICATION_SUPPLY_ORDER__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -41092,6 +41875,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int MEDICATION_DISPENSE2__PRECONDITION = MEDICATION_DISPENSE__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_DISPENSE2__IN_FULFILLMENT_OF1 = MEDICATION_DISPENSE__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -41410,6 +42202,15 @@ public interface ConsolPackage extends EPackage {
 	int REACTION_OBSERVATION2__NEGATION_IND = REACTION_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REACTION_OBSERVATION2__IN_FULFILLMENT_OF1 = REACTION_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Reaction Observation2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -41699,6 +42500,15 @@ public interface ConsolPackage extends EPackage {
 	int SEVERITY_OBSERVATION2__NEGATION_IND = SEVERITY_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEVERITY_OBSERVATION2__IN_FULFILLMENT_OF1 = SEVERITY_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Severity Observation2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -41950,6 +42760,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int MEDICATION_FREE_TEXT_SIG__PRECONDITION = CDAPackage.SUBSTANCE_ADMINISTRATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICATION_FREE_TEXT_SIG__IN_FULFILLMENT_OF1 = CDAPackage.SUBSTANCE_ADMINISTRATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -42277,6 +43096,15 @@ public interface ConsolPackage extends EPackage {
 	int MENTAL_STATUS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MENTAL_STATUS_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Mental Status Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -42566,6 +43394,15 @@ public interface ConsolPackage extends EPackage {
 	int NUTRITION_ASSESSMENT__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUTRITION_ASSESSMENT__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Nutrition Assessment</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -42763,6 +43600,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int NUTRITION_RECOMMENDATION__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUTRITION_RECOMMENDATION__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -42980,6 +43826,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLANNED_ENCOUNTER2__PRECONDITION = PLAN_OF_CARE_ACTIVITY_ENCOUNTER__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLANNED_ENCOUNTER2__IN_FULFILLMENT_OF1 = PLAN_OF_CARE_ACTIVITY_ENCOUNTER__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -43298,6 +44153,15 @@ public interface ConsolPackage extends EPackage {
 	int PRIORITY_PREFERENCE__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIORITY_PREFERENCE__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Priority Preference</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -43549,6 +44413,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLANNED_MEDICATION_ACTIVITY2__PRECONDITION = PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLANNED_MEDICATION_ACTIVITY2__IN_FULFILLMENT_OF1 = PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -43876,6 +44749,15 @@ public interface ConsolPackage extends EPackage {
 	int PLANNED_OBSERVATION2__NEGATION_IND = PLAN_OF_CARE_ACTIVITY_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLANNED_OBSERVATION2__IN_FULFILLMENT_OF1 = PLAN_OF_CARE_ACTIVITY_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Planned Observation2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -44073,6 +44955,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLANNED_COVERAGE__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLANNED_COVERAGE__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -44317,6 +45208,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLANNED_PROCEDURE2__PRECONDITION = PLAN_OF_CARE_ACTIVITY_PROCEDURE__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLANNED_PROCEDURE2__IN_FULFILLMENT_OF1 = PLAN_OF_CARE_ACTIVITY_PROCEDURE__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -44581,6 +45481,15 @@ public interface ConsolPackage extends EPackage {
 	int PLANNED_SUPPLY2__PRECONDITION = PLAN_OF_CARE_ACTIVITY_SUPPLY__PRECONDITION;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLANNED_SUPPLY2__IN_FULFILLMENT_OF1 = PLAN_OF_CARE_ACTIVITY_SUPPLY__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -44805,6 +45714,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLANNED_ACT2__NULL_FLAVOR = PLAN_OF_CARE_ACTIVITY_ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLANNED_ACT2__IN_FULFILLMENT_OF1 = PLAN_OF_CARE_ACTIVITY_ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -45123,6 +46041,15 @@ public interface ConsolPackage extends EPackage {
 	int NUTRITIONAL_STATUS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUTRITIONAL_STATUS_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Nutritional Status Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -45410,6 +46337,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int OUTCOME_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OUTCOME_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Outcome Observation</em>' class.
@@ -45701,6 +46637,15 @@ public interface ConsolPackage extends EPackage {
 	int PROGRESS_TOWARD_GOAL_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROGRESS_TOWARD_GOAL_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Progress Toward Goal Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -45898,6 +46843,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PATIENT_REFERRAL_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PATIENT_REFERRAL_ACT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -46216,6 +47170,15 @@ public interface ConsolPackage extends EPackage {
 	int GOAL_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GOAL_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Goal Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -46413,6 +47376,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int HEALTH_CONCERN_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEALTH_CONCERN_ACT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -46921,6 +47893,15 @@ public interface ConsolPackage extends EPackage {
 	int FAMILY_HISTORY_OBSERVATION2__NEGATION_IND = FAMILY_HISTORY_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_OBSERVATION2__IN_FULFILLMENT_OF1 = FAMILY_HISTORY_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Family History Observation2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -47208,6 +48189,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int SELF_CARE_ACTIVITIES__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_CARE_ACTIVITIES__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Self Care Activities</em>' class.
@@ -47499,6 +48489,15 @@ public interface ConsolPackage extends EPackage {
 	int SENSORY_STATUS__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SENSORY_STATUS__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Sensory Status</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -47786,6 +48785,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROBLEM_OBSERVATION2__NEGATION_IND = PROBLEM_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_OBSERVATION2__IN_FULFILLMENT_OF1 = PROBLEM_OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Problem Observation2</em>' class.
@@ -48077,6 +49085,15 @@ public interface ConsolPackage extends EPackage {
 	int LONGITUDINAL_CARE_WOUND_OBSERVATION__NEGATION_IND = PROBLEM_OBSERVATION2__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LONGITUDINAL_CARE_WOUND_OBSERVATION__IN_FULFILLMENT_OF1 = PROBLEM_OBSERVATION2__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Longitudinal Care Wound Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -48364,6 +49381,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROGNOSIS_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROGNOSIS_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Prognosis Observation</em>' class.
@@ -48655,6 +49681,15 @@ public interface ConsolPackage extends EPackage {
 	int WOUND_MEASUREMENT_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WOUND_MEASUREMENT_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Wound Measurement Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -48942,6 +49977,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int WOUND_CHARACTERISTIC__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WOUND_CHARACTERISTIC__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Wound Characteristic</em>' class.
@@ -49233,6 +50277,15 @@ public interface ConsolPackage extends EPackage {
 	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__NEGATION_IND = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__IN_FULFILLMENT_OF1 = NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Number Of Pressure Ulcers Observation2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -49520,6 +50573,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int ALLERGY_OBSERVATION2__NEGATION_IND = ALLERGY_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALLERGY_OBSERVATION2__IN_FULFILLMENT_OF1 = ALLERGY_OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Allergy Observation2</em>' class.
@@ -50861,6 +51923,15 @@ public interface ConsolPackage extends EPackage {
 	int CRITICALITY_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CRITICALITY_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Criticality Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51138,6 +52209,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int MENTAL_STATUS_OBSERVATION2__NEGATION_IND = COGNITIVE_STATUS_RESULT_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MENTAL_STATUS_OBSERVATION2__IN_FULFILLMENT_OF1 = COGNITIVE_STATUS_RESULT_OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Mental Status Observation2</em>' class.
@@ -51419,6 +52499,15 @@ public interface ConsolPackage extends EPackage {
 	int SMOKING_STATUS_MEANINGFUL_USE2__NEGATION_IND = SMOKING_STATUS_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SMOKING_STATUS_MEANINGFUL_USE2__IN_FULFILLMENT_OF1 = SMOKING_STATUS_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Smoking Status Meaningful Use2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51606,6 +52695,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int ENCOUNTER_DIAGNOSIS2__NULL_FLAVOR = ENCOUNTER_DIAGNOSIS__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_DIAGNOSIS2__IN_FULFILLMENT_OF1 = ENCOUNTER_DIAGNOSIS__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -51914,6 +53012,15 @@ public interface ConsolPackage extends EPackage {
 	int FUNCTIONAL_STATUS_OBSERVATION2__NEGATION_IND = FUNCTIONAL_STATUS_RESULT_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTIONAL_STATUS_OBSERVATION2__IN_FULFILLMENT_OF1 = FUNCTIONAL_STATUS_RESULT_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Functional Status Observation2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52101,6 +53208,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int HOSPITAL_ADMISSION_DIAGNOSIS2__NULL_FLAVOR = HOSPITAL_ADMISSION_DIAGNOSIS__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_ADMISSION_DIAGNOSIS2__IN_FULFILLMENT_OF1 = HOSPITAL_ADMISSION_DIAGNOSIS__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -52319,6 +53435,15 @@ public interface ConsolPackage extends EPackage {
 	int POSTPROCEDURE_DIAGNOSIS2__NULL_FLAVOR = POSTPROCEDURE_DIAGNOSIS__NULL_FLAVOR;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTPROCEDURE_DIAGNOSIS2__IN_FULFILLMENT_OF1 = POSTPROCEDURE_DIAGNOSIS__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52533,6 +53658,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PREOPERATIVE_DIAGNOSIS2__NULL_FLAVOR = PREOPERATIVE_DIAGNOSIS__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PREOPERATIVE_DIAGNOSIS2__IN_FULFILLMENT_OF1 = PREOPERATIVE_DIAGNOSIS__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -52841,6 +53975,15 @@ public interface ConsolPackage extends EPackage {
 	int RESULT_OBSERVATION2__NEGATION_IND = RESULT_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_OBSERVATION2__IN_FULFILLMENT_OF1 = RESULT_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Result Observation2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53120,6 +54263,15 @@ public interface ConsolPackage extends EPackage {
 	int SOCIAL_HISTORY_OBSERVATION2__NEGATION_IND = SOCIAL_HISTORY_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOCIAL_HISTORY_OBSERVATION2__IN_FULFILLMENT_OF1 = SOCIAL_HISTORY_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Social History Observation2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53397,6 +54549,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__NEGATION_IND = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__IN_FULFILLMENT_OF1 = SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Substance Or Device Allergy Observation2</em>' class.
@@ -53679,6 +54840,15 @@ public interface ConsolPackage extends EPackage {
 	int TOBACCO_USE2__NEGATION_IND = TOBACCO_USE__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOBACCO_USE2__IN_FULFILLMENT_OF1 = TOBACCO_USE__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Tobacco Use2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53956,6 +55126,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int VITAL_SIGN_OBSERVATION2__NEGATION_IND = VITAL_SIGN_OBSERVATION__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGN_OBSERVATION2__IN_FULFILLMENT_OF1 = VITAL_SIGN_OBSERVATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Vital Sign Observation2</em>' class.
@@ -54327,6 +55506,15 @@ public interface ConsolPackage extends EPackage {
 	int PROBLEM_CONCERN_ACT2__NULL_FLAVOR = PROBLEM_CONCERN_ACT__NULL_FLAVOR;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROBLEM_CONCERN_ACT2__IN_FULFILLMENT_OF1 = PROBLEM_CONCERN_ACT__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -54541,6 +55729,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERVENTION_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERVENTION_ACT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -54813,6 +56010,15 @@ public interface ConsolPackage extends EPackage {
 	int IMMUNIZATION_ACTIVITY2__PRECONDITION = IMMUNIZATION_ACTIVITY__PRECONDITION;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMUNIZATION_ACTIVITY2__IN_FULFILLMENT_OF1 = IMMUNIZATION_ACTIVITY__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -55036,6 +56242,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROCEDURE_ACTIVITY_ACT2__NULL_FLAVOR = PROCEDURE_ACTIVITY_ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_ACT2__IN_FULFILLMENT_OF1 = PROCEDURE_ACTIVITY_ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -55344,6 +56559,15 @@ public interface ConsolPackage extends EPackage {
 	int PROCEDURE_ACTIVITY_OBSERVATION2__NEGATION_IND = PROCEDURE_ACTIVITY_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_ACTIVITY_OBSERVATION2__IN_FULFILLMENT_OF1 = PROCEDURE_ACTIVITY_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Procedure Activity Observation2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -55522,6 +56746,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int ENCOUNTER_ACTIVITY2__PRECONDITION = ENCOUNTER_ACTIVITIES__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_ACTIVITY2__IN_FULFILLMENT_OF1 = ENCOUNTER_ACTIVITIES__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -55738,6 +56971,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLANNED_INTERVENTION_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLANNED_INTERVENTION_ACT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -56008,6 +57250,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLANNED_IMMUNIZATION_ACTIVITY__PRECONDITION = CDAPackage.SUBSTANCE_ADMINISTRATION__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLANNED_IMMUNIZATION_ACTIVITY__IN_FULFILLMENT_OF1 = CDAPackage.SUBSTANCE_ADMINISTRATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -56775,6 +58026,15 @@ public interface ConsolPackage extends EPackage {
 	int HEALTH_STATUS_OBSERVATION2__NEGATION_IND = HEALTH_STATUS_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEALTH_STATUS_OBSERVATION2__IN_FULFILLMENT_OF1 = HEALTH_STATUS_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Health Status Observation2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -56962,6 +58222,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int RISK_CONCERN_ACT__NULL_FLAVOR = CDAPackage.ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RISK_CONCERN_ACT__IN_FULFILLMENT_OF1 = CDAPackage.ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -60854,6 +62123,15 @@ public interface ConsolPackage extends EPackage {
 	int BIRTH_SEX_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BIRTH_SEX_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Birth Sex Observation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -62598,6 +63876,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int ALLERGY_CONCERN_ACT2__NULL_FLAVOR = ALLERGY_PROBLEM_ACT__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALLERGY_CONCERN_ACT2__IN_FULFILLMENT_OF1 = ALLERGY_PROBLEM_ACT__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -64805,6 +66092,15 @@ public interface ConsolPackage extends EPackage {
 	int COVERAGE_ACTIVITY2__NULL_FLAVOR = COVERAGE_ACTIVITY__NULL_FLAVOR;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COVERAGE_ACTIVITY2__IN_FULFILLMENT_OF1 = COVERAGE_ACTIVITY__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -65019,6 +66315,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int POLICY_ACTIVITY2__NULL_FLAVOR = POLICY_ACTIVITY__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_ACTIVITY2__IN_FULFILLMENT_OF1 = POLICY_ACTIVITY__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -65579,6 +66884,15 @@ public interface ConsolPackage extends EPackage {
 	int HOSPITAL_DISCHARGE_DIAGNOSIS2__NULL_FLAVOR = HOSPITAL_DISCHARGE_DIAGNOSIS__NULL_FLAVOR;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSPITAL_DISCHARGE_DIAGNOSIS2__IN_FULFILLMENT_OF1 = HOSPITAL_DISCHARGE_DIAGNOSIS__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -65965,6 +67279,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADMISSION_MEDICATION2__NULL_FLAVOR = ADMISSION_MEDICATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADMISSION_MEDICATION2__IN_FULFILLMENT_OF1 = ADMISSION_MEDICATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -66984,6 +68307,15 @@ public interface ConsolPackage extends EPackage {
 	int DECEASED_OBSERVATION2__NEGATION_IND = DECEASED_OBSERVATION__NEGATION_IND;
 
 	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DECEASED_OBSERVATION2__IN_FULFILLMENT_OF1 = DECEASED_OBSERVATION__IN_FULFILLMENT_OF1;
+
+	/**
 	 * The number of structural features of the '<em>Deceased Observation2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -67171,6 +68503,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int DISCHARGE_MEDICATION2__NULL_FLAVOR = DISCHARGE_MEDICATION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_MEDICATION2__IN_FULFILLMENT_OF1 = DISCHARGE_MEDICATION__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.

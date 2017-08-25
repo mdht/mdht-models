@@ -20,7 +20,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPreoperativeDiagnosis2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PreoperativeDiagnosisTemplateId PreoperativeDiagnosisCode PreoperativeDiagnosisCodeP PreoperativeDiagnosisProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.65' templateId.extension='2015-08-01' code.code='10219-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Preoperative Diagnosis' constraints.validation.dependOn.PreoperativeDiagnosisCode='PreoperativeDiagnosisCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PreoperativeDiagnosisTemplateId PreoperativeDiagnosisCode PreoperativeDiagnosisCodeP PreoperativeDiagnosisProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.65' templateId.extension='2015-08-01' constraints.validation.dependOn.PreoperativeDiagnosisCode='PreoperativeDiagnosisCodeP'"
  * @generated
  */
 public interface PreoperativeDiagnosis2 extends PreoperativeDiagnosis {

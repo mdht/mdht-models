@@ -20,7 +20,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getInstructionsSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InstructionsSectionTemplateId InstructionsSectionCode InstructionsSectionCodeP InstructionsSectionInstructions' templateId.root='2.16.840.1.113883.10.20.22.2.45' templateId.extension='2014-06-09' nullFlavor='NI' constraints.validation.info='InstructionsSection2NullFlavor' code.code='69730-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Instructions' constraints.validation.dependOn.InstructionsSectionCode='InstructionsSectionCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InstructionsSectionTemplateId InstructionsSectionCode InstructionsSectionCodeP InstructionsSectionInstructions' templateId.root='2.16.840.1.113883.10.20.22.2.45' templateId.extension='2014-06-09' nullFlavor='NI' constraints.validation.info='InstructionsSection2NullFlavor' constraints.validation.dependOn.InstructionsSectionCode='InstructionsSectionCodeP'"
  * @generated
  */
 public interface InstructionsSection2 extends InstructionsSection {

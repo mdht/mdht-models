@@ -37,6 +37,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivities;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSection;
@@ -313,8 +314,11 @@ public class Examples {
 	 * @throws Exception 
 	 */
 	public static void main(String[] args) throws Exception {
+		
+		ProblemConcernAct2 pca = ConsolFactory.eINSTANCE.createProblemConcernAct2().init();
+		CDAUtil.saveSnippet(pca, System.out);
 
-		create();
+//		create();
 //		createCCD();
 
 	}

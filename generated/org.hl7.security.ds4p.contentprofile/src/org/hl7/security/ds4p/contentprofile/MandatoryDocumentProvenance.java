@@ -66,10 +66,11 @@ public interface MandatoryDocumentProvenance extends Author {
 	 * @generated
 	 */
 	public MandatoryDocumentProvenance init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MandatoryDocumentProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MandatoryDocumentProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MandatoryDocumentProvenance

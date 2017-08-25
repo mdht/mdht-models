@@ -515,8 +515,7 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_TOBACCO_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
-			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
-			"value.code = '11367-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " + "value.code = '11367-0')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTobaccoUseCode(TobaccoUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Code</em>}' invariant operation.

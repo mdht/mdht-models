@@ -34,7 +34,8 @@ public interface PrivacyAnnotationEntryRelationship extends EntryRelationship {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.3251.1.11\')'"
 	 * @generated
 	 */
-	boolean validatePrivacyAnnotationEntryRelationshipTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyAnnotationEntryRelationshipTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -46,7 +47,8 @@ public interface PrivacyAnnotationEntryRelationship extends EntryRelationship {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.organizer->one(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(contentprofile::PrivacyAnnotation))'"
 	 * @generated
 	 */
-	boolean validatePrivacyAnnotationEntryRelationshipOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePrivacyAnnotationEntryRelationshipOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -54,10 +56,11 @@ public interface PrivacyAnnotationEntryRelationship extends EntryRelationship {
 	 * @generated
 	 */
 	public PrivacyAnnotationEntryRelationship init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PrivacyAnnotationEntryRelationship init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivacyAnnotationEntryRelationship init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrivacyAnnotationEntryRelationship

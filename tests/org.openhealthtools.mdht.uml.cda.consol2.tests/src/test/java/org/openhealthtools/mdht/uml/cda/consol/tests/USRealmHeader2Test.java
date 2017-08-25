@@ -71,6 +71,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.USRealmHeader2Operatio
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient TS Birth Time Precise To Minute</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient SDTC Ethnic Group Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient SDTC Ethnic Group Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2AuthorAssignedAuthorIfAssignedPersonThenContainsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Author Assigned Author If Assigned Person Then Contains Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2AuthorAssignedAuthorCodeTerminology(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Author Assigned Author Code Terminology</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformationRecipientIntendedRecipientId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Information Recipient Intended Recipient Id</em>}</li>
@@ -250,6 +252,109 @@ public class USRealmHeader2Test extends CDAValidationTest {
 		};
 
 		validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinuteTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCodeP() {
+		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode1PTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode1P",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_ETHNIC_GROUP_CODE1_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				target.init();
+				// RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				// target.getRecordTargets().add(rt);
+				// PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				// rt.setPatientRole(pr);
+				// Patient pat = CDAFactory.eINSTANCE.createPatient();
+				// pr.setPatient(pat);
+				CE egCode = DatatypesFactory.eINSTANCE.createCE("2135-2", "11122223333");
+				for (RecordTarget rt : target.getRecordTargets()) {
+					rt.getPatientRole().getPatient().getSDTCEthnicGroupCodes().add(egCode);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCodeP(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode1PTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode() {
+		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode1TestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode1",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_ETHNIC_GROUP_CODE1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+				CE egCode = DatatypesFactory.eINSTANCE.createCE("2135-2", "11122223333");
+				// for (RecordTarget rt : target.getRecordTargets()) {
+				rt.getPatientRole().getPatient().getSDTCEthnicGroupCodes().add(egCode);
+				// }
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				CE egCode = DatatypesFactory.eINSTANCE.createCE("2135-2", "2.16.840.1.113883.6.238");
+				for (RecordTarget rt : target.getRecordTargets()) {
+					rt.getPatientRole().getPatient().getSDTCEthnicGroupCodes().clear();
+				}
+				for (RecordTarget rt : target.getRecordTargets()) {
+					rt.getPatientRole().getPatient().getSDTCEthnicGroupCodes().add(egCode);
+				}
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode1TestCase.doValidationTest();
 	}
 
 	/**

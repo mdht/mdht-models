@@ -25,7 +25,8 @@ import org.hl7.security.ds4p.contentprofile.operations.ConfidentialitySecurityOb
  *
  * @generated
  */
-public class ConfidentialitySecurityObservationImpl extends SecurityObservationImpl implements ConfidentialitySecurityObservation {
+public class ConfidentialitySecurityObservationImpl extends SecurityObservationImpl
+		implements ConfidentialitySecurityObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51,28 +52,9 @@ public class ConfidentialitySecurityObservationImpl extends SecurityObservationI
 	 * @generated
 	 */
 	@Override
-	public boolean validateConfidentialitySecurityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConfidentialitySecurityObservationOperations.validateConfidentialitySecurityObservationValueP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConfidentialitySecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConfidentialitySecurityObservationOperations.validateConfidentialitySecurityObservationValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateSecurityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConfidentialitySecurityObservationOperations.validateSecurityObservationTemplateId(this, diagnostics, context);
+		return ConfidentialitySecurityObservationOperations.validateSecurityObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -82,7 +64,8 @@ public class ConfidentialitySecurityObservationImpl extends SecurityObservationI
 	 */
 	@Override
 	public boolean validateSecurityObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConfidentialitySecurityObservationOperations.validateSecurityObservationCodeP(this, diagnostics, context);
+		return ConfidentialitySecurityObservationOperations.validateSecurityObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -101,17 +84,29 @@ public class ConfidentialitySecurityObservationImpl extends SecurityObservationI
 	 * @generated
 	 */
 	@Override
-	public ConfidentialitySecurityObservation init() {
-	    return Initializer.Util.init(this);
+	public boolean validateSecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConfidentialitySecurityObservationOperations.validateSecurityObservationValue(
+			this, diagnostics, context);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ConfidentialitySecurityObservation init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ConfidentialitySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ConfidentialitySecurityObservationImpl
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ConfidentialitySecurityObservationImpl

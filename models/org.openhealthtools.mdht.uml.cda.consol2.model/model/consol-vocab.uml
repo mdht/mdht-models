@@ -1770,6 +1770,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
       <ownedLiteral xmi:id="_nB4soLD4EeafNo3UpQoAYw" name="CRITH"/>
       <ownedLiteral xmi:id="_octr4LD4EeafNo3UpQoAYw" name="CRITU"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_cLzZsIdpEeeAsbPrNOnubg" name="Detailed Ethnicity"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -1860,7 +1861,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2O3u9BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.62" version="20150424" fullName="Vital Sign Result Value Set" source="https://vsac.nlm.nih.gov/" definition="This identifies the vital sign result type" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_2O3u6RSVEeGGzu7fmW9pXw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2SVSkRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.7.4" source="http://phinvads.cdc.gov/vads/ViewValueSet.action?id=70FDBFB5-A277-DE11-9B52-0015173D1785" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_2SVSkBSVEeGGzu7fmW9pXw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
@@ -3303,4 +3304,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_hCQFcLD4EeafNo3UpQoAYw" base_EnumerationLiteral="_hCNCILD4EeafNo3UpQoAYw"/>
   <term:ValueSetCode xmi:id="_nB4sobD4EeafNo3UpQoAYw" base_EnumerationLiteral="_nB4soLD4EeafNo3UpQoAYw"/>
   <term:ValueSetCode xmi:id="_octr4bD4EeafNo3UpQoAYw" base_EnumerationLiteral="_octr4LD4EeafNo3UpQoAYw"/>
+  <term:ValueSetVersion xmi:id="_cL0AwIdpEeeAsbPrNOnubg" identifier="2.16.840.1.114222.4.11.877" fullName="Detailed Ethnicity" url="http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F-DD11-B38D-00188B398520#" base_Enumeration="_cLzZsIdpEeeAsbPrNOnubg">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
 </xmi:XMI>

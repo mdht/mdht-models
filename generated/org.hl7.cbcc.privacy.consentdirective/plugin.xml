@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.hl7.org/cbcc/privacy/consentdirective"
+            class="org.hl7.cbcc.privacy.consentdirective.CONSENTDIRECTIVEPackage"
+            genModel="model/consentdirective.genmodel"/>
+   </extension>
+
+</plugin>
