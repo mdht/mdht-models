@@ -2971,7 +2971,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_9IAzYeHLEeO04sHNODkHmQ" conceptName="Oral Drops" base_EnumerationLiteral="_9IAzYOHLEeO04sHNODkHmQ"/>
   <term:ValueSetCode xmi:id="_AcbKceHMEeO04sHNODkHmQ" conceptName="Otic Drops" base_EnumerationLiteral="_AcbKcOHMEeO04sHNODkHmQ"/>
   <term:ValueSetVersion xmi:id="_UMJcYeHXEeO04sHNODkHmQ" identifier="2.16.840.1.113762.1.4.1010.6" fullName="CVX Vaccines Administered - Vaccine Set" binding="Dynamic" base_Enumeration="_UMJcYOHXEeO04sHNODkHmQ">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_iloDYeHXEeO04sHNODkHmQ"/>
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_0_S4geXsEeOkFcFJ9uzEEw" identifier="2.16.840.1.113762.1.4.1010.4" binding="Dynamic" base_Enumeration="_0_S4gOXsEeOkFcFJ9uzEEw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
