@@ -442,7 +442,7 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ImmunizationMedicationInformation2 target) {
 				target.getManufacturedMaterial().setCode(
-					DatatypesFactory.eINSTANCE.createCE("notCheckedYet", "2.16.840.1.113883.12.292"));
+					DatatypesFactory.eINSTANCE.createCE("notCheckedAsDynamicSet", "2.16.840.1.113883.12.292"));
 			}
 
 			@Override
