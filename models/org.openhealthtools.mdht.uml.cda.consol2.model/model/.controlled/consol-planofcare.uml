@@ -4378,9 +4378,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   <uml:Association xmi:id="_NY0yQP8rEeS4jrgU1p4iug" memberEnd="_NY0LMP8rEeS4jrgU1p4iug _NY1ZUP8rEeS4jrgU1p4iug">
     <ownedEnd xmi:id="_NY1ZUP8rEeS4jrgU1p4iug" type="_FhAIMI3FEeOB0eBUISUB4Q" association="_NY0yQP8rEeS4jrgU1p4iug"/>
   </uml:Association>
-  <CDA:ValueSetConstraint xmi:id="_wNDAQAAJEeWla-1cYCOuzQ">
-    <reference href="../consol-vocab.uml#_8JaroAAJEeWla-1cYCOuzQ"/>
-  </CDA:ValueSetConstraint>
+   
   <CDA:PropertyValidation xmi:id="_HABMUAALEeWla-1cYCOuzQ" base_Property="_Fj3-cAALEeWla-1cYCOuzQ"/>
   <CDA:ValueSetConstraint xmi:id="_IMHMAAALEeWla-1cYCOuzQ" base_Property="_Fj3-cAALEeWla-1cYCOuzQ">
     <ruleId>CONF:1098-30885</ruleId>
