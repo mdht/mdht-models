@@ -3009,7 +3009,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:7969, CONF:7970</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_qfAzoiQ6EeG4DdjGPr5_Vg"/>
   </CDA:AssociationValidation>
-  <CDA:ValueSetConstraint xmi:id="__6IX4CUrEeG_gJw2x8CkdQ"/>
   <CDA:CDATemplate xmi:id="_yJUwEBkaEeGs5a462vYX5Q" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.33"/>
   <CDA:CodeSystemConstraint xmi:id="_2U6FcBSVEeGGzu7fmW9pXw" code="42344-2" displayName="Discharge Diet">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -3283,11 +3282,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:5396</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_5K0RUSysEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
-  <CDA:ValueSetConstraint xmi:id="_S5cLoCytEeGMXrZ0DiQwGg">
-    <reference href="consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
-    <base_Property href=".controlled/consol-documents.uml#_nLJOcCymEeGMXrZ0DiQwGg"/>
-    <ruleId>CONF:5407</ruleId>
-  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_pkK3ICytEeGMXrZ0DiQwGg" severity="INFO">
     <ruleId>CONF:5414</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_nLJ1gCymEeGMXrZ0DiQwGg"/>
