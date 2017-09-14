@@ -715,28 +715,6 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		initEClass(obligationPolicySecurityObservationEClass, ObligationPolicySecurityObservation.class,
 			"ObligationPolicySecurityObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(
-			obligationPolicySecurityObservationEClass, ecorePackage.getEBoolean(),
-			"validateObligationPolicySecurityObservationValueP", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			obligationPolicySecurityObservationEClass, ecorePackage.getEBoolean(),
-			"validateObligationPolicySecurityObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		initEClass(securityObservationEClass, SecurityObservation.class, "SecurityObservation", IS_ABSTRACT,
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1024,50 +1002,6 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 		initEClass(purposeOfUseSecurityObservationEClass, PurposeOfUseSecurityObservation.class,
 			"PurposeOfUseSecurityObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		op = addEOperation(
-			purposeOfUseSecurityObservationEClass, ecorePackage.getEBoolean(),
-			"validatePurposeOfUseSecurityObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			purposeOfUseSecurityObservationEClass, ecorePackage.getEBoolean(),
-			"validatePurposeOfUseSecurityObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			purposeOfUseSecurityObservationEClass, ecorePackage.getEBoolean(),
-			"validatePurposeOfUseSecurityObservationValueP", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			purposeOfUseSecurityObservationEClass, ecorePackage.getEBoolean(),
-			"validatePurposeOfUseSecurityObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		initEClass(confidentialitySecurityObservationEClass, ConfidentialitySecurityObservation.class,
 			"ConfidentialitySecurityObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1289,15 +1223,14 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 			obligationPolicySecurityObservationEClass, source,
 			new String[] {
 					"constraints.validation.error",
-					"SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP ObligationPolicySecurityObservationValueP",
+					"SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP SecurityObservationValueP",
 					"templateId.root", "2.16.840.1.113883.3.445.14", "code.code", "SECCONOBS", "code.codeSystem",
 					"2.16.840.1.113883.1.11.20457", "code.codeSystemName", "SecurityObservationTypeCodeSystem",
 					"code.displayName", "Security Control", "constraints.validation.dependOn.SecurityObservationCode",
 					"SecurityObservationCodeP", "value.codeSystem", "2.16.840.1.113883.1.11.20471",
 					"value.codeSystemName", "SecurityControlObservationValue", "constraints.validation.warning",
-					"ObligationPolicySecurityObservationValue",
-					"constraints.validation.dependOn.ObligationPolicySecurityObservationValue",
-					"ObligationPolicySecurityObservationValueP" });
+					"SecurityObservationValue", "constraints.validation.dependOn.SecurityObservationValue",
+					"SecurityObservationValueP" });
 		addAnnotation(
 			securityObservationEClass, source,
 			new String[] {
@@ -1346,15 +1279,13 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 			purposeOfUseSecurityObservationEClass, source,
 			new String[] {
 					"constraints.validation.error",
-					"SecurityObservationTemplateId PurposeOfUseSecurityObservationCode PurposeOfUseSecurityObservationCodeP PurposeOfUseSecurityObservationValue PurposeOfUseSecurityObservationValueP",
+					"SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP SecurityObservationValue SecurityObservationValueP",
 					"templateId.root", "2.16.840.1.113883.3.445.22", "code.code", "SECCONOBS", "code.codeSystem",
 					"2.16.840.1.113883.1.11.20457", "code.codeSystemName", "SecurityObservationTypeCodeSystem",
-					"code.displayName", "Security Control",
-					"constraints.validation.dependOn.PurposeOfUseSecurityObservationCode",
-					"PurposeOfUseSecurityObservationCodeP", "value.codeSystem", "2.16.840.1.113883.5.1063",
-					"value.codeSystemName", "SecurityObservationValueCodeSystem",
-					"constraints.validation.dependOn.PurposeOfUseSecurityObservationValue",
-					"PurposeOfUseSecurityObservationValueP" });
+					"code.displayName", "Security Control", "constraints.validation.dependOn.SecurityObservationCode",
+					"SecurityObservationCodeP", "value.codeSystem", "2.16.840.1.113883.5.8", "value.codeSystemName",
+					"ActReason", "constraints.validation.dependOn.SecurityObservationValue",
+					"SecurityObservationValueP" });
 		addAnnotation(
 			confidentialitySecurityObservationEClass, source,
 			new String[] {

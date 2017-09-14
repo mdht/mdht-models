@@ -1307,7 +1307,7 @@
     <ruleId>CONF:9074</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_d4Y_bWedEeOu4KcTyYBqzA" base_Property="_d4Y_ZGedEeOu4KcTyYBqzA">
-    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_ecZIEIxWEeKqi7cG0-P5Sg"/>
+    <reference href="pathmap://CONTENTPROFILE_MODEL///contentprofile-vocab.uml#_3-Wtq-ovEeKrOYS9kpIZsQ"/>
     <ruleId>CONF:14888</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_EwuxQWgHEeOZxdiNEEVgLA" mandatory="true" base_Property="_EwuxQGgHEeOZxdiNEEVgLA">

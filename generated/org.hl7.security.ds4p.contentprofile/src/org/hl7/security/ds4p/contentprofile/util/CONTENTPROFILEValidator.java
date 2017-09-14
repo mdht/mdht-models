@@ -146,28 +146,12 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	public static final int PRIVACY_MARKINGS_SECTION__PRIVACY_MARKINGS_SECTION_ENTRY1 = 13;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Obligation Policy Security Observation Value P' of 'Obligation Policy Security Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int OBLIGATION_POLICY_SECURITY_OBSERVATION__OBLIGATION_POLICY_SECURITY_OBSERVATION_VALUE_P = 14;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Obligation Policy Security Observation Value' of 'Obligation Policy Security Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int OBLIGATION_POLICY_SECURITY_OBSERVATION__OBLIGATION_POLICY_SECURITY_OBSERVATION_VALUE = 15;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Template Id' of 'Obligation Policy Security Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OBLIGATION_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID = 16;
+	public static final int OBLIGATION_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID = 14;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Code P' of 'Obligation Policy Security Observation'.
@@ -175,7 +159,7 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OBLIGATION_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE_P = 17;
+	public static final int OBLIGATION_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE_P = 15;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Code' of 'Obligation Policy Security Observation'.
@@ -183,7 +167,23 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OBLIGATION_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE = 18;
+	public static final int OBLIGATION_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE = 16;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Value P' of 'Obligation Policy Security Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OBLIGATION_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE_P = 17;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Value' of 'Obligation Policy Security Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OBLIGATION_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE = 18;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Template Id' of 'Security Observation'.
@@ -410,44 +410,44 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 	public static final int REFRAIN_POLICY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE = 46;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Purpose Of Use Security Observation Code P' of 'Purpose Of Use Security Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PURPOSE_OF_USE_SECURITY_OBSERVATION__PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE_P = 47;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Purpose Of Use Security Observation Code' of 'Purpose Of Use Security Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PURPOSE_OF_USE_SECURITY_OBSERVATION__PURPOSE_OF_USE_SECURITY_OBSERVATION_CODE = 48;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Purpose Of Use Security Observation Value P' of 'Purpose Of Use Security Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PURPOSE_OF_USE_SECURITY_OBSERVATION__PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE_P = 49;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Purpose Of Use Security Observation Value' of 'Purpose Of Use Security Observation'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int PURPOSE_OF_USE_SECURITY_OBSERVATION__PURPOSE_OF_USE_SECURITY_OBSERVATION_VALUE = 50;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Template Id' of 'Purpose Of Use Security Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PURPOSE_OF_USE_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID = 51;
+	public static final int PURPOSE_OF_USE_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID = 47;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Code P' of 'Purpose Of Use Security Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PURPOSE_OF_USE_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE_P = 48;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Code' of 'Purpose Of Use Security Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PURPOSE_OF_USE_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE = 49;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Value P' of 'Purpose Of Use Security Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PURPOSE_OF_USE_SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE_P = 50;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Value' of 'Purpose Of Use Security Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PURPOSE_OF_USE_SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE = 51;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Security Observation Template Id' of 'Confidentiality Security Observation'.
@@ -2161,48 +2161,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				obligationPolicySecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationValue(
+			result &= validateObligationPolicySecurityObservation_validateSecurityObservationValue(
 				obligationPolicySecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationValueP(
-				obligationPolicySecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateObligationPolicySecurityObservation_validateObligationPolicySecurityObservationValueP(
-				obligationPolicySecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateObligationPolicySecurityObservation_validateObligationPolicySecurityObservationValue(
+			result &= validateObligationPolicySecurityObservation_validateSecurityObservationValueP(
 				obligationPolicySecurityObservation, diagnostics, context);
 		}
 		return result;
-	}
-
-	/**
-	 * Validates the validateObligationPolicySecurityObservationValueP constraint of '<em>Obligation Policy Security Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateObligationPolicySecurityObservation_validateObligationPolicySecurityObservationValueP(
-			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return obligationPolicySecurityObservation.validateObligationPolicySecurityObservationValueP(
-			diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateObligationPolicySecurityObservationValue constraint of '<em>Obligation Policy Security Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateObligationPolicySecurityObservation_validateObligationPolicySecurityObservationValue(
-			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return obligationPolicySecurityObservation.validateObligationPolicySecurityObservationValue(
-			diagnostics, context);
 	}
 
 	/**
@@ -2239,6 +2205,30 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return obligationPolicySecurityObservation.validateSecurityObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSecurityObservationValueP constraint of '<em>Obligation Policy Security Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationValueP(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return obligationPolicySecurityObservation.validateSecurityObservationValueP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSecurityObservationValue constraint of '<em>Obligation Policy Security Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateObligationPolicySecurityObservation_validateSecurityObservationValue(
+			ObligationPolicySecurityObservation obligationPolicySecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return obligationPolicySecurityObservation.validateSecurityObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -2919,86 +2909,22 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				purposeOfUseSecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationCodeP(
+			result &= validatePurposeOfUseSecurityObservation_validateSecurityObservationCodeP(
 				purposeOfUseSecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationCode(
+			result &= validatePurposeOfUseSecurityObservation_validateSecurityObservationCode(
 				purposeOfUseSecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationValue(
+			result &= validatePurposeOfUseSecurityObservation_validateSecurityObservationValue(
 				purposeOfUseSecurityObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSecurityObservation_validateSecurityObservationValueP(
-				purposeOfUseSecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationCodeP(
-				purposeOfUseSecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationCode(
-				purposeOfUseSecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValueP(
-				purposeOfUseSecurityObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValue(
+			result &= validatePurposeOfUseSecurityObservation_validateSecurityObservationValueP(
 				purposeOfUseSecurityObservation, diagnostics, context);
 		}
 		return result;
-	}
-
-	/**
-	 * Validates the validatePurposeOfUseSecurityObservationCodeP constraint of '<em>Purpose Of Use Security Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationCodeP(
-			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return purposeOfUseSecurityObservation.validatePurposeOfUseSecurityObservationCodeP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validatePurposeOfUseSecurityObservationCode constraint of '<em>Purpose Of Use Security Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationCode(
-			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return purposeOfUseSecurityObservation.validatePurposeOfUseSecurityObservationCode(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validatePurposeOfUseSecurityObservationValueP constraint of '<em>Purpose Of Use Security Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValueP(
-			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return purposeOfUseSecurityObservation.validatePurposeOfUseSecurityObservationValueP(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validatePurposeOfUseSecurityObservationValue constraint of '<em>Purpose Of Use Security Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePurposeOfUseSecurityObservation_validatePurposeOfUseSecurityObservationValue(
-			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return purposeOfUseSecurityObservation.validatePurposeOfUseSecurityObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -3011,6 +2937,54 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return purposeOfUseSecurityObservation.validateSecurityObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSecurityObservationCodeP constraint of '<em>Purpose Of Use Security Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePurposeOfUseSecurityObservation_validateSecurityObservationCodeP(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return purposeOfUseSecurityObservation.validateSecurityObservationCodeP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSecurityObservationCode constraint of '<em>Purpose Of Use Security Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePurposeOfUseSecurityObservation_validateSecurityObservationCode(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return purposeOfUseSecurityObservation.validateSecurityObservationCode(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSecurityObservationValueP constraint of '<em>Purpose Of Use Security Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePurposeOfUseSecurityObservation_validateSecurityObservationValueP(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return purposeOfUseSecurityObservation.validateSecurityObservationValueP(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateSecurityObservationValue constraint of '<em>Purpose Of Use Security Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePurposeOfUseSecurityObservation_validateSecurityObservationValue(
+			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return purposeOfUseSecurityObservation.validateSecurityObservationValue(diagnostics, context);
 	}
 
 	/**
