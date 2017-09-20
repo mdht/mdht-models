@@ -677,7 +677,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* FamilyHistorySection */
 				FamilyHistorySection section =
 
-						ConsolFactory.eINSTANCE.createFamilyHistorySection().init();
+				ConsolFactory.eINSTANCE.createFamilyHistorySection().init();
 
 				target.addSection(section);
 
@@ -1096,7 +1096,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* MentalStatusSection */
 				MentalStatusSection section =
 
-						ConsolFactory.eINSTANCE.createMentalStatusSection().init();
+				ConsolFactory.eINSTANCE.createMentalStatusSection().init();
 
 				target.addSection(section);
 
@@ -1137,7 +1137,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* GeneralStatusSection */
 				GeneralStatusSection section =
 
-						ConsolFactory.eINSTANCE.createGeneralStatusSection().init();
+				ConsolFactory.eINSTANCE.createGeneralStatusSection().init();
 
 				target.addSection(section);
 
@@ -1178,7 +1178,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* ReviewOfSystemsSection */
 				ReviewOfSystemsSection section =
 
-						ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
+				ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
 
 				target.addSection(section);
 
@@ -1219,7 +1219,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* NutritionSection */
 				NutritionSection section =
 
-						ConsolFactory.eINSTANCE.createNutritionSection().init();
+				ConsolFactory.eINSTANCE.createNutritionSection().init();
 
 				target.addSection(section);
 
@@ -1331,7 +1331,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* HistoryOfPresentIllnessSection */
 				HistoryOfPresentIllnessSection section =
 
-						ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
+				ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
 
 				target.addSection(section);
 
@@ -1407,7 +1407,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* AssessmentSection */
 				AssessmentSection section =
 
-						ConsolFactory.eINSTANCE.createAssessmentSection().init();
+				ConsolFactory.eINSTANCE.createAssessmentSection().init();
 
 				target.addSection(section);
 
@@ -1554,7 +1554,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* CourseOfCareSection */
 				CourseOfCareSection section =
 
-						ConsolFactory.eINSTANCE.createCourseOfCareSection().init();
+				ConsolFactory.eINSTANCE.createCourseOfCareSection().init();
 
 				target.addSection(section);
 

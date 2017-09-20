@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Package xmi:id="_ixMqQN2ZEeKXEcqvv8gwcA" name="contentprofile-vocab">
     <ownedComment xmi:id="_9Bqg8GdPEeOu4KcTyYBqzA">
       <body>The terminoloyg/value sets section contains the value set bindings referenced by the
@@ -110,7 +110,7 @@
     <codeSystem href="pathmap://TERM_MODEL/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_3-Wtq-ovEeKrOYS9kpIZsQ" identifier="2.16.840.1.113883.1.11.20448" fullName="Purpose of Use" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vocabulary.html" definition="Reason for performing one or more operations on information, which may be permitted by source system’s security policy in accordance with one or more privacy policies and consent directives." base_Enumeration="_3-Wtd-ovEeKrOYS9kpIZsQ">
-    <codeSystem href="pathmap://TERM_MODEL/model/CodeSystems.uml#_dWuTYaDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_dWuTYaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_3-WtsuovEeKrOYS9kpIZsQ" identifier="2.16.840.1.113883.1.11.20446" fullName="RefrainPolicy" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot2013SEP/html/infrastructure/vocabulary/vs_ActCode.html#RefrainPolicy" definition="Conveys prohibited actions which an information custodian, receiver, or user is not permitted to perform unless otherwise authorized or permitted under specified circumstances." base_Enumeration="_3-WtgeovEeKrOYS9kpIZsQ">
     <codeSystem href="pathmap://TERM_MODEL/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>

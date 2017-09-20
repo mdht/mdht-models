@@ -52,57 +52,49 @@ public class PurposeOfUseSecurityObservationImpl extends SecurityObservationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validatePurposeOfUseSecurityObservationCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PurposeOfUseSecurityObservationOperations.validatePurposeOfUseSecurityObservationCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePurposeOfUseSecurityObservationCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PurposeOfUseSecurityObservationOperations.validatePurposeOfUseSecurityObservationCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePurposeOfUseSecurityObservationValueP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PurposeOfUseSecurityObservationOperations.validatePurposeOfUseSecurityObservationValueP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePurposeOfUseSecurityObservationValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PurposeOfUseSecurityObservationOperations.validatePurposeOfUseSecurityObservationValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateSecurityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationTemplateId(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSecurityObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSecurityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSecurityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationValue(this, diagnostics, context);
 	}
 
 	/**

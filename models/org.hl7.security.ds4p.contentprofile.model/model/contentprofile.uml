@@ -102,14 +102,13 @@
       <ownedAttribute xmi:id="_cjNcg2eaEeOu4KcTyYBqzA" name="code" visibility="private" aggregation="composite" redefinedProperty="_ECQ2Q2eaEeOu4KcTyYBqzA">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_cjNchGeaEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_cjNchGeaEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite" redefinedProperty="_ECQ2RWeaEeOu4KcTyYBqzA">
         <ownedComment xmi:id="_cjNchWeaEeOu4KcTyYBqzA">
           <body>This attribute specifies a type of obligation policy, specifically.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cjNch2eaEeOu4KcTyYBqzA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cjNchmeaEeOu4KcTyYBqzA" value="1"/>
-        <redefinedProperty href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_sEmhkOAFEeKtnLp4ZyOObA" name="MandatoryDocumentProvenance">
@@ -932,15 +931,14 @@
           Healthcare Security Classification (HCS) standard.</body>
       </ownedComment>
       <generalization xmi:id="_3hm1QGedEeOu4KcTyYBqzA" general="_ECQ2QGeaEeOu4KcTyYBqzA"/>
-      <ownedAttribute xmi:id="_d4Y_YmedEeOu4KcTyYBqzA" name="code" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_d4Y_YmedEeOu4KcTyYBqzA" name="code" visibility="private" aggregation="composite" redefinedProperty="_ECQ2Q2eaEeOu4KcTyYBqzA">
         <ownedComment xmi:id="_d4Y_Y2edEeOu4KcTyYBqzA">
           <body>This element constrains the SecurityObservation code to allow only for
             &quot;Security Control&quot; observation types.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbpo4xwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_d4Y_ZGedEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_d4Y_ZGedEeOu4KcTyYBqzA" name="value" visibility="private" aggregation="composite" redefinedProperty="_ECQ2RWeaEeOu4KcTyYBqzA">
         <ownedComment xmi:id="_d4Y_ZWedEeOu4KcTyYBqzA">
           <body>The value is constrained to support only the codes associated with the Purpose of
             Use Value set.</body>
@@ -948,7 +946,6 @@
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sBaEUWekEeOUsp1D9sWlOg" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sBaEUGekEeOUsp1D9sWlOg" value="1"/>
-        <subsettedProperty href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective.uml#_HTbppIxwEeKqJ6NoJCkz3A"/>
       </ownedAttribute>
     </packagedElement>
     <profileApplication xmi:id="_ixAdA92ZEeKXEcqvv8gwcA">
@@ -1224,7 +1221,7 @@
     <ruleId>CONF:14841</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_dYFEfGeZEeOu4KcTyYBqzA" code="SECCLASSOBS" displayName="Security Category" base_Property="_dYFEc2eZEeOu4KcTyYBqzA">
-    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
     <ruleId>CONF:14888</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_dYFEfWeZEeOu4KcTyYBqzA" mandatory="true" base_Property="_dYFEdWeZEeOu4KcTyYBqzA">
@@ -1284,7 +1281,7 @@
     <ruleId>CONF:9136</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_cjNcjWeaEeOu4KcTyYBqzA" base_Property="_cjNchGeaEeOu4KcTyYBqzA" severity="WARNING">
-    <reference href="pathmap://CONSENTDIRECTIVE_MODEL/consentdirective-vocab.uml#_7GsEIYxoEeKIvYMIfi9SOQ"/>
+    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_7GsEIYxoEeKIvYMIfi9SOQ"/>
     <ruleId>CONF:9137</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConformsTo xmi:id="_opU5wGeaEeOu4KcTyYBqzA" base_Generalization="_kDU_AGeaEeOu4KcTyYBqzA">
@@ -1310,7 +1307,7 @@
     <ruleId>CONF:9074</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_d4Y_bWedEeOu4KcTyYBqzA" base_Property="_d4Y_ZGedEeOu4KcTyYBqzA">
-    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_ecZIEIxWEeKqi7cG0-P5Sg"/>
+    <reference href="pathmap://CONTENTPROFILE_MODEL///contentprofile-vocab.uml#_3-Wtq-ovEeKrOYS9kpIZsQ"/>
     <ruleId>CONF:14888</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_EwuxQWgHEeOZxdiNEEVgLA" mandatory="true" base_Property="_EwuxQGgHEeOZxdiNEEVgLA">

@@ -453,7 +453,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 				/* AssessmentSection */
 				AssessmentSection section =
 
-						ConsolFactory.eINSTANCE.createAssessmentSection().init();
+				ConsolFactory.eINSTANCE.createAssessmentSection().init();
 
 				target.addSection(section);
 
@@ -598,7 +598,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 				/* ChiefComplaintSection */
 				ChiefComplaintSection section =
 
-						ConsolFactory.eINSTANCE.createChiefComplaintSection().init();
+				ConsolFactory.eINSTANCE.createChiefComplaintSection().init();
 
 				target.addSection(section);
 
@@ -742,7 +742,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 				/* ObjectiveSection */
 				ObjectiveSection section =
 
-						ConsolFactory.eINSTANCE.createObjectiveSection().init();
+				ConsolFactory.eINSTANCE.createObjectiveSection().init();
 
 				target.addSection(section);
 
@@ -887,7 +887,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 				/* ReviewOfSystemsSection */
 				ReviewOfSystemsSection section =
 
-						ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
+				ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
 
 				target.addSection(section);
 
@@ -928,7 +928,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 				/* SubjectiveSection */
 				SubjectiveSection section =
 
-						ConsolFactory.eINSTANCE.createSubjectiveSection().init();
+				ConsolFactory.eINSTANCE.createSubjectiveSection().init();
 
 				target.addSection(section);
 
@@ -1004,7 +1004,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 				/* NutritionSection */
 				NutritionSection section =
 
-						ConsolFactory.eINSTANCE.createNutritionSection().init();
+				ConsolFactory.eINSTANCE.createNutritionSection().init();
 
 				target.addSection(section);
 

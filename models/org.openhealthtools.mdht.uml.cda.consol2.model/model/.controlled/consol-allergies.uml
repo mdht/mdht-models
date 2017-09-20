@@ -992,9 +992,7 @@ THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF TH
   <CDA:ConstraintValidation xmi:id="_kTFLMCYOEeGWfpmyutaqOA" severity="WARNING">
     <ruleId>CONF:9118</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ValueSetConstraint xmi:id="_vj2U0CYOEeGWfpmyutaqOA">
-    <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
-  </CDA:ValueSetConstraint>
+   
   <CDA:ValueSetConstraint xmi:id="_q-cRgCZyEeGtVbZZHlmnzA" base_Property="_2FGu6hSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7356</ruleId>
     <ruleId>R2.0=CONF:1098-7356</ruleId>
@@ -1004,14 +1002,8 @@ THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF TH
     <ruleId>CONF:9117</ruleId>
     <ruleId>CONF:9118</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_DrnMcCnBEeGHDN_aHIiN8Q">
-    <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
-  </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_AIIMsCnDEeGHDN_aHIiN8Q" severity="WARNING">
-    <ruleId>CONF:9117</ruleId>
-    <ruleId>CONF:16038</ruleId>
-    <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
-  </CDA:ValueSetConstraint>
+  
+  
   <CDA:ActRelationship xmi:id="_whZe4Cx0EeG6iqE9PBsDjg" base_Association="_2FRG8RSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_j6I_oCzFEeG6iqE9PBsDjg" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7335</ruleId>

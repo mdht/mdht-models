@@ -52,30 +52,6 @@ public class ObligationPolicySecurityObservationImpl extends SecurityObservation
 	 * @generated
 	 */
 	@Override
-	public boolean validateObligationPolicySecurityObservationValueP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ObligationPolicySecurityObservationOperations.validateObligationPolicySecurityObservationValueP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateObligationPolicySecurityObservationValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ObligationPolicySecurityObservationOperations.validateObligationPolicySecurityObservationValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateSecurityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ObligationPolicySecurityObservationOperations.validateSecurityObservationTemplateId(
 			this, diagnostics, context);
@@ -100,6 +76,28 @@ public class ObligationPolicySecurityObservationImpl extends SecurityObservation
 	@Override
 	public boolean validateSecurityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ObligationPolicySecurityObservationOperations.validateSecurityObservationCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSecurityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ObligationPolicySecurityObservationOperations.validateSecurityObservationValueP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ObligationPolicySecurityObservationOperations.validateSecurityObservationValue(
 			this, diagnostics, context);
 	}
 

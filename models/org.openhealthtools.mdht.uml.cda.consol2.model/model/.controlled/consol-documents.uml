@@ -5400,7 +5400,7 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_mcDNoNBWEeGg9eE98HsYZw" severity="INFO" base_Property="_d3LCgNBWEeGg9eE98HsYZw"/>
   <CDA:PropertyValidation xmi:id="_G_Cs0NBZEeG2b5vwscX4AA" base_Property="_DKwi4NBZEeG2b5vwscX4AA"/>
-  <CDA:ValueSetConstraint xmi:id="_oIdS0NBbEeGF655cTEGY8Q" base_Property="_DKwi4NBZEeG2b5vwscX4AA">
+  <CDA:ValueSetConstraint xmi:id="_oIdS0NBbEeGF655cTEGY8Q" base_Property="_DKwi4NBZEeG2b5vwscX4AA" uri="consol-vocab::Language">
     <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:5407</ruleId>
     <ruleId>DSTU:806</ruleId>
