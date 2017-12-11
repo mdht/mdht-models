@@ -80,6 +80,17 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
