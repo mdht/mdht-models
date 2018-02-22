@@ -370,14 +370,14 @@ Medication timing is complex. This template requires that there be a substanceAd
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2GIpoRSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbvhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2GJQsBSVEeGGzu7fmW9pXw" base_Property="_2GHbvhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7514</ruleId>
     <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7514</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2GMUABSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbzhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2GX6MBSVEeGGzu7fmW9pXw" base_Property="_2GHbzhSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7515</ruleId>
     <ruleId>R2.0=CONF:1098-7515</ruleId>
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2GKe0BSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2GHbwhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7516</ruleId>
@@ -988,8 +988,8 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>R2.0=CONF:1098-7451</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_JbIaABrZEeGo461UQq-B1g" base_Property="_ThIPFBrYEeGo461UQq-B1g">
-    <ruleId>CONF:7455</ruleId>
     <reference href="../consol-vocab.uml#_2Hn3YBSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7455</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_j3aTQBrTEeGo461UQq-B1g" name="MedicationSupplyOrder">
     <ownedRule xmi:id="_iZPioB7lEeGEaLkc3UAsAg" name="instructionInversionInd" constrainedElement="_j3aTQBrTEeGo461UQq-B1g">
@@ -1159,9 +1159,9 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>R2.0=CONF:1098-7496</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_jT_r4B-vEeGKirKJsFylGA" base_Property="_2GkugRSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
     <ruleId>CONF:7497</ruleId>
     <ruleId>R2.0=CONF:1098-7497</ruleId>
-    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
   </CDA:ValueSetConstraint>
   <CDA:TextValue xmi:id="_zcy7cB-vEeGKirKJsFylGA" severity="WARNING" base_Property="_yhVYwB-vEeGKirKJsFylGA">
     <ruleId>CONF:7501</ruleId>
@@ -1209,20 +1209,20 @@ The UDI should be sent in the participantRole/id.</body>
   </uml:Association>
   <CDA:CodeSystemConstraint xmi:id="_qXwewCUvEeG_gJw2x8CkdQ" code="10160-0" displayName="History of medication use" base_Property="_iAoXIxVdEeGQCvUGzi1kDQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7792</ruleId>
+    <ruleId>CONF:15386</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_sR8TgCUvEeG_gJw2x8CkdQ" code="10160-0" displayName="History of medication use" base_Property="_2NJ3pBSVEeGGzu7fmW9pXw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7569</ruleId>
+    <ruleId>CONF:15388</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_sCeZIDiAEeGSytqLITd2FA" base_Property="_2HSgMRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8745</ruleId>
     <ruleId>R2.0=CONF:1098-8745</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_3ny2cDiAEeGSytqLITd2FA" base_Property="_2HTHQBSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
     <ruleId>CONF:8746</ruleId>
     <ruleId>R2.0=CONF:1098-8746</ruleId>
-    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_61IfsDiBEeGSytqLITd2FA" severity="WARNING" base_Property="_5f05oDiBEeGSytqLITd2FA">
     <ruleId>CONF:15498</ruleId>
@@ -1392,8 +1392,8 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:ConstraintValidation xmi:id="_nkhuYMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_2NJ3tRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_t5o2UMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_iAoXFhVdEeGQCvUGzi1kDQ"/>
   <CDA:ValueSetConstraint xmi:id="_W_OvoNuhEeGaiuMcT06VUQ" base_Property="_Dh74wCANEeGKirKJsFylGA">
-    <ruleId>CONF:7412</ruleId>
     <reference href="../consol-vocab.uml#_uPu0oCXZEeGD8_EQPvfzIQ"/>
+    <ruleId>CONF:7412</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_MB6gQNzPEeG4UqssEkZt3w" severity="WARNING" base_Constraint="_GyKRMEIsEeG4bZAl2IGXmQ"/>
   <CDA:ConstraintValidation xmi:id="_M2SjgNzPEeG4UqssEkZt3w" severity="WARNING" base_Constraint="_WONKoCANEeGKirKJsFylGA"/>
@@ -1942,12 +1942,12 @@ This effectiveTime represents either the medication duration (i.e., the time the
     <ruleId>CONF:1098-7507</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_DyKbsOLTEeOc7-TVP7Wi6w" base_Property="__4L5cOLSEeOc7-TVP7Wi6w">
-    <ruleId>CONF:1098-32360</ruleId>
     <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <ruleId>CONF:1098-32360</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_6PKzw-LYEeOc7-TVP7Wi6w" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w">
-    <ruleId>CONF:1098-7519</ruleId>
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_Mj8dAGvSEeaBpo0IxWaF6w"/>
+    <ruleId>CONF:1098-7519</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_N3hTYOLZEeOc7-TVP7Wi6w" severity="INFO" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w"/>
   <uml:Association xmi:id="_OvExAOLaEeOc7-TVP7Wi6w" memberEnd="_OvC70OLaEeOc7-TVP7Wi6w _OvFYEOLaEeOc7-TVP7Wi6w">
@@ -2128,8 +2128,8 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
     <ruleId>CONF:1098-32579</ruleId>
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_MeYOkOXsEeOkFcFJ9uzEEw" base_Property="_MeXngOXsEeOkFcFJ9uzEEw">
-    <ruleId>CONF:1098-7412</ruleId>
     <reference href="../consol-vocab.uml#_0_S4geXsEeOkFcFJ9uzEEw"/>
+    <ruleId>CONF:1098-7412</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_QyMNIOXsEeOkFcFJ9uzEEw" base_Property="_MeXngOXsEeOkFcFJ9uzEEw"/>
   <CDA:PropertyValidation xmi:id="_eEksYOXwEeOkFcFJ9uzEEw" severity="INFO" base_Property="_dVFJIOXwEeOkFcFJ9uzEEw">
@@ -2587,8 +2587,8 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2fqgUzhEEeS1WeMhbm6GZw" base_Property="_2fqgUDhEEeS1WeMhbm6GZw"/>
   <CDA:ValueSetConstraint xmi:id="_7o8uUDhEEeS1WeMhbm6GZw" base_Property="_2fqgUDhEEeS1WeMhbm6GZw">
-    <ruleId>CONF:1098-7369</ruleId>
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1098-7369</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_qeq-MDhFEeS1WeMhbm6GZw" code="ASSERTION" displayName="Assertion" base_Property="_KDeToDhEEeS1WeMhbm6GZw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
@@ -2639,12 +2639,12 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_nbj6IMLMEeSqg-Exmsy2kg" severity="WARNING" base_Property="_nbjTEMLMEeSqg-Exmsy2kg"/>
   <CDA:ValueSetConstraint xmi:id="_nbkhMMLMEeSqg-Exmsy2kg" base_Property="_nbjTEMLMEeSqg-Exmsy2kg">
-    <ruleId>CONF:1098-7514</ruleId>
     <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1098-7514</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_smFv8MNpEeSRNKqIviDQAg" base_Property="_smEh0MNpEeSRNKqIviDQAg">
-    <ruleId>CONF:1098-32361</ruleId>
     <reference href="../consol-vocab.uml#_dy62kMNpEeSRNKqIviDQAg"/>
+    <ruleId>CONF:1098-32361</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_33ADgMNpEeSRNKqIviDQAg" base_Property="_smEh0MNpEeSRNKqIviDQAg">
     <ruleId>CONF:1098-7455</ruleId>
@@ -2656,8 +2656,8 @@ This section requires either an entry indicating the subject is not known to be 
     <ruleId>CONF:1098-7432</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_e9LkEMOGEeSRNKqIviDQAg" base_Property="_bgxuoMOGEeSRNKqIviDQAg">
-    <ruleId>CONF:1098-32362</ruleId>
     <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <ruleId>CONF:1098-32362</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Hv6hU8OIEeSRNKqIviDQAg" severity="WARNING" base_Property="_Hv6hUMOIEeSRNKqIviDQAg">
     <ruleId>CONF:1098-7434</ruleId>
@@ -2666,8 +2666,8 @@ This section requires either an entry indicating the subject is not known to be 
     <ruleId>CONF:1098-8749</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_vPRM4MQSEeSt_63yiINGSw" base_Property="_oW6N8MQSEeSt_63yiINGSw">
-    <ruleId>CONF:1098-32363</ruleId>
     <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <ruleId>CONF:1098-32363</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_YauMIMQUEeSt_63yiINGSw" memberEnd="_Yas-AMQUEeSt_63yiINGSw _YauzMMQUEeSt_63yiINGSw">
     <ownedEnd xmi:id="_YauzMMQUEeSt_63yiINGSw" type="_k_C20OaCEeOmzetP5oaH3A" association="_YauMIMQUEeSt_63yiINGSw"/>
@@ -2678,12 +2678,12 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_07H3UMhCEeSU-Km0iFeHDg" severity="INFO" base_Property="_2GHbxhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_JAJr4MhDEeSU-Km0iFeHDg" base_Property="_2GHbxhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7519</ruleId>
     <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7519</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_WpUWIPpdEeS-CfvNxekztA" base_Property="_WDsGYYqvEeOoMZgUoTghIg">
-    <ruleId>CONF:1098-32358</ruleId>
     <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <ruleId>CONF:1098-32358</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_pHwjUA7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_so0iEOZ2EeO97uF_XMEmeg"/>
   <CDA:ConstraintValidation xmi:id="_pldL8A7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_cKGQYOZ3EeO97uF_XMEmeg"/>
@@ -2820,8 +2820,8 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <ruleId>CONF:1198-32754</ruleId>
   </CDA:TextValue>
   <CDA:ValueSetConstraint xmi:id="_eS9XoDsBEeWD4MX6K2c_gA" base_Property="_HkAI4DsAEeWD4MX6K2c_gA">
-    <ruleId>CONF:1198-32771</ruleId>
     <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
+    <ruleId>CONF:1198-32771</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_BH7ycDsCEeWD4MX6K2c_gA" code="76662-6" displayName="Instructions Medication" base_Property="_Hj_h0DsAEeWD4MX6K2c_gA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -2866,4 +2866,10 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <ruleId>CONF:1098-32908</ruleId>
     <ruleId>CONF:1098-32909</ruleId>
   </CDA:EntryRelationship>
+  <CDA:PropertyValidation xmi:id="_ELakEN6jEee0kIKIEebuqA" base_Property="_iAoXIxVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:15385</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_SefBEN6jEee0kIKIEebuqA" base_Property="_2NJ3pBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15387</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
