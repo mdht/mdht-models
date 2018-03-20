@@ -5415,7 +5415,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ruleId>CONF:10414, R2.1=CONF:1198-5386</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_NwqnkOxmEeG7k4bbVdXbXw" severity="WARNING" base_Constraint="_8kl9IOxlEeG7k4bbVdXbXw">
-    <ruleId>CONF:1198-5404, R2.1=CONF:1198-5404</ruleId>
+    <ruleId>CONF:1198-5404</ruleId>
+    <ruleId>R2.1=CONF:1198-5404</ruleId>
+    <ruleId>DSTU:737</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_OOyuAOxmEeG7k4bbVdXbXw" severity="INFO" base_Constraint="_79bPcOxlEeG7k4bbVdXbXw">
     <ruleId>CONF:5403, R2.1=CONF:1198-5403</ruleId>
@@ -5469,7 +5471,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ruleId>CONF:7293, R2.1=CONF:81-7293</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_YI6Q4PIQEeGu1M-cCXg0Dg" severity="WARNING" base_Property="_qB12w_IPEeGu1M-cCXg0Dg">
-    <ruleId>CONF:7295, R2.1=CONF:81-7295</ruleId>
+    <ruleId>CONF:7295</ruleId>
+    <ruleId>R2.1=CONF:81-7295</ruleId>
+    <ruleId>DSTU:737</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_u2Jd0PIQEeGu1M-cCXg0Dg" base_Property="_qB12wPIPEeGu1M-cCXg0Dg">
     <ruleId>CONF:7292, R2.1=CONF:81-7292</ruleId>
