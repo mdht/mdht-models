@@ -1756,6 +1756,7 @@ The Mental Status Section contains observations and evaluations related to a pat
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-32791</ruleId>
     <ruleId>CONF:1198-32792</ruleId>
+    <ruleId>DSTU:795</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConformsTo xmi:id="_7BzUMGvjEeeGpbQRBTrLBg" base_Generalization="_ze150fitEeOXlK95I8tUew"/>
   <CDA:ConstraintValidation xmi:id="_49Tp4GwEEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_C35gMGwEEeeGpbQRBTrLBg"/>
