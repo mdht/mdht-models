@@ -2935,15 +2935,21 @@ Depending on the type of supply, the product or participant will be either a Med
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_bwml0P4yEeO_Yb9cO8w3bA" name="PlanOfTreatmentSection2">
     <ownedComment xmi:id="_7lKjoP4yEeO_Yb9cO8w3bA">
-      <body>This section, formerly known as &quot;Plan of Care&quot;, contains data that define pending orders, interventions, encounters, services, and procedures for the patient. It is limited to prospective, unfulfilled, or incomplete orders and requests only. These are indicated by the @moodCode of the entries within this section. All active, incomplete, or pending orders, appointments, referrals, procedures, services, or any other pending event of clinical significance to the current care of the patient should be listed.&#xD;
-This section may also contain information about ongoing care of the patient, clinical reminders, patient's values, beliefs, preferences, care expectations, and overarching care goals. &#xD;
-Clinical reminders are placed here to provide prompts for disease prevention and management, patient safety, and healthcare quality improvements, including widely accepted performance measures. &#xD;
-Values may include the importance of quality of life over longevity. These values are taken into account when prioritizing all problems and their treatments.&#xD;
-Beliefs may include comfort with dying or the refusal of blood transfusions because of the patient's religious convictions.????&#xD;
-Preferences may include liquid medicines over tablets, or treatment via secure email instead of in person. &#xD;
-Care expectations may range from being treated only by female clinicians, to expecting all calls to be returned within 24 hours. &#xD;
-Overarching goals described in this section are not tied to a specific condition, problem, health concern, or intervention. Examples of overarching goals could be to minimize pain or dependence on others, or to walk a daughter down the aisle for her marriage.????&#xD;
-The plan may also indicate that patient education will be provided.</body>
+      <body>&lt;p>&#xD;
+This section, formerly known as &quot;Plan of Care&quot;, contains data that define pending orders, interventions, encounters, services, and procedures for the patient. It is limited to prospective, unfulfilled, or incomplete orders and requests only. These are indicated by the @moodCode of the entries within this section. All active, incomplete, or pending orders, appointments, referrals, procedures, services, or any other pending event of clinical significance to the current care of the patient should be listed.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Clinical reminders are placed here to provide prompts for disease prevention and management, patient safety, and healthcare quality improvements, including widely accepted performance measures.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+The plan may also indicate that patient education will be provided.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+When used in a document that includes a Goals Section, all the goals (whether narrative only, or structured Goal Observation entries) should be recorded in the Goals Section, rather than in the Plan of Treatment Section, to avoid confusion as to &quot;which/whose goals should be in which section?&quot;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+When used in a document that does not include a Goals Section, the Plan of Treatment section may also contain information about care team members' goals, including the patient's values, beliefs, preferences, care expectations, and overarching care goals. Values may include the importance of quality of life over longevity. These values are taken into account when prioritizing all problems and their treatments. Beliefs may include comfort with dying or the refusal of blood transfusions because of the patient's religious convictions. Preferences may include liquid medicines over tablets, or treatment via secure email instead of in person. Care expectations may range from being treated only by female clinicians, to expecting all calls to be returned within 24 hours. Overarching goals described in this section are not tied to a specific condition, problem, health concern, or intervention. Examples of overarching goals could be to minimize pain or dependence on others, or to walk a daughter down the aisle for her marriage. DSTU:871&#xD;
+&lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_bwppIP4yEeO_Yb9cO8w3bA" general="_2NP-QxSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_bmfyIP4zEeO_Yb9cO8w3bA" name="PlanOfCareSection" client="_bwml0P4yEeO_Yb9cO8w3bA" supplier="_2NP-QxSVEeGGzu7fmW9pXw" contract="_2NP-QxSVEeGGzu7fmW9pXw"/>
