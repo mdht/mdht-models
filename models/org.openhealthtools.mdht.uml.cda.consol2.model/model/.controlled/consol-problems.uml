@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2LSPYBSVEeGGzu7fmW9pXw" name="ProblemSection">
     <ownedComment xmi:id="_hb8PkCAnEeGetMjKLkqR8g">
       <body>This section lists and describes all relevant clinical problems at the time the document is generated. At a minimum, all pertinent current and historical problems should be listed.</body>
@@ -273,12 +273,6 @@ historical purposes.&#xD;
     <ownedComment xmi:id="_DRGcECA8EeG9GZYpu7WBOQ">
       <body>&lt;p>&#xD;
 The Problem Status records whether the indicated problem is active, inactive, or resolved.&#xD;
-&lt;/p>&#xD;
-&lt;p>&#xD;
-THIS TEMPLATE HAS BEEN DEPRECATED IN C-CDA R2 AND MAY BE DELETED FROM A FUTURE RELEASE OF THIS IMPLEMENTATION GUIDE. USE OF THIS TEMPLATE IS NOT RECOMMENDED.&#xD;
-&lt;/p>&#xD;
-&lt;p>&#xD;
-Reason for deprecation: Per the explanation in Volume 1, Section 3.2 &quot;Determining a Clinical Statement's Status&quot;, the status of a problem is determined based on attributes of the Problem Observation&#xD;
 &lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_NGUbACp_EeGiFpKeZIy4Pg" name="textReference" constrainedElement="_SjN_8BUzEeGbmN_W114JUw">
@@ -343,6 +337,7 @@ Reason for deprecation: Per the explanation in Volume 1, Section 3.2 &quot;Deter
   </uml:Class>
   <CDA:CDATemplate xmi:id="_YpxugBUzEeGbmN_W114JUw" base_Class="_SjN_8BUzEeGbmN_W114JUw" templateId="2.16.840.1.113883.10.20.22.4.6">
     <ruleId>CONF:7359</ruleId>
+    <ruleId>DSTU:793</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_5Ha7ABUyEeGbmN_W114JUw" name="ProblemObservation">
     <ownedComment xmi:id="_-wq7oCAsEeGetMjKLkqR8g">
@@ -631,7 +626,10 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:9059, CONF:9060, CONF:15590, R2.1=CONF:1198-9059, R2.1=CONF:1198-9060, R2.1=CONF:1198-15590</ruleId>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="__Yj2gCA2EeG9GZYpu7WBOQ" severity="INFO" base_Association="_c6LMshUzEeGbmN_W114JUw" typeCode="REFR">
-    <ruleId>CONF:9063, CONF:9068, CONF:15591</ruleId>
+    <ruleId>CONF:9063</ruleId>
+    <ruleId>CONF:9068</ruleId>
+    <ruleId>CONF:15591</ruleId>
+    <ruleId>DSTU:793</ruleId>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_AqupACA3EeG9GZYpu7WBOQ" severity="INFO" base_Association="_NozUYBUzEeGbmN_W114JUw" typeCode="REFR">
     <ruleId>CONF:9067, CONF:9064, CONF:15592</ruleId>
@@ -975,7 +973,7 @@ Problem Concerns are a subset of Health Concerns that have risen to the level of
   <CDA:AssociationValidation xmi:id="_ZVIoEJ1-EeORR8_YW0n_jQ" base_Association="_YUzzgJ1-EeORR8_YW0n_jQ">
     <ruleId>CONF:1198-30768, CONF:1198-30769</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_DMvdYOEFEeOmBMTtnrPqww" clientDependency="_ItZpkOEFEeOmBMTtnrPqww" name="HealthStatusObservation2">
+  <uml:Class xmi:id="_DMvdYOEFEeOmBMTtnrPqww" name="HealthStatusObservation2">
     <ownedComment xmi:id="_3pdyAOEFEeOmBMTtnrPqww">
       <body>This template represents information about the overall health status of the patient. To represent the impact of a specific problem or concern related to the patient's expected health outcome use the Prognosis Observation template 2.16.840.1.113883.10.20.22.4.113.</body>
     </ownedComment>
@@ -1037,7 +1035,7 @@ Problem Concerns are a subset of Health Concerns that have risen to the level of
   <CDA:PropertyValidation xmi:id="_ia8wYOEGEeOmBMTtnrPqww" base_Property="_gszMgOEGEeOmBMTtnrPqww">
     <ruleId>CONF:1098-19143</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_y5C8IOzbEeOnE-G4kptBiw" clientDependency="_SmciAOzcEeOnE-G4kptBiw" name="ProblemConcernAct2">
+  <uml:Class xmi:id="_y5C8IOzbEeOnE-G4kptBiw" name="ProblemConcernAct2">
     <ownedComment xmi:id="_-7idoOzbEeOnE-G4kptBiw">
       <body>&lt;p>&#xD;
 This template reflects an ongoing concern on behalf of the provider that placed the concern on a patient's problem list. So long as the underlying condition is of concern to the provider (i.e., as long as the condition, whether active or resolved, is of ongoing concern and interest to the provider), the statusCode is &quot;active&quot;. Only when the underlying condition is no longer of concern is the statusCode set to &quot;completed&quot;. The effectiveTime reflects the time that the underlying condition was felt to be a concern; it may or may not correspond to the effectiveTime of the condition (e.g., even five years later, the clinician may remain concerned about a prior heart attack).&#xD;
@@ -1168,7 +1166,7 @@ Many systems display the nested Problem Observation with the most recent author 
   <CDA:EntryRelationship xmi:id="_o8XbUO0BEeOnE-G4kptBiw" severity="INFO" base_Association="_mgnKkO0BEeOnE-G4kptBiw" typeCode="REFR">
     <ruleId>CONF:1198-31638, CONF:1198-31639, CONF:1198-31640</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_prDAkPDCEeOKPKE9au0oug" clientDependency="_3P7scPDDEeOKPKE9au0oug" name="ProblemObservation2">
+  <uml:Class xmi:id="_prDAkPDCEeOKPKE9au0oug" name="ProblemObservation2">
     <ownedComment xmi:id="_xAdH4PDCEeOKPKE9au0oug">
       <body>&lt;p>&#xD;
 This template reflects a discrete observation about a patient's problem. Because it is a discrete observation, it will have a statusCode of &quot;completed&quot;. The effectiveTime, also referred to as the &quot;biologically relevant time&quot; is the time at which the observation holds for the patient. For a provider seeing a patient in the clinic today, observing a history of heart attack that occurred five years ago, the effectiveTime is five years ago.&#xD;
@@ -1389,7 +1387,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
   <CDA:EntryRelationship xmi:id="_0cXaYPifEeOXlK95I8tUew" base_Association="_wOP0IPifEeOXlK95I8tUew" typeCode="SUBJ">
     <ruleId>CONF:1198-9034, CONF:1198-9035, CONF:1198-15980</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_ZgLioAFkEeSJ2uHfynwxCw" clientDependency="_GXl2QAFmEeSJ2uHfynwxCw" name="ProblemSectionEntriesOptional2">
+  <uml:Class xmi:id="_ZgLioAFkEeSJ2uHfynwxCw" name="ProblemSectionEntriesOptional2">
     <ownedComment xmi:id="_iFLCgAFkEeSJ2uHfynwxCw">
       <body>This section lists and describes all relevant clinical problems at the time the document is generated. At a minimum, all pertinent current and historical problems should be listed. Overall health status may be represented in this section.</body>
     </ownedComment>
@@ -1430,7 +1428,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
   <CDA:AssociationValidation xmi:id="_7k-LwAFmEeSJ2uHfynwxCw" severity="INFO" base_Association="_7CKZoAFmEeSJ2uHfynwxCw">
     <ruleId>CONF:1198-30481, CONF:1198-30482</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_IXrA4ALVEeSyydFGYJajGA" clientDependency="_DbtnwALWEeSyydFGYJajGA" name="ProblemSection2">
+  <uml:Class xmi:id="_IXrA4ALVEeSyydFGYJajGA" name="ProblemSection2">
     <ownedComment xmi:id="_1M5_sALVEeSyydFGYJajGA">
       <body>This section lists and describes all relevant clinical problems at the time the document is generated. At a minimum, all pertinent current and historical problems should be listed. Overall health status may be represented in this section.</body>
     </ownedComment>
