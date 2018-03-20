@@ -4217,6 +4217,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_HDFj4uwpEeOqa975IP2wug" severity="WARNING" base_Association="_HDFj4OwpEeOqa975IP2wug">
     <ruleId>CONF:1198-8961</ruleId>
+    <ruleId>DSTU:994</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_JVtGwewpEeOqa975IP2wug" base_Association="_JVsfsOwpEeOqa975IP2wug">
     <ruleId>CONF:1198-8962</ruleId>
