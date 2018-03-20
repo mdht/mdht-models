@@ -1250,8 +1250,8 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     </ownedAttribute>
     <ownedAttribute xmi:id="_XSxV4APsEeWlspDC_8d7eg" name="authorParticipation" association="_XSykAAPsEeWlspDC_8d7eg">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y-IEcQPsEeWlspDC_8d7eg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y-IEcAPsEeWlspDC_8d7eg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xUpN0Sx_EeiFfJtNAawVHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xUpN0Cx_EeiFfJtNAawVHw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_6SCMoJm9EeOLJeQez13EkQ" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_6SDawJm9EeOLJeQez13EkQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6SCzsJm9EeOLJeQez13EkQ"/>
@@ -1748,6 +1748,7 @@ The Mental Status Section contains observations and evaluations related to a pat
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_X65F0APsEeWlspDC_8d7eg" severity="WARNING" base_Association="_XSykAAPsEeWlspDC_8d7eg">
     <ruleId>CONF:1098-31439</ruleId>
+    <ruleId>DSTU:818</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_1KmSIE9XEeWsIc5CMrI4GA" base_Property="_xGYOwE9XEeWsIc5CMrI4GA">
     <ruleId>CONF:1198-32790</ruleId>
