@@ -1790,7 +1790,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_U3yosPDxEeOKPKE9au0oug" name="ReactionObservation2">
     <ownedComment xmi:id="_clpsQPDxEeOKPKE9au0oug">
-      <body>This clinical statement represents the response to an undesired symptom, finding, etc. due to administered or exposed substance. This reaction may be an undesired symptom, finding, etc. or it could be a desired response to a treatment. A reaction can be defined with respect to its severity, and can have been treated by one or more interventions.</body>
+      <body>&lt;p>This clinical statement represents the response to an undesired symptom, finding, etc. due to administered or exposed substance. A reaction can be defined described with respect to its severity, and can have been treated by one or more interventions. DSTU:837&lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_v-bpYPDyEeOKPKE9au0oug" name="codeValueSet">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_v-bpYvDyEeOKPKE9au0oug">
