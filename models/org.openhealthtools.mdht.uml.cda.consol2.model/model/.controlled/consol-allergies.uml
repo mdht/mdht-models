@@ -550,8 +550,8 @@ historical purposes.&#xD;
     <ruleId>CONF:7472, R2.1=CONF:1198-7472</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2EN-ERSVEeGGzu7fmW9pXw" base_Property="_2ENXABSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7485, R2.1=CONF:1198-7485, R2.1=CONF:1198-19086</ruleId>
     <reference href="../consol-vocab.uml#_2GDxJhSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7485, R2.1=CONF:1198-7485, R2.1=CONF:1198-19086</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2EPMNBSVEeGGzu7fmW9pXw" base_Property="_2EPMMBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7498</ruleId>
@@ -828,9 +828,9 @@ historical purposes.&#xD;
     <ruleId>R2.0=CONF:1098-7379</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_eWhS0B0eEeGGdsHVD60BZA" base_Property="_2EaLdhSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
     <ruleId>CONF:7390</ruleId>
     <ruleId>CONF:9139</ruleId>
-    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_lqJOQh0aEeGGdsHVD60BZA" memberEnd="_lqJOQB0aEeGGdsHVD60BZA _lqJOQx0aEeGGdsHVD60BZA">
     <ownedEnd xmi:id="_lqJOQx0aEeGGdsHVD60BZA" type="_bGzYgBVdEeGQCvUGzi1kDQ" association="_lqJOQh0aEeGGdsHVD60BZA"/>
@@ -892,8 +892,8 @@ THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF TH
     <ruleId>CONF:7321</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_2FTjMRSVEeGGzu7fmW9pXw" base_Property="_2FRuChSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7322</ruleId>
     <reference href="../consol-vocab.uml#_2FctIBSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7322</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_i7X6oCAqEeGq2sn1dgvG_g" severity="WARNING" base_Association="_lqJOQh0aEeGGdsHVD60BZA">
     <ruleId>CONF:7804, CONF:7805</ruleId>
@@ -992,23 +992,20 @@ THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF TH
   <CDA:ConstraintValidation xmi:id="_kTFLMCYOEeGWfpmyutaqOA" severity="WARNING">
     <ruleId>CONF:9118</ruleId>
   </CDA:ConstraintValidation>
-   
   <CDA:ValueSetConstraint xmi:id="_q-cRgCZyEeGtVbZZHlmnzA" base_Property="_2FGu6hSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_cOR30CXNEeGnSfJ2zNllag"/>
     <ruleId>CONF:7356</ruleId>
     <ruleId>R2.0=CONF:1098-7356</ruleId>
-    <reference href="../consol-vocab.uml#_cOR30CXNEeGnSfJ2zNllag"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__uvHMCnAEeGHDN_aHIiN8Q" severity="WARNING">
     <ruleId>CONF:9117</ruleId>
     <ruleId>CONF:9118</ruleId>
   </CDA:PropertyValidation>
-  
-  
   <CDA:ActRelationship xmi:id="_whZe4Cx0EeG6iqE9PBsDjg" base_Association="_2FRG8RSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_j6I_oCzFEeG6iqE9PBsDjg" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7335</ruleId>
     <ruleId>R2.0=CONF:1098-7335</ruleId>
-    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_bVJRwDJBEeG6R8Pb5FT2Ow" code="CSM" displayName="Consumable" base_Property="_098tYDJAEeG6R8Pb5FT2Ow">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_Z0Bk4E6SEeC5ttwajeXVXg"/>
@@ -1410,8 +1407,8 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>CONF:1098-15947</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_3bHDQbkAEeODDJAC5t5vpw" base_Property="_3bHDQLkAEeODDJAC5t5vpw">
-    <ruleId>CONF:1098-7390</ruleId>
     <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
+    <ruleId>CONF:1098-7390</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8aRr8LkAEeODDJAC5t5vpw" base_Property="_3bHDQLkAEeODDJAC5t5vpw"/>
   <CDA:PropertyValidation xmi:id="_QjUYo7kTEeODDJAC5t5vpw" base_Property="_QjUYoLkTEeODDJAC5t5vpw">
@@ -1697,9 +1694,9 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>R2.0=CONF:1098-16312</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_mgoZ_dF8EeOHUokOVP95oQ" base_Property="_mgny99F8EeOHUokOVP95oQ">
+    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
     <ruleId>CONF:16317</ruleId>
     <ruleId>R2.0=CONF:1098-16317</ruleId>
-    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_w0KfQNF8EeOHUokOVP95oQ" memberEnd="_w0LGUNF8EeOHUokOVP95oQ _w0KfQdF8EeOHUokOVP95oQ">
     <ownedEnd xmi:id="_w0KfQdF8EeOHUokOVP95oQ" type="_mgny4NF8EeOHUokOVP95oQ" association="_w0KfQNF8EeOHUokOVP95oQ"/>
@@ -2190,8 +2187,8 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>CONF:1098-16312</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_dvw7kPKJEeOn7bMsPcStOw" base_Property="_dvwUgPKJEeOn7bMsPcStOw">
-    <ruleId>CONF:1098-16317</ruleId>
     <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
+    <ruleId>CONF:1098-16317</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_rWlWkPKJEeOn7bMsPcStOw" base_Property="_nzKTI_KJEeOn7bMsPcStOw">
     <ruleId>CONF:1098-31536</ruleId>
@@ -2525,8 +2522,8 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>CONF:1198-32927</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_SZ0nALD5EeafNo3UpQoAYw" base_Property="_ALwtY7D0EeafNo3UpQoAYw">
-    <ruleId>CONF:1198-32928</ruleId>
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_6ZpdcLD2EeafNo3UpQoAYw"/>
+    <ruleId>CONF:1198-32928</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_1EWToLsxEead0dyhUBLajQ" memberEnd="_1ET3YLsxEead0dyhUBLajQ _1EW6sLsxEead0dyhUBLajQ">
     <ownedEnd xmi:id="_1EW6sLsxEead0dyhUBLajQ" type="_uVJogLj5EeODDJAC5t5vpw" association="_1EWToLsxEead0dyhUBLajQ"/>
@@ -2538,6 +2535,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   </CDA:EntryRelationship>
   <CDA:ConstraintValidation xmi:id="_2V7a0LsyEead0dyhUBLajQ" severity="WARNING" base_Constraint="_0cksgLsyEead0dyhUBLajQ">
     <ruleId>CONF:1098-32912</ruleId>
+    <ruleId>DSTU:796</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_jNAFULs2Eead0dyhUBLajQ" severity="WARNING" base_Constraint="_gFQ4ULs2Eead0dyhUBLajQ">
     <ruleId>CONF:NEW</ruleId>
