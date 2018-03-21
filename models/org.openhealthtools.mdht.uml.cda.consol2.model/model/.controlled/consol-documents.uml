@@ -13622,10 +13622,13 @@ In a Progress Note, a serviceEvent can represent the event of writing the Progre
         <body>INLINE</body>
       </ownedComment>
       <ownedComment xmi:id="_WVkyMC-jEeSoCqqrpX8LzQ">
-        <body>componentOf&#xD;
-The Progress Note is always associated with an encounter by the componentOf/encompassingEncounter element in the header.&#xD;
-The effectiveTime element for an encompassingEncounter represents the time or time interval in which the encounter took place. A single encounter may contain multiple Progress Notes; hence the effectiveTime elements for a Progress Note (recorded in serviceEvent) and for an encounter (recorded in encompassingEncounter) represent different time intervals. &#xD;
-All visits take place at a specific location. When available, the location ID is included in the encompassingEncounter/location/healthCareFacility/id element.</body>
+        <body>&lt;p>1.1.19.2 componentOf&lt;/p>&#xD;
+&lt;p>&#xD;
+The Progress Note is always associated with an encounter by the componentOf/encompassingEncounter element in the header. The effectiveTime element for an encompassingEncounter represents the time or time interval in which the encounter took place. A single encounter may contain multiple Progress Notes; hence the effectiveTime elements for a Progress Note (recorded in serviceEvent) and for an encounter (recorded in encompassingEncounter) represent different time intervals. For outpatient encounters that are a point in time, set effectiveTime/high, effectiveTime/low, and effectiveTime/@value to the same time. All visits take place at a specific location. &#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+When available, the location ID is included in the encompassingEncounter/location/healthCareFacility/id element. DSTU:1010&#xD;
+&lt;/p></body>
       </ownedComment>
       <generalization xmi:id="_HSlUIC-jEeSoCqqrpX8LzQ">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_NWHRoEAJEd6wZe6nFLrjsw"/>
