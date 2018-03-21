@@ -1929,8 +1929,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
 This clinical statement represents the gravity of the reaction. The Severity Observation characterizes the Reaction Observation. A person may manifest many symptoms in a reaction to a single substance, and each reaction to the substance can be represented. However, each reaction observation can have only one severity observation associated with it. For example, someone may have a rash reaction observation as well as an itching reaction observation, but each can have only one level of severity.&#xD;
 &lt;/p>&#xD;
 &lt;p>&#xD;
-NOTE -- the severity observation is no longer associated with the allergy and intolerance observation. This is now represented by the new criticality template.&#xD;
-DSTU:834&#xD;
+NOTE -- the severity observation is no longer associated with the allergy and intolerance observation. This is now represented by the new criticality template. The Criticality Observation is preferred for characterizing the Allergy and Intolerance. DSTU:834, DSTU:1269&#xD;
 &lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_Q6hswM26EeSEZ8MJJ3ZzLg" name="textReference" constrainedElement="_2FGu4hSVEeGGzu7fmW9pXw">
