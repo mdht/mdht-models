@@ -3498,8 +3498,8 @@ All interventions referenced in a Planned Intervention Act must have moodCodes i
         <body>An Intervention Act SHALL reference a Goal Observation. Because the Goal Observation is already described in the CDA document instance's Goals section, rather than repeating the full content of the Goal Observation, the Entry Reference template can be used to reference this entry. The following entryRelationship represents an Entry Reference to Goal Observation.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_72kL0OLjEeS505YV9ux2XA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_72iWoOLjEeS505YV9ux2XA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_709GoS1KEeiFfJtNAawVHw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_709GoC1KEeiFfJtNAawVHw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_pTQWwOLlEeS505YV9ux2XA" name="handoffCommunicationParticipants" association="_pTSL8OLlEeS505YV9ux2XA">
       <type xmi:type="uml:Class" href="consol-discharge.uml#_POfwAIz7EeOoMZgUoTghIg"/>
@@ -3687,7 +3687,10 @@ All interventions referenced in a Planned Intervention Act must have moodCodes i
     <ownedEnd xmi:id="_kMGhoeLjEeS505YV9ux2XA" type="_dGARYOLSEeS505YV9ux2XA" association="_kMGhoOLjEeS505YV9ux2XA"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_Pj__wOLkEeS505YV9ux2XA" base_Association="_kMGhoOLjEeS505YV9ux2XA" typeCode="RSON">
-    <ruleId>CONF:1198-32673, CONF:1198-32720, CONF:1198-32721</ruleId>
+    <ruleId>CONF:1198-32673</ruleId>
+    <ruleId>CONF:1198-32720</ruleId>
+    <ruleId>CONF:1198-32721</ruleId>
+    <ruleId>DSTU:1374</ruleId>
   </CDA:EntryRelationship>
   <CDA:ConstraintValidation xmi:id="_qnNHYOLkEeS505YV9ux2XA" base_Constraint="_pyqFAOLkEeS505YV9ux2XA">
     <ruleId>CONF:1198-32722</ruleId>

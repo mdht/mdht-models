@@ -519,7 +519,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     </ownedAttribute>
     <ownedAttribute xmi:id="_yESK8PV5EeONioZkBKP8eQ" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_2OlbEhSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_JH_-MPV6EeONioZkBKP8eQ">
-        <body>Note: The effectiveTime may be a timestamp or an interval that spans the effectiveTimes of the contained vital signs observations.</body>
+        <body>Note: The effectiveTime may be a timestamp or an interval that spans the effectiveTimes of the contained vital signs observations. DSTU:1371</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B0gksE9zEeWsIc5CMrI4GA" value="1"/>
@@ -550,7 +550,9 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_hsMpkPV2EeONioZkBKP8eQ" base_Class="_dDupoPV2EeONioZkBKP8eQ" templateId="2.16.840.1.113883.10.20.22.4.26" templateVersion="2015-08-01">
-    <ruleId>CONF:1198-7281, CONF:1198-10528, CONF:1198-32582</ruleId>
+    <ruleId>CONF:1198-7281</ruleId>
+    <ruleId>CONF:1198-10528</ruleId>
+    <ruleId>CONF:1198-32582</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_tTeOsPV2EeONioZkBKP8eQ" base_Generalization="_dDxF4PV2EeONioZkBKP8eQ"/>
   <CDA:PropertyValidation xmi:id="_yESK8_V5EeONioZkBKP8eQ" base_Property="_yESK8PV5EeONioZkBKP8eQ">
