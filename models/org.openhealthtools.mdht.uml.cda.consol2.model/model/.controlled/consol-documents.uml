@@ -12370,8 +12370,8 @@ This performer represents any assistants.</body>
             </generalization>
             <ownedAttribute xmi:id="_wHsFwJ3KEeSofqct4VeYrw" name="code" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y6oHcZ3KEeSofqct4VeYrw" value="1"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y6oHcJ3KEeSofqct4VeYrw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LBE00S32EeiFfJtNAawVHw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LBE00C32EeiFfJtNAawVHw" value="1"/>
               <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
             </ownedAttribute>
           </nestedClassifier>
@@ -12479,7 +12479,7 @@ This performer represents any assistants.</body>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_NvbMMC1oEeSoCqqrpX8LzQ" severity="WARNING" base_Property="_NF4f8C1oEeSoCqqrpX8LzQ"/>
   <CDA:ValueSetConstraint xmi:id="_WMkXoC1oEeSoCqqrpX8LzQ" base_Property="_NF4f8C1oEeSoCqqrpX8LzQ">
-    <reference href="../consol-vocab.uml#_8lYFkC1oEeSoCqqrpX8LzQ"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
     <ruleId>CONF:1198-8490</ruleId>
     <ruleId>DSTU:1331</ruleId>
     <ruleId>DSTU:1369</ruleId>
@@ -14619,10 +14619,11 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   <CDA:AssociationValidation xmi:id="_mrw94J3KEeSofqct4VeYrw" base_Association="_mGd4cJ3KEeSofqct4VeYrw">
     <ruleId>CONF:1198-32737</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_w-8d4J3KEeSofqct4VeYrw" base_Property="_wHsFwJ3KEeSofqct4VeYrw"/>
+  <CDA:PropertyValidation xmi:id="_w-8d4J3KEeSofqct4VeYrw" severity="WARNING" base_Property="_wHsFwJ3KEeSofqct4VeYrw"/>
   <CDA:ValueSetConstraint xmi:id="_zT1RoJ3KEeSofqct4VeYrw" base_Property="_wHsFwJ3KEeSofqct4VeYrw">
-    <reference href="../consol-vocab.uml#_8lYFkC1oEeSoCqqrpX8LzQ"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
     <ruleId>CONF:1198-32739</ruleId>
+    <ruleId>DSTU:1331</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_nNM8AKAEEeSy_9HMspjkmw" base_Property="_mbKbEKAEEeSy_9HMspjkmw">
     <ruleId>CONF:1198-26449, CONF:1198-8513</ruleId>
