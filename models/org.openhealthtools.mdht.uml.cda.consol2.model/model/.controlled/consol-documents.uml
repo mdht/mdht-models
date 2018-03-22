@@ -12329,8 +12329,8 @@ The performer represents clinicians who actually and principally carry out the s
             </generalization>
             <ownedAttribute xmi:id="_NF4f8C1oEeSoCqqrpX8LzQ" name="code" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O7930C1oEeSoCqqrpX8LzQ" value="1"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O75mYC1oEeSoCqqrpX8LzQ" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fWSFUC30EeiFfJtNAawVHw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fWReQC30EeiFfJtNAawVHw" value="1"/>
               <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
             </ownedAttribute>
           </nestedClassifier>
@@ -12477,10 +12477,12 @@ This performer represents any assistants.</body>
   <CDA:AssociationValidation xmi:id="_GFpXYC1oEeSoCqqrpX8LzQ" base_Association="_E4HNQC1oEeSoCqqrpX8LzQ">
     <ruleId>CONF:1198-10917</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_NvbMMC1oEeSoCqqrpX8LzQ" base_Property="_NF4f8C1oEeSoCqqrpX8LzQ"/>
+  <CDA:PropertyValidation xmi:id="_NvbMMC1oEeSoCqqrpX8LzQ" severity="WARNING" base_Property="_NF4f8C1oEeSoCqqrpX8LzQ"/>
   <CDA:ValueSetConstraint xmi:id="_WMkXoC1oEeSoCqqrpX8LzQ" base_Property="_NF4f8C1oEeSoCqqrpX8LzQ">
     <reference href="../consol-vocab.uml#_8lYFkC1oEeSoCqqrpX8LzQ"/>
     <ruleId>CONF:1198-8490</ruleId>
+    <ruleId>DSTU:1331</ruleId>
+    <ruleId>DSTU:1369</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8eWloC1qEeSoCqqrpX8LzQ" base_Property="_74sT0C1qEeSoCqqrpX8LzQ">
     <ruleId>CONF:1198-8487</ruleId>
