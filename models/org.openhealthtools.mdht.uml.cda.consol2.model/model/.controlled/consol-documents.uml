@@ -9718,7 +9718,9 @@ A Consultation Note is always associated with an encounter;????the id element of
     <ownedEnd xmi:id="_ejd0sCGBEeSt4IEYu7xgbw" type="_PkP3oCFmEeSt4IEYu7xgbw" association="_ejdNoCGBEeSt4IEYu7xgbw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_g9C7MCGBEeSt4IEYu7xgbw" severity="WARNING" base_Association="_ejdNoCGBEeSt4IEYu7xgbw">
-    <ruleId>CONF:1198-28908, CONF:1198-28909</ruleId>
+    <ruleId>CONF:1198-28908</ruleId>
+    <ruleId>CONF:1198-28909</ruleId>
+    <ruleId>DSTU:934</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_IGuFYCGCEeSt4IEYu7xgbw" memberEnd="_IGs3QCGCEeSt4IEYu7xgbw _IGuFYSGCEeSt4IEYu7xgbw">
     <ownedEnd xmi:id="_IGuFYSGCEeSt4IEYu7xgbw" type="_PkP3oCFmEeSt4IEYu7xgbw" association="_IGuFYCGCEeSt4IEYu7xgbw"/>
