@@ -10201,7 +10201,9 @@ The serviceEvent/performer represents the healthcare providers involved in the c
     <ownedEnd xmi:id="_SDXyUCJfEeSBLYc2hU6GfA" type="_lPMNYCGjEeSt4IEYu7xgbw" association="_SDXLQCJfEeSBLYc2hU6GfA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_SlQ-cCJfEeSBLYc2hU6GfA" severity="WARNING" base_Association="_SDXLQCJfEeSBLYc2hU6GfA">
-    <ruleId>CONF:1198-30667, CONF:1198-30668</ruleId>
+    <ruleId>CONF:1198-30667</ruleId>
+    <ruleId>CONF:1198-30668</ruleId>
+    <ruleId>DSTU:936</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_fj1tsCJfEeSBLYc2hU6GfA" memberEnd="_fj0fkCJfEeSBLYc2hU6GfA _fj1tsSJfEeSBLYc2hU6GfA">
     <ownedEnd xmi:id="_fj1tsSJfEeSBLYc2hU6GfA" type="_lPMNYCGjEeSt4IEYu7xgbw" association="_fj1tsCJfEeSBLYc2hU6GfA"/>
