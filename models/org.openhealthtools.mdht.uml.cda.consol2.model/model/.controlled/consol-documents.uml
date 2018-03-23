@@ -10956,7 +10956,9 @@ Note: The section/code SHOULD be selected from LOINC or DICOM for sections not l
     <ownedEnd xmi:id="_Srj7ASMgEeS4d9o7u1_H3A" type="_4JRRsCJnEeSBLYc2hU6GfA" association="_Srj7ACMgEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_Ucz2MCMgEeS4d9o7u1_H3A" severity="WARNING" base_Association="_Srj7ACMgEeS4d9o7u1_H3A">
-    <ruleId>CONF:1198-30698, CONF:1198-30699</ruleId>
+    <ruleId>CONF:1198-30698</ruleId>
+    <ruleId>CONF:1198-30699</ruleId>
+    <ruleId>DSTU:930</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_0X1BUCMgEeS4d9o7u1_H3A" base_Constraint="_0X0aQCMgEeS4d9o7u1_H3A">
     <ruleId>CONF:1198-31206</ruleId>
