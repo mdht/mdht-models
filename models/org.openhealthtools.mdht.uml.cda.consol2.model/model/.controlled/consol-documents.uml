@@ -14571,7 +14571,9 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <ownedEnd xmi:id="_yWaoMZqKEeSoe-LLjMf5Cg" type="_89EzQCP5EeS4d9o7u1_H3A" association="_yWaoMJqKEeSoe-LLjMf5Cg"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_1eInEJqKEeSoe-LLjMf5Cg" severity="WARNING" base_Association="_yWaoMJqKEeSoe-LLjMf5Cg">
-    <ruleId>CONF:1198-30525, CONF:1198-30526</ruleId>
+    <ruleId>CONF:1198-30525</ruleId>
+    <ruleId>CONF:1198-30526</ruleId>
+    <ruleId>DSTU:931</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_sL-pwJqLEeSoe-LLjMf5Cg" memberEnd="_sL9boJqLEeSoe-LLjMf5Cg _sL-pwZqLEeSoe-LLjMf5Cg">
     <ownedEnd xmi:id="_sL-pwZqLEeSoe-LLjMf5Cg" type="_89EzQCP5EeS4d9o7u1_H3A" association="_sL-pwJqLEeSoe-LLjMf5Cg"/>
@@ -14595,7 +14597,9 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <ownedEnd xmi:id="_7k3NYZqNEeSoe-LLjMf5Cg" type="_89EzQCP5EeS4d9o7u1_H3A" association="_7k3NYJqNEeSoe-LLjMf5Cg"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_8f5SQJqNEeSoe-LLjMf5Cg" severity="INFO" base_Association="_7k3NYJqNEeSoe-LLjMf5Cg">
-    <ruleId>CONF:1198-31586, CONF:1198-31587</ruleId>
+    <ruleId>CONF:1198-31586</ruleId>
+    <ruleId>CONF:1198-31587</ruleId>
+    <ruleId>DSTU:931</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_6qD8kJqOEeSoe-LLjMf5Cg" memberEnd="_6qDVgJqOEeSoe-LLjMf5Cg _6qD8kZqOEeSoe-LLjMf5Cg">
     <ownedEnd xmi:id="_6qD8kZqOEeSoe-LLjMf5Cg" type="_89EzQCP5EeS4d9o7u1_H3A" association="_6qD8kJqOEeSoe-LLjMf5Cg"/>
