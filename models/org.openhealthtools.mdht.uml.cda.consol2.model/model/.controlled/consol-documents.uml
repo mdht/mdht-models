@@ -12544,7 +12544,9 @@ This performer represents any assistants.</body>
     <ownedEnd xmi:id="_JgpfYS38EeSoCqqrpX8LzQ" type="_aH1CYC1fEeSoCqqrpX8LzQ" association="_JgpfYC38EeSoCqqrpX8LzQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_KVZWEC38EeSoCqqrpX8LzQ" base_Association="_JgpfYC38EeSoCqqrpX8LzQ">
-    <ruleId>CONF:1198-30490, CONF:1198-30491</ruleId>
+    <ruleId>CONF:1198-30490</ruleId>
+    <ruleId>CONF:1198-30491</ruleId>
+    <ruleId>DSTU:926</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_WV4scS38EeSoCqqrpX8LzQ" memberEnd="_WV4FYC38EeSoCqqrpX8LzQ _WV5TgC38EeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_WV5TgC38EeSoCqqrpX8LzQ" type="_aH1CYC1fEeSoCqqrpX8LzQ" association="_WV4scS38EeSoCqqrpX8LzQ"/>
