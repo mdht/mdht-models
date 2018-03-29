@@ -1771,6 +1771,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
       <ownedLiteral xmi:id="_octr4LD4EeafNo3UpQoAYw" name="CRITU"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_cLzZsIdpEeeAsbPrNOnubg" name="Detailed Ethnicity"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OKxtQDNzEeiFfJtNAawVHw" name="Reaction Severity"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3307,4 +3308,5 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetVersion xmi:id="_cL0AwIdpEeeAsbPrNOnubg" identifier="2.16.840.1.114222.4.11.877" fullName="Detailed Ethnicity" url="http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F-DD11-B38D-00188B398520#" base_Enumeration="_cLzZsIdpEeeAsbPrNOnubg">
     <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_OLJgsDNzEeiFfJtNAawVHw" source="R2.1 DSTU 835 and 836" url="none" definition="This is a description of the level of the severity of the reaction in valueSet. No codes have been specified as this value set is provided by HL7 DSTU comments 835 and 836 which have not yet specified an OID for the set, the codeSystem, or set of codes, which are valid and in agreement. It derived from Problem Severity but with future modifications implied. It is intended to have 3 codes which reprent mild, moderate, and severe." base_Enumeration="_OKxtQDNzEeiFfJtNAawVHw"/>
 </xmi:XMI>

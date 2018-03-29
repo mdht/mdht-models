@@ -995,7 +995,6 @@ THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF TH
   <CDA:ValueSetConstraint xmi:id="_q-cRgCZyEeGtVbZZHlmnzA" base_Property="_2FGu6hSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_cOR30CXNEeGnSfJ2zNllag"/>
     <ruleId>CONF:7356</ruleId>
-    <ruleId>R2.0=CONF:1098-7356</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__uvHMCnAEeGHDN_aHIiN8Q" severity="WARNING">
     <ruleId>CONF:9117</ruleId>
@@ -1005,7 +1004,6 @@ THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF TH
   <CDA:ValueSetConstraint xmi:id="_j6I_oCzFEeG6iqE9PBsDjg" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7335</ruleId>
-    <ruleId>R2.0=CONF:1098-7335</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_bVJRwDJBEeG6R8Pb5FT2Ow" code="CSM" displayName="Consumable" base_Property="_098tYDJAEeG6R8Pb5FT2Ow">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_Z0Bk4E6SEeC5ttwajeXVXg"/>
@@ -1880,6 +1878,9 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ownedAttribute xmi:id="_xsMx8MzcEeSLqosJ4F90vA" name="statusCode" visibility="private" redefinedProperty="_2FDrkRSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_D03e0DNyEeiFfJtNAawVHw" name="value" visibility="private" redefinedProperty="_2FFgwRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_XSaRAPDxEeOKPKE9au0oug" base_Class="_U3yosPDxEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.9" templateVersion="2014-06-09">
     <ruleId>CONF:1098-7323</ruleId>
@@ -1968,6 +1969,9 @@ NOTE -- the severity observation is no longer associated with the allergy and in
     </ownedAttribute>
     <ownedAttribute xmi:id="_tlNvkM26EeSEZ8MJJ3ZzLg" name="statusCode" visibility="private" redefinedProperty="_2FM1gBSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_nET6ADNwEeiFfJtNAawVHw" name="value" visibility="private" redefinedProperty="_2FGu6hSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_E9Cs0PJdEeO2NaSiicarcg" base_Class="_B0oKYPJdEeO2NaSiicarcg" templateId="2.16.840.1.113883.10.20.22.4.8" templateVersion="2014-06-09">
@@ -2553,4 +2557,18 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>CONF:1098-NEW</ruleId>
     <ruleId>DSTU:710</ruleId>
   </CDA:EntryRelationship>
+  <CDA:ValueSetConstraint xmi:id="_nFAdkDNwEeiFfJtNAawVHw" base_Property="_nET6ADNwEeiFfJtNAawVHw">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_OLJgsDNzEeiFfJtNAawVHw"/>
+    <ruleId>CONF:NEW</ruleId>
+    <ruleId>formerlyCONF:1098-7356</ruleId>
+    <ruleId>DSTU:835</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_nF6cgDNwEeiFfJtNAawVHw" base_Property="_nET6ADNwEeiFfJtNAawVHw"/>
+  <CDA:ValueSetConstraint xmi:id="_D04F4DNyEeiFfJtNAawVHw" base_Property="_D03e0DNyEeiFfJtNAawVHw">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_OLJgsDNzEeiFfJtNAawVHw"/>
+    <ruleId>CONF:NEW</ruleId>
+    <ruleId>formerlyCONF:1098-7335</ruleId>
+    <ruleId>DSTU:836</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_D057EDNyEeiFfJtNAawVHw" base_Property="_D03e0DNyEeiFfJtNAawVHw"/>
 </xmi:XMI>
