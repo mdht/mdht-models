@@ -1971,6 +1971,7 @@ This effectiveTime represents either the medication duration (i.e., the time the
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_GsKcUuXAEeOkFcFJ9uzEEw" message="" base_Constraint="_GsKcUOXAEeOkFcFJ9uzEEw">
     <ruleId>CONF:1098-7508</ruleId>
+    <ruleId>DSTU:1272</ruleId>
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_qH-ckOXfEeOkFcFJ9uzEEw" name="MedicationDispense2">
     <ownedComment xmi:id="_zoMZIOXgEeOkFcFJ9uzEEw">
