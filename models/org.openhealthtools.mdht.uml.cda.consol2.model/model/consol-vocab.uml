@@ -2946,7 +2946,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_322vkbm6EeOgPNzo_e4B9A" conceptName="Unknown if ever smoked" base_EnumerationLiteral="_322vkLm6EeOgPNzo_e4B9A"/>
   <term:ValueSetCode xmi:id="_4nDdcbm6EeOgPNzo_e4B9A" conceptName="Heavy tobacco smoker" base_EnumerationLiteral="_4nDdcLm6EeOgPNzo_e4B9A"/>
   <term:ValueSetCode xmi:id="_54GOkbm6EeOgPNzo_e4B9A" conceptName="Light tobacco smoker" base_EnumerationLiteral="_54GOkLm6EeOgPNzo_e4B9A"/>
-  <term:ValueSetVersion xmi:id="_SdFiQeHGEeO04sHNODkHmQ" identifier="2.16.840.1.113883.1.11.159331" fullName="ActStatus" binding="Dynamic" base_Enumeration="_SdFiQOHGEeO04sHNODkHmQ">
+  <term:ValueSetVersion xmi:id="_SdFiQeHGEeO04sHNODkHmQ" identifier="2.16.840.1.113883.1.11.15933" fullName="ActStatus" definition="DSTU:1106 Modified ActStatus value set OID from the incorrect value of 2.16.840.1.113883.1.11.159331 to the corrected value of 2.16.840.1.113883.1.11.15933" binding="Dynamic" base_Enumeration="_SdFiQOHGEeO04sHNODkHmQ">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_RpsEgeHIEeO04sHNODkHmQ" conceptName="normal" base_EnumerationLiteral="_RpsEgOHIEeO04sHNODkHmQ"/>
