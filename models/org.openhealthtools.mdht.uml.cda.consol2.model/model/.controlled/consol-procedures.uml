@@ -3129,7 +3129,9 @@ This template can be used with a contained Product Instance template to represen
   </CDA:AssociationValidation>
   <CDA:CodeSystemConstraint xmi:id="_iqwnoPvZEeOes-3T-2HryA" code="55109-3" displayName="Complications" base_Property="_iqwAkPvZEeOes-3T-2HryA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1198-15454, CONF:1198-30860</ruleId>
+    <ruleId>CONF:1198-15454</ruleId>
+    <ruleId>CONF:1198-30860</ruleId>
+    <ruleId>DSTU:1029</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_iqyc0PvZEeOes-3T-2HryA" base_Property="_iqwAkPvZEeOes-3T-2HryA">
     <ruleId>CONF:1198-15453</ruleId>
