@@ -459,6 +459,7 @@
     <ruleId>CONF:1198-32377</ruleId>
     <ruleId>DSTU:797</ruleId>
     <ruleId>DSTU:798</ruleId>
+    <ruleId>DSTU:959</ruleId>
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_jH6CcMzNEeO93sHu8pHB2g" name="EncounterDiagnosis2">
     <ownedComment xmi:id="_JPYv0MzOEeO93sHu8pHB2g">
