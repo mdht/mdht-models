@@ -1640,26 +1640,22 @@ Value Set Source: https://vsac.nlm.nih.gov&#xD;
       <ownedLiteral xmi:id="_bTQwEwDcEeWNGdLwd_3YGQ" name="394848005"/>
       <ownedLiteral xmi:id="_bTQwFADcEeWNGdLwd_3YGQ" name="441808003"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_aeLRAAPjEeWlspDC_8d7eg" name="Goal Achievement">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_aeLRAAPjEeWlspDC_8d7eg" name="Goal Achievement v20170106">
       <ownedComment xmi:id="_aeLRAQPjEeWlspDC_8d7eg">
         <body>&lt;p>&#xD;
 Value Set: Goal Achievement 2.16.840.1.113883.11.20.9.55&#xD;
 &lt;/p>&#xD;
 &lt;p>&#xD;
-The Goal Achievement value set contains concepts that describe a patient's progression (or lack thereof) toward a goal and consists of the following codes from the US Extension of SNOMED CT.
-&#xD;
+The Goal Achievement value set contains concepts that describe a patient's progression (or lack thereof) toward a goal.&#xD;
 &#xD;&lt;/p>&#xD;
-&lt;p>&#xD;
-390802008 Goal achieved&#xD;
-390801001 Goal not achieved and all its direct children
-&#xD;
-&lt;/p>&#xD;
 &lt;p>&#xD;
 Value Set Source: https://vsac.nlm.nih.gov&#xD;
 &lt;/p></body>
       </ownedComment>
-      <ownedLiteral xmi:id="_aeLRAgPjEeWlspDC_8d7eg" name="390802008"/>
       <ownedLiteral xmi:id="_aeLRAwPjEeWlspDC_8d7eg" name="390801001"/>
+      <ownedLiteral xmi:id="_aeLRAgPjEeWlspDC_8d7eg" name="390802008"/>
+      <ownedLiteral xmi:id="_uZA_8DdQEeiFfJtNAawVHw" name="706905005"/>
+      <ownedLiteral xmi:id="_zAMmcDdQEeiFfJtNAawVHw" name="706906006"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_PDM9MExKEeWJ65CktI2ODQ" name="AdvanceDirectiveTypeCode">
       <ownedLiteral xmi:id="_PDM9NExKEeWJ65CktI2ODQ" name="52765003"/>
@@ -3167,11 +3163,11 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_bTQwFgDcEeWNGdLwd_3YGQ" conceptName="High priority" base_EnumerationLiteral="_bTQwEgDcEeWNGdLwd_3YGQ"/>
   <term:ValueSetCode xmi:id="_bTQwFwDcEeWNGdLwd_3YGQ" conceptName="Normal priority" base_EnumerationLiteral="_bTQwEwDcEeWNGdLwd_3YGQ"/>
   <term:ValueSetCode xmi:id="_bTQwGADcEeWNGdLwd_3YGQ" conceptName="Delayed priority" base_EnumerationLiteral="_bTQwFADcEeWNGdLwd_3YGQ"/>
-  <term:ValueSetVersion xmi:id="_aeL4EAPjEeWlspDC_8d7eg" identifier="2.16.840.1.113883.11.20.9.55" fullName="Goal Achievement" source="https://vsac.nlm.nih.gov" definition="The Goal Achievement value set contains concepts that describe a patient's progression (or lack thereof) toward a goal and consists of the following codes from the US Extension of SNOMED CT. 390802008 Goal achieved 390801001 Goal not achieved and all its direct children" binding="Dynamic" base_Enumeration="_aeLRAAPjEeWlspDC_8d7eg">
+  <term:ValueSetVersion xmi:id="_aeL4EAPjEeWlspDC_8d7eg" identifier="2.16.840.1.113883.11.20.9.55" version="20170106" fullName="Goal Achievement" source="https://vsac.nlm.nih.gov" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.9.55/expansion" definition="The Goal Achievement value set contains concepts that describe a patient's progression (or lack thereof) toward a goal and consists of the following codes from the US Extension of SNOMED CT. 390802008 Goal achieved 390801001 Goal not achieved and all its direct children" binding="Dynamic" base_Enumeration="_aeLRAAPjEeWlspDC_8d7eg">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_aeL4EQPjEeWlspDC_8d7eg" conceptName="Goal achieved" base_EnumerationLiteral="_aeLRAgPjEeWlspDC_8d7eg"/>
-  <term:ValueSetCode xmi:id="_aeL4EgPjEeWlspDC_8d7eg" conceptName="Goal not achieved" base_EnumerationLiteral="_aeLRAwPjEeWlspDC_8d7eg"/>
+  <term:ValueSetCode xmi:id="_aeL4EQPjEeWlspDC_8d7eg" conceptName="Goal achieved (finding)" base_EnumerationLiteral="_aeLRAgPjEeWlspDC_8d7eg"/>
+  <term:ValueSetCode xmi:id="_aeL4EgPjEeWlspDC_8d7eg" conceptName="Goal not achieved (finding)" base_EnumerationLiteral="_aeLRAwPjEeWlspDC_8d7eg"/>
   <term:ValueSetCode xmi:id="_8ERhEQPnEeWlspDC_8d7eg" conceptName="assisted" base_EnumerationLiteral="_8ERhEAPnEeWlspDC_8d7eg"/>
   <term:ValueSetCode xmi:id="_9r_FwQPnEeWlspDC_8d7eg" conceptName="dependent" base_EnumerationLiteral="_9r_FwAPnEeWlspDC_8d7eg"/>
   <term:ValueSetCode xmi:id="__U_D4QPnEeWlspDC_8d7eg" conceptName="unable" base_EnumerationLiteral="__U_D4APnEeWlspDC_8d7eg"/>
@@ -3309,4 +3305,6 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
     <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_OLJgsDNzEeiFfJtNAawVHw" source="R2.1 DSTU 835 and 836" url="none" definition="This is a description of the level of the severity of the reaction in valueSet. No codes have been specified as this value set is provided by HL7 DSTU comments 835 and 836 which have not yet specified an OID for the set, the codeSystem, or set of codes, which are valid and in agreement. It derived from Problem Severity but with future modifications implied. It is intended to have 3 codes which reprent mild, moderate, and severe." base_Enumeration="_OKxtQDNzEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_uZDcMDdQEeiFfJtNAawVHw" conceptName="Goal not attainable (finding)" base_EnumerationLiteral="_uZA_8DdQEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_zAMmcTdQEeiFfJtNAawVHw" conceptName="No progress toward goal (finding)" base_EnumerationLiteral="_zAMmcDdQEeiFfJtNAawVHw"/>
 </xmi:XMI>

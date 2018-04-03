@@ -1510,6 +1510,7 @@ For example, an observation outcome of a blood oxygen saturation level of 95% is
   <CDA:ValueSetConstraint xmi:id="_ArQ_YJmZEeOLJeQez13EkQ" base_Property="_7xab5JmVEeOLJeQez13EkQ">
     <reference href="../consol-vocab.uml#_aeL4EAPjEeWlspDC_8d7eg"/>
     <ruleId>CONF:1098-31426</ruleId>
+    <ruleId>DSTU:1279</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_ncafYJmaEeOLJeQez13EkQ" name="PriorityPreference">
     <ownedComment xmi:id="_zPCY4JmaEeOLJeQez13EkQ">
