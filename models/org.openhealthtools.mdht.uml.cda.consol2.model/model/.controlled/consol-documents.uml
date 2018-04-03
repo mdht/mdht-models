@@ -6914,6 +6914,12 @@ The Care Plan is continually evolving and dynamic. The Care Plan CDA instance is
         <generalization xmi:id="_5avxIJ8UEeOr4eM3k36wAg">
           <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_24_qUEcZEd6besF9iFIJkQ"/>
         </generalization>
+        <ownedAttribute xmi:id="_vLvgkDdUEeiFfJtNAawVHw" name="id" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vLvgkTdUEeiFfJtNAawVHw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vLvgkjdUEeiFfJtNAawVHw" value="*"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_rwzdUErcEd6FXKclYGEDCw"/>
+        </ownedAttribute>
         <ownedAttribute xmi:id="_6qwngJ8UEeOr4eM3k36wAg" name="setId" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9ABOsJ8UEeOr4eM3k36wAg" value="1"/>
@@ -7109,8 +7115,9 @@ The Care Plan is continually evolving and dynamic. The Care Plan CDA instance is
     <ruleId>CONF:1198-29893</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_fsopoJ8TEeOr4eM3k36wAg" base_Property="_Pj-kAJ8TEeOr4eM3k36wAg">
-    <reference href="../consol-vocab.uml#_pucs0J8TEeOr4eM3k36wAg"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_nQiIEDdVEeiFfJtNAawVHw"/>
     <ruleId>CONF:1198-31889</ruleId>
+    <ruleId>DSTU:1267</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_zfXX0J8UEeOr4eM3k36wAg" memberEnd="_zfVioJ8UEeOr4eM3k36wAg _zfXX0Z8UEeOr4eM3k36wAg">
     <ownedEnd xmi:id="_zfXX0Z8UEeOr4eM3k36wAg" type="_MHJQwJ8TEeOr4eM3k36wAg" association="_zfXX0J8UEeOr4eM3k36wAg"/>
@@ -14791,4 +14798,8 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   <CDA:ValueSetConstraint xmi:id="_W-4zcIdqEeeEdPtCCB--vA" base_Property="_Ul7_EIdqEeeEdPtCCB--vA" uri="consol-vocab::Detailed Ethnicity">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_cL0AwIdpEeeAsbPrNOnubg"/>
   </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_z8M-4DdUEeiFfJtNAawVHw" base_Property="_vLvgkDdUEeiFfJtNAawVHw">
+    <ruleId>CONF:1198-32949</ruleId>
+    <ruleId>DSTU:1267</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

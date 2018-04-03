@@ -1768,6 +1768,16 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_cLzZsIdpEeeAsbPrNOnubg" name="Detailed Ethnicity"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_OKxtQDNzEeiFfJtNAawVHw" name="Reaction Severity"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_nQhhADdVEeiFfJtNAawVHw" name="x_ActRelationshipDocument">
+      <ownedComment xmi:id="_cdcjgDdWEeiFfJtNAawVHw">
+        <body>&lt;p>&#xD;
+Used to enumerate the relationships between two clinical documents for document management.&#xD;
+&lt;/p></body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_3NPm8DdWEeiFfJtNAawVHw" name="APND"/>
+      <ownedLiteral xmi:id="_67NtgDdWEeiFfJtNAawVHw" name="RPLC"/>
+      <ownedLiteral xmi:id="_-TcNkDdWEeiFfJtNAawVHw" name="XFRM"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3307,4 +3317,10 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetVersion xmi:id="_OLJgsDNzEeiFfJtNAawVHw" source="R2.1 DSTU 835 and 836" url="none" definition="This is a description of the level of the severity of the reaction in valueSet. No codes have been specified as this value set is provided by HL7 DSTU comments 835 and 836 which have not yet specified an OID for the set, the codeSystem, or set of codes, which are valid and in agreement. It derived from Problem Severity but with future modifications implied. It is intended to have 3 codes which reprent mild, moderate, and severe." base_Enumeration="_OKxtQDNzEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_uZDcMDdQEeiFfJtNAawVHw" conceptName="Goal not attainable (finding)" base_EnumerationLiteral="_uZA_8DdQEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_zAMmcTdQEeiFfJtNAawVHw" conceptName="No progress toward goal (finding)" base_EnumerationLiteral="_zAMmcDdQEeiFfJtNAawVHw"/>
+  <term:ValueSetVersion xmi:id="_nQiIEDdVEeiFfJtNAawVHw" identifier="2.16.840.1.113883.1.11.11610" version="20171229" fullName="x_ActRelationshipDocument" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.11610/expansion" base_Enumeration="_nQhhADdVEeiFfJtNAawVHw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_f6DvAE6SEeC5ttwajeXVXg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_3NPm8TdWEeiFfJtNAawVHw" conceptName="is appendage" base_EnumerationLiteral="_3NPm8DdWEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_67NtgTdWEeiFfJtNAawVHw" conceptName="replaces" base_EnumerationLiteral="_67NtgDdWEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_-TcNkTdWEeiFfJtNAawVHw" conceptName="transformation" base_EnumerationLiteral="_-TcNkDdWEeiFfJtNAawVHw"/>
 </xmi:XMI>
