@@ -1767,7 +1767,11 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
       <ownedLiteral xmi:id="_octr4LD4EeafNo3UpQoAYw" name="CRITU"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_cLzZsIdpEeeAsbPrNOnubg" name="Detailed Ethnicity"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OKxtQDNzEeiFfJtNAawVHw" name="Reaction Severity"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OKxtQDNzEeiFfJtNAawVHw" name="Reaction Severity">
+      <ownedLiteral xmi:id="_NBm6ADg6EeiFfJtNAawVHw" name="24484000"/>
+      <ownedLiteral xmi:id="_TBKBoDg6EeiFfJtNAawVHw" name="255604002"/>
+      <ownedLiteral xmi:id="_VlSyUDg6EeiFfJtNAawVHw" name="6736007"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_nQhhADdVEeiFfJtNAawVHw" name="x_ActRelationshipDocument">
       <ownedComment xmi:id="_cdcjgDdWEeiFfJtNAawVHw">
         <body>&lt;p>&#xD;
@@ -3314,7 +3318,9 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetVersion xmi:id="_cL0AwIdpEeeAsbPrNOnubg" identifier="2.16.840.1.114222.4.11.877" fullName="Detailed Ethnicity" url="http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F-DD11-B38D-00188B398520#" base_Enumeration="_cLzZsIdpEeeAsbPrNOnubg">
     <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_OLJgsDNzEeiFfJtNAawVHw" source="R2.1 DSTU 835 and 836" url="none" definition="This is a description of the level of the severity of the reaction in valueSet. No codes have been specified as this value set is provided by HL7 DSTU comments 835 and 836 which have not yet specified an OID for the set, the codeSystem, or set of codes, which are valid and in agreement. It derived from Problem Severity but with future modifications implied. It is intended to have 3 codes which reprent mild, moderate, and severe." base_Enumeration="_OKxtQDNzEeiFfJtNAawVHw"/>
+  <term:ValueSetVersion xmi:id="_OLJgsDNzEeiFfJtNAawVHw" identifier="2.16.840.1.113883.3.88.12.3221.6.8" version="20170915" fullName="Reaction Severity" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.3221.6.8/expansion" definition="This is a description of the level of severity of the REACTION. Inclusion Criteria: Three severities (map fatal to severe, moderate to severe to severe, mild to moderate to moderate)" base_Enumeration="_OKxtQDNzEeiFfJtNAawVHw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_uZDcMDdQEeiFfJtNAawVHw" conceptName="Goal not attainable (finding)" base_EnumerationLiteral="_uZA_8DdQEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_zAMmcTdQEeiFfJtNAawVHw" conceptName="No progress toward goal (finding)" base_EnumerationLiteral="_zAMmcDdQEeiFfJtNAawVHw"/>
   <term:ValueSetVersion xmi:id="_nQiIEDdVEeiFfJtNAawVHw" identifier="2.16.840.1.113883.1.11.11610" version="20171229" fullName="x_ActRelationshipDocument" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.11610/expansion" base_Enumeration="_nQhhADdVEeiFfJtNAawVHw">
@@ -3323,4 +3329,7 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_3NPm8TdWEeiFfJtNAawVHw" conceptName="is appendage" base_EnumerationLiteral="_3NPm8DdWEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_67NtgTdWEeiFfJtNAawVHw" conceptName="replaces" base_EnumerationLiteral="_67NtgDdWEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_-TcNkTdWEeiFfJtNAawVHw" conceptName="transformation" base_EnumerationLiteral="_-TcNkDdWEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_NBnhEDg6EeiFfJtNAawVHw" conceptName="Severe (severity modifier) (qualifier value)" base_EnumerationLiteral="_NBm6ADg6EeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_TBKBoTg6EeiFfJtNAawVHw" conceptName="Mild (qualifier value)" base_EnumerationLiteral="_TBKBoDg6EeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_VlveQDg6EeiFfJtNAawVHw" conceptName="Moderate (severity modifier) (qualifier value)" base_EnumerationLiteral="_VlSyUDg6EeiFfJtNAawVHw"/>
 </xmi:XMI>
