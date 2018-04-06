@@ -637,12 +637,6 @@ The observation/value element contains the detailed patient directive which may 
           <generalization xmi:id="_gBWp0LFFEeOtlapy2HWYww">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_3ZLE0LFFEeOtlapy2HWYww" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3ZLE0rFFEeOtlapy2HWYww"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3ZLE0bFFEeOtlapy2HWYww" value="1"/>
-            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
-          </ownedAttribute>
           <ownedAttribute xmi:id="_3ZLE07FFEeOtlapy2HWYww" name="name" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_M3A3sLFMEeOtlapy2HWYww">
               <body>The playingEntity/name SHALL be a conformant US Realm Person Name (PN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1) (CONF:28455).</body>
@@ -690,12 +684,6 @@ The observation/value element contains the detailed patient directive which may 
   <CDA:PropertyValidation xmi:id="_5u_I0LFJEeOtlapy2HWYww" severity="INFO" base_Property="_3ZLE07FFEeOtlapy2HWYww">
     <ruleId>CONF:1198-28454</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_DtG-0LFKEeOtlapy2HWYww" severity="WARNING" base_Property="_3ZLE0LFFEeOtlapy2HWYww"/>
-  <CDA:ValueSetConstraint xmi:id="_3tQFILFKEeOtlapy2HWYww" base_Property="_3ZLE0LFFEeOtlapy2HWYww" severity="WARNING">
-    <reference href="../consol-vocab.uml#_I2mywLFLEeOtlapy2HWYww"/>
-    <ruleId>CONF:1198-28429</ruleId>
-    <ruleId>DSTU:1342</ruleId>
-  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__C7_oLFSEeOtlapy2HWYww" severity="WARNING" base_Property="_8ej-YLFSEeOtlapy2HWYww"/>
   <CDA:ValueSetConstraint xmi:id="_AQ1WILFTEeOtlapy2HWYww" base_Property="_8ej-YLFSEeOtlapy2HWYww" severity="WARNING">
     <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
