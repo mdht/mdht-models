@@ -1943,8 +1943,9 @@ This effectiveTime represents either the medication duration (i.e., the time the
     <ruleId>CONF:1098-7507</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_DyKbsOLTEeOc7-TVP7Wi6w" base_Property="__4L5cOLSEeOc7-TVP7Wi6w">
-    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_OeMdYDwXEeiFfJtNAawVHw"/>
     <ruleId>CONF:1098-32360</ruleId>
+    <ruleId>DSTU:1366</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_6PKzw-LYEeOc7-TVP7Wi6w" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_Mj8dAGvSEeaBpo0IxWaF6w"/>

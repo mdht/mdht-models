@@ -1782,6 +1782,13 @@ Used to enumerate the relationships between two clinical documents for document 
       <ownedLiteral xmi:id="_67NtgDdWEeiFfJtNAawVHw" name="RPLC"/>
       <ownedLiteral xmi:id="_-TcNkDdWEeiFfJtNAawVHw" name="XFRM"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OeL2UDwXEeiFfJtNAawVHw" name="Medication Status">
+      <ownedLiteral xmi:id="_oDv7QDwXEeiFfJtNAawVHw" name="aborted"/>
+      <ownedLiteral xmi:id="_rLAnIDwXEeiFfJtNAawVHw" name="active"/>
+      <ownedLiteral xmi:id="_sYft8DwXEeiFfJtNAawVHw" name="completed"/>
+      <ownedLiteral xmi:id="_tjmPIDwXEeiFfJtNAawVHw" name="nullified"/>
+      <ownedLiteral xmi:id="_uwF3cDwXEeiFfJtNAawVHw" name="suspended"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3332,4 +3339,12 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_NBnhEDg6EeiFfJtNAawVHw" conceptName="Severe (severity modifier) (qualifier value)" base_EnumerationLiteral="_NBm6ADg6EeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_TBKBoTg6EeiFfJtNAawVHw" conceptName="Mild (qualifier value)" base_EnumerationLiteral="_TBKBoDg6EeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_VlveQDg6EeiFfJtNAawVHw" conceptName="Moderate (severity modifier) (qualifier value)" base_EnumerationLiteral="_VlSyUDg6EeiFfJtNAawVHw"/>
+  <term:ValueSetVersion xmi:id="_OeMdYDwXEeiFfJtNAawVHw" identifier="2.16.840.1.113762.1.4.1099.11" version="20170914" fullName="Medication Status" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.11/expansion" definition="A coded concept indicating the current status of a Medication administration or fulfillment." binding="Dynamic" base_Enumeration="_OeL2UDwXEeiFfJtNAawVHw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_oDwiUDwXEeiFfJtNAawVHw" conceptName="aborted" base_EnumerationLiteral="_oDv7QDwXEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_rLBOMDwXEeiFfJtNAawVHw" conceptName="active" base_EnumerationLiteral="_rLAnIDwXEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_sYft8TwXEeiFfJtNAawVHw" conceptName="completed" base_EnumerationLiteral="_sYft8DwXEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_tjmPITwXEeiFfJtNAawVHw" conceptName="nullified" base_EnumerationLiteral="_tjmPIDwXEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_uwGegDwXEeiFfJtNAawVHw" conceptName="suspended" base_EnumerationLiteral="_uwF3cDwXEeiFfJtNAawVHw"/>
 </xmi:XMI>
