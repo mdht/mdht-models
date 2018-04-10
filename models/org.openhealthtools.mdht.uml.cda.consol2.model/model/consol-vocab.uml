@@ -1789,6 +1789,11 @@ Used to enumerate the relationships between two clinical documents for document 
       <ownedLiteral xmi:id="_tjmPIDwXEeiFfJtNAawVHw" name="nullified"/>
       <ownedLiteral xmi:id="_uwF3cDwXEeiFfJtNAawVHw" name="suspended"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_avmtIDzyEeiFfJtNAawVHw" name="Care Plan Document Type">
+      <ownedLiteral xmi:id="_Ycp9oDzzEeiFfJtNAawVHw" name="18776-5"/>
+      <ownedLiteral xmi:id="_b8xOYDzzEeiFfJtNAawVHw" name="52521-2"/>
+      <ownedLiteral xmi:id="_fXUpsDzzEeiFfJtNAawVHw" name="81957-3"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3347,4 +3352,10 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_sYft8TwXEeiFfJtNAawVHw" conceptName="completed" base_EnumerationLiteral="_sYft8DwXEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_tjmPITwXEeiFfJtNAawVHw" conceptName="nullified" base_EnumerationLiteral="_tjmPIDwXEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_uwGegDwXEeiFfJtNAawVHw" conceptName="suspended" base_EnumerationLiteral="_uwF3cDwXEeiFfJtNAawVHw"/>
+  <term:ValueSetVersion xmi:id="_av2kwDzyEeiFfJtNAawVHw" identifier="2.16.840.1.113762.1.4.1099.10" version="20180125" fullName="Care Plan Document Type" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.10/expansion" definition="Terms used to identify documents that represent a Care Plan" binding="Dynamic" base_Enumeration="_avmtIDzyEeiFfJtNAawVHw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_YcqksDzzEeiFfJtNAawVHw" conceptName="Plan of care note" base_EnumerationLiteral="_Ycp9oDzzEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_b8x1cDzzEeiFfJtNAawVHw" conceptName="Overall Plan of Care/Advance Care Directives" base_EnumerationLiteral="_b8xOYDzzEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_fXUpsTzzEeiFfJtNAawVHw" conceptName="Overall Plan of Care/Advance Care Directives panel" base_EnumerationLiteral="_fXUpsDzzEeiFfJtNAawVHw"/>
 </xmi:XMI>

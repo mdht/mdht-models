@@ -6968,10 +6968,6 @@ The Care Plan is continually evolving and dynamic. The Care Plan CDA instance is
     <ruleId>CONF:1198-28742</ruleId>
     <ruleId>CONF:1198-32877</ruleId>
   </CDA:CDATemplate>
-  <CDA:CodeSystemConstraint xmi:id="_3V4okJ5zEeOr4eM3k36wAg" code="52521-2" displayName="Overall Plan of Care / Advance Care Directives" base_Property="_WQ858J5xEeOr4eM3k36wAg">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1198-28746, CONF:1198-28747</ruleId>
-  </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_2aBAwJ50EeOr4eM3k36wAg" memberEnd="_2Z_yoJ50EeOr4eM3k36wAg _2aBAwZ50EeOr4eM3k36wAg">
     <ownedEnd xmi:id="_2aBAwZ50EeOr4eM3k36wAg" type="_2jWfwJ5wEeOr4eM3k36wAg" association="_2aBAwJ50EeOr4eM3k36wAg"/>
   </uml:Association>
@@ -14803,4 +14799,10 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <ruleId>CONF:1198-32949</ruleId>
     <ruleId>DSTU:1267</ruleId>
   </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_xsqpUDzzEeiFfJtNAawVHw" base_Property="_WQ858J5xEeOr4eM3k36wAg">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_av2kwDzyEeiFfJtNAawVHw"/>
+    <ruleId>CONF:1198-32959</ruleId>
+    <ruleId>DSTU:1048</ruleId>
+    <ruleId>DSTU:1260</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
