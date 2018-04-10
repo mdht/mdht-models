@@ -1,2 +1,1 @@
-This Eclipse Java Projects uses the Consol Jars to consume,create, and validate variaous CDA documents define in
-the consolidated Spec
+This Eclipse Java Project uses the Consol Jars to consume, create, and validate various CDA documents defined in the consolidated specification.
