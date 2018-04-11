@@ -2620,8 +2620,9 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
     <ruleId>CONF:1098-32088</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_NlzeYOgVEeO-iJTuAv7BKQ" base_Property="_NrQ4GegTEeO-iJTuAv7BKQ">
-    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
     <ruleId>CONF:1098-32067</ruleId>
+    <ruleId>DSTU:1276</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_1tsSYOgXEeO-iJTuAv7BKQ" severity="WARNING" base_Property="_s9RloOgXEeO-iJTuAv7BKQ">
     <ruleId>CONF:1098-32133</ruleId>

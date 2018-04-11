@@ -529,7 +529,7 @@
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_HZBV8BqlEeGo461UQq-B1g" base_Property="_2ME5kRSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:8839, R2.1=CONF:1198-8839</ruleId>
+    <ruleId>CONF:8839</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_T_-PYBqlEeGo461UQq-B1g" base_Property="_2MHV0BSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
@@ -899,8 +899,9 @@ The priority of the immunization activity to the patient and provider is communi
     <ruleId>CONF:1098-32102</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_jioDUJXJEeOgXcDbh8Igkw" base_Property="_rorhRJXFEeOgXcDbh8Igkw">
-    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
     <ruleId>CONF:1098-32127</ruleId>
+    <ruleId>DSTU:1276</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_-P-2wJXJEeOgXcDbh8Igkw" base_Property="_romowJXFEeOgXcDbh8Igkw">
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
@@ -1076,6 +1077,11 @@ This information should be included in an Immunization Activity when available. 
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpU7gcHdEeST26B_nQ4gxA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpU7gsHdEeST26B_nQ4gxA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7DXfcD2iEeiFfJtNAawVHw" name="routeCode" visibility="private" aggregation="composite" redefinedProperty="_2ME5kRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7DXfcT2iEeiFfJtNAawVHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7DXfcj2iEeiFfJtNAawVHw" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_Bpk3QPgLEeOYeZoWJF5yyQ" name="Consumable">
       <ownedComment xmi:id="_dCZZYPiWEeOXlK95I8tUew">
@@ -1513,4 +1519,10 @@ This information should be included in an Immunization Activity when available. 
   <CDA:ConstraintValidation xmi:id="_ckCE8BaUEeWPafwaDwpzXw" severity="INFO" base_Constraint="_xYXwIMHdEeST26B_nQ4gxA"/>
   <CDA:ConstraintValidation xmi:id="_c7CPsBaUEeWPafwaDwpzXw" severity="INFO" base_Constraint="_DPx2kMHeEeST26B_nQ4gxA"/>
   <CDA:ConstraintValidation xmi:id="_dZwzEBaUEeWPafwaDwpzXw" severity="INFO" base_Constraint="_LMMTgMHeEeST26B_nQ4gxA"/>
+  <CDA:PropertyValidation xmi:id="_7DvS4D2iEeiFfJtNAawVHw" severity="INFO" base_Property="_7DXfcD2iEeiFfJtNAawVHw"/>
+  <CDA:ValueSetConstraint xmi:id="_7DwhAD2iEeiFfJtNAawVHw" base_Property="_7DXfcD2iEeiFfJtNAawVHw">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
+    <ruleId>CONF:1198-8839</ruleId>
+    <ruleId>DSTU:1276</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>

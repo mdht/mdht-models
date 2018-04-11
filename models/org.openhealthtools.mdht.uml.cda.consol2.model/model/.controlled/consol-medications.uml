@@ -2642,8 +2642,9 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_nbj6IMLMEeSqg-Exmsy2kg" severity="WARNING" base_Property="_nbjTEMLMEeSqg-Exmsy2kg"/>
   <CDA:ValueSetConstraint xmi:id="_nbkhMMLMEeSqg-Exmsy2kg" base_Property="_nbjTEMLMEeSqg-Exmsy2kg">
-    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
     <ruleId>CONF:1098-7514</ruleId>
+    <ruleId>DSTU:1276</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_smFv8MNpEeSRNKqIviDQAg" base_Property="_smEh0MNpEeSRNKqIviDQAg">
     <reference href="../consol-vocab.uml#_dy62kMNpEeSRNKqIviDQAg"/>
