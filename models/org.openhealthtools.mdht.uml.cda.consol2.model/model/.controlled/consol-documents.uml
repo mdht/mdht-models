@@ -5892,12 +5892,11 @@ OIDs SHALL be no more than 64 characters in length..</body>
       <body>This template defines constraints that represent common administrative and demographic concepts for US Realm CDA documents. Further specification, such as ClinicalDocument/code, are provided in document templates that conform to this template.</body>
     </ownedComment>
     <ownedRule xmi:id="_J0a08D3PEeiFfJtNAawVHw" name="docCodesOnly" constrainedElement="_dduXkJ5OEeOr4eM3k36wAg">
-      <ownedComment xmi:id="_rwNvkD3QEeiFfJtNAawVHw">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_f3iG0D3PEeiFfJtNAawVHw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>code SHALL be drawn from the LOINC document type ontology (LOINC codes where SCALE = DOC)</body>
+        <body>code.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_ddxa4J5OEeOr4eM3k36wAg" general="_2DNRcBSVEeGGzu7fmW9pXw"/>
