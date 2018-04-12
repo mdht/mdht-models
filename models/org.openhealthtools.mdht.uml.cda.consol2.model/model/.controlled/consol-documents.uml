@@ -9991,8 +9991,8 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_BMze0SJUEeSBLYc2hU6GfA">
             <language>Analysis</language>
             <language>OCL</language>
-            <body>SHALL contain exactly one [1..1] assignedPerson and/or exactly one [1..1] representedOrganization</body>
-            <body>(not self.assignedPerson.oclIsUndefined()) or (not self.representedOrganization.oclIsUndefined())</body>
+            <body>SHALL contain (exactly one [1..1] assignedPerson) or (exactly one [1..1] assignedAuthoringDevice and exactly one [1..1] representedOrganization)</body>
+            <body>not self.assignedPerson.oclIsUndefined() or (not self.assignedAuthoringDevice.oclIsUndefined() and not self.representedOrganization.oclIsUndefined())</body>
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_B4NzUCJUEeSBLYc2hU6GfA" name="hasRepresentOrganization">
@@ -10137,6 +10137,7 @@ The serviceEvent/performer represents the healthcare providers involved in the c
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_BMze0iJUEeSBLYc2hU6GfA" base_Constraint="_BMze0CJUEeSBLYc2hU6GfA">
     <ruleId>CONF:1198-8456</ruleId>
+    <ruleId>DSTU:849</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_B4NzUyJUEeSBLYc2hU6GfA" base_Constraint="_B4NzUCJUEeSBLYc2hU6GfA">
     <ruleId>CONF:1198-8457</ruleId>
