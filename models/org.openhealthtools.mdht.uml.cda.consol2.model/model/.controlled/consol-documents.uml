@@ -5891,6 +5891,15 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ownedComment xmi:id="_B-WxAJ5REeOr4eM3k36wAg">
       <body>This template defines constraints that represent common administrative and demographic concepts for US Realm CDA documents. Further specification, such as ClinicalDocument/code, are provided in document templates that conform to this template.</body>
     </ownedComment>
+    <ownedRule xmi:id="_J0a08D3PEeiFfJtNAawVHw" name="docCodesOnly" constrainedElement="_dduXkJ5OEeOr4eM3k36wAg">
+      <ownedComment xmi:id="_rwNvkD3QEeiFfJtNAawVHw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_f3iG0D3PEeiFfJtNAawVHw">
+        <language>Analysis</language>
+        <body>code SHALL be drawn from the LOINC document type ontology (LOINC codes where SCALE = DOC)</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_ddxa4J5OEeOr4eM3k36wAg" general="_2DNRcBSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_rBwykBwJEeSMr-NWzQuDBw" name="GeneralHeaderConstraints" client="_dduXkJ5OEeOr4eM3k36wAg" supplier="_2DNRcBSVEeGGzu7fmW9pXw" contract="_2DNRcBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_T4n3UBwKEeSMr-NWzQuDBw" name="realmCode" visibility="private" aggregation="composite" redefinedProperty="_2DNR9BSVEeGGzu7fmW9pXw">
@@ -14805,4 +14814,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <ruleId>DSTU:1048</ruleId>
     <ruleId>DSTU:1260</ruleId>
   </CDA:ValueSetConstraint>
+  <CDA:ConstraintValidation xmi:id="_LlUK0D3PEeiFfJtNAawVHw" base_Constraint="_J0a08D3PEeiFfJtNAawVHw">
+    <ruleId>DSTU:1338</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>
