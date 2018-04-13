@@ -111,7 +111,7 @@
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_JwPVQCwaEeGKLc4ckmfDag">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>EncounterActivities with target entry Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: HL7ParticipationType urn:oid:2.16.840.1.113883.5.90) STATIC</body>
         <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)</body>
       </specification>
     </ownedRule>
@@ -257,6 +257,7 @@
   <CDA:ConstraintValidation xmi:id="_MrEusCwaEeGKLc4ckmfDag" severity="WARNING" base_Constraint="_EywuoCwaEeGKLc4ckmfDag">
     <ruleId>CONF:8740</ruleId>
     <ruleId>R2.1=CONF:1198-8740</ruleId>
+    <ruleId>DSTU:1239</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_d7Xx0CwaEeGKLc4ckmfDag" severity="WARNING" base_Constraint="_a_2b4CwaEeGKLc4ckmfDag">
     <ruleId>CONF:8719, R2.1=CONF:1198-8719</ruleId>

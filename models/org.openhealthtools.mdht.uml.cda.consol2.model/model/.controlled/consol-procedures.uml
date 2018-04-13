@@ -163,7 +163,7 @@ This clinical statement represents procedures that result in new information abo
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_p26x8RxwEeGXP8PxDYviDg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: HL7ParticipationType urn:oid:2.16.840.1.113883.5.90) STATIC</body>
         <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)</body>
       </specification>
     </ownedRule>
@@ -441,7 +441,7 @@ This clinical statement represents any procedure that cannot be classified as an
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_C9KP4RxsEeGXP8PxDYviDg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: HL7ParticipationType urn:oid:2.16.840.1.113883.5.90) STATIC</body>
         <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)</body>
       </specification>
     </ownedRule>
@@ -734,7 +734,7 @@ This clinical statement represents procedures whose immediate and primary outcom
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Pf0kYBxaEeGXP8PxDYviDg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>participant with target entry Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>participant with target entry Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC</body>
         <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)</body>
       </specification>
     </ownedRule>
@@ -1204,6 +1204,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_IVsa0BxsEeGXP8PxDYviDg" base_Constraint="_C9KP4BxsEeGXP8PxDYviDg">
     <ruleId>CONF:8312</ruleId>
     <ruleId>R2.0=CONF:1098-8312</ruleId>
+    <ruleId>DSTU:1239</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_7D4KABxsEeGXP8PxDYviDg" base_Constraint="_5r5qcBxsEeGXP8PxDYviDg">
     <ruleId>CONF:7777</ruleId>
@@ -1276,6 +1277,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_tPtSsBxwEeGXP8PxDYviDg" base_Constraint="_p26x8BxwEeGXP8PxDYviDg">
     <ruleId>CONF:8262</ruleId>
     <ruleId>R2.0=CONF:1098-8262</ruleId>
+    <ruleId>DSTU:1239</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_toQ8oBxwEeGXP8PxDYviDg" base_Constraint="_rOfo4BxwEeGXP8PxDYviDg">
     <ruleId>CONF:8274</ruleId>

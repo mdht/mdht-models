@@ -1850,7 +1850,7 @@ The priority of the activity to the patient and provider is communicated through
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_4o_oIOdiEeOqBOMhgDlycQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>participant with target entry serviceDeliveryLocation if present, SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002)</body>
+        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: HL7ParticipationType urn:oid:2.16.840.1.113883.5.90) STATIC</body>
         <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsTypeOf(consol::ServiceDeliveryLocation))->forAll(pars : cda::Participant2 | pars.typeCode=vocab::ParticipationType::LOC)</body>
       </specification>
     </ownedRule>
@@ -1963,6 +1963,7 @@ The priority of the activity to the patient and provider is communicated through
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_sp28oOdiEeOqBOMhgDlycQ" base_Constraint="_qBucwOdiEeOqBOMhgDlycQ">
     <ruleId>CONF:1098-31875</ruleId>
+    <ruleId>DSTU:1239</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_5VekkOdrEeOqBOMhgDlycQ" memberEnd="_5Vd9gOdrEeOqBOMhgDlycQ _5VfLoOdrEeOqBOMhgDlycQ">
     <ownedComment xmi:id="_CjqycOdsEeOqBOMhgDlycQ">
