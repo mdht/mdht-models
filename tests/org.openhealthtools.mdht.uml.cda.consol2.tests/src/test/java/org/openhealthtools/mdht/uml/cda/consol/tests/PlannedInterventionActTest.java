@@ -92,7 +92,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedInterventionAct
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedSupply2s() <em>Get Planned Supply2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getNutritionRecommendations() <em>Get Nutrition Recommendations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getEntryReferenceDocInstances() <em>Get Entry Reference Doc Instances</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getEntryReferenceGoalObs() <em>Get Entry Reference Goal Obs</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getEntryReferenceGoalObss() <em>Get Entry Reference Goal Obss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getHandoffCommunicationParticipantss() <em>Get Handoff Communication Participantss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedImmunizationActivities() <em>Get Planned Immunization Activities</em>}</li>
  * </ul>
@@ -1592,10 +1592,11 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetEntryReferenceGoalObs() {
+
+	public void testGetEntryReferenceGoalObss() {
 
 		PlannedInterventionAct target = objectFactory.create();
-		target.getEntryReferenceGoalObs();
+		target.getEntryReferenceGoalObss();
 
 	}
 

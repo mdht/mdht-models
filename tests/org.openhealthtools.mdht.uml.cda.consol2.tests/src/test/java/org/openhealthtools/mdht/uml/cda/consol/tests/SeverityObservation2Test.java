@@ -44,6 +44,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SeverityObservation2Op
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2#validateSeverityObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2#validateSeverityObservationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Observation Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2#validateSeverityObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Observation Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2#validateSeverityObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Observation Value P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2#validateSeverityObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Observation Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -391,6 +393,79 @@ public class SeverityObservation2Test extends CDAValidationTest {
 		};
 
 		validateSeverityObservationStatusCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSeverityObservationValueP() {
+		OperationsTestCase<SeverityObservation2> validateSeverityObservationValuePTestCase = new OperationsTestCase<SeverityObservation2>(
+			"validateSeverityObservationValueP",
+			operationsForOCL.getOCLValue("VALIDATE_SEVERITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SeverityObservation2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(SeverityObservation2 target) {
+				target.getValues().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SeverityObservation2Operations.validateSeverityObservationValueP(
+					(SeverityObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSeverityObservationValuePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSeverityObservationValue() {
+		OperationsTestCase<SeverityObservation2> validateSeverityObservationValueTestCase = new OperationsTestCase<SeverityObservation2>(
+			"validateSeverityObservationValue",
+			operationsForOCL.getOCLValue("VALIDATE_SEVERITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SeverityObservation2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(SeverityObservation2 target) {
+				target.getValues().add(DatatypesFactory.eINSTANCE.createCD("24484000", SNOMEDCT_ID));
+			}
+
+			@Override
+			protected void setDependency(SeverityObservation2 target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.SeverityObservationValueP", passToken);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SeverityObservation2Operations.validateSeverityObservationValue(
+					(SeverityObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSeverityObservationValueTestCase.doValidationTest();
 	}
 
 	/**

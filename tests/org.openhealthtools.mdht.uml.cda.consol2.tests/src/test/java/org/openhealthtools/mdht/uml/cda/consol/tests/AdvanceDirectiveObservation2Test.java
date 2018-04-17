@@ -48,8 +48,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveObserv
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2CDTranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 CD Translation P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 IVLTS High</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Verifier Participant Role Playing Entity Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Verifier Participant Role Playing Entity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Verifier Participant Role Playing Entity Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2VerifierParticipantRoleCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Verifier Participant Role Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2VerifierParticipantRoleCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Verifier Participant Role Code</em>}</li>
@@ -301,92 +299,6 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 		};
 
 		validateAdvanceDirectiveObservation2IVLTSHighTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodePTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
-
-				target.getParticipants().get(0).getParticipantRole().setPlayingEntity(
-					CDAFactory.eINSTANCE.createPlayingEntity());
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().getPlayingEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP(
-					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
-
-				target.getParticipants().get(0).getParticipantRole().setPlayingEntity(
-					CDAFactory.eINSTANCE.createPlayingEntity());
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().getPlayingEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE("63161005", SNOMEDCT_ID));
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode(
-					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeTestCase.doValidationTest();
 	}
 
 	/**

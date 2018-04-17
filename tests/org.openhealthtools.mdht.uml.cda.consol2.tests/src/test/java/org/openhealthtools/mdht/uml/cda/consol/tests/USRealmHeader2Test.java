@@ -69,6 +69,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.USRealmHeader2Operatio
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2DocCodesOnly(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Doc Codes Only</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient TS Birth Time Precise To Minute</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient SDTC Ethnic Group Code P</em>}</li>
@@ -155,6 +156,40 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.USRealmHeader2Operatio
  */
 
 public class USRealmHeader2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateUSRealmHeader2DocCodesOnly() {
+		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2DocCodesOnlyTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateUSRealmHeader2DocCodesOnly",
+			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_DOC_CODES_ONLY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.getCode().setCodeSystem(LOINC_ID);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateUSRealmHeader2DocCodesOnly(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateUSRealmHeader2DocCodesOnlyTestCase.doValidationTest();
+	}
 
 	/**
 	*

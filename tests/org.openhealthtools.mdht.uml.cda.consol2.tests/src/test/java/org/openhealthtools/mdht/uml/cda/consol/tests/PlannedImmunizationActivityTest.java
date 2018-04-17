@@ -32,9 +32,9 @@ import org.eclipse.mdht.uml.hl7.datatypes.IVL_PQ;
 import org.eclipse.mdht.uml.hl7.datatypes.SXCM_TS;
 import org.eclipse.mdht.uml.hl7.vocab.ActClass;
 import org.eclipse.mdht.uml.hl7.vocab.ActRelationshipType;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.eclipse.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 import org.junit.Test;
-import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedImmunizationActivityOperations;
@@ -456,8 +456,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedImmunizationActivity target) {
 				CE rc = DatatypesFactory.eINSTANCE.createCE();
-				rc.setCode("C38192");
-				rc.setCodeSystem("2.16.840.1.113883.3.26.1.1");
+				rc.setCode("hasCode");
+				rc.setCodeSystem(SNOMEDCT_ID);
 				target.setRouteCode(rc);
 			}
 

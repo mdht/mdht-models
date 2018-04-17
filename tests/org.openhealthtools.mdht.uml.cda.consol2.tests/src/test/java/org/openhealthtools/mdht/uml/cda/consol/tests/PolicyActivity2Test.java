@@ -1765,26 +1765,6 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 					@Override
 					public void updateToFail(PolicyActivity2 target) {
-						// Contains 1 payer and Contains 2 guarantors
-						target.init();
-						target.getPerformers().clear();
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						Performer2 guarantor2 = createPerformer();
-						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor2);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
 						// Contains 2 payers and Contains 0 guarantor
 						target.init();
 						target.getPerformers().clear();
@@ -1794,45 +1774,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 						Performer2 payer2 = createPerformer();
 						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
 						target.getPerformers().add(payer2);
-					}
-				});
 
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 0 payers and Contains 2 guarantors
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						Performer2 guarantor2 = createPerformer();
-						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor2);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 2 payers and Contains 2 guarantors
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						Performer2 guarantor2 = createPerformer();
-						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor2);
-
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-						Performer2 payer2 = createPerformer();
-						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer2);
 					}
 				});
 

@@ -109,6 +109,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CarePlanOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformer1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer1</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentParentDocumentId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Parent Document Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentParentDocumentSetId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Parent Document Set Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentParentDocumentVersionNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Parent Document Version Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentTypeCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Type Code P</em>}</li>
@@ -204,7 +205,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateCarePlanCode() {
@@ -214,13 +215,12 @@ public class CarePlanTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.init();
-
+				target.setCode(DatatypesFactory.eINSTANCE.createCE("18776-5", LOINC_ID, "LOINC", "Plan of care note"));
 			}
 
 			@Override
@@ -2407,6 +2407,43 @@ public class CarePlanTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidateCarePlanRelatedDocumentParentDocumentId() {
+		OperationsTestCase<CarePlan> validateCarePlanRelatedDocumentParentDocumentIdTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanRelatedDocumentParentDocumentId",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+				target.init();
+				target.getRelatedDocuments().add(CDAFactory.eINSTANCE.createRelatedDocument());
+				target.getRelatedDocuments().get(0).setParentDocument(CDAFactory.eINSTANCE.createParentDocument());
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.getRelatedDocuments().get(0).getParentDocument().getIds().add(
+					DatatypesFactory.eINSTANCE.createII());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanRelatedDocumentParentDocumentId(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanRelatedDocumentParentDocumentIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidateCarePlanRelatedDocumentParentDocumentSetId() {
 		OperationsTestCase<CarePlan> validateCarePlanRelatedDocumentParentDocumentSetIdTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanRelatedDocumentParentDocumentSetId",
@@ -2520,15 +2557,15 @@ public class CarePlanTest extends CDAValidationTest {
 				"VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
-			@Override
-			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getRelatedDocuments().add(CDAFactory.eINSTANCE.createRelatedDocument());
-				target.getRelatedDocuments().get(0).setTypeCode(x_ActRelationshipDocument.XFRM); // not part of the required valueSet
+			{
+				// It is not possible for this test to fail because the code must be set with an enum and that enum only contains valid codes.
+				skipFailsTest();
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
+				target.init();
+				target.getRelatedDocuments().add(CDAFactory.eINSTANCE.createRelatedDocument());
 				target.getRelatedDocuments().get(0).setTypeCode(x_ActRelationshipDocument.APND);
 			}
 

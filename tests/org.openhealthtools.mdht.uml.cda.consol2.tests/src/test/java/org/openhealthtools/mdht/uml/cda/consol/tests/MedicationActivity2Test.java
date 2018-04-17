@@ -1048,28 +1048,9 @@ public class MedicationActivity2Test extends CDAValidationTest {
 			}
 
 			@Override
-			public void addPassTests() {
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(MedicationActivity2 target) {
-						target.init();
-						target.setRouteCode(
-							DatatypesFactory.eINSTANCE.createCE("C38192", "2.16.840.1.113883.3.26.1.1"));
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(MedicationActivity2 target) {
-						target.init();
-						target.setRouteCode(
-							DatatypesFactory.eINSTANCE.createCE("C38313", "2.16.840.1.113883.3.26.1.1"));
-						target.getRouteCode().setCodeSystemName("NCI Thesaurus");
-						target.getRouteCode().setDisplayName("Vaginal");
-					}
-				});
-
+			protected void updateToPass(MedicationActivity2 target) {
+				target.init();
+				target.setRouteCode(DatatypesFactory.eINSTANCE.createCE("hasCode", SNOMEDCT_ID));
 			}
 
 			@Override
