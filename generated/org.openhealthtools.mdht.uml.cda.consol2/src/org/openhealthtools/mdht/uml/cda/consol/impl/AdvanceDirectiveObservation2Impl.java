@@ -118,30 +118,6 @@ public class AdvanceDirectiveObservation2Impl extends AdvanceDirectiveObservatio
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityName(

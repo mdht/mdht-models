@@ -700,6 +700,16 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCarePlanRelatedDocumentParentDocumentId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CarePlanOperations.validateCarePlanRelatedDocumentParentDocumentId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateCarePlanRelatedDocumentParentDocumentSetId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

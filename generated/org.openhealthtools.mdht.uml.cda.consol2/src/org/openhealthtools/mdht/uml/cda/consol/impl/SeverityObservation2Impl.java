@@ -141,6 +141,26 @@ public class SeverityObservation2Impl extends SeverityObservationImpl implements
 	 * @generated
 	 */
 	@Override
+	public boolean validateSeverityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeverityObservation2Operations.validateSeverityObservationValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSeverityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeverityObservation2Operations.validateSeverityObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public SeverityObservation2 init() {
 		return Initializer.Util.init(this);
 	}

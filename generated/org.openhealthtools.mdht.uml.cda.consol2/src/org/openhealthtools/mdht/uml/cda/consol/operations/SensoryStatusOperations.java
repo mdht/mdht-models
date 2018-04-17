@@ -798,7 +798,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SENSORY_STATUS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))";
+	protected static final String VALIDATE_SENSORY_STATUS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSensoryStatusAuthorParticipation(SensoryStatus, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sensory Status Author Participation</em>}' invariant operation.
