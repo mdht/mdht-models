@@ -45,6 +45,8 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2#validateProblemObservationValueNullFlavorUnknown(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Value Null Flavor Unknown</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2#validateProblemObservation2IfSnomedRequireTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 If Snomed Require Translation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2#validateProblemObservation2IfSnomedRequireTranslationFromLoinc(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 If Snomed Require Translation From Loinc</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2#validateProblemObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2#validateProblemObservation2PrognosisObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 Prognosis Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2#validateProblemObservation2PriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 Priority Preference</em>}</li>
@@ -153,6 +155,138 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR_UNKNOWN,
 						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationValueNullFlavorUnknown"),
+						new Object[] { problemObservation2 }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProblemObservation2IfSnomedRequireTranslation(ProblemObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 If Snomed Require Translation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProblemObservation2IfSnomedRequireTranslation(ProblemObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "code.codeSystem = '2.16.840.1.113883.6.96' implies code.translation->size() >= 1";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProblemObservation2IfSnomedRequireTranslation(ProblemObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 If Snomed Require Translation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProblemObservation2IfSnomedRequireTranslation(ProblemObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param problemObservation2 The receiving '<em><b>Problem Observation2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateProblemObservation2IfSnomedRequireTranslation(ProblemObservation2 problemObservation2,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION2);
+			try {
+				VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				problemObservation2)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION,
+						ConsolPlugin.INSTANCE.getString(
+							"ProblemObservation2ProblemObservation2IfSnomedRequireTranslation"),
+						new Object[] { problemObservation2 }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProblemObservation2IfSnomedRequireTranslationFromLoinc(ProblemObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 If Snomed Require Translation From Loinc</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProblemObservation2IfSnomedRequireTranslationFromLoinc(ProblemObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "code.codeSystem = '2.16.840.1.113883.6.96' and code.translation->size() >= 1 implies code.translation->forAll(trans : datatypes::CD | trans.codeSystem = '2.16.840.1.113883.6.1')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProblemObservation2IfSnomedRequireTranslationFromLoinc(ProblemObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 If Snomed Require Translation From Loinc</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProblemObservation2IfSnomedRequireTranslationFromLoinc(ProblemObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param problemObservation2 The receiving '<em><b>Problem Observation2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateProblemObservation2IfSnomedRequireTranslationFromLoinc(
+			ProblemObservation2 problemObservation2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION2);
+			try {
+				VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				problemObservation2)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION_FROM_LOINC,
+						ConsolPlugin.INSTANCE.getString(
+							"ProblemObservation2ProblemObservation2IfSnomedRequireTranslationFromLoinc"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -484,7 +618,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION2_CD_CODE_TRANSLATION,
 							ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservation2CDCodeTranslation"),
 							new Object[] { eObject }));
@@ -533,7 +667,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION2_CD_CODE_TRANSLATION_P,
 							ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservation2CDCodeTranslationP"),
 							new Object[] { eObject }));
@@ -558,7 +692,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROBLEM_OBSERVATION2,
-				ConsolPackage.Literals.PROBLEM_OBSERVATION2.getEAllOperations().get(87));
+				ConsolPackage.Literals.PROBLEM_OBSERVATION2.getEAllOperations().get(89));
 			try {
 				GET_PROGNOSIS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROGNOSIS_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -583,7 +717,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROBLEM_OBSERVATION2,
-				ConsolPackage.Literals.PROBLEM_OBSERVATION2.getEAllOperations().get(88));
+				ConsolPackage.Literals.PROBLEM_OBSERVATION2.getEAllOperations().get(90));
 			try {
 				GET_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PRIORITY_PREFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -610,7 +744,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROBLEM_OBSERVATION2,
-				ConsolPackage.Literals.PROBLEM_OBSERVATION2.getEAllOperations().get(90));
+				ConsolPackage.Literals.PROBLEM_OBSERVATION2.getEAllOperations().get(92));
 			try {
 				GET_CONSOL_PROBLEM_STATUS__EOCL_QRY = helper.createQuery(GET_CONSOL_PROBLEM_STATUS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -899,7 +1033,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROBLEM_OBSERVATION2,
-				ConsolPackage.Literals.PROBLEM_OBSERVATION2.getEAllOperations().get(89));
+				ConsolPackage.Literals.PROBLEM_OBSERVATION2.getEAllOperations().get(91));
 			try {
 				GET_CONSOL_HEALTH_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_HEALTH_STATUS_OBSERVATION__EOCL_EXP);
@@ -1389,7 +1523,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	 */
 	protected static final String VALIDATE_PROBLEM_OBSERVATION2_CD_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (not translation->isEmpty() and translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
 			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
-			"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '75326-9' or value.code = '75325-1' or value.code = '75324-4' or value.code = '75323-6' or value.code = '29308-4' or value.code = '75322-8' or value.code = '75275-8' or value.code = '75321-0' or value.code = '75319-4' or value.code = '75318-6' or value.code = '75317-8' or value.code = '75316-0' or value.code = '75315-2' or value.code = '75314-5' or value.code = '75313-7' or value.code = '75312-9'))) )))";
+			"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())) )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemObservation2CDCodeTranslation(ProblemObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 CD Code Translation</em>}' invariant operation.

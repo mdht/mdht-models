@@ -11555,6 +11555,14 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemObservation2/ProblemObservationValueNullFlavorUnknown/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemObservation2/ProblemObservationValueNullFlavorUnknown/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemObservation2/ProblemObservation2IfSnomedRequireTranslation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemObservation2/ProblemObservation2IfSnomedRequireTranslation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemObservation2/ProblemObservation2IfSnomedRequireTranslation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemObservation2/ProblemObservation2IfSnomedRequireTranslationFromLoinc">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemObservation2/ProblemObservation2IfSnomedRequireTranslationFromLoinc/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemObservation2/ProblemObservation2IfSnomedRequireTranslationFromLoinc/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProblemObservation2/ProblemObservationStatusCodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemObservation2/ProblemObservationStatusCodeP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProblemObservation2/ProblemObservationStatusCodeP/context"/>

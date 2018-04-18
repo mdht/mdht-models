@@ -65,6 +65,28 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemObservation2IfSnomedRequireTranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservation2IfSnomedRequireTranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemObservation2IfSnomedRequireTranslationFromLoinc(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservation2IfSnomedRequireTranslationFromLoinc(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProblemObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservationStatusCodeP(this, diagnostics, context);

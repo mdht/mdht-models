@@ -1239,6 +1239,22 @@ The effectiveTime of the Problem Observation is the definitive indication of whe
         <body>true</body>
       </specification>
     </ownedRule>
+    <ownedRule xmi:id="_zDd9gEMwEeiFfJtNAawVHw" name="ifSnomedRequireTranslation" constrainedElement="_prDAkPDCEeOKPKE9au0oug">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_AOtPwEMxEeiFfJtNAawVHw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>If code is selected from ValueSet Problem Type urn:oid:2.16.840.1.113883.3.88.12.3221.7.2 STATIC 2012-06-01, then it SHALL have at least one [1..*] translation</body>
+        <body>code.codeSystem = '2.16.840.1.113883.6.96' implies code.translation->size() >= 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_5YrWoEMxEeiFfJtNAawVHw" name="ifSnomedRequireTranslationFromLoinc" constrainedElement="_prDAkPDCEeOKPKE9au0oug">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_DU69UEMyEeiFfJtNAawVHw">
+        <language>OCL</language>
+        <language>Analysis</language>
+        <body>code.codeSystem = '2.16.840.1.113883.6.96' and code.translation->size() >= 1 implies code.translation->forAll(trans : datatypes::CD | trans.codeSystem = '2.16.840.1.113883.6.1')</body>
+        <body>If code is selected from ValueSet Problem Type urn:oid:2.16.840.1.113883.3.88.12.3221.7.2 STATIC 2012-06-01, then it SHALL have at least one [1..*] translation, which SHOULD be selected from ValueSet Problem Type urn:oid:2.16.840.1.113883.3.88.12.3221.7.2 STATIC 2014-09-02</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_prGD4PDCEeOKPKE9au0oug" general="_5Ha7ABUyEeGbmN_W114JUw"/>
     <substitution xmi:id="_3P7scPDDEeOKPKE9au0oug" name="ProblemObservation" client="_prDAkPDCEeOKPKE9au0oug" supplier="_5Ha7ABUyEeGbmN_W114JUw" contract="_5Ha7ABUyEeGbmN_W114JUw"/>
     <ownedAttribute xmi:id="_dJUTcPDEEeOKPKE9au0oug" name="negationInd" visibility="private" redefinedProperty="_qzvdsCAtEeGetMjKLkqR8g">
@@ -1549,9 +1565,16 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
   <CDA:ConstraintValidation xmi:id="_ZOxR8BaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_RGF6oMEkEeSjB6vMjDsL5Q"/>
   <CDA:ConstraintValidation xmi:id="_ZsFgEBaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_UJBgIMEkEeSjB6vMjDsL5Q"/>
   <CDA:ConstraintValidation xmi:id="_cDQLwBaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_YgU3kMEkEeSjB6vMjDsL5Q"/>
-  <CDA:PropertyValidation xmi:id="_3bREgE9oEeWsIc5CMrI4GA" base_Property="_zWj48E9oEeWsIc5CMrI4GA"/>
-  <CDA:ValueSetConstraint xmi:id="_5ALM0E9oEeWsIc5CMrI4GA" base_Property="_zWj48E9oEeWsIc5CMrI4GA" severity="WARNING">
+  <CDA:PropertyValidation xmi:id="_3bREgE9oEeWsIc5CMrI4GA" severity="INFO" base_Property="_zWj48E9oEeWsIc5CMrI4GA"/>
+  <CDA:ValueSetConstraint xmi:id="_5ALM0E9oEeWsIc5CMrI4GA" base_Property="_zWj48E9oEeWsIc5CMrI4GA" severity="INFO">
     <reference href="../consol-vocab.uml#_hRIUmoY5EeS7A_69H25Pzw"/>
-    <ruleId>CONF:1198-32848</ruleId>
   </CDA:ValueSetConstraint>
+  <CDA:ConstraintValidation xmi:id="_0NW9wEMwEeiFfJtNAawVHw" base_Constraint="_zDd9gEMwEeiFfJtNAawVHw">
+    <ruleId>CONF:1198-32950</ruleId>
+    <ruleId>DSTU:1224</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_7r2TIEMxEeiFfJtNAawVHw" severity="WARNING" base_Constraint="_5YrWoEMxEeiFfJtNAawVHw">
+    <ruleId>CONF:1198-32950</ruleId>
+    <ruleId>DSTU:1224</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

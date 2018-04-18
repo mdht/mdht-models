@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014, 2015 Dan Brown and others.
+ * Copyright (c) 2014, 2015, 2018 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -25,9 +25,9 @@ import org.eclipse.mdht.uml.hl7.datatypes.CS;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.ED;
 import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemObservation2Operations;
@@ -41,6 +41,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemObservation2Ope
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2#validateProblemObservationValueNullFlavorUnknown(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Value Null Flavor Unknown</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2#validateProblemObservation2IfSnomedRequireTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 If Snomed Require Translation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2#validateProblemObservation2IfSnomedRequireTranslationFromLoinc(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 If Snomed Require Translation From Loinc</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2#validateProblemObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2#validateProblemObservation2PrognosisObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 Prognosis Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2#validateProblemObservation2PriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 Priority Preference</em>}</li>
@@ -113,6 +115,161 @@ public class ProblemObservation2Test extends CDAValidationTest {
 		};
 
 		validateProblemObservationValueNullFlavorUnknownTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateProblemObservation2IfSnomedRequireTranslation() {
+		OperationsTestCase<ProblemObservation2> validateProblemObservation2IfSnomedRequireTranslationTestCase = new OperationsTestCase<ProblemObservation2>(
+			"validateProblemObservation2IfSnomedRequireTranslation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void updateToFail(ProblemObservation2 target) {
+				target.init();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				cd.setCodeSystem(SNOMEDCT_ID);
+				target.setCode(cd);
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ProblemObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD();
+						cd.setCodeSystem(SNOMEDCT_ID);
+						target.setCode(cd);
+						target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ProblemObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD();
+						cd.setCodeSystem(SNOMEDCT_ID);
+						target.setCode(cd);
+						target.getCode().getTranslations().add(
+							DatatypesFactory.eINSTANCE.createCD("someCode", LOINC_ID));
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemObservation2Operations.validateProblemObservation2IfSnomedRequireTranslation(
+					(ProblemObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemObservation2IfSnomedRequireTranslationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateProblemObservation2IfSnomedRequireTranslationFromLoinc() {
+		OperationsTestCase<ProblemObservation2> validateProblemObservation2IfSnomedRequireTranslationFromLoincTestCase = new OperationsTestCase<ProblemObservation2>(
+			"validateProblemObservation2IfSnomedRequireTranslationFromLoinc",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ProblemObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD();
+						cd.setCodeSystem(SNOMEDCT_ID);
+						target.setCode(cd);
+						target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ProblemObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD();
+						cd.setCodeSystem(SNOMEDCT_ID);
+						target.setCode(cd);
+						target.getCode().getTranslations().add(
+							DatatypesFactory.eINSTANCE.createCD("someCode", SNOMEDCT_ID));
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ProblemObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD();
+						cd.setCodeSystem(SNOMEDCT_ID);
+						target.setCode(cd);
+						target.getCode().getTranslations().add(
+							DatatypesFactory.eINSTANCE.createCD("someCode", LOINC_ID));
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ProblemObservation2 target) {
+						target.init();
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ProblemObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD();
+						cd.setCode("someCode");
+						target.setCode(cd);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ProblemObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD("someCode", "someCodeSystemOID");
+						target.setCode(cd);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemObservation2Operations.validateProblemObservation2IfSnomedRequireTranslationFromLoinc(
+					(ProblemObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemObservation2IfSnomedRequireTranslationFromLoincTestCase.doValidationTest();
 	}
 
 	/**
