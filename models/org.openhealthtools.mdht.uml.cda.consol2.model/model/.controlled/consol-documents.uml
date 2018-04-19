@@ -5468,7 +5468,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_VSZ6oPIMEeGu1M-cCXg0Dg" severity="WARNING" base_Property="_7Otf4SylEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_aNVjkPIMEeGu1M-cCXg0Dg" severity="INFO" base_Property="_7OvVECylEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_DvbPQPIQEeGu1M-cCXg0Dg" severity="WARNING" base_Property="_qB12yfIPEeGu1M-cCXg0Dg">
-    <ruleId>CONF:7293, R2.1=CONF:81-7293</ruleId>
+    <ruleId>CONF:7293</ruleId>
+    <ruleId>R2.1=CONF:81-7293</ruleId>
+    <ruleId>DSTU:814</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_YI6Q4PIQEeGu1M-cCXg0Dg" severity="WARNING" base_Property="_qB12w_IPEeGu1M-cCXg0Dg">
     <ruleId>CONF:7295</ruleId>
@@ -5491,7 +5493,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ruleId>CONF:10025, R2.1=CONF:81-10025</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_hvvLwPIREeGu1M-cCXg0Dg" base_Constraint="_7BBfQPIQEeGu1M-cCXg0Dg">
-    <ruleId>CONF:10024, R2.1=CONF:81-10024</ruleId>
+    <ruleId>CONF:10024</ruleId>
+    <ruleId>R2.1=CONF:81-10024</ruleId>
+    <ruleId>DSTU:814</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_qk1K4PIWEeGu1M-cCXg0Dg" base_Constraint="_ls2IQPIWEeGu1M-cCXg0Dg">
     <ruleId>CONF:7291</ruleId>
@@ -7044,9 +7048,10 @@ The Care Plan is continually evolving and dynamic. The Care Plan CDA instance is
   <CDA:PropertyValidation xmi:id="_Fs96gJ6CEeOr4eM3k36wAg" severity="WARNING" base_Property="__jD9AZ6BEeOr4eM3k36wAg">
     <ruleId>CONF:1198-31685</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_exFCwJ6DEeOr4eM3k36wAg" base_Property="__jD9AZ6BEeOr4eM3k36wAg">
+  <CDA:ValueSetConstraint xmi:id="_exFCwJ6DEeOr4eM3k36wAg" base_Property="__jD9AZ6BEeOr4eM3k36wAg" severity="WARNING">
     <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
     <ruleId>CONF:1198-32367</ruleId>
+    <ruleId>DSTU:814</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_DRp78J8BEeOr4eM3k36wAg" memberEnd="_DRoGwJ8BEeOr4eM3k36wAg _DRp78Z8BEeOr4eM3k36wAg">
     <ownedEnd xmi:id="_DRp78Z8BEeOr4eM3k36wAg" type="_2jWfwJ5wEeOr4eM3k36wAg" association="_DRp78J8BEeOr4eM3k36wAg"/>
@@ -8019,6 +8024,7 @@ The performer(s) represents the healthcare providers involved in the current or 
   <CDA:ValueSetConstraint xmi:id="_BOvMwKDUEeOPqKnBFQcY_A" base_Property="_zdmYIKDTEeOPqKnBFQcY_A">
     <reference href="../consol-vocab.uml#_9ZCoaO9eEeSE7JpIy9Dpjg"/>
     <ruleId>CONF:1198-31873</ruleId>
+    <ruleId>DSTU:814</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_XCU04KDUEeOPqKnBFQcY_A" memberEnd="_XCTmwKDUEeOPqKnBFQcY_A _XCVb8KDUEeOPqKnBFQcY_A">
     <ownedEnd xmi:id="_XCVb8KDUEeOPqKnBFQcY_A" type="_xR_cMKDTEeOPqKnBFQcY_A" association="_XCU04KDUEeOPqKnBFQcY_A"/>

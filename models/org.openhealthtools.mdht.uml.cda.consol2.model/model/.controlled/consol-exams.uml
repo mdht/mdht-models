@@ -435,6 +435,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
   <CDA:ValueSetConstraint xmi:id="_E1sVYJp-EeOK6dzbL4VoTA" base_Property="_Bs8GoZp8EeOK6dzbL4VoTA">
     <reference href="../consol-vocab.uml#_gEooYZp9EeOK6dzbL4VoTA"/>
     <ruleId>CONF:1098-29931</ruleId>
+    <ruleId>DSTU:814</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_PIuEYJp-EeOK6dzbL4VoTA" code="completed" displayName="Completed" base_Property="_Bs8tsZp8EeOK6dzbL4VoTA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
