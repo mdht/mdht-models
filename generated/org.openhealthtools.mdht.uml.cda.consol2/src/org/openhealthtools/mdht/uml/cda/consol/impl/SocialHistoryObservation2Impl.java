@@ -60,6 +60,28 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSocialHistoryObservation2IfNotLoincRequireTranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2IfNotLoincRequireTranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateSocialHistoryObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

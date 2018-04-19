@@ -19,8 +19,8 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSocialHistoryObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SocialHistoryObservationTemplateId SocialHistoryObservationCodeP SocialHistoryObservationStatusCode SocialHistoryObservationStatusCodeP SocialHistoryObservation2EffectiveTime SocialHistoryObservation2CDTranslationP' templateId.root='2.16.840.1.113883.10.20.22.4.38' templateId.extension='2015-08-01' constraints.validation.warning='SocialHistoryObservation2ReferenceAttribute SocialHistoryObservationCode SocialHistoryObservationValue SocialHistoryObservation2AuthorParticipation SocialHistoryObservation2CDTranslation' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.dependOn.SocialHistoryObservationStatusCode='SocialHistoryObservationStatusCodeP' constraints.validation.query='SocialHistoryObservation2CDTranslation SocialHistoryObservation2CDTranslationP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolSocialHistoryObservation2CD translation.codeSystem='2.16.840.1.113883.6.1' translation.codeSystemName='LOINC' constraints.validation.warning='SocialHistoryObservation2CDTranslation' constraints.validation.error='SocialHistoryObservation2CDTranslationP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SocialHistoryObservationTemplateId SocialHistoryObservation2IfNotLoincRequireTranslation SocialHistoryObservationCodeP SocialHistoryObservationStatusCode SocialHistoryObservationStatusCodeP SocialHistoryObservation2EffectiveTime' templateId.root='2.16.840.1.113883.10.20.22.4.38' templateId.extension='2015-08-01' constraints.validation.warning='SocialHistoryObservation2ReferenceAttribute SocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc SocialHistoryObservationCode SocialHistoryObservationValue SocialHistoryObservation2AuthorParticipation' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.dependOn.SocialHistoryObservationStatusCode='SocialHistoryObservationStatusCodeP' constraints.validation.info='SocialHistoryObservation2CDTranslation SocialHistoryObservation2CDTranslationP' constraints.validation.query='SocialHistoryObservation2CDTranslation SocialHistoryObservation2CDTranslationP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolSocialHistoryObservation2CD constraints.validation.info='SocialHistoryObservation2CDTranslation SocialHistoryObservation2CDTranslationP'"
  * @generated
  */
 public interface SocialHistoryObservation2 extends SocialHistoryObservation {
@@ -35,6 +35,32 @@ public interface SocialHistoryObservation2 extends SocialHistoryObservation {
 	 * @generated
 	 */
 	boolean validateSocialHistoryObservation2ReferenceAttribute(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='code.codeSystem <> \'2.16.840.1.113883.6.1\' implies code.translation->size() >= 1'"
+	 * @generated
+	 */
+	boolean validateSocialHistoryObservation2IfNotLoincRequireTranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='code.codeSystem <> \'2.16.840.1.113883.6.1\' and code.translation->size() >= 1 implies code.translation->forAll(trans : datatypes::CD | trans.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @generated
+	 */
+	boolean validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
@@ -81,7 +107,7 @@ public interface SocialHistoryObservation2 extends SocialHistoryObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (not translation->isEmpty() and translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\')) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (not translation->isEmpty() and translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())) )))'"
 	 * @generated
 	 */
 	boolean validateSocialHistoryObservation2CDTranslation(DiagnosticChain diagnostics, Map<Object, Object> context);

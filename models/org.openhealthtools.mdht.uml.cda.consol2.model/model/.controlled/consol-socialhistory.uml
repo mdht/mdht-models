@@ -136,9 +136,9 @@
   <CDA:PropertyValidation xmi:id="_2JPoABSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2JOZ4hSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8558</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2JPoARSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2JOZ4hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8896</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_2JPoARSVEeGGzu7fmW9pXw" base_Property="_2JOZ4hSVEeGGzu7fmW9pXw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2JjKCRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:8896</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:TextValue xmi:id="_2JRdMBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2JTSYRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2JTSYBSVEeGGzu7fmW9pXw">
@@ -402,9 +402,9 @@
     <ruleId>R2.0=CONF:1098-19118</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_RzEd4OWTEeGKmvzED_He2w" base_Property="_kh-7c-WQEeGKmvzED_He2w">
+    <reference href="../consol-vocab.uml#_EA1dEeWTEeGKmvzED_He2w"/>
     <ruleId>CONF:16563</ruleId>
     <ruleId>R2.0=CONF:1098-16563</ruleId>
-    <reference href="../consol-vocab.uml#_EA1dEeWTEeGKmvzED_He2w"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_UO1VsOWTEeGKmvzED_He2w" base_Property="_kh-7c-WQEeGKmvzED_He2w">
     <ruleId>CONF:16562</ruleId>
@@ -545,8 +545,8 @@ The smoking status value set includes a special code to communicate if the smoki
     <ruleId>CONF:14810</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_Zp9sMOWUEeGKmvzED_He2w" base_Property="_Yz0rNOWQEeGKmvzED_He2w">
-    <ruleId>CONF:14817</ruleId>
     <reference href="../consol-vocab.uml#_FHdfcbm6EeOgPNzo_e4B9A"/>
+    <ruleId>CONF:14817</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Muzn4OWVEeGKmvzED_He2w" base_Property="_2JL9oBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:14819</ruleId>
@@ -886,9 +886,9 @@ The smoking status value set includes a special code to communicate if the smoki
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-29853</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_2Hzu0I3_EeOB0eBUISUB4Q" severity="WARNING" base_Property="_ci8xVI37EeOB0eBUISUB4Q">
-    <ruleId>CONF:1098-29854</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_2Hzu0I3_EeOB0eBUISUB4Q" base_Property="_ci8xVI37EeOB0eBUISUB4Q" severity="WARNING">
     <reference href="../consol-vocab.uml#_oBBFMI39EeOB0eBUISUB4Q"/>
+    <ruleId>CONF:1098-29854</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_6R3NEI4CEeOB0eBUISUB4Q" memberEnd="_6R2mAI4CEeOB0eBUISUB4Q _6R30II4CEeOB0eBUISUB4Q">
     <ownedEnd xmi:id="_6R30II4CEeOB0eBUISUB4Q" type="_T1dcwI37EeOB0eBUISUB4Q" association="_6R3NEI4CEeOB0eBUISUB4Q"/>
@@ -1047,8 +1047,8 @@ If the patient's current smoking status is unknown, the value element must be po
     <ruleId>CONF:1098-14810</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_zeBjkLm5EeOgPNzo_e4B9A" base_Property="_zeAVcLm5EeOgPNzo_e4B9A">
-    <ruleId>CONF:1098-14817</ruleId>
     <reference href="../consol-vocab.uml#_FHdfcbm6EeOgPNzo_e4B9A"/>
+    <ruleId>CONF:1098-14817</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_jwhMELm9EeOgPNzo_e4B9A" base_Property="_jwglALm9EeOgPNzo_e4B9A">
     <ruleId>CONF:1098-19170</ruleId>
@@ -1084,6 +1084,22 @@ If the patient's current smoking status is unknown, the value element must be po
         <language>OCL</language>
         <body>The originalText, if present, SHOULD contain zero or one [0..1] reference</body>
         <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_Q1PEcEPyEeiFfJtNAawVHw" name="ifNotLoincRequireTranslation">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Q1PEcUPyEeiFfJtNAawVHw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>If @codeSystem is not LOINC, then this code SHALL contain at least one [1..*] translation</body>
+        <body>code.codeSystem &lt;> '2.16.840.1.113883.6.1' implies code.translation->size() >= 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_YcP5IEPyEeiFfJtNAawVHw" name="ifNotLoincRequireTranslationFromLoinc">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YcP5IUPyEeiFfJtNAawVHw">
+        <language>OCL</language>
+        <language>Analysis</language>
+        <body>code.codeSystem &lt;> '2.16.840.1.113883.6.1' and code.translation->size() >= 1 implies code.translation->forAll(trans : datatypes::CD | trans.codeSystem = '2.16.840.1.113883.6.1')</body>
+        <body>If @codeSystem is not LOINC, then this code SHALL contain at least one [1..*] translation, which SHOULD be selected from CodeSystem LOINC (urn:oid:2.16.840.1.113883.6.1)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_b_iGIfJfEeO2NaSiicarcg" general="_2JOZ4BSVEeGGzu7fmW9pXw"/>
@@ -1356,9 +1372,9 @@ The effectiveTime element is used to describe dates associated with the patient'
     <ruleId>DSTU:597</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_F8nwkPmzEeSGHoih4Jm09A" base_Property="_DAqVwPmzEeSGHoih4Jm09A"/>
-  <CDA:ValueSetConstraint xmi:id="_OCGp8PmzEeSGHoih4Jm09A" severity="WARNING" base_Property="_DAqVwPmzEeSGHoih4Jm09A">
-    <ruleId>CONF:1098-28823</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_OCGp8PmzEeSGHoih4Jm09A" base_Property="_DAqVwPmzEeSGHoih4Jm09A" severity="WARNING">
     <reference href="../consol-vocab.uml#_np5CwYnYEeOJGtGyq_dBbA"/>
+    <ruleId>CONF:1098-28823</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_mHAlcPpYEeSE4ZSXS7BkuA" base_Constraint="_lZRVsPpYEeSE4ZSXS7BkuA">
     <ruleId>CONF:1098-32487</ruleId>
@@ -1371,14 +1387,13 @@ The effectiveTime element is used to describe dates associated with the patient'
   <CDA:ConstraintValidation xmi:id="_xOIwUP6JEeSoDZvueq4eYw" severity="WARNING" base_Constraint="_mBQoMP6JEeSoDZvueq4eYw">
     <ruleId>CONF:1098-32433</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ValueSetConstraint xmi:id="_T6z1AE9uEeWsIc5CMrI4GA" severity="WARNING" base_Property="_YzlcoPJhEeO2NaSiicarcg">
-    <ruleId>CONF:1198-8558</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_T6z1AE9uEeWsIc5CMrI4GA" base_Property="_YzlcoPJhEeO2NaSiicarcg" severity="WARNING">
     <reference href="../consol-vocab.uml#_xhC6IU9uEeWsIc5CMrI4GA"/>
+    <ruleId>CONF:1198-8558</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_kE1MkE9uEeWsIc5CMrI4GA" base_Property="_gnWZEE9uEeWsIc5CMrI4GA"/>
-  <CDA:CodeSystemConstraint xmi:id="_lnIFwE9uEeWsIc5CMrI4GA" base_Property="_gnWZEE9uEeWsIc5CMrI4GA" severity="WARNING">
+  <CDA:PropertyValidation xmi:id="_kE1MkE9uEeWsIc5CMrI4GA" severity="INFO" base_Property="_gnWZEE9uEeWsIc5CMrI4GA"/>
+  <CDA:CodeSystemConstraint xmi:id="_lnIFwE9uEeWsIc5CMrI4GA" base_Property="_gnWZEE9uEeWsIc5CMrI4GA" severity="INFO">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1198-32853</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_pOcsgOoTEeWB4ufB0cOMzQ" base_Property="_iTqEoOoTEeWB4ufB0cOMzQ">
     <ruleId>CONF:14808</ruleId>
@@ -1474,8 +1489,8 @@ The effectiveTime element is used to describe dates associated with the patient'
     <ruleId>CONF:1198-NEW</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_a6aMAJrUEea9R7VeOazsfg" base_Property="_SYIm0D-sEeaJttsCYk-pKw">
-    <ruleId>CONF:3250-32947</ruleId>
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_pJl6gD-uEeaJttsCYk-pKw"/>
+    <ruleId>CONF:3250-32947</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_EaonoA8lEeecs5O6JXLprw" message="Consol Smoking Status Meaningful Use2 SHALL contain exactly one [1..1] effectiveTime with @xsi:type=&quot;TS&quot; (CONF:1098-31928, DSTU:596, DSTU:597) Note: This template represents a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime is constrained to just a time stamp, and will approximately correspond with the author/time. " base_Property="_EaXh4A8lEeecs5O6JXLprw">
     <ruleId>CONF:1098-31928</ruleId>
@@ -1502,4 +1517,12 @@ The effectiveTime element is used to describe dates associated with the patient'
     <ruleId>DSTU:596</ruleId>
     <ruleId>DSTU:597</ruleId>
   </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_ib9qkEPyEeiFfJtNAawVHw" base_Constraint="_Q1PEcEPyEeiFfJtNAawVHw">
+    <ruleId>CONF:1198-32853</ruleId>
+    <ruleId>DSTU:869</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_k8CaoEPyEeiFfJtNAawVHw" severity="WARNING" base_Constraint="_YcP5IEPyEeiFfJtNAawVHw">
+    <ruleId>CONF:1198-32853</ruleId>
+    <ruleId>DSTU:869</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

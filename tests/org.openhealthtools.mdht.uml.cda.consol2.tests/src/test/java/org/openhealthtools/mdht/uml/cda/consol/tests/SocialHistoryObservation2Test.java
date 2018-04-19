@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014. 2018 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -35,6 +35,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistoryObservati
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservation2ReferenceAttribute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Reference Attribute</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservation2IfNotLoincRequireTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 If Not Loinc Require Translation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 If Not Loinc Require Translation From Loinc</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservation2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Author Participation</em>}</li>
@@ -87,6 +89,161 @@ public class SocialHistoryObservation2Test extends CDAValidationTest {
 		};
 
 		validateSocialHistoryObservation2ReferenceAttributeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSocialHistoryObservation2IfNotLoincRequireTranslation() {
+		OperationsTestCase<SocialHistoryObservation2> validateSocialHistoryObservation2IfNotLoincRequireTranslationTestCase = new OperationsTestCase<SocialHistoryObservation2>(
+			"validateSocialHistoryObservation2IfNotLoincRequireTranslation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void updateToFail(SocialHistoryObservation2 target) {
+				target.init();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				cd.setCodeSystem(SNOMEDCT_ID);
+				target.setCode(cd);
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SocialHistoryObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD();
+						cd.setCodeSystem(SNOMEDCT_ID);
+						target.setCode(cd);
+						target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SocialHistoryObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD();
+						cd.setCodeSystem(SNOMEDCT_ID);
+						target.setCode(cd);
+						target.getCode().getTranslations().add(
+							DatatypesFactory.eINSTANCE.createCD("someCode", LOINC_ID));
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SocialHistoryObservation2Operations.validateSocialHistoryObservation2IfNotLoincRequireTranslation(
+					(SocialHistoryObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSocialHistoryObservation2IfNotLoincRequireTranslationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc() {
+		OperationsTestCase<SocialHistoryObservation2> validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoincTestCase = new OperationsTestCase<SocialHistoryObservation2>(
+			"validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SocialHistoryObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD();
+						cd.setCodeSystem(SNOMEDCT_ID);
+						target.setCode(cd);
+						target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SocialHistoryObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD();
+						cd.setCodeSystem(SNOMEDCT_ID);
+						target.setCode(cd);
+						target.getCode().getTranslations().add(
+							DatatypesFactory.eINSTANCE.createCD("someCode", SNOMEDCT_ID));
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SocialHistoryObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD();
+						cd.setCodeSystem(SNOMEDCT_ID);
+						target.setCode(cd);
+						target.getCode().getTranslations().add(
+							DatatypesFactory.eINSTANCE.createCD("someCode", LOINC_ID));
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SocialHistoryObservation2 target) {
+						target.init();
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SocialHistoryObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD();
+						cd.setCode("someCode");
+						target.setCode(cd);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SocialHistoryObservation2 target) {
+						target.init();
+						CD cd = DatatypesFactory.eINSTANCE.createCD("someCode", "someCodeSystemOID");
+						target.setCode(cd);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SocialHistoryObservation2Operations.validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc(
+					(SocialHistoryObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoincTestCase.doValidationTest();
 	}
 
 	/**
