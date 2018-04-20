@@ -5439,7 +5439,8 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ruleId>CONF:5403, R2.1=CONF:1198-5403</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_PktYEOxmEeG7k4bbVdXbXw" base_Constraint="_7XFBIOxlEeG7k4bbVdXbXw">
-    <ruleId>CONF:5402</ruleId>
+    <ruleId>CONF:5402.</ruleId>
+    <ruleId>DSTU:812</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_zpgcAOxmEeG7k4bbVdXbXw" severity="WARNING" base_Property="_xqTkYOxmEeG7k4bbVdXbXw">
     <ruleId>CONF:7994, CONF:1198-7994</ruleId>
