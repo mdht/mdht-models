@@ -1287,6 +1287,22 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <body>self.isNullFlavorUndefined() implies ( self.streetAddressLine->size() >=1 and self.streetAddressLine->size() &lt;=4)</body>
         </specification>
       </ownedRule>
+      <ownedRule xmi:id="_PfzD0ESoEeiFfJtNAawVHw" name="ifCountryIsUsRequireStateElement" constrainedElement="_i4zXgPIPEeGu1M-cCXg0Dg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_g4hqMESoEeiFfJtNAawVHw">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>if the country is US, the state element is required but SHOULD have @nullFlavor if the state is unknown</body>
+          <body>isNullFlavorUndefined() and country->exists(c : datatypes::ADXP | c.getText() = 'US') implies state->size() >= 1</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_QjagIESsEeiFfJtNAawVHw" name="ifCountryIsUsRequirePostalCodeElement" constrainedElement="_i4zXgPIPEeGu1M-cCXg0Dg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QjagIUSsEeiFfJtNAawVHw">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>if the country is US, the postalCode element is required but SHOULD have @nullFlavor if the postalCode is unknown</body>
+          <body>isNullFlavorUndefined() and country->exists(c : datatypes::ADXP | c.getText() = 'US') implies postalCode->size() >= 1</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:id="_j0nfgPIPEeGu1M-cCXg0Dg">
         <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
       </generalization>
@@ -14822,5 +14838,11 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_LlUK0D3PEeiFfJtNAawVHw" base_Constraint="_J0a08D3PEeiFfJtNAawVHw">
     <ruleId>DSTU:1338</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_mZ2vUESpEeiFfJtNAawVHw" base_Constraint="_PfzD0ESoEeiFfJtNAawVHw">
+    <ruleId>DSTU:818</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_RiU_cESsEeiFfJtNAawVHw" base_Constraint="_QjagIESsEeiFfJtNAawVHw">
+    <ruleId>DSTU:818</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>

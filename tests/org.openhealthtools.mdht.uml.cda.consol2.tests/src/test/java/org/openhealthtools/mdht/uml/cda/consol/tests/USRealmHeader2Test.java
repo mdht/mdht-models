@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 Dan Brown and others.
+ * Copyright (c) 2014. 2018 Dan Brown and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -80,6 +80,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.USRealmHeader2Operatio
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2LegalAuthenticatorSDTCSignatureText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Legal Authenticator SDTC Signature Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2AuthenticatorSDTCSignatureText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Authenticator SDTC Signature Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address US Realm Address Street</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address If Country Is Us Require State Element</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address If Country Is Us Require Postal Code Element</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Use</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Use P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Country</em>}</li>
@@ -636,6 +638,168 @@ public class USRealmHeader2Test extends CDAValidationTest {
 		};
 
 		validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreetTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement() {
+		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElementTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				addr.addCountry("US");
+				ae.getAddrs().add(addr);
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(USRealmHeader2 target) {
+						target.init();
+						Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+						target.getInformants().add(inf);
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						inf.setAssignedEntity(ae);
+						AD addr = DatatypesFactory.eINSTANCE.createAD();
+						addr.addCountry("US");
+						ae.getAddrs().add(addr);
+						ADXP state = DatatypesFactory.eINSTANCE.createADXP();
+						for (Informant12 i : target.getInformants()) {
+							for (AD a : i.getAssignedEntity().getAddrs()) {
+								a.getStates().add(state);
+							}
+						}
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(USRealmHeader2 target) {
+						target.init();
+						Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+						target.getInformants().add(inf);
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						inf.setAssignedEntity(ae);
+						AD addr = DatatypesFactory.eINSTANCE.createAD();
+						addr.addCountry("US");
+						ae.getAddrs().add(addr);
+						for (Informant12 i : target.getInformants()) {
+							for (AD a : i.getAssignedEntity().getAddrs()) {
+								a.addState("NH");
+							}
+						}
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(USRealmHeader2 target) {
+						target.init();
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(USRealmHeader2 target) {
+						target.init();
+						Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+						target.getInformants().add(inf);
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						inf.setAssignedEntity(ae);
+						AD addr = DatatypesFactory.eINSTANCE.createAD();
+						addr.setNullFlavor(NullFlavor.UNK);
+						ae.getAddrs().add(addr);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(USRealmHeader2 target) {
+						target.init();
+						Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+						target.getInformants().add(inf);
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						inf.setAssignedEntity(ae);
+						AD addr = DatatypesFactory.eINSTANCE.createAD();
+						addr.addCountry("US");
+						addr.setNullFlavor(NullFlavor.UNK); // nullFlavor negates requirement imposed by country = 'US'
+						ae.getAddrs().add(addr);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElementTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement() {
+		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElementTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				addr.addCountry("US");
+				ae.getAddrs().add(addr);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				ADXP postalCode = DatatypesFactory.eINSTANCE.createADXP();
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getPostalCodes().add(postalCode);
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElementTestCase.doValidationTest();
 	}
 
 	/**

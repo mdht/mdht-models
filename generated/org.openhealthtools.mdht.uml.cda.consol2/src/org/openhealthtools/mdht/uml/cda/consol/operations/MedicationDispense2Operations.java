@@ -263,7 +263,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_DISPENSE2,
-				ConsolPackage.Literals.MEDICATION_DISPENSE2.getEAllOperations().get(77));
+				ConsolPackage.Literals.MEDICATION_DISPENSE2.getEAllOperations().get(79));
 			try {
 				GET_CONSOL_MEDICATION_SUPPLY_ORDER2__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_MEDICATION_SUPPLY_ORDER2__EOCL_EXP);

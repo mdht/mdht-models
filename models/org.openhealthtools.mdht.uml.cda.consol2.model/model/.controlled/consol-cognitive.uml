@@ -1748,7 +1748,7 @@ The Mental Status Section contains observations and evaluations related to a pat
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_X65F0APsEeWlspDC_8d7eg" severity="WARNING" base_Association="_XSykAAPsEeWlspDC_8d7eg">
     <ruleId>CONF:1098-31439</ruleId>
-    <ruleId>DSTU:818</ruleId>
+    <ruleId>DSTU:817</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_1KmSIE9XEeWsIc5CMrI4GA" base_Property="_xGYOwE9XEeWsIc5CMrI4GA">
     <ruleId>CONF:1198-32790</ruleId>
