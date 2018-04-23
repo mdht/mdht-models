@@ -1259,7 +1259,8 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_i4zXgPIPEeGu1M-cCXg0Dg" name="USRealmAddress">
       <ownedComment xmi:id="_u_CwkPIPEeGu1M-cCXg0Dg">
-        <body>Reusable &quot;address&quot; template, designed for use in US Realm CDA Header.</body>
+        <body>Reusable &quot;address&quot; template, designed for use in US Realm CDA Header.&#xD;
+Note: If addr/@nullFlavor is present, the remaining conformance statements SHALL NOT be enforced.</body>
       </ownedComment>
       <ownedRule xmi:id="_7BBfQPIQEeGu1M-cCXg0Dg" name="USRealmAddressStateCountry" constrainedElement="_i4zXgPIPEeGu1M-cCXg0Dg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_j2h5IPIREeGu1M-cCXg0Dg">
@@ -1345,7 +1346,8 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_aSeEwPIYEeGu1M-cCXg0Dg" name="USRealmPatientName">
       <ownedComment xmi:id="_J-c08PIeEeGu1M-cCXg0Dg">
-        <body>The US Realm Patient Name datatype flavor is a set of reusable constraints that can be used for the patient or any other person. It requires a first (given) and last (family) name. If a patient or person has only one name part (e.g., patient with first name only) place the name part in the field required by the organization. Use the appropriate nullFlavor, &quot;Not Applicable&quot; (NA), in the other field.</body>
+        <body>The US Realm Patient Name datatype flavor is a set of reusable constraints that can be used for the patient or any other person. It requires a first (given) and last (family) name. If a patient or person has only one name part (e.g., patient with first name only) place the name part in the field required by the organization. Use the appropriate nullFlavor, &quot;Not Applicable&quot; (NA), in the other field.&#xD;
+Note: If name/@nullFlavor is present, the remaining conformance statements SHALL NOT be enforced.</body>
       </ownedComment>
       <ownedRule xmi:id="_4e-Q4PIeEeGu1M-cCXg0Dg" name="USRealmPatientNameMixedContent" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
         <ownedComment xmi:id="_4e-Q4fIeEeGu1M-cCXg0Dg">
