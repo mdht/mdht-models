@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemStatus;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemStatus2;
 import org.openhealthtools.mdht.uml.cda.consol.PrognosisObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemObservation2Operations;
 
@@ -190,7 +190,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * @generated
 	 */
 	@Override
-	public ProblemStatus getConsolProblemStatus() {
+	public ProblemStatus2 getConsolProblemStatus() {
 		return ProblemObservation2Operations.getConsolProblemStatus(this);
 	}
 

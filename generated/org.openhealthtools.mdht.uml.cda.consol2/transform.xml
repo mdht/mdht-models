@@ -154,7 +154,7 @@
 		<replaceTemplateNames oldTemplateName="Problem Concern Act2" newTemplateName="Problem Concern Act (V3)" />
 		<replaceTemplateNames oldTemplateName="Result Organizer2" newTemplateName="Result Organizer (V3)" />
  
-		<replaceTemplateNames oldTemplateName="Consol Advance Directive Organizer" newTemplateName="Advance Directive Organizer (V2)" />
+		<replaceTemplateNames oldTemplateName="Consol Advance Directive Organizer" newTemplateName="Consol Advance Directive Organizer (V2)" />
 		<replaceTemplateNames oldTemplateName="Coverage Activity2" newTemplateName="Coverage Activity (V3)" />
 		<replaceTemplateNames oldTemplateName="Deceased Observation2" newTemplateName="Deceased Observation (V3)" />
 		<replaceTemplateNames oldTemplateName="Encounter Diagnosis2" newTemplateName="Encounter Diagnosis (V3)" />
@@ -169,6 +169,9 @@
 		<replaceTemplateNames oldTemplateName="Preoperative Diagnosis2" newTemplateName="Preoperative Diagnosis (V3)" />
 		<replaceTemplateNames oldTemplateName="Consol Risk Concern Act" newTemplateName="Consol Risk Concern Act (V2)" />
 		<replaceTemplateNames oldTemplateName="Discharge Medication2" newTemplateName="Discharge Medication (V3)" />
+		<!-- 'resurrected' entries -->
+		<replaceTemplateNames oldTemplateName="Allergy Status Observation2" newTemplateName="Allergy Status Observation (V2 resurrected)" />
+		<replaceTemplateNames oldTemplateName="Problem Status 2" newTemplateName="Problem Status (V2 resurrected)" />
 		<!-- other -->
 		<replaceTemplateNames oldTemplateName="US Realm Header Patient Generated Document" newTemplateName="US Realm Header - Patient Generated Document (V2)" />
 	</target>

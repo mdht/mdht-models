@@ -31,7 +31,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemStatus;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemStatus2;
 import org.openhealthtools.mdht.uml.cda.consol.PrognosisObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
@@ -737,7 +737,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	 * @generated
 	 */
 
-	public static ProblemStatus getConsolProblemStatus(ProblemObservation2 problemObservation2) {
+	public static ProblemStatus2 getConsolProblemStatus(ProblemObservation2 problemObservation2) {
 
 		if (GET_CONSOL_PROBLEM_STATUS__EOCL_QRY == null) {
 
@@ -753,7 +753,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 		}
 
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PROBLEM_STATUS__EOCL_QRY);
-		return (ProblemStatus) query.evaluate(problemObservation2);
+		return (ProblemStatus2) query.evaluate(problemObservation2);
 	}
 
 	/**
@@ -1625,7 +1625,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_PROBLEM_STATUS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemStatus))->asSequence()->any(true).oclAsType(consol::ProblemStatus)";
+	protected static final String GET_CONSOL_PROBLEM_STATUS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemStatus2))->asSequence()->any(true).oclAsType(consol::ProblemStatus2)";
 
 	/**
 	 * The cached OCL query for the '{@link #getConsolProblemStatus(ProblemObservation2) <em>Get Consol Problem Status</em>}' query operation.
@@ -2123,7 +2123,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_OBSERVATION_PROBLEM_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemStatus) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_PROBLEM_OBSERVATION_PROBLEM_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemStatus2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemObservationProblemStatus(ProblemObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Problem Status</em>}' invariant operation.

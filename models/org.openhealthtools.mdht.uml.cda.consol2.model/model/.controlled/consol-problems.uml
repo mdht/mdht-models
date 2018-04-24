@@ -636,20 +636,32 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:EntryRelationship>
   <CDA:PropertyValidation xmi:id="_IOVyICA8EeG9GZYpu7WBOQ" base_Property="_XGPfMBUzEeGbmN_W114JUw">
     <ruleId>CONF:7357</ruleId>
+    <ruleId>R2.1=CONF:1098-7357</ruleId>
+    <ruleId>DSTU:815/1357</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_KzsDwCA8EeG9GZYpu7WBOQ" base_Property="_XGYpIhUzEeGbmN_W114JUw">
     <ruleId>CONF:7358</ruleId>
+    <ruleId>R2.1=CONF:1098-7538</ruleId>
+    <ruleId>DSTU:815/1357</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_VJyU4CA8EeG9GZYpu7WBOQ" code="33999-4" displayName="Status" base_Property="_XGYpIBUzEeGbmN_W114JUw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7361</ruleId>
+    <ruleId>R2.1=CONF:1098-19162</ruleId>
+    <ruleId>CONF:1098-19163</ruleId>
+    <ruleId>DSTU:815/1357</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_lgv8QCA8EeG9GZYpu7WBOQ" code="completed" displayName="Completed" base_Property="_XGYpJBUzEeGbmN_W114JUw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7364</ruleId>
+    <ruleId>R2.1=CONF:1098-7364</ruleId>
+    <ruleId>CONF:1098-19113</ruleId>
+    <ruleId>DSTU:815/1357</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_22h8UCA8EeG9GZYpu7WBOQ" severity="WARNING" base_Property="_g9ArUCA8EeG9GZYpu7WBOQ">
     <ruleId>CONF:7362</ruleId>
+    <ruleId>R2.1=CONF:1098-7362</ruleId>
+    <ruleId>DSTU:815/1357</ruleId>
   </CDA:TextValue>
   <CDA:ValueSetConstraint xmi:id="_AiK7MCA9EeG9GZYpu7WBOQ" base_Property="_g9B5cCA8EeG9GZYpu7WBOQ">
     <reference href="../consol-vocab.uml#_2FctIBSVEeGGzu7fmW9pXw"/>
@@ -699,9 +711,13 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_Q1jF0Cp_EeGiFpKeZIy4Pg" severity="WARNING" base_Constraint="_NGUbACp_EeGiFpKeZIy4Pg">
     <ruleId>CONF:15593</ruleId>
+    <ruleId>R2.1=CONF:1098-15593</ruleId>
+    <ruleId>DSTU:815/1357</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_VCsbsCp_EeGiFpKeZIy4Pg" base_Constraint="_S6G-kCp_EeGiFpKeZIy4Pg">
     <ruleId>CONF:15595</ruleId>
+    <ruleId>R2.1=CONF:1098-15595</ruleId>
+    <ruleId>DSTU:815/1357</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_NSzLQVGkEeG3H6xvuD7Z0Q" code="11450-4" displayName="Problem List" base_Property="_NSzLQFGkEeG3H6xvuD7Z0Q">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -744,6 +760,8 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_IfxlQOJsEeG3cO7ebC3QuA" base_Property="_2ExXuBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_6vhsAOJsEeG3cO7ebC3QuA" base_Constraint="_z76qMOJsEeG3cO7ebC3QuA">
     <ruleId>CONF:15594</ruleId>
+    <ruleId>R2.1=CONF:1098-15594</ruleId>
+    <ruleId>DSTU:815/1357</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_SVZlAObqEeGINOJ_SD9_dA" base_Property="_zGb3MSAuEeGetMjKLkqR8g"/>
   <uml:Class xmi:id="_GXlxYJmLEeOeSLwbllPCyw" name="PrognosisObservation">
@@ -1291,7 +1309,7 @@ The effectiveTime of the Problem Observation is the definitive indication of whe
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bZJcsvDMEeOKPKE9au0oug" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bZJcsfDMEeOKPKE9au0oug" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Qxb3wMnAEeSr1c1X9ACWbg" name="problemStatus" type="_SjN_8BUzEeGbmN_W114JUw" redefinedProperty="_c6LMsBUzEeGbmN_W114JUw">
+    <ownedAttribute xmi:id="_Qxb3wMnAEeSr1c1X9ACWbg" name="problemStatus" type="_vyb38EfNEeiFfJtNAawVHw" redefinedProperty="_c6LMsBUzEeGbmN_W114JUw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qxb3wcnAEeSr1c1X9ACWbg"/>
       <association href="../consol.uml#_QxdF4MnAEeSr1c1X9ACWbg"/>
     </ownedAttribute>
@@ -1577,4 +1595,62 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <ruleId>CONF:1198-32950</ruleId>
     <ruleId>DSTU:1224</ruleId>
   </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_vyb38EfNEeiFfJtNAawVHw" name="ProblemStatus2">
+    <ownedComment xmi:id="_L9G98EfOEeiFfJtNAawVHw">
+      <body>&lt;p>&#xD;
+The Problem Status records whether the indicated problem is active, inactive, or resolved.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_1d7TwEfQEeiFfJtNAawVHw" name="textReference" constrainedElement="_SjN_8BUzEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_1d7TwUfQEeiFfJtNAawVHw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2WqSkEfQEeiFfJtNAawVHw" name="referenceValue" constrainedElement="_NGUbACp_EeGiFpKeZIy4Pg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2WqSkUfQEeiFfJtNAawVHw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_3UAroEfQEeiFfJtNAawVHw" name="textReferenceValue" constrainedElement="_NGUbACp_EeGiFpKeZIy4Pg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3UAroUfQEeiFfJtNAawVHw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_vycfAEfNEeiFfJtNAawVHw" general="_SjN_8BUzEeGbmN_W114JUw"/>
+    <substitution xmi:id="_kavKcEfOEeiFfJtNAawVHw" name="ProblemStatus" client="_vyb38EfNEeiFfJtNAawVHw" supplier="_SjN_8BUzEeGbmN_W114JUw" contract="_SjN_8BUzEeGbmN_W114JUw"/>
+    <ownedAttribute xmi:id="_xmg9UEfQEeiFfJtNAawVHw" name="text" visibility="private" aggregation="composite" redefinedProperty="_g9ArUCA8EeG9GZYpu7WBOQ">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xmg9UUfQEeiFfJtNAawVHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xmg9UkfQEeiFfJtNAawVHw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xmkAoEfQEeiFfJtNAawVHw" name="value" visibility="private" aggregation="composite" redefinedProperty="_g9B5cCA8EeG9GZYpu7WBOQ">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xmkAoUfQEeiFfJtNAawVHw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xmkAokfQEeiFfJtNAawVHw" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_IXIVwEfOEeiFfJtNAawVHw" base_Class="_vyb38EfNEeiFfJtNAawVHw" templateId="2.16.840.1.113883.10.20.22.4.6" templateVersion="2014-06-09">
+    <ruleId>CONF:1098-7359</ruleId>
+    <ruleId>CONF:1098-10518</ruleId>
+    <ruleId>DSTU:815/1357</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_hayAcEfOEeiFfJtNAawVHw" base_Generalization="_vycfAEfNEeiFfJtNAawVHw"/>
+  <CDA:ValueSetConstraint xmi:id="_xmknsEfQEeiFfJtNAawVHw" base_Property="_xmkAoEfQEeiFfJtNAawVHw">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8V8fAEfREeiFfJtNAawVHw"/>
+    <ruleId>CONF:1098-7365</ruleId>
+    <ruleId>DSTU:815/1357</ruleId>
+    <ruleId>DSTU:1363</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ConstraintValidation xmi:id="_aKpzAEfUEeiFfJtNAawVHw" severity="INFO" base_Constraint="_3UAroEfQEeiFfJtNAawVHw"/>
+  <CDA:ConstraintValidation xmi:id="_as8AsEfUEeiFfJtNAawVHw" severity="INFO" base_Constraint="_2WqSkEfQEeiFfJtNAawVHw"/>
+  <CDA:ConstraintValidation xmi:id="_bVBUYEfUEeiFfJtNAawVHw" severity="INFO" base_Constraint="_1d7TwEfQEeiFfJtNAawVHw"/>
 </xmi:XMI>

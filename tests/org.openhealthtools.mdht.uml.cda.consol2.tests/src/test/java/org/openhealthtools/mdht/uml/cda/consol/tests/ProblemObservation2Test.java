@@ -1237,7 +1237,7 @@ public class ProblemObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ProblemObservation2 target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createProblemStatus());
+				er.setObservation(ConsolFactory.eINSTANCE.createProblemStatus2());
 				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}

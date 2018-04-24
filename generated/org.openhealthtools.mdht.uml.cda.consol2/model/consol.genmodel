@@ -11758,6 +11758,7 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PrognosisObservation/PrognosisObservationValue/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ProblemStatus2"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//WoundMeasurementObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//WoundMeasurementObservation/WoundMeasurementObservationTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//WoundMeasurementObservation/WoundMeasurementObservationTemplateId/diagnostics"/>
@@ -12118,7 +12119,9 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/getConsolReactionObservation2s"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/getConsolSeverityObservation2"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/getCriticalityObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/getConsolAllergyStatusObservation2"/>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//AllergyStatusObservation2"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//TobaccoUse2">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TobaccoUse2/TobaccoUse2Id">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TobaccoUse2/TobaccoUse2Id/diagnostics"/>

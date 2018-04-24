@@ -23,9 +23,6 @@ import org.eclipse.mdht.uml.cda.Observation;
  * <p>
  * This template represents the status of the allergy indicating whether it is active, no longer active, or is an historic allergy. There can be only one allergy status observation per alert observation.
  * </p>
- * <p>
- * THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF THIS IMPLEMENTATION GUIDE. USE OF THIS TEMPLATE IS NOT RECOMMENDED.
- * </p>
  * <!-- end-model-doc -->
  *
  *

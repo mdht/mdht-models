@@ -839,9 +839,6 @@ historical purposes.&#xD;
     <ownedComment xmi:id="_2FRuAxSVEeGGzu7fmW9pXw" annotatedElement="_2FRuAhSVEeGGzu7fmW9pXw">
       <body>&lt;p>&#xD;
 This template represents the status of the allergy indicating whether it is active, no longer active, or is an historic allergy. There can be only one allergy status observation per alert observation.&#xD;
-&lt;/p>&#xD;
-&lt;p>&#xD;
-THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF THIS IMPLEMENTATION GUIDE. USE OF THIS TEMPLATE IS NOT RECOMMENDED.&#xD;
 &lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_2FbfABSVEeGGzu7fmW9pXw">
@@ -878,9 +875,13 @@ THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF TH
   <CDA:ConstraintValidation xmi:id="_2FUxUBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2FV_chSVEeGGzu7fmW9pXw" base_Property="_2FV_cBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7318</ruleId>
+    <ruleId>R2.1=CONF:1098-7318</ruleId>
+    <ruleId>DSTU:816/1356</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2FV_dRSVEeGGzu7fmW9pXw" base_Property="_2FV_cxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7319</ruleId>
+    <ruleId>R2.1=CONF:1098-7319</ruleId>
+    <ruleId>DSTU:816/1356</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2FWmgRSVEeGGzu7fmW9pXw" code="33999-4" displayName="Status" base_Property="_2FWmgBSVEeGGzu7fmW9pXw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -890,6 +891,9 @@ THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF TH
   <CDA:CodeSystemConstraint xmi:id="_2FX0oRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FX0oBSVEeGGzu7fmW9pXw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7321</ruleId>
+    <ruleId>R2.1=CONF:1098-7321</ruleId>
+    <ruleId>CONF:1098-19087</ruleId>
+    <ruleId>DSTU:816/1356</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_2FTjMRSVEeGGzu7fmW9pXw" base_Property="_2FRuChSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2FctIBSVEeGGzu7fmW9pXw"/>
@@ -1648,7 +1652,6 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_mgoZ8dF8EeOHUokOVP95oQ" base_Constraint="_mgny4tF8EeOHUokOVP95oQ">
     <ruleId>CONF:16334</ruleId>
-    <ruleId>R2.0=CONF:1098-16334</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_mgoZ8tF8EeOHUokOVP95oQ" base_Constraint="_mgny5NF8EeOHUokOVP95oQ">
     <ruleId>CONF:16338</ruleId>
@@ -1703,9 +1706,6 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>CONF:16333</ruleId>
     <ruleId>CONF:16335</ruleId>
     <ruleId>CONF:16336</ruleId>
-    <ruleId>R2.0=CONF:1098-16333</ruleId>
-    <ruleId>R2.0=CONF:1098-16335</ruleId>
-    <ruleId>R2.0=CONF:1098-16336</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_xwchUNF8EeOHUokOVP95oQ" memberEnd="_xwchUtF8EeOHUokOVP95oQ _xwchUdF8EeOHUokOVP95oQ">
     <ownedEnd xmi:id="_xwchUdF8EeOHUokOVP95oQ" type="_mgny4NF8EeOHUokOVP95oQ" association="_xwchUNF8EeOHUokOVP95oQ"/>
@@ -2023,6 +2023,14 @@ The effectiveTime of the Substance or Device Allergy - Intolerance Observation i
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::CriticalityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
+    <ownedRule xmi:id="_ArGuYEdDEeiFfJtNAawVHw" name="allergyStatusInversionIndicator" constrainedElement="_mgny4NF8EeOHUokOVP95oQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ArGuYUdDEeiFfJtNAawVHw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Allergy Status Observation2 SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::AllergyStatusObservation2))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_K3PWYPKJEeOn7bMsPcStOw" general="_mgny4NF8EeOHUokOVP95oQ"/>
     <substitution xmi:id="_TbnyQPKJEeOn7bMsPcStOw" name="SubstanceOrDeviceAllergyObservation" client="_K3M6IPKJEeOn7bMsPcStOw" supplier="_mgny4NF8EeOHUokOVP95oQ" contract="_mgny4NF8EeOHUokOVP95oQ"/>
     <ownedAttribute xmi:id="_dvvGYPKJEeOn7bMsPcStOw" name="effectiveTime" visibility="private" type="_nVjxIPKJEeOn7bMsPcStOw" aggregation="composite" redefinedProperty="_mgny9NF8EeOHUokOVP95oQ">
@@ -2066,6 +2074,10 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ownedAttribute xmi:id="_zycNkLs2Eead0dyhUBLajQ" name="criticalityObservation" type="_LspMELDzEeafNo3UpQoAYw" association="_zyeCwLs2Eead0dyhUBLajQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DoNzcbs3Eead0dyhUBLajQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DoNzcLs3Eead0dyhUBLajQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oFuwkEdBEeiFfJtNAawVHw" name="allergyStatusObservation2" type="_W5MCgEc1EeiFfJtNAawVHw" redefinedProperty="_w0LGUNF8EeOHUokOVP95oQ" association="_oFxM0EdBEeiFfJtNAawVHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GrEiMEdCEeiFfJtNAawVHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GrCtAEdCEeiFfJtNAawVHw" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_nVjxIPKJEeOn7bMsPcStOw" name="IVLTS">
       <ownedComment xmi:id="_AJnxUPMyEeOUvapeh9bVvQ">
@@ -2571,4 +2583,52 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>DSTU:836</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_D057EDNyEeiFfJtNAawVHw" base_Property="_D03e0DNyEeiFfJtNAawVHw"/>
+  <uml:Class xmi:id="_W5MCgEc1EeiFfJtNAawVHw" name="AllergyStatusObservation2">
+    <ownedComment xmi:id="_MhA4UEc2EeiFfJtNAawVHw">
+      <body>&lt;p>&#xD;
+This template represents the status of the allergy indicating whether it is active, no longer active, or is an historic allergy. There can be only one allergy status observation per alert observation.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <generalization xmi:id="_W5MpkEc1EeiFfJtNAawVHw" general="_2FRuAhSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_0yVKkEc3EeiFfJtNAawVHw" name="AllergyStatusObservation" client="_W5MCgEc1EeiFfJtNAawVHw" supplier="_2FRuAhSVEeGGzu7fmW9pXw" contract="_2FRuAhSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_WXg8AEc5EeiFfJtNAawVHw" name="code" visibility="private" redefinedProperty="_2FWmgBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_o2I-AEc6EeiFfJtNAawVHw" name="value" visibility="private" redefinedProperty="_2FRuChSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_7sDtYEc1EeiFfJtNAawVHw" base_Class="_W5MCgEc1EeiFfJtNAawVHw" templateId="2.16.840.1.113883.10.20.22.4.28" templateVersion="2014-06-09">
+    <ruleId>CONF:1098-7317</ruleId>
+    <ruleId>CONF:1098-10490</ruleId>
+    <ruleId>DSTU:816/1356</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_ut7YIEc3EeiFfJtNAawVHw" base_Generalization="_W5MpkEc1EeiFfJtNAawVHw"/>
+  <CDA:CodeSystemConstraint xmi:id="_WXiKIEc5EeiFfJtNAawVHw" code="33999-4" displayName="Status" base_Property="_WXg8AEc5EeiFfJtNAawVHw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1098-7320</ruleId>
+    <ruleId>CONF:1098-19131</ruleId>
+    <ruleId>CONF:1098-32155</ruleId>
+    <ruleId>DSTU:816/1356</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_o2JlEEc6EeiFfJtNAawVHw" base_Property="_o2I-AEc6EeiFfJtNAawVHw">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_55qJYEc6EeiFfJtNAawVHw"/>
+    <ruleId>CONF:1098-7322</ruleId>
+    <ruleId>DSTU:816/1356</ruleId>
+    <ruleId>DSTU:1364</ruleId>
+  </CDA:ValueSetConstraint>
+  <uml:Association xmi:id="_oFxM0EdBEeiFfJtNAawVHw" memberEnd="_oFuwkEdBEeiFfJtNAawVHw _oFxz4EdBEeiFfJtNAawVHw">
+    <ownedEnd xmi:id="_oFxz4EdBEeiFfJtNAawVHw" type="_K3M6IPKJEeOn7bMsPcStOw" association="_oFxM0EdBEeiFfJtNAawVHw"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_D8gDIEdCEeiFfJtNAawVHw" severity="INFO" base_Association="_oFxM0EdBEeiFfJtNAawVHw" typeCode="SUBJ">
+    <ruleId>CONF:1098-16333</ruleId>
+    <ruleId>CONF:1098-16335</ruleId>
+    <ruleId>CONF:1098-16334</ruleId>
+    <ruleId>CONF:1098-16336</ruleId>
+    <ruleId>DSTU:816/1356</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ConstraintValidation xmi:id="_HxYNgEdDEeiFfJtNAawVHw" base_Constraint="_ArGuYEdDEeiFfJtNAawVHw">
+    <ruleId>CONF:1098-16334</ruleId>
+    <ruleId>DSTU:816/1356</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

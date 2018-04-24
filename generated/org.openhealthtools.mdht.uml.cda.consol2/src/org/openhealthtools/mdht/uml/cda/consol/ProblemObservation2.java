@@ -191,10 +191,10 @@ public interface ProblemObservation2 extends ProblemObservation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemStatus))->asSequence()->any(true).oclAsType(consol::ProblemStatus)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemStatus2))->asSequence()->any(true).oclAsType(consol::ProblemStatus2)'"
 	 * @generated
 	 */
-	ProblemStatus getConsolProblemStatus();
+	ProblemStatus2 getConsolProblemStatus();
 
 	/**
 	 * <!-- begin-user-doc -->

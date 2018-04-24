@@ -1795,6 +1795,21 @@ Used to enumerate the relationships between two clinical documents for document 
       <ownedLiteral xmi:id="_fXUpsDzzEeiFfJtNAawVHw" name="81957-3"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_8VD4MD2fEeiFfJtNAawVHw" name="Medication Route"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_55piUEc6EeiFfJtNAawVHw" name="Allergy Status">
+      <ownedLiteral xmi:id="_IpqaAEc7EeiFfJtNAawVHw" name="55561003"/>
+      <ownedLiteral xmi:id="_UFLbEEc7EeiFfJtNAawVHw" name="73425007"/>
+      <ownedLiteral xmi:id="_WrjncEc7EeiFfJtNAawVHw" name="413322009"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8V738EfREeiFfJtNAawVHw" name="Problem Status (expanded DSTU:1363)">
+      <ownedLiteral xmi:id="_TdH18EfSEeiFfJtNAawVHw" name="55561003"/>
+      <ownedLiteral xmi:id="_WYyV0EfSEeiFfJtNAawVHw" name="73425007"/>
+      <ownedLiteral xmi:id="_YGcKcEfSEeiFfJtNAawVHw" name="413322009"/>
+      <ownedLiteral xmi:id="_ZqUYAEfSEeiFfJtNAawVHw" name="246455001"/>
+      <ownedLiteral xmi:id="_eNzxUEfSEeiFfJtNAawVHw" name="263855007"/>
+      <ownedLiteral xmi:id="_g1DgYEfSEeiFfJtNAawVHw" name="444791000124109"/>
+      <ownedLiteral xmi:id="_i3R20EfSEeiFfJtNAawVHw" name="444931000124107"/>
+      <ownedLiteral xmi:id="_koyQsEfSEeiFfJtNAawVHw" name="277022003"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3362,4 +3377,21 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetVersion xmi:id="_8VEfQD2fEeiFfJtNAawVHw" identifier="2.16.840.1.113762.1.4.1099.12" version="20170914" fullName="Medication Route" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.12/expansion" definition="Terms used to describe the path by which a substance is taken into the body. All SNOMED_CT values descending from 284009009 route of administration value." binding="Dynamic" base_Enumeration="_8VD4MD2fEeiFfJtNAawVHw">
     <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_55qJYEc6EeiFfJtNAawVHw" fullName="Allergy Status" source="HL7 Errata DSTU comment 1364" url="http://www.hl7.org/dstucomments/showdetail_comment.cfm?commentid=1364" definition="Clinical status of an allergy/intolerance" base_Enumeration="_55piUEc6EeiFfJtNAawVHw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_IprBEEc7EeiFfJtNAawVHw" conceptName="Active" base_EnumerationLiteral="_IpqaAEc7EeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_UFLbEUc7EeiFfJtNAawVHw" conceptName="Inactive" base_EnumerationLiteral="_UFLbEEc7EeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_WrjncUc7EeiFfJtNAawVHw" conceptName="Resolved" base_EnumerationLiteral="_WrjncEc7EeiFfJtNAawVHw"/>
+  <term:ValueSetVersion xmi:id="_8V8fAEfREeiFfJtNAawVHw" identifier="2.16.840.1.113883.3.88.12.80.68" fullName="Problem Status (expanded DSTU:1363)" source="HL7 DSTU errata comments" url="http://www.hl7.org/dstucomments/showdetail_comment.cfm?commentid=1363" binding="Dynamic" base_Enumeration="_8V738EfREeiFfJtNAawVHw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_TdIdAEfSEeiFfJtNAawVHw" conceptName="Active" base_EnumerationLiteral="_TdH18EfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_WYy84EfSEeiFfJtNAawVHw" conceptName="Inactive" base_EnumerationLiteral="_WYyV0EfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_YGcxgEfSEeiFfJtNAawVHw" conceptName="Resolved" base_EnumerationLiteral="_YGcKcEfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_ZqU_EEfSEeiFfJtNAawVHw" conceptName="Recurrence" base_EnumerationLiteral="_ZqUYAEfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_eN0YYEfSEeiFfJtNAawVHw" conceptName="Relapse" base_EnumerationLiteral="_eNzxUEfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_g1DgYUfSEeiFfJtNAawVHw" conceptName="Well-controlled" base_EnumerationLiteral="_g1DgYEfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_i3R20UfSEeiFfJtNAawVHw" conceptName="Poorly-controlled" base_EnumerationLiteral="_i3R20EfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_koy3wEfSEeiFfJtNAawVHw" conceptName="Remission" base_EnumerationLiteral="_koyQsEfSEeiFfJtNAawVHw"/>
 </xmi:XMI>
