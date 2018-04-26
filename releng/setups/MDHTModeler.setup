@@ -32,9 +32,9 @@
   <setupTask
       xsi:type="git:GitCloneTask"
       id="git.mdht.development"
-      remoteURI="https://github.com/mdht/mdht.git"
-      pushURI="https://github.com/mdht/mdht.git"
-      checkoutBranch="SnapshotSchematron"
+      remoteURI="http://git.eclipse.org/gitroot/mdht/org.eclipse.mdht.git"
+      pushURI="http://git.eclipse.org/gitroot/mdht/org.eclipse.mdht.git"
+      checkoutBranch="master"
       recursive="true"
       restrictToCheckoutBranch="true">
     <description>MDHT</description>
@@ -48,7 +48,7 @@
       id="git.mdht.models"
       remoteURI="https://github.com/mdht/mdht-models.git"
       pushURI="https://github.com/mdht/mdht-models.git"
-      checkoutBranch="developMultithread"
+      checkoutBranch="develop"
       recursive="true"
       restrictToCheckoutBranch="true">
     <description>
@@ -80,8 +80,8 @@
     
         
   </setupTask>
-  <version name="neon"
-      label="Neon"
+  <version name="oxygen"
+      label="Oxygen"
       requiredJavaVersion="1.7">
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -111,13 +111,14 @@
           name="org.eclipse.wst.xml_ui.feature.feature.group"/>
      
       <repository
-          url="http://download.eclipse.org/releases/neon"/>
+          url="http://download.eclipse.org/releases/oxygen"/>
       <repository
           url="https://hudson.eclipse.org/mdht/job/MDHT-master/lastSuccessfulBuild/artifact/repository"/>
       
+      <repository url="http://download.eclipse.org/nebula/releases/latest" />
        
     </setupTask>
-    <description>MDHT Modeler for Neon.</description>
+    <description>MDHT Modeler for Oxygen.</description>
   </version>
-  <description>MDHT Modeler for Neon provides CDA modeling support.</description>
+  <description>MDHT Modeler for Oxygen provides CDA modeling support.</description>
 </setup:Product>
