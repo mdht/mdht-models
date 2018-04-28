@@ -112,6 +112,7 @@
 		<replaceTemplateNames oldTemplateName="Advance Directives Section2" newTemplateName="Advance Directives Section (entries required) (V3)" />
 		<replaceTemplateNames oldTemplateName="Allergies Section Entries Optional2" newTemplateName="Allergies and Intolerances Section (entries optional) (V3)" />
 		<replaceTemplateNames oldTemplateName="Allergies Section2" newTemplateName="Allergies and Intolerances Section (entries required) (V3)" />
+		<replaceTemplateNames oldTemplateName="Assessment And Plan Section2" newTemplateName="Assessment and Plan Section (V2)" />
 		<replaceTemplateNames oldTemplateName="Complications Section2" newTemplateName="Complications Section (V3)" />
 		<replaceTemplateNames oldTemplateName="Discharge Diagnosis Section2" newTemplateName="Discharge Diagnosis (V3)" />
 		<replaceTemplateNames oldTemplateName="Discharge Medications Section Entries Optional2" newTemplateName="Discharge Medications Section (entries optional) (V3)" />
