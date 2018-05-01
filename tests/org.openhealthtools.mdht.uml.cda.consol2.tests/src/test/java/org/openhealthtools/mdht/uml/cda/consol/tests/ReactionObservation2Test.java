@@ -729,7 +729,9 @@ public class ReactionObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(ReactionObservation2 target) {
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD("24484000", SNOMEDCT_ID));
+				CD value = DatatypesFactory.eINSTANCE.createCD("247472004", SNOMEDCT_ID);
+				value.setDisplayName("Hives");
+				target.getValues().add(value);
 			}
 
 			@Override

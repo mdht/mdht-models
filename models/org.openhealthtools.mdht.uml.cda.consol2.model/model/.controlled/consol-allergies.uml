@@ -2577,10 +2577,8 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_nF6cgDNwEeiFfJtNAawVHw" base_Property="_nET6ADNwEeiFfJtNAawVHw"/>
   <CDA:ValueSetConstraint xmi:id="_D04F4DNyEeiFfJtNAawVHw" base_Property="_D03e0DNyEeiFfJtNAawVHw">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_OLJgsDNzEeiFfJtNAawVHw"/>
-    <ruleId>CONF:NEW</ruleId>
-    <ruleId>formerlyCONF:1098-7335</ruleId>
-    <ruleId>DSTU:836</ruleId>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1098-7335</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_D057EDNyEeiFfJtNAawVHw" base_Property="_D03e0DNyEeiFfJtNAawVHw"/>
   <uml:Class xmi:id="_W5MCgEc1EeiFfJtNAawVHw" name="AllergyStatusObservation2">
