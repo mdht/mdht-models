@@ -632,7 +632,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 	 */
 	protected static final String VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
 			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
-			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '390802008' or value.code = '390801001')))";
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '390801001' or value.code = '390802008' or value.code = '706905005' or value.code = '706906006')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProgressTowardGoalObservationValue(ProgressTowardGoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Toward Goal Observation Value</em>}' invariant operation.

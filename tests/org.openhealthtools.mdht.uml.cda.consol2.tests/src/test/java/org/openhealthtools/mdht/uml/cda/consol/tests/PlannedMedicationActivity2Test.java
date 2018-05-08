@@ -499,7 +499,7 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(PlannedMedicationActivity2 target) {
-				target.setRouteCode(DatatypesFactory.eINSTANCE.createCE("C38192", "2.16.840.1.113883.3.26.1.1"));
+				target.setRouteCode(DatatypesFactory.eINSTANCE.createCE("hasCode", SNOMEDCT_ID));
 			}
 
 			@Override

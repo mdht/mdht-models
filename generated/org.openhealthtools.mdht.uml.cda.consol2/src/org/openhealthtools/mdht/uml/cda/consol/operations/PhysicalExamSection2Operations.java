@@ -266,7 +266,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE,
 							ConsolPlugin.INSTANCE.getString(
 								"PhysicalExamSection2PhysicalExamSection2ComponentSectionCode"),

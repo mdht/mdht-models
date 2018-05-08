@@ -649,9 +649,9 @@ Any deviation from normal function displayed by the patient and recorded in the 
     <ruleId>CONF:7481</ruleId>
     <ruleId>R2.0=CONF:1098-7481</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_Bo-kwBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MdMQhUSEeG6PvUxSTZnaw">
-    <ruleId>CONF:16886</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_Bo-kwBq3EeGo461UQq-B1g" base_Property="_2MdMQhUSEeG6PvUxSTZnaw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:16886</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Gb3E8Bq3EeGo461UQq-B1g" code="completed" base_Property="_2MmWMRUSEeG6PvUxSTZnaw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -666,14 +666,14 @@ Any deviation from normal function displayed by the patient and recorded in the 
   <CDA:PropertyValidation xmi:id="_O7wpcBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MmWNRUSEeG6PvUxSTZnaw">
     <ruleId>CONF:7489</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_U4xacBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MmWNRUSEeG6PvUxSTZnaw">
-    <ruleId>CONF:15985</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_U4xacBq3EeGo461UQq-B1g" base_Property="_2MmWNRUSEeG6PvUxSTZnaw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:15985</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_hBSO8Bq4EeGo461UQq-B1g" severity="WARNING" base_Property="_2G8h-hSVEeGGzu7fmW9pXw">
+  <CDA:ValueSetConstraint xmi:id="_hBSO8Bq4EeGo461UQq-B1g" base_Property="_2G8h-hSVEeGGzu7fmW9pXw" severity="WARNING">
+    <reference href="../consol-vocab.uml#_DhjiABueEeGnMahsPjlwOw"/>
     <ruleId>CONF:7394</ruleId>
     <ruleId>R2.0=CONF:1098-7394</ruleId>
-    <reference href="../consol-vocab.uml#_DhjiABueEeGnMahsPjlwOw"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_wN9NcBq4EeGo461UQq-B1g" code="completed" displayName="Completed" base_Property="_2G8h-xSVEeGGzu7fmW9pXw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -706,8 +706,8 @@ Any deviation from normal function displayed by the patient and recorded in the 
     <ruleId>CONF:7761</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_B4zJcB-ZEeGtfPlBCjHWkw" base_Property="_nD_qMB-YEeGtfPlBCjHWkw">
-    <ruleId>CONF:16850</ruleId>
     <reference href="../consol-vocab.uml#_IzJFYR-ZEeGtfPlBCjHWkw"/>
+    <ruleId>CONF:16850</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_bC3lMB-ZEeGtfPlBCjHWkw" severity="INFO" base_Constraint="_U1PlUB-ZEeGtfPlBCjHWkw">
     <ruleId>CONF:7762</ruleId>
@@ -1928,9 +1928,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_5lm5MObjEeGINOJ_SD9_dA" severity="WARNING" base_Property="_5lgylObjEeGINOJ_SD9_dA">
     <ruleId>CONF:14287</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_5lm5SubjEeGINOJ_SD9_dA" severity="WARNING" base_Property="_5lm5R-bjEeGINOJ_SD9_dA">
-    <ruleId>CONF:14291</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_5lm5SubjEeGINOJ_SD9_dA" base_Property="_5lm5R-bjEeGINOJ_SD9_dA" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:14291</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_HLJTEObqEeGINOJ_SD9_dA" base_Property="_5lm5R-bjEeGINOJ_SD9_dA"/>
   <CDA:PropertyValidation xmi:id="_ZM4aMObqEeGINOJ_SD9_dA" severity="INFO" base_Property="_5lm5NebjEeGINOJ_SD9_dA">
@@ -2207,8 +2207,8 @@ Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy
     <ruleId>CONF:1098-31026</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_pUdB4I0fEeOB0eBUISUB4Q" base_Property="_cHp7U40dEeOB0eBUISUB4Q">
-    <ruleId>CONF:1098-31029</ruleId>
     <reference href="../consol-vocab.uml#_nHn0V_5-EeSoDZvueq4eYw"/>
+    <ruleId>CONF:1098-31029</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2T8XII0fEeOB0eBUISUB4Q" base_Property="_cHpUQ40dEeOB0eBUISUB4Q">
     <ruleId>CONF:1098-32136</ruleId>
@@ -2339,13 +2339,13 @@ Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy
   <CDA:PropertyValidation xmi:id="_fBuzQJm0EeOLJeQez13EkQ" base_Property="_rBipoJmzEeOLJeQez13EkQ">
     <ruleId>CONF:1098-31389</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_4QZJMJm2EeOLJeQez13EkQ" severity="WARNING" base_Property="_rBjQsJmzEeOLJeQez13EkQ">
-    <ruleId>CONF:1098-28153</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_4QZJMJm2EeOLJeQez13EkQ" base_Property="_rBjQsJmzEeOLJeQez13EkQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_dxy_8Zm1EeOLJeQez13EkQ"/>
+    <ruleId>CONF:1098-28153</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="__ImXIJm2EeOLJeQez13EkQ" severity="WARNING" base_Property="_rBjQspmzEeOLJeQez13EkQ">
-    <ruleId>CONF:1098-28042</ruleId>
+  <CDA:ValueSetConstraint xmi:id="__ImXIJm2EeOLJeQez13EkQ" base_Property="_rBjQspmzEeOLJeQez13EkQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_BciakZm1EeOLJeQez13EkQ"/>
+    <ruleId>CONF:1098-28042</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_KTrEAJpdEeOK6dzbL4VoTA" name="SubstanceAdministeredAct">
     <ownedComment xmi:id="_tU2HwJpdEeOK6dzbL4VoTA">
@@ -2854,9 +2854,9 @@ If the ID isn't referencing an author described elsewhere in the document, then 
     <ruleId>CONF:1098-32570</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_rCn1IOHoEeO04sHNODkHmQ" base_Generalization="_PrE1MOHoEeO04sHNODkHmQ"/>
-  <CDA:ValueSetConstraint xmi:id="_2HieoOHpEeO04sHNODkHmQ" severity="INFO" base_Property="_2Hh3kOHpEeO04sHNODkHmQ">
-    <ruleId>CONF:1098-31229</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_2HieoOHpEeO04sHNODkHmQ" base_Property="_2Hh3kOHpEeO04sHNODkHmQ" severity="INFO">
     <reference href="../consol-vocab.uml#_hRIUmoY5EeS7A_69H25Pzw"/>
+    <ruleId>CONF:1098-31229</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2HkT0OHpEeO04sHNODkHmQ" base_Property="_2Hh3kOHpEeO04sHNODkHmQ"/>
   <CDA:PropertyValidation xmi:id="_b5JCoOHqEeO04sHNODkHmQ" base_Property="_b5IbkOHqEeO04sHNODkHmQ">
@@ -2865,9 +2865,9 @@ If the ID isn't referencing an author described elsewhere in the document, then 
   <CDA:PropertyValidation xmi:id="_zCrKAOHqEeO04sHNODkHmQ" severity="INFO" base_Property="_zCqi8OHqEeO04sHNODkHmQ">
     <ruleId>CONF:1098-7488</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_zCsYIOHqEeO04sHNODkHmQ" severity="WARNING" base_Property="_zCqi8OHqEeO04sHNODkHmQ">
-    <ruleId>CONF:1098-7489</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_zCsYIOHqEeO04sHNODkHmQ" base_Property="_zCqi8OHqEeO04sHNODkHmQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1098-7489</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_ZepfsOH2EeO04sHNODkHmQ" base_Constraint="_SA2RYOH2EeO04sHNODkHmQ">
     <ruleId>CONF:1098-7483</ruleId>
@@ -3167,6 +3167,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
   <CDA:AssociationValidation xmi:id="_YSZjAP1VEeOKqrimxttICg" base_Association="_Wm1ZEP1VEeOKqrimxttICg">
     <ruleId>CONF:1098-10116</ruleId>
     <ruleId>CONF:1098-31398</ruleId>
+    <ruleId>DSTU:794</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_YCS1AP1WEeOW-qBXb0kbTA" name="InterventionsSection2">
     <ownedComment xmi:id="_k-j3IP1WEeOW-qBXb0kbTA">

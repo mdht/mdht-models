@@ -349,7 +349,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_SDTC_DDC_FROM_NUBC_OR_DD,
 						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesSdtcDDCFromNUBCOrDD"),
 						new Object[] { encounterActivity2 }));

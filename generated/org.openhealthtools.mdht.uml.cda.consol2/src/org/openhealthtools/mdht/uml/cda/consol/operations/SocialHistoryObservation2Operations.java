@@ -33,6 +33,8 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservation2ReferenceAttribute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Reference Attribute</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservation2IfNotLoincRequireTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 If Not Loinc Require Translation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 If Not Loinc Require Translation From Loinc</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservation2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2#validateSocialHistoryObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Author Participation</em>}</li>
@@ -124,6 +126,140 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 						ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION2_REFERENCE_ATTRIBUTE,
 						ConsolPlugin.INSTANCE.getString(
 							"SocialHistoryObservation2SocialHistoryObservation2ReferenceAttribute"),
+						new Object[] { socialHistoryObservation2 }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservation2IfNotLoincRequireTranslation(SocialHistoryObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 If Not Loinc Require Translation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservation2IfNotLoincRequireTranslation(SocialHistoryObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "code.codeSystem <> '2.16.840.1.113883.6.1' implies code.translation->size() >= 1";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservation2IfNotLoincRequireTranslation(SocialHistoryObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 If Not Loinc Require Translation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservation2IfNotLoincRequireTranslation(SocialHistoryObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param socialHistoryObservation2 The receiving '<em><b>Social History Observation2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateSocialHistoryObservation2IfNotLoincRequireTranslation(
+			SocialHistoryObservation2 socialHistoryObservation2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION2);
+			try {
+				VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				socialHistoryObservation2)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION,
+						ConsolPlugin.INSTANCE.getString(
+							"SocialHistoryObservation2SocialHistoryObservation2IfNotLoincRequireTranslation"),
+						new Object[] { socialHistoryObservation2 }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc(SocialHistoryObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 If Not Loinc Require Translation From Loinc</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc(SocialHistoryObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "code.codeSystem <> '2.16.840.1.113883.6.1' and code.translation->size() >= 1 implies code.translation->forAll(trans : datatypes::CD | trans.codeSystem = '2.16.840.1.113883.6.1')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc(SocialHistoryObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 If Not Loinc Require Translation From Loinc</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc(SocialHistoryObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param socialHistoryObservation2 The receiving '<em><b>Social History Observation2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateSocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc(
+			SocialHistoryObservation2 socialHistoryObservation2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION2);
+			try {
+				VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				socialHistoryObservation2)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION_FROM_LOINC,
+						ConsolPlugin.INSTANCE.getString(
+							"SocialHistoryObservation2SocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc"),
 						new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -321,7 +457,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION2_CD_TRANSLATION,
 							ConsolPlugin.INSTANCE.getString(
 								"SocialHistoryObservation2SocialHistoryObservation2CDTranslation"),
@@ -372,7 +508,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION2_CD_TRANSLATION_P,
 							ConsolPlugin.INSTANCE.getString(
 								"SocialHistoryObservation2SocialHistoryObservation2CDTranslationP"),
@@ -589,7 +725,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 	 */
 	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (not translation->isEmpty() and translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
 			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
-			"value.codeSystem = '2.16.840.1.113883.6.1')) )))";
+			"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())) )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservation2CDTranslation(SocialHistoryObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 CD Translation</em>}' invariant operation.

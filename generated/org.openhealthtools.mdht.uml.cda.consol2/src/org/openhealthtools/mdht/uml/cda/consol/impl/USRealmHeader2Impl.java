@@ -49,6 +49,15 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateUSRealmHeader2DocCodesOnly(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return USRealmHeader2Operations.validateUSRealmHeader2DocCodesOnly(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(
@@ -153,6 +162,28 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 			this, diagnostics, context);
 	}
 

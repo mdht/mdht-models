@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2KlEwBSVEeGGzu7fmW9pXw" name="AdvanceDirectiveObservation">
     <ownedComment xmi:id="_N7l9YCwEEeGs-ue-ukBpXg">
       <body>Advance Directives Observatations assert findings (e.g., &quot;resuscitation status is Full Code&quot;) rather than orders, and should not be considered legal documents. A legal document can be referenced using the reference/externalReference construct.</body>
@@ -445,7 +445,7 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-31230, CONF:1198-31231</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Class xmi:id="_GnllUK-9EeO8duI_7f6kZw" clientDependency="_4mXW8LBkEeOtlapy2HWYww" name="AdvanceDirectiveObservation2">
+  <uml:Class xmi:id="_GnllUK-9EeO8duI_7f6kZw" name="AdvanceDirectiveObservation2">
     <ownedComment xmi:id="_V-vVgK-9EeO8duI_7f6kZw">
       <body>&lt;p>&#xD;
 This clinical statement represents Advance Directive Observation findings (e.g., &quot;resuscitation status is Full Code&quot;) rather than orders. It should not be considered a legal document or a substitute for the actual Advance Directive document. The related legal documents are referenced using the reference/externalReference element.&#xD;
@@ -637,12 +637,6 @@ The observation/value element contains the detailed patient directive which may 
           <generalization xmi:id="_gBWp0LFFEeOtlapy2HWYww">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_3ZLE0LFFEeOtlapy2HWYww" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3ZLE0rFFEeOtlapy2HWYww"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3ZLE0bFFEeOtlapy2HWYww" value="1"/>
-            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
-          </ownedAttribute>
           <ownedAttribute xmi:id="_3ZLE07FFEeOtlapy2HWYww" name="name" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_M3A3sLFMEeOtlapy2HWYww">
               <body>The playingEntity/name SHALL be a conformant US Realm Person Name (PN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1) (CONF:28455).</body>
@@ -690,11 +684,6 @@ The observation/value element contains the detailed patient directive which may 
   <CDA:PropertyValidation xmi:id="_5u_I0LFJEeOtlapy2HWYww" severity="INFO" base_Property="_3ZLE07FFEeOtlapy2HWYww">
     <ruleId>CONF:1198-28454</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_DtG-0LFKEeOtlapy2HWYww" severity="WARNING" base_Property="_3ZLE0LFFEeOtlapy2HWYww"/>
-  <CDA:ValueSetConstraint xmi:id="_3tQFILFKEeOtlapy2HWYww" base_Property="_3ZLE0LFFEeOtlapy2HWYww" severity="WARNING">
-    <reference href="../consol-vocab.uml#_I2mywLFLEeOtlapy2HWYww"/>
-    <ruleId>CONF:1198-28429</ruleId>
-  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__C7_oLFSEeOtlapy2HWYww" severity="WARNING" base_Property="_8ej-YLFSEeOtlapy2HWYww"/>
   <CDA:ValueSetConstraint xmi:id="_AQ1WILFTEeOtlapy2HWYww" base_Property="_8ej-YLFSEeOtlapy2HWYww" severity="WARNING">
     <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
@@ -715,11 +704,12 @@ The observation/value element contains the detailed patient directive which may 
   <CDA:ValueSetConstraint xmi:id="_NuixELFWEeOtlapy2HWYww" base_Property="_EnlzoLFWEeOtlapy2HWYww" severity="WARNING">
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
     <ruleId>CONF:1198-28446</ruleId>
+    <ruleId>DSTU:1342</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_W6N2cLFWEeOtlapy2HWYww" severity="INFO" base_Property="_EnlMkLFWEeOtlapy2HWYww">
     <ruleId>CONF:1198-28451</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_jsKhYAFXEeSLIY0bHb-fFQ" clientDependency="_8GwoAAFXEeSLIY0bHb-fFQ" name="AdvanceDirectivesSectionEntriesOptional2">
+  <uml:Class xmi:id="_jsKhYAFXEeSLIY0bHb-fFQ" name="AdvanceDirectivesSectionEntriesOptional2">
     <ownedComment xmi:id="_pViksAFXEeSLIY0bHb-fFQ">
       <body>&lt;p>&#xD;
 This section contains data defining the patient's advance directives and any reference to supporting documentation, including living wills, healthcare proxies, and CPR and resuscitation status. If the referenced documents are available, they can be included in the exchange package.&#xD;
@@ -762,7 +752,7 @@ This section differentiates between &quot;advance directives&quot; and &quot;adv
   <CDA:AssociationValidation xmi:id="_Sl4gcAFYEeSLIY0bHb-fFQ" severity="INFO" base_Association="_RMNXwAFYEeSLIY0bHb-fFQ">
     <ruleId>CONF:1198-32891, CONF:1198-32892</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_ZFbCkAIPEeS-F85KYVlDyA" clientDependency="_KTbYcAIQEeS-F85KYVlDyA" name="AdvanceDirectivesSection2">
+  <uml:Class xmi:id="_ZFbCkAIPEeS-F85KYVlDyA" name="AdvanceDirectivesSection2">
     <ownedComment xmi:id="_z2qQcAIPEeS-F85KYVlDyA">
       <body>&lt;p>&#xD;
 This section contains data defining the patient's advance directives and any reference to supporting documentation, including living wills, healthcare proxies, and CPR and resuscitation status. If the referenced documents are available, they can be included in the exchange package.&#xD;

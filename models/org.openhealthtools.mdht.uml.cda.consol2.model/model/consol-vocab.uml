@@ -1406,7 +1406,7 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
       <ownedComment xmi:id="_x9HncPMSEeOrR8IF-aqVyQ">
         <body>A substance or other type of agent (eg. Sunshine) that may be associated with an intolerance reaction event or a propensity to such an event. These concepts are expected to be at a more general level of abstraction (ingredients versus more specific formulations). This value set is quite general and includes concepts that may never cause an adverse event, particularly the included SNOMED CT concepts. The code system-specific value sets in this grouping value set are intended to provide broad coverage of all kinds of agents, but the expectation for use is that the chosen concept identifier for a substance should be appropriately specific and drawn from the available code systems in the following priority order: NDFRT, then RXNORM, then UNII, then SNOMEDCT. This overarching grouping value set is intended to support identification of drug classes, individual medication ingredients, foods, general substances and environmental entities.  &#xD;
 Value set intensionally defined as a GROUPING made up of:  &#xD;
-Value Set: Medication Drug Class (2.16.840.1.113883.3.88.12.80.18) (NDFRT drug class codes); Value Set: Clinical Drug Ingredient (2.16.840.1.113762.1.4.1010.7) (RxNORM ingredient codes); Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII ingredient codes); Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT substance codes).&#xD;&#xD;
+Value Set: Medication Drug Class (2.16.840.1.113883.3.88.12.80.18) (NDFRT drug class codes); Value Set: Clinical Drug Ingredient (2.16.840.1.113762.1.4.1010.7) (RxNORM ingredient codes (TTYs: BN, PIN, MIN, IN) DSTU:1375); Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII ingredient codes); Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT substance codes).&#xD;&#xD;
 Valueset Source: https://vsac.nlm.nih.gov/</body>
       </ownedComment>
     </packagedElement>
@@ -1640,26 +1640,22 @@ Value Set Source: https://vsac.nlm.nih.gov&#xD;
       <ownedLiteral xmi:id="_bTQwEwDcEeWNGdLwd_3YGQ" name="394848005"/>
       <ownedLiteral xmi:id="_bTQwFADcEeWNGdLwd_3YGQ" name="441808003"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_aeLRAAPjEeWlspDC_8d7eg" name="Goal Achievement">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_aeLRAAPjEeWlspDC_8d7eg" name="Goal Achievement v20170106">
       <ownedComment xmi:id="_aeLRAQPjEeWlspDC_8d7eg">
         <body>&lt;p>&#xD;
 Value Set: Goal Achievement 2.16.840.1.113883.11.20.9.55&#xD;
 &lt;/p>&#xD;
 &lt;p>&#xD;
-The Goal Achievement value set contains concepts that describe a patient's progression (or lack thereof) toward a goal and consists of the following codes from the US Extension of SNOMED CT.
-&#xD;
+The Goal Achievement value set contains concepts that describe a patient's progression (or lack thereof) toward a goal.&#xD;
 &#xD;&lt;/p>&#xD;
-&lt;p>&#xD;
-390802008 Goal achieved&#xD;
-390801001 Goal not achieved and all its direct children
-&#xD;
-&lt;/p>&#xD;
 &lt;p>&#xD;
 Value Set Source: https://vsac.nlm.nih.gov&#xD;
 &lt;/p></body>
       </ownedComment>
-      <ownedLiteral xmi:id="_aeLRAgPjEeWlspDC_8d7eg" name="390802008"/>
       <ownedLiteral xmi:id="_aeLRAwPjEeWlspDC_8d7eg" name="390801001"/>
+      <ownedLiteral xmi:id="_aeLRAgPjEeWlspDC_8d7eg" name="390802008"/>
+      <ownedLiteral xmi:id="_uZA_8DdQEeiFfJtNAawVHw" name="706905005"/>
+      <ownedLiteral xmi:id="_zAMmcDdQEeiFfJtNAawVHw" name="706906006"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_PDM9MExKEeWJ65CktI2ODQ" name="AdvanceDirectiveTypeCode">
       <ownedLiteral xmi:id="_PDM9NExKEeWJ65CktI2ODQ" name="52765003"/>
@@ -1771,6 +1767,49 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
       <ownedLiteral xmi:id="_octr4LD4EeafNo3UpQoAYw" name="CRITU"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_cLzZsIdpEeeAsbPrNOnubg" name="Detailed Ethnicity"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OKxtQDNzEeiFfJtNAawVHw" name="Reaction Severity">
+      <ownedLiteral xmi:id="_NBm6ADg6EeiFfJtNAawVHw" name="24484000"/>
+      <ownedLiteral xmi:id="_TBKBoDg6EeiFfJtNAawVHw" name="255604002"/>
+      <ownedLiteral xmi:id="_VlSyUDg6EeiFfJtNAawVHw" name="6736007"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_nQhhADdVEeiFfJtNAawVHw" name="x_ActRelationshipDocument">
+      <ownedComment xmi:id="_cdcjgDdWEeiFfJtNAawVHw">
+        <body>&lt;p>&#xD;
+Used to enumerate the relationships between two clinical documents for document management.&#xD;
+&lt;/p></body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_3NPm8DdWEeiFfJtNAawVHw" name="APND"/>
+      <ownedLiteral xmi:id="_67NtgDdWEeiFfJtNAawVHw" name="RPLC"/>
+      <ownedLiteral xmi:id="_-TcNkDdWEeiFfJtNAawVHw" name="XFRM"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OeL2UDwXEeiFfJtNAawVHw" name="Medication Status">
+      <ownedLiteral xmi:id="_oDv7QDwXEeiFfJtNAawVHw" name="aborted"/>
+      <ownedLiteral xmi:id="_rLAnIDwXEeiFfJtNAawVHw" name="active"/>
+      <ownedLiteral xmi:id="_sYft8DwXEeiFfJtNAawVHw" name="completed"/>
+      <ownedLiteral xmi:id="_tjmPIDwXEeiFfJtNAawVHw" name="nullified"/>
+      <ownedLiteral xmi:id="_uwF3cDwXEeiFfJtNAawVHw" name="suspended"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_avmtIDzyEeiFfJtNAawVHw" name="Care Plan Document Type">
+      <ownedLiteral xmi:id="_Ycp9oDzzEeiFfJtNAawVHw" name="18776-5"/>
+      <ownedLiteral xmi:id="_b8xOYDzzEeiFfJtNAawVHw" name="52521-2"/>
+      <ownedLiteral xmi:id="_fXUpsDzzEeiFfJtNAawVHw" name="81957-3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8VD4MD2fEeiFfJtNAawVHw" name="Medication Route"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_55piUEc6EeiFfJtNAawVHw" name="Allergy Status">
+      <ownedLiteral xmi:id="_IpqaAEc7EeiFfJtNAawVHw" name="55561003"/>
+      <ownedLiteral xmi:id="_UFLbEEc7EeiFfJtNAawVHw" name="73425007"/>
+      <ownedLiteral xmi:id="_WrjncEc7EeiFfJtNAawVHw" name="413322009"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8V738EfREeiFfJtNAawVHw" name="Problem Status (expanded DSTU:1363)">
+      <ownedLiteral xmi:id="_TdH18EfSEeiFfJtNAawVHw" name="55561003"/>
+      <ownedLiteral xmi:id="_WYyV0EfSEeiFfJtNAawVHw" name="73425007"/>
+      <ownedLiteral xmi:id="_YGcKcEfSEeiFfJtNAawVHw" name="413322009"/>
+      <ownedLiteral xmi:id="_ZqUYAEfSEeiFfJtNAawVHw" name="246455001"/>
+      <ownedLiteral xmi:id="_eNzxUEfSEeiFfJtNAawVHw" name="263855007"/>
+      <ownedLiteral xmi:id="_g1DgYEfSEeiFfJtNAawVHw" name="444791000124109"/>
+      <ownedLiteral xmi:id="_i3R20EfSEeiFfJtNAawVHw" name="444931000124107"/>
+      <ownedLiteral xmi:id="_koyQsEfSEeiFfJtNAawVHw" name="277022003"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -1851,7 +1890,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_2LJFcRSVEeGGzu7fmW9pXw" conceptName="Intubation" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQRBSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2LJsgBSVEeGGzu7fmW9pXw" conceptName="Life Support" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQRRSVEeGGzu7fmW9pXw"/>
   <term:ValueSetCode xmi:id="_2LKTkBSVEeGGzu7fmW9pXw" conceptName="Resuscitation" usageNote="SNOMED-CT" base_EnumerationLiteral="_2LHQRhSVEeGGzu7fmW9pXw"/>
-  <term:ValueSetVersion xmi:id="_2L3eMhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.32" version="20081218" fullName="Encounter Type" source="HITSP" definition="This value set includes only the codes of the Current Procedure and Terminology designated for Evaluation and Management (99200 - 99299)." effectiveDate="20081218" type="Intensional" binding="Dynamic" base_Enumeration="_2L3eMBSVEeGGzu7fmW9pXw">
+  <term:ValueSetVersion xmi:id="_2L3eMhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.32" version="20170915" fullName="Encounter Type" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.80.32/expansion" definition="This value set includes only the codes of the Current Procedure and Terminology designated for Evaluation and Management (99200 to 99607)." effectiveDate="20170915" binding="Dynamic" base_Enumeration="_2L3eMBSVEeGGzu7fmW9pXw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_KsN1ICF_Ed-M3adQxwHq4g"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2L5TYhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.33" fullName="Admission Type" source="National Uniform Billing Committee (NUBC)" url="www.nubc.org" definition="See (UB-04/NUBC CURRENT UB DATA SPECIFICATIONS MANUAL) UB-04 FL14." binding="Dynamic" base_Enumeration="_2L5TYBSVEeGGzu7fmW9pXw">
@@ -2945,7 +2984,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_322vkbm6EeOgPNzo_e4B9A" conceptName="Unknown if ever smoked" base_EnumerationLiteral="_322vkLm6EeOgPNzo_e4B9A"/>
   <term:ValueSetCode xmi:id="_4nDdcbm6EeOgPNzo_e4B9A" conceptName="Heavy tobacco smoker" base_EnumerationLiteral="_4nDdcLm6EeOgPNzo_e4B9A"/>
   <term:ValueSetCode xmi:id="_54GOkbm6EeOgPNzo_e4B9A" conceptName="Light tobacco smoker" base_EnumerationLiteral="_54GOkLm6EeOgPNzo_e4B9A"/>
-  <term:ValueSetVersion xmi:id="_SdFiQeHGEeO04sHNODkHmQ" identifier="2.16.840.1.113883.1.11.159331" fullName="ActStatus" binding="Dynamic" base_Enumeration="_SdFiQOHGEeO04sHNODkHmQ">
+  <term:ValueSetVersion xmi:id="_SdFiQeHGEeO04sHNODkHmQ" identifier="2.16.840.1.113883.1.11.15933" fullName="ActStatus" definition="DSTU:1106 Modified ActStatus value set OID from the incorrect value of 2.16.840.1.113883.1.11.159331 to the corrected value of 2.16.840.1.113883.1.11.15933" binding="Dynamic" base_Enumeration="_SdFiQOHGEeO04sHNODkHmQ">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_RpsEgeHIEeO04sHNODkHmQ" conceptName="normal" base_EnumerationLiteral="_RpsEgOHIEeO04sHNODkHmQ"/>
@@ -3166,11 +3205,11 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_bTQwFgDcEeWNGdLwd_3YGQ" conceptName="High priority" base_EnumerationLiteral="_bTQwEgDcEeWNGdLwd_3YGQ"/>
   <term:ValueSetCode xmi:id="_bTQwFwDcEeWNGdLwd_3YGQ" conceptName="Normal priority" base_EnumerationLiteral="_bTQwEwDcEeWNGdLwd_3YGQ"/>
   <term:ValueSetCode xmi:id="_bTQwGADcEeWNGdLwd_3YGQ" conceptName="Delayed priority" base_EnumerationLiteral="_bTQwFADcEeWNGdLwd_3YGQ"/>
-  <term:ValueSetVersion xmi:id="_aeL4EAPjEeWlspDC_8d7eg" identifier="2.16.840.1.113883.11.20.9.55" fullName="Goal Achievement" source="https://vsac.nlm.nih.gov" definition="The Goal Achievement value set contains concepts that describe a patient's progression (or lack thereof) toward a goal and consists of the following codes from the US Extension of SNOMED CT. 390802008 Goal achieved 390801001 Goal not achieved and all its direct children" binding="Dynamic" base_Enumeration="_aeLRAAPjEeWlspDC_8d7eg">
+  <term:ValueSetVersion xmi:id="_aeL4EAPjEeWlspDC_8d7eg" identifier="2.16.840.1.113883.11.20.9.55" version="20170106" fullName="Goal Achievement" source="https://vsac.nlm.nih.gov" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.9.55/expansion" definition="The Goal Achievement value set contains concepts that describe a patient's progression (or lack thereof) toward a goal and consists of the following codes from the US Extension of SNOMED CT. 390802008 Goal achieved 390801001 Goal not achieved and all its direct children" binding="Dynamic" base_Enumeration="_aeLRAAPjEeWlspDC_8d7eg">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_aeL4EQPjEeWlspDC_8d7eg" conceptName="Goal achieved" base_EnumerationLiteral="_aeLRAgPjEeWlspDC_8d7eg"/>
-  <term:ValueSetCode xmi:id="_aeL4EgPjEeWlspDC_8d7eg" conceptName="Goal not achieved" base_EnumerationLiteral="_aeLRAwPjEeWlspDC_8d7eg"/>
+  <term:ValueSetCode xmi:id="_aeL4EQPjEeWlspDC_8d7eg" conceptName="Goal achieved (finding)" base_EnumerationLiteral="_aeLRAgPjEeWlspDC_8d7eg"/>
+  <term:ValueSetCode xmi:id="_aeL4EgPjEeWlspDC_8d7eg" conceptName="Goal not achieved (finding)" base_EnumerationLiteral="_aeLRAwPjEeWlspDC_8d7eg"/>
   <term:ValueSetCode xmi:id="_8ERhEQPnEeWlspDC_8d7eg" conceptName="assisted" base_EnumerationLiteral="_8ERhEAPnEeWlspDC_8d7eg"/>
   <term:ValueSetCode xmi:id="_9r_FwQPnEeWlspDC_8d7eg" conceptName="dependent" base_EnumerationLiteral="_9r_FwAPnEeWlspDC_8d7eg"/>
   <term:ValueSetCode xmi:id="__U_D4QPnEeWlspDC_8d7eg" conceptName="unable" base_EnumerationLiteral="__U_D4APnEeWlspDC_8d7eg"/>
@@ -3307,4 +3346,52 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetVersion xmi:id="_cL0AwIdpEeeAsbPrNOnubg" identifier="2.16.840.1.114222.4.11.877" fullName="Detailed Ethnicity" url="http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F-DD11-B38D-00188B398520#" base_Enumeration="_cLzZsIdpEeeAsbPrNOnubg">
     <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_OLJgsDNzEeiFfJtNAawVHw" identifier="2.16.840.1.113883.3.88.12.3221.6.8" version="20170915" fullName="Reaction Severity" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.3221.6.8/expansion" definition="This is a description of the level of severity of the REACTION. Inclusion Criteria: Three severities (map fatal to severe, moderate to severe to severe, mild to moderate to moderate)" base_Enumeration="_OKxtQDNzEeiFfJtNAawVHw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_uZDcMDdQEeiFfJtNAawVHw" conceptName="Goal not attainable (finding)" base_EnumerationLiteral="_uZA_8DdQEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_zAMmcTdQEeiFfJtNAawVHw" conceptName="No progress toward goal (finding)" base_EnumerationLiteral="_zAMmcDdQEeiFfJtNAawVHw"/>
+  <term:ValueSetVersion xmi:id="_nQiIEDdVEeiFfJtNAawVHw" identifier="2.16.840.1.113883.1.11.11610" version="20171229" fullName="x_ActRelationshipDocument" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.11610/expansion" base_Enumeration="_nQhhADdVEeiFfJtNAawVHw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_f6DvAE6SEeC5ttwajeXVXg"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_3NPm8TdWEeiFfJtNAawVHw" conceptName="is appendage" base_EnumerationLiteral="_3NPm8DdWEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_67NtgTdWEeiFfJtNAawVHw" conceptName="replaces" base_EnumerationLiteral="_67NtgDdWEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_-TcNkTdWEeiFfJtNAawVHw" conceptName="transformation" base_EnumerationLiteral="_-TcNkDdWEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_NBnhEDg6EeiFfJtNAawVHw" conceptName="Severe (severity modifier) (qualifier value)" base_EnumerationLiteral="_NBm6ADg6EeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_TBKBoTg6EeiFfJtNAawVHw" conceptName="Mild (qualifier value)" base_EnumerationLiteral="_TBKBoDg6EeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_VlveQDg6EeiFfJtNAawVHw" conceptName="Moderate (severity modifier) (qualifier value)" base_EnumerationLiteral="_VlSyUDg6EeiFfJtNAawVHw"/>
+  <term:ValueSetVersion xmi:id="_OeMdYDwXEeiFfJtNAawVHw" identifier="2.16.840.1.113762.1.4.1099.11" version="20170914" fullName="Medication Status" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.11/expansion" definition="A coded concept indicating the current status of a Medication administration or fulfillment." binding="Dynamic" base_Enumeration="_OeL2UDwXEeiFfJtNAawVHw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_oDwiUDwXEeiFfJtNAawVHw" conceptName="aborted" base_EnumerationLiteral="_oDv7QDwXEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_rLBOMDwXEeiFfJtNAawVHw" conceptName="active" base_EnumerationLiteral="_rLAnIDwXEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_sYft8TwXEeiFfJtNAawVHw" conceptName="completed" base_EnumerationLiteral="_sYft8DwXEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_tjmPITwXEeiFfJtNAawVHw" conceptName="nullified" base_EnumerationLiteral="_tjmPIDwXEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_uwGegDwXEeiFfJtNAawVHw" conceptName="suspended" base_EnumerationLiteral="_uwF3cDwXEeiFfJtNAawVHw"/>
+  <term:ValueSetVersion xmi:id="_av2kwDzyEeiFfJtNAawVHw" identifier="2.16.840.1.113762.1.4.1099.10" version="20180125" fullName="Care Plan Document Type" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.10/expansion" definition="Terms used to identify documents that represent a Care Plan" binding="Dynamic" base_Enumeration="_avmtIDzyEeiFfJtNAawVHw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_YcqksDzzEeiFfJtNAawVHw" conceptName="Plan of care note" base_EnumerationLiteral="_Ycp9oDzzEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_b8x1cDzzEeiFfJtNAawVHw" conceptName="Overall Plan of Care/Advance Care Directives" base_EnumerationLiteral="_b8xOYDzzEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_fXUpsTzzEeiFfJtNAawVHw" conceptName="Overall Plan of Care/Advance Care Directives panel" base_EnumerationLiteral="_fXUpsDzzEeiFfJtNAawVHw"/>
+  <term:ValueSetVersion xmi:id="_8VEfQD2fEeiFfJtNAawVHw" identifier="2.16.840.1.113762.1.4.1099.12" version="20170914" fullName="Medication Route" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.12/expansion" definition="Terms used to describe the path by which a substance is taken into the body. All SNOMED_CT values descending from 284009009 route of administration value." binding="Dynamic" base_Enumeration="_8VD4MD2fEeiFfJtNAawVHw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_55qJYEc6EeiFfJtNAawVHw" fullName="Allergy Status" source="HL7 Errata DSTU comment 1364" url="http://www.hl7.org/dstucomments/showdetail_comment.cfm?commentid=1364" definition="Clinical status of an allergy/intolerance" base_Enumeration="_55piUEc6EeiFfJtNAawVHw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_IprBEEc7EeiFfJtNAawVHw" conceptName="Active" base_EnumerationLiteral="_IpqaAEc7EeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_UFLbEUc7EeiFfJtNAawVHw" conceptName="Inactive" base_EnumerationLiteral="_UFLbEEc7EeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_WrjncUc7EeiFfJtNAawVHw" conceptName="Resolved" base_EnumerationLiteral="_WrjncEc7EeiFfJtNAawVHw"/>
+  <term:ValueSetVersion xmi:id="_8V8fAEfREeiFfJtNAawVHw" identifier="2.16.840.1.113883.3.88.12.80.68" fullName="Problem Status (expanded DSTU:1363)" source="HL7 DSTU errata comments" url="http://www.hl7.org/dstucomments/showdetail_comment.cfm?commentid=1363" binding="Dynamic" base_Enumeration="_8V738EfREeiFfJtNAawVHw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_TdIdAEfSEeiFfJtNAawVHw" conceptName="Active" base_EnumerationLiteral="_TdH18EfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_WYy84EfSEeiFfJtNAawVHw" conceptName="Inactive" base_EnumerationLiteral="_WYyV0EfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_YGcxgEfSEeiFfJtNAawVHw" conceptName="Resolved" base_EnumerationLiteral="_YGcKcEfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_ZqU_EEfSEeiFfJtNAawVHw" conceptName="Recurrence" base_EnumerationLiteral="_ZqUYAEfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_eN0YYEfSEeiFfJtNAawVHw" conceptName="Relapse" base_EnumerationLiteral="_eNzxUEfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_g1DgYUfSEeiFfJtNAawVHw" conceptName="Well-controlled" base_EnumerationLiteral="_g1DgYEfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_i3R20UfSEeiFfJtNAawVHw" conceptName="Poorly-controlled" base_EnumerationLiteral="_i3R20EfSEeiFfJtNAawVHw"/>
+  <term:ValueSetCode xmi:id="_koy3wEfSEeiFfJtNAawVHw" conceptName="Remission" base_EnumerationLiteral="_koyQsEfSEeiFfJtNAawVHw"/>
 </xmi:XMI>

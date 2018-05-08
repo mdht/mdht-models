@@ -66,6 +66,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PolicyActivityOperatio
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityHolder(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Holder</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityEntryRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Entry Relationship</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Payer Payer Assigned Entity General Header Constraints US Realm Address US Realm Address Street</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Payer Payer Assigned Entity General Header Constraints US Realm Address If Country Is Us Require State Element</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Payer Payer Assigned Entity General Header Constraints US Realm Address If Country Is Us Require Postal Code Element</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Payer Payer Assigned Entity General Header Constraints US Realm Address Use</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Payer Payer Assigned Entity General Header Constraints US Realm Address Use P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Payer Payer Assigned Entity General Header Constraints US Realm Address Country</em>}</li>
@@ -84,6 +86,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PolicyActivityOperatio
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityPayerTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Payer Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityPayerPayerAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Payer Payer Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address US Realm Address Street</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address If Country Is Us Require State Element</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address If Country Is Us Require Postal Code Element</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address Use</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address Use P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address Country</em>}</li>
@@ -101,6 +105,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PolicyActivityOperatio
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityGuarantorTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Guarantor Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityGuarantorGuarantorAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Guarantor Guarantor Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Coverage Coverage Role General Header Constraints US Realm Address US Realm Address Street</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Coverage Coverage Role General Header Constraints US Realm Address If Country Is Us Require State Element</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Coverage Coverage Role General Header Constraints US Realm Address If Country Is Us Require Postal Code Element</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Coverage Coverage Role General Header Constraints US Realm Address Use</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Coverage Coverage Role General Header Constraints US Realm Address Use P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Coverage Coverage Role General Header Constraints US Realm Address Country</em>}</li>
@@ -121,6 +127,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PolicyActivityOperatio
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityCoverageTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Coverage Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityCoverageCoverageRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Coverage Coverage Role</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Holder Holder Role General Header Constraints US Realm Address US Realm Address Street</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Holder Holder Role General Header Constraints US Realm Address If Country Is Us Require State Element</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Holder Holder Role General Header Constraints US Realm Address If Country Is Us Require Postal Code Element</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Holder Holder Role General Header Constraints US Realm Address Use</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Holder Holder Role General Header Constraints US Realm Address Use P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity#validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Holder Holder Role General Header Constraints US Realm Address Country</em>}</li>
@@ -860,6 +868,106 @@ public class PolicyActivityTest extends CDAValidationTest {
 		};
 
 		validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreetTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement() {
+		OperationsTestCase<PolicyActivity> validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElementTestCase = new OperationsTestCase<PolicyActivity>(
+			"validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity target) {
+				target.init();
+				target.getPerformers().clear();
+				Performer2 payer = createPerformer();
+				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+				target.getPerformers().add(payer);
+				AssignedEntity payerEntity = createPayerAssignedEntity();
+				payer.setAssignedEntity(payerEntity);
+				payerEntity.getAddrs().get(0).addCountry("US");
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity target) {
+				target.getPerformers().clear();
+				Performer2 payer = createPerformer();
+				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+				target.getPerformers().add(payer);
+				AssignedEntity payerEntity = createPayerAssignedEntity();
+				payerEntity.getAddrs().clear();
+				payerEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
+				payer.setAssignedEntity(payerEntity);
+				payerEntity.getAddrs().get(0).addCountry("US");
+				payerEntity.getAddrs().get(0).addState("NH");
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+					(PolicyActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElementTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement() {
+		OperationsTestCase<PolicyActivity> validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElementTestCase = new OperationsTestCase<PolicyActivity>(
+			"validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity target) {
+				target.init();
+				target.getPerformers().clear();
+				Performer2 payer = createPerformer();
+				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+				target.getPerformers().add(payer);
+				AssignedEntity payerEntity = createPayerAssignedEntity();
+				payer.setAssignedEntity(payerEntity);
+				payerEntity.getAddrs().get(0).addCountry("US");
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity target) {
+				target.getPerformers().clear();
+				Performer2 payer = createPerformer();
+				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+				target.getPerformers().add(payer);
+				AssignedEntity payerEntity = createPayerAssignedEntity();
+				payerEntity.getAddrs().clear();
+				payerEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
+				payer.setAssignedEntity(payerEntity);
+				payerEntity.getAddrs().get(0).addCountry("US");
+				payerEntity.getAddrs().get(0).addState("NH");
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+					(PolicyActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElementTestCase.doValidationTest();
 	}
 
 	/**
@@ -1821,6 +1929,104 @@ public class PolicyActivityTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement() {
+		OperationsTestCase<PolicyActivity> validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElementTestCase = new OperationsTestCase<PolicyActivity>(
+			"validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity target) {
+				target.init();
+				target.getPerformers().clear();
+				Performer2 guarantor = createPerformer();
+				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+				target.getPerformers().add(guarantor);
+				AssignedEntity gEntity = createGuarantorAssignedEntity();
+				guarantor.setAssignedEntity(gEntity);
+				gEntity.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				gEntity.getAddrs().get(0).addCountry("US");
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity target) {
+				target.getPerformers().clear();
+				Performer2 guarantor = createPerformer();
+				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+				target.getPerformers().add(guarantor);
+				AssignedEntity gEntity = createGuarantorAssignedEntity();
+				guarantor.setAssignedEntity(gEntity);
+				gEntity.getAddrs().clear();
+				gEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+					(PolicyActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElementTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement() {
+		OperationsTestCase<PolicyActivity> validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElementTestCase = new OperationsTestCase<PolicyActivity>(
+			"validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity target) {
+				target.init();
+				target.getPerformers().clear();
+				Performer2 guarantor = createPerformer();
+				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+				target.getPerformers().add(guarantor);
+				AssignedEntity gEntity = createGuarantorAssignedEntity();
+				guarantor.setAssignedEntity(gEntity);
+				gEntity.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				gEntity.getAddrs().get(0).addCountry("US");
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity target) {
+				target.getPerformers().clear();
+				Performer2 guarantor = createPerformer();
+				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+				target.getPerformers().add(guarantor);
+				AssignedEntity gEntity = createGuarantorAssignedEntity();
+				guarantor.setAssignedEntity(gEntity);
+				gEntity.getAddrs().clear();
+				gEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+					(PolicyActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElementTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated not
 	*/
 	@Test
@@ -2771,6 +2977,88 @@ public class PolicyActivityTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement() {
+		OperationsTestCase<PolicyActivity> validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElementTestCase = new OperationsTestCase<PolicyActivity>(
+			"validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity target) {
+				target.getParticipants().clear();
+				Participant2 coverage = createCoverage();
+				target.getParticipants().add(coverage);
+				coverage.getParticipantRole().getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				coverage.getParticipantRole().getAddrs().get(0).addCountry("US");
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity target) {
+				target.getParticipants().clear();
+				Participant2 coverage = createCoverage();
+				target.getParticipants().add(coverage);
+				coverage.getParticipantRole().getAddrs().add(createUSRealmAddress());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+					(PolicyActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElementTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement() {
+		OperationsTestCase<PolicyActivity> validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElementTestCase = new OperationsTestCase<PolicyActivity>(
+			"validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity target) {
+				target.getParticipants().clear();
+				Participant2 coverage = createCoverage();
+				target.getParticipants().add(coverage);
+				coverage.getParticipantRole().getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				coverage.getParticipantRole().getAddrs().get(0).addCountry("US");
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity target) {
+				target.getParticipants().clear();
+				Participant2 coverage = createCoverage();
+				target.getParticipants().add(coverage);
+				coverage.getParticipantRole().getAddrs().add(createUSRealmAddress());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+					(PolicyActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElementTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated not
 	*/
 	@Test
@@ -3676,6 +3964,102 @@ public class PolicyActivityTest extends CDAValidationTest {
 		};
 
 		validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreetTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement() {
+		OperationsTestCase<PolicyActivity> validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElementTestCase = new OperationsTestCase<PolicyActivity>(
+			"validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity target) {
+				target.getParticipants().clear();
+				Participant2 holder = CDAFactory.eINSTANCE.createParticipant2();
+				holder.setTypeCode(ParticipationType.HLD);
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				AD ad = DatatypesFactory.eINSTANCE.createAD();
+				pr.getAddrs().add(ad);
+				pr.getAddrs().get(0).addCountry("US");
+				holder.setParticipantRole(pr);
+				target.getParticipants().add(holder);
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity target) {
+				target.getParticipants().clear();
+				Participant2 holder = CDAFactory.eINSTANCE.createParticipant2();
+				holder.setTypeCode(ParticipationType.HLD);
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				pr.getAddrs().add(createUSRealmAddress());
+				holder.setParticipantRole(pr);
+				target.getParticipants().add(holder);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+					(PolicyActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElementTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement() {
+		OperationsTestCase<PolicyActivity> validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElementTestCase = new OperationsTestCase<PolicyActivity>(
+			"validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity target) {
+				target.getParticipants().clear();
+				Participant2 holder = CDAFactory.eINSTANCE.createParticipant2();
+				holder.setTypeCode(ParticipationType.HLD);
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				AD ad = DatatypesFactory.eINSTANCE.createAD();
+				pr.getAddrs().add(ad);
+				pr.getAddrs().get(0).addCountry("US");
+				holder.setParticipantRole(pr);
+				target.getParticipants().add(holder);
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity target) {
+				target.getParticipants().clear();
+				Participant2 holder = CDAFactory.eINSTANCE.createParticipant2();
+				holder.setTypeCode(ParticipationType.HLD);
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				pr.getAddrs().add(createUSRealmAddress());
+				holder.setParticipantRole(pr);
+				target.getParticipants().add(holder);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+					(PolicyActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElementTestCase.doValidationTest();
 	}
 
 	/**

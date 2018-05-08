@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2MV_UBSVEeGGzu7fmW9pXw" name="PayersSection">
     <ownedComment xmi:id="_2NICcBSVEeGGzu7fmW9pXw" annotatedElement="_2MV_UBSVEeGGzu7fmW9pXw">
       <body>&lt;p>&#xD;
@@ -960,7 +960,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <reference href="../consol-vocab.uml#_8AS78Y9OEeOB0eBUISUB4Q"/>
     <ruleId>CONF:1098-31973</ruleId>
   </CDA:ValueSetConstraint>
-  <uml:Class xmi:id="_aJr6ULkxEeODDJAC5t5vpw" clientDependency="_wiqHcLkxEeODDJAC5t5vpw" name="CoverageActivity2">
+  <uml:Class xmi:id="_aJr6ULkxEeODDJAC5t5vpw" name="CoverageActivity2">
     <ownedComment xmi:id="_-FQw0LkxEeODDJAC5t5vpw">
       <body>A Coverage Activity groups the policy and authorization acts within a Payers Section to order the payment sources. A Coverage Activity contains one or more Policy Activities, each of which contains zero or more Authorization Activities. The Coverage Activity id is the ID from the patient's insurance card. The sequenceNumber/@value shows the policy order of preference.</body>
     </ownedComment>
@@ -1030,7 +1030,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <ruleId>CONF:1198-8876</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConformsTo xmi:id="_d3rHoLk0EeODDJAC5t5vpw" base_Generalization="_aJr6UbkxEeODDJAC5t5vpw"/>
-  <uml:Class xmi:id="_Q0ODkOwlEeOqa975IP2wug" clientDependency="_of2ycOwlEeOqa975IP2wug" name="PolicyActivity2">
+  <uml:Class xmi:id="_Q0ODkOwlEeOqa975IP2wug" name="PolicyActivity2">
     <ownedComment xmi:id="_eTN_UOwlEeOqa975IP2wug">
       <body>A policy activity represents the policy or program providing the coverage. The person for whom payment is being provided (i.e., the patient) is the covered party. The subscriber of the policy or program is represented as a participant that is the holder of the coverage. The payer is represented as the performer of the policy activity.</body>
     </ownedComment>
@@ -1054,7 +1054,8 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
       <ownedComment xmi:id="_xyfRMMjsEeSUFZXOgtrJuQ">
         <body>This performer represents the Guarantor.</body>
       </ownedComment>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HDEVwewpEeOqa975IP2wug"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rJXvoCyFEeiFfJtNAawVHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rJXIkCyFEeiFfJtNAawVHw" value="*"/>
       <association href="../consol.uml#_HDFj4OwpEeOqa975IP2wug"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_xCE44OwqEeOqa975IP2wug" name="coverage" type="_xzqt4OwqEeOqa975IP2wug" redefinedProperty="_UI0LoF-sEeGt2doqSDULjA">
@@ -1226,7 +1227,7 @@ The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. T
   <uml:Association xmi:id="_9Ttl4PfsEeO297ryy8ptVg" memberEnd="_9TsXwPfsEeO297ryy8ptVg _9TuM8PfsEeO297ryy8ptVg">
     <ownedEnd xmi:id="_9TuM8PfsEeO297ryy8ptVg" type="_aJr6ULkxEeODDJAC5t5vpw" association="_9Ttl4PfsEeO297ryy8ptVg"/>
   </uml:Association>
-  <uml:Class xmi:id="_twgM0P4lEeOzC5ykp-XCaA" clientDependency="_H268EP4mEeOzC5ykp-XCaA" name="PayersSection2">
+  <uml:Class xmi:id="_twgM0P4lEeOzC5ykp-XCaA" name="PayersSection2">
     <ownedComment xmi:id="_1F8wYP4lEeOzC5ykp-XCaA">
       <body>&lt;p>&#xD;
 The Payers Section contains data on the patient's payers, whether &quot;third party&quot; insurance, self-pay, other payer or guarantor, or some combination of payers, and is used to define which entity is the responsible fiduciary for the financial aspects of a patient's care.&#xD;

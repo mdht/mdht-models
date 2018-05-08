@@ -1554,7 +1554,7 @@ For example, a cardiologist may prescribe a patient Warfarin. The patient's prim
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_nv0DUIzzEeOoMZgUoTghIg" name="name" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="consol-documents.uml#_SmlTcJBEEeSSfIVHL_x3Xw"/>
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2nj6sIzzEeOoMZgUoTghIg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2njToIzzEeOoMZgUoTghIg" value="1"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>
@@ -1604,6 +1604,7 @@ For example, a cardiologist may prescribe a patient Warfarin. The patient's prim
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_3HD6IIzzEeOoMZgUoTghIg" message="This playingEntity SHALL contain exactly one [1..1] US Realm Patient Name (PTN.US.FIELDED) (identifier: urn:oid:2.16.840.1.113883.10.20.22.5.1) (CONF:1098-28669)" base_Property="_nv0DUIzzEeOoMZgUoTghIg">
     <ruleId>CONF:1098-28669</ruleId>
+    <ruleId>DSTU:989</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_ZQpEwK-1EeO8duI_7f6kZw" name="AdmissionMedication2">
     <ownedComment xmi:id="_qsCkoK-1EeO8duI_7f6kZw">
@@ -1942,8 +1943,9 @@ This effectiveTime represents either the medication duration (i.e., the time the
     <ruleId>CONF:1098-7507</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_DyKbsOLTEeOc7-TVP7Wi6w" base_Property="__4L5cOLSEeOc7-TVP7Wi6w">
-    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_OeMdYDwXEeiFfJtNAawVHw"/>
     <ruleId>CONF:1098-32360</ruleId>
+    <ruleId>DSTU:1366</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_6PKzw-LYEeOc7-TVP7Wi6w" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_Mj8dAGvSEeaBpo0IxWaF6w"/>
@@ -1970,6 +1972,7 @@ This effectiveTime represents either the medication duration (i.e., the time the
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_GsKcUuXAEeOkFcFJ9uzEEw" message="" base_Constraint="_GsKcUOXAEeOkFcFJ9uzEEw">
     <ruleId>CONF:1098-7508</ruleId>
+    <ruleId>DSTU:1272</ruleId>
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_qH-ckOXfEeOkFcFJ9uzEEw" name="MedicationDispense2">
     <ownedComment xmi:id="_zoMZIOXgEeOkFcFJ9uzEEw">
@@ -2639,8 +2642,9 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_nbj6IMLMEeSqg-Exmsy2kg" severity="WARNING" base_Property="_nbjTEMLMEeSqg-Exmsy2kg"/>
   <CDA:ValueSetConstraint xmi:id="_nbkhMMLMEeSqg-Exmsy2kg" base_Property="_nbjTEMLMEeSqg-Exmsy2kg">
-    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
     <ruleId>CONF:1098-7514</ruleId>
+    <ruleId>DSTU:1276</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_smFv8MNpEeSRNKqIviDQAg" base_Property="_smEh0MNpEeSRNKqIviDQAg">
     <reference href="../consol-vocab.uml#_dy62kMNpEeSRNKqIviDQAg"/>

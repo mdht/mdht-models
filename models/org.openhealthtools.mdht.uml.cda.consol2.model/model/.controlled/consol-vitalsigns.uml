@@ -217,10 +217,10 @@
     <ruleId>CONF:7300</ruleId>
     <ruleId>R2.0=CONF:1098-7300</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2OrhuBSVEeGGzu7fmW9pXw">
+  <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" base_Property="_2OrhuBSVEeGGzu7fmW9pXw" severity="WARNING">
+    <reference href="../consol-vocab.uml#_2O3u9BSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7301</ruleId>
     <ruleId>R2.0=CONF:1098-7301</ruleId>
-    <reference href="../consol-vocab.uml#_2O3u9BSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2OxoURSVEeGGzu7fmW9pXw" base_Property="_2OxoTRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7304</ruleId>
@@ -519,7 +519,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     </ownedAttribute>
     <ownedAttribute xmi:id="_yESK8PV5EeONioZkBKP8eQ" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_2OlbEhSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_JH_-MPV6EeONioZkBKP8eQ">
-        <body>Note: The effectiveTime is an interval that spans the effectiveTimes of the contained vital signs observations.</body>
+        <body>Note: The effectiveTime may be a timestamp or an interval that spans the effectiveTimes of the contained vital signs observations. DSTU:1371</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B0gksE9zEeWsIc5CMrI4GA" value="1"/>
@@ -550,11 +550,14 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_hsMpkPV2EeONioZkBKP8eQ" base_Class="_dDupoPV2EeONioZkBKP8eQ" templateId="2.16.840.1.113883.10.20.22.4.26" templateVersion="2015-08-01">
-    <ruleId>CONF:1198-7281, CONF:1198-10528, CONF:1198-32582</ruleId>
+    <ruleId>CONF:1198-7281</ruleId>
+    <ruleId>CONF:1198-10528</ruleId>
+    <ruleId>CONF:1198-32582</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_tTeOsPV2EeONioZkBKP8eQ" base_Generalization="_dDxF4PV2EeONioZkBKP8eQ"/>
   <CDA:PropertyValidation xmi:id="_yESK8_V5EeONioZkBKP8eQ" base_Property="_yESK8PV5EeONioZkBKP8eQ">
     <ruleId>CONF:1198-7288</ruleId>
+    <ruleId>DSTU:1371</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_cqZm0PV6EeONioZkBKP8eQ" memberEnd="_cqXxoPV6EeONioZkBKP8eQ _cqaN4PV6EeONioZkBKP8eQ">
     <ownedEnd xmi:id="_cqaN4PV6EeONioZkBKP8eQ" type="_dDupoPV2EeONioZkBKP8eQ" association="_cqZm0PV6EeONioZkBKP8eQ"/>
@@ -692,9 +695,10 @@ Vital signs are represented in the same way as other results, but are aggregated
     <ruleId>CONF:1098-7307</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_nkHIoM9CEeSJsu9BbhWxmQ" base_Property="_eEbiIM9CEeSJsu9BbhWxmQ">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_LEfp8JrZEea9R7VeOazsfg"/>
     <ruleId>CONF:1098-32886</ruleId>
     <ruleId>DSTU:1220</ruleId>
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_LEfp8JrZEea9R7VeOazsfg"/>
+    <ruleId>DSTU:814</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_fH50gM9GEeSJsu9BbhWxmQ" base_Property="_2OlbERSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_sClFwM9HEeSJsu9BbhWxmQ" base_Property="_2OlbFhSVEeGGzu7fmW9pXw">

@@ -483,6 +483,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProblemObservation2();
 			case ConsolPackage.PROGNOSIS_OBSERVATION:
 				return createPrognosisObservation();
+			case ConsolPackage.PROBLEM_STATUS2:
+				return createProblemStatus2();
 			case ConsolPackage.WOUND_MEASUREMENT_OBSERVATION:
 				return createWoundMeasurementObservation();
 			case ConsolPackage.WOUND_CHARACTERISTIC:
@@ -513,6 +515,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createSocialHistoryObservation2();
 			case ConsolPackage.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2:
 				return createSubstanceOrDeviceAllergyObservation2();
+			case ConsolPackage.ALLERGY_STATUS_OBSERVATION2:
+				return createAllergyStatusObservation2();
 			case ConsolPackage.TOBACCO_USE2:
 				return createTobaccoUse2();
 			case ConsolPackage.VITAL_SIGN_OBSERVATION2:
@@ -2580,6 +2584,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public ProblemStatus2 createProblemStatus2() {
+		ProblemStatus2Impl problemStatus2 = new ProblemStatus2Impl();
+		return problemStatus2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public ProgressTowardGoalObservation createProgressTowardGoalObservation() {
 		ProgressTowardGoalObservationImpl progressTowardGoalObservation = new ProgressTowardGoalObservationImpl();
@@ -3312,6 +3326,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public SubstanceOrDeviceAllergyObservation2 createSubstanceOrDeviceAllergyObservation2() {
 		SubstanceOrDeviceAllergyObservation2Impl substanceOrDeviceAllergyObservation2 = new SubstanceOrDeviceAllergyObservation2Impl();
 		return substanceOrDeviceAllergyObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllergyStatusObservation2 createAllergyStatusObservation2() {
+		AllergyStatusObservation2Impl allergyStatusObservation2 = new AllergyStatusObservation2Impl();
+		return allergyStatusObservation2;
 	}
 
 	/**
