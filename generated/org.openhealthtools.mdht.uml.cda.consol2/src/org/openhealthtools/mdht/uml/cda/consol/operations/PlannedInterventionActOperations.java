@@ -104,7 +104,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedSupply2s() <em>Get Planned Supply2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getNutritionRecommendations() <em>Get Nutrition Recommendations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getEntryReferenceDocInstances() <em>Get Entry Reference Doc Instances</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getEntryReferenceGoalObs() <em>Get Entry Reference Goal Obs</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getEntryReferenceGoalObss() <em>Get Entry Reference Goal Obss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getHandoffCommunicationParticipantss() <em>Get Handoff Communication Participantss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedImmunizationActivities() <em>Get Planned Immunization Activities</em>}</li>
  * </ul>
@@ -2080,7 +2080,7 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)";
+	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedInterventionActEntryReferenceGoalObs(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Reference Goal Obs</em>}' invariant operation.
@@ -3348,24 +3348,24 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getEntryReferenceGoalObs(PlannedInterventionAct) <em>Get Entry Reference Goal Obs</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getEntryReferenceGoalObss(PlannedInterventionAct) <em>Get Entry Reference Goal Obss</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEntryReferenceGoalObs(PlannedInterventionAct)
+	 * @see #getEntryReferenceGoalObss(PlannedInterventionAct)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENTRY_REFERENCE_GOAL_OBS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference))->asSequence()->any(true).oclAsType(consol::EntryReference)";
+	protected static final String GET_ENTRY_REFERENCE_GOAL_OBSS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)";
 
 	/**
-	 * The cached OCL query for the '{@link #getEntryReferenceGoalObs(PlannedInterventionAct) <em>Get Entry Reference Goal Obs</em>}' query operation.
+	 * The cached OCL query for the '{@link #getEntryReferenceGoalObss(PlannedInterventionAct) <em>Get Entry Reference Goal Obss</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEntryReferenceGoalObs(PlannedInterventionAct)
+	 * @see #getEntryReferenceGoalObss(PlannedInterventionAct)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ENTRY_REFERENCE_GOAL_OBS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_ENTRY_REFERENCE_GOAL_OBSS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3373,23 +3373,25 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 */
 
-	public static EntryReference getEntryReferenceGoalObs(PlannedInterventionAct plannedInterventionAct) {
+	public static EList<EntryReference> getEntryReferenceGoalObss(PlannedInterventionAct plannedInterventionAct) {
 
-		if (GET_ENTRY_REFERENCE_GOAL_OBS__EOCL_QRY == null) {
+		if (GET_ENTRY_REFERENCE_GOAL_OBSS__EOCL_QRY == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(104));
 			try {
-				GET_ENTRY_REFERENCE_GOAL_OBS__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_GOAL_OBS__EOCL_EXP);
+				GET_ENTRY_REFERENCE_GOAL_OBSS__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_GOAL_OBSS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
-		OCL.Query query = EOCL_ENV.get().createQuery(GET_ENTRY_REFERENCE_GOAL_OBS__EOCL_QRY);
-		return (EntryReference) query.evaluate(plannedInterventionAct);
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_ENTRY_REFERENCE_GOAL_OBSS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(plannedInterventionAct);
+		return new BasicEList.UnmodifiableEList<EntryReference>(result.size(), result.toArray());
 	}
 
 	/**

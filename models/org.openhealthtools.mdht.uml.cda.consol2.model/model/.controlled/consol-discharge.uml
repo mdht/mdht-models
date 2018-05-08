@@ -594,9 +594,9 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
     <ruleId>CONF:1098-31674</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_LTXdkI0DEeOoMZgUoTghIg" severity="WARNING" base_Property="_Hog8cI0DEeOoMZgUoTghIg"/>
-  <CDA:ValueSetConstraint xmi:id="_ShwW4I0DEeOoMZgUoTghIg" severity="WARNING" base_Property="_Hog8cI0DEeOoMZgUoTghIg">
-    <ruleId>CONF:1098-31676</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_ShwW4I0DEeOoMZgUoTghIg" base_Property="_Hog8cI0DEeOoMZgUoTghIg" severity="WARNING">
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:1098-31676</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_ihaWkI55EeOB0eBUISUB4Q" name="OutcomeObservation">
     <ownedComment xmi:id="_nN3oMI6FEeOB0eBUISUB4Q">
@@ -917,7 +917,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_jfuGYPytEeOmn53IDV99zw" name="DischargeDiagnosisSection2">
     <ownedComment xmi:id="_CsRpAPyuEeOmn53IDV99zw">
-      <body>This template represents problems or diagnoses present at the time of discharge which occurred during the hospitalization or need to be monitored after hospitalization. This section includes an optional entry to record patient conditions.</body>
+      <body>&lt;p>This template represents problems or diagnoses present at the time of discharge which occurred during the hospitalization. This section includes an optional entry to record patient diagnoses specific to this visit. Problems that need ongoing tracking should also be included in the Problem Section. DSTU:1238&lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_jfv7kPytEeOmn53IDV99zw" general="_2PidURSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_KptZoPyuEeOmn53IDV99zw" name="HospitalDischargeDiagnosisSection" client="_jfuGYPytEeOmn53IDV99zw" supplier="_2PidURSVEeGGzu7fmW9pXw" contract="_2PidURSVEeGGzu7fmW9pXw"/>

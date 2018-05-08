@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2SC-sBSVEeGGzu7fmW9pXw" name="FamilyHistoryDeathObservation">
     <ownedComment xmi:id="_fqbbcCHkEeGFLIX-2_sWzA">
       <body>This clinical statement records whether the family member is deceased</body>
@@ -367,7 +367,9 @@
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_-8ThsNc4EeGfQ6frO0B-Jg" base_Property="_6_OoINc4EeGfQ6frO0B-Jg" severity="WARNING">
     <reference href="../consol-vocab.uml#_bkwYcW1EEeGCevFpokwODw"/>
-    <ruleId>CONF:15247, R2.1=CONF:1198-15247</ruleId>
+    <ruleId>CONF:15247</ruleId>
+    <ruleId>R2.1=CONF:1198-15247</ruleId>
+    <ruleId>DSTU:915</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_CY-c4Nc5EeGfQ6frO0B-Jg" base_Property="_6_OoINc4EeGfQ6frO0B-Jg">
     <ruleId>CONF:15246, R2.1=CONF:1198-15246</ruleId>
@@ -400,7 +402,7 @@
   <CDA:PropertyValidation xmi:id="_W_-YIGRSEeOD5bEp3nNX5w" base_Property="_8y9tUCHjEeGFLIX-2_sWzA">
     <ruleId>CONF:8626</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_YvV88IV5EeSRBMdZotACQg" clientDependency="_fqdfgIV6EeSRBMdZotACQg" name="FamilyHistoryObservation2">
+  <uml:Class xmi:id="_YvV88IV5EeSRBMdZotACQg" name="FamilyHistoryObservation2">
     <ownedComment xmi:id="_Kb53EIV6EeSRBMdZotACQg">
       <body>Family History Observations related to a particular family member are contained within a Family History Organizer. The effectiveTime in the Family History Observation is the biologically or clinically relevant time of the observation. The biologically or clinically relevant time is the time at which the observation holds (is effective) for the family member (the subject of the observation).</body>
     </ownedComment>
@@ -434,7 +436,7 @@
   <CDA:PropertyValidation xmi:id="_CJtXUIY-EeS7A_69H25Pzw" base_Property="_2IuDkBSVEeGGzu7fmW9pXw">
     <ruleId>R2.1=CONF:1198-8590</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_6whQEIbpEeSxzopshBnQuw" clientDependency="_9xVDsIevEeSBauRYePLghA" name="FamilyHistoryOrganizer2">
+  <uml:Class xmi:id="_6whQEIbpEeSxzopshBnQuw" name="FamilyHistoryOrganizer2">
     <ownedComment xmi:id="_2ylZ4Ib0EeSxzopshBnQuw">
       <body>The Family History Organizer associates a set of observations with a family member. For example, the Family History Organizer can group a set of observations about the patient's father.</body>
     </ownedComment>
@@ -470,7 +472,7 @@
   <CDA:AssociationValidation xmi:id="_V9PXsIb4EeSxzopshBnQuw" base_Association="_ULPOkIb4EeSxzopshBnQuw">
     <ruleId>CONF:1198-32428, CONF:1198-32429</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_NGivoIevEeSBauRYePLghA" clientDependency="_vQOKsIevEeSBauRYePLghA" name="FamilyHistorySection2">
+  <uml:Class xmi:id="_NGivoIevEeSBauRYePLghA" name="FamilyHistorySection2">
     <ownedComment xmi:id="_q8o1oIevEeSBauRYePLghA">
       <body>This section contains data defining the patient's genetic relatives in terms of possible or relevant health risk factors that have a potential impact on the patient's healthcare risk profile.</body>
     </ownedComment>

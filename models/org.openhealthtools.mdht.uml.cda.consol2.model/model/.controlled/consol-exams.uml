@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2Pxt6xSVEeGGzu7fmW9pXw" name="GeneralStatusSection">
     <ownedComment xmi:id="_2Pxt7BSVEeGGzu7fmW9pXw" annotatedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
       <body>The General Status section describes general observations and readily observable attributes of the patient, including affect and demeanor, apparent age compared to actual age, gender, ethnicity, nutritional status based on appearance, body build and habitus (e.g., muscular, cachectic, obese), developmental or other deformities, gait and mobility, personal hygiene, evidence of distress, and voice quality and speech.</body>
@@ -435,6 +435,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
   <CDA:ValueSetConstraint xmi:id="_E1sVYJp-EeOK6dzbL4VoTA" base_Property="_Bs8GoZp8EeOK6dzbL4VoTA">
     <reference href="../consol-vocab.uml#_gEooYZp9EeOK6dzbL4VoTA"/>
     <ruleId>CONF:1098-29931</ruleId>
+    <ruleId>DSTU:814</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_PIuEYJp-EeOK6dzbL4VoTA" code="completed" displayName="Completed" base_Property="_Bs8tsZp8EeOK6dzbL4VoTA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -576,7 +577,6 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <reference href="../consol-vocab.uml#_1Vl9MZqAEeOK6dzbL4VoTA"/>
     <ruleId>CONF:1198-29485</ruleId>
   </CDA:ValueSetConstraint>
-  
   <uml:Association xmi:id="_YQqmsJqGEeOK6dzbL4VoTA" memberEnd="_YQpYkJqGEeOK6dzbL4VoTA _YQqmsZqGEeOK6dzbL4VoTA">
     <ownedEnd xmi:id="_YQqmsZqGEeOK6dzbL4VoTA" type="_09uFMJp_EeOK6dzbL4VoTA" association="_YQqmsJqGEeOK6dzbL4VoTA"/>
   </uml:Association>
@@ -659,7 +659,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
   <CDA:AssociationValidation xmi:id="_cpIJ8K75EeORf5eJaKt1KQ" severity="WARNING" base_Association="_b7XsEK75EeORf5eJaKt1KQ">
     <ruleId>CONF:1198-31542</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_-nZiYP4uEeObaveuCI77uA" clientDependency="_Ug1T0P4vEeObaveuCI77uA" name="PhysicalExamSection2">
+  <uml:Class xmi:id="_-nZiYP4uEeObaveuCI77uA" name="PhysicalExamSection2">
     <ownedComment xmi:id="_ITYfgP4vEeObaveuCI77uA">
       <body>&lt;p>&#xD;
 The section includes direct observations made by a clinician. The examination may include the use of simple instruments and may also describe simple maneuvers performed directly on the patient's body.&#xD;
@@ -782,7 +782,7 @@ The Physical Exam Section may contain multiple nested subsections.&#xD;
   <CDA:ConstraintValidation xmi:id="_bC9MED6xEeSQrqXAgqtM5g" severity="WARNING" base_Constraint="_aAebYD6xEeSQrqXAgqtM5g">
     <ruleId>CONF:1198-29494</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_YYgjwIC3EeS108flGLVEBA" clientDependency="_jv8goIC4EeS108flGLVEBA" name="NumberOfPressureUlcersObservation2">
+  <uml:Class xmi:id="_YYgjwIC3EeS108flGLVEBA" name="NumberOfPressureUlcersObservation2">
     <ownedComment xmi:id="_awOMkIC4EeS108flGLVEBA">
       <body>This template represents the number of pressure ulcers observed at a particular stage.</body>
     </ownedComment>
@@ -903,9 +903,10 @@ The Physical Exam Section may contain multiple nested subsections.&#xD;
   <CDA:PropertyValidation xmi:id="_Zd4PgKZKEeSy2PrVxD6riw" base_Property="_VSB6I6ZKEeSy2PrVxD6riw">
     <ruleId>CONF:1198-32438</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_mQC6cKZKEeSy2PrVxD6riw" base_Property="_VSB6IKZKEeSy2PrVxD6riw">
+  <CDA:ValueSetConstraint xmi:id="_mQC6cKZKEeSy2PrVxD6riw" base_Property="_VSB6IKZKEeSy2PrVxD6riw" severity="WARNING">
     <reference href="../consol-vocab.uml#_3uYZkKZKEeSy2PrVxD6riw"/>
     <ruleId>CONF:1198-32436</ruleId>
+    <ruleId>DSTU:861</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_UOFesE9gEeWsIc5CMrI4GA" base_Property="_KuxroE9gEeWsIc5CMrI4GA">
     <ruleId>CONF:1198-32849</ruleId>

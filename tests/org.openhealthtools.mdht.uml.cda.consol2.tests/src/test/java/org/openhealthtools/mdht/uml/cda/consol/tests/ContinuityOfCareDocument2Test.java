@@ -873,18 +873,51 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			// Operation: assingedPerson || (assignedAuthoringDevice && representedOrganization)
+			// CC name stayed as hasAssignedPersonOrRepresentedOrganization because it has to override the R1.1 version since this is R2.1 errata
+			// (849) not R1.1.
+			// R1.1 keeps whatever operation it had/the IG says.
+
 			@Override
 			public void addFailTests() {
 
 				addFailTest(new FailTest() {
 					@Override
 					public void updateToFail(ContinuityOfCareDocument2 target) {
-						// Contains an assignedAuthor which does not contain
-						// an assignedPerson element or a representedOrganization element
+						// Contains an assignedAuthor only
 						target.init();
 						Author author = CDAFactory.eINSTANCE.createAuthor();
 						author.setTime(DatatypesFactory.eINSTANCE.createTS());
 						AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+						author.setAssignedAuthor(aa);
+						target.getAuthors().add(author);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// Contains a representedOrganization only
+						target.init();
+						Author author = CDAFactory.eINSTANCE.createAuthor();
+						author.setTime(DatatypesFactory.eINSTANCE.createTS());
+						AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+						Organization org = CDAFactory.eINSTANCE.createOrganization();
+						aa.setRepresentedOrganization(org);
+						author.setAssignedAuthor(aa);
+						target.getAuthors().add(author);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// Contains a assignedAuthoringDevice only
+						target.init();
+						Author author = CDAFactory.eINSTANCE.createAuthor();
+						author.setTime(DatatypesFactory.eINSTANCE.createTS());
+						AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+						aa.setAssignedAuthoringDevice(CDAFactory.eINSTANCE.createAuthoringDevice());
 						author.setAssignedAuthor(aa);
 						target.getAuthors().add(author);
 					}
@@ -915,7 +948,7 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 				addPassTest(new PassTest() {
 					@Override
 					public void updateToPass(ContinuityOfCareDocument2 target) {
-						// assignedPerson element only
+						// assignedPerson element
 						target.getAuthors().clear();
 						target.init();
 						Author author = CDAFactory.eINSTANCE.createAuthor();
@@ -931,7 +964,7 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 				addPassTest(new PassTest() {
 					@Override
 					public void updateToPass(ContinuityOfCareDocument2 target) {
-						// representedOrganization element only
+						// representedOrganization and assignedPerson
 						target.getAuthors().clear();
 						target.init();
 						Author author = CDAFactory.eINSTANCE.createAuthor();
@@ -939,6 +972,22 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 						AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
 						Person person = CDAFactory.eINSTANCE.createPerson();
 						aa.setAssignedPerson(person);
+						author.setAssignedAuthor(aa);
+						target.getAuthors().add(author);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// assignedAuthoringDevice && representedOrganization (no assignedPeson)
+						target.getAuthors().clear();
+						target.init();
+						Author author = CDAFactory.eINSTANCE.createAuthor();
+						author.setTime(DatatypesFactory.eINSTANCE.createTS());
+						AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+						aa.setAssignedAuthoringDevice(CDAFactory.eINSTANCE.createAuthoringDevice());
+						aa.setRepresentedOrganization(CDAFactory.eINSTANCE.createOrganization());
 						author.setAssignedAuthor(aa);
 						target.getAuthors().add(author);
 					}

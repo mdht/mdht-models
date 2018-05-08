@@ -4203,6 +4203,29 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.PROBLEM_STATUS2: {
+				ProblemStatus2 problemStatus2 = (ProblemStatus2) theEObject;
+				T result = caseProblemStatus2(problemStatus2);
+				if (result == null) {
+					result = caseProblemStatus(problemStatus2);
+				}
+				if (result == null) {
+					result = caseObservation(problemStatus2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemStatus2);
+				}
+				if (result == null) {
+					result = caseAct(problemStatus2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemStatus2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.WOUND_MEASUREMENT_OBSERVATION: {
 				WoundMeasurementObservation woundMeasurementObservation = (WoundMeasurementObservation) theEObject;
 				T result = caseWoundMeasurementObservation(woundMeasurementObservation);
@@ -4542,6 +4565,29 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(substanceOrDeviceAllergyObservation2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ALLERGY_STATUS_OBSERVATION2: {
+				AllergyStatusObservation2 allergyStatusObservation2 = (AllergyStatusObservation2) theEObject;
+				T result = caseAllergyStatusObservation2(allergyStatusObservation2);
+				if (result == null) {
+					result = caseAllergyStatusObservation(allergyStatusObservation2);
+				}
+				if (result == null) {
+					result = caseObservation(allergyStatusObservation2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(allergyStatusObservation2);
+				}
+				if (result == null) {
+					result = caseAct(allergyStatusObservation2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(allergyStatusObservation2);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -9383,6 +9429,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Problem Status2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Problem Status2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProblemStatus2(ProblemStatus2 object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Progress Toward Goal Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -10399,6 +10460,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseSubstanceOrDeviceAllergyObservation2(SubstanceOrDeviceAllergyObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Allergy Status Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Allergy Status Observation2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAllergyStatusObservation2(AllergyStatusObservation2 object) {
 		return null;
 	}
 

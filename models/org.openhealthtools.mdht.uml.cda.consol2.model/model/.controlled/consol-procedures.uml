@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2OAzQRSVEeGGzu7fmW9pXw" name="ProceduresSection">
     <ownedComment xmi:id="_2OfUahSVEeGGzu7fmW9pXw" annotatedElement="_2OAzQRSVEeGGzu7fmW9pXw">
       <body>This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).&#xD;
@@ -163,7 +163,7 @@ This clinical statement represents procedures that result in new information abo
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_p26x8RxwEeGXP8PxDYviDg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: HL7ParticipationType urn:oid:2.16.840.1.113883.5.90) STATIC</body>
         <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)</body>
       </specification>
     </ownedRule>
@@ -441,7 +441,7 @@ This clinical statement represents any procedure that cannot be classified as an
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_C9KP4RxsEeGXP8PxDYviDg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: HL7ParticipationType urn:oid:2.16.840.1.113883.5.90) STATIC</body>
         <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)</body>
       </specification>
     </ownedRule>
@@ -734,7 +734,7 @@ This clinical statement represents procedures whose immediate and primary outcom
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Pf0kYBxaEeGXP8PxDYviDg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>participant with target entry Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>participant with target entry Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC</body>
         <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)</body>
       </specification>
     </ownedRule>
@@ -1204,6 +1204,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_IVsa0BxsEeGXP8PxDYviDg" base_Constraint="_C9KP4BxsEeGXP8PxDYviDg">
     <ruleId>CONF:8312</ruleId>
     <ruleId>R2.0=CONF:1098-8312</ruleId>
+    <ruleId>DSTU:1239</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_7D4KABxsEeGXP8PxDYviDg" base_Constraint="_5r5qcBxsEeGXP8PxDYviDg">
     <ruleId>CONF:7777</ruleId>
@@ -1276,6 +1277,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_tPtSsBxwEeGXP8PxDYviDg" base_Constraint="_p26x8BxwEeGXP8PxDYviDg">
     <ruleId>CONF:8262</ruleId>
     <ruleId>R2.0=CONF:1098-8262</ruleId>
+    <ruleId>DSTU:1239</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_toQ8oBxwEeGXP8PxDYviDg" base_Constraint="_rOfo4BxwEeGXP8PxDYviDg">
     <ruleId>CONF:8274</ruleId>
@@ -2482,7 +2484,7 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:7736</ruleId>
     <ruleId>R2.0=CONF:1098-7736</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="__SgUwOwuEeOqa975IP2wug" clientDependency="_Yau9cOwvEeOqa975IP2wug" name="PostprocedureDiagnosis2">
+  <uml:Class xmi:id="__SgUwOwuEeOqa975IP2wug" name="PostprocedureDiagnosis2">
     <ownedComment xmi:id="_Lz0gQOwvEeOqa975IP2wug">
       <body>This template represents the diagnosis or diagnoses discovered or confirmed during the procedure. They may be the same as preprocedure diagnoses or indications.</body>
     </ownedComment>
@@ -2508,7 +2510,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="_QAn-AOzWEeOnE-G4kptBiw" base_Property="_O-pjoOzWEeOnE-G4kptBiw">
     <ruleId>CONF:1198-19151</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_5l3g0OzYEeOnE-G4kptBiw" clientDependency="_GMiQ8OzaEeOnE-G4kptBiw" name="PreoperativeDiagnosis2">
+  <uml:Class xmi:id="_5l3g0OzYEeOnE-G4kptBiw" name="PreoperativeDiagnosis2">
     <ownedComment xmi:id="_JXHzEOzZEeOnE-G4kptBiw">
       <body>This template represents the surgical diagnosis or diagnoses assigned to the patient before the surgical procedure and is the reason for the surgery. The preoperative diagnosis is, in the opinion of the surgeon, the diagnosis that will be confirmed during surgery.</body>
     </ownedComment>
@@ -2559,7 +2561,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="_vJegwO2kEeOchpob7ipcww" base_Property="_g1PmIO2kEeOchpob7ipcww">
     <ruleId>CONF:8309</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_CFMuYPDbEeOKPKE9au0oug" clientDependency="_XEa6UPDbEeOKPKE9au0oug" name="ProcedureActivityAct2">
+  <uml:Class xmi:id="_CFMuYPDbEeOKPKE9au0oug" name="ProcedureActivityAct2">
     <ownedComment xmi:id="_NivvwPDbEeOKPKE9au0oug">
       <body>This template represents any act that cannot be classified as an observation or procedure according to the HL7 RIM. Examples of these acts are a dressing change, teaching or feeding a patient, or providing comfort measures. &#xD;
 The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g., splenectomy).</body>
@@ -2692,7 +2694,7 @@ The common notion of &quot;procedure&quot; is broader than that specified by the
     <ruleId>CONF:1098-8330</ruleId>
     <ruleId>CONF:1098-15602</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_QoLWAPDjEeOKPKE9au0oug" clientDependency="_0EhS0PDjEeOKPKE9au0oug" name="ProcedureActivityObservation2">
+  <uml:Class xmi:id="_QoLWAPDjEeOKPKE9au0oug" name="ProcedureActivityObservation2">
     <ownedComment xmi:id="_bm2DAPDjEeOKPKE9au0oug">
       <body>The common notion of procedure is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g., splenectomy). &#xD;
 This template represents procedures that result in new information about the patient that cannot be classified as a procedure according to the HL7 RIM. Examples of these procedures are diagnostic imaging procedures, EEGs, and EKGs.</body>
@@ -2847,7 +2849,7 @@ This template represents procedures that result in new information about the pat
   <CDA:ConstraintValidation xmi:id="_GUbcAPDoEeOKPKE9au0oug" base_Constraint="_GUa08PDoEeOKPKE9au0oug">
     <ruleId>CONF:1098-8274</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_fCVOQPDqEeOKPKE9au0oug" clientDependency="_1Ji9APDqEeOKPKE9au0oug" name="ProcedureActivityProcedure2">
+  <uml:Class xmi:id="_fCVOQPDqEeOKPKE9au0oug" name="ProcedureActivityProcedure2">
     <ownedComment xmi:id="_mlXh4PDqEeOKPKE9au0oug">
       <body>The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g., splenectomy). &#xD;
 This template represents procedures whose immediate and primary outcome (post-condition) is the alteration of the physical condition of the patient. Examples of these procedures are an appendectomy, hip replacement, and a creation of a gastrostomy.????&#xD;
@@ -2934,8 +2936,8 @@ This template can be used with a contained Product Instance template to represen
     </ownedAttribute>
     <ownedAttribute xmi:id="_mdScwMzMEeSLqosJ4F90vA" name="authorParticipation" association="_mdU5AMzMEeSLqosJ4F90vA">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o_svIMzMEeSLqosJ4F90vA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o_sIEMzMEeSLqosJ4F90vA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ee6dcS34EeiFfJtNAawVHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ee6dcC34EeiFfJtNAawVHw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FfLVkMzPEeSLqosJ4F90vA" name="reactionObservation2" association="_FfMjsMzPEeSLqosJ4F90vA">
       <type xmi:type="uml:Class" href="consol-allergies.uml#_U3yosPDxEeOKPKE9au0oug"/>
@@ -3037,7 +3039,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:EntryRelationship xmi:id="_9ODu8PieEeOXlK95I8tUew" base_Association="_3HIM8PieEeOXlK95I8tUew" typeCode="SUBJ">
     <ruleId>CONF:1198-10093, CONF:1198-10094, CONF:1198-15605</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_aetyEPu_EeOyiMEKhdqMGA" clientDependency="_6Mw4MPu_EeOyiMEKhdqMGA" name="AnesthesiaSection2">
+  <uml:Class xmi:id="_aetyEPu_EeOyiMEKhdqMGA" name="AnesthesiaSection2">
     <ownedComment xmi:id="_n-ZDQPu_EeOyiMEKhdqMGA">
       <body>The Anesthesia Section records the type of anesthesia (e.g., general or local) and may state the actual agent used. This may be a subsection of the Procedure Description Section. The full details of anesthesia are usually found in a separate Anesthesia Note.</body>
     </ownedComment>
@@ -3086,7 +3088,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:PropertyValidation xmi:id="_PyDgcPvSEeOyiMEKhdqMGA" base_Property="_PyCSUPvSEeOyiMEKhdqMGA">
     <ruleId>CONF:1098-15351</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_6M-msPvXEeOes-3T-2HryA" clientDependency="_zLsf0PvYEeOes-3T-2HryA" name="ComplicationsSection2">
+  <uml:Class xmi:id="_6M-msPvXEeOes-3T-2HryA" name="ComplicationsSection2">
     <ownedComment xmi:id="_Ol6OsPvYEeOes-3T-2HryA">
       <body>This section contains problems that occurred during or around the time of a procedure. The complications may be known risks or unanticipated problems.</body>
     </ownedComment>
@@ -3129,12 +3131,14 @@ This template can be used with a contained Product Instance template to represen
   </CDA:AssociationValidation>
   <CDA:CodeSystemConstraint xmi:id="_iqwnoPvZEeOes-3T-2HryA" code="55109-3" displayName="Complications" base_Property="_iqwAkPvZEeOes-3T-2HryA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1198-15454, CONF:1198-30860</ruleId>
+    <ruleId>CONF:1198-15454</ruleId>
+    <ruleId>CONF:1198-30860</ruleId>
+    <ruleId>DSTU:1029</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_iqyc0PvZEeOes-3T-2HryA" base_Property="_iqwAkPvZEeOes-3T-2HryA">
     <ruleId>CONF:1198-15453</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_dz0ZwP49EeO_F_2qLv6FWQ" clientDependency="_nL_qEP49EeO_F_2qLv6FWQ" name="PlannedProcedureSection2">
+  <uml:Class xmi:id="_dz0ZwP49EeO_F_2qLv6FWQ" name="PlannedProcedureSection2">
     <ownedComment xmi:id="_qFPvIP49EeO_F_2qLv6FWQ">
       <body>This section contains the procedure(s) that a clinician planned based on the preoperative assessment.</body>
     </ownedComment>
@@ -3172,7 +3176,7 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-8744</ruleId>
     <ruleId>CONF:1098-15502</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_MLNngP5BEeOmw9RN80Tpig" clientDependency="_78uxQP5BEeOmw9RN80Tpig" name="PostprocedureDiagnosisSection2">
+  <uml:Class xmi:id="_MLNngP5BEeOmw9RN80Tpig" name="PostprocedureDiagnosisSection2">
     <ownedComment xmi:id="_r8KQoP5BEeOmw9RN80Tpig">
       <body>The Postprocedure Diagnosis Section records the diagnosis or diagnoses discovered or confirmed during the procedure. Often it is the same as the preprocedure diagnosis or indication.</body>
     </ownedComment>
@@ -3205,7 +3209,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:AssociationValidation xmi:id="_1TwcsP5CEeOmw9RN80Tpig" severity="WARNING" base_Association="_zMcK4P5CEeOmw9RN80Tpig">
     <ruleId>CONF:1198-8762, CONF:1198-15503</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_JFd3MP5EEeOBnLkJOVC8NQ" clientDependency="_UH8GIP5EEeOBnLkJOVC8NQ" name="PreoperativeDiagnosisSection2">
+  <uml:Class xmi:id="_JFd3MP5EEeOBnLkJOVC8NQ" name="PreoperativeDiagnosisSection2">
     <ownedComment xmi:id="_OTT1EP5EEeOBnLkJOVC8NQ">
       <body>The Preoperative Diagnosis Section records the surgical diagnoses assigned to the patient before the surgical procedure which are the reason for the surgery. The preoperative diagnosis is, in the surgeon's opinion, the diagnosis that will be confirmed during surgery.</body>
     </ownedComment>
@@ -3238,7 +3242,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:AssociationValidation xmi:id="_uLQeEP5EEeOBnLkJOVC8NQ" severity="WARNING" base_Association="_tinwwP5EEeOBnLkJOVC8NQ">
     <ruleId>CONF:1198-10096, CONF:1198-15504</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_lLOykP5FEeO_r7yO9mhwnA" clientDependency="_xzFD4P5FEeO_r7yO9mhwnA" name="ProcedureFindingsSection2">
+  <uml:Class xmi:id="_lLOykP5FEeO_r7yO9mhwnA" name="ProcedureFindingsSection2">
     <ownedComment xmi:id="_vk8YYP5FEeO_r7yO9mhwnA">
       <body>The Procedure Findings Section records clinically significant observations confirmed or discovered during a procedure or surgery.</body>
     </ownedComment>
@@ -3272,7 +3276,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:AssociationValidation xmi:id="_k9tegP5GEeO_r7yO9mhwnA" severity="INFO" base_Association="_j_5LYP5GEeO_r7yO9mhwnA">
     <ruleId>CONF:1198-8090, CONF:1198-15507</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_5_O94AByEeSjnfOPJpFg3A" clientDependency="_JROhQABzEeSjnfOPJpFg3A" name="ProcedureIndicationsSection2">
+  <uml:Class xmi:id="_5_O94AByEeSjnfOPJpFg3A" name="ProcedureIndicationsSection2">
     <ownedComment xmi:id="_EH_WkABzEeSjnfOPJpFg3A">
       <body>This section contains the reason(s) for the procedure or surgery. This section may include the preprocedure diagnoses as well as symptoms contributing to the reason for the procedure.</body>
     </ownedComment>
@@ -3310,7 +3314,7 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-8743</ruleId>
     <ruleId>CONF:1098-15508</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_80dMoAB0EeSLOb2O6vSPzg" clientDependency="_f0SMkAB1EeSLOb2O6vSPzg" name="ProceduresSectionEntriesOptional2">
+  <uml:Class xmi:id="_80dMoAB0EeSLOb2O6vSPzg" name="ProceduresSectionEntriesOptional2">
     <ownedComment xmi:id="_IbycIAB1EeSLOb2O6vSPzg">
       <body>This section describes all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section should include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM), therefore this section contains procedure templates represented with three RIM classes: Act, Observation, and Procedure. Procedure Activity Procedure (V2) is for procedures that alter the physical condition of a patient (e.g., splenectomy). Procedure Activity Observation (V2) is for procedures that result in new information about a patient but do not cause physical alteration (e.g., EEG). Procedure Activity Act (V2) is for all other types of procedures (e.g., dressing change).</body>
     </ownedComment>
@@ -3367,7 +3371,7 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-8533</ruleId>
     <ruleId>CONF:1098-15511</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_N6wUUALoEeSBA9s7kRnaEg" clientDependency="_ZybF4ALoEeSBA9s7kRnaEg" name="ProceduresSection2">
+  <uml:Class xmi:id="_N6wUUALoEeSBA9s7kRnaEg" name="ProceduresSection2">
     <ownedComment xmi:id="_S_JbQALoEeSBA9s7kRnaEg">
       <body>This section describes all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section should include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM), therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures that alter the physical condition of a patient (e.g., splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (e.g., EEG). Act is for all other types of procedures (e.g., dressing change).</body>
     </ownedComment>
@@ -3602,6 +3606,7 @@ This template can be used with a contained Product Instance template to represen
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_nfCNoMzMEeSLqosJ4F90vA" severity="WARNING" base_Association="_mdU5AMzMEeSLqosJ4F90vA">
     <ruleId>CONF:1098-32479</ruleId>
+    <ruleId>DSTU:1383</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_VIxWEszOEeSLqosJ4F90vA" base_Constraint="_VIxWEMzOEeSLqosJ4F90vA">
     <ruleId>CONF:1098-7766</ruleId>

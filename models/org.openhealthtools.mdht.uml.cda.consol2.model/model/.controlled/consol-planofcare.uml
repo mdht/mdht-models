@@ -307,33 +307,33 @@
     <ruleId>CONF:8580</ruleId>
     <ruleId>R2.0=CONF:1098-8580</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_A9gyYCoMEeGHF88-qhhUMA" message="" base_Property="_2NWE8hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8539</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_A9gyYCoMEeGHF88-qhhUMA" base_Property="_2NWE8hSVEeGGzu7fmW9pXw" message="">
     <reference href="../consol-vocab.uml#_mYW9kG1HEeGCevFpokwODw"/>
+    <ruleId>CONF:8539</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__Lp9wCoMEeGHF88-qhhUMA">
     <ruleId>CONF:8564</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_F5fHsCoNEeGHF88-qhhUMA" identifier="2.16.840.1.113883.5.6" displayName="ENC"/>
   <CDA:ValueSetConstraint xmi:id="_2UU7QCoNEeGHF88-qhhUMA" base_Property="_2NWFDxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8565</ruleId>
     <reference href="../consol-vocab.uml#_mYW9kG1HEeGCevFpokwODw"/>
+    <ruleId>CONF:8565</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_rHQT8CoPEeGHF88-qhhUMA" base_Property="_2NcLmRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8582</ruleId>
     <reference href="../consol-vocab.uml#_rCM2gG1HEeGCevFpokwODw"/>
+    <ruleId>CONF:8582</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_Mzl2QCoREeGHF88-qhhUMA" base_Property="_2NiSNRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8569</ruleId>
     <reference href="../consol-vocab.uml#_mYW9kG1HEeGCevFpokwODw"/>
+    <ruleId>CONF:8569</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_9ZB60CoSEeGHF88-qhhUMA" base_Property="_2NoYzhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8573</ruleId>
     <reference href="../consol-vocab.uml#_u3o3AG1HEeGCevFpokwODw"/>
+    <ruleId>CONF:8573</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_cICwYCoUEeGHF88-qhhUMA" base_Property="_2NoY7xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8578</ruleId>
     <reference href="../consol-vocab.uml#_u3o3AG1HEeGCevFpokwODw"/>
+    <ruleId>CONF:8578</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_qSkasHkLEeGsJLFJFRpA9A" base_Property="_2NWE-RSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8538</ruleId>
@@ -452,13 +452,13 @@
     <reference href="pathmap://TERM_MODEL/CodeSystems.umlCodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31698</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_SUujQI3OEeOB0eBUISUB4Q" severity="WARNING" base_Property="_KJ-ecI3FEeOB0eBUISUB4Q">
-    <ruleId>CONF:1098-30342</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_SUujQI3OEeOB0eBUISUB4Q" base_Property="_KJ-ecI3FEeOB0eBUISUB4Q" severity="WARNING">
     <reference href="../consol-vocab.uml#_X9w6QY3MEeOB0eBUISUB4Q"/>
+    <ruleId>CONF:1098-30342</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_3-nDwI3QEeOB0eBUISUB4Q" base_Property="_KJ-edI3FEeOB0eBUISUB4Q">
-    <ruleId>CONF:1098-30386</ruleId>
     <reference href="../consol-vocab.uml#_kX95d_8pEeS4jrgU1p4iug"/>
+    <ruleId>CONF:1098-30386</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_50a2UI62EeOB0eBUISUB4Q" name="PatientReferralAct">
     <ownedComment xmi:id="_HHU20I63EeOB0eBUISUB4Q">
@@ -642,8 +642,8 @@
     <ruleId>CONF:1098-31598</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_wjuNYI6-EeOB0eBUISUB4Q" base_Property="_Bz4nQY63EeOB0eBUISUB4Q">
-    <ruleId>CONF:1098-30889</ruleId>
     <reference href="../consol-vocab.uml#_L1n8gY64EeOB0eBUISUB4Q"/>
+    <ruleId>CONF:1098-30889</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_onUlQI7DEeOB0eBUISUB4Q" base_Property="_jmOC4I7DEeOB0eBUISUB4Q">
     <ruleId>CONF:1098-31613</ruleId>
@@ -670,9 +670,9 @@
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31615</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_MdKf0I7HEeOB0eBUISUB4Q" severity="WARNING" base_Property="_gGMm1I7FEeOB0eBUISUB4Q">
-    <ruleId>CONF:1098-31611</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_MdKf0I7HEeOB0eBUISUB4Q" base_Property="_gGMm1I7FEeOB0eBUISUB4Q" severity="WARNING">
     <reference href="../consol-vocab.uml#_FuKwqwAQEeWla-1cYCOuzQ"/>
+    <ruleId>CONF:1098-31611</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_-miMII9TEeOB0eBUISUB4Q" name="GoalObservation">
     <ownedComment xmi:id="_iSyNMI9UEeOB0eBUISUB4Q">
@@ -1508,8 +1508,9 @@ For example, an observation outcome of a blood oxygen saturation level of 95% is
     <ruleId>CONF:1098-31610</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_ArQ_YJmZEeOLJeQez13EkQ" base_Property="_7xab5JmVEeOLJeQez13EkQ">
-    <ruleId>CONF:1098-31426</ruleId>
     <reference href="../consol-vocab.uml#_aeL4EAPjEeWlspDC_8d7eg"/>
+    <ruleId>CONF:1098-31426</ruleId>
+    <ruleId>DSTU:1279</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_ncafYJmaEeOLJeQez13EkQ" name="PriorityPreference">
     <ownedComment xmi:id="_zPCY4JmaEeOLJeQez13EkQ">
@@ -1579,8 +1580,8 @@ For example, an observation outcome of a blood oxygen saturation level of 95% is
     <ruleId>CONF:1098-30956</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_e9PBsJmcEeOLJeQez13EkQ" base_Property="_vwdZNJmaEeOLJeQez13EkQ">
-    <ruleId>CONF:1098-30957</ruleId>
     <reference href="../consol-vocab.uml#_bTQwFQDcEeWNGdLwd_3YGQ"/>
+    <ruleId>CONF:1098-30957</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_YPOXoJ14EeORR8_YW0n_jQ" name="GoalsSection">
     <ownedComment xmi:id="_k_kdoJ14EeORR8_YW0n_jQ">
@@ -1849,7 +1850,7 @@ The priority of the activity to the patient and provider is communicated through
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_4o_oIOdiEeOqBOMhgDlycQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>participant with target entry serviceDeliveryLocation if present, SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002)</body>
+        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: HL7ParticipationType urn:oid:2.16.840.1.113883.5.90) STATIC</body>
         <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsTypeOf(consol::ServiceDeliveryLocation))->forAll(pars : cda::Participant2 | pars.typeCode=vocab::ParticipationType::LOC)</body>
       </specification>
     </ownedRule>
@@ -1927,9 +1928,9 @@ The priority of the activity to the patient and provider is communicated through
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_KFeHEOdYEeOqBOMhgDlycQ" base_Generalization="_bDRhcOdXEeOqBOMhgDlycQ"/>
   <CDA:PropertyValidation xmi:id="_BDOjIOdbEeOqBOMhgDlycQ" severity="WARNING" base_Property="__Mm_wOdaEeOqBOMhgDlycQ"/>
-  <CDA:ValueSetConstraint xmi:id="_lOyg8OdcEeOqBOMhgDlycQ" severity="WARNING" base_Property="__Mm_wOdaEeOqBOMhgDlycQ">
-    <ruleId>CONF:1098-31032</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_lOyg8OdcEeOqBOMhgDlycQ" base_Property="__Mm_wOdaEeOqBOMhgDlycQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_eLc2gOdbEeOqBOMhgDlycQ"/>
+    <ruleId>CONF:1098-31032</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_gV_wkOddEeOqBOMhgDlycQ" base_Property="_fNw9MOddEeOqBOMhgDlycQ">
     <ruleId>CONF:1098-30439</ruleId>
@@ -1962,6 +1963,7 @@ The priority of the activity to the patient and provider is communicated through
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_sp28oOdiEeOqBOMhgDlycQ" base_Constraint="_qBucwOdiEeOqBOMhgDlycQ">
     <ruleId>CONF:1098-31875</ruleId>
+    <ruleId>DSTU:1239</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_5VekkOdrEeOqBOMhgDlycQ" memberEnd="_5Vd9gOdrEeOqBOMhgDlycQ _5VfLoOdrEeOqBOMhgDlycQ">
     <ownedComment xmi:id="_CjqycOdsEeOqBOMhgDlycQ">
@@ -2097,8 +2099,8 @@ The Planned Observation template may also indicate the potential insurance cover
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_dDY_QOd8EeOqBOMhgDlycQ" severity="WARNING" base_Property="_ZRSmoOd8EeOqBOMhgDlycQ"/>
   <CDA:ValueSetConstraint xmi:id="_p8fYoOd8EeOqBOMhgDlycQ" base_Property="_ZRSmoOd8EeOqBOMhgDlycQ">
-    <ruleId>CONF:1098-32044</ruleId>
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1098-32044</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_g6VmMOd9EeOqBOMhgDlycQ" memberEnd="_g6UYEOd9EeOqBOMhgDlycQ _g6VmMed9EeOqBOMhgDlycQ">
     <ownedComment xmi:id="_r1P0kOd9EeOqBOMhgDlycQ">
@@ -2295,8 +2297,8 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
     <ruleId>CONF:1098-31978</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_zPB6AOeHEeOqBOMhgDlycQ" base_Property="_jf9D8-eFEeOqBOMhgDlycQ">
-    <ruleId>CONF:1098-31981</ruleId>
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1098-31981</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_eviAcOgKEeO-iJTuAv7BKQ" memberEnd="_eve9IOgKEeO-iJTuAv7BKQ _evingOgKEeO-iJTuAv7BKQ">
     <ownedComment xmi:id="_vSutAOgKEeO-iJTuAv7BKQ">
@@ -2619,8 +2621,9 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
     <ruleId>CONF:1098-32088</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_NlzeYOgVEeO-iJTuAv7BKQ" base_Property="_NrQ4GegTEeO-iJTuAv7BKQ">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
     <ruleId>CONF:1098-32067</ruleId>
-    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <ruleId>DSTU:1276</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_1tsSYOgXEeO-iJTuAv7BKQ" severity="WARNING" base_Property="_s9RloOgXEeO-iJTuAv7BKQ">
     <ruleId>CONF:1098-32133</ruleId>
@@ -2635,8 +2638,8 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
     <ruleId>CONF:1098-32134</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_HsxmwOgbEeO-iJTuAv7BKQ" base_Property="_NrOb0OgTEeO-iJTuAv7BKQ">
-    <ruleId>CONF:1098-32081</ruleId>
     <reference href="../consol-vocab.uml#_maiyYOHKEeO04sHNODkHmQ"/>
+    <ruleId>CONF:1098-32081</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_-fUQUOgoEeO-iJTuAv7BKQ" memberEnd="_-fTCMOgoEeO-iJTuAv7BKQ _-fUQUegoEeO-iJTuAv7BKQ">
     <ownedComment xmi:id="_FunIkOgpEeO-iJTuAv7BKQ">
@@ -2935,15 +2938,21 @@ Depending on the type of supply, the product or participant will be either a Med
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_bwml0P4yEeO_Yb9cO8w3bA" name="PlanOfTreatmentSection2">
     <ownedComment xmi:id="_7lKjoP4yEeO_Yb9cO8w3bA">
-      <body>This section, formerly known as &quot;Plan of Care&quot;, contains data that define pending orders, interventions, encounters, services, and procedures for the patient. It is limited to prospective, unfulfilled, or incomplete orders and requests only. These are indicated by the @moodCode of the entries within this section. All active, incomplete, or pending orders, appointments, referrals, procedures, services, or any other pending event of clinical significance to the current care of the patient should be listed.&#xD;
-This section may also contain information about ongoing care of the patient, clinical reminders, patient's values, beliefs, preferences, care expectations, and overarching care goals. &#xD;
-Clinical reminders are placed here to provide prompts for disease prevention and management, patient safety, and healthcare quality improvements, including widely accepted performance measures. &#xD;
-Values may include the importance of quality of life over longevity. These values are taken into account when prioritizing all problems and their treatments.&#xD;
-Beliefs may include comfort with dying or the refusal of blood transfusions because of the patient's religious convictions.????&#xD;
-Preferences may include liquid medicines over tablets, or treatment via secure email instead of in person. &#xD;
-Care expectations may range from being treated only by female clinicians, to expecting all calls to be returned within 24 hours. &#xD;
-Overarching goals described in this section are not tied to a specific condition, problem, health concern, or intervention. Examples of overarching goals could be to minimize pain or dependence on others, or to walk a daughter down the aisle for her marriage.????&#xD;
-The plan may also indicate that patient education will be provided.</body>
+      <body>&lt;p>&#xD;
+This section, formerly known as &quot;Plan of Care&quot;, contains data that define pending orders, interventions, encounters, services, and procedures for the patient. It is limited to prospective, unfulfilled, or incomplete orders and requests only. These are indicated by the @moodCode of the entries within this section. All active, incomplete, or pending orders, appointments, referrals, procedures, services, or any other pending event of clinical significance to the current care of the patient should be listed.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Clinical reminders are placed here to provide prompts for disease prevention and management, patient safety, and healthcare quality improvements, including widely accepted performance measures.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+The plan may also indicate that patient education will be provided.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+When used in a document that includes a Goals Section, all the goals (whether narrative only, or structured Goal Observation entries) should be recorded in the Goals Section, rather than in the Plan of Treatment Section, to avoid confusion as to &quot;which/whose goals should be in which section?&quot;&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+When used in a document that does not include a Goals Section, the Plan of Treatment section may also contain information about care team members' goals, including the patient's values, beliefs, preferences, care expectations, and overarching care goals. Values may include the importance of quality of life over longevity. These values are taken into account when prioritizing all problems and their treatments. Beliefs may include comfort with dying or the refusal of blood transfusions because of the patient's religious convictions. Preferences may include liquid medicines over tablets, or treatment via secure email instead of in person. Care expectations may range from being treated only by female clinicians, to expecting all calls to be returned within 24 hours. Overarching goals described in this section are not tied to a specific condition, problem, health concern, or intervention. Examples of overarching goals could be to minimize pain or dependence on others, or to walk a daughter down the aisle for her marriage. DSTU:871&#xD;
+&lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_bwppIP4yEeO_Yb9cO8w3bA" general="_2NP-QxSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_bmfyIP4zEeO_Yb9cO8w3bA" name="PlanOfCareSection" client="_bwml0P4yEeO_Yb9cO8w3bA" supplier="_2NP-QxSVEeGGzu7fmW9pXw" contract="_2NP-QxSVEeGGzu7fmW9pXw"/>
@@ -3076,8 +3085,8 @@ The plan may also indicate that patient education will be provided.</body>
     <ruleId>CONF:1098-31864</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_t8B9YB5QEeSAEtTUKjFlSA" base_Property="_NrPC4OgTEeO-iJTuAv7BKQ">
-    <ruleId>CONF:1098-32078</ruleId>
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1098-32078</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_VuMGwDqTEeSyGa6KC25kiw" memberEnd="_VuK4oDqTEeSyGa6KC25kiw _VuMGwTqTEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_VuMGwTqTEeSyGa6KC25kiw" type="_-miMII9TEeOB0eBUISUB4Q" association="_VuMGwDqTEeSyGa6KC25kiw"/>
@@ -3163,7 +3172,10 @@ The plan may also indicate that patient education will be provided.</body>
     <ownedEnd xmi:id="_MS5akTqfEeSyGa6KC25kiw" type="_An8P8I9kEeOB0eBUISUB4Q" association="_MS5akDqfEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_NBvdkDqfEeSyGa6KC25kiw" severity="INFO" base_Association="_MS5akDqfEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:1198-31254, CONF:1198-31330, CONF:1198-31331</ruleId>
+    <ruleId>CONF:1198-31254</ruleId>
+    <ruleId>CONF:1198-31330</ruleId>
+    <ruleId>CONF:1198-31331</ruleId>
+    <ruleId>DSTU:780</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_kKDc8DqfEeSyGa6KC25kiw" memberEnd="_kKCO0DqfEeSyGa6KC25kiw _kKDc8TqfEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_kKDc8TqfEeSyGa6KC25kiw" type="_An8P8I9kEeOB0eBUISUB4Q" association="_kKDc8DqfEeSyGa6KC25kiw"/>
@@ -3247,7 +3259,10 @@ The plan may also indicate that patient education will be provided.</body>
     <ownedEnd xmi:id="_pt8a8TqtEeSyGa6KC25kiw" type="_XD5vgJA8EeOZX935IVJfOg" association="_pt8a8DqtEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_qc2IUDqtEeSyGa6KC25kiw" severity="INFO" base_Association="_pt8a8DqtEeSyGa6KC25kiw" typeCode="REFR">
-    <ruleId>CONF:1198-31174, CONF:1198-31175, CONF:1198-31176</ruleId>
+    <ruleId>CONF:1198-31174</ruleId>
+    <ruleId>CONF:1198-31175</ruleId>
+    <ruleId>CONF:1198-31176</ruleId>
+    <ruleId>DSTU:780</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_o0RIQD3fEeSyGa6KC25kiw" memberEnd="_o0OsAD3fEeSyGa6KC25kiw _o0RvUD3fEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_o0RvUD3fEeSyGa6KC25kiw" type="_Yj45YOgREeO-iJTuAv7BKQ" association="_o0RIQD3fEeSyGa6KC25kiw"/>
@@ -3278,9 +3293,9 @@ The plan may also indicate that patient education will be provided.</body>
     <ruleId>CONF:1098-32887</ruleId>
     <ruleId>CONF:1098-32888</ruleId>
   </CDA:AssociationValidation>
-  <CDA:ValueSetConstraint xmi:id="_r7UH0MQdEeSt_63yiINGSw" message="" base_Property="_r7TgwMQdEeSt_63yiINGSw">
-    <ruleId>CONF:1098-8539</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_r7UH0MQdEeSt_63yiINGSw" base_Property="_r7TgwMQdEeSt_63yiINGSw" message="">
     <reference href="../consol-vocab.uml#_sJV7YY3PEeOB0eBUISUB4Q"/>
+    <ruleId>CONF:1098-8539</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_Dd1tQMQ6EeSt_63yiINGSw" memberEnd="_Dd0fIMQ6EeSt_63yiINGSw _Dd1tQcQ6EeSt_63yiINGSw">
     <ownedEnd xmi:id="_Dd1tQcQ6EeSt_63yiINGSw" type="_lLnRMOaYEeOmzetP5oaH3A" association="_Dd1tQMQ6EeSt_63yiINGSw"/>
@@ -3291,9 +3306,9 @@ The plan may also indicate that patient education will be provided.</body>
     <ruleId>CONF:1098-31069</ruleId>
   </CDA:EntryRelationship>
   <CDA:ValueSetConstraint xmi:id="_X6AF4MafEeSY-qHOFt9wVQ" base_Property="_X5-3wMafEeSY-qHOFt9wVQ">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_kX95d_8pEeS4jrgU1p4iug"/>
     <ruleId>CONF:1098-8565</ruleId>
     <ruleId>DSTU:1047</ruleId>
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_kX95d_8pEeS4jrgU1p4iug"/>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_vaxzIMagEeSY-qHOFt9wVQ" memberEnd="_vawlAMagEeSY-qHOFt9wVQ _vazBQMagEeSY-qHOFt9wVQ">
     <ownedEnd xmi:id="_vazBQMagEeSY-qHOFt9wVQ" type="_bDPFMOdXEeOqBOMhgDlycQ" association="_vaxzIMagEeSY-qHOFt9wVQ"/>
@@ -3302,24 +3317,24 @@ The plan may also indicate that patient education will be provided.</body>
     <ruleId>CONF:1098-32045</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_ZNTVQcapEeSY-qHOFt9wVQ" base_Property="_ZNTVQMapEeSY-qHOFt9wVQ">
-    <ruleId>CONF:1098-8573</ruleId>
     <reference href="../consol-vocab.uml#_j7zfVsapEeSY-qHOFt9wVQ"/>
+    <ruleId>CONF:1098-8573</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_K7lcgMdAEeShCO0Pdt1H3g" base_Property="_K7kOYMdAEeShCO0Pdt1H3g">
-    <ruleId>CONF:1098-8582</ruleId>
     <reference href="../consol-vocab.uml#_SbIXRsdAEeShCO0Pdt1H3g"/>
+    <ruleId>CONF:1098-8582</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Mc8FEMdBEeShCO0Pdt1H3g" base_Property="_-xcLEOd4EeOqBOMhgDlycQ" severity="WARNING">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31030</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_DAFW0MdGEeShCO0Pdt1H3g" base_Property="_DAEvwMdGEeShCO0Pdt1H3g">
-    <ruleId>CONF:1098-8569</ruleId>
     <reference href="../consol-vocab.uml#_sJV7YY3PEeOB0eBUISUB4Q"/>
+    <ruleId>CONF:1098-8569</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_mIps8MdPEeShCO0Pdt1H3g" base_Property="_mIpF4MdPEeShCO0Pdt1H3g">
-    <ruleId>CONF:1098-8578</ruleId>
     <reference href="../consol-vocab.uml#_j7zfVsapEeSY-qHOFt9wVQ"/>
+    <ruleId>CONF:1098-8578</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_mpQ_UMdSEeShCO0Pdt1H3g" severity="INFO" base_Association="_OSp2IOg9EeO-iJTuAv7BKQ"/>
   <uml:Association xmi:id="_2nYMYMdTEeShCO0Pdt1H3g" memberEnd="_2nW-QMdTEeShCO0Pdt1H3g _2nYzcMdTEeShCO0Pdt1H3g">
@@ -3486,8 +3501,8 @@ All interventions referenced in a Planned Intervention Act must have moodCodes i
         <body>An Intervention Act SHALL reference a Goal Observation. Because the Goal Observation is already described in the CDA document instance's Goals section, rather than repeating the full content of the Goal Observation, the Entry Reference template can be used to reference this entry. The following entryRelationship represents an Entry Reference to Goal Observation.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_72kL0OLjEeS505YV9ux2XA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_72iWoOLjEeS505YV9ux2XA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_709GoS1KEeiFfJtNAawVHw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_709GoC1KEeiFfJtNAawVHw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_pTQWwOLlEeS505YV9ux2XA" name="handoffCommunicationParticipants" association="_pTSL8OLlEeS505YV9ux2XA">
       <type xmi:type="uml:Class" href="consol-discharge.uml#_POfwAIz7EeOoMZgUoTghIg"/>
@@ -3543,8 +3558,8 @@ All interventions referenced in a Planned Intervention Act must have moodCodes i
     <ruleId>CONF:1198-32723</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_YzD4sOLWEeS505YV9ux2XA" base_Property="_oM4NQOLUEeS505YV9ux2XA">
-    <ruleId>CONF:1198-32679</ruleId>
     <reference href="../consol-vocab.uml#_uznbQOLVEeS505YV9ux2XA"/>
+    <ruleId>CONF:1198-32679</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_EcWW4OLZEeS505YV9ux2XA" code="362956003" displayName="procedure / intervention (navigational concept)" base_Property="_oM2_IOLUEeS505YV9ux2XA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
@@ -3612,7 +3627,10 @@ All interventions referenced in a Planned Intervention Act must have moodCodes i
     <ownedEnd xmi:id="_ZmV9geLbEeS505YV9ux2XA" type="_dGARYOLSEeS505YV9ux2XA" association="_ZmV9gOLbEeS505YV9ux2XA"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_aqx2AOLbEeS505YV9ux2XA" severity="INFO" base_Association="_ZmV9gOLbEeS505YV9ux2XA" typeCode="REFR">
-    <ruleId>CONF:1198-32663, CONF:1198-32700, CONF:1198-32701</ruleId>
+    <ruleId>CONF:1198-32663</ruleId>
+    <ruleId>CONF:1198-32700</ruleId>
+    <ruleId>CONF:1198-32701</ruleId>
+    <ruleId>DSTU:780</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_6gMIYOLbEeS505YV9ux2XA" memberEnd="_6gK6QOLbEeS505YV9ux2XA _6gMIYeLbEeS505YV9ux2XA">
     <ownedEnd xmi:id="_6gMIYeLbEeS505YV9ux2XA" type="_dGARYOLSEeS505YV9ux2XA" association="_6gMIYOLbEeS505YV9ux2XA"/>
@@ -3672,7 +3690,10 @@ All interventions referenced in a Planned Intervention Act must have moodCodes i
     <ownedEnd xmi:id="_kMGhoeLjEeS505YV9ux2XA" type="_dGARYOLSEeS505YV9ux2XA" association="_kMGhoOLjEeS505YV9ux2XA"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_Pj__wOLkEeS505YV9ux2XA" base_Association="_kMGhoOLjEeS505YV9ux2XA" typeCode="RSON">
-    <ruleId>CONF:1198-32673, CONF:1198-32720, CONF:1198-32721</ruleId>
+    <ruleId>CONF:1198-32673</ruleId>
+    <ruleId>CONF:1198-32720</ruleId>
+    <ruleId>CONF:1198-32721</ruleId>
+    <ruleId>DSTU:1374</ruleId>
   </CDA:EntryRelationship>
   <CDA:ConstraintValidation xmi:id="_qnNHYOLkEeS505YV9ux2XA" base_Constraint="_pyqFAOLkEeS505YV9ux2XA">
     <ruleId>CONF:1198-32722</ruleId>
@@ -4009,8 +4030,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <ruleId>CONF:1198-32306, CONF:1198-32307</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_g7YjEON4EeS_XOr-dz_KWA" base_Property="_2d3CgON3EeS_XOr-dz_KWA">
-    <ruleId>CONF:1198-32314</ruleId>
     <reference href="../consol-vocab.uml#_uUyNJuN4EeS_XOr-dz_KWA"/>
+    <ruleId>CONF:1198-32314</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_znyiYON5EeS_XOr-dz_KWA" memberEnd="_znxUQON5EeS_XOr-dz_KWA _znzJcON5EeS_XOr-dz_KWA">
     <ownedEnd xmi:id="_znzJcON5EeS_XOr-dz_KWA" type="_mMk3QON1EeS_XOr-dz_KWA" association="_znyiYON5EeS_XOr-dz_KWA"/>
@@ -4154,13 +4175,18 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <ownedEnd xmi:id="_3nmNweOjEeS_XOr-dz_KWA" type="_mMk3QON1EeS_XOr-dz_KWA" association="_3nmNwOOjEeS_XOr-dz_KWA"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_4alw8OOjEeS_XOr-dz_KWA" severity="INFO" base_Association="_3nmNwOOjEeS_XOr-dz_KWA" typeCode="REFR">
-    <ruleId>CONF:1198-32203, CONF:1198-32272, CONF:1198-32273</ruleId>
+    <ruleId>CONF:1198-32203</ruleId>
+    <ruleId>CONF:1198-32272</ruleId>
+    <ruleId>CONF:1198-32273</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_sfkT8OOkEeS_XOr-dz_KWA" memberEnd="_sfiewOOkEeS_XOr-dz_KWA _sfkT8eOkEeS_XOr-dz_KWA">
     <ownedEnd xmi:id="_sfkT8eOkEeS_XOr-dz_KWA" type="_mMk3QON1EeS_XOr-dz_KWA" association="_sfkT8OOkEeS_XOr-dz_KWA"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_tJgo0OOkEeS_XOr-dz_KWA" severity="INFO" base_Association="_sfkT8OOkEeS_XOr-dz_KWA" typeCode="REFR">
-    <ruleId>CONF:1198-32204, CONF:1198-32274, CONF:1198-32275</ruleId>
+    <ruleId>CONF:1198-32204</ruleId>
+    <ruleId>CONF:1198-32274</ruleId>
+    <ruleId>CONF:1198-32275</ruleId>
+    <ruleId>DSTU:780</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_6lhiAOOkEeS_XOr-dz_KWA" memberEnd="_6lgT4OOkEeS_XOr-dz_KWA _6liJEOOkEeS_XOr-dz_KWA">
     <ownedEnd xmi:id="_6liJEOOkEeS_XOr-dz_KWA" type="_mMk3QON1EeS_XOr-dz_KWA" association="_6lhiAOOkEeS_XOr-dz_KWA"/>
@@ -4299,8 +4325,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <ruleId>CONF:1198-32311, CONF:1198-32312</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_WZJuIPtYEeSoPO_Q5cglLA" base_Property="_PDukEI9kEeOB0eBUISUB4Q">
-    <ruleId>CONF:1198-32313</ruleId>
     <reference href="../consol-vocab.uml#_uUyNJuN4EeS_XOr-dz_KWA"/>
+    <ruleId>CONF:1198-32313</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_64wCQ_tZEeSoPO_Q5cglLA">
     <ruleId>CONF:1098-31489</ruleId>
@@ -4378,11 +4404,10 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   <uml:Association xmi:id="_NY0yQP8rEeS4jrgU1p4iug" memberEnd="_NY0LMP8rEeS4jrgU1p4iug _NY1ZUP8rEeS4jrgU1p4iug">
     <ownedEnd xmi:id="_NY1ZUP8rEeS4jrgU1p4iug" type="_FhAIMI3FEeOB0eBUISUB4Q" association="_NY0yQP8rEeS4jrgU1p4iug"/>
   </uml:Association>
-   
   <CDA:PropertyValidation xmi:id="_HABMUAALEeWla-1cYCOuzQ" base_Property="_Fj3-cAALEeWla-1cYCOuzQ"/>
   <CDA:ValueSetConstraint xmi:id="_IMHMAAALEeWla-1cYCOuzQ" base_Property="_Fj3-cAALEeWla-1cYCOuzQ">
-    <ruleId>CONF:1098-30885</ruleId>
     <reference href="../consol-vocab.uml#_8JaroAAJEeWla-1cYCOuzQ"/>
+    <ruleId>CONF:1098-30885</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_zrOscAALEeWla-1cYCOuzQ" severity="WARNING" base_Property="_zPz7wAALEeWla-1cYCOuzQ">
     <ruleId>CONF:1098-32623</ruleId>
@@ -4396,9 +4421,10 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <ruleId>CONF:1098-32634</ruleId>
   </CDA:EntryRelationship>
   <CDA:PropertyValidation xmi:id="_rEUHsAAQEeWla-1cYCOuzQ" severity="WARNING" base_Property="_p3HUwAAQEeWla-1cYCOuzQ"/>
-  <CDA:ValueSetConstraint xmi:id="_v2QMsAAQEeWla-1cYCOuzQ" severity="WARNING" base_Property="_p3HUwAAQEeWla-1cYCOuzQ">
-    <ruleId>CONF:1098-32443</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_v2QMsAAQEeWla-1cYCOuzQ" base_Property="_p3HUwAAQEeWla-1cYCOuzQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
+    <ruleId>CONF:1098-32443</ruleId>
+    <ruleId>DSTU:814</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_eopHYACjEeWNGdLwd_3YGQ" memberEnd="_eoldAACjEeWNGdLwd_3YGQ _eopHYQCjEeWNGdLwd_3YGQ">
     <ownedEnd xmi:id="_eopHYQCjEeWNGdLwd_3YGQ" type="_50a2UI62EeOB0eBUISUB4Q" association="_eopHYACjEeWNGdLwd_3YGQ"/>
@@ -4416,9 +4442,9 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <ruleId>CONF:1098-32636</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_cbT3sACkEeWNGdLwd_3YGQ" severity="INFO" base_Property="_bTTGwACkEeWNGdLwd_3YGQ"/>
-  <CDA:ValueSetConstraint xmi:id="_d2CwUACkEeWNGdLwd_3YGQ" severity="WARNING" base_Property="_bTTGwACkEeWNGdLwd_3YGQ">
-    <ruleId>CONF:1098-32637</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_d2CwUACkEeWNGdLwd_3YGQ" base_Property="_bTTGwACkEeWNGdLwd_3YGQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:1098-32637</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_DjRFoADcEeWNGdLwd_3YGQ" severity="WARNING" base_Property="_CWg-oADcEeWNGdLwd_3YGQ">
     <ruleId>CONF:1098-32327</ruleId>

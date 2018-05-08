@@ -590,8 +590,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EntryReference getEntryReferenceGoalObs() {
-		return PlannedInterventionActOperations.getEntryReferenceGoalObs(this);
+	public EList<EntryReference> getEntryReferenceGoalObss() {
+		return PlannedInterventionActOperations.getEntryReferenceGoalObss(this);
 	}
 
 	/**

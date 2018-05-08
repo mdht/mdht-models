@@ -1921,6 +1921,15 @@ public interface ConsolFactory extends EFactory {
 	PrognosisObservation createPrognosisObservation();
 
 	/**
+	 * Returns a new object of class '<em>Problem Status2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Problem Status2</em>'.
+	 * @generated
+	 */
+	ProblemStatus2 createProblemStatus2();
+
+	/**
 	 * Returns a new object of class '<em>Wound Measurement Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2045,6 +2054,15 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	SubstanceOrDeviceAllergyObservation2 createSubstanceOrDeviceAllergyObservation2();
+
+	/**
+	 * Returns a new object of class '<em>Allergy Status Observation2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Allergy Status Observation2</em>'.
+	 * @generated
+	 */
+	AllergyStatusObservation2 createAllergyStatusObservation2();
 
 	/**
 	 * Returns a new object of class '<em>Tobacco Use2</em>'.
