@@ -1785,7 +1785,7 @@ The priority of the activity to the patient and provider is communicated through
     <ruleId>CONF:1098-30431</ruleId>
     <ruleId>CONF:1098-32552</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_0pQD4OaYEeOmzetP5oaH3A" base_Generalization="_lLn4QOaYEeOmzetP5oaH3A"/>
+  <CDA:ConformsTo xmi:id="_0pQD4OaYEeOmzetP5oaH3A" base_Generalization="_lLn4QOaYEeOmzetP5oaH3A" requiresParentId="true"/>
   <uml:Association xmi:id="_LC9bYOaaEeOmzetP5oaH3A" memberEnd="_LC8NQOaaEeOmzetP5oaH3A _LC9bYeaaEeOmzetP5oaH3A">
     <ownedComment xmi:id="_3UM8UOaaEeOmzetP5oaH3A">
       <body>The following entryRelationship represents the indication for the act.</body>
@@ -1926,7 +1926,7 @@ The priority of the activity to the patient and provider is communicated through
     <ruleId>CONF:1098-30438</ruleId>
     <ruleId>CONF:1098-8567</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_KFeHEOdYEeOqBOMhgDlycQ" base_Generalization="_bDRhcOdXEeOqBOMhgDlycQ"/>
+  <CDA:ConformsTo xmi:id="_KFeHEOdYEeOqBOMhgDlycQ" base_Generalization="_bDRhcOdXEeOqBOMhgDlycQ" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_BDOjIOdbEeOqBOMhgDlycQ" severity="WARNING" base_Property="__Mm_wOdaEeOqBOMhgDlycQ"/>
   <CDA:ValueSetConstraint xmi:id="_lOyg8OdcEeOqBOMhgDlycQ" base_Property="__Mm_wOdaEeOqBOMhgDlycQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_eLc2gOdbEeOqBOMhgDlycQ"/>
@@ -2079,7 +2079,7 @@ The Planned Observation template may also indicate the potential insurance cover
     <ruleId>CONF:1098-30452</ruleId>
     <ruleId>CONF:1098-32555</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_uUCTkOdvEeOqBOMhgDlycQ" base_Generalization="_jKZssedvEeOqBOMhgDlycQ"/>
+  <CDA:ConformsTo xmi:id="_uUCTkOdvEeOqBOMhgDlycQ" base_Generalization="_jKZssedvEeOqBOMhgDlycQ" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="__U_kEOd4EeOqBOMhgDlycQ" base_Property="_-xcLEOd4EeOqBOMhgDlycQ"/>
   <CDA:PropertyValidation xmi:id="_ek5gMOd6EeOqBOMhgDlycQ" base_Property="_V8EpMOd6EeOqBOMhgDlycQ">
     <ruleId>CONF:1098-30453</ruleId>
@@ -2272,7 +2272,7 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
     <ruleId>CONF:1098-30445</ruleId>
     <ruleId>CONF:1098-32554</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_BJHWoOeFEeOqBOMhgDlycQ" base_Generalization="_cs0YseeEEeOqBOMhgDlycQ"/>
+  <CDA:ConformsTo xmi:id="_BJHWoOeFEeOqBOMhgDlycQ" base_Generalization="_cs0YseeEEeOqBOMhgDlycQ" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_p8NVsOeFEeOqBOMhgDlycQ" base_Property="_YIljEOeFEeOqBOMhgDlycQ">
     <ruleId>CONF:1098-31976</ruleId>
   </CDA:PropertyValidation>
@@ -2607,7 +2607,7 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
     <ruleId>CONF:1098-30466</ruleId>
     <ruleId>CONF:1098-32557</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_rlHHkOgREeO-iJTuAv7BKQ" base_Generalization="_Yj5gcOgREeO-iJTuAv7BKQ"/>
+  <CDA:ConformsTo xmi:id="_rlHHkOgREeO-iJTuAv7BKQ" base_Generalization="_Yj5gcOgREeO-iJTuAv7BKQ" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_otQewOgTEeO-iJTuAv7BKQ" base_Property="_NrRfIOgTEeO-iJTuAv7BKQ">
     <ruleId>CONF:1098-32087</ruleId>
   </CDA:PropertyValidation>
@@ -2834,7 +2834,7 @@ Depending on the type of supply, the product or participant will be either a Med
     <ruleId>CONF:1098-30464</ruleId>
     <ruleId>CONF:1098-32556</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_ND3BYOg1EeO-iJTuAv7BKQ" base_Generalization="_vEecgOg0EeO-iJTuAv7BKQ"/>
+  <CDA:ConformsTo xmi:id="_ND3BYOg1EeO-iJTuAv7BKQ" base_Generalization="_vEecgOg0EeO-iJTuAv7BKQ" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_As02cOg5EeO-iJTuAv7BKQ" base_Property="_danigug3EeO-iJTuAv7BKQ">
     <ruleId>CONF:1098-30458</ruleId>
   </CDA:PropertyValidation>
@@ -3022,7 +3022,7 @@ When used in a document that does not include a Goals Section, the Plan of Treat
     <ruleId>CONF:1098-10435</ruleId>
     <ruleId>CONF:1098-32501</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_YSzMwP4zEeO_Yb9cO8w3bA" base_Generalization="_bwppIP4yEeO_Yb9cO8w3bA"/>
+  <CDA:ConformsTo xmi:id="_YSzMwP4zEeO_Yb9cO8w3bA" base_Generalization="_bwppIP4yEeO_Yb9cO8w3bA" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_lXVaEP4zEeO_Yb9cO8w3bA" code="18776-5" displayName="Plan of Treatment" base_Property="_lXUzAP4zEeO_Yb9cO8w3bA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-14750</ruleId>

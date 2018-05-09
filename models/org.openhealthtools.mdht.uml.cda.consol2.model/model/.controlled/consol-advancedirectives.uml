@@ -667,7 +667,7 @@ The observation/value element contains the detailed patient directive which may 
   <CDA:CDATemplate xmi:id="_LsOj4K-9EeO8duI_7f6kZw" base_Class="_GnllUK-9EeO8duI_7f6kZw" templateId="2.16.840.1.113883.10.20.22.4.48" templateVersion="2015-08-01">
     <ruleId>CONF:1198-8655, CONF:1198-10485, CONF:1198-32496</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_YFwFUK-9EeO8duI_7f6kZw" base_Generalization="_GnmMYK-9EeO8duI_7f6kZw"/>
+  <CDA:ConformsTo xmi:id="_YFwFUK-9EeO8duI_7f6kZw" base_Generalization="_GnmMYK-9EeO8duI_7f6kZw" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_E3ECkLEgEeOtlapy2HWYww" base_Property="_AKj3MLEgEeOtlapy2HWYww">
     <ruleId>CONF:1198-30804</ruleId>
   </CDA:PropertyValidation>
@@ -738,7 +738,7 @@ This section differentiates between &quot;advance directives&quot; and &quot;adv
   <CDA:CDATemplate xmi:id="_oceOsAFXEeSLIY0bHb-fFQ" base_Class="_jsKhYAFXEeSLIY0bHb-fFQ" templateId="2.16.840.1.113883.10.20.22.2.21" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7928, CONF:1198-10376, CONF:1198-15340</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_6rSIgAFXEeSLIY0bHb-fFQ" base_Generalization="_jsNksAFXEeSLIY0bHb-fFQ"/>
+  <CDA:ConformsTo xmi:id="_6rSIgAFXEeSLIY0bHb-fFQ" base_Generalization="_jsNksAFXEeSLIY0bHb-fFQ" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_ERTAgQFYEeSLIY0bHb-fFQ" code="42348-3" displayName="Advance Directives" base_Property="_ERTAgAFYEeSLIY0bHb-fFQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15342, CONF:1198-30812</ruleId>

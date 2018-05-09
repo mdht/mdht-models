@@ -427,7 +427,7 @@
   <CDA:CDATemplate xmi:id="_e0um0IV5EeSRBMdZotACQg" base_Class="_YvV88IV5EeSRBMdZotACQg" templateId="2.16.840.1.113883.10.20.22.4.46" templateVersion="2015-08-01">
     <ruleId>CONF:1198-8599, CONF:1198-10496, CONF:1198-32605</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_chN2oIV6EeSRBMdZotACQg" base_Generalization="_YvZAQIV5EeSRBMdZotACQg"/>
+  <CDA:ConformsTo xmi:id="_chN2oIV6EeSRBMdZotACQg" base_Generalization="_YvZAQIV5EeSRBMdZotACQg" requiresParentId="true"/>
   <CDA:ValueSetConstraint xmi:id="_ApO_4IY6EeS7A_69H25Pzw" base_Property="_ApNKsIY6EeS7A_69H25Pzw" severity="WARNING">
     <reference href="../consol-vocab.uml#_ngam0Ez2EeWJ65CktI2ODQ"/>
     <ruleId>CONF:1198-32427</ruleId>
@@ -486,7 +486,7 @@
   <CDA:CDATemplate xmi:id="_XeUbwIevEeSBauRYePLghA" base_Class="_NGivoIevEeSBauRYePLghA" templateId="2.16.840.1.113883.10.20.22.2.15" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7932, CONF:1198-10388, CONF:1198-32607</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_ruNcgIevEeSBauRYePLghA" base_Generalization="_NGjWsIevEeSBauRYePLghA"/>
+  <CDA:ConformsTo xmi:id="_ruNcgIevEeSBauRYePLghA" base_Generalization="_NGjWsIevEeSBauRYePLghA" requiresParentId="true"/>
   <uml:Association xmi:id="_iHnOUIeyEeSBauRYePLghA" memberEnd="_iHmAMIeyEeSBauRYePLghA _iHn1YIeyEeSBauRYePLghA">
     <ownedEnd xmi:id="_iHn1YIeyEeSBauRYePLghA" type="_NGivoIevEeSBauRYePLghA" association="_iHnOUIeyEeSBauRYePLghA"/>
   </uml:Association>
@@ -498,4 +498,5 @@
     <reference href="../consol-vocab.uml#_hRIUmoY5EeS7A_69H25Pzw"/>
     <ruleId>CONF:1198-32847</ruleId>
   </CDA:ValueSetConstraint>
+  <CDA:ConformsTo xmi:id="_u7bDIFPQEeieWreClOUydw" base_Generalization="_6wieMIbpEeSxzopshBnQuw" requiresParentId="true"/>
 </xmi:XMI>

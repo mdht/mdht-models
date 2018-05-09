@@ -1171,7 +1171,7 @@ This information should be included in an Immunization Activity when available. 
   <CDA:CDATemplate xmi:id="_GXjukOE8EeOTq9XEMvvkWw" base_Class="_zI6vcOE7EeOTq9XEMvvkWw" templateId="2.16.840.1.113883.10.20.22.4.52" templateVersion="2015-08-01">
     <ruleId>CONF:1198-8828, CONF:1198-10498, CONF:1198-32528</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_qqzeMOE8EeOTq9XEMvvkWw" base_Generalization="_zI_A4OE7EeOTq9XEMvvkWw"/>
+  <CDA:ConformsTo xmi:id="_qqzeMOE8EeOTq9XEMvvkWw" base_Generalization="_zI_A4OE7EeOTq9XEMvvkWw" requiresParentId="true"/>
   <uml:Association xmi:id="_OFgNEOG9EeO04sHNODkHmQ" memberEnd="_OFdJwOG9EeO04sHNODkHmQ _OFgNEeG9EeO04sHNODkHmQ">
     <ownedEnd xmi:id="_OFgNEeG9EeO04sHNODkHmQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_OFgNEOG9EeO04sHNODkHmQ"/>
   </uml:Association>
@@ -1285,7 +1285,7 @@ This information should be included in an Immunization Activity when available. 
     <ruleId>CONF:1098-10499</ruleId>
     <ruleId>CONF:1098-32602</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_jO7mcOHUEeO04sHNODkHmQ" base_Generalization="_Rx8LIeHUEeO04sHNODkHmQ"/>
+  <CDA:ConformsTo xmi:id="_jO7mcOHUEeO04sHNODkHmQ" base_Generalization="_Rx8LIeHUEeO04sHNODkHmQ" requiresParentId="true"/>
   <CDA:ValueSetConstraint xmi:id="_sCU5Q-HVEeO04sHNODkHmQ" base_Property="_sCU5QOHVEeO04sHNODkHmQ">
     <reference href="../consol-vocab.uml#_UMJcYeHXEeO04sHNODkHmQ"/>
     <ruleId>CONF:1098-9007</ruleId>
@@ -1352,7 +1352,7 @@ This information should be included in an Immunization Activity when available. 
   <CDA:CDATemplate xmi:id="_qxeRMPy3EeO1SvUcmWeLDQ" base_Class="_kdQhIPy3EeO1SvUcmWeLDQ" templateId="2.16.840.1.113883.10.20.22.2.2" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7965, CONF:1198-10399, CONF:1198-32529</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_5zZ_UPy3EeO1SvUcmWeLDQ" base_Generalization="_kdS9YPy3EeO1SvUcmWeLDQ"/>
+  <CDA:ConformsTo xmi:id="_5zZ_UPy3EeO1SvUcmWeLDQ" base_Generalization="_kdS9YPy3EeO1SvUcmWeLDQ" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_DNWKMPy4EeO1SvUcmWeLDQ" code="11369-6" displayName="Immunizations" base_Property="_DNVjIPy4EeO1SvUcmWeLDQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15368, CONF:1198-32146</ruleId>

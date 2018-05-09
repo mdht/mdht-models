@@ -420,7 +420,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:CDATemplate xmi:id="__AT6wL86EeOS5KuvmCHHew" base_Class="_4iF6IL86EeOS5KuvmCHHew" templateId="2.16.840.1.113883.10.20.22.4.79" templateVersion="2015-08-01">
     <ruleId>CONF:1198-14871, CONF:1198-14872, CONF:1198-32541</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_JY_l0L87EeOS5KuvmCHHew" base_Generalization="_4iIWYL86EeOS5KuvmCHHew"/>
+  <CDA:ConformsTo xmi:id="_JY_l0L87EeOS5KuvmCHHew" base_Generalization="_4iIWYL86EeOS5KuvmCHHew" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_tcUDEL87EeOS5KuvmCHHew" code="ASSERTION" displayName="Assertion" base_Property="_tcTcAL87EeOS5KuvmCHHew">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-19135, CONF:1198-32158</ruleId>
@@ -494,7 +494,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     <ruleId>CONF:1098-10527</ruleId>
     <ruleId>CONF:1098-32574</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_NJM-cPM4EeOUvapeh9bVvQ" base_Generalization="__ze6gPM3EeOUvapeh9bVvQ"/>
+  <CDA:ConformsTo xmi:id="_NJM-cPM4EeOUvapeh9bVvQ" base_Generalization="__ze6gPM3EeOUvapeh9bVvQ" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_qskVsPM4EeOUvapeh9bVvQ" base_Property="_qsjuoPM4EeOUvapeh9bVvQ">
     <ruleId>CONF:1098-7305</ruleId>
   </CDA:PropertyValidation>
@@ -554,7 +554,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     <ruleId>CONF:1198-10528</ruleId>
     <ruleId>CONF:1198-32582</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_tTeOsPV2EeONioZkBKP8eQ" base_Generalization="_dDxF4PV2EeONioZkBKP8eQ"/>
+  <CDA:ConformsTo xmi:id="_tTeOsPV2EeONioZkBKP8eQ" base_Generalization="_dDxF4PV2EeONioZkBKP8eQ" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_yESK8_V5EeONioZkBKP8eQ" base_Property="_yESK8PV5EeONioZkBKP8eQ">
     <ruleId>CONF:1198-7288</ruleId>
     <ruleId>DSTU:1371</ruleId>
@@ -606,7 +606,7 @@ Vital signs are represented in the same way as other results, but are aggregated
   <CDA:CDATemplate xmi:id="_L4h0cAFUEeSmasYc71ZgMQ" base_Class="_8LkzYAFTEeSmasYc71ZgMQ" templateId="2.16.840.1.113883.10.20.22.2.4" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7268, CONF:1198-10451, CONF:1198-32584</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_43ldoAFUEeSmasYc71ZgMQ" base_Generalization="_8LnPoAFTEeSmasYc71ZgMQ"/>
+  <CDA:ConformsTo xmi:id="_43ldoAFUEeSmasYc71ZgMQ" base_Generalization="_8LnPoAFTEeSmasYc71ZgMQ" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_I4sJwAFVEeSmasYc71ZgMQ" code="8716-3" displayName="Vital Signs" base_Property="_I4risAFVEeSmasYc71ZgMQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15243, CONF:1198-30902</ruleId>

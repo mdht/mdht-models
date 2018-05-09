@@ -1625,7 +1625,7 @@ For example, a cardiologist may prescribe a patient Warfarin. The patient's prim
     <ruleId>CONF:1098-16759</ruleId>
     <ruleId>CONF:1098-32524</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_yc9jQK-1EeO8duI_7f6kZw" base_Generalization="_ZQxAkK-1EeO8duI_7f6kZw"/>
+  <CDA:ConformsTo xmi:id="_yc9jQK-1EeO8duI_7f6kZw" base_Generalization="_ZQxAkK-1EeO8duI_7f6kZw" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_aacbkLN9EeOtlapy2HWYww" code="42346-7" displayName="Medications on Admission" base_Property="_aab0gLN9EeOtlapy2HWYww">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-15519</ruleId>
@@ -1897,7 +1897,7 @@ This effectiveTime represents either the medication duration (i.e., the time the
     <ruleId>CONF:1098-10504</ruleId>
     <ruleId>CONF:1098-32498</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_86348OLAEeOc7-TVP7Wi6w" base_Generalization="_WnVFgOLAEeOc7-TVP7Wi6w"/>
+  <CDA:ConformsTo xmi:id="_86348OLAEeOc7-TVP7Wi6w" base_Generalization="_WnVFgOLAEeOc7-TVP7Wi6w" requiresParentId="true"/>
   <uml:Association xmi:id="_cF3VUOLBEeOc7-TVP7Wi6w" memberEnd="_cF1gIOLBEeOc7-TVP7Wi6w _cF38YOLBEeOc7-TVP7Wi6w">
     <ownedEnd xmi:id="_cF38YOLBEeOc7-TVP7Wi6w" type="_WnSCMOLAEeOc7-TVP7Wi6w" association="_cF3VUOLBEeOc7-TVP7Wi6w"/>
   </uml:Association>
@@ -2037,7 +2037,7 @@ This effectiveTime represents either the medication duration (i.e., the time the
     <ruleId>CONF:1098-10505</ruleId>
     <ruleId>CONF:1098-32580</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_11pvMOXgEeOkFcFJ9uzEEw" base_Generalization="_qH_DoOXfEeOkFcFJ9uzEEw"/>
+  <CDA:ConformsTo xmi:id="_11pvMOXgEeOkFcFJ9uzEEw" base_Generalization="_qH_DoOXfEeOkFcFJ9uzEEw" requiresParentId="true"/>
   <CDA:ConstraintValidation xmi:id="_AUfTUOXmEeOkFcFJ9uzEEw" severity="INFO" base_Constraint="_oloRUOXlEeOkFcFJ9uzEEw">
     <ruleId>CONF:1098-7459</ruleId>
     <ruleId>CONF:1098-15607</ruleId>
@@ -2134,7 +2134,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:ConformsTo xmi:id="_MhZi0OXrEeOkFcFJ9uzEEw" base_Generalization="_H0AmoOXrEeOkFcFJ9uzEEw"/>
+  <CDA:ConformsTo xmi:id="_MhZi0OXrEeOkFcFJ9uzEEw" base_Generalization="_H0AmoOXrEeOkFcFJ9uzEEw" requiresParentId="true"/>
   <CDA:CDATemplate xmi:id="_NVU6IOXrEeOkFcFJ9uzEEw" base_Class="_Hz__kOXrEeOkFcFJ9uzEEw" templateId="2.16.840.1.113883.10.20.22.4.23" templateVersion="2014-06-09">
     <ruleId>CONF:1098-7409</ruleId>
     <ruleId>CONF:1098-10506</ruleId>
@@ -2213,7 +2213,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
     <ruleId>CONF:1098-10507</ruleId>
     <ruleId>CONF:1098-32578</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_YbSDAOZ8EeOmzetP5oaH3A" base_Generalization="_InVpIeZ8EeOmzetP5oaH3A"/>
+  <CDA:ConformsTo xmi:id="_YbSDAOZ8EeOmzetP5oaH3A" base_Generalization="_InVpIeZ8EeOmzetP5oaH3A" requiresParentId="true"/>
   <CDA:ConstraintValidation xmi:id="_sPjCQuZ9EeOmzetP5oaH3A" base_Constraint="_sPjCQOZ9EeOmzetP5oaH3A">
     <ruleId>CONF:1098-16870</ruleId>
   </CDA:ConstraintValidation>
@@ -2268,7 +2268,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
     <ruleId>CONF:1098-10509</ruleId>
     <ruleId>CONF:1098-32514</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_OdUg4OaDEeOmzetP5oaH3A" base_Generalization="_k_C20eaCEeOmzetP5oaH3A"/>
+  <CDA:ConformsTo xmi:id="_OdUg4OaDEeOmzetP5oaH3A" base_Generalization="_k_C20eaCEeOmzetP5oaH3A" requiresParentId="true"/>
   <uml:Association xmi:id="_fbtfMOaEEeOmzetP5oaH3A" memberEnd="_fbsREOaEEeOmzetP5oaH3A _fbtfMeaEEeOmzetP5oaH3A">
     <ownedEnd xmi:id="_fbtfMeaEEeOmzetP5oaH3A" type="_k_C20OaCEeOmzetP5oaH3A" association="_fbtfMOaEEeOmzetP5oaH3A"/>
   </uml:Association>
@@ -2349,7 +2349,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
   <CDA:CDATemplate xmi:id="_dxv-UPyqEeOlg_Cnc5bODw" base_Class="_ZLY3MPyqEeOlg_Cnc5bODw" templateId="2.16.840.1.113883.10.20.22.2.44" templateVersion="2015-08-01">
     <ruleId>CONF:1198-10098, CONF:1198-10392, CONF:1198-32560</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_ydsB4PyqEeOlg_Cnc5bODw" base_Generalization="_ZLbTcPyqEeOlg_Cnc5bODw"/>
+  <CDA:ConformsTo xmi:id="_ydsB4PyqEeOlg_Cnc5bODw" base_Generalization="_ZLbTcPyqEeOlg_Cnc5bODw" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_3BxREPyqEeOlg_Cnc5bODw" code="42346-7" displayName="Medications on Admission" base_Property="_3BwqAPyqEeOlg_Cnc5bODw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15483, CONF:1198-32142</ruleId>
@@ -2393,7 +2393,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     <ruleId>CONF:1098-7944.CONF:1098-10404</ruleId>
     <ruleId>CONF:1098-32523</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_NUwskP1cEeO5Hq-yrsJSmg" base_Generalization="_5OOcIP1bEeO5Hq-yrsJSmg"/>
+  <CDA:ConformsTo xmi:id="_NUwskP1cEeO5Hq-yrsJSmg" base_Generalization="_5OOcIP1bEeO5Hq-yrsJSmg" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_3QYLMP1iEeO5Hq-yrsJSmg" code="46264-8" displayName="Medical Equipment" base_Property="_3QXkIP1iEeO5Hq-yrsJSmg">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-15382</ruleId>
@@ -2442,7 +2442,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     <ruleId>CONF:1098-10405</ruleId>
     <ruleId>CONF:1098-32525</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_elEPUP4jEeOwFalSp0fRiw" base_Generalization="_F3_RkP4jEeOwFalSp0fRiw"/>
+  <CDA:ConformsTo xmi:id="_elEPUP4jEeOwFalSp0fRiw" base_Generalization="_F3_RkP4jEeOwFalSp0fRiw" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_yRsyAP4jEeOwFalSp0fRiw" code="29549-3" displayName="Medications Administered" base_Property="_yRsK8P4jEeOwFalSp0fRiw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-15384</ruleId>
@@ -2485,7 +2485,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     <ruleId>CONF:1098-10432</ruleId>
     <ruleId>CONF:1098-32500</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_eOKgQAFaEeS0nNJt6oyOyQ" base_Generalization="_JUxPgAFaEeS0nNJt6oyOyQ"/>
+  <CDA:ConformsTo xmi:id="_eOKgQAFaEeS0nNJt6oyOyQ" base_Generalization="_JUxPgAFaEeS0nNJt6oyOyQ" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_9cOpUQFbEeS0nNJt6oyOyQ" code="10160-0" displayName="History of medication use" base_Property="_9cOpUAFbEeS0nNJt6oyOyQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-15386</ruleId>
@@ -2594,7 +2594,7 @@ This section requires either an entry indicating the subject is not known to be 
     <ruleId>CONF:1098-10517</ruleId>
     <ruleId>CONF:1098-32603</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_7OGa0DhDEeS1WeMhbm6GZw" base_Generalization="_XA-hUDhDEeS1WeMhbm6GZw"/>
+  <CDA:ConformsTo xmi:id="_7OGa0DhDEeS1WeMhbm6GZw" base_Generalization="_XA-hUDhDEeS1WeMhbm6GZw" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_KDeTozhEEeS1WeMhbm6GZw" base_Property="_KDeToDhEEeS1WeMhbm6GZw">
     <ruleId>CONF:1098-32396</ruleId>
   </CDA:PropertyValidation>

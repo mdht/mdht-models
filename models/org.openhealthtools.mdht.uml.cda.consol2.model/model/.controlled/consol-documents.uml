@@ -6483,7 +6483,7 @@ For information on mixed content see the Extensible Markup Language reference (h
   <CDA:CDATemplate xmi:id="_vsuMsJ5QEeOr4eM3k36wAg" base_Class="_dduXkJ5OEeOr4eM3k36wAg" templateId="2.16.840.1.113883.10.20.22.1.1" templateVersion="2015-08-01">
     <ruleId>CONF:1198-5252, CONF:1198-10036, CONF:1198-32503</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_KDKU8J5REeOr4eM3k36wAg" base_Generalization="_ddxa4J5OEeOr4eM3k36wAg"/>
+  <CDA:ConformsTo xmi:id="_KDKU8J5REeOr4eM3k36wAg" base_Generalization="_ddxa4J5OEeOr4eM3k36wAg" requiresParentId="true"/>
   <uml:Class xmi:id="_2jWfwJ5wEeOr4eM3k36wAg" name="CarePlan">
     <ownedComment xmi:id="_hOzuoJ5xEeOr4eM3k36wAg">
       <body>&lt;p>&#xD;

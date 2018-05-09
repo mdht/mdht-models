@@ -865,7 +865,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     <ruleId>CONF:1098-16761</ruleId>
     <ruleId>CONF:1098-32513</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_UCOZYMykEeO93sHu8pHB2g" base_Generalization="_EIhLMMyjEeO93sHu8pHB2g"/>
+  <CDA:ConformsTo xmi:id="_UCOZYMykEeO93sHu8pHB2g" base_Generalization="_EIhLMMyjEeO93sHu8pHB2g" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_0SZ7McyvEeO93sHu8pHB2g" code="10183-2" displayName="Hospital discharge medications" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-19161</ruleId>
@@ -893,7 +893,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:CDATemplate xmi:id="_ex9owOEMEeOmBMTtnrPqww" base_Class="_Trd1cOEMEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.33" templateVersion="2015-08-01">
     <ruleId>CONF:1198-16764, CONF:1198-16765, CONF:1198-32534</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_oGRswOEMEeOmBMTtnrPqww" base_Generalization="_Trd1ceEMEeOmBMTtnrPqww"/>
+  <CDA:ConformsTo xmi:id="_oGRswOEMEeOmBMTtnrPqww" base_Generalization="_Trd1ceEMEeOmBMTtnrPqww" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_Ly9LoeENEeOmBMTtnrPqww" code="11535-2" displayName="Hospital discharge diagnosis" base_Property="_Ly9LoOENEeOmBMTtnrPqww">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-19148, CONF:1198-32163</ruleId>
@@ -944,7 +944,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:CDATemplate xmi:id="_u9a4wPytEeOmn53IDV99zw" base_Class="_jfuGYPytEeOmn53IDV99zw" templateId="2.16.840.1.113883.10.20.22.2.24" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7979, CONF:1198-10394, CONF:1198-15355</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_FiUpEPyuEeOmn53IDV99zw" base_Generalization="_jfv7kPytEeOmn53IDV99zw"/>
+  <CDA:ConformsTo xmi:id="_FiUpEPyuEeOmn53IDV99zw" base_Generalization="_jfv7kPytEeOmn53IDV99zw" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="__MeE0fyuEeOmn53IDV99zw" code="11535-2" displayName="Hospital Discharge Diagnosis" base_Property="__MeE0PyuEeOmn53IDV99zw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15356, CONF:1198-30861</ruleId>
@@ -987,7 +987,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:CDATemplate xmi:id="_JxnhwPyzEeOfAK77IvEBUw" base_Class="_HlfBYPyzEeOfAK77IvEBUw" templateId="2.16.840.1.113883.10.20.22.2.11" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7816, CONF:1198-10396, CONF:1198-32561</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_Wmtk4PyzEeOfAK77IvEBUw" base_Generalization="_HlhdoPyzEeOfAK77IvEBUw"/>
+  <CDA:ConformsTo xmi:id="_Wmtk4PyzEeOfAK77IvEBUw" base_Generalization="_HlhdoPyzEeOfAK77IvEBUw" requiresParentId="true"/>
   <uml:Association xmi:id="_nTDw8Py0EeOfAK77IvEBUw" memberEnd="_nTBUsPy0EeOfAK77IvEBUw _nTDw8fy0EeOfAK77IvEBUw">
     <ownedEnd xmi:id="_nTDw8fy0EeOfAK77IvEBUw" type="_HlfBYPyzEeOfAK77IvEBUw" association="_nTDw8Py0EeOfAK77IvEBUw"/>
   </uml:Association>
