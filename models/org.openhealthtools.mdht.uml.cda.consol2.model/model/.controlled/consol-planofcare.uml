@@ -2441,8 +2441,7 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NrQ4F-gTEeO-iJTuAv7BKQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_6z6c4ErsEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_NrQ4GegTEeO-iJTuAv7BKQ" name="routeCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    <ownedAttribute xmi:id="_NrQ4GegTEeO-iJTuAv7BKQ" name="routeCode" visibility="private" type="_l_PaAFPKEeieWreClOUydw" aggregation="composite">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NrQ4G-gTEeO-iJTuAv7BKQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NrQ4GugTEeO-iJTuAv7BKQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9hNwoErsEd6FXKclYGEDCw"/>
@@ -2591,6 +2590,17 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMT4UD3gEeSyGa6KC25kiw" value="1"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_l_PaAFPKEeieWreClOUydw" name="CE">
+      <generalization xmi:id="_l_QBEFPKEeieWreClOUydw">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_mY2z4FPKEeieWreClOUydw" name="translation" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mY2z4VPKEeieWreClOUydw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mY2z4lPKEeieWreClOUydw" value="*"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_e9gG0OgREeO-iJTuAv7BKQ" base_Class="_Yj45YOgREeO-iJTuAv7BKQ" templateId="2.16.840.1.113883.10.20.22.4.42" templateVersion="2014-06-09">
     <ruleId>CONF:1098-30465</ruleId>
@@ -2621,7 +2631,7 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
     <ruleId>CONF:1098-32088</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_NlzeYOgVEeO-iJTuAv7BKQ" base_Property="_NrQ4GegTEeO-iJTuAv7BKQ">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-32067</ruleId>
     <ruleId>DSTU:1276</ruleId>
   </CDA:ValueSetConstraint>
@@ -4475,4 +4485,11 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   <CDA:EntryRelationship xmi:id="_YHwfQLdREea9we5PpRWq8g" severity="INFO" base_Association="_Iels4P8rEeS4jrgU1p4iug" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_Y3sucLdREea9we5PpRWq8g" severity="INFO" base_Association="_KczGAP8rEeS4jrgU1p4iug" typeCode="REFR"/>
   <CDA:EntryRelationship xmi:id="_ZjSpILdREea9we5PpRWq8g" severity="INFO" base_Association="_NY0yQP8rEeS4jrgU1p4iug" typeCode="REFR"/>
+  <CDA:Inline xmi:id="_oOpQ0FPKEeieWreClOUydw" base_Class="_l_PaAFPKEeieWreClOUydw"/>
+  <CDA:PropertyValidation xmi:id="_rsX78FPKEeieWreClOUydw" severity="WARNING" base_Property="_mY2z4FPKEeieWreClOUydw"/>
+  <CDA:ValueSetConstraint xmi:id="_sJPeIFPKEeieWreClOUydw" base_Property="_mY2z4FPKEeieWreClOUydw">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
+    <ruleId>CONF:1098-32952</ruleId>
+    <ruleId>DSTU:1276</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>

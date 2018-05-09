@@ -748,8 +748,7 @@ The priority of the immunization activity to the patient and provider is communi
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rorhQpXFEeOgXcDbh8Igkw" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_6z6c4ErsEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_rorhRJXFEeOgXcDbh8Igkw" name="routeCode" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    <ownedAttribute xmi:id="_rorhRJXFEeOgXcDbh8Igkw" name="routeCode" visibility="private" type="_-ucUIFPJEeieWreClOUydw" aggregation="composite">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rorhRpXFEeOgXcDbh8Igkw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rorhRZXFEeOgXcDbh8Igkw" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9hNwoErsEd6FXKclYGEDCw"/>
@@ -869,6 +868,17 @@ The priority of the immunization activity to the patient and provider is communi
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OPL0MDq3EeSyGa6KC25kiw" value="1"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_-ucUIFPJEeieWreClOUydw" name="CE">
+      <generalization xmi:id="_-ucUIVPJEeieWreClOUydw">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="__PbhUFPJEeieWreClOUydw" name="translation" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__PbhUVPJEeieWreClOUydw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__PbhUlPJEeieWreClOUydw" value="*"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_xKmcQJXGEeOgXcDbh8Igkw" base_Class="_KRcPwJXFEeOgXcDbh8Igkw" templateId="2.16.840.1.113883.10.20.22.4.120">
     <ruleId>CONF:1098-32098</ruleId>
@@ -899,7 +909,7 @@ The priority of the immunization activity to the patient and provider is communi
     <ruleId>CONF:1098-32102</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_jioDUJXJEeOgXcDbh8Igkw" base_Property="_rorhRJXFEeOgXcDbh8Igkw">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-32127</ruleId>
     <ruleId>DSTU:1276</ruleId>
   </CDA:ValueSetConstraint>
@@ -1078,8 +1088,7 @@ This information should be included in an Immunization Activity when available. 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpU7gcHdEeST26B_nQ4gxA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpU7gsHdEeST26B_nQ4gxA" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_7DXfcD2iEeiFfJtNAawVHw" name="routeCode" visibility="private" aggregation="composite" redefinedProperty="_2ME5kRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    <ownedAttribute xmi:id="_7DXfcD2iEeiFfJtNAawVHw" name="routeCode" visibility="private" type="_l8_eoFPHEeieWreClOUydw" aggregation="composite" redefinedProperty="_2ME5kRSVEeGGzu7fmW9pXw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7DXfcT2iEeiFfJtNAawVHw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7DXfcj2iEeiFfJtNAawVHw" value="1"/>
     </ownedAttribute>
@@ -1145,6 +1154,17 @@ This information should be included in an Immunization Activity when available. 
         <type xmi:type="uml:Class" href="consol-other.uml#_KTrEAJpdEeOK6dzbL4VoTA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0L7a4cHzEeST26B_nQ4gxA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0L7a4MHzEeST26B_nQ4gxA" value="1"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_l8_eoFPHEeieWreClOUydw" name="CE">
+      <generalization xmi:id="_l9DJAFPHEeieWreClOUydw">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_m-5AgFPHEeieWreClOUydw" name="translation" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m-5AgVPHEeieWreClOUydw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m-5AglPHEeieWreClOUydw" value="*"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
@@ -1521,8 +1541,22 @@ This information should be included in an Immunization Activity when available. 
   <CDA:ConstraintValidation xmi:id="_dZwzEBaUEeWPafwaDwpzXw" severity="INFO" base_Constraint="_LMMTgMHeEeST26B_nQ4gxA"/>
   <CDA:PropertyValidation xmi:id="_7DvS4D2iEeiFfJtNAawVHw" severity="INFO" base_Property="_7DXfcD2iEeiFfJtNAawVHw"/>
   <CDA:ValueSetConstraint xmi:id="_7DwhAD2iEeiFfJtNAawVHw" base_Property="_7DXfcD2iEeiFfJtNAawVHw">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1198-8839</ruleId>
     <ruleId>DSTU:1276</ruleId>
   </CDA:ValueSetConstraint>
+  <CDA:Inline xmi:id="_tDuQwFPHEeieWreClOUydw" base_Class="_l8_eoFPHEeieWreClOUydw"/>
+  <CDA:PropertyValidation xmi:id="_4CdPMFPHEeieWreClOUydw" severity="WARNING" base_Property="_m-5AgFPHEeieWreClOUydw"/>
+  <CDA:ValueSetConstraint xmi:id="_LD8jIFPIEeieWreClOUydw" base_Property="_m-5AgFPHEeieWreClOUydw">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
+    <ruleId>CONF:1198-32960</ruleId>
+    <ruleId>DSTU:1276</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:Inline xmi:id="_BXbvoFPKEeieWreClOUydw" base_Class="_-ucUIFPJEeieWreClOUydw"/>
+  <CDA:ValueSetConstraint xmi:id="_EIeT4FPKEeieWreClOUydw" base_Property="__PbhUFPJEeieWreClOUydw">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
+    <ruleId>CONF:1098-32951</ruleId>
+    <ruleId>DSTU:1276</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_HcwIEFPKEeieWreClOUydw" severity="WARNING" base_Property="__PbhUFPJEeieWreClOUydw"/>
 </xmi:XMI>

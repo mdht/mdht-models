@@ -1814,8 +1814,7 @@ This effectiveTime represents either the medication duration (i.e., the time the
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5VihQuLREeOc7-TVP7Wi6w"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5VihQeLREeOc7-TVP7Wi6w" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_nbjTEMLMEeSqg-Exmsy2kg" name="routeCode" visibility="private" aggregation="composite" redefinedProperty="_2GHbvhSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    <ownedAttribute xmi:id="_nbjTEMLMEeSqg-Exmsy2kg" name="routeCode" visibility="private" type="_TfFG8FPJEeieWreClOUydw" aggregation="composite" redefinedProperty="_2GHbvhSVEeGGzu7fmW9pXw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nbjTEcLMEeSqg-Exmsy2kg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nbjTEsLMEeSqg-Exmsy2kg" value="1"/>
     </ownedAttribute>
@@ -1879,6 +1878,17 @@ This effectiveTime represents either the medication duration (i.e., the time the
       <ownedAttribute xmi:id="_JI6N8D3YEeSyGa6KC25kiw" name="preconditionForSubstanceAdministration2" type="_XA96QDhDEeS1WeMhbm6GZw" redefinedProperty="_DEI2EDhcEeS1WeMhbm6GZw" association="_JI8qMD3YEeSyGa6KC25kiw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MQkicD3YEeSyGa6KC25kiw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MQdNsD3YEeSyGa6KC25kiw" value="1"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_TfFG8FPJEeieWreClOUydw" name="CE">
+      <generalization xmi:id="_TfFuAFPJEeieWreClOUydw">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_UNlLsFPJEeieWreClOUydw" name="translation" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UNlLsVPJEeieWreClOUydw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UNlLslPJEeieWreClOUydw" value="*"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
@@ -2642,7 +2652,7 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_nbj6IMLMEeSqg-Exmsy2kg" severity="WARNING" base_Property="_nbjTEMLMEeSqg-Exmsy2kg"/>
   <CDA:ValueSetConstraint xmi:id="_nbkhMMLMEeSqg-Exmsy2kg" base_Property="_nbjTEMLMEeSqg-Exmsy2kg">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-7514</ruleId>
     <ruleId>DSTU:1276</ruleId>
   </CDA:ValueSetConstraint>
@@ -2876,4 +2886,11 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
   <CDA:PropertyValidation xmi:id="_SefBEN6jEee0kIKIEebuqA" base_Property="_2NJ3pBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:15387</ruleId>
   </CDA:PropertyValidation>
+  <CDA:Inline xmi:id="_V3nroFPJEeieWreClOUydw" base_Class="_TfFG8FPJEeieWreClOUydw"/>
+  <CDA:ValueSetConstraint xmi:id="_ZQiIMFPJEeieWreClOUydw" base_Property="_UNlLsFPJEeieWreClOUydw">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
+    <ruleId>CONF:1098-32950</ruleId>
+    <ruleId>DSTU:1276</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_g2tPYFPJEeieWreClOUydw" severity="WARNING" base_Property="_UNlLsFPJEeieWreClOUydw"/>
 </xmi:XMI>
