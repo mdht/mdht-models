@@ -50,6 +50,15 @@ public class ProblemStatus2Impl extends ProblemStatusImpl implements ProblemStat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemStatus2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemStatus2Operations.validateProblemStatus2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProblemStatusTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatus2Operations.validateProblemStatusTextReference(this, diagnostics, context);
@@ -73,16 +82,6 @@ public class ProblemStatus2Impl extends ProblemStatusImpl implements ProblemStat
 	@Override
 	public boolean validateProblemStatusTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatus2Operations.validateProblemStatusTextReferenceValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProblemStatusTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemStatus2Operations.validateProblemStatusTemplateId(this, diagnostics, context);
 	}
 
 	/**

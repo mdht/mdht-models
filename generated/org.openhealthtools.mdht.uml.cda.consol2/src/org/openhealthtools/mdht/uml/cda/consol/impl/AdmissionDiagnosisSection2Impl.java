@@ -47,6 +47,17 @@ public class AdmissionDiagnosisSection2Impl extends HospitalAdmissionDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAdmissionDiagnosisSection2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAdmissionDiagnosisSection2CETranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2CETranslation(
@@ -71,18 +82,6 @@ public class AdmissionDiagnosisSection2Impl extends HospitalAdmissionDiagnosisSe
 	 */
 	public HospitalAdmissionDiagnosis2 getConsolHospitalAdmissionDiagnosis2() {
 		return AdmissionDiagnosisSection2Operations.getConsolHospitalAdmissionDiagnosis2(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHospitalAdmissionDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdmissionDiagnosisSection2Operations.validateHospitalAdmissionDiagnosisSectionTemplateId(
-			this, diagnostics, context);
 	}
 
 	/**

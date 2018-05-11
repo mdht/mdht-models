@@ -51,9 +51,8 @@ public class PayersSection2Impl extends PayersSectionImpl implements PayersSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<CoverageActivity2> getConsolCoverageActivity2s() {
-		return PayersSection2Operations.getConsolCoverageActivity2s(this);
+	public boolean validatePayersSection2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PayersSection2Operations.validatePayersSection2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -62,8 +61,8 @@ public class PayersSection2Impl extends PayersSectionImpl implements PayersSecti
 	 * @generated
 	 */
 	@Override
-	public boolean validatePayersSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PayersSection2Operations.validatePayersSectionTemplateId(this, diagnostics, context);
+	public EList<CoverageActivity2> getConsolCoverageActivity2s() {
+		return PayersSection2Operations.getConsolCoverageActivity2s(this);
 	}
 
 	/**

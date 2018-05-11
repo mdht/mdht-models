@@ -62,6 +62,15 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedAct2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedAct2Operations.validatePlannedAct2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlannedAct2Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedAct2Operations.validatePlannedAct2Code(this, diagnostics, context);
@@ -173,16 +182,6 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 */
 	public EList<PriorityPreference> getPriorityPreferences() {
 		return PlannedAct2Operations.getPriorityPreferences(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareActivityActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedAct2Operations.validatePlanOfCareActivityActTemplateId(this, diagnostics, context);
 	}
 
 	/**

@@ -19,11 +19,23 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdmissionDiagnosisSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalAdmissionDiagnosisSectionTemplateId HospitalAdmissionDiagnosisSectionCode HospitalAdmissionDiagnosisSectionCodeP AdmissionDiagnosisSection2CETranslation AdmissionDiagnosisSection2CETranslationP' templateId.root='2.16.840.1.113883.10.20.22.2.43' templateId.extension='2015-08-01' constraints.validation.dependOn.HospitalAdmissionDiagnosisSectionCode='HospitalAdmissionDiagnosisSectionCodeP' constraints.validation.warning='HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis' constraints.validation.query='AdmissionDiagnosisSection2CETranslation AdmissionDiagnosisSection2CETranslationP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdmissionDiagnosisSection2TemplateId HospitalAdmissionDiagnosisSectionCode HospitalAdmissionDiagnosisSectionCodeP AdmissionDiagnosisSection2CETranslation AdmissionDiagnosisSection2CETranslationP' templateId.root='2.16.840.1.113883.10.20.22.2.43' templateId.extension='2015-08-01' constraints.validation.dependOn.HospitalAdmissionDiagnosisSectionCode='HospitalAdmissionDiagnosisSectionCodeP' constraints.validation.warning='HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis' constraints.validation.query='AdmissionDiagnosisSection2CETranslation AdmissionDiagnosisSection2CETranslationP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAdmissionDiagnosisSection2CE translation.code='42347-5' translation.codeSystem='2.16.840.1.113883.6.1' translation.codeSystemName='LOINC' translation.displayName='Admission Diagnosis' constraints.validation.error='AdmissionDiagnosisSection2CETranslation AdmissionDiagnosisSection2CETranslationP'"
  * @generated
  */
 public interface AdmissionDiagnosisSection2 extends HospitalAdmissionDiagnosisSection {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.43\' and id.extension.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateAdmissionDiagnosisSection2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

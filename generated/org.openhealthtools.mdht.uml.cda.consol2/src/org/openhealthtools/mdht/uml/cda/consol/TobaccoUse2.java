@@ -19,12 +19,24 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getTobaccoUse2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TobaccoUseTemplateId TobaccoUse2Id TobaccoUseCode TobaccoUseCodeP TobaccoUseEffectiveTime' templateId.root='2.16.840.1.113883.10.20.22.4.85' templateId.extension='2014-06-09' code.code='11367-0' code.codeSystemName='' code.displayName='History of tobacco use' constraints.validation.dependOn.TobaccoUseCode='TobaccoUseCodeP' constraints.validation.warning='TobaccoUse2AuthorParticipation' constraints.validation.info='TobaccoUse2CDCodeTermAssertionOrLoinc TobaccoUse2IVLTSHigh' constraints.validation.query='TobaccoUse2CDCodeTermAssertionOrLoinc TobaccoUse2IVLTSHigh'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TobaccoUse2TemplateId TobaccoUse2Id TobaccoUseCode TobaccoUseCodeP TobaccoUseEffectiveTime' templateId.root='2.16.840.1.113883.10.20.22.4.85' templateId.extension='2014-06-09' code.code='11367-0' code.codeSystemName='' code.displayName='History of tobacco use' constraints.validation.dependOn.TobaccoUseCode='TobaccoUseCodeP' constraints.validation.warning='TobaccoUse2AuthorParticipation' constraints.validation.info='TobaccoUse2CDCodeTermAssertionOrLoinc TobaccoUse2IVLTSHigh' constraints.validation.query='TobaccoUse2CDCodeTermAssertionOrLoinc TobaccoUse2IVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTobaccoUse2IVLTS constraints.validation.info='TobaccoUse2IVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTobaccoUse2CD constraints.validation.info='TobaccoUse2CDCodeTermAssertionOrLoinc'"
  * @generated
  */
 public interface TobaccoUse2 extends TobaccoUse {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.85\' and id.extension.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateTobaccoUse2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

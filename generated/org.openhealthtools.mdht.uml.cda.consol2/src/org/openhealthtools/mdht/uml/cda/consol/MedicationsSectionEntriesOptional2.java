@@ -20,7 +20,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationsSectionEntriesOptional2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionEntriesOptionalTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.1' templateId.extension='2014-06-09' constraints.validation.info='MedicationsSectionEntriesOptionalAbsenceOfMedications' constraints.validation.dependOn.MedicationsSectionEntriesOptionalCode='MedicationsSectionEntriesOptionalCodeP' constraints.validation.warning='MedicationsSectionEntriesOptionalMedicationActivity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionEntriesOptional2TemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.1' templateId.extension='2014-06-09' constraints.validation.info='MedicationsSectionEntriesOptionalAbsenceOfMedications' constraints.validation.dependOn.MedicationsSectionEntriesOptionalCode='MedicationsSectionEntriesOptionalCodeP' constraints.validation.warning='MedicationsSectionEntriesOptionalMedicationActivity'"
  * @generated
  */
 public interface MedicationsSectionEntriesOptional2 extends MedicationsSectionEntriesOptional {
@@ -35,6 +35,19 @@ public interface MedicationsSectionEntriesOptional2 extends MedicationsSectionEn
 	 * @generated
 	 */
 	boolean validateMedicationsSectionEntriesOptionalAbsenceOfMedications(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.1\' and id.extension.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateMedicationsSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**

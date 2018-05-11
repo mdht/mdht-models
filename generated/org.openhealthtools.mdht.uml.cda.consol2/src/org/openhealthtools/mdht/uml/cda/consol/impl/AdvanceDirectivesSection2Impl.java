@@ -138,18 +138,6 @@ public class AdvanceDirectivesSection2Impl extends AdvanceDirectivesSectionEntri
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSectionEntriesOptionalCodeP(
@@ -210,6 +198,18 @@ public class AdvanceDirectivesSection2Impl extends AdvanceDirectivesSectionEntri
 	@Override
 	public EList<AdvanceDirectiveOrganizer> getConsolAdvanceDirectiveOrganizers() {
 		return AdvanceDirectivesSection2Operations.getConsolAdvanceDirectiveOrganizers(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateAdvanceDirectivesSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSectionEntriesOptional2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**

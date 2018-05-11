@@ -30,8 +30,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PayersSection2Operatio
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection2#validatePayersSection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection2#getConsolCoverageActivity2s() <em>Get Consol Coverage Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection2#validatePayersSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection2#validatePayersSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection2#validatePayersSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection2#validatePayersSectionCoverageActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Coverage Activity</em>}</li>
@@ -48,22 +48,11 @@ public class PayersSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolCoverageActivity2s() {
 
-		PayersSection2 target = objectFactory.create();
-		target.getConsolCoverageActivity2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePayersSectionTemplateId() {
-		OperationsTestCase<PayersSection2> validatePayersSectionTemplateIdTestCase = new OperationsTestCase<PayersSection2>(
-			"validatePayersSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidatePayersSection2TemplateId() {
+		OperationsTestCase<PayersSection2> validatePayersSection2TemplateIdTestCase = new OperationsTestCase<PayersSection2>(
+			"validatePayersSection2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PAYERS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -80,13 +69,25 @@ public class PayersSection2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PayersSection2Operations.validatePayersSectionTemplateId(
+				return PayersSection2Operations.validatePayersSection2TemplateId(
 					(PayersSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePayersSectionTemplateIdTestCase.doValidationTest();
+		validatePayersSection2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolCoverageActivity2s() {
+
+		PayersSection2 target = objectFactory.create();
+		target.getConsolCoverageActivity2s();
+
 	}
 
 	/**

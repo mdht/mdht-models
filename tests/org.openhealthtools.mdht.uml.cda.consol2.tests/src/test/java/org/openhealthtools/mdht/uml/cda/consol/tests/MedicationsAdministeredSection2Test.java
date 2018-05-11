@@ -30,8 +30,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsAdministere
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection2#validateMedicationsAdministeredSection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection2#getConsolMedicationActivity2s() <em>Get Consol Medication Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection2#validateMedicationsAdministeredSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection2#validateMedicationsAdministeredSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection2#validateMedicationsAdministeredSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection2#validateMedicationsAdministeredSectionMedicationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Medication Activity</em>}</li>
@@ -48,23 +48,12 @@ public class MedicationsAdministeredSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolMedicationActivity2s() {
 
-		MedicationsAdministeredSection2 target = objectFactory.create();
-		target.getConsolMedicationActivity2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateMedicationsAdministeredSectionTemplateId() {
-		OperationsTestCase<MedicationsAdministeredSection2> validateMedicationsAdministeredSectionTemplateIdTestCase = new OperationsTestCase<MedicationsAdministeredSection2>(
-			"validateMedicationsAdministeredSectionTemplateId",
+	public void testValidateMedicationsAdministeredSection2TemplateId() {
+		OperationsTestCase<MedicationsAdministeredSection2> validateMedicationsAdministeredSection2TemplateIdTestCase = new OperationsTestCase<MedicationsAdministeredSection2>(
+			"validateMedicationsAdministeredSection2TemplateId",
 			operationsForOCL.getOCLValue(
-				"VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+				"VALIDATE_MEDICATIONS_ADMINISTERED_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -81,13 +70,25 @@ public class MedicationsAdministeredSection2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return MedicationsAdministeredSection2Operations.validateMedicationsAdministeredSectionTemplateId(
+				return MedicationsAdministeredSection2Operations.validateMedicationsAdministeredSection2TemplateId(
 					(MedicationsAdministeredSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateMedicationsAdministeredSectionTemplateIdTestCase.doValidationTest();
+		validateMedicationsAdministeredSection2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolMedicationActivity2s() {
+
+		MedicationsAdministeredSection2 target = objectFactory.create();
+		target.getConsolMedicationActivity2s();
+
 	}
 
 	/**

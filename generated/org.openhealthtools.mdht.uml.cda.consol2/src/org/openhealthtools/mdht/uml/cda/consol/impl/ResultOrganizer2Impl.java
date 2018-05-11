@@ -51,6 +51,15 @@ public class ResultOrganizer2Impl extends ResultOrganizerImpl implements ResultO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultOrganizer2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizer2Operations.validateResultOrganizer2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultOrganizer2EffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizer2Operations.validateResultOrganizer2EffectiveTime(this, diagnostics, context);
@@ -113,16 +122,6 @@ public class ResultOrganizer2Impl extends ResultOrganizerImpl implements ResultO
 	@Override
 	public boolean validateResultOrganizerClassCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizer2Operations.validateResultOrganizerClassCodeValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizer2Operations.validateResultOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**

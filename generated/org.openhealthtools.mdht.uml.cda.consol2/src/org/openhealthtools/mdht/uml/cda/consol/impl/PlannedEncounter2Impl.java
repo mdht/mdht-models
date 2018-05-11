@@ -64,6 +64,15 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedEncounter2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedEncounter2Operations.validatePlannedEncounter2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlannedEncounter2Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2Code(this, diagnostics, context);
@@ -198,17 +207,6 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	@Override
 	public EList<Indication2> getIndication2s() {
 		return PlannedEncounter2Operations.getIndication2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareActivityEncounterTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedEncounter2Operations.validatePlanOfCareActivityEncounterTemplateId(this, diagnostics, context);
 	}
 
 	/**

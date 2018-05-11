@@ -39,6 +39,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterActivity2Oper
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivity2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activity2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivity2CDTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activity2 CD Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Encounter Performer Encounter Performer Assigned Entity Code P</em>}</li>
@@ -46,7 +47,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterActivity2Oper
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#getConsolEncounterDiagnosis2s() <em>Get Consol Encounter Diagnosis2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#getConsolServiceDeliveryLocations() <em>Get Consol Service Delivery Locations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesSdtcDDCFromNUBCOrDD(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Sdtc DDC From NUBC Or DD</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesSDTCDischargeDispositionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities SDTC Discharge Disposition Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2#validateEncounterActivitiesIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Indication</em>}</li>
@@ -62,6 +62,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterActivity2Oper
  */
 
 public class EncounterActivity2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateEncounterActivity2TemplateId() {
+		OperationsTestCase<EncounterActivity2> validateEncounterActivity2TemplateIdTestCase = new OperationsTestCase<EncounterActivity2>(
+			"validateEncounterActivity2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(EncounterActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(EncounterActivity2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncounterActivity2Operations.validateEncounterActivity2TemplateId(
+					(EncounterActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncounterActivity2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -297,40 +332,6 @@ public class EncounterActivity2Test extends CDAValidationTest {
 		};
 
 		validateEncounterActivitiesSdtcDDCFromNUBCOrDDTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateEncounterActivitiesTemplateId() {
-		OperationsTestCase<EncounterActivity2> validateEncounterActivitiesTemplateIdTestCase = new OperationsTestCase<EncounterActivity2>(
-			"validateEncounterActivitiesTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(EncounterActivity2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(EncounterActivity2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return EncounterActivity2Operations.validateEncounterActivitiesTemplateId(
-					(EncounterActivity2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateEncounterActivitiesTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

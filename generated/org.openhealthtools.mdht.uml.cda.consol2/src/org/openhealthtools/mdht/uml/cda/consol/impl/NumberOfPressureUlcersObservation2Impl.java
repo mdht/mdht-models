@@ -46,6 +46,17 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateNumberOfPressureUlcersObservation2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateNumberOfPressureUlcersObservation2CDTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2CDTranslation(
@@ -82,18 +93,6 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	public boolean validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateNumberOfPressureUlcersObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationTemplateId(
 			this, diagnostics, context);
 	}
 

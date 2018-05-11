@@ -19,7 +19,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncountersSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncountersSectionEntriesOptionalTemplateId EncountersSectionEntriesOptionalCode EncountersSectionEntriesOptionalCodeP EncountersSection2Text EncountersSection2Title EncountersSectionEntriesOptionalEncounterActivities' templateId.root='2.16.840.1.113883.10.20.22.2.22.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='EncountersSection2NullFlavor' constraints.validation.dependOn.EncountersSectionEntriesOptionalCode='EncountersSectionEntriesOptionalCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncountersSectionEntriesOptional2TemplateId EncountersSectionEntriesOptionalCode EncountersSectionEntriesOptionalCodeP EncountersSection2Text EncountersSection2Title EncountersSectionEntriesOptionalEncounterActivities' templateId.root='2.16.840.1.113883.10.20.22.2.22.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='EncountersSection2NullFlavor' constraints.validation.dependOn.EncountersSectionEntriesOptionalCode='EncountersSectionEntriesOptionalCodeP'"
  * @generated
  */
 public interface EncountersSection2 extends EncountersSectionEntriesOptional2 {

@@ -46,6 +46,17 @@ public class PreconditionForSubstanceAdministration2Impl extends PreconditionFor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePreconditionForSubstanceAdministration2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministration2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePreconditionForSubstanceAdministrationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationCodeP(
@@ -60,18 +71,6 @@ public class PreconditionForSubstanceAdministration2Impl extends PreconditionFor
 	public boolean validatePreconditionForSubstanceAdministrationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationValueP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePreconditionForSubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationTemplateId(
 			this, diagnostics, context);
 	}
 

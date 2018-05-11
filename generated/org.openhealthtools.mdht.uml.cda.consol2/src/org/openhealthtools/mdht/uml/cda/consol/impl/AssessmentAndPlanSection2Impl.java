@@ -51,9 +51,10 @@ public class AssessmentAndPlanSection2Impl extends AssessmentAndPlanSectionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PlannedAct2> getConsolPlannedAct2s() {
-		return AssessmentAndPlanSection2Operations.getConsolPlannedAct2s(this);
+	public boolean validateAssessmentAndPlanSection2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSection2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -62,10 +63,8 @@ public class AssessmentAndPlanSection2Impl extends AssessmentAndPlanSectionImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAssessmentAndPlanSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSectionTemplateId(
-			this, diagnostics, context);
+	public EList<PlannedAct2> getConsolPlannedAct2s() {
+		return AssessmentAndPlanSection2Operations.getConsolPlannedAct2s(this);
 	}
 
 	/**

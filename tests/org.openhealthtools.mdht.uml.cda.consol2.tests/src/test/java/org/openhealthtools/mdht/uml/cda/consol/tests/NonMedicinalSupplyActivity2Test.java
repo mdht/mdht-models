@@ -37,11 +37,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.NonMedicinalSupplyActi
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivity2Instruction2InversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Instruction2 Inversion Ind</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivity2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivityStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivity2Instruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#getInstruction2() <em>Get Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#getConsolProductInstance() <em>Get Consol Product Instance</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivityStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivityProductInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Product Instance</em>}</li>
  * </ul>
@@ -89,6 +89,41 @@ public class NonMedicinalSupplyActivity2Test extends CDAValidationTest {
 		};
 
 		validateNonMedicinalSupplyActivity2Instruction2InversionIndTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateNonMedicinalSupplyActivity2TemplateId() {
+		OperationsTestCase<NonMedicinalSupplyActivity2> validateNonMedicinalSupplyActivity2TemplateIdTestCase = new OperationsTestCase<NonMedicinalSupplyActivity2>(
+			"validateNonMedicinalSupplyActivity2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(NonMedicinalSupplyActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NonMedicinalSupplyActivity2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivity2TemplateId(
+					(NonMedicinalSupplyActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNonMedicinalSupplyActivity2TemplateIdTestCase.doValidationTest();
 	}
 
 	/**
@@ -186,40 +221,6 @@ public class NonMedicinalSupplyActivity2Test extends CDAValidationTest {
 		NonMedicinalSupplyActivity2 target = objectFactory.create();
 		target.getConsolProductInstance();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateNonMedicinalSupplyActivityTemplateId() {
-		OperationsTestCase<NonMedicinalSupplyActivity2> validateNonMedicinalSupplyActivityTemplateIdTestCase = new OperationsTestCase<NonMedicinalSupplyActivity2>(
-			"validateNonMedicinalSupplyActivityTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(NonMedicinalSupplyActivity2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(NonMedicinalSupplyActivity2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityTemplateId(
-					(NonMedicinalSupplyActivity2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateNonMedicinalSupplyActivityTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

@@ -81,9 +81,9 @@ public class ResultsSection2Impl extends ResultsSectionEntriesOptional2Impl impl
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+	public boolean validateResultsSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultsSection2Operations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return ResultsSection2Operations.validateResultsSectionEntriesOptional2TemplateId(this, diagnostics, context);
 	}
 
 	/**

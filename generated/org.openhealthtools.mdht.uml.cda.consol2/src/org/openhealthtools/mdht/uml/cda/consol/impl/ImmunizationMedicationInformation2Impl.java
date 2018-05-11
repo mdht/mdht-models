@@ -50,6 +50,17 @@ public class ImmunizationMedicationInformation2Impl extends ImmunizationMedicati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationMedicationInformation2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationMedicationInformation2Operations.validateImmunizationMedicationInformation2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationMedicationInformation2Operations.validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationP(
@@ -88,18 +99,6 @@ public class ImmunizationMedicationInformation2Impl extends ImmunizationMedicati
 	public boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationMedicationInformation2Operations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateImmunizationMedicationInformationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ImmunizationMedicationInformation2Operations.validateImmunizationMedicationInformationTemplateId(
 			this, diagnostics, context);
 	}
 

@@ -54,6 +54,15 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePhysicalExamSection2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSection2Operations.validatePhysicalExamSection2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePhysicalExamSection2WoundObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -161,16 +170,6 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	@Override
 	public EList<NumberOfPressureUlcersObservation> getConsolNumberOfPressureUlcersObservations() {
 		return PhysicalExamSection2Operations.getConsolNumberOfPressureUlcersObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePhysicalExamSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSection2Operations.validatePhysicalExamSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**

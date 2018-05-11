@@ -35,11 +35,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsOrganizer2Op
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizer2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizer2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizer2CDTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer2 CD Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizer2CDTranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer2 CD Translation P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#getConsolVitalSignObservation2s() <em>Get Consol Vital Sign Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizerCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizerEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Effective Time</em>}</li>
@@ -51,6 +51,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsOrganizer2Op
  */
 
 public class VitalSignsOrganizer2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateVitalSignsOrganizer2TemplateId() {
+		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizer2TemplateIdTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
+			"validateVitalSignsOrganizer2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(VitalSignsOrganizer2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(VitalSignsOrganizer2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2TemplateId(
+					(VitalSignsOrganizer2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateVitalSignsOrganizer2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -204,40 +239,6 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 		VitalSignsOrganizer2 target = objectFactory.create();
 		target.getConsolVitalSignObservation2s();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateVitalSignsOrganizerTemplateId() {
-		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizerTemplateIdTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
-			"validateVitalSignsOrganizerTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(VitalSignsOrganizer2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(VitalSignsOrganizer2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return VitalSignsOrganizer2Operations.validateVitalSignsOrganizerTemplateId(
-					(VitalSignsOrganizer2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateVitalSignsOrganizerTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

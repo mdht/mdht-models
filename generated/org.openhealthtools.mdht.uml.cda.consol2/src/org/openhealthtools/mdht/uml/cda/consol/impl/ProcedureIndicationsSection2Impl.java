@@ -52,9 +52,10 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Indication2> getConsolIndication2s() {
-		return ProcedureIndicationsSection2Operations.getConsolIndication2s(this);
+	public boolean validateProcedureIndicationsSection2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSection2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -63,10 +64,8 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureIndicationsSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionTemplateId(
-			this, diagnostics, context);
+	public EList<Indication2> getConsolIndication2s() {
+		return ProcedureIndicationsSection2Operations.getConsolIndication2s(this);
 	}
 
 	/**

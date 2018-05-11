@@ -48,8 +48,10 @@ public class AdmissionMedicationsSectionEntriesOptional2Impl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AdmissionMedication2> getConsolAdmissionMedication2s() {
-		return AdmissionMedicationsSectionEntriesOptional2Operations.getConsolAdmissionMedication2s(this);
+	public boolean validateAdmissionMedicationsSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdmissionMedicationsSectionEntriesOptional2Operations.validateAdmissionMedicationsSectionEntriesOptional2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -57,11 +59,8 @@ public class AdmissionMedicationsSectionEntriesOptional2Impl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdmissionMedicationsSectionEntriesOptional2Operations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+	public EList<AdmissionMedication2> getConsolAdmissionMedication2s() {
+		return AdmissionMedicationsSectionEntriesOptional2Operations.getConsolAdmissionMedication2s(this);
 	}
 
 	/**

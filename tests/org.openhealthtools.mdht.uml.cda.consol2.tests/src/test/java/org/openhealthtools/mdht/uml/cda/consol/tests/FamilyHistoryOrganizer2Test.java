@@ -30,9 +30,9 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryOrganizer
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#validateFamilyHistoryOrganizer2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#validateFamilyHistoryOrganizer2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer2 Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#getConsolFamilyHistoryObservation2s() <em>Get Consol Family History Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#validateFamilyHistoryOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#validateFamilyHistoryOrganizerFamilyHistoryObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer Family History Observation</em>}</li>
  * </ul>
  * </p>
@@ -41,6 +41,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryOrganizer
  */
 
 public class FamilyHistoryOrganizer2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateFamilyHistoryOrganizer2TemplateId() {
+		OperationsTestCase<FamilyHistoryOrganizer2> validateFamilyHistoryOrganizer2TemplateIdTestCase = new OperationsTestCase<FamilyHistoryOrganizer2>(
+			"validateFamilyHistoryOrganizer2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_ORGANIZER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FamilyHistoryOrganizer2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FamilyHistoryOrganizer2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FamilyHistoryOrganizer2Operations.validateFamilyHistoryOrganizer2TemplateId(
+					(FamilyHistoryOrganizer2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFamilyHistoryOrganizer2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -87,40 +122,6 @@ public class FamilyHistoryOrganizer2Test extends CDAValidationTest {
 		FamilyHistoryOrganizer2 target = objectFactory.create();
 		target.getConsolFamilyHistoryObservation2s();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateFamilyHistoryOrganizerTemplateId() {
-		OperationsTestCase<FamilyHistoryOrganizer2> validateFamilyHistoryOrganizerTemplateIdTestCase = new OperationsTestCase<FamilyHistoryOrganizer2>(
-			"validateFamilyHistoryOrganizerTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FamilyHistoryOrganizer2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(FamilyHistoryOrganizer2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FamilyHistoryOrganizer2Operations.validateFamilyHistoryOrganizerTemplateId(
-					(FamilyHistoryOrganizer2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFamilyHistoryOrganizerTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

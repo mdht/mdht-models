@@ -53,6 +53,15 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEncounterActivity2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterActivity2Operations.validateEncounterActivity2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateEncounterActivitiesCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivity2Operations.validateEncounterActivitiesCodeP(this, diagnostics, context);
@@ -116,16 +125,6 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	public boolean validateEncounterActivitiesSdtcDDCFromNUBCOrDD(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterActivity2Operations.validateEncounterActivitiesSdtcDDCFromNUBCOrDD(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateEncounterActivitiesTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivity2Operations.validateEncounterActivitiesTemplateId(this, diagnostics, context);
 	}
 
 	/**

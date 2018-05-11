@@ -47,6 +47,17 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDischargeDiagnosisSection2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateDischargeDiagnosisSection2CETranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslation(
@@ -71,18 +82,6 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	 */
 	public HospitalDischargeDiagnosis2 getConsolHospitalDischargeDiagnosis2() {
 		return DischargeDiagnosisSection2Operations.getConsolHospitalDischargeDiagnosis2(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHospitalDischargeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionTemplateId(
-			this, diagnostics, context);
 	}
 
 	/**

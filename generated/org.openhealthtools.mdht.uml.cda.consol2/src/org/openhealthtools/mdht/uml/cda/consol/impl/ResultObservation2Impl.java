@@ -49,6 +49,15 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultObservation2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservation2Operations.validateResultObservation2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateResultObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservationCodeP(this, diagnostics, context);
 	}
@@ -177,16 +186,6 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	public boolean validateResultObservationNoObservationRangeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservationNoObservationRangeCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservation2Operations.validateResultObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**

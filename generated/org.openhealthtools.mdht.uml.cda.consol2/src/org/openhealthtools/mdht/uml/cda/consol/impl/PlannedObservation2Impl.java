@@ -54,6 +54,15 @@ public class PlannedObservation2Impl extends PlanOfCareActivityObservationImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedObservation2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedObservation2Operations.validatePlannedObservation2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePlannedObservation2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedObservation2Operations.validatePlannedObservation2CodeP(this, diagnostics, context);
 	}
@@ -237,18 +246,6 @@ public class PlannedObservation2Impl extends PlanOfCareActivityObservationImpl i
 	@Override
 	public EList<PlannedCoverage> getPlannedCoverages() {
 		return PlannedObservation2Operations.getPlannedCoverages(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareActivityObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedObservation2Operations.validatePlanOfCareActivityObservationTemplateId(
-			this, diagnostics, context);
 	}
 
 	/**

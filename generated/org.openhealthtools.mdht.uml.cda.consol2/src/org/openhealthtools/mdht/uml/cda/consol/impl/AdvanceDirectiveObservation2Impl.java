@@ -50,6 +50,17 @@ public class AdvanceDirectiveObservation2Impl extends AdvanceDirectiveObservatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAdvanceDirectiveObservation2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateAdvanceDirectiveObservation2Value(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2Value(
@@ -286,18 +297,6 @@ public class AdvanceDirectiveObservation2Impl extends AdvanceDirectiveObservatio
 	public boolean validateAdvanceDirectiveObservationHasEndingTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationHasEndingTime(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAdvanceDirectiveObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationTemplateId(
 			this, diagnostics, context);
 	}
 

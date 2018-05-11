@@ -30,8 +30,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdmissionMedicationsSe
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2#validateAdmissionMedicationsSectionEntriesOptional2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medications Section Entries Optional2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2#getConsolAdmissionMedication2s() <em>Get Consol Admission Medication2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2#validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2#validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2#validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2#validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Admission Medication</em>}</li>
@@ -48,23 +48,12 @@ public class AdmissionMedicationsSectionEntriesOptional2Test extends CDAValidati
 	* @generated
 	*/
 	@Test
-	public void testGetConsolAdmissionMedication2s() {
 
-		AdmissionMedicationsSectionEntriesOptional2 target = objectFactory.create();
-		target.getConsolAdmissionMedication2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId() {
-		OperationsTestCase<AdmissionMedicationsSectionEntriesOptional2> validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<AdmissionMedicationsSectionEntriesOptional2>(
-			"validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId",
+	public void testValidateAdmissionMedicationsSectionEntriesOptional2TemplateId() {
+		OperationsTestCase<AdmissionMedicationsSectionEntriesOptional2> validateAdmissionMedicationsSectionEntriesOptional2TemplateIdTestCase = new OperationsTestCase<AdmissionMedicationsSectionEntriesOptional2>(
+			"validateAdmissionMedicationsSectionEntriesOptional2TemplateId",
 			operationsForOCL.getOCLValue(
-				"VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+				"VALIDATE_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -81,13 +70,25 @@ public class AdmissionMedicationsSectionEntriesOptional2Test extends CDAValidati
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AdmissionMedicationsSectionEntriesOptional2Operations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(
+				return AdmissionMedicationsSectionEntriesOptional2Operations.validateAdmissionMedicationsSectionEntriesOptional2TemplateId(
 					(AdmissionMedicationsSectionEntriesOptional2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateIdTestCase.doValidationTest();
+		validateAdmissionMedicationsSectionEntriesOptional2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolAdmissionMedication2s() {
+
+		AdmissionMedicationsSectionEntriesOptional2 target = objectFactory.create();
+		target.getConsolAdmissionMedication2s();
+
 	}
 
 	/**

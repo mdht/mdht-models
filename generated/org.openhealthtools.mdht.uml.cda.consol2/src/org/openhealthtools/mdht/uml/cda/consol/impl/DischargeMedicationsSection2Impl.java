@@ -122,9 +122,9 @@ public class DischargeMedicationsSection2Impl extends DischargeMedicationsSectio
 	 * @generated
 	 */
 	@Override
-	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+	public boolean validateDischargeMedicationsSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeMedicationsSection2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(
+		return DischargeMedicationsSection2Operations.validateDischargeMedicationsSectionEntriesOptional2TemplateId(
 			this, diagnostics, context);
 	}
 

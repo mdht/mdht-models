@@ -52,9 +52,10 @@ public class ResultsSectionEntriesOptional2Impl extends ResultsSectionEntriesOpt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ResultOrganizer2> getConsolResultOrganizer2s() {
-		return ResultsSectionEntriesOptional2Operations.getConsolResultOrganizer2s(this);
+	public boolean validateResultsSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptional2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -63,10 +64,8 @@ public class ResultsSectionEntriesOptional2Impl extends ResultsSectionEntriesOpt
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+	public EList<ResultOrganizer2> getConsolResultOrganizer2s() {
+		return ResultsSectionEntriesOptional2Operations.getConsolResultOrganizer2s(this);
 	}
 
 	/**

@@ -53,6 +53,15 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateInterventionsSection2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionsSection2Operations.validateInterventionsSection2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateInterventionsSection2InterventionAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -107,16 +116,6 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 */
 	public EList<PlannedInterventionAct> getPlannedInterventionActs() {
 		return InterventionsSection2Operations.getPlannedInterventionActs(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateInterventionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InterventionsSection2Operations.validateInterventionsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**

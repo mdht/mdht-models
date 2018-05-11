@@ -37,6 +37,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedAct2Operations;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedAct2#validatePlannedAct2CodeFromLoincOrSnomed(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Act2 Code From Loinc Or Snomed</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedAct2#validatePlannedAct2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Act2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedAct2#validatePlannedAct2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Act2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedAct2#validatePlannedAct2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Act2 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedAct2#validatePlannedAct2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Act2 Status Code P</em>}</li>
@@ -49,7 +50,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedAct2Operations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedAct2#getIndication2s() <em>Get Indication2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedAct2#getInstruction2s() <em>Get Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedAct2#getPriorityPreferences() <em>Get Priority Preferences</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedAct2#validatePlanOfCareActivityActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedAct2#validatePlanOfCareActivityActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Act Mood Code</em>}</li>
  * </ul>
  * </p>
@@ -105,6 +105,41 @@ public class PlannedAct2Test extends CDAValidationTest {
 		};
 
 		validatePlannedAct2CodeFromLoincOrSnomedTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedAct2TemplateId() {
+		OperationsTestCase<PlannedAct2> validatePlannedAct2TemplateIdTestCase = new OperationsTestCase<PlannedAct2>(
+			"validatePlannedAct2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_ACT2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedAct2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedAct2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedAct2Operations.validatePlannedAct2TemplateId(
+					(PlannedAct2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedAct2TemplateIdTestCase.doValidationTest();
 	}
 
 	/**
@@ -455,40 +490,6 @@ public class PlannedAct2Test extends CDAValidationTest {
 		PlannedAct2 target = objectFactory.create();
 		target.getPriorityPreferences();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePlanOfCareActivityActTemplateId() {
-		OperationsTestCase<PlannedAct2> validatePlanOfCareActivityActTemplateIdTestCase = new OperationsTestCase<PlannedAct2>(
-			"validatePlanOfCareActivityActTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedAct2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PlannedAct2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedAct2Operations.validatePlanOfCareActivityActTemplateId(
-					(PlannedAct2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlanOfCareActivityActTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

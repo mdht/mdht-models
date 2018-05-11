@@ -298,6 +298,28 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedImmunizationActivityCETranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityCETranslationP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedImmunizationActivityCETranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityCETranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlannedImmunizationActivityIVLPQUnit(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

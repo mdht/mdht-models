@@ -36,6 +36,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalExamSection2Op
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2WoundObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Wound Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2Component(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2ComponentSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component Section Code</em>}</li>
@@ -47,7 +48,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalExamSection2Op
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#getConsolPressureUlcerObservations() <em>Get Consol Pressure Ulcer Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#getConsolHighestPressureUlcerStages() <em>Get Consol Highest Pressure Ulcer Stages</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#getConsolNumberOfPressureUlcersObservations() <em>Get Consol Number Of Pressure Ulcers Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionPressureUlcerObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Pressure Ulcer Observation</em>}</li>
@@ -60,6 +60,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalExamSection2Op
  */
 
 public class PhysicalExamSection2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePhysicalExamSection2TemplateId() {
+		OperationsTestCase<PhysicalExamSection2> validatePhysicalExamSection2TemplateIdTestCase = new OperationsTestCase<PhysicalExamSection2>(
+			"validatePhysicalExamSection2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_EXAM_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicalExamSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PhysicalExamSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicalExamSection2Operations.validatePhysicalExamSection2TemplateId(
+					(PhysicalExamSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicalExamSection2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -373,40 +408,6 @@ public class PhysicalExamSection2Test extends CDAValidationTest {
 		PhysicalExamSection2 target = objectFactory.create();
 		target.getConsolNumberOfPressureUlcersObservations();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePhysicalExamSectionTemplateId() {
-		OperationsTestCase<PhysicalExamSection2> validatePhysicalExamSectionTemplateIdTestCase = new OperationsTestCase<PhysicalExamSection2>(
-			"validatePhysicalExamSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PhysicalExamSection2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PhysicalExamSection2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PhysicalExamSection2Operations.validatePhysicalExamSectionTemplateId(
-					(PhysicalExamSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePhysicalExamSectionTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

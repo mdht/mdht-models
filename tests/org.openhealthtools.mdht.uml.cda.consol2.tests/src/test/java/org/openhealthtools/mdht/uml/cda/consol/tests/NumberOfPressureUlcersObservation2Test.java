@@ -37,11 +37,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.NumberOfPressureUlcers
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservation2CDTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation2 CD Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservation2CDTranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation2 CD Translation P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation2 Entry Relationship Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation2 Entry Relationship Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservationEntryRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation Entry Relationship</em>}</li>
@@ -58,6 +58,42 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.NumberOfPressureUlcers
  */
 
 public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateNumberOfPressureUlcersObservation2TemplateId() {
+		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservation2TemplateIdTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
+			"validateNumberOfPressureUlcersObservation2TemplateId",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(NumberOfPressureUlcersObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NumberOfPressureUlcersObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2TemplateId(
+					(NumberOfPressureUlcersObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNumberOfPressureUlcersObservation2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -220,41 +256,6 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 		};
 
 		validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateNumberOfPressureUlcersObservationTemplateId() {
-		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservationTemplateIdTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
-			"validateNumberOfPressureUlcersObservationTemplateId",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(NumberOfPressureUlcersObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(NumberOfPressureUlcersObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationTemplateId(
-					(NumberOfPressureUlcersObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateNumberOfPressureUlcersObservationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

@@ -31,6 +31,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistorySection2O
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CaregiverCharacteristics(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Caregiver Characteristics</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CulturalAndReligiousObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Cultural And Religious Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CharacteristicsOfHomeEnvironment(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Characteristics Of Home Environment</em>}</li>
@@ -42,7 +43,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistorySection2O
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getCulturalAndReligiousObservations() <em>Get Cultural And Religious Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getCharacteristicsOfHomeEnvironments() <em>Get Characteristics Of Home Environments</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getBirthSexObservations() <em>Get Birth Sex Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySectionSocialHistoryObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Social History Observation</em>}</li>
@@ -55,6 +55,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistorySection2O
  */
 
 public class SocialHistorySection2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateSocialHistorySection2TemplateId() {
+		OperationsTestCase<SocialHistorySection2> validateSocialHistorySection2TemplateIdTestCase = new OperationsTestCase<SocialHistorySection2>(
+			"validateSocialHistorySection2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SocialHistorySection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(SocialHistorySection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SocialHistorySection2Operations.validateSocialHistorySection2TemplateId(
+					(SocialHistorySection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSocialHistorySection2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -277,40 +312,6 @@ public class SocialHistorySection2Test extends CDAValidationTest {
 		SocialHistorySection2 target = objectFactory.create();
 		target.getBirthSexObservations();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateSocialHistorySectionTemplateId() {
-		OperationsTestCase<SocialHistorySection2> validateSocialHistorySectionTemplateIdTestCase = new OperationsTestCase<SocialHistorySection2>(
-			"validateSocialHistorySectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(SocialHistorySection2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(SocialHistorySection2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return SocialHistorySection2Operations.validateSocialHistorySectionTemplateId(
-					(SocialHistorySection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateSocialHistorySectionTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

@@ -53,6 +53,17 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicalEquipmentSection2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateMedicalEquipmentSection2MedicalEquipmentOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -100,16 +111,6 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	@Override
 	public EList<ProcedureActivityProcedure2> getProcedureActivityProcedure2s() {
 		return MedicalEquipmentSection2Operations.getProcedureActivityProcedure2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicalEquipmentSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**

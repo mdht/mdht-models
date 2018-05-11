@@ -58,6 +58,15 @@ public class MentalStatusOrganizer2Impl extends CognitiveStatusResultOrganizerIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMentalStatusOrganizer2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusOrganizer2Operations.validateMentalStatusOrganizer2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMentalStatusOrganizer2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MentalStatusOrganizer2Operations.validateMentalStatusOrganizer2EffectiveTime(this, diagnostics, context);
@@ -91,16 +100,6 @@ public class MentalStatusOrganizer2Impl extends CognitiveStatusResultOrganizerIm
 			Map<Object, Object> context) {
 		return MentalStatusOrganizer2Operations.validateCognitiveStatusResultOrganizerCodeCodeSystem(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MentalStatusOrganizer2Operations.validateResultOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**

@@ -33,11 +33,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusMeaningfu
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusMeaningfulUse2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusMeaningfulUse2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusMeaningfulUse2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 CD Code Term Assertion Or Loinc</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2#validateSmokingStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value</em>}</li>
@@ -53,6 +53,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusMeaningfu
  */
 
 public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateSmokingStatusMeaningfulUse2TemplateId() {
+		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusMeaningfulUse2TemplateIdTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
+			"validateSmokingStatusMeaningfulUse2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2TemplateId(
+					(SmokingStatusMeaningfulUse2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusMeaningfulUse2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -161,40 +196,6 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 		};
 
 		validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoincTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateSmokingStatusObservationTemplateId() {
-		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationTemplateIdTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
-			"validateSmokingStatusObservationTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationTemplateId(
-					(SmokingStatusMeaningfulUse2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateSmokingStatusObservationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

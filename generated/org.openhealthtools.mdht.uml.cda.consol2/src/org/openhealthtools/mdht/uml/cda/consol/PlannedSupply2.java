@@ -20,7 +20,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedSupply2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivitySupplyTemplateId PlannedSupply2MedInfoXorImmunXorProductInstance PlanOfCareActivitySupplyMoodCode PlannedSupply2StatusCode PlannedSupply2StatusCodeP PlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2' templateId.root='2.16.840.1.113883.10.20.22.4.43' templateId.extension='2014-06-09' statusCode.code='active' constraints.validation.warning='PlannedSupply2EffectiveTime PlannedSupply2AuthorParticipation PlannedSupply2ProductRecommended' constraints.validation.info='PlannedSupply2RepeatNumber PlannedSupply2Quantity PlannedSupply2Product PlannedSupply2Performer PlannedSupply2ProductInstance PlannedSupply2PriorityPreference PlannedSupply2Indication2 PlannedSupply2Instruction2 PlannedSupply2PlannedCoverage PlannedSupply2ProductManufacturedProduct' constraints.validation.query='PlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2 PlannedSupply2ProductManufacturedProduct'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedSupply2TemplateId PlannedSupply2MedInfoXorImmunXorProductInstance PlanOfCareActivitySupplyMoodCode PlannedSupply2StatusCode PlannedSupply2StatusCodeP PlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2' templateId.root='2.16.840.1.113883.10.20.22.4.43' templateId.extension='2014-06-09' statusCode.code='active' constraints.validation.warning='PlannedSupply2EffectiveTime PlannedSupply2AuthorParticipation PlannedSupply2ProductRecommended' constraints.validation.info='PlannedSupply2RepeatNumber PlannedSupply2Quantity PlannedSupply2Product PlannedSupply2Performer PlannedSupply2ProductInstance PlannedSupply2PriorityPreference PlannedSupply2Indication2 PlannedSupply2Instruction2 PlannedSupply2PlannedCoverage PlannedSupply2ProductManufacturedProduct' constraints.validation.query='PlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2 PlannedSupply2ProductManufacturedProduct'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedSupply2Product constraints.validation.info='PlannedSupply2ProductManufacturedProduct'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedSupply2ProductManufacturedProduct constraints.validation.error='PlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2'"
  * @generated
@@ -38,6 +38,18 @@ public interface PlannedSupply2 extends PlanOfCareActivitySupply {
 	 */
 	boolean validatePlannedSupply2MedInfoXorImmunXorProductInstance(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.43\' and id.extension.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validatePlannedSupply2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

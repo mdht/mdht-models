@@ -20,13 +20,25 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncounterActivity2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncounterActivitiesTemplateId EncounterActivitiesCodeP EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.49' templateId.extension='2015-08-01' constraints.validation.warning='EncounterActivitiesSdtcDDCFromNUBCOrDD EncounterActivitiesCode EncounterActivitiesServiceDeliveryLocation EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode' code.codeSystem='2.16.840.1.113883.6.12' code.codeSystemName='CPT-4' constraints.validation.info='EncounterActivitiesSDTCDischargeDispositionCode EncounterActivitiesIndication EncounterActivitiesEncounterDiagnosis EncounterActivitiesEncounterPerformer EncounterActivity2CDTranslation EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP' constraints.validation.query='EncounterActivity2CDTranslation EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity' constraints.validation.dependOn.EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode='EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncounterActivity2TemplateId EncounterActivitiesCodeP EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.49' templateId.extension='2015-08-01' constraints.validation.warning='EncounterActivitiesSdtcDDCFromNUBCOrDD EncounterActivitiesCode EncounterActivitiesServiceDeliveryLocation EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode' code.codeSystem='2.16.840.1.113883.6.12' code.codeSystemName='CPT-4' constraints.validation.info='EncounterActivitiesSDTCDischargeDispositionCode EncounterActivitiesIndication EncounterActivitiesEncounterDiagnosis EncounterActivitiesEncounterPerformer EncounterActivity2CDTranslation EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP' constraints.validation.query='EncounterActivity2CDTranslation EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity' constraints.validation.dependOn.EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode='EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolEncounterActivity2EncounterPerformer constraints.validation.error='EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolEncounterActivity2EncounterPerformerEncounterPerformerAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.warning='EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode' constraints.validation.info='EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP' constraints.validation.dependOn.EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode='EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolEncounterActivity2CD constraints.validation.info='EncounterActivity2CDTranslation'"
  * @generated
  */
 public interface EncounterActivity2 extends EncounterActivities {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.49\' and id.extension.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateEncounterActivity2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

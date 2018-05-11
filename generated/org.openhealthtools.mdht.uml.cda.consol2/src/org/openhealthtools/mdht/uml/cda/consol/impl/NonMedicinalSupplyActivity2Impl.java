@@ -64,6 +64,17 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateNonMedicinalSupplyActivity2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivity2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateNonMedicinalSupplyActivityStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityStatusCodeP(
@@ -99,18 +110,6 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 */
 	public ProductInstance getConsolProductInstance() {
 		return NonMedicinalSupplyActivity2Operations.getConsolProductInstance(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityTemplateId(
-			this, diagnostics, context);
 	}
 
 	/**

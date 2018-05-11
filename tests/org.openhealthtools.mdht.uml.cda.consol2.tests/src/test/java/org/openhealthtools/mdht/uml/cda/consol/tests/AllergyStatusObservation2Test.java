@@ -31,7 +31,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyStatusObservati
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation2#validateAllergyStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Status Observation Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation2#validateAllergyStatusObservation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Status Observation2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation2#validateAllergyStatusObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Status Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation2#validateAllergyStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Status Observation Value</em>}</li>
  * </ul>
@@ -48,10 +48,10 @@ public class AllergyStatusObservation2Test extends CDAValidationTest {
 	*/
 	@Test
 
-	public void testValidateAllergyStatusObservationTemplateId() {
-		OperationsTestCase<AllergyStatusObservation2> validateAllergyStatusObservationTemplateIdTestCase = new OperationsTestCase<AllergyStatusObservation2>(
-			"validateAllergyStatusObservationTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_ALLERGY_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAllergyStatusObservation2TemplateId() {
+		OperationsTestCase<AllergyStatusObservation2> validateAllergyStatusObservation2TemplateIdTestCase = new OperationsTestCase<AllergyStatusObservation2>(
+			"validateAllergyStatusObservation2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -68,13 +68,13 @@ public class AllergyStatusObservation2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyStatusObservation2Operations.validateAllergyStatusObservationTemplateId(
+				return AllergyStatusObservation2Operations.validateAllergyStatusObservation2TemplateId(
 					(AllergyStatusObservation2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAllergyStatusObservationTemplateIdTestCase.doValidationTest();
+		validateAllergyStatusObservation2TemplateIdTestCase.doValidationTest();
 	}
 
 	/**

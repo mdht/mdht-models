@@ -30,8 +30,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedProcedureSectio
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSection2#validatePlannedProcedureSection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSection2#getConsolPlannedProcedure2s() <em>Get Consol Planned Procedure2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSection2#validatePlannedProcedureSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSection2#validatePlannedProcedureSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSection2#validatePlannedProcedureSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSection2#validatePlannedProcedureSectionPlanOfCareActivityProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure Section Plan Of Care Activity Procedure</em>}</li>
@@ -48,22 +48,11 @@ public class PlannedProcedureSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolPlannedProcedure2s() {
 
-		PlannedProcedureSection2 target = objectFactory.create();
-		target.getConsolPlannedProcedure2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePlannedProcedureSectionTemplateId() {
-		OperationsTestCase<PlannedProcedureSection2> validatePlannedProcedureSectionTemplateIdTestCase = new OperationsTestCase<PlannedProcedureSection2>(
-			"validatePlannedProcedureSectionTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidatePlannedProcedureSection2TemplateId() {
+		OperationsTestCase<PlannedProcedureSection2> validatePlannedProcedureSection2TemplateIdTestCase = new OperationsTestCase<PlannedProcedureSection2>(
+			"validatePlannedProcedureSection2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -80,13 +69,25 @@ public class PlannedProcedureSection2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PlannedProcedureSection2Operations.validatePlannedProcedureSectionTemplateId(
+				return PlannedProcedureSection2Operations.validatePlannedProcedureSection2TemplateId(
 					(PlannedProcedureSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePlannedProcedureSectionTemplateIdTestCase.doValidationTest();
+		validatePlannedProcedureSection2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolPlannedProcedure2s() {
+
+		PlannedProcedureSection2 target = objectFactory.create();
+		target.getConsolPlannedProcedure2s();
+
 	}
 
 	/**

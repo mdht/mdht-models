@@ -158,7 +158,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote2#getReasonForVisitSection() <em>Get Reason For Visit Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote2#getReviewOfSystemsSection() <em>Get Review Of Systems Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote2#getSocialHistorySection2() <em>Get Social History Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote2#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureNote2#validateUSRealmHeader2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -5237,7 +5237,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(415));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(416));
 			try {
 				GET_COMPLICATIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_COMPLICATIONS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -5282,7 +5282,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(416));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(417));
 			try {
 				GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_QRY = helper.createQuery(
 					GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_EXP);
@@ -5328,7 +5328,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(417));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(418));
 			try {
 				GET_PROCEDURE_INDICATIONS_SECTION2__EOCL_QRY = helper.createQuery(
 					GET_PROCEDURE_INDICATIONS_SECTION2__EOCL_EXP);
@@ -5374,7 +5374,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(418));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(419));
 			try {
 				GET_POSTPROCEDURE_DIAGNOSIS_SECTION2__EOCL_QRY = helper.createQuery(
 					GET_POSTPROCEDURE_DIAGNOSIS_SECTION2__EOCL_EXP);
@@ -5420,7 +5420,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(419));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(420));
 			try {
 				GET_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -5465,7 +5465,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(420));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(421));
 			try {
 				GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_QRY = helper.createQuery(
 					GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_EXP);
@@ -5511,7 +5511,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(421));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(422));
 			try {
 				GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY = helper.createQuery(GET_PLAN_OF_TREATMENT_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -5556,7 +5556,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(422));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(423));
 			try {
 				GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
 					GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
@@ -5602,7 +5602,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(423));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(424));
 			try {
 				GET_ANESTHESIA_SECTION2__EOCL_QRY = helper.createQuery(GET_ANESTHESIA_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -5647,7 +5647,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(424));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(425));
 			try {
 				GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -5693,7 +5693,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(425));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(426));
 			try {
 				GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(
 					GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_EXP);
@@ -5739,7 +5739,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(426));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(427));
 			try {
 				GET_FAMILY_HISTORY_SECTION2__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -5784,7 +5784,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(427));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(428));
 			try {
 				GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_QRY = helper.createQuery(
 					GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_EXP);
@@ -5830,7 +5830,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(428));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(429));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(
 					GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_EXP);
@@ -5876,7 +5876,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(429));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(430));
 			try {
 				GET_MEDICAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICAL_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -5922,7 +5922,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(430));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(431));
 			try {
 				GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
 					GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
@@ -5968,7 +5968,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(431));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(432));
 			try {
 				GET_MEDICATIONS_ADMINISTERED_SECTION2__EOCL_QRY = helper.createQuery(
 					GET_MEDICATIONS_ADMINISTERED_SECTION2__EOCL_EXP);
@@ -6014,7 +6014,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(432));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(433));
 			try {
 				GET_PHYSICAL_EXAM_SECTION2__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -6059,7 +6059,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(433));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(434));
 			try {
 				GET_PLANNED_PROCEDURE_SECTION2__EOCL_QRY = helper.createQuery(GET_PLANNED_PROCEDURE_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -6104,7 +6104,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(434));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(435));
 			try {
 				GET_PROCEDURE_DISPOSITION_SECTION__EOCL_QRY = helper.createQuery(
 					GET_PROCEDURE_DISPOSITION_SECTION__EOCL_EXP);
@@ -6151,7 +6151,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(435));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(436));
 			try {
 				GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_QRY = helper.createQuery(
 					GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_EXP);
@@ -6197,7 +6197,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(436));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(437));
 			try {
 				GET_PROCEDURE_FINDINGS_SECTION2__EOCL_QRY = helper.createQuery(
 					GET_PROCEDURE_FINDINGS_SECTION2__EOCL_EXP);
@@ -6243,7 +6243,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(437));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(438));
 			try {
 				GET_PROCEDURE_IMPLANTS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_IMPLANTS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -6288,7 +6288,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(438));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(439));
 			try {
 				GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_QRY = helper.createQuery(
 					GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_EXP);
@@ -6335,7 +6335,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(439));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(440));
 			try {
 				GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
 					GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
@@ -6381,7 +6381,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(440));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(441));
 			try {
 				GET_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -6426,7 +6426,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(441));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(442));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -6471,7 +6471,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROCEDURE_NOTE2,
-				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(442));
+				ConsolPackage.Literals.PROCEDURE_NOTE2.getEAllOperations().get(443));
 			try {
 				GET_SOCIAL_HISTORY_SECTION2__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -6484,25 +6484,25 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsTemplateId(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateUSRealmHeader2TemplateId(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Template Id</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsTemplateId(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateUSRealmHeader2TemplateId(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.1.6' and id.extension = '2015-08-01')";
+	protected static final String VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.1.6' and id.extension = '2015-08-01')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsTemplateId(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateUSRealmHeader2TemplateId(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsTemplateId(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateUSRealmHeader2TemplateId(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -6515,31 +6515,29 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 */
 
-	public static boolean validateGeneralHeaderConstraintsTemplateId(ProcedureNote2 procedureNote2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateUSRealmHeader2TemplateId(ProcedureNote2 procedureNote2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE2);
 			try {
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+				VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
 		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				procedureNote2)) {
+			VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(procedureNote2)) {
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROCEDURE_NOTE2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ProcedureNote2GeneralHeaderConstraintsTemplateId"),
+						ConsolValidator.PROCEDURE_NOTE2__US_REALM_HEADER2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2USRealmHeader2TemplateId"),
 						new Object[] { procedureNote2 }));
 			}
 

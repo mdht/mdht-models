@@ -36,9 +36,9 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyProblemActOpera
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#getConsolAllergyObservation2s() <em>Get Consol Allergy Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActAllergyObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Allergy Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActCDCodeAndCodeSystemValues(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act CD Code And Code System Values</em>}</li>
@@ -51,6 +51,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyProblemActOpera
  */
 
 public class AllergyConcernAct2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAllergyConcernAct2TemplateId() {
+		OperationsTestCase<AllergyConcernAct2> validateAllergyConcernAct2TemplateIdTestCase = new OperationsTestCase<AllergyConcernAct2>(
+			"validateAllergyConcernAct2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_CONCERN_ACT2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyConcernAct2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AllergyConcernAct2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyConcernAct2Operations.validateAllergyConcernAct2TemplateId(
+					(AllergyConcernAct2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyConcernAct2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -187,40 +222,6 @@ public class AllergyConcernAct2Test extends CDAValidationTest {
 		};
 
 		validateAllergyProblemActEffectiveTimeHighTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAllergyProblemActTemplateId() {
-		OperationsTestCase<AllergyConcernAct2> validateAllergyProblemActTemplateIdTestCase = new OperationsTestCase<AllergyConcernAct2>(
-			"validateAllergyProblemActTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyConcernAct2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergyConcernAct2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyConcernAct2Operations.validateAllergyProblemActTemplateId(
-					(AllergyConcernAct2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyProblemActTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

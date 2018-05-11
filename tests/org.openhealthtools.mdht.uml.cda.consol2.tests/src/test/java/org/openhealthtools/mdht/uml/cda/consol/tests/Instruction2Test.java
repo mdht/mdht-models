@@ -31,7 +31,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.Instruction2Operations
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Instruction2#validateInstructionsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Instruction2#validateInstruction2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instruction2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Instruction2#validateInstructionsText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Text</em>}</li>
  * </ul>
  * </p>
@@ -46,10 +46,11 @@ public class Instruction2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateInstructionsTemplateId() {
-		OperationsTestCase<Instruction2> validateInstructionsTemplateIdTestCase = new OperationsTestCase<Instruction2>(
-			"validateInstructionsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateInstruction2TemplateId() {
+		OperationsTestCase<Instruction2> validateInstruction2TemplateIdTestCase = new OperationsTestCase<Instruction2>(
+			"validateInstruction2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_INSTRUCTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -66,13 +67,13 @@ public class Instruction2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return Instruction2Operations.validateInstructionsTemplateId(
+				return Instruction2Operations.validateInstruction2TemplateId(
 					(Instruction2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateInstructionsTemplateIdTestCase.doValidationTest();
+		validateInstruction2TemplateIdTestCase.doValidationTest();
 	}
 
 	/**

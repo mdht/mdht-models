@@ -81,9 +81,9 @@ public class MedicationsSection2Impl extends MedicationsSectionEntriesOptional2I
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+	public boolean validateMedicationsSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSection2Operations.validateMedicationsSectionEntriesOptionalTemplateId(
+		return MedicationsSection2Operations.validateMedicationsSectionEntriesOptional2TemplateId(
 			this, diagnostics, context);
 	}
 

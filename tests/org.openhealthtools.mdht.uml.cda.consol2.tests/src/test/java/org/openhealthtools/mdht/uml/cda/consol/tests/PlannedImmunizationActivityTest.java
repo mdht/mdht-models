@@ -68,6 +68,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedImmunizationAct
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityInstruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityPrecondition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Precondition</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityConsumable(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Consumable</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityCETranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity CE Translation P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityCETranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity CE Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityIVLPQUnit(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity IVLPQ Unit</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityConsumableImmunizationMedicationInformation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Consumable Immunization Medication Information2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity#validatePlannedImmunizationActivityPreconditionTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Precondition Type Code</em>}</li>
@@ -455,9 +457,10 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(PlannedImmunizationActivity target) {
+				final String nciThesaurusCs = "2.16.840.1.113883.3.26.1.1";
 				CE rc = DatatypesFactory.eINSTANCE.createCE();
 				rc.setCode("hasCode");
-				rc.setCodeSystem(SNOMEDCT_ID);
+				rc.setCodeSystem(nciThesaurusCs);
 				target.setRouteCode(rc);
 			}
 
@@ -841,6 +844,83 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 		};
 
 		validatePlannedImmunizationActivityConsumableTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedImmunizationActivityCETranslationP() {
+		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityCETranslationPTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
+			"validatePlannedImmunizationActivityCETranslationP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedImmunizationActivity target) {
+				target.init();
+				final String nciThesaurusCs = "2.16.840.1.113883.3.26.1.1";
+				target.getRouteCode().setCodeSystem(nciThesaurusCs);
+				target.getRouteCode().setCode("hasCode");
+			}
+
+			@Override
+			protected void updateToPass(PlannedImmunizationActivity target) {
+				target.getRouteCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityCETranslationP(
+					(PlannedImmunizationActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedImmunizationActivityCETranslationPTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePlannedImmunizationActivityCETranslation() {
+		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityCETranslationTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
+			"validatePlannedImmunizationActivityCETranslation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedImmunizationActivity target) {
+				target.init();
+				final String nciThesaurusCs = "2.16.840.1.113883.3.26.1.1";
+				target.getRouteCode().setCodeSystem(nciThesaurusCs);
+				target.getRouteCode().setCode("hasCode");
+				target.getRouteCode().getTranslations().add(
+					DatatypesFactory.eINSTANCE.createCD("hasCode", BAD_CODESYSTEM_ID));
+			}
+
+			@Override
+			protected void updateToPass(PlannedImmunizationActivity target) {
+				target.getRouteCode().getTranslations().set(
+					0, DatatypesFactory.eINSTANCE.createCD("hasCode", SNOMEDCT_ID));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityCETranslation(
+					(PlannedImmunizationActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedImmunizationActivityCETranslationTestCase.doValidationTest();
 	}
 
 	/**

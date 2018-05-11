@@ -46,11 +46,14 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationActivity2Ope
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivity2SubstanceAdministeredActInversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity2 Substance Administered Act Inversion Ind</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivity2SubstanceAdministeredActSequenceNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity2 Substance Administered Act Sequence Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivity2EffectiveTimeIVLTSLowXorValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity2 Effective Time IVLTS Low Xor Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivity2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivity2DrugMonitoringAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity2 Drug Monitoring Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivity2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivity2SubstanceAdministeredAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity2 Substance Administered Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivity2MedicationFreeTextSig(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity2 Medication Free Text Sig</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivity2CETranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity2 CE Translation P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivity2CETranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity2 CE Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#getDrugMonitoringAct() <em>Get Drug Monitoring Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#getConsolInstruction2() <em>Get Consol Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#getSubstanceAdministeredActs() <em>Get Substance Administered Acts</em>}</li>
@@ -68,7 +71,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationActivity2Ope
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityEffectiveTimeIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Effective Time IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityEffectiveTimeIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Effective Time IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityEffectiveTimePIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Effective Time PIVLTS</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityRepeatNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Repeat Number</em>}</li>
@@ -247,6 +249,41 @@ public class MedicationActivity2Test extends CDAValidationTest {
 		};
 
 		validateMedicationActivity2EffectiveTimeIVLTSLowXorValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateMedicationActivity2TemplateId() {
+		OperationsTestCase<MedicationActivity2> validateMedicationActivity2TemplateIdTestCase = new OperationsTestCase<MedicationActivity2>(
+			"validateMedicationActivity2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MedicationActivity2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationActivity2Operations.validateMedicationActivity2TemplateId(
+					(MedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationActivity2TemplateIdTestCase.doValidationTest();
 	}
 
 	/**
@@ -461,6 +498,81 @@ public class MedicationActivity2Test extends CDAValidationTest {
 		};
 
 		validateMedicationActivity2MedicationFreeTextSigTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateMedicationActivity2CETranslationP() {
+		OperationsTestCase<MedicationActivity2> validateMedicationActivity2CETranslationPTestCase = new OperationsTestCase<MedicationActivity2>(
+			"validateMedicationActivity2CETranslationP", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationActivity2 target) {
+				target.init();
+				final String nciThesaurusCs = "2.16.840.1.113883.3.26.1.1";
+				target.getRouteCode().setCodeSystem(nciThesaurusCs);
+				target.getRouteCode().setCode("hasCode");
+			}
+
+			@Override
+			protected void updateToPass(MedicationActivity2 target) {
+				target.getRouteCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationActivity2Operations.validateMedicationActivity2CETranslationP(
+					(MedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationActivity2CETranslationPTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateMedicationActivity2CETranslation() {
+		OperationsTestCase<MedicationActivity2> validateMedicationActivity2CETranslationTestCase = new OperationsTestCase<MedicationActivity2>(
+			"validateMedicationActivity2CETranslation", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_ACTIVITY2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationActivity2 target) {
+				target.init();
+				final String nciThesaurusCs = "2.16.840.1.113883.3.26.1.1";
+				target.getRouteCode().setCodeSystem(nciThesaurusCs);
+				target.getRouteCode().setCode("hasCode");
+				target.getRouteCode().getTranslations().add(
+					DatatypesFactory.eINSTANCE.createCD("hasCode", BAD_CODESYSTEM_ID));
+			}
+
+			@Override
+			protected void updateToPass(MedicationActivity2 target) {
+				target.getRouteCode().getTranslations().set(
+					0, DatatypesFactory.eINSTANCE.createCD("hasCode", SNOMEDCT_ID));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationActivity2Operations.validateMedicationActivity2CETranslation(
+					(MedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationActivity2CETranslationTestCase.doValidationTest();
 	}
 
 	/**
@@ -932,40 +1044,6 @@ public class MedicationActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
-	*/
-	@Test
-	public void testValidateMedicationActivityTemplateId() {
-		OperationsTestCase<MedicationActivity2> validateMedicationActivityTemplateIdTestCase = new OperationsTestCase<MedicationActivity2>(
-			"validateMedicationActivityTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MedicationActivity2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MedicationActivity2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MedicationActivity2Operations.validateMedicationActivityTemplateId(
-					(MedicationActivity2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMedicationActivityTemplateIdTestCase.doValidationTest();
-	}
-
-	/**
-	*
 	* @generated NOT
 	*/
 	@Test
@@ -1049,8 +1127,9 @@ public class MedicationActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(MedicationActivity2 target) {
+				final String nciThesaurusCs = "2.16.840.1.113883.3.26.1.1";
 				target.init();
-				target.setRouteCode(DatatypesFactory.eINSTANCE.createCE("hasCode", SNOMEDCT_ID));
+				target.setRouteCode(DatatypesFactory.eINSTANCE.createCE("hasCode", nciThesaurusCs));
 			}
 
 			@Override

@@ -49,6 +49,15 @@ public class SeverityObservation2Impl extends SeverityObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSeverityObservation2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeverityObservation2Operations.validateSeverityObservation2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateSeverityObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservation2Operations.validateSeverityObservationCodeP(this, diagnostics, context);
@@ -93,16 +102,6 @@ public class SeverityObservation2Impl extends SeverityObservationImpl implements
 	@Override
 	public boolean validateSeverityObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservation2Operations.validateSeverityObservationReferenceValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateSeverityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SeverityObservation2Operations.validateSeverityObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**

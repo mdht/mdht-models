@@ -28,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicianReadingStudyP
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer2#validatePhysicianReadingStudyPerformerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer2#validatePhysicianReadingStudyPerformer2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer2 Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -42,11 +42,12 @@ public class PhysicianReadingStudyPerformer2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidatePhysicianReadingStudyPerformerTemplateId() {
-		OperationsTestCase<PhysicianReadingStudyPerformer2> validatePhysicianReadingStudyPerformerTemplateIdTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer2>(
-			"validatePhysicianReadingStudyPerformerTemplateId",
+
+	public void testValidatePhysicianReadingStudyPerformer2TemplateId() {
+		OperationsTestCase<PhysicianReadingStudyPerformer2> validatePhysicianReadingStudyPerformer2TemplateIdTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer2>(
+			"validatePhysicianReadingStudyPerformer2TemplateId",
 			operationsForOCL.getOCLValue(
-				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -63,13 +64,13 @@ public class PhysicianReadingStudyPerformer2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PhysicianReadingStudyPerformer2Operations.validatePhysicianReadingStudyPerformerTemplateId(
+				return PhysicianReadingStudyPerformer2Operations.validatePhysicianReadingStudyPerformer2TemplateId(
 					(PhysicianReadingStudyPerformer2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePhysicianReadingStudyPerformerTemplateIdTestCase.doValidationTest();
+		validatePhysicianReadingStudyPerformer2TemplateIdTestCase.doValidationTest();
 	}
 
 	/**

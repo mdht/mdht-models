@@ -827,9 +827,8 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CarePlanOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+	public boolean validateUSRealmHeader2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CarePlanOperations.validateUSRealmHeader2TemplateId(this, diagnostics, context);
 	}
 
 	/**

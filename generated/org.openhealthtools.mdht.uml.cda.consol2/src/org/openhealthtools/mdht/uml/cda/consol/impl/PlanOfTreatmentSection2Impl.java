@@ -61,6 +61,15 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlanOfTreatmentSection2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlanOfTreatmentSection2HandoffCommunication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -206,16 +215,6 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 */
 	public EList<GoalObservation> getGoalObservations() {
 		return PlanOfTreatmentSection2Operations.getGoalObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**

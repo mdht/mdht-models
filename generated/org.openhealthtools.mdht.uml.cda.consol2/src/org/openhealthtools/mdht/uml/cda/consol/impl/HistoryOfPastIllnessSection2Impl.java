@@ -52,9 +52,10 @@ public class HistoryOfPastIllnessSection2Impl extends HistoryOfPastIllnessSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemObservation2> getConsolProblemObservation2s() {
-		return HistoryOfPastIllnessSection2Operations.getConsolProblemObservation2s(this);
+	public boolean validateHistoryOfPastIllnessSection2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HistoryOfPastIllnessSection2Operations.validateHistoryOfPastIllnessSection2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -63,10 +64,8 @@ public class HistoryOfPastIllnessSection2Impl extends HistoryOfPastIllnessSectio
 	 * @generated
 	 */
 	@Override
-	public boolean validateHistoryOfPastIllnessSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryOfPastIllnessSection2Operations.validateHistoryOfPastIllnessSectionTemplateId(
-			this, diagnostics, context);
+	public EList<ProblemObservation2> getConsolProblemObservation2s() {
+		return HistoryOfPastIllnessSection2Operations.getConsolProblemObservation2s(this);
 	}
 
 	/**

@@ -51,6 +51,17 @@ public class ReasonForReferralSection2Impl extends ReasonForReferralSectionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateReasonForReferralSection2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonForReferralSection2Operations.validateReasonForReferralSection2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateReasonForReferralSection2PatientReferralAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -66,18 +77,6 @@ public class ReasonForReferralSection2Impl extends ReasonForReferralSectionImpl 
 	@Override
 	public EList<PatientReferralAct> getPatientReferralActs() {
 		return ReasonForReferralSection2Operations.getPatientReferralActs(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateReasonForReferralSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReasonForReferralSection2Operations.validateReasonForReferralSectionTemplateId(
-			this, diagnostics, context);
 	}
 
 	/**

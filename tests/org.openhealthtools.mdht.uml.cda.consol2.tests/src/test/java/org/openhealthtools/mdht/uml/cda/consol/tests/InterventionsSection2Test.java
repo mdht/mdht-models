@@ -30,13 +30,13 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.InterventionsSection2O
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2InterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Intervention Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2HandoffCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Handoff Communication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2PlannedInterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Planned Intervention Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#getInterventionActs() <em>Get Intervention Acts</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#getHandoffCommunications() <em>Get Handoff Communications</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#getPlannedInterventionActs() <em>Get Planned Intervention Acts</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Code</em>}</li>
  * </ul>
@@ -46,6 +46,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.InterventionsSection2O
  */
 
 public class InterventionsSection2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateInterventionsSection2TemplateId() {
+		OperationsTestCase<InterventionsSection2> validateInterventionsSection2TemplateIdTestCase = new OperationsTestCase<InterventionsSection2>(
+			"validateInterventionsSection2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_INTERVENTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(InterventionsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(InterventionsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return InterventionsSection2Operations.validateInterventionsSection2TemplateId(
+					(InterventionsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInterventionsSection2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -183,40 +218,6 @@ public class InterventionsSection2Test extends CDAValidationTest {
 		InterventionsSection2 target = objectFactory.create();
 		target.getPlannedInterventionActs();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateInterventionsSectionTemplateId() {
-		OperationsTestCase<InterventionsSection2> validateInterventionsSectionTemplateIdTestCase = new OperationsTestCase<InterventionsSection2>(
-			"validateInterventionsSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(InterventionsSection2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(InterventionsSection2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return InterventionsSection2Operations.validateInterventionsSectionTemplateId(
-					(InterventionsSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInterventionsSectionTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

@@ -172,9 +172,8 @@ public class UnstructuredDocument2Impl extends USRealmHeader2Impl implements Uns
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return UnstructuredDocument2Operations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+	public boolean validateUSRealmHeader2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return UnstructuredDocument2Operations.validateUSRealmHeader2TemplateId(this, diagnostics, context);
 	}
 
 	/**

@@ -30,8 +30,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.HistoryOfPastIllnessSe
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2#validateHistoryOfPastIllnessSection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2#getConsolProblemObservation2s() <em>Get Consol Problem Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2#validateHistoryOfPastIllnessSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2#validateHistoryOfPastIllnessSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2#validateHistoryOfPastIllnessSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2#validateHistoryOfPastIllnessSectionProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Problem Observation</em>}</li>
@@ -48,23 +48,12 @@ public class HistoryOfPastIllnessSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolProblemObservation2s() {
 
-		HistoryOfPastIllnessSection2 target = objectFactory.create();
-		target.getConsolProblemObservation2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateHistoryOfPastIllnessSectionTemplateId() {
-		OperationsTestCase<HistoryOfPastIllnessSection2> validateHistoryOfPastIllnessSectionTemplateIdTestCase = new OperationsTestCase<HistoryOfPastIllnessSection2>(
-			"validateHistoryOfPastIllnessSectionTemplateId",
+	public void testValidateHistoryOfPastIllnessSection2TemplateId() {
+		OperationsTestCase<HistoryOfPastIllnessSection2> validateHistoryOfPastIllnessSection2TemplateIdTestCase = new OperationsTestCase<HistoryOfPastIllnessSection2>(
+			"validateHistoryOfPastIllnessSection2TemplateId",
 			operationsForOCL.getOCLValue(
-				"VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+				"VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -81,13 +70,25 @@ public class HistoryOfPastIllnessSection2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return HistoryOfPastIllnessSection2Operations.validateHistoryOfPastIllnessSectionTemplateId(
+				return HistoryOfPastIllnessSection2Operations.validateHistoryOfPastIllnessSection2TemplateId(
 					(HistoryOfPastIllnessSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateHistoryOfPastIllnessSectionTemplateIdTestCase.doValidationTest();
+		validateHistoryOfPastIllnessSection2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolProblemObservation2s() {
+
+		HistoryOfPastIllnessSection2 target = objectFactory.create();
+		target.getConsolProblemObservation2s();
+
 	}
 
 	/**

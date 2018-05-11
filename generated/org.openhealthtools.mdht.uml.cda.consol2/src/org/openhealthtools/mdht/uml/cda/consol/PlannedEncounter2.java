@@ -20,7 +20,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedEncounter2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityEncounterTemplateId PlannedEncounter2ParticipantServiceDeliveryLocationTypeCode PlanOfCareActivityEncounterMoodCode PlannedEncounter2StatusCode PlannedEncounter2StatusCodeP PlannedEncounter2PerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.40' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='PlannedEncounter2Code PlannedEncounter2CodeP PlannedEncounter2EffectiveTime PlannedEncounter2AuthorParticipation' constraints.validation.dependOn.PlannedEncounter2Code='PlannedEncounter2CodeP' statusCode.code='active' constraints.validation.info='PlannedEncounter2Performer PlannedEncounter2ServiceDeliveryLocation PlannedEncounter2PriorityPreference PlannedEncounter2Indication2' constraints.validation.query='PlannedEncounter2PerformerAssignedEntity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedEncounter2TemplateId PlannedEncounter2ParticipantServiceDeliveryLocationTypeCode PlanOfCareActivityEncounterMoodCode PlannedEncounter2StatusCode PlannedEncounter2StatusCodeP PlannedEncounter2PerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.40' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='PlannedEncounter2Code PlannedEncounter2CodeP PlannedEncounter2EffectiveTime PlannedEncounter2AuthorParticipation' constraints.validation.dependOn.PlannedEncounter2Code='PlannedEncounter2CodeP' statusCode.code='active' constraints.validation.info='PlannedEncounter2Performer PlannedEncounter2ServiceDeliveryLocation PlannedEncounter2PriorityPreference PlannedEncounter2Indication2' constraints.validation.query='PlannedEncounter2PerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedEncounter2Performer constraints.validation.error='PlannedEncounter2PerformerAssignedEntity'"
  * @generated
  */
@@ -37,6 +37,18 @@ public interface PlannedEncounter2 extends PlanOfCareActivityEncounter {
 	 */
 	boolean validatePlannedEncounter2ParticipantServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.40\' and id.extension.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validatePlannedEncounter2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

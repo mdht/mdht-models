@@ -56,6 +56,15 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationActivity2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateImmunizationActivityStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivityStatusCodeP(this, diagnostics, context);
@@ -126,6 +135,26 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 			Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivity2EntryRelationshipSubstanceAdministeredAct(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationActivity2CETranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2CETranslationP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationActivity2CETranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivity2CETranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -231,16 +260,6 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 			Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivityInstructionInversion(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateImmunizationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationActivity2Operations.validateImmunizationActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**
