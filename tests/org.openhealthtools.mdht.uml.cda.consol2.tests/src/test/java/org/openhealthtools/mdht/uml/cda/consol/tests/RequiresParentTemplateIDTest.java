@@ -59,21 +59,24 @@ public class RequiresParentTemplateIDTest {
 			@Override
 			public void handleError(Diagnostic diagnostic) {
 				String message = diagnostic.getMessage();
-				if (PRINT_TO_CONSOLE)
+				if (PRINT_TO_CONSOLE) {
 					System.out.println("Error: " + message);
+				}
 				errors.add(message);
 			}
 
 			@Override
 			public void handleWarning(Diagnostic diagnostic) {
-				if (PRINT_TO_CONSOLE)
+				if (PRINT_TO_CONSOLE) {
 					System.out.println("Warning: " + diagnostic.getMessage());
+				}
 			}
 
 			@Override
 			public void handleInfo(Diagnostic diagnostic) {
-				if (PRINT_TO_CONSOLE)
+				if (PRINT_TO_CONSOLE) {
 					System.out.println("Info: " + diagnostic.getMessage());
+				}
 			}
 		};
 	}
