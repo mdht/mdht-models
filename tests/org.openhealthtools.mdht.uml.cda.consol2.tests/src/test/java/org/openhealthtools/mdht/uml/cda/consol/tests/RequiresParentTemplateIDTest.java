@@ -194,7 +194,7 @@ public class RequiresParentTemplateIDTest {
 	@Test
 	public void requiresParentTemplateIDPostprocedureDiagnosis2ExpectFailTest() {
 		printHeader(
-			"requiresParentTemplateIDPostprocedureDiagnosis2ExpectPassTest",
+			"requiresParentTemplateIDPostprocedureDiagnosis2ExpectFailTest",
 			"Has 2 IIs, root and extension and root only", "expect NO related error");
 
 		doc = ConsolFactory.eINSTANCE.createProcedureNote2().init();
