@@ -30,10 +30,10 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSectionEntri
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#validateProceduresSectionEntriesOptional2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#getConsolProcedureActivityProcedure2s() <em>Get Consol Procedure Activity Procedure2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#getConsolProcedureActivityObservation2s() <em>Get Consol Procedure Activity Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#getConsolProcedureActivityAct2s() <em>Get Consol Procedure Activity Act2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#validateProceduresSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#validateProceduresSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#validateProceduresSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2#validateProceduresSectionEntriesOptionalProcedureActivityProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Procedure Activity Procedure</em>}</li>
@@ -46,42 +46,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSectionEntri
  */
 
 public class ProceduresSectionEntriesOptional2Test extends CDAValidationTest {
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-
-	public void testValidateProceduresSectionEntriesOptional2TemplateId() {
-		OperationsTestCase<ProceduresSectionEntriesOptional2> validateProceduresSectionEntriesOptional2TemplateIdTestCase = new OperationsTestCase<ProceduresSectionEntriesOptional2>(
-			"validateProceduresSectionEntriesOptional2TemplateId",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProceduresSectionEntriesOptional2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProceduresSectionEntriesOptional2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProceduresSectionEntriesOptional2Operations.validateProceduresSectionEntriesOptional2TemplateId(
-					(ProceduresSectionEntriesOptional2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProceduresSectionEntriesOptional2TemplateIdTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -117,6 +81,42 @@ public class ProceduresSectionEntriesOptional2Test extends CDAValidationTest {
 		ProceduresSectionEntriesOptional2 target = objectFactory.create();
 		target.getConsolProcedureActivityAct2s();
 
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProceduresSectionEntriesOptionalTemplateId() {
+		OperationsTestCase<ProceduresSectionEntriesOptional2> validateProceduresSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<ProceduresSectionEntriesOptional2>(
+			"validateProceduresSectionEntriesOptionalTemplateId",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProceduresSectionEntriesOptional2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProceduresSectionEntriesOptional2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProceduresSectionEntriesOptional2Operations.validateProceduresSectionEntriesOptionalTemplateId(
+					(ProceduresSectionEntriesOptional2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProceduresSectionEntriesOptionalTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

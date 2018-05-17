@@ -3341,7 +3341,7 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-6271</ruleId>
     <ruleId>CONF:1098-32532)</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_cd1OIAB1EeSLOb2O6vSPzg" base_Generalization="_80fo4AB0EeSLOb2O6vSPzg" requiresParentId="true"/>
+  <CDA:ConformsTo xmi:id="_cd1OIAB1EeSLOb2O6vSPzg" base_Generalization="_80fo4AB0EeSLOb2O6vSPzg"/>
   <CDA:CodeSystemConstraint xmi:id="_k15sUQB1EeSLOb2O6vSPzg" code="47519-4" displayName="History of Procedures" base_Property="_k15sUAB1EeSLOb2O6vSPzg">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-15424</ruleId>

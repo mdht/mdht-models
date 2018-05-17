@@ -92,9 +92,9 @@ public class ProblemSection2Impl extends ProblemSectionEntriesOptional2Impl impl
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
+	public boolean validateProblemSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemSection2Operations.validateProblemSectionEntriesOptional2TemplateId(this, diagnostics, context);
+		return ProblemSection2Operations.validateProblemSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**

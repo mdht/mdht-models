@@ -206,9 +206,9 @@ public class AdvanceDirectivesSection2Impl extends AdvanceDirectivesSectionEntri
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectivesSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
+	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSectionEntriesOptional2TemplateId(
+		return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
 			this, diagnostics, context);
 	}
 

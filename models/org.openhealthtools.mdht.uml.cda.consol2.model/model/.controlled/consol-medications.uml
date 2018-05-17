@@ -2349,7 +2349,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
   <CDA:CDATemplate xmi:id="_dxv-UPyqEeOlg_Cnc5bODw" base_Class="_ZLY3MPyqEeOlg_Cnc5bODw" templateId="2.16.840.1.113883.10.20.22.2.44" templateVersion="2015-08-01">
     <ruleId>CONF:1198-10098, CONF:1198-10392, CONF:1198-32560</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_ydsB4PyqEeOlg_Cnc5bODw" base_Generalization="_ZLbTcPyqEeOlg_Cnc5bODw" requiresParentId="true"/>
+  <CDA:ConformsTo xmi:id="_ydsB4PyqEeOlg_Cnc5bODw" base_Generalization="_ZLbTcPyqEeOlg_Cnc5bODw"/>
   <CDA:CodeSystemConstraint xmi:id="_3BxREPyqEeOlg_Cnc5bODw" code="42346-7" displayName="Medications on Admission" base_Property="_3BwqAPyqEeOlg_Cnc5bODw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15483, CONF:1198-32142</ruleId>
@@ -2485,7 +2485,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     <ruleId>CONF:1098-10432</ruleId>
     <ruleId>CONF:1098-32500</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_eOKgQAFaEeS0nNJt6oyOyQ" base_Generalization="_JUxPgAFaEeS0nNJt6oyOyQ" requiresParentId="true"/>
+  <CDA:ConformsTo xmi:id="_eOKgQAFaEeS0nNJt6oyOyQ" base_Generalization="_JUxPgAFaEeS0nNJt6oyOyQ"/>
   <CDA:CodeSystemConstraint xmi:id="_9cOpUQFbEeS0nNJt6oyOyQ" code="10160-0" displayName="History of medication use" base_Property="_9cOpUAFbEeS0nNJt6oyOyQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-15386</ruleId>

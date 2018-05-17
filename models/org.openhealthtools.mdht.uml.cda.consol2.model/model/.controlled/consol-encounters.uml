@@ -523,7 +523,7 @@
   <CDA:CDATemplate xmi:id="_roxZkPvbEeOJwYDYIUCQDg" base_Class="_kgM0YPvbEeOJwYDYIUCQDg" templateId="2.16.840.1.113883.10.20.22.2.22" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7940, CONF:1198-10386, CONF:1198-32547</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_JVoEAPvcEeOJwYDYIUCQDg" base_Generalization="_kgOpkPvbEeOJwYDYIUCQDg" requiresParentId="true"/>
+  <CDA:ConformsTo xmi:id="_JVoEAPvcEeOJwYDYIUCQDg" base_Generalization="_kgOpkPvbEeOJwYDYIUCQDg"/>
   <uml:Association xmi:id="_bu-Z4PvcEeOJwYDYIUCQDg" memberEnd="_bu79oPvcEeOJwYDYIUCQDg _bu_A8PvcEeOJwYDYIUCQDg">
     <ownedEnd xmi:id="_bu_A8PvcEeOJwYDYIUCQDg" type="_kgM0YPvbEeOJwYDYIUCQDg" association="_bu-Z4PvcEeOJwYDYIUCQDg"/>
   </uml:Association>

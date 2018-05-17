@@ -54,17 +54,6 @@ public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProceduresSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptional2Operations.validateProceduresSectionEntriesOptional2TemplateId(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public EList<ProcedureActivityProcedure2> getConsolProcedureActivityProcedure2s() {
 		return ProceduresSectionEntriesOptional2Operations.getConsolProcedureActivityProcedure2s(this);
@@ -86,6 +75,18 @@ public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntr
 	 */
 	public EList<ProcedureActivityAct2> getConsolProcedureActivityAct2s() {
 		return ProceduresSectionEntriesOptional2Operations.getConsolProcedureActivityAct2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresSectionEntriesOptional2Operations.validateProceduresSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**

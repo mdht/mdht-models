@@ -52,10 +52,9 @@ public class AllergiesSectionEntriesOptional2Impl extends AllergiesSectionEntrie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergiesSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptional2Operations.validateAllergiesSectionEntriesOptional2TemplateId(
-			this, diagnostics, context);
+	@Override
+	public EList<AllergyConcernAct2> getConsolAllergyConcernAct2s() {
+		return AllergiesSectionEntriesOptional2Operations.getConsolAllergyConcernAct2s(this);
 	}
 
 	/**
@@ -64,8 +63,10 @@ public class AllergiesSectionEntriesOptional2Impl extends AllergiesSectionEntrie
 	 * @generated
 	 */
 	@Override
-	public EList<AllergyConcernAct2> getConsolAllergyConcernAct2s() {
-		return AllergiesSectionEntriesOptional2Operations.getConsolAllergyConcernAct2s(this);
+	public boolean validateAllergiesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergiesSectionEntriesOptional2Operations.validateAllergiesSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**

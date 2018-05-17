@@ -1442,7 +1442,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
   <CDA:CDATemplate xmi:id="_fcIjsAFkEeSJ2uHfynwxCw" base_Class="_ZgLioAFkEeSJ2uHfynwxCw" templateId="2.16.840.1.113883.10.20.22.2.5" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7877, CONF:1198-10440, CONF:1198-32511</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_EitYQAFmEeSJ2uHfynwxCw" base_Generalization="_ZgPNAAFkEeSJ2uHfynwxCw" requiresParentId="true"/>
+  <CDA:ConformsTo xmi:id="_EitYQAFmEeSJ2uHfynwxCw" base_Generalization="_ZgPNAAFkEeSJ2uHfynwxCw"/>
   <CDA:CodeSystemConstraint xmi:id="_OtcG4QFmEeSJ2uHfynwxCw" code="11450-4" displayName="Problem List" base_Property="_OtcG4AFmEeSJ2uHfynwxCw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15408, CONF:1198-31141</ruleId>

@@ -82,9 +82,9 @@ public class ImmunizationsSection2Impl extends ImmunizationsSectionEntriesOption
 	 * @generated
 	 */
 	@Override
-	public boolean validateImmunizationsSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
+	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSection2Operations.validateImmunizationsSectionEntriesOptional2TemplateId(
+		return ImmunizationsSection2Operations.validateImmunizationsSectionEntriesOptionalTemplateId(
 			this, diagnostics, context);
 	}
 

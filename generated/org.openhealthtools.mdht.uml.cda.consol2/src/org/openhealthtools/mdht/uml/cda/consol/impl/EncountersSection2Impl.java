@@ -81,9 +81,9 @@ public class EncountersSection2Impl extends EncountersSectionEntriesOptional2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateEncountersSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
+	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSection2Operations.validateEncountersSectionEntriesOptional2TemplateId(
+		return EncountersSection2Operations.validateEncountersSectionEntriesOptionalTemplateId(
 			this, diagnostics, context);
 	}
 

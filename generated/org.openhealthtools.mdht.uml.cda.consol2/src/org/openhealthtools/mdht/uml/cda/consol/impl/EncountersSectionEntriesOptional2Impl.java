@@ -52,10 +52,9 @@ public class EncountersSectionEntriesOptional2Impl extends EncountersSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptional2TemplateId(
-			this, diagnostics, context);
+	@Override
+	public EList<EncounterActivity2> getConsolEncounterActivity2s() {
+		return EncountersSectionEntriesOptional2Operations.getConsolEncounterActivity2s(this);
 	}
 
 	/**
@@ -64,8 +63,10 @@ public class EncountersSectionEntriesOptional2Impl extends EncountersSectionEntr
 	 * @generated
 	 */
 	@Override
-	public EList<EncounterActivity2> getConsolEncounterActivity2s() {
-		return EncountersSectionEntriesOptional2Operations.getConsolEncounterActivity2s(this);
+	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**

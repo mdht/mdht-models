@@ -81,9 +81,9 @@ public class VitalSignsSection2Impl extends VitalSignsSectionEntriesOptional2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateVitalSignsSectionEntriesOptional2TemplateId(DiagnosticChain diagnostics,
+	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSection2Operations.validateVitalSignsSectionEntriesOptional2TemplateId(
+		return VitalSignsSection2Operations.validateVitalSignsSectionEntriesOptionalTemplateId(
 			this, diagnostics, context);
 	}
 

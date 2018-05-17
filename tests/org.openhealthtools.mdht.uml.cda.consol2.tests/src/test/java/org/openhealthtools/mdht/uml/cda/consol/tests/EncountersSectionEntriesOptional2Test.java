@@ -30,8 +30,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.EncountersSectionEntri
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional2#validateEncountersSectionEntriesOptional2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional2#getConsolEncounterActivity2s() <em>Get Consol Encounter Activity2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional2#validateEncountersSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional2#validateEncountersSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional2#validateEncountersSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional2#validateEncountersSectionEntriesOptionalEncounterActivities(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Encounter Activities</em>}</li>
@@ -48,12 +48,24 @@ public class EncountersSectionEntriesOptional2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+	public void testGetConsolEncounterActivity2s() {
 
-	public void testValidateEncountersSectionEntriesOptional2TemplateId() {
-		OperationsTestCase<EncountersSectionEntriesOptional2> validateEncountersSectionEntriesOptional2TemplateIdTestCase = new OperationsTestCase<EncountersSectionEntriesOptional2>(
-			"validateEncountersSectionEntriesOptional2TemplateId",
+		EncountersSectionEntriesOptional2 target = objectFactory.create();
+		target.getConsolEncounterActivity2s();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateEncountersSectionEntriesOptionalTemplateId() {
+		OperationsTestCase<EncountersSectionEntriesOptional2> validateEncountersSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<EncountersSectionEntriesOptional2>(
+			"validateEncountersSectionEntriesOptionalTemplateId",
 			operationsForOCL.getOCLValue(
-				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -70,25 +82,13 @@ public class EncountersSectionEntriesOptional2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptional2TemplateId(
+				return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalTemplateId(
 					(EncountersSectionEntriesOptional2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateEncountersSectionEntriesOptional2TemplateIdTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetConsolEncounterActivity2s() {
-
-		EncountersSectionEntriesOptional2 target = objectFactory.create();
-		target.getConsolEncounterActivity2s();
-
+		validateEncountersSectionEntriesOptionalTemplateIdTestCase.doValidationTest();
 	}
 
 	/**
