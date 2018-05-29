@@ -20,12 +20,24 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCoverageActivity2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoverageActivityTemplateId CoverageActivityCode CoverageActivityCodeP CoverageActivityPolicyActivity CoverageActivity2EntryRelationship CoverageActivity2EntryRelationshipINTValue CoverageActivity2EntryRelationshipTypeCode CoverageActivity2EntryRelationshipPolicyActivity2' templateId.root='2.16.840.1.113883.10.20.22.4.60' templateId.extension='2015-08-01' constraints.validation.info='CoverageActivityCoverageActivityRelationshipSequenceNumber CoverageActivity2EntryRelationshipSequenceNumber' constraints.validation.dependOn.CoverageActivityCode='CoverageActivityCodeP' constraints.validation.query='CoverageActivity2EntryRelationshipINTValue CoverageActivity2EntryRelationshipTypeCode CoverageActivity2EntryRelationshipSequenceNumber CoverageActivity2EntryRelationshipPolicyActivity2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoverageActivity2TemplateId CoverageActivityCode CoverageActivityCodeP CoverageActivityPolicyActivity CoverageActivity2EntryRelationship CoverageActivity2EntryRelationshipINTValue CoverageActivity2EntryRelationshipTypeCode CoverageActivity2EntryRelationshipPolicyActivity2' templateId.root='2.16.840.1.113883.10.20.22.4.60' templateId.extension='2015-08-01' constraints.validation.info='CoverageActivityCoverageActivityRelationshipSequenceNumber CoverageActivity2EntryRelationshipSequenceNumber' constraints.validation.dependOn.CoverageActivityCode='CoverageActivityCodeP' constraints.validation.query='CoverageActivity2EntryRelationshipINTValue CoverageActivity2EntryRelationshipTypeCode CoverageActivity2EntryRelationshipSequenceNumber CoverageActivity2EntryRelationshipPolicyActivity2'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCoverageActivity2EntryRelationship typeCode='COMP' constraints.validation.error='CoverageActivity2EntryRelationshipTypeCode CoverageActivity2EntryRelationshipPolicyActivity2 CoverageActivity2EntryRelationshipINTValue' constraints.validation.info='CoverageActivity2EntryRelationshipSequenceNumber' constraints.validation.query='CoverageActivity2EntryRelationshipINTValue'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCoverageActivity2EntryRelationshipINT constraints.validation.error='CoverageActivity2EntryRelationshipINTValue'"
  * @generated
  */
 public interface CoverageActivity2 extends CoverageActivity {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.60\' and id.extension.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateCoverageActivity2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

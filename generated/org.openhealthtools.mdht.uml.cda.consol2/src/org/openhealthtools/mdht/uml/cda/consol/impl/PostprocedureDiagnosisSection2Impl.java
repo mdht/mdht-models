@@ -51,9 +51,10 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public PostprocedureDiagnosis2 getConsolPostprocedureDiagnosis2() {
-		return PostprocedureDiagnosisSection2Operations.getConsolPostprocedureDiagnosis2(this);
+	public boolean validatePostprocedureDiagnosisSection2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSection2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -62,10 +63,8 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	 * @generated
 	 */
 	@Override
-	public boolean validatePostprocedureDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionTemplateId(
-			this, diagnostics, context);
+	public PostprocedureDiagnosis2 getConsolPostprocedureDiagnosis2() {
+		return PostprocedureDiagnosisSection2Operations.getConsolPostprocedureDiagnosis2(this);
 	}
 
 	/**

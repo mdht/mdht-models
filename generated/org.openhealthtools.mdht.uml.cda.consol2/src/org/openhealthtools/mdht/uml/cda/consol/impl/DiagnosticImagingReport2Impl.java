@@ -661,10 +661,8 @@ public class DiagnosticImagingReport2Impl extends USRealmHeader2Impl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DiagnosticImagingReport2Operations.validateGeneralHeaderConstraintsTemplateId(
-			this, diagnostics, context);
+	public boolean validateUSRealmHeader2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReport2Operations.validateUSRealmHeader2TemplateId(this, diagnostics, context);
 	}
 
 	/**

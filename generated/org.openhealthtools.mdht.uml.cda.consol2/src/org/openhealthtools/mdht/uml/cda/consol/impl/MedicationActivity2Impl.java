@@ -92,6 +92,15 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationActivity2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateMedicationActivityStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationActivity2Operations.validateMedicationActivityStatusCodeP(this, diagnostics, context);
@@ -152,6 +161,24 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 			Map<Object, Object> context) {
 		return MedicationActivity2Operations.validateMedicationActivity2MedicationFreeTextSig(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivity2CETranslationP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2CETranslationP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivity2CETranslation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2CETranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -333,16 +360,6 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	public boolean validateMedicationActivityEffectiveTimePIVLTS(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationActivity2Operations.validateMedicationActivityEffectiveTimePIVLTS(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**

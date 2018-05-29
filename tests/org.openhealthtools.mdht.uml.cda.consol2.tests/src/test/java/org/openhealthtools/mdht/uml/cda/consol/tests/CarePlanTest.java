@@ -121,7 +121,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CarePlanOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#getGoalsSection() <em>Get Goals Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#getHealthStatusEvaluationsOutcomesSection() <em>Get Health Status Evaluations Outcomes Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#getInterventionsSection2() <em>Get Interventions Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateUSRealmHeader2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -2740,10 +2740,11 @@ public class CarePlanTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateGeneralHeaderConstraintsTemplateId() {
-		OperationsTestCase<CarePlan> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<CarePlan>(
-			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateUSRealmHeader2TemplateId() {
+		OperationsTestCase<CarePlan> validateUSRealmHeader2TemplateIdTestCase = new OperationsTestCase<CarePlan>(
+			"validateUSRealmHeader2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2760,13 +2761,12 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return CarePlanOperations.validateGeneralHeaderConstraintsTemplateId(
-					(CarePlan) objectToTest, diagnostician, map);
+				return CarePlanOperations.validateUSRealmHeader2TemplateId((CarePlan) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGeneralHeaderConstraintsTemplateIdTestCase.doValidationTest();
+		validateUSRealmHeader2TemplateIdTestCase.doValidationTest();
 	}
 
 	/**

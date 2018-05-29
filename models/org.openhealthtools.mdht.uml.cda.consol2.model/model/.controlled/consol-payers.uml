@@ -1029,7 +1029,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
   <CDA:PropertyValidation xmi:id="_HsH9YLkyEeODDJAC5t5vpw" base_Property="_nD4f4LkxEeODDJAC5t5vpw">
     <ruleId>CONF:1198-8876</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ConformsTo xmi:id="_d3rHoLk0EeODDJAC5t5vpw" base_Generalization="_aJr6UbkxEeODDJAC5t5vpw"/>
+  <CDA:ConformsTo xmi:id="_d3rHoLk0EeODDJAC5t5vpw" base_Generalization="_aJr6UbkxEeODDJAC5t5vpw" requiresParentId="true"/>
   <uml:Class xmi:id="_Q0ODkOwlEeOqa975IP2wug" name="PolicyActivity2">
     <ownedComment xmi:id="_eTN_UOwlEeOqa975IP2wug">
       <body>A policy activity represents the policy or program providing the coverage. The person for whom payment is being provided (i.e., the patient) is the covered party. The subscriber of the policy or program is represented as a participant that is the holder of the coverage. The payer is represented as the performer of the policy activity.</body>
@@ -1207,7 +1207,7 @@ The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. T
   <CDA:CDATemplate xmi:id="_Vf2sQOwlEeOqa975IP2wug" base_Class="_Q0ODkOwlEeOqa975IP2wug" templateId="2.16.840.1.113883.10.20.22.4.61" templateVersion="2015-08-01">
     <ruleId>CONF:1198-8900, CONF:1198-10516, CONF:1198-32595</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_mUegAOwlEeOqa975IP2wug" base_Generalization="_Q0P4wOwlEeOqa975IP2wug"/>
+  <CDA:ConformsTo xmi:id="_mUegAOwlEeOqa975IP2wug" base_Generalization="_Q0P4wOwlEeOqa975IP2wug" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_PI4bwOwoEeOqa975IP2wug" severity="INFO" base_Property="_PI30sOwoEeOqa975IP2wug">
     <ruleId>CONF:1198-8911</ruleId>
   </CDA:PropertyValidation>
@@ -1254,7 +1254,7 @@ The sources of payment are represented as a Coverage Activity, which identifies 
     <ruleId>CONF:1198-10434</ruleId>
     <ruleId>CONF:1198-32597</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_GQnsoP4mEeOzC5ykp-XCaA" base_Generalization="_twipEP4lEeOzC5ykp-XCaA"/>
+  <CDA:ConformsTo xmi:id="_GQnsoP4mEeOzC5ykp-XCaA" base_Generalization="_twipEP4lEeOzC5ykp-XCaA" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_KlFygf4mEeOzC5ykp-XCaA" code="48768-6" displayName="Payers" base_Property="_KlFygP4mEeOzC5ykp-XCaA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15396, CONF:1198-32149</ruleId>

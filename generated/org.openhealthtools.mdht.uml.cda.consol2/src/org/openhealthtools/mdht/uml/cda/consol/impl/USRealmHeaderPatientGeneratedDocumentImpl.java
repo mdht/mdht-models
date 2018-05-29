@@ -826,9 +826,8 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return USRealmHeaderPatientGeneratedDocumentOperations.validateGeneralHeaderConstraintsTemplateId(
+	public boolean validateUSRealmHeader2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeader2TemplateId(
 			this, diagnostics, context);
 	}
 

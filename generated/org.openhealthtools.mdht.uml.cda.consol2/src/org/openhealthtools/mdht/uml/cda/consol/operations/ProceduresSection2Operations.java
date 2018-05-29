@@ -607,65 +607,6 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-
-	public static EList<ProcedureActivityObservation2> getConsolProcedureActivityObservation2s(
-			ProceduresSection2 proceduresSection2) {
-
-		if (GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PROCEDURES_SECTION2,
-				ConsolPackage.Literals.PROCEDURES_SECTION2.getEAllOperations().get(67));
-			try {
-				GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY = helper.createQuery(
-					GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<ProcedureActivityObservation2> result = (Collection<ProcedureActivityObservation2>) query.evaluate(
-			proceduresSection2);
-		return new BasicEList.UnmodifiableEList<ProcedureActivityObservation2>(result.size(), result.toArray());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-
-	public static EList<ProcedureActivityAct2> getConsolProcedureActivityAct2s(ProceduresSection2 proceduresSection2) {
-
-		if (GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_QRY == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PROCEDURES_SECTION2,
-				ConsolPackage.Literals.PROCEDURES_SECTION2.getEAllOperations().get(68));
-			try {
-				GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_QRY = helper.createQuery(
-					GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<ProcedureActivityAct2> result = (Collection<ProcedureActivityAct2>) query.evaluate(
-			proceduresSection2);
-		return new BasicEList.UnmodifiableEList<ProcedureActivityAct2>(result.size(), result.toArray());
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Template Id</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -728,6 +669,65 @@ public class ProceduresSection2Operations extends ProceduresSectionEntriesOption
 			return false;
 		}
 		return true;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static EList<ProcedureActivityObservation2> getConsolProcedureActivityObservation2s(
+			ProceduresSection2 proceduresSection2) {
+
+		if (GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.PROCEDURES_SECTION2,
+				ConsolPackage.Literals.PROCEDURES_SECTION2.getEAllOperations().get(67));
+			try {
+				GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ProcedureActivityObservation2> result = (Collection<ProcedureActivityObservation2>) query.evaluate(
+			proceduresSection2);
+		return new BasicEList.UnmodifiableEList<ProcedureActivityObservation2>(result.size(), result.toArray());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static EList<ProcedureActivityAct2> getConsolProcedureActivityAct2s(ProceduresSection2 proceduresSection2) {
+
+		if (GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_QRY == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.PROCEDURES_SECTION2,
+				ConsolPackage.Literals.PROCEDURES_SECTION2.getEAllOperations().get(68));
+			try {
+				GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_ACT2S__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<ProcedureActivityAct2> result = (Collection<ProcedureActivityAct2>) query.evaluate(
+			proceduresSection2);
+		return new BasicEList.UnmodifiableEList<ProcedureActivityAct2>(result.size(), result.toArray());
 	}
 
 	/**

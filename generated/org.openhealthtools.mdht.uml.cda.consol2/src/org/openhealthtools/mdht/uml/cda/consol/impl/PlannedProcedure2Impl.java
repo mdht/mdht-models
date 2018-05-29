@@ -85,6 +85,15 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedProcedure2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlannedProcedure2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlannedProcedure2Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedProcedure2Operations.validatePlannedProcedure2Code(this, diagnostics, context);
@@ -247,17 +256,6 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	@Override
 	public EList<PlannedCoverage> getPlannedCoverages() {
 		return PlannedProcedure2Operations.getPlannedCoverages(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareActivityProcedureTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedProcedure2Operations.validatePlanOfCareActivityProcedureTemplateId(this, diagnostics, context);
 	}
 
 	/**

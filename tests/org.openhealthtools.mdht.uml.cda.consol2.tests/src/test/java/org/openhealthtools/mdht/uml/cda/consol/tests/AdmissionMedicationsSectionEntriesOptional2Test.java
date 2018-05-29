@@ -60,6 +60,7 @@ public class AdmissionMedicationsSectionEntriesOptional2Test extends CDAValidati
 	* @generated
 	*/
 	@Test
+
 	public void testValidateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<AdmissionMedicationsSectionEntriesOptional2> validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<AdmissionMedicationsSectionEntriesOptional2>(
 			"validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId",

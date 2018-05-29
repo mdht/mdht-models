@@ -60,6 +60,7 @@ public class VitalSignsSectionEntriesOptional2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateVitalSignsSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<VitalSignsSectionEntriesOptional2> validateVitalSignsSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<VitalSignsSectionEntriesOptional2>(
 			"validateVitalSignsSectionEntriesOptionalTemplateId",

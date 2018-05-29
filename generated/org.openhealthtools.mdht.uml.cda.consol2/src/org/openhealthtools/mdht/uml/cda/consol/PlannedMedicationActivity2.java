@@ -20,11 +20,12 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedMedicationActivity2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivitySubstanceAdministrationTemplateId PlannedMedicationActivity2EffectiveTimeIVLTSorTS PlannedMedicationActivity2EffectiveTimeIVLTSLowXorValue PlanOfCareActivitySubstanceAdministrationMoodCode PlannedMedicationActivity2StatusCode PlannedMedicationActivity2StatusCodeP PlannedMedicationActivity2RouteCode PlannedMedicationActivity2ApproachSiteCode PlannedMedicationActivity2AdministrationUnitCode PlannedMedicationActivity2Consumable PlannedMedicationActivity2ConsumableMedicationInformation2 PlannedMedicationActivity2PreconditionTypeCode PlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2' templateId.root='2.16.840.1.113883.10.20.22.4.42' templateId.extension='2014-06-09' constraints.validation.warning='PlannedMedicationActivity2EffectiveTimeIVLTSLow PlannedMedicationActivity2EffectiveTimePIVLTS PlannedMedicationActivity2AuthorParticipation PlannedMedicationActivity2IVLPQdoseQuantityUnit PlannedMedicationActivity2IVLPQrateQuantityUnit' constraints.validation.info='PlannedMedicationActivity2EffectiveTimeIVLTSHigh PlannedMedicationActivity2RepeatNumber PlannedMedicationActivity2RouteCodeP PlannedMedicationActivity2ApproachSiteCodeP PlannedMedicationActivity2DoseQuantity PlannedMedicationActivity2RateQuantity PlannedMedicationActivity2MaxDoseQuantity PlannedMedicationActivity2AdministrationUnitCodeP PlannedMedicationActivity2Performer PlannedMedicationActivity2PriorityPreference PlannedMedicationActivity2Indication2 PlannedMedicationActivity2Instruction2 PlannedMedicationActivity2Precondition' statusCode.code='active' routeCode.codeSystem='2.16.840.1.113883.6.96' routeCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedMedicationActivity2RouteCode='PlannedMedicationActivity2RouteCodeP' approachSiteCode.codeSystem='2.16.840.1.113883.6.96' approachSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedMedicationActivity2ApproachSiteCode='PlannedMedicationActivity2ApproachSiteCodeP' administrationUnitCode.codeSystem='2.16.840.1.113883.5.85' administrationUnitCode.codeSystemName='orderableDrugForm' constraints.validation.dependOn.PlannedMedicationActivity2AdministrationUnitCode='PlannedMedicationActivity2AdministrationUnitCodeP' constraints.validation.query='PlannedMedicationActivity2IVLPQdoseQuantityUnit PlannedMedicationActivity2IVLPQrateQuantityUnit PlannedMedicationActivity2ConsumableMedicationInformation2 PlannedMedicationActivity2PreconditionTypeCode PlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedMedicationActivity2TemplateId PlannedMedicationActivity2EffectiveTimeIVLTSorTS PlannedMedicationActivity2EffectiveTimeIVLTSLowXorValue PlanOfCareActivitySubstanceAdministrationMoodCode PlannedMedicationActivity2StatusCode PlannedMedicationActivity2StatusCodeP PlannedMedicationActivity2RouteCode PlannedMedicationActivity2ApproachSiteCode PlannedMedicationActivity2AdministrationUnitCode PlannedMedicationActivity2Consumable PlannedMedicationActivity2CETranslation PlannedMedicationActivity2ConsumableMedicationInformation2 PlannedMedicationActivity2PreconditionTypeCode PlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2' templateId.root='2.16.840.1.113883.10.20.22.4.42' templateId.extension='2014-06-09' constraints.validation.warning='PlannedMedicationActivity2EffectiveTimeIVLTSLow PlannedMedicationActivity2EffectiveTimePIVLTS PlannedMedicationActivity2AuthorParticipation PlannedMedicationActivity2CETranslationP PlannedMedicationActivity2IVLPQdoseQuantityUnit PlannedMedicationActivity2IVLPQrateQuantityUnit' constraints.validation.info='PlannedMedicationActivity2EffectiveTimeIVLTSHigh PlannedMedicationActivity2RepeatNumber PlannedMedicationActivity2RouteCodeP PlannedMedicationActivity2ApproachSiteCodeP PlannedMedicationActivity2DoseQuantity PlannedMedicationActivity2RateQuantity PlannedMedicationActivity2MaxDoseQuantity PlannedMedicationActivity2AdministrationUnitCodeP PlannedMedicationActivity2Performer PlannedMedicationActivity2PriorityPreference PlannedMedicationActivity2Indication2 PlannedMedicationActivity2Instruction2 PlannedMedicationActivity2Precondition' statusCode.code='active' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1' routeCode.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.PlannedMedicationActivity2RouteCode='PlannedMedicationActivity2RouteCodeP' approachSiteCode.codeSystem='2.16.840.1.113883.6.96' approachSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedMedicationActivity2ApproachSiteCode='PlannedMedicationActivity2ApproachSiteCodeP' administrationUnitCode.codeSystem='2.16.840.1.113883.5.85' administrationUnitCode.codeSystemName='orderableDrugForm' constraints.validation.dependOn.PlannedMedicationActivity2AdministrationUnitCode='PlannedMedicationActivity2AdministrationUnitCodeP' constraints.validation.query='PlannedMedicationActivity2CETranslationP PlannedMedicationActivity2CETranslation PlannedMedicationActivity2IVLPQdoseQuantityUnit PlannedMedicationActivity2IVLPQrateQuantityUnit PlannedMedicationActivity2ConsumableMedicationInformation2 PlannedMedicationActivity2PreconditionTypeCode PlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2' constraints.validation.dependOn.PlannedMedicationActivity2CETranslation='PlannedMedicationActivity2CETranslationP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedMedicationActivity2IVLPQdoseQuantity unit='1' constraints.validation.warning='PlannedMedicationActivity2IVLPQdoseQuantityUnit'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedMedicationActivity2IVLPQrateQuantity unit='1' constraints.validation.warning='PlannedMedicationActivity2IVLPQrateQuantityUnit'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedMedicationActivity2Consumable constraints.validation.error='PlannedMedicationActivity2ConsumableMedicationInformation2'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedMedicationActivity2Precondition typeCode='PRCN' constraints.validation.error='PlannedMedicationActivity2PreconditionTypeCode PlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedMedicationActivity2CE translation.codeSystem='2.16.840.1.113883.6.96' translation.codeSystemName='SNOMEDCT' constraints.validation.error='PlannedMedicationActivity2CETranslation' constraints.validation.warning='PlannedMedicationActivity2CETranslationP' constraints.validation.dependOn.PlannedMedicationActivity2CETranslation='PlannedMedicationActivity2CETranslationP'"
  * @generated
  */
 public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceAdministration {
@@ -100,6 +101,18 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.42\' and id.extension.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validatePlannedMedicationActivity2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'active\')'"
 	 * @generated
 	 */
@@ -148,7 +161,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\' and not value.code.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2RouteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -326,6 +339,30 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2Precondition(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.priorityCode->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (not translation->isEmpty()) )))'"
+	 * @generated
+	 */
+	boolean validatePlannedMedicationActivity2CETranslationP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.priorityCode->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined())) )))'"
+	 * @generated
+	 */
+	boolean validatePlannedMedicationActivity2CETranslation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

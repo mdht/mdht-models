@@ -51,6 +51,15 @@ public class AllergyConcernAct2Impl extends AllergyProblemActImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergyConcernAct2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyConcernAct2Operations.validateAllergyConcernAct2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateAllergyConcernAct2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -65,16 +74,6 @@ public class AllergyConcernAct2Impl extends AllergyProblemActImpl implements All
 	@Override
 	public EList<AllergyObservation2> getConsolAllergyObservation2s() {
 		return AllergyConcernAct2Operations.getConsolAllergyObservation2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyProblemActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyConcernAct2Operations.validateAllergyProblemActTemplateId(this, diagnostics, context);
 	}
 
 	/**

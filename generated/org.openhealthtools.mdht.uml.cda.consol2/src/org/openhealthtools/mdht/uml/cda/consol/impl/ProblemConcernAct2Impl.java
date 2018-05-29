@@ -52,6 +52,15 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemConcernAct2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernAct2Operations.validateProblemConcernAct2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProblemConcernActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernAct2Operations.validateProblemConcernActStatusCodeP(this, diagnostics, context);
@@ -116,16 +125,6 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	public boolean validateProblemConcernActEffectiveTimeHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemConcernAct2Operations.validateProblemConcernActEffectiveTimeHigh(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProblemConcernActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernAct2Operations.validateProblemConcernActTemplateId(this, diagnostics, context);
 	}
 
 	/**

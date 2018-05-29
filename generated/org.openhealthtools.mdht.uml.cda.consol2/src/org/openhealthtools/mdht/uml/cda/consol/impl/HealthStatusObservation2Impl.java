@@ -49,6 +49,17 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHealthStatusObservation2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthStatusObservation2Operations.validateHealthStatusObservation2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateHealthStatusObservation2Id(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservation2Operations.validateHealthStatusObservation2Id(this, diagnostics, context);
 	}
@@ -109,16 +120,6 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 			Map<Object, Object> context) {
 		return HealthStatusObservation2Operations.validateHealthStatusObservationHasTextReferenceValue(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHealthStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HealthStatusObservation2Operations.validateHealthStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**

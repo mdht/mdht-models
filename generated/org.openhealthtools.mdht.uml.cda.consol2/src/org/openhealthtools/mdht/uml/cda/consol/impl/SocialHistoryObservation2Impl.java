@@ -82,6 +82,17 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSocialHistoryObservation2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateSocialHistoryObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -132,18 +143,6 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	public boolean validateSocialHistoryObservation2CDTranslationP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2CDTranslationP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservationTemplateId(
 			this, diagnostics, context);
 	}
 

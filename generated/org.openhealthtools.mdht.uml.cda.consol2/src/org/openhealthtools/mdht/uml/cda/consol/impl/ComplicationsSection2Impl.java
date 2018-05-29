@@ -62,9 +62,8 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemObservation2> getConsolProblemObservation2s() {
-		return ComplicationsSection2Operations.getConsolProblemObservation2s(this);
+	public boolean validateComplicationsSection2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplicationsSection2Operations.validateComplicationsSection2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +72,8 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateComplicationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplicationsSection2Operations.validateComplicationsSectionTemplateId(this, diagnostics, context);
+	public EList<ProblemObservation2> getConsolProblemObservation2s() {
+		return ComplicationsSection2Operations.getConsolProblemObservation2s(this);
 	}
 
 	/**

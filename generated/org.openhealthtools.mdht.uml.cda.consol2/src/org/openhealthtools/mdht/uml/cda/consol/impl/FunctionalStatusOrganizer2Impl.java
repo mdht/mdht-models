@@ -53,6 +53,17 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFunctionalStatusOrganizer2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateFunctionalStatusOrganizer2SelfCareActivities(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -100,16 +111,6 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	@Override
 	public boolean validateResultOrganizerCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusOrganizer2Operations.validateResultOrganizerCodeValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusOrganizer2Operations.validateResultOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**

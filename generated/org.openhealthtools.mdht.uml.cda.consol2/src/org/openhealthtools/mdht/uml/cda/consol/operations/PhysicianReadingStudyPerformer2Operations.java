@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer2#validatePhysicianReadingStudyPerformerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer2#validatePhysicianReadingStudyPerformer2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer2 Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -47,25 +47,25 @@ public class PhysicianReadingStudyPerformer2Operations extends PhysicianReadingS
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePhysicianReadingStudyPerformerTemplateId(PhysicianReadingStudyPerformer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Template Id</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validatePhysicianReadingStudyPerformer2TemplateId(PhysicianReadingStudyPerformer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer2 Template Id</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePhysicianReadingStudyPerformerTemplateId(PhysicianReadingStudyPerformer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validatePhysicianReadingStudyPerformer2TemplateId(PhysicianReadingStudyPerformer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.1' and id.extension = '2014-06-09')";
+	protected static final String VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.1' and id.extension.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePhysicianReadingStudyPerformerTemplateId(PhysicianReadingStudyPerformer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer Template Id</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validatePhysicianReadingStudyPerformer2TemplateId(PhysicianReadingStudyPerformer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physician Reading Study Performer2 Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePhysicianReadingStudyPerformerTemplateId(PhysicianReadingStudyPerformer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validatePhysicianReadingStudyPerformer2TemplateId(PhysicianReadingStudyPerformer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,33 +78,33 @@ public class PhysicianReadingStudyPerformer2Operations extends PhysicianReadingS
 	 * @generated
 	 */
 
-	public static boolean validatePhysicianReadingStudyPerformerTemplateId(
+	public static boolean validatePhysicianReadingStudyPerformer2TemplateId(
 			PhysicianReadingStudyPerformer2 physicianReadingStudyPerformer2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICIAN_READING_STUDY_PERFORMER2);
 			try {
-				VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+				VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
 					helper.createInvariant(
-						VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+						VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
 		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 				physicianReadingStudyPerformer2)) {
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER2__PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID,
+						ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER2__PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID,
 						ConsolPlugin.INSTANCE.getString(
-							"PhysicianReadingStudyPerformer2PhysicianReadingStudyPerformerTemplateId"),
+							"PhysicianReadingStudyPerformer2PhysicianReadingStudyPerformer2TemplateId"),
 						new Object[] { physicianReadingStudyPerformer2 }));
 			}
 

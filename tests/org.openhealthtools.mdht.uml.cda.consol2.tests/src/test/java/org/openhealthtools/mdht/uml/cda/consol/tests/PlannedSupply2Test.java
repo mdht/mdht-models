@@ -39,6 +39,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedSupply2Operatio
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2MedInfoXorImmunXorProductInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Med Info Xor Immun Xor Product Instance</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlannedSupply2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Effective Time</em>}</li>
@@ -60,7 +61,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedSupply2Operatio
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#getIndication2s() <em>Get Indication2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#getInstruction2s() <em>Get Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#getPlannedCoverages() <em>Get Planned Coverages</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlanOfCareActivitySupplyTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlanOfCareActivitySupplyMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Mood Code</em>}</li>
  * </ul>
  * </p>
@@ -191,6 +191,41 @@ public class PlannedSupply2Test extends CDAValidationTest {
 		};
 
 		validatePlannedSupply2MedInfoXorImmunXorProductInstanceTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedSupply2TemplateId() {
+		OperationsTestCase<PlannedSupply2> validatePlannedSupply2TemplateIdTestCase = new OperationsTestCase<PlannedSupply2>(
+			"validatePlannedSupply2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedSupply2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedSupply2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedSupply2Operations.validatePlannedSupply2TemplateId(
+					(PlannedSupply2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedSupply2TemplateIdTestCase.doValidationTest();
 	}
 
 	/**
@@ -827,40 +862,6 @@ public class PlannedSupply2Test extends CDAValidationTest {
 		PlannedSupply2 target = objectFactory.create();
 		target.getPlannedCoverages();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePlanOfCareActivitySupplyTemplateId() {
-		OperationsTestCase<PlannedSupply2> validatePlanOfCareActivitySupplyTemplateIdTestCase = new OperationsTestCase<PlannedSupply2>(
-			"validatePlanOfCareActivitySupplyTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedSupply2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PlannedSupply2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedSupply2Operations.validatePlanOfCareActivitySupplyTemplateId(
-					(PlannedSupply2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlanOfCareActivitySupplyTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

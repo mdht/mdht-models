@@ -2502,7 +2502,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:CDATemplate xmi:id="_EebnEOwvEeOqa975IP2wug" base_Class="__SgUwOwuEeOqa975IP2wug" templateId="2.16.840.1.113883.10.20.22.4.51" templateVersion="2015-08-01">
     <ruleId>CONF:1198-16766, CONF:1198-16767, CONF:1198-32539</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_VIJyYOwvEeOqa975IP2wug" base_Generalization="__SgUwewuEeOqa975IP2wug"/>
+  <CDA:ConformsTo xmi:id="_VIJyYOwvEeOqa975IP2wug" base_Generalization="__SgUwewuEeOqa975IP2wug" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_O-40MOzWEeOnE-G4kptBiw" code="59769-0" displayName="Postprocedure Diagnosis" base_Property="_O-pjoOzWEeOnE-G4kptBiw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-19152, CONF:1198-32166</ruleId>
@@ -2528,7 +2528,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:CDATemplate xmi:id="_CPNVMOzZEeOnE-G4kptBiw" base_Class="_5l3g0OzYEeOnE-G4kptBiw" templateId="2.16.840.1.113883.10.20.22.4.65" templateVersion="2015-08-01">
     <ruleId>CONF:1198-16770, CONF:1198-16771, CONF:1198-32540</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_EpHWYOzaEeOnE-G4kptBiw" base_Generalization="_5l4H4OzYEeOnE-G4kptBiw"/>
+  <CDA:ConformsTo xmi:id="_EpHWYOzaEeOnE-G4kptBiw" base_Generalization="_5l4H4OzYEeOnE-G4kptBiw" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_RUUdsOzaEeOnE-G4kptBiw" code="10219-4" displayName="Preoperative Diagnosis" base_Property="_RUT2oOzaEeOnE-G4kptBiw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-19156, CONF:1198-32167</ruleId>
@@ -2666,7 +2666,7 @@ The common notion of &quot;procedure&quot; is broader than that specified by the
     <ruleId>CONF:1098-10519</ruleId>
     <ruleId>CONF:1098-32505</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_UtIS0PDbEeOKPKE9au0oug" base_Generalization="_CFMuYfDbEeOKPKE9au0oug"/>
+  <CDA:ConformsTo xmi:id="_UtIS0PDbEeOKPKE9au0oug" base_Generalization="_CFMuYfDbEeOKPKE9au0oug" requiresParentId="true"/>
   <uml:Association xmi:id="_xCHEAPDeEeOKPKE9au0oug" memberEnd="_xCF14PDeEeOKPKE9au0oug _xCHrEPDeEeOKPKE9au0oug">
     <ownedEnd xmi:id="_xCHrEPDeEeOKPKE9au0oug" type="_CFMuYPDbEeOKPKE9au0oug" association="_xCHEAPDeEeOKPKE9au0oug"/>
   </uml:Association>
@@ -2820,7 +2820,7 @@ This template represents procedures that result in new information about the pat
     <ruleId>CONF:1098-10520</ruleId>
     <ruleId>CONF:1098-32507</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_vaqLwPDjEeOKPKE9au0oug" base_Generalization="_QoLWAfDjEeOKPKE9au0oug"/>
+  <CDA:ConformsTo xmi:id="_vaqLwPDjEeOKPKE9au0oug" base_Generalization="_QoLWAfDjEeOKPKE9au0oug" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_hLqEg_DlEeOKPKE9au0oug" severity="WARNING" base_Property="_hLqEgPDlEeOKPKE9au0oug"/>
   <uml:Association xmi:id="_rfeBMPDmEeOKPKE9au0oug" memberEnd="_rfczEPDmEeOKPKE9au0oug _rfeBMfDmEeOKPKE9au0oug">
     <ownedEnd xmi:id="_rfeBMfDmEeOKPKE9au0oug" type="_QoLWAPDjEeOKPKE9au0oug" association="_rfeBMPDmEeOKPKE9au0oug"/>
@@ -2989,7 +2989,7 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-10521</ruleId>
     <ruleId>CONF:1098-32506</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_yyN5QPDqEeOKPKE9au0oug" base_Generalization="_fCV1UPDqEeOKPKE9au0oug"/>
+  <CDA:ConformsTo xmi:id="_yyN5QPDqEeOKPKE9au0oug" base_Generalization="_fCV1UPDqEeOKPKE9au0oug" requiresParentId="true"/>
   <uml:Association xmi:id="_9LG_sPDqEeOKPKE9au0oug" memberEnd="_9LFKgPDqEeOKPKE9au0oug _9LG_sfDqEeOKPKE9au0oug">
     <ownedEnd xmi:id="_9LG_sfDqEeOKPKE9au0oug" type="_fCVOQPDqEeOKPKE9au0oug" association="_9LG_sPDqEeOKPKE9au0oug"/>
   </uml:Association>
@@ -3065,7 +3065,7 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-10380</ruleId>
     <ruleId>CONF:1098-32531</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_3X8AIPu_EeOyiMEKhdqMGA" base_Generalization="_aevnQPu_EeOyiMEKhdqMGA"/>
+  <CDA:ConformsTo xmi:id="_3X8AIPu_EeOyiMEKhdqMGA" base_Generalization="_aevnQPu_EeOyiMEKhdqMGA" requiresParentId="true"/>
   <uml:Association xmi:id="_KvoNkPvAEeOyiMEKhdqMGA" memberEnd="_KvmYYPvAEeOyiMEKhdqMGA _Kvo0oPvAEeOyiMEKhdqMGA">
     <ownedEnd xmi:id="_Kvo0oPvAEeOyiMEKhdqMGA" type="_aetyEPu_EeOyiMEKhdqMGA" association="_KvoNkPvAEeOyiMEKhdqMGA"/>
   </uml:Association>
@@ -3119,7 +3119,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:CDATemplate xmi:id="_EuKGcPvYEeOes-3T-2HryA" base_Class="_6M-msPvXEeOes-3T-2HryA" templateId="2.16.840.1.113883.10.20.22.2.37" templateVersion="2015-08-01">
     <ruleId>CONF:1198-8174, CONF:1198-10384, CONF:1198-32538</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_SzN8oPvYEeOes-3T-2HryA" base_Generalization="_6NBC8PvXEeOes-3T-2HryA"/>
+  <CDA:ConformsTo xmi:id="_SzN8oPvYEeOes-3T-2HryA" base_Generalization="_6NBC8PvXEeOes-3T-2HryA" requiresParentId="true"/>
   <uml:Association xmi:id="_OZtJQPvZEeOes-3T-2HryA" memberEnd="_OZr7IPvZEeOes-3T-2HryA _OZtJQfvZEeOes-3T-2HryA">
     <ownedComment xmi:id="_adg5YPvZEeOes-3T-2HryA">
       <body>Note: When no coded entries or negation of entries are present, narrative section/text will be provided containing details of the complication(s) or that there were no complications.</body>
@@ -3160,7 +3160,7 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-10436</ruleId>
     <ruleId>CONF:1098-32590</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_loVe8P49EeO_F_2qLv6FWQ" base_Generalization="_dz3dEP49EeO_F_2qLv6FWQ"/>
+  <CDA:ConformsTo xmi:id="_loVe8P49EeO_F_2qLv6FWQ" base_Generalization="_dz3dEP49EeO_F_2qLv6FWQ" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_HdrBsP4-EeO_F_2qLv6FWQ" code="59772-4" displayName="Planned Procedure" base_Property="_HdqaoP4-EeO_F_2qLv6FWQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-15400</ruleId>
@@ -3195,7 +3195,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:CDATemplate xmi:id="_rcLJAP5BEeOmw9RN80Tpig" base_Class="_MLNngP5BEeOmw9RN80Tpig" templateId="2.16.840.1.113883.10.20.22.2.36" templateVersion="2015-08-01">
     <ruleId>CONF:1198-8167, CONF:1198-10438, CONF:1198-32550</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_4dWgUP5BEeOmw9RN80Tpig" base_Generalization="_MLRR4P5BEeOmw9RN80Tpig"/>
+  <CDA:ConformsTo xmi:id="_4dWgUP5BEeOmw9RN80Tpig" base_Generalization="_MLRR4P5BEeOmw9RN80Tpig" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_9q9No_5BEeOmw9RN80Tpig" code="59769-0" displayName="Postprocedure Diagnosis" base_Property="_9q9NoP5BEeOmw9RN80Tpig">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15404, CONF:1198-30862</ruleId>
@@ -3228,7 +3228,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:CDATemplate xmi:id="_NcdsoP5EEeOBnLkJOVC8NQ" base_Class="_JFd3MP5EEeOBnLkJOVC8NQ" templateId="2.16.840.1.113883.10.20.22.2.34" templateVersion="2015-08-01">
     <ruleId>CONF:1198-8097, CONF:1198-10439, CONF:1198-32551</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_Sf6_cP5EEeOBnLkJOVC8NQ" base_Generalization="_JFgTcP5EEeOBnLkJOVC8NQ"/>
+  <CDA:ConformsTo xmi:id="_Sf6_cP5EEeOBnLkJOVC8NQ" base_Generalization="_JFgTcP5EEeOBnLkJOVC8NQ" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_iyCjEP5EEeOBnLkJOVC8NQ" code="10219-4" displayName="Preoperative Diagnosis" base_Property="_iyB8AP5EEeOBnLkJOVC8NQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15406, CONF:1198-30863</ruleId>
@@ -3262,7 +3262,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:CDATemplate xmi:id="_qE4pIP5FEeO_r7yO9mhwnA" base_Class="_lLOykP5FEeO_r7yO9mhwnA" templateId="2.16.840.1.113883.10.20.22.2.28" templateVersion="2015-08-01">
     <ruleId>CONF:1198-8078, CONF:1198-10443, CONF:1198-32537</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_wmzeAP5FEeO_r7yO9mhwnA" base_Generalization="_lLR14P5FEeO_r7yO9mhwnA"/>
+  <CDA:ConformsTo xmi:id="_wmzeAP5FEeO_r7yO9mhwnA" base_Generalization="_lLR14P5FEeO_r7yO9mhwnA" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_1csO4P5FEeO_r7yO9mhwnA" code="59776-5" displayName="Procedure Findings" base_Property="_1crn0P5FEeO_r7yO9mhwnA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15418, CONF:1198-30859</ruleId>
@@ -3298,7 +3298,7 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-10445</ruleId>
     <ruleId>CONF:1098-32572</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_HrbBEABzEeSjnfOPJpFg3A" base_Generalization="_5_SoQAByEeSjnfOPJpFg3A"/>
+  <CDA:ConformsTo xmi:id="_HrbBEABzEeSjnfOPJpFg3A" base_Generalization="_5_SoQAByEeSjnfOPJpFg3A" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_L_Hq4wBzEeSjnfOPJpFg3A" code="59768-2" displayName="Procedure Indications" base_Property="_L_Hq4ABzEeSjnfOPJpFg3A">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-15420</ruleId>

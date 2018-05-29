@@ -35,8 +35,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.Indication2Operations;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationProblemIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Problem Indication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationCodeNullFlavorValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code Null Flavor Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndication2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationCodeNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code Null Flavor</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Indication2#validateIndicationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code</em>}</li>
@@ -127,6 +127,41 @@ public class Indication2Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateIndication2TemplateId() {
+		OperationsTestCase<Indication2> validateIndication2TemplateIdTestCase = new OperationsTestCase<Indication2>(
+			"validateIndication2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_INDICATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(Indication2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(Indication2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return Indication2Operations.validateIndication2TemplateId(
+					(Indication2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateIndication2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated NOT
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
@@ -159,40 +194,6 @@ public class Indication2Test extends CDAValidationTest {
 		};
 
 		validateIndicationCodeNullFlavorTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateIndicationTemplateId() {
-		OperationsTestCase<Indication2> validateIndicationTemplateIdTestCase = new OperationsTestCase<Indication2>(
-			"validateIndicationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_INDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(Indication2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Indication2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return Indication2Operations.validateIndicationTemplateId(
-					(Indication2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateIndicationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

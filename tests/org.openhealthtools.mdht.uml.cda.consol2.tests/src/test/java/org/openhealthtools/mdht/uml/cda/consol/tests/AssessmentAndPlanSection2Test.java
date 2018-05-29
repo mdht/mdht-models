@@ -30,8 +30,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentAndPlanSecti
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#getConsolPlannedAct2s() <em>Get Consol Planned Act2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSectionPlanOfCareActivityAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Plan Of Care Activity Act</em>}</li>
@@ -48,22 +48,11 @@ public class AssessmentAndPlanSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolPlannedAct2s() {
 
-		AssessmentAndPlanSection2 target = objectFactory.create();
-		target.getConsolPlannedAct2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAssessmentAndPlanSectionTemplateId() {
-		OperationsTestCase<AssessmentAndPlanSection2> validateAssessmentAndPlanSectionTemplateIdTestCase = new OperationsTestCase<AssessmentAndPlanSection2>(
-			"validateAssessmentAndPlanSectionTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAssessmentAndPlanSection2TemplateId() {
+		OperationsTestCase<AssessmentAndPlanSection2> validateAssessmentAndPlanSection2TemplateIdTestCase = new OperationsTestCase<AssessmentAndPlanSection2>(
+			"validateAssessmentAndPlanSection2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -80,13 +69,25 @@ public class AssessmentAndPlanSection2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSectionTemplateId(
+				return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSection2TemplateId(
 					(AssessmentAndPlanSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAssessmentAndPlanSectionTemplateIdTestCase.doValidationTest();
+		validateAssessmentAndPlanSection2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolPlannedAct2s() {
+
+		AssessmentAndPlanSection2 target = objectFactory.create();
+		target.getConsolPlannedAct2s();
+
 	}
 
 	/**

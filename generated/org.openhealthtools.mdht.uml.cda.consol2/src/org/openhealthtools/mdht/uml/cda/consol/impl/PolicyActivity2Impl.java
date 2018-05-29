@@ -49,6 +49,15 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePolicyActivity2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PolicyActivity2Operations.validatePolicyActivity2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePolicyActivityStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivity2Operations.validatePolicyActivityStatusCodeP(this, diagnostics, context);
@@ -313,16 +322,6 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2CDTranslationP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivity2Operations.validatePolicyActivity2CDTranslationP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePolicyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**

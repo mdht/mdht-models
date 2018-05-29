@@ -20,7 +20,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedAct2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityActTemplateId PlanOfCareActivityActMoodCode PlannedAct2Code PlannedAct2StatusCode PlannedAct2StatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.39' templateId.extension='2014-06-09' constraints.validation.warning='PlannedAct2CodeFromLoincOrSnomed PlannedAct2EffectiveTime PlannedAct2AuthorParticipation' statusCode.code='active' constraints.validation.info='PlannedAct2Indication2 PlannedAct2Instruction2 PlannedAct2Performer PlannedAct2PriorityPreference'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedAct2TemplateId PlanOfCareActivityActMoodCode PlannedAct2Code PlannedAct2StatusCode PlannedAct2StatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.39' templateId.extension='2014-06-09' constraints.validation.warning='PlannedAct2CodeFromLoincOrSnomed PlannedAct2EffectiveTime PlannedAct2AuthorParticipation' statusCode.code='active' constraints.validation.info='PlannedAct2Indication2 PlannedAct2Instruction2 PlannedAct2Performer PlannedAct2PriorityPreference'"
  * @generated
  */
 public interface PlannedAct2 extends PlanOfCareActivityAct {
@@ -35,6 +35,18 @@ public interface PlannedAct2 extends PlanOfCareActivityAct {
 	 * @generated
 	 */
 	boolean validatePlannedAct2CodeFromLoincOrSnomed(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.39\' and id.extension.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validatePlannedAct2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

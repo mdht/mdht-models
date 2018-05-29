@@ -59,6 +59,17 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFunctionalStatusSection2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSection2Operations.validateFunctionalStatusSection2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateFunctionalStatusSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionCodeP(this, diagnostics, context);
@@ -176,16 +187,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	@Override
 	public EList<SensoryStatus> getSensoryAndSpeechStatuss() {
 		return FunctionalStatusSection2Operations.getSensoryAndSpeechStatuss(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**

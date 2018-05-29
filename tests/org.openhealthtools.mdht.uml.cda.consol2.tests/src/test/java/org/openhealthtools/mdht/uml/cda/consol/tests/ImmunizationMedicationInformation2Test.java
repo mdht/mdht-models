@@ -34,11 +34,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationMedication
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation2#validateImmunizationMedicationInformation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation2#validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information2 Immunization Medication Information Manufactured Material CE Translation P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation2#validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information2 Immunization Medication Information Manufactured Material CE Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation2#validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Immunization Medication Information Manufactured Material Original Text Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation2#validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Immunization Medication Information Manufactured Material Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation2#validateImmunizationMedicationInformationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation2#validateImmunizationMedicationInformationManufacturedMaterial(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation2#validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Immunization Medication Information Manufactured Material Code Original Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation2#validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Immunization Medication Information Manufactured Material Original Text Reference</em>}</li>
@@ -53,6 +53,42 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationMedication
  */
 
 public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateImmunizationMedicationInformation2TemplateId() {
+		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformation2TemplateIdTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
+			"validateImmunizationMedicationInformation2TemplateId",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ImmunizationMedicationInformation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ImmunizationMedicationInformation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ImmunizationMedicationInformation2Operations.validateImmunizationMedicationInformation2TemplateId(
+					(ImmunizationMedicationInformation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateImmunizationMedicationInformation2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -203,41 +239,6 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 		};
 
 		validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateImmunizationMedicationInformationTemplateId() {
-		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformationTemplateIdTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
-			"validateImmunizationMedicationInformationTemplateId",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ImmunizationMedicationInformation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ImmunizationMedicationInformation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ImmunizationMedicationInformation2Operations.validateImmunizationMedicationInformationTemplateId(
-					(ImmunizationMedicationInformation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateImmunizationMedicationInformationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

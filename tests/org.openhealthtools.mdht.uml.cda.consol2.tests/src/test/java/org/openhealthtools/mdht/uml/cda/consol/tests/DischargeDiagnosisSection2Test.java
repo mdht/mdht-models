@@ -32,10 +32,10 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeDiagnosisSect
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateDischargeDiagnosisSection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diagnosis Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateDischargeDiagnosisSection2CETranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diagnosis Section2 CE Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateDischargeDiagnosisSection2CETranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diagnosis Section2 CE Translation P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#getConsolHospitalDischargeDiagnosis2() <em>Get Consol Hospital Discharge Diagnosis2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateHospitalDischargeDiagnosisSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateHospitalDischargeDiagnosisSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateHospitalDischargeDiagnosisSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeDiagnosisSection2#validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Section Hospital Discharge Diagnosis</em>}</li>
@@ -46,6 +46,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeDiagnosisSect
  */
 
 public class DischargeDiagnosisSection2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeDiagnosisSection2TemplateId() {
+		OperationsTestCase<DischargeDiagnosisSection2> validateDischargeDiagnosisSection2TemplateIdTestCase = new OperationsTestCase<DischargeDiagnosisSection2>(
+			"validateDischargeDiagnosisSection2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_DIAGNOSIS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeDiagnosisSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeDiagnosisSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2TemplateId(
+					(DischargeDiagnosisSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeDiagnosisSection2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -135,41 +170,6 @@ public class DischargeDiagnosisSection2Test extends CDAValidationTest {
 		DischargeDiagnosisSection2 target = objectFactory.create();
 		target.getConsolHospitalDischargeDiagnosis2();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateHospitalDischargeDiagnosisSectionTemplateId() {
-		OperationsTestCase<DischargeDiagnosisSection2> validateHospitalDischargeDiagnosisSectionTemplateIdTestCase = new OperationsTestCase<DischargeDiagnosisSection2>(
-			"validateHospitalDischargeDiagnosisSectionTemplateId",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeDiagnosisSection2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeDiagnosisSection2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionTemplateId(
-					(DischargeDiagnosisSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHospitalDischargeDiagnosisSectionTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

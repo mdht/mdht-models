@@ -2662,7 +2662,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
     <ruleId>CONF:1098-13890</ruleId>
     <ruleId>CONF:1098-32568</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_QrmQcMzTEeO93sHu8pHB2g" base_Generalization="_3WqogczSEeO93sHu8pHB2g"/>
+  <CDA:ConformsTo xmi:id="_QrmQcMzTEeO93sHu8pHB2g" base_Generalization="_3WqogczSEeO93sHu8pHB2g" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_wttiEMzTEeO93sHu8pHB2g" base_Property="_wts7AMzTEeO93sHu8pHB2g">
     <ruleId>CONF:1098-13908</ruleId>
   </CDA:PropertyValidation>
@@ -2723,7 +2723,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
     <ruleId>CONF:1098-14362</ruleId>
     <ruleId>CONF:1098-32569</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_GPOxQOD1EeOmBMTtnrPqww" base_Generalization="_yVKPgOD0EeOmBMTtnrPqww"/>
+  <CDA:ConformsTo xmi:id="_GPOxQOD1EeOmBMTtnrPqww" base_Generalization="_yVKPgOD0EeOmBMTtnrPqww" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_2e2E4eD4EeOmBMTtnrPqww" base_Property="_2e1d0OD4EeOmBMTtnrPqww">
     <ruleId>CONF:1098-14364</ruleId>
   </CDA:PropertyValidation>
@@ -2777,7 +2777,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
     <ruleId>CONF:1198-16748</ruleId>
     <ruleId>CONF:1198-32535</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_aOvSAOEIEeOmBMTtnrPqww" base_Generalization="_GM6iceEIEeOmBMTtnrPqww"/>
+  <CDA:ConformsTo xmi:id="_aOvSAOEIEeOmBMTtnrPqww" base_Generalization="_GM6iceEIEeOmBMTtnrPqww" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_JV7sYOEJEeOmBMTtnrPqww" code="11535-2" displayName="Hospital discharge diagnosis">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:19148</ruleId>
@@ -2853,7 +2853,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
     <ruleId>CONF:1098-10502</ruleId>
     <ruleId>CONF:1098-32570</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_rCn1IOHoEeO04sHNODkHmQ" base_Generalization="_PrE1MOHoEeO04sHNODkHmQ"/>
+  <CDA:ConformsTo xmi:id="_rCn1IOHoEeO04sHNODkHmQ" base_Generalization="_PrE1MOHoEeO04sHNODkHmQ" requiresParentId="true"/>
   <CDA:ValueSetConstraint xmi:id="_2HieoOHpEeO04sHNODkHmQ" base_Property="_2Hh3kOHpEeO04sHNODkHmQ" severity="INFO">
     <reference href="../consol-vocab.uml#_hRIUmoY5EeS7A_69H25Pzw"/>
     <ruleId>CONF:1098-31229</ruleId>
@@ -2889,7 +2889,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
     <ruleId>CONF:1098-10503</ruleId>
     <ruleId>CONF:1098-32598</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_-rcUMOH7EeO04sHNODkHmQ" base_Generalization="_D62NweH7EeO04sHNODkHmQ"/>
+  <CDA:ConformsTo xmi:id="_-rcUMOH7EeO04sHNODkHmQ" base_Generalization="_D62NweH7EeO04sHNODkHmQ" requiresParentId="true"/>
   <uml:Association xmi:id="_xWPsUPgCEeOYeZoWJF5yyQ" memberEnd="_xWN3IPgCEeOYeZoWJF5yyQ _xWPsUfgCEeOYeZoWJF5yyQ">
     <ownedEnd xmi:id="_xWPsUfgCEeOYeZoWJF5yyQ" type="_3WqogMzSEeO93sHu8pHB2g" association="_xWPsUPgCEeOYeZoWJF5yyQ"/>
   </uml:Association>
@@ -2925,7 +2925,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
     <ruleId>CONF:1098-10381</ruleId>
     <ruleId>CONF:1098-32583</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="__ToCUPvVEeOvZJBdQKQrqQ" base_Generalization="_q__KAPvVEeOvZJBdQKQrqQ"/>
+  <CDA:ConformsTo xmi:id="__ToCUPvVEeOvZJBdQKQrqQ" base_Generalization="_q__KAPvVEeOvZJBdQKQrqQ" requiresParentId="true"/>
   <uml:Association xmi:id="_Uq5h4PvWEeOvZJBdQKQrqQ" memberEnd="_Uq4TwPvWEeOvZJBdQKQrqQ _Uq5h4fvWEeOvZJBdQKQrqQ">
     <ownedEnd xmi:id="_Uq5h4fvWEeOvZJBdQKQrqQ" type="_q_8twPvVEeOvZJBdQKQrqQ" association="_Uq5h4PvWEeOvZJBdQKQrqQ"/>
   </uml:Association>
@@ -3002,7 +3002,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
     <ruleId>CONF:1098-10389</ruleId>
     <ruleId>CONF:1098-32567</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="__ZwdQPyKEeOozpLKXSm5NA" base_Generalization="_8rQXAPyHEeOozpLKXSm5NA"/>
+  <CDA:ConformsTo xmi:id="__ZwdQPyKEeOozpLKXSm5NA" base_Generalization="_8rQXAPyHEeOozpLKXSm5NA" requiresParentId="true"/>
   <uml:Association xmi:id="_0IbdgPyLEeOozpLKXSm5NA" memberEnd="_0IZoUPyLEeOozpLKXSm5NA _0IcEkPyLEeOozpLKXSm5NA">
     <ownedEnd xmi:id="_0IcEkPyLEeOozpLKXSm5NA" type="_8rMFkPyHEeOozpLKXSm5NA" association="_0IbdgPyLEeOozpLKXSm5NA"/>
   </uml:Association>
@@ -3064,7 +3064,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
   <CDA:CDATemplate xmi:id="_xSfwMPyhEeOC19UEcu7MOw" base_Class="_sZlggPyhEeOC19UEcu7MOw" templateId="2.16.840.1.113883.10.20.22.2.20" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7828, CONF:1198-10390, CONF:1198-32536</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_EBY4QPyiEeOC19UEcu7MOw" base_Generalization="_sZn8wPyhEeOC19UEcu7MOw"/>
+  <CDA:ConformsTo xmi:id="_EBY4QPyiEeOC19UEcu7MOw" base_Generalization="_sZn8wPyhEeOC19UEcu7MOw" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_NK2XIPyiEeOC19UEcu7MOw" code="11348-0" displayName="History of Past Illness" base_Property="_NK1wEPyiEeOC19UEcu7MOw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15475, CONF:1198-30831</ruleId>
@@ -3107,7 +3107,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
   <CDA:CDATemplate xmi:id="_h9zhUPylEeOc0tW1-DpN-Q" base_Class="_ctJgAPylEeOc0tW1-DpN-Q" templateId="2.16.840.1.113883.10.20.22.2.43" templateVersion="2015-08-01">
     <ruleId>CONF:1198-9930, CONF:1198-10391, CONF:1198-32563</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_w8AmAPylEeOc0tW1-DpN-Q" base_Generalization="_ctL8QPylEeOc0tW1-DpN-Q"/>
+  <CDA:ConformsTo xmi:id="_w8AmAPylEeOc0tW1-DpN-Q" base_Generalization="_ctL8QPylEeOc0tW1-DpN-Q" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_4hbNUPynEeOc0tW1-DpN-Q" code="46241-6" displayName="Hospital Admission diagnosis" base_Property="_4hamQPynEeOc0tW1-DpN-Q">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15480, CONF:1198-30865</ruleId>
@@ -3152,7 +3152,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
     <ruleId>CONF:1098-31384</ruleId>
     <ruleId>CONF:1098-32599</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_7CoJEP1HEeOVx4YMwgfjlA" base_Generalization="_k8O5sP1HEeOVx4YMwgfjlA"/>
+  <CDA:ConformsTo xmi:id="_7CoJEP1HEeOVx4YMwgfjlA" base_Generalization="_k8O5sP1HEeOVx4YMwgfjlA" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_NEzpMP1VEeOKqrimxttICg" code="69730-0" displayName="Instructions" base_Property="_NExM8P1VEeOKqrimxttICg">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-15376</ruleId>
@@ -3210,7 +3210,7 @@ Instructions are information or directions to the patient. Use the Instructions 
   <CDA:CDATemplate xmi:id="_dPAxgP1WEeOW-qBXb0kbTA" base_Class="_YCS1AP1WEeOW-qBXb0kbTA" templateId="2.16.840.1.113883.10.20.21.2.3" templateVersion="2015-08-01">
     <ruleId>CONF:1198-8680, CONF:1198-10461, CONF:1198-32559</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_q-eLIP1WEeOW-qBXb0kbTA" base_Generalization="_YCVRQP1WEeOW-qBXb0kbTA"/>
+  <CDA:ConformsTo xmi:id="_q-eLIP1WEeOW-qBXb0kbTA" base_Generalization="_YCVRQP1WEeOW-qBXb0kbTA" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_2YTxMP1WEeOW-qBXb0kbTA" code="62387-6" displayName="Interventions Provided" base_Property="_2YTKIP1WEeOW-qBXb0kbTA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15378, CONF:1198-30864</ruleId>
@@ -3252,7 +3252,7 @@ Instructions are information or directions to the patient. Use the Instructions 
   <CDA:PropertyValidation xmi:id="_tG0c0AB5EeS20Pddu0dxVw" base_Property="_tGxZgAB5EeS20Pddu0dxVw">
     <ruleId>CONF:1098-15427</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ConformsTo xmi:id="_ukWKwAB5EeS20Pddu0dxVw" base_Generalization="_Ya3LIAB5EeS20Pddu0dxVw"/>
+  <CDA:ConformsTo xmi:id="_ukWKwAB5EeS20Pddu0dxVw" base_Generalization="_Ya3LIAB5EeS20Pddu0dxVw" requiresParentId="true"/>
   <uml:Association xmi:id="_SIfYsAB6EeS20Pddu0dxVw" memberEnd="_SIdjgAB6EeS20Pddu0dxVw _SIf_wAB6EeS20Pddu0dxVw">
     <ownedEnd xmi:id="_SIf_wAB6EeS20Pddu0dxVw" type="_Ya0H0AB5EeS20Pddu0dxVw" association="_SIfYsAB6EeS20Pddu0dxVw"/>
   </uml:Association>

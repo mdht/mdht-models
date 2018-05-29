@@ -57,6 +57,15 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSocialHistorySection2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateSocialHistorySection2CaregiverCharacteristics(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -165,16 +174,6 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 */
 	public EList<BirthSexObservation> getBirthSexObservations() {
 		return SocialHistorySection2Operations.getBirthSexObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistorySection2Operations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
 	}
 
 	/**

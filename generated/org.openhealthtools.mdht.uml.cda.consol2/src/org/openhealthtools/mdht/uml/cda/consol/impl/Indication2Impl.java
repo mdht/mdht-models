@@ -67,9 +67,8 @@ public class Indication2Impl extends IndicationImpl implements Indication2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateIndicationCodeNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Indication2Operations.validateIndicationCodeNullFlavor(this, diagnostics, context);
+	public boolean validateIndication2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return Indication2Operations.validateIndication2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +77,8 @@ public class Indication2Impl extends IndicationImpl implements Indication2 {
 	 * @generated
 	 */
 	@Override
-	public boolean validateIndicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Indication2Operations.validateIndicationTemplateId(this, diagnostics, context);
+	public boolean validateIndicationCodeNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return Indication2Operations.validateIndicationCodeNullFlavor(this, diagnostics, context);
 	}
 
 	/**

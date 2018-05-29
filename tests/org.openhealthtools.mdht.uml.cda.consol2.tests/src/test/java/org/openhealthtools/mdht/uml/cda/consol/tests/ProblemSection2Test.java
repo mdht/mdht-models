@@ -175,6 +175,7 @@ public class ProblemSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateProblemSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<ProblemSection2> validateProblemSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<ProblemSection2>(
 			"validateProblemSectionEntriesOptionalTemplateId",

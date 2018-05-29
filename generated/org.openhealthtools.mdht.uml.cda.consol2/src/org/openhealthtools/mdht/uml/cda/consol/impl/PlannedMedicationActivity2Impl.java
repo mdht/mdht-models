@@ -109,6 +109,17 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedMedicationActivity2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlannedMedicationActivity2StatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -333,6 +344,28 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedMedicationActivity2CETranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2CETranslationP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedMedicationActivity2CETranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2CETranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlannedMedicationActivity2IVLPQdoseQuantityUnit(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -413,18 +446,6 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public EList<Instruction2> getInstruction2s() {
 		return PlannedMedicationActivity2Operations.getInstruction2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareActivitySubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlanOfCareActivitySubstanceAdministrationTemplateId(
-			this, diagnostics, context);
 	}
 
 	/**

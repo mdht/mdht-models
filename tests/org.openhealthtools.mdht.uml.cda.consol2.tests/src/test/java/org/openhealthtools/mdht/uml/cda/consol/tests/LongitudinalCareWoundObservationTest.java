@@ -61,7 +61,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.LongitudinalCareWoundO
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#getWoundCharacteristicss() <em>Get Wound Characteristicss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#getHighestPressureUlcerStage() <em>Get Highest Pressure Ulcer Stage</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#getNumberOfPressureUlcersObservation2s() <em>Get Number Of Pressure Ulcers Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#validateProblemObservation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -849,10 +849,11 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateProblemObservationTemplateId() {
-		OperationsTestCase<LongitudinalCareWoundObservation> validateProblemObservationTemplateIdTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
-			"validateProblemObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateProblemObservation2TemplateId() {
+		OperationsTestCase<LongitudinalCareWoundObservation> validateProblemObservation2TemplateIdTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
+			"validateProblemObservation2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -869,13 +870,13 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return LongitudinalCareWoundObservationOperations.validateProblemObservationTemplateId(
+				return LongitudinalCareWoundObservationOperations.validateProblemObservation2TemplateId(
 					(LongitudinalCareWoundObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProblemObservationTemplateIdTestCase.doValidationTest();
+		validateProblemObservation2TemplateIdTestCase.doValidationTest();
 	}
 
 	/**

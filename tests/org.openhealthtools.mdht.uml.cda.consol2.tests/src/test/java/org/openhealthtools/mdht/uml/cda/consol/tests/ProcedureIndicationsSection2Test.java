@@ -30,8 +30,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureIndicationsSe
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection2#validateProcedureIndicationsSection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Indications Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection2#getConsolIndication2s() <em>Get Consol Indication2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection2#validateProcedureIndicationsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Indications Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection2#validateProcedureIndicationsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Indications Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection2#validateProcedureIndicationsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Indications Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection2#validateProcedureIndicationsSectionIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Indications Section Indication</em>}</li>
@@ -48,22 +48,11 @@ public class ProcedureIndicationsSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolIndication2s() {
 
-		ProcedureIndicationsSection2 target = objectFactory.create();
-		target.getConsolIndication2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateProcedureIndicationsSectionTemplateId() {
-		OperationsTestCase<ProcedureIndicationsSection2> validateProcedureIndicationsSectionTemplateIdTestCase = new OperationsTestCase<ProcedureIndicationsSection2>(
-			"validateProcedureIndicationsSectionTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_PROCEDURE_INDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateProcedureIndicationsSection2TemplateId() {
+		OperationsTestCase<ProcedureIndicationsSection2> validateProcedureIndicationsSection2TemplateIdTestCase = new OperationsTestCase<ProcedureIndicationsSection2>(
+			"validateProcedureIndicationsSection2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_INDICATIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -80,13 +69,25 @@ public class ProcedureIndicationsSection2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionTemplateId(
+				return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSection2TemplateId(
 					(ProcedureIndicationsSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProcedureIndicationsSectionTemplateIdTestCase.doValidationTest();
+		validateProcedureIndicationsSection2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolIndication2s() {
+
+		ProcedureIndicationsSection2 target = objectFactory.create();
+		target.getConsolIndication2s();
+
 	}
 
 	/**

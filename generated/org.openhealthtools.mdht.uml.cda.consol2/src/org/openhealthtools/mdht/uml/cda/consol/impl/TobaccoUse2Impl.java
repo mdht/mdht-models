@@ -49,6 +49,15 @@ public class TobaccoUse2Impl extends TobaccoUseImpl implements TobaccoUse2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateTobaccoUse2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TobaccoUse2Operations.validateTobaccoUse2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateTobaccoUse2Id(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUse2Operations.validateTobaccoUse2Id(this, diagnostics, context);
 	}
@@ -81,16 +90,6 @@ public class TobaccoUse2Impl extends TobaccoUseImpl implements TobaccoUse2 {
 	@Override
 	public boolean validateTobaccoUse2IVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUse2Operations.validateTobaccoUse2IVLTSHigh(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateTobaccoUseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TobaccoUse2Operations.validateTobaccoUseTemplateId(this, diagnostics, context);
 	}
 
 	/**

@@ -51,6 +51,15 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCoverageActivity2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CoverageActivity2Operations.validateCoverageActivity2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateCoverageActivityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivity2Operations.validateCoverageActivityCodeP(this, diagnostics, context);
@@ -130,16 +139,6 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 			Map<Object, Object> context) {
 		return CoverageActivity2Operations.validateCoverageActivityCoverageActivityRelationshipSequenceNumber(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateCoverageActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoverageActivity2Operations.validateCoverageActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**

@@ -33,8 +33,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterDiagnosis2Ope
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2#validateEncounterDiagnosis2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2#getConsolProblemObservation2s() <em>Get Consol Problem Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2#validateEncounterDiagnosisTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2#validateEncounterDiagnosisCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2#validateEncounterDiagnosisCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2#validateEncounterDiagnosisProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis Problem Observation</em>}</li>
@@ -51,22 +51,11 @@ public class EncounterDiagnosis2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolProblemObservation2s() {
 
-		EncounterDiagnosis2 target = objectFactory.create();
-		target.getConsolProblemObservation2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateEncounterDiagnosisTemplateId() {
-		OperationsTestCase<EncounterDiagnosis2> validateEncounterDiagnosisTemplateIdTestCase = new OperationsTestCase<EncounterDiagnosis2>(
-			"validateEncounterDiagnosisTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateEncounterDiagnosis2TemplateId() {
+		OperationsTestCase<EncounterDiagnosis2> validateEncounterDiagnosis2TemplateIdTestCase = new OperationsTestCase<EncounterDiagnosis2>(
+			"validateEncounterDiagnosis2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -83,13 +72,25 @@ public class EncounterDiagnosis2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return EncounterDiagnosis2Operations.validateEncounterDiagnosisTemplateId(
+				return EncounterDiagnosis2Operations.validateEncounterDiagnosis2TemplateId(
 					(EncounterDiagnosis2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateEncounterDiagnosisTemplateIdTestCase.doValidationTest();
+		validateEncounterDiagnosis2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolProblemObservation2s() {
+
+		EncounterDiagnosis2 target = objectFactory.create();
+		target.getConsolProblemObservation2s();
+
 	}
 
 	/**

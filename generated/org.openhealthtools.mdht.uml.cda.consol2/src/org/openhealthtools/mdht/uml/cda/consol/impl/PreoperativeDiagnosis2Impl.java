@@ -51,6 +51,15 @@ public class PreoperativeDiagnosis2Impl extends PreoperativeDiagnosisImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePreoperativeDiagnosis2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PreoperativeDiagnosis2Operations.validatePreoperativeDiagnosis2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePreoperativeDiagnosisCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosis2Operations.validatePreoperativeDiagnosisCodeP(this, diagnostics, context);
@@ -64,16 +73,6 @@ public class PreoperativeDiagnosis2Impl extends PreoperativeDiagnosisImpl implem
 	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return PreoperativeDiagnosis2Operations.getConsolProblemObservation2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePreoperativeDiagnosisTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PreoperativeDiagnosis2Operations.validatePreoperativeDiagnosisTemplateId(this, diagnostics, context);
 	}
 
 	/**

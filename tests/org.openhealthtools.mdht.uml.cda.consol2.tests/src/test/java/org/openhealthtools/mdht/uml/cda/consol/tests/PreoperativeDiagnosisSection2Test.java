@@ -30,8 +30,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PreoperativeDiagnosisS
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection2#validatePreoperativeDiagnosisSection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Preoperative Diagnosis Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection2#getConsolPreoperativeDiagnosis2() <em>Get Consol Preoperative Diagnosis2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection2#validatePreoperativeDiagnosisSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Preoperative Diagnosis Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection2#validatePreoperativeDiagnosisSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Preoperative Diagnosis Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection2#validatePreoperativeDiagnosisSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Preoperative Diagnosis Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection2#validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Preoperative Diagnosis Section Preoperative Diagnosis</em>}</li>
@@ -48,22 +48,12 @@ public class PreoperativeDiagnosisSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolPreoperativeDiagnosis2() {
 
-		PreoperativeDiagnosisSection2 target = objectFactory.create();
-		target.getConsolPreoperativeDiagnosis2();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePreoperativeDiagnosisSectionTemplateId() {
-		OperationsTestCase<PreoperativeDiagnosisSection2> validatePreoperativeDiagnosisSectionTemplateIdTestCase = new OperationsTestCase<PreoperativeDiagnosisSection2>(
-			"validatePreoperativeDiagnosisSectionTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidatePreoperativeDiagnosisSection2TemplateId() {
+		OperationsTestCase<PreoperativeDiagnosisSection2> validatePreoperativeDiagnosisSection2TemplateIdTestCase = new OperationsTestCase<PreoperativeDiagnosisSection2>(
+			"validatePreoperativeDiagnosisSection2TemplateId",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -80,13 +70,25 @@ public class PreoperativeDiagnosisSection2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PreoperativeDiagnosisSection2Operations.validatePreoperativeDiagnosisSectionTemplateId(
+				return PreoperativeDiagnosisSection2Operations.validatePreoperativeDiagnosisSection2TemplateId(
 					(PreoperativeDiagnosisSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePreoperativeDiagnosisSectionTemplateIdTestCase.doValidationTest();
+		validatePreoperativeDiagnosisSection2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolPreoperativeDiagnosis2() {
+
+		PreoperativeDiagnosisSection2 target = objectFactory.create();
+		target.getConsolPreoperativeDiagnosis2();
+
 	}
 
 	/**

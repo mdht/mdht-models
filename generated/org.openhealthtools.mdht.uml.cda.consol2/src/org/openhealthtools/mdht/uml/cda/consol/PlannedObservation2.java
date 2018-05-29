@@ -20,10 +20,22 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityObservationTemplateId PlanOfCareActivityObservationMoodCode PlannedObservation2CodeP PlannedObservation2StatusCode PlannedObservation2StatusCodeP PlannedObservation2TargetSiteCode' templateId.root='2.16.840.1.113883.10.20.22.4.44' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='PlannedObservation2Code PlannedObservation2EffectiveTime PlannedObservation2TargetSiteCodeP PlannedObservation2AuthorParticipation' constraints.validation.dependOn.PlannedObservation2Code='PlannedObservation2CodeP' statusCode.code='active' constraints.validation.info='PlannedObservation2Value PlannedObservation2MethodCode PlannedObservation2Performer PlannedObservation2PriorityPreference PlannedObservation2Indication2 PlannedObservation2Instruction2 PlannedObservation2PlannedCoverage' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedObservation2TargetSiteCode='PlannedObservation2TargetSiteCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedObservation2TemplateId PlanOfCareActivityObservationMoodCode PlannedObservation2CodeP PlannedObservation2StatusCode PlannedObservation2StatusCodeP PlannedObservation2TargetSiteCode' templateId.root='2.16.840.1.113883.10.20.22.4.44' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='PlannedObservation2Code PlannedObservation2EffectiveTime PlannedObservation2TargetSiteCodeP PlannedObservation2AuthorParticipation' constraints.validation.dependOn.PlannedObservation2Code='PlannedObservation2CodeP' statusCode.code='active' constraints.validation.info='PlannedObservation2Value PlannedObservation2MethodCode PlannedObservation2Performer PlannedObservation2PriorityPreference PlannedObservation2Indication2 PlannedObservation2Instruction2 PlannedObservation2PlannedCoverage' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedObservation2TargetSiteCode='PlannedObservation2TargetSiteCodeP'"
  * @generated
  */
 public interface PlannedObservation2 extends PlanOfCareActivityObservation {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.44\' and id.extension.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validatePlannedObservation2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

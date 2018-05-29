@@ -134,6 +134,7 @@ public class MedicationsSectionEntriesOptional2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMedicationsSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<MedicationsSectionEntriesOptional2> validateMedicationsSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<MedicationsSectionEntriesOptional2>(
 			"validateMedicationsSectionEntriesOptionalTemplateId",

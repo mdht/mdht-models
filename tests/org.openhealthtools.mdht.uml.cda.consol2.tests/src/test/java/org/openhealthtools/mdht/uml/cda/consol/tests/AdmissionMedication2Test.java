@@ -33,8 +33,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdmissionMedication2Op
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2#validateAdmissionMedication2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medication2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2#getConsolMedicationActivity2s() <em>Get Consol Medication Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2#validateAdmissionMedicationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medication Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2#validateAdmissionMedicationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medication Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2#validateAdmissionMedicationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medication Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2#validateAdmissionMedicationMedicationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medication Medication Activity</em>}</li>
@@ -51,22 +51,11 @@ public class AdmissionMedication2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolMedicationActivity2s() {
 
-		AdmissionMedication2 target = objectFactory.create();
-		target.getConsolMedicationActivity2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAdmissionMedicationTemplateId() {
-		OperationsTestCase<AdmissionMedication2> validateAdmissionMedicationTemplateIdTestCase = new OperationsTestCase<AdmissionMedication2>(
-			"validateAdmissionMedicationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ADMISSION_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAdmissionMedication2TemplateId() {
+		OperationsTestCase<AdmissionMedication2> validateAdmissionMedication2TemplateIdTestCase = new OperationsTestCase<AdmissionMedication2>(
+			"validateAdmissionMedication2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_ADMISSION_MEDICATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -83,13 +72,25 @@ public class AdmissionMedication2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AdmissionMedication2Operations.validateAdmissionMedicationTemplateId(
+				return AdmissionMedication2Operations.validateAdmissionMedication2TemplateId(
 					(AdmissionMedication2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAdmissionMedicationTemplateIdTestCase.doValidationTest();
+		validateAdmissionMedication2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolMedicationActivity2s() {
+
+		AdmissionMedication2 target = objectFactory.create();
+		target.getConsolMedicationActivity2s();
+
 	}
 
 	/**

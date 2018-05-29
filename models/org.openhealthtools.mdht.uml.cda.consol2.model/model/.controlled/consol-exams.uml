@@ -744,7 +744,7 @@ The Physical Exam Section may contain multiple nested subsections.&#xD;
   <CDA:CDATemplate xmi:id="_CtZHYP4vEeObaveuCI77uA" base_Class="_-nZiYP4uEeObaveuCI77uA" templateId="2.16.840.1.113883.10.20.2.10" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7806, CONF:1198-10465, CONF:1198-32587</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_S90o8P4vEeObaveuCI77uA" base_Generalization="_-nb-oP4uEeObaveuCI77uA"/>
+  <CDA:ConformsTo xmi:id="_S90o8P4vEeObaveuCI77uA" base_Generalization="_-nb-oP4uEeObaveuCI77uA" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_buWqcP4vEeObaveuCI77uA" code="29545-1" displayName="Physical Findings" base_Property="_buWDYP4vEeObaveuCI77uA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15398, CONF:1198-30931</ruleId>
@@ -845,7 +845,7 @@ The Physical Exam Section may contain multiple nested subsections.&#xD;
   <CDA:CDATemplate xmi:id="_2sh74IC3EeS108flGLVEBA" base_Class="_YYgjwIC3EeS108flGLVEBA" templateId="2.16.840.1.113883.10.20.22.4.76" templateVersion="2015-08-01">
     <ruleId>CONF:1198-14707, CONF:1198-14708, CONF:1198-32604</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_dWmY8IC4EeS108flGLVEBA" base_Generalization="_YZLSIIC3EeS108flGLVEBA"/>
+  <CDA:ConformsTo xmi:id="_dWmY8IC4EeS108flGLVEBA" base_Generalization="_YZLSIIC3EeS108flGLVEBA" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_nvQ5EYC8EeS108flGLVEBA" base_Property="_nvQ5EIC8EeS108flGLVEBA">
     <ruleId>CONF:1198-14767</ruleId>
   </CDA:PropertyValidation>

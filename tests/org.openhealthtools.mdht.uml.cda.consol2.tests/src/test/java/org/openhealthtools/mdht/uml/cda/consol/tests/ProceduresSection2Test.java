@@ -442,30 +442,7 @@ public class ProceduresSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolProcedureActivityObservation2s() {
 
-		ProceduresSection2 target = objectFactory.create();
-		target.getConsolProcedureActivityObservation2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetConsolProcedureActivityAct2s() {
-
-		ProceduresSection2 target = objectFactory.create();
-		target.getConsolProcedureActivityAct2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
 	public void testValidateProceduresSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<ProceduresSection2> validateProceduresSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<ProceduresSection2>(
 			"validateProceduresSectionEntriesOptionalTemplateId",
@@ -494,6 +471,30 @@ public class ProceduresSection2Test extends CDAValidationTest {
 		};
 
 		validateProceduresSectionEntriesOptionalTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolProcedureActivityObservation2s() {
+
+		ProceduresSection2 target = objectFactory.create();
+		target.getConsolProcedureActivityObservation2s();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolProcedureActivityAct2s() {
+
+		ProceduresSection2 target = objectFactory.create();
+		target.getConsolProcedureActivityAct2s();
+
 	}
 
 	/**

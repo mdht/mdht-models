@@ -137,7 +137,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ConsultationNote2Opera
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getMentalStatusSection() <em>Get Mental Status Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getNutritionSection() <em>Get Nutrition Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#getFamilyHistorySection2() <em>Get Family History Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ConsultationNote2#validateUSRealmHeader2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -3127,10 +3127,11 @@ public class ConsultationNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateGeneralHeaderConstraintsTemplateId() {
-		OperationsTestCase<ConsultationNote2> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<ConsultationNote2>(
-			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateUSRealmHeader2TemplateId() {
+		OperationsTestCase<ConsultationNote2> validateUSRealmHeader2TemplateIdTestCase = new OperationsTestCase<ConsultationNote2>(
+			"validateUSRealmHeader2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -3147,13 +3148,13 @@ public class ConsultationNote2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ConsultationNote2Operations.validateGeneralHeaderConstraintsTemplateId(
+				return ConsultationNote2Operations.validateUSRealmHeader2TemplateId(
 					(ConsultationNote2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGeneralHeaderConstraintsTemplateIdTestCase.doValidationTest();
+		validateUSRealmHeader2TemplateIdTestCase.doValidationTest();
 	}
 
 	/**

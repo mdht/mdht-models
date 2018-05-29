@@ -112,7 +112,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.USRealmHeaderPatientGe
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Documentation Of Service Event Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Documentation Of Service Event Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Documentation Of Service Event</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeader2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -2659,10 +2659,11 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	* @generated
 	*/
 	@Test
-	public void testValidateGeneralHeaderConstraintsTemplateId() {
-		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
-			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateUSRealmHeader2TemplateId() {
+		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeader2TemplateIdTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
+			"validateUSRealmHeader2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2679,13 +2680,13 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return USRealmHeaderPatientGeneratedDocumentOperations.validateGeneralHeaderConstraintsTemplateId(
+				return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeader2TemplateId(
 					(USRealmHeaderPatientGeneratedDocument) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGeneralHeaderConstraintsTemplateIdTestCase.doValidationTest();
+		validateUSRealmHeader2TemplateIdTestCase.doValidationTest();
 	}
 
 	/**

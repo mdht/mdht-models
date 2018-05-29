@@ -767,9 +767,8 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+	public boolean validateUSRealmHeader2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNote2Operations.validateUSRealmHeader2TemplateId(this, diagnostics, context);
 	}
 
 	/**

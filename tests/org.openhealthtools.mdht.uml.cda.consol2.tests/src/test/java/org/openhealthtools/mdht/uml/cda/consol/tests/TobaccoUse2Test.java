@@ -34,12 +34,12 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.TobaccoUse2Operations;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUse2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUse2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use2 Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUseCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUse2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUse2CDCodeTermAssertionOrLoinc(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use2 CD Code Term Assertion Or Loinc</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUse2IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use2 IVLTS High</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUseTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUseCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUseEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Effective Time</em>}</li>
  * </ul>
@@ -49,6 +49,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.TobaccoUse2Operations;
  */
 
 public class TobaccoUse2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateTobaccoUse2TemplateId() {
+		OperationsTestCase<TobaccoUse2> validateTobaccoUse2TemplateIdTestCase = new OperationsTestCase<TobaccoUse2>(
+			"validateTobaccoUse2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TobaccoUse2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TobaccoUse2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TobaccoUse2Operations.validateTobaccoUse2TemplateId(
+					(TobaccoUse2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTobaccoUse2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -190,40 +225,6 @@ public class TobaccoUse2Test extends CDAValidationTest {
 		};
 
 		validateTobaccoUse2IVLTSHighTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateTobaccoUseTemplateId() {
-		OperationsTestCase<TobaccoUse2> validateTobaccoUseTemplateIdTestCase = new OperationsTestCase<TobaccoUse2>(
-			"validateTobaccoUseTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(TobaccoUse2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(TobaccoUse2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return TobaccoUse2Operations.validateTobaccoUseTemplateId(
-					(TobaccoUse2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateTobaccoUseTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

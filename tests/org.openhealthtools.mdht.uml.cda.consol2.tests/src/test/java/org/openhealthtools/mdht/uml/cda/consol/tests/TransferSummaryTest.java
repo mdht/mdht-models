@@ -136,7 +136,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.TransferSummaryOperati
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getAdmissionMedicationsSectionEntriesOptional2() <em>Get Admission Medications Section Entries Optional2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getAdmissionDiagnosisSection2() <em>Get Admission Diagnosis Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getCourseOfCareSection() <em>Get Course Of Care Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateUSRealmHeader2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -2784,10 +2784,11 @@ public class TransferSummaryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateGeneralHeaderConstraintsTemplateId() {
-		OperationsTestCase<TransferSummary> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<TransferSummary>(
-			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateUSRealmHeader2TemplateId() {
+		OperationsTestCase<TransferSummary> validateUSRealmHeader2TemplateIdTestCase = new OperationsTestCase<TransferSummary>(
+			"validateUSRealmHeader2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2804,13 +2805,13 @@ public class TransferSummaryTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return TransferSummaryOperations.validateGeneralHeaderConstraintsTemplateId(
+				return TransferSummaryOperations.validateUSRealmHeader2TemplateId(
 					(TransferSummary) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGeneralHeaderConstraintsTemplateIdTestCase.doValidationTest();
+		validateUSRealmHeader2TemplateIdTestCase.doValidationTest();
 	}
 
 	/**

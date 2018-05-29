@@ -32,10 +32,10 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemStatus2Operatio
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus2#validateProblemStatus2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus2#validateProblemStatusTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus2#validateProblemStatusReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus2#validateProblemStatusTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Text Reference Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus2#validateProblemStatusTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus2#validateProblemStatusText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus2#validateProblemStatusValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Value</em>}</li>
  * </ul>
@@ -45,6 +45,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemStatus2Operatio
  */
 
 public class ProblemStatus2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProblemStatus2TemplateId() {
+		OperationsTestCase<ProblemStatus2> validateProblemStatus2TemplateIdTestCase = new OperationsTestCase<ProblemStatus2>(
+			"validateProblemStatus2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_STATUS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProblemStatus2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProblemStatus2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemStatus2Operations.validateProblemStatus2TemplateId(
+					(ProblemStatus2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemStatus2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -74,41 +109,6 @@ public class ProblemStatus2Test extends CDAValidationTest {
 	*/
 	@Ignore
 	public void testValidateProblemStatusTextReferenceValue() {
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-
-	public void testValidateProblemStatusTemplateId() {
-		OperationsTestCase<ProblemStatus2> validateProblemStatusTemplateIdTestCase = new OperationsTestCase<ProblemStatus2>(
-			"validateProblemStatusTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProblemStatus2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProblemStatus2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProblemStatus2Operations.validateProblemStatusTemplateId(
-					(ProblemStatus2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProblemStatusTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

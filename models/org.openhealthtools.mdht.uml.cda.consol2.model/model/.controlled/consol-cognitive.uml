@@ -1759,7 +1759,7 @@ The Mental Status Section contains observations and evaluations related to a pat
     <ruleId>CONF:1198-32792</ruleId>
     <ruleId>DSTU:795</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ConformsTo xmi:id="_7BzUMGvjEeeGpbQRBTrLBg" base_Generalization="_ze150fitEeOXlK95I8tUew"/>
+  <CDA:ConformsTo xmi:id="_7BzUMGvjEeeGpbQRBTrLBg" base_Generalization="_ze150fitEeOXlK95I8tUew" requiresParentId="true"/>
   <CDA:ConstraintValidation xmi:id="_49Tp4GwEEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_C35gMGwEEeeGpbQRBTrLBg"/>
   <CDA:ConstraintValidation xmi:id="_9V1JUGwEEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_EoR4sGwEEeeGpbQRBTrLBg"/>
   <CDA:ConstraintValidation xmi:id="_99x6IGwEEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_GW59sGwEEeeGpbQRBTrLBg"/>
@@ -1767,4 +1767,5 @@ The Mental Status Section contains observations and evaluations related to a pat
   <CDA:ConstraintValidation xmi:id="_KvvJsGwFEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_vI6fAGwBEeeGpbQRBTrLBg"/>
   <CDA:ConstraintValidation xmi:id="_LSPZ0GwFEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_DFgJQGwCEeeGpbQRBTrLBg"/>
   <CDA:ConstraintValidation xmi:id="_2T6eYGwHEeeGpbQRBTrLBg" severity="INFO" base_Constraint="_r3bRYGwHEeeGpbQRBTrLBg"/>
+  <CDA:ConformsTo xmi:id="_3mKo4FPUEeieWreClOUydw" base_Generalization="_6LYrUbkoEeODDJAC5t5vpw" requiresParentId="true"/>
 </xmi:XMI>

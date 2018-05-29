@@ -421,41 +421,6 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAdvanceDirectivesSectionEntriesOptionalTemplateId() {
-		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
-			"validateAdvanceDirectivesSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectivesSection2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectivesSection2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
-					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectivesSectionEntriesOptionalTemplateIdTestCase.doValidationTest();
-	}
-
-	/**
-	*
 	* @generated NOT
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
@@ -632,6 +597,42 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 		AdvanceDirectivesSection2 target = objectFactory.create();
 		target.getConsolAdvanceDirectiveOrganizers();
 
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAdvanceDirectivesSectionEntriesOptionalTemplateId() {
+		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
+			"validateAdvanceDirectivesSectionEntriesOptionalTemplateId",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectivesSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectivesSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
+					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectivesSectionEntriesOptionalTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

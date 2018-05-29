@@ -36,13 +36,13 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeMedication2Op
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedication2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedicationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedication2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication2 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedication2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication2 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedication2CDTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication2 CD Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedication2CDTranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication2 CD Translation P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#getConsolMedicationActivity2s() <em>Get Consol Medication Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedicationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedicationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedicationMedicationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Medication Activity</em>}</li>
  * </ul>
@@ -52,6 +52,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeMedication2Op
  */
 
 public class DischargeMedication2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeMedication2TemplateId() {
+		OperationsTestCase<DischargeMedication2> validateDischargeMedication2TemplateIdTestCase = new OperationsTestCase<DischargeMedication2>(
+			"validateDischargeMedication2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeMedication2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeMedication2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeMedication2Operations.validateDischargeMedication2TemplateId(
+					(DischargeMedication2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeMedication2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -240,40 +275,6 @@ public class DischargeMedication2Test extends CDAValidationTest {
 		DischargeMedication2 target = objectFactory.create();
 		target.getConsolMedicationActivity2s();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateDischargeMedicationTemplateId() {
-		OperationsTestCase<DischargeMedication2> validateDischargeMedicationTemplateIdTestCase = new OperationsTestCase<DischargeMedication2>(
-			"validateDischargeMedicationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeMedication2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeMedication2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeMedication2Operations.validateDischargeMedicationTemplateId(
-					(DischargeMedication2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeMedicationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

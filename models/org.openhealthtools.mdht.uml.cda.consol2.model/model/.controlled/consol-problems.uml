@@ -1039,7 +1039,7 @@ Problem Concerns are a subset of Health Concerns that have risen to the level of
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:ConformsTo xmi:id="_JanU4OEFEeOmBMTtnrPqww" base_Generalization="_DMwEcOEFEeOmBMTtnrPqww"/>
+  <CDA:ConformsTo xmi:id="_JanU4OEFEeOmBMTtnrPqww" base_Generalization="_DMwEcOEFEeOmBMTtnrPqww" requiresParentId="true"/>
   <CDA:CDATemplate xmi:id="_QRxZ8OEFEeOmBMTtnrPqww" base_Class="_DMvdYOEFEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.5" templateVersion="2014-06-09">
     <ruleId>CONF:1098-16756</ruleId>
     <ruleId>CONF:1098-16757</ruleId>
@@ -1148,7 +1148,7 @@ Many systems display the nested Problem Observation with the most recent author 
     <ruleId>CONF:1198-16773</ruleId>
     <ruleId>CONF:1198-32509</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_QaoKsOzcEeOnE-G4kptBiw" base_Generalization="_y5C8IezbEeOnE-G4kptBiw"/>
+  <CDA:ConformsTo xmi:id="_QaoKsOzcEeOnE-G4kptBiw" base_Generalization="_y5C8IezbEeOnE-G4kptBiw" requiresParentId="true"/>
   <CDA:ValueSetConstraint xmi:id="_zYX1E-zeEeOnE-G4kptBiw" base_Property="_zYX1EOzeEeOnE-G4kptBiw">
     <reference href="../consol-vocab.uml#_SZOJNsmlEeSr1c1X9ACWbg"/>
     <ruleId>CONF:1198-31525</ruleId>
@@ -1373,7 +1373,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
   <CDA:CDATemplate xmi:id="_tIFIIPDCEeOKPKE9au0oug" base_Class="_prDAkPDCEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.4" templateVersion="2015-08-01">
     <ruleId>CONF:1198-14926, CONF:1198-14927, CONF:1198-32508</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_zgiCgPDDEeOKPKE9au0oug" base_Generalization="_prGD4PDCEeOKPKE9au0oug"/>
+  <CDA:ConformsTo xmi:id="_zgiCgPDDEeOKPKE9au0oug" base_Generalization="_prGD4PDCEeOKPKE9au0oug" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_LLteY_DEEeOKPKE9au0oug" base_Property="_LLteYPDEEeOKPKE9au0oug">
     <ruleId>CONF:1198-9050</ruleId>
   </CDA:PropertyValidation>
@@ -1643,7 +1643,7 @@ The Problem Status records whether the indicated problem is active, inactive, or
     <ruleId>CONF:1098-10518</ruleId>
     <ruleId>DSTU:815/1357</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_hayAcEfOEeiFfJtNAawVHw" base_Generalization="_vycfAEfNEeiFfJtNAawVHw"/>
+  <CDA:ConformsTo xmi:id="_hayAcEfOEeiFfJtNAawVHw" base_Generalization="_vycfAEfNEeiFfJtNAawVHw" requiresParentId="true"/>
   <CDA:ValueSetConstraint xmi:id="_xmknsEfQEeiFfJtNAawVHw" base_Property="_xmkAoEfQEeiFfJtNAawVHw">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8V8fAEfREeiFfJtNAawVHw"/>
     <ruleId>CONF:1098-7365</ruleId>

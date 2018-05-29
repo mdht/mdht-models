@@ -1042,7 +1042,7 @@ If the patient's current smoking status is unknown, the value element must be po
     <ruleId>CONF:1098-14816</ruleId>
     <ruleId>CONF:1098-32573</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_b9FDMLk0EeODDJAC5t5vpw" base_Generalization="_Hl5HoLk0EeODDJAC5t5vpw"/>
+  <CDA:ConformsTo xmi:id="_b9FDMLk0EeODDJAC5t5vpw" base_Generalization="_Hl5HoLk0EeODDJAC5t5vpw" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_zeA8gLm5EeOgPNzo_e4B9A" base_Property="_zeAVcLm5EeOgPNzo_e4B9A">
     <ruleId>CONF:1098-14810</ruleId>
   </CDA:PropertyValidation>
@@ -1145,7 +1145,7 @@ If the patient's current smoking status is unknown, the value element must be po
   <CDA:CDATemplate xmi:id="_xXkasPJfEeO2NaSiicarcg" base_Class="_b_iGIPJfEeO2NaSiicarcg" templateId="2.16.840.1.113883.10.20.22.4.38" templateVersion="2015-08-01">
     <ruleId>CONF:1198-8550, CONF:1198-10526, CONF:1198-32495</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_GAuQAPJgEeO2NaSiicarcg" base_Generalization="_b_iGIfJfEeO2NaSiicarcg"/>
+  <CDA:ConformsTo xmi:id="_GAuQAPJgEeO2NaSiicarcg" base_Generalization="_b_iGIfJfEeO2NaSiicarcg" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_f0hlQ_JgEeO2NaSiicarcg" severity="WARNING" base_Property="_f0hlQPJgEeO2NaSiicarcg">
     <ruleId>CONF:1198-8559</ruleId>
   </CDA:PropertyValidation>
@@ -1225,7 +1225,7 @@ The effectiveTime element is used to describe dates associated with the patient'
     <ruleId>CONF:1098-16567</ruleId>
     <ruleId>CONF:1098-32589</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_7MV_APMxEeOUvapeh9bVvQ" base_Generalization="_qHW0APMxEeOUvapeh9bVvQ"/>
+  <CDA:ConformsTo xmi:id="_7MV_APMxEeOUvapeh9bVvQ" base_Generalization="_qHW0APMxEeOUvapeh9bVvQ" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_P0FfEPMyEeOUvapeh9bVvQ" base_Property="_P0E4APMyEeOUvapeh9bVvQ">
     <ruleId>CONF:1098-16564</ruleId>
   </CDA:PropertyValidation>
@@ -1290,7 +1290,7 @@ The effectiveTime element is used to describe dates associated with the patient'
   <CDA:CDATemplate xmi:id="_1kXFQAFHEeSG_MJH-zNFRw" base_Class="_wLWZMAFHEeSG_MJH-zNFRw" templateId="2.16.840.1.113883.10.20.22.2.17" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7936, CONF:1198-10449, CONF:1198-32494</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_9aG5gAFHEeSG_MJH-zNFRw" base_Generalization="_wLZcgAFHEeSG_MJH-zNFRw"/>
+  <CDA:ConformsTo xmi:id="_9aG5gAFHEeSG_MJH-zNFRw" base_Generalization="_wLZcgAFHEeSG_MJH-zNFRw" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_l7q08AFOEeSG_MJH-zNFRw" code="29762-2" displayName="Social History" base_Property="_l7qN4AFOEeSG_MJH-zNFRw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.umlCodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-14820, CONF:1198-30814</ruleId>

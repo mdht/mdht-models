@@ -30,9 +30,9 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.InstructionsSection2Op
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#getConsolInstruction2s() <em>Get Consol Instruction2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSectionInstructions(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section Instructions</em>}</li>
@@ -43,6 +43,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.InstructionsSection2Op
  */
 
 public class InstructionsSection2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateInstructionsSection2TemplateId() {
+		OperationsTestCase<InstructionsSection2> validateInstructionsSection2TemplateIdTestCase = new OperationsTestCase<InstructionsSection2>(
+			"validateInstructionsSection2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_INSTRUCTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(InstructionsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(InstructionsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return InstructionsSection2Operations.validateInstructionsSection2TemplateId(
+					(InstructionsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInstructionsSection2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -88,40 +123,6 @@ public class InstructionsSection2Test extends CDAValidationTest {
 		InstructionsSection2 target = objectFactory.create();
 		target.getConsolInstruction2s();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateInstructionsSectionTemplateId() {
-		OperationsTestCase<InstructionsSection2> validateInstructionsSectionTemplateIdTestCase = new OperationsTestCase<InstructionsSection2>(
-			"validateInstructionsSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_INSTRUCTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(InstructionsSection2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(InstructionsSection2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return InstructionsSection2Operations.validateInstructionsSectionTemplateId(
-					(InstructionsSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInstructionsSectionTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

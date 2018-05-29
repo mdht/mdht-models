@@ -47,6 +47,15 @@ public class FamilyHistoryOrganizer2Impl extends FamilyHistoryOrganizerImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFamilyHistoryOrganizer2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryOrganizer2Operations.validateFamilyHistoryOrganizer2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryOrganizer2Id(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOrganizer2Operations.validateFamilyHistoryOrganizer2Id(this, diagnostics, context);
 	}
@@ -58,16 +67,6 @@ public class FamilyHistoryOrganizer2Impl extends FamilyHistoryOrganizerImpl impl
 	 */
 	public EList<FamilyHistoryObservation2> getConsolFamilyHistoryObservation2s() {
 		return FamilyHistoryOrganizer2Operations.getConsolFamilyHistoryObservation2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFamilyHistoryOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryOrganizer2Operations.validateFamilyHistoryOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**

@@ -66,6 +66,17 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureActivityProcedure2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedure2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProcedureActivityProcedureStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -167,18 +178,6 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	public boolean validateProcedureActivityProcedureServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureServiceDeliveryLocationTypeCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureTemplateId(
 			this, diagnostics, context);
 	}
 

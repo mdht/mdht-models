@@ -41,6 +41,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSection2SelfCareActivities(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Self Care Activities</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSection2SensoryAndSpeechStatus(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Sensory And Speech Status</em>}</li>
@@ -53,7 +54,6 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getConsolHighestPressureUlcerStages() <em>Get Consol Highest Pressure Ulcer Stages</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getSelfCareActivitiess() <em>Get Self Care Activitiess</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getSensoryAndSpeechStatuss() <em>Get Sensory And Speech Statuss</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionFunctionalStatusResultOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Functional Status Result Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionFunctionalStatusResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Functional Status Result Observation</em>}</li>
@@ -82,6 +82,71 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 */
 	protected FunctionalStatusSection2Operations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateFunctionalStatusSection2TemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateFunctionalStatusSection2TemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_FUNCTIONAL_STATUS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.14' and id.extension.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateFunctionalStatusSection2TemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateFunctionalStatusSection2TemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param functionalStatusSection2 The receiving '<em><b>Functional Status Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateFunctionalStatusSection2TemplateId(FunctionalStatusSection2 functionalStatusSection2,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_FUNCTIONAL_STATUS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2);
+			try {
+				VALIDATE_FUNCTIONAL_STATUS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_FUNCTIONAL_STATUS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FUNCTIONAL_STATUS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				functionalStatusSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2FunctionalStatusSection2TemplateId"),
+						new Object[] { functionalStatusSection2 }));
+			}
+
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -246,7 +311,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(86));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(87));
 			try {
 				GET_CONSOL_FUNCTIONAL_STATUS_ORGANIZER2S__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_FUNCTIONAL_STATUS_ORGANIZER2S__EOCL_EXP);
@@ -276,7 +341,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(87));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(88));
 			try {
 				GET_CONSOL_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_EXP);
@@ -306,7 +371,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(88));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(89));
 			try {
 				GET_CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_EXP);
@@ -336,7 +401,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(89));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(90));
 			try {
 				GET_CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_EXP);
@@ -366,7 +431,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(90));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(91));
 			try {
 				GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_EXP);
@@ -396,7 +461,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(91));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(92));
 			try {
 				GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_EXP);
@@ -426,7 +491,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(92));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(93));
 			try {
 				GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_EXP);
@@ -455,7 +520,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(93));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(94));
 			try {
 				GET_SELF_CARE_ACTIVITIESS__EOCL_QRY = helper.createQuery(GET_SELF_CARE_ACTIVITIESS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -483,7 +548,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(94));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2.getEAllOperations().get(95));
 			try {
 				GET_SENSORY_AND_SPEECH_STATUSS__EOCL_QRY = helper.createQuery(GET_SENSORY_AND_SPEECH_STATUSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -739,71 +804,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @ordered
 	 */
 	protected static OCLExpression<EClassifier> GET_SENSORY_AND_SPEECH_STATUSS__EOCL_QRY;
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.14' and id.extension = '2014-06-09')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param functionalStatusSection2 The receiving '<em><b>Functional Status Section2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateFunctionalStatusSectionTemplateId(FunctionalStatusSection2 functionalStatusSection2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION2);
-			try {
-				VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				functionalStatusSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2FunctionalStatusSectionTemplateId"),
-						new Object[] { functionalStatusSection2 }));
-			}
-
-			return false;
-		}
-		return true;
-	}
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateFunctionalStatusSectionCode(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Code</em>}' operation.

@@ -161,6 +161,7 @@ public class AllergiesSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAllergiesSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<AllergiesSection2> validateAllergiesSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<AllergiesSection2>(
 			"validateAllergiesSectionEntriesOptionalTemplateId",

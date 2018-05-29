@@ -33,9 +33,9 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalAdmissionDiagn
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2#validateHospitalAdmissionDiagnosis2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2#validateHospitalAdmissionDiagnosisCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2#getConsolProblemObservation2s() <em>Get Consol Problem Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2#validateHospitalAdmissionDiagnosisTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2#validateHospitalAdmissionDiagnosisCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2#validateHospitalAdmissionDiagnosisProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Problem Observation</em>}</li>
  * </ul>
@@ -45,6 +45,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalAdmissionDiagn
  */
 
 public class HospitalAdmissionDiagnosis2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHospitalAdmissionDiagnosis2TemplateId() {
+		OperationsTestCase<HospitalAdmissionDiagnosis2> validateHospitalAdmissionDiagnosis2TemplateIdTestCase = new OperationsTestCase<HospitalAdmissionDiagnosis2>(
+			"validateHospitalAdmissionDiagnosis2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HospitalAdmissionDiagnosis2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HospitalAdmissionDiagnosis2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosis2TemplateId(
+					(HospitalAdmissionDiagnosis2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHospitalAdmissionDiagnosis2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -90,40 +125,6 @@ public class HospitalAdmissionDiagnosis2Test extends CDAValidationTest {
 		HospitalAdmissionDiagnosis2 target = objectFactory.create();
 		target.getConsolProblemObservation2s();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateHospitalAdmissionDiagnosisTemplateId() {
-		OperationsTestCase<HospitalAdmissionDiagnosis2> validateHospitalAdmissionDiagnosisTemplateIdTestCase = new OperationsTestCase<HospitalAdmissionDiagnosis2>(
-			"validateHospitalAdmissionDiagnosisTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HospitalAdmissionDiagnosis2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HospitalAdmissionDiagnosis2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisTemplateId(
-					(HospitalAdmissionDiagnosis2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHospitalAdmissionDiagnosisTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

@@ -95,7 +95,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getSubjectiveSection() <em>Get Subjective Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getVitalSignsSectionEntriesOptional2() <em>Get Vital Signs Section Entries Optional2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getNutritionSection() <em>Get Nutrition Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateUSRealmHeader2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -2511,7 +2511,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(377));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(378));
 			try {
 				GET_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2556,7 +2556,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(378));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(379));
 			try {
 				GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY = helper.createQuery(GET_PLAN_OF_TREATMENT_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2601,7 +2601,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(379));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(380));
 			try {
 				GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_QRY = helper.createQuery(
 					GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_EXP);
@@ -2647,7 +2647,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(380));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(381));
 			try {
 				GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
 					GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
@@ -2693,7 +2693,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(381));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(382));
 			try {
 				GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2738,7 +2738,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(382));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(383));
 			try {
 				GET_INTERVENTIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_INTERVENTIONS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2783,7 +2783,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(383));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(384));
 			try {
 				GET_INSTRUCTIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_INSTRUCTIONS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2829,7 +2829,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(384));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(385));
 			try {
 				GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
 					GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
@@ -2875,7 +2875,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(385));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(386));
 			try {
 				GET_OBJECTIVE_SECTION__EOCL_QRY = helper.createQuery(GET_OBJECTIVE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2920,7 +2920,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(386));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(387));
 			try {
 				GET_PHYSICAL_EXAM_SECTION2__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2965,7 +2965,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(387));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(388));
 			try {
 				GET_PROBLEM_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
 					GET_PROBLEM_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
@@ -3011,7 +3011,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(388));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(389));
 			try {
 				GET_RESULTS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
 					GET_RESULTS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
@@ -3057,7 +3057,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(389));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(390));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3102,7 +3102,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(390));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(391));
 			try {
 				GET_SUBJECTIVE_SECTION__EOCL_QRY = helper.createQuery(GET_SUBJECTIVE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3147,7 +3147,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(391));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(392));
 			try {
 				GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
 					GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
@@ -3193,7 +3193,7 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROGRESS_NOTE2,
-				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(392));
+				ConsolPackage.Literals.PROGRESS_NOTE2.getEAllOperations().get(393));
 			try {
 				GET_NUTRITION_SECTION__EOCL_QRY = helper.createQuery(GET_NUTRITION_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3206,25 +3206,25 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsTemplateId(ProgressNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateUSRealmHeader2TemplateId(ProgressNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Template Id</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsTemplateId(ProgressNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateUSRealmHeader2TemplateId(ProgressNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.1.9' and id.extension = '2015-08-01')";
+	protected static final String VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.1.9' and id.extension = '2015-08-01')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsTemplateId(ProgressNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateUSRealmHeader2TemplateId(ProgressNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Template Id</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsTemplateId(ProgressNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateUSRealmHeader2TemplateId(ProgressNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3237,31 +3237,29 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 */
 
-	public static boolean validateGeneralHeaderConstraintsTemplateId(ProgressNote2 progressNote2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateUSRealmHeader2TemplateId(ProgressNote2 progressNote2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE2);
 			try {
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+				VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
 		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				progressNote2)) {
+			VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(progressNote2)) {
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROGRESS_NOTE2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ProgressNote2GeneralHeaderConstraintsTemplateId"),
+						ConsolValidator.PROGRESS_NOTE2__US_REALM_HEADER2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("ProgressNote2USRealmHeader2TemplateId"),
 						new Object[] { progressNote2 }));
 			}
 

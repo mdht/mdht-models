@@ -51,6 +51,15 @@ public class VitalSignsOrganizer2Impl extends VitalSignsOrganizerImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateVitalSignsOrganizer2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateVitalSignsOrganizerCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizerCodeP(this, diagnostics, context);
@@ -95,16 +104,6 @@ public class VitalSignsOrganizer2Impl extends VitalSignsOrganizerImpl implements
 	@Override
 	public EList<VitalSignObservation2> getConsolVitalSignObservation2s() {
 		return VitalSignsOrganizer2Operations.getConsolVitalSignObservation2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateVitalSignsOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**

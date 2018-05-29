@@ -51,6 +51,17 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFunctionalStatusObservation2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusObservation2Operations.validateFunctionalStatusObservation2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateFunctionalStatusObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -89,16 +100,6 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 			Map<Object, Object> context) {
 		return FunctionalStatusObservation2Operations.validateResultObservationTextReferenceValue(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusObservation2Operations.validateResultObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**

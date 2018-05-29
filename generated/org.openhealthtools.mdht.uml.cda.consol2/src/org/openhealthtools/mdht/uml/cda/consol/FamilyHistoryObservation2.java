@@ -19,11 +19,23 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFamilyHistoryObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryObservationTemplateId FamilyHistoryObservationCodeP FamilyHistoryObservation2CDTranslationP' templateId.root='2.16.840.1.113883.10.20.22.4.46' templateId.extension='2015-08-01' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='FamilyHistoryObservationCode FamilyHistoryObservation2CDTranslation' constraints.validation.dependOn.FamilyHistoryObservationCode='FamilyHistoryObservationCodeP' constraints.validation.query='FamilyHistoryObservation2CDTranslation FamilyHistoryObservation2CDTranslationP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryObservation2TemplateId FamilyHistoryObservationCodeP FamilyHistoryObservation2CDTranslationP' templateId.root='2.16.840.1.113883.10.20.22.4.46' templateId.extension='2015-08-01' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='FamilyHistoryObservationCode FamilyHistoryObservation2CDTranslation' constraints.validation.dependOn.FamilyHistoryObservationCode='FamilyHistoryObservationCodeP' constraints.validation.query='FamilyHistoryObservation2CDTranslation FamilyHistoryObservation2CDTranslationP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFamilyHistoryObservation2CD translation.codeSystem='2.16.840.1.113883.6.1' translation.codeSystemName='LOINC' constraints.validation.warning='FamilyHistoryObservation2CDTranslation' constraints.validation.error='FamilyHistoryObservation2CDTranslationP'"
  * @generated
  */
 public interface FamilyHistoryObservation2 extends FamilyHistoryObservation {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.46\' and id.extension.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateFamilyHistoryObservation2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

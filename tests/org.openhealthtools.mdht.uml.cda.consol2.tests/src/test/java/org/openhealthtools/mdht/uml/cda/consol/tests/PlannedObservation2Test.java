@@ -37,6 +37,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedObservation2Ope
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlannedObservation2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Status Code</em>}</li>
@@ -56,7 +57,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedObservation2Ope
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getIndication2s() <em>Get Indication2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getInstruction2s() <em>Get Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#getPlannedCoverages() <em>Get Planned Coverages</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlanOfCareActivityObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2#validatePlanOfCareActivityObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Observation Mood Code</em>}</li>
  * </ul>
  * </p>
@@ -65,6 +65,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedObservation2Ope
  */
 
 public class PlannedObservation2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedObservation2TemplateId() {
+		OperationsTestCase<PlannedObservation2> validatePlannedObservation2TemplateIdTestCase = new OperationsTestCase<PlannedObservation2>(
+			"validatePlannedObservation2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedObservation2Operations.validatePlannedObservation2TemplateId(
+					(PlannedObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedObservation2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -641,41 +676,6 @@ public class PlannedObservation2Test extends CDAValidationTest {
 		PlannedObservation2 target = objectFactory.create();
 		target.getPlannedCoverages();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePlanOfCareActivityObservationTemplateId() {
-		OperationsTestCase<PlannedObservation2> validatePlanOfCareActivityObservationTemplateIdTestCase = new OperationsTestCase<PlannedObservation2>(
-			"validatePlanOfCareActivityObservationTemplateId",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PlannedObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedObservation2Operations.validatePlanOfCareActivityObservationTemplateId(
-					(PlannedObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlanOfCareActivityObservationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

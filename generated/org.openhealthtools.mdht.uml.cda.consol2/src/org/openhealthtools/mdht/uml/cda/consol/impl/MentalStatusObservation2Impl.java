@@ -50,6 +50,17 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMentalStatusObservation2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMentalStatusObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MentalStatusObservation2Operations.validateMentalStatusObservation2AuthorParticipation(
@@ -181,16 +192,6 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 			Map<Object, Object> context) {
 		return MentalStatusObservation2Operations.validateResultObservationAuthorMultiplicity(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateResultObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**

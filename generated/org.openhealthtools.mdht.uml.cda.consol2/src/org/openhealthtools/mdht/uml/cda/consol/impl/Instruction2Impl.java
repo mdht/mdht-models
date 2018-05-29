@@ -49,9 +49,8 @@ public class Instruction2Impl extends InstructionsImpl implements Instruction2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateInstructionsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Instruction2Operations.validateInstructionsTemplateId(this, diagnostics, context);
+	public boolean validateInstruction2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return Instruction2Operations.validateInstruction2TemplateId(this, diagnostics, context);
 	}
 
 	/**

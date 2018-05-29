@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_WPTWEDVyEeGaW4kr-GbV8Q" name="DICOMObjectCatalogSection">
     <ownedComment xmi:id="_K--R4Eb4EeGp67IkyTw1fg">
       <body>DICOM Object Catalog lists all referenced objects and their parent Series and Studies, plus other DICOM attributes required for retrieving the objects.&#xD;
@@ -1371,7 +1371,7 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:PropertyValidation xmi:id="_-FQOgGQmEeOD5bEp3nNX5w" base_Property="_wUxhMGQmEeOD5bEp3nNX5w">
     <ruleId>CONF:Pending</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_Ao2HkOaHEeOmzetP5oaH3A" clientDependency="_qGW8oOaHEeOmzetP5oaH3A" name="PhysicianofRecordParticipant2">
+  <uml:Class xmi:id="_Ao2HkOaHEeOmzetP5oaH3A" name="PhysicianofRecordParticipant2">
     <ownedComment xmi:id="_Yh-f4OaHEeOmzetP5oaH3A">
       <body>This encounterParticipant is the attending physician and is usually different from the Physician Reading Study Performer defined in documentationOf/serviceEvent.</body>
     </ownedComment>
@@ -1431,7 +1431,7 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
     <ruleId>CONF:1098-16073</ruleId>
     <ruleId>CONF:1098-32586</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_oFKg8OaHEeOmzetP5oaH3A" base_Generalization="_Ao2HkeaHEeOmzetP5oaH3A"/>
+  <CDA:ConformsTo xmi:id="_oFKg8OaHEeOmzetP5oaH3A" base_Generalization="_Ao2HkeaHEeOmzetP5oaH3A" requiresParentId="true"/>
   <CDA:ConstraintValidation xmi:id="_LzidYOaSEeOmzetP5oaH3A" severity="WARNING" base_Constraint="_Lzh2UOaSEeOmzetP5oaH3A">
     <ruleId>CONF:1098-31203</ruleId>
   </CDA:ConstraintValidation>
@@ -1441,7 +1441,7 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:PropertyValidation xmi:id="_YLzdwOaWEeOmzetP5oaH3A" severity="WARNING" base_Property="_T-xcoOaWEeOmzetP5oaH3A">
     <ruleId>CONF:1098-16075</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_zKKIUIe9EeSBauRYePLghA" clientDependency="_SbKGEIe-EeSBauRYePLghA" name="PhysicianReadingStudyPerformer2">
+  <uml:Class xmi:id="_zKKIUIe9EeSBauRYePLghA" name="PhysicianReadingStudyPerformer2">
     <ownedComment xmi:id="__iuAcIe9EeSBauRYePLghA">
       <body>This participant is the Physician Reading Study Performer defined in documentationOf/serviceEvent. It is usually different from the attending physician. The reading physician interprets the images and evidence of the study (DICOM Definition).</body>
     </ownedComment>
@@ -1453,5 +1453,5 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
     <ruleId>CONF:1098-30774</ruleId>
     <ruleId>CONF:1098-32564</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_QTsDQIe-EeSBauRYePLghA" base_Generalization="_zKKvYIe9EeSBauRYePLghA"/>
+  <CDA:ConformsTo xmi:id="_QTsDQIe-EeSBauRYePLghA" base_Generalization="_zKKvYIe9EeSBauRYePLghA" requiresParentId="true"/>
 </xmi:XMI>

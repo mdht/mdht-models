@@ -50,10 +50,9 @@ public class AllergyStatusObservation2Impl extends AllergyStatusObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAllergyStatusObservationTemplateId(DiagnosticChain diagnostics,
+	public boolean validateAllergyStatusObservation2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyStatusObservation2Operations.validateAllergyStatusObservationTemplateId(
+		return AllergyStatusObservation2Operations.validateAllergyStatusObservation2TemplateId(
 			this, diagnostics, context);
 	}
 

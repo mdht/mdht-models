@@ -64,6 +64,15 @@ public class ProcedureActivityAct2Impl extends ProcedureActivityActImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureActivityAct2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityAct2Operations.validateProcedureActivityAct2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProcedureActivityActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityAct2Operations.validateProcedureActivityActStatusCodeP(this, diagnostics, context);
@@ -120,16 +129,6 @@ public class ProcedureActivityAct2Impl extends ProcedureActivityActImpl implemen
 			Map<Object, Object> context) {
 		return ProcedureActivityAct2Operations.validateProcedureActivityActInstructionsInversion(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProcedureActivityActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityAct2Operations.validateProcedureActivityActTemplateId(this, diagnostics, context);
 	}
 
 	/**

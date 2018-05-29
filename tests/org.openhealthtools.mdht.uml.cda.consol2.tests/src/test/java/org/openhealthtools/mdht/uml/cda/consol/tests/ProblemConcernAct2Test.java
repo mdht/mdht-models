@@ -36,6 +36,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemConcernAct2Oper
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2PriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Priority Preference</em>}</li>
@@ -43,7 +44,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemConcernAct2Oper
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#getConsolProblemObservation2s() <em>Get Consol Problem Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActEffectiveTimeLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Effective Time Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActEffectiveTimeHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Effective Time High</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Code P</em>}</li>
@@ -56,6 +56,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemConcernAct2Oper
  */
 
 public class ProblemConcernAct2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProblemConcernAct2TemplateId() {
+		OperationsTestCase<ProblemConcernAct2> validateProblemConcernAct2TemplateIdTestCase = new OperationsTestCase<ProblemConcernAct2>(
+			"validateProblemConcernAct2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_CONCERN_ACT2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProblemConcernAct2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProblemConcernAct2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemConcernAct2Operations.validateProblemConcernAct2TemplateId(
+					(ProblemConcernAct2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemConcernAct2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -257,40 +292,6 @@ public class ProblemConcernAct2Test extends CDAValidationTest {
 		};
 
 		validateProblemConcernActEffectiveTimeHighTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateProblemConcernActTemplateId() {
-		OperationsTestCase<ProblemConcernAct2> validateProblemConcernActTemplateIdTestCase = new OperationsTestCase<ProblemConcernAct2>(
-			"validateProblemConcernActTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProblemConcernAct2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProblemConcernAct2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProblemConcernAct2Operations.validateProblemConcernActTemplateId(
-					(ProblemConcernAct2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProblemConcernActTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

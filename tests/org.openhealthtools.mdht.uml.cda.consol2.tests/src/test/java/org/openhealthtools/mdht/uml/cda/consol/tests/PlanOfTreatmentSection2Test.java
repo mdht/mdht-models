@@ -30,6 +30,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfTreatmentSection
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2HandoffCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Handoff Communication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2NutritionRecommendation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Nutrition Recommendation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfTreatmentSection2PlannedImmunizationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Treatment Section2 Planned Immunization Activity</em>}</li>
@@ -45,7 +46,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfTreatmentSection
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getNutritionRecommendations() <em>Get Nutrition Recommendations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getPlannedImmunizationActivities() <em>Get Planned Immunization Activities</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#getGoalObservations() <em>Get Goal Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2#validatePlanOfCareSectionPlanOfCareActivityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Plan Of Care Activity Observation</em>}</li>
@@ -62,6 +62,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfTreatmentSection
  */
 
 public class PlanOfTreatmentSection2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlanOfTreatmentSection2TemplateId() {
+		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfTreatmentSection2TemplateIdTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
+			"validatePlanOfTreatmentSection2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_TREATMENT_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlanOfTreatmentSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlanOfTreatmentSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2TemplateId(
+					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfTreatmentSection2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -330,40 +365,6 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 		PlanOfTreatmentSection2 target = objectFactory.create();
 		target.getGoalObservations();
 
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePlanOfCareSectionTemplateId() {
-		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionTemplateIdTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
-			"validatePlanOfCareSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlanOfTreatmentSection2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PlanOfTreatmentSection2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionTemplateId(
-					(PlanOfTreatmentSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlanOfCareSectionTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

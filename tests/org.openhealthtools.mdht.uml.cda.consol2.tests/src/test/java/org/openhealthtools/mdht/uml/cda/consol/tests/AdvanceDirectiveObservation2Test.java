@@ -42,6 +42,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveObserv
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2CDTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 CD Translation</em>}</li>
@@ -63,7 +64,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveObserv
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocument(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Advance Directive Observation Reference External Document</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationHasStartingTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Has Starting Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationHasEndingTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Has Ending Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Effective Time</em>}</li>
@@ -87,6 +87,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveObserv
  */
 
 public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAdvanceDirectiveObservation2TemplateId() {
+		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2TemplateIdTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
+			"validateAdvanceDirectiveObservation2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectiveObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectiveObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2TemplateId(
+					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectiveObservation2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -946,40 +981,6 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 		};
 
 		validateAdvanceDirectiveObservationHasEndingTimeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAdvanceDirectiveObservationTemplateId() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationTemplateIdTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservationTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationTemplateId(
-					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectiveObservationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

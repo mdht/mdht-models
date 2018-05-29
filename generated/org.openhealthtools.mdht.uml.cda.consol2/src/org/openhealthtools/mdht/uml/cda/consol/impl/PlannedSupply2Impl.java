@@ -66,6 +66,15 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedSupply2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlannedSupply2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2StatusCode(this, diagnostics, context);
@@ -267,17 +276,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	@Override
 	public EList<PlannedCoverage> getPlannedCoverages() {
 		return PlannedSupply2Operations.getPlannedCoverages(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareActivitySupplyTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedSupply2Operations.validatePlanOfCareActivitySupplyTemplateId(this, diagnostics, context);
 	}
 
 	/**

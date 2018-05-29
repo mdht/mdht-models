@@ -52,6 +52,15 @@ public class AnesthesiaSection2Impl extends AnesthesiaSectionImpl implements Ane
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAnesthesiaSection2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AnesthesiaSection2Operations.validateAnesthesiaSection2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EList<ProcedureActivityProcedure2> getConsolProcedureActivityProcedure2s() {
 		return AnesthesiaSection2Operations.getConsolProcedureActivityProcedure2s(this);
@@ -65,16 +74,6 @@ public class AnesthesiaSection2Impl extends AnesthesiaSectionImpl implements Ane
 	@Override
 	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
 		return AnesthesiaSection2Operations.getConsolMedicationActivity2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAnesthesiaSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnesthesiaSection2Operations.validateAnesthesiaSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**

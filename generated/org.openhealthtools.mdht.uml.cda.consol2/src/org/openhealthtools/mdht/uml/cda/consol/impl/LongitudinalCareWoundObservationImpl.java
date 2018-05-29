@@ -297,8 +297,8 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateProblemObservationTemplateId(
+	public boolean validateProblemObservation2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LongitudinalCareWoundObservationOperations.validateProblemObservation2TemplateId(
 			this, diagnostics, context);
 	}
 

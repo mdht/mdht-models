@@ -65,6 +65,15 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergyObservation2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateAllergyObservation2NegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservation2NegationInd(this, diagnostics, context);
@@ -281,18 +290,6 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	public boolean validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateSubstanceOrDeviceAllergyObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationTemplateId(
 			this, diagnostics, context);
 	}
 

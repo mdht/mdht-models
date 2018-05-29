@@ -33,10 +33,10 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationInformation2
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformation2MedicationInformationManufacturedMaterialCETranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information2 Medication Information Manufactured Material CE Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformationMedicationInformationManufacturedMaterialReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Medication Information Manufactured Material Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformationMedicationInformationManufacturedMaterialCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Medication Information Manufactured Material Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformationManufacturedMaterial(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Manufactured Material</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Medication Information Manufactured Material Code Original Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2#validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Information Medication Information Manufactured Material Code Translation</em>}</li>
@@ -85,6 +85,41 @@ public class MedicationInformation2Test extends CDAValidationTest {
 	//
 	// validateMedicationInformation2ManufacturedMaterialTestCase.doValidationTest();
 	// }
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateMedicationInformation2TemplateId() {
+		OperationsTestCase<MedicationInformation2> validateMedicationInformation2TemplateIdTestCase = new OperationsTestCase<MedicationInformation2>(
+			"validateMedicationInformation2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationInformation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MedicationInformation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationInformation2Operations.validateMedicationInformation2TemplateId(
+					(MedicationInformation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationInformation2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -193,40 +228,6 @@ public class MedicationInformation2Test extends CDAValidationTest {
 		};
 
 		validateMedicationInformationMedicationInformationManufacturedMaterialCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateMedicationInformationTemplateId() {
-		OperationsTestCase<MedicationInformation2> validateMedicationInformationTemplateIdTestCase = new OperationsTestCase<MedicationInformation2>(
-			"validateMedicationInformationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MedicationInformation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MedicationInformation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MedicationInformation2Operations.validateMedicationInformationTemplateId(
-					(MedicationInformation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMedicationInformationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

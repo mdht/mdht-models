@@ -451,7 +451,7 @@
   <CDA:CDATemplate xmi:id="_WBACIMzDEeO93sHu8pHB2g" base_Class="_RGU34MzDEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.49" templateVersion="2015-08-01">
     <ruleId>CONF:1198-8712, CONF:1198-26353, CONF:1198-32546</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_IkqjYMzEEeO93sHu8pHB2g" base_Generalization="_RGVe8MzDEeO93sHu8pHB2g"/>
+  <CDA:ConformsTo xmi:id="_IkqjYMzEEeO93sHu8pHB2g" base_Generalization="_RGVe8MzDEeO93sHu8pHB2g" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_bj6mMMzFEeO93sHu8pHB2g" severity="INFO" base_Property="_bj5_IMzFEeO93sHu8pHB2g">
     <ruleId>CONF:1198-32176</ruleId>
   </CDA:PropertyValidation>
@@ -480,7 +480,7 @@
   <CDA:CDATemplate xmi:id="_wJ4rAMzNEeO93sHu8pHB2g" base_Class="_jH6CcMzNEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.80" templateVersion="2015-08-01">
     <ruleId>CONF:1198-14895, CONF:1198-14896, CONF:1198-32542</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_K3ogAMzOEeO93sHu8pHB2g" base_Generalization="_jH6CcczNEeO93sHu8pHB2g"/>
+  <CDA:ConformsTo xmi:id="_K3ogAMzOEeO93sHu8pHB2g" base_Generalization="_jH6CcczNEeO93sHu8pHB2g" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_xbAfMMzOEeO93sHu8pHB2g" base_Property="_xa_4IMzOEeO93sHu8pHB2g">
     <ruleId>CONF:1198-19182</ruleId>
   </CDA:PropertyValidation>

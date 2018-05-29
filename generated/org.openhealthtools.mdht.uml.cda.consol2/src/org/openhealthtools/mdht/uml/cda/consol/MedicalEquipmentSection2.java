@@ -20,10 +20,22 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicalEquipmentSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.23' templateId.extension='2014-06-09' constraints.validation.dependOn.MedicalEquipmentSectionCode='MedicalEquipmentSectionCodeP' constraints.validation.warning='MedicalEquipmentSectionNonMedicinalSupplyActivity MedicalEquipmentSection2ProcedureActivityProcedure2' constraints.validation.info='MedicalEquipmentSection2MedicalEquipmentOrganizer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalEquipmentSection2TemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.23' templateId.extension='2014-06-09' constraints.validation.dependOn.MedicalEquipmentSectionCode='MedicalEquipmentSectionCodeP' constraints.validation.warning='MedicalEquipmentSectionNonMedicinalSupplyActivity MedicalEquipmentSection2ProcedureActivityProcedure2' constraints.validation.info='MedicalEquipmentSection2MedicalEquipmentOrganizer'"
  * @generated
  */
 public interface MedicalEquipmentSection2 extends MedicalEquipmentSection {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.23\' and id.extension.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateMedicalEquipmentSection2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -39,6 +39,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MentalStatusObservatio
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateMentalStatusObservation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateMentalStatusObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateMentalStatusObservation2CDTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation2 CD Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateMentalStatusObservation2CDTranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation2 CD Translation P</em>}</li>
@@ -52,7 +53,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MentalStatusObservatio
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateResultObservationCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateResultObservationNoObservationRangeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation No Observation Range Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateResultObservationAuthorMultiplicity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Author Multiplicity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateResultObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateResultObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateResultObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateResultObservationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Id</em>}</li>
@@ -80,6 +80,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MentalStatusObservatio
  */
 
 public class MentalStatusObservation2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateMentalStatusObservation2TemplateId() {
+		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2TemplateIdTestCase = new OperationsTestCase<MentalStatusObservation2>(
+			"validateMentalStatusObservation2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MentalStatusObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MentalStatusObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MentalStatusObservation2Operations.validateMentalStatusObservation2TemplateId(
+					(MentalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMentalStatusObservation2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -490,41 +525,6 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 		};
 
 		validateResultObservationAuthorMultiplicityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-
-	public void testValidateResultObservationTemplateId() {
-		OperationsTestCase<MentalStatusObservation2> validateResultObservationTemplateIdTestCase = new OperationsTestCase<MentalStatusObservation2>(
-			"validateResultObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MentalStatusObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MentalStatusObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MentalStatusObservation2Operations.validateResultObservationTemplateId(
-					(MentalStatusObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateResultObservationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

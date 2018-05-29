@@ -967,9 +967,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+	public boolean validateUSRealmHeader2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransferSummaryOperations.validateUSRealmHeader2TemplateId(this, diagnostics, context);
 	}
 
 	/**

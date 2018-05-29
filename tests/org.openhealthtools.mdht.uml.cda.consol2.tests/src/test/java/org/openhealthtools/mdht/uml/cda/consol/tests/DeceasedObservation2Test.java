@@ -35,8 +35,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DeceasedObservation2Op
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2#validateDeceasedObservation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2#getConsolProblemObservation2() <em>Get Consol Problem Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2#validateDeceasedObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2#validateDeceasedObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2#validateDeceasedObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2#validateDeceasedObservationProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Problem Observation</em>}</li>
@@ -53,22 +53,11 @@ public class DeceasedObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolProblemObservation2() {
 
-		DeceasedObservation2 target = objectFactory.create();
-		target.getConsolProblemObservation2();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateDeceasedObservationTemplateId() {
-		OperationsTestCase<DeceasedObservation2> validateDeceasedObservationTemplateIdTestCase = new OperationsTestCase<DeceasedObservation2>(
-			"validateDeceasedObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_DECEASED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateDeceasedObservation2TemplateId() {
+		OperationsTestCase<DeceasedObservation2> validateDeceasedObservation2TemplateIdTestCase = new OperationsTestCase<DeceasedObservation2>(
+			"validateDeceasedObservation2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_DECEASED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -85,13 +74,25 @@ public class DeceasedObservation2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return DeceasedObservation2Operations.validateDeceasedObservationTemplateId(
+				return DeceasedObservation2Operations.validateDeceasedObservation2TemplateId(
 					(DeceasedObservation2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateDeceasedObservationTemplateIdTestCase.doValidationTest();
+		validateDeceasedObservation2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testGetConsolProblemObservation2() {
+
+		DeceasedObservation2 target = objectFactory.create();
+		target.getConsolProblemObservation2();
+
 	}
 
 	/**

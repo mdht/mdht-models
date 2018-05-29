@@ -51,9 +51,10 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemObservation2> getConsolProblemObservation2s() {
-		return ProcedureFindingsSection2Operations.getConsolProblemObservation2s(this);
+	public boolean validateProcedureFindingsSection2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureFindingsSection2Operations.validateProcedureFindingsSection2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -62,10 +63,8 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureFindingsSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionTemplateId(
-			this, diagnostics, context);
+	public EList<ProblemObservation2> getConsolProblemObservation2s() {
+		return ProcedureFindingsSection2Operations.getConsolProblemObservation2s(this);
 	}
 
 	/**

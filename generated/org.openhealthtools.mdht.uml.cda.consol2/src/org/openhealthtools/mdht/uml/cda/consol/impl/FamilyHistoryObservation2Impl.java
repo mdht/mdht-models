@@ -45,6 +45,17 @@ public class FamilyHistoryObservation2Impl extends FamilyHistoryObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFamilyHistoryObservation2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryObservation2Operations.validateFamilyHistoryObservation2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservation2CDTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryObservation2Operations.validateFamilyHistoryObservation2CDTranslation(
@@ -59,18 +70,6 @@ public class FamilyHistoryObservation2Impl extends FamilyHistoryObservationImpl 
 	public boolean validateFamilyHistoryObservation2CDTranslationP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryObservation2Operations.validateFamilyHistoryObservation2CDTranslationP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFamilyHistoryObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryObservation2Operations.validateFamilyHistoryObservationTemplateId(
 			this, diagnostics, context);
 	}
 

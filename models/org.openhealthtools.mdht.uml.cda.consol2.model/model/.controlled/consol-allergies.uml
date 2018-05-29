@@ -1123,7 +1123,7 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
   <CDA:CDATemplate xmi:id="_ePScoLNxEeOtlapy2HWYww" base_Class="_uCiIYLNwEeOtlapy2HWYww" templateId="2.16.840.1.113883.10.20.22.4.30" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7471, CONF:1198-10489, CONF:1198-32543</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_ptgzcLNxEeOtlapy2HWYww" base_Generalization="_uCivcLNwEeOtlapy2HWYww"/>
+  <CDA:ConformsTo xmi:id="_ptgzcLNxEeOtlapy2HWYww" base_Generalization="_uCivcLNwEeOtlapy2HWYww" requiresParentId="true"/>
   <uml:Association xmi:id="_lUnZMLN0EeOtlapy2HWYww" memberEnd="_lUlkALN0EeOtlapy2HWYww _lUnZMbN0EeOtlapy2HWYww">
     <ownedEnd xmi:id="_lUnZMbN0EeOtlapy2HWYww" type="_uCiIYLNwEeOtlapy2HWYww" association="_lUnZMLN0EeOtlapy2HWYww"/>
   </uml:Association>
@@ -1390,7 +1390,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>CONF:1098-10488</ruleId>
     <ruleId>CONF:1098-32526</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_2XNlALj6EeODDJAC5t5vpw" base_Generalization="_uVNS4Lj5EeODDJAC5t5vpw"/>
+  <CDA:ConformsTo xmi:id="_2XNlALj6EeODDJAC5t5vpw" base_Generalization="_uVNS4Lj5EeODDJAC5t5vpw" requiresParentId="true"/>
   <uml:Association xmi:id="_Gwg5QLj8EeODDJAC5t5vpw" memberEnd="_GwfEELj8EeODDJAC5t5vpw _GwhgULj8EeODDJAC5t5vpw">
     <ownedEnd xmi:id="_GwhgULj8EeODDJAC5t5vpw" type="_uVJogLj5EeODDJAC5t5vpw" association="_Gwg5QLj8EeODDJAC5t5vpw"/>
   </uml:Association>
@@ -1887,7 +1887,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>CONF:1098-10523</ruleId>
     <ruleId>CONF:1098-32504</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_snq-YPDxEeOKPKE9au0oug" base_Generalization="_U3yosfDxEeOKPKE9au0oug"/>
+  <CDA:ConformsTo xmi:id="_snq-YPDxEeOKPKE9au0oug" base_Generalization="_U3yosfDxEeOKPKE9au0oug" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_QhKKMPDyEeOKPKE9au0oug" base_Property="_QhJjIPDyEeOKPKE9au0oug">
     <ruleId>CONF:1098-16851</ruleId>
   </CDA:PropertyValidation>
@@ -1979,7 +1979,7 @@ NOTE -- the severity observation is no longer associated with the allergy and in
     <ruleId>CONF:1098-10525</ruleId>
     <ruleId>CONF:1098-32577</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_b1UFEPJdEeO2NaSiicarcg" base_Generalization="_B0p_kPJdEeO2NaSiicarcg"/>
+  <CDA:ConformsTo xmi:id="_b1UFEPJdEeO2NaSiicarcg" base_Generalization="_B0p_kPJdEeO2NaSiicarcg" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="__Z3isPJdEeO2NaSiicarcg" code="SEV" displayName="Severity" base_Property="__Z27oPJdEeO2NaSiicarcg">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-19169</ruleId>
@@ -2192,7 +2192,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>CONF:1098-16306</ruleId>
     <ruleId>CONF:1098-32527</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_RubQoPKJEeOn7bMsPcStOw" base_Generalization="_K3PWYPKJEeOn7bMsPcStOw"/>
+  <CDA:ConformsTo xmi:id="_RubQoPKJEeOn7bMsPcStOw" base_Generalization="_K3PWYPKJEeOn7bMsPcStOw" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_dvq08PKJEeOn7bMsPcStOw" base_Property="_dvqN4PKJEeOn7bMsPcStOw">
     <ruleId>CONF:1098-16345</ruleId>
   </CDA:PropertyValidation>
@@ -2601,7 +2601,7 @@ This template represents the status of the allergy indicating whether it is acti
     <ruleId>CONF:1098-10490</ruleId>
     <ruleId>DSTU:816/1356</ruleId>
   </CDA:CDATemplate>
-  <CDA:ConformsTo xmi:id="_ut7YIEc3EeiFfJtNAawVHw" base_Generalization="_W5MpkEc1EeiFfJtNAawVHw"/>
+  <CDA:ConformsTo xmi:id="_ut7YIEc3EeiFfJtNAawVHw" base_Generalization="_W5MpkEc1EeiFfJtNAawVHw" requiresParentId="true"/>
   <CDA:CodeSystemConstraint xmi:id="_WXiKIEc5EeiFfJtNAawVHw" code="33999-4" displayName="Status" base_Property="_WXg8AEc5EeiFfJtNAawVHw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-7320</ruleId>

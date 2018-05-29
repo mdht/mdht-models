@@ -32,9 +32,9 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryObservati
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation2#validateFamilyHistoryObservation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation2#validateFamilyHistoryObservation2CDTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation2 CD Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation2#validateFamilyHistoryObservation2CDTranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation2 CD Translation P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation2#validateFamilyHistoryObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation2#validateFamilyHistoryObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation2#validateFamilyHistoryObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Code</em>}</li>
  * </ul>
@@ -44,6 +44,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryObservati
  */
 
 public class FamilyHistoryObservation2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateFamilyHistoryObservation2TemplateId() {
+		OperationsTestCase<FamilyHistoryObservation2> validateFamilyHistoryObservation2TemplateIdTestCase = new OperationsTestCase<FamilyHistoryObservation2>(
+			"validateFamilyHistoryObservation2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FamilyHistoryObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FamilyHistoryObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FamilyHistoryObservation2Operations.validateFamilyHistoryObservation2TemplateId(
+					(FamilyHistoryObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFamilyHistoryObservation2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -116,40 +151,6 @@ public class FamilyHistoryObservation2Test extends CDAValidationTest {
 		};
 
 		validateFamilyHistoryObservation2CDTranslationPTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateFamilyHistoryObservationTemplateId() {
-		OperationsTestCase<FamilyHistoryObservation2> validateFamilyHistoryObservationTemplateIdTestCase = new OperationsTestCase<FamilyHistoryObservation2>(
-			"validateFamilyHistoryObservationTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FamilyHistoryObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(FamilyHistoryObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FamilyHistoryObservation2Operations.validateFamilyHistoryObservationTemplateId(
-					(FamilyHistoryObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFamilyHistoryObservationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

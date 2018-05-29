@@ -46,10 +46,9 @@ public class PhysicianReadingStudyPerformer2Impl extends PhysicianReadingStudyPe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePhysicianReadingStudyPerformerTemplateId(DiagnosticChain diagnostics,
+	public boolean validatePhysicianReadingStudyPerformer2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformer2Operations.validatePhysicianReadingStudyPerformerTemplateId(
+		return PhysicianReadingStudyPerformer2Operations.validatePhysicianReadingStudyPerformer2TemplateId(
 			this, diagnostics, context);
 	}
 

@@ -108,6 +108,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Test extends CDAValidationT
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAdvanceDirectivesSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2> validateAdvanceDirectivesSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2>(
 			"validateAdvanceDirectivesSectionEntriesOptionalTemplateId",

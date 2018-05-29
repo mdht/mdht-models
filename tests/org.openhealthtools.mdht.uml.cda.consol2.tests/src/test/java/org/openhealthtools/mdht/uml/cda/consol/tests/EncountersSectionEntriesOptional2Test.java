@@ -60,6 +60,7 @@ public class EncountersSectionEntriesOptional2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateEncountersSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<EncountersSectionEntriesOptional2> validateEncountersSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<EncountersSectionEntriesOptional2>(
 			"validateEncountersSectionEntriesOptionalTemplateId",
