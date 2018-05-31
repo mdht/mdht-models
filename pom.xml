@@ -62,6 +62,30 @@
 						</dependency>
 					</dependencies>
 				</plugin>
+			    <plugin>
+			      <groupId>org.apache.maven.plugins</groupId>
+			      <artifactId>maven-javadoc-plugin</artifactId>
+			      <version>3.0.1</version>
+			      <configuration>
+			        <tags>
+			          <tag>
+			            <name>model</name>
+			            <placement>a</placement>
+			            <head>Model</head>
+			          </tag>
+			          <tag>
+			            <name>generated</name>
+			            <placement>a</placement>
+			            <head>Generated code</head>
+			          </tag>
+					  <tag>
+			            <name>ordered</name>
+			            <placement>a</placement>
+			            <head>Ordered</head>
+			          </tag>
+			        </tags>
+			      </configuration>
+			    </plugin>				
 			</plugins>
 		</pluginManagement>
 	</build>
