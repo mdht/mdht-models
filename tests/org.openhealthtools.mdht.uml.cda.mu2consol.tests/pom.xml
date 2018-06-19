@@ -92,6 +92,7 @@
 						<id>test-reports</id>
 						<phase>test</phase>
 						<configuration>
+							<skip>${skipTests}</skip>
 							<tasks>
 								<concat destfile="target/surefire-reports/allvalidationresults.xml"
 									force="no">
