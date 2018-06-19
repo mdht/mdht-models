@@ -39,7 +39,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2DocCodesOnly(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Doc Codes Only</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient Guardian Code Terminology</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient TS Birth Time Precise To Minute</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient SDTC Ethnic Group Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient SDTC Ethnic Group Code</em>}</li>
@@ -268,25 +268,27 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code P</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient Guardian Code Terminology</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).guardian->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+	protected static final String VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).guardian->excluding(null)->reject(not code.oclIsUndefined() and code.isNullFlavorUndefined() implies code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = code.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.5.111' and not value.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code P</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient Guardian Code Terminology</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -299,24 +301,24 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(
+	public static boolean validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		if (VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
 					EOCL_ENV.get().createQuery(oclExpression));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
-		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+		Object oclResult = VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
 			usRealmHeader2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
@@ -325,25 +327,11 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P,
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_TERMINOLOGY,
 							ConsolPlugin.INSTANCE.getString(
-								"USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP"),
+								"USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology"),
 							new Object[] { eObject }));
-				}
-
-				if (context != null) {
-					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get(
-						"org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP");
-					if (passToken == null) {
-						// anticipate a reasonably healthy model
-						passToken = new java.util.ArrayList<Object>(3);
-						context.put(
-							"org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP",
-							passToken);
-					}
-					passToken.addAll(oclResultSet);
 				}
 
 			}
@@ -2922,9 +2910,7 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).guardian->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and " +
-			"let value : datatypes::CE = code.oclAsType(datatypes::CE) in " +
-			"value.codeSystem = '2.16.840.1.113883.5.111' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).guardian->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code</em>}' invariant operation.
@@ -2970,21 +2956,11 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
-			Object passFilter = (context == null)
-					? null
-					: context.get(
-						"org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP");
-			if (passFilter instanceof Collection<?>) {
-				// filter my query results
-				oclResultSet = new ArrayList<EObject>(oclResultSet);
-				oclResultSet.removeAll((Collection<?>) passFilter);
-			}
-
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE,
 							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode"),

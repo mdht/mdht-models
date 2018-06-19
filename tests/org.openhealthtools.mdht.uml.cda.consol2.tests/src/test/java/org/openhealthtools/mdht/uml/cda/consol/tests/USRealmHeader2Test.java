@@ -71,7 +71,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.USRealmHeader2Operatio
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2DocCodesOnly(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Doc Codes Only</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient Guardian Code Terminology</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient TS Birth Time Precise To Minute</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient SDTC Ethnic Group Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient SDTC Ethnic Group Code</em>}</li>
@@ -233,11 +233,11 @@ public class USRealmHeader2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP() {
-		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodePTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP",
+	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology() {
+		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminologyTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology",
 			operationsForOCL.getOCLValue(
-				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+				"VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -251,11 +251,14 @@ public class USRealmHeader2Test extends CDAValidationTest {
 				pr.setPatient(pat);
 				Guardian guard = CDAFactory.eINSTANCE.createGuardian();
 				pat.getGuardians().add(guard);
+				CE code = DatatypesFactory.eINSTANCE.createCE();
+				guard.setCode(code);
 			}
 
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
-				CE code = DatatypesFactory.eINSTANCE.createCE();
+				final String ROLE_CODE_CS = "2.16.840.1.113883.5.111";
+				CE code = DatatypesFactory.eINSTANCE.createCE("hasCode", ROLE_CODE_CS);
 				for (RecordTarget rt : target.getRecordTargets()) {
 					for (Guardian guard : rt.getPatientRole().getPatient().getGuardians()) {
 						guard.setCode(code);
@@ -266,13 +269,13 @@ public class USRealmHeader2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(
+				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(
 					(USRealmHeader2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodePTestCase.doValidationTest();
+		validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminologyTestCase.doValidationTest();
 	}
 
 	/**

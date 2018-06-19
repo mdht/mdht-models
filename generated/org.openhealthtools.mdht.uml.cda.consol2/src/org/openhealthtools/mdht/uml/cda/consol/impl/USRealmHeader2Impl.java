@@ -67,9 +67,9 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(
+	public boolean validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(
+		return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(
 			this, diagnostics, context);
 	}
 
