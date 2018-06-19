@@ -6053,11 +6053,21 @@ OIDs SHALL be no more than 64 characters in length..</body>
                 <body>true</body>
               </specification>
             </ownedRule>
+            <ownedRule xmi:id="_gU2qcHPREeiHvud2XbIoDQ" name="codeTerminology" constrainedElement="_al6nABwQEeSMr-NWzQuDBw">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_4LvnEHPREeiHvud2XbIoDQ">
+                <language>Analysis</language>
+                <language>OCL</language>
+                <body>code, if present, SHALL be selected from ValueSet Personal And Legal Relationship Role Type 2.16.840.1.113883.11.20.12.1 DYNAMIC</body>
+                <body>not code.oclIsUndefined() and code.isNullFlavorUndefined() implies code.oclIsKindOf(datatypes::CE) and &#xD;
+let value : datatypes::CE = code.oclAsType(datatypes::CE) in &#xD;
+value.codeSystem = '2.16.840.1.113883.5.111' and not value.code.oclIsUndefined()</body>
+              </specification>
+            </ownedRule>
             <generalization xmi:id="_al7OEBwQEeSMr-NWzQuDBw" general="_-vjwcCylEeGMXrZ0DiQwGg"/>
-            <ownedAttribute xmi:id="_iidm0BwQEeSMr-NWzQuDBw" name="code" visibility="private" aggregation="composite" redefinedProperty="_Cm0V4CymEeGMXrZ0DiQwGg">
+            <ownedAttribute xmi:id="_e0c40HM7EeiHvud2XbIoDQ" name="code" visibility="private" aggregation="composite" redefinedProperty="_Cm0V4CymEeGMXrZ0DiQwGg">
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iidm0RwQEeSMr-NWzQuDBw"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iidm0hwQEeSMr-NWzQuDBw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e0c40XM7EeiHvud2XbIoDQ"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e0c40nM7EeiHvud2XbIoDQ" value="1"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_oC3gIIu1EeSZu6J-Yjmr9w" name="telecom" visibility="private" type="_TJgmcOxkEeG7k4bbVdXbXw" aggregation="composite" redefinedProperty="_Cm088CymEeGMXrZ0DiQwGg">
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oC3gIYu1EeSZu6J-Yjmr9w"/>
@@ -9109,11 +9119,6 @@ When indicating the performer was the primary care physician the functionCode sh
   <CDA:AssociationValidation xmi:id="_IchYsBwQEeSMr-NWzQuDBw" severity="INFO" base_Association="_G1l3IBwQEeSMr-NWzQuDBw">
     <ruleId>CONF:1198-5325</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_iie08BwQEeSMr-NWzQuDBw" severity="WARNING" base_Property="_iidm0BwQEeSMr-NWzQuDBw"/>
-  <CDA:ValueSetConstraint xmi:id="_tNQ8oBwQEeSMr-NWzQuDBw" base_Property="_iidm0BwQEeSMr-NWzQuDBw">
-    <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
-    <ruleId>CONF:1198-5326</ruleId>
-  </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_Iy-UYBwREeSMr-NWzQuDBw" memberEnd="_Iy9GQBwREeSMr-NWzQuDBw _Iy-UYRwREeSMr-NWzQuDBw">
     <ownedEnd xmi:id="_Iy-UYRwREeSMr-NWzQuDBw" type="_AaXVkBwPEeSMr-NWzQuDBw" association="_Iy-UYBwREeSMr-NWzQuDBw"/>
   </uml:Association>
@@ -14847,5 +14852,11 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_RiU_cESsEeiFfJtNAawVHw" base_Constraint="_QjagIESsEeiFfJtNAawVHw">
     <ruleId>DSTU:818</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_e0t-kHM7EeiHvud2XbIoDQ" severity="WARNING" base_Property="_e0c40HM7EeiHvud2XbIoDQ">
+    <ruleId>CONF:1198-5326</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_hJMRcHPREeiHvud2XbIoDQ" base_Constraint="_gU2qcHPREeiHvud2XbIoDQ">
+    <ruleId>CONF:1198-5326</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>

@@ -13389,9 +13389,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeader2/USRealmHeader2TemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeader2/USRealmHeader2TemplateId/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeader2/GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeader2/GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeader2/GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeader2/USRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeader2/USRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeader2/USRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeader2/USRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeader2/USRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute/diagnostics"/>
