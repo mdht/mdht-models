@@ -12,6 +12,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -96,6 +97,8 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 	public static boolean validateSeverityObservation2TemplateId(SeverityObservation2 severityObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeverityObservation2SeverityObservation2TemplateId", "ERROR");
+
 		if (VALIDATE_SEVERITY_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -138,6 +141,8 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 
 	public static boolean validateSeverityObservationCodeP(SeverityObservation2 severityObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeverityObservation2SeverityObservationCodeP", "ERROR");
 
 		if (VALIDATE_SEVERITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -193,6 +198,8 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 
 	public static boolean validateSeverityObservationStatusCodeP(SeverityObservation2 severityObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeverityObservation2SeverityObservationStatusCodeP", "ERROR");
 
 		if (VALIDATE_SEVERITY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -251,6 +258,8 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 	public static boolean validateSeverityObservationTextReference(SeverityObservation2 severityObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeverityObservation2SeverityObservationTextReference", "INFO");
+
 		if (VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -295,6 +304,8 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 	public static boolean validateSeverityObservationTextReferenceValue(SeverityObservation2 severityObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeverityObservation2SeverityObservationTextReferenceValue", "INFO");
+
 		if (VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -338,6 +349,8 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 
 	public static boolean validateSeverityObservationReferenceValue(SeverityObservation2 severityObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeverityObservation2SeverityObservationReferenceValue", "INFO");
 
 		if (VALIDATE_SEVERITY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -411,6 +424,8 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "SeverityObservation2SeverityObservationCode", "ERROR");
 
 		if (VALIDATE_SEVERITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -582,6 +597,8 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 	public static boolean validateSeverityObservationText(SeverityObservation2 severityObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeverityObservation2SeverityObservationText", "ERROR");
+
 		if (VALIDATE_SEVERITY_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -654,6 +671,8 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "SeverityObservation2SeverityObservationStatusCode", "ERROR");
+
 		if (VALIDATE_SEVERITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -717,6 +736,8 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 
 	public static boolean validateSeverityObservationValueP(SeverityObservation2 severityObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeverityObservation2SeverityObservationValueP", "ERROR");
 
 		if (VALIDATE_SEVERITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -803,6 +824,8 @@ public class SeverityObservation2Operations extends SeverityObservationOperation
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "SeverityObservation2SeverityObservationValue", "ERROR");
 
 		if (VALIDATE_SEVERITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

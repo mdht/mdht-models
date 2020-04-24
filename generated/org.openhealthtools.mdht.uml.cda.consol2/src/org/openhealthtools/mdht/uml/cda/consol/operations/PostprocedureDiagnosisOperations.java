@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -101,6 +102,8 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	public static boolean validatePostprocedureDiagnosisTemplateId(PostprocedureDiagnosis postprocedureDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PostprocedureDiagnosisPostprocedureDiagnosisTemplateId", "ERROR");
+
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -166,6 +169,8 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	public static boolean validatePostprocedureDiagnosisClassCode(PostprocedureDiagnosis postprocedureDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PostprocedureDiagnosisPostprocedureDiagnosisClassCode", "ERROR");
+
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -230,6 +235,8 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 
 	public static boolean validatePostprocedureDiagnosisMoodCode(PostprocedureDiagnosis postprocedureDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PostprocedureDiagnosisPostprocedureDiagnosisMoodCode", "ERROR");
 
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -297,6 +304,8 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	public static boolean validatePostprocedureDiagnosisCode(PostprocedureDiagnosis postprocedureDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PostprocedureDiagnosisPostprocedureDiagnosisCode", "ERROR");
+
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -360,6 +369,8 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 
 	public static boolean validatePostprocedureDiagnosisProblemObservation(
 			PostprocedureDiagnosis postprocedureDiagnosis, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PostprocedureDiagnosisPostprocedureDiagnosisProblemObservation", "ERROR");
 
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

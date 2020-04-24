@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -111,6 +112,9 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 	public static boolean validatePlannedEncounter2ParticipantServiceDeliveryLocationTypeCode(
 			PlannedEncounter2 plannedEncounter2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PlannedEncounter2PlannedEncounter2ParticipantServiceDeliveryLocationTypeCode", "ERROR");
+
 		if (VALIDATE_PLANNED_ENCOUNTER2_PARTICIPANT_SERVICE_DELIVERY_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -177,6 +181,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 	public static boolean validatePlannedEncounter2TemplateId(PlannedEncounter2 plannedEncounter2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedEncounter2PlannedEncounter2TemplateId", "ERROR");
+
 		if (VALIDATE_PLANNED_ENCOUNTER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -226,6 +232,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "PlannedEncounter2PlannedEncounter2Code", "WARNING");
 
 		if (VALIDATE_PLANNED_ENCOUNTER2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -313,6 +321,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 	public static boolean validatePlannedEncounter2CodeP(PlannedEncounter2 plannedEncounter2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedEncounter2PlannedEncounter2CodeP", "WARNING");
+
 		if (VALIDATE_PLANNED_ENCOUNTER2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -390,6 +400,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 	public static boolean validatePlannedEncounter2StatusCode(PlannedEncounter2 plannedEncounter2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedEncounter2PlannedEncounter2StatusCode", "ERROR");
+
 		if (VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -453,6 +465,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 	public static boolean validatePlannedEncounter2StatusCodeP(PlannedEncounter2 plannedEncounter2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedEncounter2PlannedEncounter2StatusCodeP", "ERROR");
+
 		if (VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -515,6 +529,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 
 	public static boolean validatePlannedEncounter2EffectiveTime(PlannedEncounter2 plannedEncounter2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedEncounter2PlannedEncounter2EffectiveTime", "WARNING");
 
 		if (VALIDATE_PLANNED_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -580,6 +596,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 	public static boolean validatePlannedEncounter2Performer(PlannedEncounter2 plannedEncounter2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedEncounter2PlannedEncounter2Performer", "INFO");
+
 		if (VALIDATE_PLANNED_ENCOUNTER2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -642,6 +660,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 
 	public static boolean validatePlannedEncounter2ServiceDeliveryLocation(PlannedEncounter2 plannedEncounter2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedEncounter2PlannedEncounter2ServiceDeliveryLocation", "INFO");
 
 		if (VALIDATE_PLANNED_ENCOUNTER2_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -708,6 +728,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 	public static boolean validatePlannedEncounter2PriorityPreference(PlannedEncounter2 plannedEncounter2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedEncounter2PlannedEncounter2PriorityPreference", "INFO");
+
 		if (VALIDATE_PLANNED_ENCOUNTER2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -773,6 +795,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 	public static boolean validatePlannedEncounter2Indication2(PlannedEncounter2 plannedEncounter2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedEncounter2PlannedEncounter2Indication2", "INFO");
+
 		if (VALIDATE_PLANNED_ENCOUNTER2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -835,6 +859,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 
 	public static boolean validatePlannedEncounter2AuthorParticipation(PlannedEncounter2 plannedEncounter2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedEncounter2PlannedEncounter2AuthorParticipation", "WARNING");
 
 		if (VALIDATE_PLANNED_ENCOUNTER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -900,6 +926,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 	@SuppressWarnings("unchecked")
 	public static boolean validatePlannedEncounter2PerformerAssignedEntity(PlannedEncounter2 plannedEncounter2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedEncounter2PlannedEncounter2PerformerAssignedEntity", "ERROR");
 
 		if (VALIDATE_PLANNED_ENCOUNTER2_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1113,6 +1141,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 
 	public static boolean validatePlanOfCareActivityEncounterMoodCode(PlannedEncounter2 plannedEncounter2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedEncounter2PlanOfCareActivityEncounterMoodCode", "ERROR");
 
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

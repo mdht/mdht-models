@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -107,6 +108,8 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2FunctionalStatusObservation2TemplateId", "ERROR");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -173,6 +176,9 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateFunctionalStatusObservation2AuthorParticipation(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusObservation2FunctionalStatusObservation2AuthorParticipation", "WARNING");
 
 		if (VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -288,6 +294,8 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationTextReference", "INFO");
+
 		if (VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -352,6 +360,8 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateResultObservationTextReferenceValue(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationTextReferenceValue", "INFO");
 
 		if (VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -418,6 +428,8 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 
 	public static boolean validateResultObservationCodeP(FunctionalStatusObservation2 functionalStatusObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationCodeP", "ERROR");
 
 		if (VALIDATE_RESULT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -506,6 +518,8 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationCode", "ERROR");
+
 		if (VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -568,6 +582,8 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 
 	public static boolean validateResultObservationText(FunctionalStatusObservation2 functionalStatusObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationText", "ERROR");
 
 		if (VALIDATE_RESULT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -632,6 +648,8 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateResultObservationInterpretationCode(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationInterpretationCode", "ERROR");
 
 		if (VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -699,6 +717,8 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateResultObservationMethodCode(FunctionalStatusObservation2 functionalStatusObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationMethodCode", "ERROR");
+
 		if (VALIDATE_RESULT_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -763,6 +783,8 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateResultObservationTargetSiteCode(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationTargetSiteCode", "ERROR");
 
 		if (VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -829,6 +851,9 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateFunctionalStatusResultObservationReferenceRange(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRange", "INFO");
 
 		if (VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -897,6 +922,9 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FunctionalStatusObservation2FunctionalStatusResultObservationAuthor", "ERROR");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -964,6 +992,9 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FunctionalStatusObservation2FunctionalStatusResultObservationNonMedicinalSupplyActivity", "INFO");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1030,6 +1061,11 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode",
+			"INFO");
 
 		if (VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1102,6 +1138,10 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateFunctionalStatusResultObservationReferenceRangeObservationRange(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRangeObservationRange",
+			"ERROR");
 
 		if (VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

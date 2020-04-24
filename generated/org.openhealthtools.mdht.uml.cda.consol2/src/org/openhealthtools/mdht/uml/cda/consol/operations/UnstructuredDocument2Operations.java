@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -108,6 +109,8 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 	public static boolean validateUnstructuredDocument2RecordTarget(UnstructuredDocument2 unstructuredDocument2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "UnstructuredDocument2UnstructuredDocument2RecordTarget", "ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -173,6 +176,8 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 	public static boolean validateUnstructuredDocument2Custodian(UnstructuredDocument2 unstructuredDocument2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "UnstructuredDocument2UnstructuredDocument2Custodian", "ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -237,6 +242,8 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 	public static boolean validateUnstructuredDocument2Component(UnstructuredDocument2 unstructuredDocument2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "UnstructuredDocument2UnstructuredDocument2Component", "ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -300,6 +307,9 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateUnstructuredDocument2RecordTargetPatientRoleId(
 			UnstructuredDocument2 unstructuredDocument2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "UnstructuredDocument2UnstructuredDocument2RecordTargetPatientRoleId", "ERROR");
 
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -372,6 +382,8 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 	public static boolean validateUnstructuredDocument2RecordTargetPatientRole(
 			UnstructuredDocument2 unstructuredDocument2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "UnstructuredDocument2UnstructuredDocument2RecordTargetPatientRole", "ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -442,6 +454,11 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateUnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization(
 			UnstructuredDocument2 unstructuredDocument2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"UnstructuredDocument2UnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization",
+			"ERROR");
 
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -514,6 +531,9 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 	public static boolean validateUnstructuredDocument2CustodianAssignedCustodian(
 			UnstructuredDocument2 unstructuredDocument2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "UnstructuredDocument2UnstructuredDocument2CustodianAssignedCustodian", "ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -584,6 +604,9 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateUnstructuredDocument2ComponentNonXMLBodyEDMediaType(
 			UnstructuredDocument2 unstructuredDocument2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyEDMediaType", "INFO");
 
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -656,6 +679,10 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 	public static boolean validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation(
 			UnstructuredDocument2 unstructuredDocument2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation",
+			"ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -726,6 +753,9 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateUnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats(
 			UnstructuredDocument2 unstructuredDocument2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats", "ERROR");
 
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -798,6 +828,8 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 	public static boolean validateUnstructuredDocument2ComponentNonXMLBodyText(
 			UnstructuredDocument2 unstructuredDocument2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyText", "ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -869,6 +901,8 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 	public static boolean validateUnstructuredDocument2ComponentNonXMLBody(UnstructuredDocument2 unstructuredDocument2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBody", "ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -939,6 +973,8 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateUSRealmHeader2TemplateId(UnstructuredDocument2 unstructuredDocument2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UnstructuredDocument2USRealmHeader2TemplateId", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

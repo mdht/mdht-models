@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -102,6 +103,9 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 			HospitalDischargeDiagnosis hospitalDischargeDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HospitalDischargeDiagnosisHospitalDischargeDiagnosisProblemObservation", "ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -168,6 +172,8 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	public static boolean validateHospitalDischargeDiagnosisTemplateId(
 			HospitalDischargeDiagnosis hospitalDischargeDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HospitalDischargeDiagnosisHospitalDischargeDiagnosisTemplateId", "ERROR");
 
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -236,6 +242,8 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 			HospitalDischargeDiagnosis hospitalDischargeDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HospitalDischargeDiagnosisHospitalDischargeDiagnosisClassCode", "ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -303,6 +311,8 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 			HospitalDischargeDiagnosis hospitalDischargeDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HospitalDischargeDiagnosisHospitalDischargeDiagnosisMoodCode", "ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -369,6 +379,8 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 
 	public static boolean validateHospitalDischargeDiagnosisCode(HospitalDischargeDiagnosis hospitalDischargeDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HospitalDischargeDiagnosisHospitalDischargeDiagnosisCode", "ERROR");
 
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ParticipantRoleOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -101,6 +102,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	public static boolean validateProductInstanceTemplateId(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProductInstanceProductInstanceTemplateId", "ERROR");
+
 		if (VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -163,6 +166,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 
 	public static boolean validateProductInstanceClassCode(ProductInstance productInstance, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProductInstanceProductInstanceClassCode", "ERROR");
 
 		if (VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -227,6 +232,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	public static boolean validateProductInstanceId(ProductInstance productInstance, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProductInstanceProductInstanceId", "ERROR");
+
 		if (VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -289,6 +296,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 
 	public static boolean validateProductInstanceScopingEntity(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProductInstanceProductInstanceScopingEntity", "ERROR");
 
 		if (VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -353,6 +362,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	public static boolean validateProductInstancePlayingDevice(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProductInstanceProductInstancePlayingDevice", "ERROR");
+
 		if (VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -415,6 +426,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProductInstanceScopingEntityId(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProductInstanceProductInstanceScopingEntityId", "ERROR");
 
 		if (VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -485,6 +498,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProductInstancePlayingDeviceCode(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProductInstanceProductInstancePlayingDeviceCode", "WARNING");
 
 		if (VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

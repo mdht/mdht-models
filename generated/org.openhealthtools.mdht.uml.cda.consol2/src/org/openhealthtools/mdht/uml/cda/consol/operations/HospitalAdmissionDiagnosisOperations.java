@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -102,6 +103,8 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 			HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisTemplateId", "ERROR");
+
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -169,6 +172,8 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 			HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisClassCode", "ERROR");
+
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -213,6 +218,8 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 
 	public static boolean validateHospitalAdmissionDiagnosisCode(HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisCode", "ERROR");
 
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -278,6 +285,8 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	public static boolean validateHospitalAdmissionDiagnosisMoodCode(
 			HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisMoodCode", "ERROR");
 
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -367,6 +376,9 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	public static boolean validateHospitalAdmissionDiagnosisProblemObservation(
 			HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisProblemObservation", "ERROR");
 
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

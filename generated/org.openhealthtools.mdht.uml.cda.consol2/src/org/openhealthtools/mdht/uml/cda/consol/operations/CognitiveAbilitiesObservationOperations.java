@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -107,6 +108,9 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationTemplateId", "ERROR");
+
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -173,6 +177,9 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 	public static boolean validateCognitiveAbilitiesObservationClassCode(
 			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationClassCode", "ERROR");
 
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -241,6 +248,8 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationMoodCode", "ERROR");
+
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -308,6 +317,8 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationId", "ERROR");
+
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -373,6 +384,8 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 	public static boolean validateCognitiveAbilitiesObservationCodeP(
 			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationCodeP", "ERROR");
 
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -466,6 +479,8 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationCode", "WARNING");
+
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -532,6 +547,8 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 	public static boolean validateCognitiveAbilitiesObservationText(
 			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationText", "WARNING");
 
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -601,6 +618,9 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationStatusCode", "ERROR");
+
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -668,6 +688,9 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationStatusCodeP", "ERROR");
+
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -734,6 +757,9 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 	public static boolean validateCognitiveAbilitiesObservationEffectiveTime(
 			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationEffectiveTime", "ERROR");
 
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -804,6 +830,8 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationValue", "WARNING");
+
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -870,6 +898,8 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 	public static boolean validateCognitiveAbilitiesObservationValueP(
 			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationValueP", "ERROR");
 
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -938,6 +968,9 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationAssessmentScaleObservation", "INFO");
+
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1004,6 +1037,9 @@ public class CognitiveAbilitiesObservationOperations extends ClinicalStatementOp
 	public static boolean validateCognitiveAbilitiesObservationAuthorParticipation(
 			CognitiveAbilitiesObservation cognitiveAbilitiesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CognitiveAbilitiesObservationCognitiveAbilitiesObservationAuthorParticipation", "WARNING");
 
 		if (VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -103,6 +104,8 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateDeceasedObservationEffectiveTimeLow(DeceasedObservation deceasedObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DeceasedObservationDeceasedObservationEffectiveTimeLow", "ERROR");
+
 		if (VALIDATE_DECEASED_OBSERVATION_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -168,6 +171,8 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateDeceasedObservationTemplateId(DeceasedObservation deceasedObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DeceasedObservationDeceasedObservationTemplateId", "ERROR");
+
 		if (VALIDATE_DECEASED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -231,6 +236,8 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDeceasedObservationClassCode(DeceasedObservation deceasedObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DeceasedObservationDeceasedObservationClassCode", "ERROR");
 
 		if (VALIDATE_DECEASED_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -296,6 +303,8 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateDeceasedObservationMoodCode(DeceasedObservation deceasedObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DeceasedObservationDeceasedObservationMoodCode", "ERROR");
+
 		if (VALIDATE_DECEASED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -359,6 +368,8 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateDeceasedObservationId(DeceasedObservation deceasedObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DeceasedObservationDeceasedObservationId", "ERROR");
+
 		if (VALIDATE_DECEASED_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -421,6 +432,8 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDeceasedObservationCodeP(DeceasedObservation deceasedObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DeceasedObservationDeceasedObservationCodeP", "ERROR");
 
 		if (VALIDATE_DECEASED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -508,6 +521,8 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "DeceasedObservationDeceasedObservationCode", "ERROR");
+
 		if (VALIDATE_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -571,6 +586,8 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDeceasedObservationStatusCode(DeceasedObservation deceasedObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DeceasedObservationDeceasedObservationStatusCode", "ERROR");
 
 		if (VALIDATE_DECEASED_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -636,6 +653,8 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateDeceasedObservationStatusCodeP(DeceasedObservation deceasedObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DeceasedObservationDeceasedObservationStatusCodeP", "ERROR");
+
 		if (VALIDATE_DECEASED_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -700,6 +719,8 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDeceasedObservationEffectiveTime(DeceasedObservation deceasedObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DeceasedObservationDeceasedObservationEffectiveTime", "ERROR");
 
 		if (VALIDATE_DECEASED_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -768,6 +789,8 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateDeceasedObservationValue(DeceasedObservation deceasedObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DeceasedObservationDeceasedObservationValue", "ERROR");
+
 		if (VALIDATE_DECEASED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -831,6 +854,8 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateDeceasedObservationValueP(DeceasedObservation deceasedObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DeceasedObservationDeceasedObservationValueP", "ERROR");
+
 		if (VALIDATE_DECEASED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -893,6 +918,8 @@ public class DeceasedObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDeceasedObservationProblemObservation(DeceasedObservation deceasedObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DeceasedObservationDeceasedObservationProblemObservation", "WARNING");
 
 		if (VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

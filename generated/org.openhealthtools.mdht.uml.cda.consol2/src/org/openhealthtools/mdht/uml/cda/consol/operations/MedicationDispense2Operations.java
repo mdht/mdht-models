@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -97,6 +98,9 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 	public static boolean validateMedicationDispense2ContainsMedicationInformation2(
 			MedicationDispense2 medicationDispense2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MedicationDispense2MedicationDispense2ContainsMedicationInformation2", "INFO");
+
 		if (VALIDATE_MEDICATION_DISPENSE2_CONTAINS_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -162,6 +166,9 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 
 	public static boolean validateMedicationDispense2ContainsImmunizationMedicationInformation2(
 			MedicationDispense2 medicationDispense2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MedicationDispense2MedicationDispense2ContainsImmunizationMedicationInformation2", "INFO");
 
 		if (VALIDATE_MEDICATION_DISPENSE2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -229,6 +236,8 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 	public static boolean validateMedicationDispense2TemplateId(MedicationDispense2 medicationDispense2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationDispense2MedicationDispense2TemplateId", "ERROR");
+
 		if (VALIDATE_MEDICATION_DISPENSE2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -271,6 +280,8 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 
 	public static boolean validateMedicationDispenseStatusCodeP(MedicationDispense2 medicationDispense2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationDispense2MedicationDispenseStatusCodeP", "ERROR");
 
 		if (VALIDATE_MEDICATION_DISPENSE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -353,6 +364,9 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 
 	public static boolean validateMedicationDispenseContainsMedicationOrImmunization(
 			MedicationDispense2 medicationDispense2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MedicationDispense2MedicationDispenseContainsMedicationOrImmunization", "ERROR");
 
 		if (VALIDATE_MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -492,6 +506,8 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "MedicationDispense2MedicationDispenseStatusCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_DISPENSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -556,6 +572,8 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 	public static boolean validateMedicationDispenseRepeatNumber(MedicationDispense2 medicationDispense2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationDispense2MedicationDispenseRepeatNumber", "WARNING");
+
 		if (VALIDATE_MEDICATION_DISPENSE_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -619,6 +637,8 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 
 	public static boolean validateMedicationDispenseMedicationSupplyOrder(MedicationDispense2 medicationDispense2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationDispense2MedicationDispenseMedicationSupplyOrder", "INFO");
 
 		if (VALIDATE_MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -95,6 +96,8 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	public static boolean validateEstimatedDateOfDeliveryTemplateId(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "EstimatedDateOfDeliveryEstimatedDateOfDeliveryTemplateId", "ERROR");
+
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -159,6 +162,8 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 
 	public static boolean validateEstimatedDateOfDeliveryClassCode(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EstimatedDateOfDeliveryEstimatedDateOfDeliveryClassCode", "ERROR");
 
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -227,6 +232,8 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	public static boolean validateEstimatedDateOfDeliveryCode(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "EstimatedDateOfDeliveryEstimatedDateOfDeliveryCode", "ERROR");
+
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -290,6 +297,8 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 
 	public static boolean validateEstimatedDateOfDeliveryMoodCode(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EstimatedDateOfDeliveryEstimatedDateOfDeliveryMoodCode", "ERROR");
 
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -357,6 +366,8 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	public static boolean validateEstimatedDateOfDeliveryStatusCode(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "EstimatedDateOfDeliveryEstimatedDateOfDeliveryStatusCode", "ERROR");
+
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -421,6 +432,8 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 
 	public static boolean validateEstimatedDateOfDeliveryValue(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EstimatedDateOfDeliveryEstimatedDateOfDeliveryValue", "ERROR");
 
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

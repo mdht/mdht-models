@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.AuthorOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -103,6 +104,8 @@ public class AuthorParticipationOperations extends AuthorOperations {
 	public static boolean validateAuthorParticipationTemplateId(AuthorParticipation authorParticipation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AuthorParticipationAuthorParticipationTemplateId", "ERROR");
+
 		if (VALIDATE_AUTHOR_PARTICIPATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -167,6 +170,8 @@ public class AuthorParticipationOperations extends AuthorOperations {
 	public static boolean validateAuthorParticipationTime(AuthorParticipation authorParticipation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AuthorParticipationAuthorParticipationTime", "ERROR");
+
 		if (VALIDATE_AUTHOR_PARTICIPATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -229,6 +234,8 @@ public class AuthorParticipationOperations extends AuthorOperations {
 
 	public static boolean validateAuthorParticipationAssignedAuthor(AuthorParticipation authorParticipation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AuthorParticipationAuthorParticipationAssignedAuthor", "ERROR");
 
 		if (VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -294,6 +301,9 @@ public class AuthorParticipationOperations extends AuthorOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateAuthorParticipationAssignedAuthorAssignedPersonName(
 			AuthorParticipation authorParticipation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AuthorParticipationAuthorParticipationAssignedAuthorAssignedPersonName", "INFO");
 
 		if (VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -366,6 +376,9 @@ public class AuthorParticipationOperations extends AuthorOperations {
 	public static boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationId(
 			AuthorParticipation authorParticipation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AuthorParticipationAuthorParticipationAssignedAuthorRepresentedOrganizationId", "INFO");
+
 		if (VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -436,6 +449,9 @@ public class AuthorParticipationOperations extends AuthorOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationName(
 			AuthorParticipation authorParticipation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AuthorParticipationAuthorParticipationAssignedAuthorRepresentedOrganizationName", "INFO");
 
 		if (VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -508,6 +524,9 @@ public class AuthorParticipationOperations extends AuthorOperations {
 	public static boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom(
 			AuthorParticipation authorParticipation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AuthorParticipationAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom", "INFO");
+
 		if (VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -578,6 +597,9 @@ public class AuthorParticipationOperations extends AuthorOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationAddr(
 			AuthorParticipation authorParticipation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AuthorParticipationAuthorParticipationAssignedAuthorRepresentedOrganizationAddr", "INFO");
 
 		if (VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -650,6 +672,9 @@ public class AuthorParticipationOperations extends AuthorOperations {
 	public static boolean validateAuthorParticipationAssignedAuthorCodeTerminology(
 			AuthorParticipation authorParticipation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AuthorParticipationAuthorParticipationAssignedAuthorCodeTerminology", "WARNING");
+
 		if (VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_CODE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -721,6 +746,8 @@ public class AuthorParticipationOperations extends AuthorOperations {
 	public static boolean validateAuthorParticipationAssignedAuthorId(AuthorParticipation authorParticipation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AuthorParticipationAuthorParticipationAssignedAuthorId", "ERROR");
+
 		if (VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -790,6 +817,8 @@ public class AuthorParticipationOperations extends AuthorOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateAuthorParticipationAssignedAuthorCode(AuthorParticipation authorParticipation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AuthorParticipationAuthorParticipationAssignedAuthorCode", "WARNING");
 
 		if (VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -861,6 +890,8 @@ public class AuthorParticipationOperations extends AuthorOperations {
 	public static boolean validateAuthorParticipationAssignedAuthorAssignedPerson(
 			AuthorParticipation authorParticipation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AuthorParticipationAuthorParticipationAssignedAuthorAssignedPerson", "INFO");
+
 		if (VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -931,6 +962,9 @@ public class AuthorParticipationOperations extends AuthorOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateAuthorParticipationAssignedAuthorRepresentedOrganization(
 			AuthorParticipation authorParticipation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AuthorParticipationAuthorParticipationAssignedAuthorRepresentedOrganization", "INFO");
 
 		if (VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

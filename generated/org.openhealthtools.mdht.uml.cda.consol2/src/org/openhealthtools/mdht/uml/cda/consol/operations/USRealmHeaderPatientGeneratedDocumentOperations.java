@@ -21,6 +21,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -163,6 +164,9 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTarget", "ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -229,6 +233,9 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentAuthor(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthor", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -297,6 +304,9 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDataEnterer", "INFO");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -363,6 +373,9 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentInformant(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformant", "INFO");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -431,6 +444,9 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentCustodian", "ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -497,6 +513,10 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentInformationRecipient(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformationRecipient",
+			"INFO");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -565,6 +585,10 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentLegalAuthenticator",
+			"INFO");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -631,6 +655,9 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentAuthenticator(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthenticator", "INFO");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -699,6 +726,9 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentParticipant", "INFO");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -765,6 +795,10 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf",
+			"INFO");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -833,6 +867,10 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOf",
+			"INFO");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -899,6 +937,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId",
+			"WARNING");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -971,6 +1014,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP",
+			"WARNING");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1060,6 +1108,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1142,6 +1195,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd",
+			"INFO");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PREFERENCE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1213,6 +1271,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm",
+			"ERROR");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_IF_MORE_THAN_ONE_LANG_COMM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1286,6 +1349,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian",
+			"INFO");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1357,6 +1425,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication",
+			"WARNING");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1430,6 +1503,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1501,6 +1579,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient",
+			"ERROR");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1574,6 +1657,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization",
+			"INFO");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1645,6 +1733,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole",
+			"ERROR");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1718,6 +1811,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology",
+			"WARNING");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1789,6 +1887,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode",
+			"ERROR");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1862,6 +1965,10 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1933,6 +2040,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode",
+			"WARNING");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2006,6 +2118,10 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2077,6 +2193,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP",
+			"INFO");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2166,6 +2287,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode",
+			"WARNING");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2248,6 +2374,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2319,6 +2450,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP",
+			"INFO");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2408,6 +2544,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode",
+			"WARNING");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2490,6 +2631,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_HAS_RELATED_ENTITY_OR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2561,6 +2707,10 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity",
+			"INFO");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2634,6 +2784,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2705,6 +2860,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization",
+			"ERROR");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2778,6 +2938,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2849,6 +3014,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot",
+			"WARNING");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2922,6 +3092,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId",
+			"WARNING");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2993,6 +3168,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient",
+			"ERROR");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3066,6 +3246,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology",
+			"WARNING");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3137,6 +3322,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode",
+			"INFO");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3210,6 +3400,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3281,6 +3476,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode",
+			"INFO");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3354,6 +3554,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3426,6 +3631,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3497,6 +3707,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP",
+			"WARNING");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3586,6 +3801,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode",
+			"WARNING");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3668,6 +3888,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3739,6 +3964,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP",
+			"WARNING");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3828,6 +4058,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode",
+			"WARNING");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3910,6 +4145,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodes",
+			"WARNING");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_IF_TYPE_CODE_IND_THEN_AE_CLASS_CODE_FROM_IND_ROLECLASS_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3981,6 +4221,10 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentParticipantTypeCode(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentParticipantTypeCode",
+			"ERROR");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4054,6 +4298,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4125,6 +4374,10 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId",
+			"ERROR");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4198,6 +4451,10 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4270,6 +4527,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4341,6 +4603,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP",
+			"INFO");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4430,6 +4697,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode",
+			"WARNING");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4511,6 +4783,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP",
+			"INFO");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4600,6 +4877,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4682,6 +4964,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4753,6 +5040,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode",
+			"WARNING");
 
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4826,6 +5118,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer",
+			"WARNING");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4898,6 +5195,11 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4969,6 +5271,8 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 	public static boolean validateUSRealmHeader2TemplateId(
 			USRealmHeaderPatientGeneratedDocument usRealmHeaderPatientGeneratedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeaderPatientGeneratedDocumentUSRealmHeader2TemplateId", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -9,6 +9,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -91,6 +92,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	public static boolean validateCriticalityObservationTemplateId(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationTemplateId", "ERROR");
+
 		if (VALIDATE_CRITICALITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -155,6 +158,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateCriticalityObservationClassCode(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationClassCode", "ERROR");
 
 		if (VALIDATE_CRITICALITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -221,6 +226,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	public static boolean validateCriticalityObservationMoodCode(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationMoodCode", "ERROR");
+
 		if (VALIDATE_CRITICALITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -284,6 +291,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateCriticalityObservationCodeP(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationCodeP", "ERROR");
 
 		if (VALIDATE_CRITICALITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -372,6 +381,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationCode", "ERROR");
+
 		if (VALIDATE_CRITICALITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -437,6 +448,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	public static boolean validateCriticalityObservationStatusCode(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationStatusCode", "ERROR");
+
 		if (VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -501,6 +514,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateCriticalityObservationStatusCodeP(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationStatusCodeP", "ERROR");
 
 		if (VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -569,6 +584,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	public static boolean validateCriticalityObservationValue(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationValue", "ERROR");
+
 		if (VALIDATE_CRITICALITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -632,6 +649,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateCriticalityObservationValueP(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationValueP", "ERROR");
 
 		if (VALIDATE_CRITICALITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

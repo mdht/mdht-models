@@ -2,15 +2,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
@@ -35,7 +31,7 @@ public interface EncountersSection extends EncountersSectionEntriesOptional {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(consol::EncounterActivities))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(consol::EncounterActivities))'"
 	 * @generated
 	 */
 	boolean validateEncountersSectionEncounterActivities(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -44,7 +40,7 @@ public interface EncountersSection extends EncountersSectionEntriesOptional {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncounterActivities)).oclAsType(consol::EncounterActivities)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()-&gt;select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncounterActivities)).oclAsType(consol::EncounterActivities)'"
 	 * @generated
 	 */
 	EList<EncounterActivities> getConsolEncounterActivitiess();

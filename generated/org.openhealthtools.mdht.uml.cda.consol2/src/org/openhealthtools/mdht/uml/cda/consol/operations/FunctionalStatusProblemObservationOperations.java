@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -118,6 +119,9 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FunctionalStatusProblemObservationFunctionalStatusProblemObservationMethodCode", "INFO");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -184,6 +188,10 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 	public static boolean validateFunctionalStatusProblemObservationNonMedicinalSupplyActivity(
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusProblemObservationFunctionalStatusProblemObservationNonMedicinalSupplyActivity",
+			"INFO");
 
 		if (VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -252,6 +260,10 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FunctionalStatusProblemObservationFunctionalStatusProblemObservationCaregiverCharacteristics",
+			"INFO");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -318,6 +330,10 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 	public static boolean validateFunctionalStatusProblemObservationAssessmentScaleObservation(
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusProblemObservationFunctionalStatusProblemObservationAssessmentScaleObservation",
+			"INFO");
 
 		if (VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -535,6 +551,9 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FunctionalStatusProblemObservationProblemObservationHasTextReference", "WARNING");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -601,6 +620,9 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 	public static boolean validateProblemObservationTextReferenceValue(
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusProblemObservationProblemObservationTextReferenceValue", "WARNING");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -669,6 +691,9 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FunctionalStatusProblemObservationProblemObservationHasTextReferenceValue", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -735,6 +760,8 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 	public static boolean validateProblemObservationHasOnsetDate(
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusProblemObservationProblemObservationHasOnsetDate", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_HAS_ONSET_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -803,6 +830,9 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FunctionalStatusProblemObservationProblemObservationHasResolutionDate", "WARNING");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -869,6 +899,8 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 	public static boolean validateProblemObservationValueNullFlavor(
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusProblemObservationProblemObservationValueNullFlavor", "INFO");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -937,6 +969,8 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FunctionalStatusProblemObservationProblemObservationTemplateId", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1002,6 +1036,8 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 	public static boolean validateProblemObservationClassCode(
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusProblemObservationProblemObservationClassCode", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1069,6 +1105,8 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FunctionalStatusProblemObservationProblemObservationMoodCode", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1133,6 +1171,8 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 	public static boolean validateProblemObservationNegationInd(
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusProblemObservationProblemObservationNegationInd", "INFO");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1200,6 +1240,8 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FunctionalStatusProblemObservationProblemObservationId", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1263,6 +1305,8 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 	public static boolean validateProblemObservationCodeP(
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusProblemObservationProblemObservationCodeP", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1353,6 +1397,8 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "FunctionalStatusProblemObservationProblemObservationCode", "WARNING");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1416,6 +1462,8 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 	public static boolean validateProblemObservationText(
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusProblemObservationProblemObservationText", "WARNING");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1481,6 +1529,8 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 	public static boolean validateProblemObservationStatusCode(
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusProblemObservationProblemObservationStatusCode", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1548,6 +1598,9 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FunctionalStatusProblemObservationProblemObservationEffectiveTime", "WARNING");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1614,6 +1667,8 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 	public static boolean validateProblemObservationValueP(
 			FunctionalStatusProblemObservation functionalStatusProblemObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusProblemObservationProblemObservationValueP", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1703,6 +1758,8 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "FunctionalStatusProblemObservationProblemObservationValue", "WARNING");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

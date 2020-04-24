@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -97,6 +98,9 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentTemplateId", "ERROR");
+
 		if (VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -163,6 +167,9 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	public static boolean validateCharacteristicsOfHomeEnvironmentClassCode(
 			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentClassCode", "ERROR");
 
 		if (VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -231,6 +238,9 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentMoodCode", "ERROR");
+
 		if (VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -298,6 +308,8 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentId", "ERROR");
+
 		if (VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -364,6 +376,9 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	public static boolean validateCharacteristicsOfHomeEnvironmentCodeP(
 			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentCodeP", "ERROR");
 
 		if (VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -457,6 +472,9 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			return true;
 		}
 
+		DatatypesUtil.increment(
+			context, "CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentCode", "ERROR");
+
 		if (VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -525,6 +543,9 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentStatusCode", "ERROR");
+
 		if (VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -591,6 +612,9 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	public static boolean validateCharacteristicsOfHomeEnvironmentStatusCodeP(
 			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentStatusCodeP", "ERROR");
 
 		if (VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -661,6 +685,9 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentValue", "WARNING");
+
 		if (VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -727,6 +754,9 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	public static boolean validateCharacteristicsOfHomeEnvironmentValueP(
 			CharacteristicsOfHomeEnvironment characteristicsOfHomeEnvironment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentValueP", "ERROR");
 
 		if (VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

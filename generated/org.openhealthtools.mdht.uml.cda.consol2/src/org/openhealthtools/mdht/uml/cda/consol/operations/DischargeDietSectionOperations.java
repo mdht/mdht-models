@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,8 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	public static boolean validateDischargeDietSectionTemplateId(DischargeDietSection dischargeDietSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeDietSectionDischargeDietSectionTemplateId", "ERROR");
+
 		if (VALIDATE_DISCHARGE_DIET_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -161,6 +164,8 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	public static boolean validateDischargeDietSectionCode(DischargeDietSection dischargeDietSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeDietSectionDischargeDietSectionCode", "ERROR");
+
 		if (VALIDATE_DISCHARGE_DIET_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -223,6 +228,8 @@ public class DischargeDietSectionOperations extends SectionOperations {
 
 	public static boolean validateDischargeDietSectionCodeP(DischargeDietSection dischargeDietSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeDietSectionDischargeDietSectionCodeP", "ERROR");
 
 		if (VALIDATE_DISCHARGE_DIET_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -287,6 +294,8 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	public static boolean validateDischargeDietSectionTitle(DischargeDietSection dischargeDietSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeDietSectionDischargeDietSectionTitle", "ERROR");
+
 		if (VALIDATE_DISCHARGE_DIET_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -349,6 +358,8 @@ public class DischargeDietSectionOperations extends SectionOperations {
 
 	public static boolean validateDischargeDietSectionText(DischargeDietSection dischargeDietSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeDietSectionDischargeDietSectionText", "ERROR");
 
 		if (VALIDATE_DISCHARGE_DIET_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

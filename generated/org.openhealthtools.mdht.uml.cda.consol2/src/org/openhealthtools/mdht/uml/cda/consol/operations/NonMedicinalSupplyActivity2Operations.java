@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -98,6 +99,9 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2InversionInd", "ERROR");
+
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -165,6 +169,8 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2TemplateId", "ERROR");
+
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -231,6 +237,8 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	public static boolean validateNonMedicinalSupplyActivityStatusCodeP(
 			NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCodeP", "ERROR");
 
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -312,6 +320,8 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	public static boolean validateNonMedicinalSupplyActivity2Instruction2(
 			NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2", "INFO");
 
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -480,6 +490,8 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCode", "ERROR");
+
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -546,6 +558,9 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	public static boolean validateNonMedicinalSupplyActivityProductInstance(
 			NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "NonMedicinalSupplyActivity2NonMedicinalSupplyActivityProductInstance", "INFO");
 
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

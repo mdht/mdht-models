@@ -11,6 +11,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -86,6 +87,8 @@ public class Instruction2Operations extends InstructionsOperations {
 	public static boolean validateInstruction2TemplateId(Instruction2 instruction2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "Instruction2Instruction2TemplateId", "ERROR");
+
 		if (VALIDATE_INSTRUCTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -148,6 +151,8 @@ public class Instruction2Operations extends InstructionsOperations {
 
 	public static boolean validateInstructionsText(Instruction2 instruction2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "Instruction2InstructionsText", "ERROR");
 
 		if (VALIDATE_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

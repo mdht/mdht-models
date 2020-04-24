@@ -27,6 +27,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -131,6 +132,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationClassCode", "ERROR");
+
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -198,6 +202,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationMoodCode", "ERROR");
+
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -264,6 +271,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	public static boolean validateLongitudinalCareWoundObservationCodeP(
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationCodeP", "ERROR");
 
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -357,6 +367,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			return true;
 		}
 
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationCode", "ERROR");
+
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -423,6 +436,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	public static boolean validateLongitudinalCareWoundObservationValueP(
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationValueP", "ERROR");
 
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -516,6 +532,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			return true;
 		}
 
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationValue", "WARNING");
+
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -561,6 +580,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	public static boolean validateLongitudinalCareWoundObservationTargetSiteCodeP(
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationTargetSiteCodeP", "WARNING");
 
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -652,6 +674,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationTargetSiteCode", "WARNING");
+
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -718,6 +743,10 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	public static boolean validateLongitudinalCareWoundObservationWoundMeasurementObservation(
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationWoundMeasurementObservation",
+			"WARNING");
 
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -786,6 +815,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationWoundCharacteristics", "WARNING");
+
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -852,6 +884,10 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	public static boolean validateLongitudinalCareWoundObservationHighestPressureUlcerStage(
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationHighestPressureUlcerStage",
+			"INFO");
 
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -920,6 +956,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationAuthorParticipation", "WARNING");
+
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -987,6 +1026,11 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"LongitudinalCareWoundObservationLongitudinalCareWoundObservationNumberOfPressureUlcersObservation2",
+			"INFO");
+
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1053,6 +1097,10 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	public static boolean validateLongitudinalCareWoundObservationCDCRCDValueTerminology(
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRCDValueTerminology",
+			"WARNING");
 
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1125,6 +1173,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	public static boolean validateLongitudinalCareWoundObservationCDCRCDCode(
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRCDCode", "ERROR");
 
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1200,6 +1251,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRName", "ERROR");
+
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1271,6 +1325,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	public static boolean validateLongitudinalCareWoundObservationCDCRNameP(
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRNameP", "ERROR");
 
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1344,6 +1401,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRValue", "ERROR");
+
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1415,6 +1475,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	public static boolean validateLongitudinalCareWoundObservationCDQualifier(
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDQualifier", "INFO");
 
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CD_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1683,6 +1746,8 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	public static boolean validateProblemObservation2TemplateId(
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "LongitudinalCareWoundObservationProblemObservation2TemplateId", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

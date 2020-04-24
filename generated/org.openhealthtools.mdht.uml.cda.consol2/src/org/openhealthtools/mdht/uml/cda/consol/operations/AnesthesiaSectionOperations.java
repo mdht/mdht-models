@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -105,6 +106,8 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	public static boolean validateAnesthesiaSectionTemplateId(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AnesthesiaSectionAnesthesiaSectionTemplateId", "ERROR");
+
 		if (VALIDATE_ANESTHESIA_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -170,6 +173,8 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	public static boolean validateAnesthesiaSectionCode(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AnesthesiaSectionAnesthesiaSectionCode", "ERROR");
+
 		if (VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -233,6 +238,8 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	public static boolean validateAnesthesiaSectionCodeP(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AnesthesiaSectionAnesthesiaSectionCodeP", "ERROR");
+
 		if (VALIDATE_ANESTHESIA_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -274,6 +281,8 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 
 	public static boolean validateAnesthesiaSectionText(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AnesthesiaSectionAnesthesiaSectionText", "ERROR");
 
 		if (VALIDATE_ANESTHESIA_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -359,6 +368,8 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	public static boolean validateAnesthesiaSectionTitle(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AnesthesiaSectionAnesthesiaSectionTitle", "ERROR");
+
 		if (VALIDATE_ANESTHESIA_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -421,6 +432,8 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 
 	public static boolean validateAnesthesiaSectionProcedureActivityProcedure(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AnesthesiaSectionAnesthesiaSectionProcedureActivityProcedure", "INFO");
 
 		if (VALIDATE_ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -486,6 +499,8 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 
 	public static boolean validateAnesthesiaSectionMedicationActivity(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AnesthesiaSectionAnesthesiaSectionMedicationActivity", "INFO");
 
 		if (VALIDATE_ANESTHESIA_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

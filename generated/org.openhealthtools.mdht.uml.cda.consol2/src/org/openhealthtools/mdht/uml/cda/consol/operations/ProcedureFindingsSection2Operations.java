@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -95,6 +96,8 @@ public class ProcedureFindingsSection2Operations extends ProcedureFindingsSectio
 	public static boolean validateProcedureFindingsSection2TemplateId(
 			ProcedureFindingsSection2 procedureFindingsSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureFindingsSection2ProcedureFindingsSection2TemplateId", "ERROR");
 
 		if (VALIDATE_PROCEDURE_FINDINGS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -211,6 +214,8 @@ public class ProcedureFindingsSection2Operations extends ProcedureFindingsSectio
 	public static boolean validateProcedureFindingsSectionCodeP(ProcedureFindingsSection2 procedureFindingsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureFindingsSection2ProcedureFindingsSectionCodeP", "ERROR");
+
 		if (VALIDATE_PROCEDURE_FINDINGS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -298,6 +303,8 @@ public class ProcedureFindingsSection2Operations extends ProcedureFindingsSectio
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ProcedureFindingsSection2ProcedureFindingsSectionCode", "ERROR");
+
 		if (VALIDATE_PROCEDURE_FINDINGS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -362,6 +369,8 @@ public class ProcedureFindingsSection2Operations extends ProcedureFindingsSectio
 	public static boolean validateProcedureFindingsSectionProblemObservation(
 			ProcedureFindingsSection2 procedureFindingsSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureFindingsSection2ProcedureFindingsSectionProblemObservation", "INFO");
 
 		if (VALIDATE_PROCEDURE_FINDINGS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

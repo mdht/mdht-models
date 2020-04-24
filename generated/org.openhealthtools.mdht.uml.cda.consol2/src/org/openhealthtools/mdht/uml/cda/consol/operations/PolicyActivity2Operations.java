@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -138,6 +139,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivity2TemplateId(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivity2TemplateId", "ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -179,6 +182,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 
 	public static boolean validatePolicyActivityStatusCodeP(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityStatusCodeP", "ERROR");
 
 		if (VALIDATE_POLICY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -235,6 +240,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -284,6 +294,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
 
 		if (VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -335,6 +350,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -384,6 +404,10 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PolicyActivity2PolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
 
 		if (VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -435,6 +459,10 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PolicyActivity2PolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -484,6 +512,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
 
 		if (VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -535,6 +568,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
+
 		if (VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -584,6 +622,10 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PolicyActivity2PolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
 
 		if (VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -635,6 +677,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -684,6 +731,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -735,6 +787,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -784,6 +841,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
 
 		if (VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -835,6 +897,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -884,6 +951,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
 
 		if (VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -935,6 +1007,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -984,6 +1061,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
 
 		if (VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1035,6 +1117,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
+
 		if (VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1084,6 +1171,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
 
 		if (VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1135,6 +1227,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1184,6 +1281,11 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"PolicyActivity2PolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1235,6 +1337,10 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PolicyActivity2PolicyActivityCoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime",
+			"INFO");
+
 		if (VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY_DATE_OF_BIRTH_IN_SDT_CBIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1284,6 +1390,9 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PolicyActivity2PolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime", "ERROR");
 
 		if (VALIDATE_POLICY_ACTIVITY2_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY_SDTC_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1335,6 +1444,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivity2CDTranslation(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivity2CDTranslation", "WARNING");
+
 		if (VALIDATE_POLICY_ACTIVITY2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1384,6 +1495,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivity2CDTranslationP(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivity2CDTranslationP", "ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1432,6 +1545,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 
 	public static boolean validatePolicyActivityCodeP(PolicyActivity2 policyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityCodeP", "ERROR");
 
 		if (VALIDATE_POLICY_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2071,6 +2186,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityCode", "WARNING");
+
 		if (VALIDATE_POLICY_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2143,6 +2260,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityStatusCode", "ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2205,6 +2324,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 
 	public static boolean validatePolicyActivityPayer(PolicyActivity2 policyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityPayer", "ERROR");
 
 		if (VALIDATE_POLICY_ACTIVITY_PAYER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2269,6 +2390,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivityGuarantor(PolicyActivity2 policyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityGuarantor", "WARNING");
+
 		if (VALIDATE_POLICY_ACTIVITY_GUARANTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2332,6 +2455,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivityCoverage(PolicyActivity2 policyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityCoverage", "ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2394,6 +2519,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivityPayerPayerAssignedEntityAddr(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityPayerPayerAssignedEntityAddr", "INFO");
 
 		if (VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2466,6 +2593,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivityPayerPayerAssignedEntityTelecom(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityPayerPayerAssignedEntityTelecom", "INFO");
+
 		if (VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2537,6 +2666,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivityPayerTemplateId(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityPayerTemplateId", "ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY_PAYER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2607,6 +2738,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivityPayerPayerAssignedEntity(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityPayerPayerAssignedEntity", "ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2676,6 +2809,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivityGuarantorGuarantorAssignedEntityCodeP(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityGuarantorGuarantorAssignedEntityCodeP", "ERROR");
 
 		if (VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2764,6 +2899,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivityGuarantorGuarantorAssignedEntityCode(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityGuarantorGuarantorAssignedEntityCode", "ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2845,6 +2982,9 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PolicyActivity2PolicyActivityGuarantorGuarantorAssignedEntityAddr", "WARNING");
+
 		if (VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2915,6 +3055,9 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivityGuarantorGuarantorAssignedEntityTelecom(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PolicyActivity2PolicyActivityGuarantorGuarantorAssignedEntityTelecom", "WARNING");
 
 		if (VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2987,6 +3130,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivityGuarantorTemplateId(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityGuarantorTemplateId", "ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY_GUARANTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3057,6 +3202,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivityGuarantorTypeCode(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityGuarantorTypeCode", "ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY_GUARANTOR_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3126,6 +3273,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivityGuarantorGuarantorAssignedEntity(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityGuarantorGuarantorAssignedEntity", "ERROR");
 
 		if (VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3198,6 +3347,9 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PolicyActivity2PolicyActivityCoverageCoverageRoleCoveragePlayingEntityName", "ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3269,6 +3421,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivityCoverageCoverageRoleId(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityCoverageCoverageRoleId", "ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3338,6 +3492,9 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity(
 			PolicyActivity2 policyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PolicyActivity2PolicyActivityCoverageCoverageRoleCoveragePlayingEntity", "WARNING");
 
 		if (VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3410,6 +3567,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	public static boolean validatePolicyActivityCoverageTemplateId(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityCoverageTemplateId", "ERROR");
+
 		if (VALIDATE_POLICY_ACTIVITY_COVERAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3479,6 +3638,8 @@ public class PolicyActivity2Operations extends PolicyActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePolicyActivityCoverageCoverageRole(PolicyActivity2 policyActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PolicyActivity2PolicyActivityCoverageCoverageRole", "ERROR");
 
 		if (VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

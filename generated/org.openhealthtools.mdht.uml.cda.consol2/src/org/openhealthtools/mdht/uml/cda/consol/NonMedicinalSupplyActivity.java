@@ -2,16 +2,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.Supply;
 
 /**
@@ -32,7 +27,7 @@ public interface NonMedicinalSupplyActivity extends Supply {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->size() = 1 implies self.effectiveTime.oclAsType(datatypes::IVL_TS)->forAll(high->size() = 1)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime-&gt;size() = 1 implies self.effectiveTime.oclAsType(datatypes::IVL_TS)-&gt;forAll(high-&gt;size() = 1)'"
 	 * @generated
 	 */
 	boolean validateNonMedicinalSupplyActivityEffectiveTimeHigh(DiagnosticChain diagnostics,
@@ -45,7 +40,7 @@ public interface NonMedicinalSupplyActivity extends Supply {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ProductInstance))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::PRD)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ProductInstance))-&gt;forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::PRD)'"
 	 * @generated
 	 */
 	boolean validateNonMedicinalSupplyActivityProductInstanceTypeCode(DiagnosticChain diagnostics,
@@ -58,7 +53,7 @@ public interface NonMedicinalSupplyActivity extends Supply {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.50\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.50\')'"
 	 * @generated
 	 */
 	boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -94,7 +89,7 @@ public interface NonMedicinalSupplyActivity extends Supply {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id-&gt;isEmpty() or self.id-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.id-&gt;isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validateNonMedicinalSupplyActivityId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -118,7 +113,7 @@ public interface NonMedicinalSupplyActivity extends Supply {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (( not self.effectiveTime->isEmpty()) )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime-&gt;isEmpty() or self.effectiveTime-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.effectiveTime-&gt;isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validateNonMedicinalSupplyActivityEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -142,7 +137,7 @@ public interface NonMedicinalSupplyActivity extends Supply {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(participant : cda::Participant2 | not participant.participantRole.oclIsUndefined() and participant.participantRole.oclIsKindOf(consol::ProductInstance))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;one(participant : cda::Participant2 | not participant.participantRole.oclIsUndefined() and participant.participantRole.oclIsKindOf(consol::ProductInstance))'"
 	 * @generated
 	 */
 	boolean validateNonMedicinalSupplyActivityProductInstance(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -151,7 +146,7 @@ public interface NonMedicinalSupplyActivity extends Supply {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance))->asSequence()->any(true).oclAsType(consol::ProductInstance)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getParticipantRoles()-&gt;select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance))-&gt;asSequence()-&gt;any(true).oclAsType(consol::ProductInstance)'"
 	 * @generated
 	 */
 	ProductInstance getProductInstance();

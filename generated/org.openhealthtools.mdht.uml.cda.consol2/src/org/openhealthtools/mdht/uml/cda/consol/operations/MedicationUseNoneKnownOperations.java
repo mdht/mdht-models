@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -101,6 +102,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	public static boolean validateMedicationUseNoneKnownTextReference(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownTextReference", "WARNING");
+
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -165,6 +168,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownTextReferenceValue(
 			MedicationUseNoneKnown medicationUseNoneKnown, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownTextReferenceValue", "WARNING");
 
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -232,6 +237,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	public static boolean validateMedicationUseNoneKnownReferenceValue(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownReferenceValue", "ERROR");
+
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -296,6 +303,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownTemplateId(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownTemplateId", "ERROR");
 
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -362,6 +371,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	public static boolean validateMedicationUseNoneKnownClassCode(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownClassCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -426,6 +437,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownMoodCode(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownMoodCode", "ERROR");
 
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -492,6 +505,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	public static boolean validateMedicationUseNoneKnownId(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownId", "ERROR");
+
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -555,6 +570,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownCodeP(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownCodeP", "ERROR");
 
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -643,6 +660,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -706,6 +725,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownEffectiveTime(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownEffectiveTime", "WARNING");
 
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -773,6 +794,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	public static boolean validateMedicationUseNoneKnownStatusCode(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownStatusCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -838,6 +861,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	public static boolean validateMedicationUseNoneKnownStatusCodeP(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownStatusCodeP", "ERROR");
+
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -902,6 +927,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownText(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownText", "INFO");
 
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -969,6 +996,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	public static boolean validateMedicationUseNoneKnownValue(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownValue", "ERROR");
+
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1032,6 +1061,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownValueP(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationUseNoneKnownMedicationUseNoneKnownValueP", "ERROR");
 
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -12,6 +12,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.AuthorOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -87,6 +88,8 @@ public class ObserverContextOperations extends AuthorOperations {
 	public static boolean validateObserverContextTemplateId(ObserverContext observerContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ObserverContextObserverContextTemplateId", "ERROR");
+
 		if (VALIDATE_OBSERVER_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -149,6 +152,8 @@ public class ObserverContextOperations extends AuthorOperations {
 
 	public static boolean validateObserverContextAssignedAuthor(ObserverContext observerContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ObserverContextObserverContextAssignedAuthor", "ERROR");
 
 		if (VALIDATE_OBSERVER_CONTEXT_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

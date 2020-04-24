@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -95,6 +96,8 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	public static boolean validateAllergyStatusObservationTemplateId(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyStatusObservationAllergyStatusObservationTemplateId", "ERROR");
+
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -160,6 +163,8 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	public static boolean validateAllergyStatusObservationClassCode(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyStatusObservationAllergyStatusObservationClassCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -224,6 +229,8 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 
 	public static boolean validateAllergyStatusObservationMoodCode(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyStatusObservationAllergyStatusObservationMoodCode", "ERROR");
 
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -292,6 +299,8 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	public static boolean validateAllergyStatusObservationCode(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyStatusObservationAllergyStatusObservationCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -356,6 +365,8 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 
 	public static boolean validateAllergyStatusObservationStatusCode(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyStatusObservationAllergyStatusObservationStatusCode", "ERROR");
 
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -423,6 +434,8 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 
 	public static boolean validateAllergyStatusObservationValue(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyStatusObservationAllergyStatusObservationValue", "ERROR");
 
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

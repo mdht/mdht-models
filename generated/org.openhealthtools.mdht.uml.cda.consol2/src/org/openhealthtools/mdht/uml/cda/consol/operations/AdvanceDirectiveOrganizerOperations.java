@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.OrganizerOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -103,6 +104,8 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerTemplateId", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -169,6 +172,8 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerClassCode", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -234,6 +239,8 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	public static boolean validateAdvanceDirectiveOrganizerMoodCode(AdvanceDirectiveOrganizer advanceDirectiveOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerMoodCode", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -298,6 +305,8 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateAdvanceDirectiveOrganizerId(AdvanceDirectiveOrganizer advanceDirectiveOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerId", "ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -365,6 +374,8 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	public static boolean validateAdvanceDirectiveOrganizerCode(AdvanceDirectiveOrganizer advanceDirectiveOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCode", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -428,6 +439,8 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateAdvanceDirectiveOrganizerCodeP(AdvanceDirectiveOrganizer advanceDirectiveOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCodeP", "ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -494,6 +507,8 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	public static boolean validateAdvanceDirectiveOrganizerStatusCodeP(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCodeP", "ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -585,6 +600,8 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCode", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -650,6 +667,9 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	public static boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerAdvanceDirectiveObservation2", "ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -717,6 +737,9 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	public static boolean validateAdvanceDirectiveOrganizerAuthorParticipation(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerAuthorParticipation", "WARNING");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

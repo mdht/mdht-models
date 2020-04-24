@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -104,6 +105,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 	public static boolean validateSensoryStatusTemplateId(SensoryStatus sensoryStatus, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusTemplateId", "ERROR");
+
 		if (VALIDATE_SENSORY_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -166,6 +169,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSensoryStatusClassCode(SensoryStatus sensoryStatus, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusClassCode", "ERROR");
 
 		if (VALIDATE_SENSORY_STATUS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -230,6 +235,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 	public static boolean validateSensoryStatusMoodCode(SensoryStatus sensoryStatus, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusMoodCode", "ERROR");
+
 		if (VALIDATE_SENSORY_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -292,6 +299,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSensoryStatusCodeP(SensoryStatus sensoryStatus, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusCodeP", "ERROR");
 
 		if (VALIDATE_SENSORY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -379,6 +388,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusCode", "WARNING");
+
 		if (VALIDATE_SENSORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -443,6 +454,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 	public static boolean validateSensoryStatusStatusCode(SensoryStatus sensoryStatus, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusStatusCode", "ERROR");
+
 		if (VALIDATE_SENSORY_STATUS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -506,6 +519,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 	public static boolean validateSensoryStatusStatusCodeP(SensoryStatus sensoryStatus, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusStatusCodeP", "ERROR");
+
 		if (VALIDATE_SENSORY_STATUS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -568,6 +583,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSensoryStatusEffectiveTime(SensoryStatus sensoryStatus, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusEffectiveTime", "ERROR");
 
 		if (VALIDATE_SENSORY_STATUS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -634,6 +651,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 	public static boolean validateSensoryStatusValue(SensoryStatus sensoryStatus, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusValue", "WARNING");
+
 		if (VALIDATE_SENSORY_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -697,6 +716,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 	public static boolean validateSensoryStatusValueP(SensoryStatus sensoryStatus, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusValueP", "ERROR");
+
 		if (VALIDATE_SENSORY_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -759,6 +780,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSensoryStatusAssessmentScaleObservation(SensoryStatus sensoryStatus,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusAssessmentScaleObservation", "INFO");
 
 		if (VALIDATE_SENSORY_STATUS_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -825,6 +848,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 	public static boolean validateSensoryStatusAuthorParticipation(SensoryStatus sensoryStatus,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusAuthorParticipation", "WARNING");
+
 		if (VALIDATE_SENSORY_STATUS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -888,6 +913,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateSensoryStatusIVLTSLow(SensoryStatus sensoryStatus, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusIVLTSLow", "ERROR");
 
 		if (VALIDATE_SENSORY_STATUS_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -958,6 +985,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateSensoryStatusIVLTSHigh(SensoryStatus sensoryStatus, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SensoryStatusSensoryStatusIVLTSHigh", "INFO");
 
 		if (VALIDATE_SENSORY_STATUS_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

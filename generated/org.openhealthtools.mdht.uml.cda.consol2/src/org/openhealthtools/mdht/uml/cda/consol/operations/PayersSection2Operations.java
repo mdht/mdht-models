@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,8 @@ public class PayersSection2Operations extends PayersSectionOperations {
 
 	public static boolean validatePayersSection2TemplateId(PayersSection2 payersSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PayersSection2PayersSection2TemplateId", "ERROR");
 
 		if (VALIDATE_PAYERS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -205,6 +208,8 @@ public class PayersSection2Operations extends PayersSectionOperations {
 	public static boolean validatePayersSectionCodeP(PayersSection2 payersSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PayersSection2PayersSectionCodeP", "ERROR");
+
 		if (VALIDATE_PAYERS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -291,6 +296,8 @@ public class PayersSection2Operations extends PayersSectionOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PayersSection2PayersSectionCode", "ERROR");
+
 		if (VALIDATE_PAYERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -353,6 +360,8 @@ public class PayersSection2Operations extends PayersSectionOperations {
 
 	public static boolean validatePayersSectionCoverageActivity(PayersSection2 payersSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PayersSection2PayersSectionCoverageActivity", "WARNING");
 
 		if (VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

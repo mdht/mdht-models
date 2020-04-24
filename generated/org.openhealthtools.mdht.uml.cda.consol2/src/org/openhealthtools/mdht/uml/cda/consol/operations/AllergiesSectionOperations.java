@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -100,6 +101,8 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 
 	public static boolean validateAllergiesSectionCodeP(AllergiesSection allergiesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergiesSectionAllergiesSectionCodeP", "ERROR");
 
 		if (VALIDATE_ALLERGIES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -187,6 +190,8 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "AllergiesSectionAllergiesSectionCode", "ERROR");
+
 		if (VALIDATE_ALLERGIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -249,6 +254,8 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 
 	public static boolean validateAllergiesSectionTitle(AllergiesSection allergiesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergiesSectionAllergiesSectionTitle", "ERROR");
 
 		if (VALIDATE_ALLERGIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -313,6 +320,8 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	public static boolean validateAllergiesSectionText(AllergiesSection allergiesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergiesSectionAllergiesSectionText", "ERROR");
+
 		if (VALIDATE_ALLERGIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -375,6 +384,8 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 
 	public static boolean validateAllergiesSectionAllergyProblemAct(AllergiesSection allergiesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergiesSectionAllergiesSectionAllergyProblemAct", "ERROR");
 
 		if (VALIDATE_ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -488,6 +499,8 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 
 	public static boolean validateAllergiesSectionEntriesOptionalTemplateId(AllergiesSection allergiesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergiesSectionAllergiesSectionEntriesOptionalTemplateId", "ERROR");
 
 		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

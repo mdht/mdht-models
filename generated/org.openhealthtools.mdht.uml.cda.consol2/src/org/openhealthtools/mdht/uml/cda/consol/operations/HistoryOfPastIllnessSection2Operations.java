@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -95,6 +96,8 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	public static boolean validateHistoryOfPastIllnessSection2TemplateId(
 			HistoryOfPastIllnessSection2 historyOfPastIllnessSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HistoryOfPastIllnessSection2HistoryOfPastIllnessSection2TemplateId", "ERROR");
 
 		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -213,6 +216,8 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 			HistoryOfPastIllnessSection2 historyOfPastIllnessSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCodeP", "ERROR");
+
 		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -303,6 +308,8 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCode", "ERROR");
+
 		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -368,6 +375,9 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	public static boolean validateHistoryOfPastIllnessSectionProblemObservation(
 			HistoryOfPastIllnessSection2 historyOfPastIllnessSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionProblemObservation", "INFO");
 
 		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -100,6 +101,9 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 	public static boolean validateCognitiveStatusResultOrganizerCodeCodeSystem(
 			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CognitiveStatusResultOrganizerCognitiveStatusResultOrganizerCodeCodeSystem", "WARNING");
 
 		if (VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -218,6 +222,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CognitiveStatusResultOrganizerResultOrganizerTemplateId", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -283,6 +289,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CognitiveStatusResultOrganizerResultOrganizerClassCode", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -346,6 +354,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 
 	public static boolean validateResultOrganizerMoodCode(CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CognitiveStatusResultOrganizerResultOrganizerMoodCode", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -411,6 +421,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 	public static boolean validateResultOrganizerId(CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CognitiveStatusResultOrganizerResultOrganizerId", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -473,6 +485,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 
 	public static boolean validateResultOrganizerCode(CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CognitiveStatusResultOrganizerResultOrganizerCode", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -537,6 +551,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 	public static boolean validateResultOrganizerStatusCodeP(
 			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CognitiveStatusResultOrganizerResultOrganizerStatusCodeP", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -626,6 +642,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "CognitiveStatusResultOrganizerResultOrganizerStatusCode", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -690,6 +708,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 	public static boolean validateResultOrganizerResultObservation(
 			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CognitiveStatusResultOrganizerResultOrganizerResultObservation", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

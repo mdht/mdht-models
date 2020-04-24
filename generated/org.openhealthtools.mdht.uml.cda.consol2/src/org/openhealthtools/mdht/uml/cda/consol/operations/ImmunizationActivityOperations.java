@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.SubstanceAdministrationOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -144,6 +145,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityTextReference(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityTextReference", "WARNING");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -208,6 +211,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityReferenceValue(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityReferenceValue", "WARNING");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -274,6 +279,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityTextReferenceValue(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityTextReferenceValue", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -338,6 +345,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityDoseQuantityUnit(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityDoseQuantityUnit", "WARNING");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -404,6 +413,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityInstructionInversion(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityInstructionInversion", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_INSTRUCTION_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -469,6 +480,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityDrugVehicleTypeCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityDrugVehicleTypeCode", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_DRUG_VEHICLE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -513,6 +526,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	@SuppressWarnings("unchecked")
 	public static boolean validateImmunizationActivityPreconditionTypeCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityPreconditionTypeCode", "ERROR");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -563,6 +578,10 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	@SuppressWarnings("unchecked")
 	public static boolean validateImmunizationActivityPreconditionPreconditionForSubstanceAdministration(
 			ImmunizationActivity immunizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ImmunizationActivityImmunizationActivityPreconditionPreconditionForSubstanceAdministration",
+			"ERROR");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -635,6 +654,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityTemplateId(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityTemplateId", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -698,6 +719,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityClassCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityClassCode", "ERROR");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -765,6 +788,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityMoodCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityMoodCode", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -808,6 +833,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityId(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityId", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -850,6 +877,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityCode", "INFO");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -891,6 +920,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityStatusCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityStatusCode", "ERROR");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -935,6 +966,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityEffectiveTime(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityEffectiveTime", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -978,6 +1011,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityRouteCodeP(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityRouteCodeP", "INFO");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1044,6 +1079,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityRouteCode", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1086,6 +1123,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityApproachSiteCodeP(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityApproachSiteCodeP", "INFO");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1131,6 +1170,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityApproachSiteCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityApproachSiteCode", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1174,6 +1215,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityDoseQuantity(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityDoseQuantity", "WARNING");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1282,6 +1325,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityNegationInd(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityNegationInd", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1388,6 +1433,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityText(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityText", "WARNING");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1561,6 +1608,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityRepeatNumber(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityRepeatNumber", "INFO");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1625,6 +1674,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityAdministrationUnitCodeP(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityAdministrationUnitCodeP", "INFO");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1717,6 +1768,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityAdministrationUnitCode", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1783,6 +1836,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityDrugVehicle(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityDrugVehicle", "INFO");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_DRUG_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1848,6 +1903,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityIndication(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityIndication", "INFO");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1911,6 +1968,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityInstructions(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityInstructions", "INFO");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1977,6 +2036,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityMedicationDispense(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityMedicationDispense", "INFO");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_MEDICATION_DISPENSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2042,6 +2103,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityReactionObservation(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityReactionObservation", "INFO");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2085,6 +2148,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityPrecondition(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityPrecondition", "INFO");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2150,6 +2215,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityImmunizationRefusalReason(
 			ImmunizationActivity immunizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityImmunizationRefusalReason", "INFO");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_IMMUNIZATION_REFUSAL_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2217,6 +2284,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	public static boolean validateImmunizationActivityConsumable(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityConsumable", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2280,6 +2349,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityPerformer(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityPerformer", "WARNING");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2365,6 +2436,8 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityMedicationSupplyOrder(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationActivityImmunizationActivityMedicationSupplyOrder", "INFO");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2473,6 +2546,9 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	@SuppressWarnings("unchecked")
 	public static boolean validateImmunizationActivityConsumableImmunizationMedicationInformation(
 			ImmunizationActivity immunizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ImmunizationActivityImmunizationActivityConsumableImmunizationMedicationInformation", "ERROR");
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

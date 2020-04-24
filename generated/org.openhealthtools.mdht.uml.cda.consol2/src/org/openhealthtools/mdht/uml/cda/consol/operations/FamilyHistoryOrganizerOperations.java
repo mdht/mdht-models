@@ -21,6 +21,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.OrganizerOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -116,6 +117,8 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	public static boolean validateFamilyHistoryOrganizerTemplateId(FamilyHistoryOrganizer familyHistoryOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FamilyHistoryOrganizerFamilyHistoryOrganizerTemplateId", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -180,6 +183,8 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateFamilyHistoryOrganizerClassCode(FamilyHistoryOrganizer familyHistoryOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FamilyHistoryOrganizerFamilyHistoryOrganizerClassCode", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -246,6 +251,8 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	public static boolean validateFamilyHistoryOrganizerMoodCode(FamilyHistoryOrganizer familyHistoryOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FamilyHistoryOrganizerFamilyHistoryOrganizerMoodCode", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -310,6 +317,8 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateFamilyHistoryOrganizerStatusCodeP(FamilyHistoryOrganizer familyHistoryOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FamilyHistoryOrganizerFamilyHistoryOrganizerStatusCodeP", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -398,6 +407,8 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "FamilyHistoryOrganizerFamilyHistoryOrganizerStatusCode", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -462,6 +473,9 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateFamilyHistoryOrganizerFamilyHistoryObservation(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FamilyHistoryOrganizerFamilyHistoryOrganizerFamilyHistoryObservation", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -529,6 +543,8 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	public static boolean validateFamilyHistoryOrganizerSubject(FamilyHistoryOrganizer familyHistoryOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FamilyHistoryOrganizerFamilyHistoryOrganizerSubject", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -594,6 +610,11 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode",
+			"ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -666,6 +687,11 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	public static boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP",
+			"ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_ADMINISTRATIVE_GENDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -736,6 +762,10 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime",
+			"WARNING");
 
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -808,6 +838,10 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	public static boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd",
+			"INFO");
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_DECEASED_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -878,6 +912,10 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime",
+			"INFO");
 
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_DECEASED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -950,6 +988,9 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	public static boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId", "WARNING");
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1020,6 +1061,9 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectClassCode(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectClassCode", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1094,6 +1138,9 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	public static boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectCode(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectCode", "WARNING");
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1164,6 +1211,9 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectCodeP(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectCodeP", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1236,6 +1286,9 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	public static boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubject(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubject", "WARNING");
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1306,6 +1359,8 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateFamilyHistoryOrganizerSubjectRelatedSubject(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubject", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -106,6 +107,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	public static boolean validateCodeObservationsTemplateId(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CodeObservationsCodeObservationsTemplateId", "ERROR");
+
 		if (VALIDATE_CODE_OBSERVATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -168,6 +171,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateCodeObservationsClassCode(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CodeObservationsCodeObservationsClassCode", "ERROR");
 
 		if (VALIDATE_CODE_OBSERVATIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -232,6 +237,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	public static boolean validateCodeObservationsMoodCode(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CodeObservationsCodeObservationsMoodCode", "ERROR");
+
 		if (VALIDATE_CODE_OBSERVATIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -294,6 +301,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateCodeObservationsCode(CodeObservations codeObservations, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CodeObservationsCodeObservationsCode", "ERROR");
 
 		if (VALIDATE_CODE_OBSERVATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -358,6 +367,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	public static boolean validateCodeObservationsEffectiveTime(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CodeObservationsCodeObservationsEffectiveTime", "WARNING");
+
 		if (VALIDATE_CODE_OBSERVATIONS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -421,6 +432,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	public static boolean validateCodeObservationsValue(CodeObservations codeObservations, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CodeObservationsCodeObservationsValue", "ERROR");
+
 		if (VALIDATE_CODE_OBSERVATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -483,6 +496,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateCodeObservationsSOPInstanceObservation(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CodeObservationsCodeObservationsSOPInstanceObservation", "INFO");
 
 		if (VALIDATE_CODE_OBSERVATIONS_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -548,6 +563,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateCodeObservationsQuantityMeasurementObservation(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CodeObservationsCodeObservationsQuantityMeasurementObservation", "INFO");
 
 		if (VALIDATE_CODE_OBSERVATIONS_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

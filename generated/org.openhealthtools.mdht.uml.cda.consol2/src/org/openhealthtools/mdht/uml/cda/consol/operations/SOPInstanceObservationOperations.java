@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -116,6 +117,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	public static boolean validateSOPInstanceObservationEffectiveTimeHasValue(
 			SOPInstanceObservation sopInstanceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationEffectiveTimeHasValue", "ERROR");
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME_HAS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -181,6 +184,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateSOPInstanceObservationEffectiveTimeNoLow(
 			SOPInstanceObservation sopInstanceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationEffectiveTimeNoLow", "ERROR");
 
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME_NO_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -248,6 +253,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	public static boolean validateSOPInstanceObservationEffectiveTimeNoHigh(
 			SOPInstanceObservation sopInstanceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationEffectiveTimeNoHigh", "ERROR");
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME_NO_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -314,6 +321,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	public static boolean validateSOPInstanceObservationTextMediaType(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationTextMediaType", "ERROR");
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -379,6 +388,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	public static boolean validateSOPInstanceObservationTextReference(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationTextReference", "ERROR");
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -443,6 +454,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateSOPInstanceObservationTextReferenceValue(
 			SOPInstanceObservation sopInstanceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationTextReferenceValue", "ERROR");
 
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -510,6 +523,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	public static boolean validateSOPInstanceObservationTemplateId(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationTemplateId", "ERROR");
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -574,6 +589,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateSOPInstanceObservationClassCode(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationClassCode", "ERROR");
 
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -640,6 +657,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	public static boolean validateSOPInstanceObservationEffectiveTime(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationEffectiveTime", "WARNING");
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -705,6 +724,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	public static boolean validateSOPInstanceObservationId(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationId", "ERROR");
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -767,6 +788,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateSOPInstanceObservationMoodCode(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationMoodCode", "ERROR");
 
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -833,6 +856,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	public static boolean validateSOPInstanceObservationText(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationText", "WARNING");
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -896,6 +921,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateSOPInstanceObservationCodeP(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationCodeP", "ERROR");
 
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -984,6 +1011,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationCode", "ERROR");
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1047,6 +1076,8 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateSOPInstanceObservationSOPInstanceObservation(
 			SOPInstanceObservation sopInstanceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SOPInstanceObservationSOPInstanceObservationSOPInstanceObservation", "INFO");
 
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1114,6 +1145,9 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	public static boolean validateSOPInstanceObservationPurposeofReferenceObservation(
 			SOPInstanceObservation sopInstanceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "SOPInstanceObservationSOPInstanceObservationPurposeofReferenceObservation", "INFO");
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1179,6 +1213,9 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateSOPInstanceObservationReferencedFramesObservation(
 			SOPInstanceObservation sopInstanceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "SOPInstanceObservationSOPInstanceObservationReferencedFramesObservation", "INFO");
 
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

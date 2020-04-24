@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -101,6 +102,8 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	public static boolean validateAssessmentAndPlanSectionTemplateId(AssessmentAndPlanSection assessmentAndPlanSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AssessmentAndPlanSectionAssessmentAndPlanSectionTemplateId", "ERROR");
+
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -168,6 +171,8 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	public static boolean validateAssessmentAndPlanSectionCode(AssessmentAndPlanSection assessmentAndPlanSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AssessmentAndPlanSectionAssessmentAndPlanSectionCode", "ERROR");
+
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -231,6 +236,8 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 
 	public static boolean validateAssessmentAndPlanSectionCodeP(AssessmentAndPlanSection assessmentAndPlanSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AssessmentAndPlanSectionAssessmentAndPlanSectionCodeP", "ERROR");
 
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -297,6 +304,8 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	public static boolean validateAssessmentAndPlanSectionText(AssessmentAndPlanSection assessmentAndPlanSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AssessmentAndPlanSectionAssessmentAndPlanSectionText", "ERROR");
+
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -361,6 +370,9 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	public static boolean validateAssessmentAndPlanSectionPlanOfCareActivityAct(
 			AssessmentAndPlanSection assessmentAndPlanSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AssessmentAndPlanSectionAssessmentAndPlanSectionPlanOfCareActivityAct", "INFO");
 
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

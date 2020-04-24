@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,9 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 			PlanOfCareActivityObservation planOfCareActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PlanOfCareActivityObservationPlanOfCareActivityObservationTemplateId", "ERROR");
+
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -160,6 +164,9 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 	public static boolean validatePlanOfCareActivityObservationClassCode(
 			PlanOfCareActivityObservation planOfCareActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PlanOfCareActivityObservationPlanOfCareActivityObservationClassCode", "ERROR");
 
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -230,6 +237,8 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 			PlanOfCareActivityObservation planOfCareActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlanOfCareActivityObservationPlanOfCareActivityObservationMoodCode", "ERROR");
+
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -296,6 +305,8 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 	public static boolean validatePlanOfCareActivityObservationId(
 			PlanOfCareActivityObservation planOfCareActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlanOfCareActivityObservationPlanOfCareActivityObservationId", "ERROR");
 
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

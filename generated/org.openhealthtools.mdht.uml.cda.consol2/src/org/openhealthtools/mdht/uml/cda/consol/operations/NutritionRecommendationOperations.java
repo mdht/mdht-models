@@ -12,6 +12,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -113,6 +114,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	public static boolean validateNutritionRecommendationTemplateId(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationTemplateId", "ERROR");
+
 		if (VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -178,6 +181,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	public static boolean validateNutritionRecommendationClassCode(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationClassCode", "ERROR");
+
 		if (VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -242,6 +247,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationMoodCodeP(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationMoodCodeP", "ERROR");
 
 		if (VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -331,6 +338,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationMoodCode", "ERROR");
+
 		if (VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -395,6 +404,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationCodeP(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationCodeP", "ERROR");
 
 		if (VALIDATE_NUTRITION_RECOMMENDATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -483,6 +494,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationCode", "WARNING");
+
 		if (VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -547,6 +560,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationStatusCode(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationStatusCode", "ERROR");
 
 		if (VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -613,6 +628,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	public static boolean validateNutritionRecommendationStatusCodeP(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationStatusCodeP", "ERROR");
+
 		if (VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -678,6 +695,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	public static boolean validateNutritionRecommendationEffectiveTime(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationEffectiveTime", "WARNING");
+
 		if (VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -742,6 +761,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationPlannedEncounter2(
 			NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationPlannedEncounter2", "INFO");
 
 		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -809,6 +830,9 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	public static boolean validateNutritionRecommendationPlannedMedicationActivity2(
 			NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "NutritionRecommendationNutritionRecommendationPlannedMedicationActivity2", "INFO");
+
 		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -874,6 +898,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationPlannedObservation2(
 			NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationPlannedObservation2", "INFO");
 
 		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -941,6 +967,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	public static boolean validateNutritionRecommendationPlannedProcedure2(
 			NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationPlannedProcedure2", "INFO");
+
 		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1007,6 +1035,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	public static boolean validateNutritionRecommendationPlannedSupply2(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationPlannedSupply2", "INFO");
+
 		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1071,6 +1101,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationPlannedAct2(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NutritionRecommendationNutritionRecommendationPlannedAct2", "INFO");
 
 		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

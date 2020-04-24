@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -98,6 +99,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 	public static boolean validateResultsSection2NullFlavor(ResultsSection2 resultsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ResultsSection2ResultsSection2NullFlavor", "INFO");
+
 		if (VALIDATE_RESULTS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -160,6 +163,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 
 	public static boolean validateResultsSection2Title(ResultsSection2 resultsSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ResultsSection2ResultsSection2Title", "ERROR");
 
 		if (VALIDATE_RESULTS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -224,6 +229,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 	public static boolean validateResultsSection2Text(ResultsSection2 resultsSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ResultsSection2ResultsSection2Text", "ERROR");
+
 		if (VALIDATE_RESULTS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -286,6 +293,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 
 	public static boolean validateResultsSectionEntriesOptionalTemplateId(ResultsSection2 resultsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ResultsSection2ResultsSectionEntriesOptionalTemplateId", "ERROR");
 
 		if (VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -351,6 +360,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 
 	public static boolean validateResultsSectionEntriesOptionalCodeP(ResultsSection2 resultsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ResultsSection2ResultsSectionEntriesOptionalCodeP", "ERROR");
 
 		if (VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -441,6 +452,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ResultsSection2ResultsSectionEntriesOptionalCode", "ERROR");
+
 		if (VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -505,6 +518,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 
 	public static boolean validateResultsSectionEntriesOptionalResultOrganizer(ResultsSection2 resultsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ResultsSection2ResultsSectionEntriesOptionalResultOrganizer", "ERROR");
 
 		if (VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

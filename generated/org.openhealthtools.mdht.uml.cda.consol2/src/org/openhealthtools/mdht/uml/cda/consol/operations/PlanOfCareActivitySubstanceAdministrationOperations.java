@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.SubstanceAdministrationOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,10 @@ public class PlanOfCareActivitySubstanceAdministrationOperations extends Substan
 			PlanOfCareActivitySubstanceAdministration planOfCareActivitySubstanceAdministration,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PlanOfCareActivitySubstanceAdministrationPlanOfCareActivitySubstanceAdministrationTemplateId",
+			"ERROR");
+
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -160,6 +165,10 @@ public class PlanOfCareActivitySubstanceAdministrationOperations extends Substan
 	public static boolean validatePlanOfCareActivitySubstanceAdministrationClassCode(
 			PlanOfCareActivitySubstanceAdministration planOfCareActivitySubstanceAdministration,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PlanOfCareActivitySubstanceAdministrationPlanOfCareActivitySubstanceAdministrationClassCode",
+			"ERROR");
 
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -230,6 +239,10 @@ public class PlanOfCareActivitySubstanceAdministrationOperations extends Substan
 			PlanOfCareActivitySubstanceAdministration planOfCareActivitySubstanceAdministration,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PlanOfCareActivitySubstanceAdministrationPlanOfCareActivitySubstanceAdministrationMoodCode",
+			"ERROR");
+
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -296,6 +309,9 @@ public class PlanOfCareActivitySubstanceAdministrationOperations extends Substan
 	public static boolean validatePlanOfCareActivitySubstanceAdministrationId(
 			PlanOfCareActivitySubstanceAdministration planOfCareActivitySubstanceAdministration,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PlanOfCareActivitySubstanceAdministrationPlanOfCareActivitySubstanceAdministrationId", "ERROR");
 
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

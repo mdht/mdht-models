@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -119,6 +120,8 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	public static boolean validateFunctionalStatusSection2TemplateId(FunctionalStatusSection2 functionalStatusSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FunctionalStatusSection2FunctionalStatusSection2TemplateId", "ERROR");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -162,6 +165,8 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 
 	public static boolean validateFunctionalStatusSectionCodeP(FunctionalStatusSection2 functionalStatusSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusSection2FunctionalStatusSectionCodeP", "ERROR");
 
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -220,6 +225,8 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			FunctionalStatusSection2 functionalStatusSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FunctionalStatusSection2FunctionalStatusSection2SelfCareActivities", "INFO");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION2_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -265,6 +272,9 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	public static boolean validateFunctionalStatusSection2SensoryAndSpeechStatus(
 			FunctionalStatusSection2 functionalStatusSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusSection2FunctionalStatusSection2SensoryAndSpeechStatus", "INFO");
 
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION2_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -850,6 +860,8 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "FunctionalStatusSection2FunctionalStatusSectionCode", "ERROR");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -914,6 +926,9 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	public static boolean validateFunctionalStatusSectionFunctionalStatusResultOrganizer(
 			FunctionalStatusSection2 functionalStatusSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusSection2FunctionalStatusSectionFunctionalStatusResultOrganizer", "INFO");
 
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -982,6 +997,9 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			FunctionalStatusSection2 functionalStatusSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FunctionalStatusSection2FunctionalStatusSectionFunctionalStatusResultObservation", "INFO");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1048,6 +1066,9 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	public static boolean validateFunctionalStatusSectionCognitiveStatusResultOrganizer(
 			FunctionalStatusSection2 functionalStatusSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusSection2FunctionalStatusSectionCognitiveStatusResultOrganizer", "ERROR");
 
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1116,6 +1137,9 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			FunctionalStatusSection2 functionalStatusSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FunctionalStatusSection2FunctionalStatusSectionCognitiveStatusResultObservation", "ERROR");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1182,6 +1206,9 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	public static boolean validateFunctionalStatusSectionNonMedicinalSupplyActivity(
 			FunctionalStatusSection2 functionalStatusSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusSection2FunctionalStatusSectionNonMedicinalSupplyActivity", "INFO");
 
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1250,6 +1277,9 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 			FunctionalStatusSection2 functionalStatusSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FunctionalStatusSection2FunctionalStatusSectionNumberOfPressureUlcersObservation", "ERROR");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1316,6 +1346,9 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	public static boolean validateFunctionalStatusSectionHighestPressureUlcerStage(
 			FunctionalStatusSection2 functionalStatusSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusSection2FunctionalStatusSectionHighestPressureUlcerStage", "ERROR");
 
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

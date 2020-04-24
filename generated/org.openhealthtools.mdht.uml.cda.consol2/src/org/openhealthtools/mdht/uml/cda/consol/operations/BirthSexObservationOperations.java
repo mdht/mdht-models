@@ -9,6 +9,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -91,6 +92,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateBirthSexObservationTemplateId(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationTemplateId", "ERROR");
+
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -154,6 +157,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBirthSexObservationClassCode(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationClassCode", "ERROR");
 
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -219,6 +224,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateBirthSexObservationMoodCode(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationMoodCode", "ERROR");
+
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -282,6 +289,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBirthSexObservationCodeP(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationCodeP", "ERROR");
 
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -369,6 +378,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationCode", "ERROR");
+
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -433,6 +444,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateBirthSexObservationStatusCode(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationStatusCode", "ERROR");
+
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -496,6 +509,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBirthSexObservationStatusCodeP(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationStatusCodeP", "ERROR");
 
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -564,6 +579,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateBirthSexObservationValue(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationValue", "ERROR");
+
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -626,6 +643,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBirthSexObservationValueP(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationValueP", "ERROR");
 
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

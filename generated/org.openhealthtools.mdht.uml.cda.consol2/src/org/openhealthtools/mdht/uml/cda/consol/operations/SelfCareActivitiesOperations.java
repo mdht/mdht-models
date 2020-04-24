@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -97,6 +98,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 	public static boolean validateSelfCareActivitiesTemplateId(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SelfCareActivitiesSelfCareActivitiesTemplateId", "ERROR");
+
 		if (VALIDATE_SELF_CARE_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -161,6 +164,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 	public static boolean validateSelfCareActivitiesClassCode(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SelfCareActivitiesSelfCareActivitiesClassCode", "ERROR");
+
 		if (VALIDATE_SELF_CARE_ACTIVITIES_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -224,6 +229,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 	public static boolean validateSelfCareActivitiesMoodCode(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SelfCareActivitiesSelfCareActivitiesMoodCode", "ERROR");
+
 		if (VALIDATE_SELF_CARE_ACTIVITIES_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -286,6 +293,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesCodeP(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SelfCareActivitiesSelfCareActivitiesCodeP", "ERROR");
 
 		if (VALIDATE_SELF_CARE_ACTIVITIES_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -373,6 +382,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "SelfCareActivitiesSelfCareActivitiesCode", "WARNING");
+
 		if (VALIDATE_SELF_CARE_ACTIVITIES_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -436,6 +447,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesStatusCode(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SelfCareActivitiesSelfCareActivitiesStatusCode", "ERROR");
 
 		if (VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -501,6 +514,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 	public static boolean validateSelfCareActivitiesStatusCodeP(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SelfCareActivitiesSelfCareActivitiesStatusCodeP", "ERROR");
+
 		if (VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -565,6 +580,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesEffectiveTime(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SelfCareActivitiesSelfCareActivitiesEffectiveTime", "ERROR");
 
 		if (VALIDATE_SELF_CARE_ACTIVITIES_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -633,6 +650,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 	public static boolean validateSelfCareActivitiesValue(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SelfCareActivitiesSelfCareActivitiesValue", "WARNING");
+
 		if (VALIDATE_SELF_CARE_ACTIVITIES_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -696,6 +715,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 	public static boolean validateSelfCareActivitiesValueP(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SelfCareActivitiesSelfCareActivitiesValueP", "ERROR");
+
 		if (VALIDATE_SELF_CARE_ACTIVITIES_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -758,6 +779,8 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesAuthorParticipation(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SelfCareActivitiesSelfCareActivitiesAuthorParticipation", "WARNING");
 
 		if (VALIDATE_SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ParticipantRoleOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -97,6 +98,8 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	public static boolean validateServiceDeliveryLocationHasPlayingEntity(
 			ServiceDeliveryLocation serviceDeliveryLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ServiceDeliveryLocationServiceDeliveryLocationHasPlayingEntity", "INFO");
+
 		if (VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -162,6 +165,9 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 
 	public static boolean validateServiceDeliveryLocationHasPlayingEntityClassCode(
 			ServiceDeliveryLocation serviceDeliveryLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ServiceDeliveryLocationServiceDeliveryLocationHasPlayingEntityClassCode", "ERROR");
 
 		if (VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -229,6 +235,8 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	public static boolean validateServiceDeliveryLocationHasPlayingEntityName(
 			ServiceDeliveryLocation serviceDeliveryLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ServiceDeliveryLocationServiceDeliveryLocationHasPlayingEntityName", "INFO");
+
 		if (VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -295,6 +303,8 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	public static boolean validateServiceDeliveryLocationTemplateId(ServiceDeliveryLocation serviceDeliveryLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ServiceDeliveryLocationServiceDeliveryLocationTemplateId", "ERROR");
+
 		if (VALIDATE_SERVICE_DELIVERY_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -359,6 +369,8 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 
 	public static boolean validateServiceDeliveryLocationClassCode(ServiceDeliveryLocation serviceDeliveryLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ServiceDeliveryLocationServiceDeliveryLocationClassCode", "ERROR");
 
 		if (VALIDATE_SERVICE_DELIVERY_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -427,6 +439,8 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	public static boolean validateServiceDeliveryLocationCode(ServiceDeliveryLocation serviceDeliveryLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ServiceDeliveryLocationServiceDeliveryLocationCode", "ERROR");
+
 		if (VALIDATE_SERVICE_DELIVERY_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -491,6 +505,8 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	public static boolean validateServiceDeliveryLocationAddr(ServiceDeliveryLocation serviceDeliveryLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ServiceDeliveryLocationServiceDeliveryLocationAddr", "WARNING");
+
 		if (VALIDATE_SERVICE_DELIVERY_LOCATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -554,6 +570,8 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 
 	public static boolean validateServiceDeliveryLocationTelecom(ServiceDeliveryLocation serviceDeliveryLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ServiceDeliveryLocationServiceDeliveryLocationTelecom", "WARNING");
 
 		if (VALIDATE_SERVICE_DELIVERY_LOCATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

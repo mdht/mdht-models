@@ -10,6 +10,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -94,6 +95,8 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 			AdmissionDiagnosisSection2 admissionDiagnosisSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdmissionDiagnosisSection2AdmissionDiagnosisSection2TemplateId", "ERROR");
+
 		if (VALIDATE_ADMISSION_DIAGNOSIS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -162,6 +165,8 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 	public static boolean validateAdmissionDiagnosisSection2CETranslation(
 			AdmissionDiagnosisSection2 admissionDiagnosisSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdmissionDiagnosisSection2AdmissionDiagnosisSection2CETranslation", "ERROR");
 
 		if (VALIDATE_ADMISSION_DIAGNOSIS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -234,6 +239,8 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 	public static boolean validateAdmissionDiagnosisSection2CETranslationP(
 			AdmissionDiagnosisSection2 admissionDiagnosisSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdmissionDiagnosisSection2AdmissionDiagnosisSection2CETranslationP", "ERROR");
 
 		if (VALIDATE_ADMISSION_DIAGNOSIS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -354,6 +361,8 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 			AdmissionDiagnosisSection2 admissionDiagnosisSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdmissionDiagnosisSection2HospitalAdmissionDiagnosisSectionCodeP", "ERROR");
+
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -445,6 +454,8 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "AdmissionDiagnosisSection2HospitalAdmissionDiagnosisSectionCode", "ERROR");
+
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -511,6 +522,10 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 	public static boolean validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(
 			AdmissionDiagnosisSection2 admissionDiagnosisSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdmissionDiagnosisSection2HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis",
+			"WARNING");
 
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

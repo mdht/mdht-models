@@ -2,16 +2,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.Observation;
 
 /**
@@ -32,7 +27,7 @@ public interface ResultObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.oclIsUndefined() implies self.text-&gt;forAll(reference-&gt;size() = 1)'"
 	 * @generated
 	 */
 	boolean validateResultObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -44,7 +39,7 @@ public interface ResultObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.text->forAll(reference->size() = 1) implies self.text->forAll(reference->one(value->size() = 1))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.text-&gt;forAll(reference-&gt;size() = 1) implies self.text-&gt;forAll(reference-&gt;one(value-&gt;size() = 1))'"
 	 * @generated
 	 */
 	boolean validateResultObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -80,7 +75,7 @@ public interface ResultObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange->forAll(range : cda::ReferenceRange | range.observationRange.code.code.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange-&gt;forAll(range : cda::ReferenceRange | range.observationRange.code.code.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateResultObservationNoObservationRangeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -92,7 +87,7 @@ public interface ResultObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->size()<2'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author-&gt;size()&lt;2'"
 	 * @generated
 	 */
 	boolean validateResultObservationAuthorMultiplicity(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -104,7 +99,7 @@ public interface ResultObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.2\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.2\')'"
 	 * @generated
 	 */
 	boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -140,7 +135,7 @@ public interface ResultObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id-&gt;isEmpty() or self.id-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.id-&gt;isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validateResultObservationId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -212,7 +207,7 @@ public interface ResultObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() =  1)'"
 	 * @generated
 	 */
 	boolean validateResultObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -224,7 +219,7 @@ public interface ResultObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.interpretationCode-&gt;isEmpty() or self.interpretationCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode-&gt;isEmpty())'"
 	 * @generated
 	 */
 	boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -236,7 +231,7 @@ public interface ResultObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (( not self.methodCode->isEmpty()) )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode-&gt;isEmpty() or self.methodCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.methodCode-&gt;isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validateResultObservationMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -248,7 +243,7 @@ public interface ResultObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (( not self.targetSiteCode->isEmpty())  and self.targetSiteCode->forAll(element | element.oclIsTypeOf(datatypes::CE)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode-&gt;isEmpty() or self.targetSiteCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.targetSiteCode-&gt;isEmpty())  and self.targetSiteCode-&gt;forAll(element | element.oclIsTypeOf(datatypes::CE)))'"
 	 * @generated
 	 */
 	boolean validateResultObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);

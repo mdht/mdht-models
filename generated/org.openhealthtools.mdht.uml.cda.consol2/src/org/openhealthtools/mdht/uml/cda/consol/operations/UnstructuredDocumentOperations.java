@@ -18,6 +18,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -109,6 +110,8 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentRecordTarget(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "UnstructuredDocumentUnstructuredDocumentRecordTarget", "ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -174,6 +177,8 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentAuthor(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "UnstructuredDocumentUnstructuredDocumentAuthor", "ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -236,6 +241,8 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 
 	public static boolean validateUnstructuredDocumentComponent(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UnstructuredDocumentUnstructuredDocumentComponent", "ERROR");
 
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -301,6 +308,8 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentCustodian(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "UnstructuredDocumentUnstructuredDocumentCustodian", "ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -364,6 +373,8 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	@SuppressWarnings("unchecked")
 	public static boolean validateUnstructuredDocumentRecordTargetPatientRole2Id(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UnstructuredDocumentUnstructuredDocumentRecordTargetPatientRole2Id", "ERROR");
 
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -436,6 +447,8 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentRecordTargetPatientRole2(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "UnstructuredDocumentUnstructuredDocumentRecordTargetPatientRole2", "ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -506,6 +519,8 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	@SuppressWarnings("unchecked")
 	public static boolean validateUnstructuredDocumentAuthorAssignedAuthor2Addr(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UnstructuredDocumentUnstructuredDocumentAuthorAssignedAuthor2Addr", "ERROR");
 
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -578,6 +593,9 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentAuthorAssignedAuthor2Telecom(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "UnstructuredDocumentUnstructuredDocumentAuthorAssignedAuthor2Telecom", "ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -648,6 +666,8 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	@SuppressWarnings("unchecked")
 	public static boolean validateUnstructuredDocumentAuthorAssignedAuthor2(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UnstructuredDocumentUnstructuredDocumentAuthorAssignedAuthor2", "ERROR");
 
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -720,6 +740,10 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr",
+			"ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -790,6 +814,10 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	@SuppressWarnings("unchecked")
 	public static boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId",
+			"ERROR");
 
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -862,6 +890,10 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName",
+			"ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -932,6 +964,10 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	@SuppressWarnings("unchecked")
 	public static boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom",
+			"ERROR");
 
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1004,6 +1040,10 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization",
+			"ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1075,6 +1115,9 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentCustodianAssignedCustodian2(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian2", "ERROR");
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1145,6 +1188,8 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 
 	public static boolean validateGeneralHeaderConstraintsTemplateId(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UnstructuredDocumentGeneralHeaderConstraintsTemplateId", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

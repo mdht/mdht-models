@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -103,6 +104,9 @@ public class ImmunizationMedicationInformation2Operations extends ImmunizationMe
 			ImmunizationMedicationInformation2 immunizationMedicationInformation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ImmunizationMedicationInformation2ImmunizationMedicationInformation2TemplateId", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -169,6 +173,11 @@ public class ImmunizationMedicationInformation2Operations extends ImmunizationMe
 	public static boolean validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationP(
 			ImmunizationMedicationInformation2 immunizationMedicationInformation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ImmunizationMedicationInformation2ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationP",
+			"INFO");
 
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION2_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -258,6 +267,11 @@ public class ImmunizationMedicationInformation2Operations extends ImmunizationMe
 			ImmunizationMedicationInformation2 immunizationMedicationInformation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ImmunizationMedicationInformation2ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation",
+			"INFO");
+
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION2_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -340,6 +354,11 @@ public class ImmunizationMedicationInformation2Operations extends ImmunizationMe
 			ImmunizationMedicationInformation2 immunizationMedicationInformation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReferenceValue",
+			"INFO");
+
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -390,6 +409,11 @@ public class ImmunizationMedicationInformation2Operations extends ImmunizationMe
 	public static boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP(
 			ImmunizationMedicationInformation2 immunizationMedicationInformation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP",
+			"ERROR");
 
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -456,6 +480,10 @@ public class ImmunizationMedicationInformation2Operations extends ImmunizationMe
 			ImmunizationMedicationInformation2 immunizationMedicationInformation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterial",
+			"ERROR");
+
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -501,6 +529,11 @@ public class ImmunizationMedicationInformation2Operations extends ImmunizationMe
 	public static boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(
 			ImmunizationMedicationInformation2 immunizationMedicationInformation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText",
+			"INFO");
 
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -553,6 +586,11 @@ public class ImmunizationMedicationInformation2Operations extends ImmunizationMe
 			ImmunizationMedicationInformation2 immunizationMedicationInformation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference",
+			"INFO");
+
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -603,6 +641,11 @@ public class ImmunizationMedicationInformation2Operations extends ImmunizationMe
 	public static boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValue(
 			ImmunizationMedicationInformation2 immunizationMedicationInformation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValue",
+			"INFO");
 
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -781,6 +824,11 @@ public class ImmunizationMedicationInformation2Operations extends ImmunizationMe
 			ImmunizationMedicationInformation2 immunizationMedicationInformation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation",
+			"INFO");
+
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -854,6 +902,11 @@ public class ImmunizationMedicationInformation2Operations extends ImmunizationMe
 	public static boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode(
 			ImmunizationMedicationInformation2 immunizationMedicationInformation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode",
+			"ERROR");
 
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -936,6 +989,11 @@ public class ImmunizationMedicationInformation2Operations extends ImmunizationMe
 	public static boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText(
 			ImmunizationMedicationInformation2 immunizationMedicationInformation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ImmunizationMedicationInformation2ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText",
+			"WARNING");
 
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

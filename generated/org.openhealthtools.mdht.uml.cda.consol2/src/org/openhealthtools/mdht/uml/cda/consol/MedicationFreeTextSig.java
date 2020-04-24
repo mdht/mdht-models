@@ -2,16 +2,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.SubstanceAdministration;
 
 /**
@@ -49,7 +44,7 @@ public interface MedicationFreeTextSig extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.147\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.147\')'"
 	 * @generated
 	 */
 	boolean validateMedicationFreeTextSigTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -121,7 +116,7 @@ public interface MedicationFreeTextSig extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(cda::Consumable))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable-&gt;one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(cda::Consumable))'"
 	 * @generated
 	 */
 	boolean validateMedicationFreeTextSigConsumable(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -133,7 +128,7 @@ public interface MedicationFreeTextSig extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.text->excluding(null)->select(isNullFlavorUndefined()).reference->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not value.oclIsUndefined() )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.text-&gt;excluding(null)-&gt;select(isNullFlavorUndefined()).reference-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not value.oclIsUndefined() )))'"
 	 * @generated
 	 */
 	boolean validateMedicationFreeTextSigEDTELValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -145,7 +140,7 @@ public interface MedicationFreeTextSig extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.text->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((reference.oclIsUndefined() or reference.isNullFlavorUndefined()) implies (not reference.oclIsUndefined()) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.text-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies ((reference.oclIsUndefined() or reference.isNullFlavorUndefined()) implies (not reference.oclIsUndefined()) )))'"
 	 * @generated
 	 */
 	boolean validateMedicationFreeTextSigEDReference(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -157,7 +152,7 @@ public interface MedicationFreeTextSig extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable->excluding(null).manufacturedProduct->excluding(null).manufacturedLabeledDrug->excluding(null)->reject(isDefined(\'nullFlavor\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable-&gt;excluding(null).manufacturedProduct-&gt;excluding(null).manufacturedLabeledDrug-&gt;excluding(null)-&gt;reject(isDefined(\'nullFlavor\'))'"
 	 * @generated
 	 */
 	boolean validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor(
@@ -170,7 +165,7 @@ public interface MedicationFreeTextSig extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable->excluding(null).manufacturedProduct->excluding(null)->reject(manufacturedLabeledDrug->one(manufacturedLabeledDrug : cda::LabeledDrug | not manufacturedLabeledDrug.oclIsUndefined() and manufacturedLabeledDrug.oclIsKindOf(cda::LabeledDrug)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable-&gt;excluding(null).manufacturedProduct-&gt;excluding(null)-&gt;reject(manufacturedLabeledDrug-&gt;one(manufacturedLabeledDrug : cda::LabeledDrug | not manufacturedLabeledDrug.oclIsUndefined() and manufacturedLabeledDrug.oclIsKindOf(cda::LabeledDrug)))'"
 	 * @generated
 	 */
 	boolean validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug(
@@ -183,7 +178,7 @@ public interface MedicationFreeTextSig extends SubstanceAdministration {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable->excluding(null)->reject(manufacturedProduct->one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(cda::ManufacturedProduct)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable-&gt;excluding(null)-&gt;reject(manufacturedProduct-&gt;one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(cda::ManufacturedProduct)))'"
 	 * @generated
 	 */
 	boolean validateMedicationFreeTextSigConsumableManufacturedProduct(DiagnosticChain diagnostics,

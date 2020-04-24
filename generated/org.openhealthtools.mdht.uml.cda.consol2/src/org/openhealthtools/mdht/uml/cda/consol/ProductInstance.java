@@ -2,16 +2,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.ParticipantRole;
 
 /**
@@ -40,7 +35,7 @@ public interface ProductInstance extends ParticipantRole {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.37\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.37\')'"
 	 * @generated
 	 */
 	boolean validateProductInstanceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -64,7 +59,7 @@ public interface ProductInstance extends ParticipantRole {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id-&gt;isEmpty() or self.id-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.id-&gt;isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validateProductInstanceId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -76,7 +71,7 @@ public interface ProductInstance extends ParticipantRole {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.scopingEntity->one(scopingEntity : cda::Entity | not scopingEntity.oclIsUndefined() and scopingEntity.oclIsKindOf(cda::Entity))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.scopingEntity-&gt;one(scopingEntity : cda::Entity | not scopingEntity.oclIsUndefined() and scopingEntity.oclIsKindOf(cda::Entity))'"
 	 * @generated
 	 */
 	boolean validateProductInstanceScopingEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -88,7 +83,7 @@ public interface ProductInstance extends ParticipantRole {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingDevice->one(playingDevice : cda::Device | not playingDevice.oclIsUndefined() and playingDevice.oclIsKindOf(cda::Device))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingDevice-&gt;one(playingDevice : cda::Device | not playingDevice.oclIsUndefined() and playingDevice.oclIsKindOf(cda::Device))'"
 	 * @generated
 	 */
 	boolean validateProductInstancePlayingDevice(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -100,7 +95,7 @@ public interface ProductInstance extends ParticipantRole {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.scopingEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (( not id->isEmpty()) ))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.scopingEntity-&gt;excluding(null)-&gt;reject((id-&gt;isEmpty() or id-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not id-&gt;isEmpty()) ))'"
 	 * @generated
 	 */
 	boolean validateProductInstanceScopingEntityId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -112,7 +107,7 @@ public interface ProductInstance extends ParticipantRole {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingDevice->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingDevice-&gt;excluding(null)-&gt;reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateProductInstancePlayingDeviceCode(DiagnosticChain diagnostics, Map<Object, Object> context);

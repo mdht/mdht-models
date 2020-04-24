@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -107,6 +108,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 	public static boolean validateDrugMonitoringActTemplateId(DrugMonitoringAct drugMonitoringAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DrugMonitoringActDrugMonitoringActTemplateId", "ERROR");
+
 		if (VALIDATE_DRUG_MONITORING_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -169,6 +172,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDrugMonitoringActClassCode(DrugMonitoringAct drugMonitoringAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DrugMonitoringActDrugMonitoringActClassCode", "ERROR");
 
 		if (VALIDATE_DRUG_MONITORING_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -233,6 +238,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 	public static boolean validateDrugMonitoringActMoodCode(DrugMonitoringAct drugMonitoringAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DrugMonitoringActDrugMonitoringActMoodCode", "ERROR");
+
 		if (VALIDATE_DRUG_MONITORING_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -296,6 +303,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 	public static boolean validateDrugMonitoringActId(DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DrugMonitoringActDrugMonitoringActId", "ERROR");
+
 		if (VALIDATE_DRUG_MONITORING_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -358,6 +367,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDrugMonitoringActCodeP(DrugMonitoringAct drugMonitoringAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DrugMonitoringActDrugMonitoringActCodeP", "ERROR");
 
 		if (VALIDATE_DRUG_MONITORING_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -445,6 +456,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "DrugMonitoringActDrugMonitoringActCode", "ERROR");
+
 		if (VALIDATE_DRUG_MONITORING_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -510,6 +523,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 	public static boolean validateDrugMonitoringActStatusCode(DrugMonitoringAct drugMonitoringAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DrugMonitoringActDrugMonitoringActStatusCode", "ERROR");
+
 		if (VALIDATE_DRUG_MONITORING_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -572,6 +587,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDrugMonitoringActStatusCodeP(DrugMonitoringAct drugMonitoringAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DrugMonitoringActDrugMonitoringActStatusCodeP", "ERROR");
 
 		if (VALIDATE_DRUG_MONITORING_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -636,6 +653,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDrugMonitoringActEffectiveTime(DrugMonitoringAct drugMonitoringAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DrugMonitoringActDrugMonitoringActEffectiveTime", "ERROR");
 
 		if (VALIDATE_DRUG_MONITORING_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -702,6 +721,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 	public static boolean validateDrugMonitoringActParticipant(DrugMonitoringAct drugMonitoringAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DrugMonitoringActDrugMonitoringActParticipant", "ERROR");
+
 		if (VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -764,6 +785,9 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(
 			DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DrugMonitoringActDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode", "ERROR");
 
 		if (VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -836,6 +860,9 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 	public static boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(
 			DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DrugMonitoringActDrugMonitoringActParticipantParticipantRolePlayingEntityName", "ERROR");
+
 		if (VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -906,6 +933,9 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateDrugMonitoringActParticipantParticipantRoleClassCode(
 			DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DrugMonitoringActDrugMonitoringActParticipantParticipantRoleClassCode", "ERROR");
 
 		if (VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -978,6 +1008,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 	public static boolean validateDrugMonitoringActParticipantParticipantRoleId(DrugMonitoringAct drugMonitoringAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DrugMonitoringActDrugMonitoringActParticipantParticipantRoleId", "ERROR");
+
 		if (VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1048,6 +1080,9 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntity(
 			DrugMonitoringAct drugMonitoringAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DrugMonitoringActDrugMonitoringActParticipantParticipantRolePlayingEntity", "ERROR");
 
 		if (VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1120,6 +1155,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 	public static boolean validateDrugMonitoringActParticipantTypeCode(DrugMonitoringAct drugMonitoringAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DrugMonitoringActDrugMonitoringActParticipantTypeCode", "ERROR");
+
 		if (VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1189,6 +1226,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateDrugMonitoringActParticipantParticipantRole(DrugMonitoringAct drugMonitoringAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DrugMonitoringActDrugMonitoringActParticipantParticipantRole", "ERROR");
 
 		if (VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

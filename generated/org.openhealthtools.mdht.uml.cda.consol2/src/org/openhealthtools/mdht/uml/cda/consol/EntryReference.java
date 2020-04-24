@@ -2,16 +2,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.Act;
 
 /**
@@ -34,7 +29,7 @@ public interface EntryReference extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.122\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.122\')'"
 	 * @generated
 	 */
 	boolean validateEntryReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -70,7 +65,7 @@ public interface EntryReference extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id-&gt;isEmpty() or self.id-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.id-&gt;isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validateEntryReferenceId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -118,7 +113,7 @@ public interface EntryReference extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (nullFlavor.oclIsUndefined() )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (nullFlavor.oclIsUndefined() )))'"
 	 * @generated
 	 */
 	boolean validateEntryReferenceIINullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -130,7 +125,7 @@ public interface EntryReference extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not nullFlavor.oclIsUndefined() and nullFlavor.oclIsKindOf(vocab::NullFlavor) and \r\nlet value : vocab::NullFlavor = nullFlavor.oclAsType(vocab::NullFlavor) in \r\nvalue = vocab::NullFlavor::NP )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not nullFlavor.oclIsUndefined() and nullFlavor.oclIsKindOf(vocab::NullFlavor) and \r\nlet value : vocab::NullFlavor = nullFlavor.oclAsType(vocab::NullFlavor) in \r\nvalue = vocab::NullFlavor::NP )))'"
 	 * @generated
 	 */
 	boolean validateEntryReferenceCDNullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -142,7 +137,7 @@ public interface EntryReference extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (isDefined(\'nullFlavor\') )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (isDefined(\'nullFlavor\') )))'"
 	 * @generated
 	 */
 	boolean validateEntryReferenceCDNullFlavorP(DiagnosticChain diagnostics, Map<Object, Object> context);

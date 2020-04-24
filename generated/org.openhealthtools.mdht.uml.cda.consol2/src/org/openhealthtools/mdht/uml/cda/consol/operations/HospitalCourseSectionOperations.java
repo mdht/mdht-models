@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,8 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	public static boolean validateHospitalCourseSectionTemplateId(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HospitalCourseSectionHospitalCourseSectionTemplateId", "ERROR");
+
 		if (VALIDATE_HOSPITAL_COURSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -161,6 +164,8 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	public static boolean validateHospitalCourseSectionCode(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HospitalCourseSectionHospitalCourseSectionCode", "ERROR");
+
 		if (VALIDATE_HOSPITAL_COURSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -223,6 +228,8 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 
 	public static boolean validateHospitalCourseSectionCodeP(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HospitalCourseSectionHospitalCourseSectionCodeP", "ERROR");
 
 		if (VALIDATE_HOSPITAL_COURSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -288,6 +295,8 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	public static boolean validateHospitalCourseSectionTitle(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HospitalCourseSectionHospitalCourseSectionTitle", "ERROR");
+
 		if (VALIDATE_HOSPITAL_COURSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -351,6 +360,8 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 
 	public static boolean validateHospitalCourseSectionText(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HospitalCourseSectionHospitalCourseSectionText", "ERROR");
 
 		if (VALIDATE_HOSPITAL_COURSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

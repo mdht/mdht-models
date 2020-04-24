@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -147,6 +148,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActTemplateId(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActTemplateId", "ERROR");
+
 		if (VALIDATE_INTERVENTION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -209,6 +212,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInterventionActClassCode(InterventionAct interventionAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionActInterventionActClassCode", "ERROR");
 
 		if (VALIDATE_INTERVENTION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -273,6 +278,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActMoodCode(InterventionAct interventionAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActMoodCode", "ERROR");
+
 		if (VALIDATE_INTERVENTION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -336,6 +343,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActId(InterventionAct interventionAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActId", "ERROR");
+
 		if (VALIDATE_INTERVENTION_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -398,6 +407,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInterventionActCodeP(InterventionAct interventionAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionActInterventionActCodeP", "ERROR");
 
 		if (VALIDATE_INTERVENTION_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -485,6 +496,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActCode", "ERROR");
+
 		if (VALIDATE_INTERVENTION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -549,6 +562,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActStatusCode(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActStatusCode", "ERROR");
+
 		if (VALIDATE_INTERVENTION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -611,6 +626,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInterventionActStatusCodeP(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionActInterventionActStatusCodeP", "ERROR");
 
 		if (VALIDATE_INTERVENTION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -675,6 +692,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActEffectiveTime(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActEffectiveTime", "WARNING");
+
 		if (VALIDATE_INTERVENTION_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -738,6 +757,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActInterventionAct(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActInterventionAct", "INFO");
+
 		if (VALIDATE_INTERVENTION_ACT_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -800,6 +821,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInterventionActNutritionRecommendation(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionActInterventionActNutritionRecommendation", "INFO");
 
 		if (VALIDATE_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -866,6 +889,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActInterventionEntryReference(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActInterventionEntryReference", "INFO");
+
 		if (VALIDATE_INTERVENTION_ACT_INTERVENTION_ENTRY_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -930,6 +955,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInterventionActGoalObsEntryReference(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionActInterventionActGoalObsEntryReference", "WARNING");
 
 		if (VALIDATE_INTERVENTION_ACT_GOAL_OBS_ENTRY_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -996,6 +1023,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActAuthorParticipation(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActAuthorParticipation", "WARNING");
+
 		if (VALIDATE_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1060,6 +1089,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInterventionActAdvanceDirectiveObservation2(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionActInterventionActAdvanceDirectiveObservation2", "INFO");
 
 		if (VALIDATE_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1126,6 +1157,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActImmunizationActivity2(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActImmunizationActivity2", "INFO");
+
 		if (VALIDATE_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1190,6 +1223,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInterventionActMedicationActivity2(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionActInterventionActMedicationActivity2", "INFO");
 
 		if (VALIDATE_INTERVENTION_ACT_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1256,6 +1291,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActProcedureActivityAct2(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActProcedureActivityAct2", "INFO");
+
 		if (VALIDATE_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1320,6 +1357,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInterventionActProcedureActivityObservation2(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionActInterventionActProcedureActivityObservation2", "INFO");
 
 		if (VALIDATE_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1386,6 +1425,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActProcedureActivityProcedure2(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActProcedureActivityProcedure2", "INFO");
+
 		if (VALIDATE_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1450,6 +1491,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInterventionActEncounterActivity2(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionActInterventionActEncounterActivity2", "INFO");
 
 		if (VALIDATE_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1516,6 +1559,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActNonMedicinalSupplyActivity2(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActNonMedicinalSupplyActivity2", "INFO");
+
 		if (VALIDATE_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1581,6 +1626,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActInstruction2(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActInstruction2", "INFO");
+
 		if (VALIDATE_INTERVENTION_ACT_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1643,6 +1690,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInterventionActHandoffCommunicationParticipants(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionActInterventionActHandoffCommunicationParticipants", "INFO");
 
 		if (VALIDATE_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1710,6 +1759,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActPlannedInterventionAct(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActPlannedInterventionAct", "INFO");
+
 		if (VALIDATE_INTERVENTION_ACT_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1775,6 +1826,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	public static boolean validateInterventionActReference(InterventionAct interventionAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionActInterventionActReference", "INFO");
+
 		if (VALIDATE_INTERVENTION_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1837,6 +1890,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateInterventionActReferenceTypeCode(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionActInterventionActReferenceTypeCode", "ERROR");
 
 		if (VALIDATE_INTERVENTION_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1907,6 +1962,8 @@ public class InterventionActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateInterventionActReferenceExternalDocumentReference(InterventionAct interventionAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionActInterventionActReferenceExternalDocumentReference", "ERROR");
 
 		if (VALIDATE_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

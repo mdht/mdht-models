@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -96,6 +97,8 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 			ImmunizationRefusalReason immunizationRefusalReason, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationRefusalReasonImmunizationRefusalReasonTemplateId", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_REFUSAL_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -161,6 +164,8 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	public static boolean validateImmunizationRefusalReasonClassCode(
 			ImmunizationRefusalReason immunizationRefusalReason, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationRefusalReasonImmunizationRefusalReasonClassCode", "ERROR");
 
 		if (VALIDATE_IMMUNIZATION_REFUSAL_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -229,6 +234,8 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	public static boolean validateImmunizationRefusalReasonCode(ImmunizationRefusalReason immunizationRefusalReason,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationRefusalReasonImmunizationRefusalReasonCode", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_REFUSAL_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -293,6 +300,8 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	public static boolean validateImmunizationRefusalReasonId(ImmunizationRefusalReason immunizationRefusalReason,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ImmunizationRefusalReasonImmunizationRefusalReasonId", "ERROR");
+
 		if (VALIDATE_IMMUNIZATION_REFUSAL_REASON_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -356,6 +365,8 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 
 	public static boolean validateImmunizationRefusalReasonMoodCode(ImmunizationRefusalReason immunizationRefusalReason,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationRefusalReasonImmunizationRefusalReasonMoodCode", "ERROR");
 
 		if (VALIDATE_IMMUNIZATION_REFUSAL_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -423,6 +434,8 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	public static boolean validateImmunizationRefusalReasonStatusCode(
 			ImmunizationRefusalReason immunizationRefusalReason, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ImmunizationRefusalReasonImmunizationRefusalReasonStatusCode", "ERROR");
 
 		if (VALIDATE_IMMUNIZATION_REFUSAL_REASON_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

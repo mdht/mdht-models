@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -100,6 +101,9 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 			HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisSectionTemplateId", "ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -169,6 +173,9 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 			HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisSectionCode", "ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -235,6 +242,9 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 	public static boolean validateHospitalDischargeDiagnosisSectionCodeP(
 			HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisSectionCodeP", "ERROR");
 
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -303,6 +313,9 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 			HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisSectionTitle", "ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -370,6 +383,9 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 			HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisSectionText", "ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -436,6 +452,10 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 	public static boolean validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(
 			HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis",
+			"WARNING");
 
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_HOSPITAL_DISCHARGE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

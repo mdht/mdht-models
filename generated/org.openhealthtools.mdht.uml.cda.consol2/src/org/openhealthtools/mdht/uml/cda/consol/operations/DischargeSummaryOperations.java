@@ -18,6 +18,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -186,6 +187,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummaryDischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection",
+			"ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -251,6 +257,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateDischargeSummaryCodeP(DischargeSummary dischargeSummary, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryCodeP", "ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -338,6 +346,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryCode", "ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -400,6 +410,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateDischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummaryDischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -467,6 +480,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryHospitalAdmissionDiagnosisSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryHospitalAdmissionDiagnosisSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -532,6 +547,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateDischargeSummaryHospitalDischargeDiagnosisSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryHospitalDischargeDiagnosisSection", "ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -599,6 +616,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryDischargeDietSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryDischargeDietSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIET_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -663,6 +682,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateDischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummaryDischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional", "ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -730,6 +752,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryFunctionalStatusSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryFunctionalStatusSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -794,6 +818,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateDischargeSummaryHistoryOfPresentIllnessSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryHistoryOfPresentIllnessSection", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -861,6 +887,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryHospitalCourseSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryHospitalCourseSection", "ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -925,6 +953,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateDischargeSummaryPlanOfCareSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryPlanOfCareSection", "ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -991,6 +1021,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryHistoryOfPastIllnessSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryHistoryOfPastIllnessSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1056,6 +1088,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryComponentOf(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryComponentOf", "ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1118,6 +1152,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateDischargeSummaryChiefComplaintAndReasonForVisitSection(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummaryDischargeSummaryChiefComplaintAndReasonForVisitSection", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1185,6 +1222,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryChiefComplaintSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryChiefComplaintSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1249,6 +1288,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateDischargeSummaryFamilyHistorySection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryFamilyHistorySection", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1315,6 +1356,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryHospitalConsultationsSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryHospitalConsultationsSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_CONSULTATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1379,6 +1422,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateDischargeSummaryHospitalDischargeInstructionsSection(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummaryDischargeSummaryHospitalDischargeInstructionsSection", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1446,6 +1492,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryHospitalDischargePhysicalSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryHospitalDischargePhysicalSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1511,6 +1559,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateDischargeSummaryHospitalDischargeStudiesSummarySection(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummaryDischargeSummaryHospitalDischargeStudiesSummarySection", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1578,6 +1629,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryImmunizationsSectionEntriesOptional(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryImmunizationsSectionEntriesOptional", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1643,6 +1696,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateDischargeSummaryProblemSectionEntriesOptional(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryProblemSectionEntriesOptional", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1710,6 +1765,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryProceduresSectionEntriesOptional(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryProceduresSectionEntriesOptional", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_PROCEDURES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1776,6 +1833,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryReasonForVisitSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryReasonForVisitSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1840,6 +1899,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateDischargeSummaryReviewOfSystemsSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryReviewOfSystemsSection", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1906,6 +1967,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummarySocialHistorySection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummarySocialHistorySection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1970,6 +2033,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateDischargeSummaryAllergiesSectionEntriesOptional(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryAllergiesSectionEntriesOptional", "ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_ALLERGIES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2037,6 +2102,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryVitalSignsSectionEntriesOptional(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryVitalSignsSectionEntriesOptional", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2102,6 +2169,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization",
+			"ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2174,6 +2246,10 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2244,6 +2320,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization",
+			"ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2316,6 +2397,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2386,6 +2472,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow",
+			"ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2458,6 +2549,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh",
+			"ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2528,6 +2624,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet",
+			"WARNING");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2600,6 +2701,11 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem",
+			"INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2670,6 +2776,10 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode",
+			"ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2742,6 +2852,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3EffectiveTime(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3EffectiveTime", "ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2812,6 +2925,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2884,6 +3000,9 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2954,6 +3073,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummaryComponentOfEncompassingEncounter(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter", "ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4180,6 +4301,8 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateGeneralHeaderConstraintsTemplateId(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummaryGeneralHeaderConstraintsTemplateId", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

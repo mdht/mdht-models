@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -96,6 +97,8 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 	public static boolean validateComplicationsSectionExplicitComplications(ComplicationsSection2 complicationsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ComplicationsSection2ComplicationsSectionExplicitComplications", "INFO");
+
 		if (VALIDATE_COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -161,6 +164,8 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 
 	public static boolean validateComplicationsSection2TemplateId(ComplicationsSection2 complicationsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ComplicationsSection2ComplicationsSection2TemplateId", "ERROR");
 
 		if (VALIDATE_COMPLICATIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -277,6 +282,8 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 	public static boolean validateComplicationsSectionCodeP(ComplicationsSection2 complicationsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ComplicationsSection2ComplicationsSectionCodeP", "ERROR");
+
 		if (VALIDATE_COMPLICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -363,6 +370,8 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ComplicationsSection2ComplicationsSectionCode", "ERROR");
+
 		if (VALIDATE_COMPLICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -425,6 +434,8 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 
 	public static boolean validateComplicationsSectionProblemObservation(ComplicationsSection2 complicationsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ComplicationsSection2ComplicationsSectionProblemObservation", "INFO");
 
 		if (VALIDATE_COMPLICATIONS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

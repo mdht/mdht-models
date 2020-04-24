@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -103,6 +104,9 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 			SocialHistoryObservation2 socialHistoryObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "SocialHistoryObservation2SocialHistoryObservation2ReferenceAttribute", "WARNING");
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION2_REFERENCE_ATTRIBUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -169,6 +173,9 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 	public static boolean validateSocialHistoryObservation2IfNotLoincRequireTranslation(
 			SocialHistoryObservation2 socialHistoryObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "SocialHistoryObservation2SocialHistoryObservation2IfNotLoincRequireTranslation", "ERROR");
 
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -237,6 +244,10 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 			SocialHistoryObservation2 socialHistoryObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "SocialHistoryObservation2SocialHistoryObservation2IfNotLoincRequireTranslationFromLoinc",
+			"WARNING");
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION2_IF_NOT_LOINC_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -304,6 +315,8 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 			SocialHistoryObservation2 socialHistoryObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SocialHistoryObservation2SocialHistoryObservation2TemplateId", "ERROR");
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -348,6 +361,8 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 	public static boolean validateSocialHistoryObservationStatusCodeP(
 			SocialHistoryObservation2 socialHistoryObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SocialHistoryObservation2SocialHistoryObservationStatusCodeP", "ERROR");
 
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -408,6 +423,8 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 			SocialHistoryObservation2 socialHistoryObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SocialHistoryObservation2SocialHistoryObservation2EffectiveTime", "ERROR");
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -454,6 +471,9 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 			SocialHistoryObservation2 socialHistoryObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "SocialHistoryObservation2SocialHistoryObservation2AuthorParticipation", "WARNING");
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -499,6 +519,8 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 	public static boolean validateSocialHistoryObservation2CDTranslation(
 			SocialHistoryObservation2 socialHistoryObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SocialHistoryObservation2SocialHistoryObservation2CDTranslation", "INFO");
 
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -551,6 +573,8 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 			SocialHistoryObservation2 socialHistoryObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SocialHistoryObservation2SocialHistoryObservation2CDTranslationP", "INFO");
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -601,6 +625,8 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 	public static boolean validateSocialHistoryObservationValue(SocialHistoryObservation2 socialHistoryObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SocialHistoryObservation2SocialHistoryObservationValue", "WARNING");
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -643,6 +669,8 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 
 	public static boolean validateSocialHistoryObservationCode(SocialHistoryObservation2 socialHistoryObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SocialHistoryObservation2SocialHistoryObservationCode", "WARNING");
 
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -838,6 +866,8 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 	public static boolean validateSocialHistoryObservationCodeP(SocialHistoryObservation2 socialHistoryObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SocialHistoryObservation2SocialHistoryObservationCodeP", "ERROR");
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -932,6 +962,8 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "SocialHistoryObservation2SocialHistoryObservationStatusCode", "ERROR");
 
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

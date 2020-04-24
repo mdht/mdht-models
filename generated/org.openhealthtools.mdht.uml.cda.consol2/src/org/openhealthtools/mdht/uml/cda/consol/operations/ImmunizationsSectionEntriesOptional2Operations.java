@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -146,6 +147,9 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 			ImmunizationsSectionEntriesOptional2 immunizationsSectionEntriesOptional2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalTemplateId", "ERROR");
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -212,6 +216,9 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 	public static boolean validateImmunizationsSectionEntriesOptionalCodeP(
 			ImmunizationsSectionEntriesOptional2 immunizationsSectionEntriesOptional2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalCodeP", "ERROR");
 
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -305,6 +312,9 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 			return true;
 		}
 
+		DatatypesUtil.increment(
+			context, "ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalCode", "ERROR");
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -371,6 +381,10 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 	public static boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity(
 			ImmunizationsSectionEntriesOptional2 immunizationsSectionEntriesOptional2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalImmunizationActivity",
+			"WARNING");
 
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

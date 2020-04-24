@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.OrganizerOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -110,6 +111,9 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MedicalEquipmentOrganizerMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc", "ERROR");
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_HAS_NON_MED_SUP_ACT_OR_PROC_ACT_PROC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -177,6 +181,8 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicalEquipmentOrganizerMedicalEquipmentOrganizerTemplateId", "ERROR");
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -243,6 +249,8 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicalEquipmentOrganizerMedicalEquipmentOrganizerClassCode", "ERROR");
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -307,6 +315,8 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateMedicalEquipmentOrganizerMoodCode(MedicalEquipmentOrganizer medicalEquipmentOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicalEquipmentOrganizerMedicalEquipmentOrganizerMoodCode", "ERROR");
 
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -373,6 +383,8 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	public static boolean validateMedicalEquipmentOrganizerId(MedicalEquipmentOrganizer medicalEquipmentOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicalEquipmentOrganizerMedicalEquipmentOrganizerId", "ERROR");
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -436,6 +448,8 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateMedicalEquipmentOrganizerCode(MedicalEquipmentOrganizer medicalEquipmentOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicalEquipmentOrganizerMedicalEquipmentOrganizerCode", "INFO");
 
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -501,6 +515,8 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	public static boolean validateMedicalEquipmentOrganizerStatusCodeP(
 			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicalEquipmentOrganizerMedicalEquipmentOrganizerStatusCodeP", "ERROR");
 
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -593,6 +609,8 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "MedicalEquipmentOrganizerMedicalEquipmentOrganizerStatusCode", "ERROR");
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -658,6 +676,8 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	public static boolean validateMedicalEquipmentOrganizerEffectiveTime(
 			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicalEquipmentOrganizerMedicalEquipmentOrganizerEffectiveTime", "ERROR");
 
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -726,6 +746,9 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MedicalEquipmentOrganizerMedicalEquipmentOrganizerNonMedicinalSupplyActivity2", "INFO");
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -793,6 +816,9 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MedicalEquipmentOrganizerMedicalEquipmentOrganizerProcedureActivityProcedure2", "INFO");
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -858,6 +884,8 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicalEquipmentOrganizerIVLTSLow(MedicalEquipmentOrganizer medicalEquipmentOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicalEquipmentOrganizerMedicalEquipmentOrganizerIVLTSLow", "ERROR");
 
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -930,6 +958,8 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	public static boolean validateMedicalEquipmentOrganizerIVLTSHigh(
 			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicalEquipmentOrganizerMedicalEquipmentOrganizerIVLTSHigh", "ERROR");
 
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

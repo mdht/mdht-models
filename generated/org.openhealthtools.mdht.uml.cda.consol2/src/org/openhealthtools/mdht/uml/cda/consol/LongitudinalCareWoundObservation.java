@@ -2,15 +2,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
@@ -82,7 +78,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty())'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -94,7 +90,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() = 1 and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -106,7 +102,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (( not self.targetSiteCode->isEmpty()) )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode-&gt;isEmpty() or self.targetSiteCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.targetSiteCode-&gt;isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationTargetSiteCodeP(DiagnosticChain diagnostics,
@@ -119,7 +115,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode-&gt;isEmpty() or self.targetSiteCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationTargetSiteCode(DiagnosticChain diagnostics,
@@ -132,7 +128,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::WoundMeasurementObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::WoundMeasurementObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationWoundMeasurementObservation(DiagnosticChain diagnostics,
@@ -145,7 +141,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::WoundCharacteristic) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::WoundCharacteristic) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationWoundCharacteristics(DiagnosticChain diagnostics,
@@ -158,7 +154,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::HighestPressureUlcerStage) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::HighestPressureUlcerStage) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationHighestPressureUlcerStage(DiagnosticChain diagnostics,
@@ -171,7 +167,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author-&gt;exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationAuthorParticipation(DiagnosticChain diagnostics,
@@ -184,7 +180,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationNumberOfPressureUlcersObservation2(DiagnosticChain diagnostics,
@@ -197,7 +193,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined()).qualifier->excluding(null)->select(isNullFlavorUndefined()).value->excluding(null)->select(isNullFlavorUndefined())->reject(code = \'2.16.840.1.113883.6.96\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code-&gt;excluding(null)-&gt;select(isNullFlavorUndefined()).qualifier-&gt;excluding(null)-&gt;select(isNullFlavorUndefined()).value-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject(code = \'2.16.840.1.113883.6.96\')'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationCDCRCDValueTerminology(DiagnosticChain diagnostics,
@@ -210,7 +206,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined()).qualifier->excluding(null)->select(isNullFlavorUndefined()).value->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not code.oclIsUndefined() )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code-&gt;excluding(null)-&gt;select(isNullFlavorUndefined()).qualifier-&gt;excluding(null)-&gt;select(isNullFlavorUndefined()).value-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not code.oclIsUndefined() )))'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationCDCRCDCode(DiagnosticChain diagnostics,
@@ -223,7 +219,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined()).qualifier->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((name.oclIsUndefined() or name.isNullFlavorUndefined()) implies (not name.oclIsUndefined() and name.oclIsKindOf(datatypes::CV) and \r\nlet value : datatypes::CV = name.oclAsType(datatypes::CV) in \r\nvalue.code = \'272741003\') )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code-&gt;excluding(null)-&gt;select(isNullFlavorUndefined()).qualifier-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies ((name.oclIsUndefined() or name.isNullFlavorUndefined()) implies (not name.oclIsUndefined() and name.oclIsKindOf(datatypes::CV) and \r\nlet value : datatypes::CV = name.oclAsType(datatypes::CV) in \r\nvalue.code = \'272741003\') )))'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationCDCRName(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -235,7 +231,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined()).qualifier->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((name.oclIsUndefined() or name.isNullFlavorUndefined()) implies (not name.oclIsUndefined()) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code-&gt;excluding(null)-&gt;select(isNullFlavorUndefined()).qualifier-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies ((name.oclIsUndefined() or name.isNullFlavorUndefined()) implies (not name.oclIsUndefined()) )))'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationCDCRNameP(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -247,7 +243,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined()).qualifier->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((value.oclIsUndefined() or value.isNullFlavorUndefined()) implies (not value.oclIsUndefined()) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code-&gt;excluding(null)-&gt;select(isNullFlavorUndefined()).qualifier-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies ((value.oclIsUndefined() or value.isNullFlavorUndefined()) implies (not value.oclIsUndefined()) )))'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationCDCRValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -259,7 +255,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((qualifier->isEmpty() or qualifier->exists(element | element.isNullFlavorUndefined())) implies (not qualifier->isEmpty()) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies ((qualifier-&gt;isEmpty() or qualifier-&gt;exists(element | element.isNullFlavorUndefined())) implies (not qualifier-&gt;isEmpty()) )))'"
 	 * @generated
 	 */
 	boolean validateLongitudinalCareWoundObservationCDQualifier(DiagnosticChain diagnostics,
@@ -269,7 +265,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::WoundMeasurementObservation)).oclAsType(consol::WoundMeasurementObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()-&gt;select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::WoundMeasurementObservation)).oclAsType(consol::WoundMeasurementObservation)'"
 	 * @generated
 	 */
 	EList<WoundMeasurementObservation> getWoundMeasurementObservations();
@@ -278,7 +274,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::WoundCharacteristic)).oclAsType(consol::WoundCharacteristic)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()-&gt;select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::WoundCharacteristic)).oclAsType(consol::WoundCharacteristic)'"
 	 * @generated
 	 */
 	EList<WoundCharacteristic> getWoundCharacteristicss();
@@ -287,7 +283,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HighestPressureUlcerStage))->asSequence()->any(true).oclAsType(consol::HighestPressureUlcerStage)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()-&gt;select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HighestPressureUlcerStage))-&gt;asSequence()-&gt;any(true).oclAsType(consol::HighestPressureUlcerStage)'"
 	 * @generated
 	 */
 	HighestPressureUlcerStage getHighestPressureUlcerStage();
@@ -296,7 +292,7 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation2)).oclAsType(consol::NumberOfPressureUlcersObservation2)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()-&gt;select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation2)).oclAsType(consol::NumberOfPressureUlcersObservation2)'"
 	 * @generated
 	 */
 	EList<NumberOfPressureUlcersObservation2> getNumberOfPressureUlcersObservation2s();

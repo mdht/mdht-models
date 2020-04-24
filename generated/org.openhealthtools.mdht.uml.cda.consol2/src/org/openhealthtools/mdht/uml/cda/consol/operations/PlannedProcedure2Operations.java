@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -115,6 +116,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	public static boolean validatePlannedProcedure2CodeFromLoincOrSnomed(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2CodeFromLoincOrSnomed", "WARNING");
+
 		if (VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_LOINC_OR_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -179,6 +182,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 
 	public static boolean validatePlannedProcedure2CodeFromCptOrIcd(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2CodeFromCptOrIcd", "INFO");
 
 		if (VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_CPT_OR_ICD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -245,6 +250,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	public static boolean validatePlannedProcedure2Instruction2InversionInd(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2Instruction2InversionInd", "ERROR");
+
 		if (VALIDATE_PLANNED_PROCEDURE2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -310,6 +317,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	public static boolean validatePlannedProcedure2TemplateId(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2TemplateId", "ERROR");
+
 		if (VALIDATE_PLANNED_PROCEDURE2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -372,6 +381,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 
 	public static boolean validatePlannedProcedure2Code(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2Code", "ERROR");
 
 		if (VALIDATE_PLANNED_PROCEDURE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -437,6 +448,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	public static boolean validatePlannedProcedure2StatusCode(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2StatusCode", "ERROR");
+
 		if (VALIDATE_PLANNED_PROCEDURE2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -500,6 +513,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	public static boolean validatePlannedProcedure2StatusCodeP(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2StatusCodeP", "ERROR");
+
 		if (VALIDATE_PLANNED_PROCEDURE2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -562,6 +577,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 
 	public static boolean validatePlannedProcedure2EffectiveTime(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2EffectiveTime", "WARNING");
 
 		if (VALIDATE_PLANNED_PROCEDURE2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -627,6 +644,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	public static boolean validatePlannedProcedure2MethodCode(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2MethodCode", "INFO");
+
 		if (VALIDATE_PLANNED_PROCEDURE2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -689,6 +708,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 
 	public static boolean validatePlannedProcedure2TargetSiteCodeP(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2TargetSiteCodeP", "INFO");
 
 		if (VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -778,6 +799,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2TargetSiteCode", "ERROR");
+
 		if (VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -843,6 +866,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	public static boolean validatePlannedProcedure2Performer(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2Performer", "INFO");
+
 		if (VALIDATE_PLANNED_PROCEDURE2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -905,6 +930,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 
 	public static boolean validatePlannedProcedure2AuthorParticipation(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2AuthorParticipation", "WARNING");
 
 		if (VALIDATE_PLANNED_PROCEDURE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -971,6 +998,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	public static boolean validatePlannedProcedure2PriorityPreference(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2PriorityPreference", "INFO");
+
 		if (VALIDATE_PLANNED_PROCEDURE2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1036,6 +1065,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	public static boolean validatePlannedProcedure2Indication2(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2Indication2", "INFO");
+
 		if (VALIDATE_PLANNED_PROCEDURE2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1099,6 +1130,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	public static boolean validatePlannedProcedure2Instruction2(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2Instruction2", "INFO");
+
 		if (VALIDATE_PLANNED_PROCEDURE2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1161,6 +1194,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 
 	public static boolean validatePlannedProcedure2PlannedCoverage(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2PlannedCoverage", "INFO");
 
 		if (VALIDATE_PLANNED_PROCEDURE2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1416,6 +1451,8 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 
 	public static boolean validatePlanOfCareActivityProcedureMoodCode(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedProcedure2PlanOfCareActivityProcedureMoodCode", "ERROR");
 
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

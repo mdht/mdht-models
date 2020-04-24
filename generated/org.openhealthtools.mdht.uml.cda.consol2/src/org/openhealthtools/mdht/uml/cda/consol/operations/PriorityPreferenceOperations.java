@@ -9,6 +9,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -92,6 +93,8 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 	public static boolean validatePriorityPreferenceTemplateId(PriorityPreference priorityPreference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PriorityPreferencePriorityPreferenceTemplateId", "ERROR");
+
 		if (VALIDATE_PRIORITY_PREFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -154,6 +157,8 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validatePriorityPreferenceClassCode(PriorityPreference priorityPreference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PriorityPreferencePriorityPreferenceClassCode", "ERROR");
 
 		if (VALIDATE_PRIORITY_PREFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -218,6 +223,8 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 	public static boolean validatePriorityPreferenceMoodCode(PriorityPreference priorityPreference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PriorityPreferencePriorityPreferenceMoodCode", "ERROR");
+
 		if (VALIDATE_PRIORITY_PREFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -281,6 +288,8 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 	public static boolean validatePriorityPreferenceId(PriorityPreference priorityPreference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PriorityPreferencePriorityPreferenceId", "ERROR");
+
 		if (VALIDATE_PRIORITY_PREFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -343,6 +352,8 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validatePriorityPreferenceCodeP(PriorityPreference priorityPreference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PriorityPreferencePriorityPreferenceCodeP", "ERROR");
 
 		if (VALIDATE_PRIORITY_PREFERENCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -430,6 +441,8 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PriorityPreferencePriorityPreferenceCode", "ERROR");
+
 		if (VALIDATE_PRIORITY_PREFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -492,6 +505,8 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validatePriorityPreferenceEffectiveTime(PriorityPreference priorityPreference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PriorityPreferencePriorityPreferenceEffectiveTime", "WARNING");
 
 		if (VALIDATE_PRIORITY_PREFERENCE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -560,6 +575,8 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 	public static boolean validatePriorityPreferenceValue(PriorityPreference priorityPreference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PriorityPreferencePriorityPreferenceValue", "ERROR");
+
 		if (VALIDATE_PRIORITY_PREFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -623,6 +640,8 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 	public static boolean validatePriorityPreferenceValueP(PriorityPreference priorityPreference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PriorityPreferencePriorityPreferenceValueP", "ERROR");
+
 		if (VALIDATE_PRIORITY_PREFERENCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -685,6 +704,8 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validatePriorityPreferenceAuthorParticipation(PriorityPreference priorityPreference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PriorityPreferencePriorityPreferenceAuthorParticipation", "WARNING");
 
 		if (VALIDATE_PRIORITY_PREFERENCE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

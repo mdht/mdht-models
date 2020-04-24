@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -103,6 +104,9 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ImmunizationsSectionEntriesOptionalImmunizationsSectionEntriesOptionalTemplateId", "ERROR");
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -172,6 +176,9 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ImmunizationsSectionEntriesOptionalImmunizationsSectionEntriesOptionalCode", "ERROR");
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -238,6 +245,9 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	public static boolean validateImmunizationsSectionEntriesOptionalCodeP(
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ImmunizationsSectionEntriesOptionalImmunizationsSectionEntriesOptionalCodeP", "ERROR");
 
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -306,6 +316,9 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ImmunizationsSectionEntriesOptionalImmunizationsSectionEntriesOptionalTitle", "ERROR");
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -373,6 +386,9 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ImmunizationsSectionEntriesOptionalImmunizationsSectionEntriesOptionalText", "ERROR");
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -439,6 +455,10 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	public static boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity(
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ImmunizationsSectionEntriesOptionalImmunizationsSectionEntriesOptionalImmunizationActivity",
+			"WARNING");
 
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

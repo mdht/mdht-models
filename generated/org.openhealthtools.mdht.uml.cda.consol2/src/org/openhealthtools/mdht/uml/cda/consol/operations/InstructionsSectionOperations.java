@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -102,6 +103,8 @@ public class InstructionsSectionOperations extends SectionOperations {
 	public static boolean validateInstructionsSectionTemplateId(InstructionsSection instructionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InstructionsSectionInstructionsSectionTemplateId", "ERROR");
+
 		if (VALIDATE_INSTRUCTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -168,6 +171,8 @@ public class InstructionsSectionOperations extends SectionOperations {
 	public static boolean validateInstructionsSectionCode(InstructionsSection instructionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InstructionsSectionInstructionsSectionCode", "ERROR");
+
 		if (VALIDATE_INSTRUCTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -231,6 +236,8 @@ public class InstructionsSectionOperations extends SectionOperations {
 	public static boolean validateInstructionsSectionCodeP(InstructionsSection instructionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InstructionsSectionInstructionsSectionCodeP", "ERROR");
+
 		if (VALIDATE_INSTRUCTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -272,6 +279,8 @@ public class InstructionsSectionOperations extends SectionOperations {
 
 	public static boolean validateInstructionsSectionText(InstructionsSection instructionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InstructionsSectionInstructionsSectionText", "ERROR");
 
 		if (VALIDATE_INSTRUCTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -357,6 +366,8 @@ public class InstructionsSectionOperations extends SectionOperations {
 	public static boolean validateInstructionsSectionTitle(InstructionsSection instructionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InstructionsSectionInstructionsSectionTitle", "ERROR");
+
 		if (VALIDATE_INSTRUCTIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -419,6 +430,8 @@ public class InstructionsSectionOperations extends SectionOperations {
 
 	public static boolean validateInstructionsSectionInstructions(InstructionsSection instructionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InstructionsSectionInstructionsSectionInstructions", "WARNING");
 
 		if (VALIDATE_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,8 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	public static boolean validateSurgicalDrainsSectionTemplateId(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SurgicalDrainsSectionSurgicalDrainsSectionTemplateId", "ERROR");
+
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -161,6 +164,8 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	public static boolean validateSurgicalDrainsSectionCode(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SurgicalDrainsSectionSurgicalDrainsSectionCode", "ERROR");
+
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -223,6 +228,8 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 
 	public static boolean validateSurgicalDrainsSectionCodeP(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SurgicalDrainsSectionSurgicalDrainsSectionCodeP", "ERROR");
 
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -288,6 +295,8 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	public static boolean validateSurgicalDrainsSectionText(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SurgicalDrainsSectionSurgicalDrainsSectionText", "ERROR");
+
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -350,6 +359,8 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 
 	public static boolean validateSurgicalDrainsSectionTitle(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SurgicalDrainsSectionSurgicalDrainsSectionTitle", "ERROR");
 
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

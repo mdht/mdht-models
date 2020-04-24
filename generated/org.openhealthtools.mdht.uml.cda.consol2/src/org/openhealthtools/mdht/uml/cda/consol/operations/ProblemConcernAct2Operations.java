@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -104,6 +105,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	public static boolean validateProblemConcernAct2TemplateId(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemConcernAct2ProblemConcernAct2TemplateId", "ERROR");
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -146,6 +149,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernActStatusCodeP(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemConcernAct2ProblemConcernActStatusCodeP", "ERROR");
 
 		if (VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -203,6 +208,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	public static boolean validateProblemConcernAct2AuthorParticipation(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemConcernAct2ProblemConcernAct2AuthorParticipation", "WARNING");
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -246,6 +253,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernAct2PriorityPreference(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemConcernAct2ProblemConcernAct2PriorityPreference", "INFO");
 
 		if (VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -346,6 +355,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	public static boolean validateProblemConcernActEffectiveTimeLow(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemConcernAct2ProblemConcernActEffectiveTimeLow", "ERROR");
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -389,6 +400,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernActEffectiveTimeHigh(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemConcernAct2ProblemConcernActEffectiveTimeHigh", "INFO");
 
 		if (VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -610,6 +623,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ProblemConcernAct2ProblemConcernActStatusCode", "ERROR");
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -672,6 +687,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernActEffectiveTime(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemConcernAct2ProblemConcernActEffectiveTime", "ERROR");
 
 		if (VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -737,6 +754,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernActCodeP(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemConcernAct2ProblemConcernActCodeP", "ERROR");
 
 		if (VALIDATE_PROBLEM_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -824,6 +843,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ProblemConcernAct2ProblemConcernActCode", "ERROR");
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -886,6 +907,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernActProblemObservation(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemConcernAct2ProblemConcernActProblemObservation", "ERROR");
 
 		if (VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

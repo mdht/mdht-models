@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.CriterionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,9 @@ public class PreconditionForSubstanceAdministrationOperations extends CriterionO
 			PreconditionForSubstanceAdministration preconditionForSubstanceAdministration, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministrationPreconditionForSubstanceAdministrationTemplateId", "ERROR");
+
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -160,6 +164,9 @@ public class PreconditionForSubstanceAdministrationOperations extends CriterionO
 	public static boolean validatePreconditionForSubstanceAdministrationCode(
 			PreconditionForSubstanceAdministration preconditionForSubstanceAdministration, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministrationPreconditionForSubstanceAdministrationCode", "WARNING");
 
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -228,6 +235,9 @@ public class PreconditionForSubstanceAdministrationOperations extends CriterionO
 			PreconditionForSubstanceAdministration preconditionForSubstanceAdministration, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministrationPreconditionForSubstanceAdministrationText", "INFO");
+
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -294,6 +304,9 @@ public class PreconditionForSubstanceAdministrationOperations extends CriterionO
 	public static boolean validatePreconditionForSubstanceAdministrationValue(
 			PreconditionForSubstanceAdministration preconditionForSubstanceAdministration, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministrationPreconditionForSubstanceAdministrationValue", "WARNING");
 
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

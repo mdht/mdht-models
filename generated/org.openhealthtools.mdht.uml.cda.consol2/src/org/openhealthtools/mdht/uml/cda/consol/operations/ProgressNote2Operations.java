@@ -10,6 +10,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -153,6 +154,11 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
 			ProgressNote2 progressNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ProgressNote2ProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2",
+			"ERROR");
+
 		if (VALIDATE_PROGRESS_NOTE2_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -219,6 +225,11 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 			ProgressNote2 progressNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ProgressNote2ProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent",
+			"ERROR");
+
 		if (VALIDATE_PROGRESS_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_OR_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -284,6 +295,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProgressNote2CodeP(ProgressNote2 progressNote2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2CodeP", "ERROR");
 
 		if (VALIDATE_PROGRESS_NOTE2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -371,6 +384,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2Code", "ERROR");
+
 		if (VALIDATE_PROGRESS_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -433,6 +448,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProgressNote2DocumentationOf(ProgressNote2 progressNote2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2DocumentationOf", "WARNING");
 
 		if (VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -497,6 +514,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2ComponentOf(ProgressNote2 progressNote2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2ComponentOf", "ERROR");
+
 		if (VALIDATE_PROGRESS_NOTE2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -560,6 +579,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2AssessmentSection(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2AssessmentSection", "INFO");
+
 		if (VALIDATE_PROGRESS_NOTE2_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -622,6 +643,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProgressNote2PlanOfTreatmentSection2(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2PlanOfTreatmentSection2", "INFO");
 
 		if (VALIDATE_PROGRESS_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -688,6 +711,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2AssessmentAndPlanSection2(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2AssessmentAndPlanSection2", "INFO");
+
 		if (VALIDATE_PROGRESS_NOTE2_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -752,6 +777,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProgressNote2AllergiesSectionEntriesOptional2(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2AllergiesSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_PROGRESS_NOTE2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -818,6 +845,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2ChiefComplaintSection(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2ChiefComplaintSection", "INFO");
+
 		if (VALIDATE_PROGRESS_NOTE2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -882,6 +911,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProgressNote2InterventionsSection2(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2InterventionsSection2", "INFO");
 
 		if (VALIDATE_PROGRESS_NOTE2_INTERVENTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -948,6 +979,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2InstructionsSection2(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2InstructionsSection2", "INFO");
+
 		if (VALIDATE_PROGRESS_NOTE2_INSTRUCTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1011,6 +1044,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProgressNote2MedicationsSectionEntriesOptional2(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2MedicationsSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_PROGRESS_NOTE2_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1077,6 +1112,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2ObjectiveSection(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2ObjectiveSection", "INFO");
+
 		if (VALIDATE_PROGRESS_NOTE2_OBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1139,6 +1176,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProgressNote2PhysicalExamSection2(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2PhysicalExamSection2", "INFO");
 
 		if (VALIDATE_PROGRESS_NOTE2_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1205,6 +1244,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2ProblemSectionEntriesOptional2(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2ProblemSectionEntriesOptional2", "INFO");
+
 		if (VALIDATE_PROGRESS_NOTE2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1269,6 +1310,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProgressNote2ResultsSectionEntriesOptional2(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2ResultsSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_PROGRESS_NOTE2_RESULTS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1335,6 +1378,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2ReviewOfSystemsSection(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2ReviewOfSystemsSection", "INFO");
+
 		if (VALIDATE_PROGRESS_NOTE2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1400,6 +1445,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2SubjectiveSection(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2SubjectiveSection", "INFO");
+
 		if (VALIDATE_PROGRESS_NOTE2_SUBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1462,6 +1509,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProgressNote2VitalSignsSectionEntriesOptional2(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2VitalSignsSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_PROGRESS_NOTE2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1528,6 +1577,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2NutritionSection(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2NutritionSection", "INFO");
+
 		if (VALIDATE_PROGRESS_NOTE2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1590,6 +1641,9 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
 			ProgressNote2 progressNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProgressNote2ProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow", "WARNING");
 
 		if (VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1662,6 +1716,9 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
 			ProgressNote2 progressNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProgressNote2ProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth", "ERROR");
+
 		if (VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1732,6 +1789,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNote2DocumentationOfServiceEventTemplateId(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2DocumentationOfServiceEventTemplateId", "ERROR");
 
 		if (VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1804,6 +1863,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2DocumentationOfServiceEventClassCode(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2DocumentationOfServiceEventClassCode", "ERROR");
+
 		if (VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1874,6 +1935,9 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNote2DocumentationOfServiceEventEffectiveTime(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProgressNote2ProgressNote2DocumentationOfServiceEventEffectiveTime", "WARNING");
 
 		if (VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1946,6 +2010,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2DocumentationOfServiceEvent(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2DocumentationOfServiceEvent", "ERROR");
+
 		if (VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2015,6 +2081,9 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow(
 			ProgressNote2 progressNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProgressNote2ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow", "ERROR");
 
 		if (VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2087,6 +2156,9 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId(
 			ProgressNote2 progressNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProgressNote2ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId", "ERROR");
+
 		if (VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2157,6 +2229,9 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(
 			ProgressNote2 progressNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProgressNote2ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility", "ERROR");
 
 		if (VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2229,6 +2304,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2ComponentOfEncompassingEncounterId(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2ComponentOfEncompassingEncounterId", "ERROR");
+
 		if (VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2299,6 +2376,9 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNote2ComponentOfEncompassingEncounterEffectiveTime(
 			ProgressNote2 progressNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProgressNote2ProgressNote2ComponentOfEncompassingEncounterEffectiveTime", "ERROR");
 
 		if (VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2371,6 +2451,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProgressNote2ComponentOfEncompassingEncounterLocation(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2ComponentOfEncompassingEncounterLocation", "ERROR");
+
 		if (VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2441,6 +2523,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNote2ComponentOfEncompassingEncounter(ProgressNote2 progressNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressNote2ProgressNote2ComponentOfEncompassingEncounter", "ERROR");
 
 		if (VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3239,6 +3323,8 @@ public class ProgressNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateUSRealmHeader2TemplateId(ProgressNote2 progressNote2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressNote2USRealmHeader2TemplateId", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

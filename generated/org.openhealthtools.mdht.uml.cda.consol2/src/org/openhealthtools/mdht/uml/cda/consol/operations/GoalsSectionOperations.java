@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -99,6 +100,8 @@ public class GoalsSectionOperations extends SectionOperations {
 	public static boolean validateGoalsSectionTemplateId(GoalsSection goalsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GoalsSectionGoalsSectionTemplateId", "ERROR");
+
 		if (VALIDATE_GOALS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -161,6 +164,8 @@ public class GoalsSectionOperations extends SectionOperations {
 
 	public static boolean validateGoalsSectionNullFlavor(GoalsSection goalsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GoalsSectionGoalsSectionNullFlavor", "INFO");
 
 		if (VALIDATE_GOALS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -227,6 +232,8 @@ public class GoalsSectionOperations extends SectionOperations {
 	public static boolean validateGoalsSectionCode(GoalsSection goalsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GoalsSectionGoalsSectionCode", "ERROR");
+
 		if (VALIDATE_GOALS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -289,6 +296,8 @@ public class GoalsSectionOperations extends SectionOperations {
 
 	public static boolean validateGoalsSectionCodeP(GoalsSection goalsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GoalsSectionGoalsSectionCodeP", "ERROR");
 
 		if (VALIDATE_GOALS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -353,6 +362,8 @@ public class GoalsSectionOperations extends SectionOperations {
 	public static boolean validateGoalsSectionTitle(GoalsSection goalsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GoalsSectionGoalsSectionTitle", "ERROR");
+
 		if (VALIDATE_GOALS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -416,6 +427,8 @@ public class GoalsSectionOperations extends SectionOperations {
 	public static boolean validateGoalsSectionText(GoalsSection goalsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GoalsSectionGoalsSectionText", "ERROR");
+
 		if (VALIDATE_GOALS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -478,6 +491,8 @@ public class GoalsSectionOperations extends SectionOperations {
 
 	public static boolean validateGoalsSectionGoalObservation(GoalsSection goalsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GoalsSectionGoalsSectionGoalObservation", "ERROR");
 
 		if (VALIDATE_GOALS_SECTION_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

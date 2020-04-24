@@ -12,6 +12,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ExternalDocumentOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -93,6 +94,8 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ExternalDocumentReferenceExternalDocumentReferenceTemplateId", "ERROR");
+
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -159,6 +162,8 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ExternalDocumentReferenceExternalDocumentReferenceClassCode", "ERROR");
+
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -223,6 +228,8 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 
 	public static boolean validateExternalDocumentReferenceMoodCode(ExternalDocumentReference externalDocumentReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ExternalDocumentReferenceExternalDocumentReferenceMoodCode", "ERROR");
 
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -289,6 +296,8 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 	public static boolean validateExternalDocumentReferenceId(ExternalDocumentReference externalDocumentReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ExternalDocumentReferenceExternalDocumentReferenceId", "ERROR");
+
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -353,6 +362,8 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 	public static boolean validateExternalDocumentReferenceCode(ExternalDocumentReference externalDocumentReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ExternalDocumentReferenceExternalDocumentReferenceCode", "ERROR");
+
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -416,6 +427,8 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 
 	public static boolean validateExternalDocumentReferenceSetId(ExternalDocumentReference externalDocumentReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ExternalDocumentReferenceExternalDocumentReferenceSetId", "WARNING");
 
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -482,6 +495,8 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 	public static boolean validateExternalDocumentReferenceVersionNumber(
 			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ExternalDocumentReferenceExternalDocumentReferenceVersionNumber", "WARNING");
 
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

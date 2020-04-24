@@ -21,6 +21,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -173,6 +174,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanDoesNotHavePlanOfTreatmentSectionV2", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -237,6 +240,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 
 	public static boolean validateCarePlanCodeP(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanCodeP", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -323,6 +328,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanCode", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -383,6 +390,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 
 	public static boolean validateCarePlanSetId(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanSetId", "WARNING");
 
 		if (VALIDATE_CARE_PLAN_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -446,6 +455,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanVersionNumber(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanVersionNumber", "WARNING");
+
 		if (VALIDATE_CARE_PLAN_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -507,6 +518,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 
 	public static boolean validateCarePlanInformationRecipient(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanInformationRecipient", "WARNING");
 
 		if (VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -571,6 +584,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanAuthenticator(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanAuthenticator", "WARNING");
+
 		if (VALIDATE_CARE_PLAN_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -632,6 +647,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 
 	public static boolean validateCarePlanParticipantCarePlanReview(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCarePlanReview", "WARNING");
 
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -697,6 +714,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanParticipantCaregiver(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCaregiver", "WARNING");
+
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -760,6 +779,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanDocumentationOf(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanDocumentationOf", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -821,6 +842,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 
 	public static boolean validateCarePlanRelatedDocument(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanRelatedDocument", "INFO");
 
 		if (VALIDATE_CARE_PLAN_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -884,6 +907,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanComponentOf(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanComponentOf", "WARNING");
+
 		if (VALIDATE_CARE_PLAN_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -945,6 +970,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 
 	public static boolean validateCarePlanHealthConcernsSection(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanHealthConcernsSection", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_HEALTH_CONCERNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1009,6 +1036,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanGoalsSection(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanGoalsSection", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_GOALS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1070,6 +1099,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 
 	public static boolean validateCarePlanHealthStatusEvaluationsOutcomesSection(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanHealthStatusEvaluationsOutcomesSection", "WARNING");
 
 		if (VALIDATE_CARE_PLAN_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1135,6 +1166,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 
 	public static boolean validateCarePlanInterventionsSection2(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanInterventionsSection2", "WARNING");
 
 		if (VALIDATE_CARE_PLAN_INTERVENTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1210,6 +1243,9 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanInformationRecipientIntendedRecipientInformationRecipientName(
 			CarePlan carePlan, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CarePlanCarePlanInformationRecipientIntendedRecipientInformationRecipientName", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1280,6 +1316,9 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId", "WARNING");
 
 		if (VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1352,6 +1391,9 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName(
 			CarePlan carePlan, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1422,6 +1464,11 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP(
 			CarePlan carePlan, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP",
+			"WARNING");
 
 		if (VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_STANDARD_INDUSTRY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1510,6 +1557,11 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode(
 			CarePlan carePlan, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode",
+			"ERROR");
+
 		if (VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_STANDARD_INDUSTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1591,6 +1643,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanInformationRecipientIntendedRecipientId(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanInformationRecipientIntendedRecipientId", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1660,6 +1714,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanInformationRecipientIntendedRecipientAddr(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanInformationRecipientIntendedRecipientAddr", "WARNING");
 
 		if (VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1732,6 +1788,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanInformationRecipientIntendedRecipientTelecom(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanInformationRecipientIntendedRecipientTelecom", "WARNING");
+
 		if (VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1802,6 +1860,9 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanInformationRecipientIntendedRecipientInformationRecipient(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CarePlanCarePlanInformationRecipientIntendedRecipientInformationRecipient", "WARNING");
 
 		if (VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1874,6 +1935,9 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanInformationRecipientIntendedRecipientReceivedOrganization(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganization", "WARNING");
+
 		if (VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1945,6 +2009,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanInformationRecipientIntendedRecipient(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanInformationRecipientIntendedRecipient", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2014,6 +2080,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanAuthenticatorAssignedEntityId(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanAuthenticatorAssignedEntityId", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2087,6 +2155,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanAuthenticatorAssignedEntityCode(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanAuthenticatorAssignedEntityCode", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2156,6 +2226,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanAuthenticatorAssignedEntityCodeP(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanAuthenticatorAssignedEntityCodeP", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2227,6 +2299,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanAuthenticatorTime(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanAuthenticatorTime", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2296,6 +2370,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanAuthenticatorSignatureCode(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanAuthenticatorSignatureCode", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2367,6 +2443,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanAuthenticatorSDTCSignatureText(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanAuthenticatorSDTCSignatureText", "INFO");
+
 		if (VALIDATE_CARE_PLAN_AUTHENTICATOR_SDTC_SIGNATURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2437,6 +2515,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanAuthenticatorAssignedEntity(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanAuthenticatorAssignedEntity", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2506,6 +2586,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanParticipantCarePlanReviewAssociatedEntityClassCode(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCarePlanReviewAssociatedEntityClassCode", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2578,6 +2660,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanParticipantCarePlanReviewAssociatedEntityId(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCarePlanReviewAssociatedEntityId", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2648,6 +2732,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanParticipantCarePlanReviewAssociatedEntityCodeP(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCarePlanReviewAssociatedEntityCodeP", "WARNING");
 
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2736,6 +2822,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanParticipantCarePlanReviewAssociatedEntityCode(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCarePlanReviewAssociatedEntityCode", "WARNING");
+
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2817,6 +2905,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanParticipantCarePlanReviewTypeCode(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCarePlanReviewTypeCode", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2889,6 +2979,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanParticipantCarePlanReviewFunctionCode(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCarePlanReviewFunctionCode", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2958,6 +3050,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanParticipantCarePlanReviewFunctionCodeP(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCarePlanReviewFunctionCodeP", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3029,6 +3123,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanParticipantCarePlanReviewTime(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCarePlanReviewTime", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3098,6 +3194,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanParticipantCarePlanReviewAssociatedEntity(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCarePlanReviewAssociatedEntity", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3170,6 +3268,9 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CarePlanCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3240,6 +3341,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCaregiverAssociatedEntityClassCodeP", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3328,6 +3431,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanParticipantCaregiverAssociatedEntityClassCode(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCaregiverAssociatedEntityClassCode", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3409,6 +3514,9 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPerson(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CarePlanCarePlanParticipantCaregiverAssociatedEntityAssociatedPerson", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3480,6 +3588,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanParticipantCaregiverTypeCode(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCaregiverTypeCode", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3549,6 +3659,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanParticipantCaregiverAssociatedEntity(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanParticipantCaregiverAssociatedEntity", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3620,6 +3732,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanDocumentationOfServiceEventIVLTSLow(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanDocumentationOfServiceEventIVLTSLow", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3690,6 +3804,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanDocumentationOfServiceEventIVLTSHigh(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanDocumentationOfServiceEventIVLTSHigh", "INFO");
+
 		if (VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3759,6 +3875,9 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName(
 			CarePlan carePlan, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3831,6 +3950,9 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityId(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntityId", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3901,6 +4023,9 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityCode(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntityCode", "INFO");
 
 		if (VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3973,6 +4098,9 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson(
 			CarePlan carePlan, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4043,6 +4171,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntity(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntity", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4115,6 +4245,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanDocumentationOfServiceEventClassCode(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanDocumentationOfServiceEventClassCode", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4184,6 +4316,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanDocumentationOfServiceEventEffectiveTime(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanDocumentationOfServiceEventEffectiveTime", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4255,6 +4389,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanDocumentationOfServiceEventPerformer1(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanDocumentationOfServiceEventPerformer1", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4324,6 +4460,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanDocumentationOfServiceEvent(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanDocumentationOfServiceEvent", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4395,6 +4533,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanRelatedDocumentParentDocumentId(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanRelatedDocumentParentDocumentId", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4464,6 +4604,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanRelatedDocumentParentDocumentSetId(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanRelatedDocumentParentDocumentSetId", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4535,6 +4677,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanRelatedDocumentParentDocumentVersionNumber(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanRelatedDocumentParentDocumentVersionNumber", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4605,6 +4749,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanRelatedDocumentTypeCodeP(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanRelatedDocumentTypeCodeP", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4691,6 +4837,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanRelatedDocumentTypeCode(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanRelatedDocumentTypeCode", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4770,6 +4918,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	public static boolean validateCarePlanRelatedDocumentParentDocument(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CarePlanCarePlanRelatedDocumentParentDocument", "ERROR");
+
 		if (VALIDATE_CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4839,6 +4989,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanComponentOfEncompassingEncounterEffectiveTime(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanComponentOfEncompassingEncounterEffectiveTime", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4910,6 +5062,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCarePlanComponentOfEncompassingEncounter(CarePlan carePlan,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanCarePlanComponentOfEncompassingEncounter", "ERROR");
 
 		if (VALIDATE_CARE_PLAN_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5158,6 +5312,8 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 
 	public static boolean validateUSRealmHeader2TemplateId(CarePlan carePlan, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CarePlanUSRealmHeader2TemplateId", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

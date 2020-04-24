@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -102,6 +103,8 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	public static boolean validateFamilyHistorySectionTemplateId(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FamilyHistorySectionFamilyHistorySectionTemplateId", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -169,6 +172,8 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	public static boolean validateFamilyHistorySectionCode(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FamilyHistorySectionFamilyHistorySectionCode", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -231,6 +236,8 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 
 	public static boolean validateFamilyHistorySectionCodeP(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FamilyHistorySectionFamilyHistorySectionCodeP", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -295,6 +302,8 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	public static boolean validateFamilyHistorySectionTitle(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FamilyHistorySectionFamilyHistorySectionTitle", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -358,6 +367,8 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	public static boolean validateFamilyHistorySectionText(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FamilyHistorySectionFamilyHistorySectionText", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -420,6 +431,8 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 
 	public static boolean validateFamilyHistorySectionFamilyHistory(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FamilyHistorySectionFamilyHistorySectionFamilyHistory", "INFO");
 
 		if (VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

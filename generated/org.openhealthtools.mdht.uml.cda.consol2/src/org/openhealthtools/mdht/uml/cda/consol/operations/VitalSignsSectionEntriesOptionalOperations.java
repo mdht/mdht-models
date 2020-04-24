@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -103,6 +104,9 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "VitalSignsSectionEntriesOptionalVitalSignsSectionEntriesOptionalTemplateId", "ERROR");
+
 		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -172,6 +176,9 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "VitalSignsSectionEntriesOptionalVitalSignsSectionEntriesOptionalCode", "ERROR");
+
 		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -239,6 +246,9 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "VitalSignsSectionEntriesOptionalVitalSignsSectionEntriesOptionalCodeP", "ERROR");
+
 		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -284,6 +294,9 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	public static boolean validateVitalSignsSectionEntriesOptionalText(
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "VitalSignsSectionEntriesOptionalVitalSignsSectionEntriesOptionalText", "ERROR");
 
 		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -373,6 +386,9 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "VitalSignsSectionEntriesOptionalVitalSignsSectionEntriesOptionalTitle", "ERROR");
+
 		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -439,6 +455,9 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	public static boolean validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "VitalSignsSectionEntriesOptionalVitalSignsSectionEntriesOptionalVitalSignsOrganizer", "WARNING");
 
 		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

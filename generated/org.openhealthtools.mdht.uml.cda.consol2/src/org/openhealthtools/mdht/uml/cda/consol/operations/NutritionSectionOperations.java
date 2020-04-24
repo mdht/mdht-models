@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -98,6 +99,8 @@ public class NutritionSectionOperations extends SectionOperations {
 	public static boolean validateNutritionSectionTemplateId(NutritionSection nutritionSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionSectionNutritionSectionTemplateId", "ERROR");
+
 		if (VALIDATE_NUTRITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -163,6 +166,8 @@ public class NutritionSectionOperations extends SectionOperations {
 	public static boolean validateNutritionSectionCode(NutritionSection nutritionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionSectionNutritionSectionCode", "ERROR");
+
 		if (VALIDATE_NUTRITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -225,6 +230,8 @@ public class NutritionSectionOperations extends SectionOperations {
 
 	public static boolean validateNutritionSectionCodeP(NutritionSection nutritionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NutritionSectionNutritionSectionCodeP", "ERROR");
 
 		if (VALIDATE_NUTRITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -289,6 +296,8 @@ public class NutritionSectionOperations extends SectionOperations {
 	public static boolean validateNutritionSectionTitle(NutritionSection nutritionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionSectionNutritionSectionTitle", "ERROR");
+
 		if (VALIDATE_NUTRITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -352,6 +361,8 @@ public class NutritionSectionOperations extends SectionOperations {
 	public static boolean validateNutritionSectionText(NutritionSection nutritionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionSectionNutritionSectionText", "ERROR");
+
 		if (VALIDATE_NUTRITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -414,6 +425,8 @@ public class NutritionSectionOperations extends SectionOperations {
 
 	public static boolean validateNutritionSectionNutritionalStatusObservation(NutritionSection nutritionSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NutritionSectionNutritionSectionNutritionalStatusObservation", "WARNING");
 
 		if (VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

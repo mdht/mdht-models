@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -95,6 +96,8 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 			OperativeNoteFluidSection operativeNoteFluidSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteFluidSectionOperativeNoteFluidSectionTemplateId", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -162,6 +165,8 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	public static boolean validateOperativeNoteFluidSectionCode(OperativeNoteFluidSection operativeNoteFluidSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteFluidSectionOperativeNoteFluidSectionCode", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -225,6 +230,8 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 
 	public static boolean validateOperativeNoteFluidSectionCodeP(OperativeNoteFluidSection operativeNoteFluidSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OperativeNoteFluidSectionOperativeNoteFluidSectionCodeP", "ERROR");
 
 		if (VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -291,6 +298,8 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	public static boolean validateOperativeNoteFluidSectionText(OperativeNoteFluidSection operativeNoteFluidSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteFluidSectionOperativeNoteFluidSectionText", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -354,6 +363,8 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 
 	public static boolean validateOperativeNoteFluidSectionTitle(OperativeNoteFluidSection operativeNoteFluidSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OperativeNoteFluidSectionOperativeNoteFluidSectionTitle", "ERROR");
 
 		if (VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

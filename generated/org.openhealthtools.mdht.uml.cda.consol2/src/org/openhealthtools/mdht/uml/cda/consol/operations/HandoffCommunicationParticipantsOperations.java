@@ -12,6 +12,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -106,6 +107,9 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsTemplateId", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -172,6 +176,9 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsClassCode(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsClassCode", "ERROR");
 
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -240,6 +247,9 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsMoodCode", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -306,6 +316,9 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsCodeP(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsCodeP", "ERROR");
 
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -399,6 +412,9 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 			return true;
 		}
 
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsCode", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -467,6 +483,9 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsStatusCode", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -533,6 +552,9 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsStatusCodeP(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsStatusCodeP", "ERROR");
 
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -601,6 +623,9 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsEffectiveTime", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -667,6 +692,9 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipant(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipant", "ERROR");
 
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -735,6 +763,9 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsAuthorParticipation", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -801,6 +832,11 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName",
+			"ERROR");
 
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -874,6 +910,10 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleId",
+			"ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -945,6 +985,10 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipantParticipantRoleCodeP(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleCodeP",
+			"WARNING");
 
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1034,6 +1078,10 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleCode",
+			"WARNING");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1116,6 +1164,10 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleAddr",
+			"ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1187,6 +1239,11 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity",
+			"INFO");
 
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1260,6 +1317,9 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantTypeCode", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1331,6 +1391,10 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipantParticipantRole(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRole",
+			"ERROR");
 
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

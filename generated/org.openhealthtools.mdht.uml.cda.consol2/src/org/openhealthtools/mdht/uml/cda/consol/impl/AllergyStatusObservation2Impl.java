@@ -2,20 +2,14 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyStatusObservation2Operations;
 
 /**

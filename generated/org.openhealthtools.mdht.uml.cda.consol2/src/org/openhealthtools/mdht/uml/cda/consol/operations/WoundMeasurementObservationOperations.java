@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -97,6 +98,8 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "WoundMeasurementObservationWoundMeasurementObservationTemplateId", "ERROR");
+
 		if (VALIDATE_WOUND_MEASUREMENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -163,6 +166,8 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 	public static boolean validateWoundMeasurementObservationClassCode(
 			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "WoundMeasurementObservationWoundMeasurementObservationClassCode", "ERROR");
 
 		if (VALIDATE_WOUND_MEASUREMENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -231,6 +236,8 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "WoundMeasurementObservationWoundMeasurementObservationMoodCode", "ERROR");
+
 		if (VALIDATE_WOUND_MEASUREMENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -297,6 +304,8 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 	public static boolean validateWoundMeasurementObservationId(WoundMeasurementObservation woundMeasurementObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "WoundMeasurementObservationWoundMeasurementObservationId", "ERROR");
+
 		if (VALIDATE_WOUND_MEASUREMENT_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -361,6 +370,8 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 	public static boolean validateWoundMeasurementObservationCodeP(
 			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "WoundMeasurementObservationWoundMeasurementObservationCodeP", "ERROR");
 
 		if (VALIDATE_WOUND_MEASUREMENT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -451,6 +462,8 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "WoundMeasurementObservationWoundMeasurementObservationCode", "ERROR");
+
 		if (VALIDATE_WOUND_MEASUREMENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -517,6 +530,8 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 	public static boolean validateWoundMeasurementObservationStatusCode(
 			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "WoundMeasurementObservationWoundMeasurementObservationStatusCode", "ERROR");
 
 		if (VALIDATE_WOUND_MEASUREMENT_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -585,6 +600,8 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "WoundMeasurementObservationWoundMeasurementObservationStatusCodeP", "ERROR");
+
 		if (VALIDATE_WOUND_MEASUREMENT_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -652,6 +669,9 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "WoundMeasurementObservationWoundMeasurementObservationEffectiveTime", "ERROR");
+
 		if (VALIDATE_WOUND_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -718,6 +738,8 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 	public static boolean validateWoundMeasurementObservationValue(
 			WoundMeasurementObservation woundMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "WoundMeasurementObservationWoundMeasurementObservationValue", "ERROR");
 
 		if (VALIDATE_WOUND_MEASUREMENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
