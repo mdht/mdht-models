@@ -27,9 +27,9 @@
 		</repository>
 
 		<repository>
-			<id>mdht-neon</id>
+			<id>mdht-nightly</id>
 			<layout>p2</layout>
-			<url>https://hudson.eclipse.org/mdht/job/MDHT-master/lastSuccessfulBuild/artifact/repository</url>
+			<url>http://download.eclipse.org/mdht/nightly</url>
 		</repository>
 
 	</repositories>
