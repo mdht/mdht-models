@@ -7,16 +7,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.ProtectedProblem;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemObservationOperations;
 
@@ -67,6 +64,8 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 
 	public static boolean validateProblemObservationTemplateId(ProtectedProblem protectedProblem,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProtectedProblemProblemObservationTemplateId", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -130,6 +129,8 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 
 	public static boolean validateProtectedProblemProblemProvenance(ProtectedProblem protectedProblem,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProtectedProblemProtectedProblemProblemProvenance", "ERROR");
 
 		if (VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -216,6 +217,8 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 
 	public static boolean validateProtectedProblemPrivacyAnnotations(ProtectedProblem protectedProblem,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProtectedProblemProtectedProblemPrivacyAnnotations", "ERROR");
 
 		if (VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

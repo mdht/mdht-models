@@ -2,15 +2,11 @@
  */
 package org.hl7.security.ds4p.contentprofile;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.Organizer;
 
@@ -32,7 +28,7 @@ public interface PrivacyAnnotation extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.3251.1.4\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.3251.1.4\')'"
 	 * @generated
 	 */
 	boolean validatePrivacyAnnotationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -92,7 +88,7 @@ public interface PrivacyAnnotation extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::ObligationPolicySecurityObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::ObligationPolicySecurityObservation))'"
 	 * @generated
 	 */
 	boolean validatePrivacyAnnotationObligationPolicySecurityObservation(DiagnosticChain diagnostics,
@@ -105,7 +101,7 @@ public interface PrivacyAnnotation extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::RefrainPolicySecurityObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::RefrainPolicySecurityObservation))'"
 	 * @generated
 	 */
 	boolean validatePrivacyAnnotationRefrainPolicySecurityObservation(DiagnosticChain diagnostics,
@@ -118,7 +114,7 @@ public interface PrivacyAnnotation extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::PurposeOfUseSecurityObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::PurposeOfUseSecurityObservation))'"
 	 * @generated
 	 */
 	boolean validatePrivacyAnnotationPurposeOfUseSecurityObservation(DiagnosticChain diagnostics,
@@ -131,7 +127,7 @@ public interface PrivacyAnnotation extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::ConfidentialitySecurityObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::ConfidentialitySecurityObservation))'"
 	 * @generated
 	 */
 	boolean validatePrivacyAnnotationConfidentialityCodeSecurityObservation(DiagnosticChain diagnostics,
@@ -141,7 +137,7 @@ public interface PrivacyAnnotation extends Organizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(contentprofile::ObligationPolicySecurityObservation)).oclAsType(contentprofile::ObligationPolicySecurityObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()-&gt;select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(contentprofile::ObligationPolicySecurityObservation)).oclAsType(contentprofile::ObligationPolicySecurityObservation)'"
 	 * @generated
 	 */
 	EList<ObligationPolicySecurityObservation> getObligationPolicySecurityObservations();
@@ -150,7 +146,7 @@ public interface PrivacyAnnotation extends Organizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(contentprofile::RefrainPolicySecurityObservation)).oclAsType(contentprofile::RefrainPolicySecurityObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()-&gt;select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(contentprofile::RefrainPolicySecurityObservation)).oclAsType(contentprofile::RefrainPolicySecurityObservation)'"
 	 * @generated
 	 */
 	EList<RefrainPolicySecurityObservation> getRefrainPolicySecurityObservations();
@@ -159,7 +155,7 @@ public interface PrivacyAnnotation extends Organizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(contentprofile::PurposeOfUseSecurityObservation)).oclAsType(contentprofile::PurposeOfUseSecurityObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()-&gt;select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(contentprofile::PurposeOfUseSecurityObservation)).oclAsType(contentprofile::PurposeOfUseSecurityObservation)'"
 	 * @generated
 	 */
 	EList<PurposeOfUseSecurityObservation> getPurposeOfUseSecurityObservations();
@@ -168,7 +164,7 @@ public interface PrivacyAnnotation extends Organizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(contentprofile::ConfidentialitySecurityObservation))->asSequence()->any(true).oclAsType(contentprofile::ConfidentialitySecurityObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()-&gt;select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(contentprofile::ConfidentialitySecurityObservation))-&gt;asSequence()-&gt;any(true).oclAsType(contentprofile::ConfidentialitySecurityObservation)'"
 	 * @generated
 	 */
 	ConfidentialitySecurityObservation getConfidentialityCodeSecurityObservation();

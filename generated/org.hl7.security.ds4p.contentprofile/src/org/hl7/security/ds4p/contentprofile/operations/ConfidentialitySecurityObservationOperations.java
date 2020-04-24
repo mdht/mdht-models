@@ -8,16 +8,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.ConfidentialitySecurityObservation;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -91,6 +88,8 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConfidentialitySecurityObservationSecurityObservationTemplateId", "ERROR");
+
 		if (VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -156,6 +155,8 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	public static boolean validateSecurityObservationCodeP(
 			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ConfidentialitySecurityObservationSecurityObservationCodeP", "ERROR");
 
 		if (VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -247,6 +248,8 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ConfidentialitySecurityObservationSecurityObservationCode", "ERROR");
+
 		if (VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -311,6 +314,8 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	public static boolean validateSecurityObservationValue(
 			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ConfidentialitySecurityObservationSecurityObservationValue", "ERROR");
 
 		if (VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

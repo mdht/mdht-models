@@ -7,18 +7,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.mdht.uml.cda.operations.EntryRelationshipOperations;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.PrivacyAnnotationEntryRelationship;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -90,6 +86,9 @@ public class PrivacyAnnotationEntryRelationshipOperations extends EntryRelations
 			PrivacyAnnotationEntryRelationship privacyAnnotationEntryRelationship, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PrivacyAnnotationEntryRelationshipPrivacyAnnotationEntryRelationshipTemplateId", "ERROR");
+
 		if (VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -156,6 +155,9 @@ public class PrivacyAnnotationEntryRelationshipOperations extends EntryRelations
 	public static boolean validatePrivacyAnnotationEntryRelationshipOrganizer(
 			PrivacyAnnotationEntryRelationship privacyAnnotationEntryRelationship, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PrivacyAnnotationEntryRelationshipPrivacyAnnotationEntryRelationshipOrganizer", "ERROR");
 
 		if (VALIDATE_PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

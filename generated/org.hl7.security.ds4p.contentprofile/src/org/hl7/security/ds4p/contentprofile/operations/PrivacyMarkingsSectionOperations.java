@@ -7,18 +7,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsSection;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -92,6 +88,8 @@ public class PrivacyMarkingsSectionOperations extends SectionOperations {
 	public static boolean validatePrivacyMarkingsSectionTemplateId(PrivacyMarkingsSection privacyMarkingsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrivacyMarkingsSectionPrivacyMarkingsSectionTemplateId", "ERROR");
+
 		if (VALIDATE_PRIVACY_MARKINGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -160,6 +158,8 @@ public class PrivacyMarkingsSectionOperations extends SectionOperations {
 	public static boolean validatePrivacyMarkingsSectionCode(PrivacyMarkingsSection privacyMarkingsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrivacyMarkingsSectionPrivacyMarkingsSectionCode", "WARNING");
+
 		if (VALIDATE_PRIVACY_MARKINGS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -223,6 +223,8 @@ public class PrivacyMarkingsSectionOperations extends SectionOperations {
 
 	public static boolean validatePrivacyMarkingsSectionCodeP(PrivacyMarkingsSection privacyMarkingsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PrivacyMarkingsSectionPrivacyMarkingsSectionCodeP", "ERROR");
 
 		if (VALIDATE_PRIVACY_MARKINGS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -288,6 +290,8 @@ public class PrivacyMarkingsSectionOperations extends SectionOperations {
 	public static boolean validatePrivacyMarkingsSectionText(PrivacyMarkingsSection privacyMarkingsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrivacyMarkingsSectionPrivacyMarkingsSectionText", "ERROR");
+
 		if (VALIDATE_PRIVACY_MARKINGS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -351,6 +355,8 @@ public class PrivacyMarkingsSectionOperations extends SectionOperations {
 
 	public static boolean validatePrivacyMarkingsSectionEntry1(PrivacyMarkingsSection privacyMarkingsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PrivacyMarkingsSectionPrivacyMarkingsSectionEntry1", "INFO");
 
 		if (VALIDATE_PRIVACY_MARKINGS_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

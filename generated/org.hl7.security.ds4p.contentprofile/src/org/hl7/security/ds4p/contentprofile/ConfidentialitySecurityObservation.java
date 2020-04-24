@@ -2,10 +2,7 @@
  */
 package org.hl7.security.ds4p.contentprofile;
 
-import java.lang.Iterable;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**

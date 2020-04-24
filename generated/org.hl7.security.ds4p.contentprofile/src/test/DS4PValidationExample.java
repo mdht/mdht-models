@@ -12,6 +12,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.mdht.uml.cda.util.CDADiagnostic;
 import org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationHandler;
 import org.eclipse.mdht.uml.cda.util.ValidationResult;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil.ValidationStatistics;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.util.DS4PUtil;
 
@@ -51,6 +52,24 @@ public class DS4PValidationExample {
 			@Override
 			public void handleInfo(Diagnostic diagnostic) {
 				System.out.println(diagnostic.getMessage());
+			}
+
+			@Override
+			public boolean isCaptureValidationStatistics() {
+				// TODO Auto-generated method stub
+				return false;
+			}
+
+			@Override
+			public ValidationStatistics getValidationStatistics() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+
+			@Override
+			public void setValidationStatistics(ValidationStatistics validationStatistics) {
+				// TODO Auto-generated method stub
+
 			}
 		};
 

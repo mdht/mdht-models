@@ -7,18 +7,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.mdht.uml.cda.operations.AuthorOperations;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.MandatoryEntryProvenance;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -90,6 +86,8 @@ public class MandatoryEntryProvenanceOperations extends AuthorOperations {
 	public static boolean validateMandatoryEntryProvenanceTemplateId(MandatoryEntryProvenance mandatoryEntryProvenance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MandatoryEntryProvenanceMandatoryEntryProvenanceTemplateId", "ERROR");
+
 		if (VALIDATE_MANDATORY_ENTRY_PROVENANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -156,6 +154,8 @@ public class MandatoryEntryProvenanceOperations extends AuthorOperations {
 	public static boolean validateMandatoryEntryProvenanceTime(MandatoryEntryProvenance mandatoryEntryProvenance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MandatoryEntryProvenanceMandatoryEntryProvenanceTime", "ERROR");
+
 		if (VALIDATE_MANDATORY_ENTRY_PROVENANCE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -220,6 +220,8 @@ public class MandatoryEntryProvenanceOperations extends AuthorOperations {
 	public static boolean validateMandatoryEntryProvenanceAssignedAuthor(
 			MandatoryEntryProvenance mandatoryEntryProvenance, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MandatoryEntryProvenanceMandatoryEntryProvenanceAssignedAuthor", "ERROR");
 
 		if (VALIDATE_MANDATORY_ENTRY_PROVENANCE_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

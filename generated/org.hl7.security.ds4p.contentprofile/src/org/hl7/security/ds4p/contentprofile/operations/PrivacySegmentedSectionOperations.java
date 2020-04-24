@@ -7,18 +7,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.PrivacySegmentedSection;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -91,6 +87,8 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 	public static boolean validatePrivacySegmentedSectionTemplateId(PrivacySegmentedSection privacySegmentedSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrivacySegmentedSectionPrivacySegmentedSectionTemplateId", "ERROR");
+
 		if (VALIDATE_PRIVACY_SEGMENTED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -159,6 +157,8 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 	public static boolean validatePrivacySegmentedSectionConfidentialityCode(
 			PrivacySegmentedSection privacySegmentedSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrivacySegmentedSectionPrivacySegmentedSectionConfidentialityCode", "ERROR");
+
 		if (VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -225,6 +225,9 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 	public static boolean validatePrivacySegmentedSectionConfidentialityCodeP(
 			PrivacySegmentedSection privacySegmentedSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PrivacySegmentedSectionPrivacySegmentedSectionConfidentialityCodeP", "WARNING");
+
 		if (VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -290,6 +293,8 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 
 	public static boolean validatePrivacySegmentedSectionAuthor(PrivacySegmentedSection privacySegmentedSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PrivacySegmentedSectionPrivacySegmentedSectionAuthor", "WARNING");
 
 		if (VALIDATE_PRIVACY_SEGMENTED_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

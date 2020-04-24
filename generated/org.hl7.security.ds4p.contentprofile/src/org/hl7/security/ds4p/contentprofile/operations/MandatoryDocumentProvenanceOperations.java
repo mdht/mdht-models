@@ -7,18 +7,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.mdht.uml.cda.operations.AuthorOperations;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.MandatoryDocumentProvenance;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -91,6 +87,8 @@ public class MandatoryDocumentProvenanceOperations extends AuthorOperations {
 			MandatoryDocumentProvenance mandatoryDocumentProvenance, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MandatoryDocumentProvenanceMandatoryDocumentProvenanceTemplateId", "ERROR");
+
 		if (VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -158,6 +156,8 @@ public class MandatoryDocumentProvenanceOperations extends AuthorOperations {
 			MandatoryDocumentProvenance mandatoryDocumentProvenance, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MandatoryDocumentProvenanceMandatoryDocumentProvenanceTime", "ERROR");
+
 		if (VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -224,6 +224,9 @@ public class MandatoryDocumentProvenanceOperations extends AuthorOperations {
 	public static boolean validateMandatoryDocumentProvenanceAssignedAuthor(
 			MandatoryDocumentProvenance mandatoryDocumentProvenance, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MandatoryDocumentProvenanceMandatoryDocumentProvenanceAssignedAuthor", "ERROR");
 
 		if (VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

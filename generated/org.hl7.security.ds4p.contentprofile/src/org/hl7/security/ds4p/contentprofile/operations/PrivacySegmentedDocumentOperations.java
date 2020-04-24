@@ -10,22 +10,17 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsSection;
 import org.hl7.security.ds4p.contentprofile.PrivacySegmentedDocument;
 import org.hl7.security.ds4p.contentprofile.PrivacySegmentedSection;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 import org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraintsOperations;
 
@@ -101,6 +96,8 @@ public class PrivacySegmentedDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validatePrivacySegmentedDocumentTemplateId(PrivacySegmentedDocument privacySegmentedDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrivacySegmentedDocumentPrivacySegmentedDocumentTemplateId", "ERROR");
+
 		if (VALIDATE_PRIVACY_SEGMENTED_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -166,6 +163,8 @@ public class PrivacySegmentedDocumentOperations extends GeneralHeaderConstraints
 
 	public static boolean validatePrivacySegmentedDocumentAuthor1(PrivacySegmentedDocument privacySegmentedDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PrivacySegmentedDocumentPrivacySegmentedDocumentAuthor1", "ERROR");
 
 		if (VALIDATE_PRIVACY_SEGMENTED_DOCUMENT_AUTHOR1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -234,6 +233,8 @@ public class PrivacySegmentedDocumentOperations extends GeneralHeaderConstraints
 			PrivacySegmentedDocument privacySegmentedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrivacySegmentedDocumentPrivacySegmentedDocumentSegmentedSection", "INFO");
+
 		if (VALIDATE_PRIVACY_SEGMENTED_DOCUMENT_SEGMENTED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -301,6 +302,9 @@ public class PrivacySegmentedDocumentOperations extends GeneralHeaderConstraints
 			PrivacySegmentedDocument privacySegmentedDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PrivacySegmentedDocumentPrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection", "WARNING");
+
 		if (VALIDATE_PRIVACY_SEGMENTED_DOCUMENT_PRIVACY_AND_SECURITY_MARKINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -366,7 +370,7 @@ public class PrivacySegmentedDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CONTENTPROFILEPackage.Literals.PRIVACY_SEGMENTED_DOCUMENT,
-				CONTENTPROFILEPackage.Literals.PRIVACY_SEGMENTED_DOCUMENT.getEAllOperations().get(304));
+				CONTENTPROFILEPackage.Literals.PRIVACY_SEGMENTED_DOCUMENT.getEAllOperations().get(324));
 			try {
 				GET_SEGMENTED_SECTIONS__EOCL_QRY = helper.createQuery(GET_SEGMENTED_SECTIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -415,7 +419,7 @@ public class PrivacySegmentedDocumentOperations extends GeneralHeaderConstraints
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CONTENTPROFILEPackage.Literals.PRIVACY_SEGMENTED_DOCUMENT,
-				CONTENTPROFILEPackage.Literals.PRIVACY_SEGMENTED_DOCUMENT.getEAllOperations().get(305));
+				CONTENTPROFILEPackage.Literals.PRIVACY_SEGMENTED_DOCUMENT.getEAllOperations().get(325));
 			try {
 				GET_PRIVACY_AND_SECURITY_MARKINGS_SECTIONS__EOCL_QRY = helper.createQuery(
 					GET_PRIVACY_AND_SECURITY_MARKINGS_SECTIONS__EOCL_EXP);

@@ -4,9 +4,7 @@ package org.hl7.security.ds4p.contentprofile.util;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.Switch;
-
 import org.eclipse.mdht.uml.cda.AssignedAuthor;
 import org.eclipse.mdht.uml.cda.Author;
 import org.eclipse.mdht.uml.cda.ClinicalDocument;
@@ -21,7 +19,23 @@ import org.eclipse.mdht.uml.hl7.rim.ActRelationship;
 import org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot;
 import org.eclipse.mdht.uml.hl7.rim.Participation;
 import org.eclipse.mdht.uml.hl7.rim.Role;
-import org.hl7.security.ds4p.contentprofile.*;
+import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
+import org.hl7.security.ds4p.contentprofile.ConfidentialitySecurityObservation;
+import org.hl7.security.ds4p.contentprofile.MandatoryDocumentAssignedAuthor;
+import org.hl7.security.ds4p.contentprofile.MandatoryDocumentProvenance;
+import org.hl7.security.ds4p.contentprofile.MandatoryEntryAssignedAuthor;
+import org.hl7.security.ds4p.contentprofile.MandatoryEntryProvenance;
+import org.hl7.security.ds4p.contentprofile.ObligationPolicySecurityObservation;
+import org.hl7.security.ds4p.contentprofile.PrivacyAnnotation;
+import org.hl7.security.ds4p.contentprofile.PrivacyAnnotationEntryRelationship;
+import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsEntry;
+import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsSection;
+import org.hl7.security.ds4p.contentprofile.PrivacySegmentedDocument;
+import org.hl7.security.ds4p.contentprofile.PrivacySegmentedSection;
+import org.hl7.security.ds4p.contentprofile.ProtectedProblem;
+import org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation;
+import org.hl7.security.ds4p.contentprofile.RefrainPolicySecurityObservation;
+import org.hl7.security.ds4p.contentprofile.SecurityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 

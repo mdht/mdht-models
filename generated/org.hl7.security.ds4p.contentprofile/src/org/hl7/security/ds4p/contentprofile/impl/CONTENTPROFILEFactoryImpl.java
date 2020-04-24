@@ -5,12 +5,25 @@ package org.hl7.security.ds4p.contentprofile.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
-import org.hl7.security.ds4p.contentprofile.*;
+import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEFactory;
+import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
+import org.hl7.security.ds4p.contentprofile.ConfidentialitySecurityObservation;
+import org.hl7.security.ds4p.contentprofile.MandatoryDocumentAssignedAuthor;
+import org.hl7.security.ds4p.contentprofile.MandatoryDocumentProvenance;
+import org.hl7.security.ds4p.contentprofile.MandatoryEntryAssignedAuthor;
+import org.hl7.security.ds4p.contentprofile.MandatoryEntryProvenance;
+import org.hl7.security.ds4p.contentprofile.ObligationPolicySecurityObservation;
+import org.hl7.security.ds4p.contentprofile.PrivacyAnnotation;
+import org.hl7.security.ds4p.contentprofile.PrivacyAnnotationEntryRelationship;
+import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsEntry;
+import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsSection;
+import org.hl7.security.ds4p.contentprofile.PrivacySegmentedDocument;
+import org.hl7.security.ds4p.contentprofile.PrivacySegmentedSection;
+import org.hl7.security.ds4p.contentprofile.ProtectedProblem;
+import org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation;
+import org.hl7.security.ds4p.contentprofile.RefrainPolicySecurityObservation;
 
 /**
  * <!-- begin-user-doc -->

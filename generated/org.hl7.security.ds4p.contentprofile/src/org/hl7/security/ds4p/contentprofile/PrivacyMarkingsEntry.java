@@ -2,14 +2,10 @@
  */
 package org.hl7.security.ds4p.contentprofile;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.Entry;
 
@@ -31,7 +27,7 @@ public interface PrivacyMarkingsEntry extends Entry {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.3251.1.9\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.3251.1.9\')'"
 	 * @generated
 	 */
 	boolean validatePrivacyMarkingsEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -43,7 +39,7 @@ public interface PrivacyMarkingsEntry extends Entry {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.organizer->one(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(contentprofile::PrivacyAnnotation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.organizer-&gt;one(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(contentprofile::PrivacyAnnotation))'"
 	 * @generated
 	 */
 	boolean validatePrivacyMarkingsEntryOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context);

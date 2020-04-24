@@ -7,18 +7,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.mdht.uml.cda.operations.AssignedAuthorOperations;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.MandatoryEntryAssignedAuthor;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -92,6 +88,8 @@ public class MandatoryEntryAssignedAuthorOperations extends AssignedAuthorOperat
 			MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MandatoryEntryAssignedAuthorMandatoryEntryAssignedAuthorTemplateId", "ERROR");
+
 		if (VALIDATE_MANDATORY_ENTRY_ASSIGNED_AUTHOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -158,6 +156,9 @@ public class MandatoryEntryAssignedAuthorOperations extends AssignedAuthorOperat
 	public static boolean validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(
 			MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MandatoryEntryAssignedAuthorMandatoryEntryAssignedAuthorAssignedAuthoringDevice", "ERROR");
 
 		if (VALIDATE_MANDATORY_ENTRY_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -226,6 +227,9 @@ public class MandatoryEntryAssignedAuthorOperations extends AssignedAuthorOperat
 			MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MandatoryEntryAssignedAuthorMandatoryEntryAssignedAuthorAssignedPerson", "ERROR");
+
 		if (VALIDATE_MANDATORY_ENTRY_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -292,6 +296,9 @@ public class MandatoryEntryAssignedAuthorOperations extends AssignedAuthorOperat
 	public static boolean validateMandatoryEntryAssignedAuthorRepresentedOrganization(
 			MandatoryEntryAssignedAuthor mandatoryEntryAssignedAuthor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MandatoryEntryAssignedAuthorMandatoryEntryAssignedAuthorRepresentedOrganization", "ERROR");
 
 		if (VALIDATE_MANDATORY_ENTRY_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

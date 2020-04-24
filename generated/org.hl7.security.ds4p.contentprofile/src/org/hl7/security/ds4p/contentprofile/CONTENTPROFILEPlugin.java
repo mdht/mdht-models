@@ -3,7 +3,6 @@
 package org.hl7.security.ds4p.contentprofile;
 
 import org.eclipse.emf.common.EMFPlugin;
-
 import org.eclipse.emf.common.util.ResourceLocator;
 
 /**

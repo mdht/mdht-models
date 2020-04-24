@@ -7,18 +7,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.mdht.uml.cda.operations.EntryOperations;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsEntry;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -89,6 +85,8 @@ public class PrivacyMarkingsEntryOperations extends EntryOperations {
 	public static boolean validatePrivacyMarkingsEntryTemplateId(PrivacyMarkingsEntry privacyMarkingsEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrivacyMarkingsEntryPrivacyMarkingsEntryTemplateId", "ERROR");
+
 		if (VALIDATE_PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -153,6 +151,8 @@ public class PrivacyMarkingsEntryOperations extends EntryOperations {
 
 	public static boolean validatePrivacyMarkingsEntryOrganizer(PrivacyMarkingsEntry privacyMarkingsEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PrivacyMarkingsEntryPrivacyMarkingsEntryOrganizer", "ERROR");
 
 		if (VALIDATE_PRIVACY_MARKINGS_ENTRY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

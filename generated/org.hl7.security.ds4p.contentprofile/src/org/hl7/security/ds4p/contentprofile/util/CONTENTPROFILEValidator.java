@@ -6,13 +6,27 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.EObjectValidator;
-
 import org.eclipse.mdht.uml.cda.util.CDAValidator;
-import org.hl7.security.ds4p.contentprofile.*;
+import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
+import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
+import org.hl7.security.ds4p.contentprofile.ConfidentialitySecurityObservation;
+import org.hl7.security.ds4p.contentprofile.MandatoryDocumentAssignedAuthor;
+import org.hl7.security.ds4p.contentprofile.MandatoryDocumentProvenance;
+import org.hl7.security.ds4p.contentprofile.MandatoryEntryAssignedAuthor;
+import org.hl7.security.ds4p.contentprofile.MandatoryEntryProvenance;
+import org.hl7.security.ds4p.contentprofile.ObligationPolicySecurityObservation;
+import org.hl7.security.ds4p.contentprofile.PrivacyAnnotation;
+import org.hl7.security.ds4p.contentprofile.PrivacyAnnotationEntryRelationship;
+import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsEntry;
+import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsSection;
+import org.hl7.security.ds4p.contentprofile.PrivacySegmentedDocument;
+import org.hl7.security.ds4p.contentprofile.PrivacySegmentedSection;
+import org.hl7.security.ds4p.contentprofile.ProtectedProblem;
+import org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation;
+import org.hl7.security.ds4p.contentprofile.RefrainPolicySecurityObservation;
+import org.hl7.security.ds4p.contentprofile.SecurityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -665,26 +679,26 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 			case CONTENTPROFILEPackage.PRIVACY_MARKINGS_SECTION:
 				return validatePrivacyMarkingsSection((PrivacyMarkingsSection) value, diagnostics, context);
 			case CONTENTPROFILEPackage.OBLIGATION_POLICY_SECURITY_OBSERVATION:
-				return validateObligationPolicySecurityObservation((ObligationPolicySecurityObservation) value,
-					diagnostics, context);
+				return validateObligationPolicySecurityObservation(
+					(ObligationPolicySecurityObservation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.SECURITY_OBSERVATION:
 				return validateSecurityObservation((SecurityObservation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.MANDATORY_DOCUMENT_PROVENANCE:
 				return validateMandatoryDocumentProvenance((MandatoryDocumentProvenance) value, diagnostics, context);
 			case CONTENTPROFILEPackage.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR:
-				return validateMandatoryDocumentAssignedAuthor((MandatoryDocumentAssignedAuthor) value, diagnostics,
-					context);
+				return validateMandatoryDocumentAssignedAuthor(
+					(MandatoryDocumentAssignedAuthor) value, diagnostics, context);
 			case CONTENTPROFILEPackage.PRIVACY_ANNOTATION:
 				return validatePrivacyAnnotation((PrivacyAnnotation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.REFRAIN_POLICY_SECURITY_OBSERVATION:
-				return validateRefrainPolicySecurityObservation((RefrainPolicySecurityObservation) value, diagnostics,
-					context);
+				return validateRefrainPolicySecurityObservation(
+					(RefrainPolicySecurityObservation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.PURPOSE_OF_USE_SECURITY_OBSERVATION:
-				return validatePurposeOfUseSecurityObservation((PurposeOfUseSecurityObservation) value, diagnostics,
-					context);
+				return validatePurposeOfUseSecurityObservation(
+					(PurposeOfUseSecurityObservation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.CONFIDENTIALITY_SECURITY_OBSERVATION:
-				return validateConfidentialitySecurityObservation((ConfidentialitySecurityObservation) value,
-					diagnostics, context);
+				return validateConfidentialitySecurityObservation(
+					(ConfidentialitySecurityObservation) value, diagnostics, context);
 			case CONTENTPROFILEPackage.PROTECTED_PROBLEM:
 				return validateProtectedProblem((ProtectedProblem) value, diagnostics, context);
 			case CONTENTPROFILEPackage.MANDATORY_ENTRY_PROVENANCE:
@@ -692,8 +706,8 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 			case CONTENTPROFILEPackage.MANDATORY_ENTRY_ASSIGNED_AUTHOR:
 				return validateMandatoryEntryAssignedAuthor((MandatoryEntryAssignedAuthor) value, diagnostics, context);
 			case CONTENTPROFILEPackage.PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP:
-				return validatePrivacyAnnotationEntryRelationship((PrivacyAnnotationEntryRelationship) value,
-					diagnostics, context);
+				return validatePrivacyAnnotationEntryRelationship(
+					(PrivacyAnnotationEntryRelationship) value, diagnostics, context);
 			case CONTENTPROFILEPackage.PRIVACY_MARKINGS_ENTRY:
 				return validatePrivacyMarkingsEntry((PrivacyMarkingsEntry) value, diagnostics, context);
 			default:
@@ -882,6 +896,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				privacySegmentedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUse(
 				privacySegmentedDocument, diagnostics, context);
 		}
@@ -955,6 +977,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 				privacySegmentedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -1130,6 +1160,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				privacySegmentedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
 				privacySegmentedDocument, diagnostics, context);
 		}
@@ -1234,6 +1272,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				privacySegmentedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(
 				privacySegmentedDocument, diagnostics, context);
 		}
@@ -1318,6 +1364,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				privacySegmentedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 				privacySegmentedDocument, diagnostics, context);
 		}
@@ -1391,6 +1445,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 				privacySegmentedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -1471,6 +1533,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 				privacySegmentedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -1558,6 +1628,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				privacySegmentedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 				privacySegmentedDocument, diagnostics, context);
 		}
@@ -1642,6 +1720,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 				privacySegmentedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 				privacySegmentedDocument, diagnostics, context);
 		}
@@ -1699,6 +1785,14 @@ public class CONTENTPROFILEValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+				privacySegmentedDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 				privacySegmentedDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {

@@ -8,16 +8,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.RefrainPolicySecurityObservation;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -92,6 +89,8 @@ public class RefrainPolicySecurityObservationOperations extends SecurityObservat
 			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RefrainPolicySecurityObservationSecurityObservationTemplateId", "ERROR");
+
 		if (VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -157,6 +156,8 @@ public class RefrainPolicySecurityObservationOperations extends SecurityObservat
 	public static boolean validateSecurityObservationCodeP(
 			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RefrainPolicySecurityObservationSecurityObservationCodeP", "ERROR");
 
 		if (VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -248,6 +249,8 @@ public class RefrainPolicySecurityObservationOperations extends SecurityObservat
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "RefrainPolicySecurityObservationSecurityObservationCode", "ERROR");
+
 		if (VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -312,6 +315,8 @@ public class RefrainPolicySecurityObservationOperations extends SecurityObservat
 	public static boolean validateSecurityObservationValueP(
 			RefrainPolicySecurityObservation refrainPolicySecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RefrainPolicySecurityObservationSecurityObservationValueP", "ERROR");
 
 		if (VALIDATE_SECURITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -402,6 +407,8 @@ public class RefrainPolicySecurityObservationOperations extends SecurityObservat
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "RefrainPolicySecurityObservationSecurityObservationValue", "ERROR");
 
 		if (VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

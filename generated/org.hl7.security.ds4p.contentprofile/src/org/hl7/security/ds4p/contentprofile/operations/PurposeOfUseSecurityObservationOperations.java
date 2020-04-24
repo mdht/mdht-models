@@ -8,16 +8,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -92,6 +89,8 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PurposeOfUseSecurityObservationSecurityObservationTemplateId", "ERROR");
+
 		if (VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -157,6 +156,8 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	public static boolean validateSecurityObservationCodeP(
 			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PurposeOfUseSecurityObservationSecurityObservationCodeP", "ERROR");
 
 		if (VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -248,6 +249,8 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PurposeOfUseSecurityObservationSecurityObservationCode", "ERROR");
+
 		if (VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -312,6 +315,8 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 	public static boolean validateSecurityObservationValueP(
 			PurposeOfUseSecurityObservation purposeOfUseSecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PurposeOfUseSecurityObservationSecurityObservationValueP", "ERROR");
 
 		if (VALIDATE_SECURITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -402,6 +407,8 @@ public class PurposeOfUseSecurityObservationOperations extends SecurityObservati
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "PurposeOfUseSecurityObservationSecurityObservationValue", "ERROR");
 
 		if (VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

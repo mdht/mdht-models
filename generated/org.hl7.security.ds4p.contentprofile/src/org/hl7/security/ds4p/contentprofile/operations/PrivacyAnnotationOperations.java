@@ -10,18 +10,13 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.mdht.uml.cda.operations.OrganizerOperations;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.ConfidentialitySecurityObservation;
@@ -29,7 +24,6 @@ import org.hl7.security.ds4p.contentprofile.ObligationPolicySecurityObservation;
 import org.hl7.security.ds4p.contentprofile.PrivacyAnnotation;
 import org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation;
 import org.hl7.security.ds4p.contentprofile.RefrainPolicySecurityObservation;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -111,6 +105,8 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	public static boolean validatePrivacyAnnotationTemplateId(PrivacyAnnotation privacyAnnotation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrivacyAnnotationPrivacyAnnotationTemplateId", "ERROR");
+
 		if (VALIDATE_PRIVACY_ANNOTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -173,6 +169,8 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 
 	public static boolean validatePrivacyAnnotationClassCode(PrivacyAnnotation privacyAnnotation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PrivacyAnnotationPrivacyAnnotationClassCode", "ERROR");
 
 		if (VALIDATE_PRIVACY_ANNOTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -237,6 +235,8 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	public static boolean validatePrivacyAnnotationMoodCode(PrivacyAnnotation privacyAnnotation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrivacyAnnotationPrivacyAnnotationMoodCode", "ERROR");
+
 		if (VALIDATE_PRIVACY_ANNOTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -299,6 +299,8 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 
 	public static boolean validatePrivacyAnnotationStatusCodeP(PrivacyAnnotation privacyAnnotation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PrivacyAnnotationPrivacyAnnotationStatusCodeP", "ERROR");
 
 		if (VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -385,6 +387,8 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PrivacyAnnotationPrivacyAnnotationStatusCode", "ERROR");
+
 		if (VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -447,6 +451,9 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 
 	public static boolean validatePrivacyAnnotationObligationPolicySecurityObservation(
 			PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PrivacyAnnotationPrivacyAnnotationObligationPolicySecurityObservation", "INFO");
 
 		if (VALIDATE_PRIVACY_ANNOTATION_OBLIGATION_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -514,6 +521,8 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	public static boolean validatePrivacyAnnotationRefrainPolicySecurityObservation(PrivacyAnnotation privacyAnnotation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrivacyAnnotationPrivacyAnnotationRefrainPolicySecurityObservation", "INFO");
+
 		if (VALIDATE_PRIVACY_ANNOTATION_REFRAIN_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -580,6 +589,8 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	public static boolean validatePrivacyAnnotationPurposeOfUseSecurityObservation(PrivacyAnnotation privacyAnnotation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrivacyAnnotationPrivacyAnnotationPurposeOfUseSecurityObservation", "INFO");
+
 		if (VALIDATE_PRIVACY_ANNOTATION_PURPOSE_OF_USE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -645,6 +656,9 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 
 	public static boolean validatePrivacyAnnotationConfidentialityCodeSecurityObservation(
 			PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PrivacyAnnotationPrivacyAnnotationConfidentialityCodeSecurityObservation", "ERROR");
 
 		if (VALIDATE_PRIVACY_ANNOTATION_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
