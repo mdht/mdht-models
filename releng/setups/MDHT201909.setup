@@ -48,7 +48,7 @@
 				name="org.openhealthtools.mdht.uml.cda.models.doc.feature.group" />
 			<repository url="http://download.eclipse.org/releases/2019-09" />
 			<repository
-				url="https://hudson.eclipse.org/mdht/job/MDHT-master/lastSuccessfulBuild/artifact/repository" />
+				url="http://download.eclipse.org/mdht/nightly" />
 			<repository url="http://oht-modeling.sourceforge.net/updates/ccda" />
 			
 			<repository
