@@ -6,7 +6,7 @@ Bundle-Version: 0.9.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: org.openhealthtools.mdht.uml.cda.phcr,
  org.openhealthtools.mdht.uml.cda.phcr.impl,
  org.openhealthtools.mdht.uml.cda.phcr.operations,

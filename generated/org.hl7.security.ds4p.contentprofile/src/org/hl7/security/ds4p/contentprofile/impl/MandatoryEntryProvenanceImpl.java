@@ -2,6 +2,7 @@
  */
 package org.hl7.security.ds4p.contentprofile.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -48,8 +49,7 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	@Override
 	public boolean validateMandatoryEntryProvenanceTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceTemplateId(
-			this, diagnostics, context);
+		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +70,7 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	@Override
 	public boolean validateMandatoryEntryProvenanceAssignedAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceAssignedAuthor(
-			this, diagnostics, context);
+		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceAssignedAuthor(this, diagnostics, context);
 	}
 
 	/**
@@ -80,16 +79,16 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 * @generated
 	 */
 	public MandatoryEntryProvenance init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MandatoryEntryProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MandatoryEntryProvenanceImpl

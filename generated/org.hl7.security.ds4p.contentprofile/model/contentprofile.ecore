@@ -131,7 +131,7 @@
     </eOperations>
     <eOperations name="PrivacySegmentedSectionConfidentialityCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.5.25' and (value.code = 'N' or value.code = 'R' or value.code = 'V')"/>
+        <details key="body" value="not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in &#xA;value.codeSystem = '2.16.840.1.113883.5.25' and (value.code = 'N' or value.code = 'R' or value.code = 'V')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -219,7 +219,7 @@
     </eOperations>
     <eOperations name="PrivacyMarkingsSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '57017-6' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '57017-6' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -304,8 +304,8 @@
       <details key="code.codeSystemName" value="SecurityObservationTypeCodeSystem"/>
       <details key="code.displayName" value="Security Control"/>
       <details key="constraints.validation.dependOn.SecurityObservationCode" value="SecurityObservationCodeP"/>
-      <details key="value.codeSystem" value="2.16.840.1.113883.1.11.20471"/>
-      <details key="value.codeSystemName" value="SecurityControlObservationValue"/>
+      <details key="value.codeSystem" value="2.16.840.1.113883.5.1063"/>
+      <details key="value.codeSystemName" value="SecurityObservationValueCodeSystem"/>
       <details key="constraints.validation.warning" value="SecurityObservationValue"/>
       <details key="constraints.validation.dependOn.SecurityObservationValue" value="SecurityObservationValueP"/>
     </eAnnotations>
@@ -352,7 +352,7 @@
       </contents>
       <contents xsi:type="ecore:EOperation" name="SecurityObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20457'"/>
+          <details key="body" value="not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xA;value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20457'"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="#//SecurityObservation/SecurityObservationCode"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -392,7 +392,7 @@
       </contents>
       <contents xsi:type="ecore:EOperation" name="SecurityObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.1.11.20471' and (value.code = 'CPLYCD' or value.code = 'ENCRYPT'))"/>
+          <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xA;value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'CPLYCD' or value.code = 'ENCRYPT'))"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="#//SecurityObservation/SecurityObservationValue"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -483,7 +483,7 @@
     </eOperations>
     <eOperations name="SecurityObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.1.11.20457'"/>
+        <details key="body" value="not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xA;value.codeSystem = '2.16.840.1.113883.1.11.20457'"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -502,7 +502,7 @@
     </eOperations>
     <eOperations name="SecurityObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.5.1063')"/>
+        <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xA;value.codeSystem = '2.16.840.1.113883.5.1063')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -792,7 +792,7 @@
     </eOperations>
     <eOperations name="PrivacyAnnotationStatusCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xD;&#xA;value.code = 'active'"/>
+        <details key="body" value="not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in &#xA;value.code = 'active'"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -919,8 +919,8 @@
       <details key="code.codeSystemName" value="SecurityObservationTypeCodeSystem"/>
       <details key="code.displayName" value="Security Control Observation Type"/>
       <details key="constraints.validation.dependOn.SecurityObservationCode" value="SecurityObservationCodeP"/>
-      <details key="value.codeSystem" value="2.16.840.1.113883.1.11.20471"/>
-      <details key="value.codeSystemName" value="SecurityControlObservationValue"/>
+      <details key="value.codeSystem" value="2.16.840.1.113883.5.1063"/>
+      <details key="value.codeSystemName" value="SecurityObservationValueCodeSystem"/>
       <details key="constraints.validation.dependOn.SecurityObservationValue" value="SecurityObservationValueP"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -966,7 +966,7 @@
       </contents>
       <contents xsi:type="ecore:EOperation" name="SecurityObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20457'"/>
+          <details key="body" value="not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xA;value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20457'"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="#//SecurityObservation/SecurityObservationCode"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1006,7 +1006,7 @@
       </contents>
       <contents xsi:type="ecore:EOperation" name="SecurityObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.1.11.20471' and (value.code = 'NORDSCLCD' or value.code = 'NOMOU'))"/>
+          <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xA;value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'NORDSLCD' or value.code = 'NOMOU'))"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="#//SecurityObservation/SecurityObservationValue"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1035,8 +1035,8 @@
       <details key="code.codeSystemName" value="SecurityObservationTypeCodeSystem"/>
       <details key="code.displayName" value="Security Control"/>
       <details key="constraints.validation.dependOn.SecurityObservationCode" value="SecurityObservationCodeP"/>
-      <details key="value.codeSystem" value="2.16.840.1.113883.5.8"/>
-      <details key="value.codeSystemName" value="ActReason"/>
+      <details key="value.codeSystem" value="2.16.840.1.113883.5.1063"/>
+      <details key="value.codeSystemName" value="SecurityObservationValueCodeSystem"/>
       <details key="constraints.validation.dependOn.SecurityObservationValue" value="SecurityObservationValueP"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -1082,7 +1082,7 @@
       </contents>
       <contents xsi:type="ecore:EOperation" name="SecurityObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20457'"/>
+          <details key="body" value="not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xA;value.code = 'SECCONOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20457'"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="#//SecurityObservation/SecurityObservationCode"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1122,7 +1122,7 @@
       </contents>
       <contents xsi:type="ecore:EOperation" name="SecurityObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.5.8' and not value.code.oclIsUndefined())"/>
+          <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xA;value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'TREAT' or value.code = 'ETREAT' or value.code = 'HPAYMT' or value.code = 'HRESCH' or value.code = 'CLINTRCH' or value.code = ' CLINTRL'))"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="#//SecurityObservation/SecurityObservationValue"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1196,7 +1196,7 @@
       </contents>
       <contents xsi:type="ecore:EOperation" name="SecurityObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = 'SECCLASSOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'"/>
+          <details key="body" value="not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in &#xA;value.code = 'SECCLASSOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="#//SecurityObservation/SecurityObservationCode"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">

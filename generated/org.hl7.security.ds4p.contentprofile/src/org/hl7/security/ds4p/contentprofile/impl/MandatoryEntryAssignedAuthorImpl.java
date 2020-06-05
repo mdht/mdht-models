@@ -2,6 +2,7 @@
  */
 package org.hl7.security.ds4p.contentprofile.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -48,8 +49,7 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	@Override
 	public boolean validateMandatoryEntryAssignedAuthorTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorTemplateId(
-			this, diagnostics, context);
+		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -60,8 +60,7 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	@Override
 	public boolean validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(
-			this, diagnostics, context);
+		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +71,7 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	@Override
 	public boolean validateMandatoryEntryAssignedAuthorAssignedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorAssignedPerson(
-			this, diagnostics, context);
+		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorAssignedPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +82,7 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	@Override
 	public boolean validateMandatoryEntryAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorRepresentedOrganization(
-			this, diagnostics, context);
+		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorRepresentedOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -94,16 +91,16 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	 * @generated
 	 */
 	public MandatoryEntryAssignedAuthor init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MandatoryEntryAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MandatoryEntryAssignedAuthorImpl

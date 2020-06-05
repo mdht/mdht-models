@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+	xmlns:cda="urn:hl7-org:v3"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:hl7-org:v3 file:c32/C32_CDA.xsd"
+	classCode="DOCCLIN" moodCode="EVN">
+	<realmCode code="US" />
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+	<templateId root="2.16.840.1.113883.10.20.22.1.1"
+		assigningAuthorityName="HL7 Security" />
+	<!-- Segmented Document Profile Id -->
+	<templateId root="2.16.840.1.113883.3.3251.1.1"
+		assigningAuthorityName="HL7 Security" />
+	<id root="db734647-fc99-424c-a864-7e3cda82e703"
+		assigningAuthorityName="SampleProject" />
+	<code code="34133-9" displayName="Summarization of episode note"
+		codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+	<title>Example Continuity of Care Document</title>
+	<!-- DateTimeCreated (timezone added) -->
+	<effectiveTime value="20101021120500-0500" />
+	<!-- Restricted content based on HL7 BasicConfidentialityKind value set -->
+	<confidentialityCode
+		codeSystem="2.16.840.1.113883.5.25" code="R" />
+	<languageCode code="en-US" />
+	<recordTarget>
+		<patientRole>
+			<!-- PatientMRN in @extension; @root="ExampleMRN" @assigningAuthorityName="Example" -->
+			<id extension="080980" root="ExampleMRN"
+				assigningAuthorityName="Example" />
+			<!-- PatientAddressType - hardcoded @use="HP" -->
+			<addr use="HP">
+				<!-- PatientHomeAddressStreetLine, PatientHomeAddressCityName, PatientHomeAddressStateCode, 
+					PatientHomeAddressZipCode -->
+				<streetAddressLine>1 Main St</streetAddressLine>
+				<city>Anytown</city>
+				<state>NH</state>
+				<postalCode>99999</postalCode>
+			</addr>
+			<!-- PatientHomePhone preceded by "tel:" with @use="HP" -->
+			<telecom value="tel:+1-999-999-9999" use="HP" />
+			<!-- PatientWorkPhone preceded by "tel:" with @use="HP" -->
+			<telecom value="tel:+1-999-999-9999" use="WP" />
+			<!-- PatientEmailAddress -->
+			<telecom value="mailto:EmailName@DomainName" />
+			<patient>
+				<name>
+					<!-- PatientFirstName, PatientMiddleInitial, PatientFamilyName -->
+					<given>Mary</given>
+					<given>A</given>
+					<family>Everyperson</family>
+				</name>
+				<!-- GenderCode GenderDisplayName -->
+				<administrativeGenderCode code="F"
+					displayName="Female" codeSystemName="HL7 AdministrativeGenderCodes"
+					codeSystem="2.16.840.1.113883.5.1" />
+				<!-- PatientDOB -->
+				<birthTime xsi:type="TS" value="19430704" />
+				<!-- MaritalStatusCode, MaritalStatusDisplayName -->
+				<maritalStatusCode code="S" displayName="Single"
+					codeSystem="2.16.840.1.113883.5.2" />
+				<!-- RaceCode, RaceDisplayName -->
+				<raceCode code="P" displayName="Pacific Islander"
+					codeSystem="2.16.840.1.113883.6.238" />
+				<!-- PreferredLanguage i -->
+				<languageCommunication>
+					<languageCode code="us-en" />
+				</languageCommunication>
+			</patient>
+		</patientRole>
+	</recordTarget>
+	<author>
+		<!-- Mandatory Document Author -->
+		<templateId root="2.16.840.1.113883.3.3251.1.2"
+			assigningAuthorityName="HL7 Security" />
+		<!-- DateTimeCreated (timezone added -0500) -->
+		<time value="20131021120500-0500" />
+		<assignedAuthor>
+			<!-- Mandatory Document Provenance - assigned author -->
+			<templateId root="2.16.840.1.113883.3.3251.1.3"
+				assigningAuthorityName="HL7 Security" />
+			<!-- auhorId -->
+			<id root="4d0c8e77-ea1d-4f41-9858-88806852e774" />
+			<addr>
+				<!-- AuthorAddressLine, AuthorCity, AuthorState, AuthorZipCode -->
+				<streetAddressLine>Example Address Line</streetAddressLine>
+				<city>ExampleCity</city>
+				<state>NH</state>
+				<postalCode>99999</postalCode>
+			</addr>
+			<!-- AuthorTelephone preceded by "tel:" with @use="WP" -->
+			<telecom value="tel:+1-301-555-1212" use="WP" />
+			<telecom value="mailto:Hippocrates@Clinic.org" use="EC" />
+			<assignedPerson>
+				<!-- AuthorProviderName -->
+				<name>
+					<prefix>Dr.</prefix>
+					<family>Hippocrates</family>
+					<given>Harold</given>
+				</name>
+			</assignedPerson>
+			<representedOrganization>
+				<!-- AuthorOrganizationName -->
+				<name>Example Organization</name>
+				<!-- AuthorTelephone preceded by "tel:" with @use="WP" -->
+				<telecom value="tel:+1-301-555-1212" use="WP" />
+				<addr>
+					<!-- AuthorAddressLine, AuthorCity, AuthorZipCode -->
+					<streetAddressLine>Example Organization Address Line
+					</streetAddressLine>
+					<city>ExampleCity</city>
+					<state>NH</state>
+					<postalCode>99999</postalCode>
+				</addr>
+			</representedOrganization>
+		</assignedAuthor>
+	</author>
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<!-- nullFlavor="NA" -->
+				<id nullFlavor="NA" />
+				<!-- AuthorName -->
+				<name>Example Organization</name>
+				<!-- AuthorTelephone preceded by "tel:" with @use="WP" -->
+				<telecom value="tel:+1-301-555-1212" use="WP" />
+				<addr>
+					<!-- AuthorAddressLine, AuthorCity, AuthorState, AuthorZipCode -->
+					<streetAddressLine>Example Address Line</streetAddressLine>
+					<city>ExampleCity</city>
+					<state>NH</state>
+					<postalCode>99999</postalCode>
+				</addr>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<legalAuthenticator>
+		<!-- DateTimeCreated (timezone added) -->
+		<time value="20101021120500-0500" />
+		<!-- @code="I - intended signature but not possible since the document 
+			is autogenerated" -->
+		<signatureCode code="S" />
+		<assignedEntity>
+			<!-- nullFlavor="NA" -->
+			<id nullFlavor="NA" />
+			<addr>
+				<!-- AuthorAddressLine, AuthorCity, AuthorState, AuthorZipCode -->
+				<streetAddressLine>Example Address Line</streetAddressLine>
+				<city>ExampleCity</city>
+				<state>NH</state>
+				<postalCode>99999</postalCode>
+			</addr>
+			<!-- AuthorTelephone preceded by "tel:" with @use="WP" -->
+			<telecom value="tel:+1-301-555-1212" use="WP" />
+			<telecom value="mailto:hh@example.org" use="EC" />
+			<assignedPerson>
+				<name>
+					<family>Hippocrates</family>
+					<given>Harold</given>
+				</name>
+			</assignedPerson>
+			<representedOrganization>
+				<!-- nullFlavor="NA" -->
+				<id nullFlavor="NA" />
+				<!-- AuthorName -->
+				<name>Example Organization</name>
+				<!-- AuthorTelephone preceded by "tel:" with @use="WP" -->
+				<telecom value="tel:+1-301-555-1212" use="WP" />
+				<addr>
+					<!-- AuthorAddressLine, AuthorCity, AuthorState, AuthorZipCode -->
+					<streetAddressLine>Example Address Line</streetAddressLine>
+					<city>ExampleCity</city>
+					<state>NH</state>
+					<postalCode>99999</postalCode>
+				</addr>
+			</representedOrganization>
+		</assignedEntity>
+	</legalAuthenticator>
+	<authenticator>
+		<time value="20101021120500-0500" />
+		<signatureCode code="S" />
+		<assignedEntity>
+			<!-- nullFlavor="NA" -->
+			<id nullFlavor="NA" />
+			<addr>
+				<!-- AuthorAddressLine, AuthorCity, AuthorState, AuthorZipCode -->
+				<streetAddressLine>Example Address Line</streetAddressLine>
+				<city>ExampleCity</city>
+				<state>NH</state>
+				<postalCode>99999</postalCode>
+			</addr>
+			<!-- AuthorTelephone preceded by "tel:" with @use="WP" -->
+			<telecom value="tel:+1-301-555-1212" use="WP" />
+			<telecom value="mailto:hh@example.org" use="EC" />
+			<assignedPerson>
+				<name>
+					<family>Hippocrates</family>
+					<given>Harold</given>
+				</name>
+			</assignedPerson>
+			<representedOrganization>
+				<!-- nullFlavor="NA" -->
+				<id nullFlavor="NA" />
+				<!-- AuthorName -->
+				<name>Example Organization</name>
+				<!-- AuthorTelephone preceded by "tel:" with @use="WP" -->
+				<telecom value="tel:+1-301-555-1212" use="WP" />
+				<addr>
+					<!-- AuthorAddressLine, AuthorCity, AuthorState, AuthorZipCode -->
+					<streetAddressLine>Example Address Line</streetAddressLine>
+					<city>ExampleCity</city>
+					<state>NH</state>
+					<postalCode>99999</postalCode>
+				</addr>
+			</representedOrganization>
+		</assignedEntity>
+	</authenticator>
+	<!-- @typeCode="NOT" for emergency contact -->
+	<participant typeCode="NOT">
+		<!-- @classCode="NOK" for next of kin -->
+		<associatedEntity classCode="NOK">
+			<!-- nullFlavor="NA" -->
+			<id nullFlavor="NA" />
+			<!-- @code= NextOfKinRelationshipCode @displayName= NextOfKinRelationshipDisplayName 
+				@codeSystem="Example" -->
+			<code code="SPS" codeSystem="Example" displayName="Spouse" />
+			<!-- NOKAddressType - hardcoded @use="HP" for primary home address -->
+			<addr use="HP">
+				<!-- NOKHomeAddressStreetLine, NOKHomeAddressCityName, NOKHomeAddressStateCode, 
+					NOKHomeAddressZipCode -->
+				<streetAddressLine>1 Main St</streetAddressLine>
+				<city>Anytowm</city>
+				<state>NH</state>
+				<postalCode>99999</postalCode>
+			</addr>
+			<!-- NOKPhone preceded by "tel:" -->
+			<telecom value="tel:+1-999-999-9999" />
+			<associatedPerson>
+				<name>
+					<family>Everyperson</family>
+					<given>Harold</given>
+					<given>M</given>
+				</name>
+			</associatedPerson>
+		</associatedEntity>
+	</participant>
+	<documentationOf>
+		<!-- classCode="PCPR" -->
+		<serviceEvent classCode="PCPR">
+			<!-- @code= EncounterType @displayName= EncounterTypeDisplayName, @codeSystem="Example" -->
+			<code code="EM" codeSystem="Example" displayName="Emergency" />
+			<effectiveTime>
+				<!-- AdmissionDateTime (timezone -0500 added) -->
+				<low value="20100125100000-0500" />
+				<!-- DischargeDate (timezone -0500 added) -->
+				<high value="20100128180000-0500" />
+			</effectiveTime>
+			<performer typeCode="PRF">
+				<time />
+				<assignedEntity>
+					<!-- nullFlavor="NA" -->
+					<id nullFlavor="NA" />
+					<!-- AuthorTelephone, AuthorTelephone -->
+					<addr>
+						<!-- AuthorAddressLine, AuthorCity, AuthorZipCode -->
+						<streetAddressLine>Example Address Line</streetAddressLine>
+						<city>ExampleCity</city>
+						<state>NH</state>
+						<postalCode>99999</postalCode>
+					</addr>
+					<!-- AuthorTelephone preceded by "tel:" with @use="WP" -->
+					<telecom value="tel:+1-301-555-1212" use="WP" />
+					<assignedPerson>
+						<!-- AuthorProviderName -->
+						<name>
+							<prefix>Dr.</prefix>
+							<family>Hippocrates</family>
+							<given>Harold</given>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</performer>
+		</serviceEvent>
+	</documentationOf>
+	<component>
+		<structuredBody>
+			<component>
+				<!-- ******************************************************** Privacy 
+					and Security Markings Section ******************************************************** -->
+				<section>
+					<!-- Privacy Markings section template -->
+					<templateId root="2.16.840.1.113883.3.3251.1.5"
+						assigningAuthorityName="HL7 Security" />
+					<code code="57017-6 " codeSystem="2.16.840.1.113883.6.1"
+						codeSystemName="LOINC" displayName="Privacy policy Organization" />
+					<title>Security and Privacy Prohibitions</title>
+					<text>
+						PROHIBITION ON REDISCLOSURE OF CONFIDENTIAL INFORMATION
+						<br />
+						This notice accompanies a disclosure of information concerning a
+						client in alcohol/drug treatment, made to you with the consent of
+						such client. This information has been disclosed to you from
+						records protected by federal confidentiality rules (42 C.F.R. Part
+						2). The federal rules prohibit you from making any further
+						disclosure of this information unless further disclosure is
+						expressly permitted by the written consent of the person to whom
+						it pertains or as otherwise permitted by 42 C.F.R. Part 2. A
+						general authorization for the release of medical or other
+						information is NOT sufficient for this purpose. The federal rules
+						restrict any use of the information to criminally investigate or
+						prosecute any alcohol or drug abuse patient.
+					</text>
+					<confidentialityCode code="N"
+						codeSystem="2.16.840.1.113883.5.25"
+						codeSystemName="HL7 Confidentiality" />
+					<author>
+						<templateId root="2.16.840.1.113883.3.3251.1.6"
+							assigningAuthorityName="HL7 Security" />
+						<!-- DateTimeCreated (timezone added -0500) -->
+						<time value="20131021120500-0500" />
+						<assignedAuthor>
+							<!-- Mandatory Assigned Author -->
+							<templateId root="2.16.840.1.113883.3.3251.1.7" />
+							
+							<!-- auhorId -->
+							<id root="4d0c8e77-ea1d-4f41-9858-88806852e774" />
+							<addr>
+								<!-- AuthorAddressLine, AuthorCity, AuthorState, AuthorZipCode -->
+								<streetAddressLine>Example Address Line</streetAddressLine>
+								<city>ExampleCity</city>
+								<state>NH</state>
+								<postalCode>99999</postalCode>
+							</addr>
+							<!-- AuthorTelephone preceded by "tel:" with @use="WP" -->
+							<telecom value="tel:+1-301-555-1212" use="WP" />
+							<assignedPerson>
+								<!-- AuthorProviderName -->
+								<name>
+									<prefix>Dr.</prefix>
+									<family>Hippocrates</family>
+									<given>Harold</given>
+								</name>
+							</assignedPerson>
+							<representedOrganization>
+								<!-- AuthorOrganizationName -->
+								<name>Example Organization</name>
+								<!-- AuthorTelephone preceded by "tel:" with @use="WP" -->
+								<telecom value="tel:+1-301-555-1212" use="WP" />
+								<addr>
+									<!-- AuthorAddressLine, AuthorCity, AuthorZipCode -->
+									<streetAddressLine>Example Organization Address Line
+									</streetAddressLine>
+									<city>ExampleCity</city>
+									<state>NH</state>
+									<postalCode>99999</postalCode>
+								</addr>
+							</representedOrganization>
+						</assignedAuthor>
+					</author>
+					<entry typeCode="COMP">
+						<!-- Privacy Marking Entry to indicate the precise/computable security 
+							obligations and refrains -->
+						<templateId root="2.16.840.1.113883.3.3251.1.9"
+							assigningAuthorityName="HL7 Security" />
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<!-- Privacy Annotations are organized using template "2.16.840.1.113883.3.3251.1.4" -->
+							<templateId root="2.16.840.1.113883.3.3251.1.4"
+								assigningAuthorityName="HL7 Security" />
+							<statusCode code="active" />
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- Security Observation -->
+									<templateId root="2.16.840.1.113883.3.445.21"
+										assigningAuthorityName="HL7 CBCC" />
+									<!-- Confidentiality Code template -->
+									<templateId root="2.16.840.1.113883.3.445.12"
+										assigningAuthorityName="HL7 CBCC" />
+									<!-- Confidentiality Security Observation - the only mandatory element 
+										of a Privacy Annotation -->
+									<code code="SECCLASSOBS"
+										codeSystem="2.16.840.1.113883.1.11.20471"
+										displayName="Security Classification"
+										codeSystemName="HL7 SecurityObservationTypeCodeSystem" />
+									<!-- value set constrained to "2.16.840.1.113883.1.11.16926" -->
+									<value xsi:type="CE" code="R"
+										codeSystem="2.16.840.1.113883.5.1063"
+										codeSystemName="SecurityObservationValueCodeSystem"
+										displayName="Restricted">
+										<originalText>Restricted Confidentiality</originalText>
+									</value>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- Security Observation -->
+									<templateId root="2.16.840.1.113883.3.445.21"
+										assigningAuthorityName="HL7 CBCC" />
+									<!-- Obligation Policy Code template -->
+									<templateId root="2.16.840.1.113883.3.445.14"
+										assigningAuthorityName="HL7 CBCC" />
+									<code code="SECCONOBS"
+										codeSystem="2.16.840.1.113883.1.11.20457"
+										displayName="Security Classification"
+										codeSystemName="HL7 SecurityObservationTypeCodeSystem" />
+									<!-- Value set constraint "2.16.840.1.113883.1.11.20445" -->
+									<value xsi:type="CE" code="ENCRYPT"
+										codeSystem="2.16.840.1.113883.5.1063"
+										codeSystemName="SecurityObservationValueCodeSystem"
+										displayName="Encrypt information">
+										<originalText>Information must be encrypted</originalText>
+									</value>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- Security Observation -->
+									<templateId root="2.16.840.1.113883.3.445.21"
+										assigningAuthorityName="HL7 CBCC" />
+									<!-- Refrain Policy Code template -->
+									<templateId root="2.16.840.1.113883.3.445.23"
+										assigningAuthorityName="HL7 CBCC" />
+									<code code="SECCONOBS"
+										codeSystem="2.16.840.1.113883.1.11.20457"
+										displayName="Security Classification"
+										codeSystemName="HL7 SecurityObservationTypeCodeSystem" />
+									<!-- Value set constraint "2.16.840.1.113883.1.11.20446" -->
+									<value xsi:type="CE" code="NORDSLCD"
+										codeSystem="2.16.840.1.113883.5.1063"
+										codeSystemName="SecurityObservationValueCodeSystem"
+										displayName="Prohibition on redisclosure without patient consent directive">
+										<originalText>Prohibition on redisclosure without patient
+											consent directive</originalText>
+									</value>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- Security Observation -->
+									<templateId root="2.16.840.1.113883.3.445.21"
+										assigningAuthorityName="HL7 CBCC" />
+									<!-- Purpose Of Use Code template -->
+									<templateId root="2.16.840.1.113883.3.445.22"
+										assigningAuthorityName="HL7 CBCC" />
+									<code code="SECCONOBS"
+										codeSystem="2.16.840.1.113883.1.11.20457"
+										displayName="Security Classification"
+										codeSystemName="HL7 SecurityObservationTypeCodeSystem" />
+									<!-- Value set constraint "2.16.840.1.113883.1.11.20448" -->
+									<value xsi:type="CE" code="TREAT"
+										codeSystem="2.16.840.1.113883.5.1063"
+										codeSystemName="SecurityObservationValueCodeSystem"
+										displayName="Treatment">
+										<originalText>Information intended for treatment
+										</originalText>
+									</value>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+				</section>
+			</component>
+			<!-- ******************************************************** Encounters 
+				section ******************************************************** -->
+
+			<component>
+				<section>
+					<!-- This is an example of how to affirmatively assert there is a memory 
+						(cognitive) impairment -->
+					<!-- Original design influenced by Transitions of Care test scenario, 
+						inpatient for MU2 170.314(b)(2) -->
+					<!-- Note that in C-CDA 1.1, functional and cognitive status (mental) 
+						are within the same section -->
+					<!-- Section not backwards compaitble with prior 2.16.840.1.113883.10.20.22.2.14 
+						since new section -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.56"
+						extension="2015-08-01" />
+					<templateId root="2.16.840.1.113883.3.3251.1.10"
+						assigningAuthorityName="HL7 Security" />
+					<code code="10190-7" codeSystem="2.16.840.1.113883.6.1"
+						codeSystemName="LOINC" displayName="MENTAL STATUS" />
+					<title>MENTAL STATUS</title>
+					<!-- Narrative organized as a single table. Some systems may prefer 
+						separate tables for functional vs. cognitive assessments -->
+					<text>
+						<table>
+							<thead>
+								<tr>
+									<th>Assessment</th>
+									<th>Date</th>
+									<th>Results</th>
+									<th>Comments</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ID="MS_Narrative1">
+									<td ID="MS_Type1">Cognitive Status</td>
+									<!-- Some systems may just report this to day rather than hour and 
+										minute timestamp. Both of which are acceptable. -->
+									<td>August 15 2012, 5:32pm</td>
+									<td ID="MS_Finding1">Memory Impairment</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<confidentialityCode
+						codeSystem="2.16.840.1.113883.5.25" code="R" />
+					<author>
+						<templateId root="2.16.840.1.113883.3.3251.1.6"
+							assigningAuthorityName="HL7 Security" />
+						<!-- DateTimeCreated (timezone added -0500) -->
+						<time value="20131021120500-0500" />
+						<assignedAuthor>
+							<!-- Mandatory Assigned Author -->
+							<templateId root="2.16.840.1.113883.3.3251.1.7" />
+							<!-- auhorId -->
+							<id root="4d0c8e77-ea1d-4f41-9858-88806852e774" />
+							<addr>
+								<!-- AuthorAddressLine, AuthorCity, AuthorState, AuthorZipCode -->
+								<streetAddressLine>Example Address Line</streetAddressLine>
+								<city>ExampleCity</city>
+								<state>NH</state>
+								<postalCode>99999</postalCode>
+							</addr>
+							<!-- AuthorTelephone preceded by "tel:" with @use="WP" -->
+							<telecom value="tel:+1-301-555-1212" use="WP" />
+							<assignedPerson>
+								<!-- AuthorProviderName -->
+								<name>
+									<prefix>Dr.</prefix>
+									<family>Hippocrates</family>
+									<given>Harold</given>
+								</name>
+							</assignedPerson>
+							<representedOrganization>
+								<!-- AuthorOrganizationName -->
+								<name>Example Organization</name>
+								<!-- AuthorTelephone preceded by "tel:" with @use="WP" -->
+								<telecom value="tel:+1-301-555-1212" use="WP" />
+								<addr>
+									<!-- AuthorAddressLine, AuthorCity, AuthorZipCode -->
+									<streetAddressLine>Example Organization Address Line
+									</streetAddressLine>
+									<city>ExampleCity</city>
+									<state>NH</state>
+									<postalCode>99999</postalCode>
+								</addr>
+							</representedOrganization>
+						</assignedAuthor>
+					</author>
+					<entry>
+						<!-- Template for Mental Status Result Observation. Note other templates 
+							may apply. -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.74" />
+							<templateId root="2.16.840.1.113883.10.20.22.4.74"
+								extension="2015-08-01" />
+							<id root="faa09c19-fa1f-4a6c-ae79-10a3b711550f" />
+							<!-- In C-CDA R2.1 August 2015 this is a fixed code. SDWG may change 
+								to a value set in STU comment 1367 -->
+							<code codeSystem="2.16.840.1.113883.6.96"
+								codeSystemName="SNOMED CT" code="373930000"
+								displayName="Cognitive function finding">
+								<originalText>
+									<reference value="#MS_Type1"></reference>
+								</originalText>
+								<translation code="75275-8"
+									displayName="Cognitive function"
+									codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+							</code>
+							<text>
+								<reference value="#MS_Narrative1" />
+							</text>
+							<statusCode code="completed" />
+							<effectiveTime>
+								<!-- Some systems may just report this to day rather than hour and 
+									minute timestamp. Both of which are acceptable. -->
+								<low value="20120815173215-0500" />
+							</effectiveTime>
+							<value xsi:type="CD" code="386807006"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+								displayName="Memory impairment">
+								<originalText>
+									<reference value="#MS_Finding1" />
+								</originalText>
+							</value>
+						</observation>
+					</entry>
+				</section>
+			</component>
+			<cda:component>
+				<section>
+					<templateId root="2.16.840.1.113883.10.20.22.2.5.1" />
+					<templateId root="2.16.840.1.113883.10.20.22.2.5.1"
+						extension="2015-08-01" />
+					<code code="11450-4" codeSystem="2.16.840.1.113883.6.1"
+						displayName="Problem List" />
+					<title>Problem List</title>
+					<text>
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Dates</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ID="Problem1">
+									<td>Community Acquired Pneumonia</td>
+									<td>
+										<content>Onset: February 27 2014</content>
+									</td>
+									<td>Active</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry>
+						<act classCode="ACT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.3" />
+							<templateId root="2.16.840.1.113883.10.20.22.4.3"
+								extension="2015-08-01" />
+							<id root="102ca2e9-884c-4523-a2b4-1b6c3469c397" />
+							<code code="CONC" codeSystem="2.16.840.1.113883.5.6" />
+							<!-- Since this is an active problem, the concern status is active. -->
+							<!-- While clinicians can track resolved problems, generally active 
+								problems will have active concern status and resolved concerns will be completed -->
+							<statusCode code="active" />
+							<effectiveTime>
+								<!-- This equates to the time the concern was authored in the patient's 
+									chart. This may frequently be an EHR timestamp -->
+								<low value="20140302124536-0500" />
+							</effectiveTime>
+							<entryRelationship typeCode="SUBJ">
+								<observation classCode="OBS" moodCode="EVN">
+								 	<templateId root="2.16.840.1.113883.3.3251.1.8" assigningAuthorityName="HL7 Security" />
+									<!-- <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+									<templateId root="2.16.840.1.113883.10.20.22.4.4"
+										extension="2015-08-01" /> -->
+									<id extension="10241104348"
+										root="1.3.6.1.4.1.22812.4.111.0.4.1.2.1" />
+									<code code="55607006" displayName="Problem"
+										codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+										<translation code="75326-9"
+											codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+											displayName="Problem" />
+									</code>
+									<text>
+										<reference value="#Problem1" />
+									</text>
+									<statusCode code="completed" />
+									<effectiveTime>
+										<!-- This represents the date of biological onset. -->
+										<low value="20140227" />
+									</effectiveTime>
+									<!-- This is a SNOMED code as the primary vocabulary for problem 
+										lists -->
+									<value xsi:type="CD" code="385093006"
+										codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+										displayName="Community Acquired Pneumonia" />
+									<author>
+										<templateId root="2.16.840.1.113883.10.20.22.4.119" />
+										<templateId root="2.16.840.1.113883.3.3251.1.6" />
+										<time value="20140302124536" />
+										<assignedAuthor>
+										<templateId root="2.16.840.1.113883.3.3251.1.7" />
+											<id extension="66666" root="2.16.840.1.113883.4.6" />
+											<code code="207RC0000X"
+												codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC"
+												displayName="Cardiovascular Disease" />
+											<addr>
+												<streetAddressLine>6666 StreetName St.</streetAddressLine>
+												<city>Silver Spring</city>
+												<state>MD</state>
+												<postalCode>20901</postalCode>
+												<country>US</country>
+											</addr>
+											<telecom value="tel:+1(301)666-6666" use="WP" />
+											<assignedPerson>
+												<name>
+													<given>Heartly</given>
+													<family>Sixer</family>
+													<suffix>MD</suffix>
+												</name>
+											</assignedPerson>
+										</assignedAuthor>
+									</author>
+									
+									
+									
+				 
+                           <!-- This relationship is used to specify entry-level Privacy Annotations -->
+                           <entryRelationship typeCode="COMP">
+                              <templateId root="2.16.840.1.113883.3.3251.1.11" assigningAuthorityName="HL7 Security" />
+                              <!-- Entry-Level Privacy Annotations -->
+                              <organizer classCode="CLUSTER" moodCode="EVN">
+                                 <!-- Privacy Annotations are organized using template "2.16.840.1.113883.3.3251.1.4" -->
+                                 <templateId root="2.16.840.1.113883.3.3251.1.4" assigningAuthorityName="HL7 Security" />
+                                 <statusCode code="active" />
+                                 <component typeCode="COMP">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <!-- Security Observation -->
+                                       <templateId root="2.16.840.1.113883.3.445.21" assigningAuthorityName="HL7 CBCC" />
+                                       <!-- Confidentiality Code template -->
+                                       <templateId root="2.16.840.1.113883.3.445.12" assigningAuthorityName="HL7 CBCC" />
+                                       <!-- Confidentiality Security Observation - the only mandatory 
+														element of a Privacy Annotation -->
+                                       <code code="SECCLASSOBS" codeSystem="2.16.840.1.113883.1.11.20471" displayName="Security Classification" codeSystemName="HL7 SecurityObservationTypeCodeSystem" />
+                                       <!-- value set constrained to "2.16.840.1.113883.1.11.16926" -->
+                                       <value xsi:type="CE" code="R" codeSystem="2.16.840.1.113883.5.1063" codeSystemName="SecurityObservationValueCodeSystem" displayName="Restricted">
+                                          <originalText>Restricted Confidentiality</originalText>
+                                       </value>
+                                    </observation>
+                                 </component>
+                                 <component typeCode="COMP">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <!-- Security Observation -->
+                                       <templateId root="2.16.840.1.113883.3.445.21" assigningAuthorityName="HL7 CBCC" />
+                                       <!-- Obligation Policy Code template -->
+                                       <templateId root="2.16.840.1.113883.3.445.14" assigningAuthorityName="HL7 CBCC" />
+                                       <code code="SECCONOBS" codeSystem="2.16.840.1.113883.1.11.20457" displayName="Security Classification" codeSystemName="HL7 SecurityObservationTypeCodeSystem" />
+                                       <!-- Value set constraint "2.16.840.1.113883.1.11.20445" -->
+                                       <value xsi:type="CE" code="ENCRYPT" codeSystem="2.16.840.1.113883.5.1063" codeSystemName="SecurityObservationValueCodeSystem" displayName="Encrypt information">
+                                          <originalText>Information must be encrypted</originalText>
+                                       </value>
+                                    </observation>
+                                 </component>
+                                 <component typeCode="COMP">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <!-- Security Observation -->
+                                       <templateId root="2.16.840.1.113883.3.445.21" assigningAuthorityName="HL7 CBCC" />
+                                       <!-- Refrain Policy Code template -->
+                                       <templateId root="2.16.840.1.113883.3.445.23" assigningAuthorityName="HL7 CBCC" />
+                                       <code code="SECCONOBS" codeSystem="2.16.840.1.113883.1.11.20457" displayName="Security Classification" codeSystemName="HL7 SecurityObservationTypeCodeSystem" />
+                                       <!-- Value set constraint "2.16.840.1.113883.1.11.20446" -->
+                                       <value xsi:type="CE" code="NORDSLCD" codeSystem="2.16.840.1.113883.5.1063" codeSystemName="SecurityObservationValueCodeSystem" displayName="Prohibition on redisclosure without patient consent directive">
+                                          <originalText>Prohibition on redisclosure without patient consent directive</originalText>
+                                       </value>
+                                    </observation>
+                                 </component>
+                                 <component typeCode="COMP">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <!-- Security Observation -->
+                                       <templateId root="2.16.840.1.113883.3.445.21" assigningAuthorityName="HL7 CBCC" />
+                                       <!-- Purpose Of Use Code template -->
+                                       <templateId root="2.16.840.1.113883.3.445.22" assigningAuthorityName="HL7 CBCC" />
+                                       <code code="SECCONOBS" codeSystem="2.16.840.1.113883.1.11.20457" displayName="Security Classification" codeSystemName="HL7 SecurityObservationTypeCodeSystem" />
+                                       <!-- Value set constraint "2.16.840.1.113883.1.11.20448" -->
+                                       <value xsi:type="CE" code="TREAT" codeSystem="2.16.840.1.113883.5.1063" codeSystemName="SecurityObservationValueCodeSystem" displayName="Treatment">
+                                          <originalText>Information intended for treatment</originalText>
+                                       </value>
+                                    </observation>
+                                 </component>
+                              </organizer>
+                           </entryRelationship>
+                     
+									
+									
+									
+									
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+				</section>
+
+			</cda:component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>

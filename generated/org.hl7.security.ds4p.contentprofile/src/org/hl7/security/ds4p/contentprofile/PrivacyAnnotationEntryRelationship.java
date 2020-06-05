@@ -2,6 +2,7 @@
  */
 package org.hl7.security.ds4p.contentprofile;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -54,9 +55,9 @@ public interface PrivacyAnnotationEntryRelationship extends EntryRelationship {
 	public PrivacyAnnotationEntryRelationship init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PrivacyAnnotationEntryRelationship init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrivacyAnnotationEntryRelationship

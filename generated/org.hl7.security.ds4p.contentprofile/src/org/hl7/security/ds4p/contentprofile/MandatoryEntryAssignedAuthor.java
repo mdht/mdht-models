@@ -2,6 +2,7 @@
  */
 package org.hl7.security.ds4p.contentprofile;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -79,9 +80,9 @@ public interface MandatoryEntryAssignedAuthor extends AssignedAuthor {
 	public MandatoryEntryAssignedAuthor init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MandatoryEntryAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MandatoryEntryAssignedAuthor

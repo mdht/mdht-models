@@ -2,6 +2,7 @@
  */
 package org.hl7.security.ds4p.contentprofile;
 
+import java.lang.Iterable;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
@@ -24,9 +25,9 @@ public interface ConfidentialitySecurityObservation extends SecurityObservation 
 	public ConfidentialitySecurityObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ConfidentialitySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ConfidentialitySecurityObservation

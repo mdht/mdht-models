@@ -6,7 +6,6 @@ Bundle-Version: 3.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: org.openhealthtools.mdht.uml.cda.consol.tests
 Require-Bundle: org.eclipse.core.runtime,
  org.openhealthtools.mdht.uml.cda.consol2;visibility:=reexport,

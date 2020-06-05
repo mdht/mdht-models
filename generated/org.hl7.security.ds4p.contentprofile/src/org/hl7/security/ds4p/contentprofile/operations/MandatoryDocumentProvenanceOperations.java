@@ -70,7 +70,7 @@ public class MandatoryDocumentProvenanceOperations extends AuthorOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,35 +86,44 @@ public class MandatoryDocumentProvenanceOperations extends AuthorOperations {
 	public static boolean validateMandatoryDocumentProvenanceTemplateId(
 			MandatoryDocumentProvenance mandatoryDocumentProvenance, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "MandatoryDocumentProvenanceMandatoryDocumentProvenanceTemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"MandatoryDocumentProvenanceMandatoryDocumentProvenanceTemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.MANDATORY_DOCUMENT_PROVENANCE);
 			try {
-				VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				mandatoryDocumentProvenance)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.MANDATORY_DOCUMENT_PROVENANCE__MANDATORY_DOCUMENT_PROVENANCE_TEMPLATE_ID,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"MandatoryDocumentProvenanceMandatoryDocumentProvenanceTemplateId"),
-						new Object[] { mandatoryDocumentProvenance }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mandatoryDocumentProvenance)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.MANDATORY_DOCUMENT_PROVENANCE__MANDATORY_DOCUMENT_PROVENANCE_TEMPLATE_ID,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("MandatoryDocumentProvenanceMandatoryDocumentProvenanceTemplateId"),
+						 new Object [] { mandatoryDocumentProvenance }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -139,7 +148,7 @@ public class MandatoryDocumentProvenanceOperations extends AuthorOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -155,35 +164,44 @@ public class MandatoryDocumentProvenanceOperations extends AuthorOperations {
 	public static boolean validateMandatoryDocumentProvenanceTime(
 			MandatoryDocumentProvenance mandatoryDocumentProvenance, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "MandatoryDocumentProvenanceMandatoryDocumentProvenanceTime", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"MandatoryDocumentProvenanceMandatoryDocumentProvenanceTime","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.MANDATORY_DOCUMENT_PROVENANCE);
 			try {
-				VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				mandatoryDocumentProvenance)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.MANDATORY_DOCUMENT_PROVENANCE__MANDATORY_DOCUMENT_PROVENANCE_TIME,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"MandatoryDocumentProvenanceMandatoryDocumentProvenanceTime"),
-						new Object[] { mandatoryDocumentProvenance }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mandatoryDocumentProvenance)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.MANDATORY_DOCUMENT_PROVENANCE__MANDATORY_DOCUMENT_PROVENANCE_TIME,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("MandatoryDocumentProvenanceMandatoryDocumentProvenanceTime"),
+						 new Object [] { mandatoryDocumentProvenance }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -208,7 +226,7 @@ public class MandatoryDocumentProvenanceOperations extends AuthorOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -224,36 +242,44 @@ public class MandatoryDocumentProvenanceOperations extends AuthorOperations {
 	public static boolean validateMandatoryDocumentProvenanceAssignedAuthor(
 			MandatoryDocumentProvenance mandatoryDocumentProvenance, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "MandatoryDocumentProvenanceMandatoryDocumentProvenanceAssignedAuthor", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"MandatoryDocumentProvenanceMandatoryDocumentProvenanceAssignedAuthor","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.MANDATORY_DOCUMENT_PROVENANCE);
 			try {
-				VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				mandatoryDocumentProvenance)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.MANDATORY_DOCUMENT_PROVENANCE__MANDATORY_DOCUMENT_PROVENANCE_ASSIGNED_AUTHOR,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"MandatoryDocumentProvenanceMandatoryDocumentProvenanceAssignedAuthor"),
-						new Object[] { mandatoryDocumentProvenance }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANDATORY_DOCUMENT_PROVENANCE_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mandatoryDocumentProvenance)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.MANDATORY_DOCUMENT_PROVENANCE__MANDATORY_DOCUMENT_PROVENANCE_ASSIGNED_AUTHOR,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("MandatoryDocumentProvenanceMandatoryDocumentProvenanceAssignedAuthor"),
+						 new Object [] { mandatoryDocumentProvenance }));
+			}
+			 
 			return false;
 		}
 		return true;

@@ -62,7 +62,7 @@ Description:  ISO 22600-2 species that a Refrain Policy &quot;defines actions th
 The following are example codes in this value set:</body>
       </ownedComment>
       <generalization xmi:id="_XMn8oPaGEeWKEu3n2RZ4FA" general="_GW0Z8PaCEeWKEu3n2RZ4FA"/>
-      <ownedLiteral xmi:id="_GG0hwI9_EeKb9J31WmOroA" name="NORDSCLCD"/>
+      <ownedLiteral xmi:id="_GG0hwI9_EeKb9J31WmOroA" name="NORDSLCD"/>
       <ownedLiteral xmi:id="_PGdWQI9_EeKb9J31WmOroA" name="NOMOU"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_3UgCkK6vEeKKNZXUvzAcRw" name="ActConsentType">
@@ -139,10 +139,10 @@ Type of security metadata observation made about an IT resource (data, informati
     <codeSystem href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_3RPYMbg8EeKo5fRjhOhZFA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_7GsEIYxoEeKIvYMIfi9SOQ" identifier="2.16.840.1.113883.1.11.20445" fullName="Obligation Policy Code" source="HL7" type="Intensional" base_Enumeration="_7GsEIIxoEeKIvYMIfi9SOQ">
-    <codeSystem href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+    <codeSystem href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_3RPYMbg8EeKo5fRjhOhZFA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_DypusYxpEeKIvYMIfi9SOQ" identifier="2.16.840.1.113883.1.11.20446" fullName="RefrainPolicy" source="HL7" type="Intensional" base_Enumeration="_DypusIxpEeKIvYMIfi9SOQ">
-    <codeSystem href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_u6Y1MOdTEeKzv8U7OUnxlg"/>
+    <codeSystem href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_3RPYMbg8EeKo5fRjhOhZFA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_KePkEY92EeKb9J31WmOroA" conceptName="Information Access" usageNote="Consent to access or &quot;read&quot; only, which entails that the information is not to be copied, screen printed, saved, emailed, stored, re-disclosed or altered in any way. This level ensures that data which is masked or to which access is restricted will not be. Example: Opened and then emailed or screen printed for use outside of the consent directive purpose." base_EnumerationLiteral="_KePkEI92EeKb9J31WmOroA"/>
   <term:ValueSetCode xmi:id="_rMaf4Y91EeKb9J31WmOroA" conceptName="Information Access" usageNote="Consent to access healthcare information." base_EnumerationLiteral="_rMaf4I91EeKb9J31WmOroA"/>

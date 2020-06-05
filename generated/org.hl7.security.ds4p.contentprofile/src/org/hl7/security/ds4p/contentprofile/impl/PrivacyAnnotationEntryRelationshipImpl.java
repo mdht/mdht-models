@@ -2,6 +2,7 @@
  */
 package org.hl7.security.ds4p.contentprofile.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -49,8 +50,7 @@ public class PrivacyAnnotationEntryRelationshipImpl extends EntryRelationshipImp
 	@Override
 	public boolean validatePrivacyAnnotationEntryRelationshipTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PrivacyAnnotationEntryRelationshipOperations.validatePrivacyAnnotationEntryRelationshipTemplateId(
-			this, diagnostics, context);
+		return PrivacyAnnotationEntryRelationshipOperations.validatePrivacyAnnotationEntryRelationshipTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -61,8 +61,7 @@ public class PrivacyAnnotationEntryRelationshipImpl extends EntryRelationshipImp
 	@Override
 	public boolean validatePrivacyAnnotationEntryRelationshipOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PrivacyAnnotationEntryRelationshipOperations.validatePrivacyAnnotationEntryRelationshipOrganizer(
-			this, diagnostics, context);
+		return PrivacyAnnotationEntryRelationshipOperations.validatePrivacyAnnotationEntryRelationshipOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -71,16 +70,16 @@ public class PrivacyAnnotationEntryRelationshipImpl extends EntryRelationshipImp
 	 * @generated
 	 */
 	public PrivacyAnnotationEntryRelationship init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PrivacyAnnotationEntryRelationship init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PrivacyAnnotationEntryRelationshipImpl

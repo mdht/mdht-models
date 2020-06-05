@@ -2,6 +2,7 @@
  */
 package org.hl7.security.ds4p.contentprofile;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -52,9 +53,9 @@ public interface ProtectedProblem extends ProblemObservation {
 	public ProtectedProblem init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProtectedProblem init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProtectedProblem

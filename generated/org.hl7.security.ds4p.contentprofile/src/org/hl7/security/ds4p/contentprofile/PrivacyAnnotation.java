@@ -2,6 +2,7 @@
  */
 package org.hl7.security.ds4p.contentprofile;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -76,7 +77,7 @@ public interface PrivacyAnnotation extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'active\''"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'active\''"
 	 * @generated
 	 */
 	boolean validatePrivacyAnnotationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -177,9 +178,9 @@ public interface PrivacyAnnotation extends Organizer {
 	public PrivacyAnnotation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PrivacyAnnotation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrivacyAnnotation

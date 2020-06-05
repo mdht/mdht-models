@@ -71,7 +71,7 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PRIVACY_SEGMENTED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_SEGMENTED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,35 +86,44 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 
 	public static boolean validatePrivacySegmentedSectionTemplateId(PrivacySegmentedSection privacySegmentedSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "PrivacySegmentedSectionPrivacySegmentedSectionTemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"PrivacySegmentedSectionPrivacySegmentedSectionTemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PRIVACY_SEGMENTED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_SEGMENTED_SECTION);
 			try {
-				VALIDATE_PRIVACY_SEGMENTED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_PRIVACY_SEGMENTED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_PRIVACY_SEGMENTED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_SEGMENTED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PRIVACY_SEGMENTED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				privacySegmentedSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.PRIVACY_SEGMENTED_SECTION__PRIVACY_SEGMENTED_SECTION_TEMPLATE_ID,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"PrivacySegmentedSectionPrivacySegmentedSectionTemplateId"),
-						new Object[] { privacySegmentedSection }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_SEGMENTED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacySegmentedSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.PRIVACY_SEGMENTED_SECTION__PRIVACY_SEGMENTED_SECTION_TEMPLATE_ID,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("PrivacySegmentedSectionPrivacySegmentedSectionTemplateId"),
+						 new Object [] { privacySegmentedSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -128,9 +137,9 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and " +
-			"let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in " +
-			"value.codeSystem = '2.16.840.1.113883.5.25' and (value.code = 'N' or value.code = 'R' or value.code = 'V')";
+	protected static final String VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in "+
+"value.codeSystem = '2.16.840.1.113883.5.25' and (value.code = 'N' or value.code = 'R' or value.code = 'V')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePrivacySegmentedSectionConfidentialityCode(PrivacySegmentedSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Privacy Segmented Section Confidentiality Code</em>}' invariant operation.
@@ -141,7 +150,7 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -156,35 +165,44 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 
 	public static boolean validatePrivacySegmentedSectionConfidentialityCode(
 			PrivacySegmentedSection privacySegmentedSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "PrivacySegmentedSectionPrivacySegmentedSectionConfidentialityCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"PrivacySegmentedSectionPrivacySegmentedSectionConfidentialityCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_SEGMENTED_SECTION);
 			try {
-				VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				privacySegmentedSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.PRIVACY_SEGMENTED_SECTION__PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"PrivacySegmentedSectionPrivacySegmentedSectionConfidentialityCode"),
-						new Object[] { privacySegmentedSection }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacySegmentedSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.PRIVACY_SEGMENTED_SECTION__PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("PrivacySegmentedSectionPrivacySegmentedSectionConfidentialityCode"),
+						 new Object [] { privacySegmentedSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -209,7 +227,7 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -224,36 +242,44 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 
 	public static boolean validatePrivacySegmentedSectionConfidentialityCodeP(
 			PrivacySegmentedSection privacySegmentedSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "PrivacySegmentedSectionPrivacySegmentedSectionConfidentialityCodeP", "WARNING");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"PrivacySegmentedSectionPrivacySegmentedSectionConfidentialityCodeP","WARNING");
+    
+  	  
+  	  
 		if (VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_SEGMENTED_SECTION);
 			try {
-				VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				privacySegmentedSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.WARNING, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.PRIVACY_SEGMENTED_SECTION__PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE_P,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"PrivacySegmentedSectionPrivacySegmentedSectionConfidentialityCodeP"),
-						new Object[] { privacySegmentedSection }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacySegmentedSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.PRIVACY_SEGMENTED_SECTION__PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE_P,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("PrivacySegmentedSectionPrivacySegmentedSectionConfidentialityCodeP"),
+						 new Object [] { privacySegmentedSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -278,7 +304,7 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PRIVACY_SEGMENTED_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_SEGMENTED_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -293,33 +319,44 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 
 	public static boolean validatePrivacySegmentedSectionAuthor(PrivacySegmentedSection privacySegmentedSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "PrivacySegmentedSectionPrivacySegmentedSectionAuthor", "WARNING");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"PrivacySegmentedSectionPrivacySegmentedSectionAuthor","WARNING");
+    
+  	  
+  	  
 		if (VALIDATE_PRIVACY_SEGMENTED_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_SEGMENTED_SECTION);
 			try {
-				VALIDATE_PRIVACY_SEGMENTED_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_PRIVACY_SEGMENTED_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_PRIVACY_SEGMENTED_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_SEGMENTED_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PRIVACY_SEGMENTED_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				privacySegmentedSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.WARNING, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.PRIVACY_SEGMENTED_SECTION__PRIVACY_SEGMENTED_SECTION_AUTHOR,
-						CONTENTPROFILEPlugin.INSTANCE.getString("PrivacySegmentedSectionPrivacySegmentedSectionAuthor"),
-						new Object[] { privacySegmentedSection }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_SEGMENTED_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacySegmentedSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.PRIVACY_SEGMENTED_SECTION__PRIVACY_SEGMENTED_SECTION_AUTHOR,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("PrivacySegmentedSectionPrivacySegmentedSectionAuthor"),
+						 new Object [] { privacySegmentedSection }));
+			}
+			 
 			return false;
 		}
 		return true;

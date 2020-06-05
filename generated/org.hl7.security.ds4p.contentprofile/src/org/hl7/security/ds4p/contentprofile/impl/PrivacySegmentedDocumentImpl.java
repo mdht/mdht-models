@@ -2,6 +2,7 @@
  */
 package org.hl7.security.ds4p.contentprofile.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -51,8 +52,7 @@ public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validatePrivacySegmentedDocumentTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentTemplateId(
-			this, diagnostics, context);
+		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +73,7 @@ public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validatePrivacySegmentedDocumentSegmentedSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentSegmentedSection(
-			this, diagnostics, context);
+		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentSegmentedSection(this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +84,7 @@ public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(
-			this, diagnostics, context);
+		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -116,17 +114,17 @@ public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 */
 	@Override
 	public PrivacySegmentedDocument init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PrivacySegmentedDocument init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PrivacySegmentedDocumentImpl
