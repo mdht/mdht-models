@@ -7,14 +7,10 @@ package test;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.mdht.uml.cda.util.CDADiagnostic;
 import org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationHandler;
-import org.eclipse.mdht.uml.cda.util.ValidationResult;
 import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil.ValidationStatistics;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.util.DS4PUtil;
@@ -83,33 +79,33 @@ public class DS4PValidationExample {
 		}
 	}
 
-	public static Set<String> listFilesUsingJavaIO(String dir) {
-		return Stream.of(new File(dir).listFiles()).filter(file -> !file.isDirectory()).map(File::getName).collect(
-			Collectors.toSet());
-	}
-
-	private static void runDS4PValidationUsingSpecificValidationResult() {
-		System.out.println("runDS4PValidationUsingSpecificValidationResult:");
-
-		try {
-
-			for (String ds4pFile : listFilesUsingJavaIO("samples/ds4p")) {
-				ValidationResult result = new ValidationResult();
-				System.err.println(ds4pFile);
-				DS4PUtil.validateAsDS4P(new FileInputStream("samples/ds4p/" + ds4pFile), result);
-				System.out.println("Errors:");
-				parseAndPrintIssueResults(result.getErrorDiagnostics());
-				System.out.println("Warnings:");
-				parseAndPrintIssueResults(result.getWarningDiagnostics());
-				System.out.println("Info:");
-				parseAndPrintIssueResults(result.getInfoDiagnostics());
-			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-	}
+	// public static Set<String> listFilesUsingJavaIO(String dir) {
+	// return Stream.of(new File(dir).listFiles()).filter(file -> !file.isDirectory()).map(File::getName).collect(
+	// Collectors.toSet());
+	// }
+	//
+	// private static void runDS4PValidationUsingSpecificValidationResult() {
+	// System.out.println("runDS4PValidationUsingSpecificValidationResult:");
+	//
+	// try {
+	//
+	// for (String ds4pFile : listFilesUsingJavaIO("samples/ds4p")) {
+	// ValidationResult result = new ValidationResult();
+	// System.err.println(ds4pFile);
+	// DS4PUtil.validateAsDS4P(new FileInputStream("samples/ds4p/" + ds4pFile), result);
+	// System.out.println("Errors:");
+	// parseAndPrintIssueResults(result.getErrorDiagnostics());
+	// System.out.println("Warnings:");
+	// parseAndPrintIssueResults(result.getWarningDiagnostics());
+	// System.out.println("Info:");
+	// parseAndPrintIssueResults(result.getInfoDiagnostics());
+	// }
+	//
+	// } catch (Exception e) {
+	// e.printStackTrace();
+	// }
+	//
+	// }
 
 	private static void parseAndPrintIssueResults(List<Diagnostic> resultDiagnostics) {
 		if (resultDiagnostics.size() > 0) {

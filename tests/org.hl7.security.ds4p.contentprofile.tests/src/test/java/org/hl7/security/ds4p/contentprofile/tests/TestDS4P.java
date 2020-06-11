@@ -13,9 +13,11 @@ package org.hl7.security.ds4p.contentprofile.tests;
 import java.io.FileInputStream;
 
 import org.eclipse.emf.common.util.Diagnostic;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
 import org.eclipse.mdht.uml.cda.util.CDAUtil;
 import org.eclipse.mdht.uml.cda.util.ValidationResult;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEFactory;
+import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 
 public class TestDS4P {
@@ -29,7 +31,18 @@ public class TestDS4P {
 
 		// create a validation result object to collect diagnostics produced during validation
 		ValidationResult result = new ValidationResult();
-		CDAUtil.load(new FileInputStream("samples/NEWcdaPrivacySegmentedDocument.xml"), result);
+
+		ClinicalDocument clinicalDocument2 = CDAUtil.loadAs(
+			new FileInputStream("samples/NEWcdaPrivacySegmentedDocument.xml"),
+			CONTENTPROFILEPackage.eINSTANCE.getPrivacySegmentedDocument());
+
+		// CDAUtil.loadAs(in, docTypeEClass);
+		ClinicalDocument clinicalDocument = CDAUtil.loadAs(
+			new FileInputStream("samples/NEWcdaPrivacySegmentedDocument.xml"),
+			CONTENTPROFILEPackage.eINSTANCE.getPrivacySegmentedDocument());
+
+		;
+		CDAUtil.validate(clinicalDocument, result);
 
 		System.out.println("\n***** Sample validation results *****");
 		for (Diagnostic diagnostic : result.getErrorDiagnostics()) {

@@ -15,14 +15,14 @@
 		<jarSignerVersion>1.1.2</jarSignerVersion>
 		<findbugs.version>3.0.1</findbugs.version>
 		<xtext.version>2.7.3</xtext.version>
-		<java.source.version>1.8</java.source.version>
-		<java.target.version>1.8</java.target.version>
+		<java.source.version>1.7</java.source.version>
+		<java.target.version>1.7</java.target.version>
 		<mylyn.wikitext.version>2.4.0-SNAPSHOT</mylyn.wikitext.version>
 		<skipAllTests>false</skipAllTests>
 		<skipInnerTests>true</skipInnerTests>
 	    <maven.javadoc.skip>true</maven.javadoc.skip>
-	  <maven.compiler.source>1.8</maven.compiler.source>
-     <maven.compiler.target>1.8</maven.compiler.target>
+	  <maven.compiler.source>1.7</maven.compiler.source>
+     <maven.compiler.target>1.7</maven.compiler.target>
 	 
 		<org.apache.maven.version>3.0.1</org.apache.maven.version>
 		<maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
@@ -36,9 +36,9 @@
 
 	<repositories>
 		<repository>
-			<id>2020-03</id>
+			<id>oxygen</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/2020-03</url>
+			<url>http://download.eclipse.org/releases/oxygen</url>
 		</repository>
 
 		<repository>
@@ -130,9 +130,9 @@
 			</activation>
 			<repositories>
 				<repository>
-					<id>2020-03</id>
+					<id>oxygen</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/2020-03</url>
+					<url>http://download.eclipse.org/releases/oxygen</url>
 				</repository>
 			</repositories>
 			<build>
