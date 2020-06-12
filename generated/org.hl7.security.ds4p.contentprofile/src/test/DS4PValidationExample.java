@@ -27,7 +27,7 @@ public class DS4PValidationExample {
 		System.out.println();
 		// use this version for an easier integration with the
 		// referenceccdavalidator
-		runDS4PValidationUsingSpecificValidationResult();
+		// runDS4PValidationUsingSpecificValidationResult();
 	}
 
 	private static void setup() {
