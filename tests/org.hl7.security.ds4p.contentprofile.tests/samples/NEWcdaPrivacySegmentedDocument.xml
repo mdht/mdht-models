@@ -406,7 +406,7 @@
 										codeSystem="2.16.840.1.113883.5.1063"
 										codeSystemName="SecurityObservationValueCodeSystem"
 										displayName="Encrypt information">
-										<originalText>Information must be encrypted</originalText>
+										<originalText></originalText>
 									</value>
 								</observation>
 							</component>
@@ -721,7 +721,7 @@
                                        <code code="SECCONOBS" codeSystem="2.16.840.1.113883.1.11.20457" displayName="Security Classification" codeSystemName="HL7 SecurityObservationTypeCodeSystem" />
                                        <!-- Value set constraint "2.16.840.1.113883.1.11.20445" -->
                                        <value xsi:type="CE" code="ENCRYPT" codeSystem="2.16.840.1.113883.5.1063" codeSystemName="SecurityObservationValueCodeSystem" displayName="Encrypt information">
-                                          <originalText>Information must be encrypted</originalText>
+                                          <originalText></originalText>
                                        </value>
                                     </observation>
                                  </component>

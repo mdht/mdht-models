@@ -9,8 +9,8 @@
 
 	<properties>
 	
-		<tycho-version>1.0.0</tycho-version>
-		<tychoExtrasVersion>1.0.0</tychoExtrasVersion>
+		<tycho-version>1.7.0</tycho-version>
+		<tychoExtrasVersion>1.7.0</tychoExtrasVersion>
 		<tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/mdht/org.eclipse.mdht</tycho.scmUrl>
 		<jarSignerVersion>1.1.2</jarSignerVersion>
 		<findbugs.version>3.0.1</findbugs.version>

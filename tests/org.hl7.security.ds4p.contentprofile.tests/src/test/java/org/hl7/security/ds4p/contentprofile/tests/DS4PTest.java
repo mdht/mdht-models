@@ -18,10 +18,13 @@ import org.eclipse.mdht.uml.cda.util.CDAUtil;
 import org.eclipse.mdht.uml.cda.util.ValidationResult;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEFactory;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
+import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 
-public class TestDS4P {
-	public static void main(String[] args) throws Exception {
+public class DS4PTest {
+
+	@Test
+	public void TestTheBuild() throws Exception {
 		// must load Consol package to validate those templates
 		CONTENTPROFILEFactory.eINSTANCE.eClass();
 
@@ -32,13 +35,13 @@ public class TestDS4P {
 		// create a validation result object to collect diagnostics produced during validation
 		ValidationResult result = new ValidationResult();
 
-		ClinicalDocument clinicalDocument2 = CDAUtil.loadAs(
-			new FileInputStream("samples/NEWcdaPrivacySegmentedDocument.xml"),
-			CONTENTPROFILEPackage.eINSTANCE.getPrivacySegmentedDocument());
+		// ClinicalDocument clinicalDocument2 = CDAUtil.loadAs(
+		// new FileInputStream("samples/NEWcdaPrivacySegmentedDocument.xml"),
+		// CONTENTPROFILEPackage.eINSTANCE.getPrivacySegmentedDocument());
 
 		// CDAUtil.loadAs(in, docTypeEClass);
 		ClinicalDocument clinicalDocument = CDAUtil.loadAs(
-			new FileInputStream("samples/NEWcdaPrivacySegmentedDocument.xml"),
+			new FileInputStream("samples/reference/170.315_b8_ds4p_amb_sample2_v2.xml"),
 			CONTENTPROFILEPackage.eINSTANCE.getPrivacySegmentedDocument());
 
 		;
