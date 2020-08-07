@@ -2,16 +2,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.ParticipantRole;
 
 /**
@@ -32,7 +27,7 @@ public interface ServiceDeliveryLocation extends ParticipantRole {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingEntity->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingEntity-&gt;size() = 1'"
 	 * @generated
 	 */
 	boolean validateServiceDeliveryLocationHasPlayingEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -44,7 +39,7 @@ public interface ServiceDeliveryLocation extends ParticipantRole {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingEntity->size()>0 implies self.playingEntity.classCode=vocab::EntityClassRoot::PLC'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingEntity-&gt;size()&gt;0 implies self.playingEntity.classCode=vocab::EntityClassRoot::PLC'"
 	 * @generated
 	 */
 	boolean validateServiceDeliveryLocationHasPlayingEntityClassCode(DiagnosticChain diagnostics,
@@ -57,7 +52,7 @@ public interface ServiceDeliveryLocation extends ParticipantRole {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingEntity->size()>0 implies self.playingEntity.name->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingEntity-&gt;size()&gt;0 implies self.playingEntity.name-&gt;size() = 1'"
 	 * @generated
 	 */
 	boolean validateServiceDeliveryLocationHasPlayingEntityName(DiagnosticChain diagnostics,
@@ -70,7 +65,7 @@ public interface ServiceDeliveryLocation extends ParticipantRole {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.32\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.32\')'"
 	 * @generated
 	 */
 	boolean validateServiceDeliveryLocationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -106,7 +101,7 @@ public interface ServiceDeliveryLocation extends ParticipantRole {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.addr->isEmpty() or self.addr->exists(element | element.isNullFlavorUndefined())) implies (not self.addr->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.addr-&gt;isEmpty() or self.addr-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.addr-&gt;isEmpty())'"
 	 * @generated
 	 */
 	boolean validateServiceDeliveryLocationAddr(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -118,7 +113,7 @@ public interface ServiceDeliveryLocation extends ParticipantRole {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.telecom->isEmpty() or self.telecom->exists(element | element.isNullFlavorUndefined())) implies (not self.telecom->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.telecom-&gt;isEmpty() or self.telecom-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.telecom-&gt;isEmpty())'"
 	 * @generated
 	 */
 	boolean validateServiceDeliveryLocationTelecom(DiagnosticChain diagnostics, Map<Object, Object> context);

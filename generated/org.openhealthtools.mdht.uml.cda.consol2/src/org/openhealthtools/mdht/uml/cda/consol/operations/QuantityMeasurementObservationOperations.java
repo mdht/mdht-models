@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -106,6 +107,9 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "QuantityMeasurementObservationQuantityMeasurementObservationCodeCodeSystemDIR", "WARNING");
+
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DIR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -172,6 +176,9 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationCodeCodeSystemDICOM(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "QuantityMeasurementObservationQuantityMeasurementObservationCodeCodeSystemDICOM", "WARNING");
 
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DICOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -240,6 +247,9 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "QuantityMeasurementObservationQuantityMeasurementObservationTemplateId", "ERROR");
+
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -306,6 +316,9 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationClassCode(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "QuantityMeasurementObservationQuantityMeasurementObservationClassCode", "ERROR");
 
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -374,6 +387,9 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "QuantityMeasurementObservationQuantityMeasurementObservationMoodCode", "ERROR");
+
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -440,6 +456,8 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationCode(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "QuantityMeasurementObservationQuantityMeasurementObservationCode", "ERROR");
 
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -508,6 +526,9 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "QuantityMeasurementObservationQuantityMeasurementObservationEffectiveTime", "WARNING");
+
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -575,6 +596,8 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "QuantityMeasurementObservationQuantityMeasurementObservationValue", "ERROR");
+
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -641,6 +664,9 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationSOPInstanceObservation(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "QuantityMeasurementObservationQuantityMeasurementObservationSOPInstanceObservation", "INFO");
 
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

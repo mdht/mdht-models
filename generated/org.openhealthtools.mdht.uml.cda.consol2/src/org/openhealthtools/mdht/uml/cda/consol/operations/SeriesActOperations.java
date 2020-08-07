@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -110,6 +111,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	public static boolean validateSeriesActIdHasRoot(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeriesActSeriesActIdHasRoot", "ERROR");
+
 		if (VALIDATE_SERIES_ACT_ID_HAS_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -171,6 +174,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSeriesActIdNoExtension(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeriesActSeriesActIdNoExtension", "ERROR");
 
 		if (VALIDATE_SERIES_ACT_ID_NO_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -235,6 +240,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	public static boolean validateSeriesActCodeQualifier(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeriesActSeriesActCodeQualifier", "ERROR");
+
 		if (VALIDATE_SERIES_ACT_CODE_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -297,6 +304,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSeriesActCodeQualifierCode(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeriesActSeriesActCodeQualifierCode", "ERROR");
 
 		if (VALIDATE_SERIES_ACT_CODE_QUALIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -361,6 +370,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	public static boolean validateSeriesActCodeQualifierValue(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeriesActSeriesActCodeQualifierValue", "ERROR");
+
 		if (VALIDATE_SERIES_ACT_CODE_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -423,6 +434,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSeriesActCodeQualifierValueCode(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeriesActSeriesActCodeQualifierValueCode", "ERROR");
 
 		if (VALIDATE_SERIES_ACT_CODE_QUALIFIER_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -488,6 +501,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	public static boolean validateSeriesActTemplateId(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeriesActSeriesActTemplateId", "ERROR");
+
 		if (VALIDATE_SERIES_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -550,6 +565,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	public static boolean validateSeriesActClassCode(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeriesActSeriesActClassCode", "ERROR");
+
 		if (VALIDATE_SERIES_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -611,6 +628,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSeriesActMoodCode(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeriesActSeriesActMoodCode", "ERROR");
 
 		if (VALIDATE_SERIES_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -676,6 +695,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	public static boolean validateSeriesActCode(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeriesActSeriesActCode", "ERROR");
+
 		if (VALIDATE_SERIES_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -737,6 +758,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSeriesActEffectiveTime(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeriesActSeriesActEffectiveTime", "WARNING");
 
 		if (VALIDATE_SERIES_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -801,6 +824,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	public static boolean validateSeriesActId(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeriesActSeriesActId", "ERROR");
+
 		if (VALIDATE_SERIES_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -862,6 +887,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	public static boolean validateSeriesActText(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeriesActSeriesActText", "INFO");
+
 		if (VALIDATE_SERIES_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -922,6 +949,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSeriesActSOPInstanceObservation(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeriesActSeriesActSOPInstanceObservation", "ERROR");
 
 		if (VALIDATE_SERIES_ACT_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

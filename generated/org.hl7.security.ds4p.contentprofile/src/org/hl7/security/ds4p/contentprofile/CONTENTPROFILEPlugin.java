@@ -3,7 +3,6 @@
 package org.hl7.security.ds4p.contentprofile;
 
 import org.eclipse.emf.common.EMFPlugin;
-
 import org.eclipse.emf.common.util.ResourceLocator;
 
 /**
@@ -36,7 +35,7 @@ public final class CONTENTPROFILEPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public CONTENTPROFILEPlugin() {
-		super(new ResourceLocator[] {});
+		super(new ResourceLocator [] {});
 	}
 
 	/**

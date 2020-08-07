@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ManufacturedProductOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -104,6 +105,8 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 	public static boolean validateMedicationInformationTemplateId(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationInformationMedicationInformationTemplateId", "ERROR");
+
 		if (VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -169,6 +172,8 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 	public static boolean validateMedicationInformationId(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationInformationMedicationInformationId", "INFO");
+
 		if (VALIDATE_MEDICATION_INFORMATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -231,6 +236,8 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 
 	public static boolean validateMedicationInformationClassCode(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationInformationMedicationInformationClassCode", "ERROR");
 
 		if (VALIDATE_MEDICATION_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -295,6 +302,8 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 
 	public static boolean validateMedicationInformationManufacturerOrganization(
 			MedicationInformation medicationInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationInformationMedicationInformationManufacturerOrganization", "INFO");
 
 		if (VALIDATE_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -362,6 +371,8 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 	public static boolean validateMedicationInformationManufacturedMaterial(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationInformationMedicationInformationManufacturedMaterial", "ERROR");
+
 		if (VALIDATE_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -427,6 +438,11 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
 			MedicationInformation medicationInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"MedicationInformationMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText",
+			"WARNING");
 
 		if (VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -499,6 +515,10 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 	public static boolean validateMedicationInformationMedicationInformationManufacturedMaterialReference(
 			MedicationInformation medicationInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MedicationInformationMedicationInformationMedicationInformationManufacturedMaterialReference",
+			"WARNING");
+
 		if (VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -570,6 +590,11 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 	public static boolean validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
 			MedicationInformation medicationInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"MedicationInformationMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue",
+			"WARNING");
+
 		if (VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -640,6 +665,11 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
 			MedicationInformation medicationInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"MedicationInformationMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation",
+			"INFO");
 
 		if (VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -713,6 +743,10 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationInformationMedicationInformationManufacturedMaterialCode(
 			MedicationInformation medicationInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MedicationInformationMedicationInformationMedicationInformationManufacturedMaterialCode",
+			"ERROR");
 
 		if (VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -101,6 +102,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 	public static boolean validateResultOrganizer2TemplateId(ResultOrganizer2 resultOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ResultOrganizer2ResultOrganizer2TemplateId", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -164,6 +167,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 	public static boolean validateResultOrganizer2EffectiveTime(ResultOrganizer2 resultOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ResultOrganizer2ResultOrganizer2EffectiveTime", "INFO");
+
 		if (VALIDATE_RESULT_ORGANIZER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -226,6 +231,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 
 	public static boolean validateResultOrganizer2AuthorParticipation(ResultOrganizer2 resultOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ResultOrganizer2ResultOrganizer2AuthorParticipation", "WARNING");
 
 		if (VALIDATE_RESULT_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -292,6 +299,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateResultOrganizer2IVLTSLow(ResultOrganizer2 resultOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ResultOrganizer2ResultOrganizer2IVLTSLow", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER2_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -363,6 +372,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateResultOrganizer2IVLTSHigh(ResultOrganizer2 resultOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ResultOrganizer2ResultOrganizer2IVLTSHigh", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -482,6 +493,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 	public static boolean validateResultOrganizerCodeValue(ResultOrganizer2 resultOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ResultOrganizer2ResultOrganizerCodeValue", "WARNING");
+
 		if (VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -545,6 +558,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 	public static boolean validateResultOrganizerClassCodeValue(ResultOrganizer2 resultOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ResultOrganizer2ResultOrganizerClassCodeValue", "INFO");
+
 		if (VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -607,6 +622,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 
 	public static boolean validateResultOrganizerResultObservation(ResultOrganizer2 resultOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ResultOrganizer2ResultOrganizerResultObservation", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

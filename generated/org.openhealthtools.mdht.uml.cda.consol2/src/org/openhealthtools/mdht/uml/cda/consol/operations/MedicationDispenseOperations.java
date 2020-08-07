@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.SupplyOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -119,6 +120,9 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispenseContainsMedicationOrImmunization(
 			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MedicationDispenseMedicationDispenseContainsMedicationOrImmunization", "ERROR");
+
 		if (VALIDATE_MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -185,6 +189,8 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispenseTemplateId(MedicationDispense medicationDispense,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationDispenseMedicationDispenseTemplateId", "ERROR");
+
 		if (VALIDATE_MEDICATION_DISPENSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -248,6 +254,8 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispenseClassCode(MedicationDispense medicationDispense,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationDispenseMedicationDispenseClassCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_DISPENSE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -310,6 +318,8 @@ public class MedicationDispenseOperations extends SupplyOperations {
 
 	public static boolean validateMedicationDispenseEffectiveTime(MedicationDispense medicationDispense,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationDispenseMedicationDispenseEffectiveTime", "WARNING");
 
 		if (VALIDATE_MEDICATION_DISPENSE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -376,6 +386,8 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispenseId(MedicationDispense medicationDispense,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationDispenseMedicationDispenseId", "ERROR");
+
 		if (VALIDATE_MEDICATION_DISPENSE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -439,6 +451,8 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispenseMoodCode(MedicationDispense medicationDispense,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationDispenseMedicationDispenseMoodCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_DISPENSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -501,6 +515,8 @@ public class MedicationDispenseOperations extends SupplyOperations {
 
 	public static boolean validateMedicationDispenseRepeatNumber(MedicationDispense medicationDispense,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationDispenseMedicationDispenseRepeatNumber", "WARNING");
 
 		if (VALIDATE_MEDICATION_DISPENSE_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -568,6 +584,8 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispenseStatusCode(MedicationDispense medicationDispense,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationDispenseMedicationDispenseStatusCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_DISPENSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -631,6 +649,8 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispenseQuantity(MedicationDispense medicationDispense,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationDispenseMedicationDispenseQuantity", "WARNING");
+
 		if (VALIDATE_MEDICATION_DISPENSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -693,6 +713,8 @@ public class MedicationDispenseOperations extends SupplyOperations {
 
 	public static boolean validateMedicationDispenseMedicationSupplyOrder(MedicationDispense medicationDispense,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationDispenseMedicationDispenseMedicationSupplyOrder", "INFO");
 
 		if (VALIDATE_MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -759,6 +781,8 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispensePerformer(MedicationDispense medicationDispense,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationDispenseMedicationDispensePerformer", "INFO");
+
 		if (VALIDATE_MEDICATION_DISPENSE_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -821,6 +845,11 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"MedicationDispenseMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
 
 		if (VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -893,6 +922,11 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
 			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"MedicationDispenseMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
+
 		if (VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -964,6 +998,11 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"MedicationDispenseMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
+
 		if (VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1013,6 +1052,11 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"MedicationDispenseMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
 
 		if (VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1108,6 +1152,11 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"MedicationDispenseMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
+
 		if (VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1178,6 +1227,11 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"MedicationDispenseMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
 
 		if (VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1250,6 +1304,11 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
 			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"MedicationDispenseMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
+
 		if (VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1320,6 +1379,11 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"MedicationDispenseMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
 
 		if (VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1392,6 +1456,11 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
 			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"MedicationDispenseMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1462,6 +1531,11 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"MedicationDispenseMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1534,6 +1608,9 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	public static boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityAddr(
 			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MedicationDispenseMedicationDispensePerformerMedicationDispenseAssignedEntityAddr", "WARNING");
+
 		if (VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1604,6 +1681,9 @@ public class MedicationDispenseOperations extends SupplyOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntity(
 			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MedicationDispenseMedicationDispensePerformerMedicationDispenseAssignedEntity", "ERROR");
 
 		if (VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

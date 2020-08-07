@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -98,6 +99,8 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 	public static boolean validateEncounterDiagnosisTemplateId(EncounterDiagnosis encounterDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "EncounterDiagnosisEncounterDiagnosisTemplateId", "ERROR");
+
 		if (VALIDATE_ENCOUNTER_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -160,6 +163,8 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEncounterDiagnosisClassCode(EncounterDiagnosis encounterDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EncounterDiagnosisEncounterDiagnosisClassCode", "ERROR");
 
 		if (VALIDATE_ENCOUNTER_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -224,6 +229,8 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 	public static boolean validateEncounterDiagnosisMoodCode(EncounterDiagnosis encounterDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "EncounterDiagnosisEncounterDiagnosisMoodCode", "ERROR");
+
 		if (VALIDATE_ENCOUNTER_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -286,6 +293,8 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEncounterDiagnosisCodeP(EncounterDiagnosis encounterDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EncounterDiagnosisEncounterDiagnosisCodeP", "ERROR");
 
 		if (VALIDATE_ENCOUNTER_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -373,6 +382,8 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "EncounterDiagnosisEncounterDiagnosisCode", "ERROR");
+
 		if (VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -435,6 +446,8 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEncounterDiagnosisProblemObservation(EncounterDiagnosis encounterDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EncounterDiagnosisEncounterDiagnosisProblemObservation", "ERROR");
 
 		if (VALIDATE_ENCOUNTER_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

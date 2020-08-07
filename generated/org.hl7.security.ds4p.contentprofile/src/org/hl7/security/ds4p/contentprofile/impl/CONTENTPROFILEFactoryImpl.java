@@ -5,12 +5,26 @@ package org.hl7.security.ds4p.contentprofile.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
 import org.hl7.security.ds4p.contentprofile.*;
+import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEFactory;
+import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
+import org.hl7.security.ds4p.contentprofile.ConfidentialitySecurityObservation;
+import org.hl7.security.ds4p.contentprofile.MandatoryDocumentAssignedAuthor;
+import org.hl7.security.ds4p.contentprofile.MandatoryDocumentProvenance;
+import org.hl7.security.ds4p.contentprofile.MandatoryEntryAssignedAuthor;
+import org.hl7.security.ds4p.contentprofile.MandatoryEntryProvenance;
+import org.hl7.security.ds4p.contentprofile.ObligationPolicySecurityObservation;
+import org.hl7.security.ds4p.contentprofile.PrivacyAnnotation;
+import org.hl7.security.ds4p.contentprofile.PrivacyAnnotationEntryRelationship;
+import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsEntry;
+import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsSection;
+import org.hl7.security.ds4p.contentprofile.PrivacySegmentedDocument;
+import org.hl7.security.ds4p.contentprofile.PrivacySegmentedSection;
+import org.hl7.security.ds4p.contentprofile.ProtectedProblem;
+import org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation;
+import org.hl7.security.ds4p.contentprofile.RefrainPolicySecurityObservation;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,12 +41,12 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 */
 	public static CONTENTPROFILEFactory init() {
 		try {
-			CONTENTPROFILEFactory theCONTENTPROFILEFactory = (CONTENTPROFILEFactory) EPackage.Registry.INSTANCE.getEFactory(
-				CONTENTPROFILEPackage.eNS_URI);
+			CONTENTPROFILEFactory theCONTENTPROFILEFactory = (CONTENTPROFILEFactory)EPackage.Registry.INSTANCE.getEFactory(CONTENTPROFILEPackage.eNS_URI);
 			if (theCONTENTPROFILEFactory != null) {
 				return theCONTENTPROFILEFactory;
 			}
-		} catch (Exception exception) {
+		}
+		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new CONTENTPROFILEFactoryImpl();
@@ -56,36 +70,21 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case CONTENTPROFILEPackage.PRIVACY_SEGMENTED_DOCUMENT:
-				return createPrivacySegmentedDocument();
-			case CONTENTPROFILEPackage.PRIVACY_SEGMENTED_SECTION:
-				return createPrivacySegmentedSection();
-			case CONTENTPROFILEPackage.PRIVACY_MARKINGS_SECTION:
-				return createPrivacyMarkingsSection();
-			case CONTENTPROFILEPackage.OBLIGATION_POLICY_SECURITY_OBSERVATION:
-				return createObligationPolicySecurityObservation();
-			case CONTENTPROFILEPackage.MANDATORY_DOCUMENT_PROVENANCE:
-				return createMandatoryDocumentProvenance();
-			case CONTENTPROFILEPackage.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR:
-				return createMandatoryDocumentAssignedAuthor();
-			case CONTENTPROFILEPackage.PRIVACY_ANNOTATION:
-				return createPrivacyAnnotation();
-			case CONTENTPROFILEPackage.REFRAIN_POLICY_SECURITY_OBSERVATION:
-				return createRefrainPolicySecurityObservation();
-			case CONTENTPROFILEPackage.PURPOSE_OF_USE_SECURITY_OBSERVATION:
-				return createPurposeOfUseSecurityObservation();
-			case CONTENTPROFILEPackage.CONFIDENTIALITY_SECURITY_OBSERVATION:
-				return createConfidentialitySecurityObservation();
-			case CONTENTPROFILEPackage.PROTECTED_PROBLEM:
-				return createProtectedProblem();
-			case CONTENTPROFILEPackage.MANDATORY_ENTRY_PROVENANCE:
-				return createMandatoryEntryProvenance();
-			case CONTENTPROFILEPackage.MANDATORY_ENTRY_ASSIGNED_AUTHOR:
-				return createMandatoryEntryAssignedAuthor();
-			case CONTENTPROFILEPackage.PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP:
-				return createPrivacyAnnotationEntryRelationship();
-			case CONTENTPROFILEPackage.PRIVACY_MARKINGS_ENTRY:
-				return createPrivacyMarkingsEntry();
+			case CONTENTPROFILEPackage.PRIVACY_SEGMENTED_DOCUMENT: return createPrivacySegmentedDocument();
+			case CONTENTPROFILEPackage.PRIVACY_SEGMENTED_SECTION: return createPrivacySegmentedSection();
+			case CONTENTPROFILEPackage.PRIVACY_MARKINGS_SECTION: return createPrivacyMarkingsSection();
+			case CONTENTPROFILEPackage.OBLIGATION_POLICY_SECURITY_OBSERVATION: return createObligationPolicySecurityObservation();
+			case CONTENTPROFILEPackage.MANDATORY_DOCUMENT_PROVENANCE: return createMandatoryDocumentProvenance();
+			case CONTENTPROFILEPackage.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR: return createMandatoryDocumentAssignedAuthor();
+			case CONTENTPROFILEPackage.PRIVACY_ANNOTATION: return createPrivacyAnnotation();
+			case CONTENTPROFILEPackage.REFRAIN_POLICY_SECURITY_OBSERVATION: return createRefrainPolicySecurityObservation();
+			case CONTENTPROFILEPackage.PURPOSE_OF_USE_SECURITY_OBSERVATION: return createPurposeOfUseSecurityObservation();
+			case CONTENTPROFILEPackage.CONFIDENTIALITY_SECURITY_OBSERVATION: return createConfidentialitySecurityObservation();
+			case CONTENTPROFILEPackage.PROTECTED_PROBLEM: return createProtectedProblem();
+			case CONTENTPROFILEPackage.MANDATORY_ENTRY_PROVENANCE: return createMandatoryEntryProvenance();
+			case CONTENTPROFILEPackage.MANDATORY_ENTRY_ASSIGNED_AUTHOR: return createMandatoryEntryAssignedAuthor();
+			case CONTENTPROFILEPackage.PRIVACY_ANNOTATION_ENTRY_RELATIONSHIP: return createPrivacyAnnotationEntryRelationship();
+			case CONTENTPROFILEPackage.PRIVACY_MARKINGS_ENTRY: return createPrivacyMarkingsEntry();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -263,7 +262,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 */
 	@Override
 	public CONTENTPROFILEPackage getCONTENTPROFILEPackage() {
-		return (CONTENTPROFILEPackage) getEPackage();
+		return (CONTENTPROFILEPackage)getEPackage();
 	}
 
 	/**

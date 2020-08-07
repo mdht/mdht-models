@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -95,6 +96,9 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 			HistoryOfPresentIllnessSection historyOfPresentIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HistoryOfPresentIllnessSectionHistoryOfPresentIllnessSectionTemplateId", "ERROR");
+
 		if (VALIDATE_HISTORY_OF_PRESENT_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -164,6 +168,8 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 			HistoryOfPresentIllnessSection historyOfPresentIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HistoryOfPresentIllnessSectionHistoryOfPresentIllnessSectionCode", "ERROR");
+
 		if (VALIDATE_HISTORY_OF_PRESENT_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -230,6 +236,8 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	public static boolean validateHistoryOfPresentIllnessSectionCodeP(
 			HistoryOfPresentIllnessSection historyOfPresentIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HistoryOfPresentIllnessSectionHistoryOfPresentIllnessSectionCodeP", "ERROR");
 
 		if (VALIDATE_HISTORY_OF_PRESENT_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -298,6 +306,8 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 			HistoryOfPresentIllnessSection historyOfPresentIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HistoryOfPresentIllnessSectionHistoryOfPresentIllnessSectionTitle", "ERROR");
+
 		if (VALIDATE_HISTORY_OF_PRESENT_ILLNESS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -364,6 +374,8 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	public static boolean validateHistoryOfPresentIllnessSectionText(
 			HistoryOfPresentIllnessSection historyOfPresentIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HistoryOfPresentIllnessSectionHistoryOfPresentIllnessSectionText", "ERROR");
 
 		if (VALIDATE_HISTORY_OF_PRESENT_ILLNESS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

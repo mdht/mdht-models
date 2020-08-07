@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,8 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 			HighestPressureUlcerStage highestPressureUlcerStage, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HighestPressureUlcerStageHighestPressureUlcerStageTemplateId", "ERROR");
+
 		if (VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -160,6 +163,8 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 			HighestPressureUlcerStage highestPressureUlcerStage, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HighestPressureUlcerStageHighestPressureUlcerStageClassCode", "ERROR");
+
 		if (VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -224,6 +229,8 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 
 	public static boolean validateHighestPressureUlcerStageMoodCode(HighestPressureUlcerStage highestPressureUlcerStage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HighestPressureUlcerStageHighestPressureUlcerStageMoodCode", "ERROR");
 
 		if (VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -290,6 +297,8 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	public static boolean validateHighestPressureUlcerStageId(HighestPressureUlcerStage highestPressureUlcerStage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HighestPressureUlcerStageHighestPressureUlcerStageId", "ERROR");
+
 		if (VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -353,6 +362,8 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 
 	public static boolean validateHighestPressureUlcerStageCodeP(HighestPressureUlcerStage highestPressureUlcerStage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HighestPressureUlcerStageHighestPressureUlcerStageCodeP", "ERROR");
 
 		if (VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -442,6 +453,8 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "HighestPressureUlcerStageHighestPressureUlcerStageCode", "ERROR");
+
 		if (VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -505,6 +518,8 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 
 	public static boolean validateHighestPressureUlcerStageValue(HighestPressureUlcerStage highestPressureUlcerStage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HighestPressureUlcerStageHighestPressureUlcerStageValue", "ERROR");
 
 		if (VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

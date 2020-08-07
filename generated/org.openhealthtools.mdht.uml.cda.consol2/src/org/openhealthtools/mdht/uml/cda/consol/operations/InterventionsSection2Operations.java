@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -101,6 +102,8 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	public static boolean validateInterventionsSection2TemplateId(InterventionsSection2 interventionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionsSection2InterventionsSection2TemplateId", "ERROR");
+
 		if (VALIDATE_INTERVENTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -165,6 +168,8 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 
 	public static boolean validateInterventionsSection2InterventionAct(InterventionsSection2 interventionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionsSection2InterventionsSection2InterventionAct", "WARNING");
 
 		if (VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -231,6 +236,8 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	public static boolean validateInterventionsSection2HandoffCommunication(InterventionsSection2 interventionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionsSection2InterventionsSection2HandoffCommunication", "INFO");
+
 		if (VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -296,6 +303,8 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 
 	public static boolean validateInterventionsSection2PlannedInterventionAct(
 			InterventionsSection2 interventionsSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionsSection2InterventionsSection2PlannedInterventionAct", "WARNING");
 
 		if (VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -508,6 +517,8 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	public static boolean validateInterventionsSectionCodeP(InterventionsSection2 interventionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionsSection2InterventionsSectionCodeP", "ERROR");
+
 		if (VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -593,6 +604,8 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "InterventionsSection2InterventionsSectionCode", "ERROR");
 
 		if (VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

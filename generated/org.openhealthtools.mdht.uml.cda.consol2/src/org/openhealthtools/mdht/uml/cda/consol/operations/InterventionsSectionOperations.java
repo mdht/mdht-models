@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,8 @@ public class InterventionsSectionOperations extends SectionOperations {
 	public static boolean validateInterventionsSectionTemplateId(InterventionsSection interventionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionsSectionInterventionsSectionTemplateId", "ERROR");
+
 		if (VALIDATE_INTERVENTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -160,6 +163,8 @@ public class InterventionsSectionOperations extends SectionOperations {
 	public static boolean validateInterventionsSectionCode(InterventionsSection interventionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionsSectionInterventionsSectionCode", "ERROR");
+
 		if (VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -223,6 +228,8 @@ public class InterventionsSectionOperations extends SectionOperations {
 	public static boolean validateInterventionsSectionCodeP(InterventionsSection interventionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InterventionsSectionInterventionsSectionCodeP", "ERROR");
+
 		if (VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -264,6 +271,8 @@ public class InterventionsSectionOperations extends SectionOperations {
 
 	public static boolean validateInterventionsSectionText(InterventionsSection interventionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionsSectionInterventionsSectionText", "ERROR");
 
 		if (VALIDATE_INTERVENTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -348,6 +357,8 @@ public class InterventionsSectionOperations extends SectionOperations {
 
 	public static boolean validateInterventionsSectionTitle(InterventionsSection interventionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InterventionsSectionInterventionsSectionTitle", "ERROR");
 
 		if (VALIDATE_INTERVENTIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

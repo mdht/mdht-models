@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -100,6 +101,8 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	public static boolean validateHealthStatusObservationHasTextReference(
 			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HealthStatusObservationHealthStatusObservationHasTextReference", "WARNING");
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -165,6 +168,8 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateHealthStatusObservationTextReferenceValue(
 			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HealthStatusObservationHealthStatusObservationTextReferenceValue", "WARNING");
 
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -232,6 +237,9 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	public static boolean validateHealthStatusObservationHasTextReferenceValue(
 			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HealthStatusObservationHealthStatusObservationHasTextReferenceValue", "ERROR");
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -298,6 +306,8 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	public static boolean validateHealthStatusObservationTemplateId(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HealthStatusObservationHealthStatusObservationTemplateId", "ERROR");
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -363,6 +373,8 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	public static boolean validateHealthStatusObservationClassCode(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HealthStatusObservationHealthStatusObservationClassCode", "ERROR");
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -427,6 +439,8 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateHealthStatusObservationMoodCode(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HealthStatusObservationHealthStatusObservationMoodCode", "ERROR");
 
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -495,6 +509,8 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	public static boolean validateHealthStatusObservationCode(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HealthStatusObservationHealthStatusObservationCode", "ERROR");
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -558,6 +574,8 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateHealthStatusObservationText(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HealthStatusObservationHealthStatusObservationText", "WARNING");
 
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -623,6 +641,8 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateHealthStatusObservationStatusCode(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HealthStatusObservationHealthStatusObservationStatusCode", "ERROR");
 
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -691,6 +711,8 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	public static boolean validateHealthStatusObservationValue(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HealthStatusObservationHealthStatusObservationValue", "ERROR");
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -754,6 +776,8 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateHealthStatusObservationValueP(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HealthStatusObservationHealthStatusObservationValueP", "ERROR");
 
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

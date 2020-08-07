@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -103,6 +104,11 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 			HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"HospitalDischargeMedicationsSectionEntriesOptionalHospitalDischargeMedicationsSectionEntriesOptionalTemplateId",
+			"ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -172,6 +178,11 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 			HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"HospitalDischargeMedicationsSectionEntriesOptionalHospitalDischargeMedicationsSectionEntriesOptionalCode",
+			"ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -238,6 +249,11 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	public static boolean validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(
 			HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"HospitalDischargeMedicationsSectionEntriesOptionalHospitalDischargeMedicationsSectionEntriesOptionalCodeP",
+			"ERROR");
 
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -306,6 +322,11 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 			HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"HospitalDischargeMedicationsSectionEntriesOptionalHospitalDischargeMedicationsSectionEntriesOptionalTitle",
+			"ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -373,6 +394,11 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 			HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"HospitalDischargeMedicationsSectionEntriesOptionalHospitalDischargeMedicationsSectionEntriesOptionalText",
+			"ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -439,6 +465,11 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	public static boolean validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
 			HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"HospitalDischargeMedicationsSectionEntriesOptionalHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication",
+			"WARNING");
 
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

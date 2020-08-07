@@ -11,6 +11,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.mdht.uml.hl7.rim.operations.RoleOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
@@ -88,6 +89,8 @@ public class FetusSubjectContextOperations extends RoleOperations {
 	public static boolean validateFetusSubjectContextTemplateId(FetusSubjectContext fetusSubjectContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FetusSubjectContextFetusSubjectContextTemplateId", "ERROR");
+
 		if (VALIDATE_FETUS_SUBJECT_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -154,6 +157,8 @@ public class FetusSubjectContextOperations extends RoleOperations {
 	public static boolean validateFetusSubjectContextCode(FetusSubjectContext fetusSubjectContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FetusSubjectContextFetusSubjectContextCode", "ERROR");
+
 		if (VALIDATE_FETUS_SUBJECT_CONTEXT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -216,6 +221,8 @@ public class FetusSubjectContextOperations extends RoleOperations {
 
 	public static boolean validateFetusSubjectContextSubject(FetusSubjectContext fetusSubjectContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FetusSubjectContextFetusSubjectContextSubject", "ERROR");
 
 		if (VALIDATE_FETUS_SUBJECT_CONTEXT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

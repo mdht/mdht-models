@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -176,6 +177,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateUSRealmHeader2DocCodesOnly(USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2USRealmHeader2DocCodesOnly", "ERROR");
+
 		if (VALIDATE_US_REALM_HEADER2_DOC_CODES_ONLY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -238,6 +241,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 
 	public static boolean validateUSRealmHeader2TemplateId(USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2USRealmHeader2TemplateId", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -303,6 +308,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -375,6 +383,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute", "INFO");
+
 		if (VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_BIRTH_TIME_PRECISE_TO_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -445,6 +456,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCodeP(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCodeP", "INFO");
 
 		if (VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_ETHNIC_GROUP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -533,6 +547,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2USRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode", "ERROR");
+
 		if (VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -614,6 +631,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateUSRealmHeader2AuthorAssignedAuthorIfAssignedPersonThenContainsCode(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2USRealmHeader2AuthorAssignedAuthorIfAssignedPersonThenContainsCode", "WARNING");
+
 		if (VALIDATE_US_REALM_HEADER2_AUTHOR_ASSIGNED_AUTHOR_IF_ASSIGNED_PERSON_THEN_CONTAINS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -684,6 +704,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateUSRealmHeader2AuthorAssignedAuthorCodeTerminology(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2USRealmHeader2AuthorAssignedAuthorCodeTerminology", "WARNING");
 
 		if (VALIDATE_US_REALM_HEADER2_AUTHOR_ASSIGNED_AUTHOR_CODE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -756,6 +778,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateUSRealmHeader2InformationRecipientIntendedRecipientId(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2USRealmHeader2InformationRecipientIntendedRecipientId", "INFO");
+
 		if (VALIDATE_US_REALM_HEADER2_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -826,6 +850,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateUSRealmHeader2LegalAuthenticatorSDTCSignatureText(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2USRealmHeader2LegalAuthenticatorSDTCSignatureText", "INFO");
 
 		if (VALIDATE_US_REALM_HEADER2_LEGAL_AUTHENTICATOR_SDTC_SIGNATURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -898,6 +924,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateUSRealmHeader2AuthenticatorSDTCSignatureText(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2USRealmHeader2AuthenticatorSDTCSignatureText", "INFO");
+
 		if (VALIDATE_US_REALM_HEADER2_AUTHENTICATOR_SDTC_SIGNATURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -968,6 +996,11 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1040,6 +1073,11 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1111,6 +1149,11 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1160,6 +1203,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
 
 		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1255,6 +1302,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
+
 		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1325,6 +1376,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
 
 		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1397,6 +1452,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
+
 		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1467,6 +1526,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1539,6 +1602,11 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1609,6 +1677,11 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1681,6 +1754,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateUSRealmHeader2GeneralHeaderConstraintsInformantAssignedEntity(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2USRealmHeader2GeneralHeaderConstraintsInformantAssignedEntity", "ERROR");
+
 		if (VALIDATE_US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1752,6 +1828,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateUSRealmHeader2GeneralHeaderConstraintsInformantRelatedEntity(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2USRealmHeader2GeneralHeaderConstraintsInformantRelatedEntity", "ERROR");
+
 		if (VALIDATE_US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1801,6 +1880,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 
 	public static boolean validateGeneralHeaderConstraintsTitle(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsTitle", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1887,6 +1968,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsRealmCode(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsRealmCode", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1951,6 +2034,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 
 	public static boolean validateGeneralHeaderConstraintsRecordTarget(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsRecordTarget", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2017,6 +2102,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsDataEnterer(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsDataEnterer", "INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2082,6 +2169,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsAuthor(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsAuthor", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2144,6 +2233,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 
 	public static boolean validateGeneralHeaderConstraintsCustodian(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsCustodian", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2210,6 +2301,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsInformationRecipient(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsInformationRecipient", "INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2274,6 +2367,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 
 	public static boolean validateGeneralHeaderConstraintsLegalAuthenticator(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsLegalAuthenticator", "WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2340,6 +2435,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsAuthenticator(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsAuthenticator", "INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2404,6 +2501,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 
 	public static boolean validateGeneralHeaderConstraintsInformant(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsInformant", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2470,6 +2569,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsInFulfillmentOf(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsInFulfillmentOf", "INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2534,6 +2635,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 
 	public static boolean validateGeneralHeaderConstraintsComponentOf(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsComponentOf", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2600,6 +2703,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsSupportParticipant(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsSupportParticipant", "INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_SUPPORT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2664,6 +2769,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 
 	public static boolean validateGeneralHeaderConstraintsDocumentationOf(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsDocumentationOf", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2730,6 +2837,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsAuthorization(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsAuthorization", "INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHORIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2794,6 +2903,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse", "WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TEL_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2866,6 +2978,11 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty",
+			"INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_FROM_PERSONAL_RELATIONSHIP_OR_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2936,6 +3053,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode", "WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3008,6 +3128,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom", "WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3078,6 +3201,11 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3166,6 +3294,11 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3247,6 +3380,11 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PREFERENCE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3317,6 +3455,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3389,6 +3531,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3459,6 +3605,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3531,6 +3680,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE_PLACE_HAS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3601,6 +3754,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3675,6 +3831,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3745,6 +3904,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3819,6 +3981,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3889,6 +4054,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3961,6 +4129,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4031,6 +4202,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4103,6 +4277,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4173,6 +4351,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4245,6 +4426,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRolePatient", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4316,6 +4500,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRole(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRole", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4386,6 +4572,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsDataEntererAssignedEntityCodeP", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4474,6 +4663,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsDataEntererAssignedEntityCode", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4555,6 +4747,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsDataEntererAssignedEntity(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsDataEntererAssignedEntity", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4625,6 +4819,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsAuthorAssignedAuthorCodeP", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4711,6 +4907,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsAuthorAssignedAuthorCode", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4792,6 +4990,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsAuthorAssignedAuthor(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsAuthorAssignedAuthor", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4863,6 +5063,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsInformationRecipientIntendedRecipient", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4933,6 +5136,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsInformantAssignedEntityCodeP", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5021,6 +5226,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsInformantAssignedEntityCode(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsInformantAssignedEntityCode", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5102,6 +5309,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsInformantAssignedEntityAddr(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsInformantAssignedEntityAddr", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5172,6 +5381,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsInformantRelatedEntityAddr(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsInformantRelatedEntityAddr", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5244,6 +5455,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsInformantRelatedEntityPerson(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsInformantRelatedEntityPerson", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5314,6 +5527,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_HAS_ASSIGNED_ENTITY_OR_RELATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5386,6 +5602,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsComponentOfEncompassingEncounter", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5457,6 +5676,11 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"USRealmHeader2GeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_HAS_ASSOCIATED_PERSON_OR_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5527,6 +5751,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5615,6 +5843,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5695,6 +5927,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP",
+			"INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5783,6 +6019,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5864,6 +6104,10 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5935,6 +6179,9 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(
 			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "USRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEventPerformer", "WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -6005,6 +6252,8 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEvent(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEvent", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

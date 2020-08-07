@@ -2,16 +2,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.Performer1;
 
 /**
@@ -33,7 +28,7 @@ public interface PhysicianReadingStudyPerformer extends Performer1 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.6.2.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.6.2.1\')'"
 	 * @generated
 	 */
 	boolean validatePhysicianReadingStudyPerformerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -69,7 +64,7 @@ public interface PhysicianReadingStudyPerformer extends Performer1 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity-&gt;one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))'"
 	 * @generated
 	 */
 	boolean validatePhysicianReadingStudyPerformerAssignedEntity(DiagnosticChain diagnostics,
@@ -82,7 +77,7 @@ public interface PhysicianReadingStudyPerformer extends Performer1 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.time->excluding(null)->select(isNullFlavorUndefined())->reject(isNullFlavorUndefined() implies ((not value.oclIsUndefined() implies value.size() >= 8) and ((not low.value.oclIsUndefined() and low.isNullFlavorUndefined() implies low.value.size() >= 8) and (not high.value.oclIsUndefined() and high.isNullFlavorUndefined() implies high.value.size() >= 8))))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.time-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject(isNullFlavorUndefined() implies ((not value.oclIsUndefined() implies value.size() &gt;= 8) and ((not low.value.oclIsUndefined() and low.isNullFlavorUndefined() implies low.value.size() &gt;= 8) and (not high.value.oclIsUndefined() and high.isNullFlavorUndefined() implies high.value.size() &gt;= 8))))'"
 	 * @generated
 	 */
 	boolean validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
@@ -95,7 +90,7 @@ public interface PhysicianReadingStudyPerformer extends Performer1 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.time->excluding(null)->select(isNullFlavorUndefined())->reject(isNullFlavorUndefined() implies ((not value.oclIsUndefined() implies value.size() >= 12) and ((not low.value.oclIsUndefined() and low.isNullFlavorUndefined() implies low.value.size() >= 12) and (not high.value.oclIsUndefined() and high.isNullFlavorUndefined() implies high.value.size() >= 12))))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.time-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject(isNullFlavorUndefined() implies ((not value.oclIsUndefined() implies value.size() &gt;= 12) and ((not low.value.oclIsUndefined() and low.isNullFlavorUndefined() implies low.value.size() &gt;= 12) and (not high.value.oclIsUndefined() and high.isNullFlavorUndefined() implies high.value.size() &gt;= 12))))'"
 	 * @generated
 	 */
 	boolean validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
@@ -108,7 +103,7 @@ public interface PhysicianReadingStudyPerformer extends Performer1 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.time->excluding(null)->select(isNullFlavorUndefined())->reject(isNullFlavorUndefined() implies ((not value.oclIsUndefined() implies value.size() >= 14) and ((not low.value.oclIsUndefined() and low.isNullFlavorUndefined() implies low.value.size() >= 14) and (not high.value.oclIsUndefined() and high.isNullFlavorUndefined() implies high.value.size() >= 14))))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.time-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject(isNullFlavorUndefined() implies ((not value.oclIsUndefined() implies value.size() &gt;= 14) and ((not low.value.oclIsUndefined() and low.isNullFlavorUndefined() implies low.value.size() &gt;= 14) and (not high.value.oclIsUndefined() and high.isNullFlavorUndefined() implies high.value.size() &gt;= 14))))'"
 	 * @generated
 	 */
 	boolean validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
@@ -121,7 +116,7 @@ public interface PhysicianReadingStudyPerformer extends Performer1 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.time->excluding(null)->select(isNullFlavorUndefined())->reject((not value.oclIsUndefined() and value.size() > 8 implies value.size() >= 15) and ((not low.value.oclIsUndefined() and low.value.size() > 8 implies low.value.size() >= 15) and (not high.value.oclIsUndefined() and high.value.size() > 8 implies high.value.size() >= 15)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.time-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject((not value.oclIsUndefined() and value.size() &gt; 8 implies value.size() &gt;= 15) and ((not low.value.oclIsUndefined() and low.value.size() &gt; 8 implies low.value.size() &gt;= 15) and (not high.value.oclIsUndefined() and high.value.size() &gt; 8 implies high.value.size() &gt;= 15)))'"
 	 * @generated
 	 */
 	boolean validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
@@ -134,7 +129,7 @@ public interface PhysicianReadingStudyPerformer extends Performer1 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject(code.codeSystem = \'1.2.840.10008.2.16.4\' or code.codeSystem = \'2.16.840.1.113883.6.101\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity-&gt;excluding(null)-&gt;reject(code.codeSystem = \'1.2.840.10008.2.16.4\' or code.codeSystem = \'2.16.840.1.113883.6.101\')'"
 	 * @generated
 	 */
 	boolean validatePhysicianReadingStudyPerformerAssignedEntityHasDICOM(DiagnosticChain diagnostics,
@@ -147,7 +142,7 @@ public interface PhysicianReadingStudyPerformer extends Performer1 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject(not assignedPerson->isEmpty() or  not representedOrganization->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity-&gt;excluding(null)-&gt;reject(not assignedPerson-&gt;isEmpty() or  not representedOrganization-&gt;isEmpty())'"
 	 * @generated
 	 */
 	boolean validatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization(
@@ -160,7 +155,7 @@ public interface PhysicianReadingStudyPerformer extends Performer1 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject(id->exists( root=\'2.16.840.1.113883.4.6\' ))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity-&gt;excluding(null)-&gt;reject(id-&gt;exists( root=\'2.16.840.1.113883.4.6\' ))'"
 	 * @generated
 	 */
 	boolean validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId(DiagnosticChain diagnostics,
@@ -173,7 +168,7 @@ public interface PhysicianReadingStudyPerformer extends Performer1 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity-&gt;excluding(null)-&gt;reject((id-&gt;isEmpty() or id-&gt;exists(element | element.isNullFlavorUndefined())) implies (not id-&gt;isEmpty()))'"
 	 * @generated
 	 */
 	boolean validatePhysicianReadingStudyPerformerAssignedEntityId(DiagnosticChain diagnostics,
@@ -186,7 +181,7 @@ public interface PhysicianReadingStudyPerformer extends Performer1 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity-&gt;excluding(null)-&gt;reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validatePhysicianReadingStudyPerformerAssignedEntityCode(DiagnosticChain diagnostics,

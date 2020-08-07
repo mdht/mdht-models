@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -155,6 +156,8 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2Id(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DiagnosticImagingReport2DiagnosticImagingReport2Id", "ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -218,6 +221,8 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateDiagnosticImagingReport2CodeP(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DiagnosticImagingReport2DiagnosticImagingReport2CodeP", "ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -306,6 +311,8 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "DiagnosticImagingReport2DiagnosticImagingReport2Code", "WARNING");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -370,6 +377,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2InformationRecipient(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2InformationRecipient", "INFO");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -437,6 +447,8 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2Participant(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DiagnosticImagingReport2DiagnosticImagingReport2Participant", "INFO");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -502,6 +514,8 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2InFulfillmentOf(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DiagnosticImagingReport2DiagnosticImagingReport2InFulfillmentOf", "INFO");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -570,6 +584,8 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOf", "ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -637,6 +653,8 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DiagnosticImagingReport2DiagnosticImagingReport2RelatedDocument", "INFO");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -703,6 +721,8 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentOf(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentOf", "INFO");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -768,6 +788,8 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2FindingsSection(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DiagnosticImagingReport2DiagnosticImagingReport2FindingsSection", "ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -836,6 +858,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2DICOMObjectCatalogSection", "WARNING");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DICOM_OBJECT_CATALOG_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -902,6 +927,8 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2Component2(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DiagnosticImagingReport2DiagnosticImagingReport2Component2", "ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -966,6 +993,8 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateDiagnosticImagingReport2Informant(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DiagnosticImagingReport2DiagnosticImagingReport2Informant", "ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1032,6 +1061,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters", "ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_II_ROOT_OI_DS_MUST_BE_NO_MORE_THAN64_CHARACTERS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1104,6 +1136,8 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2IIRoot(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DiagnosticImagingReport2DiagnosticImagingReport2IIRoot", "ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1174,6 +1208,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ParticipantAssociatedEntityPersonName(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ParticipantAssociatedEntityPersonName", "ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1247,6 +1284,10 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson",
+			"ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1318,6 +1359,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ParticipantAssociatedEntity(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ParticipantAssociatedEntity", "ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1391,6 +1435,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2InFulfillmentOfOrderId", "ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1462,6 +1509,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2InFulfillmentOfOrder(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2InFulfillmentOfOrder", "ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1535,6 +1585,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEventClassCode", "ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1606,6 +1659,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2DocumentationOfServiceEventId(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEventId", "WARNING");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1679,6 +1735,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEventCode", "ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1750,6 +1809,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2",
+			"WARNING");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_PHYSICIAN_READING_STUDY_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1823,6 +1887,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEvent", "ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1894,6 +1961,10 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength",
+			"ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_II_OIDS_LENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1967,6 +2038,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2RelatedDocumentParentDocumentId", "ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2038,6 +2112,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2RelatedDocumentParentDocument(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2RelatedDocumentParentDocument", "ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2111,6 +2188,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS",
+			"ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2182,6 +2264,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS",
+			"WARNING");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2255,6 +2342,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS",
+			"INFO");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2326,6 +2418,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS",
+			"WARNING");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2399,6 +2496,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization",
+			"WARNING");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2470,6 +2572,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity",
+			"ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2543,6 +2650,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterId", "ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2614,6 +2724,10 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime",
+			"ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2687,6 +2801,10 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty",
+			"INFO");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2758,6 +2876,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2",
+			"WARNING");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PHYSICIANOF_RECORD_PARTICIPANT2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2831,6 +2954,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounter", "ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2903,6 +3029,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext",
+			"ERROR");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT_FETUS_SUBJECT_CONTEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2974,6 +3105,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText",
+			"ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SECTIONS_HAVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3049,6 +3185,10 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode",
+			"WARNING");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3120,6 +3260,10 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP",
+			"ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3193,6 +3337,10 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTitle",
+			"WARNING");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3264,6 +3412,10 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText",
+			"WARNING");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3337,6 +3489,10 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubject",
+			"INFO");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3408,6 +3564,10 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor",
+			"INFO");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3481,6 +3641,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext",
+			"INFO");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3552,6 +3717,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation",
+			"INFO");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3625,6 +3795,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations",
+			"INFO");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3696,6 +3871,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation",
+			"INFO");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3769,6 +3949,11 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation",
+			"INFO");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3840,6 +4025,10 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3Section(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3Section",
+			"ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3913,6 +4102,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3", "INFO");
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3984,6 +4176,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBody(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBody", "ERROR");
 
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4147,6 +4342,8 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateUSRealmHeader2TemplateId(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DiagnosticImagingReport2USRealmHeader2TemplateId", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

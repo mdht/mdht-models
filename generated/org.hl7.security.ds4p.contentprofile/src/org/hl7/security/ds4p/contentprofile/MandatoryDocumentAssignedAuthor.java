@@ -3,13 +3,10 @@
 package org.hl7.security.ds4p.contentprofile;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.AssignedAuthor;
 
@@ -31,7 +28,7 @@ public interface MandatoryDocumentAssignedAuthor extends AssignedAuthor {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.3251.1.3\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.3251.1.3\')'"
 	 * @generated
 	 */
 	boolean validateMandatoryDocumentAssignedAuthorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -43,7 +40,7 @@ public interface MandatoryDocumentAssignedAuthor extends AssignedAuthor {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.telecom->isEmpty() or self.telecom->exists(element | element.isNullFlavorUndefined())) implies (( not self.telecom->isEmpty()) )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.telecom-&gt;isEmpty() or self.telecom-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.telecom-&gt;isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validateMandatoryDocumentAssignedAuthorTelecomEmail(DiagnosticChain diagnostics,
@@ -56,7 +53,7 @@ public interface MandatoryDocumentAssignedAuthor extends AssignedAuthor {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedAuthoringDevice->one(assignedAuthoringDevice : cda::AuthoringDevice | not assignedAuthoringDevice.oclIsUndefined() and assignedAuthoringDevice.oclIsKindOf(cda::AuthoringDevice))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedAuthoringDevice-&gt;one(assignedAuthoringDevice : cda::AuthoringDevice | not assignedAuthoringDevice.oclIsUndefined() and assignedAuthoringDevice.oclIsKindOf(cda::AuthoringDevice))'"
 	 * @generated
 	 */
 	boolean validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(DiagnosticChain diagnostics,
@@ -69,7 +66,7 @@ public interface MandatoryDocumentAssignedAuthor extends AssignedAuthor {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedPerson-&gt;one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person))'"
 	 * @generated
 	 */
 	boolean validateMandatoryDocumentAssignedAuthorAssignedPerson(DiagnosticChain diagnostics,
@@ -82,7 +79,7 @@ public interface MandatoryDocumentAssignedAuthor extends AssignedAuthor {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.representedOrganization->one(representedOrganization : cda::Organization | not representedOrganization.oclIsUndefined() and representedOrganization.oclIsKindOf(rim::Entity))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.representedOrganization-&gt;one(representedOrganization : cda::Organization | not representedOrganization.oclIsUndefined() and representedOrganization.oclIsKindOf(rim::Entity))'"
 	 * @generated
 	 */
 	boolean validateMandatoryDocumentAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics,
@@ -96,9 +93,9 @@ public interface MandatoryDocumentAssignedAuthor extends AssignedAuthor {
 	public MandatoryDocumentAssignedAuthor init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MandatoryDocumentAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MandatoryDocumentAssignedAuthor

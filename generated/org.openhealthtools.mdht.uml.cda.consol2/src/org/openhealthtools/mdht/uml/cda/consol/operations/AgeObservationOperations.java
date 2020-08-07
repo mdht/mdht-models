@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -99,6 +100,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateAgeObservationValueUnits(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AgeObservationAgeObservationValueUnits", "ERROR");
+
 		if (VALIDATE_AGE_OBSERVATION_VALUE_UNITS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -161,6 +164,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateAgeObservationTemplateId(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AgeObservationAgeObservationTemplateId", "ERROR");
 
 		if (VALIDATE_AGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -225,6 +230,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateAgeObservationClassCode(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AgeObservationAgeObservationClassCode", "ERROR");
+
 		if (VALIDATE_AGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -288,6 +295,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateAgeObservationMoodCode(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AgeObservationAgeObservationMoodCode", "ERROR");
+
 		if (VALIDATE_AGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -350,6 +359,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateAgeObservationCodeP(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AgeObservationAgeObservationCodeP", "ERROR");
 
 		if (VALIDATE_AGE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -437,6 +448,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "AgeObservationAgeObservationCode", "ERROR");
+
 		if (VALIDATE_AGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -501,6 +514,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateAgeObservationStatusCode(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AgeObservationAgeObservationStatusCode", "ERROR");
+
 		if (VALIDATE_AGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -564,6 +579,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateAgeObservationStatusCodeP(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AgeObservationAgeObservationStatusCodeP", "ERROR");
+
 		if (VALIDATE_AGE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -626,6 +643,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateAgeObservationValue(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AgeObservationAgeObservationValue", "ERROR");
 
 		if (VALIDATE_AGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

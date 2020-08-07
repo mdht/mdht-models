@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -108,6 +109,8 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static boolean validatePhysicalExamSectionTemplateId(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PhysicalExamSectionPhysicalExamSectionTemplateId", "ERROR");
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -174,6 +177,8 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static boolean validatePhysicalExamSectionCode(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PhysicalExamSectionPhysicalExamSectionCode", "ERROR");
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -236,6 +241,8 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 
 	public static boolean validatePhysicalExamSectionCodeP(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PhysicalExamSectionPhysicalExamSectionCodeP", "ERROR");
 
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -300,6 +307,8 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static boolean validatePhysicalExamSectionTitle(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PhysicalExamSectionPhysicalExamSectionTitle", "ERROR");
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -363,6 +372,8 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static boolean validatePhysicalExamSectionText(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PhysicalExamSectionPhysicalExamSectionText", "ERROR");
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -425,6 +436,8 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 
 	public static boolean validatePhysicalExamSectionPressureUlcerObservation(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PhysicalExamSectionPhysicalExamSectionPressureUlcerObservation", "INFO");
 
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -492,6 +505,9 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static boolean validatePhysicalExamSectionNumberOfPressureUlcersObservation(
 			PhysicalExamSection physicalExamSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PhysicalExamSectionPhysicalExamSectionNumberOfPressureUlcersObservation", "INFO");
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -557,6 +573,8 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 
 	public static boolean validatePhysicalExamSectionHighestPressureUlcerStage(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PhysicalExamSectionPhysicalExamSectionHighestPressureUlcerStage", "INFO");
 
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

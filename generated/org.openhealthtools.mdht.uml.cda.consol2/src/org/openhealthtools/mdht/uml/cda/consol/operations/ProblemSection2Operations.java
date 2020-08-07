@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -101,6 +102,8 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 	public static boolean validateProblemSection2NullFlavor(ProblemSection2 problemSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemSection2ProblemSection2NullFlavor", "INFO");
+
 		if (VALIDATE_PROBLEM_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -164,6 +167,8 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 	public static boolean validateProblemSection2Title(ProblemSection2 problemSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemSection2ProblemSection2Title", "ERROR");
+
 		if (VALIDATE_PROBLEM_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -226,6 +231,8 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 
 	public static boolean validateProblemSection2Text(ProblemSection2 problemSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemSection2ProblemSection2Text", "ERROR");
 
 		if (VALIDATE_PROBLEM_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -336,6 +343,8 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 	public static boolean validateProblemSectionEntriesOptionalTemplateId(ProblemSection2 problemSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemSection2ProblemSectionEntriesOptionalTemplateId", "ERROR");
+
 		if (VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -400,6 +409,8 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 
 	public static boolean validateProblemSectionEntriesOptionalCodeP(ProblemSection2 problemSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemSection2ProblemSectionEntriesOptionalCodeP", "ERROR");
 
 		if (VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -490,6 +501,8 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ProblemSection2ProblemSectionEntriesOptionalCode", "ERROR");
+
 		if (VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -555,6 +568,8 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 	public static boolean validateProblemSectionEntriesOptionalProblemConcern(ProblemSection2 problemSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemSection2ProblemSectionEntriesOptionalProblemConcern", "ERROR");
+
 		if (VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -619,6 +634,9 @@ public class ProblemSection2Operations extends ProblemSectionEntriesOptional2Ope
 
 	public static boolean validateProblemSectionEntriesOptional2HealthStatusObservation2(
 			ProblemSection2 problemSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProblemSection2ProblemSectionEntriesOptional2HealthStatusObservation2", "INFO");
 
 		if (VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL2_HEALTH_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

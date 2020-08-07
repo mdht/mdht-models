@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -108,6 +109,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	public static boolean validateProceduresSectionHasProcedureActivity(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProceduresSectionProceduresSectionHasProcedureActivity", "ERROR");
+
 		if (VALIDATE_PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -173,6 +176,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	public static boolean validateProceduresSectionTitle(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProceduresSectionProceduresSectionTitle", "ERROR");
+
 		if (VALIDATE_PROCEDURES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -235,6 +240,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 
 	public static boolean validateProceduresSectionProcedureActivityProcedure(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProceduresSectionProceduresSectionProcedureActivityProcedure", "INFO");
 
 		if (VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -301,6 +308,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	public static boolean validateProceduresSectionProcedureActivityObservation(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProceduresSectionProceduresSectionProcedureActivityObservation", "INFO");
+
 		if (VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -366,6 +375,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 
 	public static boolean validateProceduresSectionProcedureActivityAct(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProceduresSectionProceduresSectionProcedureActivityAct", "INFO");
 
 		if (VALIDATE_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -580,6 +591,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	public static boolean validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProceduresSectionProceduresSectionEntriesOptionalTemplateId", "ERROR");
+
 		if (VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -644,6 +657,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 
 	public static boolean validateProceduresSectionEntriesOptionalCodeP(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProceduresSectionProceduresSectionEntriesOptionalCodeP", "ERROR");
 
 		if (VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -734,6 +749,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ProceduresSectionProceduresSectionEntriesOptionalCode", "ERROR");
+
 		if (VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -798,6 +815,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 
 	public static boolean validateProceduresSectionEntriesOptionalText(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProceduresSectionProceduresSectionEntriesOptionalText", "ERROR");
 
 		if (VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

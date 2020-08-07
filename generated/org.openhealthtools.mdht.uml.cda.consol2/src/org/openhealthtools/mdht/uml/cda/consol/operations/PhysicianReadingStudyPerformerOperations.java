@@ -18,6 +18,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.mdht.uml.hl7.rim.operations.ParticipationOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
@@ -108,6 +109,9 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 			PhysicianReadingStudyPerformer physicianReadingStudyPerformer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerTemplateId", "ERROR");
+
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -174,6 +178,8 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 	public static boolean validatePhysicianReadingStudyPerformerTime(
 			PhysicianReadingStudyPerformer physicianReadingStudyPerformer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerTime", "INFO");
 
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -242,6 +248,9 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 			PhysicianReadingStudyPerformer physicianReadingStudyPerformer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerTypeCode", "ERROR");
+
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -309,6 +318,9 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 			PhysicianReadingStudyPerformer physicianReadingStudyPerformer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerAssignedEntity", "ERROR");
+
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -375,6 +387,11 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 	public static boolean validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
 			PhysicianReadingStudyPerformer physicianReadingStudyPerformer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS",
+			"ERROR");
 
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -448,6 +465,11 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 			PhysicianReadingStudyPerformer physicianReadingStudyPerformer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS",
+			"WARNING");
+
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -519,6 +541,11 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 	public static boolean validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
 			PhysicianReadingStudyPerformer physicianReadingStudyPerformer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS",
+			"INFO");
 
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -592,6 +619,11 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 			PhysicianReadingStudyPerformer physicianReadingStudyPerformer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS",
+			"WARNING");
+
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -642,6 +674,10 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 	public static boolean validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId(
 			PhysicianReadingStudyPerformer physicianReadingStudyPerformer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId",
+			"WARNING");
 
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -714,6 +750,9 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 	public static boolean validatePhysicianReadingStudyPerformerAssignedEntityHasDICOM(
 			PhysicianReadingStudyPerformer physicianReadingStudyPerformer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerAssignedEntityHasDICOM", "ERROR");
 
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_DICOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -808,6 +847,11 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 			PhysicianReadingStudyPerformer physicianReadingStudyPerformer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization",
+			"ERROR");
+
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -858,6 +902,9 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 	public static boolean validatePhysicianReadingStudyPerformerAssignedEntityCode(
 			PhysicianReadingStudyPerformer physicianReadingStudyPerformer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerAssignedEntityCode", "ERROR");
 
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -951,6 +998,9 @@ public class PhysicianReadingStudyPerformerOperations extends ParticipationOpera
 	public static boolean validatePhysicianReadingStudyPerformerAssignedEntityId(
 			PhysicianReadingStudyPerformer physicianReadingStudyPerformer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PhysicianReadingStudyPerformerPhysicianReadingStudyPerformerAssignedEntityId", "ERROR");
 
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

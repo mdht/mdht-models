@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -107,6 +108,8 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CaregiverCharacteristicsCaregiverCharacteristicsValueCodeSystem", "ERROR");
+
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -173,6 +176,8 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	public static boolean validateCaregiverCharacteristicsTemplateId(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CaregiverCharacteristicsCaregiverCharacteristicsTemplateId", "ERROR");
+
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -237,6 +242,8 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsClassCode(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CaregiverCharacteristicsCaregiverCharacteristicsClassCode", "ERROR");
 
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -303,6 +310,8 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	public static boolean validateCaregiverCharacteristicsMoodCode(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CaregiverCharacteristicsCaregiverCharacteristicsMoodCode", "ERROR");
+
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -368,6 +377,8 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	public static boolean validateCaregiverCharacteristicsId(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CaregiverCharacteristicsCaregiverCharacteristicsId", "ERROR");
+
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -431,6 +442,8 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsCode(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CaregiverCharacteristicsCaregiverCharacteristicsCode", "ERROR");
 
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -497,6 +510,8 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	public static boolean validateCaregiverCharacteristicsStatusCode(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CaregiverCharacteristicsCaregiverCharacteristicsStatusCode", "ERROR");
+
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -561,6 +576,8 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsStatusCodeP(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CaregiverCharacteristicsCaregiverCharacteristicsStatusCodeP", "ERROR");
 
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -627,6 +644,8 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	public static boolean validateCaregiverCharacteristicsValue(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CaregiverCharacteristicsCaregiverCharacteristicsValue", "ERROR");
+
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -690,6 +709,8 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsParticipant(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CaregiverCharacteristicsCaregiverCharacteristicsParticipant", "ERROR");
 
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -756,6 +777,9 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	public static boolean validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CaregiverCharacteristicsCaregiverCharacteristicsParticipantParticipantRoleClassCode", "ERROR");
 
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -829,6 +853,8 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CaregiverCharacteristicsCaregiverCharacteristicsParticipantTimeLow", "ERROR");
+
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -900,6 +926,8 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	public static boolean validateCaregiverCharacteristicsParticipantTimeHigh(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CaregiverCharacteristicsCaregiverCharacteristicsParticipantTimeHigh", "INFO");
 
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -973,6 +1001,9 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CaregiverCharacteristicsCaregiverCharacteristicsParticipantTypeCode", "ERROR");
+
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1045,6 +1076,8 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CaregiverCharacteristicsCaregiverCharacteristicsParticipantTime", "INFO");
+
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1116,6 +1149,9 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	public static boolean validateCaregiverCharacteristicsParticipantParticipantRole(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CaregiverCharacteristicsCaregiverCharacteristicsParticipantParticipantRole", "ERROR");
 
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

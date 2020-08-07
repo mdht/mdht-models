@@ -2,17 +2,12 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.Act;
 
 /**
@@ -33,7 +28,7 @@ public interface SeriesAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id->forAll( not root.oclIsUndefined() )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id-&gt;forAll( not root.oclIsUndefined() )'"
 	 * @generated
 	 */
 	boolean validateSeriesActIdHasRoot(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -45,7 +40,7 @@ public interface SeriesAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id->forAll(  extension.oclIsUndefined() )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id-&gt;forAll(  extension.oclIsUndefined() )'"
 	 * @generated
 	 */
 	boolean validateSeriesActIdNoExtension(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -57,7 +52,7 @@ public interface SeriesAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier-&gt;size() = 1'"
 	 * @generated
 	 */
 	boolean validateSeriesActCodeQualifier(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -69,7 +64,7 @@ public interface SeriesAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier.name->one(name : datatypes::CV | name.code = \'121139\' and name.codeSystem = \'1.2.840.10008.2.16.4\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier.name-&gt;one(name : datatypes::CV | name.code = \'121139\' and name.codeSystem = \'1.2.840.10008.2.16.4\')'"
 	 * @generated
 	 */
 	boolean validateSeriesActCodeQualifierCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -81,7 +76,7 @@ public interface SeriesAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier.value->one(val | not val.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier.value-&gt;one(val | not val.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateSeriesActCodeQualifierValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -93,7 +88,7 @@ public interface SeriesAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier.value->one(val | (not val.oclIsUndefined() or val.isNullFlavorUndefined()) implies val.oclIsKindOf(datatypes::ANY) and val.codeSystem = \'1.2.840.10008.2.16.4\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier.value-&gt;one(val | (not val.oclIsUndefined() or val.isNullFlavorUndefined()) implies val.oclIsKindOf(datatypes::ANY) and val.codeSystem = \'1.2.840.10008.2.16.4\')'"
 	 * @generated
 	 */
 	boolean validateSeriesActCodeQualifierValueCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -105,7 +100,7 @@ public interface SeriesAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.63\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.63\')'"
 	 * @generated
 	 */
 	boolean validateSeriesActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -165,7 +160,7 @@ public interface SeriesAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id-&gt;isEmpty() or self.id-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.id-&gt;isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validateSeriesActId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -189,7 +184,7 @@ public interface SeriesAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SOPInstanceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SOPInstanceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateSeriesActSOPInstanceObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -198,7 +193,7 @@ public interface SeriesAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)).oclAsType(consol::SOPInstanceObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()-&gt;select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)).oclAsType(consol::SOPInstanceObservation)'"
 	 * @generated
 	 */
 	EList<SOPInstanceObservation> getSOPInstanceObservations();

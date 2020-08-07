@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -102,6 +103,8 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	public static boolean validateAdmissionMedicationTemplateId(AdmissionMedication admissionMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdmissionMedicationAdmissionMedicationTemplateId", "ERROR");
+
 		if (VALIDATE_ADMISSION_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -166,6 +169,8 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	public static boolean validateAdmissionMedicationClassCode(AdmissionMedication admissionMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdmissionMedicationAdmissionMedicationClassCode", "ERROR");
+
 		if (VALIDATE_ADMISSION_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -208,6 +213,8 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateAdmissionMedicationCodeP(AdmissionMedication admissionMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdmissionMedicationAdmissionMedicationCodeP", "ERROR");
 
 		if (VALIDATE_ADMISSION_MEDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -271,6 +278,8 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "AdmissionMedicationAdmissionMedicationCode", "INFO");
 
 		if (VALIDATE_ADMISSION_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -379,6 +388,8 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	public static boolean validateAdmissionMedicationMoodCode(AdmissionMedication admissionMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdmissionMedicationAdmissionMedicationMoodCode", "ERROR");
+
 		if (VALIDATE_ADMISSION_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -441,6 +452,8 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateAdmissionMedicationMedicationActivity(AdmissionMedication admissionMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdmissionMedicationAdmissionMedicationMedicationActivity", "ERROR");
 
 		if (VALIDATE_ADMISSION_MEDICATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

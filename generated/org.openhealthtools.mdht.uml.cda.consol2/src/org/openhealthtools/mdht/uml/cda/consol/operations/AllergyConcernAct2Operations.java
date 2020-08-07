@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -100,6 +101,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 	public static boolean validateAllergyConcernAct2TemplateId(AllergyConcernAct2 allergyConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyConcernAct2AllergyConcernAct2TemplateId", "ERROR");
+
 		if (VALIDATE_ALLERGY_CONCERN_ACT2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -163,6 +166,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 
 	public static boolean validateAllergyConcernAct2AuthorParticipation(AllergyConcernAct2 allergyConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyConcernAct2AllergyConcernAct2AuthorParticipation", "WARNING");
 
 		if (VALIDATE_ALLERGY_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -277,6 +282,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 	public static boolean validateAllergyProblemActCode(AllergyConcernAct2 allergyConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyConcernAct2AllergyProblemActCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -339,6 +346,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 
 	public static boolean validateAllergyProblemActAllergyObservation(AllergyConcernAct2 allergyConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyConcernAct2AllergyProblemActAllergyObservation", "ERROR");
 
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -404,6 +413,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateAllergyProblemActCDCodeAndCodeSystemValues(AllergyConcernAct2 allergyConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyConcernAct2AllergyProblemActCDCodeAndCodeSystemValues", "ERROR");
 
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -476,6 +487,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 	public static boolean validateAllergyProblemActCDCode(AllergyConcernAct2 allergyConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyConcernAct2AllergyProblemActCDCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -545,6 +558,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateAllergyProblemActCDCodeSystem(AllergyConcernAct2 allergyConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyConcernAct2AllergyProblemActCDCodeSystem", "ERROR");
 
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

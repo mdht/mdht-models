@@ -29,6 +29,7 @@
 	 
 	 
 	<modules>
+<module>org.hl7.security.ds4p.contentprofile.tests</module>
 		<module>org.openhealthtools.mdht.uml.cda.consol2.tests</module>
 		<module>org.openhealthtools.mdht.uml.cda.mu2consol.tests</module>
 		<!--  <module>org.openhealthtools.mdht.uml.cda.mu2consol.tests</module> -->

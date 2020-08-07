@@ -7,18 +7,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.mdht.uml.cda.operations.AssignedAuthorOperations;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.MandatoryDocumentAssignedAuthor;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -76,7 +72,7 @@ public class MandatoryDocumentAssignedAuthorOperations extends AssignedAuthorOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,33 +88,44 @@ public class MandatoryDocumentAssignedAuthorOperations extends AssignedAuthorOpe
 	public static boolean validateMandatoryDocumentAssignedAuthorTemplateId(
 			MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorTemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR);
 			try {
-				VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				mandatoryDocumentAssignedAuthor)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR__MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TEMPLATE_ID,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorTemplateId"),
-						new Object[] { mandatoryDocumentAssignedAuthor }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mandatoryDocumentAssignedAuthor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR__MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TEMPLATE_ID,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorTemplateId"),
+						 new Object [] { mandatoryDocumentAssignedAuthor }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -143,7 +150,7 @@ public class MandatoryDocumentAssignedAuthorOperations extends AssignedAuthorOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TELECOM_EMAIL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TELECOM_EMAIL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -159,33 +166,44 @@ public class MandatoryDocumentAssignedAuthorOperations extends AssignedAuthorOpe
 	public static boolean validateMandatoryDocumentAssignedAuthorTelecomEmail(
 			MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorTelecomEmail","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TELECOM_EMAIL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR);
 			try {
-				VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TELECOM_EMAIL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TELECOM_EMAIL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TELECOM_EMAIL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TELECOM_EMAIL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TELECOM_EMAIL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				mandatoryDocumentAssignedAuthor)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR__MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TELECOM_EMAIL,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorTelecomEmail"),
-						new Object[] { mandatoryDocumentAssignedAuthor }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TELECOM_EMAIL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mandatoryDocumentAssignedAuthor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR__MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_TELECOM_EMAIL,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorTelecomEmail"),
+						 new Object [] { mandatoryDocumentAssignedAuthor }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -210,7 +228,7 @@ public class MandatoryDocumentAssignedAuthorOperations extends AssignedAuthorOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -226,33 +244,44 @@ public class MandatoryDocumentAssignedAuthorOperations extends AssignedAuthorOpe
 	public static boolean validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(
 			MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorAssignedAuthoringDevice","WARNING");
+    
+  	  
+  	  
 		if (VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR);
 			try {
-				VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				mandatoryDocumentAssignedAuthor)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.WARNING, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR__MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorAssignedAuthoringDevice"),
-						new Object[] { mandatoryDocumentAssignedAuthor }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mandatoryDocumentAssignedAuthor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR__MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_AUTHORING_DEVICE,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorAssignedAuthoringDevice"),
+						 new Object [] { mandatoryDocumentAssignedAuthor }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -277,7 +306,7 @@ public class MandatoryDocumentAssignedAuthorOperations extends AssignedAuthorOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -293,33 +322,44 @@ public class MandatoryDocumentAssignedAuthorOperations extends AssignedAuthorOpe
 	public static boolean validateMandatoryDocumentAssignedAuthorAssignedPerson(
 			MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorAssignedPerson","WARNING");
+    
+  	  
+  	  
 		if (VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR);
 			try {
-				VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				mandatoryDocumentAssignedAuthor)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.WARNING, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR__MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_PERSON,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorAssignedPerson"),
-						new Object[] { mandatoryDocumentAssignedAuthor }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mandatoryDocumentAssignedAuthor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR__MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_ASSIGNED_PERSON,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorAssignedPerson"),
+						 new Object [] { mandatoryDocumentAssignedAuthor }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -344,7 +384,7 @@ public class MandatoryDocumentAssignedAuthorOperations extends AssignedAuthorOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -360,33 +400,44 @@ public class MandatoryDocumentAssignedAuthorOperations extends AssignedAuthorOpe
 	public static boolean validateMandatoryDocumentAssignedAuthorRepresentedOrganization(
 			MandatoryDocumentAssignedAuthor mandatoryDocumentAssignedAuthor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorRepresentedOrganization","WARNING");
+    
+  	  
+  	  
 		if (VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR);
 			try {
-				VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				mandatoryDocumentAssignedAuthor)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.WARNING, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR__MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorRepresentedOrganization"),
-						new Object[] { mandatoryDocumentAssignedAuthor }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mandatoryDocumentAssignedAuthor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.MANDATORY_DOCUMENT_ASSIGNED_AUTHOR__MANDATORY_DOCUMENT_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("MandatoryDocumentAssignedAuthorMandatoryDocumentAssignedAuthorRepresentedOrganization"),
+						 new Object [] { mandatoryDocumentAssignedAuthor }));
+			}
+			 
 			return false;
 		}
 		return true;

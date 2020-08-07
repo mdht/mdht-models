@@ -17,6 +17,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -101,6 +102,8 @@ public class VitalSignObservation2Operations extends VitalSignObservationOperati
 	public static boolean validateVitalSignObservation2TemplateId(VitalSignObservation2 vitalSignObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "VitalSignObservation2VitalSignObservation2TemplateId", "ERROR");
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -165,6 +168,8 @@ public class VitalSignObservation2Operations extends VitalSignObservationOperati
 
 	public static boolean validateVitalSignObservationInterpretationCodeP(VitalSignObservation2 vitalSignObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignObservation2VitalSignObservationInterpretationCodeP", "INFO");
 
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -245,6 +250,8 @@ public class VitalSignObservation2Operations extends VitalSignObservationOperati
 	public static boolean validateVitalSignObservation2AuthorParticipation(VitalSignObservation2 vitalSignObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "VitalSignObservation2VitalSignObservation2AuthorParticipation", "WARNING");
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -321,6 +328,8 @@ public class VitalSignObservation2Operations extends VitalSignObservationOperati
 	public static boolean validateVitalSignObservationTextReference(VitalSignObservation2 vitalSignObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "VitalSignObservation2VitalSignObservationTextReference", "INFO");
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -385,6 +394,8 @@ public class VitalSignObservation2Operations extends VitalSignObservationOperati
 
 	public static boolean validateVitalSignObservationReferenceValue(VitalSignObservation2 vitalSignObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignObservation2VitalSignObservationReferenceValue", "INFO");
 
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -451,6 +462,8 @@ public class VitalSignObservation2Operations extends VitalSignObservationOperati
 	public static boolean validateVitalSignObservationTextReferenceValue(VitalSignObservation2 vitalSignObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "VitalSignObservation2VitalSignObservationTextReferenceValue", "INFO");
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -515,6 +528,8 @@ public class VitalSignObservation2Operations extends VitalSignObservationOperati
 
 	public static boolean validateVitalSignObservationEffectiveTime(VitalSignObservation2 vitalSignObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignObservation2VitalSignObservationEffectiveTime", "ERROR");
 
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -581,6 +596,8 @@ public class VitalSignObservation2Operations extends VitalSignObservationOperati
 	public static boolean validateVitalSignObservationValue(VitalSignObservation2 vitalSignObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "VitalSignObservation2VitalSignObservationValue", "ERROR");
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -643,6 +660,8 @@ public class VitalSignObservation2Operations extends VitalSignObservationOperati
 
 	public static boolean validateVitalSignObservationText(VitalSignObservation2 vitalSignObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignObservation2VitalSignObservationText", "ERROR");
 
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -717,6 +736,8 @@ public class VitalSignObservation2Operations extends VitalSignObservationOperati
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "VitalSignObservation2VitalSignObservationInterpretationCode", "ERROR");
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -781,6 +802,8 @@ public class VitalSignObservation2Operations extends VitalSignObservationOperati
 
 	public static boolean validateVitalSignObservationAuthor(VitalSignObservation2 vitalSignObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignObservation2VitalSignObservationAuthor", "ERROR");
 
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

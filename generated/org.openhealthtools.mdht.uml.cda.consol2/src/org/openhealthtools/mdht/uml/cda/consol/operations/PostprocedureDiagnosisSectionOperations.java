@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -100,6 +101,9 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 			PostprocedureDiagnosisSection postprocedureDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PostprocedureDiagnosisSectionPostprocedureDiagnosisSectionTemplateId", "ERROR");
+
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -145,6 +149,8 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePostprocedureDiagnosisSectionCodeP(
 			PostprocedureDiagnosisSection postprocedureDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PostprocedureDiagnosisSectionPostprocedureDiagnosisSectionCodeP", "ERROR");
 
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -236,6 +242,8 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 			PostprocedureDiagnosisSection postprocedureDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PostprocedureDiagnosisSectionPostprocedureDiagnosisSectionCode", "ERROR");
+
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -281,6 +289,8 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePostprocedureDiagnosisSectionText(
 			PostprocedureDiagnosisSection postprocedureDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PostprocedureDiagnosisSectionPostprocedureDiagnosisSectionText", "ERROR");
 
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -370,6 +380,8 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 			PostprocedureDiagnosisSection postprocedureDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PostprocedureDiagnosisSectionPostprocedureDiagnosisSectionTitle", "ERROR");
+
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -436,6 +448,9 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(
 			PostprocedureDiagnosisSection postprocedureDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PostprocedureDiagnosisSectionPostprocedureDiagnosisSectionPostprocedureDiagnosis", "WARNING");
 
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

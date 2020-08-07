@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -103,6 +104,9 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MedicationsAdministeredSectionMedicationsAdministeredSectionTemplateId", "ERROR");
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -172,6 +176,8 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationsAdministeredSectionMedicationsAdministeredSectionCode", "ERROR");
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -239,6 +245,8 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationsAdministeredSectionMedicationsAdministeredSectionCodeP", "ERROR");
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -284,6 +292,8 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	public static boolean validateMedicationsAdministeredSectionText(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationsAdministeredSectionMedicationsAdministeredSectionText", "ERROR");
 
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -373,6 +383,8 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationsAdministeredSectionMedicationsAdministeredSectionTitle", "ERROR");
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -439,6 +451,9 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	public static boolean validateMedicationsAdministeredSectionMedicationActivity(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MedicationsAdministeredSectionMedicationsAdministeredSectionMedicationActivity", "INFO");
 
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -11,6 +11,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -88,6 +89,8 @@ public class FamilyHistorySection2Operations extends FamilyHistorySectionOperati
 
 	public static boolean validateFamilyHistorySection2TemplateId(FamilyHistorySection2 familyHistorySection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FamilyHistorySection2FamilyHistorySection2TemplateId", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -203,6 +206,8 @@ public class FamilyHistorySection2Operations extends FamilyHistorySectionOperati
 
 	public static boolean validateFamilyHistorySectionFamilyHistory(FamilyHistorySection2 familyHistorySection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FamilyHistorySection2FamilyHistorySectionFamilyHistory", "INFO");
 
 		if (VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

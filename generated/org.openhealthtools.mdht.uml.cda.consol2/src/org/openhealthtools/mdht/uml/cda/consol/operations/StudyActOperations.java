@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -106,6 +107,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	public static boolean validateStudyActIdsHaveRoot(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "StudyActStudyActIdsHaveRoot", "ERROR");
+
 		if (VALIDATE_STUDY_ACT_IDS_HAVE_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -167,6 +170,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActNoIdExtension(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "StudyActStudyActNoIdExtension", "ERROR");
 
 		if (VALIDATE_STUDY_ACT_NO_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -230,6 +235,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	public static boolean validateStudyActTextReference(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "StudyActStudyActTextReference", "WARNING");
+
 		if (VALIDATE_STUDY_ACT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -291,6 +298,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActTextReferenceValue(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "StudyActStudyActTextReferenceValue", "WARNING");
 
 		if (VALIDATE_STUDY_ACT_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -355,6 +364,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	public static boolean validateStudyActReferenceValue(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "StudyActStudyActReferenceValue", "ERROR");
+
 		if (VALIDATE_STUDY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -416,6 +427,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActTemplateId(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "StudyActStudyActTemplateId", "ERROR");
 
 		if (VALIDATE_STUDY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -479,6 +492,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	public static boolean validateStudyActClassCode(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "StudyActStudyActClassCode", "ERROR");
+
 		if (VALIDATE_STUDY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -540,6 +555,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActMoodCode(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "StudyActStudyActMoodCode", "ERROR");
 
 		if (VALIDATE_STUDY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -603,6 +620,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	public static boolean validateStudyActId(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "StudyActStudyActId", "ERROR");
+
 		if (VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -665,6 +684,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	public static boolean validateStudyActCode(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "StudyActStudyActCode", "ERROR");
+
 		if (VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -725,6 +746,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActEffectiveTime(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "StudyActStudyActEffectiveTime", "WARNING");
 
 		if (VALIDATE_STUDY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -788,6 +811,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	public static boolean validateStudyActText(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "StudyActStudyActText", "INFO");
+
 		if (VALIDATE_STUDY_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -848,6 +873,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActSeriesAct(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "StudyActStudyActSeriesAct", "ERROR");
 
 		if (VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

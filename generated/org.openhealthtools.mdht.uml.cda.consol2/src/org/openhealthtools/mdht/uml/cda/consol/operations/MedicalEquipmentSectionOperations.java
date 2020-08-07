@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -102,6 +103,8 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	public static boolean validateMedicalEquipmentSectionTemplateId(MedicalEquipmentSection medicalEquipmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicalEquipmentSectionMedicalEquipmentSectionTemplateId", "ERROR");
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -169,6 +172,8 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	public static boolean validateMedicalEquipmentSectionCode(MedicalEquipmentSection medicalEquipmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicalEquipmentSectionMedicalEquipmentSectionCode", "ERROR");
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -232,6 +237,8 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 
 	public static boolean validateMedicalEquipmentSectionCodeP(MedicalEquipmentSection medicalEquipmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicalEquipmentSectionMedicalEquipmentSectionCodeP", "ERROR");
 
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -297,6 +304,8 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	public static boolean validateMedicalEquipmentSectionTitle(MedicalEquipmentSection medicalEquipmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicalEquipmentSectionMedicalEquipmentSectionTitle", "ERROR");
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -361,6 +370,8 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	public static boolean validateMedicalEquipmentSectionText(MedicalEquipmentSection medicalEquipmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicalEquipmentSectionMedicalEquipmentSectionText", "ERROR");
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -424,6 +435,9 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 
 	public static boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivity(
 			MedicalEquipmentSection medicalEquipmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MedicalEquipmentSectionMedicalEquipmentSectionNonMedicinalSupplyActivity", "WARNING");
 
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -105,6 +106,8 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	public static boolean validateMentalStatusObservationTemplateId(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationTemplateId", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -169,6 +172,8 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationClassCode(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationClassCode", "ERROR");
 
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -235,6 +240,8 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	public static boolean validateMentalStatusObservationMoodCode(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationMoodCode", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -300,6 +307,8 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	public static boolean validateMentalStatusObservationId(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationId", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -363,6 +372,8 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationCodeP(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationCodeP", "ERROR");
 
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -451,6 +462,8 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationCode", "WARNING");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -515,6 +528,8 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationStatusCode(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationStatusCode", "ERROR");
 
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -581,6 +596,8 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	public static boolean validateMentalStatusObservationStatusCodeP(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationStatusCodeP", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -645,6 +662,8 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationEffectiveTime(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationEffectiveTime", "ERROR");
 
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -713,6 +732,8 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	public static boolean validateMentalStatusObservationValue(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationValue", "WARNING");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -777,6 +798,8 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	public static boolean validateMentalStatusObservationValueP(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationValueP", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -840,6 +863,9 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationAssessmentScaleObservation(
 			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MentalStatusObservationMentalStatusObservationAssessmentScaleObservation", "INFO");
 
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -906,6 +932,9 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationAuthorParticipation(
 			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MentalStatusObservationMentalStatusObservationAuthorParticipation", "WARNING");
 
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

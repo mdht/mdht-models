@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -146,6 +147,9 @@ public class AllergiesSectionEntriesOptional2Operations extends AllergiesSection
 			AllergiesSectionEntriesOptional2 allergiesSectionEntriesOptional2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AllergiesSectionEntriesOptional2AllergiesSectionEntriesOptionalTemplateId", "ERROR");
+
 		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -212,6 +216,9 @@ public class AllergiesSectionEntriesOptional2Operations extends AllergiesSection
 	public static boolean validateAllergiesSectionEntriesOptionalCodeP(
 			AllergiesSectionEntriesOptional2 allergiesSectionEntriesOptional2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AllergiesSectionEntriesOptional2AllergiesSectionEntriesOptionalCodeP", "ERROR");
 
 		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -305,6 +312,9 @@ public class AllergiesSectionEntriesOptional2Operations extends AllergiesSection
 			return true;
 		}
 
+		DatatypesUtil.increment(
+			context, "AllergiesSectionEntriesOptional2AllergiesSectionEntriesOptionalCode", "ERROR");
+
 		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -371,6 +381,9 @@ public class AllergiesSectionEntriesOptional2Operations extends AllergiesSection
 	public static boolean validateAllergiesSectionEntriesOptionalAllergyProblemAct(
 			AllergiesSectionEntriesOptional2 allergiesSectionEntriesOptional2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AllergiesSectionEntriesOptional2AllergiesSectionEntriesOptionalAllergyProblemAct", "WARNING");
 
 		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

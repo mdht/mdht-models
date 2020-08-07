@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.OrganizerOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -106,6 +107,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	public static boolean validateResultOrganizerCodeValue(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ResultOrganizerResultOrganizerCodeValue", "WARNING");
+
 		if (VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -168,6 +171,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateResultOrganizerClassCodeValue(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ResultOrganizerResultOrganizerClassCodeValue", "WARNING");
 
 		if (VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -232,6 +237,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	public static boolean validateResultOrganizerTemplateId(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ResultOrganizerResultOrganizerTemplateId", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -294,6 +301,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateResultOrganizerClassCode(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ResultOrganizerResultOrganizerClassCode", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -358,6 +367,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	public static boolean validateResultOrganizerMoodCode(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ResultOrganizerResultOrganizerMoodCode", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -421,6 +432,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	public static boolean validateResultOrganizerId(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ResultOrganizerResultOrganizerId", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -483,6 +496,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateResultOrganizerStatusCodeP(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ResultOrganizerResultOrganizerStatusCodeP", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -570,6 +585,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ResultOrganizerResultOrganizerStatusCode", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -633,6 +650,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	public static boolean validateResultOrganizerCode(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ResultOrganizerResultOrganizerCode", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -695,6 +714,8 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateResultOrganizerResultObservation(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ResultOrganizerResultOrganizerResultObservation", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

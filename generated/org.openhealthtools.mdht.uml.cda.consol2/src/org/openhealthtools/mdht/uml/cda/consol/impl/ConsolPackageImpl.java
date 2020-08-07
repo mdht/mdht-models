@@ -19,12 +19,17 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EValidator;
+import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.CDAPackage;
 import org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesPackage;
+import org.eclipse.mdht.uml.hl7.rim.RIMPackage;
+import org.eclipse.mdht.uml.hl7.vocab.VocabPackage;
+import org.eclipse.uml2.types.TypesPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -2355,6 +2360,11 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 
 		// Initialize simple dependencies
 		CDAPackage.eINSTANCE.eClass();
+		DatatypesPackage.eINSTANCE.eClass();
+		EcorePackage.eINSTANCE.eClass();
+		RIMPackage.eINSTANCE.eClass();
+		TypesPackage.eINSTANCE.eClass();
+		VocabPackage.eINSTANCE.eClass();
 
 		// Load packages
 		theConsolPackage.loadPackage();

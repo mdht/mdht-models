@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -102,6 +103,8 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	public static boolean validateAuthorizationActivityTemplateId(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AuthorizationActivityAuthorizationActivityTemplateId", "ERROR");
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -167,6 +170,8 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	public static boolean validateAuthorizationActivityClassCode(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AuthorizationActivityAuthorizationActivityClassCode", "ERROR");
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -231,6 +236,8 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	public static boolean validateAuthorizationActivityId(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AuthorizationActivityAuthorizationActivityId", "ERROR");
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -293,6 +300,8 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 
 	public static boolean validateAuthorizationActivityMoodCode(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AuthorizationActivityAuthorizationActivityMoodCode", "ERROR");
 
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -358,6 +367,8 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	public static boolean validateAuthorizationActivityEntryRelationship(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AuthorizationActivityAuthorizationActivityEntryRelationship", "ERROR");
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -422,6 +433,9 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateAuthorizationActivityEntryRelationshipHasClinicalStatement(
 			AuthorizationActivity authorizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AuthorizationActivityAuthorizationActivityEntryRelationshipHasClinicalStatement", "ERROR");
 
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_HAS_CLINICAL_STATEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -502,6 +516,9 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	public static boolean validateAuthorizationActivityEntryRelationshipHasAuthorizedPerformers(
 			AuthorizationActivity authorizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AuthorizationActivityAuthorizationActivityEntryRelationshipHasAuthorizedPerformers", "INFO");
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_HAS_AUTHORIZED_PERFORMERS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -572,6 +589,9 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validateAuthorizationActivityEntryRelationshipTypeCode(
 			AuthorizationActivity authorizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AuthorizationActivityAuthorizationActivityEntryRelationshipTypeCode", "ERROR");
 
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

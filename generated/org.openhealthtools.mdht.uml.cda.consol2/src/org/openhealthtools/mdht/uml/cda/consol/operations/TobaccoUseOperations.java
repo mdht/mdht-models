@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -103,6 +104,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 	public static boolean validateTobaccoUseEffectiveTimeLow(TobaccoUse tobaccoUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TobaccoUseTobaccoUseEffectiveTimeLow", "ERROR");
+
 		if (VALIDATE_TOBACCO_USE_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -165,6 +168,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTobaccoUseTemplateId(TobaccoUse tobaccoUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TobaccoUseTobaccoUseTemplateId", "ERROR");
 
 		if (VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -229,6 +234,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 	public static boolean validateTobaccoUseClassCode(TobaccoUse tobaccoUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TobaccoUseTobaccoUseClassCode", "ERROR");
+
 		if (VALIDATE_TOBACCO_USE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -290,6 +297,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTobaccoUseMoodCode(TobaccoUse tobaccoUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TobaccoUseTobaccoUseMoodCode", "ERROR");
 
 		if (VALIDATE_TOBACCO_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -353,6 +362,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 	public static boolean validateTobaccoUseCode(TobaccoUse tobaccoUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TobaccoUseTobaccoUseCode", "ERROR");
+
 		if (VALIDATE_TOBACCO_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -393,6 +404,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTobaccoUseEffectiveTime(TobaccoUse tobaccoUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TobaccoUseTobaccoUseEffectiveTime", "ERROR");
 
 		if (VALIDATE_TOBACCO_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -457,6 +470,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTobaccoUseStatusCode(TobaccoUse tobaccoUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TobaccoUseTobaccoUseStatusCode", "ERROR");
 
 		if (VALIDATE_TOBACCO_USE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -542,6 +557,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 	public static boolean validateTobaccoUseStatusCodeP(TobaccoUse tobaccoUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TobaccoUseTobaccoUseStatusCodeP", "ERROR");
+
 		if (VALIDATE_TOBACCO_USE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -607,6 +624,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 	public static boolean validateTobaccoUseValue(TobaccoUse tobaccoUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TobaccoUseTobaccoUseValue", "ERROR");
+
 		if (VALIDATE_TOBACCO_USE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -669,6 +688,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 	public static boolean validateTobaccoUseValueP(TobaccoUse tobaccoUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TobaccoUseTobaccoUseValueP", "ERROR");
+
 		if (VALIDATE_TOBACCO_USE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -730,6 +751,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTobaccoUseCDCodeTermAssertionOrLoinc(TobaccoUse tobaccoUse,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TobaccoUseTobaccoUseCDCodeTermAssertionOrLoinc", "ERROR");
 
 		if (VALIDATE_TOBACCO_USE_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -801,6 +824,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 	public static boolean validateTobaccoUseCDCode(TobaccoUse tobaccoUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TobaccoUseTobaccoUseCDCode", "ERROR");
+
 		if (VALIDATE_TOBACCO_USE_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -868,6 +893,8 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTobaccoUseCDCodeSystem(TobaccoUse tobaccoUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TobaccoUseTobaccoUseCDCodeSystem", "ERROR");
 
 		if (VALIDATE_TOBACCO_USE_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

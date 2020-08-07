@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -102,6 +103,8 @@ public class PayersSectionOperations extends SectionOperations {
 	public static boolean validatePayersSectionTemplateId(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PayersSectionPayersSectionTemplateId", "ERROR");
+
 		if (VALIDATE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -167,6 +170,8 @@ public class PayersSectionOperations extends SectionOperations {
 	public static boolean validatePayersSectionCode(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PayersSectionPayersSectionCode", "ERROR");
+
 		if (VALIDATE_PAYERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -229,6 +234,8 @@ public class PayersSectionOperations extends SectionOperations {
 
 	public static boolean validatePayersSectionCodeP(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PayersSectionPayersSectionCodeP", "ERROR");
 
 		if (VALIDATE_PAYERS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -293,6 +300,8 @@ public class PayersSectionOperations extends SectionOperations {
 	public static boolean validatePayersSectionTitle(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PayersSectionPayersSectionTitle", "ERROR");
+
 		if (VALIDATE_PAYERS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -356,6 +365,8 @@ public class PayersSectionOperations extends SectionOperations {
 	public static boolean validatePayersSectionText(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PayersSectionPayersSectionText", "ERROR");
+
 		if (VALIDATE_PAYERS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -418,6 +429,8 @@ public class PayersSectionOperations extends SectionOperations {
 
 	public static boolean validatePayersSectionCoverageActivity(PayersSection payersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PayersSectionPayersSectionCoverageActivity", "WARNING");
 
 		if (VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

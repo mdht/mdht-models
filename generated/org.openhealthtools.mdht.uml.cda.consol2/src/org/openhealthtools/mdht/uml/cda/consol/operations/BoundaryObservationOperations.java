@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,8 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateBoundaryObservationTemplateId(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "BoundaryObservationBoundaryObservationTemplateId", "ERROR");
+
 		if (VALIDATE_BOUNDARY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -157,6 +160,8 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBoundaryObservationClassCode(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "BoundaryObservationBoundaryObservationClassCode", "ERROR");
 
 		if (VALIDATE_BOUNDARY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -224,6 +229,8 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateBoundaryObservationCode(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "BoundaryObservationBoundaryObservationCode", "ERROR");
+
 		if (VALIDATE_BOUNDARY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -287,6 +294,8 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateBoundaryObservationMoodCode(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "BoundaryObservationBoundaryObservationMoodCode", "ERROR");
+
 		if (VALIDATE_BOUNDARY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -349,6 +358,8 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBoundaryObservationValue(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "BoundaryObservationBoundaryObservationValue", "ERROR");
 
 		if (VALIDATE_BOUNDARY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

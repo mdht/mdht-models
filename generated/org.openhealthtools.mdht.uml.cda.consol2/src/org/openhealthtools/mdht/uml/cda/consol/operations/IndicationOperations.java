@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -101,6 +102,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	public static boolean validateIndicationCodeNullFlavor(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "IndicationIndicationCodeNullFlavor", "INFO");
+
 		if (VALIDATE_INDICATION_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -163,6 +166,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateIndicationTemplateId(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "IndicationIndicationTemplateId", "ERROR");
 
 		if (VALIDATE_INDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -227,6 +232,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	public static boolean validateIndicationClassCode(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "IndicationIndicationClassCode", "ERROR");
+
 		if (VALIDATE_INDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -288,6 +295,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateIndicationMoodCode(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "IndicationIndicationMoodCode", "ERROR");
 
 		if (VALIDATE_INDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -351,6 +360,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	public static boolean validateIndicationId(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "IndicationIndicationId", "ERROR");
+
 		if (VALIDATE_INDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -411,6 +422,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateIndicationCodeP(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "IndicationIndicationCodeP", "ERROR");
 
 		if (VALIDATE_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -497,6 +510,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "IndicationIndicationCode", "WARNING");
+
 		if (VALIDATE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -560,6 +575,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	public static boolean validateIndicationStatusCode(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "IndicationIndicationStatusCode", "ERROR");
+
 		if (VALIDATE_INDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -622,6 +639,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateIndicationEffectiveTime(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "IndicationIndicationEffectiveTime", "WARNING");
 
 		if (VALIDATE_INDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -688,6 +707,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	public static boolean validateIndicationValue(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "IndicationIndicationValue", "WARNING");
+
 		if (VALIDATE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -749,6 +770,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateIndicationValueP(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "IndicationIndicationValueP", "WARNING");
 
 		if (VALIDATE_INDICATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

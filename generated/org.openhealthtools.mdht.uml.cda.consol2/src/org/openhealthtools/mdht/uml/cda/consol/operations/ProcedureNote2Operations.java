@@ -11,6 +11,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -216,6 +217,11 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ProcedureNote2ProcedureNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2",
+			"ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -281,6 +287,11 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ProcedureNote2ProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent",
+			"ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_OR_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -348,6 +359,10 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection",
+			"ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_DOES_NOT_HAVE_CHIEF_COMPLAINT_WITH_CHIEF_COMPLAINT_OR_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -413,6 +428,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2CodeP(ProcedureNote2 procedureNote2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2CodeP", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -500,6 +517,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2Code", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -562,6 +581,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2Participant(ProcedureNote2 procedureNote2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2Participant", "INFO");
 
 		if (VALIDATE_PROCEDURE_NOTE2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -626,6 +647,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2DocumentationOf(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2DocumentationOf", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -688,6 +711,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2Authorization(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2Authorization", "INFO");
 
 		if (VALIDATE_PROCEDURE_NOTE2_AUTHORIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -752,6 +777,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2ComponentOf(ProcedureNote2 procedureNote2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ComponentOf", "WARNING");
+
 		if (VALIDATE_PROCEDURE_NOTE2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -814,6 +841,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2ComplicationsSection2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ComplicationsSection2", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_COMPLICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -880,6 +909,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2ProcedureDescriptionSection(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ProcedureDescriptionSection", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -944,6 +975,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2ProcedureIndicationsSection2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ProcedureIndicationsSection2", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_PROCEDURE_INDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1010,6 +1043,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2PostprocedureDiagnosisSection2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2PostprocedureDiagnosisSection2", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_POSTPROCEDURE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1075,6 +1110,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2AssessmentSection(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2AssessmentSection", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1138,6 +1175,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2AssessmentAndPlanSection2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2AssessmentAndPlanSection2", "INFO");
 
 		if (VALIDATE_PROCEDURE_NOTE2_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1204,6 +1243,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2PlanOfTreatmentSection2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2PlanOfTreatmentSection2", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1268,6 +1309,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2AllergiesSectionEntriesOptional2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2AllergiesSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_PROCEDURE_NOTE2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1334,6 +1377,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2AnesthesiaSection2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2AnesthesiaSection2", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_ANESTHESIA_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1397,6 +1442,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2ChiefComplaintSection(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ChiefComplaintSection", "INFO");
 
 		if (VALIDATE_PROCEDURE_NOTE2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1462,6 +1509,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2ChiefComplaintAndReasonForVisitSection(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ChiefComplaintAndReasonForVisitSection", "INFO");
 
 		if (VALIDATE_PROCEDURE_NOTE2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1529,6 +1578,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2FamilyHistorySection2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2FamilyHistorySection2", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1593,6 +1644,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2HistoryOfPastIllnessSection2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2HistoryOfPastIllnessSection2", "INFO");
 
 		if (VALIDATE_PROCEDURE_NOTE2_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1659,6 +1712,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2HistoryOfPresentIllnessSection(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2HistoryOfPresentIllnessSection", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1724,6 +1779,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2MedicalHistorySection(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2MedicalHistorySection", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1788,6 +1845,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2MedicationsSectionEntriesOptional2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2MedicationsSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_PROCEDURE_NOTE2_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1855,6 +1914,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2MedicationsAdministeredSection2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2MedicationsAdministeredSection2", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_MEDICATIONS_ADMINISTERED_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1919,6 +1980,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2PhysicalExamSection2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2PhysicalExamSection2", "INFO");
 
 		if (VALIDATE_PROCEDURE_NOTE2_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1985,6 +2048,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2PlannedProcedureSection2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2PlannedProcedureSection2", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_PLANNED_PROCEDURE_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2050,6 +2115,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2ProcedureDispositionSection(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ProcedureDispositionSection", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2114,6 +2181,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2ProcedureEstimatedBloodLossSection(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ProcedureEstimatedBloodLossSection", "INFO");
 
 		if (VALIDATE_PROCEDURE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2181,6 +2250,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2ProcedureFindingsSection2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ProcedureFindingsSection2", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_PROCEDURE_FINDINGS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2245,6 +2316,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2ProcedureImplantsSection(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ProcedureImplantsSection", "INFO");
 
 		if (VALIDATE_PROCEDURE_NOTE2_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2311,6 +2384,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2ProcedureSpecimensTakenSection(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ProcedureSpecimensTakenSection", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2375,6 +2450,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2ProceduresSectionEntriesOptional2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ProceduresSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_PROCEDURE_NOTE2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2442,6 +2519,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2ReasonForVisitSection(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ReasonForVisitSection", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2506,6 +2585,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateProcedureNote2ReviewOfSystemsSection(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ReviewOfSystemsSection", "INFO");
 
 		if (VALIDATE_PROCEDURE_NOTE2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2572,6 +2653,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2SocialHistorySection2(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2SocialHistorySection2", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2636,6 +2719,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2ParticipantAssociatedEntityClassCode(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ParticipantAssociatedEntityClassCode", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2708,6 +2793,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2ParticipantAssociatedEntityAssociatedPerson(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2ParticipantAssociatedEntityAssociatedPerson", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2778,6 +2866,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2ParticipantTypeCode(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ParticipantTypeCode", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2851,6 +2941,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2ParticipantFunctionCode(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ParticipantFunctionCode", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2920,6 +3012,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2ParticipantFunctionCodeP(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ParticipantFunctionCodeP", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2991,6 +3085,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2ParticipantAssociatedEntity(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ParticipantAssociatedEntity", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3060,6 +3156,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3131,6 +3230,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP", "WARNING");
 
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3219,6 +3321,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3300,6 +3405,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2DocumentationOfServiceEventPerformerTypeCode(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerTypeCode", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3371,6 +3479,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3441,6 +3552,10 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP",
+			"WARNING");
 
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3529,6 +3644,10 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode",
+			"ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3610,6 +3729,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3680,6 +3802,10 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity",
+			"ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3752,6 +3878,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3822,6 +3951,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3894,6 +4026,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2DocumentationOfServiceEventProcedureCodes(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventProcedureCodes", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3964,6 +4099,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2DocumentationOfServiceEventEffectiveTime(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventEffectiveTime", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4036,6 +4174,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2DocumentationOfServiceEventCode(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventCode", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4106,6 +4246,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2DocumentationOfServiceEventPerformer(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformer", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4178,6 +4320,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistants(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssistants", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4249,6 +4394,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2DocumentationOfServiceEvent(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2DocumentationOfServiceEvent", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4318,6 +4465,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2AuthorizationConsentClassCode(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2AuthorizationConsentClassCode", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4390,6 +4539,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2AuthorizationConsentMoodCode(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2AuthorizationConsentMoodCode", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4459,6 +4610,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2AuthorizationConsentStatusCode(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2AuthorizationConsentStatusCode", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4531,6 +4684,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2AuthorizationTypeCode(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2AuthorizationTypeCode", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_AUTHORIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4601,6 +4756,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2AuthorizationConsent(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2AuthorizationConsent", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_AUTHORIZATION_CONSENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4670,6 +4827,10 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode",
+			"ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4742,6 +4903,10 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId",
+			"ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4812,6 +4977,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4884,6 +5052,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2ComponentOfEncompassingEncounterId(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterId", "WARNING");
+
 		if (VALIDATE_PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4954,6 +5124,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2ComponentOfEncompassingEncounterCode(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterCode", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5026,6 +5198,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant(
 			ProcedureNote2 procedureNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant", "INFO");
+
 		if (VALIDATE_PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5097,6 +5272,9 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	public static boolean validateProcedureNote2ComponentOfEncompassingEncounterLocation(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterLocation", "ERROR");
+
 		if (VALIDATE_PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5167,6 +5345,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureNote2ComponentOfEncompassingEncounter(ProcedureNote2 procedureNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounter", "ERROR");
 
 		if (VALIDATE_PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -6517,6 +6697,8 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateUSRealmHeader2TemplateId(ProcedureNote2 procedureNote2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureNote2USRealmHeader2TemplateId", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

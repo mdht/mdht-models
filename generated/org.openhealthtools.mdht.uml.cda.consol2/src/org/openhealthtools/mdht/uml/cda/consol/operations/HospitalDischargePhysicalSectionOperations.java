@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -95,6 +96,9 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 			HospitalDischargePhysicalSection hospitalDischargePhysicalSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HospitalDischargePhysicalSectionHospitalDischargePhysicalSectionTemplateId", "ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -164,6 +168,9 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 			HospitalDischargePhysicalSection hospitalDischargePhysicalSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HospitalDischargePhysicalSectionHospitalDischargePhysicalSectionCode", "ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -230,6 +237,9 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 	public static boolean validateHospitalDischargePhysicalSectionCodeP(
 			HospitalDischargePhysicalSection hospitalDischargePhysicalSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HospitalDischargePhysicalSectionHospitalDischargePhysicalSectionCodeP", "ERROR");
 
 		if (VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -298,6 +308,9 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 			HospitalDischargePhysicalSection hospitalDischargePhysicalSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HospitalDischargePhysicalSectionHospitalDischargePhysicalSectionTitle", "ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -364,6 +377,9 @@ public class HospitalDischargePhysicalSectionOperations extends SectionOperation
 	public static boolean validateHospitalDischargePhysicalSectionText(
 			HospitalDischargePhysicalSection hospitalDischargePhysicalSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HospitalDischargePhysicalSectionHospitalDischargePhysicalSectionText", "ERROR");
 
 		if (VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

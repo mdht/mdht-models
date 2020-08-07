@@ -21,6 +21,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.SubstanceAdministrationOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -109,6 +110,8 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	public static boolean validateMedicationFreeTextSigTextReferenceValue(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationFreeTextSigMedicationFreeTextSigTextReferenceValue", "ERROR");
+
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -174,6 +177,8 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	public static boolean validateMedicationFreeTextSigTemplateId(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationFreeTextSigMedicationFreeTextSigTemplateId", "ERROR");
+
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -238,6 +243,8 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 
 	public static boolean validateMedicationFreeTextSigClassCode(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationFreeTextSigMedicationFreeTextSigClassCode", "ERROR");
 
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -306,6 +313,8 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	public static boolean validateMedicationFreeTextSigMoodCode(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationFreeTextSigMedicationFreeTextSigMoodCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -373,6 +382,8 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	public static boolean validateMedicationFreeTextSigCode(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationFreeTextSigMedicationFreeTextSigCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -436,6 +447,8 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 
 	public static boolean validateMedicationFreeTextSigCodeP(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationFreeTextSigMedicationFreeTextSigCodeP", "ERROR");
 
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -501,6 +514,8 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	public static boolean validateMedicationFreeTextSigText(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationFreeTextSigMedicationFreeTextSigText", "ERROR");
+
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -564,6 +579,8 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 
 	public static boolean validateMedicationFreeTextSigConsumable(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationFreeTextSigMedicationFreeTextSigConsumable", "ERROR");
 
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -629,6 +646,8 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationFreeTextSigEDTELValue(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationFreeTextSigMedicationFreeTextSigEDTELValue", "WARNING");
 
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -699,6 +718,8 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationFreeTextSigEDReference(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationFreeTextSigMedicationFreeTextSigEDReference", "ERROR");
 
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -774,6 +795,11 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	public static boolean validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor(
 			MedicationFreeTextSig medicationFreeTextSig, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"MedicationFreeTextSigMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor",
+			"ERROR");
+
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -845,6 +871,10 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	public static boolean validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug(
 			MedicationFreeTextSig medicationFreeTextSig, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MedicationFreeTextSigMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug",
+			"ERROR");
+
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -915,6 +945,9 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationFreeTextSigConsumableManufacturedProduct(
 			MedicationFreeTextSig medicationFreeTextSig, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MedicationFreeTextSigMedicationFreeTextSigConsumableManufacturedProduct", "ERROR");
 
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

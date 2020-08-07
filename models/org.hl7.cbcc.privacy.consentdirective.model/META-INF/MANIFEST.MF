@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ConsentDirectiveModel
+Bundle-SymbolicName: org.hl7.cbcc.privacy.consentdirective.model;singleton:=true
+Bundle-Version: 3.0.0.qualifier

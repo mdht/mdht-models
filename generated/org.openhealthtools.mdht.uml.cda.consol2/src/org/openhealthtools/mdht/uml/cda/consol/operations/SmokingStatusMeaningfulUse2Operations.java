@@ -10,6 +10,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -99,6 +100,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SmokingStatusMeaningfulUse2SmokingStatusMeaningfulUse2TemplateId", "ERROR");
+
 		if (VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -165,6 +168,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusMeaningfulUse2Id(SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SmokingStatusMeaningfulUse2SmokingStatusMeaningfulUse2Id", "ERROR");
+
 		if (VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -208,6 +213,9 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusMeaningfulUse2AuthorParticipation(
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "SmokingStatusMeaningfulUse2SmokingStatusMeaningfulUse2AuthorParticipation", "WARNING");
 
 		if (VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -254,6 +262,9 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc(
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "SmokingStatusMeaningfulUse2SmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc", "INFO");
 
 		if (VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -368,6 +379,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusObservationCodeP(SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SmokingStatusMeaningfulUse2SmokingStatusObservationCodeP", "ERROR");
+
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -455,6 +468,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "SmokingStatusMeaningfulUse2SmokingStatusObservationCode", "ERROR");
+
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -519,6 +534,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusObservationValueP(
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SmokingStatusMeaningfulUse2SmokingStatusObservationValueP", "ERROR");
 
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -608,6 +625,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "SmokingStatusMeaningfulUse2SmokingStatusObservationValue", "ERROR");
+
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -672,6 +691,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusObservationEffectiveTime(
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SmokingStatusMeaningfulUse2SmokingStatusObservationEffectiveTime", "ERROR");
 
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -739,6 +760,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusObservationIVLTSCenter(
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SmokingStatusMeaningfulUse2SmokingStatusObservationIVLTSCenter", "ERROR");
 
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_CENTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -812,6 +835,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SmokingStatusMeaningfulUse2SmokingStatusObservationIVLTSHigh", "ERROR");
+
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -884,6 +909,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SmokingStatusMeaningfulUse2SmokingStatusObservationIVLTSLow", "ERROR");
+
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -955,6 +982,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusObservationIVLTSWidth(
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SmokingStatusMeaningfulUse2SmokingStatusObservationIVLTSWidth", "ERROR");
 
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

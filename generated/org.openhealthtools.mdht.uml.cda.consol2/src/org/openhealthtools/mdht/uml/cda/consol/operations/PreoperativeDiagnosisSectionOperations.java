@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -100,6 +101,8 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PreoperativeDiagnosisSectionPreoperativeDiagnosisSectionTemplateId", "ERROR");
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -169,6 +172,8 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PreoperativeDiagnosisSectionPreoperativeDiagnosisSectionCode", "ERROR");
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -235,6 +240,8 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PreoperativeDiagnosisSectionPreoperativeDiagnosisSectionCodeP", "ERROR");
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -280,6 +287,8 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePreoperativeDiagnosisSectionText(
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PreoperativeDiagnosisSectionPreoperativeDiagnosisSectionText", "ERROR");
 
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -368,6 +377,8 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PreoperativeDiagnosisSectionPreoperativeDiagnosisSectionTitle", "ERROR");
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -434,6 +445,9 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PreoperativeDiagnosisSectionPreoperativeDiagnosisSectionPreoperativeDiagnosis", "WARNING");
 
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

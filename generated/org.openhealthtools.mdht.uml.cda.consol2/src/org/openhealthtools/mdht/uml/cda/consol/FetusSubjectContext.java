@@ -2,16 +2,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.RelatedSubject;
 
 /**
@@ -33,7 +28,7 @@ public interface FetusSubjectContext extends RelatedSubject {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.6.2.3\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.6.2.3\')'"
 	 * @generated
 	 */
 	boolean validateFetusSubjectContextTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -57,7 +52,7 @@ public interface FetusSubjectContext extends RelatedSubject {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->one(subject : cda::SubjectPerson | not subject.oclIsUndefined() and subject.oclIsKindOf(cda::SubjectPerson))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject-&gt;one(subject : cda::SubjectPerson | not subject.oclIsUndefined() and subject.oclIsKindOf(cda::SubjectPerson))'"
 	 * @generated
 	 */
 	boolean validateFetusSubjectContextSubject(DiagnosticChain diagnostics, Map<Object, Object> context);

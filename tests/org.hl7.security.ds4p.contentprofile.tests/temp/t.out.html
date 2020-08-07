@@ -1,0 +1,1466 @@
+
+   
+      self.assignedAuthoringDevice-&gt;one(assignedAuthoringDevice : cda::AuthoringDevice | not assignedAuthoringDevice.oclIsUndefined() and assignedAuthoringDevice.oclIsKindOf(cda::AuthoringDevice))
+      
+         
+         &lt;assignedauthor xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Mandatory Document Assigned Author SHOULD contain zero or one [0..1] assignedAuthoringDevice, where its type is Consol Authoring Device (CONF:5449)
+      
+         
+         &lt;assignedauthor xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.3"/&gt;
+         
+         &lt;assignedAuthoringDevice/&gt;
+         
+         &lt;/assignedauthor&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.assignedPerson-&gt;one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person))
+      
+         
+         &lt;assignedauthor xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Mandatory Document Assigned Author SHOULD contain zero or one [0..1] assignedPerson, where its type is Consol Person (CONF:5450)
+      
+         
+         &lt;assignedauthor xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.3"/&gt;
+         
+         &lt;assignedPerson/&gt;
+         
+         &lt;/assignedauthor&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.representedOrganization-&gt;one(representedOrganization : cda::Organization | not representedOrganization.oclIsUndefined() and representedOrganization.oclIsKindOf(rim::Entity))
+      
+         
+         &lt;assignedauthor xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Mandatory Document Assigned Author SHOULD contain  [0..1] representedOrganization such that it  (CONF:5451) Conforms to Organization from CDA
+      
+         
+         &lt;assignedauthor xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.3"/&gt;
+         
+         &lt;representedOrganization/&gt;
+         
+         &lt;/assignedauthor&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      (self.telecom-&gt;isEmpty() or self.telecom-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.telecom-&gt;isEmpty()) )
+      
+         
+         &lt;assignedauthor xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Mandatory Document Assigned Author SHALL contain at least one [1..*] telecom (CONF:5428) such that it  One of telecommunication methods for providers could be the email address.
+      
+         
+         &lt;assignedauthor xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.3"/&gt;
+         
+         &lt;telecom/&gt;
+         
+         &lt;/assignedauthor&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.3251.1.3')
+      
+         
+         &lt;assignedauthor xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      SHALL contain exactly one [1..1] templateId ( CONF-DS4P-3 ) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.3.3251.1.3"
+      
+         
+         &lt;assignedauthor xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.3"/&gt;
+         
+         &lt;/assignedauthor&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.assignedAuthor-&gt;one(assignedAuthor : cda::AssignedAuthor | not assignedAuthor.oclIsUndefined() and assignedAuthor.oclIsKindOf(contentprofile::MandatoryDocumentAssignedAuthor))
+      
+         
+         &lt;author xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Mandatory Document Provenance SHALL contain  [1..1] assignedAuthor such that it  (CONF:16792) Conforms to Mandatory Document Assigned Author (templateId: 2.16.840.1.113883.3.3251.1.3)
+      
+         
+         &lt;author xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.2"/&gt;
+         
+         &lt;assignedAuthor&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.3"/&gt;
+         
+         &lt;/assignedAuthor&gt;
+         
+         &lt;/author&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.3251.1.2')
+      
+         
+         &lt;author xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      SHALL contain exactly one [1..1] templateId ( CONF-DS4P-2 ) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.3.3251.1.2"
+      
+         
+         &lt;author xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.2"/&gt;
+         
+         &lt;/author&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      not self.time.oclIsUndefined()
+      
+         
+         &lt;author xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Mandatory Document Provenance SHALL contain exactly one [1..1] time (CONF:16831)
+      
+         
+         &lt;author xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.2"/&gt;
+         
+         &lt;time/&gt;
+         
+         &lt;/author&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      true
+      
+         
+         Skip Fail Test
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      true
+      
+         
+         Skip Fail Test
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      true
+      
+         
+         Skip Fail Test
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.3251.1.7')
+      
+         
+         &lt;assignedauthor xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      SHALL contain exactly one [1..1] templateId ( CONF-DS4P-7 ) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.3.3251.1.7"
+      
+         
+         &lt;assignedauthor xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.7"/&gt;
+         
+         &lt;/assignedauthor&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.assignedAuthor-&gt;one(assignedAuthor : cda::AssignedAuthor | not assignedAuthor.oclIsUndefined() and assignedAuthor.oclIsKindOf(contentprofile::MandatoryEntryAssignedAuthor))
+      
+         
+         &lt;author xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Mandatory Entry Provenance SHALL contain  [1..1] assignedAuthor such that it  (CONF:9064) Conforms to Mandatory Entry Assigned Author (templateId: 2.16.840.1.113883.3.3251.1.7)
+      
+         
+         &lt;author xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.6"/&gt;
+         
+         &lt;assignedAuthor&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.7"/&gt;
+         
+         &lt;/assignedAuthor&gt;
+         
+         &lt;/author&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.3251.1.6')
+      
+         
+         &lt;author xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      SHALL contain exactly one [1..1] templateId ( CONF-DS4P-6 ) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.3.3251.1.6"
+      
+         
+         &lt;author xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.6"/&gt;
+         
+         &lt;/author&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      not self.time.oclIsUndefined()
+      
+         
+         &lt;author xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Mandatory Entry Provenance SHALL contain exactly one [1..1] time (CONF:16832)
+      
+         
+         &lt;author xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.6"/&gt;
+         
+         &lt;time/&gt;
+         
+         &lt;/author&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      isDefined('classCode')
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Annotation SHALL contain exactly one [1..1] @classCode="CLUSTER"  (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) (CONF:16829)
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.4"/&gt;
+         
+         &lt;statusCode code="active"/&gt;
+         
+         &lt;/organizer&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.component-&gt;one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::ConfidentialitySecurityObservation))
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Annotation SHALL contain  [1..1] component such that it  (CONF:16796) Conforms to Confidentiality Security Observation (templateId: 2.16.840.1.113883.3.445.12)
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.4"/&gt;
+         
+         &lt;statusCode code="active"/&gt;
+         
+         &lt;component&gt;
+         
+         &lt;observation moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;code code="SECCLASSOBS" codeSystem="2.16.840.1.113883.1.11.20457" codeSystemName="SecurityObservationTypeCodeSystem" displayName="Security Category"/&gt;
+         
+         &lt;/observation&gt;
+         
+         &lt;/component&gt;
+         
+         &lt;/organizer&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.organizer-&gt;one(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(contentprofile::PrivacyAnnotation))
+      
+         
+         &lt;entryrelationship xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Annotation Entry Relationship SHALL contain  [1..1] organizer such that it  (CONF:14892) Conforms to Privacy Annotation (templateId: 2.16.840.1.113883.3.3251.1.4)
+      
+         
+         &lt;entryrelationship xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.11"/&gt;
+         
+         &lt;organizer/&gt;
+         
+         &lt;/entryrelationship&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.3251.1.11')
+      
+         
+         &lt;entryrelationship xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      SHALL contain exactly one [1..1] templateId ( CONF-DS4P-15 ) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.3.3251.1.11"
+      
+         
+         &lt;entryrelationship xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.11"/&gt;
+         
+         &lt;/entryrelationship&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      isDefined('moodCode')
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Annotation SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: 2.16.840.1.113883.5.1001 HL7ActMood) (CONF:16830)
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.4"/&gt;
+         
+         &lt;statusCode code="active"/&gt;
+         
+         &lt;/organizer&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.component-&gt;exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::ObligationPolicySecurityObservation))
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Annotation MAY contain  [0..*] component such that it  (CONF:9053) Conforms to Obligation Policy Security Observation (templateId: 2.16.840.1.113883.3.445.14)
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.4"/&gt;
+         
+         &lt;statusCode code="active"/&gt;
+         
+         &lt;component&gt;
+         
+         &lt;observation moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.14"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;code code="SECCONOBS" codeSystem="2.16.840.1.113883.1.11.20457" codeSystemName="SecurityObservationTypeCodeSystem" displayName="Security Control"/&gt;
+         
+         &lt;/observation&gt;
+         
+         &lt;/component&gt;
+         
+         &lt;/organizer&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.component-&gt;exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::PurposeOfUseSecurityObservation))
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Annotation MAY contain  [0..*] component such that it  (CONF:14890) Conforms to Purpose Of Use Security Observation (templateId: 2.16.840.1.113883.3.445.22)
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.4"/&gt;
+         
+         &lt;statusCode code="active"/&gt;
+         
+         &lt;component&gt;
+         
+         &lt;observation moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.22"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;code code="SECCONOBS" codeSystem="2.16.840.1.113883.1.11.20457" codeSystemName="SecurityObservationTypeCodeSystem" displayName="Security Control"/&gt;
+         
+         &lt;/observation&gt;
+         
+         &lt;/component&gt;
+         
+         &lt;/organizer&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.component-&gt;exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(contentprofile::RefrainPolicySecurityObservation))
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Annotation MAY contain  [0..*] component such that it  (CONF:14889) Conforms to Refrain Policy Security Observation (templateId: 2.16.840.1.113883.3.445.23)
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.4"/&gt;
+         
+         &lt;statusCode code="active"/&gt;
+         
+         &lt;component&gt;
+         
+         &lt;observation moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.23"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;code code="SECCONOBS" codeSystem="2.16.840.1.113883.1.11.20457" codeSystemName="SecurityObservationTypeCodeSystem" displayName="Security Control Observation Type"/&gt;
+         
+         &lt;/observation&gt;
+         
+         &lt;/component&gt;
+         
+         &lt;/organizer&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in value.code = 'active'
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Annotation SHALL contain exactly one [1..1] statusCode (CONF:9054)/@code="active" Active (CodeSystem: 2.16.840.1.113883.5.14 ActStatus) (CONF:16831)
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.4"/&gt;
+         
+         &lt;statusCode code="active"/&gt;
+         
+         &lt;/organizer&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      not self.statusCode.oclIsUndefined()
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Annotation SHALL contain exactly one [1..1] statusCode (CONF:9054)/@code="active" Active (CodeSystem: 2.16.840.1.113883.5.14 ActStatus) (CONF:16831)
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.4"/&gt;
+         
+         &lt;statusCode code="active"/&gt;
+         
+         &lt;/organizer&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.3251.1.4')
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      SHALL contain exactly one [1..1] templateId ( CONF-DS4P-4 ) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.3.3251.1.4"
+      
+         
+         &lt;organizer xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.4"/&gt;
+         
+         &lt;statusCode code="active"/&gt;
+         
+         &lt;/organizer&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.organizer-&gt;one(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(contentprofile::PrivacyAnnotation))
+      
+         
+         &lt;entry xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Markings Entry SHALL contain  [1..1] organizer such that it  (CONF:14893) Conforms to Privacy Annotation (templateId: 2.16.840.1.113883.3.3251.1.4)
+      
+         
+         &lt;entry xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.9"/&gt;
+         
+         &lt;organizer classCode="CLUSTER" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.4"/&gt;
+         
+         &lt;statusCode code="active"/&gt;
+         
+         &lt;/organizer&gt;
+         
+         &lt;/entry&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.3251.1.9')
+      
+         
+         &lt;entry xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      SHALL contain exactly one [1..1] templateId ( CONF-DS4P-9 ) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.3.3251.1.9"
+      
+         
+         &lt;entry xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.9"/&gt;
+         
+         &lt;/entry&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in value.code = '57017-6' and value.codeSystem = '2.16.840.1.113883.6.1')
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Markings Section SHALL contain exactly one [1..1] code (CONF:16835)/@code="57017-6" Privacy Policy (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:16836)
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.5"/&gt;
+         
+         &lt;code code="57017-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Privacy Policy"/&gt;
+         
+         &lt;/section&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Markings Section SHALL contain exactly one [1..1] code (CONF:16835)/@code="57017-6" Privacy Policy (CodeSystem: 2.16.840.1.113883.6.1 LOINC) (CONF:16836)
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.5"/&gt;
+         
+         &lt;code code="57017-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Privacy Policy"/&gt;
+         
+         &lt;/section&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies entry-&gt;exists(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(contentprofile::PrivacyMarkingsEntry) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Markings Section If section/@nullFlavor is not present, MAY contain  [0..*] entry such that it  (CONF:16802) Conforms to Privacy Markings Entry (templateId: 2.16.840.1.113883.3.3251.1.9)
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.5"/&gt;
+         
+         &lt;code code="57017-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Privacy Policy"/&gt;
+         
+         &lt;entry&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.9"/&gt;
+         
+         &lt;observation moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.22"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;code code="SECCONOBS" codeSystem="2.16.840.1.113883.1.11.20457" codeSystemName="SecurityObservationTypeCodeSystem" displayName="Security Control"/&gt;
+         
+         &lt;/observation&gt;
+         
+         &lt;/entry&gt;
+         
+         &lt;/section&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.3251.1.5')
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      SHALL contain exactly one [1..1] templateId ( CONF-DS4P-5 ) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.3.3251.1.5"
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.5"/&gt;
+         
+         &lt;code code="57017-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Privacy Policy"/&gt;
+         
+         &lt;/section&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      not self.text.oclIsUndefined()
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Markings Section SHALL contain exactly one [1..1] text (CONF:9059)
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.5"/&gt;
+         
+         &lt;code code="57017-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Privacy Policy"/&gt;
+         
+         &lt;text/&gt;
+         
+         &lt;/section&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.author-&gt;exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(contentprofile::MandatoryDocumentProvenance))
+      
+         
+         &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+         
+         &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 infrastructure/cda/CDA_SDTC.xsd"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Segmented Document SHALL contain  [1..*] author such that it  (CONF:5444) Conforms to Mandatory Document Provenance (templateId: 2.16.840.1.113883.3.3251.1.2)
+      
+         
+         &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+         
+         &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 infrastructure/cda/CDA_SDTC.xsd"&gt;
+         
+         &lt;realmCode code="US"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.1"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
+         
+         &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
+         
+         &lt;author&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.2"/&gt;
+         
+         &lt;/author&gt;
+         
+         &lt;/ClinicalDocument&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.getAllSections()-&gt;select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(contentprofile::PrivacyMarkingsSection))-&gt;size() &gt;= 1
+      
+         
+         &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+         
+         &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 infrastructure/cda/CDA_SDTC.xsd"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Segmented Document SHOULD contain  [1..*] component such that it  (CONF:16789) Conforms to Privacy Markings Section (templateId: 2.16.840.1.113883.3.3251.1.5)
+      
+         
+         &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+         
+         &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 infrastructure/cda/CDA_SDTC.xsd"&gt;
+         
+         &lt;realmCode code="US"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.1"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
+         
+         &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
+         
+         &lt;component&gt;
+         
+         &lt;structuredBody&gt;
+         
+         &lt;component&gt;
+         
+         &lt;section&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.5"/&gt;
+         
+         &lt;code code="57017-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Privacy Policy"/&gt;
+         
+         &lt;/section&gt;
+         
+         &lt;/component&gt;
+         
+         &lt;/structuredBody&gt;
+         
+         &lt;/component&gt;
+         
+         &lt;/ClinicalDocument&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.getAllSections()-&gt;select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(contentprofile::PrivacySegmentedSection))-&gt;size() &gt;= 1
+      
+         
+         &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+         
+         &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 infrastructure/cda/CDA_SDTC.xsd"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Segmented Document MAY contain  [0..*] component such that it  (CONF:16790) Conforms to Privacy Segmented Section (templateId: 2.16.840.1.113883.3.3251.1.10)
+      
+         
+         &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+         
+         &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 infrastructure/cda/CDA_SDTC.xsd"&gt;
+         
+         &lt;realmCode code="US"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.1"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
+         
+         &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
+         
+         &lt;component&gt;
+         
+         &lt;structuredBody&gt;
+         
+         &lt;component&gt;
+         
+         &lt;section&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.10"/&gt;
+         
+         &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
+         
+         &lt;/section&gt;
+         
+         &lt;/component&gt;
+         
+         &lt;/structuredBody&gt;
+         
+         &lt;/component&gt;
+         
+         &lt;/ClinicalDocument&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.3251.1.1')
+      
+         
+         &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+         
+         &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 infrastructure/cda/CDA_SDTC.xsd"/&gt;
+         
+      
+      SHALL contain exactly one [1..1] templateId ( CONF-DS4P-1 ) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.3.3251.1.1"
+      
+         
+         &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+         
+         &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 infrastructure/cda/CDA_SDTC.xsd"&gt;
+         
+         &lt;realmCode code="US"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.1"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
+         
+         &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
+         
+         &lt;/ClinicalDocument&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.nullFlavor &lt;&gt; vocab::NullFlavor::NI implies author-&gt;exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(contentprofile::MandatoryEntryProvenance))
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Segmented Section SHOULD contain  [0..*] author such that it  (CONF:5460) Conforms to Mandatory Entry Provenance (templateId: 2.16.840.1.113883.3.3251.1.6)
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.10"/&gt;
+         
+         &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
+         
+         &lt;author&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.6"/&gt;
+         
+         &lt;/author&gt;
+         
+         &lt;/section&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.5.25' and (value.code = 'N' or value.code = 'R' or value.code = 'V')
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Segmented Section SHOULD contain exactly one [1..1] confidentialityCode (CONF:16834), where the @code SHALL be selected from ValueSet HL7 BasicConfidentialityKind 2.16.840.1.113883.1.11.16926 STATIC (CONF:16833)
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.10"/&gt;
+         
+         &lt;confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/&gt;
+         
+         &lt;/section&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      not self.confidentialityCode.oclIsUndefined()
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Privacy Segmented Section SHOULD contain exactly one [1..1] confidentialityCode (CONF:16834), where the @code SHALL be selected from ValueSet HL7 BasicConfidentialityKind 2.16.840.1.113883.1.11.16926 STATIC (CONF:16833)
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.10"/&gt;
+         
+         &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
+         
+         &lt;/section&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.3251.1.10')
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      SHALL contain exactly one [1..1] templateId ( CONF-DS4P-10 ) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.3.3251.1.10"
+      
+         
+         &lt;section xmlns="urn:hl7-org:v3"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.10"/&gt;
+         
+         &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
+         
+         &lt;/section&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.3251.1.8')
+      
+         
+         &lt;observation xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      SHALL contain exactly one [1..1] templateId ( CONF-DS4P-8 ) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.3.3251.1.8"
+      
+         
+         &lt;observation xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.8"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.10.20.22.4.4"/&gt;
+         
+         &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+         
+         &lt;statusCode code="completed"/&gt;
+         
+         &lt;/observation&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(contentprofile::PrivacyAnnotationEntryRelationship))
+      
+         
+         &lt;observation xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Protected Problem SHALL contain  [1..1] entryRelationship such that it  (CONF:16798) Conforms to Privacy Annotation Entry Relationship (templateId: 2.16.840.1.113883.3.3251.1.11)
+      
+         
+         &lt;observation xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.8"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.10.20.22.4.4"/&gt;
+         
+         &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+         
+         &lt;statusCode code="completed"/&gt;
+         
+         &lt;entryRelationship&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.11"/&gt;
+         
+         &lt;/entryRelationship&gt;
+         
+         &lt;/observation&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.author-&gt;one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(contentprofile::MandatoryEntryProvenance))
+      
+         
+         &lt;observation xmlns="urn:hl7-org:v3"/&gt;
+         
+      
+      CONTENTPROFILE Protected Problem SHALL contain  [1..1] author such that it  (CONF:16797) Conforms to Mandatory Entry Provenance (templateId: 2.16.840.1.113883.3.3251.1.6)
+      
+         
+         &lt;observation xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.8"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.10.20.22.4.4"/&gt;
+         
+         &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+         
+         &lt;statusCode code="completed"/&gt;
+         
+         &lt;author&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.3251.1.6"/&gt;
+         
+         &lt;/author&gt;
+         
+         &lt;/observation&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in value.codeSystem = '2.16.840.1.113883.1.11.20457'
+      
+         
+         Skip Fail Test
+         
+      
+      
+         
+         &lt;observation xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;code code="SECCONOBS" codeSystem="2.16.840.1.113883.1.11.20457"/&gt;
+         
+         &lt;/observation&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      not self.code.oclIsUndefined()
+      
+         
+         Skip Fail Test
+         
+      
+      
+         
+         &lt;observation xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;code/&gt;
+         
+         &lt;/observation&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
+      
+         
+         Skip Fail Test
+         
+      
+      
+         
+         &lt;observation xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;code code="SECCLASSOBS" codeSystem="2.16.840.1.113883.1.11.20457" codeSystemName="SecurityObservationTypeCodeSystem" displayName="Security Category"/&gt;
+         
+         &lt;/observation&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.templateId-&gt;exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.445.21')
+      
+         
+         Skip Fail Test
+         
+      
+      
+         
+         &lt;observation xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;code code="SECCLASSOBS" codeSystem="2.16.840.1.113883.1.11.20457" codeSystemName="SecurityObservationTypeCodeSystem" displayName="Security Category"/&gt;
+         
+         &lt;/observation&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.value-&gt;size() = 1 and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and let value : datatypes::CE = element.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.5.1063')
+      
+         
+         &lt;observation xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;code code="SECCLASSOBS" codeSystem="2.16.840.1.113883.1.11.20457" codeSystemName="SecurityObservationTypeCodeSystem" displayName="Security Category"/&gt;
+         
+         &lt;/observation&gt;
+         
+      
+      CONTENTPROFILE Security Observation SHALL contain exactly one [1..1] value with @xsi:type="CE" (CONF:16839), where the @code SHALL be selected from (CodeSystem: 2.16.840.1.113883.5.1063 SecurityObservationValueCodeSystem) (CONF:16840)
+      
+         
+         &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;code code="SECCLASSOBS" codeSystem="2.16.840.1.113883.1.11.20457" codeSystemName="SecurityObservationTypeCodeSystem" displayName="Security Category"/&gt;
+         
+         &lt;value xsi:type="CE" code="CPLYCD" codeSystem="2.16.840.1.113883.5.1063"/&gt;
+         
+         &lt;/observation&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   
+   
+      self.value-&gt;size() =  1 and self.value-&gt;forAll(element | element.oclIsTypeOf(datatypes::CE))
+      
+         
+         &lt;observation xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;code code="SECCLASSOBS" codeSystem="2.16.840.1.113883.1.11.20457" codeSystemName="SecurityObservationTypeCodeSystem" displayName="Security Category"/&gt;
+         
+         &lt;/observation&gt;
+         
+      
+      CONTENTPROFILE Security Observation SHALL contain exactly one [1..1] value with @xsi:type="CE" (CONF:16839), where the @code SHALL be selected from (CodeSystem: 2.16.840.1.113883.5.1063 SecurityObservationValueCodeSystem) (CONF:16840)
+      
+         
+         &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.12"/&gt;
+         
+         &lt;templateId root="2.16.840.1.113883.3.445.21"/&gt;
+         
+         &lt;code code="SECCLASSOBS" codeSystem="2.16.840.1.113883.1.11.20457" codeSystemName="SecurityObservationTypeCodeSystem" displayName="Security Category"/&gt;
+         
+         &lt;value xsi:type="CE"/&gt;
+         
+         &lt;/observation&gt;
+         
+      
+      
+         
+         Skip Pass Test
+         
+      
+   

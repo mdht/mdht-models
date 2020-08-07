@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -105,6 +106,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 	public static boolean validateHealthConcernsSectionTemplateId(HealthConcernsSection healthConcernsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HealthConcernsSectionHealthConcernsSectionTemplateId", "ERROR");
+
 		if (VALIDATE_HEALTH_CONCERNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -169,6 +172,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 
 	public static boolean validateHealthConcernsSectionNullFlavor(HealthConcernsSection healthConcernsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HealthConcernsSectionHealthConcernsSectionNullFlavor", "INFO");
 
 		if (VALIDATE_HEALTH_CONCERNS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -237,6 +242,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 	public static boolean validateHealthConcernsSectionCode(HealthConcernsSection healthConcernsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HealthConcernsSectionHealthConcernsSectionCode", "ERROR");
+
 		if (VALIDATE_HEALTH_CONCERNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -299,6 +306,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 
 	public static boolean validateHealthConcernsSectionCodeP(HealthConcernsSection healthConcernsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HealthConcernsSectionHealthConcernsSectionCodeP", "ERROR");
 
 		if (VALIDATE_HEALTH_CONCERNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -364,6 +373,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 	public static boolean validateHealthConcernsSectionTitle(HealthConcernsSection healthConcernsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HealthConcernsSectionHealthConcernsSectionTitle", "ERROR");
+
 		if (VALIDATE_HEALTH_CONCERNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -428,6 +439,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 	public static boolean validateHealthConcernsSectionText(HealthConcernsSection healthConcernsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HealthConcernsSectionHealthConcernsSectionText", "ERROR");
+
 		if (VALIDATE_HEALTH_CONCERNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -490,6 +503,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 
 	public static boolean validateHealthConcernsSectionHealthConcernAct(HealthConcernsSection healthConcernsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HealthConcernsSectionHealthConcernsSectionHealthConcernAct", "ERROR");
 
 		if (VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -556,6 +571,9 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 	public static boolean validateHealthConcernsSectionHealthStatusObservation2(
 			HealthConcernsSection healthConcernsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HealthConcernsSectionHealthConcernsSectionHealthStatusObservation2", "WARNING");
+
 		if (VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -621,6 +639,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 
 	public static boolean validateHealthConcernsSectionRiskConcernAct(HealthConcernsSection healthConcernsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HealthConcernsSectionHealthConcernsSectionRiskConcernAct", "INFO");
 
 		if (VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -97,6 +98,9 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 			ProgressTowardGoalObservation progressTowardGoalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProgressTowardGoalObservationProgressTowardGoalObservationTemplateId", "ERROR");
+
 		if (VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -163,6 +167,9 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 	public static boolean validateProgressTowardGoalObservationClassCode(
 			ProgressTowardGoalObservation progressTowardGoalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProgressTowardGoalObservationProgressTowardGoalObservationClassCode", "ERROR");
 
 		if (VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -231,6 +238,8 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 			ProgressTowardGoalObservation progressTowardGoalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressTowardGoalObservationProgressTowardGoalObservationMoodCode", "ERROR");
+
 		if (VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -298,6 +307,8 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 			ProgressTowardGoalObservation progressTowardGoalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressTowardGoalObservationProgressTowardGoalObservationId", "ERROR");
+
 		if (VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -363,6 +374,8 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 	public static boolean validateProgressTowardGoalObservationCodeP(
 			ProgressTowardGoalObservation progressTowardGoalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressTowardGoalObservationProgressTowardGoalObservationCodeP", "ERROR");
 
 		if (VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -456,6 +469,8 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ProgressTowardGoalObservationProgressTowardGoalObservationCode", "ERROR");
+
 		if (VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -524,6 +539,9 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 			ProgressTowardGoalObservation progressTowardGoalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProgressTowardGoalObservationProgressTowardGoalObservationStatusCode", "ERROR");
+
 		if (VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -590,6 +608,9 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 	public static boolean validateProgressTowardGoalObservationStatusCodeP(
 			ProgressTowardGoalObservation progressTowardGoalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProgressTowardGoalObservationProgressTowardGoalObservationStatusCodeP", "ERROR");
 
 		if (VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -660,6 +681,8 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 			ProgressTowardGoalObservation progressTowardGoalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProgressTowardGoalObservationProgressTowardGoalObservationValue", "ERROR");
+
 		if (VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -726,6 +749,8 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 	public static boolean validateProgressTowardGoalObservationValueP(
 			ProgressTowardGoalObservation progressTowardGoalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProgressTowardGoalObservationProgressTowardGoalObservationValueP", "ERROR");
 
 		if (VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

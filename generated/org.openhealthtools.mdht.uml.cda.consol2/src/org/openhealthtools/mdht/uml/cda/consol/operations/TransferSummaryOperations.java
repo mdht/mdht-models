@@ -21,6 +21,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -214,6 +215,11 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"TransferSummaryTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2",
+			"ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -280,6 +286,11 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"TransferSummaryTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent",
+			"ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -345,6 +356,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryCodeP(TransferSummary transferSummary, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryCodeP", "ERROR");
 
 		if (VALIDATE_TRANSFER_SUMMARY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -432,6 +445,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryCode", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -495,6 +510,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryTitle(TransferSummary transferSummary, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryTitle", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -557,6 +574,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryParticipantSupport(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryParticipantSupport", "WARNING");
 
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -623,6 +642,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryParticipantCallbackContact(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryParticipantCallbackContact", "WARNING");
+
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -688,6 +709,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryDocumentationOf(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryDocumentationOf", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -750,6 +773,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryAdvanceDirectivesSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryAdvanceDirectivesSection2", "WARNING");
 
 		if (VALIDATE_TRANSFER_SUMMARY_ADVANCE_DIRECTIVES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -816,6 +841,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryAllergiesSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryAllergiesSection2", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -880,6 +907,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryPhysicalExamSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryPhysicalExamSection2", "INFO");
 
 		if (VALIDATE_TRANSFER_SUMMARY_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -946,6 +975,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryEncountersSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryEncountersSection2", "INFO");
+
 		if (VALIDATE_TRANSFER_SUMMARY_ENCOUNTERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1010,6 +1041,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryFamilyHistorySection(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryFamilyHistorySection", "INFO");
 
 		if (VALIDATE_TRANSFER_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1076,6 +1109,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryFunctionalStatusSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryFunctionalStatusSection2", "WARNING");
+
 		if (VALIDATE_TRANSFER_SUMMARY_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1140,6 +1175,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryImmunizationsSectionEntriesOptional2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryImmunizationsSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_TRANSFER_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1207,6 +1244,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryMedicalEquipmentSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryMedicalEquipmentSection2", "INFO");
+
 		if (VALIDATE_TRANSFER_SUMMARY_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1271,6 +1310,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryMedicationsSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryMedicationsSection2", "ERROR");
 
 		if (VALIDATE_TRANSFER_SUMMARY_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1337,6 +1378,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryPayersSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryPayersSection2", "INFO");
+
 		if (VALIDATE_TRANSFER_SUMMARY_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1399,6 +1442,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryPlanOfTreatmentSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryPlanOfTreatmentSection2", "INFO");
 
 		if (VALIDATE_TRANSFER_SUMMARY_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1465,6 +1510,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryProblemSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryProblemSection2", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1527,6 +1574,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryProceduresSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryProceduresSection2", "WARNING");
 
 		if (VALIDATE_TRANSFER_SUMMARY_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1593,6 +1642,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryResultsSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryResultsSection2", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1655,6 +1706,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummarySocialHistorySection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummarySocialHistorySection2", "WARNING");
 
 		if (VALIDATE_TRANSFER_SUMMARY_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1721,6 +1774,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryVitalSignsSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryVitalSignsSection2", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1785,6 +1840,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryMentalStatusSection(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryMentalStatusSection", "WARNING");
 
 		if (VALIDATE_TRANSFER_SUMMARY_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1851,6 +1908,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryGeneralStatusSection(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryGeneralStatusSection", "INFO");
+
 		if (VALIDATE_TRANSFER_SUMMARY_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1915,6 +1974,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryReviewOfSystemsSection(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryReviewOfSystemsSection", "INFO");
 
 		if (VALIDATE_TRANSFER_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1981,6 +2042,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryNutritionSection(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryNutritionSection", "WARNING");
+
 		if (VALIDATE_TRANSFER_SUMMARY_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2044,6 +2107,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryReasonForReferralSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryReasonForReferralSection2", "ERROR");
 
 		if (VALIDATE_TRANSFER_SUMMARY_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2110,6 +2175,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryHistoryOfPastIllnessSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryHistoryOfPastIllnessSection2", "INFO");
+
 		if (VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2174,6 +2241,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryHistoryOfPresentIllnessSection(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryHistoryOfPresentIllnessSection", "WARNING");
 
 		if (VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2240,6 +2309,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryAssessmentAndPlanSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryAssessmentAndPlanSection2", "INFO");
+
 		if (VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2304,6 +2375,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryAssessmentSection(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryAssessmentSection", "INFO");
 
 		if (VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2370,6 +2443,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryDischargeDiagnosisSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryDischargeDiagnosisSection2", "WARNING");
+
 		if (VALIDATE_TRANSFER_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2434,6 +2509,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryAdmissionMedicationsSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_TRANSFER_SUMMARY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2501,6 +2579,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryAdmissionDiagnosisSection2(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryAdmissionDiagnosisSection2", "INFO");
+
 		if (VALIDATE_TRANSFER_SUMMARY_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2566,6 +2646,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryCourseOfCareSection(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryCourseOfCareSection", "INFO");
+
 		if (VALIDATE_TRANSFER_SUMMARY_COURSE_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2630,6 +2712,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName", "ERROR");
 
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2701,6 +2786,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantSupportAssociatedEntityClassCodeP(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryParticipantSupportAssociatedEntityClassCodeP", "ERROR");
 
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2789,6 +2877,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryParticipantSupportAssociatedEntityClassCode(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryParticipantSupportAssociatedEntityClassCode", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2870,6 +2961,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2941,6 +3035,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryParticipantSupportTypeCode(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryParticipantSupportTypeCode", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3010,6 +3106,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantSupportAssociatedEntity(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryParticipantSupportAssociatedEntity", "ERROR");
 
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3082,6 +3180,10 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName",
+			"ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3152,6 +3254,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityClassCode(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityClassCode", "ERROR");
 
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3224,6 +3329,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityId(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityId", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3294,6 +3402,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityAddr(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAddr", "WARNING");
 
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3366,6 +3477,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityTelecom(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityTelecom", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3436,6 +3550,10 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson",
+			"ERROR");
 
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3508,6 +3626,10 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization",
+			"INFO");
+
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3578,6 +3700,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantCallbackContactTypeCode(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryParticipantCallbackContactTypeCode", "ERROR");
 
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3650,6 +3774,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntity(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntity", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3721,6 +3848,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryDocumentationOfServiceEventPerformerTypeCode(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerTypeCode", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3791,6 +3921,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP", "INFO");
 
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3879,6 +4012,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCode(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerFunctionCode", "WARNING");
+
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3960,6 +4096,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryDocumentationOfServiceEventClassCode(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryDocumentationOfServiceEventClassCode", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4030,6 +4168,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryDocumentationOfServiceEventCode(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryDocumentationOfServiceEventCode", "INFO");
 
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4102,6 +4242,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	public static boolean validateTransferSummaryDocumentationOfServiceEventPerformer1(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "TransferSummaryTransferSummaryDocumentationOfServiceEventPerformer1", "ERROR");
+
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4172,6 +4315,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryDocumentationOfServiceEvent(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryTransferSummaryDocumentationOfServiceEvent", "ERROR");
 
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5559,6 +5704,8 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateUSRealmHeader2TemplateId(TransferSummary transferSummary, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TransferSummaryUSRealmHeader2TemplateId", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SupplyOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -106,6 +107,8 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	public static boolean validateMedicationSupplyOrderInstructionInversionInd(
 			MedicationSupplyOrder medicationSupplyOrder, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationSupplyOrderMedicationSupplyOrderInstructionInversionInd", "ERROR");
+
 		if (VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -172,6 +175,8 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	public static boolean validateMedicationSupplyOrderEffectiveTimeHigh(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationSupplyOrderMedicationSupplyOrderEffectiveTimeHigh", "ERROR");
+
 		if (VALIDATE_MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -236,6 +241,9 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 
 	public static boolean validateMedicationSupplyOrderContainsMedicationOrImmunization(
 			MedicationSupplyOrder medicationSupplyOrder, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MedicationSupplyOrderMedicationSupplyOrderContainsMedicationOrImmunization", "ERROR");
 
 		if (VALIDATE_MEDICATION_SUPPLY_ORDER_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -303,6 +311,8 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	public static boolean validateMedicationSupplyOrderTemplateId(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationSupplyOrderMedicationSupplyOrderTemplateId", "ERROR");
+
 		if (VALIDATE_MEDICATION_SUPPLY_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -368,6 +378,8 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	public static boolean validateMedicationSupplyOrderClassCode(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationSupplyOrderMedicationSupplyOrderClassCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_SUPPLY_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -411,6 +423,8 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 
 	public static boolean validateMedicationSupplyOrderEffectiveTime(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationSupplyOrderMedicationSupplyOrderEffectiveTime", "WARNING");
 
 		if (VALIDATE_MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -477,6 +491,8 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	public static boolean validateMedicationSupplyOrderMoodCode(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationSupplyOrderMedicationSupplyOrderMoodCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_SUPPLY_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -519,6 +535,8 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 
 	public static boolean validateMedicationSupplyOrderQuantity(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationSupplyOrderMedicationSupplyOrderQuantity", "WARNING");
 
 		if (VALIDATE_MEDICATION_SUPPLY_ORDER_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -563,6 +581,8 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	public static boolean validateMedicationSupplyOrderRepeatNumber(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationSupplyOrderMedicationSupplyOrderRepeatNumber", "WARNING");
+
 		if (VALIDATE_MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -606,6 +626,8 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 
 	public static boolean validateMedicationSupplyOrderStatusCode(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationSupplyOrderMedicationSupplyOrderStatusCode", "ERROR");
 
 		if (VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -756,6 +778,8 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	public static boolean validateMedicationSupplyOrderId(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationSupplyOrderMedicationSupplyOrderId", "ERROR");
+
 		if (VALIDATE_MEDICATION_SUPPLY_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -818,6 +842,8 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 
 	public static boolean validateMedicationSupplyOrderAuthor(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationSupplyOrderMedicationSupplyOrderAuthor", "INFO");
 
 		if (VALIDATE_MEDICATION_SUPPLY_ORDER_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -882,6 +908,8 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 
 	public static boolean validateMedicationSupplyOrderInstructions(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationSupplyOrderMedicationSupplyOrderInstructions", "INFO");
 
 		if (VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

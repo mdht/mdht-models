@@ -10,6 +10,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -155,6 +156,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2CodeP(ContinuityOfCareDocument2 continuityOfCareDocument2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ContinuityOfCareDocument2ContinuityOfCareDocument2CodeP", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -243,6 +246,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ContinuityOfCareDocument2ContinuityOfCareDocument2Code", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -306,6 +311,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 
 	public static boolean validateContinuityOfCareDocument2Author(ContinuityOfCareDocument2 continuityOfCareDocument2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ContinuityOfCareDocument2ContinuityOfCareDocument2Author", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -372,6 +379,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2DocumentationOf(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOf", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -440,6 +449,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2AllergiesSection2", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -506,6 +518,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2MedicationsSection2(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2MedicationsSection2", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -574,6 +589,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ContinuityOfCareDocument2ContinuityOfCareDocument2ProblemSection2", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -640,6 +657,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2ProceduresSection2(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2ProceduresSection2", "WARNING");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -708,6 +728,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ContinuityOfCareDocument2ContinuityOfCareDocument2ResultsSection2", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -774,6 +796,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2",
+			"INFO");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -842,6 +868,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2EncountersSectionEntriesOptional2", "INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -908,6 +937,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2FunctionalStatusSection2(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2FunctionalStatusSection2", "INFO");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -976,6 +1008,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2ImmunizationsSection2", "INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1042,6 +1077,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2MedicalEquipmentSection2(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2MedicalEquipmentSection2", "INFO");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1110,6 +1148,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ContinuityOfCareDocument2ContinuityOfCareDocument2PayersSection2", "INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1176,6 +1216,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2PlanOfTreatmentSection2(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2PlanOfTreatmentSection2", "WARNING");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1244,6 +1287,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2SocialHistorySection2", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1310,6 +1356,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2VitalSignsSection2(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2VitalSignsSection2", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1378,6 +1427,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2MentalStatusSection", "INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1444,6 +1496,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2NutritionSection(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ContinuityOfCareDocument2ContinuityOfCareDocument2NutritionSection", "INFO");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1512,6 +1566,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2FamilyHistorySection2", "INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1578,6 +1635,11 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ContinuityOfCareDocument2ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization",
+			"ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1651,6 +1713,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization",
+			"ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1722,6 +1788,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2AuthorAssignedAuthor(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2AuthorAssignedAuthor", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1795,6 +1864,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1866,6 +1938,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1939,6 +2014,11 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier",
+			"WARNING");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2010,6 +2090,11 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId",
+			"ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2083,6 +2168,11 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson",
+			"INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2154,6 +2244,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode",
+			"ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2227,6 +2321,11 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity",
+			"INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2298,6 +2397,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2DocumentationOfServiceEventClassCode(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventClassCode", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2371,6 +2473,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime",
+			"ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2443,6 +2549,10 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformer",
+			"WARNING");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2514,6 +2624,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	public static boolean validateContinuityOfCareDocument2DocumentationOfServiceEvent(
 			ContinuityOfCareDocument2 continuityOfCareDocument2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEvent", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3357,6 +3470,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 
 	public static boolean validateUSRealmHeader2TemplateId(ContinuityOfCareDocument2 continuityOfCareDocument2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ContinuityOfCareDocument2USRealmHeader2TemplateId", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

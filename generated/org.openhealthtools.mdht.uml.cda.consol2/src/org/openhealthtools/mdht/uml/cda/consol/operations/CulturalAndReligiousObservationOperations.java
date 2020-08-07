@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -97,6 +98,10 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CulturalAndReligiousObservationCulturalAndReligiousObservationValueOfTypeCDIsFromSnomed",
+			"ERROR");
+
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -163,6 +168,9 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationTemplateId(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CulturalAndReligiousObservationCulturalAndReligiousObservationTemplateId", "ERROR");
 
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -231,6 +239,9 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CulturalAndReligiousObservationCulturalAndReligiousObservationClassCode", "ERROR");
+
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -297,6 +308,9 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationMoodCode(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CulturalAndReligiousObservationCulturalAndReligiousObservationMoodCode", "ERROR");
 
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -365,6 +379,8 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CulturalAndReligiousObservationCulturalAndReligiousObservationId", "ERROR");
+
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -431,6 +447,9 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationCodeP(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CulturalAndReligiousObservationCulturalAndReligiousObservationCodeP", "ERROR");
 
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -524,6 +543,8 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "CulturalAndReligiousObservationCulturalAndReligiousObservationCode", "ERROR");
+
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -592,6 +613,9 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CulturalAndReligiousObservationCulturalAndReligiousObservationStatusCode", "ERROR");
+
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -659,6 +683,9 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "CulturalAndReligiousObservationCulturalAndReligiousObservationStatusCodeP", "ERROR");
+
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -725,6 +752,9 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationValue(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CulturalAndReligiousObservationCulturalAndReligiousObservationValue", "ERROR");
 
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

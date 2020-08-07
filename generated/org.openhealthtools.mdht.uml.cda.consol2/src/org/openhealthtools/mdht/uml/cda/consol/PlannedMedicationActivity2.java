@@ -2,15 +2,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
@@ -36,7 +32,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->size() = 1 xor self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::SXCM_TS))->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime-&gt;select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))-&gt;size() = 1 xor self.effectiveTime-&gt;select(ef | ef.oclIsTypeOf(datatypes::SXCM_TS))-&gt;size() = 1'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2EffectiveTimeIVLTSorTS(DiagnosticChain diagnostics,
@@ -49,7 +45,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).low->size() = 1)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime-&gt;select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))-&gt;forAll( eff | eff.oclAsType(datatypes::IVL_TS).low-&gt;size() = 1)'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2EffectiveTimeIVLTSLow(DiagnosticChain diagnostics,
@@ -62,7 +58,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).high->size() = 1)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime-&gt;select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))-&gt;forAll( eff | eff.oclAsType(datatypes::IVL_TS).high-&gt;size() = 1)'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2EffectiveTimeIVLTSHigh(DiagnosticChain diagnostics,
@@ -75,7 +71,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='( self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).low->size() = 1) )  and  ( self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::SXCM_TS))->forAll( eff | eff.oclAsType(datatypes:: SXCM_TS).value->size() = 1 or eff.oclAsType(datatypes::SXCM_TS).isNullFlavorDefined()) )'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='( self.effectiveTime-&gt;select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))-&gt;forAll( eff | eff.oclAsType(datatypes::IVL_TS).low-&gt;size() = 1) )  and  ( self.effectiveTime-&gt;select(ef | ef.oclIsTypeOf(datatypes::SXCM_TS))-&gt;forAll( eff | eff.oclAsType(datatypes:: SXCM_TS).value-&gt;size() = 1 or eff.oclAsType(datatypes::SXCM_TS).isNullFlavorDefined()) )'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2EffectiveTimeIVLTSLowXorValue(DiagnosticChain diagnostics,
@@ -88,7 +84,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::PIVL_TS) or ef.oclIsTypeOf(datatypes::EIVL_TS))->size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime-&gt;select(ef | ef.oclIsTypeOf(datatypes::PIVL_TS) or ef.oclIsTypeOf(datatypes::EIVL_TS))-&gt;size() = 1'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2EffectiveTimePIVLTS(DiagnosticChain diagnostics,
@@ -101,7 +97,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.42\' and id.extension.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.42\' and id.extension.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -173,7 +169,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode-&gt;isEmpty() or self.approachSiteCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode-&gt;isEmpty())'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2ApproachSiteCodeP(DiagnosticChain diagnostics,
@@ -186,7 +182,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode-&gt;isEmpty() or self.approachSiteCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2ApproachSiteCode(DiagnosticChain diagnostics,
@@ -261,7 +257,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer-&gt;exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2Performer(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -273,7 +269,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author-&gt;one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2AuthorParticipation(DiagnosticChain diagnostics,
@@ -286,7 +282,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2PriorityPreference(DiagnosticChain diagnostics,
@@ -299,7 +295,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::Indication2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::Indication2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2Indication2(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -311,7 +307,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::Instruction2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::Instruction2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2Instruction2(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -323,7 +319,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(cda::Consumable))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable-&gt;one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(cda::Consumable))'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2Consumable(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -335,7 +331,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->exists(precondition : cda::Precondition | not precondition.oclIsUndefined() and precondition.oclIsKindOf(cda::Precondition))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition-&gt;exists(precondition : cda::Precondition | not precondition.oclIsUndefined() and precondition.oclIsKindOf(cda::Precondition))'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2Precondition(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -347,7 +343,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.priorityCode->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (not translation->isEmpty()) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.priorityCode-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies ((translation-&gt;isEmpty() or translation-&gt;exists(element | element.isNullFlavorUndefined())) implies (not translation-&gt;isEmpty()) )))'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2CETranslationP(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -359,7 +355,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.priorityCode->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined())) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.priorityCode-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies ((translation-&gt;isEmpty() or translation-&gt;exists(element | element.isNullFlavorUndefined())) implies (translation-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined())) )))'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2CETranslation(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -371,7 +367,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.doseQuantity->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not unit.oclIsUndefined() )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.doseQuantity-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not unit.oclIsUndefined() )))'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2IVLPQdoseQuantityUnit(DiagnosticChain diagnostics,
@@ -384,7 +380,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.doseQuantity->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not unit.oclIsUndefined() )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.doseQuantity-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not unit.oclIsUndefined() )))'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2IVLPQrateQuantityUnit(DiagnosticChain diagnostics,
@@ -397,7 +393,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable->excluding(null)->reject(manufacturedProduct->one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(consol::MedicationInformation2)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable-&gt;excluding(null)-&gt;reject(manufacturedProduct-&gt;one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(consol::MedicationInformation2)))'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2ConsumableMedicationInformation2(DiagnosticChain diagnostics,
@@ -410,7 +406,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->excluding(null)->reject(isDefined(\'typeCode\') and typeCode=vocab::ActRelationshipType::PRCN)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition-&gt;excluding(null)-&gt;reject(isDefined(\'typeCode\') and typeCode=vocab::ActRelationshipType::PRCN)'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2PreconditionTypeCode(DiagnosticChain diagnostics,
@@ -423,7 +419,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->excluding(null)->reject(criterion->one(criterion : cda::Criterion | not criterion.oclIsUndefined() and criterion.oclIsKindOf(consol::PreconditionForSubstanceAdministration2)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition-&gt;excluding(null)-&gt;reject(criterion-&gt;one(criterion : cda::Criterion | not criterion.oclIsUndefined() and criterion.oclIsKindOf(consol::PreconditionForSubstanceAdministration2)))'"
 	 * @generated
 	 */
 	boolean validatePlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2(
@@ -433,7 +429,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)).oclAsType(consol::PriorityPreference)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()-&gt;select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)).oclAsType(consol::PriorityPreference)'"
 	 * @generated
 	 */
 	EList<PriorityPreference> getPriorityPreferences();
@@ -442,7 +438,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication2)).oclAsType(consol::Indication2)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()-&gt;select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication2)).oclAsType(consol::Indication2)'"
 	 * @generated
 	 */
 	EList<Indication2> getIndication2s();
@@ -451,7 +447,7 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instruction2)).oclAsType(consol::Instruction2)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()-&gt;select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instruction2)).oclAsType(consol::Instruction2)'"
 	 * @generated
 	 */
 	EList<Instruction2> getInstruction2s();

@@ -21,6 +21,7 @@ import org.eclipse.mdht.uml.cda.ClinicalDocument;
 import org.eclipse.mdht.uml.cda.internal.resource.CDAResource;
 import org.eclipse.mdht.uml.cda.util.CDAUtil;
 import org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationHandler;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil.ValidationStatistics;
 
 /**
  * @author seanmuir
@@ -54,6 +55,24 @@ public class DS4PUtil {
 				if (diagnostic.getMessage() != null && diagnostic.getMessage().startsWith(CONTENTPROFILE)) {
 					handler.handleInfo(diagnostic);
 				}
+			}
+
+			@Override
+			public boolean isCaptureValidationStatistics() {
+				// TODO Auto-generated method stub
+				return false;
+			}
+
+			@Override
+			public ValidationStatistics getValidationStatistics() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+
+			@Override
+			public void setValidationStatistics(ValidationStatistics validationStatistics) {
+				// TODO Auto-generated method stub
+
 			}
 
 		};

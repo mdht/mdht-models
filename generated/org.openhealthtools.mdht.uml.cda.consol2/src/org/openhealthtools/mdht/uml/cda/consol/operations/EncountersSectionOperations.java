@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -100,6 +101,8 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 
 	public static boolean validateEncountersSectionEncounterActivities(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EncountersSectionEncountersSectionEncounterActivities", "ERROR");
 
 		if (VALIDATE_ENCOUNTERS_SECTION_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -214,6 +217,8 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 	public static boolean validateEncountersSectionEntriesOptionalTemplateId(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "EncountersSectionEncountersSectionEntriesOptionalTemplateId", "ERROR");
+
 		if (VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -278,6 +283,8 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 
 	public static boolean validateEncountersSectionEntriesOptionalCodeP(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EncountersSectionEncountersSectionEntriesOptionalCodeP", "ERROR");
 
 		if (VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -368,6 +375,8 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "EncountersSectionEncountersSectionEntriesOptionalCode", "ERROR");
+
 		if (VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -433,6 +442,8 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 	public static boolean validateEncountersSectionEntriesOptionalText(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "EncountersSectionEncountersSectionEntriesOptionalText", "ERROR");
+
 		if (VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -497,6 +508,8 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 
 	public static boolean validateEncountersSectionEntriesOptionalTitle(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EncountersSectionEncountersSectionEntriesOptionalTitle", "ERROR");
 
 		if (VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

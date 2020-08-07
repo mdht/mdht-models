@@ -7,6 +7,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -81,6 +82,9 @@ public class PhysicianReadingStudyPerformer2Operations extends PhysicianReadingS
 	public static boolean validatePhysicianReadingStudyPerformer2TemplateId(
 			PhysicianReadingStudyPerformer2 physicianReadingStudyPerformer2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PhysicianReadingStudyPerformer2PhysicianReadingStudyPerformer2TemplateId", "ERROR");
 
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

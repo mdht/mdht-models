@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -109,6 +110,9 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationTemplateId", "ERROR");
+
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -175,6 +179,9 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 	public static boolean validateNumberOfPressureUlcersObservationClassCode(
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationClassCode", "ERROR");
 
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -243,6 +250,9 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationMoodCode", "ERROR");
+
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -310,6 +320,9 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationId", "ERROR");
+
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -376,6 +389,9 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 	public static boolean validateNumberOfPressureUlcersObservationCodeP(
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationCodeP", "ERROR");
 
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -469,6 +485,9 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 			return true;
 		}
 
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationCode", "ERROR");
+
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -537,6 +556,9 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationStatusCode", "ERROR");
+
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -603,6 +625,9 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 	public static boolean validateNumberOfPressureUlcersObservationStatusCodeP(
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationStatusCodeP", "ERROR");
 
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -671,6 +696,9 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEffectiveTime", "ERROR");
+
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -737,6 +765,9 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 	public static boolean validateNumberOfPressureUlcersObservationValue(
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationValue", "ERROR");
 
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -805,6 +836,9 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationAuthor", "INFO");
+
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -872,6 +906,9 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationship", "ERROR");
+
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -938,6 +975,11 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 	public static boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode(
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode",
+			"ERROR");
 
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1010,6 +1052,11 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 	public static boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode(
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode",
+			"ERROR");
 
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1085,6 +1132,11 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservationValue",
+			"WARNING");
+
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1156,6 +1208,11 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 	public static boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationValueP(
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservationValueP",
+			"ERROR");
 
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1229,6 +1286,10 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipTypeCode",
+			"ERROR");
+
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1300,6 +1361,10 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 	public static boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservation(
 			NumberOfPressureUlcersObservation numberOfPressureUlcersObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservation",
+			"ERROR");
 
 		if (VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

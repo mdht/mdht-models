@@ -18,6 +18,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -180,6 +181,10 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ConsultationNoteConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections",
+			"ERROR");
+
 		if (VALIDATE_CONSULTATION_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -245,6 +250,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ConsultationNoteConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent",
+			"ERROR");
 
 		if (VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -312,6 +322,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ConsultationNoteConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection",
+			"ERROR");
+
 		if (VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -378,6 +393,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteHasReasonForReferralOrReasonForVisit(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ConsultationNoteConsultationNoteHasReasonForReferralOrReasonForVisit", "ERROR");
+
 		if (VALIDATE_CONSULTATION_NOTE_HAS_REASON_FOR_REFERRAL_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -443,6 +461,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateGeneralHeaderConstraintsCodeP(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ConsultationNoteGeneralHeaderConstraintsCodeP", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -520,6 +540,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteComponentOf(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteComponentOf", "ERROR");
+
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -582,6 +604,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteAssessmentSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteAssessmentSection", "INFO");
 
 		if (VALIDATE_CONSULTATION_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -648,6 +672,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteAssessmentAndPlanSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteAssessmentAndPlanSection", "INFO");
+
 		if (VALIDATE_CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -712,6 +738,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNotePlanOfCareSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNotePlanOfCareSection", "INFO");
 
 		if (VALIDATE_CONSULTATION_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -778,6 +806,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteHistoryOfPresentIllness(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteHistoryOfPresentIllness", "ERROR");
+
 		if (VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -842,6 +872,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNotePhysicalExamSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNotePhysicalExamSection", "WARNING");
 
 		if (VALIDATE_CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -908,6 +940,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteReasonForReferralSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteReasonForReferralSection", "INFO");
+
 		if (VALIDATE_CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -972,6 +1006,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteReasonForVisitSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteReasonForVisitSection", "INFO");
 
 		if (VALIDATE_CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1038,6 +1074,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteAllergiesSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteAllergiesSection", "INFO");
+
 		if (VALIDATE_CONSULTATION_NOTE_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1103,6 +1141,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteChiefComplaintSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteChiefComplaintSection", "INFO");
+
 		if (VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1167,6 +1207,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteChiefComplaintAndReasonForVisitSection(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ConsultationNoteConsultationNoteChiefComplaintAndReasonForVisitSection", "INFO");
 
 		if (VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1234,6 +1277,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteFamilyHistorySection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteFamilyHistorySection", "INFO");
+
 		if (VALIDATE_CONSULTATION_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1298,6 +1343,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteGeneralStatusSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteGeneralStatusSection", "INFO");
 
 		if (VALIDATE_CONSULTATION_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1364,6 +1411,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteHistoryOfPastIllnessSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteHistoryOfPastIllnessSection", "INFO");
+
 		if (VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1429,6 +1478,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteImmunizationsSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteImmunizationsSection", "INFO");
+
 		if (VALIDATE_CONSULTATION_NOTE_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1493,6 +1544,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteMedicationsSectionEntriesOptional(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteMedicationsSectionEntriesOptional", "INFO");
 
 		if (VALIDATE_CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1560,6 +1613,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteProblemSectionEntriesOptional(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteProblemSectionEntriesOptional", "INFO");
+
 		if (VALIDATE_CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1625,6 +1680,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteProceduresSectionEntriesOptional(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteProceduresSectionEntriesOptional", "INFO");
 
 		if (VALIDATE_CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1692,6 +1749,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteResultsSectionEntriesOptional(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteResultsSectionEntriesOptional", "INFO");
+
 		if (VALIDATE_CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1758,6 +1817,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteReviewOfSystemsSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteReviewOfSystemsSection", "INFO");
+
 		if (VALIDATE_CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1823,6 +1884,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteSocialHistorySection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteSocialHistorySection", "INFO");
+
 		if (VALIDATE_CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1887,6 +1950,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteVitalSignsSectionEntriesOptional(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteVitalSignsSectionEntriesOptional", "INFO");
 
 		if (VALIDATE_CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1954,6 +2019,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteInFulfillmentOf(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteInFulfillmentOf", "ERROR");
+
 		if (VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2018,6 +2085,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth",
+			"ERROR");
 
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2090,6 +2162,10 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2160,6 +2236,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth",
+			"ERROR");
 
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2232,6 +2313,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2302,6 +2388,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay", "ERROR");
 
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2374,6 +2463,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute", "WARNING");
+
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2444,6 +2536,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond", "INFO");
 
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2516,6 +2611,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset",
+			"WARNING");
+
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2586,6 +2686,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EffectiveTime", "ERROR");
 
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2658,6 +2761,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2Id(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2Id", "ERROR");
+
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2728,6 +2834,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty", "INFO");
 
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2800,6 +2909,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant", "INFO");
+
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2870,6 +2982,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteComponentOfEncompassingEncounter", "ERROR");
 
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2942,6 +3056,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateConsultationNoteInFulfillmentOfOrderId(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteInFulfillmentOfOrderId", "ERROR");
+
 		if (VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3011,6 +3127,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteInFulfillmentOfOrder(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ConsultationNoteConsultationNoteInFulfillmentOfOrder", "ERROR");
 
 		if (VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4040,6 +4158,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static boolean validateGeneralHeaderConstraintsTemplateId(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ConsultationNoteGeneralHeaderConstraintsTemplateId", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4114,6 +4234,8 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "ConsultationNoteGeneralHeaderConstraintsCode", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

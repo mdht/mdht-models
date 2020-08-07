@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -113,6 +114,9 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateOutcomeObservationProgTowardGoalObsInversionIndIsTrue(
 			OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "OutcomeObservationOutcomeObservationProgTowardGoalObsInversionIndIsTrue", "ERROR");
+
 		if (VALIDATE_OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -179,6 +183,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateOutcomeObservationTemplateId(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OutcomeObservationOutcomeObservationTemplateId", "ERROR");
+
 		if (VALIDATE_OUTCOME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -241,6 +247,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationClassCode(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OutcomeObservationOutcomeObservationClassCode", "ERROR");
 
 		if (VALIDATE_OUTCOME_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -305,6 +313,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateOutcomeObservationMoodCode(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OutcomeObservationOutcomeObservationMoodCode", "ERROR");
+
 		if (VALIDATE_OUTCOME_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -368,6 +378,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateOutcomeObservationId(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OutcomeObservationOutcomeObservationId", "ERROR");
+
 		if (VALIDATE_OUTCOME_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -430,6 +442,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationCodeP(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OutcomeObservationOutcomeObservationCodeP", "ERROR");
 
 		if (VALIDATE_OUTCOME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -517,6 +531,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "OutcomeObservationOutcomeObservationCode", "WARNING");
+
 		if (VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -580,6 +596,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateOutcomeObservationValue(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OutcomeObservationOutcomeObservationValue", "WARNING");
+
 		if (VALIDATE_OUTCOME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -642,6 +660,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationEntryReferenceGoalObs(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OutcomeObservationOutcomeObservationEntryReferenceGoalObs", "WARNING");
 
 		if (VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -707,6 +727,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationEntryReferenceInterventionAct(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OutcomeObservationOutcomeObservationEntryReferenceInterventionAct", "INFO");
 
 		if (VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -774,6 +796,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateOutcomeObservationAuthorParticipation(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OutcomeObservationOutcomeObservationAuthorParticipation", "WARNING");
+
 		if (VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -838,6 +862,9 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationProgressTowardGoalObservation(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "OutcomeObservationOutcomeObservationProgressTowardGoalObservation", "WARNING");
 
 		if (VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -905,6 +932,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateOutcomeObservationReference(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OutcomeObservationOutcomeObservationReference", "INFO");
+
 		if (VALIDATE_OUTCOME_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -967,6 +996,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationEntryRelationship(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OutcomeObservationOutcomeObservationEntryRelationship", "ERROR");
 
 		if (VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1032,6 +1063,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOutcomeObservationReferenceTypeCode(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OutcomeObservationOutcomeObservationReferenceTypeCode", "ERROR");
 
 		if (VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1102,6 +1135,9 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOutcomeObservationReferenceExternalDocumentReference(
 			OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "OutcomeObservationOutcomeObservationReferenceExternalDocumentReference", "ERROR");
 
 		if (VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

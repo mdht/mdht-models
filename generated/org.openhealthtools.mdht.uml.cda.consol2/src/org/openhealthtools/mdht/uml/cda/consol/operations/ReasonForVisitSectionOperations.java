@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,8 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 	public static boolean validateReasonForVisitSectionTemplateId(ReasonForVisitSection reasonForVisitSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReasonForVisitSectionReasonForVisitSectionTemplateId", "ERROR");
+
 		if (VALIDATE_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -161,6 +164,8 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 	public static boolean validateReasonForVisitSectionCode(ReasonForVisitSection reasonForVisitSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReasonForVisitSectionReasonForVisitSectionCode", "ERROR");
+
 		if (VALIDATE_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -224,6 +229,8 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 
 	public static boolean validateReasonForVisitSectionCodeP(ReasonForVisitSection reasonForVisitSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReasonForVisitSectionReasonForVisitSectionCodeP", "ERROR");
 
 		if (VALIDATE_REASON_FOR_VISIT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -289,6 +296,8 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 	public static boolean validateReasonForVisitSectionText(ReasonForVisitSection reasonForVisitSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReasonForVisitSectionReasonForVisitSectionText", "ERROR");
+
 		if (VALIDATE_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -352,6 +361,8 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 
 	public static boolean validateReasonForVisitSectionTitle(ReasonForVisitSection reasonForVisitSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReasonForVisitSectionReasonForVisitSectionTitle", "ERROR");
 
 		if (VALIDATE_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -24,6 +24,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.SubstanceAdministrationOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -133,6 +134,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityTemplateId", "ERROR");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -200,6 +203,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityClassCode", "ERROR");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -266,6 +271,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	public static boolean validatePlannedImmunizationActivityMoodCodeP(
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityMoodCodeP", "ERROR");
 
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -358,6 +365,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityMoodCode", "ERROR");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -424,6 +433,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	public static boolean validatePlannedImmunizationActivityId(PlannedImmunizationActivity plannedImmunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityId", "ERROR");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -489,6 +500,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	public static boolean validatePlannedImmunizationActivityStatusCode(
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityStatusCode", "ERROR");
 
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -557,6 +570,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityStatusCodeP", "ERROR");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -623,6 +638,9 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	public static boolean validatePlannedImmunizationActivityEffectiveTime(
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PlannedImmunizationActivityPlannedImmunizationActivityEffectiveTime", "ERROR");
 
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -691,6 +709,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityRepeatNumber", "INFO");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -757,6 +777,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	public static boolean validatePlannedImmunizationActivityRouteCodeP(
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityRouteCodeP", "INFO");
 
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -849,6 +871,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityRouteCode", "ERROR");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -902,6 +926,9 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(
+			context, "PlannedImmunizationActivityPlannedImmunizationActivityApproachSiteCode", "ERROR");
 
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -993,6 +1020,9 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PlannedImmunizationActivityPlannedImmunizationActivityApproachSiteCodeP", "INFO");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1075,6 +1105,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityDoseQuantity", "INFO");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1141,6 +1173,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	public static boolean validatePlannedImmunizationActivityPerformer(
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityPerformer", "INFO");
 
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1209,6 +1243,9 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PlannedImmunizationActivityPlannedImmunizationActivityAuthorParticipation", "INFO");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1275,6 +1312,9 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	public static boolean validatePlannedImmunizationActivityPriorityPreference(
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PlannedImmunizationActivityPlannedImmunizationActivityPriorityPreference", "INFO");
 
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1343,6 +1383,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityIndication2", "INFO");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1409,6 +1451,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	public static boolean validatePlannedImmunizationActivityInstruction2(
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityInstruction2", "INFO");
 
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1477,6 +1521,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityPrecondition", "INFO");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1544,6 +1590,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityConsumable", "ERROR");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1610,6 +1658,9 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	public static boolean validatePlannedImmunizationActivityCETranslationP(
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PlannedImmunizationActivityPlannedImmunizationActivityCETranslationP", "WARNING");
 
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1699,6 +1750,9 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PlannedImmunizationActivityPlannedImmunizationActivityCETranslation", "ERROR");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1780,6 +1834,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedImmunizationActivityPlannedImmunizationActivityIVLPQUnit", "WARNING");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1851,6 +1907,11 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	public static boolean validatePlannedImmunizationActivityConsumableImmunizationMedicationInformation2(
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"PlannedImmunizationActivityPlannedImmunizationActivityConsumableImmunizationMedicationInformation2",
+			"ERROR");
 
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1924,6 +1985,9 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PlannedImmunizationActivityPlannedImmunizationActivityPreconditionTypeCode", "ERROR");
+
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1995,6 +2059,11 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	public static boolean validatePlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2(
 			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"PlannedImmunizationActivityPlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2",
+			"ERROR");
 
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

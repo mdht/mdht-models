@@ -18,6 +18,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -158,6 +159,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentCodeP(ContinuityOfCareDocument continuityOfCareDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentContinuityOfCareDocumentCodeP", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -246,6 +249,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentContinuityOfCareDocumentCode", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -310,6 +315,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentLanguageCode(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentContinuityOfCareDocumentLanguageCode", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -377,6 +384,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOf", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -443,6 +452,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentAuthor(ContinuityOfCareDocument continuityOfCareDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentContinuityOfCareDocumentAuthor", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -508,6 +519,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentAllergiesSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentContinuityOfCareDocumentAllergiesSection", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -576,6 +589,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentContinuityOfCareDocumentMedicationsSection", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -642,6 +657,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentProblemSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentContinuityOfCareDocumentProblemSection", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -710,6 +727,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentContinuityOfCareDocumentProceduresSection", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -776,6 +795,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentResultsSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentContinuityOfCareDocumentResultsSection", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -844,6 +865,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentAdvanceDirectivesSection", "INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -910,6 +934,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentEncountersSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentContinuityOfCareDocumentEncountersSection", "INFO");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -978,6 +1004,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentFamilyHistorySection", "INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1044,6 +1073,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentFunctionalStatusSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentFunctionalStatusSection", "INFO");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1112,6 +1144,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentImmunizationsSectionEntriesOptional", "INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1178,6 +1213,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentMedicalEquipmentSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentMedicalEquipmentSection", "INFO");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1246,6 +1284,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentContinuityOfCareDocumentPayersSection", "INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1312,6 +1352,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentPlanOfCareSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentContinuityOfCareDocumentPlanOfCareSection", "INFO");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1380,6 +1422,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentSocialHistorySection", "INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1447,6 +1492,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentVitalSignsSectionEntriesOptional", "INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1513,6 +1561,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh",
+			"ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1586,6 +1638,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow",
+			"ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1657,6 +1713,11 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier",
+			"WARNING");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1732,6 +1793,11 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode",
+			"INFO");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1803,6 +1869,11 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId",
+			"ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1876,6 +1947,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode",
+			"ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1947,6 +2022,11 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity",
+			"INFO");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2020,6 +2100,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventClassCode", "ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2091,6 +2174,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime",
+			"ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2164,6 +2251,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEventPerformer", "WARNING");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2235,6 +2325,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentDocumentationOfServiceEvent(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentDocumentationOfServiceEvent", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2308,6 +2401,11 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ContinuityOfCareDocumentContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization",
+			"ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2380,6 +2478,10 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization",
+			"ERROR");
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2451,6 +2553,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	public static boolean validateContinuityOfCareDocumentAuthorAssignedAuthor(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ContinuityOfCareDocumentContinuityOfCareDocumentAuthorAssignedAuthor", "ERROR");
 
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3204,6 +3309,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 
 	public static boolean validateGeneralHeaderConstraintsTemplateId(ContinuityOfCareDocument continuityOfCareDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ContinuityOfCareDocumentGeneralHeaderConstraintsTemplateId", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

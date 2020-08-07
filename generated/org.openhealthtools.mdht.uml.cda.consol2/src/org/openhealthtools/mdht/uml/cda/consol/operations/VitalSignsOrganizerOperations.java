@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.OrganizerOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -106,6 +107,8 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	public static boolean validateVitalSignsOrganizerTemplateId(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "VitalSignsOrganizerVitalSignsOrganizerTemplateId", "ERROR");
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -169,6 +172,8 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateVitalSignsOrganizerClassCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignsOrganizerVitalSignsOrganizerClassCode", "ERROR");
 
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -234,6 +239,8 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	public static boolean validateVitalSignsOrganizerMoodCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "VitalSignsOrganizerVitalSignsOrganizerMoodCode", "ERROR");
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -297,6 +304,8 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateVitalSignsOrganizerId(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignsOrganizerVitalSignsOrganizerId", "ERROR");
 
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -363,6 +372,8 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	public static boolean validateVitalSignsOrganizerCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "VitalSignsOrganizerVitalSignsOrganizerCode", "ERROR");
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -426,6 +437,8 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	public static boolean validateVitalSignsOrganizerCodeP(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "VitalSignsOrganizerVitalSignsOrganizerCodeP", "ERROR");
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -488,6 +501,8 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateVitalSignsOrganizerStatusCodeP(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignsOrganizerVitalSignsOrganizerStatusCodeP", "ERROR");
 
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -576,6 +591,8 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "VitalSignsOrganizerVitalSignsOrganizerStatusCode", "ERROR");
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -639,6 +656,8 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignsOrganizerVitalSignsOrganizerEffectiveTime", "ERROR");
 
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -704,6 +723,8 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateVitalSignsOrganizerVitalSignObservation(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignsOrganizerVitalSignsOrganizerVitalSignObservation", "ERROR");
 
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_VITAL_SIGN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

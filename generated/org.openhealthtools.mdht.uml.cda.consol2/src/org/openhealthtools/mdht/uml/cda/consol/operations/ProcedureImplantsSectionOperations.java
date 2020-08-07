@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,8 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 	public static boolean validateProcedureImplantsSectionTemplateId(ProcedureImplantsSection procedureImplantsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureImplantsSectionProcedureImplantsSectionTemplateId", "ERROR");
+
 		if (VALIDATE_PROCEDURE_IMPLANTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -161,6 +164,8 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 	public static boolean validateProcedureImplantsSectionCode(ProcedureImplantsSection procedureImplantsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureImplantsSectionProcedureImplantsSectionCode", "ERROR");
+
 		if (VALIDATE_PROCEDURE_IMPLANTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -224,6 +229,8 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 
 	public static boolean validateProcedureImplantsSectionCodeP(ProcedureImplantsSection procedureImplantsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureImplantsSectionProcedureImplantsSectionCodeP", "ERROR");
 
 		if (VALIDATE_PROCEDURE_IMPLANTS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -289,6 +296,8 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 	public static boolean validateProcedureImplantsSectionText(ProcedureImplantsSection procedureImplantsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureImplantsSectionProcedureImplantsSectionText", "ERROR");
+
 		if (VALIDATE_PROCEDURE_IMPLANTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -352,6 +361,8 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 
 	public static boolean validateProcedureImplantsSectionTitle(ProcedureImplantsSection procedureImplantsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureImplantsSectionProcedureImplantsSectionTitle", "ERROR");
 
 		if (VALIDATE_PROCEDURE_IMPLANTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

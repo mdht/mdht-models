@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -101,6 +102,8 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 			DICOMObjectCatalogSection dicomObjectCatalogSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DICOMObjectCatalogSectionDICOMObjectCatalogSectionTemplateId", "ERROR");
+
 		if (VALIDATE_DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -168,6 +171,8 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	public static boolean validateDICOMObjectCatalogSectionCode(DICOMObjectCatalogSection dicomObjectCatalogSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DICOMObjectCatalogSectionDICOMObjectCatalogSectionCode", "ERROR");
+
 		if (VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -231,6 +236,8 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 
 	public static boolean validateDICOMObjectCatalogSectionCodeP(DICOMObjectCatalogSection dicomObjectCatalogSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DICOMObjectCatalogSectionDICOMObjectCatalogSectionCodeP", "ERROR");
 
 		if (VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -296,6 +303,8 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 
 	public static boolean validateDICOMObjectCatalogSectionStudyAct(DICOMObjectCatalogSection dicomObjectCatalogSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DICOMObjectCatalogSectionDICOMObjectCatalogSectionStudyAct", "ERROR");
 
 		if (VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

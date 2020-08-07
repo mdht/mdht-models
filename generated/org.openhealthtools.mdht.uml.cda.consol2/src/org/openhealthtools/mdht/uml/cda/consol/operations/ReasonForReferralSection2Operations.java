@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -96,6 +97,8 @@ public class ReasonForReferralSection2Operations extends ReasonForReferralSectio
 			ReasonForReferralSection2 reasonForReferralSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReasonForReferralSection2ReasonForReferralSection2TemplateId", "ERROR");
+
 		if (VALIDATE_REASON_FOR_REFERRAL_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -161,6 +164,9 @@ public class ReasonForReferralSection2Operations extends ReasonForReferralSectio
 	public static boolean validateReasonForReferralSection2PatientReferralAct(
 			ReasonForReferralSection2 reasonForReferralSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ReasonForReferralSection2ReasonForReferralSection2PatientReferralAct", "INFO");
 
 		if (VALIDATE_REASON_FOR_REFERRAL_SECTION2_PATIENT_REFERRAL_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -277,6 +283,8 @@ public class ReasonForReferralSection2Operations extends ReasonForReferralSectio
 	public static boolean validateReasonForReferralSectionCodeP(ReasonForReferralSection2 reasonForReferralSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReasonForReferralSection2ReasonForReferralSectionCodeP", "ERROR");
+
 		if (VALIDATE_REASON_FOR_REFERRAL_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -364,6 +372,8 @@ public class ReasonForReferralSection2Operations extends ReasonForReferralSectio
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "ReasonForReferralSection2ReasonForReferralSectionCode", "ERROR");
 
 		if (VALIDATE_REASON_FOR_REFERRAL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

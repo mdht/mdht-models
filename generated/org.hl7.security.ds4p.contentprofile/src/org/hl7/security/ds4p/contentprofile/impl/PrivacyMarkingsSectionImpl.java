@@ -3,20 +3,15 @@
 package org.hl7.security.ds4p.contentprofile.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsSection;
-
 import org.hl7.security.ds4p.contentprofile.operations.PrivacyMarkingsSectionOperations;
 
 /**
@@ -102,16 +97,16 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * @generated
 	 */
 	public PrivacyMarkingsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PrivacyMarkingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PrivacyMarkingsSectionImpl

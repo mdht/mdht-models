@@ -11,6 +11,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -143,6 +144,11 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations
 			AdmissionMedicationsSectionEntriesOptional2 admissionMedicationsSectionEntriesOptional2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId",
+			"ERROR");
+
 		if (VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -209,6 +215,11 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(
 			AdmissionMedicationsSectionEntriesOptional2 admissionMedicationsSectionEntriesOptional2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalCodeP",
+			"ERROR");
 
 		if (VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -304,6 +315,11 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations
 			return true;
 		}
 
+		DatatypesUtil.increment(
+			context,
+			"AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalCode",
+			"ERROR");
+
 		if (VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -370,6 +386,11 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
 			AdmissionMedicationsSectionEntriesOptional2 admissionMedicationsSectionEntriesOptional2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication",
+			"WARNING");
 
 		if (VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

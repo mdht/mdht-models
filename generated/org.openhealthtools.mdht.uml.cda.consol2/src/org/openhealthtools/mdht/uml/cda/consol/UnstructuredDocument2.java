@@ -2,14 +2,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
@@ -37,7 +33,7 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->exists(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget-&gt;exists(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2RecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -49,7 +45,7 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->one(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian-&gt;one(custodian : cda::Custodian | not custodian.oclIsUndefined() and custodian.oclIsKindOf(cda::Custodian))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2Custodian(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -61,7 +57,7 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->one(component : cda::Component2 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component2))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component2 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component2))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2Component(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -73,7 +69,7 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->excluding(null).patientRole->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget-&gt;excluding(null).patientRole-&gt;excluding(null)-&gt;reject((id-&gt;isEmpty() or id-&gt;exists(element | element.isNullFlavorUndefined())) implies (not id-&gt;isEmpty()))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2RecordTargetPatientRoleId(DiagnosticChain diagnostics,
@@ -86,7 +82,7 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->excluding(null)->reject(patientRole->one(patientRole : cda::PatientRole | not patientRole.oclIsUndefined() and patientRole.oclIsKindOf(cda::PatientRole)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget-&gt;excluding(null)-&gt;reject(patientRole-&gt;one(patientRole : cda::PatientRole | not patientRole.oclIsUndefined() and patientRole.oclIsKindOf(cda::PatientRole)))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2RecordTargetPatientRole(DiagnosticChain diagnostics,
@@ -99,7 +95,7 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->excluding(null).assignedCustodian->excluding(null)->reject(representedCustodianOrganization->one(representedCustodianOrganization : cda::CustodianOrganization | not representedCustodianOrganization.oclIsUndefined() and representedCustodianOrganization.oclIsKindOf(rim::Entity)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian-&gt;excluding(null).assignedCustodian-&gt;excluding(null)-&gt;reject(representedCustodianOrganization-&gt;one(representedCustodianOrganization : cda::CustodianOrganization | not representedCustodianOrganization.oclIsUndefined() and representedCustodianOrganization.oclIsKindOf(rim::Entity)))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization(
@@ -112,7 +108,7 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->excluding(null)->reject(assignedCustodian->one(assignedCustodian : cda::AssignedCustodian | not assignedCustodian.oclIsUndefined() and assignedCustodian.oclIsKindOf(cda::AssignedCustodian)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian-&gt;excluding(null)-&gt;reject(assignedCustodian-&gt;one(assignedCustodian : cda::AssignedCustodian | not assignedCustodian.oclIsUndefined() and assignedCustodian.oclIsKindOf(cda::AssignedCustodian)))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2CustodianAssignedCustodian(DiagnosticChain diagnostics,
@@ -125,7 +121,7 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).nonXMLBody->excluding(null).text->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not mediaType.oclIsUndefined() )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;excluding(null).nonXMLBody-&gt;excluding(null).text-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not mediaType.oclIsUndefined() )))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2ComponentNonXMLBodyEDMediaType(DiagnosticChain diagnostics,
@@ -138,7 +134,7 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).nonXMLBody->excluding(null)->reject(not text.reference.value.oclIsUndefined() xor ( text.isDefined(\'representation\') and text.representation = datatypes::BinaryDataEncoding::B64 and (not text.mediaType.oclIsUndefined()) ))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;excluding(null).nonXMLBody-&gt;excluding(null)-&gt;reject(not text.reference.value.oclIsUndefined() xor ( text.isDefined(\'representation\') and text.representation = datatypes::BinaryDataEncoding::B64 and (not text.mediaType.oclIsUndefined()) ))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation(DiagnosticChain diagnostics,
@@ -151,7 +147,7 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).nonXMLBody->excluding(null)->reject(not text.mediaType.oclIsUndefined()  implies (text.mediaType = \'application/msword\' or text.mediaType = \'application/pdf\' or text.mediaType = \'text/plain\' or text.mediaType = \'text/rtf\' or text.mediaType = \'text/html\' or text.mediaType = \'image/gif\' or text.mediaType = \'image/tiff\' or text.mediaType = \'image/jpeg\' or text.mediaType = \'image/png\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;excluding(null).nonXMLBody-&gt;excluding(null)-&gt;reject(not text.mediaType.oclIsUndefined()  implies (text.mediaType = \'application/msword\' or text.mediaType = \'application/pdf\' or text.mediaType = \'text/plain\' or text.mediaType = \'text/rtf\' or text.mediaType = \'text/html\' or text.mediaType = \'image/gif\' or text.mediaType = \'image/tiff\' or text.mediaType = \'image/jpeg\' or text.mediaType = \'image/png\'))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats(DiagnosticChain diagnostics,
@@ -164,7 +160,7 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).nonXMLBody->excluding(null)->reject((text.oclIsUndefined() or text.isNullFlavorUndefined()) implies (not text.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;excluding(null).nonXMLBody-&gt;excluding(null)-&gt;reject((text.oclIsUndefined() or text.isNullFlavorUndefined()) implies (not text.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2ComponentNonXMLBodyText(DiagnosticChain diagnostics,
@@ -177,7 +173,7 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null)->reject(nonXMLBody->one(nonXMLBody : cda::NonXMLBody | not nonXMLBody.oclIsUndefined() and nonXMLBody.oclIsKindOf(cda::NonXMLBody)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;excluding(null)-&gt;reject(nonXMLBody-&gt;one(nonXMLBody : cda::NonXMLBody | not nonXMLBody.oclIsUndefined() and nonXMLBody.oclIsKindOf(cda::NonXMLBody)))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2ComponentNonXMLBody(DiagnosticChain diagnostics, Map<Object, Object> context);

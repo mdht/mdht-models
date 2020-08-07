@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -101,6 +102,8 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 	public static boolean validateVitalSignsOrganizer2TemplateId(VitalSignsOrganizer2 vitalSignsOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "VitalSignsOrganizer2VitalSignsOrganizer2TemplateId", "ERROR");
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -144,6 +147,8 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 
 	public static boolean validateVitalSignsOrganizerCodeP(VitalSignsOrganizer2 vitalSignsOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignsOrganizer2VitalSignsOrganizerCodeP", "ERROR");
 
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -221,6 +226,8 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 	public static boolean validateVitalSignsOrganizer2AuthorParticipation(VitalSignsOrganizer2 vitalSignsOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "VitalSignsOrganizer2VitalSignsOrganizer2AuthorParticipation", "WARNING");
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -287,6 +294,8 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 	@SuppressWarnings("unchecked")
 	public static boolean validateVitalSignsOrganizer2CDTranslation(VitalSignsOrganizer2 vitalSignsOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignsOrganizer2VitalSignsOrganizer2CDTranslation", "ERROR");
 
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -357,6 +366,8 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 	@SuppressWarnings("unchecked")
 	public static boolean validateVitalSignsOrganizer2CDTranslationP(VitalSignsOrganizer2 vitalSignsOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignsOrganizer2VitalSignsOrganizer2CDTranslationP", "ERROR");
 
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -509,6 +520,8 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "VitalSignsOrganizer2VitalSignsOrganizerCode", "ERROR");
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -571,6 +584,8 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 
 	public static boolean validateVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer2 vitalSignsOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignsOrganizer2VitalSignsOrganizerEffectiveTime", "ERROR");
 
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -636,6 +651,8 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 
 	public static boolean validateVitalSignsOrganizerVitalSignObservation(VitalSignsOrganizer2 vitalSignsOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "VitalSignsOrganizer2VitalSignsOrganizerVitalSignObservation", "ERROR");
 
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_VITAL_SIGN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

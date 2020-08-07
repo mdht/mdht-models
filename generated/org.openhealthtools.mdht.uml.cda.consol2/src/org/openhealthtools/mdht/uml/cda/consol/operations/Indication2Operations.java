@@ -12,6 +12,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,8 @@ public class Indication2Operations extends IndicationOperations {
 	public static boolean validateIndicationProblemIndication(Indication2 indication2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "Indication2IndicationProblemIndication", "INFO");
+
 		if (VALIDATE_INDICATION_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -156,6 +159,8 @@ public class Indication2Operations extends IndicationOperations {
 
 	public static boolean validateIndicationCodeNullFlavorValue(Indication2 indication2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "Indication2IndicationCodeNullFlavorValue", "INFO");
 
 		if (VALIDATE_INDICATION_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -220,6 +225,8 @@ public class Indication2Operations extends IndicationOperations {
 	public static boolean validateIndication2TemplateId(Indication2 indication2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "Indication2Indication2TemplateId", "ERROR");
+
 		if (VALIDATE_INDICATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -283,6 +290,8 @@ public class Indication2Operations extends IndicationOperations {
 	public static boolean validateIndicationCodeNullFlavor(Indication2 indication2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "Indication2IndicationCodeNullFlavor", "INFO");
+
 		if (VALIDATE_INDICATION_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -324,6 +333,8 @@ public class Indication2Operations extends IndicationOperations {
 
 	public static boolean validateIndicationCodeP(Indication2 indication2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "Indication2IndicationCodeP", "ERROR");
 
 		if (VALIDATE_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -386,6 +397,8 @@ public class Indication2Operations extends IndicationOperations {
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "Indication2IndicationCode", "INFO");
 
 		if (VALIDATE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -493,6 +506,8 @@ public class Indication2Operations extends IndicationOperations {
 	public static boolean validateIndicationId(Indication2 indication2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "Indication2IndicationId", "ERROR");
+
 		if (VALIDATE_INDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -553,6 +568,8 @@ public class Indication2Operations extends IndicationOperations {
 
 	public static boolean validateIndicationValueP(Indication2 indication2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "Indication2IndicationValueP", "INFO");
 
 		if (VALIDATE_INDICATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -638,6 +655,8 @@ public class Indication2Operations extends IndicationOperations {
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "Indication2IndicationValue", "WARNING");
 
 		if (VALIDATE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -133,6 +134,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationValueOriginalText(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationValueOriginalText", "WARNING");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_VALUE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -198,6 +201,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationOriginalTextReference(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationOriginalTextReference", "WARNING");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -262,6 +267,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 
 	public static boolean validateAllergyObservationOriginalTextReferenceValue(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationOriginalTextReferenceValue", "WARNING");
 
 		if (VALIDATE_ALLERGY_OBSERVATION_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -329,6 +336,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationReferenceValue(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationReferenceValue", "ERROR");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -394,6 +403,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationClassCode(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationClassCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -456,6 +467,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 
 	public static boolean validateAllergyObservationMoodCode(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationMoodCode", "ERROR");
 
 		if (VALIDATE_ALLERGY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -520,6 +533,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationId(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationId", "ERROR");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -582,6 +597,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 
 	public static boolean validateAllergyObservationCodeP(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationCodeP", "ERROR");
 
 		if (VALIDATE_ALLERGY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -669,6 +686,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -733,6 +752,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationStatusCode(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationStatusCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -795,6 +816,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 
 	public static boolean validateAllergyObservationEffectiveTime(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationEffectiveTime", "ERROR");
 
 		if (VALIDATE_ALLERGY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -863,6 +886,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationValue(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationValue", "ERROR");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -925,6 +950,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 
 	public static boolean validateAllergyObservationReactionObservation(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationReactionObservation", "WARNING");
 
 		if (VALIDATE_ALLERGY_OBSERVATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -991,6 +1018,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationSeverityObservation(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationSeverityObservation", "INFO");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1055,6 +1084,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 
 	public static boolean validateAllergyObservationAllergyStatusObservation(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationAllergyStatusObservation", "INFO");
 
 		if (VALIDATE_ALLERGY_OBSERVATION_ALLERGY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1121,6 +1152,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationParticipant(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationParticipant", "WARNING");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1183,6 +1216,10 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	@SuppressWarnings("unchecked")
 	public static boolean validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AllergyObservationAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText",
+			"WARNING");
 
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1255,6 +1292,10 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AllergyObservationAllergyObservationParticipantParticipantRolePlayingEntityCETranslation",
+			"INFO");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1325,6 +1366,11 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	@SuppressWarnings("unchecked")
 	public static boolean validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"AllergyObservationAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue",
+			"ERROR");
 
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1397,6 +1443,10 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AllergyObservationAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue",
+			"WARNING");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1467,6 +1517,10 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	@SuppressWarnings("unchecked")
 	public static boolean validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AllergyObservationAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference",
+			"WARNING");
 
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1539,6 +1593,11 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"AllergyObservationAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI",
+			"ERROR");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE_TERMINOLOGY_VALUE_SET_GROUP_SRFI__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1610,6 +1669,9 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationParticipantParticipantRolePlayingEntityClassCode(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AllergyObservationAllergyObservationParticipantParticipantRolePlayingEntityClassCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1680,6 +1742,9 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	@SuppressWarnings("unchecked")
 	public static boolean validateAllergyObservationParticipantParticipantRolePlayingEntityCode(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AllergyObservationAllergyObservationParticipantParticipantRolePlayingEntityCode", "ERROR");
 
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1754,6 +1819,9 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationParticipantParticipantRoleClassCode(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AllergyObservationAllergyObservationParticipantParticipantRoleClassCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1824,6 +1892,9 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	@SuppressWarnings("unchecked")
 	public static boolean validateAllergyObservationParticipantParticipantRolePlayingEntity(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AllergyObservationAllergyObservationParticipantParticipantRolePlayingEntity", "ERROR");
 
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1898,6 +1969,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateAllergyObservationParticipantTypeCode(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationParticipantTypeCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1967,6 +2040,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	@SuppressWarnings("unchecked")
 	public static boolean validateAllergyObservationParticipantParticipantRole(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyObservationAllergyObservationParticipantParticipantRole", "ERROR");
 
 		if (VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2179,6 +2254,9 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AllergyObservationSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator", "ERROR");
+
 		if (VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_ALLERGY_STATUS_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2244,6 +2322,9 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 
 	public static boolean validateSubstanceOrDeviceAllergyObservationReactionInversionIndicator(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AllergyObservationSubstanceOrDeviceAllergyObservationReactionInversionIndicator", "ERROR");
 
 		if (VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_REACTION_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2311,6 +2392,9 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 	public static boolean validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator(
 			AllergyObservation allergyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AllergyObservationSubstanceOrDeviceAllergyObservationSeverityInversionIndicator", "ERROR");
+
 		if (VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2376,6 +2460,8 @@ public class AllergyObservationOperations extends SubstanceOrDeviceAllergyObserv
 
 	public static boolean validateSubstanceOrDeviceAllergyObservationTemplateId(AllergyObservation allergyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyObservationSubstanceOrDeviceAllergyObservationTemplateId", "ERROR");
 
 		if (VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -93,6 +94,8 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 	public static boolean validatePlanOfCareActivityActTemplateId(PlanOfCareActivityAct planOfCareActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlanOfCareActivityActPlanOfCareActivityActTemplateId", "ERROR");
+
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -157,6 +160,8 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 
 	public static boolean validatePlanOfCareActivityActClassCode(PlanOfCareActivityAct planOfCareActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlanOfCareActivityActPlanOfCareActivityActClassCode", "ERROR");
 
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -225,6 +230,8 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 	public static boolean validatePlanOfCareActivityActMoodCode(PlanOfCareActivityAct planOfCareActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlanOfCareActivityActPlanOfCareActivityActMoodCode", "ERROR");
+
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -289,6 +296,8 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 
 	public static boolean validatePlanOfCareActivityActId(PlanOfCareActivityAct planOfCareActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlanOfCareActivityActPlanOfCareActivityActId", "ERROR");
 
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
