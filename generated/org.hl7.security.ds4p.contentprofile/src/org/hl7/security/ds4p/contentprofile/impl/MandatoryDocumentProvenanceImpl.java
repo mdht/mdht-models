@@ -3,20 +3,15 @@
 package org.hl7.security.ds4p.contentprofile.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.impl.AuthorImpl;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.MandatoryDocumentProvenance;
-
 import org.hl7.security.ds4p.contentprofile.operations.MandatoryDocumentProvenanceOperations;
 
 /**
@@ -54,8 +49,7 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	@Override
 	public boolean validateMandatoryDocumentProvenanceTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceTemplateId(
-			this, diagnostics, context);
+		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -65,8 +59,7 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	 */
 	@Override
 	public boolean validateMandatoryDocumentProvenanceTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceTime(
-			this, diagnostics, context);
+		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceTime(this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +70,7 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	@Override
 	public boolean validateMandatoryDocumentProvenanceAssignedAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceAssignedAuthor(
-			this, diagnostics, context);
+		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceAssignedAuthor(this, diagnostics, context);
 	}
 
 	/**
@@ -87,16 +79,16 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	 * @generated
 	 */
 	public MandatoryDocumentProvenance init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MandatoryDocumentProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MandatoryDocumentProvenanceImpl

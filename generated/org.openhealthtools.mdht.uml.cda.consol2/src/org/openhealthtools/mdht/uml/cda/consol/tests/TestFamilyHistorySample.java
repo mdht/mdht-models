@@ -13,6 +13,7 @@ package org.openhealthtools.mdht.uml.cda.consol.tests;
 import java.io.FileInputStream;
 
 import org.eclipse.emf.common.util.Diagnostic;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
 import org.eclipse.mdht.uml.cda.util.CDAUtil;
 import org.eclipse.mdht.uml.cda.util.ValidationResult;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -24,7 +25,7 @@ public class TestFamilyHistorySample {
 
 		// create a validation result object to collect diagnostics produced during validation
 		ValidationResult result = new ValidationResult();
-		CDAUtil.load(new FileInputStream("samples/FamilyHistory_sample.xml"), result);
+		ClinicalDocument cd = CDAUtil.load(new FileInputStream("samples/DischargeSummary_2014Edition_sample.xml"));
 
 		System.out.println("\n***** Sample validation results *****");
 		for (Diagnostic diagnostic : result.getErrorDiagnostics()) {

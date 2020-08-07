@@ -2,14 +2,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
@@ -31,7 +27,7 @@ public interface FamilyHistoryObservation2 extends FamilyHistoryObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.46\' and id.extension.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.46\' and id.extension.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateFamilyHistoryObservation2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -43,7 +39,7 @@ public interface FamilyHistoryObservation2 extends FamilyHistoryObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (not translation->isEmpty() and translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'75326-9\' or value.code = \'75325-1\' or value.code = \'75324-4\' or value.code = \'75323-6\' or value.code = \'29308-4\' or value.code = \'75322-8\' or value.code = \'75275-8\' or value.code = \'75321-0\' or value.code = \'75319-4\' or value.code = \'75318-6\' or value.code = \'75317-8\' or value.code = \'75316-0\' or value.code = \'75315-2\' or value.code = \'75314-5\' or value.code = \'75313-7\' or value.code = \'75312-9\'))) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies ((translation-&gt;isEmpty() or translation-&gt;exists(element | element.isNullFlavorUndefined())) implies (not translation-&gt;isEmpty() and translation-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'75326-9\' or value.code = \'75325-1\' or value.code = \'75324-4\' or value.code = \'75323-6\' or value.code = \'29308-4\' or value.code = \'75322-8\' or value.code = \'75275-8\' or value.code = \'75321-0\' or value.code = \'75319-4\' or value.code = \'75318-6\' or value.code = \'75317-8\' or value.code = \'75316-0\' or value.code = \'75315-2\' or value.code = \'75314-5\' or value.code = \'75313-7\' or value.code = \'75312-9\'))) )))'"
 	 * @generated
 	 */
 	boolean validateFamilyHistoryObservation2CDTranslation(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -55,7 +51,7 @@ public interface FamilyHistoryObservation2 extends FamilyHistoryObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (( not translation->isEmpty()) ) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies ((translation-&gt;isEmpty() or translation-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not translation-&gt;isEmpty()) ) )))'"
 	 * @generated
 	 */
 	boolean validateFamilyHistoryObservation2CDTranslationP(DiagnosticChain diagnostics, Map<Object, Object> context);

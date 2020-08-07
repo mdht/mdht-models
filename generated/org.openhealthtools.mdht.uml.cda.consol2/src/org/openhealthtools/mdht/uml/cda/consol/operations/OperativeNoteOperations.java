@@ -18,6 +18,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -161,6 +162,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateGeneralHeaderConstraintsCodeP(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteGeneralHeaderConstraintsCodeP", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -237,6 +240,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteDocumentationOf(OperativeNote operativeNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteDocumentationOf", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -299,6 +304,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 
 	public static boolean validateOperativeNoteAnesthesiaSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteAnesthesiaSection", "ERROR");
 
 		if (VALIDATE_OPERATIVE_NOTE_ANESTHESIA_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -363,6 +370,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteComplicationsSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteComplicationsSection", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_COMPLICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -426,6 +435,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 
 	public static boolean validateOperativeNotePostoperativeDiagnosisSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNotePostoperativeDiagnosisSection", "ERROR");
 
 		if (VALIDATE_OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -492,6 +503,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNotePreoperativeDiagnosisSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNotePreoperativeDiagnosisSection", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -556,6 +569,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 
 	public static boolean validateOperativeNoteProcedureEstimatedBloodLossSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteProcedureEstimatedBloodLossSection", "ERROR");
 
 		if (VALIDATE_OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -622,6 +637,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteProcedureFindingsSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteProcedureFindingsSection", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -686,6 +703,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 
 	public static boolean validateOperativeNoteProcedureSpecimensTakenSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteProcedureSpecimensTakenSection", "ERROR");
 
 		if (VALIDATE_OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -752,6 +771,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteProcedureDescriptionSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteProcedureDescriptionSection", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -816,6 +837,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 
 	public static boolean validateOperativeNoteProcedureImplantsSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteProcedureImplantsSection", "INFO");
 
 		if (VALIDATE_OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -882,6 +905,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteOperativeNoteFluidSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteOperativeNoteFluidSection", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -946,6 +971,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 
 	public static boolean validateOperativeNoteOperativeNoteSurgicalProcedureSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteOperativeNoteSurgicalProcedureSection", "INFO");
 
 		if (VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1013,6 +1040,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNotePlanOfCareSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNotePlanOfCareSection", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1076,6 +1105,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 
 	public static boolean validateOperativeNotePlannedProcedureSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNotePlannedProcedureSection", "INFO");
 
 		if (VALIDATE_OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1142,6 +1173,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteProcedureDispositionSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteProcedureDispositionSection", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1207,6 +1240,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteProcedureIndicationsSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteProcedureIndicationsSection", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1271,6 +1306,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 
 	public static boolean validateOperativeNoteSurgicalDrainsSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteSurgicalDrainsSection", "INFO");
 
 		if (VALIDATE_OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1338,6 +1375,10 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode",
+			"ERROR");
 
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1410,6 +1451,10 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP",
+			"ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1480,6 +1525,9 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode", "ERROR");
 
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1552,6 +1600,9 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1622,6 +1673,9 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventProcedureCodes(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "OperativeNoteOperativeNoteDocumentationOfServiceEventProcedureCodes", "ERROR");
 
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1694,6 +1748,9 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "OperativeNoteOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1764,6 +1821,9 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "OperativeNoteOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth", "ERROR");
 
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1836,6 +1896,9 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "OperativeNoteOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1906,6 +1969,9 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventPreciseToTheDay(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "OperativeNoteOperativeNoteDocumentationOfServiceEventPreciseToTheDay", "ERROR");
 
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1978,6 +2044,9 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteDocumentationOfServiceEventPreciseToTheMinute(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "OperativeNoteOperativeNoteDocumentationOfServiceEventPreciseToTheMinute", "WARNING");
+
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2048,6 +2117,9 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventPreciseToTheSecond(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "OperativeNoteOperativeNoteDocumentationOfServiceEventPreciseToTheSecond", "INFO");
 
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2120,6 +2192,10 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "OperativeNoteOperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset",
+			"WARNING");
+
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2190,6 +2266,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventCode(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteDocumentationOfServiceEventCode", "ERROR");
 
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2262,6 +2340,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTime(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteDocumentationOfServiceEventEffectiveTime", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2333,6 +2413,9 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformer", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2403,6 +2486,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEvent(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "OperativeNoteOperativeNoteDocumentationOfServiceEvent", "ERROR");
 
 		if (VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3205,6 +3290,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	public static boolean validateGeneralHeaderConstraintsTemplateId(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "OperativeNoteGeneralHeaderConstraintsTemplateId", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3279,6 +3366,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "OperativeNoteGeneralHeaderConstraintsCode", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

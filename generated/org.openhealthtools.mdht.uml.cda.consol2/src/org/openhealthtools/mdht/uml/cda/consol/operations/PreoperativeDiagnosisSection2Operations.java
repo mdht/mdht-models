@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -93,6 +94,9 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 	public static boolean validatePreoperativeDiagnosisSection2TemplateId(
 			PreoperativeDiagnosisSection2 preoperativeDiagnosisSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PreoperativeDiagnosisSection2PreoperativeDiagnosisSection2TemplateId", "ERROR");
 
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -208,6 +212,8 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 			PreoperativeDiagnosisSection2 preoperativeDiagnosisSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionCodeP", "ERROR");
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -299,6 +305,8 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionCode", "ERROR");
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -365,6 +373,9 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 	public static boolean validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(
 			PreoperativeDiagnosisSection2 preoperativeDiagnosisSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionPreoperativeDiagnosis", "WARNING");
 
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -95,6 +96,9 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 			ChiefComplaintAndReasonForVisitSection chiefComplaintAndReasonForVisitSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionTemplateId", "ERROR");
+
 		if (VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -164,6 +168,9 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 			ChiefComplaintAndReasonForVisitSection chiefComplaintAndReasonForVisitSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionCode", "ERROR");
+
 		if (VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -230,6 +237,9 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 	public static boolean validateChiefComplaintAndReasonForVisitSectionCodeP(
 			ChiefComplaintAndReasonForVisitSection chiefComplaintAndReasonForVisitSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionCodeP", "ERROR");
 
 		if (VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -298,6 +308,9 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 			ChiefComplaintAndReasonForVisitSection chiefComplaintAndReasonForVisitSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionText", "ERROR");
+
 		if (VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -364,6 +377,9 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 	public static boolean validateChiefComplaintAndReasonForVisitSectionTitle(
 			ChiefComplaintAndReasonForVisitSection chiefComplaintAndReasonForVisitSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionTitle", "ERROR");
 
 		if (VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

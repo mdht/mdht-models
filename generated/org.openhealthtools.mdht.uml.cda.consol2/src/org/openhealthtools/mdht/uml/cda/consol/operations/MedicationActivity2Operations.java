@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -147,6 +148,9 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivity2SubstanceAdministeredActInversionInd(
 			MedicationActivity2 medicationActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MedicationActivity2MedicationActivity2SubstanceAdministeredActInversionInd", "ERROR");
+
 		if (VALIDATE_MEDICATION_ACTIVITY2_SUBSTANCE_ADMINISTERED_ACT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -213,6 +217,9 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivity2SubstanceAdministeredActSequenceNumber(
 			MedicationActivity2 medicationActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MedicationActivity2MedicationActivity2SubstanceAdministeredActSequenceNumber", "INFO");
+
 		if (VALIDATE_MEDICATION_ACTIVITY2_SUBSTANCE_ADMINISTERED_ACT_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -258,6 +265,9 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivity2EffectiveTimeIVLTSLowXorValue(
 			MedicationActivity2 medicationActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MedicationActivity2MedicationActivity2EffectiveTimeIVLTSLowXorValue", "ERROR");
+
 		if (VALIDATE_MEDICATION_ACTIVITY2_EFFECTIVE_TIME_IVLTS_LOW_XOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -302,6 +312,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 
 	public static boolean validateMedicationActivity2TemplateId(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivity2TemplateId", "ERROR");
 
 		if (VALIDATE_MEDICATION_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -409,6 +421,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityStatusCodeP(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityStatusCodeP", "ERROR");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -464,6 +478,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 
 	public static boolean validateMedicationActivityAdministrationUnitCodeP(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityAdministrationUnitCodeP", "INFO");
 
 		if (VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -544,6 +560,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivity2DrugMonitoringAct(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivity2DrugMonitoringAct", "INFO");
+
 		if (VALIDATE_MEDICATION_ACTIVITY2_DRUG_MONITORING_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -609,6 +627,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivity2AuthorParticipation(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivity2AuthorParticipation", "WARNING");
+
 		if (VALIDATE_MEDICATION_ACTIVITY2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -673,6 +693,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 
 	public static boolean validateMedicationActivity2SubstanceAdministeredAct(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivity2SubstanceAdministeredAct", "INFO");
 
 		if (VALIDATE_MEDICATION_ACTIVITY2_SUBSTANCE_ADMINISTERED_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -740,6 +762,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivity2MedicationFreeTextSig(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivity2MedicationFreeTextSig", "INFO");
+
 		if (VALIDATE_MEDICATION_ACTIVITY2_MEDICATION_FREE_TEXT_SIG__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -804,6 +828,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationActivity2CETranslationP(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivity2CETranslationP", "WARNING");
 
 		if (VALIDATE_MEDICATION_ACTIVITY2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -889,6 +915,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationActivity2CETranslation(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivity2CETranslation", "ERROR");
 
 		if (VALIDATE_MEDICATION_ACTIVITY2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1344,6 +1372,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityTextReference(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityTextReference", "INFO");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1408,6 +1438,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 
 	public static boolean validateMedicationActivityReferenceValue(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityReferenceValue", "INFO");
 
 		if (VALIDATE_MEDICATION_ACTIVITY_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1474,6 +1506,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityTextReferenceValue(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityTextReferenceValue", "INFO");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1538,6 +1572,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 
 	public static boolean validateMedicationActivityInstructionsInversionInd(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityInstructionsInversionInd", "ERROR");
 
 		if (VALIDATE_MEDICATION_ACTIVITY_INSTRUCTIONS_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1605,6 +1641,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityDoseQuantityorrateQuantity(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityDoseQuantityorrateQuantity", "WARNING");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITYORRATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1671,6 +1709,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityEffectiveTimeIVLTSorTS(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityEffectiveTimeIVLTSorTS", "ERROR");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLT_SOR_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1735,6 +1775,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 
 	public static boolean validateMedicationActivityEffectiveTimeIVLTSLow(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityEffectiveTimeIVLTSLow", "WARNING");
 
 		if (VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1801,6 +1843,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityEffectiveTimeIVLTSHigh(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityEffectiveTimeIVLTSHigh", "INFO");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1866,6 +1910,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityEffectiveTimePIVLTS(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityEffectiveTimePIVLTS", "WARNING");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_PIVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1910,6 +1956,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityRepeatNumber(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityRepeatNumber", "INFO");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1952,6 +2000,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 
 	public static boolean validateMedicationActivityRouteCodeP(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityRouteCodeP", "WARNING");
 
 		if (VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2017,6 +2067,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityRouteCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2079,6 +2131,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 
 	public static boolean validateMedicationActivityCode(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityCode", "INFO");
 
 		if (VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2218,6 +2272,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityStatusCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2269,6 +2325,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityAdministrationUnitCode", "ERROR");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2313,6 +2371,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityText(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityText", "ERROR");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2354,6 +2414,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 
 	public static boolean validateMedicationActivityInstructions(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityInstructions", "INFO");
 
 		if (VALIDATE_MEDICATION_ACTIVITY_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2397,6 +2459,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 
 	public static boolean validateMedicationActivityIndication(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityIndication", "INFO");
 
 		if (VALIDATE_MEDICATION_ACTIVITY_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2568,6 +2632,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityDoseQuantity(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityDoseQuantity", "ERROR");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2632,6 +2698,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityConsumable(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityConsumable", "ERROR");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2694,6 +2762,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 
 	public static boolean validateMedicationActivityMedicationSupplyOrder(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityMedicationSupplyOrder", "INFO");
 
 		if (VALIDATE_MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2760,6 +2830,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityMedicationDispense(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityMedicationDispense", "INFO");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_MEDICATION_DISPENSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2824,6 +2896,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 
 	public static boolean validateMedicationActivityReactionObservation(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityReactionObservation", "INFO");
 
 		if (VALIDATE_MEDICATION_ACTIVITY_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2890,6 +2964,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityPrecondition(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityPrecondition", "INFO");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2953,6 +3029,8 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationActivityPreconditionTypeCode(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MedicationActivity2MedicationActivityPreconditionTypeCode", "ERROR");
 
 		if (VALIDATE_MEDICATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3025,6 +3103,10 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	public static boolean validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(
 			MedicationActivity2 medicationActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MedicationActivity2MedicationActivityPreconditionPreconditionForSubstanceAdministration",
+			"ERROR");
+
 		if (VALIDATE_MEDICATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3095,6 +3177,9 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationActivityConsumableMedicationInformation(
 			MedicationActivity2 medicationActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MedicationActivity2MedicationActivityConsumableMedicationInformation", "ERROR");
 
 		if (VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

@@ -22,6 +22,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -133,6 +134,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	public static boolean validateProblemObservationValueNullFlavorUnknown(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationValueNullFlavorUnknown", "INFO");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR_UNKNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -197,6 +200,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 
 	public static boolean validateProblemObservation2IfSnomedRequireTranslation(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservation2IfSnomedRequireTranslation", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -264,6 +269,9 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	public static boolean validateProblemObservation2IfSnomedRequireTranslationFromLoinc(
 			ProblemObservation2 problemObservation2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProblemObservation2ProblemObservation2IfSnomedRequireTranslationFromLoinc", "WARNING");
+
 		if (VALIDATE_PROBLEM_OBSERVATION2_IF_SNOMED_REQUIRE_TRANSLATION_FROM_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -330,6 +338,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	public static boolean validateProblemObservation2TemplateId(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservation2TemplateId", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -372,6 +382,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 
 	public static boolean validateProblemObservationStatusCodeP(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationStatusCodeP", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -429,6 +441,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	public static boolean validateProblemObservation2PrognosisObservation(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservation2PrognosisObservation", "INFO");
+
 		if (VALIDATE_PROBLEM_OBSERVATION2_PROGNOSIS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -472,6 +486,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 
 	public static boolean validateProblemObservation2PriorityPreference(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservation2PriorityPreference", "INFO");
 
 		if (VALIDATE_PROBLEM_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -517,6 +533,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	public static boolean validateProblemObservation2AuthorParticipation(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservation2AuthorParticipation", "WARNING");
+
 		if (VALIDATE_PROBLEM_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -560,6 +578,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateProblemObservation2CDQualifier(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservation2CDQualifier", "INFO");
 
 		if (VALIDATE_PROBLEM_OBSERVATION2_CD_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -610,6 +630,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	public static boolean validateProblemObservation2CDCode(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservation2CDCode", "INFO");
+
 		if (VALIDATE_PROBLEM_OBSERVATION2_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -659,6 +681,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	public static boolean validateProblemObservation2CDCodeTranslation(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservation2CDCodeTranslation", "INFO");
+
 		if (VALIDATE_PROBLEM_OBSERVATION2_CD_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -707,6 +731,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateProblemObservation2CDCodeTranslationP(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservation2CDCodeTranslationP", "INFO");
 
 		if (VALIDATE_PROBLEM_OBSERVATION2_CD_CODE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -834,6 +860,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	public static boolean validateProblemObservationHasTextReference(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationHasTextReference", "INFO");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -877,6 +905,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 
 	public static boolean validateProblemObservationTextReferenceValue(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationTextReferenceValue", "INFO");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -922,6 +952,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	public static boolean validateProblemObservationHasTextReferenceValue(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationHasTextReferenceValue", "INFO");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -965,6 +997,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 
 	public static boolean validateProblemObservationHasOnsetDate(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationHasOnsetDate", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_HAS_ONSET_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1010,6 +1044,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	public static boolean validateProblemObservationHasResolutionDate(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationHasResolutionDate", "INFO");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1053,6 +1089,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 
 	public static boolean validateProblemObservationValueNullFlavor(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationValueNullFlavor", "INFO");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1124,6 +1162,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	public static boolean validateProblemObservationNegationInd(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationNegationInd", "INFO");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1166,6 +1206,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 
 	public static boolean validateProblemObservationEffectiveTime(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationEffectiveTime", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1210,6 +1252,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 
 	public static boolean validateProblemObservationValueP(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationValueP", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1274,6 +1318,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationValue", "WARNING");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1315,6 +1361,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 
 	public static boolean validateProblemObservationCodeP(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationCodeP", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1378,6 +1426,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationCode", "WARNING");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1949,6 +1999,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	public static boolean validateProblemObservationText(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationText", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2021,6 +2073,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationStatusCode", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2084,6 +2138,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 
 	public static boolean validateProblemObservationHealthStatusObservation(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationHealthStatusObservation", "ERROR");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2149,6 +2205,8 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 
 	public static boolean validateProblemObservationProblemStatus(ProblemObservation2 problemObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservation2ProblemObservationProblemStatus", "INFO");
 
 		if (VALIDATE_PROBLEM_OBSERVATION_PROBLEM_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

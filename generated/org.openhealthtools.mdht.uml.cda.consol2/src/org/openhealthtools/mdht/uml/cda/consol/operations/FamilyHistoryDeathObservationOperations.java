@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -97,6 +98,9 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FamilyHistoryDeathObservationFamilyHistoryDeathObservationTemplateId", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -164,6 +168,9 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "FamilyHistoryDeathObservationFamilyHistoryDeathObservationClassCode", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -230,6 +237,8 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	public static boolean validateFamilyHistoryDeathObservationMoodCode(
 			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FamilyHistoryDeathObservationFamilyHistoryDeathObservationMoodCode", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -300,6 +309,8 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FamilyHistoryDeathObservationFamilyHistoryDeathObservationCode", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -367,6 +378,9 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	public static boolean validateFamilyHistoryDeathObservationStatusCode(
 			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FamilyHistoryDeathObservationFamilyHistoryDeathObservationStatusCode", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -437,6 +451,8 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FamilyHistoryDeathObservationFamilyHistoryDeathObservationValue", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -503,6 +519,8 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	public static boolean validateFamilyHistoryDeathObservationValueP(
 			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FamilyHistoryDeathObservationFamilyHistoryDeathObservationValueP", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -114,6 +115,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 	public static boolean validateReactionObservationCodeValueSet(ReactionObservation2 reactionObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationCodeValueSet", "INFO");
+
 		if (VALIDATE_REACTION_OBSERVATION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -179,6 +182,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 	public static boolean validateReactionObservation2TemplateId(ReactionObservation2 reactionObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservation2TemplateId", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -243,6 +248,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 	public static boolean validateReactionObservationCodeP(ReactionObservation2 reactionObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationCodeP", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -297,6 +304,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 
 	public static boolean validateReactionObservationStatusCodeP(ReactionObservation2 reactionObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationStatusCodeP", "ERROR");
 
 		if (VALIDATE_REACTION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -439,6 +448,9 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 	public static boolean validateReactionObservationProcedureActivityProcedureInversionInd(
 			ReactionObservation2 reactionObservation2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ReactionObservation2ReactionObservationProcedureActivityProcedureInversionInd", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -483,6 +495,9 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 
 	public static boolean validateReactionObservationMedicationActivityInversionInd(
 			ReactionObservation2 reactionObservation2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ReactionObservation2ReactionObservationMedicationActivityInversionInd", "ERROR");
 
 		if (VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -529,6 +544,9 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 	public static boolean validateReactionObservationSeverityObservationInversionInd(
 			ReactionObservation2 reactionObservation2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ReactionObservation2ReactionObservationSeverityObservationInversionInd", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -574,6 +592,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 	public static boolean validateReactionObservationTextReference(ReactionObservation2 reactionObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationTextReference", "INFO");
+
 		if (VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -618,6 +638,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 	public static boolean validateReactionObservationTextReferenceValue(ReactionObservation2 reactionObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationTextReferenceValue", "INFO");
+
 		if (VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -661,6 +683,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 
 	public static boolean validateReactionObservationReferenceValue(ReactionObservation2 reactionObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationReferenceValue", "INFO");
 
 		if (VALIDATE_REACTION_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -714,6 +738,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationCode", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -755,6 +781,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 
 	public static boolean validateReactionObservationId(ReactionObservation2 reactionObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationId", "ERROR");
 
 		if (VALIDATE_REACTION_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1070,6 +1098,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 	public static boolean validateReactionObservationText(ReactionObservation2 reactionObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationText", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1142,6 +1172,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationStatusCode", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1205,6 +1237,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 
 	public static boolean validateReactionObservationValueP(ReactionObservation2 reactionObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationValueP", "ERROR");
 
 		if (VALIDATE_REACTION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1292,6 +1326,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationValue", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1354,6 +1390,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 
 	public static boolean validateReactionObservationProcedureActivityProcedure(
 			ReactionObservation2 reactionObservation2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationProcedureActivityProcedure", "INFO");
 
 		if (VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1421,6 +1459,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 	public static boolean validateReactionObservationMedicationActivity(ReactionObservation2 reactionObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationMedicationActivity", "INFO");
+
 		if (VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1485,6 +1525,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 
 	public static boolean validateReactionObservationSeverityObservation(ReactionObservation2 reactionObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservation2ReactionObservationSeverityObservation", "INFO");
 
 		if (VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

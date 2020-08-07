@@ -21,6 +21,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -111,6 +112,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	public static boolean validateAllergyProblemActEffectiveTimeLow(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyProblemActAllergyProblemActEffectiveTimeLow", "ERROR");
+
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -175,6 +178,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateAllergyProblemActEffectiveTimeHigh(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyProblemActAllergyProblemActEffectiveTimeHigh", "ERROR");
 
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -241,6 +246,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	public static boolean validateAllergyProblemActTemplateId(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyProblemActAllergyProblemActTemplateId", "ERROR");
+
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -303,6 +310,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateAllergyProblemActClassCode(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyProblemActAllergyProblemActClassCode", "ERROR");
 
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -367,6 +376,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	public static boolean validateAllergyProblemActMoodCode(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyProblemActAllergyProblemActMoodCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -430,6 +441,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	public static boolean validateAllergyProblemActId(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyProblemActAllergyProblemActId", "ERROR");
+
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -492,6 +505,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateAllergyProblemActCode(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyProblemActAllergyProblemActCode", "ERROR");
 
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -558,6 +573,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	public static boolean validateAllergyProblemActStatusCode(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyProblemActAllergyProblemActStatusCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -620,6 +637,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateAllergyProblemActEffectiveTime(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyProblemActAllergyProblemActEffectiveTime", "ERROR");
 
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -686,6 +705,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	public static boolean validateAllergyProblemActAllergyObservation(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyProblemActAllergyProblemActAllergyObservation", "ERROR");
+
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -750,6 +771,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateAllergyProblemActCDCodeAndCodeSystemValues(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyProblemActAllergyProblemActCDCodeAndCodeSystemValues", "ERROR");
 
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -822,6 +845,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	public static boolean validateAllergyProblemActCDCode(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyProblemActAllergyProblemActCDCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -891,6 +916,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateAllergyProblemActCDCodeSystem(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyProblemActAllergyProblemActCDCodeSystem", "ERROR");
 
 		if (VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

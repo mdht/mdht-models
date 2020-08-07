@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -185,6 +186,11 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2HasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"HistoryAndPhysicalNote2HistoryAndPhysicalNote2HasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit",
+			"ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_HAS_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_CHIEF_COMPLAINT_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -250,6 +256,11 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"HistoryAndPhysicalNote2HistoryAndPhysicalNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2",
+			"ERROR");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -317,6 +328,11 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"HistoryAndPhysicalNote2HistoryAndPhysicalNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent",
+			"ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -383,6 +399,11 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"HistoryAndPhysicalNote2HistoryAndPhysicalNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection",
+			"ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -448,6 +469,8 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2CodeP(HistoryAndPhysicalNote2 historyAndPhysicalNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2CodeP", "ERROR");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -536,6 +559,8 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2Code", "ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -599,6 +624,8 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2InformationRecipient(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2InformationRecipient", "INFO");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -666,6 +693,8 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2Participant(HistoryAndPhysicalNote2 historyAndPhysicalNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2Participant", "INFO");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -730,6 +759,8 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2InFulfillmentOf(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2InFulfillmentOf", "INFO");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -797,6 +828,8 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ComponentOf(HistoryAndPhysicalNote2 historyAndPhysicalNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOf", "ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -861,6 +894,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2AllergiesSectionEntriesOptional2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2AllergiesSectionEntriesOptional2", "ERROR");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -928,6 +964,8 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2AssessmentSection(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2AssessmentSection", "INFO");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -993,6 +1031,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2PlanOfTreatmentSection2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2PlanOfTreatmentSection2", "INFO");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1060,6 +1101,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2AssessmentAndPlanSection2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2AssessmentAndPlanSection2", "INFO");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1125,6 +1169,8 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2ChiefComplaintSection(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ChiefComplaintSection", "INFO");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1192,6 +1238,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ChiefComplaintAndReasonForVisitSection(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ChiefComplaintAndReasonForVisitSection", "INFO");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1257,6 +1306,8 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2GeneralStatusSection(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2GeneralStatusSection", "ERROR");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1324,6 +1375,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2HistoryOfPastIllnessSection2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2HistoryOfPastIllnessSection2", "ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1389,6 +1443,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2HistoryOfPresentIllnessSection(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2HistoryOfPresentIllnessSection", "WARNING");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1456,6 +1513,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ImmunizationsSectionEntriesOptional2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ImmunizationsSectionEntriesOptional2", "INFO");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1521,6 +1581,8 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2InstructionsSection2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2InstructionsSection2", "INFO");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_INSTRUCTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1588,6 +1650,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2MedicationsSectionEntriesOptional2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2MedicationsSectionEntriesOptional2", "ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1653,6 +1718,8 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2PhysicalExamSection2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2PhysicalExamSection2", "ERROR");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1720,6 +1787,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ProblemSectionEntriesOptional2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ProblemSectionEntriesOptional2", "INFO");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1785,6 +1855,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2ProceduresSectionEntriesOptional2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ProceduresSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1852,6 +1925,8 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ReasonForVisitSection(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ReasonForVisitSection", "INFO");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1917,6 +1992,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2ResultsSectionEntriesOptional2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ResultsSectionEntriesOptional2", "ERROR");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_RESULTS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1984,6 +2062,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ReviewOfSystemsSection(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ReviewOfSystemsSection", "ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2049,6 +2130,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateHistoryAndPhysicalNote2SocialHistorySection2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2SocialHistorySection2", "ERROR");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2116,6 +2200,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2", "ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2182,6 +2269,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2FamilyHistorySection2(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2FamilyHistorySection2", "ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2247,6 +2337,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2InformationRecipientIntendedRecipient", "ERROR");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2319,6 +2412,10 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND",
+			"ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2389,6 +2486,11 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS",
+			"ERROR");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2461,6 +2563,11 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS",
+			"WARNING");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2531,6 +2638,11 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS",
+			"INFO");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2603,6 +2715,11 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS",
+			"WARNING");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2673,6 +2790,11 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization",
+			"ERROR");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2745,6 +2867,11 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2815,6 +2942,11 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization",
+			"ERROR");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2887,6 +3019,11 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2957,6 +3094,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterId(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounterId", "ERROR");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3029,6 +3169,10 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime",
+			"ERROR");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3099,6 +3243,10 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty",
+			"INFO");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3171,6 +3319,11 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant",
+			"INFO");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3242,6 +3395,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation", "INFO");
+
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3312,6 +3468,9 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounter(
 			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HistoryAndPhysicalNote2HistoryAndPhysicalNote2ComponentOfEncompassingEncounter", "ERROR");
 
 		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4350,6 +4509,8 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 
 	public static boolean validateUSRealmHeader2TemplateId(HistoryAndPhysicalNote2 historyAndPhysicalNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HistoryAndPhysicalNote2USRealmHeader2TemplateId", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -95,6 +96,8 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	public static boolean validateAssessmentAndPlanSection2TemplateId(
 			AssessmentAndPlanSection2 assessmentAndPlanSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AssessmentAndPlanSection2AssessmentAndPlanSection2TemplateId", "ERROR");
 
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -208,6 +211,8 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	public static boolean validateAssessmentAndPlanSectionCodeP(AssessmentAndPlanSection2 assessmentAndPlanSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AssessmentAndPlanSection2AssessmentAndPlanSectionCodeP", "ERROR");
+
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -296,6 +301,8 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "AssessmentAndPlanSection2AssessmentAndPlanSectionCode", "ERROR");
+
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -360,6 +367,9 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	public static boolean validateAssessmentAndPlanSectionPlanOfCareActivityAct(
 			AssessmentAndPlanSection2 assessmentAndPlanSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AssessmentAndPlanSection2AssessmentAndPlanSectionPlanOfCareActivityAct", "INFO");
 
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

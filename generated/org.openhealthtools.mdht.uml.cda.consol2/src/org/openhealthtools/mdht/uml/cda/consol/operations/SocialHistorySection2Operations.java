@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -113,6 +114,8 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	public static boolean validateSocialHistorySection2TemplateId(SocialHistorySection2 socialHistorySection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SocialHistorySection2SocialHistorySection2TemplateId", "ERROR");
+
 		if (VALIDATE_SOCIAL_HISTORY_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -177,6 +180,8 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 
 	public static boolean validateSocialHistorySection2CaregiverCharacteristics(
 			SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SocialHistorySection2SocialHistorySection2CaregiverCharacteristics", "INFO");
 
 		if (VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -244,6 +249,9 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	public static boolean validateSocialHistorySection2CulturalAndReligiousObservation(
 			SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "SocialHistorySection2SocialHistorySection2CulturalAndReligiousObservation", "INFO");
+
 		if (VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -310,6 +318,9 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	public static boolean validateSocialHistorySection2CharacteristicsOfHomeEnvironment(
 			SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "SocialHistorySection2SocialHistorySection2CharacteristicsOfHomeEnvironment", "INFO");
+
 		if (VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -375,6 +386,8 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 
 	public static boolean validateSocialHistorySection2BirthSexObservation(SocialHistorySection2 socialHistorySection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SocialHistorySection2SocialHistorySection2BirthSexObservation", "INFO");
 
 		if (VALIDATE_SOCIAL_HISTORY_SECTION2_BIRTH_SEX_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -786,6 +799,8 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	public static boolean validateSocialHistorySectionCodeP(SocialHistorySection2 socialHistorySection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SocialHistorySection2SocialHistorySectionCodeP", "ERROR");
+
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -872,6 +887,8 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "SocialHistorySection2SocialHistorySectionCode", "ERROR");
+
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -934,6 +951,8 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 
 	public static boolean validateSocialHistorySectionSocialHistoryObservation(
 			SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SocialHistorySection2SocialHistorySectionSocialHistoryObservation", "INFO");
 
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1001,6 +1020,9 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	public static boolean validateSocialHistorySectionSmokingStatusObservation(
 			SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "SocialHistorySection2SocialHistorySectionSmokingStatusObservation", "WARNING");
+
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1066,6 +1088,8 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 
 	public static boolean validateSocialHistorySectionTobaccoUse(SocialHistorySection2 socialHistorySection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SocialHistorySection2SocialHistorySectionTobaccoUse", "INFO");
 
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

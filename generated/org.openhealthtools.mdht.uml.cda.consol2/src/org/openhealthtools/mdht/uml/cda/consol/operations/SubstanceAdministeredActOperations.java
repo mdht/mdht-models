@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -95,6 +96,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 	public static boolean validateSubstanceAdministeredActTemplateId(SubstanceAdministeredAct substanceAdministeredAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SubstanceAdministeredActSubstanceAdministeredActTemplateId", "ERROR");
+
 		if (VALIDATE_SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -159,6 +162,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 
 	public static boolean validateSubstanceAdministeredActClassCode(SubstanceAdministeredAct substanceAdministeredAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SubstanceAdministeredActSubstanceAdministeredActClassCode", "ERROR");
 
 		if (VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -225,6 +230,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 	public static boolean validateSubstanceAdministeredActMoodCode(SubstanceAdministeredAct substanceAdministeredAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SubstanceAdministeredActSubstanceAdministeredActMoodCode", "ERROR");
+
 		if (VALIDATE_SUBSTANCE_ADMINISTERED_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -290,6 +297,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 	public static boolean validateSubstanceAdministeredActId(SubstanceAdministeredAct substanceAdministeredAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SubstanceAdministeredActSubstanceAdministeredActId", "ERROR");
+
 		if (VALIDATE_SUBSTANCE_ADMINISTERED_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -353,6 +362,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 
 	public static boolean validateSubstanceAdministeredActCodeP(SubstanceAdministeredAct substanceAdministeredAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SubstanceAdministeredActSubstanceAdministeredActCodeP", "ERROR");
 
 		if (VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -441,6 +452,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "SubstanceAdministeredActSubstanceAdministeredActCode", "ERROR");
+
 		if (VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -505,6 +518,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 
 	public static boolean validateSubstanceAdministeredActStatusCode(SubstanceAdministeredAct substanceAdministeredAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SubstanceAdministeredActSubstanceAdministeredActStatusCode", "ERROR");
 
 		if (VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -571,6 +586,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 	public static boolean validateSubstanceAdministeredActStatusCodeP(SubstanceAdministeredAct substanceAdministeredAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SubstanceAdministeredActSubstanceAdministeredActStatusCodeP", "ERROR");
+
 		if (VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -636,6 +653,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 	public static boolean validateSubstanceAdministeredActEffectiveTime(
 			SubstanceAdministeredAct substanceAdministeredAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SubstanceAdministeredActSubstanceAdministeredActEffectiveTime", "INFO");
 
 		if (VALIDATE_SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -7,18 +7,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.mdht.uml.cda.operations.EntryOperations;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsEntry;
-
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
 
 /**
@@ -73,7 +69,7 @@ public class PrivacyMarkingsEntryOperations extends EntryOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,32 +84,44 @@ public class PrivacyMarkingsEntryOperations extends EntryOperations {
 
 	public static boolean validatePrivacyMarkingsEntryTemplateId(PrivacyMarkingsEntry privacyMarkingsEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"PrivacyMarkingsEntryPrivacyMarkingsEntryTemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_MARKINGS_ENTRY);
 			try {
-				VALIDATE_PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				privacyMarkingsEntry)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.PRIVACY_MARKINGS_ENTRY__PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID,
-						CONTENTPROFILEPlugin.INSTANCE.getString("PrivacyMarkingsEntryPrivacyMarkingsEntryTemplateId"),
-						new Object[] { privacyMarkingsEntry }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacyMarkingsEntry)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.PRIVACY_MARKINGS_ENTRY__PRIVACY_MARKINGS_ENTRY_TEMPLATE_ID,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("PrivacyMarkingsEntryPrivacyMarkingsEntryTemplateId"),
+						 new Object [] { privacyMarkingsEntry }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -138,7 +146,7 @@ public class PrivacyMarkingsEntryOperations extends EntryOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PRIVACY_MARKINGS_ENTRY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_MARKINGS_ENTRY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -153,31 +161,44 @@ public class PrivacyMarkingsEntryOperations extends EntryOperations {
 
 	public static boolean validatePrivacyMarkingsEntryOrganizer(PrivacyMarkingsEntry privacyMarkingsEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"PrivacyMarkingsEntryPrivacyMarkingsEntryOrganizer","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PRIVACY_MARKINGS_ENTRY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_MARKINGS_ENTRY);
 			try {
-				VALIDATE_PRIVACY_MARKINGS_ENTRY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_PRIVACY_MARKINGS_ENTRY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_PRIVACY_MARKINGS_ENTRY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_MARKINGS_ENTRY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PRIVACY_MARKINGS_ENTRY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				privacyMarkingsEntry)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.PRIVACY_MARKINGS_ENTRY__PRIVACY_MARKINGS_ENTRY_ORGANIZER,
-						CONTENTPROFILEPlugin.INSTANCE.getString("PrivacyMarkingsEntryPrivacyMarkingsEntryOrganizer"),
-						new Object[] { privacyMarkingsEntry }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_MARKINGS_ENTRY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacyMarkingsEntry)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.PRIVACY_MARKINGS_ENTRY__PRIVACY_MARKINGS_ENTRY_ORGANIZER,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("PrivacyMarkingsEntryPrivacyMarkingsEntryOrganizer"),
+						 new Object [] { privacyMarkingsEntry }));
+			}
+			 
 			return false;
 		}
 		return true;

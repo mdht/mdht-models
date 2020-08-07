@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -199,6 +200,11 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummary2DischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection",
+			"ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -264,6 +270,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2CodeP(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2CodeP", "ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -351,6 +359,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2Code", "ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -413,6 +423,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2Participant(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2Participant", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -477,6 +489,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2ComponentOf(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2ComponentOf", "ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -539,6 +553,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2AllergiesSectionEntriesOptional2(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2AllergiesSectionEntriesOptional2", "ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -606,6 +622,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2HospitalCourseSection(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2HospitalCourseSection", "ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -670,6 +688,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2PlanOfTreatmentSection2(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2PlanOfTreatmentSection2", "ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -736,6 +756,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2ChiefComplaintSection(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2ChiefComplaintSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -800,6 +822,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2ChiefComplaintAndReasonForVisitSection(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2ChiefComplaintAndReasonForVisitSection", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -867,6 +892,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2NutritionSection(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2NutritionSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -932,6 +959,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2FunctionalStatusSection2(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2FunctionalStatusSection2", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -996,6 +1025,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2HistoryOfPastIllnessSection2(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2HistoryOfPastIllnessSection2", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1063,6 +1094,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2HistoryOfPresentIllnessSection(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2HistoryOfPresentIllnessSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1128,6 +1161,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2HospitalConsultationsSection(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2HospitalConsultationsSection", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_CONSULTATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1195,6 +1230,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2HospitalDischargeInstructionsSection(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2HospitalDischargeInstructionsSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1260,6 +1298,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2HospitalDischargePhysicalSection(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2HospitalDischargePhysicalSection", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1327,6 +1367,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2HospitalDischargeStudiesSummarySection(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2HospitalDischargeStudiesSummarySection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1392,6 +1435,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2ImmunizationsSectionEntriesOptional2(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2ImmunizationsSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1459,6 +1505,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2ProblemSectionEntriesOptional2(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2ProblemSectionEntriesOptional2", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1524,6 +1572,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2ProceduresSectionEntriesOptional2(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2ProceduresSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1591,6 +1641,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2ReasonForVisitSection(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2ReasonForVisitSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1655,6 +1707,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2ReviewOfSystemsSection(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2ReviewOfSystemsSection", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1721,6 +1775,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2SocialHistorySection2(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2SocialHistorySection2", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1785,6 +1841,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2VitalSignsSectionEntriesOptional2(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2VitalSignsSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1852,6 +1910,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2DischargeDiagnosisSection2(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2DischargeDiagnosisSection2", "ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1916,6 +1976,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2DischargeMedicationsSectionEntriesOptional2(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2DischargeMedicationsSectionEntriesOptional2", "WARNING");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1983,6 +2046,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2FamilyHistorySection2(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2FamilyHistorySection2", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2048,6 +2113,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2AdmissionDiagnosisSection2(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2AdmissionDiagnosisSection2", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2112,6 +2179,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2AdmissionMedicationsSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2179,6 +2249,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2DischargeMedicationsSection2(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2DischargeMedicationsSection2", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2245,6 +2317,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2DischargeDietSection(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2DischargeDietSection", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIET_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2310,6 +2384,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND", "ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2382,6 +2459,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSLow(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterIVLTSLow", "ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2452,6 +2532,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh", "ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2524,6 +2607,11 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson",
+			"WARNING");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2594,6 +2682,11 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization",
+			"WARNING");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2666,6 +2759,11 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization",
+			"ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2736,6 +2834,11 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity",
+			"ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2808,6 +2911,11 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson",
+			"WARNING");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2878,6 +2986,11 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization",
+			"WARNING");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2950,6 +3063,11 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization",
+			"ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3021,6 +3139,10 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3091,6 +3213,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterEffectiveTime(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEffectiveTime", "ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3165,6 +3290,10 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode",
+			"WARNING");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3235,6 +3364,10 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP",
+			"ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3307,6 +3440,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3378,6 +3514,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounterResponsibleParty(
 			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsibleParty", "INFO");
+
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3448,6 +3587,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounter(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounter", "ERROR");
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4763,6 +4904,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateUSRealmHeader2TemplateId(DischargeSummary2 dischargeSummary2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeSummary2USRealmHeader2TemplateId", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -97,6 +98,8 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 	public static boolean validateTobaccoUse2TemplateId(TobaccoUse2 tobaccoUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TobaccoUse2TobaccoUse2TemplateId", "ERROR");
+
 		if (VALIDATE_TOBACCO_USE2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -160,6 +163,8 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 	public static boolean validateTobaccoUse2Id(TobaccoUse2 tobaccoUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TobaccoUse2TobaccoUse2Id", "ERROR");
+
 		if (VALIDATE_TOBACCO_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -200,6 +205,8 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 
 	public static boolean validateTobaccoUse2AuthorParticipation(TobaccoUse2 tobaccoUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TobaccoUse2TobaccoUse2AuthorParticipation", "WARNING");
 
 		if (VALIDATE_TOBACCO_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -242,6 +249,8 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTobaccoUse2CDCodeTermAssertionOrLoinc(TobaccoUse2 tobaccoUse2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TobaccoUse2TobaccoUse2CDCodeTermAssertionOrLoinc", "INFO");
 
 		if (VALIDATE_TOBACCO_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -292,6 +301,8 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 	public static boolean validateTobaccoUse2IVLTSHigh(TobaccoUse2 tobaccoUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TobaccoUse2TobaccoUse2IVLTSHigh", "INFO");
+
 		if (VALIDATE_TOBACCO_USE2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -339,6 +350,8 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 
 	public static boolean validateTobaccoUseEffectiveTime(TobaccoUse2 tobaccoUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TobaccoUse2TobaccoUseEffectiveTime", "ERROR");
 
 		if (VALIDATE_TOBACCO_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -466,6 +479,8 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 	public static boolean validateTobaccoUseCodeP(TobaccoUse2 tobaccoUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TobaccoUse2TobaccoUseCodeP", "ERROR");
+
 		if (VALIDATE_TOBACCO_USE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -570,6 +585,8 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "TobaccoUse2TobaccoUseCode", "ERROR");
 
 		if (VALIDATE_TOBACCO_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

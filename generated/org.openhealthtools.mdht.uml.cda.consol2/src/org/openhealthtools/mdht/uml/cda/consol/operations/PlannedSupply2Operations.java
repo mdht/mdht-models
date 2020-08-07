@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -120,6 +121,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	public static boolean validatePlannedSupply2MedInfoXorImmunXorProductInstance(PlannedSupply2 plannedSupply2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2MedInfoXorImmunXorProductInstance", "ERROR");
+
 		if (VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -186,6 +189,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	public static boolean validatePlannedSupply2TemplateId(PlannedSupply2 plannedSupply2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2TemplateId", "ERROR");
+
 		if (VALIDATE_PLANNED_SUPPLY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -250,6 +255,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	public static boolean validatePlannedSupply2StatusCode(PlannedSupply2 plannedSupply2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2StatusCode", "ERROR");
+
 		if (VALIDATE_PLANNED_SUPPLY2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -312,6 +319,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 
 	public static boolean validatePlannedSupply2StatusCodeP(PlannedSupply2 plannedSupply2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2StatusCodeP", "ERROR");
 
 		if (VALIDATE_PLANNED_SUPPLY2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -376,6 +385,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	public static boolean validatePlannedSupply2EffectiveTime(PlannedSupply2 plannedSupply2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2EffectiveTime", "WARNING");
+
 		if (VALIDATE_PLANNED_SUPPLY2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -438,6 +449,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 
 	public static boolean validatePlannedSupply2RepeatNumber(PlannedSupply2 plannedSupply2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2RepeatNumber", "INFO");
 
 		if (VALIDATE_PLANNED_SUPPLY2_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -502,6 +515,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	public static boolean validatePlannedSupply2Quantity(PlannedSupply2 plannedSupply2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2Quantity", "INFO");
+
 		if (VALIDATE_PLANNED_SUPPLY2_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -564,6 +579,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 
 	public static boolean validatePlannedSupply2Product(PlannedSupply2 plannedSupply2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2Product", "INFO");
 
 		if (VALIDATE_PLANNED_SUPPLY2_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -628,6 +645,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	public static boolean validatePlannedSupply2Performer(PlannedSupply2 plannedSupply2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2Performer", "INFO");
+
 		if (VALIDATE_PLANNED_SUPPLY2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -690,6 +709,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 
 	public static boolean validatePlannedSupply2AuthorParticipation(PlannedSupply2 plannedSupply2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2AuthorParticipation", "WARNING");
 
 		if (VALIDATE_PLANNED_SUPPLY2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -756,6 +777,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	public static boolean validatePlannedSupply2ProductInstance(PlannedSupply2 plannedSupply2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2ProductInstance", "INFO");
+
 		if (VALIDATE_PLANNED_SUPPLY2_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -818,6 +841,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 
 	public static boolean validatePlannedSupply2PriorityPreference(PlannedSupply2 plannedSupply2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2PriorityPreference", "INFO");
 
 		if (VALIDATE_PLANNED_SUPPLY2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -883,6 +908,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	public static boolean validatePlannedSupply2Indication2(PlannedSupply2 plannedSupply2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2Indication2", "INFO");
+
 		if (VALIDATE_PLANNED_SUPPLY2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -945,6 +972,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 
 	public static boolean validatePlannedSupply2Instruction2(PlannedSupply2 plannedSupply2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2Instruction2", "INFO");
 
 		if (VALIDATE_PLANNED_SUPPLY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1009,6 +1038,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	public static boolean validatePlannedSupply2PlannedCoverage(PlannedSupply2 plannedSupply2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2PlannedCoverage", "INFO");
+
 		if (VALIDATE_PLANNED_SUPPLY2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1071,6 +1102,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 
 	public static boolean validatePlannedSupply2ProductRecommended(PlannedSupply2 plannedSupply2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2ProductRecommended", "WARNING");
 
 		if (VALIDATE_PLANNED_SUPPLY2_PRODUCT_RECOMMENDED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1135,6 +1168,9 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(
 			PlannedSupply2 plannedSupply2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PlannedSupply2PlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2", "ERROR");
 
 		if (VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1206,6 +1242,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	@SuppressWarnings("unchecked")
 	public static boolean validatePlannedSupply2ProductManufacturedProduct(PlannedSupply2 plannedSupply2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedSupply2PlannedSupply2ProductManufacturedProduct", "INFO");
 
 		if (VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1511,6 +1549,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 
 	public static boolean validatePlanOfCareActivitySupplyMoodCode(PlannedSupply2 plannedSupply2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedSupply2PlanOfCareActivitySupplyMoodCode", "ERROR");
 
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

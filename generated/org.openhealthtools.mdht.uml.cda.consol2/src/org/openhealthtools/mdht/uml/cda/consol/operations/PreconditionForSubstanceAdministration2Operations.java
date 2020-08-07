@@ -7,6 +7,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -88,6 +89,10 @@ public class PreconditionForSubstanceAdministration2Operations
 			PreconditionForSubstanceAdministration2 preconditionForSubstanceAdministration2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministration2TemplateId",
+			"ERROR");
+
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -155,6 +160,9 @@ public class PreconditionForSubstanceAdministration2Operations
 			PreconditionForSubstanceAdministration2 preconditionForSubstanceAdministration2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCodeP", "ERROR");
+
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -221,6 +229,9 @@ public class PreconditionForSubstanceAdministration2Operations
 	public static boolean validatePreconditionForSubstanceAdministrationValueP(
 			PreconditionForSubstanceAdministration2 preconditionForSubstanceAdministration2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValueP", "ERROR");
 
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -291,6 +302,9 @@ public class PreconditionForSubstanceAdministration2Operations
 			PreconditionForSubstanceAdministration2 preconditionForSubstanceAdministration2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCode", "ERROR");
+
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -357,6 +371,9 @@ public class PreconditionForSubstanceAdministration2Operations
 	public static boolean validatePreconditionForSubstanceAdministrationText(
 			PreconditionForSubstanceAdministration2 preconditionForSubstanceAdministration2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationText", "ERROR");
 
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -426,6 +443,9 @@ public class PreconditionForSubstanceAdministration2Operations
 	public static boolean validatePreconditionForSubstanceAdministrationValue(
 			PreconditionForSubstanceAdministration2 preconditionForSubstanceAdministration2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValue", "ERROR");
 
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

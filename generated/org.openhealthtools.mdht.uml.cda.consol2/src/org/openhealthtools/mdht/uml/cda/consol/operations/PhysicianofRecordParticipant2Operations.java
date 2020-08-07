@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -97,6 +98,9 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 			PhysicianofRecordParticipant2 physicianofRecordParticipant2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PhysicianofRecordParticipant2PhysicianofRecordParticipant2TemplateId", "ERROR");
+
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -163,6 +167,11 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 	public static boolean validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName(
 			PhysicianofRecordParticipant2 physicianofRecordParticipant2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"PhysicianofRecordParticipant2PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName",
+			"WARNING");
 
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT2_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -236,6 +245,10 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 			PhysicianofRecordParticipant2 physicianofRecordParticipant2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PhysicianofRecordParticipant2PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization",
+			"INFO");
+
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT2_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -308,6 +321,9 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 			PhysicianofRecordParticipant2 physicianofRecordParticipant2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntity", "ERROR");
+
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -374,6 +390,10 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 	public static boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPersonName(
 			PhysicianofRecordParticipant2 physicianofRecordParticipant2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPersonName",
+			"ERROR");
 
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -447,6 +467,10 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 			PhysicianofRecordParticipant2 physicianofRecordParticipant2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityHasNationalProviderId",
+			"WARNING");
+
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -518,6 +542,10 @@ public class PhysicianofRecordParticipant2Operations extends PhysicianofRecordPa
 	public static boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPerson(
 			PhysicianofRecordParticipant2 physicianofRecordParticipant2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson",
+			"WARNING");
 
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

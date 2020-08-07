@@ -8,9 +8,24 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tycho-version>1.0.0</tycho-version>
+	
+		<tycho-version>1.7.0</tycho-version>
+		<tychoExtrasVersion>1.7.0</tychoExtrasVersion>
+		<tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/mdht/org.eclipse.mdht</tycho.scmUrl>
+		<jarSignerVersion>1.1.2</jarSignerVersion>
+		<findbugs.version>3.0.1</findbugs.version>
+		<xtext.version>2.7.3</xtext.version>
+		<java.source.version>1.7</java.source.version>
+		<java.target.version>1.7</java.target.version>
+		<mylyn.wikitext.version>2.4.0-SNAPSHOT</mylyn.wikitext.version>
+		<skipAllTests>false</skipAllTests>
+		<skipInnerTests>true</skipInnerTests>
+	    <maven.javadoc.skip>true</maven.javadoc.skip>
+	  <maven.compiler.source>1.7</maven.compiler.source>
+     <maven.compiler.target>1.7</maven.compiler.target>
+	 
 		<org.apache.maven.version>3.0.1</org.apache.maven.version>
-		<maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
+		<maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
 		<maven-assembly-plugin.version>3.0.0</maven-assembly-plugin.version>
 		<maven-dependency-plugin.version>3.0.0</maven-dependency-plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,15 +36,15 @@
 
 	<repositories>
 		<repository>
-			<id>neon</id>
+			<id>oxygen</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/neon</url>
+			<url>http://download.eclipse.org/releases/oxygen</url>
 		</repository>
 
 		<repository>
-			<id>mdht-neon</id>
+			<id>mdht-nightly</id>
 			<layout>p2</layout>
-			<url>https://hudson.eclipse.org/mdht/job/MDHT-master/lastSuccessfulBuild/artifact/repository</url>
+			<url>http://download.eclipse.org/mdht/nightly</url>
 		</repository>
 
 	</repositories>
@@ -65,7 +80,18 @@
 			    <plugin>
 			      <groupId>org.apache.maven.plugins</groupId>
 			      <artifactId>maven-javadoc-plugin</artifactId>
-			      <version>3.0.1</version>
+			      <version>3.2.0</version>
+			      		<executions>
+							<execution>
+								<id>attach-javadocs</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<additionalparam>-Xdoclint:none</additionalparam>
+								</configuration>
+							</execution>
+						</executions>
 			      <configuration>
 			        <tags>
 			          <tag>
@@ -104,9 +130,9 @@
 			</activation>
 			<repositories>
 				<repository>
-					<id>neon</id>
+					<id>oxygen</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/neon</url>
+					<url>http://download.eclipse.org/releases/oxygen</url>
 				</repository>
 			</repositories>
 			<build>

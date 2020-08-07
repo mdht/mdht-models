@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,8 @@ public class AdmissionMedication2Operations extends AdmissionMedicationOperation
 
 	public static boolean validateAdmissionMedication2TemplateId(AdmissionMedication2 admissionMedication2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdmissionMedication2AdmissionMedication2TemplateId", "ERROR");
 
 		if (VALIDATE_ADMISSION_MEDICATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -207,6 +210,8 @@ public class AdmissionMedication2Operations extends AdmissionMedicationOperation
 	public static boolean validateAdmissionMedicationCodeP(AdmissionMedication2 admissionMedication2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdmissionMedication2AdmissionMedicationCodeP", "ERROR");
+
 		if (VALIDATE_ADMISSION_MEDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -293,6 +298,8 @@ public class AdmissionMedication2Operations extends AdmissionMedicationOperation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "AdmissionMedication2AdmissionMedicationCode", "ERROR");
+
 		if (VALIDATE_ADMISSION_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -355,6 +362,8 @@ public class AdmissionMedication2Operations extends AdmissionMedicationOperation
 
 	public static boolean validateAdmissionMedicationMedicationActivity(AdmissionMedication2 admissionMedication2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdmissionMedication2AdmissionMedicationMedicationActivity", "ERROR");
 
 		if (VALIDATE_ADMISSION_MEDICATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

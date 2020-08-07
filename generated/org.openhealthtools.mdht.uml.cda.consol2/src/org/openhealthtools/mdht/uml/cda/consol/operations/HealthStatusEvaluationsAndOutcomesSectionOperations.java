@@ -12,6 +12,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -96,6 +97,10 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionTemplateId",
+			"ERROR");
+
 		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -162,6 +167,10 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 	public static boolean validateHealthStatusEvaluationsAndOutcomesSectionNullFlavor(
 			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionNullFlavor",
+			"INFO");
 
 		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -232,6 +241,9 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionCode", "ERROR");
+
 		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -298,6 +310,10 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 	public static boolean validateHealthStatusEvaluationsAndOutcomesSectionCodeP(
 			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionCodeP",
+			"ERROR");
 
 		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -366,6 +382,10 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionTitle",
+			"ERROR");
+
 		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -433,6 +453,9 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionText", "ERROR");
+
 		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -499,6 +522,11 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 	public static boolean validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation(
 			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation",
+			"ERROR");
 
 		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

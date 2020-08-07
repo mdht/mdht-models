@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalDocumentOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -386,6 +387,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsTypeIdRoot(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsTypeIdRoot", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -451,6 +454,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsTypeIdExtension(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsTypeIdExtension", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -519,6 +524,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsSetIdVersionNumber", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_SET_ID_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -586,6 +593,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsVersionNumberSetId", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -651,6 +660,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	public static boolean validateGeneralHeaderConstraintsTemplateId(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsTemplateId", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -718,6 +729,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRealmCode(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRealmCode", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -782,6 +795,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	public static boolean validateGeneralHeaderConstraintsTypeId(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsTypeId", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -848,6 +863,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsId(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsId", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -911,6 +928,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	public static boolean validateGeneralHeaderConstraintsCode(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsCode", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -976,6 +995,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsTitle(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsTitle", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1040,6 +1061,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsEffectiveTime(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsEffectiveTime", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1107,6 +1130,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsConfidentialityCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsConfidentialityCodeP", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1200,6 +1226,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			return true;
 		}
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsConfidentialityCode", "WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1269,6 +1298,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLanguageCode", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1334,6 +1365,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsLanguageCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLanguageCodeP", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1401,6 +1434,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsSetId(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsSetId", "INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1465,6 +1500,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsVersionNumber(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsVersionNumber", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1532,6 +1569,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthor(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthor", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1595,6 +1634,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	public static boolean validateGeneralHeaderConstraintsDataEnterer(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDataEnterer", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1661,6 +1702,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsCustodian(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsCustodian", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1726,6 +1769,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformationRecipient(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInformationRecipient", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1794,6 +1840,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticator", "WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1860,6 +1909,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthenticator(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticator", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1928,6 +1979,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTarget", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1992,6 +2045,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	public static boolean validateGeneralHeaderConstraintsComponentOf(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsComponentOf", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2058,6 +2113,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformant(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInformant", "INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2123,6 +2180,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsSupportParticipant(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsSupportParticipant", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_SUPPORT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2191,6 +2250,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInFulfillmentOf", "INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2257,6 +2318,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDocumentationOf(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOf", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2325,6 +2388,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorization", "INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHORIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2391,6 +2456,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheDayTS(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheDayTS", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DTM_PRECISE_TO_THE_DAY_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2464,6 +2532,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheMinuteTS",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DTM_PRECISE_TO_THE_MINUTE_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2535,6 +2607,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheSecondTS(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheSecondTS",
+			"INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DTM_PRECISE_TO_THE_SECOND_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2608,6 +2684,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsUSRealmDateAndTimeDTMIfMorePreciseThanDayIncludeTimeZoneOffsetTS",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DTM_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2679,6 +2760,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2752,6 +2838,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2824,6 +2915,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2874,6 +2970,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUseP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2970,6 +3071,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3041,6 +3147,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCountry(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3114,6 +3225,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3185,6 +3301,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCity(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3258,6 +3379,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3329,6 +3455,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3402,6 +3533,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleTELUse", "WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_TEL_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3452,6 +3586,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3504,6 +3643,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3554,6 +3698,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3627,6 +3774,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUSRealmPatientNameMixedContent",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME_US_REALM_PATIENT_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3677,6 +3829,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameFamily(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameFamily",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3729,6 +3886,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameGiven",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME_GIVEN__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3779,6 +3941,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNamePrefix(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNamePrefix",
+			"INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME_PREFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3831,6 +3998,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameSuffix",
+			"INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME_SUFFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3881,6 +4053,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUseP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUseP",
+			"INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4124,6 +4301,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUse",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4195,6 +4377,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4268,6 +4455,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4340,6 +4532,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4390,6 +4587,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUseP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4486,6 +4688,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4557,6 +4764,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCountry(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4630,6 +4842,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4701,6 +4918,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCity(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4774,6 +4996,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4845,6 +5072,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4918,6 +5150,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TEL_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -4989,6 +5225,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5064,6 +5304,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_FROM_PERSONAL_RELATIONSHIP_OR_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5114,6 +5359,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5208,6 +5457,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5279,6 +5532,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom",
+			"INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5352,6 +5609,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GUARDIAN_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5423,6 +5685,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE_PLACE_HAS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5496,6 +5763,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE_PLACE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5568,6 +5840,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5619,6 +5895,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd",
+			"INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PREFERENCE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5669,6 +5950,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5735,6 +6021,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -5795,6 +6086,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCodeP",
+			"INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_MODE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5860,6 +6156,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -5944,6 +6245,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -6126,6 +6432,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -6198,6 +6509,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientIfSdtcEnforceRaceCode",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_IF_SDTC_ENFORCE_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -6248,6 +6564,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -6300,6 +6621,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -6350,6 +6675,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP",
+			"INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -6416,6 +6745,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -6476,6 +6809,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCodeP",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_MARITAL_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -6541,6 +6878,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_MARITAL_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -6623,6 +6964,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientName", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -6763,6 +7107,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -6827,6 +7175,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -6909,6 +7260,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCodeP",
+			"INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RELIGIOUS_AFFILIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -7042,6 +7398,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RELIGIOUS_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -7123,6 +7484,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP",
+			"INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -7256,6 +7621,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -7338,6 +7707,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian", "INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -7409,6 +7781,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace",
+			"INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -7482,6 +7858,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -7532,6 +7913,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -7584,6 +7970,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -7634,6 +8025,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -7686,6 +8082,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -7736,6 +8137,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -7788,6 +8194,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -7838,6 +8249,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressState(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -7890,6 +8306,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -7941,6 +8362,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -7991,6 +8417,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -8276,6 +8707,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTELUse",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_TEL_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -8348,6 +8784,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -8398,6 +8839,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -8471,6 +8916,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -8542,6 +8991,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -8636,6 +9089,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -8686,6 +9144,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleAddr", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -8780,6 +9241,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleId", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -8851,6 +9315,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleTelecom", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -8924,6 +9391,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatient", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -8995,6 +9465,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganization(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganization",
+			"INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -9068,6 +9542,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -9118,6 +9595,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -9212,6 +9693,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsComponentOfEncompassingEncounterId", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -9283,6 +9767,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsComponentOfEncompassingEncounter", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -9356,6 +9843,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheDayTS",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DTM_PRECISE_TO_THE_DAY_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -9427,6 +9919,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheMinuteTS(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheMinuteTS",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DTM_PRECISE_TO_THE_MINUTE_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -9500,6 +9997,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorGeneralHeaderConstraintsUSRealmDateAndTimeDTMPreciseToTheSecondTS",
+			"INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DTM_PRECISE_TO_THE_SECOND_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -9571,6 +10073,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorGeneralHeaderConstraintsUSRealmDateAndTimeDTMIfMorePreciseThanDayIncludeTimeZoneOffsetTS(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorGeneralHeaderConstraintsUSRealmDateAndTimeDTMIfMorePreciseThanDayIncludeTimeZoneOffsetTS",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DTM_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -9644,6 +10151,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -9715,6 +10227,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -9788,6 +10305,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -9838,6 +10360,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -9934,6 +10461,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -10005,6 +10537,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -10078,6 +10615,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -10149,6 +10691,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -10222,6 +10769,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -10293,6 +10845,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -10366,6 +10923,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorTELUse", "WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_TEL_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -10437,6 +10997,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_AUTHORING_DEVICE_MANUFACTURER_MODEL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -10510,6 +11075,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_AUTHORING_DEVICE_SOFTWARE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -10581,6 +11150,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonName(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorPersonName", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -10654,6 +11226,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorHasOneAssignedPersonOrOneAssignedAuthoringDevice",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_HAS_ONE_ASSIGNED_PERSON_OR_ONE_ASSIGNED_AUTHORING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -10726,6 +11303,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -10777,6 +11359,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorAddr", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -10827,6 +11412,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorCodeP", "WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -10892,6 +11480,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorCode", "WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -11040,6 +11631,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorId", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -11112,6 +11706,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthorTelecom", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -11182,6 +11779,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsAuthorTime(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorTime", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -11255,6 +11854,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorAssignedAuthor", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -11326,6 +11928,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -11399,6 +12006,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -11471,6 +12083,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -11521,6 +12138,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -11617,6 +12239,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -11688,6 +12315,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -11761,6 +12393,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -11832,6 +12469,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -11905,6 +12547,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -11976,6 +12623,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -12049,6 +12701,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityTELUse", "WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_TEL_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -12120,6 +12775,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonName(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityPersonName", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -12193,6 +12851,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -12244,6 +12907,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityAddr", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -12294,6 +12960,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityCodeP", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -12359,6 +13028,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityCode", "WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -12507,6 +13179,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityId", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -12578,6 +13253,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityTelecom", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -12651,6 +13329,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -12723,6 +13405,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDataEntererAssignedEntity", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -12773,6 +13458,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -12825,6 +13515,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -12875,6 +13570,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -12927,6 +13627,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -12977,6 +13682,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -13029,6 +13739,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -13079,6 +13794,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressState(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -13131,6 +13851,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -13182,6 +13907,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -13232,6 +13962,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -13517,6 +14252,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTELUse",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_TEL_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -13589,6 +14329,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -13639,6 +14384,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -13712,6 +14462,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -13783,6 +14538,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -13877,6 +14637,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -13948,6 +14713,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -14021,6 +14791,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsCustodianAssignedCustodian", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -14092,6 +14865,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -14165,6 +14942,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -14236,6 +15018,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient",
+			"INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -14309,6 +15096,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization",
+			"INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECIEVED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -14380,6 +15172,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInformationRecipientIntendedRecipient", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -14453,6 +15248,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -14524,6 +15324,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -14597,6 +15402,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -14647,6 +15457,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -14743,6 +15558,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -14814,6 +15634,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -14887,6 +15712,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -14958,6 +15788,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -15031,6 +15866,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -15102,6 +15942,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -15175,6 +16020,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTELUse",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_TEL_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -15246,6 +16095,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonName(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonName",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -15319,6 +16172,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier",
+			"INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -15370,6 +16228,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -15420,6 +16281,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCodeP", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -15485,6 +16349,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode", "WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -15633,6 +16500,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -15704,6 +16574,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -15777,6 +16651,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -15849,6 +16727,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorTime", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -15920,6 +16801,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorSignatureCodeP", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_SIGNATURE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -16008,6 +16892,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorSignatureCode", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -16090,6 +16977,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -16161,6 +17051,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -16234,6 +17129,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -16306,6 +17206,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -16356,6 +17261,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -16452,6 +17362,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -16523,6 +17438,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -16596,6 +17516,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -16667,6 +17592,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -16740,6 +17670,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -16811,6 +17746,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -16884,6 +17824,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityTELUse", "WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_TEL_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -16955,6 +17898,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -17028,6 +17974,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -17079,6 +18030,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -17129,6 +18083,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityCodeP", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -17194,6 +18151,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityCode", "WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -17342,6 +18302,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityId", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -17413,6 +18376,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -17486,6 +18452,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntityAssignedPerson",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -17558,6 +18528,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorTime", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -17629,6 +18601,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthenticatorSignatureCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorSignatureCodeP", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_SIGNATURE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -17717,6 +18692,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorSignatureCode", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -17799,6 +18777,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthenticatorAssignedEntity", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -17870,6 +18851,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -17943,6 +18929,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -18015,6 +19006,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -18065,6 +19061,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -18161,6 +19162,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -18232,6 +19238,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -18305,6 +19316,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -18376,6 +19392,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -18449,6 +19470,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -18520,6 +19546,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -18593,6 +19624,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityPersonName", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -18665,6 +19699,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -18716,6 +19755,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityAddr", "WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -18766,6 +19808,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityCodeP", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -18831,6 +19876,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantAssignedEntityCode(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityCode", "WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -18979,6 +20027,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityId", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -19050,6 +20101,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantAssignedEntityAssignedPerson(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInformantAssignedEntityAssignedPerson", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -19123,6 +20177,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -19194,6 +20253,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -19267,6 +20331,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -19317,6 +20386,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -19413,6 +20487,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -19484,6 +20563,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -19557,6 +20641,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressState",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -19628,6 +20717,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCity",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -19701,6 +20795,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -19772,6 +20871,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -19845,6 +20949,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInformantRelatedEntityAddr", "WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -19916,6 +21023,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInformantRelatedEntityPerson(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInformantRelatedEntityPerson", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -19989,6 +21099,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_HAS_ASSIGNED_ENTITY_OR_RELATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -20060,6 +21174,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_HAS_ASSOCIATED_PERSON_OR_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -20133,6 +21252,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsParticipantSupportTime", "INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -20204,6 +21326,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsInFulfillmentOfOrderId(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInFulfillmentOfOrderId", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -20277,6 +21402,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsInFulfillmentOfOrder", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -20349,6 +21477,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityHasNationalProviderIdentifier",
+			"WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -20399,6 +21532,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -20464,6 +21602,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -20591,6 +21734,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityId",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -20641,6 +21789,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP",
+			"INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -20706,6 +21859,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode",
+			"WARNING");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -20833,6 +21991,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1TypeCode",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -20904,6 +22066,11 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -20977,6 +22144,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTimeLow",
+			"ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -21048,6 +22219,10 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTime(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTime",
+			"ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -21121,6 +22296,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOfServiceEventPerformer", "WARNING");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -21193,6 +22371,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsDocumentationOfServiceEvent", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -21243,6 +22424,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorizationConsentCode(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorizationConsentCode", "INFO");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHORIZATION_CONSENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -21337,6 +22521,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorizationConsentId", "INFO");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHORIZATION_CONSENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -21408,6 +22595,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorizationConsentStatusCodeP(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorizationConsentStatusCodeP", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHORIZATION_CONSENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -21496,6 +22686,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorizationConsentStatusCode", "ERROR");
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHORIZATION_CONSENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -21577,6 +22770,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	public static boolean validateGeneralHeaderConstraintsAuthorizationConsent(
 			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "GeneralHeaderConstraintsGeneralHeaderConstraintsAuthorizationConsent", "ERROR");
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHORIZATION_CONSENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

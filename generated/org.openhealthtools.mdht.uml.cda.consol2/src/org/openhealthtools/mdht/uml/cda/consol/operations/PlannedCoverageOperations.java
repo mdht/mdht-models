@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -110,6 +111,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedCoverageTemplateId(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageTemplateId", "ERROR");
+
 		if (VALIDATE_PLANNED_COVERAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -172,6 +175,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 
 	public static boolean validatePlannedCoverageClassCode(PlannedCoverage plannedCoverage, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageClassCode", "ERROR");
 
 		if (VALIDATE_PLANNED_COVERAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -236,6 +241,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedCoverageMoodCode(PlannedCoverage plannedCoverage, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageMoodCode", "ERROR");
+
 		if (VALIDATE_PLANNED_COVERAGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -299,6 +306,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedCoverageId(PlannedCoverage plannedCoverage, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageId", "ERROR");
+
 		if (VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -361,6 +370,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 
 	public static boolean validatePlannedCoverageCodeP(PlannedCoverage plannedCoverage, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageCodeP", "ERROR");
 
 		if (VALIDATE_PLANNED_COVERAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -448,6 +459,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageCode", "ERROR");
+
 		if (VALIDATE_PLANNED_COVERAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -512,6 +525,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedCoverageStatusCode(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageStatusCode", "ERROR");
+
 		if (VALIDATE_PLANNED_COVERAGE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -575,6 +590,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedCoverageStatusCodeP(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageStatusCodeP", "ERROR");
+
 		if (VALIDATE_PLANNED_COVERAGE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -637,6 +654,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 
 	public static boolean validatePlannedCoverageEntryRelationship(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageEntryRelationship", "ERROR");
 
 		if (VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -703,6 +722,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedCoverageAuthorParticipation(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageAuthorParticipation", "INFO");
+
 		if (VALIDATE_PLANNED_COVERAGE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -767,6 +788,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePlannedCoverageEntryRelationshipActClassCode(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageEntryRelationshipActClassCode", "ERROR");
 
 		if (VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -839,6 +862,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedCoverageEntryRelationshipActMoodCode(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageEntryRelationshipActMoodCode", "ERROR");
+
 		if (VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -910,6 +935,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedCoverageEntryRelationshipActId(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageEntryRelationshipActId", "ERROR");
+
 		if (VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -979,6 +1006,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePlannedCoverageEntryRelationshipActCodeP(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageEntryRelationshipActCodeP", "ERROR");
 
 		if (VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1066,6 +1095,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedCoverageEntryRelationshipActCode(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageEntryRelationshipActCode", "ERROR");
+
 		if (VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1146,6 +1177,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedCoverageEntryRelationshipActStatusCode(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageEntryRelationshipActStatusCode", "ERROR");
+
 		if (VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1216,6 +1249,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePlannedCoverageEntryRelationshipActStatusCodeP(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageEntryRelationshipActStatusCodeP", "ERROR");
 
 		if (VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1288,6 +1323,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedCoverageEntryRelationshipTypeCode(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageEntryRelationshipTypeCode", "ERROR");
+
 		if (VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1357,6 +1394,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePlannedCoverageEntryRelationshipAct(PlannedCoverage plannedCoverage,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PlannedCoveragePlannedCoverageEntryRelationshipAct", "ERROR");
 
 		if (VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

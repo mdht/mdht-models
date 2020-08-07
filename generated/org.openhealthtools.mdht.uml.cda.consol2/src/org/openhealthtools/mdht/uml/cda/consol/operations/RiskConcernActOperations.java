@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -205,6 +206,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActTemplateId(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActTemplateId", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -267,6 +270,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActClassCode(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActClassCode", "ERROR");
 
 		if (VALIDATE_RISK_CONCERN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -331,6 +336,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActMoodCode(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActMoodCode", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -394,6 +401,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActId(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActId", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -456,6 +465,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActCodeP(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActCodeP", "ERROR");
 
 		if (VALIDATE_RISK_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -543,6 +554,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActCode", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -608,6 +621,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActStatusCode(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActStatusCode", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -670,6 +685,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActStatusCodeP(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActStatusCodeP", "ERROR");
 
 		if (VALIDATE_RISK_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -734,6 +751,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActEffectiveTime(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActEffectiveTime", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -796,6 +815,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActAuthorParticipation(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActAuthorParticipation", "WARNING");
 
 		if (VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -862,6 +883,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActProblemObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActProblemObservation2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -926,6 +949,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActAllergyObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActAllergyObservation2", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -992,6 +1017,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActEntryReferenceRelatesTo(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActEntryReferenceRelatesTo", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1056,6 +1083,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActEntryReferenceHasComponent(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActEntryReferenceHasComponent", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1122,6 +1151,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActAssessmentScaleObservation(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActAssessmentScaleObservation", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1186,6 +1217,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActMentalStatusObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActMentalStatusObservation2", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1252,6 +1285,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActSelfCareActivities(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActSelfCareActivities", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1316,6 +1351,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActMentalStatusObservation2B(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActMentalStatusObservation2B", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1382,6 +1419,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActSmokingStatusMeaningfulUse2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActSmokingStatusMeaningfulUse2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1446,6 +1485,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActEncounterDiagnosis2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActEncounterDiagnosis2", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1512,6 +1553,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActFamilyHistoryOrganizer2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActFamilyHistoryOrganizer2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1576,6 +1619,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActFunctionalStatusObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActFunctionalStatusObservation2", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1642,6 +1687,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActHospitalAdmissionDiagnosis2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActHospitalAdmissionDiagnosis2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1706,6 +1753,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActMentalStatusObservation2C(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActMentalStatusObservation2C", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1772,6 +1821,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActNutritionAssessment(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActNutritionAssessment", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1836,6 +1887,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActNutritionAssessmentB(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActNutritionAssessmentB", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1902,6 +1955,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActPostprocedureDiagnosis2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActPostprocedureDiagnosis2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1966,6 +2021,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActPregnancyObservation(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActPregnancyObservation", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2032,6 +2089,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActPreoperativeDiagnosis2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActPreoperativeDiagnosis2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2096,6 +2155,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActReactionObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActReactionObservation2", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2162,6 +2223,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActResultObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActResultObservation2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2227,6 +2290,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActSensoryStatus(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActSensoryStatus", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2289,6 +2354,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActSocialHistoryObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActSocialHistoryObservation2", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2354,6 +2421,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActSubstanceOrDeviceAllergyObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActSubstanceOrDeviceAllergyObservation2", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2421,6 +2490,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActTobaccoUse2(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActTobaccoUse2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_TOBACCO_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2483,6 +2554,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActVitalSignObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActVitalSignObservation2", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2549,6 +2622,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActWoundObservation(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActWoundObservation", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2612,6 +2687,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActProblemObservation2HasSupport(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActProblemObservation2HasSupport", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2678,6 +2755,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActCaregiverCharacteristics(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActCaregiverCharacteristics", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2742,6 +2821,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActCulturalAndReligiousObservation(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActCulturalAndReligiousObservation", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2808,6 +2889,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActCharacteristicsOfHomeEnvironment(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActCharacteristicsOfHomeEnvironment", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2872,6 +2955,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActNutritionalStatusObservation(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActNutritionalStatusObservation", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2938,6 +3023,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActResultOrganizer2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActResultOrganizer2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3001,6 +3088,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActPriorityPreferencePatient(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActPriorityPreferencePatient", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -3067,6 +3156,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActPriorityPreferenceProvider(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActPriorityPreferenceProvider", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3131,6 +3222,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActProblemConcernAct2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActProblemConcernAct2", "INFO");
 
 		if (VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -3197,6 +3290,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActEntryReferenceHealthConcern(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActEntryReferenceHealthConcern", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3262,6 +3357,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	public static boolean validateRiskConcernActReference(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActReference", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3324,6 +3421,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateRiskConcernActReferenceTypeCode(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActReferenceTypeCode", "ERROR");
 
 		if (VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3394,6 +3493,8 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateRiskConcernActReferenceExternalDocumentReference(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActReferenceExternalDocumentReference", "ERROR");
 
 		if (VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

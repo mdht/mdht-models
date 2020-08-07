@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -100,6 +101,10 @@ public class FunctionalStatusResultOrganizerOperations extends ResultOrganizerOp
 	public static boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
 			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusResultOrganizerFunctionalStatusResultOrganizerFunctionalStatusResultObservation",
+			"ERROR");
 
 		if (VALIDATE_FUNCTIONAL_STATUS_RESULT_ORGANIZER_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -218,6 +223,8 @@ public class FunctionalStatusResultOrganizerOperations extends ResultOrganizerOp
 			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FunctionalStatusResultOrganizerResultOrganizerCodeValue", "WARNING");
+
 		if (VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -282,6 +289,8 @@ public class FunctionalStatusResultOrganizerOperations extends ResultOrganizerOp
 	public static boolean validateResultOrganizerTemplateId(
 			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusResultOrganizerResultOrganizerTemplateId", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -348,6 +357,8 @@ public class FunctionalStatusResultOrganizerOperations extends ResultOrganizerOp
 			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FunctionalStatusResultOrganizerResultOrganizerClassCode", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -413,6 +424,8 @@ public class FunctionalStatusResultOrganizerOperations extends ResultOrganizerOp
 			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FunctionalStatusResultOrganizerResultOrganizerMoodCode", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -477,6 +490,8 @@ public class FunctionalStatusResultOrganizerOperations extends ResultOrganizerOp
 	public static boolean validateResultOrganizerId(FunctionalStatusResultOrganizer functionalStatusResultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FunctionalStatusResultOrganizerResultOrganizerId", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -539,6 +554,8 @@ public class FunctionalStatusResultOrganizerOperations extends ResultOrganizerOp
 
 	public static boolean validateResultOrganizerCode(FunctionalStatusResultOrganizer functionalStatusResultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusResultOrganizerResultOrganizerCode", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -603,6 +620,8 @@ public class FunctionalStatusResultOrganizerOperations extends ResultOrganizerOp
 	public static boolean validateResultOrganizerStatusCodeP(
 			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FunctionalStatusResultOrganizerResultOrganizerStatusCodeP", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -691,6 +710,8 @@ public class FunctionalStatusResultOrganizerOperations extends ResultOrganizerOp
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "FunctionalStatusResultOrganizerResultOrganizerStatusCode", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

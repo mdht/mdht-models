@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -103,6 +104,8 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	public static boolean validateCoverageActivity2TemplateId(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivity2TemplateId", "ERROR");
+
 		if (VALIDATE_COVERAGE_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -144,6 +147,8 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 
 	public static boolean validateCoverageActivityCodeP(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivityCodeP", "ERROR");
 
 		if (VALIDATE_COVERAGE_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -200,6 +205,8 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	public static boolean validateCoverageActivity2EntryRelationship(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivity2EntryRelationship", "ERROR");
+
 		if (VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -243,6 +250,8 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCoverageActivity2EntryRelationshipINTValue(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivity2EntryRelationshipINTValue", "ERROR");
 
 		if (VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -294,6 +303,8 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	public static boolean validateCoverageActivity2EntryRelationshipTypeCode(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivity2EntryRelationshipTypeCode", "ERROR");
+
 		if (VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -344,6 +355,8 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	public static boolean validateCoverageActivity2EntryRelationshipSequenceNumber(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivity2EntryRelationshipSequenceNumber", "INFO");
+
 		if (VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -393,6 +406,8 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCoverageActivity2EntryRelationshipPolicyActivity2(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivity2EntryRelationshipPolicyActivity2", "ERROR");
 
 		if (VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -470,6 +485,9 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 
 	public static boolean validateCoverageActivityCoverageActivityRelationshipSequenceNumber(
 			CoverageActivity2 coverageActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CoverageActivity2CoverageActivityCoverageActivityRelationshipSequenceNumber", "INFO");
 
 		if (VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -714,6 +732,8 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivityCode", "ERROR");
+
 		if (VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -776,6 +796,8 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 
 	public static boolean validateCoverageActivityPolicyActivity(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivityPolicyActivity", "ERROR");
 
 		if (VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

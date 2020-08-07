@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,8 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 	public static boolean validateGeneralStatusSectionTemplateId(GeneralStatusSection generalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralStatusSectionGeneralStatusSectionTemplateId", "ERROR");
+
 		if (VALIDATE_GENERAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -161,6 +164,8 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 	public static boolean validateGeneralStatusSectionCode(GeneralStatusSection generalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralStatusSectionGeneralStatusSectionCode", "ERROR");
+
 		if (VALIDATE_GENERAL_STATUS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -223,6 +228,8 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 
 	public static boolean validateGeneralStatusSectionCodeP(GeneralStatusSection generalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralStatusSectionGeneralStatusSectionCodeP", "ERROR");
 
 		if (VALIDATE_GENERAL_STATUS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -287,6 +294,8 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 	public static boolean validateGeneralStatusSectionTitle(GeneralStatusSection generalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "GeneralStatusSectionGeneralStatusSectionTitle", "ERROR");
+
 		if (VALIDATE_GENERAL_STATUS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -349,6 +358,8 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 
 	public static boolean validateGeneralStatusSectionText(GeneralStatusSection generalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GeneralStatusSectionGeneralStatusSectionText", "ERROR");
 
 		if (VALIDATE_GENERAL_STATUS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

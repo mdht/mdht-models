@@ -25,6 +25,7 @@ import org.eclipse.mdht.uml.cda.util.CDAUtil;
 import org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationHandler;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil.ValidationStatistics;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -77,6 +78,24 @@ public class RequiresParentTemplateIDTest {
 				if (PRINT_TO_CONSOLE) {
 					System.out.println("Info: " + diagnostic.getMessage());
 				}
+			}
+
+			@Override
+			public boolean isCaptureValidationStatistics() {
+				// TODO Auto-generated method stub
+				return false;
+			}
+
+			@Override
+			public ValidationStatistics getValidationStatistics() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+
+			@Override
+			public void setValidationStatistics(ValidationStatistics validationStatistics) {
+				// TODO Auto-generated method stub
+
 			}
 		};
 	}

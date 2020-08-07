@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -98,6 +99,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 	public static boolean validateCommentActivityTextReference(CommentActivity commentActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CommentActivityCommentActivityTextReference", "ERROR");
+
 		if (VALIDATE_COMMENT_ACTIVITY_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -160,6 +163,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 
 	public static boolean validateCommentActivityTextReferenceValue(CommentActivity commentActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CommentActivityCommentActivityTextReferenceValue", "ERROR");
 
 		if (VALIDATE_COMMENT_ACTIVITY_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -226,6 +231,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 	public static boolean validateCommentActivityReferenceValue(CommentActivity commentActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CommentActivityCommentActivityReferenceValue", "ERROR");
+
 		if (VALIDATE_COMMENT_ACTIVITY_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -288,6 +295,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 
 	public static boolean validateCommentActivityTemplateId(CommentActivity commentActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CommentActivityCommentActivityTemplateId", "ERROR");
 
 		if (VALIDATE_COMMENT_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -352,6 +361,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 	public static boolean validateCommentActivityClassCode(CommentActivity commentActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CommentActivityCommentActivityClassCode", "ERROR");
+
 		if (VALIDATE_COMMENT_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -414,6 +425,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 
 	public static boolean validateCommentActivityMoodCode(CommentActivity commentActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CommentActivityCommentActivityMoodCode", "ERROR");
 
 		if (VALIDATE_COMMENT_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -480,6 +493,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 	public static boolean validateCommentActivityCode(CommentActivity commentActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CommentActivityCommentActivityCode", "ERROR");
+
 		if (VALIDATE_COMMENT_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -543,6 +558,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 	public static boolean validateCommentActivityText(CommentActivity commentActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "CommentActivityCommentActivityText", "ERROR");
+
 		if (VALIDATE_COMMENT_ACTIVITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -605,6 +622,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 
 	public static boolean validateCommentActivityAuthorParticipation(CommentActivity commentActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CommentActivityCommentActivityAuthorParticipation", "WARNING");
 
 		if (VALIDATE_COMMENT_ACTIVITY_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

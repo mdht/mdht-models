@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -116,6 +117,9 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AssessmentScaleObservationAssessmentScaleObservationCodeCodeSystem", "WARNING");
+
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -182,6 +186,9 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	public static boolean validateAssessmentScaleObservationInterpretationCodeTranslation(
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AssessmentScaleObservationAssessmentScaleObservationInterpretationCodeTranslation", "INFO");
 
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_INTERPRETATION_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -250,6 +257,8 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AssessmentScaleObservationAssessmentScaleObservationTemplateId", "ERROR");
+
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -316,6 +325,8 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	public static boolean validateAssessmentScaleObservationClassCode(
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AssessmentScaleObservationAssessmentScaleObservationClassCode", "ERROR");
 
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -384,6 +395,8 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AssessmentScaleObservationAssessmentScaleObservationMoodCode", "ERROR");
+
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -449,6 +462,8 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	public static boolean validateAssessmentScaleObservationCode(AssessmentScaleObservation assessmentScaleObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AssessmentScaleObservationAssessmentScaleObservationCode", "ERROR");
+
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -513,6 +528,8 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	public static boolean validateAssessmentScaleObservationDerivationExpr(
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AssessmentScaleObservationAssessmentScaleObservationDerivationExpr", "INFO");
 
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_DERIVATION_EXPR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -581,6 +598,8 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AssessmentScaleObservationAssessmentScaleObservationEffectiveTime", "ERROR");
+
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -647,6 +666,8 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	public static boolean validateAssessmentScaleObservationId(AssessmentScaleObservation assessmentScaleObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AssessmentScaleObservationAssessmentScaleObservationId", "ERROR");
+
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -711,6 +732,9 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	public static boolean validateAssessmentScaleObservationInterpretationCode(
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AssessmentScaleObservationAssessmentScaleObservationInterpretationCode", "INFO");
 
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -780,6 +804,8 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AssessmentScaleObservationAssessmentScaleObservationStatusCode", "ERROR");
+
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -847,6 +873,8 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AssessmentScaleObservationAssessmentScaleObservationStatusCodeP", "ERROR");
+
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -912,6 +940,8 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 
 	public static boolean validateAssessmentScaleObservationValue(AssessmentScaleObservation assessmentScaleObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AssessmentScaleObservationAssessmentScaleObservationValue", "ERROR");
 
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -979,6 +1009,8 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AssessmentScaleObservationAssessmentScaleObservationAuthor", "INFO");
+
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1044,6 +1076,8 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	public static boolean validateAssessmentScaleObservationReferenceRange(
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AssessmentScaleObservationAssessmentScaleObservationReferenceRange", "INFO");
 
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1112,6 +1146,10 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AssessmentScaleObservationAssessmentScaleObservationAssessmentScaleSupportingObservation",
+			"WARNING");
+
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1178,6 +1216,10 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	public static boolean validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AssessmentScaleObservationAssessmentScaleObservationReferenceRangeObservationRangeTextReference",
+			"WARNING");
 
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1251,6 +1293,11 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"AssessmentScaleObservationAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue",
+			"INFO");
+
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1322,6 +1369,10 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	public static boolean validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AssessmentScaleObservationAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue",
+			"ERROR");
 
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1395,6 +1446,10 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AssessmentScaleObservationAssessmentScaleObservationReferenceRangeObservationRangeText",
+			"WARNING");
+
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1466,6 +1521,9 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	public static boolean validateAssessmentScaleObservationReferenceRangeObservationRange(
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AssessmentScaleObservationAssessmentScaleObservationReferenceRangeObservationRange", "ERROR");
 
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

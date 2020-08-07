@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -95,6 +96,8 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	public static boolean validatePrognosisObservationTemplateId(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationTemplateId", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -158,6 +161,8 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePrognosisObservationClassCode(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationClassCode", "ERROR");
 
 		if (VALIDATE_PROGNOSIS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -223,6 +228,8 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	public static boolean validatePrognosisObservationMoodCode(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationMoodCode", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -286,6 +293,8 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePrognosisObservationCodeP(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationCodeP", "ERROR");
 
 		if (VALIDATE_PROGNOSIS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -373,6 +382,8 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationCode", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -437,6 +448,8 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	public static boolean validatePrognosisObservationStatusCode(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationStatusCode", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -500,6 +513,8 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePrognosisObservationStatusCodeP(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationStatusCodeP", "ERROR");
 
 		if (VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -566,6 +581,8 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	public static boolean validatePrognosisObservationEffectiveTime(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationEffectiveTime", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -630,6 +647,8 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePrognosisObservationValue(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationValue", "ERROR");
 
 		if (VALIDATE_PROGNOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

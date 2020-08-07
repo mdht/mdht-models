@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -120,6 +121,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservation2CodeSuggestedCodeSystems", "INFO");
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION2_CODE_SUGGESTED_CODE_SYSTEMS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -187,6 +191,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservation2TemplateId", "ERROR");
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -232,6 +239,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 	public static boolean validateProcedureActivityObservationStatusCodeP(
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservationStatusCodeP", "ERROR");
 
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -293,6 +303,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservation2AuthorParticipation", "WARNING");
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -339,6 +352,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservation2ReactionObservation2", "INFO");
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION2_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -384,6 +400,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 	public static boolean validateProcedureActivityObservation2ANYNullFlavor(
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservation2ANYNullFlavor", "INFO");
 
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION2_ANY_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -548,6 +567,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservationInstructionsInversion", "ERROR");
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_INSTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -594,6 +616,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservationCodeCodeSystems", "WARNING");
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_CODE_CODE_SYSTEMS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -639,6 +664,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 	public static boolean validateProcedureActivityObservationTargetSiteCodeP(
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservationTargetSiteCodeP", "WARNING");
 
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -710,6 +738,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			return true;
 		}
 
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservationTargetSiteCode", "ERROR");
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -755,6 +786,8 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 	public static boolean validateProcedureActivityObservationMoodCode(
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureActivityObservation2ProcedureActivityObservationMoodCode", "ERROR");
 
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1105,6 +1138,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			return true;
 		}
 
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservationStatusCode", "ERROR");
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1171,6 +1207,8 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 	public static boolean validateProcedureActivityObservationValue(
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProcedureActivityObservation2ProcedureActivityObservationValue", "ERROR");
 
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1239,6 +1277,8 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProcedureActivityObservation2ProcedureActivityObservationIndication", "INFO");
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1305,6 +1345,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 	public static boolean validateProcedureActivityObservationMedicationActivity(
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservationMedicationActivity", "INFO");
 
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1373,6 +1416,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservationInstructions", "INFO");
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1440,6 +1486,9 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ProcedureActivityObservation2ProcedureActivityObservationPerformer", "WARNING");
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1506,6 +1555,11 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 	public static boolean validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr(
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ProcedureActivityObservation2ProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr",
+			"ERROR");
 
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1579,6 +1633,11 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ProcedureActivityObservation2ProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom",
+			"ERROR");
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1650,6 +1709,11 @@ public class ProcedureActivityObservation2Operations extends ProcedureActivityOb
 	public static boolean validateProcedureActivityObservationProcedureObservationPerformerAssignedEntity(
 			ProcedureActivityObservation2 procedureActivityObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"ProcedureActivityObservation2ProcedureActivityObservationProcedureObservationPerformerAssignedEntity",
+			"ERROR");
 
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.SectionOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -104,6 +105,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 	public static boolean validateMentalStatusSectionTemplateId(MentalStatusSection mentalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusSectionMentalStatusSectionTemplateId", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -170,6 +173,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 	public static boolean validateMentalStatusSectionCode(MentalStatusSection mentalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusSectionMentalStatusSectionCode", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -232,6 +237,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 
 	public static boolean validateMentalStatusSectionCodeP(MentalStatusSection mentalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MentalStatusSectionMentalStatusSectionCodeP", "ERROR");
 
 		if (VALIDATE_MENTAL_STATUS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -296,6 +303,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 	public static boolean validateMentalStatusSectionTitle(MentalStatusSection mentalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusSectionMentalStatusSectionTitle", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -359,6 +368,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 	public static boolean validateMentalStatusSectionText(MentalStatusSection mentalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusSectionMentalStatusSectionText", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -421,6 +432,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 
 	public static boolean validateMentalStatusSectionAssessmentScaleObservation(MentalStatusSection mentalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MentalStatusSectionMentalStatusSectionAssessmentScaleObservation", "INFO");
 
 		if (VALIDATE_MENTAL_STATUS_SECTION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -488,6 +501,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 	public static boolean validateMentalStatusSectionMentalStatusOrganizer2(MentalStatusSection mentalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusSectionMentalStatusSectionMentalStatusOrganizer2", "INFO");
+
 		if (VALIDATE_MENTAL_STATUS_SECTION_MENTAL_STATUS_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -552,6 +567,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 
 	public static boolean validateMentalStatusSectionMentalStatusObservation2(MentalStatusSection mentalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MentalStatusSectionMentalStatusSectionMentalStatusObservation2", "INFO");
 
 		if (VALIDATE_MENTAL_STATUS_SECTION_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

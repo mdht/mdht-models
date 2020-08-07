@@ -9,6 +9,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -93,6 +94,8 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 	public static boolean validateWoundCharacteristicTemplateId(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "WoundCharacteristicWoundCharacteristicTemplateId", "ERROR");
+
 		if (VALIDATE_WOUND_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -156,6 +159,8 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicClassCode(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "WoundCharacteristicWoundCharacteristicClassCode", "ERROR");
 
 		if (VALIDATE_WOUND_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -221,6 +226,8 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 	public static boolean validateWoundCharacteristicMoodCode(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "WoundCharacteristicWoundCharacteristicMoodCode", "ERROR");
+
 		if (VALIDATE_WOUND_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -284,6 +291,8 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 	public static boolean validateWoundCharacteristicId(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "WoundCharacteristicWoundCharacteristicId", "ERROR");
+
 		if (VALIDATE_WOUND_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -346,6 +355,8 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicCodeP(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "WoundCharacteristicWoundCharacteristicCodeP", "ERROR");
 
 		if (VALIDATE_WOUND_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -433,6 +444,8 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "WoundCharacteristicWoundCharacteristicCode", "ERROR");
+
 		if (VALIDATE_WOUND_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -496,6 +509,8 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicStatusCode(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "WoundCharacteristicWoundCharacteristicStatusCode", "ERROR");
 
 		if (VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -561,6 +576,8 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 	public static boolean validateWoundCharacteristicStatusCodeP(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "WoundCharacteristicWoundCharacteristicStatusCodeP", "ERROR");
+
 		if (VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -625,6 +642,8 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicEffectiveTime(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "WoundCharacteristicWoundCharacteristicEffectiveTime", "ERROR");
 
 		if (VALIDATE_WOUND_CHARACTERISTIC_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -693,6 +712,8 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 	public static boolean validateWoundCharacteristicValue(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "WoundCharacteristicWoundCharacteristicValue", "ERROR");
+
 		if (VALIDATE_WOUND_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -755,6 +776,8 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicValueP(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "WoundCharacteristicWoundCharacteristicValueP", "ERROR");
 
 		if (VALIDATE_WOUND_CHARACTERISTIC_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

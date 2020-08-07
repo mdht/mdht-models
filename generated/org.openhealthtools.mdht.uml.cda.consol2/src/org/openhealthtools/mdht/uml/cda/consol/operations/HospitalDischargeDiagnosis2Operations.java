@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -96,6 +97,8 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 			HospitalDischargeDiagnosis2 hospitalDischargeDiagnosis2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "HospitalDischargeDiagnosis2HospitalDischargeDiagnosis2TemplateId", "ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -141,6 +144,8 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 	public static boolean validateHospitalDischargeDiagnosisCodeP(
 			HospitalDischargeDiagnosis2 hospitalDischargeDiagnosis2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "HospitalDischargeDiagnosis2HospitalDischargeDiagnosisCodeP", "ERROR");
 
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -302,6 +307,8 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "HospitalDischargeDiagnosis2HospitalDischargeDiagnosisCode", "ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -366,6 +373,9 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 	public static boolean validateHospitalDischargeDiagnosisProblemObservation(
 			HospitalDischargeDiagnosis2 hospitalDischargeDiagnosis2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "HospitalDischargeDiagnosis2HospitalDischargeDiagnosisProblemObservation", "ERROR");
 
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

@@ -3,19 +3,14 @@
 package org.hl7.security.ds4p.contentprofile.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation;
-
 import org.hl7.security.ds4p.contentprofile.operations.PurposeOfUseSecurityObservationOperations;
 
 /**
@@ -53,8 +48,7 @@ public class PurposeOfUseSecurityObservationImpl extends SecurityObservationImpl
 	 */
 	@Override
 	public boolean validateSecurityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationTemplateId(
-			this, diagnostics, context);
+		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -104,17 +98,17 @@ public class PurposeOfUseSecurityObservationImpl extends SecurityObservationImpl
 	 */
 	@Override
 	public PurposeOfUseSecurityObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PurposeOfUseSecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PurposeOfUseSecurityObservationImpl

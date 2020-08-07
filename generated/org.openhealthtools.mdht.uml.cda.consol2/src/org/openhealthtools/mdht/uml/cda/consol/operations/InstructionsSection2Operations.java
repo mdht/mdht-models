@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -96,6 +97,8 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 	public static boolean validateInstructionsSection2TemplateId(InstructionsSection2 instructionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InstructionsSection2InstructionsSection2TemplateId", "ERROR");
+
 		if (VALIDATE_INSTRUCTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -159,6 +162,8 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 
 	public static boolean validateInstructionsSection2NullFlavor(InstructionsSection2 instructionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InstructionsSection2InstructionsSection2NullFlavor", "INFO");
 
 		if (VALIDATE_INSTRUCTIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -271,6 +276,8 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 	public static boolean validateInstructionsSectionCodeP(InstructionsSection2 instructionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InstructionsSection2InstructionsSectionCodeP", "ERROR");
+
 		if (VALIDATE_INSTRUCTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -357,6 +364,8 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "InstructionsSection2InstructionsSectionCode", "ERROR");
+
 		if (VALIDATE_INSTRUCTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -419,6 +428,8 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 
 	public static boolean validateInstructionsSectionInstructions(InstructionsSection2 instructionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InstructionsSection2InstructionsSectionInstructions", "ERROR");
 
 		if (VALIDATE_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

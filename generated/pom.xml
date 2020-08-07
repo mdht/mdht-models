@@ -22,15 +22,6 @@
 		<module>org.openhealthtools.mdht.uml.cda.hitsp</module>
 		<module>org.openhealthtools.mdht.uml.cda.consol2</module>
 		<module>org.openhealthtools.mdht.uml.cda.mu2consol</module>
-		<module>org.openhealthtools.mdht.uml.cda.clondata</module>
-		<module>org.openhealthtools.mdht.uml.cda.qfdd</module>
-		<module>org.openhealthtools.mdht.uml.cda.qrdoc</module>
-		<module>org.openhealthtools.mdht.uml.cda.qrda</module>
-		<module>org.openhealthtools.mdht.uml.cda.emspcr</module>
-		<module>org.openhealthtools.mdht.uml.cda.sdtm</module>
-		<module>org.openhealthtools.mdht.uml.cda.toc</module>
-		<module>org.openhealthtools.mdht.uml.cda.vsbr</module>
-		<module>org.openhealthtools.mdht.uml.cda.vsdr</module>
-
+		<module>org.hl7.security.ds4p.contentprofile</module>
 	</modules>
 </project>

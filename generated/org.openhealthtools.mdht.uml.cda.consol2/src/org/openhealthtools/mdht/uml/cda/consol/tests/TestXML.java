@@ -23,6 +23,7 @@ import org.eclipse.mdht.uml.cda.RecordTarget;
 import org.eclipse.mdht.uml.cda.util.CDAUtil;
 import org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationHandler;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil.ValidationStatistics;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 
 /**
@@ -72,6 +73,24 @@ public class TestXML {
 
 			@Override
 			public void handleInfo(Diagnostic diagnostic) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public boolean isCaptureValidationStatistics() {
+				// TODO Auto-generated method stub
+				return false;
+			}
+
+			@Override
+			public ValidationStatistics getValidationStatistics() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+
+			@Override
+			public void setValidationStatistics(ValidationStatistics validationStatistics) {
 				// TODO Auto-generated method stub
 
 			}

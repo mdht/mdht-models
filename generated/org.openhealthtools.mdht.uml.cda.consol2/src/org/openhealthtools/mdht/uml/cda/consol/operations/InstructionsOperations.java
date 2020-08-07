@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -100,6 +101,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	public static boolean validateInstructionsTextReference(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InstructionsInstructionsTextReference", "WARNING");
+
 		if (VALIDATE_INSTRUCTIONS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -162,6 +165,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInstructionsReferenceValue(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InstructionsInstructionsReferenceValue", "WARNING");
 
 		if (VALIDATE_INSTRUCTIONS_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -226,6 +231,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	public static boolean validateInstructionsTextReferenceValue(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InstructionsInstructionsTextReferenceValue", "ERROR");
+
 		if (VALIDATE_INSTRUCTIONS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -288,6 +295,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInstructionsTemplateId(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InstructionsInstructionsTemplateId", "ERROR");
 
 		if (VALIDATE_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -352,6 +361,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	public static boolean validateInstructionsClassCode(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InstructionsInstructionsClassCode", "ERROR");
+
 		if (VALIDATE_INSTRUCTIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -415,6 +426,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	public static boolean validateInstructionsMoodCode(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "InstructionsInstructionsMoodCode", "ERROR");
+
 		if (VALIDATE_INSTRUCTIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -477,6 +490,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInstructionsCodeP(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InstructionsInstructionsCodeP", "ERROR");
 
 		if (VALIDATE_INSTRUCTIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -564,6 +579,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "InstructionsInstructionsCode", "WARNING");
+
 		if (VALIDATE_INSTRUCTIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -626,6 +643,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInstructionsText(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InstructionsInstructionsText", "WARNING");
 
 		if (VALIDATE_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -690,6 +709,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInstructionsStatusCode(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "InstructionsInstructionsStatusCode", "ERROR");
 
 		if (VALIDATE_INSTRUCTIONS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

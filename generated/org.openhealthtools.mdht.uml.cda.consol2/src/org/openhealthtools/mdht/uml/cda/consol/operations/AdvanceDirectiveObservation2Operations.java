@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -129,6 +130,8 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2TemplateId", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -196,6 +199,8 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2Value", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -262,6 +267,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservation2AuthorParticipation(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2AuthorParticipation", "WARNING");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -331,6 +339,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservation2CDTranslation(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2CDTranslation", "ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -404,6 +415,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2CDTranslationP", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -475,6 +489,8 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservation2IVLTSLow(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2IVLTSLow", "ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -548,6 +564,8 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2IVLTSHigh", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -620,6 +638,10 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityName",
+			"INFO");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -691,6 +713,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservation2VerifierParticipantRoleCodeP(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2VerifierParticipantRoleCodeP", "WARNING");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -780,6 +805,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2VerifierParticipantRoleCode", "WARNING");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -862,6 +890,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2VerifierParticipantRoleAddr", "INFO");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -933,6 +964,10 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity",
+			"INFO");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1006,6 +1041,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2VerifierTemplateId", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1077,6 +1115,11 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeP(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"AdvanceDirectiveObservation2AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeP",
+			"WARNING");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1166,6 +1209,11 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"AdvanceDirectiveObservation2AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCode",
+			"WARNING");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1247,6 +1295,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservation2CustodianCustodianRoleCodeP(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2CustodianCustodianRoleCodeP", "WARNING");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1336,6 +1387,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservation2CustodianCustodianRoleCode", "WARNING");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1418,6 +1472,11 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"AdvanceDirectiveObservation2AdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType",
+			"INFO");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_REFERENCE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1489,6 +1548,11 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextReference(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"AdvanceDirectiveObservation2AdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextReference",
+			"INFO");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_REFERENCE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1562,6 +1626,11 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"AdvanceDirectiveObservation2AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocument",
+			"ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1634,6 +1703,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationHasStartingTime", "INFO");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_HAS_STARTING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1701,6 +1773,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationHasEndingTime", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_HAS_ENDING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1767,6 +1842,8 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservationCodeP(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationCodeP", "ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1858,6 +1935,8 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationCode", "WARNING");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1923,6 +2002,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservationEffectiveTime(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationEffectiveTime", "ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1991,6 +2073,8 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationVerifier", "WARNING");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2057,6 +2141,8 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservationCustodian(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationCustodian", "WARNING");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2125,6 +2211,8 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationReference", "WARNING");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2191,6 +2279,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservationVerifierTime(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierTime", "WARNING");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2264,6 +2355,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierParticipantRole", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2335,6 +2429,10 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName",
+			"ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2408,6 +2506,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianCustodianRoleAddr", "WARNING");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2479,6 +2580,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservationCustodianCustodianRoleTelecom(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianCustodianRoleTelecom", "WARNING");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2552,6 +2656,10 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity",
+			"ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2623,6 +2731,11 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"AdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole",
+			"ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2696,6 +2809,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocumentId", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2767,6 +2883,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservationReferenceExternalDocumentText(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocumentText", "INFO");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2841,6 +2960,9 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	public static boolean validateAdvanceDirectiveObservationReferenceTypeCode(
 			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceTypeCode", "ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

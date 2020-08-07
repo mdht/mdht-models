@@ -12,6 +12,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -96,6 +97,8 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 	public static boolean validateMentalStatusOrganizer2HasCodeOrEffectiveTime(
 			MentalStatusOrganizer2 mentalStatusOrganizer2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusOrganizer2MentalStatusOrganizer2HasCodeOrEffectiveTime", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_ORGANIZER2_HAS_CODE_OR_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -162,6 +165,8 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 	public static boolean validateMentalStatusOrganizer2TemplateId(MentalStatusOrganizer2 mentalStatusOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusOrganizer2MentalStatusOrganizer2TemplateId", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_ORGANIZER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -227,6 +232,8 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 	public static boolean validateMentalStatusOrganizer2EffectiveTime(MentalStatusOrganizer2 mentalStatusOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusOrganizer2MentalStatusOrganizer2EffectiveTime", "WARNING");
+
 		if (VALIDATE_MENTAL_STATUS_ORGANIZER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -291,6 +298,8 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 	@SuppressWarnings("unchecked")
 	public static boolean validateMentalStatusOrganizer2CDCode(MentalStatusOrganizer2 mentalStatusOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MentalStatusOrganizer2MentalStatusOrganizer2CDCode", "ERROR");
 
 		if (VALIDATE_MENTAL_STATUS_ORGANIZER2_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -412,6 +421,9 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 	public static boolean validateCognitiveStatusResultOrganizerCodeCodeSystem(
 			MentalStatusOrganizer2 mentalStatusOrganizer2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "MentalStatusOrganizer2CognitiveStatusResultOrganizerCodeCodeSystem", "WARNING");
+
 		if (VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -478,6 +490,8 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 	public static boolean validateResultOrganizerCode(MentalStatusOrganizer2 mentalStatusOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MentalStatusOrganizer2ResultOrganizerCode", "ERROR");
+
 		if (VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -540,6 +554,8 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 
 	public static boolean validateResultOrganizerResultObservation(MentalStatusOrganizer2 mentalStatusOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "MentalStatusOrganizer2ResultOrganizerResultObservation", "ERROR");
 
 		if (VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

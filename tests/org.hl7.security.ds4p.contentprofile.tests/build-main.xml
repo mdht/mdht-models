@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <concat destfile="target/surefire-reports/allvalidationresults.xml" force="no">
+    <filelist files="start.tag" dir="src/test/resource"/>
+    <fileset includes="test*.xml" dir="target/surefire-reports"/>
+    <filelist files="end.tag" dir="src/test/resource"/>
+  </concat>
+  <junitreport todir="target/surefire-reports">
+    <fileset dir="target/surefire-reports">
+      <include name="TEST-*.xml"/>
+    </fileset>
+    <report todir="target/surefire-reports" format="frames" styledir="."></report>
+  </junitreport>
+</target>
+</project>

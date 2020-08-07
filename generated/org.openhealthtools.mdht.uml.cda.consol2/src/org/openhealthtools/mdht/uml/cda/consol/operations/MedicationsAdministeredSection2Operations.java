@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -95,6 +96,9 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 	public static boolean validateMedicationsAdministeredSection2TemplateId(
 			MedicationsAdministeredSection2 medicationsAdministeredSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MedicationsAdministeredSection2MedicationsAdministeredSection2TemplateId", "ERROR");
 
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -213,6 +217,8 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 			MedicationsAdministeredSection2 medicationsAdministeredSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "MedicationsAdministeredSection2MedicationsAdministeredSectionCodeP", "ERROR");
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -305,6 +311,8 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "MedicationsAdministeredSection2MedicationsAdministeredSectionCode", "ERROR");
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -371,6 +379,9 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 	public static boolean validateMedicationsAdministeredSectionMedicationActivity(
 			MedicationsAdministeredSection2 medicationsAdministeredSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "MedicationsAdministeredSection2MedicationsAdministeredSectionMedicationActivity", "INFO");
 
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

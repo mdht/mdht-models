@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -94,6 +95,8 @@ public class EncounterDiagnosis2Operations extends EncounterDiagnosisOperations 
 
 	public static boolean validateEncounterDiagnosis2TemplateId(EncounterDiagnosis2 encounterDiagnosis2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EncounterDiagnosis2EncounterDiagnosis2TemplateId", "ERROR");
 
 		if (VALIDATE_ENCOUNTER_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -207,6 +210,8 @@ public class EncounterDiagnosis2Operations extends EncounterDiagnosisOperations 
 	public static boolean validateEncounterDiagnosisCodeP(EncounterDiagnosis2 encounterDiagnosis2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "EncounterDiagnosis2EncounterDiagnosisCodeP", "ERROR");
+
 		if (VALIDATE_ENCOUNTER_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -293,6 +298,8 @@ public class EncounterDiagnosis2Operations extends EncounterDiagnosisOperations 
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "EncounterDiagnosis2EncounterDiagnosisCode", "ERROR");
+
 		if (VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -355,6 +362,8 @@ public class EncounterDiagnosis2Operations extends EncounterDiagnosisOperations 
 
 	public static boolean validateEncounterDiagnosisProblemObservation(EncounterDiagnosis2 encounterDiagnosis2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EncounterDiagnosis2EncounterDiagnosisProblemObservation", "ERROR");
 
 		if (VALIDATE_ENCOUNTER_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

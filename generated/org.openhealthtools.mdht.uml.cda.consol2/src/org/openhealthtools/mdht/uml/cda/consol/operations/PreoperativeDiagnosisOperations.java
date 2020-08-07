@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -101,6 +102,8 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 	public static boolean validatePreoperativeDiagnosisTemplateId(PreoperativeDiagnosis preoperativeDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PreoperativeDiagnosisPreoperativeDiagnosisTemplateId", "ERROR");
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -166,6 +169,8 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 	public static boolean validatePreoperativeDiagnosisClassCode(PreoperativeDiagnosis preoperativeDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PreoperativeDiagnosisPreoperativeDiagnosisClassCode", "ERROR");
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -208,6 +213,8 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 
 	public static boolean validatePreoperativeDiagnosisCode(PreoperativeDiagnosis preoperativeDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PreoperativeDiagnosisPreoperativeDiagnosisCode", "ERROR");
 
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -271,6 +278,8 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 
 	public static boolean validatePreoperativeDiagnosisMoodCode(PreoperativeDiagnosis preoperativeDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PreoperativeDiagnosisPreoperativeDiagnosisMoodCode", "ERROR");
 
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -358,6 +367,8 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 
 	public static boolean validatePreoperativeDiagnosisProblemObservation(PreoperativeDiagnosis preoperativeDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PreoperativeDiagnosisPreoperativeDiagnosisProblemObservation", "ERROR");
 
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

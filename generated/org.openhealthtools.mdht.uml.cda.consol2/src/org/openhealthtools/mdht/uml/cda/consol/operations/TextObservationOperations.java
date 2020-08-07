@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -110,6 +111,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateTextObservationTextReference(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TextObservationTextObservationTextReference", "WARNING");
+
 		if (VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -172,6 +175,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationTextReferenceValue(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TextObservationTextObservationTextReferenceValue", "WARNING");
 
 		if (VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -238,6 +243,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateTextObservationReferenceValue(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TextObservationTextObservationReferenceValue", "ERROR");
+
 		if (VALIDATE_TEXT_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -300,6 +307,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationTemplateId(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TextObservationTextObservationTemplateId", "ERROR");
 
 		if (VALIDATE_TEXT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -364,6 +373,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateTextObservationClassCode(TextObservation textObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TextObservationTextObservationClassCode", "ERROR");
+
 		if (VALIDATE_TEXT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -426,6 +437,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationMoodCode(TextObservation textObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TextObservationTextObservationMoodCode", "ERROR");
 
 		if (VALIDATE_TEXT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -490,6 +503,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateTextObservationCode(TextObservation textObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TextObservationTextObservationCode", "ERROR");
+
 		if (VALIDATE_TEXT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -552,6 +567,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationEffectiveTime(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TextObservationTextObservationEffectiveTime", "WARNING");
 
 		if (VALIDATE_TEXT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -616,6 +633,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateTextObservationText(TextObservation textObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TextObservationTextObservationText", "INFO");
+
 		if (VALIDATE_TEXT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -679,6 +698,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateTextObservationValue(TextObservation textObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "TextObservationTextObservationValue", "ERROR");
+
 		if (VALIDATE_TEXT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -741,6 +762,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationSOPInstanceObservation(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TextObservationTextObservationSOPInstanceObservation", "INFO");
 
 		if (VALIDATE_TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -806,6 +829,8 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationQuantityMeasurementObservation(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "TextObservationTextObservationQuantityMeasurementObservation", "INFO");
 
 		if (VALIDATE_TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

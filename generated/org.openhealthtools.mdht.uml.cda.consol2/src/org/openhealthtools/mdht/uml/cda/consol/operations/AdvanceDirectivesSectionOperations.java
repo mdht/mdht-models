@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -100,6 +101,8 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 
 	public static boolean validateAdvanceDirectivesSectionCodeP(AdvanceDirectivesSection advanceDirectivesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdvanceDirectivesSectionAdvanceDirectivesSectionCodeP", "ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -188,6 +191,8 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "AdvanceDirectivesSectionAdvanceDirectivesSectionCode", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -251,6 +256,8 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 
 	public static boolean validateAdvanceDirectivesSectionTitle(AdvanceDirectivesSection advanceDirectivesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AdvanceDirectivesSectionAdvanceDirectivesSectionTitle", "ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -316,6 +323,8 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	public static boolean validateAdvanceDirectivesSectionText(AdvanceDirectivesSection advanceDirectivesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AdvanceDirectivesSectionAdvanceDirectivesSectionText", "ERROR");
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -380,6 +389,9 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	public static boolean validateAdvanceDirectivesSectionAdvanceDirectiveObservation(
 			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectivesSectionAdvanceDirectivesSectionAdvanceDirectiveObservation", "ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -497,6 +509,9 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
 			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "AdvanceDirectivesSectionAdvanceDirectivesSectionEntriesOptionalTemplateId", "ERROR");
 
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

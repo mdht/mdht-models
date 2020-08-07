@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -99,6 +100,8 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferencedFramesObservationReferencedFramesObservationTemplateId", "ERROR");
+
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -166,6 +169,8 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferencedFramesObservationReferencedFramesObservationClassCode", "ERROR");
+
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -232,6 +237,8 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	public static boolean validateReferencedFramesObservationMoodCode(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferencedFramesObservationReferencedFramesObservationMoodCode", "ERROR");
 
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -302,6 +309,8 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferencedFramesObservationReferencedFramesObservationCode", "ERROR");
+
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -367,6 +376,9 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	public static boolean validateReferencedFramesObservationBoundaryObservation(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ReferencedFramesObservationReferencedFramesObservationBoundaryObservation", "ERROR");
 
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

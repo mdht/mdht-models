@@ -3,17 +3,13 @@
 package org.hl7.security.ds4p.contentprofile.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.impl.OrganizerImpl;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.ConfidentialitySecurityObservation;
@@ -21,7 +17,6 @@ import org.hl7.security.ds4p.contentprofile.ObligationPolicySecurityObservation;
 import org.hl7.security.ds4p.contentprofile.PrivacyAnnotation;
 import org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation;
 import org.hl7.security.ds4p.contentprofile.RefrainPolicySecurityObservation;
-
 import org.hl7.security.ds4p.contentprofile.operations.PrivacyAnnotationOperations;
 
 /**
@@ -109,8 +104,7 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	@Override
 	public boolean validatePrivacyAnnotationObligationPolicySecurityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PrivacyAnnotationOperations.validatePrivacyAnnotationObligationPolicySecurityObservation(
-			this, diagnostics, context);
+		return PrivacyAnnotationOperations.validatePrivacyAnnotationObligationPolicySecurityObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -121,8 +115,7 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	@Override
 	public boolean validatePrivacyAnnotationRefrainPolicySecurityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PrivacyAnnotationOperations.validatePrivacyAnnotationRefrainPolicySecurityObservation(
-			this, diagnostics, context);
+		return PrivacyAnnotationOperations.validatePrivacyAnnotationRefrainPolicySecurityObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -133,8 +126,7 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	@Override
 	public boolean validatePrivacyAnnotationPurposeOfUseSecurityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PrivacyAnnotationOperations.validatePrivacyAnnotationPurposeOfUseSecurityObservation(
-			this, diagnostics, context);
+		return PrivacyAnnotationOperations.validatePrivacyAnnotationPurposeOfUseSecurityObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -145,8 +137,7 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	@Override
 	public boolean validatePrivacyAnnotationConfidentialityCodeSecurityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PrivacyAnnotationOperations.validatePrivacyAnnotationConfidentialityCodeSecurityObservation(
-			this, diagnostics, context);
+		return PrivacyAnnotationOperations.validatePrivacyAnnotationConfidentialityCodeSecurityObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -195,16 +186,16 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	 * @generated
 	 */
 	public PrivacyAnnotation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PrivacyAnnotation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PrivacyAnnotationImpl

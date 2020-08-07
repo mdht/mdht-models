@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -112,6 +113,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	public static boolean validatePhysicalExamSection2TemplateId(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PhysicalExamSection2PhysicalExamSection2TemplateId", "ERROR");
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -176,6 +179,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 
 	public static boolean validatePhysicalExamSection2WoundObservation(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PhysicalExamSection2PhysicalExamSection2WoundObservation", "INFO");
 
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -242,6 +247,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	public static boolean validatePhysicalExamSection2Component(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PhysicalExamSection2PhysicalExamSection2Component", "INFO");
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -307,6 +314,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	@SuppressWarnings("unchecked")
 	public static boolean validatePhysicalExamSection2ComponentSectionCode(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PhysicalExamSection2PhysicalExamSection2ComponentSectionCode", "WARNING");
 
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -379,6 +388,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	public static boolean validatePhysicalExamSection2ComponentSectionCodeP(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PhysicalExamSection2PhysicalExamSection2ComponentSectionCodeP", "ERROR");
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -449,6 +460,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	@SuppressWarnings("unchecked")
 	public static boolean validatePhysicalExamSection2ComponentSectionTitle(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PhysicalExamSection2PhysicalExamSection2ComponentSectionTitle", "ERROR");
 
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -521,6 +534,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	public static boolean validatePhysicalExamSection2ComponentSectionText(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PhysicalExamSection2PhysicalExamSection2ComponentSectionText", "ERROR");
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -591,6 +606,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	@SuppressWarnings("unchecked")
 	public static boolean validatePhysicalExamSection2ComponentSection(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PhysicalExamSection2PhysicalExamSection2ComponentSection", "ERROR");
 
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -861,6 +878,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	public static boolean validatePhysicalExamSectionCodeP(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PhysicalExamSection2PhysicalExamSectionCodeP", "ERROR");
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -947,6 +966,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PhysicalExamSection2PhysicalExamSectionCode", "ERROR");
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1009,6 +1030,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 
 	public static boolean validatePhysicalExamSectionPressureUlcerObservation(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PhysicalExamSection2PhysicalExamSectionPressureUlcerObservation", "ERROR");
 
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1076,6 +1099,8 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	public static boolean validatePhysicalExamSectionHighestPressureUlcerStage(
 			PhysicalExamSection2 physicalExamSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PhysicalExamSection2PhysicalExamSectionHighestPressureUlcerStage", "ERROR");
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1141,6 +1166,9 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 
 	public static boolean validatePhysicalExamSectionNumberOfPressureUlcersObservation(
 			PhysicalExamSection2 physicalExamSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PhysicalExamSection2PhysicalExamSectionNumberOfPressureUlcersObservation", "ERROR");
 
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

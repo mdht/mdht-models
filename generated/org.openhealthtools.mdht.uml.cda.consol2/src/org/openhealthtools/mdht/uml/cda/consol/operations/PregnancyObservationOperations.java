@@ -18,6 +18,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -104,6 +105,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	public static boolean validatePregnancyObservationTemplateId(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PregnancyObservationPregnancyObservationTemplateId", "ERROR");
+
 		if (VALIDATE_PREGNANCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -167,6 +170,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePregnancyObservationClassCode(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PregnancyObservationPregnancyObservationClassCode", "ERROR");
 
 		if (VALIDATE_PREGNANCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -232,6 +237,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	public static boolean validatePregnancyObservationMoodCode(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PregnancyObservationPregnancyObservationMoodCode", "ERROR");
+
 		if (VALIDATE_PREGNANCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -295,6 +302,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePregnancyObservationCodeP(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PregnancyObservationPregnancyObservationCodeP", "ERROR");
 
 		if (VALIDATE_PREGNANCY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -382,6 +391,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PregnancyObservationPregnancyObservationCode", "ERROR");
+
 		if (VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -445,6 +456,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePregnancyObservationStatusCode(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PregnancyObservationPregnancyObservationStatusCode", "ERROR");
 
 		if (VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -512,6 +525,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	public static boolean validatePregnancyObservationValue(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PregnancyObservationPregnancyObservationValue", "ERROR");
+
 		if (VALIDATE_PREGNANCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -575,6 +590,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	public static boolean validatePregnancyObservationValueP(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PregnancyObservationPregnancyObservationValueP", "ERROR");
+
 		if (VALIDATE_PREGNANCY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -637,6 +654,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePregnancyObservationEffectiveTime(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PregnancyObservationPregnancyObservationEffectiveTime", "WARNING");
 
 		if (VALIDATE_PREGNANCY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -702,6 +721,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePregnancyObservationEstimatedDateOfDelivery(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PregnancyObservationPregnancyObservationEstimatedDateOfDelivery", "INFO");
 
 		if (VALIDATE_PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

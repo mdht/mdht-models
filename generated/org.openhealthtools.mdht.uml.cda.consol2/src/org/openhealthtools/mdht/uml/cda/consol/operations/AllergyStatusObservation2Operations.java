@@ -7,17 +7,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
 import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
@@ -90,6 +86,8 @@ public class AllergyStatusObservation2Operations extends AllergyStatusObservatio
 			AllergyStatusObservation2 allergyStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyStatusObservation2AllergyStatusObservation2TemplateId", "ERROR");
+
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -157,6 +155,8 @@ public class AllergyStatusObservation2Operations extends AllergyStatusObservatio
 	public static boolean validateAllergyStatusObservationCode(AllergyStatusObservation2 allergyStatusObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "AllergyStatusObservation2AllergyStatusObservationCode", "ERROR");
+
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -222,6 +222,8 @@ public class AllergyStatusObservation2Operations extends AllergyStatusObservatio
 
 	public static boolean validateAllergyStatusObservationValue(AllergyStatusObservation2 allergyStatusObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "AllergyStatusObservation2AllergyStatusObservationValue", "ERROR");
 
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

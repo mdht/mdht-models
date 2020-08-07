@@ -995,7 +995,7 @@
   <CDA:CDATemplate xmi:id="_ts53sOMcEeKrV7mIVAi8qQ" base_Class="_2JXDsOAIEeKtnLp4ZyOObA" templateId="2.16.840.1.113883.3.3251.1.4" assigningAuthorityName="HL7 Security">
     <ruleId>CONF-DS4P-4</ruleId>
   </CDA:CDATemplate>
-  <CDA:ValueSetConstraint xmi:id="_nB838OcUEeKY_89Qw270LQ" base_Property="_5BUdAOcTEeKY_89Qw270LQ">
+  <CDA:ValueSetConstraint xmi:id="_nB838OcUEeKY_89Qw270LQ" base_Property="_5BUdAOcTEeKY_89Qw270LQ" uri="consol-vocab::HL7 BasicConfidentialityKind">
     <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_8K870TVPEeGIw7CntkyPQw"/>
     <ruleId>CONF:16833</ruleId>
   </CDA:ValueSetConstraint>
@@ -1263,7 +1263,7 @@
   <CDA:PropertyValidation xmi:id="_OYUrNmeaEeOu4KcTyYBqzA" mandatory="true" base_Property="_OYUrJWeaEeOu4KcTyYBqzA">
     <ruleId>CONF:9134</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_OYUrN2eaEeOu4KcTyYBqzA" base_Property="_OYUrJWeaEeOu4KcTyYBqzA">
+  <CDA:ValueSetConstraint xmi:id="_OYUrN2eaEeOu4KcTyYBqzA" base_Property="_OYUrJWeaEeOu4KcTyYBqzA" uri="consentdirective-vocab::HL7 RefrainPolicy">
     <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_DypusYxpEeKIvYMIfi9SOQ"/>
     <ruleId>CONF:9135</ruleId>
   </CDA:ValueSetConstraint>
@@ -1280,7 +1280,7 @@
   <CDA:PropertyValidation xmi:id="_cjNcjGeaEeOu4KcTyYBqzA" mandatory="true" base_Property="_cjNchGeaEeOu4KcTyYBqzA">
     <ruleId>CONF:9136</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_cjNcjWeaEeOu4KcTyYBqzA" base_Property="_cjNchGeaEeOu4KcTyYBqzA" severity="WARNING">
+  <CDA:ValueSetConstraint xmi:id="_cjNcjWeaEeOu4KcTyYBqzA" base_Property="_cjNchGeaEeOu4KcTyYBqzA" uri="consentdirective-vocab::HL7 ObligationPolicyCode" severity="WARNING">
     <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_7GsEIYxoEeKIvYMIfi9SOQ"/>
     <ruleId>CONF:9137</ruleId>
   </CDA:ValueSetConstraint>
@@ -1306,8 +1306,8 @@
   <CDA:PropertyValidation xmi:id="_d4Y_bGedEeOu4KcTyYBqzA" mandatory="true" base_Property="_d4Y_ZGedEeOu4KcTyYBqzA">
     <ruleId>CONF:9074</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_d4Y_bWedEeOu4KcTyYBqzA" base_Property="_d4Y_ZGedEeOu4KcTyYBqzA">
-    <reference href="pathmap://CONTENTPROFILE_MODEL///contentprofile-vocab.uml#_3-Wtq-ovEeKrOYS9kpIZsQ"/>
+  <CDA:ValueSetConstraint xmi:id="_d4Y_bWedEeOu4KcTyYBqzA" base_Property="_d4Y_ZGedEeOu4KcTyYBqzA" uri="contentprofile-vocab::HL7 PurposeOfUse">
+    <reference href="pathmap://CONSENTDIRECTIVE_MODEL///consentdirective-vocab.uml#_ecZIEIxWEeKqi7cG0-P5Sg"/>
     <ruleId>CONF:14888</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_EwuxQWgHEeOZxdiNEEVgLA" mandatory="true" base_Property="_EwuxQGgHEeOZxdiNEEVgLA">

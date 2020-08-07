@@ -7,17 +7,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatus2;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
 import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
@@ -92,6 +88,8 @@ public class ProblemStatus2Operations extends ProblemStatusOperations {
 	public static boolean validateProblemStatus2TemplateId(ProblemStatus2 problemStatus2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemStatus2ProblemStatus2TemplateId", "ERROR");
+
 		if (VALIDATE_PROBLEM_STATUS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -154,6 +152,8 @@ public class ProblemStatus2Operations extends ProblemStatusOperations {
 
 	public static boolean validateProblemStatusTextReference(ProblemStatus2 problemStatus2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemStatus2ProblemStatusTextReference", "INFO");
 
 		if (VALIDATE_PROBLEM_STATUS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -218,6 +218,8 @@ public class ProblemStatus2Operations extends ProblemStatusOperations {
 	public static boolean validateProblemStatusReferenceValue(ProblemStatus2 problemStatus2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemStatus2ProblemStatusReferenceValue", "INFO");
+
 		if (VALIDATE_PROBLEM_STATUS_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -280,6 +282,8 @@ public class ProblemStatus2Operations extends ProblemStatusOperations {
 
 	public static boolean validateProblemStatusTextReferenceValue(ProblemStatus2 problemStatus2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemStatus2ProblemStatusTextReferenceValue", "INFO");
 
 		if (VALIDATE_PROBLEM_STATUS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -345,6 +349,8 @@ public class ProblemStatus2Operations extends ProblemStatusOperations {
 	public static boolean validateProblemStatusText(ProblemStatus2 problemStatus2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ProblemStatus2ProblemStatusText", "ERROR");
+
 		if (VALIDATE_PROBLEM_STATUS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -409,6 +415,8 @@ public class ProblemStatus2Operations extends ProblemStatusOperations {
 
 	public static boolean validateProblemStatusValue(ProblemStatus2 problemStatus2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemStatus2ProblemStatusValue", "ERROR");
 
 		if (VALIDATE_PROBLEM_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

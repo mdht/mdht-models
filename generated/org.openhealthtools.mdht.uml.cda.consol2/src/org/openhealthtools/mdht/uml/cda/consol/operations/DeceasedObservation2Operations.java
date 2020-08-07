@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -92,6 +93,8 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 
 	public static boolean validateDeceasedObservation2TemplateId(DeceasedObservation2 deceasedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DeceasedObservation2DeceasedObservation2TemplateId", "ERROR");
 
 		if (VALIDATE_DECEASED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -203,6 +206,8 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 	public static boolean validateDeceasedObservationCodeP(DeceasedObservation2 deceasedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DeceasedObservation2DeceasedObservationCodeP", "ERROR");
+
 		if (VALIDATE_DECEASED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -289,6 +294,8 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "DeceasedObservation2DeceasedObservationCode", "ERROR");
+
 		if (VALIDATE_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -351,6 +358,8 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 
 	public static boolean validateDeceasedObservationProblemObservation(DeceasedObservation2 deceasedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DeceasedObservation2DeceasedObservationProblemObservation", "WARNING");
 
 		if (VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

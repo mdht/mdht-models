@@ -11,6 +11,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -90,6 +91,8 @@ public class FamilyHistoryOrganizer2Operations extends FamilyHistoryOrganizerOpe
 	public static boolean validateFamilyHistoryOrganizer2TemplateId(FamilyHistoryOrganizer2 familyHistoryOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FamilyHistoryOrganizer2FamilyHistoryOrganizer2TemplateId", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -154,6 +157,8 @@ public class FamilyHistoryOrganizer2Operations extends FamilyHistoryOrganizerOpe
 
 	public static boolean validateFamilyHistoryOrganizer2Id(FamilyHistoryOrganizer2 familyHistoryOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FamilyHistoryOrganizer2FamilyHistoryOrganizer2Id", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -268,6 +273,9 @@ public class FamilyHistoryOrganizer2Operations extends FamilyHistoryOrganizerOpe
 
 	public static boolean validateFamilyHistoryOrganizerFamilyHistoryObservation(
 			FamilyHistoryOrganizer2 familyHistoryOrganizer2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "FamilyHistoryOrganizer2FamilyHistoryOrganizerFamilyHistoryObservation", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

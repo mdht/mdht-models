@@ -21,6 +21,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -106,6 +107,8 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	public static boolean validateEntryReferenceTemplateId(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceTemplateId", "ERROR");
+
 		if (VALIDATE_ENTRY_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -168,6 +171,8 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEntryReferenceClassCode(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceClassCode", "ERROR");
 
 		if (VALIDATE_ENTRY_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -232,6 +237,8 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	public static boolean validateEntryReferenceMoodCode(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceMoodCode", "ERROR");
+
 		if (VALIDATE_ENTRY_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -295,6 +302,8 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	public static boolean validateEntryReferenceId(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceId", "ERROR");
+
 		if (VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -357,6 +366,8 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEntryReferenceCode(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceCode", "ERROR");
 
 		if (VALIDATE_ENTRY_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -423,6 +434,8 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	public static boolean validateEntryReferenceStatusCode(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceStatusCode", "INFO");
+
 		if (VALIDATE_ENTRY_REFERENCE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -485,6 +498,8 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEntryReferenceStatusCodeP(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceStatusCodeP", "ERROR");
 
 		if (VALIDATE_ENTRY_REFERENCE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -552,6 +567,8 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateEntryReferenceIINullFlavor(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceIINullFlavor", "ERROR");
 
 		if (VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -625,6 +642,8 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	public static boolean validateEntryReferenceCDNullFlavor(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceCDNullFlavor", "ERROR");
+
 		if (VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -694,6 +713,8 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateEntryReferenceCDNullFlavorP(EntryReference entryReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceCDNullFlavorP", "ERROR");
 
 		if (VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

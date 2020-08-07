@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -101,6 +102,8 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 	public static boolean validateDischargeMedication2TemplateId(DischargeMedication2 dischargeMedication2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeMedication2DischargeMedication2TemplateId", "ERROR");
+
 		if (VALIDATE_DISCHARGE_MEDICATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -143,6 +146,8 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 
 	public static boolean validateDischargeMedicationCodeP(DischargeMedication2 dischargeMedication2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeMedication2DischargeMedicationCodeP", "ERROR");
 
 		if (VALIDATE_DISCHARGE_MEDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -199,6 +204,8 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 	public static boolean validateDischargeMedication2StatusCode(DischargeMedication2 dischargeMedication2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "DischargeMedication2DischargeMedication2StatusCode", "ERROR");
+
 		if (VALIDATE_DISCHARGE_MEDICATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -241,6 +248,8 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 
 	public static boolean validateDischargeMedication2StatusCodeP(DischargeMedication2 dischargeMedication2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeMedication2DischargeMedication2StatusCodeP", "ERROR");
 
 		if (VALIDATE_DISCHARGE_MEDICATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -285,6 +294,8 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeMedication2CDTranslation(DischargeMedication2 dischargeMedication2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeMedication2DischargeMedication2CDTranslation", "ERROR");
 
 		if (VALIDATE_DISCHARGE_MEDICATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -334,6 +345,8 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 	@SuppressWarnings("unchecked")
 	public static boolean validateDischargeMedication2CDTranslationP(DischargeMedication2 dischargeMedication2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeMedication2DischargeMedication2CDTranslationP", "ERROR");
 
 		if (VALIDATE_DISCHARGE_MEDICATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -571,6 +584,8 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "DischargeMedication2DischargeMedicationCode", "ERROR");
+
 		if (VALIDATE_DISCHARGE_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -633,6 +648,8 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 
 	public static boolean validateDischargeMedicationMedicationActivity(DischargeMedication2 dischargeMedication2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DischargeMedication2DischargeMedicationMedicationActivity", "ERROR");
 
 		if (VALIDATE_DISCHARGE_MEDICATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

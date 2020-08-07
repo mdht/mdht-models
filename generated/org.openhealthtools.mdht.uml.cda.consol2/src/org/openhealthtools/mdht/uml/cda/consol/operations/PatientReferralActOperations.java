@@ -18,6 +18,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -126,6 +127,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActTemplateId(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActTemplateId", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -190,6 +193,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActClassCode(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActClassCode", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -252,6 +257,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 
 	public static boolean validatePatientReferralActMoodCodeP(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActMoodCodeP", "ERROR");
 
 		if (VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -340,6 +347,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActMoodCode", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -403,6 +412,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActId(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActId", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -465,6 +476,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 
 	public static boolean validatePatientReferralActCodeP(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActCodeP", "ERROR");
 
 		if (VALIDATE_PATIENT_REFERRAL_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -552,6 +565,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActCode", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -616,6 +631,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActStatusCode(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActStatusCode", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -679,6 +696,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 
 	public static boolean validatePatientReferralActStatusCodeP(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActStatusCodeP", "ERROR");
 
 		if (VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -745,6 +764,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActEffectiveTime(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActEffectiveTime", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -809,6 +830,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 
 	public static boolean validatePatientReferralActPriorityCode(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActPriorityCode", "WARNING");
 
 		if (VALIDATE_PATIENT_REFERRAL_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -875,6 +898,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActEntryRelationship(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActEntryRelationship", "INFO");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -939,6 +964,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 
 	public static boolean validatePatientReferralActAuthorParticipation(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActAuthorParticipation", "WARNING");
 
 		if (VALIDATE_PATIENT_REFERRAL_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1005,6 +1032,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActIndication2(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActIndication2", "INFO");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1069,6 +1098,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActParticipant(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActParticipant", "INFO");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1132,6 +1163,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePatientReferralActEntryRelationshipObservationClassCode(
 			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PatientReferralActPatientReferralActEntryRelationshipObservationClassCode", "ERROR");
 
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1204,6 +1238,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActEntryRelationshipObservationMoodCode(
 			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PatientReferralActPatientReferralActEntryRelationshipObservationMoodCode", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1274,6 +1311,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePatientReferralActEntryRelationshipObservationCodeP(
 			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PatientReferralActPatientReferralActEntryRelationshipObservationCodeP", "ERROR");
 
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1362,6 +1402,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActEntryRelationshipObservationCode(
 			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PatientReferralActPatientReferralActEntryRelationshipObservationCode", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1444,6 +1487,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActEntryRelationshipObservationStatusCode(
 			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PatientReferralActPatientReferralActEntryRelationshipObservationStatusCode", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1515,6 +1561,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActEntryRelationshipObservationStatusCodeP(
 			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PatientReferralActPatientReferralActEntryRelationshipObservationStatusCodeP", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1585,6 +1634,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePatientReferralActEntryRelationshipObservationPriorityCodeP(
 			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PatientReferralActPatientReferralActEntryRelationshipObservationPriorityCodeP", "WARNING");
 
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1673,6 +1725,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActEntryRelationshipObservationPriorityCode(
 			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PatientReferralActPatientReferralActEntryRelationshipObservationPriorityCode", "WARNING");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1756,6 +1811,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActEntryRelationshipObservationValue(
 			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PatientReferralActPatientReferralActEntryRelationshipObservationValue", "WARNING");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1826,6 +1884,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePatientReferralActEntryRelationshipObservationValueP(
 			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "PatientReferralActPatientReferralActEntryRelationshipObservationValueP", "ERROR");
 
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -1898,6 +1959,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActEntryRelationshipTypeCode(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActEntryRelationshipTypeCode", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1969,6 +2032,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActEntryRelationshipObservation(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActEntryRelationshipObservation", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2039,6 +2104,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePatientReferralActParticipantParticipantRoleCodeP(
 			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActParticipantParticipantRoleCodeP", "INFO");
 
 		if (VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2127,6 +2194,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActParticipantParticipantRoleCode(
 			PatientReferralAct patientReferralAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "PatientReferralActPatientReferralActParticipantParticipantRoleCode", "WARNING");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2208,6 +2278,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	public static boolean validatePatientReferralActParticipantTypeCode(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActParticipantTypeCode", "ERROR");
+
 		if (VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2277,6 +2349,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validatePatientReferralActParticipantParticipantRole(PatientReferralAct patientReferralAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PatientReferralActPatientReferralActParticipantParticipantRole", "ERROR");
 
 		if (VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 

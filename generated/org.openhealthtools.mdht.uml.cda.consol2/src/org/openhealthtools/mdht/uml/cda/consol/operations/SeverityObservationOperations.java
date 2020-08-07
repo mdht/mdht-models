@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -100,6 +101,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateSeverityObservationTextReference(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeverityObservationSeverityObservationTextReference", "WARNING");
+
 		if (VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -164,6 +167,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSeverityObservationTextReferenceValue(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeverityObservationSeverityObservationTextReferenceValue", "WARNING");
 
 		if (VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -230,6 +235,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateSeverityObservationReferenceValue(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeverityObservationSeverityObservationReferenceValue", "ERROR");
+
 		if (VALIDATE_SEVERITY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -295,6 +302,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateSeverityObservationTemplateId(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeverityObservationSeverityObservationTemplateId", "ERROR");
+
 		if (VALIDATE_SEVERITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -359,6 +368,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateSeverityObservationClassCode(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeverityObservationSeverityObservationClassCode", "ERROR");
+
 		if (VALIDATE_SEVERITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -422,6 +433,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSeverityObservationMoodCode(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeverityObservationSeverityObservationMoodCode", "ERROR");
 
 		if (VALIDATE_SEVERITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -488,6 +501,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateSeverityObservationCode(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeverityObservationSeverityObservationCode", "ERROR");
+
 		if (VALIDATE_SEVERITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -550,6 +565,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSeverityObservationText(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeverityObservationSeverityObservationText", "WARNING");
 
 		if (VALIDATE_SEVERITY_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -614,6 +631,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSeverityObservationStatusCode(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeverityObservationSeverityObservationStatusCode", "ERROR");
 
 		if (VALIDATE_SEVERITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -681,6 +700,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateSeverityObservationValue(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "SeverityObservationSeverityObservationValue", "ERROR");
+
 		if (VALIDATE_SEVERITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -743,6 +764,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSeverityObservationValueP(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SeverityObservationSeverityObservationValueP", "ERROR");
 
 		if (VALIDATE_SEVERITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

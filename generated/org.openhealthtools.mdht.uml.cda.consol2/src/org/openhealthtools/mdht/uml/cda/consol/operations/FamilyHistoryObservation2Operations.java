@@ -10,6 +10,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -91,6 +92,8 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 			FamilyHistoryObservation2 familyHistoryObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FamilyHistoryObservation2FamilyHistoryObservation2TemplateId", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -158,6 +161,8 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 	public static boolean validateFamilyHistoryObservation2CDTranslation(
 			FamilyHistoryObservation2 familyHistoryObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FamilyHistoryObservation2FamilyHistoryObservation2CDTranslation", "WARNING");
 
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -231,6 +236,8 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 			FamilyHistoryObservation2 familyHistoryObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "FamilyHistoryObservation2FamilyHistoryObservation2CDTranslationP", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -301,6 +308,8 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 
 	public static boolean validateFamilyHistoryObservationCodeP(FamilyHistoryObservation2 familyHistoryObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "FamilyHistoryObservation2FamilyHistoryObservationCodeP", "ERROR");
 
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -388,6 +397,8 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 			// I have a free pass to short-circuit
 			return true;
 		}
+
+		DatatypesUtil.increment(context, "FamilyHistoryObservation2FamilyHistoryObservationCode", "WARNING");
 
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

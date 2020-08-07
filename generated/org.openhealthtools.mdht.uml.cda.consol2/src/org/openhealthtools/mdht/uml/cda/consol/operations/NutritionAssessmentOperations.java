@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -98,6 +99,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 	public static boolean validateNutritionAssessmentValueOfTypeCDIsFromSnomed(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionAssessmentNutritionAssessmentValueOfTypeCDIsFromSnomed", "WARNING");
+
 		if (VALIDATE_NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -164,6 +167,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 	public static boolean validateNutritionAssessmentTemplateId(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionAssessmentNutritionAssessmentTemplateId", "ERROR");
+
 		if (VALIDATE_NUTRITION_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -227,6 +232,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentClassCode(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NutritionAssessmentNutritionAssessmentClassCode", "ERROR");
 
 		if (VALIDATE_NUTRITION_ASSESSMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -292,6 +299,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 	public static boolean validateNutritionAssessmentMoodCode(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionAssessmentNutritionAssessmentMoodCode", "ERROR");
+
 		if (VALIDATE_NUTRITION_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -355,6 +364,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 	public static boolean validateNutritionAssessmentId(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionAssessmentNutritionAssessmentId", "ERROR");
+
 		if (VALIDATE_NUTRITION_ASSESSMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -417,6 +428,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentCodeP(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NutritionAssessmentNutritionAssessmentCodeP", "ERROR");
 
 		if (VALIDATE_NUTRITION_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -504,6 +517,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "NutritionAssessmentNutritionAssessmentCode", "ERROR");
+
 		if (VALIDATE_NUTRITION_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -568,6 +583,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 	public static boolean validateNutritionAssessmentStatusCode(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionAssessmentNutritionAssessmentStatusCode", "ERROR");
+
 		if (VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -631,6 +648,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentStatusCodeP(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NutritionAssessmentNutritionAssessmentStatusCodeP", "ERROR");
 
 		if (VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -697,6 +716,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 	public static boolean validateNutritionAssessmentEffectiveTime(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionAssessmentNutritionAssessmentEffectiveTime", "ERROR");
+
 		if (VALIDATE_NUTRITION_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -762,6 +783,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 	public static boolean validateNutritionAssessmentValue(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "NutritionAssessmentNutritionAssessmentValue", "ERROR");
+
 		if (VALIDATE_NUTRITION_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -824,6 +847,8 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentAuthorParticipation(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "NutritionAssessmentNutritionAssessmentAuthorParticipation", "WARNING");
 
 		if (VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

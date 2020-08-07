@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -121,6 +122,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateReactionObservationTextReference(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationTextReference", "WARNING");
+
 		if (VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -185,6 +188,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateReactionObservationTextReferenceValue(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationTextReferenceValue", "WARNING");
 
 		if (VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -251,6 +256,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateReactionObservationReferenceValue(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationReferenceValue", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -315,6 +322,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateReactionObservationEffectiveTimeLow(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationEffectiveTimeLow", "WARNING");
 
 		if (VALIDATE_REACTION_OBSERVATION_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -381,6 +390,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateReactionObservationEffectiveTimeHigh(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationEffectiveTimeHigh", "WARNING");
+
 		if (VALIDATE_REACTION_OBSERVATION_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -445,6 +456,9 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateReactionObservationSeverityObservationInversionInd(
 			ReactionObservation reactionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ReactionObservationReactionObservationSeverityObservationInversionInd", "ERROR");
 
 		if (VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -512,6 +526,9 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateReactionObservationProcedureActivityProcedureInversionInd(
 			ReactionObservation reactionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ReactionObservationReactionObservationProcedureActivityProcedureInversionInd", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -577,6 +594,9 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateReactionObservationMedicationActivityInversionInd(
 			ReactionObservation reactionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ReactionObservationReactionObservationMedicationActivityInversionInd", "ERROR");
 
 		if (VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -644,6 +664,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateReactionObservationTemplateId(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationTemplateId", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -707,6 +729,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateReactionObservationClassCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationClassCode", "ERROR");
 
 		if (VALIDATE_REACTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -772,6 +796,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateReactionObservationMoodCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationMoodCode", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -834,6 +860,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateReactionObservationId(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationId", "ERROR");
 
 		if (VALIDATE_REACTION_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -898,6 +926,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateReactionObservationCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationCode", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -960,6 +990,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateReactionObservationText(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationText", "WARNING");
 
 		if (VALIDATE_REACTION_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1025,6 +1057,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateReactionObservationStatusCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationStatusCode", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1088,6 +1122,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateReactionObservationEffectiveTime(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationEffectiveTime", "WARNING");
 
 		if (VALIDATE_REACTION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1156,6 +1192,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateReactionObservationValue(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationValue", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1219,6 +1257,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateReactionObservationValueP(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationValueP", "ERROR");
+
 		if (VALIDATE_REACTION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1281,6 +1321,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateReactionObservationSeverityObservation(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationSeverityObservation", "WARNING");
 
 		if (VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1347,6 +1389,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	public static boolean validateReactionObservationProcedureActivityProcedure(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationProcedureActivityProcedure", "INFO");
+
 		if (VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1412,6 +1456,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateReactionObservationMedicationActivity(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReactionObservationReactionObservationMedicationActivity", "INFO");
 
 		if (VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 

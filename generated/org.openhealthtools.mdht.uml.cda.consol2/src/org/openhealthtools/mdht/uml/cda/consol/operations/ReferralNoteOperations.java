@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -189,6 +190,11 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
 			ReferralNote referralNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ReferralNoteReferralNoteHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2",
+			"ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -255,6 +261,11 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
 			ReferralNote referralNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context,
+			"ReferralNoteReferralNoteDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent",
+			"ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -320,6 +331,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 	public static boolean validateReferralNoteCodeP(ReferralNote referralNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteCodeP", "ERROR");
 
 		if (VALIDATE_REFERRAL_NOTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -407,6 +420,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			return true;
 		}
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteCode", "ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -469,6 +484,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 	public static boolean validateReferralNoteInformationRecipient(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteInformationRecipient", "ERROR");
 
 		if (VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -534,6 +551,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteParticipantCaregiver(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteParticipantCaregiver", "WARNING");
+
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -597,6 +616,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 	public static boolean validateReferralNoteParticipantCallbackContact(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteParticipantCallbackContact", "WARNING");
 
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -663,6 +684,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNotePlanOfTreatmentSection2(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNotePlanOfTreatmentSection2", "WARNING");
+
 		if (VALIDATE_REFERRAL_NOTE_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -727,6 +750,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 	public static boolean validateReferralNoteAdvanceDirectivesSectionEntriesOptional2(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteAdvanceDirectivesSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -794,6 +819,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteHistoryOfPresentIllnessSection(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteHistoryOfPresentIllnessSection", "INFO");
+
 		if (VALIDATE_REFERRAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -859,6 +886,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteImmunizationsSection2(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteImmunizationsSection2", "INFO");
+
 		if (VALIDATE_REFERRAL_NOTE_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -923,6 +952,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteProblemSection2(ReferralNote referralNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteProblemSection2", "ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -985,6 +1016,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 	public static boolean validateReferralNoteProceduresSectionEntriesOptional2(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteProceduresSectionEntriesOptional2", "INFO");
 
 		if (VALIDATE_REFERRAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1051,6 +1084,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteResultsSection2(ReferralNote referralNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteResultsSection2", "WARNING");
+
 		if (VALIDATE_REFERRAL_NOTE_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1113,6 +1148,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 	public static boolean validateReferralNoteReviewOfSystemsSection(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteReviewOfSystemsSection", "INFO");
 
 		if (VALIDATE_REFERRAL_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1179,6 +1216,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteSocialHistorySection2(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteSocialHistorySection2", "INFO");
+
 		if (VALIDATE_REFERRAL_NOTE_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1243,6 +1282,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteVitalSignsSection2(ReferralNote referralNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteVitalSignsSection2", "INFO");
+
 		if (VALIDATE_REFERRAL_NOTE_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1306,6 +1347,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 	public static boolean validateReferralNoteFunctionalStatusSection2(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteFunctionalStatusSection2", "WARNING");
 
 		if (VALIDATE_REFERRAL_NOTE_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1372,6 +1415,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNotePhysicalExamSection2(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNotePhysicalExamSection2", "INFO");
+
 		if (VALIDATE_REFERRAL_NOTE_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1435,6 +1480,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 	public static boolean validateReferralNoteAdvanceDirectivesSectionEntriesOptional2b(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteAdvanceDirectivesSectionEntriesOptional2b", "INFO");
 
 		if (VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1502,6 +1549,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteNutritionSection(ReferralNote referralNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteNutritionSection", "WARNING");
+
 		if (VALIDATE_REFERRAL_NOTE_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1564,6 +1613,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 	public static boolean validateReferralNoteMentalStatusSection(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteMentalStatusSection", "WARNING");
 
 		if (VALIDATE_REFERRAL_NOTE_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1628,6 +1679,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 	public static boolean validateReferralNoteMedicalEquipmentSection2(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteMedicalEquipmentSection2", "INFO");
 
 		if (VALIDATE_REFERRAL_NOTE_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1694,6 +1747,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteAllergiesSection2(ReferralNote referralNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteAllergiesSection2", "ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1757,6 +1812,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteAssessmentSection(ReferralNote referralNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteAssessmentSection", "INFO");
+
 		if (VALIDATE_REFERRAL_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1819,6 +1876,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 	public static boolean validateReferralNoteAssessmentAndPlanSection2(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteAssessmentAndPlanSection2", "INFO");
 
 		if (VALIDATE_REFERRAL_NOTE_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -1885,6 +1944,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteHistoryOfPastIllnessSection2(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteHistoryOfPastIllnessSection2", "INFO");
+
 		if (VALIDATE_REFERRAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -1950,6 +2011,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteGeneralStatusSection(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteGeneralStatusSection", "INFO");
+
 		if (VALIDATE_REFERRAL_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2014,6 +2077,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteMedicationsSection2(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteMedicationsSection2", "ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2077,6 +2142,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 	public static boolean validateReferralNoteReasonForReferralSection2(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteReasonForReferralSection2", "ERROR");
 
 		if (VALIDATE_REFERRAL_NOTE_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -2143,6 +2210,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteFamilyHistorySection2(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteFamilyHistorySection2", "INFO");
+
 		if (VALIDATE_REFERRAL_NOTE_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2206,6 +2275,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateReferralNoteInformationRecipientIntendedRecipientPersonName(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteInformationRecipientIntendedRecipientPersonName", "ERROR");
 
 		if (VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2278,6 +2350,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteInformationRecipientIntendedRecipientAddr(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteInformationRecipientIntendedRecipientAddr", "WARNING");
+
 		if (VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2348,6 +2423,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateReferralNoteInformationRecipientIntendedRecipientTelecom(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteInformationRecipientIntendedRecipientTelecom", "WARNING");
 
 		if (VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2420,6 +2498,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient(
 			ReferralNote referralNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteInformationRecipientIntendedRecipientInformationRecipient", "ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2490,6 +2571,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateReferralNoteInformationRecipientIntendedRecipient(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteInformationRecipientIntendedRecipient", "ERROR");
 
 		if (VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2562,6 +2645,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName(
 			ReferralNote referralNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName", "ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2632,6 +2718,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateReferralNoteParticipantCaregiverAssociatedEntityClassCodeP(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityClassCodeP", "ERROR");
 
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -2720,6 +2809,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteParticipantCaregiverAssociatedEntityClassCode(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityClassCode", "ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2801,6 +2893,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson(
 			ReferralNote referralNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson", "ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2872,6 +2967,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteParticipantCaregiverTypeCode(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteParticipantCaregiverTypeCode", "ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -2941,6 +3038,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateReferralNoteParticipantCaregiverAssociatedEntity(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteParticipantCaregiverAssociatedEntity", "ERROR");
 
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3013,6 +3112,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName(
 			ReferralNote referralNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName", "ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3083,6 +3185,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateReferralNoteParticipantCallbackContactAssociatedEntityId(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityId", "ERROR");
 
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3155,6 +3260,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteParticipantCallbackContactAssociatedEntityAddr(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAddr", "WARNING");
+
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3225,6 +3333,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateReferralNoteParticipantCallbackContactAssociatedEntityTelecom(
 			ReferralNote referralNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityTelecom", "ERROR");
 
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3297,6 +3408,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteParticipantCallbackContactAssociatedEntityClassCode(
 			ReferralNote referralNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityClassCode", "ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3367,6 +3481,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson(
 			ReferralNote referralNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson", "ERROR");
 
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -3439,6 +3556,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization(
 			ReferralNote referralNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(
+			context, "ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization", "INFO");
+
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3510,6 +3630,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	public static boolean validateReferralNoteParticipantCallbackContactTypeCode(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteParticipantCallbackContactTypeCode", "ERROR");
+
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
@@ -3580,6 +3702,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateReferralNoteParticipantCallbackContactAssociatedEntity(ReferralNote referralNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntity", "ERROR");
 
 		if (VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -4740,6 +4864,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 	public static boolean validateUSRealmHeader2TemplateId(ReferralNote referralNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ReferralNoteUSRealmHeader2TemplateId", "ERROR");
 
 		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
