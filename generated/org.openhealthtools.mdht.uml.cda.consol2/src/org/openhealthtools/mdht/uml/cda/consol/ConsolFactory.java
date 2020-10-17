@@ -2911,6 +2911,69 @@ public interface ConsolFactory extends EFactory {
 	PhysicianReadingStudyPerformer2 createPhysicianReadingStudyPerformer2();
 
 	/**
+	 * Returns a new object of class '<em>Care Teams</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Care Teams</em>'.
+	 * @generated
+	 */
+	CareTeams createCareTeams();
+
+	/**
+	 * Returns a new object of class '<em>Care Team Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Care Team Organizer</em>'.
+	 * @generated
+	 */
+	CareTeamOrganizer createCareTeamOrganizer();
+
+	/**
+	 * Returns a new object of class '<em>Note Activity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Note Activity</em>'.
+	 * @generated
+	 */
+	NoteActivity createNoteActivity();
+
+	/**
+	 * Returns a new object of class '<em>Care Team Type Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Care Team Type Observation</em>'.
+	 * @generated
+	 */
+	CareTeamTypeObservation createCareTeamTypeObservation();
+
+	/**
+	 * Returns a new object of class '<em>Care Team Member Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Care Team Member Act</em>'.
+	 * @generated
+	 */
+	CareTeamMemberAct createCareTeamMemberAct();
+
+	/**
+	 * Returns a new object of class '<em>Care Team Member Schedule Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Care Team Member Schedule Observation</em>'.
+	 * @generated
+	 */
+	CareTeamMemberScheduleObservation createCareTeamMemberScheduleObservation();
+
+	/**
+	 * Returns a new object of class '<em>Provenance Author Participation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Provenance Author Participation</em>'.
+	 * @generated
+	 */
+	ProvenanceAuthorParticipation createProvenanceAuthorParticipation();
+
+	/**
 	 * Returns a new object of class '<em>Criticality Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
