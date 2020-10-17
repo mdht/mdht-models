@@ -321,7 +321,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* AdvanceDirectivesSection */
 				AdvanceDirectivesSection section =
 
-				ConsolFactory.eINSTANCE.createAdvanceDirectivesSection().init();
+						ConsolFactory.eINSTANCE.createAdvanceDirectivesSection().init();
 
 				target.addSection(section);
 
@@ -363,7 +363,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* AllergiesSection */
 				AllergiesSection section =
 
-				ConsolFactory.eINSTANCE.createAllergiesSection().init();
+						ConsolFactory.eINSTANCE.createAllergiesSection().init();
 
 				target.addSection(section);
 
@@ -405,7 +405,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* EncountersSection */
 				EncountersSection section =
 
-				ConsolFactory.eINSTANCE.createEncountersSection().init();
+						ConsolFactory.eINSTANCE.createEncountersSection().init();
 
 				target.addSection(section);
 
@@ -446,7 +446,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* PayersSection */
 				PayersSection section =
 
-				ConsolFactory.eINSTANCE.createPayersSection().init();
+						ConsolFactory.eINSTANCE.createPayersSection().init();
 
 				target.addSection(section);
 
@@ -488,7 +488,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* MedicationsSection */
 				MedicationsSection section =
 
-				ConsolFactory.eINSTANCE.createMedicationsSection().init();
+						ConsolFactory.eINSTANCE.createMedicationsSection().init();
 
 				target.addSection(section);
 
@@ -530,7 +530,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* PlanOfCareSection */
 				PlanOfCareSection section =
 
-				ConsolFactory.eINSTANCE.createPlanOfCareSection().init();
+						ConsolFactory.eINSTANCE.createPlanOfCareSection().init();
 
 				target.addSection(section);
 
@@ -572,7 +572,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* ProceduresSection */
 				ProceduresSection section =
 
-				ConsolFactory.eINSTANCE.createProceduresSection().init();
+						ConsolFactory.eINSTANCE.createProceduresSection().init();
 
 				target.addSection(section);
 
@@ -614,7 +614,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* FamilyHistorySection */
 				FamilyHistorySection section =
 
-				ConsolFactory.eINSTANCE.createFamilyHistorySection().init();
+						ConsolFactory.eINSTANCE.createFamilyHistorySection().init();
 
 				target.addSection(section);
 
@@ -656,7 +656,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* SocialHistorySection */
 				SocialHistorySection section =
 
-				ConsolFactory.eINSTANCE.createSocialHistorySection().init();
+						ConsolFactory.eINSTANCE.createSocialHistorySection().init();
 
 				target.addSection(section);
 
@@ -698,7 +698,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* VitalSignsSectionEntriesOptional */
 				VitalSignsSectionEntriesOptional section =
 
-				ConsolFactory.eINSTANCE.createVitalSignsSectionEntriesOptional().init();
+						ConsolFactory.eINSTANCE.createVitalSignsSectionEntriesOptional().init();
 
 				target.addSection(section);
 
@@ -772,9 +772,10 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
+
 	public void testValidateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode() {
 		OperationsTestCase<ContinuityOfCareDocument> validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeTestCase = new OperationsTestCase<ContinuityOfCareDocument>(
 			"validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode",
@@ -784,31 +785,13 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ContinuityOfCareDocument target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				perf.setAssignedEntity(ae);
-				se.getPerformers().add(perf);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
 
 			}
 
 			@Override
 			protected void updateToPass(ContinuityOfCareDocument target) {
-				target.getDocumentationOfs().clear();
 				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.setCode(DatatypesFactory.eINSTANCE.createCE("1111", "2.16.840.1.113883.6.101"));
-				perf.setAssignedEntity(ae);
-				se.getPerformers().add(perf);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+
 			}
 
 			@Override
@@ -822,6 +805,60 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 
 		validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeTestCase.doValidationTest();
 	}
+
+	// /**
+	// *
+	// * @generated not
+	// */
+	// @Test
+	// public void testValidateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode() {
+	// OperationsTestCase<ContinuityOfCareDocument> validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeTestCase = new
+	// OperationsTestCase<ContinuityOfCareDocument>(
+	// "validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode",
+	// operationsForOCL.getOCLValue(
+	// "VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(ContinuityOfCareDocument target) {
+	// target.init();
+	// DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+	// ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+	// Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+	// AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+	// perf.setAssignedEntity(ae);
+	// se.getPerformers().add(perf);
+	// dof.setServiceEvent(se);
+	// target.getDocumentationOfs().add(dof);
+	//
+	// }
+	//
+	// @Override
+	// protected void updateToPass(ContinuityOfCareDocument target) {
+	// target.getDocumentationOfs().clear();
+	// target.init();
+	// DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+	// ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+	// Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+	// AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+	// ae.setCode(DatatypesFactory.eINSTANCE.createCE("1111", "2.16.840.1.113883.6.101"));
+	// perf.setAssignedEntity(ae);
+	// se.getPerformers().add(perf);
+	// dof.setServiceEvent(se);
+	// target.getDocumentationOfs().add(dof);
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
+	// (ContinuityOfCareDocument) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeTestCase.doValidationTest();
+	// }
 
 	/**
 	*
@@ -1468,7 +1505,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* ResultsSection */
 				ResultsSection section =
 
-				ConsolFactory.eINSTANCE.createResultsSection().init();
+						ConsolFactory.eINSTANCE.createResultsSection().init();
 
 				target.addSection(section);
 
@@ -1510,7 +1547,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* MedicalEquipmentSection */
 				MedicalEquipmentSection section =
 
-				ConsolFactory.eINSTANCE.createMedicalEquipmentSection().init();
+						ConsolFactory.eINSTANCE.createMedicalEquipmentSection().init();
 
 				target.addSection(section);
 
@@ -1552,7 +1589,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* FunctionalStatusSection */
 				FunctionalStatusSection section =
 
-				ConsolFactory.eINSTANCE.createFunctionalStatusSection().init();
+						ConsolFactory.eINSTANCE.createFunctionalStatusSection().init();
 
 				target.addSection(section);
 
@@ -1594,7 +1631,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* ImmunizationsSectionEntriesOptional */
 				ImmunizationsSectionEntriesOptional section =
 
-				ConsolFactory.eINSTANCE.createImmunizationsSectionEntriesOptional().init();
+						ConsolFactory.eINSTANCE.createImmunizationsSectionEntriesOptional().init();
 
 				target.addSection(section);
 
@@ -1636,7 +1673,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* ProblemSection */
 				ProblemSection section =
 
-				ConsolFactory.eINSTANCE.createProblemSection().init();
+						ConsolFactory.eINSTANCE.createProblemSection().init();
 
 				target.addSection(section);
 

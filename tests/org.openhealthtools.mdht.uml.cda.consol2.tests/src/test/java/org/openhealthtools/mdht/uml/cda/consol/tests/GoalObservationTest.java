@@ -216,6 +216,7 @@ public class GoalObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateGoalObservationCodeP() {
 		OperationsTestCase<GoalObservation> validateGoalObservationCodePTestCase = new OperationsTestCase<GoalObservation>(
 			"validateGoalObservationCodeP",

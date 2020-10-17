@@ -431,7 +431,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* HospitalCourseSection */
 				HospitalCourseSection section =
 
-				ConsolFactory.eINSTANCE.createHospitalCourseSection().init();
+						ConsolFactory.eINSTANCE.createHospitalCourseSection().init();
 
 				target.addSection(section);
 
@@ -507,7 +507,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* ChiefComplaintSection */
 				ChiefComplaintSection section =
 
-				ConsolFactory.eINSTANCE.createChiefComplaintSection().init();
+						ConsolFactory.eINSTANCE.createChiefComplaintSection().init();
 
 				target.addSection(section);
 
@@ -549,7 +549,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* ChiefComplaintAndReasonForVisitSection */
 				ChiefComplaintAndReasonForVisitSection section =
 
-				ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init();
+						ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init();
 
 				target.addSection(section);
 
@@ -590,7 +590,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* NutritionSection */
 				NutritionSection section =
 
-				ConsolFactory.eINSTANCE.createNutritionSection().init();
+						ConsolFactory.eINSTANCE.createNutritionSection().init();
 
 				target.addSection(section);
 
@@ -702,7 +702,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* HistoryOfPresentIllnessSection */
 				HistoryOfPresentIllnessSection section =
 
-				ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
+						ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
 
 				target.addSection(section);
 
@@ -744,7 +744,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* HospitalConsultationsSection */
 				HospitalConsultationsSection section =
 
-				ConsolFactory.eINSTANCE.createHospitalConsultationsSection().init();
+						ConsolFactory.eINSTANCE.createHospitalConsultationsSection().init();
 
 				target.addSection(section);
 
@@ -786,7 +786,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* HospitalDischargeInstructionsSection */
 				HospitalDischargeInstructionsSection section =
 
-				ConsolFactory.eINSTANCE.createHospitalDischargeInstructionsSection().init();
+						ConsolFactory.eINSTANCE.createHospitalDischargeInstructionsSection().init();
 
 				target.addSection(section);
 
@@ -828,7 +828,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* HospitalDischargePhysicalSection */
 				HospitalDischargePhysicalSection section =
 
-				ConsolFactory.eINSTANCE.createHospitalDischargePhysicalSection().init();
+						ConsolFactory.eINSTANCE.createHospitalDischargePhysicalSection().init();
 
 				target.addSection(section);
 
@@ -870,7 +870,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* HospitalDischargeStudiesSummarySection */
 				HospitalDischargeStudiesSummarySection section =
 
-				ConsolFactory.eINSTANCE.createHospitalDischargeStudiesSummarySection().init();
+						ConsolFactory.eINSTANCE.createHospitalDischargeStudiesSummarySection().init();
 
 				target.addSection(section);
 
@@ -1017,7 +1017,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* ReasonForVisitSection */
 				ReasonForVisitSection section =
 
-				ConsolFactory.eINSTANCE.createReasonForVisitSection().init();
+						ConsolFactory.eINSTANCE.createReasonForVisitSection().init();
 
 				target.addSection(section);
 
@@ -1059,7 +1059,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* ReviewOfSystemsSection */
 				ReviewOfSystemsSection section =
 
-				ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
+						ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
 
 				target.addSection(section);
 

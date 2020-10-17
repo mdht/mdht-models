@@ -35,16 +35,17 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CareTeamOrganizerOpera
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerCareTeamMember(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Care Team Member</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerCareLocation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Care Location</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerNoteActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Note Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerCareTeamTypeObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Care Team Type Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerCareTeamMemberAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Care Team Member Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer IVLTS High</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getNoteActivities() <em>Get Note Activities</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamTypeObservations() <em>Get Care Team Type Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamMemberActs() <em>Get Care Team Member Acts</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getNoteActivity() <em>Get Note Activity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamTypeObservation() <em>Get Care Team Type Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamMemberAct() <em>Get Care Team Member Act</em>}</li>
  * </ul>
  * </p>
  *
@@ -203,7 +204,7 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -393,9 +394,10 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 	/**
 	*
 	* @generated
+	* @Test NOT
 	*/
-	@Test
 
+	@Test
 	public void testValidateCareTeamOrganizerCareTeamMember() {
 		OperationsTestCase<CareTeamOrganizer> validateCareTeamOrganizerCareTeamMemberTestCase = new OperationsTestCase<CareTeamOrganizer>(
 			"validateCareTeamOrganizerCareTeamMember", operationsForOCL.getOCLValue(
@@ -404,13 +406,14 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(CareTeamOrganizer target) {
-				target.init();
 
 			}
 
 			@Override
 			protected void updateToPass(CareTeamOrganizer target) {
+				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant2());
+
 			}
 
 			@Override
@@ -423,6 +426,42 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 		};
 
 		validateCareTeamOrganizerCareTeamMemberTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateCareTeamOrganizerCareLocation() {
+		OperationsTestCase<CareTeamOrganizer> validateCareTeamOrganizerCareLocationTestCase = new OperationsTestCase<CareTeamOrganizer>(
+			"validateCareTeamOrganizerCareLocation",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_TEAM_ORGANIZER_CARE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CareTeamOrganizer target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CareTeamOrganizer target) {
+				target.init();
+				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant2());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CareTeamOrganizerOperations.validateCareTeamOrganizerCareLocation(
+					(CareTeamOrganizer) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCareTeamOrganizerCareLocationTestCase.doValidationTest();
 	}
 
 	/**
@@ -541,6 +580,43 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 	*/
 	@Test
 
+	public void testValidateCareTeamOrganizerAuthor() {
+		OperationsTestCase<CareTeamOrganizer> validateCareTeamOrganizerAuthorTestCase = new OperationsTestCase<CareTeamOrganizer>(
+			"validateCareTeamOrganizerAuthor",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_TEAM_ORGANIZER_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CareTeamOrganizer target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CareTeamOrganizer target) {
+				target.init();
+
+				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CareTeamOrganizerOperations.validateCareTeamOrganizerAuthor(
+					(CareTeamOrganizer) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCareTeamOrganizerAuthorTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
 	public void testValidateCareTeamOrganizerIVLTSLow() {
 		OperationsTestCase<CareTeamOrganizer> validateCareTeamOrganizerIVLTSLowTestCase = new OperationsTestCase<CareTeamOrganizer>(
 			"validateCareTeamOrganizerIVLTSLow",
@@ -618,21 +694,10 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 	*/
 	@Test
 
-	public void testGetNoteActivities() {
+	public void testGetNoteActivity() {
 
-		objectFactory.create();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-
-	public void testGetCareTeamTypeObservations() {
-
-		objectFactory.create();
+		CareTeamOrganizer target = objectFactory.create();
+		target.getNoteActivity();
 
 	}
 
@@ -642,9 +707,23 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 	*/
 	@Test
 
-	public void testGetCareTeamMemberActs() {
+	public void testGetCareTeamTypeObservation() {
 
-		objectFactory.create();
+		CareTeamOrganizer target = objectFactory.create();
+		target.getCareTeamTypeObservation();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testGetCareTeamMemberAct() {
+
+		CareTeamOrganizer target = objectFactory.create();
+		target.getCareTeamMemberAct();
 
 	}
 

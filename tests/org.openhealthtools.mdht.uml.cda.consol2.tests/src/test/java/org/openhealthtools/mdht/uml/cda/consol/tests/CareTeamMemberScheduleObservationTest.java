@@ -137,8 +137,8 @@ public class CareTeamMemberScheduleObservationTest extends CDAValidationTest {
 			protected void updateToPass(CareTeamMemberScheduleObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				cd.setCode("57203-2");
+				CD cd = DatatypesFactory.eINSTANCE.createCD("57203-2", "2.16.840.1.113883.6.1");
+				// cd.setCode("");
 				target.setCode(cd);
 
 			}
@@ -202,7 +202,7 @@ public class CareTeamMemberScheduleObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -393,7 +393,7 @@ public class CareTeamMemberScheduleObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 

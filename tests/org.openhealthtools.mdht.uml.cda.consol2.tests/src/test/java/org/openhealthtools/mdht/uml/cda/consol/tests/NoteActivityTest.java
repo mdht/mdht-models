@@ -361,6 +361,7 @@ public class NoteActivityTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(NoteActivity target) {
 				target.init();
+				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant2());
 
 			}
 
@@ -542,15 +543,15 @@ public class NoteActivityTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(NoteActivity target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
 
 			}
 
 			@Override
 			protected void updateToPass(NoteActivity target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
 
-				// target.getEffectiveTime().set
+				target.getEffectiveTime().setValue("2020");
 
 				// CD value = DatatypesFactory.eINSTANCE.createCD();
 				// target.getValues().add(value);

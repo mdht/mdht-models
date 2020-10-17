@@ -106,6 +106,7 @@ public class ResultObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateResultObservationCodeP() {
 		OperationsTestCase<ResultObservation2> validateResultObservationCodePTestCase = new OperationsTestCase<ResultObservation2>(
 			"validateResultObservationCodeP",

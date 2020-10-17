@@ -10,7 +10,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.CDAFactory;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.eclipse.mdht.uml.hl7.datatypes.ED;
 import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.CareTeams;
@@ -26,9 +25,12 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CareTeamsOperations;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#validateCareTeamsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#validateCareTeamsCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#validateCareTeamsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#validateCareTeamsTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#validateCareTeamsText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#validateCareTeamsCareTeamOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Care Team Organizer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#getCareTeamOrganizers() <em>Get Care Team Organizers</em>}</li>
  * </ul>
  * </p>
  *
@@ -69,6 +71,39 @@ public class CareTeamsTest extends CDAValidationTest {
 		};
 
 		validateCareTeamsTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateCareTeamsCodeP() {
+		OperationsTestCase<CareTeams> validateCareTeamsCodePTestCase = new OperationsTestCase<CareTeams>(
+			"validateCareTeamsCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_TEAMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+
+			@Override
+			protected void updateToFail(CareTeams target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CareTeams target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CareTeamsOperations.validateCareTeamsCodeP((CareTeams) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCareTeamsCodePTestCase.doValidationTest();
 	}
 
 	/**
@@ -161,7 +196,7 @@ public class CareTeamsTest extends CDAValidationTest {
 			protected void updateToPass(CareTeams target) {
 				target.init();
 
-				ED text = DatatypesFactory.eINSTANCE.createED();
+				DatatypesFactory.eINSTANCE.createED();
 				target.setText(CDAFactory.eINSTANCE.createStrucDocText());
 				// target.setText(text);
 
@@ -176,6 +211,55 @@ public class CareTeamsTest extends CDAValidationTest {
 		};
 
 		validateCareTeamsTextTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateCareTeamsCareTeamOrganizer() {
+		OperationsTestCase<CareTeams> validateCareTeamsCareTeamOrganizerTestCase = new OperationsTestCase<CareTeams>(
+			"validateCareTeamsCareTeamOrganizer",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_TEAMS_CARE_TEAM_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CareTeams target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CareTeams target) {
+				target.init();
+				target.addOrganizer(ConsolFactory.eINSTANCE.createCareTeamOrganizer().init());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CareTeamsOperations.validateCareTeamsCareTeamOrganizer(
+					(CareTeams) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCareTeamsCareTeamOrganizerTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testGetCareTeamOrganizers() {
+
+		CareTeams target = objectFactory.create();
+		target.getCareTeamOrganizers();
+
 	}
 
 	/**
