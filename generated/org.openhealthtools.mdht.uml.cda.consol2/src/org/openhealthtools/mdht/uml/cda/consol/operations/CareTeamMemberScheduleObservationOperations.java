@@ -46,6 +46,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationEDTELValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation EDTEL Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationEDReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation ED Reference</em>}</li>
@@ -588,6 +589,91 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateCareTeamMemberScheduleObservationStatusCodeP(CareTeamMemberScheduleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCareTeamMemberScheduleObservationStatusCodeP(CareTeamMemberScheduleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCareTeamMemberScheduleObservationStatusCodeP(CareTeamMemberScheduleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCareTeamMemberScheduleObservationStatusCodeP(CareTeamMemberScheduleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param careTeamMemberScheduleObservation The receiving '<em><b>Care Team Member Schedule Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateCareTeamMemberScheduleObservationStatusCodeP(
+			CareTeamMemberScheduleObservation careTeamMemberScheduleObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationStatusCodeP", "ERROR");
+
+		if (VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION);
+			try {
+				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				careTeamMemberScheduleObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationStatusCodeP"),
+						new Object[] { careTeamMemberScheduleObservation }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservationStatusCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservationStatusCodeP",
+						passToken);
+				}
+				passToken.add(careTeamMemberScheduleObservation);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateCareTeamMemberScheduleObservationStatusCode(CareTeamMemberScheduleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Status Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -595,7 +681,8 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+	protected static final String VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamMemberScheduleObservationStatusCode(CareTeamMemberScheduleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Status Code</em>}' invariant operation.
@@ -622,6 +709,15 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	public static boolean validateCareTeamMemberScheduleObservationStatusCode(
 			CareTeamMemberScheduleObservation careTeamMemberScheduleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservationStatusCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(careTeamMemberScheduleObservation)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
 
 		DatatypesUtil.increment(
 			context, "CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationStatusCode", "ERROR");

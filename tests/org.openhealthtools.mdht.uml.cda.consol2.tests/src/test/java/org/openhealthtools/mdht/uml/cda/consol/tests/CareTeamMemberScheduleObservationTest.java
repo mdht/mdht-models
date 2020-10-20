@@ -33,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CareTeamMemberSchedule
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationEDTELValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation EDTEL Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation#validateCareTeamMemberScheduleObservationEDReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation ED Reference</em>}</li>
@@ -315,6 +316,42 @@ public class CareTeamMemberScheduleObservationTest extends CDAValidationTest {
 	*/
 	@Test
 
+	public void testValidateCareTeamMemberScheduleObservationStatusCodeP() {
+		OperationsTestCase<CareTeamMemberScheduleObservation> validateCareTeamMemberScheduleObservationStatusCodePTestCase = new OperationsTestCase<CareTeamMemberScheduleObservation>(
+			"validateCareTeamMemberScheduleObservationStatusCodeP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CareTeamMemberScheduleObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CareTeamMemberScheduleObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationStatusCodeP(
+					(CareTeamMemberScheduleObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCareTeamMemberScheduleObservationStatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
 	public void testValidateCareTeamMemberScheduleObservationStatusCode() {
 		OperationsTestCase<CareTeamMemberScheduleObservation> validateCareTeamMemberScheduleObservationStatusCodeTestCase = new OperationsTestCase<CareTeamMemberScheduleObservation>(
 			"validateCareTeamMemberScheduleObservationStatusCode",
@@ -334,6 +371,14 @@ public class CareTeamMemberScheduleObservationTest extends CDAValidationTest {
 				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
 
+			}
+
+			@Override
+			protected void setDependency(CareTeamMemberScheduleObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put(
+					"org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservationStatusCodeP", passToken);
 			}
 
 			@Override

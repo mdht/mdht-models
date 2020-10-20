@@ -55,6 +55,15 @@ public class NoteActivityImpl extends ActImpl implements NoteActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateNoteActivityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NoteActivityOperations.validateNoteActivityCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateNoteActivityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NoteActivityOperations.validateNoteActivityCode(this, diagnostics, context);
 	}

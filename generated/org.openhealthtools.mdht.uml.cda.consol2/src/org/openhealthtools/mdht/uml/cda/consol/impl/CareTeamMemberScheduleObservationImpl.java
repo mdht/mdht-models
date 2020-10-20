@@ -130,6 +130,17 @@ public class CareTeamMemberScheduleObservationImpl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCareTeamMemberScheduleObservationStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationStatusCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateCareTeamMemberScheduleObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationStatusCode(

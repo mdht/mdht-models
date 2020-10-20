@@ -3,6 +3,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -28,6 +29,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.NoteActivityOperations
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Status Code</em>}</li>
@@ -89,6 +91,41 @@ public class NoteActivityTest extends CDAValidationTest {
 	*/
 	@Test
 
+	public void testValidateNoteActivityCodeP() {
+		OperationsTestCase<NoteActivity> validateNoteActivityCodePTestCase = new OperationsTestCase<NoteActivity>(
+			"validateNoteActivityCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_NOTE_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(NoteActivity target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NoteActivity target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NoteActivityOperations.validateNoteActivityCodeP(
+					(NoteActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNoteActivityCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
 	public void testValidateNoteActivityCode() {
 		OperationsTestCase<NoteActivity> validateNoteActivityCodeTestCase = new OperationsTestCase<NoteActivity>(
 			"validateNoteActivityCode",
@@ -104,6 +141,13 @@ public class NoteActivityTest extends CDAValidationTest {
 			protected void updateToPass(NoteActivity target) {
 				target.init();
 
+			}
+
+			@Override
+			protected void setDependency(NoteActivity target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.NoteActivityCodeP", passToken);
 			}
 
 			@Override

@@ -26,10 +26,12 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CareTeamTypeObservatio
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Mood Code</em>}</li>
  * </ul>
@@ -81,6 +83,41 @@ public class CareTeamTypeObservationTest extends CDAValidationTest {
 	*/
 	@Test
 
+	public void testValidateCareTeamTypeObservationCodeP() {
+		OperationsTestCase<CareTeamTypeObservation> validateCareTeamTypeObservationCodePTestCase = new OperationsTestCase<CareTeamTypeObservation>(
+			"validateCareTeamTypeObservationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CareTeamTypeObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CareTeamTypeObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CareTeamTypeObservationOperations.validateCareTeamTypeObservationCodeP(
+					(CareTeamTypeObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCareTeamTypeObservationCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
 	public void testValidateCareTeamTypeObservationCode() {
 		OperationsTestCase<CareTeamTypeObservation> validateCareTeamTypeObservationCodeTestCase = new OperationsTestCase<CareTeamTypeObservation>(
 			"validateCareTeamTypeObservationCode",
@@ -96,9 +133,16 @@ public class CareTeamTypeObservationTest extends CDAValidationTest {
 			protected void updateToPass(CareTeamTypeObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
+				// CD cd = DatatypesFactory.eINSTANCE.createCD();
+				// target.setCode(cd);
 
+			}
+
+			@Override
+			protected void setDependency(CareTeamTypeObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservationCodeP", passToken);
 			}
 
 			@Override
@@ -229,6 +273,42 @@ public class CareTeamTypeObservationTest extends CDAValidationTest {
 		};
 
 		validateCareTeamTypeObservationValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateCareTeamTypeObservationValueP() {
+		OperationsTestCase<CareTeamTypeObservation> validateCareTeamTypeObservationValuePTestCase = new OperationsTestCase<CareTeamTypeObservation>(
+			"validateCareTeamTypeObservationValueP",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CareTeamTypeObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CareTeamTypeObservation target) {
+				target.init();
+				target.getValues().add((DatatypesFactory.eINSTANCE.createCD()));
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CareTeamTypeObservationOperations.validateCareTeamTypeObservationValueP(
+					(CareTeamTypeObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCareTeamTypeObservationValuePTestCase.doValidationTest();
 	}
 
 	/**

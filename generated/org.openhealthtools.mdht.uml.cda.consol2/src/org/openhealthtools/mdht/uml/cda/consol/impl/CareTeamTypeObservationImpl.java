@@ -61,6 +61,15 @@ public class CareTeamTypeObservationImpl extends ObservationImpl implements Care
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCareTeamTypeObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CareTeamTypeObservationOperations.validateCareTeamTypeObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateCareTeamTypeObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CareTeamTypeObservationOperations.validateCareTeamTypeObservationCode(this, diagnostics, context);
 	}
@@ -91,6 +100,15 @@ public class CareTeamTypeObservationImpl extends ObservationImpl implements Care
 	 */
 	public boolean validateCareTeamTypeObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CareTeamTypeObservationOperations.validateCareTeamTypeObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCareTeamTypeObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CareTeamTypeObservationOperations.validateCareTeamTypeObservationValueP(this, diagnostics, context);
 	}
 
 	/**

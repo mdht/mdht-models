@@ -22,10 +22,12 @@ import org.eclipse.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCareTeamMemberAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CareTeamMemberActTemplateId CareTeamMemberActId CareTeamMemberActStatusCode CareTeamMemberActEffectiveTime CareTeamMemberActClassCode CareTeamMemberActMoodCode CareTeamMemberActPerformer CareTeamMemberActCareTeamMemberScheduleObservation CareTeamMemberActIVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.500.1' templateId.extension='2019-07-01' classCode='PCPR' moodCode='EVN' constraints.validation.warning='CareTeamMemberActParticipant' constraints.validation.query='CareTeamMemberActIVLTSLow CareTeamMemberActIVLTSHigh' constraints.validation.info='CareTeamMemberActIVLTSHigh'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CareTeamMemberActTemplateId CareTeamMemberActId CareTeamMemberActStatusCode CareTeamMemberActStatusCodeP CareTeamMemberActEffectiveTime CareTeamMemberActClassCode CareTeamMemberActMoodCode CareTeamMemberActPerformer CareTeamMemberActCareTeamMemberScheduleObservation CareTeamMemberActParticipant2 CareTeamMemberActIVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.500.1' templateId.extension='2019-07-01' constraints.validation.dependOn.CareTeamMemberActStatusCode='CareTeamMemberActStatusCodeP' classCode='PCPR' moodCode='EVN' constraints.validation.info='CareTeamMemberActParticipant CareTeamMemberActNoteActivity CareTeamMemberActIVLTSHigh' constraints.validation.query='CareTeamMemberActIVLTSLow CareTeamMemberActIVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamMemberActIVLTS constraints.validation.error='CareTeamMemberActIVLTSLow' constraints.validation.info='CareTeamMemberActIVLTSHigh'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamMemberActPerformer2 sDTCFunctionCode.codeSystem='2.16.840.1.113883.6.96' sDTCFunctionCode.codeSystemName='SNOMEDCT' constraints.validation.error='CareTeamMemberActPerformer2SDTCFunctionCode CareTeamMemberActPerformer2SDTCFunctionCodeP' constraints.validation.dependOn.CareTeamMemberActPerformer2SDTCFunctionCode='CareTeamMemberActPerformer2SDTCFunctionCodeP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamMemberActParticipant2 constraints.validation.error='CareTeamMemberActParticipant2TypeCode CareTeamMemberActParticipant2SDTCFunctionCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamMemberActPerformer2 sDTCFunctionCode.codeSystem='2.16.840.1.113883.6.96' sDTCFunctionCode.codeSystemName='SNOMEDCT' constraints.validation.error='CareTeamMemberActPerformer2SDTCFunctionCode CareTeamMemberActPerformer2SDTCFunctionCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamMemberActIndividualParticipant typeCode='IND' constraints.validation.error='CareTeamMemberActIndividualParticipantTypeCode CareTeamMemberActIndividualParticipantSDTCFunctionCode CareTeamMemberActIndividualParticipantSDTCFunctionCodeP CareTeamMemberActIndividualParticipantParticipantRole' sDTCFunctionCode.codeSystem='2.16.840.1.113883.6.96' sDTCFunctionCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.CareTeamMemberActIndividualParticipantSDTCFunctionCode='CareTeamMemberActIndividualParticipantSDTCFunctionCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamMemberActIndividualParticipantParticipantRole constraints.validation.error='CareTeamMemberActIndividualParticipantParticipantRoleNullFlavor'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamMemberActLocationParticipant constraints.validation.error='CareTeamMemberActLocationParticipantTemplateId CareTeamMemberActLocationParticipantTypeCode CareTeamMemberActLocationParticipantParticipantRole' templateId.root='null' typeCode='LOC'"
  * @generated
  */
 public interface CareTeamMemberAct extends Act {
@@ -61,6 +63,18 @@ public interface CareTeamMemberAct extends Act {
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateCareTeamMemberActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'normal\' or value.code = \'aborted\' or value.code = \'active\' or value.code = \'cancelled\' or value.code = \'completed\' or value.code = \'held\' or value.code = \'new\' or value.code = \'suspended\' or value.code = \'nullified\' or value.code = \'obsolete\')'"
 	 * @generated
 	 */
 	boolean validateCareTeamMemberActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -145,6 +159,30 @@ public interface CareTeamMemberAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::NoteActivity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @generated
+	 */
+	boolean validateCareTeamMemberActNoteActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))'"
+	 * @generated
+	 */
+	boolean validateCareTeamMemberActParticipant2(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))'"
 	 * @generated
 	 */
@@ -170,6 +208,15 @@ public interface CareTeamMemberAct extends Act {
 	 * @generated
 	 */
 	EList<CareTeamMemberScheduleObservation> getCareTeamMemberScheduleObservations();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()-&gt;select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::NoteActivity)).oclAsType(consol::NoteActivity)'"
+	 * @generated
+	 */
+	EList<NoteActivity> getNoteActivities();
 
 	/**
 	 * <!-- begin-user-doc -->

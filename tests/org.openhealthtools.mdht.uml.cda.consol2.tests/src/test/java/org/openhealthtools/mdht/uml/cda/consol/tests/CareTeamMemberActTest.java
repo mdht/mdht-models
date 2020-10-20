@@ -3,6 +3,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -29,6 +30,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CareTeamMemberActOpera
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Class Code</em>}</li>
@@ -36,9 +38,12 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CareTeamMemberActOpera
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActCareTeamMemberScheduleObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Care Team Member Schedule Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActNoteActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Note Activity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActParticipant2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Participant2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getCareTeamMemberScheduleObservations() <em>Get Care Team Member Schedule Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getNoteActivities() <em>Get Note Activities</em>}</li>
  * </ul>
  * </p>
  *
@@ -120,6 +125,42 @@ public class CareTeamMemberActTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateCareTeamMemberActStatusCodeP() {
+		OperationsTestCase<CareTeamMemberAct> validateCareTeamMemberActStatusCodePTestCase = new OperationsTestCase<CareTeamMemberAct>(
+			"validateCareTeamMemberActStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_TEAM_MEMBER_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CareTeamMemberAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CareTeamMemberAct target) {
+				target.init();
+				target.setStatusCode(DatatypesFactory.eINSTANCE.createCS());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CareTeamMemberActOperations.validateCareTeamMemberActStatusCodeP(
+					(CareTeamMemberAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCareTeamMemberActStatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated
 	*/
 	@Test
@@ -142,6 +183,13 @@ public class CareTeamMemberActTest extends CDAValidationTest {
 				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
 
+			}
+
+			@Override
+			protected void setDependency(CareTeamMemberAct target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberActStatusCodeP", passToken);
 			}
 
 			@Override
@@ -384,6 +432,81 @@ public class CareTeamMemberActTest extends CDAValidationTest {
 	*/
 	@Test
 
+	public void testValidateCareTeamMemberActNoteActivity() {
+		OperationsTestCase<CareTeamMemberAct> validateCareTeamMemberActNoteActivityTestCase = new OperationsTestCase<CareTeamMemberAct>(
+			"validateCareTeamMemberActNoteActivity",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_TEAM_MEMBER_ACT_NOTE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CareTeamMemberAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CareTeamMemberAct target) {
+				target.init();
+				target.addAct(ConsolFactory.eINSTANCE.createNoteActivity().init());
+				for (org.eclipse.mdht.uml.cda.EntryRelationship er : target.getEntryRelationships()) {
+					er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+				}
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CareTeamMemberActOperations.validateCareTeamMemberActNoteActivity(
+					(CareTeamMemberAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCareTeamMemberActNoteActivityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateCareTeamMemberActParticipant2() {
+		OperationsTestCase<CareTeamMemberAct> validateCareTeamMemberActParticipant2TestCase = new OperationsTestCase<CareTeamMemberAct>(
+			"validateCareTeamMemberActParticipant2",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_TEAM_MEMBER_ACT_PARTICIPANT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CareTeamMemberAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CareTeamMemberAct target) {
+				target.init();
+				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant2());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CareTeamMemberActOperations.validateCareTeamMemberActParticipant2(
+					(CareTeamMemberAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCareTeamMemberActParticipant2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
 	public void testValidateCareTeamMemberActIVLTSLow() {
 		OperationsTestCase<CareTeamMemberAct> validateCareTeamMemberActIVLTSLowTestCase = new OperationsTestCase<CareTeamMemberAct>(
 			"validateCareTeamMemberActIVLTSLow",
@@ -472,6 +595,19 @@ public class CareTeamMemberActTest extends CDAValidationTest {
 
 		CareTeamMemberAct target = objectFactory.create();
 		target.getCareTeamMemberScheduleObservations();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testGetNoteActivities() {
+
+		CareTeamMemberAct target = objectFactory.create();
+		target.getNoteActivities();
 
 	}
 

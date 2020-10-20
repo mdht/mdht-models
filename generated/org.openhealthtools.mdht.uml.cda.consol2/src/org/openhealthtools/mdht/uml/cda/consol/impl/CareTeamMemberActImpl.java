@@ -20,6 +20,7 @@ import org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct;
 import org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
+import org.openhealthtools.mdht.uml.cda.consol.NoteActivity;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CareTeamMemberActOperations;
 
 /**
@@ -65,6 +66,15 @@ public class CareTeamMemberActImpl extends ActImpl implements CareTeamMemberAct 
 	 */
 	public boolean validateCareTeamMemberActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CareTeamMemberActOperations.validateCareTeamMemberActId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCareTeamMemberActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CareTeamMemberActOperations.validateCareTeamMemberActStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -137,6 +147,24 @@ public class CareTeamMemberActImpl extends ActImpl implements CareTeamMemberAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCareTeamMemberActNoteActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CareTeamMemberActOperations.validateCareTeamMemberActNoteActivity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCareTeamMemberActParticipant2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CareTeamMemberActOperations.validateCareTeamMemberActParticipant2(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateCareTeamMemberActIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CareTeamMemberActOperations.validateCareTeamMemberActIVLTSLow(this, diagnostics, context);
 	}
@@ -157,6 +185,15 @@ public class CareTeamMemberActImpl extends ActImpl implements CareTeamMemberAct 
 	 */
 	public EList<CareTeamMemberScheduleObservation> getCareTeamMemberScheduleObservations() {
 		return CareTeamMemberActOperations.getCareTeamMemberScheduleObservations(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<NoteActivity> getNoteActivities() {
+		return CareTeamMemberActOperations.getNoteActivities(this);
 	}
 
 	/**

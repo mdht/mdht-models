@@ -21,7 +21,7 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCareTeamMemberScheduleObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CareTeamMemberScheduleObservationTemplateId CareTeamMemberScheduleObservationCode CareTeamMemberScheduleObservationCodeP CareTeamMemberScheduleObservationText CareTeamMemberScheduleObservationValue CareTeamMemberScheduleObservationClassCode CareTeamMemberScheduleObservationMoodCode CareTeamMemberScheduleObservationStatusCode CareTeamMemberScheduleObservationEDTELValue CareTeamMemberScheduleObservationEDReference' templateId.root='2.16.840.1.113883.10.20.22.4.500.3' templateId.extension='2019-07-01' code.code='57203-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Episode Timing [CMS Assessment]' constraints.validation.dependOn.CareTeamMemberScheduleObservationCode='CareTeamMemberScheduleObservationCodeP' classCode='OBS' moodCode='EVN' constraints.validation.query='CareTeamMemberScheduleObservationEDTELValue CareTeamMemberScheduleObservationEDReference'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CareTeamMemberScheduleObservationTemplateId CareTeamMemberScheduleObservationCode CareTeamMemberScheduleObservationCodeP CareTeamMemberScheduleObservationText CareTeamMemberScheduleObservationValue CareTeamMemberScheduleObservationClassCode CareTeamMemberScheduleObservationMoodCode CareTeamMemberScheduleObservationStatusCode CareTeamMemberScheduleObservationStatusCodeP CareTeamMemberScheduleObservationEDTELValue CareTeamMemberScheduleObservationEDReference' templateId.root='2.16.840.1.113883.10.20.22.4.500.3' templateId.extension='2019-07-01' code.code='57203-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Episode Timing [CMS Assessment]' constraints.validation.dependOn.CareTeamMemberScheduleObservationCode='CareTeamMemberScheduleObservationCodeP' classCode='OBS' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.CareTeamMemberScheduleObservationStatusCode='CareTeamMemberScheduleObservationStatusCodeP' constraints.validation.query='CareTeamMemberScheduleObservationEDTELValue CareTeamMemberScheduleObservationEDReference'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamMemberScheduleObservationED constraints.validation.error='CareTeamMemberScheduleObservationEDReference EDCareTeamMemberScheduleObservationEDTELValue' constraints.validation.query='EDCareTeamMemberScheduleObservationEDTELValue'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamMemberScheduleObservationEDTEL constraints.validation.error='CareTeamMemberScheduleObservationEDTELValue'"
  * @generated
@@ -121,6 +121,19 @@ public interface CareTeamMemberScheduleObservation extends Observation {
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateCareTeamMemberScheduleObservationStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateCareTeamMemberScheduleObservationStatusCode(DiagnosticChain diagnostics,

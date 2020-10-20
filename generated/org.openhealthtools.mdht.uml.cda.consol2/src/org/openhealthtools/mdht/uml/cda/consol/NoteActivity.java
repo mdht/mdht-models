@@ -17,11 +17,12 @@ import org.eclipse.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getNoteActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NoteActivityTemplateId NoteActivityCode NoteActivityText NoteActivityStatusCode NoteActivityEffectiveTime NoteActivityClassCode NoteActivityMoodCode NoteActivityAuthor NoteActivityCDTranslation1' templateId.root='2.16.840.1.113883.10.20.22.4.202' templateId.extension='2016-11-01' code.code='34109-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Note' classCode='ACT' moodCode='EVN' constraints.validation.info='NoteActivityParticipant NoteActivityReference' constraints.validation.warning='NoteActivityCDTranslation1P NoteActivityIVLTSValue' constraints.validation.query='NoteActivityCDTranslation1P NoteActivityCDTranslation1 NoteActivityIVLTSValue' constraints.validation.dependOn.NoteActivityCDTranslation1='NoteActivityCDTranslation1P'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NoteActivityTemplateId NoteActivityCode NoteActivityCodeP NoteActivityText NoteActivityStatusCode NoteActivityEffectiveTime NoteActivityClassCode NoteActivityMoodCode NoteActivityAuthor NoteActivityCDTranslation1' templateId.root='2.16.840.1.113883.10.20.22.4.202' templateId.extension='2016-11-01' code.code='34109-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Note' constraints.validation.dependOn.NoteActivityCode='NoteActivityCodeP' classCode='ACT' moodCode='EVN' constraints.validation.info='NoteActivityParticipant NoteActivityReference' constraints.validation.warning='NoteActivityCDTranslation1P NoteActivityIVLTSValue' constraints.validation.query='NoteActivityCDTranslation1P NoteActivityCDTranslation1 NoteActivityIVLTSValue' constraints.validation.dependOn.NoteActivityCDTranslation1='NoteActivityCDTranslation1P'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolNoteActivityCD translation1.codeSystem='2.16.840.1.113883.6.1' translation1.codeSystemName='LOINC' constraints.validation.error='NoteActivityCDTranslation1' constraints.validation.warning='NoteActivityCDTranslation1P' constraints.validation.dependOn.NoteActivityCDTranslation1='NoteActivityCDTranslation1P'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolNoteActivityIVLTS constraints.validation.warning='NoteActivityIVLTSValue'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolNoteActivityParticipant2 constraints.validation.error='NoteActivityParticipant2Time NoteActivityParticipant2TypeCode NoteActivityParticipant2ParticipantRole' typeCode='LA'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolNoteActivityParticipant2ParticipantRole constraints.validation.error='NoteActivityParticipant2ParticipantRoleId NoteActivityParticipant2ParticipantRolePlayingEntity'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolNoteActivityParticipant2ParticipantRolePlayingEntity constraints.validation.error='NoteActivityParticipant2ParticipantRolePlayingEntityName1'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolNoteActivityReference constraints.validation.error='NoteActivityReferenceExternalDocument'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolNoteActivityReferenceExternalDocument constraints.validation.error='NoteActivityReferenceExternalDocumentId' constraints.validation.warning='NoteActivityReferenceExternalDocumentCode'"
  * @generated
@@ -38,6 +39,18 @@ public interface NoteActivity extends Act {
 	 * @generated
 	 */
 	boolean validateNoteActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateNoteActivityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

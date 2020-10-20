@@ -406,6 +406,7 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(CareTeamOrganizer target) {
+
 			}
 
 			@Override
