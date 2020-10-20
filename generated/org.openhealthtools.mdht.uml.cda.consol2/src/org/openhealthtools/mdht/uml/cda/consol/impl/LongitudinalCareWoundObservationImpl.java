@@ -117,9 +117,9 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLongitudinalCareWoundObservationTargetSiteCodeP(DiagnosticChain diagnostics,
+	public boolean validateLongitudinalCareWoundObservationTargetSiteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationTargetSiteCodeP(
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationTargetSiteCode(
 			this, diagnostics, context);
 	}
 
@@ -128,9 +128,9 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLongitudinalCareWoundObservationTargetSiteCode(DiagnosticChain diagnostics,
+	public boolean validateLongitudinalCareWoundObservationTargetSiteCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationTargetSiteCode(
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationTargetSiteCodeP(
 			this, diagnostics, context);
 	}
 

@@ -52,7 +52,6 @@ public class ResultsSectionEntriesOptional2Impl extends ResultsSectionEntriesOpt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ResultOrganizer2> getConsolResultOrganizer2s() {
 		return ResultsSectionEntriesOptional2Operations.getConsolResultOrganizer2s(this);
 	}

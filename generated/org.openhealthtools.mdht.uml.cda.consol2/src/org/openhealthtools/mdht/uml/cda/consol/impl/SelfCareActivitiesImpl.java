@@ -50,7 +50,6 @@ public class SelfCareActivitiesImpl extends ObservationImpl implements SelfCareA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSelfCareActivitiesTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SelfCareActivitiesOperations.validateSelfCareActivitiesTemplateId(this, diagnostics, context);
 	}
@@ -60,7 +59,6 @@ public class SelfCareActivitiesImpl extends ObservationImpl implements SelfCareA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSelfCareActivitiesClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SelfCareActivitiesOperations.validateSelfCareActivitiesClassCode(this, diagnostics, context);
 	}
@@ -70,7 +68,6 @@ public class SelfCareActivitiesImpl extends ObservationImpl implements SelfCareA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSelfCareActivitiesMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SelfCareActivitiesOperations.validateSelfCareActivitiesMoodCode(this, diagnostics, context);
 	}
@@ -80,7 +77,6 @@ public class SelfCareActivitiesImpl extends ObservationImpl implements SelfCareA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSelfCareActivitiesCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SelfCareActivitiesOperations.validateSelfCareActivitiesCodeP(this, diagnostics, context);
 	}
@@ -90,7 +86,6 @@ public class SelfCareActivitiesImpl extends ObservationImpl implements SelfCareA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSelfCareActivitiesCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SelfCareActivitiesOperations.validateSelfCareActivitiesCode(this, diagnostics, context);
 	}
@@ -127,7 +122,6 @@ public class SelfCareActivitiesImpl extends ObservationImpl implements SelfCareA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSelfCareActivitiesValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SelfCareActivitiesOperations.validateSelfCareActivitiesValue(this, diagnostics, context);
 	}
@@ -137,7 +131,6 @@ public class SelfCareActivitiesImpl extends ObservationImpl implements SelfCareA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSelfCareActivitiesValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SelfCareActivitiesOperations.validateSelfCareActivitiesValueP(this, diagnostics, context);
 	}
@@ -157,7 +150,6 @@ public class SelfCareActivitiesImpl extends ObservationImpl implements SelfCareA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SelfCareActivities init() {
 		return Initializer.Util.init(this);
 	}
@@ -167,7 +159,6 @@ public class SelfCareActivitiesImpl extends ObservationImpl implements SelfCareA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SelfCareActivities init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

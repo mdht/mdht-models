@@ -5028,11 +5028,6 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q-8D0gmFEeut3_ZvYAZhww" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_0Xp24UxnEd6h-an5IXo-DA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_NvnDQAmUEeut3_ZvYAZhww" name="encounterActivity2" association="_NvnDQwmUEeut3_ZvYAZhww">
-      <type xmi:type="uml:Class" href="consol-encounters.uml#_RGU34MzDEeO93sHu8pHB2g"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cOKVQQy6EeuzkrfERpFDKQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cOKVQAy6EeuzkrfERpFDKQ" value="1"/>
-    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_7Ujs8AmCEeut3_ZvYAZhww" name="CD">
       <generalization xmi:id="_7Ujs8QmCEeut3_ZvYAZhww">
         <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -5133,9 +5128,6 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   <uml:Association xmi:id="_Q-8q4AmFEeut3_ZvYAZhww" memberEnd="_Q-8D0AmFEeut3_ZvYAZhww _Q-8q4QmFEeut3_ZvYAZhww">
     <ownedEnd xmi:id="_Q-8q4QmFEeut3_ZvYAZhww" type="_hBwkAAmBEeut3_ZvYAZhww" association="_Q-8q4AmFEeut3_ZvYAZhww"/>
   </uml:Association>
-  <uml:Association xmi:id="_NvnDQwmUEeut3_ZvYAZhww" memberEnd="_NvnDQAmUEeut3_ZvYAZhww _NvnDRAmUEeut3_ZvYAZhww">
-    <ownedEnd xmi:id="_NvnDRAmUEeut3_ZvYAZhww" type="_hBwkAAmBEeut3_ZvYAZhww" association="_NvnDQwmUEeut3_ZvYAZhww"/>
-  </uml:Association>
   <CDA:CDATemplate xmi:id="_tRyLMAmBEeut3_ZvYAZhww" base_Class="_hBwkAAmBEeut3_ZvYAZhww" templateId="2.16.840.1.113883.10.20.22.4.202" templateVersion="2016-11-01"/>
   <CDA:CodeSystemConstraint xmi:id="_419ZAAmBEeut3_ZvYAZhww" code="34109-9" displayName="Note" base_Property="_p-cLIAmBEeut3_ZvYAZhww">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -5155,8 +5147,6 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   <CDA:PropertyValidation xmi:id="_bSNDYAmFEeut3_ZvYAZhww" severity="WARNING" base_Property="_YKuVEAmFEeut3_ZvYAZhww"/>
   <CDA:AssociationValidation xmi:id="_X_zwcAmDEeut3_ZvYAZhww" base_Association="_p-fOcAmBEeut3_ZvYAZhww"/>
   <CDA:AssociationValidation xmi:id="_daFV4AmFEeut3_ZvYAZhww" severity="INFO" base_Association="_Q-8q4AmFEeut3_ZvYAZhww"/>
-  <CDA:ActRelationship xmi:id="_gjVA8AmUEeut3_ZvYAZhww" base_Association="_NvnDQwmUEeut3_ZvYAZhww"/>
-  <CDA:EntryRelationship xmi:id="_g7qBYAmUEeut3_ZvYAZhww" severity="WARNING" base_Association="_NvnDQwmUEeut3_ZvYAZhww" typeCode="COMP"/>
   <CDA:PropertyValidation xmi:id="_5TEFUAyuEeuzkrfERpFDKQ" base_Property="_8pL4ZgmUEeut3_ZvYAZhww"/>
   <CDA:PropertyValidation xmi:id="_LfTyUAy6EeuzkrfERpFDKQ" severity="INFO" base_Property="_f5eWMwmVEeut3_ZvYAZhww"/>
   <CDA:PropertyValidation xmi:id="_yXllEA1rEeuzkrfERpFDKQ" base_Property="_IClI1wdAEeu0W_grHCxLsQ"/>

@@ -5014,43 +5014,42 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 	*
 	* @generated not
 	*/
-	// @Test
-	// public void testValidateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP() {
-	// OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsDataEntererAssignedEntityCodePTestCase = new
-	// OperationsTestCase<GeneralHeaderConstraints>(
-	// "validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP",
-	// operationsForOCL.getOCLValue(
-	// "VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-	// objectFactory) {
-	//
-	// @Override
-	// protected void updateToFail(GeneralHeaderConstraints target) {
-	// target.init();
-	// DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
-	// AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-	// de.setAssignedEntity(ae);
-	//
-	// target.setDataEnterer(de);
-	// }
-	//
-	// @Override
-	// protected void updateToPass(GeneralHeaderConstraints target) {
-	// target.getDataEnterer().getAssignedEntity().setCode(
-	// DatatypesFactory.eINSTANCE.createCE("", "2.16.840.1.113883.6.101"));
-	//
-	// }
-	//
-	// @Override
-	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-	//
-	// return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(
-	// (GeneralHeaderConstraints) objectToTest, diagnostician, map);
-	// }
-	//
-	// };
-	//
-	// validateGeneralHeaderConstraintsDataEntererAssignedEntityCodePTestCase.doValidationTest();
-	// }
+	@Test
+	public void testValidateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsDataEntererAssignedEntityCodePTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				de.setAssignedEntity(ae);
+
+				target.setDataEnterer(de);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getDataEnterer().getAssignedEntity().setCode(
+					DatatypesFactory.eINSTANCE.createCE("", "2.16.840.1.113883.6.101"));
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDataEntererAssignedEntityCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -5090,42 +5089,6 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsDataEntererAssignedEntityIdTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-
-	public void testValidateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP() {
-		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsDataEntererAssignedEntityCodePTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
-			"validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(GeneralHeaderConstraints target) {
-
-			}
-
-			@Override
-			protected void updateToPass(GeneralHeaderConstraints target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(
-					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateGeneralHeaderConstraintsDataEntererAssignedEntityCodePTestCase.doValidationTest();
 	}
 
 	/**
@@ -9789,9 +9752,8 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 					public void updateToFail(GeneralHeaderConstraints target) {
 						// -has guardian and an incorrect codeSystem ID with a valid code
 						setup(target);
-						guardian.setCode(
-							DatatypesFactory.eINSTANCE.createCE(
-								VALID_PERSONALRELATIONSHIP_CODE, CDAValidationTest.BAD_CODESYSTEM_ID));
+						guardian.setCode(DatatypesFactory.eINSTANCE.createCE(
+							VALID_PERSONALRELATIONSHIP_CODE, CDAValidationTest.BAD_CODESYSTEM_ID));
 						addElements(target);
 					}
 				});
@@ -9814,9 +9776,8 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 					public void updateToFail(GeneralHeaderConstraints target) {
 						// -has guardian, an incorrect codeSystem ID, and invalid code
 						setup(target);
-						guardian.setCode(
-							DatatypesFactory.eINSTANCE.createCE(
-								CDAValidationTest.BAD_CODE_VALUE, CDAValidationTest.BAD_CODESYSTEM_ID));
+						guardian.setCode(DatatypesFactory.eINSTANCE.createCE(
+							CDAValidationTest.BAD_CODE_VALUE, CDAValidationTest.BAD_CODESYSTEM_ID));
 						addElements(target);
 					}
 				});
@@ -13449,50 +13410,49 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 	*
 	* @generated not
 	*/
-	// @Test
-	// public void testValidateGeneralHeaderConstraintsInformantAssignedEntityCodeP() {
-	// OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantAssignedEntityCodePTestCase = new
-	// OperationsTestCase<GeneralHeaderConstraints>(
-	// "validateGeneralHeaderConstraintsInformantAssignedEntityCodeP",
-	// operationsForOCL.getOCLValue(
-	// "VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-	// objectFactory) {
-	//
-	// @Override
-	// protected void updateToFail(GeneralHeaderConstraints target) {
-	// target.init();
-	//
-	// Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
-	// AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-	//
-	// informant.setAssignedEntity(ae);
-	// target.getInformants().add(informant);
-	// }
-	//
-	// @Override
-	// protected void updateToPass(GeneralHeaderConstraints target) {
-	// target.getInformants().clear();
-	//
-	// Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
-	// AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-	//
-	// ae.setCode(DatatypesFactory.eINSTANCE.createCE("207L00000X", "2.16.840.1.113883.6.101"));
-	// informant.setAssignedEntity(ae);
-	// target.getInformants().add(informant);
-	//
-	// }
-	//
-	// @Override
-	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-	//
-	// return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(
-	// (GeneralHeaderConstraints) objectToTest, diagnostician, map);
-	// }
-	//
-	// };
-	//
-	// validateGeneralHeaderConstraintsInformantAssignedEntityCodePTestCase.doValidationTest();
-	// }
+	@Test
+	public void testValidateGeneralHeaderConstraintsInformantAssignedEntityCodeP() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantAssignedEntityCodePTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformantAssignedEntityCodeP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+
+				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+				informant.setAssignedEntity(ae);
+				target.getInformants().add(informant);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformants().clear();
+
+				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+				ae.setCode(DatatypesFactory.eINSTANCE.createCE("207L00000X", "2.16.840.1.113883.6.101"));
+				informant.setAssignedEntity(ae);
+				target.getInformants().add(informant);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantAssignedEntityCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -13536,42 +13496,6 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsInformantAssignedEntityIdTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-
-	public void testValidateGeneralHeaderConstraintsInformantAssignedEntityCodeP() {
-		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantAssignedEntityCodePTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
-			"validateGeneralHeaderConstraintsInformantAssignedEntityCodeP",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(GeneralHeaderConstraints target) {
-
-			}
-
-			@Override
-			protected void updateToPass(GeneralHeaderConstraints target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(
-					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateGeneralHeaderConstraintsInformantAssignedEntityCodePTestCase.doValidationTest();
 	}
 
 	/**

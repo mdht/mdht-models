@@ -115,7 +115,6 @@ public class FunctionalStatusResultObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-
 	public void testValidateResultObservationCodeP() {
 		OperationsTestCase<FunctionalStatusResultObservation> validateResultObservationCodePTestCase = new OperationsTestCase<FunctionalStatusResultObservation>(
 			"validateResultObservationCodeP",

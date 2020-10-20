@@ -63,7 +63,6 @@ public class HospitalDischargeDiagnosis2Impl extends HospitalDischargeDiagnosisI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargeDiagnosisCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalDischargeDiagnosis2Operations.validateHospitalDischargeDiagnosisCodeP(
 			this, diagnostics, context);
@@ -74,7 +73,6 @@ public class HospitalDischargeDiagnosis2Impl extends HospitalDischargeDiagnosisI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return HospitalDischargeDiagnosis2Operations.getConsolProblemObservation2s(this);
 	}

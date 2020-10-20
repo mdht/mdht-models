@@ -50,7 +50,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActTemplateId(this, diagnostics, context);
 	}
@@ -60,7 +59,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActClassCode(this, diagnostics, context);
 	}
@@ -70,7 +68,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActMoodCode(this, diagnostics, context);
 	}
@@ -80,7 +77,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActId(this, diagnostics, context);
 	}
@@ -90,7 +86,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActCodeP(this, diagnostics, context);
 	}
@@ -100,7 +95,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActCode(this, diagnostics, context);
 	}
@@ -110,7 +104,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActStatusCode(this, diagnostics, context);
 	}
@@ -129,7 +122,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActEffectiveTime(this, diagnostics, context);
 	}
@@ -139,7 +131,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipant(this, diagnostics, context);
 	}
@@ -149,7 +140,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(
@@ -161,7 +151,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(
@@ -173,7 +162,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActParticipantParticipantRoleClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRoleClassCode(
@@ -185,7 +173,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActParticipantParticipantRoleId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRoleId(
@@ -197,7 +184,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntity(
@@ -209,7 +195,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActParticipantTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantTypeCode(this, diagnostics, context);
@@ -220,7 +205,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugMonitoringActParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRole(
@@ -232,7 +216,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public DrugMonitoringAct init() {
 		return Initializer.Util.init(this);
 	}
@@ -242,7 +225,6 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public DrugMonitoringAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -71,7 +71,6 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedAct2Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedAct2Operations.validatePlannedAct2Code(this, diagnostics, context);
 	}
@@ -81,7 +80,6 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedAct2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedAct2Operations.validatePlannedAct2StatusCode(this, diagnostics, context);
 	}
@@ -91,7 +89,6 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedAct2StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedAct2Operations.validatePlannedAct2StatusCodeP(this, diagnostics, context);
 	}
@@ -101,7 +98,6 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedAct2EffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedAct2Operations.validatePlannedAct2EffectiveTime(this, diagnostics, context);
 	}
@@ -111,7 +107,6 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedAct2Indication2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedAct2Operations.validatePlannedAct2Indication2(this, diagnostics, context);
 	}
@@ -121,7 +116,6 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedAct2Instruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedAct2Operations.validatePlannedAct2Instruction2(this, diagnostics, context);
 	}
@@ -131,7 +125,6 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedAct2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedAct2Operations.validatePlannedAct2AuthorParticipation(this, diagnostics, context);
 	}
@@ -141,7 +134,6 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedAct2Performer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedAct2Operations.validatePlannedAct2Performer(this, diagnostics, context);
 	}
@@ -160,7 +152,6 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Indication2> getIndication2s() {
 		return PlannedAct2Operations.getIndication2s(this);
 	}
@@ -170,7 +161,6 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Instruction2> getInstruction2s() {
 		return PlannedAct2Operations.getInstruction2s(this);
 	}

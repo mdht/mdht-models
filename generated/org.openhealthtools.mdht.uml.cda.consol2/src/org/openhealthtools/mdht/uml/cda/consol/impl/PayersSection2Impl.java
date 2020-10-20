@@ -60,7 +60,6 @@ public class PayersSection2Impl extends PayersSectionImpl implements PayersSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<CoverageActivity2> getConsolCoverageActivity2s() {
 		return PayersSection2Operations.getConsolCoverageActivity2s(this);
 	}

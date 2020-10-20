@@ -52,7 +52,6 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNonMedicinalSupplyActivity2Instruction2InversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivity2Instruction2InversionInd(
@@ -86,7 +85,6 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNonMedicinalSupplyActivity2Instruction2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivity2Instruction2(
@@ -98,7 +96,6 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Instruction2 getInstruction2() {
 		return NonMedicinalSupplyActivity2Operations.getInstruction2(this);
 	}

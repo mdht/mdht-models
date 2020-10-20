@@ -54,7 +54,6 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOperativeNoteFluidSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionTemplateId(
@@ -66,17 +65,15 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOperativeNoteFluidSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOperativeNoteFluidSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionCodeP(this, diagnostics, context);
 	}
@@ -86,7 +83,6 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOperativeNoteFluidSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionText(this, diagnostics, context);
 	}
@@ -96,7 +92,6 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOperativeNoteFluidSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionTitle(this, diagnostics, context);
 	}
@@ -106,17 +101,15 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public OperativeNoteFluidSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public OperativeNoteFluidSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

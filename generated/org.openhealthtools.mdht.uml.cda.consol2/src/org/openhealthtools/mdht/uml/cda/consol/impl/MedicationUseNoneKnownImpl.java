@@ -50,7 +50,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReference(this, diagnostics, context);
@@ -61,7 +60,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReferenceValue(
@@ -73,7 +71,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownReferenceValue(
@@ -85,7 +82,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTemplateId(this, diagnostics, context);
 	}
@@ -95,7 +91,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownClassCode(this, diagnostics, context);
 	}
@@ -105,7 +100,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownMoodCode(this, diagnostics, context);
 	}
@@ -115,7 +109,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownId(this, diagnostics, context);
 	}
@@ -125,7 +118,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownCodeP(this, diagnostics, context);
 	}
@@ -135,7 +127,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownCode(this, diagnostics, context);
 	}
@@ -145,7 +136,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownEffectiveTime(this, diagnostics, context);
@@ -156,7 +146,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownStatusCode(this, diagnostics, context);
 	}
@@ -166,7 +155,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownStatusCodeP(this, diagnostics, context);
 	}
@@ -176,7 +164,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownText(this, diagnostics, context);
 	}
@@ -186,7 +173,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownValue(this, diagnostics, context);
 	}
@@ -196,7 +182,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationUseNoneKnownValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownValueP(this, diagnostics, context);
 	}
@@ -206,7 +191,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationUseNoneKnown init() {
 		return Initializer.Util.init(this);
 	}
@@ -216,7 +200,6 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationUseNoneKnown init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

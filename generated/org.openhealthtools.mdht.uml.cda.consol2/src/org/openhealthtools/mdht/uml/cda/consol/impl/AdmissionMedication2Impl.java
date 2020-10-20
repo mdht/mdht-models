@@ -60,7 +60,6 @@ public class AdmissionMedication2Impl extends AdmissionMedicationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
 		return AdmissionMedication2Operations.getConsolMedicationActivity2s(this);
 	}

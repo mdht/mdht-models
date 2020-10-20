@@ -61,7 +61,6 @@ public class AnesthesiaSection2Impl extends AnesthesiaSectionImpl implements Ane
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProcedureActivityProcedure2> getConsolProcedureActivityProcedure2s() {
 		return AnesthesiaSection2Operations.getConsolProcedureActivityProcedure2s(this);
 	}
@@ -71,7 +70,6 @@ public class AnesthesiaSection2Impl extends AnesthesiaSectionImpl implements Ane
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
 		return AnesthesiaSection2Operations.getConsolMedicationActivity2s(this);
 	}

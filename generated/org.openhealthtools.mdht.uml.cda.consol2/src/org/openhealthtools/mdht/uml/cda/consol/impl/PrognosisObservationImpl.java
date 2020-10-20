@@ -50,7 +50,6 @@ public class PrognosisObservationImpl extends ObservationImpl implements Prognos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePrognosisObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrognosisObservationOperations.validatePrognosisObservationTemplateId(this, diagnostics, context);
 	}
@@ -60,7 +59,6 @@ public class PrognosisObservationImpl extends ObservationImpl implements Prognos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePrognosisObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrognosisObservationOperations.validatePrognosisObservationClassCode(this, diagnostics, context);
 	}
@@ -70,7 +68,6 @@ public class PrognosisObservationImpl extends ObservationImpl implements Prognos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePrognosisObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrognosisObservationOperations.validatePrognosisObservationMoodCode(this, diagnostics, context);
 	}
@@ -80,7 +77,6 @@ public class PrognosisObservationImpl extends ObservationImpl implements Prognos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePrognosisObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrognosisObservationOperations.validatePrognosisObservationCodeP(this, diagnostics, context);
 	}
@@ -90,7 +86,6 @@ public class PrognosisObservationImpl extends ObservationImpl implements Prognos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePrognosisObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrognosisObservationOperations.validatePrognosisObservationCode(this, diagnostics, context);
 	}
@@ -100,7 +95,6 @@ public class PrognosisObservationImpl extends ObservationImpl implements Prognos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePrognosisObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrognosisObservationOperations.validatePrognosisObservationStatusCode(this, diagnostics, context);
 	}
@@ -110,7 +104,6 @@ public class PrognosisObservationImpl extends ObservationImpl implements Prognos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePrognosisObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrognosisObservationOperations.validatePrognosisObservationStatusCodeP(this, diagnostics, context);
 	}
@@ -120,7 +113,6 @@ public class PrognosisObservationImpl extends ObservationImpl implements Prognos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePrognosisObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrognosisObservationOperations.validatePrognosisObservationEffectiveTime(this, diagnostics, context);
 	}
@@ -130,7 +122,6 @@ public class PrognosisObservationImpl extends ObservationImpl implements Prognos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePrognosisObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrognosisObservationOperations.validatePrognosisObservationValue(this, diagnostics, context);
 	}
@@ -140,7 +131,6 @@ public class PrognosisObservationImpl extends ObservationImpl implements Prognos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PrognosisObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -150,7 +140,6 @@ public class PrognosisObservationImpl extends ObservationImpl implements Prognos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PrognosisObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

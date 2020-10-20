@@ -29,7 +29,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSecti
  */
 public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirectivesSectionEntriesOptionalImpl
 		implements AdvanceDirectivesSectionEntriesOptional2 {
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

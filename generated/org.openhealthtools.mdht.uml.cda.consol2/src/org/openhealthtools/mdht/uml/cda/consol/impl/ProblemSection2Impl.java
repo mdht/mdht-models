@@ -61,7 +61,6 @@ public class ProblemSection2Impl extends ProblemSectionEntriesOptional2Impl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemSection2Title(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSection2Operations.validateProblemSection2Title(this, diagnostics, context);
 	}
@@ -71,7 +70,6 @@ public class ProblemSection2Impl extends ProblemSectionEntriesOptional2Impl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemSection2Text(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSection2Operations.validateProblemSection2Text(this, diagnostics, context);
 	}
@@ -81,7 +79,6 @@ public class ProblemSection2Impl extends ProblemSectionEntriesOptional2Impl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HealthStatusObservation2 getConsolHealthStatusObservation2() {
 		return ProblemSection2Operations.getConsolHealthStatusObservation2(this);
 	}

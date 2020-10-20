@@ -54,7 +54,6 @@ public class SurgicalDrainsSectionImpl extends SectionImpl implements SurgicalDr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSurgicalDrainsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionTemplateId(this, diagnostics, context);
 	}
@@ -64,17 +63,15 @@ public class SurgicalDrainsSectionImpl extends SectionImpl implements SurgicalDr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSurgicalDrainsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSurgicalDrainsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionCodeP(this, diagnostics, context);
 	}
@@ -84,7 +81,6 @@ public class SurgicalDrainsSectionImpl extends SectionImpl implements SurgicalDr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSurgicalDrainsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionText(this, diagnostics, context);
 	}
@@ -94,7 +90,6 @@ public class SurgicalDrainsSectionImpl extends SectionImpl implements SurgicalDr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSurgicalDrainsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionTitle(this, diagnostics, context);
 	}
@@ -104,17 +99,15 @@ public class SurgicalDrainsSectionImpl extends SectionImpl implements SurgicalDr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SurgicalDrainsSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SurgicalDrainsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

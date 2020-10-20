@@ -11,7 +11,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.NoteActivity;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NoteActivityOperations;
 
@@ -137,15 +136,6 @@ public class NoteActivityImpl extends ActImpl implements NoteActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNoteActivityEncounterActivity2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NoteActivityOperations.validateNoteActivityEncounterActivity2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateNoteActivityCDTranslation1P(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NoteActivityOperations.validateNoteActivityCDTranslation1P(this, diagnostics, context);
 	}
@@ -166,42 +156,6 @@ public class NoteActivityImpl extends ActImpl implements NoteActivity {
 	 */
 	public boolean validateNoteActivityIVLTSValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NoteActivityOperations.validateNoteActivityIVLTSValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	// public EList<ClinicalStatement> getEncounters() {
-	// return NoteActivityOperations.getEncounters(this);
-	// }
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	// public EList<ClinicalStatement> getEncounters() {
-	// return NoteActivityOperations.getEncounters(this);
-	// }
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	// public EList<ClinicalStatement> getEncounters() {
-	// return NoteActivityOperations.getEncounters(this);
-	// }
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncounterActivity2 getEncounterActivity2() {
-		return NoteActivityOperations.getEncounterActivity2(this);
 	}
 
 	/**

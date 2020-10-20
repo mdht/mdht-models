@@ -69,7 +69,6 @@ public class InstructionsSection2Impl extends InstructionsSectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Instruction2> getConsolInstruction2s() {
 		return InstructionsSection2Operations.getConsolInstruction2s(this);
 	}

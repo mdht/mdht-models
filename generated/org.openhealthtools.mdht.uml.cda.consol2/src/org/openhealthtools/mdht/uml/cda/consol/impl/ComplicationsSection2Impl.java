@@ -71,7 +71,6 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return ComplicationsSection2Operations.getConsolProblemObservation2s(this);
 	}

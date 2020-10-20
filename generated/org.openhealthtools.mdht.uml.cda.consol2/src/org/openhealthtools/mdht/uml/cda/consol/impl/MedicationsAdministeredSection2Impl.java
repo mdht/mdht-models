@@ -63,7 +63,6 @@ public class MedicationsAdministeredSection2Impl extends MedicationsAdministered
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
 		return MedicationsAdministeredSection2Operations.getConsolMedicationActivity2s(this);
 	}

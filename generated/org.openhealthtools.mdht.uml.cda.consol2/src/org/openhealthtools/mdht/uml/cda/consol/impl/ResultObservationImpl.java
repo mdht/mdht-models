@@ -54,17 +54,15 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationTextReference(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationReferenceValue(this, diagnostics, context);
 	}
@@ -74,7 +72,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationTextReferenceValue(this, diagnostics, context);
@@ -85,7 +82,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationCodeValue(this, diagnostics, context);
 	}
@@ -95,7 +91,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationNoObservationRangeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationNoObservationRangeCode(this, diagnostics, context);
@@ -106,7 +101,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationAuthorMultiplicity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationAuthorMultiplicity(this, diagnostics, context);
@@ -117,7 +111,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
 	}
@@ -127,7 +120,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationClassCode(this, diagnostics, context);
 	}
@@ -137,7 +129,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationMoodCode(this, diagnostics, context);
 	}
@@ -147,7 +138,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationId(this, diagnostics, context);
 	}
@@ -157,7 +147,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationCode(this, diagnostics, context);
 	}
@@ -167,7 +156,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationText(this, diagnostics, context);
 	}
@@ -177,17 +165,15 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationStatusCodeP(this, diagnostics, context);
 	}
@@ -197,7 +183,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationEffectiveTime(this, diagnostics, context);
 	}
@@ -207,7 +192,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationValue(this, diagnostics, context);
 	}
@@ -217,7 +201,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationInterpretationCode(this, diagnostics, context);
@@ -228,7 +211,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationMethodCode(this, diagnostics, context);
 	}
@@ -238,7 +220,6 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationTargetSiteCode(this, diagnostics, context);
 	}
@@ -248,17 +229,15 @@ public class ResultObservationImpl extends ObservationImpl implements ResultObse
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ResultObservation init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

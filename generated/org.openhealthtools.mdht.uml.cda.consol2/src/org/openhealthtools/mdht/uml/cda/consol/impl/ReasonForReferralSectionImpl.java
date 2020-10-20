@@ -54,7 +54,6 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateReasonForReferralSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonForReferralSectionOperations.validateReasonForReferralSectionTemplateId(
@@ -66,17 +65,15 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateReasonForReferralSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForReferralSectionOperations.validateReasonForReferralSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateReasonForReferralSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForReferralSectionOperations.validateReasonForReferralSectionCodeP(this, diagnostics, context);
 	}
@@ -86,7 +83,6 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateReasonForReferralSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForReferralSectionOperations.validateReasonForReferralSectionTitle(this, diagnostics, context);
 	}
@@ -96,7 +92,6 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateReasonForReferralSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForReferralSectionOperations.validateReasonForReferralSectionText(this, diagnostics, context);
 	}
@@ -106,17 +101,15 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ReasonForReferralSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ReasonForReferralSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

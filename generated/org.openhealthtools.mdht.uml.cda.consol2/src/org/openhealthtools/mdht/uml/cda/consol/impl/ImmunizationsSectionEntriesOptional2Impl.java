@@ -52,7 +52,6 @@ public class ImmunizationsSectionEntriesOptional2Impl extends ImmunizationsSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ImmunizationActivity2> getConsolImmunizationActivity2s() {
 		return ImmunizationsSectionEntriesOptional2Operations.getConsolImmunizationActivity2s(this);
 	}

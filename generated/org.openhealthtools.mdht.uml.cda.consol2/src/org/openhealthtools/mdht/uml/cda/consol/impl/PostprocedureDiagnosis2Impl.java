@@ -60,7 +60,6 @@ public class PostprocedureDiagnosis2Impl extends PostprocedureDiagnosisImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePostprocedureDiagnosisCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosis2Operations.validatePostprocedureDiagnosisCodeP(this, diagnostics, context);
 	}
@@ -70,7 +69,6 @@ public class PostprocedureDiagnosis2Impl extends PostprocedureDiagnosisImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return PostprocedureDiagnosis2Operations.getConsolProblemObservation2s(this);
 	}

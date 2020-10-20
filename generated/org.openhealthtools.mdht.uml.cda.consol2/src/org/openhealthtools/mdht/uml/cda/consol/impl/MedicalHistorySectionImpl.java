@@ -54,7 +54,6 @@ public class MedicalHistorySectionImpl extends SectionImpl implements MedicalHis
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalHistorySectionOperations.validateMedicalHistorySectionTemplateId(this, diagnostics, context);
 	}
@@ -64,17 +63,15 @@ public class MedicalHistorySectionImpl extends SectionImpl implements MedicalHis
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalHistorySectionOperations.validateMedicalHistorySectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalHistorySectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalHistorySectionOperations.validateMedicalHistorySectionCodeP(this, diagnostics, context);
 	}
@@ -84,7 +81,6 @@ public class MedicalHistorySectionImpl extends SectionImpl implements MedicalHis
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalHistorySectionOperations.validateMedicalHistorySectionText(this, diagnostics, context);
 	}
@@ -94,7 +90,6 @@ public class MedicalHistorySectionImpl extends SectionImpl implements MedicalHis
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalHistorySectionOperations.validateMedicalHistorySectionTitle(this, diagnostics, context);
 	}
@@ -104,17 +99,15 @@ public class MedicalHistorySectionImpl extends SectionImpl implements MedicalHis
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicalHistorySection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

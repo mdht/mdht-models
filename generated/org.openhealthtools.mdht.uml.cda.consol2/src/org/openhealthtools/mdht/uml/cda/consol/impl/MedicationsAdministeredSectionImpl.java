@@ -56,7 +56,6 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(
@@ -68,7 +67,6 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationsAdministeredSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCode(
@@ -77,10 +75,9 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationsAdministeredSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCodeP(
@@ -92,19 +89,6 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicationsAdministeredSectionText(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionText(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateMedicationsAdministeredSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTitle(
@@ -116,7 +100,17 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public boolean validateMedicationsAdministeredSectionText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationsAdministeredSectionMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionMedicationActivity(
@@ -128,7 +122,6 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<MedicationActivity> getMedicationActivities() {
 		return MedicationsAdministeredSectionOperations.getMedicationActivities(this);
 	}
@@ -138,17 +131,15 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationsAdministeredSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

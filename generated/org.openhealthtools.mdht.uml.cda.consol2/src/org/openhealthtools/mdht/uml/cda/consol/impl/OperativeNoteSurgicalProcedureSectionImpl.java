@@ -55,7 +55,6 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOperativeNoteSurgicalProcedureSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTemplateId(
@@ -67,7 +66,6 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOperativeNoteSurgicalProcedureSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionCode(
@@ -76,10 +74,9 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOperativeNoteSurgicalProcedureSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionCodeP(
@@ -91,7 +88,6 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOperativeNoteSurgicalProcedureSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionText(
@@ -103,7 +99,6 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOperativeNoteSurgicalProcedureSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTitle(
@@ -115,17 +110,15 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public OperativeNoteSurgicalProcedureSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public OperativeNoteSurgicalProcedureSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

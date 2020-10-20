@@ -50,7 +50,6 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSubstanceAdministeredActTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActTemplateId(
@@ -62,7 +61,6 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSubstanceAdministeredActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActClassCode(this, diagnostics, context);
 	}
@@ -72,7 +70,6 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSubstanceAdministeredActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActMoodCode(this, diagnostics, context);
 	}
@@ -82,7 +79,6 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSubstanceAdministeredActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActId(this, diagnostics, context);
 	}
@@ -92,7 +88,6 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSubstanceAdministeredActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActCodeP(this, diagnostics, context);
 	}
@@ -102,7 +97,6 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSubstanceAdministeredActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActCode(this, diagnostics, context);
 	}
@@ -112,7 +106,6 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSubstanceAdministeredActStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActStatusCode(
@@ -124,7 +117,6 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSubstanceAdministeredActStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActStatusCodeP(
@@ -136,7 +128,6 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSubstanceAdministeredActEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActEffectiveTime(
@@ -148,7 +139,6 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SubstanceAdministeredAct init() {
 		return Initializer.Util.init(this);
 	}
@@ -158,7 +148,6 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SubstanceAdministeredAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

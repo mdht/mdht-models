@@ -54,7 +54,6 @@ public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProcedureActivityProcedure2> getConsolProcedureActivityProcedure2s() {
 		return ProceduresSectionEntriesOptional2Operations.getConsolProcedureActivityProcedure2s(this);
 	}

@@ -62,7 +62,6 @@ public class AssessmentAndPlanSection2Impl extends AssessmentAndPlanSectionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<PlannedAct2> getConsolPlannedAct2s() {
 		return AssessmentAndPlanSection2Operations.getConsolPlannedAct2s(this);
 	}

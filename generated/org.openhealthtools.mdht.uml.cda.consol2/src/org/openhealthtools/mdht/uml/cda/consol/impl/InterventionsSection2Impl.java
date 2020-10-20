@@ -62,7 +62,6 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInterventionsSection2InterventionAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InterventionsSection2Operations.validateInterventionsSection2InterventionAct(this, diagnostics, context);
@@ -95,7 +94,6 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<InterventionAct> getInterventionActs() {
 		return InterventionsSection2Operations.getInterventionActs(this);
 	}

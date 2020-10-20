@@ -56,7 +56,6 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultOrganizerCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateResultOrganizerCodeValue(this, diagnostics, context);
 	}
@@ -66,7 +65,6 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultOrganizerClassCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateResultOrganizerClassCodeValue(this, diagnostics, context);
 	}
@@ -76,7 +74,6 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
 	}
@@ -86,7 +83,6 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateResultOrganizerClassCode(this, diagnostics, context);
 	}
@@ -96,7 +92,6 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateResultOrganizerMoodCode(this, diagnostics, context);
 	}
@@ -106,17 +101,15 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultOrganizerId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateResultOrganizerId(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultOrganizerStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateResultOrganizerStatusCodeP(this, diagnostics, context);
 	}
@@ -126,7 +119,6 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateResultOrganizerStatusCode(this, diagnostics, context);
 	}
@@ -136,7 +128,6 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateResultOrganizerCode(this, diagnostics, context);
 	}
@@ -146,7 +137,6 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validateResultOrganizerResultObservation(this, diagnostics, context);
 	}
@@ -156,7 +146,6 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ResultObservation> getResultObservations() {
 		return ResultOrganizerOperations.getResultObservations(this);
 	}
@@ -166,17 +155,15 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ResultOrganizer init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

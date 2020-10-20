@@ -54,7 +54,6 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHistoryOfPresentIllnessSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTemplateId(
@@ -66,7 +65,6 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHistoryOfPresentIllnessSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionCode(
@@ -75,10 +73,9 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHistoryOfPresentIllnessSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionCodeP(
@@ -90,7 +87,6 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHistoryOfPresentIllnessSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTitle(
@@ -102,7 +98,6 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHistoryOfPresentIllnessSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionText(
@@ -114,17 +109,15 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HistoryOfPresentIllnessSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HistoryOfPresentIllnessSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

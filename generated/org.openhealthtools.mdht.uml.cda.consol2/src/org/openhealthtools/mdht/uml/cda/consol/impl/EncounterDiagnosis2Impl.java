@@ -60,7 +60,6 @@ public class EncounterDiagnosis2Impl extends EncounterDiagnosisImpl implements E
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return EncounterDiagnosis2Operations.getConsolProblemObservation2s(this);
 	}

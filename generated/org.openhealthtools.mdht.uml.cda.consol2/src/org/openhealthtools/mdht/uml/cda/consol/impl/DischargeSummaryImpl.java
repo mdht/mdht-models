@@ -78,7 +78,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
@@ -90,17 +89,15 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryCodeP(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryCode(this, diagnostics, context);
 	}
@@ -110,7 +107,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional(
@@ -122,7 +118,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryHospitalAdmissionDiagnosisSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryHospitalAdmissionDiagnosisSection(
@@ -134,7 +129,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryHospitalDischargeDiagnosisSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeDiagnosisSection(
@@ -146,7 +140,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryDischargeDietSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryDischargeDietSection(this, diagnostics, context);
@@ -157,7 +150,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional(
@@ -169,7 +161,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryFunctionalStatusSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryFunctionalStatusSection(this, diagnostics, context);
@@ -180,7 +171,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryHistoryOfPresentIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryHistoryOfPresentIllnessSection(
@@ -192,7 +182,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryHospitalCourseSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryHospitalCourseSection(this, diagnostics, context);
@@ -203,7 +192,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryPlanOfCareSection(this, diagnostics, context);
 	}
@@ -213,7 +201,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryHistoryOfPastIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryHistoryOfPastIllnessSection(
@@ -225,18 +212,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateDischargeSummaryReviewOfSystemsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryReviewOfSystemsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOf(this, diagnostics, context);
 	}
@@ -246,7 +221,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryChiefComplaintAndReasonForVisitSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryChiefComplaintAndReasonForVisitSection(
@@ -258,7 +232,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryChiefComplaintSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryChiefComplaintSection(this, diagnostics, context);
@@ -269,7 +242,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryFamilyHistorySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryFamilyHistorySection(this, diagnostics, context);
@@ -280,7 +252,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryHospitalConsultationsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryHospitalConsultationsSection(
@@ -292,7 +263,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryHospitalDischargeInstructionsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeInstructionsSection(
@@ -304,7 +274,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryHospitalDischargePhysicalSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargePhysicalSection(
@@ -316,7 +285,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryHospitalDischargeStudiesSummarySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeStudiesSummarySection(
@@ -328,7 +296,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryImmunizationsSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryImmunizationsSectionEntriesOptional(
@@ -340,7 +307,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryProblemSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryProblemSectionEntriesOptional(
@@ -352,7 +318,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryProceduresSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryProceduresSectionEntriesOptional(
@@ -364,7 +329,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryReasonForVisitSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryReasonForVisitSection(this, diagnostics, context);
@@ -375,7 +339,16 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public boolean validateDischargeSummaryReviewOfSystemsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeSummaryOperations.validateDischargeSummaryReviewOfSystemsSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateDischargeSummarySocialHistorySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummarySocialHistorySection(this, diagnostics, context);
@@ -386,7 +359,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryAllergiesSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryAllergiesSectionEntriesOptional(
@@ -398,7 +370,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryVitalSignsSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryVitalSignsSectionEntriesOptional(
@@ -410,7 +381,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization(
@@ -422,7 +392,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity(
@@ -434,7 +403,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization(
@@ -446,7 +414,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity(
@@ -458,7 +425,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow(
@@ -470,7 +436,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh(
@@ -482,7 +447,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet(
@@ -494,7 +458,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem(
@@ -506,7 +469,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode(
@@ -518,7 +480,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EffectiveTime(
@@ -530,7 +491,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty(
@@ -542,7 +502,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant(
@@ -554,7 +513,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter(
@@ -566,7 +524,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional() {
 		return DischargeSummaryOperations.getHospitalAdmissionMedicationsSectionEntriesOptional(this);
 	}
@@ -576,7 +533,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalAdmissionDiagnosisSection getHospitalAdmissionDiagnosisSection() {
 		return DischargeSummaryOperations.getHospitalAdmissionDiagnosisSection(this);
 	}
@@ -586,7 +542,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalDischargeDiagnosisSection getHospitalDischargeDiagnosisSection() {
 		return DischargeSummaryOperations.getHospitalDischargeDiagnosisSection(this);
 	}
@@ -596,7 +551,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public DischargeDietSection getDischargeDietSection() {
 		return DischargeSummaryOperations.getDischargeDietSection(this);
 	}
@@ -606,7 +560,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalDischargeMedicationsSectionEntriesOptional getHospitalDischargeMedicationsSectionEntriesOptional() {
 		return DischargeSummaryOperations.getHospitalDischargeMedicationsSectionEntriesOptional(this);
 	}
@@ -616,7 +569,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FunctionalStatusSection getFunctionalStatusSection() {
 		return DischargeSummaryOperations.getFunctionalStatusSection(this);
 	}
@@ -626,7 +578,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HistoryOfPresentIllnessSection getHistoryOfPresentIllnessSection() {
 		return DischargeSummaryOperations.getHistoryOfPresentIllnessSection(this);
 	}
@@ -636,7 +587,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalCourseSection getHospitalCourseSection() {
 		return DischargeSummaryOperations.getHospitalCourseSection(this);
 	}
@@ -646,7 +596,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PlanOfCareSection getPlanOfCareSection() {
 		return DischargeSummaryOperations.getPlanOfCareSection(this);
 	}
@@ -656,7 +605,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HistoryOfPastIllnessSection getHistoryOfPastIllnessSection() {
 		return DischargeSummaryOperations.getHistoryOfPastIllnessSection(this);
 	}
@@ -666,17 +614,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ReviewOfSystemsSection getReviewOfSystemsSection() {
-		return DischargeSummaryOperations.getReviewOfSystemsSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection() {
 		return DischargeSummaryOperations.getChiefComplaintAndReasonForVisitSection(this);
 	}
@@ -686,7 +623,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ChiefComplaintSection getChiefComplaintSection() {
 		return DischargeSummaryOperations.getChiefComplaintSection(this);
 	}
@@ -696,7 +632,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FamilyHistorySection getFamilyHistorySection() {
 		return DischargeSummaryOperations.getFamilyHistorySection(this);
 	}
@@ -706,7 +641,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalConsultationsSection getHospitalConsultationsSection() {
 		return DischargeSummaryOperations.getHospitalConsultationsSection(this);
 	}
@@ -716,7 +650,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
 		return DischargeSummaryOperations.getHospitalDischargeInstructionsSection(this);
 	}
@@ -726,7 +659,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalDischargePhysicalSection getHospitalDischargePhysicalSection() {
 		return DischargeSummaryOperations.getHospitalDischargePhysicalSection(this);
 	}
@@ -736,7 +668,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalDischargeStudiesSummarySection getHospitalDischargeStudiesSummarySection() {
 		return DischargeSummaryOperations.getHospitalDischargeStudiesSummarySection(this);
 	}
@@ -746,7 +677,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ImmunizationsSectionEntriesOptional getImmunizationsSectionEntriesOptional() {
 		return DischargeSummaryOperations.getImmunizationsSectionEntriesOptional(this);
 	}
@@ -756,7 +686,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProblemSectionEntriesOptional getProblemSectionEntriesOptional() {
 		return DischargeSummaryOperations.getProblemSectionEntriesOptional(this);
 	}
@@ -766,7 +695,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProceduresSectionEntriesOptional getProceduresSectionEntriesOptional() {
 		return DischargeSummaryOperations.getProceduresSectionEntriesOptional(this);
 	}
@@ -776,7 +704,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ReasonForVisitSection getReasonForVisitSection() {
 		return DischargeSummaryOperations.getReasonForVisitSection(this);
 	}
@@ -786,7 +713,15 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public ReviewOfSystemsSection getReviewOfSystemsSection() {
+		return DischargeSummaryOperations.getReviewOfSystemsSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SocialHistorySection getSocialHistorySection() {
 		return DischargeSummaryOperations.getSocialHistorySection(this);
 	}
@@ -796,7 +731,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional() {
 		return DischargeSummaryOperations.getAllergiesSectionEntriesOptional(this);
 	}
@@ -806,7 +740,6 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional() {
 		return DischargeSummaryOperations.getVitalSignsSectionEntriesOptional(this);
 	}
@@ -834,7 +767,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override

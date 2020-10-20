@@ -54,7 +54,6 @@ public class EstimatedDateOfDeliveryImpl extends ObservationImpl implements Esti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateEstimatedDateOfDeliveryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EstimatedDateOfDeliveryOperations.validateEstimatedDateOfDeliveryTemplateId(this, diagnostics, context);
 	}
@@ -64,7 +63,6 @@ public class EstimatedDateOfDeliveryImpl extends ObservationImpl implements Esti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateEstimatedDateOfDeliveryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EstimatedDateOfDeliveryOperations.validateEstimatedDateOfDeliveryClassCode(this, diagnostics, context);
 	}
@@ -74,7 +72,6 @@ public class EstimatedDateOfDeliveryImpl extends ObservationImpl implements Esti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateEstimatedDateOfDeliveryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EstimatedDateOfDeliveryOperations.validateEstimatedDateOfDeliveryCode(this, diagnostics, context);
 	}
@@ -84,7 +81,6 @@ public class EstimatedDateOfDeliveryImpl extends ObservationImpl implements Esti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateEstimatedDateOfDeliveryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EstimatedDateOfDeliveryOperations.validateEstimatedDateOfDeliveryMoodCode(this, diagnostics, context);
 	}
@@ -94,7 +90,6 @@ public class EstimatedDateOfDeliveryImpl extends ObservationImpl implements Esti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateEstimatedDateOfDeliveryStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EstimatedDateOfDeliveryOperations.validateEstimatedDateOfDeliveryStatusCode(this, diagnostics, context);
 	}
@@ -104,7 +99,6 @@ public class EstimatedDateOfDeliveryImpl extends ObservationImpl implements Esti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateEstimatedDateOfDeliveryValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EstimatedDateOfDeliveryOperations.validateEstimatedDateOfDeliveryValue(this, diagnostics, context);
 	}
@@ -114,17 +108,15 @@ public class EstimatedDateOfDeliveryImpl extends ObservationImpl implements Esti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EstimatedDateOfDelivery init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EstimatedDateOfDelivery init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

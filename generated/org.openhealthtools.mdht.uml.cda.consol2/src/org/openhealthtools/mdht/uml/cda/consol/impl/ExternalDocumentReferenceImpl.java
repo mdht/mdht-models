@@ -50,7 +50,6 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateExternalDocumentReferenceTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceTemplateId(
@@ -62,7 +61,6 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateExternalDocumentReferenceClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceClassCode(
@@ -74,7 +72,6 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateExternalDocumentReferenceMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceMoodCode(
 			this, diagnostics, context);
@@ -94,7 +91,6 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateExternalDocumentReferenceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceCode(this, diagnostics, context);
 	}
@@ -124,7 +120,6 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ExternalDocumentReference init() {
 		return Initializer.Util.init(this);
 	}
@@ -134,7 +129,6 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ExternalDocumentReference init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

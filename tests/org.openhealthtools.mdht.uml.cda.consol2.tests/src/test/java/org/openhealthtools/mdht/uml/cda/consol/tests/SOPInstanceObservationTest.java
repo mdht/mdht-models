@@ -512,7 +512,6 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-
 	public void testValidateSOPInstanceObservationCodeP() {
 		OperationsTestCase<SOPInstanceObservation> validateSOPInstanceObservationCodePTestCase = new OperationsTestCase<SOPInstanceObservation>(
 			"validateSOPInstanceObservationCodeP",

@@ -412,7 +412,6 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CareTeamOrganizer target) {
 				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant2());
 
 			}
 

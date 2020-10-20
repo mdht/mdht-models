@@ -54,7 +54,6 @@ public class FindingsSectionImpl extends SectionImpl implements FindingsSection 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFindingsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FindingsSectionOperations.validateFindingsSectionTemplateId(this, diagnostics, context);
 	}
@@ -64,17 +63,15 @@ public class FindingsSectionImpl extends SectionImpl implements FindingsSection 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FindingsSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FindingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

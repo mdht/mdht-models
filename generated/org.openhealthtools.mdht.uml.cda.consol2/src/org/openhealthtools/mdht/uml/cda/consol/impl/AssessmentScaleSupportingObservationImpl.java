@@ -51,7 +51,6 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentScaleSupportingObservationCodeCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationCodeCodeSystem(
@@ -63,7 +62,6 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentScaleSupportingObservationValueTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationValueTranslation(
@@ -75,7 +73,6 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentScaleSupportingObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationTemplateId(
@@ -87,7 +84,6 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentScaleSupportingObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationClassCode(
@@ -99,7 +95,6 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentScaleSupportingObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationMoodCode(
@@ -111,7 +106,6 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentScaleSupportingObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationCode(
@@ -123,7 +117,6 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentScaleSupportingObservationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationId(
@@ -135,7 +128,6 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentScaleSupportingObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationStatusCode(
@@ -147,7 +139,6 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentScaleSupportingObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationStatusCodeP(
@@ -159,7 +150,6 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentScaleSupportingObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationValue(
@@ -171,7 +161,6 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AssessmentScaleSupportingObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -181,7 +170,6 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AssessmentScaleSupportingObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

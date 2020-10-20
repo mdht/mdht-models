@@ -56,7 +56,6 @@ public class DischargeMedicationImpl extends ActImpl implements DischargeMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeMedicationMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeMedicationOperations.validateDischargeMedicationMedicationActivity(this, diagnostics, context);
@@ -67,7 +66,6 @@ public class DischargeMedicationImpl extends ActImpl implements DischargeMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeMedicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeMedicationOperations.validateDischargeMedicationTemplateId(this, diagnostics, context);
 	}
@@ -77,7 +75,6 @@ public class DischargeMedicationImpl extends ActImpl implements DischargeMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeMedicationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeMedicationOperations.validateDischargeMedicationClassCode(this, diagnostics, context);
 	}
@@ -87,7 +84,6 @@ public class DischargeMedicationImpl extends ActImpl implements DischargeMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeMedicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeMedicationOperations.validateDischargeMedicationMoodCode(this, diagnostics, context);
 	}
@@ -97,17 +93,15 @@ public class DischargeMedicationImpl extends ActImpl implements DischargeMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeMedicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeMedicationOperations.validateDischargeMedicationCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<MedicationActivity> getMedicationActivities() {
 		return DischargeMedicationOperations.getMedicationActivities(this);
 	}
@@ -117,17 +111,15 @@ public class DischargeMedicationImpl extends ActImpl implements DischargeMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public DischargeMedication init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public DischargeMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

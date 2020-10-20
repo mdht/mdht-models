@@ -52,7 +52,6 @@ public class EncounterDiagnosisImpl extends ActImpl implements EncounterDiagnosi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateEncounterDiagnosisTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterDiagnosisOperations.validateEncounterDiagnosisTemplateId(this, diagnostics, context);
 	}
@@ -62,7 +61,6 @@ public class EncounterDiagnosisImpl extends ActImpl implements EncounterDiagnosi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateEncounterDiagnosisClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterDiagnosisOperations.validateEncounterDiagnosisClassCode(this, diagnostics, context);
 	}
@@ -72,7 +70,6 @@ public class EncounterDiagnosisImpl extends ActImpl implements EncounterDiagnosi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateEncounterDiagnosisMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterDiagnosisOperations.validateEncounterDiagnosisMoodCode(this, diagnostics, context);
 	}
@@ -82,17 +79,6 @@ public class EncounterDiagnosisImpl extends ActImpl implements EncounterDiagnosi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateEncounterDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterDiagnosisOperations.validateEncounterDiagnosisCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateEncounterDiagnosisCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterDiagnosisOperations.validateEncounterDiagnosisCodeP(this, diagnostics, context);
 	}
@@ -102,7 +88,15 @@ public class EncounterDiagnosisImpl extends ActImpl implements EncounterDiagnosi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public boolean validateEncounterDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterDiagnosisOperations.validateEncounterDiagnosisCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateEncounterDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterDiagnosisOperations.validateEncounterDiagnosisProblemObservation(this, diagnostics, context);
@@ -113,7 +107,6 @@ public class EncounterDiagnosisImpl extends ActImpl implements EncounterDiagnosi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemObservation> getProblemObservations() {
 		return EncounterDiagnosisOperations.getProblemObservations(this);
 	}
@@ -123,7 +116,6 @@ public class EncounterDiagnosisImpl extends ActImpl implements EncounterDiagnosi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EncounterDiagnosis init() {
 		return Initializer.Util.init(this);
 	}
@@ -133,7 +125,6 @@ public class EncounterDiagnosisImpl extends ActImpl implements EncounterDiagnosi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EncounterDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

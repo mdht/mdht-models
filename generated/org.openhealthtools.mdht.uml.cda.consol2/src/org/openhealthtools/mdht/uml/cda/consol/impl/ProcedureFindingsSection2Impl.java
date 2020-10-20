@@ -62,7 +62,6 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return ProcedureFindingsSection2Operations.getConsolProblemObservation2s(this);
 	}

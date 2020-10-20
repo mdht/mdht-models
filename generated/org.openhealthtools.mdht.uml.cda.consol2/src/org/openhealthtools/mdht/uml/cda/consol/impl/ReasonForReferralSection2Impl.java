@@ -62,7 +62,6 @@ public class ReasonForReferralSection2Impl extends ReasonForReferralSectionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateReasonForReferralSection2PatientReferralAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonForReferralSection2Operations.validateReasonForReferralSection2PatientReferralAct(
@@ -74,7 +73,6 @@ public class ReasonForReferralSection2Impl extends ReasonForReferralSectionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<PatientReferralAct> getPatientReferralActs() {
 		return ReasonForReferralSection2Operations.getPatientReferralActs(this);
 	}

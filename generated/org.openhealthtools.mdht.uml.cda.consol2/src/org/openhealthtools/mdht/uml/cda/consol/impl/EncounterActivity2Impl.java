@@ -62,7 +62,6 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateEncounterActivitiesCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivity2Operations.validateEncounterActivitiesCodeP(this, diagnostics, context);
 	}
@@ -92,7 +91,6 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Indication2> getConsolIndication2s() {
 		return EncounterActivity2Operations.getConsolIndication2s(this);
 	}
@@ -102,7 +100,6 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<EncounterDiagnosis2> getConsolEncounterDiagnosis2s() {
 		return EncounterActivity2Operations.getConsolEncounterDiagnosis2s(this);
 	}

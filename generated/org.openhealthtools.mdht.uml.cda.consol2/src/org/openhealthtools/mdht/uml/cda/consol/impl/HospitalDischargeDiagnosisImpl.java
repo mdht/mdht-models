@@ -56,7 +56,6 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargeDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisProblemObservation(
@@ -68,7 +67,6 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargeDiagnosisTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisTemplateId(
@@ -80,7 +78,6 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargeDiagnosisClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisClassCode(
@@ -92,7 +89,6 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargeDiagnosisMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisMoodCode(
@@ -104,7 +100,6 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargeDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisCode(this, diagnostics, context);
 	}
@@ -114,7 +109,6 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemObservation> getProblemObservations() {
 		return HospitalDischargeDiagnosisOperations.getProblemObservations(this);
 	}
@@ -124,17 +118,15 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalDischargeDiagnosis init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalDischargeDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

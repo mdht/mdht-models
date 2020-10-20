@@ -54,7 +54,6 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyStatusObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationTemplateId(
@@ -66,7 +65,6 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyStatusObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationClassCode(this, diagnostics, context);
 	}
@@ -76,7 +74,6 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationMoodCode(this, diagnostics, context);
 	}
@@ -86,7 +83,6 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationCode(this, diagnostics, context);
 	}
@@ -96,7 +92,6 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyStatusObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationStatusCode(
@@ -108,7 +103,6 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationValue(this, diagnostics, context);
 	}
@@ -118,17 +112,15 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AllergyStatusObservation init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AllergyStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

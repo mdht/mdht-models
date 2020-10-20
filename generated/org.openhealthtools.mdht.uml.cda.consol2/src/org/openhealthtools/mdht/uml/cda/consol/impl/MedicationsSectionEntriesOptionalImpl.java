@@ -56,7 +56,6 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTemplateId(
@@ -68,7 +67,6 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalCode(
@@ -91,7 +89,6 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTitle(
@@ -103,7 +100,6 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalText(
@@ -115,7 +111,6 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalMedicationActivity(
@@ -127,7 +122,6 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<MedicationActivity> getMedicationActivities() {
 		return MedicationsSectionEntriesOptionalOperations.getMedicationActivities(this);
 	}
@@ -137,17 +131,15 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationsSectionEntriesOptional init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

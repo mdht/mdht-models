@@ -17,7 +17,7 @@ import org.eclipse.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getNoteActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NoteActivityTemplateId NoteActivityCode NoteActivityText NoteActivityStatusCode NoteActivityEffectiveTime NoteActivityClassCode NoteActivityMoodCode NoteActivityAuthor NoteActivityCDTranslation1' templateId.root='2.16.840.1.113883.10.20.22.4.202' templateId.extension='2016-11-01' code.code='34109-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Note' classCode='ACT' moodCode='EVN' constraints.validation.info='NoteActivityParticipant NoteActivityReference' constraints.validation.warning='NoteActivityEncounterActivity2 NoteActivityCDTranslation1P NoteActivityIVLTSValue' constraints.validation.query='NoteActivityCDTranslation1P NoteActivityCDTranslation1 NoteActivityIVLTSValue' constraints.validation.dependOn.NoteActivityCDTranslation1='NoteActivityCDTranslation1P'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NoteActivityTemplateId NoteActivityCode NoteActivityText NoteActivityStatusCode NoteActivityEffectiveTime NoteActivityClassCode NoteActivityMoodCode NoteActivityAuthor NoteActivityCDTranslation1' templateId.root='2.16.840.1.113883.10.20.22.4.202' templateId.extension='2016-11-01' code.code='34109-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Note' classCode='ACT' moodCode='EVN' constraints.validation.info='NoteActivityParticipant NoteActivityReference' constraints.validation.warning='NoteActivityCDTranslation1P NoteActivityIVLTSValue' constraints.validation.query='NoteActivityCDTranslation1P NoteActivityCDTranslation1 NoteActivityIVLTSValue' constraints.validation.dependOn.NoteActivityCDTranslation1='NoteActivityCDTranslation1P'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolNoteActivityCD translation1.codeSystem='2.16.840.1.113883.6.1' translation1.codeSystemName='LOINC' constraints.validation.error='NoteActivityCDTranslation1' constraints.validation.warning='NoteActivityCDTranslation1P' constraints.validation.dependOn.NoteActivityCDTranslation1='NoteActivityCDTranslation1P'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolNoteActivityIVLTS constraints.validation.warning='NoteActivityIVLTSValue'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolNoteActivityParticipant2 constraints.validation.error='NoteActivityParticipant2Time NoteActivityParticipant2TypeCode NoteActivityParticipant2ParticipantRole' typeCode='LA'"
@@ -154,18 +154,6 @@ public interface NoteActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | not entryRelationship.encounter.oclIsUndefined() and entryRelationship.encounter.oclIsKindOf(consol::EncounterActivity2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
-	 * @generated
-	 */
-	boolean validateNoteActivityEncounterActivity2(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies ((translation-&gt;isEmpty() or translation-&gt;exists(element | element.isNullFlavorUndefined())) implies (not translation-&gt;isEmpty()) )))'"
 	 * @generated
 	 */
@@ -194,42 +182,6 @@ public interface NoteActivity extends Act {
 	 * @generated
 	 */
 	boolean validateNoteActivityIVLTSValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()-&gt;select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::ClinicalStatement)).oclAsType(cda::ClinicalStatement)'"
-	 * @generated
-	 */
-	// EList<ClinicalStatement> getEncounters();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()-&gt;select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::ClinicalStatement)).oclAsType(cda::ClinicalStatement)'"
-	 * @generated
-	 */
-	// EList<ClinicalStatement> getEncounters();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()-&gt;select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::ClinicalStatement)).oclAsType(cda::ClinicalStatement)'"
-	 * @generated
-	 */
-	// EList<ClinicalStatement> getEncounters();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()-&gt;select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncounterActivity2))-&gt;asSequence()-&gt;any(true).oclAsType(consol::EncounterActivity2)'"
-	 * @generated
-	 */
-	EncounterActivity2 getEncounterActivity2();
 
 	/**
 	 * <!-- begin-user-doc -->

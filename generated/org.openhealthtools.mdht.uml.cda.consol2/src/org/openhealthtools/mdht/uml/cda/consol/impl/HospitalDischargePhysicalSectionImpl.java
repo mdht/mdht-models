@@ -54,7 +54,6 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargePhysicalSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionTemplateId(
@@ -66,7 +65,6 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargePhysicalSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionCode(
@@ -75,10 +73,9 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargePhysicalSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionCodeP(
@@ -90,7 +87,6 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargePhysicalSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionTitle(
@@ -102,7 +98,6 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargePhysicalSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionText(
@@ -114,17 +109,15 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalDischargePhysicalSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalDischargePhysicalSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

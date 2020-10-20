@@ -54,7 +54,6 @@ public class ProcedureImplantsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureImplantsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionTemplateId(
@@ -66,17 +65,15 @@ public class ProcedureImplantsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureImplantsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureImplantsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionCodeP(this, diagnostics, context);
 	}
@@ -86,7 +83,6 @@ public class ProcedureImplantsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureImplantsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionText(this, diagnostics, context);
 	}
@@ -96,7 +92,6 @@ public class ProcedureImplantsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureImplantsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionTitle(this, diagnostics, context);
 	}
@@ -106,17 +101,15 @@ public class ProcedureImplantsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProcedureImplantsSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProcedureImplantsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

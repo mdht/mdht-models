@@ -25,7 +25,6 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.NoteActivity;
 
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -50,11 +49,9 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityEncounterActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Encounter Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityCDTranslation1P(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity CD Translation1 P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityCDTranslation1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity CD Translation1</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityIVLTSValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity IVLTS Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#getEncounterActivity2() <em>Get Encounter Activity2</em>}</li>
  * </ul>
  * </p>
  *
@@ -731,71 +728,6 @@ public class NoteActivityOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateNoteActivityEncounterActivity2(NoteActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Encounter Activity2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateNoteActivityEncounterActivity2(NoteActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_NOTE_ACTIVITY_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.encounter.oclIsUndefined() and entryRelationship.encounter.oclIsKindOf(consol::EncounterActivity2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateNoteActivityEncounterActivity2(NoteActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Encounter Activity2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateNoteActivityEncounterActivity2(NoteActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static ThreadLocal<Constraint> VALIDATE_NOTE_ACTIVITY_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param noteActivity The receiving '<em><b>Note Activity</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateNoteActivityEncounterActivity2(NoteActivity noteActivity, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "NoteActivityNoteActivityEncounterActivity2", "WARNING");
-
-		if (VALIDATE_NOTE_ACTIVITY_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.NOTE_ACTIVITY);
-			try {
-				VALIDATE_NOTE_ACTIVITY_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_NOTE_ACTIVITY_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_NOTE_ACTIVITY_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(noteActivity)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.NOTE_ACTIVITY__NOTE_ACTIVITY_ENCOUNTER_ACTIVITY2,
-						ConsolPlugin.INSTANCE.getString("NoteActivityNoteActivityEncounterActivity2"),
-						new Object[] { noteActivity }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateNoteActivityCDTranslation1P(NoteActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity CD Translation1 P</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1033,50 +965,6 @@ public class NoteActivityOperations extends ClinicalStatementOperations {
 			return oclResultSet.isEmpty();
 		}
 		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getEncounterActivity2(NoteActivity) <em>Get Encounter Activity2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getEncounterActivity2(NoteActivity)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_ENCOUNTER_ACTIVITY2__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncounterActivity2))->asSequence()->any(true).oclAsType(consol::EncounterActivity2)";
-
-	/**
-	 * The cached OCL query for the '{@link #getEncounterActivity2(NoteActivity) <em>Get Encounter Activity2</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getEncounterActivity2(NoteActivity)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_ENCOUNTER_ACTIVITY2__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-
-	public static EncounterActivity2 getEncounterActivity2(NoteActivity noteActivity) {
-
-		if (GET_ENCOUNTER_ACTIVITY2__EOCL_QRY == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.NOTE_ACTIVITY, ConsolPackage.Literals.NOTE_ACTIVITY.getEAllOperations().get(65));
-			try {
-				GET_ENCOUNTER_ACTIVITY2__EOCL_QRY = helper.createQuery(GET_ENCOUNTER_ACTIVITY2__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		OCL.Query query = EOCL_ENV.get().createQuery(GET_ENCOUNTER_ACTIVITY2__EOCL_QRY);
-		return (EncounterActivity2) query.evaluate(noteActivity);
 	}
 
 } // NoteActivityOperations

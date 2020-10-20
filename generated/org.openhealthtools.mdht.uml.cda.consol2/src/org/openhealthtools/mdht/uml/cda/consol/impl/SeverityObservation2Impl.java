@@ -58,7 +58,6 @@ public class SeverityObservation2Impl extends SeverityObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeverityObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservation2Operations.validateSeverityObservationCodeP(this, diagnostics, context);
 	}
@@ -68,7 +67,6 @@ public class SeverityObservation2Impl extends SeverityObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeverityObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservation2Operations.validateSeverityObservationStatusCodeP(this, diagnostics, context);
 	}

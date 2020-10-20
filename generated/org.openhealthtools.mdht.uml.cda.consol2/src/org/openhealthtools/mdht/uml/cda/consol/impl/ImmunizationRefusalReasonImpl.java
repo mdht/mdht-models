@@ -54,7 +54,6 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateImmunizationRefusalReasonTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonTemplateId(
@@ -66,7 +65,6 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateImmunizationRefusalReasonClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonClassCode(
@@ -78,7 +76,6 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateImmunizationRefusalReasonCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonCode(this, diagnostics, context);
 	}
@@ -88,7 +85,6 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateImmunizationRefusalReasonId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonId(this, diagnostics, context);
 	}
@@ -98,7 +94,6 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateImmunizationRefusalReasonMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonMoodCode(
 			this, diagnostics, context);
@@ -109,7 +104,6 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateImmunizationRefusalReasonStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonStatusCode(
@@ -121,17 +115,15 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ImmunizationRefusalReason init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ImmunizationRefusalReason init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

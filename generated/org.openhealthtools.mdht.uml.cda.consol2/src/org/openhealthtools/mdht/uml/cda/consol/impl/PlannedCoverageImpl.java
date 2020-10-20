@@ -50,7 +50,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageTemplateId(this, diagnostics, context);
 	}
@@ -60,7 +59,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageClassCode(this, diagnostics, context);
 	}
@@ -70,7 +68,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageMoodCode(this, diagnostics, context);
 	}
@@ -80,7 +77,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageId(this, diagnostics, context);
 	}
@@ -90,7 +86,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageCodeP(this, diagnostics, context);
 	}
@@ -100,7 +95,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageCode(this, diagnostics, context);
 	}
@@ -110,7 +104,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageStatusCode(this, diagnostics, context);
 	}
@@ -120,7 +113,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageStatusCodeP(this, diagnostics, context);
 	}
@@ -130,7 +122,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationship(this, diagnostics, context);
 	}
@@ -150,7 +141,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageEntryRelationshipActClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActClassCode(
@@ -162,7 +152,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageEntryRelationshipActMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActMoodCode(
@@ -174,7 +163,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageEntryRelationshipActId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActId(this, diagnostics, context);
@@ -182,10 +170,9 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageEntryRelationshipActCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActCodeP(this, diagnostics, context);
@@ -196,7 +183,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageEntryRelationshipActCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActCode(this, diagnostics, context);
@@ -207,7 +193,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageEntryRelationshipActStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActStatusCode(
@@ -219,7 +204,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageEntryRelationshipActStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActStatusCodeP(
@@ -231,7 +215,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipTypeCode(this, diagnostics, context);
@@ -242,7 +225,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedCoverageEntryRelationshipAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipAct(this, diagnostics, context);
@@ -253,7 +235,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PlannedCoverage init() {
 		return Initializer.Util.init(this);
 	}
@@ -263,7 +244,6 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PlannedCoverage init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

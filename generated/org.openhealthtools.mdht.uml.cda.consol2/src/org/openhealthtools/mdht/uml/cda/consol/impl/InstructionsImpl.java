@@ -54,17 +54,15 @@ public class InstructionsImpl extends ActImpl implements Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInstructionsTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsOperations.validateInstructionsTextReference(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInstructionsReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsOperations.validateInstructionsReferenceValue(this, diagnostics, context);
 	}
@@ -74,7 +72,6 @@ public class InstructionsImpl extends ActImpl implements Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInstructionsTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsOperations.validateInstructionsTextReferenceValue(this, diagnostics, context);
 	}
@@ -84,7 +81,6 @@ public class InstructionsImpl extends ActImpl implements Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInstructionsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsOperations.validateInstructionsTemplateId(this, diagnostics, context);
 	}
@@ -94,7 +90,6 @@ public class InstructionsImpl extends ActImpl implements Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInstructionsClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsOperations.validateInstructionsClassCode(this, diagnostics, context);
 	}
@@ -104,7 +99,6 @@ public class InstructionsImpl extends ActImpl implements Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInstructionsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsOperations.validateInstructionsMoodCode(this, diagnostics, context);
 	}
@@ -114,7 +108,6 @@ public class InstructionsImpl extends ActImpl implements Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInstructionsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsOperations.validateInstructionsCodeP(this, diagnostics, context);
 	}
@@ -124,7 +117,6 @@ public class InstructionsImpl extends ActImpl implements Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInstructionsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsOperations.validateInstructionsCode(this, diagnostics, context);
 	}
@@ -134,7 +126,6 @@ public class InstructionsImpl extends ActImpl implements Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInstructionsText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsOperations.validateInstructionsText(this, diagnostics, context);
 	}
@@ -144,7 +135,6 @@ public class InstructionsImpl extends ActImpl implements Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInstructionsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsOperations.validateInstructionsStatusCode(this, diagnostics, context);
 	}
@@ -154,17 +144,15 @@ public class InstructionsImpl extends ActImpl implements Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Instructions init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Instructions init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

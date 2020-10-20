@@ -54,7 +54,6 @@ public class InterventionsSectionImpl extends SectionImpl implements Interventio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInterventionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionsSectionOperations.validateInterventionsSectionTemplateId(this, diagnostics, context);
 	}
@@ -64,17 +63,15 @@ public class InterventionsSectionImpl extends SectionImpl implements Interventio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInterventionsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionsSectionOperations.validateInterventionsSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInterventionsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionsSectionOperations.validateInterventionsSectionCodeP(this, diagnostics, context);
 	}
@@ -84,17 +81,6 @@ public class InterventionsSectionImpl extends SectionImpl implements Interventio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateInterventionsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InterventionsSectionOperations.validateInterventionsSectionText(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateInterventionsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionsSectionOperations.validateInterventionsSectionTitle(this, diagnostics, context);
 	}
@@ -104,17 +90,24 @@ public class InterventionsSectionImpl extends SectionImpl implements Interventio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public boolean validateInterventionsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionsSectionOperations.validateInterventionsSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public InterventionsSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public InterventionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

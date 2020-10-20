@@ -8,14 +8,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.CDAFactory;
-import org.eclipse.mdht.uml.cda.EntryRelationship;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.eclipse.mdht.uml.hl7.datatypes.CD;
 import org.eclipse.mdht.uml.hl7.datatypes.CS;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.ED;
 import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
-import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.NoteActivity;
@@ -39,11 +37,9 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.NoteActivityOperations
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityEncounterActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity Encounter Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityCDTranslation1P(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity CD Translation1 P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityCDTranslation1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity CD Translation1</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#validateNoteActivityIVLTSValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity IVLTS Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NoteActivity#getEncounterActivity2() <em>Get Encounter Activity2</em>}</li>
  * </ul>
  * </p>
  *
@@ -419,45 +415,6 @@ public class NoteActivityTest extends CDAValidationTest {
 	*/
 	@Test
 
-	public void testValidateNoteActivityEncounterActivity2() {
-		OperationsTestCase<NoteActivity> validateNoteActivityEncounterActivity2TestCase = new OperationsTestCase<NoteActivity>(
-			"validateNoteActivityEncounterActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_NOTE_ACTIVITY_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(NoteActivity target) {
-
-			}
-
-			@Override
-			protected void updateToPass(NoteActivity target) {
-				target.init();
-				target.addEncounter(ConsolFactory.eINSTANCE.createEncounterActivity2().init());
-				for (EntryRelationship e : target.getEntryRelationships()) {
-					e.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				}
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return NoteActivityOperations.validateNoteActivityEncounterActivity2(
-					(NoteActivity) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateNoteActivityEncounterActivity2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-
 	public void testValidateNoteActivityCDTranslation1P() {
 		OperationsTestCase<NoteActivity> validateNoteActivityCDTranslation1PTestCase = new OperationsTestCase<NoteActivity>(
 			"validateNoteActivityCDTranslation1P",
@@ -568,19 +525,6 @@ public class NoteActivityTest extends CDAValidationTest {
 		};
 
 		validateNoteActivityIVLTSValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-
-	public void testGetEncounterActivity2() {
-
-		NoteActivity target = objectFactory.create();
-		target.getEncounterActivity2();
-
 	}
 
 	/**

@@ -55,7 +55,6 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemConcernAct> getConsolProblemConcerns() {
 		return ProblemSectionOperations.getConsolProblemConcerns(this);
 	}
@@ -136,7 +135,7 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override

@@ -53,7 +53,6 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProceduresSection2HasProcedureActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSection2Operations.validateProceduresSection2HasProcedureActivity(this, diagnostics, context);
@@ -73,7 +72,6 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProceduresSection2Title(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSection2Operations.validateProceduresSection2Title(this, diagnostics, context);
 	}
@@ -83,7 +81,6 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProceduresSection2Text(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSection2Operations.validateProceduresSection2Text(this, diagnostics, context);
 	}
@@ -140,26 +137,6 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 			Map<Object, Object> context) {
 		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalTemplateId(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ProcedureActivityObservation2> getConsolProcedureActivityObservation2s() {
-		return ProceduresSection2Operations.getConsolProcedureActivityObservation2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ProcedureActivityAct2> getConsolProcedureActivityAct2s() {
-		return ProceduresSection2Operations.getConsolProcedureActivityAct2s(this);
 	}
 
 	/**
@@ -228,6 +205,26 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	@Override
 	public EList<ProcedureActivityProcedure2> getConsolProcedureActivityProcedure2s() {
 		return ProceduresSection2Operations.getConsolProcedureActivityProcedure2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<ProcedureActivityObservation2> getConsolProcedureActivityObservation2s() {
+		return ProceduresSection2Operations.getConsolProcedureActivityObservation2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<ProcedureActivityAct2> getConsolProcedureActivityAct2s() {
+		return ProceduresSection2Operations.getConsolProcedureActivityAct2s(this);
 	}
 
 	/**

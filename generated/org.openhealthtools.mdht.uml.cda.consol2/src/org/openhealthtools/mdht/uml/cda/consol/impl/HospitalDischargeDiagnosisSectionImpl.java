@@ -55,7 +55,6 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionTemplateId(
@@ -67,7 +66,6 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargeDiagnosisSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionCode(
@@ -76,10 +74,9 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargeDiagnosisSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionCodeP(
@@ -91,7 +88,6 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargeDiagnosisSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionTitle(
@@ -103,7 +99,6 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargeDiagnosisSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionText(
@@ -115,7 +110,6 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(
@@ -127,7 +121,6 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalDischargeDiagnosis getHospitalDischargeDiagnosis() {
 		return HospitalDischargeDiagnosisSectionOperations.getHospitalDischargeDiagnosis(this);
 	}
@@ -137,17 +130,15 @@ public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalDischargeDiagnosisSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalDischargeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -77,7 +77,6 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservation2AuthorParticipation(this, diagnostics, context);

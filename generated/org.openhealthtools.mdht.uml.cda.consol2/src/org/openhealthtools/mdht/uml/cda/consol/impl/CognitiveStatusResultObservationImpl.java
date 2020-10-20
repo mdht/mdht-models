@@ -54,7 +54,6 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveStatusResultObservationValueDatatype(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationValueDatatype(
@@ -66,7 +65,6 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateResultObservationCodeP(this, diagnostics, context);
 	}
@@ -76,7 +74,6 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveStatusResultObservationAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationAuthor(
@@ -88,7 +85,6 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveStatusResultObservationNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationNonMedicinalSupplyActivity(
@@ -100,7 +96,6 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveStatusResultObservationCaregiverCharacteristics(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationCaregiverCharacteristics(
@@ -112,7 +107,6 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveStatusResultObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationAssessmentScaleObservation(
@@ -124,7 +118,6 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveStatusResultObservationReferenceRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationReferenceRange(
@@ -136,7 +129,6 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(
@@ -148,7 +140,6 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveStatusResultObservationReferenceRangeObservationRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationReferenceRangeObservationRange(
@@ -160,7 +151,6 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<NonMedicinalSupplyActivity> getNonMedicinalSupplyActivities() {
 		return CognitiveStatusResultObservationOperations.getNonMedicinalSupplyActivities(this);
 	}
@@ -170,7 +160,6 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<CaregiverCharacteristics> getCaregiverCharacteristicss() {
 		return CognitiveStatusResultObservationOperations.getCaregiverCharacteristicss(this);
 	}
@@ -180,7 +169,6 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return CognitiveStatusResultObservationOperations.getAssessmentScaleObservations(this);
 	}

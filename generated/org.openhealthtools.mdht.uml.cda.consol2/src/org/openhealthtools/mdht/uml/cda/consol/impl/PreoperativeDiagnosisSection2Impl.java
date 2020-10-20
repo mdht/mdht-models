@@ -62,7 +62,6 @@ public class PreoperativeDiagnosisSection2Impl extends PreoperativeDiagnosisSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PreoperativeDiagnosis2 getConsolPreoperativeDiagnosis2() {
 		return PreoperativeDiagnosisSection2Operations.getConsolPreoperativeDiagnosis2(this);
 	}

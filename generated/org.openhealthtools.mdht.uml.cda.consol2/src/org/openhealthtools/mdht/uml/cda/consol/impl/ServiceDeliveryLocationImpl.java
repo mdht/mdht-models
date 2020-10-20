@@ -54,7 +54,6 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateServiceDeliveryLocationHasPlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntity(
@@ -66,7 +65,6 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateServiceDeliveryLocationHasPlayingEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityClassCode(
@@ -75,10 +73,9 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateServiceDeliveryLocationHasPlayingEntityName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityName(
@@ -90,7 +87,6 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateServiceDeliveryLocationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationTemplateId(this, diagnostics, context);
 	}
@@ -100,7 +96,6 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateServiceDeliveryLocationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationClassCode(this, diagnostics, context);
 	}
@@ -110,7 +105,6 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateServiceDeliveryLocationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationCode(this, diagnostics, context);
 	}
@@ -120,7 +114,6 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateServiceDeliveryLocationAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationAddr(this, diagnostics, context);
 	}
@@ -130,7 +123,6 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateServiceDeliveryLocationTelecom(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationTelecom(this, diagnostics, context);
 	}
@@ -140,17 +132,15 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ServiceDeliveryLocation init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ServiceDeliveryLocation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

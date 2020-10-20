@@ -54,7 +54,6 @@ public class DischargeDietSectionImpl extends SectionImpl implements DischargeDi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeDietSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeDietSectionOperations.validateDischargeDietSectionTemplateId(this, diagnostics, context);
 	}
@@ -64,17 +63,15 @@ public class DischargeDietSectionImpl extends SectionImpl implements DischargeDi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeDietSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeDietSectionOperations.validateDischargeDietSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeDietSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeDietSectionOperations.validateDischargeDietSectionCodeP(this, diagnostics, context);
 	}
@@ -84,7 +81,6 @@ public class DischargeDietSectionImpl extends SectionImpl implements DischargeDi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeDietSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeDietSectionOperations.validateDischargeDietSectionTitle(this, diagnostics, context);
 	}
@@ -94,7 +90,6 @@ public class DischargeDietSectionImpl extends SectionImpl implements DischargeDi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDischargeDietSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeDietSectionOperations.validateDischargeDietSectionText(this, diagnostics, context);
 	}
@@ -104,17 +99,15 @@ public class DischargeDietSectionImpl extends SectionImpl implements DischargeDi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public DischargeDietSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public DischargeDietSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

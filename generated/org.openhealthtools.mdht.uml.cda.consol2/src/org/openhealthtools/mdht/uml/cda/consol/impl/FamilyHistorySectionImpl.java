@@ -56,7 +56,6 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistorySectionOperations.validateFamilyHistorySectionTemplateId(this, diagnostics, context);
 	}
@@ -66,17 +65,15 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistorySectionOperations.validateFamilyHistorySectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistorySectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistorySectionOperations.validateFamilyHistorySectionCodeP(this, diagnostics, context);
 	}
@@ -86,7 +83,6 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistorySectionOperations.validateFamilyHistorySectionTitle(this, diagnostics, context);
 	}
@@ -96,7 +92,6 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistorySectionOperations.validateFamilyHistorySectionText(this, diagnostics, context);
 	}
@@ -106,7 +101,6 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistorySectionFamilyHistory(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistorySectionOperations.validateFamilyHistorySectionFamilyHistory(this, diagnostics, context);
 	}
@@ -116,7 +110,6 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<FamilyHistoryOrganizer> getFamilyHistories() {
 		return FamilyHistorySectionOperations.getFamilyHistories(this);
 	}
@@ -126,17 +119,15 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FamilyHistorySection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FamilyHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

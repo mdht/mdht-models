@@ -54,7 +54,6 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusSectionOperations.validateMentalStatusSectionTemplateId(this, diagnostics, context);
 	}
@@ -64,7 +63,6 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusSectionOperations.validateMentalStatusSectionCode(this, diagnostics, context);
 	}
@@ -74,7 +72,6 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusSectionOperations.validateMentalStatusSectionCodeP(this, diagnostics, context);
 	}
@@ -84,7 +81,6 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusSectionOperations.validateMentalStatusSectionTitle(this, diagnostics, context);
 	}
@@ -94,7 +90,6 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusSectionOperations.validateMentalStatusSectionText(this, diagnostics, context);
 	}
@@ -104,7 +99,6 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusSectionAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MentalStatusSectionOperations.validateMentalStatusSectionAssessmentScaleObservation(
@@ -138,7 +132,6 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return MentalStatusSectionOperations.getAssessmentScaleObservations(this);
 	}
@@ -166,7 +159,6 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MentalStatusSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -176,7 +168,6 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MentalStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -54,7 +54,6 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlanOfCareActivityProcedureTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureTemplateId(
@@ -66,7 +65,6 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlanOfCareActivityProcedureClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureClassCode(
@@ -78,7 +76,6 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlanOfCareActivityProcedureMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureMoodCode(
@@ -90,7 +87,6 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlanOfCareActivityProcedureId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureId(this, diagnostics, context);
 	}
@@ -100,17 +96,15 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PlanOfCareActivityProcedure init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PlanOfCareActivityProcedure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

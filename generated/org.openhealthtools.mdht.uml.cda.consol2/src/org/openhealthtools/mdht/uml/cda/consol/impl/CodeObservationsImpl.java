@@ -57,17 +57,15 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCodeObservationsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsTemplateId(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCodeObservationsClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsClassCode(this, diagnostics, context);
 	}
@@ -77,7 +75,6 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCodeObservationsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsMoodCode(this, diagnostics, context);
 	}
@@ -87,7 +84,6 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCodeObservationsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsCode(this, diagnostics, context);
 	}
@@ -97,7 +93,6 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCodeObservationsEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsEffectiveTime(this, diagnostics, context);
 	}
@@ -107,7 +102,6 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCodeObservationsValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsValue(this, diagnostics, context);
 	}
@@ -117,7 +111,6 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCodeObservationsSOPInstanceObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsSOPInstanceObservation(this, diagnostics, context);
@@ -128,7 +121,6 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCodeObservationsQuantityMeasurementObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsQuantityMeasurementObservation(
@@ -140,7 +132,6 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<SOPInstanceObservation> getSOPInstanceObservations() {
 		return CodeObservationsOperations.getSOPInstanceObservations(this);
 	}
@@ -150,7 +141,6 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<QuantityMeasurementObservation> getQuantityMeasurementObservations() {
 		return CodeObservationsOperations.getQuantityMeasurementObservations(this);
 	}
@@ -160,17 +150,15 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CodeObservations init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CodeObservations init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

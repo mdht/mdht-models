@@ -66,7 +66,6 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSocialHistorySection2CaregiverCharacteristics(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SocialHistorySection2Operations.validateSocialHistorySection2CaregiverCharacteristics(
@@ -78,7 +77,6 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSocialHistorySection2CulturalAndReligiousObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SocialHistorySection2Operations.validateSocialHistorySection2CulturalAndReligiousObservation(
@@ -90,7 +88,6 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSocialHistorySection2CharacteristicsOfHomeEnvironment(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SocialHistorySection2Operations.validateSocialHistorySection2CharacteristicsOfHomeEnvironment(
@@ -113,7 +110,6 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<SocialHistoryObservation2> getConsolSocialHistoryObservation2s() {
 		return SocialHistorySection2Operations.getConsolSocialHistoryObservation2s(this);
 	}
@@ -132,7 +128,6 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<TobaccoUse2> getConsolTobaccoUse2s() {
 		return SocialHistorySection2Operations.getConsolTobaccoUse2s(this);
 	}
@@ -142,7 +137,6 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<CaregiverCharacteristics> getCaregiverCharacteristicss() {
 		return SocialHistorySection2Operations.getCaregiverCharacteristicss(this);
 	}
@@ -152,7 +146,6 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<CulturalAndReligiousObservation> getCulturalAndReligiousObservations() {
 		return SocialHistorySection2Operations.getCulturalAndReligiousObservations(this);
 	}
@@ -162,7 +155,6 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<CharacteristicsOfHomeEnvironment> getCharacteristicsOfHomeEnvironments() {
 		return SocialHistorySection2Operations.getCharacteristicsOfHomeEnvironments(this);
 	}

@@ -56,7 +56,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerTemplateId(this, diagnostics, context);
 	}
@@ -66,7 +65,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerClassCode(this, diagnostics, context);
 	}
@@ -76,7 +74,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerMoodCode(this, diagnostics, context);
 	}
@@ -104,7 +101,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerFamilyHistoryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerFamilyHistoryObservation(
@@ -113,10 +109,9 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerSubject(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubject(this, diagnostics, context);
 	}
@@ -126,7 +121,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode(
@@ -138,7 +132,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP(
@@ -150,7 +143,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime(
@@ -162,7 +154,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd(
@@ -174,7 +165,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime(
@@ -186,7 +176,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId(
@@ -198,7 +187,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectClassCode(
@@ -210,7 +198,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectCode(
@@ -222,7 +209,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectCodeP(
@@ -234,7 +220,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubject(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubject(
@@ -246,7 +231,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubject(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubject(
@@ -258,7 +242,6 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<FamilyHistoryObservation> getFamilyHistoryObservations() {
 		return FamilyHistoryOrganizerOperations.getFamilyHistoryObservations(this);
 	}
@@ -268,17 +251,15 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FamilyHistoryOrganizer init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FamilyHistoryOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

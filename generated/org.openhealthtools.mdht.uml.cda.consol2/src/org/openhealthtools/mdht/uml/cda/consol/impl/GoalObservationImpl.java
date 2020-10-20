@@ -62,7 +62,6 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGoalObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationClassCode(this, diagnostics, context);
 	}
@@ -72,7 +71,6 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGoalObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationMoodCode(this, diagnostics, context);
 	}
@@ -100,7 +98,6 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGoalObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationCode(this, diagnostics, context);
 	}
@@ -164,7 +161,6 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGoalObservationAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return GoalObservationOperations.validateGoalObservationAuthorParticipation(this, diagnostics, context);
@@ -231,7 +227,6 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<GoalObservation> getGoalObservations() {
 		return GoalObservationOperations.getGoalObservations(this);
 	}
@@ -277,7 +272,6 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public GoalObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -287,7 +281,6 @@ public class GoalObservationImpl extends ObservationImpl implements GoalObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public GoalObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

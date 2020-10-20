@@ -57,7 +57,6 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAnesthesiaSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AnesthesiaSectionOperations.validateAnesthesiaSectionTemplateId(this, diagnostics, context);
 	}
@@ -67,17 +66,15 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAnesthesiaSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AnesthesiaSectionOperations.validateAnesthesiaSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAnesthesiaSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AnesthesiaSectionOperations.validateAnesthesiaSectionCodeP(this, diagnostics, context);
 	}
@@ -87,17 +84,6 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAnesthesiaSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnesthesiaSectionOperations.validateAnesthesiaSectionText(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateAnesthesiaSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AnesthesiaSectionOperations.validateAnesthesiaSectionTitle(this, diagnostics, context);
 	}
@@ -107,7 +93,15 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public boolean validateAnesthesiaSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AnesthesiaSectionOperations.validateAnesthesiaSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAnesthesiaSectionProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AnesthesiaSectionOperations.validateAnesthesiaSectionProcedureActivityProcedure(
@@ -119,7 +113,6 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAnesthesiaSectionMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AnesthesiaSectionOperations.validateAnesthesiaSectionMedicationActivity(this, diagnostics, context);
@@ -130,7 +123,6 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProcedureActivityProcedure> getProcedureActivityProcedures() {
 		return AnesthesiaSectionOperations.getProcedureActivityProcedures(this);
 	}
@@ -140,7 +132,6 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<MedicationActivity> getMedicationActivities() {
 		return AnesthesiaSectionOperations.getMedicationActivities(this);
 	}
@@ -150,17 +141,15 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AnesthesiaSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AnesthesiaSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -72,7 +72,6 @@ public class ImmunizationMedicationInformation2Impl extends ImmunizationMedicati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationMedicationInformation2Operations.validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation(
@@ -95,7 +94,6 @@ public class ImmunizationMedicationInformation2Impl extends ImmunizationMedicati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationMedicationInformation2Operations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP(

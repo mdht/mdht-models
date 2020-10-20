@@ -68,7 +68,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
@@ -80,7 +79,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
@@ -92,7 +90,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGeneralHeaderConstraintsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateGeneralHeaderConstraintsCodeP(this, diagnostics, context);
 	}
@@ -102,7 +99,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOf(this, diagnostics, context);
 	}
@@ -112,7 +108,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOf(this, diagnostics, context);
 	}
@@ -122,7 +117,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteAssessmentSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteAssessmentSection(this, diagnostics, context);
 	}
@@ -132,7 +126,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNotePlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNotePlanOfCareSection(this, diagnostics, context);
 	}
@@ -142,7 +135,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteAssessmentAndPlanSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteAssessmentAndPlanSection(this, diagnostics, context);
@@ -153,7 +145,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteAllergiesSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteAllergiesSectionEntriesOptional(this, diagnostics, context);
@@ -164,7 +155,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteChiefComplaintSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteChiefComplaintSection(this, diagnostics, context);
 	}
@@ -174,7 +164,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteInterventionsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteInterventionsSection(this, diagnostics, context);
 	}
@@ -184,7 +173,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteMedicationsSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteMedicationsSectionEntriesOptional(this, diagnostics, context);
@@ -195,7 +183,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteObjectiveSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteObjectiveSection(this, diagnostics, context);
 	}
@@ -205,7 +192,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNotePhysicalExamSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNotePhysicalExamSection(this, diagnostics, context);
 	}
@@ -215,7 +201,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteProblemSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteProblemSectionEntriesOptional(this, diagnostics, context);
@@ -226,7 +211,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteResultsSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteResultsSectionEntriesOptional(this, diagnostics, context);
@@ -237,7 +221,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteReviewOfSystemsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteReviewOfSystemsSection(this, diagnostics, context);
@@ -248,7 +231,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteSubjectiveSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteSubjectiveSection(this, diagnostics, context);
 	}
@@ -258,7 +240,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteVitalSignsSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteVitalSignsSectionEntriesOptional(this, diagnostics, context);
@@ -269,7 +250,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteInstructionsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteInstructionsSection(this, diagnostics, context);
 	}
@@ -279,7 +259,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow(
@@ -291,7 +270,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh(
@@ -303,7 +281,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteDocumentationOfServiceEvent2PreciseToTheDay(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2PreciseToTheDay(
@@ -315,7 +292,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute(
@@ -327,7 +303,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond(
@@ -339,7 +314,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset(
@@ -351,7 +325,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteDocumentationOfServiceEvent2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2TemplateId(
@@ -363,7 +336,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteDocumentationOfServiceEvent2ClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2ClassCode(
@@ -375,7 +347,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(
@@ -387,7 +358,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteDocumentationOfServiceEvent2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2(this, diagnostics, context);
@@ -398,7 +368,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(
@@ -410,7 +379,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(
@@ -422,7 +390,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay(
@@ -434,7 +401,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute(
@@ -446,7 +412,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond(
@@ -458,7 +423,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset(
@@ -470,7 +434,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(
@@ -482,7 +445,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6Id(
@@ -494,7 +456,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6Location(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6Location(
@@ -506,7 +467,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6(this, diagnostics, context);
@@ -517,7 +477,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AssessmentSection getAssessmentSection() {
 		return ProgressNoteOperations.getAssessmentSection(this);
 	}
@@ -527,7 +486,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PlanOfCareSection getPlanOfCareSection() {
 		return ProgressNoteOperations.getPlanOfCareSection(this);
 	}
@@ -537,7 +495,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AssessmentAndPlanSection getAssessmentAndPlanSection() {
 		return ProgressNoteOperations.getAssessmentAndPlanSection(this);
 	}
@@ -547,7 +504,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional() {
 		return ProgressNoteOperations.getAllergiesSectionEntriesOptional(this);
 	}
@@ -557,7 +513,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ChiefComplaintSection getChiefComplaintSection() {
 		return ProgressNoteOperations.getChiefComplaintSection(this);
 	}
@@ -567,7 +522,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public InterventionsSection getInterventionsSection() {
 		return ProgressNoteOperations.getInterventionsSection(this);
 	}
@@ -577,7 +531,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationsSectionEntriesOptional getMedicationsSectionEntriesOptional() {
 		return ProgressNoteOperations.getMedicationsSectionEntriesOptional(this);
 	}
@@ -587,7 +540,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ObjectiveSection getObjectiveSection() {
 		return ProgressNoteOperations.getObjectiveSection(this);
 	}
@@ -597,7 +549,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PhysicalExamSection getPhysicalExamSection() {
 		return ProgressNoteOperations.getPhysicalExamSection(this);
 	}
@@ -607,7 +558,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProblemSectionEntriesOptional getProblemSectionEntriesOptional() {
 		return ProgressNoteOperations.getProblemSectionEntriesOptional(this);
 	}
@@ -617,7 +567,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ResultsSectionEntriesOptional getResultsSectionEntriesOptional() {
 		return ProgressNoteOperations.getResultsSectionEntriesOptional(this);
 	}
@@ -627,7 +576,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ReviewOfSystemsSection getReviewOfSystemsSection() {
 		return ProgressNoteOperations.getReviewOfSystemsSection(this);
 	}
@@ -637,7 +585,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SubjectiveSection getSubjectiveSection() {
 		return ProgressNoteOperations.getSubjectiveSection(this);
 	}
@@ -647,7 +594,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional() {
 		return ProgressNoteOperations.getVitalSignsSectionEntriesOptional(this);
 	}
@@ -657,14 +603,13 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public InstructionsSection getInstructionsSection() {
 		return ProgressNoteOperations.getInstructionsSection(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -695,7 +640,7 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override

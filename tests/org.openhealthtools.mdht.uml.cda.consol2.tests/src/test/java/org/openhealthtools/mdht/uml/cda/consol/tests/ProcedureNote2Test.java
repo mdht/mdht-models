@@ -726,7 +726,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				/* ProcedureDescriptionSection */
 				ProcedureDescriptionSection section =
 
-						ConsolFactory.eINSTANCE.createProcedureDescriptionSection().init();
+				ConsolFactory.eINSTANCE.createProcedureDescriptionSection().init();
 
 				target.addSection(section);
 
@@ -837,7 +837,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				/* AssessmentSection */
 				AssessmentSection section =
 
-						ConsolFactory.eINSTANCE.createAssessmentSection().init();
+				ConsolFactory.eINSTANCE.createAssessmentSection().init();
 
 				target.addSection(section);
 
@@ -1016,7 +1016,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				/* ChiefComplaintSection */
 				ChiefComplaintSection section =
 
-						ConsolFactory.eINSTANCE.createChiefComplaintSection().init();
+				ConsolFactory.eINSTANCE.createChiefComplaintSection().init();
 
 				target.addSection(section);
 
@@ -1058,7 +1058,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				/* ChiefComplaintAndReasonForVisitSection */
 				ChiefComplaintAndReasonForVisitSection section =
 
-						ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init();
+				ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init();
 
 				target.addSection(section);
 
@@ -1169,7 +1169,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				/* HistoryOfPresentIllnessSection */
 				HistoryOfPresentIllnessSection section =
 
-						ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
+				ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
 
 				target.addSection(section);
 
@@ -1210,7 +1210,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				/* MedicalHistorySection */
 				MedicalHistorySection section =
 
-						ConsolFactory.eINSTANCE.createMedicalHistorySection().init();
+				ConsolFactory.eINSTANCE.createMedicalHistorySection().init();
 
 				target.addSection(section);
 
@@ -1390,7 +1390,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				/* ProcedureDispositionSection */
 				ProcedureDispositionSection section =
 
-						ConsolFactory.eINSTANCE.createProcedureDispositionSection().init();
+				ConsolFactory.eINSTANCE.createProcedureDispositionSection().init();
 
 				target.addSection(section);
 
@@ -1432,7 +1432,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				/* ProcedureEstimatedBloodLossSection */
 				ProcedureEstimatedBloodLossSection section =
 
-						ConsolFactory.eINSTANCE.createProcedureEstimatedBloodLossSection().init();
+				ConsolFactory.eINSTANCE.createProcedureEstimatedBloodLossSection().init();
 
 				target.addSection(section);
 
@@ -1508,7 +1508,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				/* ProcedureImplantsSection */
 				ProcedureImplantsSection section =
 
-						ConsolFactory.eINSTANCE.createProcedureImplantsSection().init();
+				ConsolFactory.eINSTANCE.createProcedureImplantsSection().init();
 
 				target.addSection(section);
 
@@ -1550,7 +1550,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				/* ProcedureSpecimensTakenSection */
 				ProcedureSpecimensTakenSection section =
 
-						ConsolFactory.eINSTANCE.createProcedureSpecimensTakenSection().init();
+				ConsolFactory.eINSTANCE.createProcedureSpecimensTakenSection().init();
 
 				target.addSection(section);
 
@@ -1626,7 +1626,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				/* ReasonForVisitSection */
 				ReasonForVisitSection section =
 
-						ConsolFactory.eINSTANCE.createReasonForVisitSection().init();
+				ConsolFactory.eINSTANCE.createReasonForVisitSection().init();
 
 				target.addSection(section);
 
@@ -1667,7 +1667,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				/* ReviewOfSystemsSection */
 				ReviewOfSystemsSection section =
 
-						ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
+				ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
 
 				target.addSection(section);
 

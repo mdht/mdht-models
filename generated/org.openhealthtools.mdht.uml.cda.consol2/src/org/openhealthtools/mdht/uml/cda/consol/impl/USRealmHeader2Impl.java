@@ -144,7 +144,6 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeader2LegalAuthenticatorSDTCSignatureText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeader2Operations.validateUSRealmHeader2LegalAuthenticatorSDTCSignatureText(
@@ -156,7 +155,6 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeader2AuthenticatorSDTCSignatureText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeader2Operations.validateUSRealmHeader2AuthenticatorSDTCSignatureText(
@@ -201,9 +199,9 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 			this, diagnostics, context);
 	}
 
@@ -212,9 +210,9 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			this, diagnostics, context);
 	}
 
@@ -301,8 +299,8 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsTitle(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsRealmCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRealmCode(this, diagnostics, context);
 	}
 
 	/**
@@ -311,8 +309,8 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsRealmCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRealmCode(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsTitle(this, diagnostics, context);
 	}
 
 	/**

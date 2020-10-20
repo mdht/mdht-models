@@ -52,7 +52,6 @@ public class VitalSignsSectionEntriesOptional2Impl extends VitalSignsSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<VitalSignsOrganizer2> getConsolVitalSignsOrganizer2s() {
 		return VitalSignsSectionEntriesOptional2Operations.getConsolVitalSignsOrganizer2s(this);
 	}

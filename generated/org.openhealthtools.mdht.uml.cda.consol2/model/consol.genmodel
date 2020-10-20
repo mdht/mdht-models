@@ -17426,10 +17426,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//NoteActivity/NoteActivityReference/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//NoteActivity/NoteActivityReference/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//NoteActivity/NoteActivityEncounterActivity2">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//NoteActivity/NoteActivityEncounterActivity2/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//NoteActivity/NoteActivityEncounterActivity2/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//NoteActivity/NoteActivityCDTranslation1P">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//NoteActivity/NoteActivityCDTranslation1P/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//NoteActivity/NoteActivityCDTranslation1P/context"/>
@@ -17442,7 +17438,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//NoteActivity/NoteActivityIVLTSValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//NoteActivity/NoteActivityIVLTSValue/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//NoteActivity/getEncounterActivity2"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//CareTeamTypeObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CareTeamTypeObservation/CareTeamTypeObservationTemplateId">

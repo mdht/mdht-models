@@ -53,7 +53,6 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemSectionEntriesOptional2HealthStatusObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptional2HealthStatusObservation2(
@@ -65,7 +64,6 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemConcernAct2> getConsolProblemConcernAct2s() {
 		return ProblemSectionEntriesOptional2Operations.getConsolProblemConcernAct2s(this);
 	}
@@ -75,7 +73,6 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HealthStatusObservation2 getHealthStatusObservation2() {
 		return ProblemSectionEntriesOptional2Operations.getHealthStatusObservation2(this);
 	}

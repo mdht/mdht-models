@@ -62,7 +62,6 @@ public class PlannedProcedureSection2Impl extends PlannedProcedureSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<PlannedProcedure2> getConsolPlannedProcedure2s() {
 		return PlannedProcedureSection2Operations.getConsolPlannedProcedure2s(this);
 	}

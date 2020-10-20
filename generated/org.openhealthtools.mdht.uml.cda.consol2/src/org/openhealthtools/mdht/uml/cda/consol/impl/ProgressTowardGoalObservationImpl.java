@@ -50,7 +50,6 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressTowardGoalObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationTemplateId(
@@ -62,7 +61,6 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressTowardGoalObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationClassCode(
@@ -74,7 +72,6 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressTowardGoalObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationMoodCode(
@@ -86,7 +83,6 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressTowardGoalObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationId(
 			this, diagnostics, context);
@@ -97,7 +93,6 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressTowardGoalObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationCodeP(
@@ -109,7 +104,6 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressTowardGoalObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationCode(
 			this, diagnostics, context);
@@ -120,7 +114,6 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressTowardGoalObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationStatusCode(
@@ -132,7 +125,6 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressTowardGoalObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationStatusCodeP(
@@ -144,7 +136,6 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressTowardGoalObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationValue(
@@ -156,7 +147,6 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProgressTowardGoalObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationValueP(
@@ -168,7 +158,6 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProgressTowardGoalObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -178,7 +167,6 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProgressTowardGoalObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

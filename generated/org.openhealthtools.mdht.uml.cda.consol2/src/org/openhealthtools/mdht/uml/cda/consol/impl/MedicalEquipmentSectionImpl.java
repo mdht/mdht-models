@@ -56,7 +56,6 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionTemplateId(this, diagnostics, context);
 	}
@@ -66,17 +65,15 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionCodeP(this, diagnostics, context);
 	}
@@ -86,7 +83,6 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionTitle(this, diagnostics, context);
 	}
@@ -96,7 +92,6 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionText(this, diagnostics, context);
 	}
@@ -106,7 +101,6 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionNonMedicinalSupplyActivity(
@@ -118,7 +112,6 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<NonMedicinalSupplyActivity> getNonMedicinalSupplyActivities() {
 		return MedicalEquipmentSectionOperations.getNonMedicinalSupplyActivities(this);
 	}
@@ -128,17 +121,15 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicalEquipmentSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicalEquipmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

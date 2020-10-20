@@ -56,7 +56,6 @@ public class PostprocedureDiagnosisImpl extends ActImpl implements Postprocedure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePostprocedureDiagnosisTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisTemplateId(this, diagnostics, context);
 	}
@@ -66,7 +65,6 @@ public class PostprocedureDiagnosisImpl extends ActImpl implements Postprocedure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePostprocedureDiagnosisClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisClassCode(this, diagnostics, context);
 	}
@@ -76,17 +74,6 @@ public class PostprocedureDiagnosisImpl extends ActImpl implements Postprocedure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePostprocedureDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validatePostprocedureDiagnosisMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisMoodCode(this, diagnostics, context);
 	}
@@ -96,7 +83,15 @@ public class PostprocedureDiagnosisImpl extends ActImpl implements Postprocedure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public boolean validatePostprocedureDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePostprocedureDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisProblemObservation(
@@ -108,7 +103,6 @@ public class PostprocedureDiagnosisImpl extends ActImpl implements Postprocedure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemObservation> getProblemObservations() {
 		return PostprocedureDiagnosisOperations.getProblemObservations(this);
 	}
@@ -118,17 +112,15 @@ public class PostprocedureDiagnosisImpl extends ActImpl implements Postprocedure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PostprocedureDiagnosis init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PostprocedureDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

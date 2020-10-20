@@ -54,7 +54,6 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthStatusObservationHasTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(
@@ -63,10 +62,9 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthStatusObservationTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationTextReferenceValue(
@@ -78,7 +76,6 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthStatusObservationHasTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReferenceValue(
@@ -90,7 +87,6 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationTemplateId(this, diagnostics, context);
 	}
@@ -100,7 +96,6 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthStatusObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationClassCode(this, diagnostics, context);
 	}
@@ -110,7 +105,6 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationMoodCode(this, diagnostics, context);
 	}
@@ -120,7 +114,6 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationCode(this, diagnostics, context);
 	}
@@ -130,7 +123,6 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthStatusObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationText(this, diagnostics, context);
 	}
@@ -140,7 +132,6 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthStatusObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationStatusCode(this, diagnostics, context);
 	}
@@ -150,17 +141,15 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationValue(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationValueP(this, diagnostics, context);
 	}
@@ -170,17 +159,15 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HealthStatusObservation init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HealthStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -64,7 +64,6 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFunctionalStatusOrganizer2SelfCareActivities(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2SelfCareActivities(
@@ -76,7 +75,6 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFunctionalStatusOrganizer2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2AuthorParticipation(
@@ -88,7 +86,6 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<FunctionalStatusObservation2> getConsolFunctionalStatusObservation2s() {
 		return FunctionalStatusOrganizer2Operations.getConsolFunctionalStatusObservation2s(this);
 	}
@@ -98,7 +95,6 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<SelfCareActivities> getSelfCareActivitiess() {
 		return FunctionalStatusOrganizer2Operations.getSelfCareActivitiess(this);
 	}

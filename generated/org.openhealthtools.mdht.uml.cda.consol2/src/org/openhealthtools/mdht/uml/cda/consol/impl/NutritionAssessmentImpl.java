@@ -61,7 +61,6 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionAssessmentOperations.validateNutritionAssessmentTemplateId(this, diagnostics, context);
 	}
@@ -71,7 +70,6 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionAssessmentClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionAssessmentOperations.validateNutritionAssessmentClassCode(this, diagnostics, context);
 	}
@@ -81,7 +79,6 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionAssessmentOperations.validateNutritionAssessmentMoodCode(this, diagnostics, context);
 	}
@@ -91,7 +88,6 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionAssessmentId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionAssessmentOperations.validateNutritionAssessmentId(this, diagnostics, context);
 	}
@@ -101,7 +97,6 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionAssessmentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionAssessmentOperations.validateNutritionAssessmentCodeP(this, diagnostics, context);
 	}
@@ -111,7 +106,6 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionAssessmentOperations.validateNutritionAssessmentCode(this, diagnostics, context);
 	}
@@ -121,7 +115,6 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionAssessmentStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionAssessmentOperations.validateNutritionAssessmentStatusCode(this, diagnostics, context);
 	}
@@ -131,7 +124,6 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionAssessmentStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionAssessmentOperations.validateNutritionAssessmentStatusCodeP(this, diagnostics, context);
 	}
@@ -141,7 +133,6 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionAssessmentOperations.validateNutritionAssessmentEffectiveTime(this, diagnostics, context);
 	}
@@ -151,7 +142,6 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionAssessmentOperations.validateNutritionAssessmentValue(this, diagnostics, context);
 	}
@@ -161,7 +151,6 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionAssessmentAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NutritionAssessmentOperations.validateNutritionAssessmentAuthorParticipation(this, diagnostics, context);
@@ -172,7 +161,6 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public NutritionAssessment init() {
 		return Initializer.Util.init(this);
 	}
@@ -182,7 +170,6 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public NutritionAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

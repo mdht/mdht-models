@@ -54,7 +54,6 @@ public class ObjectiveSectionImpl extends SectionImpl implements ObjectiveSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateObjectiveSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ObjectiveSectionOperations.validateObjectiveSectionTemplateId(this, diagnostics, context);
 	}
@@ -64,17 +63,15 @@ public class ObjectiveSectionImpl extends SectionImpl implements ObjectiveSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateObjectiveSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ObjectiveSectionOperations.validateObjectiveSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateObjectiveSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ObjectiveSectionOperations.validateObjectiveSectionCodeP(this, diagnostics, context);
 	}
@@ -84,7 +81,6 @@ public class ObjectiveSectionImpl extends SectionImpl implements ObjectiveSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateObjectiveSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ObjectiveSectionOperations.validateObjectiveSectionText(this, diagnostics, context);
 	}
@@ -94,7 +90,6 @@ public class ObjectiveSectionImpl extends SectionImpl implements ObjectiveSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateObjectiveSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ObjectiveSectionOperations.validateObjectiveSectionTitle(this, diagnostics, context);
 	}
@@ -104,17 +99,15 @@ public class ObjectiveSectionImpl extends SectionImpl implements ObjectiveSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ObjectiveSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ObjectiveSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

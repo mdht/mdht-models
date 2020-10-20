@@ -60,7 +60,6 @@ public class MedicationsSection2Impl extends MedicationsSectionEntriesOptional2I
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationsSection2Title(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationsSection2Operations.validateMedicationsSection2Title(this, diagnostics, context);
 	}
@@ -70,7 +69,6 @@ public class MedicationsSection2Impl extends MedicationsSectionEntriesOptional2I
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationsSection2Text(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationsSection2Operations.validateMedicationsSection2Text(this, diagnostics, context);
 	}

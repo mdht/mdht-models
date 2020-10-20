@@ -55,7 +55,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportUseDiagnosticImagingCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportUseDiagnosticImagingCode(
@@ -67,7 +66,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportAllSectionsHaveTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportAllSectionsHaveTitle(
@@ -79,7 +77,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportSectionsHaveText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportSectionsHaveText(
@@ -91,7 +88,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGeneralHeaderConstraintsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateGeneralHeaderConstraintsCodeP(this, diagnostics, context);
 	}
@@ -101,7 +97,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportInformant(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportInformant(this, diagnostics, context);
 	}
@@ -111,7 +106,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportInformationRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportInformationRecipient(
@@ -123,7 +117,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportParticipant1(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportParticipant1(
@@ -135,7 +128,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportInFulfillmentOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportInFulfillmentOf(
@@ -147,7 +139,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportDocumentationOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOf(
@@ -159,7 +150,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportRelatedDocument(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportRelatedDocument(
@@ -171,7 +161,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportComponentOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOf(this, diagnostics, context);
@@ -182,7 +171,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportFindingsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportFindingsSection(
@@ -194,7 +182,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportDICOMObjectCatalogSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDICOMObjectCatalogSection(
@@ -206,7 +193,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportParticipantAssociatedEntityPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportParticipantAssociatedEntityPersonName(
@@ -218,7 +204,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson(
@@ -230,7 +215,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportParticipantAssociatedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportParticipantAssociatedEntity(
@@ -242,7 +226,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportDocumentationOfServiceEvent4ClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOfServiceEvent4ClassCode(
@@ -254,7 +237,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportDocumentationOfServiceEvent4Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOfServiceEvent4Code(
@@ -266,7 +248,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportDocumentationOfServiceEvent4Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOfServiceEvent4Id(
@@ -278,7 +259,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformer(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformer(
@@ -290,7 +270,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportDocumentationOfServiceEvent3(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOfServiceEvent3(
@@ -302,7 +281,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization(
@@ -314,7 +292,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity(
@@ -326,7 +303,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay(
@@ -338,7 +314,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute(
@@ -350,7 +325,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond(
@@ -362,7 +336,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset(
@@ -374,7 +347,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime(
@@ -386,7 +358,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7Id(
@@ -398,7 +369,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant(
@@ -410,7 +380,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty(
@@ -422,7 +391,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter(
@@ -434,7 +402,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FindingsSection getFindingsSection() {
 		return DiagnosticImagingReportOperations.getFindingsSection(this);
 	}
@@ -444,14 +411,13 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public DICOMObjectCatalogSection getDICOMObjectCatalogSection() {
 		return DiagnosticImagingReportOperations.getDICOMObjectCatalogSection(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -492,7 +458,7 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override

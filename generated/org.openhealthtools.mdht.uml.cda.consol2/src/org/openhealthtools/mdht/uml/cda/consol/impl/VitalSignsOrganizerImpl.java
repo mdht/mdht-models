@@ -56,7 +56,6 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateVitalSignsOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerTemplateId(this, diagnostics, context);
 	}
@@ -66,7 +65,6 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateVitalSignsOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerClassCode(this, diagnostics, context);
 	}
@@ -76,7 +74,6 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateVitalSignsOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerMoodCode(this, diagnostics, context);
 	}
@@ -86,7 +83,6 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateVitalSignsOrganizerId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerId(this, diagnostics, context);
 	}
@@ -96,7 +92,6 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateVitalSignsOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerCode(this, diagnostics, context);
 	}
@@ -124,7 +119,6 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateVitalSignsOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerStatusCode(this, diagnostics, context);
 	}
@@ -134,7 +128,6 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateVitalSignsOrganizerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerEffectiveTime(this, diagnostics, context);
 	}
@@ -144,7 +137,6 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerVitalSignObservation(
@@ -156,7 +148,6 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<VitalSignObservation> getVitalSignObservations() {
 		return VitalSignsOrganizerOperations.getVitalSignObservations(this);
 	}
@@ -166,17 +157,15 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public VitalSignsOrganizer init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

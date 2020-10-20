@@ -766,7 +766,7 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 				/* MentalStatusSection */
 				MentalStatusSection section =
 
-						ConsolFactory.eINSTANCE.createMentalStatusSection().init();
+				ConsolFactory.eINSTANCE.createMentalStatusSection().init();
 
 				target.addSection(section);
 
@@ -808,7 +808,7 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 				/* NutritionSection */
 				NutritionSection section =
 
-						ConsolFactory.eINSTANCE.createNutritionSection().init();
+				ConsolFactory.eINSTANCE.createNutritionSection().init();
 
 				target.addSection(section);
 

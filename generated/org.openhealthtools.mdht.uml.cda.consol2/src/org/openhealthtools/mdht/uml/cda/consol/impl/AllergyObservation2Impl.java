@@ -74,7 +74,6 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservation2NegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservation2NegationInd(this, diagnostics, context);
 	}
@@ -84,7 +83,6 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservationValueP(this, diagnostics, context);
 	}
@@ -94,7 +92,6 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservationStatusCodeP(this, diagnostics, context);
 	}
@@ -104,7 +101,6 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservation2AuthorParticipation(this, diagnostics, context);
@@ -126,7 +122,6 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservation2IVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservation2IVLTSLow(this, diagnostics, context);
 	}
@@ -136,7 +131,6 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservation2IVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservation2IVLTSHigh(this, diagnostics, context);
 	}
@@ -179,7 +173,6 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<AllergyStatusObservation> getConsolAllergyStatusObservations() {
 		return AllergyObservation2Operations.getConsolAllergyStatusObservations(this);
 	}
@@ -189,7 +182,6 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ReactionObservation2> getConsolReactionObservation2s() {
 		return AllergyObservation2Operations.getConsolReactionObservation2s(this);
 	}

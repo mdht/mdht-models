@@ -56,7 +56,6 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<DischargeMedication> getConsolDischargeMedications() {
 		return HospitalDischargeMedicationsSectionOperations.getConsolDischargeMedications(this);
 	}
@@ -145,7 +144,7 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override

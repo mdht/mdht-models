@@ -60,7 +60,6 @@ public class EncountersSection2Impl extends EncountersSectionEntriesOptional2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateEncountersSection2Text(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSection2Operations.validateEncountersSection2Text(this, diagnostics, context);
 	}
@@ -70,7 +69,6 @@ public class EncountersSection2Impl extends EncountersSectionEntriesOptional2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateEncountersSection2Title(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSection2Operations.validateEncountersSection2Title(this, diagnostics, context);
 	}

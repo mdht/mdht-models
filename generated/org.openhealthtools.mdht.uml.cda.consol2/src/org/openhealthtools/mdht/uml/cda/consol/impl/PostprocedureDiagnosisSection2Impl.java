@@ -62,7 +62,6 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PostprocedureDiagnosis2 getConsolPostprocedureDiagnosis2() {
 		return PostprocedureDiagnosisSection2Operations.getConsolPostprocedureDiagnosis2(this);
 	}
