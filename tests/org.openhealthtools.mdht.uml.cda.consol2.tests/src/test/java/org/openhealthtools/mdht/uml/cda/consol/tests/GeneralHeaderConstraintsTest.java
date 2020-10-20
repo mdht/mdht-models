@@ -9752,8 +9752,9 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 					public void updateToFail(GeneralHeaderConstraints target) {
 						// -has guardian and an incorrect codeSystem ID with a valid code
 						setup(target);
-						guardian.setCode(DatatypesFactory.eINSTANCE.createCE(
-							VALID_PERSONALRELATIONSHIP_CODE, CDAValidationTest.BAD_CODESYSTEM_ID));
+						guardian.setCode(
+							DatatypesFactory.eINSTANCE.createCE(
+								VALID_PERSONALRELATIONSHIP_CODE, CDAValidationTest.BAD_CODESYSTEM_ID));
 						addElements(target);
 					}
 				});
@@ -9776,8 +9777,9 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 					public void updateToFail(GeneralHeaderConstraints target) {
 						// -has guardian, an incorrect codeSystem ID, and invalid code
 						setup(target);
-						guardian.setCode(DatatypesFactory.eINSTANCE.createCE(
-							CDAValidationTest.BAD_CODE_VALUE, CDAValidationTest.BAD_CODESYSTEM_ID));
+						guardian.setCode(
+							DatatypesFactory.eINSTANCE.createCE(
+								CDAValidationTest.BAD_CODE_VALUE, CDAValidationTest.BAD_CODESYSTEM_ID));
 						addElements(target);
 					}
 				});

@@ -321,7 +321,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* AdvanceDirectivesSection */
 				AdvanceDirectivesSection section =
 
-				ConsolFactory.eINSTANCE.createAdvanceDirectivesSection().init();
+						ConsolFactory.eINSTANCE.createAdvanceDirectivesSection().init();
 
 				target.addSection(section);
 
@@ -363,7 +363,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* AllergiesSection */
 				AllergiesSection section =
 
-				ConsolFactory.eINSTANCE.createAllergiesSection().init();
+						ConsolFactory.eINSTANCE.createAllergiesSection().init();
 
 				target.addSection(section);
 
@@ -405,7 +405,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* EncountersSection */
 				EncountersSection section =
 
-				ConsolFactory.eINSTANCE.createEncountersSection().init();
+						ConsolFactory.eINSTANCE.createEncountersSection().init();
 
 				target.addSection(section);
 
@@ -446,7 +446,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* PayersSection */
 				PayersSection section =
 
-				ConsolFactory.eINSTANCE.createPayersSection().init();
+						ConsolFactory.eINSTANCE.createPayersSection().init();
 
 				target.addSection(section);
 
@@ -488,7 +488,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* MedicationsSection */
 				MedicationsSection section =
 
-				ConsolFactory.eINSTANCE.createMedicationsSection().init();
+						ConsolFactory.eINSTANCE.createMedicationsSection().init();
 
 				target.addSection(section);
 
@@ -530,7 +530,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* PlanOfCareSection */
 				PlanOfCareSection section =
 
-				ConsolFactory.eINSTANCE.createPlanOfCareSection().init();
+						ConsolFactory.eINSTANCE.createPlanOfCareSection().init();
 
 				target.addSection(section);
 
@@ -572,7 +572,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* ProceduresSection */
 				ProceduresSection section =
 
-				ConsolFactory.eINSTANCE.createProceduresSection().init();
+						ConsolFactory.eINSTANCE.createProceduresSection().init();
 
 				target.addSection(section);
 
@@ -614,7 +614,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* FamilyHistorySection */
 				FamilyHistorySection section =
 
-				ConsolFactory.eINSTANCE.createFamilyHistorySection().init();
+						ConsolFactory.eINSTANCE.createFamilyHistorySection().init();
 
 				target.addSection(section);
 
@@ -656,7 +656,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* SocialHistorySection */
 				SocialHistorySection section =
 
-				ConsolFactory.eINSTANCE.createSocialHistorySection().init();
+						ConsolFactory.eINSTANCE.createSocialHistorySection().init();
 
 				target.addSection(section);
 
@@ -698,7 +698,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* VitalSignsSectionEntriesOptional */
 				VitalSignsSectionEntriesOptional section =
 
-				ConsolFactory.eINSTANCE.createVitalSignsSectionEntriesOptional().init();
+						ConsolFactory.eINSTANCE.createVitalSignsSectionEntriesOptional().init();
 
 				target.addSection(section);
 
@@ -1468,7 +1468,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* ResultsSection */
 				ResultsSection section =
 
-				ConsolFactory.eINSTANCE.createResultsSection().init();
+						ConsolFactory.eINSTANCE.createResultsSection().init();
 
 				target.addSection(section);
 
@@ -1510,7 +1510,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* MedicalEquipmentSection */
 				MedicalEquipmentSection section =
 
-				ConsolFactory.eINSTANCE.createMedicalEquipmentSection().init();
+						ConsolFactory.eINSTANCE.createMedicalEquipmentSection().init();
 
 				target.addSection(section);
 
@@ -1552,7 +1552,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* FunctionalStatusSection */
 				FunctionalStatusSection section =
 
-				ConsolFactory.eINSTANCE.createFunctionalStatusSection().init();
+						ConsolFactory.eINSTANCE.createFunctionalStatusSection().init();
 
 				target.addSection(section);
 
@@ -1594,7 +1594,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* ImmunizationsSectionEntriesOptional */
 				ImmunizationsSectionEntriesOptional section =
 
-				ConsolFactory.eINSTANCE.createImmunizationsSectionEntriesOptional().init();
+						ConsolFactory.eINSTANCE.createImmunizationsSectionEntriesOptional().init();
 
 				target.addSection(section);
 
@@ -1636,7 +1636,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 				/* ProblemSection */
 				ProblemSection section =
 
-				ConsolFactory.eINSTANCE.createProblemSection().init();
+						ConsolFactory.eINSTANCE.createProblemSection().init();
 
 				target.addSection(section);
 

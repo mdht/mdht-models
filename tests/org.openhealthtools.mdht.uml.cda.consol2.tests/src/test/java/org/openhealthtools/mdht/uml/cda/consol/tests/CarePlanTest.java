@@ -568,7 +568,7 @@ public class CarePlanTest extends CDAValidationTest {
 				/* HealthConcernsSection */
 				HealthConcernsSection section =
 
-				ConsolFactory.eINSTANCE.createHealthConcernsSection().init();
+						ConsolFactory.eINSTANCE.createHealthConcernsSection().init();
 
 				target.addSection(section);
 
@@ -609,7 +609,7 @@ public class CarePlanTest extends CDAValidationTest {
 				/* GoalsSection */
 				GoalsSection section =
 
-				ConsolFactory.eINSTANCE.createGoalsSection().init();
+						ConsolFactory.eINSTANCE.createGoalsSection().init();
 
 				target.addSection(section);
 
