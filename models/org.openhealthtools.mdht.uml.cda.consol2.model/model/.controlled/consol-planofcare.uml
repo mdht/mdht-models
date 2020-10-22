@@ -4524,9 +4524,9 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_8pMfcQmUEeut3_ZvYAZhww" name="performer" visibility="private" type="_kFMvwAmVEeut3_ZvYAZhww" aggregation="composite" association="_8pMfdAmUEeut3_ZvYAZhww">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8pMfcgmUEeut3_ZvYAZhww"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8pMfcwmUEeut3_ZvYAZhww" value="*"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_LEB9oUxnEd6h-an5IXo-DA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qREoMRSCEeuSZb_3V465dg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qREoMBSCEeuSZb_3V465dg" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_LEB9oUxnEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_8pNGgAmUEeut3_ZvYAZhww" name="participant" visibility="private" type="_QeTzQAmWEeut3_ZvYAZhww" aggregation="composite" association="_8pNGgwmUEeut3_ZvYAZhww">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8pNGgQmUEeut3_ZvYAZhww"/>
@@ -4664,7 +4664,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   <CDA:AssociationValidation xmi:id="_7rY98AmVEeut3_ZvYAZhww" severity="INFO" base_Association="_8pNGgwmUEeut3_ZvYAZhww">
     <ruleId>CONF:4435-76</ruleId>
   </CDA:AssociationValidation>
-  <CDA:EntryRelationship xmi:id="_Tx_TsAvJEeuHK5c-vnh5Wg" base_Association="_QL9oMwvJEeuHK5c-vnh5Wg" typeCode="REFR">
+  <CDA:EntryRelationship xmi:id="_Tx_TsAvJEeuHK5c-vnh5Wg" severity="INFO" base_Association="_QL9oMwvJEeuHK5c-vnh5Wg" typeCode="REFR">
     <ruleId>CONF:4435-94</ruleId>
     <ruleId>CONF:4435-95</ruleId>
     <ruleId>CONF:4435-96</ruleId>
@@ -5352,7 +5352,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   <CDA:PropertyValidation xmi:id="_xr3SABMSEeuSZb_3V465dg" base_Property="_SpqQgAmWEeut3_ZvYAZhww">
     <ruleId>CONF:4435-169</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_3oUpYBMSEeuSZb_3V465dg" base_Association="_Zt2ZsxMSEeuSZb_3V465dg">
+  <CDA:AssociationValidation xmi:id="_3oUpYBMSEeuSZb_3V465dg" severity="INFO" base_Association="_Zt2ZsxMSEeuSZb_3V465dg">
     <ruleId>CONF:4435-171</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_wCpcABMTEeuSZb_3V465dg" base_Property="_p8CfkBMSEeuSZb_3V465dg">
