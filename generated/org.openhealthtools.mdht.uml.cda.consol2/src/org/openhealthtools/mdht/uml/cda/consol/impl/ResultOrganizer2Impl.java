@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -59,7 +60,6 @@ public class ResultOrganizer2Impl extends ResultOrganizerImpl implements ResultO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultOrganizer2EffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizer2Operations.validateResultOrganizer2EffectiveTime(this, diagnostics, context);
 	}
@@ -69,7 +69,6 @@ public class ResultOrganizer2Impl extends ResultOrganizerImpl implements ResultO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultOrganizer2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultOrganizer2Operations.validateResultOrganizer2AuthorParticipation(this, diagnostics, context);
@@ -98,7 +97,6 @@ public class ResultOrganizer2Impl extends ResultOrganizerImpl implements ResultO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ResultObservation2> getConsolResultObservation2s() {
 		return ResultOrganizer2Operations.getConsolResultObservation2s(this);
 	}

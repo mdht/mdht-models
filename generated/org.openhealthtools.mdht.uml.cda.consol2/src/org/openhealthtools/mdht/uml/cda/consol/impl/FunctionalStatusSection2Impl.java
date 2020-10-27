@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -69,7 +70,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFunctionalStatusSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionCodeP(this, diagnostics, context);
 	}
@@ -79,7 +79,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFunctionalStatusSection2SelfCareActivities(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSection2Operations.validateFunctionalStatusSection2SelfCareActivities(
@@ -91,7 +90,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFunctionalStatusSection2SensoryAndSpeechStatus(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSection2Operations.validateFunctionalStatusSection2SensoryAndSpeechStatus(
@@ -103,7 +101,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<FunctionalStatusOrganizer2> getConsolFunctionalStatusOrganizer2s() {
 		return FunctionalStatusSection2Operations.getConsolFunctionalStatusOrganizer2s(this);
 	}
@@ -113,7 +110,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<FunctionalStatusObservation2> getConsolFunctionalStatusObservation2s() {
 		return FunctionalStatusSection2Operations.getConsolFunctionalStatusObservation2s(this);
 	}
@@ -123,7 +119,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<CognitiveStatusResultOrganizer> getConsolCognitiveStatusResultOrganizers() {
 		return FunctionalStatusSection2Operations.getConsolCognitiveStatusResultOrganizers(this);
 	}
@@ -133,7 +128,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<CognitiveStatusResultObservation> getConsolCognitiveStatusResultObservations() {
 		return FunctionalStatusSection2Operations.getConsolCognitiveStatusResultObservations(this);
 	}
@@ -143,7 +137,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<NonMedicinalSupplyActivity2> getConsolNonMedicinalSupplyActivity2s() {
 		return FunctionalStatusSection2Operations.getConsolNonMedicinalSupplyActivity2s(this);
 	}
@@ -153,7 +146,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<NumberOfPressureUlcersObservation> getConsolNumberOfPressureUlcersObservations() {
 		return FunctionalStatusSection2Operations.getConsolNumberOfPressureUlcersObservations(this);
 	}
@@ -163,7 +155,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<HighestPressureUlcerStage> getConsolHighestPressureUlcerStages() {
 		return FunctionalStatusSection2Operations.getConsolHighestPressureUlcerStages(this);
 	}
@@ -173,7 +164,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<SelfCareActivities> getSelfCareActivitiess() {
 		return FunctionalStatusSection2Operations.getSelfCareActivitiess(this);
 	}
@@ -183,7 +173,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<SensoryStatus> getSensoryAndSpeechStatuss() {
 		return FunctionalStatusSection2Operations.getSensoryAndSpeechStatuss(this);
 	}

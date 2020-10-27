@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -51,7 +52,6 @@ public class AllergiesSectionEntriesOptional2Impl extends AllergiesSectionEntrie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<AllergyConcernAct2> getConsolAllergyConcernAct2s() {
 		return AllergiesSectionEntriesOptional2Operations.getConsolAllergyConcernAct2s(this);
 	}

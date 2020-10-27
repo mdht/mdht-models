@@ -1953,12 +1953,12 @@ This effectiveTime represents either the medication duration (i.e., the time the
     <ruleId>CONF:1098-7507</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_DyKbsOLTEeOc7-TVP7Wi6w" base_Property="__4L5cOLSEeOc7-TVP7Wi6w">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_OeMdYDwXEeiFfJtNAawVHw"/>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_OeMdYDwXEeiFfJtNAawVHw"/>
     <ruleId>CONF:1098-32360</ruleId>
     <ruleId>DSTU:1366</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_6PKzw-LYEeOc7-TVP7Wi6w" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_Mj8dAGvSEeaBpo0IxWaF6w"/>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_Mj8dAGvSEeaBpo0IxWaF6w"/>
     <ruleId>CONF:1098-7519</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_N3hTYOLZEeOc7-TVP7Wi6w" severity="INFO" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w"/>
@@ -2652,7 +2652,7 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_nbj6IMLMEeSqg-Exmsy2kg" severity="WARNING" base_Property="_nbjTEMLMEeSqg-Exmsy2kg"/>
   <CDA:ValueSetConstraint xmi:id="_nbkhMMLMEeSqg-Exmsy2kg" base_Property="_nbjTEMLMEeSqg-Exmsy2kg">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-7514</ruleId>
     <ruleId>DSTU:1276</ruleId>
   </CDA:ValueSetConstraint>
@@ -2888,7 +2888,7 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
   </CDA:PropertyValidation>
   <CDA:Inline xmi:id="_V3nroFPJEeieWreClOUydw" base_Class="_TfFG8FPJEeieWreClOUydw"/>
   <CDA:ValueSetConstraint xmi:id="_ZQiIMFPJEeieWreClOUydw" base_Property="_UNlLsFPJEeieWreClOUydw">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
     <ruleId>CONF:1098-32950</ruleId>
     <ruleId>DSTU:1276</ruleId>
   </CDA:ValueSetConstraint>

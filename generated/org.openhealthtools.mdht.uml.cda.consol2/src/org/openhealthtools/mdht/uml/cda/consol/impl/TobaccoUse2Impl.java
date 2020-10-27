@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -66,7 +67,15 @@ public class TobaccoUse2Impl extends TobaccoUseImpl implements TobaccoUse2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public boolean validateTobaccoUseCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TobaccoUse2Operations.validateTobaccoUseCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateTobaccoUse2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUse2Operations.validateTobaccoUse2AuthorParticipation(this, diagnostics, context);
 	}
@@ -86,7 +95,6 @@ public class TobaccoUse2Impl extends TobaccoUseImpl implements TobaccoUse2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateTobaccoUse2IVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUse2Operations.validateTobaccoUse2IVLTSHigh(this, diagnostics, context);
 	}
@@ -97,28 +105,18 @@ public class TobaccoUse2Impl extends TobaccoUseImpl implements TobaccoUse2 {
 	 * @generated
 	 */
 	@Override
-	public boolean validateTobaccoUseEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TobaccoUse2Operations.validateTobaccoUseEffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateTobaccoUseCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TobaccoUse2Operations.validateTobaccoUseCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateTobaccoUseCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUse2Operations.validateTobaccoUseCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateTobaccoUseEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TobaccoUse2Operations.validateTobaccoUseEffectiveTime(this, diagnostics, context);
 	}
 
 	/**

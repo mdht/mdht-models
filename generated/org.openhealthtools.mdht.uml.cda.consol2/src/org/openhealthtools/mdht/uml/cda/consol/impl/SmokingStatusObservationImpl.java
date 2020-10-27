@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -60,7 +61,6 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSmokingStatusObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationClassCode(this, diagnostics, context);
 	}
@@ -70,7 +70,6 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSmokingStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationMoodCode(this, diagnostics, context);
 	}
@@ -80,7 +79,6 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSmokingStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationCode(this, diagnostics, context);
 	}
@@ -90,31 +88,6 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateSmokingStatusObservationEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationEffectiveTime(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateSmokingStatusObservationStatusCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateSmokingStatusObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCode(
@@ -126,7 +99,37 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public boolean validateSmokingStatusObservationStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSmokingStatusObservationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationEffectiveTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSmokingStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSmokingStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationValueP(this, diagnostics, context);
 	}
@@ -207,17 +210,6 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateSmokingStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public SmokingStatusObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -227,7 +219,6 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SmokingStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

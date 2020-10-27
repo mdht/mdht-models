@@ -3344,4 +3344,130 @@ Instructions are information or directions to the patient. Use the Instructions 
     <ruleId>CONF:NEW</ruleId>
     <ruleId>DSTU:1038</ruleId>
   </CDA:AssociationValidation>
+  <uml:Class xmi:id="_J9bRQA5ZEeuzkrfERpFDKQ" name="ProvenanceAuthorParticipation">
+    <generalization xmi:id="_J9dGcA5ZEeuzkrfERpFDKQ">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_NqbugA5ZEeuzkrfERpFDKQ" name="time" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_t59eEEofEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_XOKWMA8XEeuzkrfERpFDKQ" name="assignedAuthor" type="_RYx3MA8XEeuzkrfERpFDKQ" association="_XOKWMw8XEeuzkrfERpFDKQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nh_KAQ8XEeuzkrfERpFDKQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nh_KAA8XEeuzkrfERpFDKQ" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_ieYjIUcgEd6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_RYx3MA8XEeuzkrfERpFDKQ" name="ProvenanceAssignedAuthor">
+      <ownedComment xmi:id="_RYx3MQ8XEeuzkrfERpFDKQ">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_RYx3NA8XEeuzkrfERpFDKQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_z2vcQEcDEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_RYx3NQ8XEeuzkrfERpFDKQ" name="id" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_RYx3Ng8XEeuzkrfERpFDKQ">
+          <body>&lt;p>&#xD;
+Note: This id may be set equal to (a pointer to) an id on a participant elsewhere in the document (header or entries) or a new author participant can be described here. If the id is pointing to a participant already described elsewhere in the document, assignedAuthor/id is sufficient to identify this participant and none of the remaining details of assignedAuthor are required to be set. Application Software must be responsible for resolving the identifier back to its original object and then rendering the information in the correct place in the containing section's narrative text. This id must be a pointer to another author participant.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+If the ID isn't referencing an author described elsewhere in the document, then the author components required in US Realm Header are required here as well (CONF:1098-32628).&#xD;
+&lt;/p></body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RYx3Nw8XEeuzkrfERpFDKQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RYx3OA8XEeuzkrfERpFDKQ" value="*"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_IccloEodEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RYx3OQ8XEeuzkrfERpFDKQ" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RYx3Og8XEeuzkrfERpFDKQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RYx3Ow8XEeuzkrfERpFDKQ" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_LGBP8EodEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RYx3PA8XEeuzkrfERpFDKQ" name="assignedPerson" type="_RYx3Qg8XEeuzkrfERpFDKQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RYx3PQ8XEeuzkrfERpFDKQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RYx3Pg8XEeuzkrfERpFDKQ" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9_sjEUcgEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RYx3Pw8XEeuzkrfERpFDKQ" name="representedOrganization" type="_RYx3Rw8XEeuzkrfERpFDKQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RYx3QA8XEeuzkrfERpFDKQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RYx3QQ8XEeuzkrfERpFDKQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_nJr6UA-9EeuzkrfERpFDKQ" name="assignedAuthoringDevice" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_IIL8MEcEEd6besF9iFIJkQ"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nJr6UQ-9EeuzkrfERpFDKQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nJr6Ug-9EeuzkrfERpFDKQ" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Kx64YUchEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_nKGKAA-9EeuzkrfERpFDKQ"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_RYx3Qg8XEeuzkrfERpFDKQ" name="AssignedPerson">
+        <generalization xmi:id="_RYx3Qw8XEeuzkrfERpFDKQ">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_RYx3RA8XEeuzkrfERpFDKQ" name="name" visibility="private" type="_tr5qIA-9EeuzkrfERpFDKQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RYx3RQ8XEeuzkrfERpFDKQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RYx3Rg8XEeuzkrfERpFDKQ" value="*"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_tr5qIA-9EeuzkrfERpFDKQ" name="PN">
+          <generalization xmi:id="_tr8tcA-9EeuzkrfERpFDKQ">
+            <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+          </generalization>
+          <ownedAttribute xmi:id="_uTIpQA-9EeuzkrfERpFDKQ" name="family" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_D7EcAD5zEd6cla2oXsPtlA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ww4eEA-9EeuzkrfERpFDKQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ww33AA-9EeuzkrfERpFDKQ" value="1"/>
+            <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_9IA_sD92Ed6NdqfHy-LGHg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_uTLskA-9EeuzkrfERpFDKQ" name="given" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_D7EcAD5zEd6cla2oXsPtlA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uTLskQ-9EeuzkrfERpFDKQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uTMToA-9EeuzkrfERpFDKQ" value="*"/>
+            <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_AYLv8D93Ed6NdqfHy-LGHg"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_RYx3Rw8XEeuzkrfERpFDKQ" name="RepresentedOrganization">
+        <generalization xmi:id="_RYx3SA8XEeuzkrfERpFDKQ">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_zjKW8EcZEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_RYx3SQ8XEeuzkrfERpFDKQ" name="id" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RYx3Sg8XEeuzkrfERpFDKQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RYx3Sw8XEeuzkrfERpFDKQ" value="*"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#__aP0AEraEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_RYx3TA8XEeuzkrfERpFDKQ" name="name" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_yQ9xwD5yEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RYx3TQ8XEeuzkrfERpFDKQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RYx3Tg8XEeuzkrfERpFDKQ" value="*"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_RYx3Tw8XEeuzkrfERpFDKQ" name="telecom" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RYx3UA8XEeuzkrfERpFDKQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RYx3UQ8XEeuzkrfERpFDKQ" value="*"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:PropertyValidation xmi:id="_PknjQA5ZEeuzkrfERpFDKQ" base_Property="_NqbugA5ZEeuzkrfERpFDKQ"/>
+  <CDA:CDATemplate xmi:id="_S9YU8A8AEeuzkrfERpFDKQ" base_Class="_J9bRQA5ZEeuzkrfERpFDKQ" templateId="2.16.840.1.113883.10.20.22.5 .6" templateVersion="2019-10-01"/>
+  <uml:Association xmi:id="_XOKWMw8XEeuzkrfERpFDKQ" memberEnd="_XOKWMA8XEeuzkrfERpFDKQ _XOK9QA8XEeuzkrfERpFDKQ">
+    <ownedEnd xmi:id="_XOK9QA8XEeuzkrfERpFDKQ" type="_J9bRQA5ZEeuzkrfERpFDKQ" association="_XOKWMw8XEeuzkrfERpFDKQ"/>
+  </uml:Association>
+  <CDA:PropertyValidation xmi:id="_cVkU4A8XEeuzkrfERpFDKQ" severity="WARNING" base_Property="_RYx3PA8XEeuzkrfERpFDKQ"/>
+  <CDA:AssociationValidation xmi:id="_c-FGYA8XEeuzkrfERpFDKQ" base_Association="_XOKWMw8XEeuzkrfERpFDKQ"/>
+  <CDA:PropertyValidation xmi:id="_BQ7_AA8ZEeuzkrfERpFDKQ" base_Property="_RYx3NQ8XEeuzkrfERpFDKQ"/>
+  <CDA:PropertyValidation xmi:id="_H9hLwA8ZEeuzkrfERpFDKQ" severity="WARNING" base_Property="_RYx3SQ8XEeuzkrfERpFDKQ"/>
+  <CDA:PropertyValidation xmi:id="_IcXD4A8ZEeuzkrfERpFDKQ" base_Property="_RYx3TA8XEeuzkrfERpFDKQ"/>
+  <CDA:PropertyValidation xmi:id="_I9rBMA8ZEeuzkrfERpFDKQ" severity="WARNING" base_Property="_RYx3Tw8XEeuzkrfERpFDKQ"/>
+  <CDA:PropertyValidation xmi:id="_LZ-EgA8ZEeuzkrfERpFDKQ" base_Property="_RYx3RA8XEeuzkrfERpFDKQ"/>
+  <CDA:ValueSetConstraint xmi:id="_XOmWoA-9EeuzkrfERpFDKQ" base_Property="_RYx3OQ8XEeuzkrfERpFDKQ" uri="consol-vocab::Personal And Legal Relationship Role Type">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_ft43IA-9EeuzkrfERpFDKQ" base_Property="_RYx3Pw8XEeuzkrfERpFDKQ"/>
+  <CDA:PropertyValidation xmi:id="_xb_3oA-9EeuzkrfERpFDKQ" base_Property="_uTIpQA-9EeuzkrfERpFDKQ"/>
+  <CDA:PropertyValidation xmi:id="_yLFLMA-9EeuzkrfERpFDKQ" base_Property="_uTLskA-9EeuzkrfERpFDKQ"/>
 </xmi:XMI>

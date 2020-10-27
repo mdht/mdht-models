@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -49,7 +50,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTarget(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTarget(
@@ -61,7 +61,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentAuthor(
@@ -73,7 +72,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDataEnterer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDataEnterer(
@@ -85,7 +83,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentInformant(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInformant(
@@ -97,7 +94,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentCustodian(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentCustodian(
@@ -109,7 +105,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentInformationRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInformationRecipient(
@@ -121,7 +116,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticator(
@@ -133,7 +127,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentAuthenticator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentAuthenticator(
@@ -145,7 +138,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentParticipant(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentParticipant(
@@ -157,7 +149,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf(
@@ -169,7 +160,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOf(
@@ -181,7 +171,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId(
@@ -193,7 +182,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP(
@@ -205,7 +193,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode(
@@ -217,7 +204,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
@@ -240,7 +226,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian(
@@ -252,7 +237,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication(
@@ -264,7 +248,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId(
@@ -276,7 +259,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient(
@@ -288,7 +270,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization(
@@ -300,7 +281,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole(
@@ -323,7 +303,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode(
@@ -335,7 +314,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId(
@@ -347,7 +325,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode(
@@ -359,7 +336,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor(
@@ -371,7 +347,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP(
@@ -383,7 +358,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode(
@@ -395,7 +369,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity(
@@ -407,7 +380,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP(
@@ -419,7 +391,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode(
@@ -442,7 +413,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity(
@@ -454,7 +424,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId(
@@ -466,7 +435,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization(
@@ -478,7 +446,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian(
@@ -490,7 +457,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot(
@@ -502,7 +468,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId(
@@ -514,7 +479,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient(
@@ -537,7 +501,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode(
@@ -549,7 +512,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId(
@@ -561,7 +523,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode(
@@ -573,7 +534,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity(
@@ -585,7 +545,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId(
@@ -597,7 +556,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP(
@@ -609,7 +567,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode(
@@ -621,7 +578,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity(
@@ -633,7 +589,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP(
@@ -645,7 +600,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode(
@@ -668,7 +622,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentParticipantTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentParticipantTypeCode(
@@ -680,7 +633,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity(
@@ -692,7 +644,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId(
@@ -704,7 +655,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder(
@@ -716,7 +666,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
@@ -728,7 +677,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP(
@@ -740,7 +688,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
@@ -752,7 +699,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP(
@@ -764,7 +710,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode(
@@ -776,7 +721,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity(
@@ -788,7 +732,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode(
@@ -800,7 +743,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer(
@@ -812,7 +754,6 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent(

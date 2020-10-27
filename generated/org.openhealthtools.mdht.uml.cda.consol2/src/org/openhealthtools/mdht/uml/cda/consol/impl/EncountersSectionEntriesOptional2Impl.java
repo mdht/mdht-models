@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -51,7 +52,6 @@ public class EncountersSectionEntriesOptional2Impl extends EncountersSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<EncounterActivity2> getConsolEncounterActivity2s() {
 		return EncountersSectionEntriesOptional2Operations.getConsolEncounterActivity2s(this);
 	}

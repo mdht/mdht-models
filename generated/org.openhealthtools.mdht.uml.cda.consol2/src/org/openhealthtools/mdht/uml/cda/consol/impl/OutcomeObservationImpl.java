@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -63,7 +64,6 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOutcomeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationTemplateId(this, diagnostics, context);
 	}
@@ -73,7 +73,6 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOutcomeObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationClassCode(this, diagnostics, context);
 	}
@@ -83,7 +82,6 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOutcomeObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationMoodCode(this, diagnostics, context);
 	}
@@ -93,7 +91,6 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOutcomeObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationId(this, diagnostics, context);
 	}
@@ -151,7 +148,6 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOutcomeObservationAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationAuthorParticipation(this, diagnostics, context);
@@ -162,7 +158,6 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateOutcomeObservationProgressTowardGoalObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationProgressTowardGoalObservation(
@@ -232,7 +227,6 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProgressTowardGoalObservation getProgressTowardGoalObservation() {
 		return OutcomeObservationOperations.getProgressTowardGoalObservation(this);
 	}
@@ -242,7 +236,6 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public OutcomeObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -252,7 +245,6 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public OutcomeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

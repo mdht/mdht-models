@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -55,7 +56,6 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemConcernActEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActEffectiveTimeLow(this, diagnostics, context);
 	}
@@ -65,7 +65,6 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemConcernActEffectiveTimeHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActEffectiveTimeHigh(this, diagnostics, context);
@@ -76,7 +75,6 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemConcernActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActTemplateId(this, diagnostics, context);
 	}
@@ -86,7 +84,6 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemConcernActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActClassCode(this, diagnostics, context);
 	}
@@ -96,7 +93,6 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemConcernActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActMoodCode(this, diagnostics, context);
 	}
@@ -106,17 +102,15 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemConcernActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActId(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemConcernActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActCodeP(this, diagnostics, context);
 	}
@@ -126,7 +120,6 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemConcernActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActCode(this, diagnostics, context);
 	}
@@ -136,7 +129,6 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemConcernActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActStatusCode(this, diagnostics, context);
 	}
@@ -146,7 +138,6 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemConcernActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActEffectiveTime(this, diagnostics, context);
 	}
@@ -156,7 +147,6 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemConcernActProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActProblemObservation(this, diagnostics, context);
@@ -167,7 +157,6 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemObservation> getProblemObservations() {
 		return ProblemConcernActOperations.getProblemObservations(this);
 	}
@@ -177,17 +166,15 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProblemConcernAct init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProblemConcernAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

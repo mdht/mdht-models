@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -56,7 +57,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationValueOriginalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationValueOriginalText(this, diagnostics, context);
@@ -67,7 +67,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationOriginalTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationOriginalTextReference(this, diagnostics, context);
@@ -75,10 +74,9 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationOriginalTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationOriginalTextReferenceValue(
@@ -90,7 +88,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationReferenceValue(this, diagnostics, context);
 	}
@@ -100,7 +97,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationClassCode(this, diagnostics, context);
 	}
@@ -110,7 +106,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationMoodCode(this, diagnostics, context);
 	}
@@ -120,17 +115,15 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationId(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationCodeP(this, diagnostics, context);
 	}
@@ -140,7 +133,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationCode(this, diagnostics, context);
 	}
@@ -150,7 +142,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationStatusCode(this, diagnostics, context);
 	}
@@ -160,7 +151,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationEffectiveTime(this, diagnostics, context);
 	}
@@ -170,7 +160,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationValue(this, diagnostics, context);
 	}
@@ -180,7 +169,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationReactionObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationReactionObservation(this, diagnostics, context);
@@ -191,7 +179,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationSeverityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationSeverityObservation(this, diagnostics, context);
@@ -202,7 +189,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationAllergyStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationAllergyStatusObservation(
@@ -214,7 +200,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipant(this, diagnostics, context);
 	}
@@ -224,7 +209,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
@@ -236,7 +220,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
@@ -248,7 +231,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
@@ -260,7 +242,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
@@ -272,7 +253,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
@@ -295,7 +275,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityClassCode(
@@ -307,7 +286,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntityCode(
@@ -319,7 +297,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationParticipantParticipantRoleClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRoleClassCode(
@@ -331,7 +308,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationParticipantParticipantRolePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntity(
@@ -343,7 +319,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationParticipantTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipantTypeCode(this, diagnostics, context);
@@ -354,7 +329,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAllergyObservationParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRole(
@@ -366,7 +340,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ReactionObservation> getConsolReactionObservations() {
 		return AllergyObservationOperations.getConsolReactionObservations(this);
 	}
@@ -376,7 +349,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SeverityObservation getConsolSeverityObservation() {
 		return AllergyObservationOperations.getConsolSeverityObservation(this);
 	}
@@ -386,7 +358,6 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AllergyStatusObservation getConsolAllergyStatusObservation() {
 		return AllergyObservationOperations.getConsolAllergyStatusObservation(this);
 	}
@@ -451,7 +422,7 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override

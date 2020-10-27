@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -61,7 +62,6 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return ProcedureFindingsSection2Operations.getConsolProblemObservation2s(this);
 	}

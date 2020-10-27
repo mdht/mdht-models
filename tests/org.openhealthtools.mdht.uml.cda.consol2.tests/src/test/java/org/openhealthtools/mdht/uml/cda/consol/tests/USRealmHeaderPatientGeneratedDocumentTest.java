@@ -605,7 +605,7 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 			@Override
 			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
 				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().get(0).setCode(
-					DatatypesFactory.eINSTANCE.createCE("NotCurrentlyChecked", "2.16.840.1.113883.5.111"));
+					DatatypesFactory.eINSTANCE.createCE("DAUINLAW", "2.16.840.1.113883.5.111"));
 			}
 
 			@Override
@@ -1176,7 +1176,7 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 			@Override
 			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
 				target.getDataEnterer().getAssignedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE("notCurrentlyChecked", "2.16.840.1.113883.5.111"));
+					DatatypesFactory.eINSTANCE.createCE("DAUINLAW", "2.16.840.1.113883.5.111"));
 			}
 
 			@Override
@@ -1290,8 +1290,7 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 
 			@Override
 			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
-				CE codeWithTerminology = DatatypesFactory.eINSTANCE.createCE(
-					"notCurrentlyChecked", "2.16.840.1.113883.5.111");
+				CE codeWithTerminology = DatatypesFactory.eINSTANCE.createCE("DAUINLAW", "2.16.840.1.113883.5.111");
 				target.getInformants().get(0).getRelatedEntity().setCode(codeWithTerminology);
 			}
 
@@ -1936,7 +1935,7 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 			@Override
 			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
 				target.getAuthenticators().get(0).getAssignedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE("notCurrentlyChecked", "2.16.840.1.113883.5.111"));
+					DatatypesFactory.eINSTANCE.createCE("DAUINLAW", "2.16.840.1.113883.5.111"));
 			}
 
 			@Override
@@ -2044,7 +2043,7 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 			@Override
 			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
 				target.getParticipants().get(0).getAssociatedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE("notCurrentlyChecked", "2.16.840.1.113883.5.111"));
+					DatatypesFactory.eINSTANCE.createCE("DAUINLAW", "2.16.840.1.113883.5.111"));
 			}
 
 			@Override
@@ -2414,7 +2413,7 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
 				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
 					0).getAssignedEntity().setCode(
-						DatatypesFactory.eINSTANCE.createCE("NotCurrentlyChecked", "2.16.840.1.113883.5.111"));
+						DatatypesFactory.eINSTANCE.createCE("DAUINLAW", "2.16.840.1.113883.5.111"));
 			}
 
 			@Override

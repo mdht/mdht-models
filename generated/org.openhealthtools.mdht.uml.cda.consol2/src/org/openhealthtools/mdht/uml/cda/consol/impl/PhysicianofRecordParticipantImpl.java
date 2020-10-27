@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -53,7 +54,6 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePhysicianofRecordParticipantTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantTemplateId(
@@ -65,7 +65,6 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePhysicianofRecordParticipantTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantTypeCode(
@@ -77,7 +76,6 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePhysicianofRecordParticipantAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntity(
@@ -89,7 +87,6 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntityAssignedPersonName(
@@ -101,7 +98,6 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode(
@@ -113,7 +109,6 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId(
@@ -125,7 +120,6 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePhysicianofRecordParticipantAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntityCode(
@@ -137,7 +131,6 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePhysicianofRecordParticipantAssignedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntityId(
@@ -149,7 +142,6 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntityAssignedPerson(
@@ -161,17 +153,15 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PhysicianofRecordParticipant init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PhysicianofRecordParticipant init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

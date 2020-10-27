@@ -2,6 +2,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -65,6 +66,15 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSmokingStatusObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSmokingStatusMeaningfulUse2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2AuthorParticipation(
@@ -80,16 +90,6 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 			Map<Object, Object> context) {
 		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateSmokingStatusObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationCodeP(this, diagnostics, context);
 	}
 
 	/**

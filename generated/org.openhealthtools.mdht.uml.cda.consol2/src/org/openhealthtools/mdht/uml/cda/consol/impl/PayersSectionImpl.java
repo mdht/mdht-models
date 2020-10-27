@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -55,7 +56,6 @@ public class PayersSectionImpl extends SectionImpl implements PayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePayersSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PayersSectionOperations.validatePayersSectionTemplateId(this, diagnostics, context);
 	}
@@ -65,17 +65,15 @@ public class PayersSectionImpl extends SectionImpl implements PayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePayersSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PayersSectionOperations.validatePayersSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePayersSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PayersSectionOperations.validatePayersSectionCodeP(this, diagnostics, context);
 	}
@@ -85,7 +83,6 @@ public class PayersSectionImpl extends SectionImpl implements PayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePayersSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PayersSectionOperations.validatePayersSectionTitle(this, diagnostics, context);
 	}
@@ -95,7 +92,6 @@ public class PayersSectionImpl extends SectionImpl implements PayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePayersSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PayersSectionOperations.validatePayersSectionText(this, diagnostics, context);
 	}
@@ -105,7 +101,6 @@ public class PayersSectionImpl extends SectionImpl implements PayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePayersSectionCoverageActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PayersSectionOperations.validatePayersSectionCoverageActivity(this, diagnostics, context);
 	}
@@ -115,7 +110,6 @@ public class PayersSectionImpl extends SectionImpl implements PayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<CoverageActivity> getCoverageActivities() {
 		return PayersSectionOperations.getCoverageActivities(this);
 	}
@@ -125,17 +119,15 @@ public class PayersSectionImpl extends SectionImpl implements PayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PayersSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PayersSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

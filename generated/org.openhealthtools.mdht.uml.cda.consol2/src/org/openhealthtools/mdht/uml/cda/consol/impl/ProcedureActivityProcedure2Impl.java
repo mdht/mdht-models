@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -76,7 +77,6 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureActivityProcedureStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureStatusCodeP(
@@ -110,7 +110,6 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Indication2> getConsolIndication2s() {
 		return ProcedureActivityProcedure2Operations.getConsolIndication2s(this);
 	}
@@ -120,7 +119,6 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
 		return ProcedureActivityProcedure2Operations.getConsolMedicationActivity2s(this);
 	}
@@ -130,7 +128,6 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Instruction2 getConsolInstruction2() {
 		return ProcedureActivityProcedure2Operations.getConsolInstruction2(this);
 	}

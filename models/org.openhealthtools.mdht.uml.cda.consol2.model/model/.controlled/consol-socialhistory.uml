@@ -1474,12 +1474,12 @@ The effectiveTime element is used to describe dates associated with the patient'
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_p2txID-sEeaJttsCYk-pKw" message="Consol Birth Sex Observation SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot;, where the code SHALL be selected from ValueSet ONC Administrative Sex urn:oid:2.16.840.1.113762.1.4.1 STATIC (CONF:3250-32947). If value/@code not from value set, SHALL contain exactly one [1..1] @nullFlavor=&quot;UNK&quot; (CONF:3250-32948)" base_Property="_SYIm0D-sEeaJttsCYk-pKw"/>
   <CDA:CodeSystemConstraint xmi:id="_KeNAsD-tEeaJttsCYk-pKw" code="76689-9" displayName="Sex Assigned At Birth" base_Property="_SYGKkD-sEeaJttsCYk-pKw">
-    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:3250-18235</ruleId>
     <ruleId>CONF:3250-21163</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_e0IYAD-tEeaJttsCYk-pKw" code="completed" displayName="Completed" base_Property="_SYHYsD-sEeaJttsCYk-pKw">
-    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:3250-18125</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_GxM7gELDEeaf56PK5wLLJw" memberEnd="_GxLGUELDEeaf56PK5wLLJw _GxNikELDEeaf56PK5wLLJw">
@@ -1489,7 +1489,7 @@ The effectiveTime element is used to describe dates associated with the patient'
     <ruleId>CONF:1198-NEW</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_a6aMAJrUEea9R7VeOazsfg" base_Property="_SYIm0D-sEeaJttsCYk-pKw">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_pJl6gD-uEeaJttsCYk-pKw"/>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_pJl6gD-uEeaJttsCYk-pKw"/>
     <ruleId>CONF:3250-32947</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_EaonoA8lEeecs5O6JXLprw" message="Consol Smoking Status Meaningful Use2 SHALL contain exactly one [1..1] effectiveTime with @xsi:type=&quot;TS&quot; (CONF:1098-31928, DSTU:596, DSTU:597) Note: This template represents a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime is constrained to just a time stamp, and will approximately correspond with the author/time. " base_Property="_EaXh4A8lEeecs5O6JXLprw">

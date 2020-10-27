@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -53,10 +54,9 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateTextObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TextObservationOperations.validateTextObservationTextReference(this, diagnostics, context);
 	}
@@ -66,7 +66,6 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateTextObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TextObservationOperations.validateTextObservationTextReferenceValue(this, diagnostics, context);
 	}
@@ -76,7 +75,6 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateTextObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TextObservationOperations.validateTextObservationReferenceValue(this, diagnostics, context);
 	}
@@ -86,17 +84,15 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateTextObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TextObservationOperations.validateTextObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateTextObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TextObservationOperations.validateTextObservationClassCode(this, diagnostics, context);
 	}
@@ -106,7 +102,6 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateTextObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TextObservationOperations.validateTextObservationMoodCode(this, diagnostics, context);
 	}
@@ -116,7 +111,6 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateTextObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TextObservationOperations.validateTextObservationCode(this, diagnostics, context);
 	}
@@ -126,7 +120,6 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateTextObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TextObservationOperations.validateTextObservationEffectiveTime(this, diagnostics, context);
 	}
@@ -136,7 +129,6 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateTextObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TextObservationOperations.validateTextObservationText(this, diagnostics, context);
 	}
@@ -146,7 +138,6 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateTextObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TextObservationOperations.validateTextObservationValue(this, diagnostics, context);
 	}
@@ -156,7 +147,6 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateTextObservationSOPInstanceObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return TextObservationOperations.validateTextObservationSOPInstanceObservation(this, diagnostics, context);
@@ -167,7 +157,6 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateTextObservationQuantityMeasurementObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return TextObservationOperations.validateTextObservationQuantityMeasurementObservation(
@@ -179,7 +168,6 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<SOPInstanceObservation> getSOPInstanceObservations() {
 		return TextObservationOperations.getSOPInstanceObservations(this);
 	}
@@ -189,7 +177,6 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<QuantityMeasurementObservation> getQuantityMeasurementObservations() {
 		return TextObservationOperations.getQuantityMeasurementObservations(this);
 	}
@@ -199,17 +186,15 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public TextObservation init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public TextObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

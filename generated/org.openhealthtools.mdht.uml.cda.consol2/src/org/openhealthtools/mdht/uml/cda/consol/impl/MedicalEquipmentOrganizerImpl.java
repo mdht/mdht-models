@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -63,7 +64,6 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentOrganizerTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerTemplateId(
@@ -75,7 +75,6 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentOrganizerClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerClassCode(
@@ -87,7 +86,6 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerMoodCode(
 			this, diagnostics, context);
@@ -98,7 +96,6 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentOrganizerId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerId(this, diagnostics, context);
 	}
@@ -108,7 +105,6 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerCode(this, diagnostics, context);
 	}
@@ -118,7 +114,6 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentOrganizerStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerStatusCodeP(
@@ -130,7 +125,6 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentOrganizerStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerStatusCode(
@@ -142,7 +136,6 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicalEquipmentOrganizerEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerEffectiveTime(
@@ -215,7 +208,6 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicalEquipmentOrganizer init() {
 		return Initializer.Util.init(this);
 	}
@@ -225,7 +217,6 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicalEquipmentOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -51,7 +52,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationTemplateId(
@@ -63,7 +63,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationClassCode(
@@ -75,7 +74,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationMoodCode(
@@ -87,7 +85,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationId(
 			this, diagnostics, context);
@@ -98,7 +95,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationCodeP(
@@ -110,7 +106,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationCode(
 			this, diagnostics, context);
@@ -121,7 +116,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationText(
 			this, diagnostics, context);
@@ -132,7 +126,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationStatusCode(
@@ -144,7 +137,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationStatusCodeP(
@@ -156,7 +148,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationEffectiveTime(
@@ -168,7 +159,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationValue(
@@ -180,7 +170,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationValueP(
@@ -192,7 +181,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationAssessmentScaleObservation(
@@ -204,7 +192,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCognitiveAbilitiesObservationAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationAuthorParticipation(
@@ -216,7 +203,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return CognitiveAbilitiesObservationOperations.getAssessmentScaleObservations(this);
 	}
@@ -226,7 +212,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CognitiveAbilitiesObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -236,7 +221,6 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CognitiveAbilitiesObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

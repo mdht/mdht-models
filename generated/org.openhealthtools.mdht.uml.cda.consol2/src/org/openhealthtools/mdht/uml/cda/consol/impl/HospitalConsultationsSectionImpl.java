@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -53,7 +54,6 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalConsultationsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTemplateId(
@@ -65,7 +65,6 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalConsultationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionCode(
 			this, diagnostics, context);
@@ -73,10 +72,9 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalConsultationsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionCodeP(
 			this, diagnostics, context);
@@ -87,7 +85,6 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalConsultationsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionText(
 			this, diagnostics, context);
@@ -98,7 +95,6 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHospitalConsultationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTitle(
 			this, diagnostics, context);
@@ -109,17 +105,15 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalConsultationsSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HospitalConsultationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

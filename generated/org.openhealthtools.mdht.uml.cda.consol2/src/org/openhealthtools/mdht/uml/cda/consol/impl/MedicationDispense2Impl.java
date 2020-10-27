@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -49,7 +50,6 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationDispense2ContainsMedicationInformation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispense2Operations.validateMedicationDispense2ContainsMedicationInformation2(
@@ -61,7 +61,6 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationDispense2ContainsImmunizationMedicationInformation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispense2Operations.validateMedicationDispense2ContainsImmunizationMedicationInformation2(
@@ -82,7 +81,6 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMedicationDispenseStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispense2Operations.validateMedicationDispenseStatusCodeP(this, diagnostics, context);
 	}
@@ -92,7 +90,6 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationSupplyOrder2 getConsolMedicationSupplyOrder2() {
 		return MedicationDispense2Operations.getConsolMedicationSupplyOrder2(this);
 	}

@@ -707,6 +707,20 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPreconditionForSubstanceAdministration2();
 			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER2:
 				return createPhysicianReadingStudyPerformer2();
+			case ConsolPackage.CARE_TEAMS:
+				return createCareTeams();
+			case ConsolPackage.CARE_TEAM_ORGANIZER:
+				return createCareTeamOrganizer();
+			case ConsolPackage.NOTE_ACTIVITY:
+				return createNoteActivity();
+			case ConsolPackage.CARE_TEAM_TYPE_OBSERVATION:
+				return createCareTeamTypeObservation();
+			case ConsolPackage.CARE_TEAM_MEMBER_ACT:
+				return createCareTeamMemberAct();
+			case ConsolPackage.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION:
+				return createCareTeamMemberScheduleObservation();
+			case ConsolPackage.PROVENANCE_AUTHOR_PARTICIPATION:
+				return createProvenanceAuthorParticipation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -3976,6 +3990,76 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PhysicianReadingStudyPerformer2 createPhysicianReadingStudyPerformer2() {
 		PhysicianReadingStudyPerformer2Impl physicianReadingStudyPerformer2 = new PhysicianReadingStudyPerformer2Impl();
 		return physicianReadingStudyPerformer2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CareTeams createCareTeams() {
+		CareTeamsImpl careTeams = new CareTeamsImpl();
+		return careTeams;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CareTeamOrganizer createCareTeamOrganizer() {
+		CareTeamOrganizerImpl careTeamOrganizer = new CareTeamOrganizerImpl();
+		return careTeamOrganizer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NoteActivity createNoteActivity() {
+		NoteActivityImpl noteActivity = new NoteActivityImpl();
+		return noteActivity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CareTeamTypeObservation createCareTeamTypeObservation() {
+		CareTeamTypeObservationImpl careTeamTypeObservation = new CareTeamTypeObservationImpl();
+		return careTeamTypeObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CareTeamMemberAct createCareTeamMemberAct() {
+		CareTeamMemberActImpl careTeamMemberAct = new CareTeamMemberActImpl();
+		return careTeamMemberAct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CareTeamMemberScheduleObservation createCareTeamMemberScheduleObservation() {
+		CareTeamMemberScheduleObservationImpl careTeamMemberScheduleObservation = new CareTeamMemberScheduleObservationImpl();
+		return careTeamMemberScheduleObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProvenanceAuthorParticipation createProvenanceAuthorParticipation() {
+		ProvenanceAuthorParticipationImpl provenanceAuthorParticipation = new ProvenanceAuthorParticipationImpl();
+		return provenanceAuthorParticipation;
 	}
 
 	/**

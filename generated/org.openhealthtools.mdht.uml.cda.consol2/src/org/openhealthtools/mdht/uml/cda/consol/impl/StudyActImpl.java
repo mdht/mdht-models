@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -54,7 +55,6 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateStudyActIdsHaveRoot(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActIdsHaveRoot(this, diagnostics, context);
 	}
@@ -64,17 +64,15 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateStudyActNoIdExtension(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActNoIdExtension(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateStudyActTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActTextReference(this, diagnostics, context);
 	}
@@ -84,7 +82,6 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateStudyActTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActTextReferenceValue(this, diagnostics, context);
 	}
@@ -94,7 +91,6 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateStudyActReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActReferenceValue(this, diagnostics, context);
 	}
@@ -104,7 +100,6 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateStudyActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActTemplateId(this, diagnostics, context);
 	}
@@ -114,7 +109,6 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateStudyActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActClassCode(this, diagnostics, context);
 	}
@@ -124,7 +118,6 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateStudyActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActMoodCode(this, diagnostics, context);
 	}
@@ -134,7 +127,6 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateStudyActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActId(this, diagnostics, context);
 	}
@@ -144,7 +136,6 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateStudyActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActCode(this, diagnostics, context);
 	}
@@ -154,7 +145,6 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateStudyActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActEffectiveTime(this, diagnostics, context);
 	}
@@ -164,7 +154,6 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateStudyActText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActText(this, diagnostics, context);
 	}
@@ -174,7 +163,6 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateStudyActSeriesAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActSeriesAct(this, diagnostics, context);
 	}
@@ -184,7 +172,6 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SeriesAct getSeriesAct() {
 		return StudyActOperations.getSeriesAct(this);
 	}
@@ -194,17 +181,15 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public StudyAct init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public StudyAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

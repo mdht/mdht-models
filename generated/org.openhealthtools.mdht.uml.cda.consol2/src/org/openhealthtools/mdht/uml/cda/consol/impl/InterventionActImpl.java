@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -63,7 +64,6 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInterventionActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActTemplateId(this, diagnostics, context);
 	}
@@ -73,7 +73,6 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInterventionActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActClassCode(this, diagnostics, context);
 	}
@@ -83,7 +82,6 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInterventionActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActMoodCode(this, diagnostics, context);
 	}
@@ -93,7 +91,6 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInterventionActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActId(this, diagnostics, context);
 	}
@@ -103,7 +100,6 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInterventionActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActCodeP(this, diagnostics, context);
 	}
@@ -113,7 +109,6 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInterventionActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActCode(this, diagnostics, context);
 	}
@@ -123,7 +118,6 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInterventionActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActStatusCode(this, diagnostics, context);
 	}
@@ -142,7 +136,6 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInterventionActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActEffectiveTime(this, diagnostics, context);
 	}
@@ -191,7 +184,6 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInterventionActAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActAuthorParticipation(this, diagnostics, context);
@@ -342,7 +334,6 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<InterventionAct> getInterventionActs() {
 		return InterventionActOperations.getInterventionActs(this);
 	}
@@ -469,7 +460,6 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public InterventionAct init() {
 		return Initializer.Util.init(this);
 	}
@@ -479,7 +469,6 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public InterventionAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

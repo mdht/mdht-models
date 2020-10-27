@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -59,7 +60,6 @@ public class VitalSignsSection2Impl extends VitalSignsSectionEntriesOptional2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateVitalSignsSection2Title(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsSection2Operations.validateVitalSignsSection2Title(this, diagnostics, context);
 	}
@@ -69,7 +69,6 @@ public class VitalSignsSection2Impl extends VitalSignsSectionEntriesOptional2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateVitalSignsSection2Text(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsSection2Operations.validateVitalSignsSection2Text(this, diagnostics, context);
 	}

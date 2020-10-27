@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -53,7 +54,6 @@ public class GeneralStatusSectionImpl extends SectionImpl implements GeneralStat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGeneralStatusSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralStatusSectionOperations.validateGeneralStatusSectionTemplateId(this, diagnostics, context);
 	}
@@ -63,17 +63,15 @@ public class GeneralStatusSectionImpl extends SectionImpl implements GeneralStat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGeneralStatusSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralStatusSectionOperations.validateGeneralStatusSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGeneralStatusSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralStatusSectionOperations.validateGeneralStatusSectionCodeP(this, diagnostics, context);
 	}
@@ -83,7 +81,6 @@ public class GeneralStatusSectionImpl extends SectionImpl implements GeneralStat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGeneralStatusSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralStatusSectionOperations.validateGeneralStatusSectionTitle(this, diagnostics, context);
 	}
@@ -93,7 +90,6 @@ public class GeneralStatusSectionImpl extends SectionImpl implements GeneralStat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGeneralStatusSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralStatusSectionOperations.validateGeneralStatusSectionText(this, diagnostics, context);
 	}
@@ -103,17 +99,15 @@ public class GeneralStatusSectionImpl extends SectionImpl implements GeneralStat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public GeneralStatusSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public GeneralStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

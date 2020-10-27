@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -28,7 +29,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSecti
  */
 public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirectivesSectionEntriesOptionalImpl
 		implements AdvanceDirectivesSectionEntriesOptional2 {
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

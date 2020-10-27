@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -59,7 +60,6 @@ public class PayersSection2Impl extends PayersSectionImpl implements PayersSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<CoverageActivity2> getConsolCoverageActivity2s() {
 		return PayersSection2Operations.getConsolCoverageActivity2s(this);
 	}

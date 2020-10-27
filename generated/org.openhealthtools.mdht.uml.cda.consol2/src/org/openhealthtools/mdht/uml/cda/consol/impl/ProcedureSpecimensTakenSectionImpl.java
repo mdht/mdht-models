@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -53,7 +54,6 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureSpecimensTakenSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionTemplateId(
@@ -65,7 +65,6 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureSpecimensTakenSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionCode(
@@ -74,10 +73,9 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureSpecimensTakenSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionCodeP(
@@ -89,7 +87,6 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureSpecimensTakenSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionText(
@@ -101,7 +98,6 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureSpecimensTakenSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionTitle(
@@ -113,17 +109,15 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProcedureSpecimensTakenSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProcedureSpecimensTakenSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -51,7 +52,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionalStatusObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationTemplateId(
@@ -63,7 +63,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionalStatusObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationClassCode(
@@ -75,7 +74,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionalStatusObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationMoodCode(
@@ -87,7 +85,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionalStatusObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationId(
 			this, diagnostics, context);
@@ -98,7 +95,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionalStatusObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationCodeP(
 			this, diagnostics, context);
@@ -109,7 +105,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionalStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationCode(
 			this, diagnostics, context);
@@ -120,7 +115,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionalStatusObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationStatusCode(
@@ -132,7 +126,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionalStatusObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationStatusCodeP(
@@ -144,7 +137,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionalStatusObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationEffectiveTime(
@@ -156,7 +148,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionalStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationValue(
 			this, diagnostics, context);
@@ -167,7 +158,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionalStatusObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationValueP(
@@ -179,7 +169,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateNutritionalStatusObservationNutritionAssessment(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationNutritionAssessment(
@@ -191,7 +180,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<NutritionAssessment> getNutritionAssessments() {
 		return NutritionalStatusObservationOperations.getNutritionAssessments(this);
 	}
@@ -201,7 +189,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public NutritionalStatusObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -211,7 +198,6 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public NutritionalStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

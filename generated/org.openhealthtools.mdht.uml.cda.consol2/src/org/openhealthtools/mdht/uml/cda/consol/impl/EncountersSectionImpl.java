@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -54,7 +55,6 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateEncountersSectionEncounterActivities(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncountersSectionOperations.validateEncountersSectionEncounterActivities(this, diagnostics, context);
@@ -65,7 +65,6 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<EncounterActivities> getConsolEncounterActivitiess() {
 		return EncountersSectionOperations.getConsolEncounterActivitiess(this);
 	}
@@ -138,7 +137,7 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override

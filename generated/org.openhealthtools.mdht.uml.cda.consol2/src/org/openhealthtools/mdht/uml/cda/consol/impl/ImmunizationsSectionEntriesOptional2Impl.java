@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -51,7 +52,6 @@ public class ImmunizationsSectionEntriesOptional2Impl extends ImmunizationsSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ImmunizationActivity2> getConsolImmunizationActivity2s() {
 		return ImmunizationsSectionEntriesOptional2Operations.getConsolImmunizationActivity2s(this);
 	}

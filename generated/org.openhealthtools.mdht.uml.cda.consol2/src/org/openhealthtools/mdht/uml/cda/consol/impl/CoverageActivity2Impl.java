@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -59,7 +60,6 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCoverageActivityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivity2Operations.validateCoverageActivityCodeP(this, diagnostics, context);
 	}
@@ -123,7 +123,6 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<PolicyActivity2> getConsolPolicyActivity2s() {
 		return CoverageActivity2Operations.getConsolPolicyActivity2s(this);
 	}

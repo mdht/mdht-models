@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -53,7 +54,6 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureDispositionSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTemplateId(
@@ -65,7 +65,6 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureDispositionSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionCode(
 			this, diagnostics, context);
@@ -73,10 +72,9 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureDispositionSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionCodeP(
 			this, diagnostics, context);
@@ -87,7 +85,6 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureDispositionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionText(
 			this, diagnostics, context);
@@ -98,7 +95,6 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProcedureDispositionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTitle(
 			this, diagnostics, context);
@@ -109,17 +105,15 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProcedureDispositionSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProcedureDispositionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -53,7 +54,6 @@ public class DrugVehicleImpl extends ParticipantRoleImpl implements DrugVehicle 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugVehiclePlayingEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugVehicleOperations.validateDrugVehiclePlayingEntityCode(this, diagnostics, context);
 	}
@@ -63,7 +63,6 @@ public class DrugVehicleImpl extends ParticipantRoleImpl implements DrugVehicle 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugVehiclePlayingEntityName(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugVehicleOperations.validateDrugVehiclePlayingEntityName(this, diagnostics, context);
 	}
@@ -73,7 +72,6 @@ public class DrugVehicleImpl extends ParticipantRoleImpl implements DrugVehicle 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugVehicleTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugVehicleOperations.validateDrugVehicleTemplateId(this, diagnostics, context);
 	}
@@ -83,7 +81,6 @@ public class DrugVehicleImpl extends ParticipantRoleImpl implements DrugVehicle 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugVehicleClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugVehicleOperations.validateDrugVehicleClassCode(this, diagnostics, context);
 	}
@@ -93,7 +90,6 @@ public class DrugVehicleImpl extends ParticipantRoleImpl implements DrugVehicle 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugVehicleCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugVehicleOperations.validateDrugVehicleCode(this, diagnostics, context);
 	}
@@ -103,7 +99,6 @@ public class DrugVehicleImpl extends ParticipantRoleImpl implements DrugVehicle 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateDrugVehiclePlayingEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugVehicleOperations.validateDrugVehiclePlayingEntity(this, diagnostics, context);
 	}
@@ -113,17 +108,15 @@ public class DrugVehicleImpl extends ParticipantRoleImpl implements DrugVehicle 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public DrugVehicle init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public DrugVehicle init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

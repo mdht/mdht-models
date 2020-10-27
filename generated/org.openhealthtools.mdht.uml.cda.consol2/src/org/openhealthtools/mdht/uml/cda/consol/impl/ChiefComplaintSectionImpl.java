@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -53,7 +54,6 @@ public class ChiefComplaintSectionImpl extends SectionImpl implements ChiefCompl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateChiefComplaintSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ChiefComplaintSectionOperations.validateChiefComplaintSectionTemplateId(this, diagnostics, context);
 	}
@@ -63,17 +63,15 @@ public class ChiefComplaintSectionImpl extends SectionImpl implements ChiefCompl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateChiefComplaintSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ChiefComplaintSectionOperations.validateChiefComplaintSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateChiefComplaintSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ChiefComplaintSectionOperations.validateChiefComplaintSectionCodeP(this, diagnostics, context);
 	}
@@ -83,7 +81,6 @@ public class ChiefComplaintSectionImpl extends SectionImpl implements ChiefCompl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateChiefComplaintSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ChiefComplaintSectionOperations.validateChiefComplaintSectionText(this, diagnostics, context);
 	}
@@ -93,7 +90,6 @@ public class ChiefComplaintSectionImpl extends SectionImpl implements ChiefCompl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateChiefComplaintSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ChiefComplaintSectionOperations.validateChiefComplaintSectionTitle(this, diagnostics, context);
 	}
@@ -103,17 +99,15 @@ public class ChiefComplaintSectionImpl extends SectionImpl implements ChiefCompl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ChiefComplaintSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ChiefComplaintSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

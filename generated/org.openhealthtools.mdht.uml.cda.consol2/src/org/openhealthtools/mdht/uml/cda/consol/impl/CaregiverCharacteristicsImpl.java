@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -49,7 +50,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsValueCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsValueCodeSystem(
@@ -61,7 +61,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsTemplateId(
@@ -73,7 +72,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsClassCode(this, diagnostics, context);
 	}
@@ -83,7 +81,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsMoodCode(this, diagnostics, context);
 	}
@@ -93,7 +90,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsId(this, diagnostics, context);
 	}
@@ -103,7 +99,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsCode(this, diagnostics, context);
 	}
@@ -113,7 +108,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsStatusCode(
@@ -125,7 +119,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsStatusCodeP(
@@ -137,7 +130,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsValue(this, diagnostics, context);
 	}
@@ -147,7 +139,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsParticipant(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipant(
@@ -159,7 +150,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(
@@ -171,7 +161,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsParticipantTimeLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTimeLow(
@@ -183,7 +172,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsParticipantTimeHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTimeHigh(
@@ -195,7 +183,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsParticipantTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTypeCode(
@@ -207,7 +194,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsParticipantTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTime(
@@ -219,7 +205,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCaregiverCharacteristicsParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantParticipantRole(
@@ -231,7 +216,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CaregiverCharacteristics init() {
 		return Initializer.Util.init(this);
 	}
@@ -241,7 +225,6 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CaregiverCharacteristics init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

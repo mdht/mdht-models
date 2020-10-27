@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -49,7 +50,6 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentTemplateId(
@@ -61,7 +61,6 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentClassCode(
@@ -73,7 +72,6 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentMoodCode(
@@ -85,7 +83,6 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentId(
@@ -97,7 +94,6 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentCodeP(
@@ -109,7 +105,6 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentCode(
@@ -121,7 +116,6 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentStatusCode(
@@ -133,7 +127,6 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentStatusCodeP(
@@ -145,7 +138,6 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValue(
@@ -168,7 +160,6 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CharacteristicsOfHomeEnvironment init() {
 		return Initializer.Util.init(this);
 	}
@@ -178,7 +169,6 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CharacteristicsOfHomeEnvironment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

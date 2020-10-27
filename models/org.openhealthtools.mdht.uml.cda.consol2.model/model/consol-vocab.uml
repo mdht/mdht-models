@@ -1324,6 +1324,14 @@ A personal or legal relationship records the role of a person in relation to ano
 Specific URL Pending&#xD;
 Valueset Source: http://www.hl7.org/documentcenter/public/standards/vocabulary/vocabulary_tables/infrastructure/vocabulary/vocabulary.html</body>
       </ownedComment>
+      <ownedLiteral xmi:id="_heg4sA_oEeuzkrfERpFDKQ" name="DAUINLAW"/>
+      <ownedLiteral xmi:id="_kX1PMA_oEeuzkrfERpFDKQ" name="FTH"/>
+      <ownedLiteral xmi:id="_mWoeMA_oEeuzkrfERpFDKQ" name="DAU"/>
+      <ownedLiteral xmi:id="_oG0CYA_oEeuzkrfERpFDKQ" name="HPOWATT"/>
+      <ownedLiteral xmi:id="_pxdmUA_oEeuzkrfERpFDKQ" name="MTH"/>
+      <ownedLiteral xmi:id="_wLnmUA_oEeuzkrfERpFDKQ" name="SON"/>
+      <ownedLiteral xmi:id="_xH-g4A_oEeuzkrfERpFDKQ" name="SELF"/>
+      <ownedLiteral xmi:id="_zT7bEA_oEeuzkrfERpFDKQ" name="SONINLAW"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_pucFwJ8TEeOr4eM3k36wAg" name="Related Document (append/replace)">
       <ownedLiteral xmi:id="_1gleIJ8TEeOr4eM3k36wAg" name="APND"/>
@@ -1810,6 +1818,26 @@ Used to enumerate the relationships between two clinical documents for document 
       <ownedLiteral xmi:id="_i3R20EfSEeiFfJtNAawVHw" name="444931000124107"/>
       <ownedLiteral xmi:id="_koyQsEfSEeiFfJtNAawVHw" name="277022003"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_MPdX8AdLEeu6cuZQ8fwlvQ" name="CareTeamCategory">
+      <ownedLiteral xmi:id="_iRSQYAdLEeu6cuZQ8fwlvQ" name="LA27975-4"/>
+      <ownedLiteral xmi:id="_pNiQ0AdLEeu6cuZQ8fwlvQ" name="LA27976-2"/>
+      <ownedLiteral xmi:id="_qxR7gAdLEeu6cuZQ8fwlvQ" name="LA27977-0"/>
+      <ownedLiteral xmi:id="_r2kvoAdLEeu6cuZQ8fwlvQ" name="LA27978-8"/>
+      <ownedLiteral xmi:id="_tQ5_oAdLEeu6cuZQ8fwlvQ" name="LA27980-4"/>
+      <ownedLiteral xmi:id="_0sqmkAdLEeu6cuZQ8fwlvQ" name="LA28865-6"/>
+      <ownedLiteral xmi:id="_2HlFYAdLEeu6cuZQ8fwlvQ" name="LA28866-4"/>
+      <ownedLiteral xmi:id="_3ifkMAdLEeu6cuZQ8fwlvQ" name="LA28867-2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJ708AmCEeut3_ZvYAZhww" name="NoteTypes">
+      <ownedLiteral xmi:id="_VTctUAmCEeut3_ZvYAZhww" name="11488-4"/>
+      <ownedLiteral xmi:id="_ZZOP4AmCEeut3_ZvYAZhww" name="11490-0"/>
+      <ownedLiteral xmi:id="_comV8AmCEeut3_ZvYAZhww" name="11492-6"/>
+      <ownedLiteral xmi:id="_ffBwgAmCEeut3_ZvYAZhww" name="11504-8"/>
+      <ownedLiteral xmi:id="_iudg8AmCEeut3_ZvYAZhww" name="11505-5"/>
+      <ownedLiteral xmi:id="_kcUJ4AmCEeut3_ZvYAZhww" name="11506-3"/>
+      <ownedLiteral xmi:id="_nSd3oAmCEeut3_ZvYAZhww" name="11507-1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ojangAmVEeut3_ZvYAZhww" name="CareTeamMemberFunction"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3010,7 +3038,7 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_9IAzYeHLEeO04sHNODkHmQ" conceptName="Oral Drops" base_EnumerationLiteral="_9IAzYOHLEeO04sHNODkHmQ"/>
   <term:ValueSetCode xmi:id="_AcbKceHMEeO04sHNODkHmQ" conceptName="Otic Drops" base_EnumerationLiteral="_AcbKcOHMEeO04sHNODkHmQ"/>
   <term:ValueSetVersion xmi:id="_UMJcYeHXEeO04sHNODkHmQ" identifier="2.16.840.1.113762.1.4.1010.6" fullName="CVX Vaccines Administered - Vaccine Set" binding="Dynamic" base_Enumeration="_UMJcYOHXEeO04sHNODkHmQ">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_0_S4geXsEeOkFcFJ9uzEEw" identifier="2.16.840.1.113762.1.4.1010.4" binding="Dynamic" base_Enumeration="_0_S4gOXsEeOkFcFJ9uzEEw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
@@ -3327,32 +3355,32 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_LQ4KUfXsEeWB5KUN8TYluQ" conceptName="ObservationInterpretationNormality" base_EnumerationLiteral="_LQ4KUPXsEeWB5KUN8TYluQ"/>
   <term:ValueSetCode xmi:id="_MLNEkPXsEeWB5KUN8TYluQ" conceptName="ObservationInterpretationSusceptibility" base_EnumerationLiteral="_MLMdgPXsEeWB5KUN8TYluQ"/>
   <term:ValueSetVersion xmi:id="_pJl6gD-uEeaJttsCYk-pKw" identifier="2.16.840.1.113762.1.4.1" fullName="ONC Administrative Sex" base_Enumeration="_pJlTcD-uEeaJttsCYk-pKw">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_IXptEKEXEea9R7VeOazsfg"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_IXptEKEXEea9R7VeOazsfg"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_E11tMT-xEeaJttsCYk-pKw" conceptName="Female" base_EnumerationLiteral="_E11tMD-xEeaJttsCYk-pKw"/>
   <term:ValueSetCode xmi:id="_HlBQQD-xEeaJttsCYk-pKw" conceptName="Male" base_EnumerationLiteral="_HlApMD-xEeaJttsCYk-pKw"/>
   <term:ValueSetVersion xmi:id="_Mj8dAGvSEeaBpo0IxWaF6w" identifier="2.16.840.1.113762.1.4.1021.30" fullName="AdministrationUnitDoseForm" source="VSAC" url="https://vsac.nlm.nih.gov/" binding="Dynamic" base_Enumeration="_Mj6n0GvSEeaBpo0IxWaF6w">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_8GxMoG4FEea346h_ImlQww"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_8GxMoG4FEea346h_ImlQww"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_LEfp8JrZEea9R7VeOazsfg" identifier="2.16.840.1.113883.1.11.78" fullName="Observation Interpretation (HL7)" source="http://www.hl7.org" definition="Observation interpretation concepts that are based upon HL7 V3 vocabulary." binding="Dynamic" base_Enumeration="_LEBI0JrZEea9R7VeOazsfg">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_1o75oaFkEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_1o75oaFkEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_6ZpdcLD2EeafNo3UpQoAYw" identifier="2.16.840.1.113883.1.11.20549" version="2015-08-01" fullName="Criticality Observation" definition="A clinical judgment as to the worst case result of a future exposure (including substance administration)." base_Enumeration="_6Zo2YLD2EeafNo3UpQoAYw">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_T_bIUbD4EeafNo3UpQoAYw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_T_bIUbD4EeafNo3UpQoAYw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_hCQFcLD4EeafNo3UpQoAYw" base_EnumerationLiteral="_hCNCILD4EeafNo3UpQoAYw"/>
   <term:ValueSetCode xmi:id="_nB4sobD4EeafNo3UpQoAYw" base_EnumerationLiteral="_nB4soLD4EeafNo3UpQoAYw"/>
   <term:ValueSetCode xmi:id="_octr4bD4EeafNo3UpQoAYw" base_EnumerationLiteral="_octr4LD4EeafNo3UpQoAYw"/>
   <term:ValueSetVersion xmi:id="_cL0AwIdpEeeAsbPrNOnubg" identifier="2.16.840.1.114222.4.11.877" fullName="Detailed Ethnicity" url="http://phinvads.cdc.gov/vads/ViewValueSet.action?id=34D34BBC-617F-DD11-B38D-00188B398520#" base_Enumeration="_cLzZsIdpEeeAsbPrNOnubg">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_OLJgsDNzEeiFfJtNAawVHw" identifier="2.16.840.1.113883.3.88.12.3221.6.8" version="20170915" fullName="Reaction Severity" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.3221.6.8/expansion" definition="This is a description of the level of severity of the REACTION. Inclusion Criteria: Three severities (map fatal to severe, moderate to severe to severe, mild to moderate to moderate)" base_Enumeration="_OKxtQDNzEeiFfJtNAawVHw">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_uZDcMDdQEeiFfJtNAawVHw" conceptName="Goal not attainable (finding)" base_EnumerationLiteral="_uZA_8DdQEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_zAMmcTdQEeiFfJtNAawVHw" conceptName="No progress toward goal (finding)" base_EnumerationLiteral="_zAMmcDdQEeiFfJtNAawVHw"/>
   <term:ValueSetVersion xmi:id="_nQiIEDdVEeiFfJtNAawVHw" identifier="2.16.840.1.113883.1.11.11610" version="20171229" fullName="x_ActRelationshipDocument" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.11610/expansion" base_Enumeration="_nQhhADdVEeiFfJtNAawVHw">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_f6DvAE6SEeC5ttwajeXVXg"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_f6DvAE6SEeC5ttwajeXVXg"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_3NPm8TdWEeiFfJtNAawVHw" conceptName="is appendage" base_EnumerationLiteral="_3NPm8DdWEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_67NtgTdWEeiFfJtNAawVHw" conceptName="replaces" base_EnumerationLiteral="_67NtgDdWEeiFfJtNAawVHw"/>
@@ -3361,7 +3389,7 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_TBKBoTg6EeiFfJtNAawVHw" conceptName="Mild (qualifier value)" base_EnumerationLiteral="_TBKBoDg6EeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_VlveQDg6EeiFfJtNAawVHw" conceptName="Moderate (severity modifier) (qualifier value)" base_EnumerationLiteral="_VlSyUDg6EeiFfJtNAawVHw"/>
   <term:ValueSetVersion xmi:id="_OeMdYDwXEeiFfJtNAawVHw" identifier="2.16.840.1.113762.1.4.1099.11" version="20170914" fullName="Medication Status" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.11/expansion" definition="A coded concept indicating the current status of a Medication administration or fulfillment." binding="Dynamic" base_Enumeration="_OeL2UDwXEeiFfJtNAawVHw">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_oDwiUDwXEeiFfJtNAawVHw" conceptName="aborted" base_EnumerationLiteral="_oDv7QDwXEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_rLBOMDwXEeiFfJtNAawVHw" conceptName="active" base_EnumerationLiteral="_rLAnIDwXEeiFfJtNAawVHw"/>
@@ -3369,22 +3397,22 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_tjmPITwXEeiFfJtNAawVHw" conceptName="nullified" base_EnumerationLiteral="_tjmPIDwXEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_uwGegDwXEeiFfJtNAawVHw" conceptName="suspended" base_EnumerationLiteral="_uwF3cDwXEeiFfJtNAawVHw"/>
   <term:ValueSetVersion xmi:id="_av2kwDzyEeiFfJtNAawVHw" identifier="2.16.840.1.113762.1.4.1099.10" version="20180125" fullName="Care Plan Document Type" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.10/expansion" definition="Terms used to identify documents that represent a Care Plan" binding="Dynamic" base_Enumeration="_avmtIDzyEeiFfJtNAawVHw">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_YcqksDzzEeiFfJtNAawVHw" conceptName="Plan of care note" base_EnumerationLiteral="_Ycp9oDzzEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_b8x1cDzzEeiFfJtNAawVHw" conceptName="Overall Plan of Care/Advance Care Directives" base_EnumerationLiteral="_b8xOYDzzEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_fXUpsTzzEeiFfJtNAawVHw" conceptName="Overall Plan of Care/Advance Care Directives panel" base_EnumerationLiteral="_fXUpsDzzEeiFfJtNAawVHw"/>
   <term:ValueSetVersion xmi:id="_8VEfQD2fEeiFfJtNAawVHw" identifier="2.16.840.1.113762.1.4.1099.12" version="20170914" fullName="Medication Route" source="VSAC" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.12/expansion" definition="Terms used to describe the path by which a substance is taken into the body. All SNOMED_CT values descending from 284009009 route of administration value." binding="Dynamic" base_Enumeration="_8VD4MD2fEeiFfJtNAawVHw">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_55qJYEc6EeiFfJtNAawVHw" fullName="Allergy Status" source="HL7 Errata DSTU comment 1364" url="http://www.hl7.org/dstucomments/showdetail_comment.cfm?commentid=1364" definition="Clinical status of an allergy/intolerance" base_Enumeration="_55piUEc6EeiFfJtNAawVHw">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_IprBEEc7EeiFfJtNAawVHw" conceptName="Active" base_EnumerationLiteral="_IpqaAEc7EeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_UFLbEUc7EeiFfJtNAawVHw" conceptName="Inactive" base_EnumerationLiteral="_UFLbEEc7EeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_WrjncUc7EeiFfJtNAawVHw" conceptName="Resolved" base_EnumerationLiteral="_WrjncEc7EeiFfJtNAawVHw"/>
   <term:ValueSetVersion xmi:id="_8V8fAEfREeiFfJtNAawVHw" identifier="2.16.840.1.113883.3.88.12.80.68" fullName="Problem Status (expanded DSTU:1363)" source="HL7 DSTU errata comments" url="http://www.hl7.org/dstucomments/showdetail_comment.cfm?commentid=1363" binding="Dynamic" base_Enumeration="_8V738EfREeiFfJtNAawVHw">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_TdIdAEfSEeiFfJtNAawVHw" conceptName="Active" base_EnumerationLiteral="_TdH18EfSEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_WYy84EfSEeiFfJtNAawVHw" conceptName="Inactive" base_EnumerationLiteral="_WYyV0EfSEeiFfJtNAawVHw"/>
@@ -3394,4 +3422,36 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_g1DgYUfSEeiFfJtNAawVHw" conceptName="Well-controlled" base_EnumerationLiteral="_g1DgYEfSEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_i3R20UfSEeiFfJtNAawVHw" conceptName="Poorly-controlled" base_EnumerationLiteral="_i3R20EfSEeiFfJtNAawVHw"/>
   <term:ValueSetCode xmi:id="_koy3wEfSEeiFfJtNAawVHw" conceptName="Remission" base_EnumerationLiteral="_koyQsEfSEeiFfJtNAawVHw"/>
+  <term:ValueSetVersion xmi:id="_MPemEAdLEeu6cuZQ8fwlvQ" identifier="2.16.840.1.113883.4.642.3.155" fullName="Care Team Category" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.4.642.3.155/expansion" definition="Value Set: Care Team Category urn:oid:2.16.840.1.113883.4.642.3.155&#xA;&#xA;(Clinical Focus: Indicates the type of care team.),(Data Element Scope: Each care team can have multiple care team type categories assigned to describe it.),(Inclusion Criteria: Specific concepts determined to be terms used to classify a care team, for example: Event-focused, Longitudinal care coordination focused, Condition focused, Public health focused.&#xA;&#xA;This is the LOINC List LL4590-7 that is connected to LOINC 86744-0 Care Team),(Exclusion Criteria: )" effectiveDate="20191015" releaseDate="20191015" base_Enumeration="_MPdX8AdLEeu6cuZQ8fwlvQ">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_iRS3cAdLEeu6cuZQ8fwlvQ" conceptName="Event-focused care team" base_EnumerationLiteral="_iRSQYAdLEeu6cuZQ8fwlvQ"/>
+  <term:ValueSetCode xmi:id="_pNi34AdLEeu6cuZQ8fwlvQ" conceptName="Encounter-focused care team" base_EnumerationLiteral="_pNiQ0AdLEeu6cuZQ8fwlvQ"/>
+  <term:ValueSetCode xmi:id="_qxSikAdLEeu6cuZQ8fwlvQ" conceptName="Episode of care-focused care team" base_EnumerationLiteral="_qxR7gAdLEeu6cuZQ8fwlvQ"/>
+  <term:ValueSetCode xmi:id="_r2lWsAdLEeu6cuZQ8fwlvQ" conceptName="Condition-focused care team" base_EnumerationLiteral="_r2kvoAdLEeu6cuZQ8fwlvQ"/>
+  <term:ValueSetCode xmi:id="_tQ6msAdLEeu6cuZQ8fwlvQ" conceptName="Clinical researchfocused care team" base_EnumerationLiteral="_tQ5_oAdLEeu6cuZQ8fwlvQ"/>
+  <term:ValueSetCode xmi:id="_0sqmkQdLEeu6cuZQ8fwlvQ" conceptName="Longitudinal carecoordination focused care team" base_EnumerationLiteral="_0sqmkAdLEeu6cuZQ8fwlvQ"/>
+  <term:ValueSetCode xmi:id="_2HlFYQdLEeu6cuZQ8fwlvQ" conceptName="Home &amp; Community Based Services (HCBS)focused care team" base_EnumerationLiteral="_2HlFYAdLEeu6cuZQ8fwlvQ"/>
+  <term:ValueSetCode xmi:id="_3ifkMQdLEeu6cuZQ8fwlvQ" conceptName="Public health-focused care team" base_EnumerationLiteral="_3ifkMAdLEeu6cuZQ8fwlvQ"/>
+  <term:ValueSetVersion xmi:id="_HJ8cAAmCEeut3_ZvYAZhww" identifier="2.16.840.1.113883.11.20.9.68" version="20191017" fullName="Note Types" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.9.68/expansion" base_Enumeration="_HJ708AmCEeut3_ZvYAZhww">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_VTdUYAmCEeut3_ZvYAZhww" conceptName="Consult note" base_EnumerationLiteral="_VTctUAmCEeut3_ZvYAZhww"/>
+  <term:ValueSetCode xmi:id="_ZZOP4QmCEeut3_ZvYAZhww" conceptName="Physician Discharge summary" base_EnumerationLiteral="_ZZOP4AmCEeut3_ZvYAZhww"/>
+  <term:ValueSetCode xmi:id="_comV8QmCEeut3_ZvYAZhww" conceptName="Provider-unspecifed, History and physical note" base_EnumerationLiteral="_comV8AmCEeut3_ZvYAZhww"/>
+  <term:ValueSetCode xmi:id="_ffCXkAmCEeut3_ZvYAZhww" conceptName="Surgical operation note" base_EnumerationLiteral="_ffBwgAmCEeut3_ZvYAZhww"/>
+  <term:ValueSetCode xmi:id="_iueIAAmCEeut3_ZvYAZhww" conceptName="Physician procedure note" base_EnumerationLiteral="_iudg8AmCEeut3_ZvYAZhww"/>
+  <term:ValueSetCode xmi:id="_kcUJ4QmCEeut3_ZvYAZhww" conceptName="Progress note" base_EnumerationLiteral="_kcUJ4AmCEeut3_ZvYAZhww"/>
+  <term:ValueSetCode xmi:id="_nSd3oQmCEeut3_ZvYAZhww" conceptName="Occupational therapy Progress note" base_EnumerationLiteral="_nSd3oAmCEeut3_ZvYAZhww"/>
+  <term:ValueSetVersion xmi:id="_ojbOkAmVEeut3_ZvYAZhww" identifier="2.16.840.1.113762.1.4.1099.30" version="20191016." fullName="Care Team Member Function" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.30/expansion" base_Enumeration="_ojangAmVEeut3_ZvYAZhww">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_hejU8A_oEeuzkrfERpFDKQ" base_EnumerationLiteral="_heg4sA_oEeuzkrfERpFDKQ"/>
+  <term:ValueSetCode xmi:id="_kX12QA_oEeuzkrfERpFDKQ" base_EnumerationLiteral="_kX1PMA_oEeuzkrfERpFDKQ"/>
+  <term:ValueSetCode xmi:id="_mWpsUA_oEeuzkrfERpFDKQ" base_EnumerationLiteral="_mWoeMA_oEeuzkrfERpFDKQ"/>
+  <term:ValueSetCode xmi:id="_oG0CYQ_oEeuzkrfERpFDKQ" base_EnumerationLiteral="_oG0CYA_oEeuzkrfERpFDKQ"/>
+  <term:ValueSetCode xmi:id="_pxdmUQ_oEeuzkrfERpFDKQ" base_EnumerationLiteral="_pxdmUA_oEeuzkrfERpFDKQ"/>
+  <term:ValueSetCode xmi:id="_wLoNYA_oEeuzkrfERpFDKQ" base_EnumerationLiteral="_wLnmUA_oEeuzkrfERpFDKQ"/>
+  <term:ValueSetCode xmi:id="_xH_H8A_oEeuzkrfERpFDKQ" base_EnumerationLiteral="_xH-g4A_oEeuzkrfERpFDKQ"/>
+  <term:ValueSetCode xmi:id="_zT7bEQ_oEeuzkrfERpFDKQ" base_EnumerationLiteral="_zT7bEA_oEeuzkrfERpFDKQ"/>
 </xmi:XMI>

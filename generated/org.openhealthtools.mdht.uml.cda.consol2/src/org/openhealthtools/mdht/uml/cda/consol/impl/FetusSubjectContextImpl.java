@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -49,7 +50,6 @@ public class FetusSubjectContextImpl extends RelatedSubjectImpl implements Fetus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFetusSubjectContextTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FetusSubjectContextOperations.validateFetusSubjectContextTemplateId(this, diagnostics, context);
 	}
@@ -59,7 +59,6 @@ public class FetusSubjectContextImpl extends RelatedSubjectImpl implements Fetus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFetusSubjectContextCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FetusSubjectContextOperations.validateFetusSubjectContextCode(this, diagnostics, context);
 	}
@@ -69,7 +68,6 @@ public class FetusSubjectContextImpl extends RelatedSubjectImpl implements Fetus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateFetusSubjectContextSubject(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FetusSubjectContextOperations.validateFetusSubjectContextSubject(this, diagnostics, context);
 	}
@@ -79,7 +77,6 @@ public class FetusSubjectContextImpl extends RelatedSubjectImpl implements Fetus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FetusSubjectContext init() {
 		return Initializer.Util.init(this);
 	}
@@ -89,7 +86,6 @@ public class FetusSubjectContextImpl extends RelatedSubjectImpl implements Fetus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FetusSubjectContext init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
